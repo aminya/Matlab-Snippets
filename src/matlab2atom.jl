@@ -41,11 +41,10 @@ function insert_serial!(A::Vector, index::Integer, item::Vector)
 end
 
 function matlab2atom(data, group)
-    final = """
+    atom = """
     # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
     '.source.matlab, source.m':
     """
-
     for (fun, val) in data
         try
         if haskey(val, "inputs")
@@ -162,7 +161,7 @@ function matlab2atom(data, group)
             end
         end
 
-        final *= """
+        atom *= """
 
             "$fun [$group]":
                 prefix: "$fun"
@@ -173,12 +172,13 @@ function matlab2atom(data, group)
                 descriptionMoreURL: '$descriptionMoreURL'
 
         """
+
         catch e
             println(e)
         end
     end
 
-    return final
+    return atom
 end
 
 
@@ -190,7 +190,7 @@ function run_matlab2atom()
     for file in jsonfiles
         group = match(r"toolbox\/([a-z]+)\/", file).captures[1]
         data = JSON.parsefile(file; dicttype=Dict, inttype=Int64, use_mmap=true)
-        text = matlab2atom(data, group)
+        atom = matlab2atom(data, group)
 
         # rename file
         file = foldl(replace,
@@ -203,7 +203,7 @@ function run_matlab2atom()
                      init = file)
         file = "snippets/"*file[1:end-4]*"cson"
 
-        Base.write(file,text)
+        Base.write(file,atom)
     end
     println("conversion finsished successfully")
 
