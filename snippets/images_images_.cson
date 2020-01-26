@@ -307,6 +307,12 @@
         description: '''${1:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
 
 
+    "burstinterpolant":
+        prefix: "burstinterpolant"
+        body: '''${1:E} = burstinterpolant(${1:imds}, ${2:tforms}, ${3:arg})'''
+        description: '''${1:E} = burstinterpolant(${1:imds}, ${2:tforms}, ${3:arg})'''
+
+
     "piqe":
         prefix: "piqe"
         body: '''[${1:Score}, ${2:ActivityMask}, ${3:NoticeableArtifactsMask}, ${4:NoiseMask}] = piqe(${1:A})'''

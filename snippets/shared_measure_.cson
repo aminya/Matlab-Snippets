@@ -1,2 +1,20 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
+
+    "dsp.StateLevels":
+        prefix: "dsp.StateLevels"
+        body: '''dsp.StateLevels(${1:arg})'''
+        description: '''dsp.StateLevels(${1:arg})'''
+
+
+    "dsp.TransitionMetrics":
+        prefix: "dsp.TransitionMetrics"
+        body: '''dsp.TransitionMetrics(${1:arg})'''
+        description: '''dsp.TransitionMetrics(${1:arg})'''
+
+
+    "dsp.PulseMetrics":
+        prefix: "dsp.PulseMetrics"
+        body: '''dsp.PulseMetrics(${1:arg})'''
+        description: '''dsp.PulseMetrics(${1:arg})'''
+

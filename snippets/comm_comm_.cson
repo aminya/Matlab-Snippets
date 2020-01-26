@@ -13,6 +13,12 @@
         description: '''comm.BinarySymmetricChannel(${1:varargin})'''
 
 
+    "algintrlv":
+        prefix: "algintrlv"
+        body: '''algintrlv(${1:data}, ${2:num}, ${3:type}, ${4:arg})'''
+        description: '''algintrlv(${1:data}, ${2:num}, ${3:type}, ${4:arg})'''
+
+
     "comm.FMBroadcastDemodulator":
         prefix: "comm.FMBroadcastDemodulator"
         body: '''comm.FMBroadcastDemodulator(${1:varargin})'''
@@ -53,6 +59,12 @@
         prefix: "comm.OFDMDemodulator"
         body: '''comm.OFDMDemodulator(${1:varargin})'''
         description: '''comm.OFDMDemodulator(${1:varargin})'''
+
+
+    "gsmUplinkConfig":
+        prefix: "gsmUplinkConfig"
+        body: '''gsmUplinkConfig(${1:SamplesPerSymbol}, ${2:arg})'''
+        description: '''gsmUplinkConfig(${1:SamplesPerSymbol}, ${2:arg})'''
 
 
     "comm.IQImbalanceCompensator":
@@ -229,6 +241,12 @@
         description: '''comm.QAMCoarseFrequencyEstimator(${1:varargin})'''
 
 
+    "algdeintrlv":
+        prefix: "algdeintrlv"
+        body: '''algdeintrlv(${1:data}, ${2:num}, ${3:type}, ${4:arg})'''
+        description: '''algdeintrlv(${1:data}, ${2:num}, ${3:type}, ${4:arg})'''
+
+
     "comm.SymbolSynchronizer":
         prefix: "comm.SymbolSynchronizer"
         body: '''comm.SymbolSynchronizer(${1:varargin})'''
@@ -377,6 +395,12 @@
         prefix: "comm.HadamardCode"
         body: '''comm.HadamardCode(${1:varargin})'''
         description: '''comm.HadamardCode(${1:varargin})'''
+
+
+    "gsmDownlinkConfig":
+        prefix: "gsmDownlinkConfig"
+        body: '''gsmDownlinkConfig(${1:SamplesPerSymbol}, ${2:arg})'''
+        description: '''gsmDownlinkConfig(${1:SamplesPerSymbol}, ${2:arg})'''
 
 
     "comm.DPDCoefficientEstimator":

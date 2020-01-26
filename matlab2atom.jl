@@ -73,8 +73,10 @@ function matlab2atom(data)
                     kind = arg["kind"]
                     if kind == "varargin"
                         name = "varargin"
-                    else
+                    elseif haskey(arg,"name")
                         name = arg["name"]
+                    else
+                        name = "arg"
                     end
 
                     if kind == "namevalue"
