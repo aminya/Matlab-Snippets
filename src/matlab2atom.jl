@@ -1,5 +1,5 @@
-# using Pkg; Pkg.add("JSON"); Pkg.add("AcuteML"); Pkg.add("StructArrays");
-using JSON, StructArrays
+# using Pkg; Pkg.add("JSON"); Pkg.add("AcuteML"); Pkg.add("EzXML");
+using JSON
 
 include("function_description.jl")
 
