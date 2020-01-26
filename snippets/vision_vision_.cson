@@ -1,1633 +1,1633 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "segmentGroundFromLidarData":
+    "segmentGroundFromLidarData [vision]":
         prefix: "segmentGroundFromLidarData"
         body: '''segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})'''
-        description: '''segmentGroundFromLidarData(ptCloud, 'ElevationAngleDelta', value, 'InitialElevationAngle', value)'''
+        description: '''segmentGroundFromLidarData(ptCloud, 'ElevationAngleDelta', value, 'InitialElevationAngle', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/segmentGroundFromLidarData.html'
 
 
-    "boxLabelDatastore.readall":
+    "boxLabelDatastore.readall [vision]":
         prefix: "boxLabelDatastore.readall"
         body: '''${1:data} = boxLabelDatastore.readall(${1:blds})'''
-        description: '''data = boxLabelDatastore.readall(blds)'''
+        description: '''data = boxLabelDatastore.readall(blds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.readall.html'
 
 
-    "pixelLabelDatastore.readimage":
+    "pixelLabelDatastore.readimage [vision]":
         prefix: "pixelLabelDatastore.readimage"
         body: '''pixelLabelDatastore.readimage(${1:pxds}, ${2:k})'''
-        description: '''pixelLabelDatastore.readimage(pxds, k)'''
+        description: '''pixelLabelDatastore.readimage(pxds, k)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.readimage.html'
 
 
-    "regionProposalLayer":
+    "regionProposalLayer [vision]":
         prefix: "regionProposalLayer"
         body: '''regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})'''
-        description: '''regionProposalLayer(anchorBoxes, 'Name', value)'''
+        description: '''regionProposalLayer(anchorBoxes, 'Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/regionProposalLayer.html'
 
 
-    "pcregistericp":
+    "pcregistericp [vision]":
         prefix: "pcregistericp"
         body: '''pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})'''
-        description: '''pcregistericp(moving, fixed, 'Metric', value, 'Extrapolate', value, 'InlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'InitialTransform', value, 'Verbose', value)'''
+        description: '''pcregistericp(moving, fixed, 'Metric', value, 'Extrapolate', value, 'InlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'InitialTransform', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcregistericp.html'
 
 
-    "semanticseg":
+    "semanticseg [vision]":
         prefix: "semanticseg"
         body: '''semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})'''
-        description: '''semanticseg(I, network, optional_roi, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'WriteLocation', value, 'NamePrefix', value, 'Verbose', value)'''
+        description: '''semanticseg(I, network, optional_roi, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'WriteLocation', value, 'NamePrefix', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/semanticseg.html'
 
 
-    "SURFPoints":
+    "SURFPoints [vision]":
         prefix: "SURFPoints"
         body: '''SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})'''
-        description: '''SURFPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value, 'SignOfLaplacian', value)'''
+        description: '''SURFPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value, 'SignOfLaplacian', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.html'
 
 
-    "cameraPoseToExtrinsics":
+    "cameraPoseToExtrinsics [vision]":
         prefix: "cameraPoseToExtrinsics"
         body: '''cameraPoseToExtrinsics(${1:orientation}, ${2:location})'''
-        description: '''cameraPoseToExtrinsics(orientation, location)'''
+        description: '''cameraPoseToExtrinsics(orientation, location)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraPoseToExtrinsics.html'
 
 
-    "unet3dLayers":
+    "unet3dLayers [vision]":
         prefix: "unet3dLayers"
         body: '''unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
-        description: '''unet3dLayers(inputSize, numClasses, 'EncoderDepth', value, 'NumFirstEncoderFilters', value, 'FilterSize', value, 'ConvolutionPadding', value)'''
+        description: '''unet3dLayers(inputSize, numClasses, 'EncoderDepth', value, 'NumFirstEncoderFilters', value, 'FilterSize', value, 'ConvolutionPadding', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/unet3dLayers.html'
 
 
-    "pcfitplane":
+    "pcfitplane [vision]":
         prefix: "pcfitplane"
         body: '''pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
-        description: '''pcfitplane(ptCloudIn, maxDistance, optional_referenceVector, maxAngularDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)'''
+        description: '''pcfitplane(ptCloudIn, maxDistance, optional_referenceVector, maxAngularDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcfitplane.html'
 
 
-    "labelDefinitionCreator.addSublabel":
+    "labelDefinitionCreator.addSublabel [vision]":
         prefix: "labelDefinitionCreator.addSublabel"
         body: '''labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})'''
-        description: '''labelDefinitionCreator.addSublabel(ldc, labelName, sublabelName, typeOfSublabel, 'Description', value)'''
+        description: '''labelDefinitionCreator.addSublabel(ldc, labelName, sublabelName, typeOfSublabel, 'Description', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.addSublabel.html'
 
 
-    "estimateCameraMatrix":
+    "estimateCameraMatrix [vision]":
         prefix: "estimateCameraMatrix"
         body: '''estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})'''
-        description: '''estimateCameraMatrix(imagePoints, worldPoints)'''
+        description: '''estimateCameraMatrix(imagePoints, worldPoints)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateCameraMatrix.html'
 
 
-    "cornerPoints":
+    "cornerPoints [vision]":
         prefix: "cornerPoints"
         body: '''cornerPoints(${1:location}, 'Metric', ${2:value})'''
-        description: '''cornerPoints(location, 'Metric', value)'''
+        description: '''cornerPoints(location, 'Metric', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.html'
 
 
-    "opticalFlowFarneback.estimateFlow":
+    "opticalFlowFarneback.estimateFlow [vision]":
         prefix: "opticalFlowFarneback.estimateFlow"
         body: '''opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})'''
-        description: '''opticalFlowFarneback.estimateFlow(opticalFlow, I)'''
+        description: '''opticalFlowFarneback.estimateFlow(opticalFlow, I)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowFarneback.estimateFlow.html'
 
 
-    "stereoCameraCalibrator":
+    "stereoCameraCalibrator [vision]":
         prefix: "stereoCameraCalibrator"
         body: '''stereoCameraCalibrator(${1:sessionFile})'''
-        description: '''stereoCameraCalibrator(sessionFile)'''
+        description: '''stereoCameraCalibrator(sessionFile)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoCameraCalibrator.html'
 
 
-    "trainRCNNObjectDetector":
+    "trainRCNNObjectDetector [vision]":
         prefix: "trainRCNNObjectDetector"
         body: '''trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})'''
-        description: '''trainRCNNObjectDetector(trainingData, network, options, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'RegionProposalFcn', value)'''
+        description: '''trainRCNNObjectDetector(trainingData, network, options, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'RegionProposalFcn', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainRCNNObjectDetector.html'
 
 
-    "vision.AlphaBlender.step":
+    "vision.AlphaBlender.step [vision]":
         prefix: "vision.AlphaBlender.step"
         body: '''vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})'''
-        description: '''vision.AlphaBlender.step(obj, I1, I2, optional_opacity, optional_mask, optional_location)'''
+        description: '''vision.AlphaBlender.step(obj, I1, I2, optional_opacity, optional_mask, optional_location)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/vision.AlphaBlender.step.html'
 
 
-    "dicePixelClassificationLayer":
+    "dicePixelClassificationLayer [vision]":
         prefix: "dicePixelClassificationLayer"
         body: '''dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})'''
-        description: '''dicePixelClassificationLayer('Classes', value, 'Name', value)'''
+        description: '''dicePixelClassificationLayer('Classes', value, 'Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/dicePixelClassificationLayer.html'
 
 
-    "fastRCNNObjectDetector.detect":
+    "fastRCNNObjectDetector.detect [vision]":
         prefix: "fastRCNNObjectDetector.detect"
         body: '''fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
-        description: '''fastRCNNObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value)'''
+        description: '''fastRCNNObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fastRCNNObjectDetector.detect.html'
 
 
-    "indexImages":
+    "indexImages [vision]":
         prefix: "indexImages"
         body: '''indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})'''
-        description: '''indexImages(imds, optional_bag, 'SaveFeatureLocations', value, 'Verbose', value)'''
+        description: '''indexImages(imds, optional_bag, 'SaveFeatureLocations', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/indexImages.html'
 
 
-    "ransac":
+    "ransac [vision]":
         prefix: "ransac"
         body: '''ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})'''
-        description: '''ransac(data, fitFcn, distFcn, sampleSize, maxDistance, 'ValidateModelFcn', value, 'MaxSamplingAttempts', value, 'MaxNumTrials', value, 'Confidence', value)'''
+        description: '''ransac(data, fitFcn, distFcn, sampleSize, maxDistance, 'ValidateModelFcn', value, 'MaxSamplingAttempts', value, 'MaxNumTrials', value, 'Confidence', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ransac.html'
 
 
-    "pixelLabelDatastore.partition":
+    "pixelLabelDatastore.partition [vision]":
         prefix: "pixelLabelDatastore.partition"
         body: '''pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})'''
-        description: '''pixelLabelDatastore.partition(pxds, N, index)'''
+        description: '''pixelLabelDatastore.partition(pxds, N, index)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.partition.html'
 
 
-    "planeModel.plot":
+    "planeModel.plot [vision]":
         prefix: "planeModel.plot"
         body: '''planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})'''
-        description: '''planeModel.plot(model, 'Parent', value, 'Color', value)'''
+        description: '''planeModel.plot(model, 'Parent', value, 'Color', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/planeModel.plot.html'
 
 
-    "BRISKPoints.selectStrongest":
+    "BRISKPoints.selectStrongest [vision]":
         prefix: "BRISKPoints.selectStrongest"
         body: '''BRISKPoints.selectStrongest(${1:points}, ${2:N})'''
-        description: '''BRISKPoints.selectStrongest(points, N)'''
+        description: '''BRISKPoints.selectStrongest(points, N)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.selectStrongest.html'
 
 
-    "detectMinEigenFeatures":
+    "detectMinEigenFeatures [vision]":
         prefix: "detectMinEigenFeatures"
         body: '''detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
-        description: '''detectMinEigenFeatures(I, 'MinQuality', value, 'FilterSize', value, 'ROI', value)'''
+        description: '''detectMinEigenFeatures(I, 'MinQuality', value, 'FilterSize', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectMinEigenFeatures.html'
 
 
-    "ocr":
+    "ocr [vision]":
         prefix: "ocr"
         body: '''ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})'''
-        description: '''ocr(I, optional_roi, 'TextLayout', value, 'Language', value, 'CharacterSet', value)'''
+        description: '''ocr(I, optional_roi, 'TextLayout', value, 'Language', value, 'CharacterSet', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ocr.html'
 
 
-    "estimateEssentialMatrix":
+    "estimateEssentialMatrix [vision]":
         prefix: "estimateEssentialMatrix"
         body: '''estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
-        description: '''estimateEssentialMatrix(matchedPoints1, matchedPoints2, optional_cameraParams, 'MaxNumTrials', value, 'Confidence', value, 'MaxDistance', value)'''
+        description: '''estimateEssentialMatrix(matchedPoints1, matchedPoints2, optional_cameraParams, 'MaxNumTrials', value, 'Confidence', value, 'MaxDistance', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateEssentialMatrix.html'
 
 
-    "rectifyStereoImages":
+    "rectifyStereoImages [vision]":
         prefix: "rectifyStereoImages"
         body: '''rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})'''
-        description: '''rectifyStereoImages(I1, I2, stereoParams, optional_interp, 'OutputView', value, 'FillValues', value)'''
+        description: '''rectifyStereoImages(I1, I2, stereoParams, optional_interp, 'OutputView', value, 'FillValues', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rectifyStereoImages.html'
 
 
-    "fisheyeParameters":
+    "fisheyeParameters [vision]":
         prefix: "fisheyeParameters"
         body: '''fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})'''
-        description: '''fisheyeParameters(fisheyeParameters, 'EstimateAlignment', value, 'RotationVectors', value, 'TranslationVectors', value, 'WorldPoints', value, 'WorldUnits', value, 'ReprojectionErrors', value)'''
+        description: '''fisheyeParameters(fisheyeParameters, 'EstimateAlignment', value, 'RotationVectors', value, 'TranslationVectors', value, 'WorldPoints', value, 'WorldUnits', value, 'ReprojectionErrors', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeParameters.html'
 
 
-    "disparityBM":
+    "disparityBM [vision]":
         prefix: "disparityBM"
         body: '''disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})'''
-        description: '''disparityBM(I1, I2, 'DisparityRange', value, 'BlockSize', value, 'ContrastThreshold', value, 'UniquenessThreshold', value, 'DistanceThreshold', value, 'TextureThreshold', value)'''
+        description: '''disparityBM(I1, I2, 'DisparityRange', value, 'BlockSize', value, 'ContrastThreshold', value, 'UniquenessThreshold', value, 'DistanceThreshold', value, 'TextureThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/disparityBM.html'
 
 
-    "opticalFlow.plot":
+    "opticalFlow.plot [vision]":
         prefix: "opticalFlow.plot"
         body: '''opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})'''
-        description: '''opticalFlow.plot(flow, 'DecimationFactor', value, 'ScaleFactor', value, 'Parent', value)'''
+        description: '''opticalFlow.plot(flow, 'DecimationFactor', value, 'ScaleFactor', value, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlow.plot.html'
 
 
-    "cameraCalibrator":
+    "cameraCalibrator [vision]":
         prefix: "cameraCalibrator"
         body: '''cameraCalibrator(${1:sessionFile})'''
-        description: '''cameraCalibrator(sessionFile)'''
+        description: '''cameraCalibrator(sessionFile)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraCalibrator.html'
 
 
-    "pcfitcylinder":
+    "pcfitcylinder [vision]":
         prefix: "pcfitcylinder"
         body: '''pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
-        description: '''pcfitcylinder(ptCloudIn, maxDistance, optional_referenceVector, maxAngularDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)'''
+        description: '''pcfitcylinder(ptCloudIn, maxDistance, optional_referenceVector, maxAngularDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcfitcylinder.html'
 
 
-    "unetLayers":
+    "unetLayers [vision]":
         prefix: "unetLayers"
         body: '''unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
-        description: '''unetLayers(inputSize, numClasses, 'EncoderDepth', value, 'NumFirstEncoderFilters', value, 'FilterSize', value, 'ConvolutionPadding', value)'''
+        description: '''unetLayers(inputSize, numClasses, 'EncoderDepth', value, 'NumFirstEncoderFilters', value, 'FilterSize', value, 'ConvolutionPadding', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/unetLayers.html'
 
 
-    "bboxOverlapRatio":
+    "bboxOverlapRatio [vision]":
         prefix: "bboxOverlapRatio"
         body: '''bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})'''
-        description: '''bboxOverlapRatio(bboxA, bboxB, optional_ratioType)'''
+        description: '''bboxOverlapRatio(bboxA, bboxB, optional_ratioType)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bboxOverlapRatio.html'
 
 
-    "yolov2ObjectDetector.detect":
+    "yolov2ObjectDetector.detect [vision]":
         prefix: "yolov2ObjectDetector.detect"
         body: '''yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})'''
-        description: '''yolov2ObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value, 'Acceleration', value)'''
+        description: '''yolov2ObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value, 'Acceleration', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/yolov2ObjectDetector.detect.html'
 
 
-    "detectCheckerboardPoints":
+    "detectCheckerboardPoints [vision]":
         prefix: "detectCheckerboardPoints"
         body: '''detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})'''
-        description: '''detectCheckerboardPoints(I, 'MinCornerMetric', value)'''
+        description: '''detectCheckerboardPoints(I, 'MinCornerMetric', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectCheckerboardPoints.html'
 
 
-    "fasterRCNNLayers":
+    "fasterRCNNLayers [vision]":
         prefix: "fasterRCNNLayers"
         body: '''fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})'''
-        description: '''fasterRCNNLayers(imageSize, numClasses, anchorBoxes, network, featureLayer, 'ROIMaxPoolingLayer', value, 'ROIOutputSize', value)'''
+        description: '''fasterRCNNLayers(imageSize, numClasses, anchorBoxes, network, featureLayer, 'ROIMaxPoolingLayer', value, 'ROIOutputSize', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fasterRCNNLayers.html'
 
 
-    "evaluateImageRetrieval":
+    "evaluateImageRetrieval [vision]":
         prefix: "evaluateImageRetrieval"
         body: '''evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})'''
-        description: '''evaluateImageRetrieval(queryImage, imageIndex, expectedIDs, 'NumResults', value, 'ROI', value)'''
+        description: '''evaluateImageRetrieval(queryImage, imageIndex, expectedIDs, 'NumResults', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/evaluateImageRetrieval.html'
 
 
-    "fitPolynomialRANSAC":
+    "fitPolynomialRANSAC [vision]":
         prefix: "fitPolynomialRANSAC"
         body: '''fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})'''
-        description: '''fitPolynomialRANSAC(xyPoints, N, maxDistance, 'MaxNumTrials', value, 'Confidence', value, 'ValidatePolynomialFcn', value, 'MaxSamplingAttempts', value)'''
+        description: '''fitPolynomialRANSAC(xyPoints, N, maxDistance, 'MaxNumTrials', value, 'Confidence', value, 'ValidatePolynomialFcn', value, 'MaxSamplingAttempts', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fitPolynomialRANSAC.html'
 
 
-    "showExtrinsics":
+    "showExtrinsics [vision]":
         prefix: "showExtrinsics"
         body: '''showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
-        description: '''showExtrinsics(cameraParams, optional_view, 'HighlightIndex', value, 'Parent', value)'''
+        description: '''showExtrinsics(cameraParams, optional_view, 'HighlightIndex', value, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/showExtrinsics.html'
 
 
-    "cornerPoints.plot":
+    "cornerPoints.plot [vision]":
         prefix: "cornerPoints.plot"
         body: '''cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-        description: '''cornerPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)'''
+        description: '''cornerPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.plot.html'
 
 
-    "trainCascadeObjectDetector":
+    "trainCascadeObjectDetector [vision]":
         prefix: "trainCascadeObjectDetector"
         body: '''trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})'''
-        description: '''trainCascadeObjectDetector(outputXMLFilename, 'ObjectTrainingSize', value, 'NegativeSamplesFactor', value, 'NumCascadeStages', value, 'FalseAlarmRate', value, 'TruePositiveRate', value, 'FeatureType', value)'''
+        description: '''trainCascadeObjectDetector(outputXMLFilename, 'ObjectTrainingSize', value, 'NegativeSamplesFactor', value, 'NumCascadeStages', value, 'FalseAlarmRate', value, 'TruePositiveRate', value, 'FeatureType', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainCascadeObjectDetector.html'
 
 
-    "triangulateMultiview":
+    "triangulateMultiview [vision]":
         prefix: "triangulateMultiview"
         body: '''triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})'''
-        description: '''triangulateMultiview(pointTracks, cameraPoses, cameraParams)'''
+        description: '''triangulateMultiview(pointTracks, cameraPoses, cameraParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/triangulateMultiview.html'
 
 
-    "undistortFisheyeImage":
+    "undistortFisheyeImage [vision]":
         prefix: "undistortFisheyeImage"
         body: '''undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})'''
-        description: '''undistortFisheyeImage(I, intrinsics, optional_interp, 'OutputView', value, 'ScaleFactor', value, 'FillValues', value)'''
+        description: '''undistortFisheyeImage(I, intrinsics, optional_interp, 'OutputView', value, 'ScaleFactor', value, 'FillValues', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/undistortFisheyeImage.html'
 
 
-    "fisheyeIntrinsics.worldToImage":
+    "fisheyeIntrinsics.worldToImage [vision]":
         prefix: "fisheyeIntrinsics.worldToImage"
         body: '''fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})'''
-        description: '''fisheyeIntrinsics.worldToImage(fisheyeIntrinsics, rotationMatrix, translationVector, worldPoints)'''
+        description: '''fisheyeIntrinsics.worldToImage(fisheyeIntrinsics, rotationMatrix, translationVector, worldPoints)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeIntrinsics.worldToImage.html'
 
 
-    "extrinsics":
+    "extrinsics [vision]":
         prefix: "extrinsics"
         body: '''extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})'''
-        description: '''extrinsics(imagePoints, worldPoints, cameraParams)'''
+        description: '''extrinsics(imagePoints, worldPoints, cameraParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/extrinsics.html'
 
 
-    "viewSet.addView":
+    "viewSet.addView [vision]":
         prefix: "viewSet.addView"
         body: '''viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
-        description: '''viewSet.addView(vSet, viewId, 'Points', value, 'Orientation', value, 'Location', value)'''
+        description: '''viewSet.addView(vSet, viewId, 'Points', value, 'Orientation', value, 'Location', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.addView.html'
 
 
-    "pcdownsample":
+    "pcdownsample [vision]":
         prefix: "pcdownsample"
         body: '''pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})'''
-        description: '''pcdownsample(ptCloudIn, random, percentage)'''
+        description: '''pcdownsample(ptCloudIn, random, percentage)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcdownsample.html'
 
 
-    "cameraParameters.toStruct":
+    "cameraParameters.toStruct [vision]":
         prefix: "cameraParameters.toStruct"
         body: '''cameraParameters.toStruct(${1:cameraParams})'''
-        description: '''cameraParameters.toStruct(cameraParams)'''
+        description: '''cameraParameters.toStruct(cameraParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.toStruct.html'
 
 
-    "BRISKPoints.selectUniform":
+    "BRISKPoints.selectUniform [vision]":
         prefix: "BRISKPoints.selectUniform"
         body: '''BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-        description: '''BRISKPoints.selectUniform(points, N, imageSize)'''
+        description: '''BRISKPoints.selectUniform(points, N, imageSize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.selectUniform.html'
 
 
-    "undistortPoints":
+    "undistortPoints [vision]":
         prefix: "undistortPoints"
         body: '''undistortPoints(${1:points}, ${2:cameraParams})'''
-        description: '''undistortPoints(points, cameraParams)'''
+        description: '''undistortPoints(points, cameraParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/undistortPoints.html'
 
 
-    "segnetLayers":
+    "segnetLayers [vision]":
         prefix: "segnetLayers"
         body: '''segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})'''
-        description: '''segnetLayers(imageSize, numClasses, model, 'NumConvolutionLayers', value, 'NumOutputChannels', value, 'FilterSize', value)'''
+        description: '''segnetLayers(imageSize, numClasses, model, 'NumConvolutionLayers', value, 'NumOutputChannels', value, 'FilterSize', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/segnetLayers.html'
 
 
-    "evaluateDetectionMissRate":
+    "evaluateDetectionMissRate [vision]":
         prefix: "evaluateDetectionMissRate"
         body: '''evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})'''
-        description: '''evaluateDetectionMissRate(detectionResults, groundTruthData, threshold)'''
+        description: '''evaluateDetectionMissRate(detectionResults, groundTruthData, threshold)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/evaluateDetectionMissRate.html'
 
 
-    "generateCheckerboardPoints":
+    "generateCheckerboardPoints [vision]":
         prefix: "generateCheckerboardPoints"
         body: '''generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})'''
-        description: '''generateCheckerboardPoints(boardSize, squareSize)'''
+        description: '''generateCheckerboardPoints(boardSize, squareSize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/generateCheckerboardPoints.html'
 
 
-    "pcshow":
+    "pcshow [vision]":
         prefix: "pcshow"
         body: '''pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})'''
-        description: '''pcshow(ptCloud, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value, 'Parent', value)'''
+        description: '''pcshow(ptCloud, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcshow.html'
 
 
-    "cylinderModel":
+    "cylinderModel [vision]":
         prefix: "cylinderModel"
         body: '''cylinderModel(${1:Parameters})'''
-        description: '''cylinderModel(Parameters)'''
+        description: '''cylinderModel(Parameters)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cylinderModel.html'
 
 
-    "insertShape":
+    "insertShape [vision]":
         prefix: "insertShape"
         body: '''insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})'''
-        description: '''insertShape(I, shape, position, 'LineWidth', value, 'Color', value, 'Opacity', value, 'SmoothEdges', value)'''
+        description: '''insertShape(I, shape, position, 'LineWidth', value, 'Color', value, 'Opacity', value, 'SmoothEdges', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/insertShape.html'
 
 
-    "labelDefinitionCreator.addAttribute":
+    "labelDefinitionCreator.addAttribute [vision]":
         prefix: "labelDefinitionCreator.addAttribute"
         body: '''labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})'''
-        description: '''labelDefinitionCreator.addAttribute(ldc, labelName, attributeName, typeOfAttribute, 'Description', value)'''
+        description: '''labelDefinitionCreator.addAttribute(ldc, labelName, attributeName, typeOfAttribute, 'Description', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.addAttribute.html'
 
 
-    "boxLabelDatastore.countEachLabel":
+    "boxLabelDatastore.countEachLabel [vision]":
         prefix: "boxLabelDatastore.countEachLabel"
         body: '''${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
-        description: '''TBL = boxLabelDatastore.countEachLabel(blds)'''
+        description: '''TBL = boxLabelDatastore.countEachLabel(blds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.countEachLabel.html'
 
 
-    "planeModel":
+    "planeModel [vision]":
         prefix: "planeModel"
         body: '''planeModel(${1:Parameters})'''
-        description: '''planeModel(Parameters)'''
+        description: '''planeModel(Parameters)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/planeModel.html'
 
 
-    "integralKernel":
+    "integralKernel [vision]":
         prefix: "integralKernel"
         body: '''integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})'''
-        description: '''integralKernel(bbox, weights, optional_orientation)'''
+        description: '''integralKernel(bbox, weights, optional_orientation)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/integralKernel.html'
 
 
-    "pcfitsphere":
+    "pcfitsphere [vision]":
         prefix: "pcfitsphere"
         body: '''pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})'''
-        description: '''pcfitsphere(ptCloudIn, maxDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)'''
+        description: '''pcfitsphere(ptCloudIn, maxDistance, 'SampleIndices', value, 'MaxNumTrials', value, 'Confidence', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcfitsphere.html'
 
 
-    "pcregistercpd":
+    "pcregistercpd [vision]":
         prefix: "pcregistercpd"
         body: '''pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})'''
-        description: '''pcregistercpd(moving, fixed, 'Transform', value, 'OutlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'InteractionSigma', value, 'SmoothingWeight', value, 'Verbose', value)'''
+        description: '''pcregistercpd(moving, fixed, 'Transform', value, 'OutlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'InteractionSigma', value, 'SmoothingWeight', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcregistercpd.html'
 
 
-    "bboxresize":
+    "bboxresize [vision]":
         prefix: "bboxresize"
         body: '''bboxresize(${1:bboxA}, ${2:scale})'''
-        description: '''bboxresize(bboxA, scale)'''
+        description: '''bboxresize(bboxA, scale)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bboxresize.html'
 
 
-    "insertObjectAnnotation":
+    "insertObjectAnnotation [vision]":
         prefix: "insertObjectAnnotation"
         body: '''insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})'''
-        description: '''insertObjectAnnotation(I, shape, position, label, 'Font', value, 'FontSize', value, 'LineWidth', value, 'Color', value, 'TextColor', value, 'TextBoxOpacity', value)'''
+        description: '''insertObjectAnnotation(I, shape, position, label, 'Font', value, 'FontSize', value, 'LineWidth', value, 'Color', value, 'TextColor', value, 'TextBoxOpacity', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/insertObjectAnnotation.html'
 
 
-    "ORBPoints":
+    "ORBPoints [vision]":
         prefix: "ORBPoints"
         body: '''ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
-        description: '''ORBPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)'''
+        description: '''ORBPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.html'
 
 
-    "segmentLidarData":
+    "segmentLidarData [vision]":
         prefix: "segmentLidarData"
         body: '''segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})'''
-        description: '''segmentLidarData(ptCloud, distThreshold, angleThreshold)'''
+        description: '''segmentLidarData(ptCloud, distThreshold, angleThreshold)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/segmentLidarData.html'
 
 
-    "detectBRISKFeatures":
+    "detectBRISKFeatures [vision]":
         prefix: "detectBRISKFeatures"
         body: '''detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})'''
-        description: '''detectBRISKFeatures(I, 'MinContrast', value, 'MinQuality', value, 'NumOctaves', value, 'ROI', value)'''
+        description: '''detectBRISKFeatures(I, 'MinContrast', value, 'MinQuality', value, 'NumOctaves', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectBRISKFeatures.html'
 
 
-    "pctransform":
+    "pctransform [vision]":
         prefix: "pctransform"
         body: '''pctransform(${1:ptCloudIn}, ${2:tform})'''
-        description: '''pctransform(ptCloudIn, tform)'''
+        description: '''pctransform(ptCloudIn, tform)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pctransform.html'
 
 
-    "insertText":
+    "insertText [vision]":
         prefix: "insertText"
         body: '''insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})'''
-        description: '''insertText(I, position, text, 'Font', value, 'FontSize', value, 'TextColor', value, 'BoxColor', value, 'BoxOpacity', value, 'AnchorPoint', value)'''
+        description: '''insertText(I, position, text, 'Font', value, 'FontSize', value, 'TextColor', value, 'BoxColor', value, 'BoxOpacity', value, 'AnchorPoint', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/insertText.html'
 
 
-    "detectSURFFeatures":
+    "detectSURFFeatures [vision]":
         prefix: "detectSURFFeatures"
         body: '''detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})'''
-        description: '''detectSURFFeatures(I, 'MetricThreshold', value, 'NumOctaves', value, 'NumScaleLevels', value, 'ROI', value)'''
+        description: '''detectSURFFeatures(I, 'MetricThreshold', value, 'NumOctaves', value, 'NumScaleLevels', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectSURFFeatures.html'
 
 
-    "viewSet.addConnection":
+    "viewSet.addConnection [vision]":
         prefix: "viewSet.addConnection"
         body: '''viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
-        description: '''viewSet.addConnection(vSet, viewId1, viewId2, 'Matches', value, 'Orientation', value, 'Location', value)'''
+        description: '''viewSet.addConnection(vSet, viewId1, viewId2, 'Matches', value, 'Orientation', value, 'Location', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.addConnection.html'
 
 
-    "roiInputLayer":
+    "roiInputLayer [vision]":
         prefix: "roiInputLayer"
         body: '''roiInputLayer('Name', ${1:value})'''
-        description: '''roiInputLayer('Name', value)'''
+        description: '''roiInputLayer('Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/roiInputLayer.html'
 
 
-    "trainACFObjectDetector":
+    "trainACFObjectDetector [vision]":
         prefix: "trainACFObjectDetector"
         body: '''trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})'''
-        description: '''trainACFObjectDetector(trainingData, 'ObjectTrainingSize', value, 'NumStages', value, 'NegativeSamplesFactor', value, 'MaxWeakLearners', value, 'Verbose', value)'''
+        description: '''trainACFObjectDetector(trainingData, 'ObjectTrainingSize', value, 'NumStages', value, 'NegativeSamplesFactor', value, 'MaxWeakLearners', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainACFObjectDetector.html'
 
 
-    "bboxPrecisionRecall":
+    "bboxPrecisionRecall [vision]":
         prefix: "bboxPrecisionRecall"
         body: '''bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})'''
-        description: '''bboxPrecisionRecall(boundingBoxes, groundTruthData, optional_threshold)'''
+        description: '''bboxPrecisionRecall(boundingBoxes, groundTruthData, optional_threshold)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bboxPrecisionRecall.html'
 
 
-    "configureKalmanFilter":
+    "configureKalmanFilter [vision]":
         prefix: "configureKalmanFilter"
         body: '''configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})'''
-        description: '''configureKalmanFilter(MotionModel, InitialLocation, InitialEstimateError, MotionNoise, MeasurementNoise)'''
+        description: '''configureKalmanFilter(MotionModel, InitialLocation, InitialEstimateError, MotionNoise, MeasurementNoise)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/configureKalmanFilter.html'
 
 
-    "pixelLabelDatastore":
+    "pixelLabelDatastore [vision]":
         prefix: "pixelLabelDatastore"
         body: '''pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})'''
-        description: '''pixelLabelDatastore(gTruth, 'ReadSize', value, 'AlternateFileSystemRoots', value)'''
+        description: '''pixelLabelDatastore(gTruth, 'ReadSize', value, 'AlternateFileSystemRoots', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.html'
 
 
-    "vision.AlphaBlender":
+    "vision.AlphaBlender [vision]":
         prefix: "vision.AlphaBlender"
         body: '''vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})'''
-        description: '''vision.AlphaBlender('Operation', value, 'OpacitySource', value, 'Opacity', value, 'MaskSource', value, 'Mask', value, 'LocationSource', value, 'Location', value, 'RoundingMethod', value, 'OverflowAction', value, 'OpacityDataType', value, 'CustomOpacityDataType', value, 'ProductDataType', value, 'CustomProductDataType', value, 'AccumulatorDataType', value, 'CustomAccumulatorDataType', value, 'OutputDataType', value, 'CustomOutputDataType', value)'''
+        description: '''vision.AlphaBlender('Operation', value, 'OpacitySource', value, 'Opacity', value, 'MaskSource', value, 'Mask', value, 'LocationSource', value, 'Location', value, 'RoundingMethod', value, 'OverflowAction', value, 'OpacityDataType', value, 'CustomOpacityDataType', value, 'ProductDataType', value, 'CustomProductDataType', value, 'AccumulatorDataType', value, 'CustomAccumulatorDataType', value, 'OutputDataType', value, 'CustomOutputDataType', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/vision.AlphaBlender.html'
 
 
-    "assignDetectionsToTracks":
+    "assignDetectionsToTracks [vision]":
         prefix: "assignDetectionsToTracks"
         body: '''assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})'''
-        description: '''assignDetectionsToTracks(costMatrix, costOfNonAssignment)'''
+        description: '''assignDetectionsToTracks(costMatrix, costOfNonAssignment)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/assignDetectionsToTracks.html'
 
 
-    "rotationVectorToMatrix":
+    "rotationVectorToMatrix [vision]":
         prefix: "rotationVectorToMatrix"
         body: '''rotationVectorToMatrix(${1:rotationVector})'''
-        description: '''rotationVectorToMatrix(rotationVector)'''
+        description: '''rotationVectorToMatrix(rotationVector)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rotationVectorToMatrix.html'
 
 
-    "pcmerge":
+    "pcmerge [vision]":
         prefix: "pcmerge"
         body: '''pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})'''
-        description: '''pcmerge(ptCloudA, ptCloudB, gridStep)'''
+        description: '''pcmerge(ptCloudA, ptCloudB, gridStep)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcmerge.html'
 
 
-    "selectStrongestBboxMulticlass":
+    "selectStrongestBboxMulticlass [vision]":
         prefix: "selectStrongestBboxMulticlass"
         body: '''selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})'''
-        description: '''selectStrongestBboxMulticlass(bbox, scores, labels, 'RatioType', value, 'OverlapThreshold', value)'''
+        description: '''selectStrongestBboxMulticlass(bbox, scores, labels, 'RatioType', value, 'OverlapThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/selectStrongestBboxMulticlass.html'
 
 
-    "evaluateDetectionPrecision":
+    "evaluateDetectionPrecision [vision]":
         prefix: "evaluateDetectionPrecision"
         body: '''evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})'''
-        description: '''evaluateDetectionPrecision(detectionResults, groundTruthData, optional_threshold)'''
+        description: '''evaluateDetectionPrecision(detectionResults, groundTruthData, optional_threshold)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/evaluateDetectionPrecision.html'
 
 
-    "labelDefinitionCreator.addLabel":
+    "labelDefinitionCreator.addLabel [vision]":
         prefix: "labelDefinitionCreator.addLabel"
         body: '''labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})'''
-        description: '''labelDefinitionCreator.addLabel(ldc, labelName, typeOfLabel, 'Description', value)'''
+        description: '''labelDefinitionCreator.addLabel(ldc, labelName, typeOfLabel, 'Description', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.addLabel.html'
 
 
-    "cornerPoints.selectUniform":
+    "cornerPoints.selectUniform [vision]":
         prefix: "cornerPoints.selectUniform"
         body: '''cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-        description: '''cornerPoints.selectUniform(points, N, imageSize)'''
+        description: '''cornerPoints.selectUniform(points, N, imageSize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.selectUniform.html'
 
 
-    "stereoAnaglyph":
+    "stereoAnaglyph [vision]":
         prefix: "stereoAnaglyph"
         body: '''stereoAnaglyph(${1:I1}, ${2:I2})'''
-        description: '''stereoAnaglyph(I1, I2)'''
+        description: '''stereoAnaglyph(I1, I2)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoAnaglyph.html'
 
 
-    "fisheyeIntrinsics.pointsToWorld":
+    "fisheyeIntrinsics.pointsToWorld [vision]":
         prefix: "fisheyeIntrinsics.pointsToWorld"
         body: '''fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
-        description: '''fisheyeIntrinsics.pointsToWorld(fisheyeIntrinsics, rotationMatrix, translationVector, imagePoints)'''
+        description: '''fisheyeIntrinsics.pointsToWorld(fisheyeIntrinsics, rotationMatrix, translationVector, imagePoints)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeIntrinsics.pointsToWorld.html'
 
 
-    "pcshowpair":
+    "pcshowpair [vision]":
         prefix: "pcshowpair"
         body: '''pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})'''
-        description: '''pcshowpair(ptCloudA, ptCloudB, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value, 'Parent', value)'''
+        description: '''pcshowpair(ptCloudA, ptCloudB, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcshowpair.html'
 
 
-    "rcnnBoxRegressionLayer":
+    "rcnnBoxRegressionLayer [vision]":
         prefix: "rcnnBoxRegressionLayer"
         body: '''rcnnBoxRegressionLayer('Name', ${1:value})'''
-        description: '''rcnnBoxRegressionLayer('Name', value)'''
+        description: '''rcnnBoxRegressionLayer('Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rcnnBoxRegressionLayer.html'
 
 
-    "detectMSERFeatures":
+    "detectMSERFeatures [vision]":
         prefix: "detectMSERFeatures"
         body: '''detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})'''
-        description: '''detectMSERFeatures(I, 'ThresholdDelta', value, 'RegionAreaRange', value, 'MaxAreaVariation', value, 'ROI', value)'''
+        description: '''detectMSERFeatures(I, 'ThresholdDelta', value, 'RegionAreaRange', value, 'MaxAreaVariation', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectMSERFeatures.html'
 
 
-    "pcwrite":
+    "pcwrite [vision]":
         prefix: "pcwrite"
         body: '''pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})'''
-        description: '''pcwrite(ptCloud, filename, 'Encoding', value)'''
+        description: '''pcwrite(ptCloud, filename, 'Encoding', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcwrite.html'
 
 
-    "sphereModel":
+    "sphereModel [vision]":
         prefix: "sphereModel"
         body: '''sphereModel(${1:Parameters})'''
-        description: '''sphereModel(Parameters)'''
+        description: '''sphereModel(Parameters)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/sphereModel.html'
 
 
-    "cornerPoints.selectStrongest":
+    "cornerPoints.selectStrongest [vision]":
         prefix: "cornerPoints.selectStrongest"
         body: '''cornerPoints.selectStrongest(${1:points}, ${2:N})'''
-        description: '''cornerPoints.selectStrongest(points, N)'''
+        description: '''cornerPoints.selectStrongest(points, N)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cornerPoints.selectStrongest.html'
 
 
-    "fasterRCNNObjectDetector.detect":
+    "fasterRCNNObjectDetector.detect [vision]":
         prefix: "fasterRCNNObjectDetector.detect"
         body: '''fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
-        description: '''fasterRCNNObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value)'''
+        description: '''fasterRCNNObjectDetector.detect(detector, I, optional_roi, 'Threshold', value, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'MinSize', value, 'MaxSize', value, 'ExecutionEnvironment', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fasterRCNNObjectDetector.detect.html'
 
 
-    "trainFasterRCNNObjectDetector":
+    "trainFasterRCNNObjectDetector [vision]":
         prefix: "trainFasterRCNNObjectDetector"
         body: '''trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})'''
-        description: '''trainFasterRCNNObjectDetector(trainingData, network, options, 'TrainingMethod', value, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'SmallestImageDimension', value, 'MinBoxSizes', value, 'BoxPyramidScale', value, 'NumBoxPyramidLevels', value, 'FreezeBatchNormalization', value)'''
+        description: '''trainFasterRCNNObjectDetector(trainingData, network, options, 'TrainingMethod', value, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'SmallestImageDimension', value, 'MinBoxSizes', value, 'BoxPyramidScale', value, 'NumBoxPyramidLevels', value, 'FreezeBatchNormalization', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainFasterRCNNObjectDetector.html'
 
 
-    "pcread":
+    "pcread [vision]":
         prefix: "pcread"
         body: '''pcread(${1:filename})'''
-        description: '''pcread(filename)'''
+        description: '''pcread(filename)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcread.html'
 
 
-    "rcnnObjectDetector.detect":
+    "rcnnObjectDetector.detect [vision]":
         prefix: "rcnnObjectDetector.detect"
         body: '''rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})'''
-        description: '''rcnnObjectDetector.detect(detector, I, optional_roi, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value)'''
+        description: '''rcnnObjectDetector.detect(detector, I, optional_roi, 'NumStrongestRegions', value, 'SelectStrongest', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rcnnObjectDetector.detect.html'
 
 
-    "groundTruth":
+    "groundTruth [vision]":
         prefix: "groundTruth"
         body: '''groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})'''
-        description: '''groundTruth(dataSource, labelDefs, labelData)'''
+        description: '''groundTruth(dataSource, labelDefs, labelData)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/groundTruth.html'
 
 
-    "BRISKPoints":
+    "BRISKPoints [vision]":
         prefix: "BRISKPoints"
         body: '''BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
-        description: '''BRISKPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)'''
+        description: '''BRISKPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.html'
 
 
-    "selectStrongestBbox":
+    "selectStrongestBbox [vision]":
         prefix: "selectStrongestBbox"
         body: '''selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})'''
-        description: '''selectStrongestBbox(bbox, score, 'RatioType', value, 'OverlapThreshold', value)'''
+        description: '''selectStrongestBbox(bbox, score, 'RatioType', value, 'OverlapThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/selectStrongestBbox.html'
 
 
-    "stereoParameters.toStruct":
+    "stereoParameters.toStruct [vision]":
         prefix: "stereoParameters.toStruct"
         body: '''stereoParameters.toStruct(${1:cameraParams})'''
-        description: '''stereoParameters.toStruct(cameraParams)'''
+        description: '''stereoParameters.toStruct(cameraParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoParameters.toStruct.html'
 
 
-    "pixelLabelImageDatastore":
+    "pixelLabelImageDatastore [vision]":
         prefix: "pixelLabelImageDatastore"
         body: '''pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
-        description: '''pixelLabelImageDatastore(gTruth, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSize', value, 'OutputSizeMode', value, 'DispatchInBackground', value)'''
+        description: '''pixelLabelImageDatastore(gTruth, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSize', value, 'OutputSizeMode', value, 'DispatchInBackground', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelImageDatastore.html'
 
 
-    "cameraParameters.worldToImage":
+    "cameraParameters.worldToImage [vision]":
         prefix: "cameraParameters.worldToImage"
         body: '''cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})'''
-        description: '''cameraParameters.worldToImage(cameraParams, rotationMatrix, translationVector, worldPoints, 'ApplyDistortion', value)'''
+        description: '''cameraParameters.worldToImage(cameraParams, rotationMatrix, translationVector, worldPoints, 'ApplyDistortion', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.worldToImage.html'
 
 
-    "pcnormals":
+    "pcnormals [vision]":
         prefix: "pcnormals"
         body: '''pcnormals(${1:ptCloud}, ${2:optional_k})'''
-        description: '''pcnormals(ptCloud, optional_k)'''
+        description: '''pcnormals(ptCloud, optional_k)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcnormals.html'
 
 
-    "showReprojectionErrors":
+    "showReprojectionErrors [vision]":
         prefix: "showReprojectionErrors"
         body: '''showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
-        description: '''showReprojectionErrors(cameraParams, view, 'HighlightIndex', value, 'Parent', value)'''
+        description: '''showReprojectionErrors(cameraParams, view, 'HighlightIndex', value, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/showReprojectionErrors.html'
 
 
-    "KAZEPoints.selectUniform":
+    "KAZEPoints.selectUniform [vision]":
         prefix: "KAZEPoints.selectUniform"
         body: '''KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-        description: '''KAZEPoints.selectUniform(points, N, imageSize)'''
+        description: '''KAZEPoints.selectUniform(points, N, imageSize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.selectUniform.html'
 
 
-    "pointTrack":
+    "pointTrack [vision]":
         prefix: "pointTrack"
         body: '''pointTrack(${1:viewIDs}, ${2:points})'''
-        description: '''pointTrack(viewIDs, points)'''
+        description: '''pointTrack(viewIDs, points)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pointTrack.html'
 
 
-    "estimateStereoBaseline":
+    "estimateStereoBaseline [vision]":
         prefix: "estimateStereoBaseline"
         body: '''estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})'''
-        description: '''estimateStereoBaseline(imagePoints, worldPoints, intrinsics1, intrinsics2, 'WorldUnits', value)'''
+        description: '''estimateStereoBaseline(imagePoints, worldPoints, intrinsics1, intrinsics2, 'WorldUnits', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateStereoBaseline.html'
 
 
-    "SURFPoints.selectStrongest":
+    "SURFPoints.selectStrongest [vision]":
         prefix: "SURFPoints.selectStrongest"
         body: '''SURFPoints.selectStrongest(${1:points}, ${2:N})'''
-        description: '''SURFPoints.selectStrongest(points, N)'''
+        description: '''SURFPoints.selectStrongest(points, N)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.selectStrongest.html'
 
 
-    "pixelLabelImageDatastore.readByIndex":
+    "pixelLabelImageDatastore.readByIndex [vision]":
         prefix: "pixelLabelImageDatastore.readByIndex"
         body: '''pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})'''
-        description: '''pixelLabelImageDatastore.readByIndex(pximds, ind)'''
+        description: '''pixelLabelImageDatastore.readByIndex(pximds, ind)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelImageDatastore.readByIndex.html'
 
 
-    "ocrText.locateText":
+    "ocrText.locateText [vision]":
         prefix: "ocrText.locateText"
         body: '''ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})'''
-        description: '''ocrText.locateText(ocrText, pattern, 'UseRegexp', value, 'IgnoreCase', value)'''
+        description: '''ocrText.locateText(ocrText, pattern, 'UseRegexp', value, 'IgnoreCase', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ocrText.locateText.html'
 
 
-    "estimateGeometricTransform":
+    "estimateGeometricTransform [vision]":
         prefix: "estimateGeometricTransform"
         body: '''estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
-        description: '''estimateGeometricTransform(matchedPoints1, matchedPoints2, transformType, 'MaxNumTrials', value, 'Confidence', value, 'MaxDistance', value)'''
+        description: '''estimateGeometricTransform(matchedPoints1, matchedPoints2, transformType, 'MaxNumTrials', value, 'Confidence', value, 'MaxDistance', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateGeometricTransform.html'
 
 
-    "ORBPoints.plot":
+    "ORBPoints.plot [vision]":
         prefix: "ORBPoints.plot"
         body: '''ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-        description: '''ORBPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)'''
+        description: '''ORBPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.plot.html'
 
 
-    "bbox2points":
+    "bbox2points [vision]":
         prefix: "bbox2points"
         body: '''bbox2points(${1:rectangle})'''
-        description: '''bbox2points(rectangle)'''
+        description: '''bbox2points(rectangle)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bbox2points.html'
 
 
-    "opticalFlowHS":
+    "opticalFlowHS [vision]":
         prefix: "opticalFlowHS"
         body: '''opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})'''
-        description: '''opticalFlowHS('Smoothness', value, 'MaxIteration', value, 'VelocityDifference', value)'''
+        description: '''opticalFlowHS('Smoothness', value, 'MaxIteration', value, 'VelocityDifference', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowHS.html'
 
 
-    "stereoCalibrationErrors.displayErrors":
+    "stereoCalibrationErrors.displayErrors [vision]":
         prefix: "stereoCalibrationErrors.displayErrors"
         body: '''stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})'''
-        description: '''stereoCalibrationErrors.displayErrors(estimationErrors, stereoParams)'''
+        description: '''stereoCalibrationErrors.displayErrors(estimationErrors, stereoParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoCalibrationErrors.displayErrors.html'
 
 
-    "yolov2TransformLayer":
+    "yolov2TransformLayer [vision]":
         prefix: "yolov2TransformLayer"
         body: '''yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})'''
-        description: '''yolov2TransformLayer(numAnchors, 'Name', value)'''
+        description: '''yolov2TransformLayer(numAnchors, 'Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/yolov2TransformLayer.html'
 
 
-    "viewSet.hasConnection":
+    "viewSet.hasConnection [vision]":
         prefix: "viewSet.hasConnection"
         body: '''viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
-        description: '''viewSet.hasConnection(vSet, viewId1, viewId2)'''
+        description: '''viewSet.hasConnection(vSet, viewId1, viewId2)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.hasConnection.html'
 
 
-    "pixelLabelDatastore.numpartitions":
+    "pixelLabelDatastore.numpartitions [vision]":
         prefix: "pixelLabelDatastore.numpartitions"
         body: '''pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})'''
-        description: '''pixelLabelDatastore.numpartitions(pxds, optional_pool)'''
+        description: '''pixelLabelDatastore.numpartitions(pxds, optional_pool)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelDatastore.numpartitions.html'
 
 
-    "objectDetectorTrainingData":
+    "objectDetectorTrainingData [vision]":
         prefix: "objectDetectorTrainingData"
         body: '''objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
-        description: '''objectDetectorTrainingData(gTruth, 'SamplingFactor', value, 'WriteLocation', value, 'ImageFormat', value, 'NamePrefix', value, 'Verbose', value)'''
+        description: '''objectDetectorTrainingData(gTruth, 'SamplingFactor', value, 'WriteLocation', value, 'ImageFormat', value, 'NamePrefix', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/objectDetectorTrainingData.html'
 
 
-    "boxLabelDatastore.read":
+    "boxLabelDatastore.read [vision]":
         prefix: "boxLabelDatastore.read"
         body: '''[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})'''
-        description: '''[data, info] = boxLabelDatastore.read(blds)'''
+        description: '''[data, info] = boxLabelDatastore.read(blds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.read.html'
 
 
-    "opticalFlowLK.estimateFlow":
+    "opticalFlowLK.estimateFlow [vision]":
         prefix: "opticalFlowLK.estimateFlow"
         body: '''opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})'''
-        description: '''opticalFlowLK.estimateFlow(opticalFlow, I)'''
+        description: '''opticalFlowLK.estimateFlow(opticalFlow, I)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowLK.estimateFlow.html'
 
 
-    "SURFPoints.plot":
+    "SURFPoints.plot [vision]":
         prefix: "SURFPoints.plot"
         body: '''SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-        description: '''SURFPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)'''
+        description: '''SURFPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.plot.html'
 
 
-    "pixelLabelImageDatastore.partitionByIndex":
+    "pixelLabelImageDatastore.partitionByIndex [vision]":
         prefix: "pixelLabelImageDatastore.partitionByIndex"
         body: '''pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})'''
-        description: '''pixelLabelImageDatastore.partitionByIndex(pximds, ind)'''
+        description: '''pixelLabelImageDatastore.partitionByIndex(pximds, ind)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelImageDatastore.partitionByIndex.html'
 
 
-    "opticalFlowHS.estimateFlow":
+    "opticalFlowHS.estimateFlow [vision]":
         prefix: "opticalFlowHS.estimateFlow"
         body: '''opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})'''
-        description: '''opticalFlowHS.estimateFlow(opticalFlow, I)'''
+        description: '''opticalFlowHS.estimateFlow(opticalFlow, I)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowHS.estimateFlow.html'
 
 
-    "undistortImage":
+    "undistortImage [vision]":
         prefix: "undistortImage"
         body: '''undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})'''
-        description: '''undistortImage(I, cameraParams, optional_interp, 'FillValues', value, 'OutputView', value)'''
+        description: '''undistortImage(I, cameraParams, optional_interp, 'FillValues', value, 'OutputView', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/undistortImage.html'
 
 
-    "boxLabelDatastore":
+    "boxLabelDatastore [vision]":
         prefix: "boxLabelDatastore"
         body: '''${1:blds} = boxLabelDatastore(${1:TBL})'''
-        description: '''blds = boxLabelDatastore(TBL)'''
+        description: '''blds = boxLabelDatastore(TBL)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.html'
 
 
-    "rpnSoftmaxLayer":
+    "rpnSoftmaxLayer [vision]":
         prefix: "rpnSoftmaxLayer"
         body: '''rpnSoftmaxLayer('Name', ${1:value})'''
-        description: '''rpnSoftmaxLayer('Name', value)'''
+        description: '''rpnSoftmaxLayer('Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rpnSoftmaxLayer.html'
 
 
-    "viewSet.deleteConnection":
+    "viewSet.deleteConnection [vision]":
         prefix: "viewSet.deleteConnection"
         body: '''viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
-        description: '''viewSet.deleteConnection(vSet, viewId1, viewId2)'''
+        description: '''viewSet.deleteConnection(vSet, viewId1, viewId2)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.deleteConnection.html'
 
 
-    "boxLabelDatastore.numpartitions":
+    "boxLabelDatastore.numpartitions [vision]":
         prefix: "boxLabelDatastore.numpartitions"
         body: '''${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
-        description: '''N = boxLabelDatastore.numpartitions(blds, optional_pool)'''
+        description: '''N = boxLabelDatastore.numpartitions(blds, optional_pool)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.numpartitions.html'
 
 
-    "pcregisterndt":
+    "pcregisterndt [vision]":
         prefix: "pcregisterndt"
         body: '''pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})'''
-        description: '''pcregisterndt(moving, fixed, gridStep, 'InitialTransform', value, 'OutlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'Verbose', value)'''
+        description: '''pcregisterndt(moving, fixed, gridStep, 'InitialTransform', value, 'OutlierRatio', value, 'MaxIterations', value, 'Tolerance', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcregisterndt.html'
 
 
-    "deeplabv3plusLayers":
+    "deeplabv3plusLayers [vision]":
         prefix: "deeplabv3plusLayers"
         body: '''deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})'''
-        description: '''deeplabv3plusLayers(imageSize, numClasses, network, 'DownsamplingFactor', value)'''
+        description: '''deeplabv3plusLayers(imageSize, numClasses, network, 'DownsamplingFactor', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/deeplabv3plusLayers.html'
 
 
-    "estimateFundamentalMatrix":
+    "estimateFundamentalMatrix [vision]":
         prefix: "estimateFundamentalMatrix"
         body: '''estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})'''
-        description: '''estimateFundamentalMatrix(matchedPoints1, matchedPoints2, 'Method', value, 'OutputClass', value, 'NumTrials', value, 'DistanceType', value, 'DistanceThreshold', value, 'Confidence', value, 'InlierPercentage', value, 'ReportRuntimeError', value)'''
+        description: '''estimateFundamentalMatrix(matchedPoints1, matchedPoints2, 'Method', value, 'OutputClass', value, 'NumTrials', value, 'DistanceType', value, 'DistanceThreshold', value, 'Confidence', value, 'InlierPercentage', value, 'ReportRuntimeError', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateFundamentalMatrix.html'
 
 
-    "KAZEPoints.plot":
+    "KAZEPoints.plot [vision]":
         prefix: "KAZEPoints.plot"
         body: '''KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-        description: '''KAZEPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)'''
+        description: '''KAZEPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.plot.html'
 
 
-    "invertedImageIndex.removeImages":
+    "invertedImageIndex.removeImages [vision]":
         prefix: "invertedImageIndex.removeImages"
         body: '''invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})'''
-        description: '''invertedImageIndex.removeImages(imageIndex, indices)'''
+        description: '''invertedImageIndex.removeImages(imageIndex, indices)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/invertedImageIndex.removeImages.html'
 
 
-    "KAZEPoints.selectStrongest":
+    "KAZEPoints.selectStrongest [vision]":
         prefix: "KAZEPoints.selectStrongest"
         body: '''KAZEPoints.selectStrongest(${1:points}, ${2:N})'''
-        description: '''KAZEPoints.selectStrongest(points, N)'''
+        description: '''KAZEPoints.selectStrongest(points, N)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.selectStrongest.html'
 
 
-    "bboxwarp":
+    "bboxwarp [vision]":
         prefix: "bboxwarp"
         body: '''bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})'''
-        description: '''bboxwarp(bboxA, tform, ref, 'OverlapThreshold', value)'''
+        description: '''bboxwarp(bboxA, tform, ref, 'OverlapThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bboxwarp.html'
 
 
-    "estimateUncalibratedRectification":
+    "estimateUncalibratedRectification [vision]":
         prefix: "estimateUncalibratedRectification"
         body: '''estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})'''
-        description: '''estimateUncalibratedRectification(F, inlierPoints1, inlierPoints2, imagesize)'''
+        description: '''estimateUncalibratedRectification(F, inlierPoints1, inlierPoints2, imagesize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateUncalibratedRectification.html'
 
 
-    "extrinsicsToCameraPose":
+    "extrinsicsToCameraPose [vision]":
         prefix: "extrinsicsToCameraPose"
         body: '''extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})'''
-        description: '''extrinsicsToCameraPose(rotationMatrix, translationVector)'''
+        description: '''extrinsicsToCameraPose(rotationMatrix, translationVector)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/extrinsicsToCameraPose.html'
 
 
-    "cameraIntrinsics":
+    "cameraIntrinsics [vision]":
         prefix: "cameraIntrinsics"
         body: '''cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})'''
-        description: '''cameraIntrinsics(focalLength, principalPoint, imageSize, 'RadialDistortion', value, 'TangentialDistortion', value, 'Skew', value)'''
+        description: '''cameraIntrinsics(focalLength, principalPoint, imageSize, 'RadialDistortion', value, 'TangentialDistortion', value, 'Skew', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraIntrinsics.html'
 
 
-    "invertedImageIndex":
+    "invertedImageIndex [vision]":
         prefix: "invertedImageIndex"
         body: '''invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})'''
-        description: '''invertedImageIndex(bag, optional_SaveFeatureLocations)'''
+        description: '''invertedImageIndex(bag, optional_SaveFeatureLocations)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/invertedImageIndex.html'
 
 
-    "showMatchedFeatures":
+    "showMatchedFeatures [vision]":
         prefix: "showMatchedFeatures"
         body: '''showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})'''
-        description: '''showMatchedFeatures(I1, I2, matchedPoints1, matchedPoints2, optional_method, 'PlotOptions', value, 'Parent', value)'''
+        description: '''showMatchedFeatures(I1, I2, matchedPoints1, matchedPoints2, optional_method, 'PlotOptions', value, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/showMatchedFeatures.html'
 
 
-    "binaryFeatures":
+    "binaryFeatures [vision]":
         prefix: "binaryFeatures"
         body: '''binaryFeatures(${1:featureVectors})'''
-        description: '''binaryFeatures(featureVectors)'''
+        description: '''binaryFeatures(featureVectors)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/binaryFeatures.html'
 
 
-    "detectFASTFeatures":
+    "detectFASTFeatures [vision]":
         prefix: "detectFASTFeatures"
         body: '''detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})'''
-        description: '''detectFASTFeatures(I, 'MinQuality', value, 'MinContrast', value, 'ROI', value)'''
+        description: '''detectFASTFeatures(I, 'MinQuality', value, 'MinContrast', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectFASTFeatures.html'
 
 
-    "opticalFlowLK":
+    "opticalFlowLK [vision]":
         prefix: "opticalFlowLK"
         body: '''opticalFlowLK('NoiseThreshold', ${1:value})'''
-        description: '''opticalFlowLK('NoiseThreshold', value)'''
+        description: '''opticalFlowLK('NoiseThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowLK.html'
 
 
-    "detectHarrisFeatures":
+    "detectHarrisFeatures [vision]":
         prefix: "detectHarrisFeatures"
         body: '''detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
-        description: '''detectHarrisFeatures(I, 'MinQuality', value, 'FilterSize', value, 'ROI', value)'''
+        description: '''detectHarrisFeatures(I, 'MinQuality', value, 'FilterSize', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectHarrisFeatures.html'
 
 
-    "detectORBFeatures":
+    "detectORBFeatures [vision]":
         prefix: "detectORBFeatures"
         body: '''detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})'''
-        description: '''detectORBFeatures(I, 'ScaleFactor', value, 'NumLevels', value, 'ROI', value)'''
+        description: '''detectORBFeatures(I, 'ScaleFactor', value, 'NumLevels', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectORBFeatures.html'
 
 
-    "ORBPoints.selectUniform":
+    "ORBPoints.selectUniform [vision]":
         prefix: "ORBPoints.selectUniform"
         body: '''ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-        description: '''ORBPoints.selectUniform(points, N, imageSize)'''
+        description: '''ORBPoints.selectUniform(points, N, imageSize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.selectUniform.html'
 
 
-    "pcfromkinect":
+    "pcfromkinect [vision]":
         prefix: "pcfromkinect"
         body: '''pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})'''
-        description: '''pcfromkinect(depthDevice, depthImage, colorImage, alignment)'''
+        description: '''pcfromkinect(depthDevice, depthImage, colorImage, alignment)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcfromkinect.html'
 
 
-    "lineToBorderPoints":
+    "lineToBorderPoints [vision]":
         prefix: "lineToBorderPoints"
         body: '''lineToBorderPoints(${1:lines}, ${2:imagesize})'''
-        description: '''lineToBorderPoints(lines, imagesize)'''
+        description: '''lineToBorderPoints(lines, imagesize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/lineToBorderPoints.html'
 
 
-    "pixelLabelTrainingData":
+    "pixelLabelTrainingData [vision]":
         prefix: "pixelLabelTrainingData"
         body: '''pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
-        description: '''pixelLabelTrainingData(gTruth, 'SamplingFactor', value, 'WriteLocation', value, 'ImageFormat', value, 'NamePrefix', value, 'Verbose', value)'''
+        description: '''pixelLabelTrainingData(gTruth, 'SamplingFactor', value, 'WriteLocation', value, 'ImageFormat', value, 'NamePrefix', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelLabelTrainingData.html'
 
 
-    "estimateWorldCameraPose":
+    "estimateWorldCameraPose [vision]":
         prefix: "estimateWorldCameraPose"
         body: '''estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})'''
-        description: '''estimateWorldCameraPose(imagePoints, worldPoints, cameraParams, 'MaxNumTrials', value, 'Confidence', value, 'MaxReprojectionError', value)'''
+        description: '''estimateWorldCameraPose(imagePoints, worldPoints, cameraParams, 'MaxNumTrials', value, 'Confidence', value, 'MaxReprojectionError', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateWorldCameraPose.html'
 
 
-    "cameraCalibrationErrors.displayErrors":
+    "cameraCalibrationErrors.displayErrors [vision]":
         prefix: "cameraCalibrationErrors.displayErrors"
         body: '''cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})'''
-        description: '''cameraCalibrationErrors.displayErrors(estimationErrors, cameraParams)'''
+        description: '''cameraCalibrationErrors.displayErrors(estimationErrors, cameraParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraCalibrationErrors.displayErrors.html'
 
 
-    "relativeCameraPose":
+    "relativeCameraPose [vision]":
         prefix: "relativeCameraPose"
         body: '''relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})'''
-        description: '''relativeCameraPose(M, cameraParams, inlierPoints1, inlierPoints2)'''
+        description: '''relativeCameraPose(M, cameraParams, inlierPoints1, inlierPoints2)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/relativeCameraPose.html'
 
 
-    "boxLabelDatastore.partition":
+    "boxLabelDatastore.partition [vision]":
         prefix: "boxLabelDatastore.partition"
         body: '''${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
-        description: '''subds = boxLabelDatastore.partition(blds, N, index)'''
+        description: '''subds = boxLabelDatastore.partition(blds, N, index)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.partition.html'
 
 
-    "opticalFlowLKDoG.estimateFlow":
+    "opticalFlowLKDoG.estimateFlow [vision]":
         prefix: "opticalFlowLKDoG.estimateFlow"
         body: '''opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})'''
-        description: '''opticalFlowLKDoG.estimateFlow(opticalFlow, I)'''
+        description: '''opticalFlowLKDoG.estimateFlow(opticalFlow, I)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowLKDoG.estimateFlow.html'
 
 
-    "pcsegdist":
+    "pcsegdist [vision]":
         prefix: "pcsegdist"
         body: '''pcsegdist(${1:ptCloud}, ${2:minDistance})'''
-        description: '''pcsegdist(ptCloud, minDistance)'''
+        description: '''pcsegdist(ptCloud, minDistance)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcsegdist.html'
 
 
-    "SURFPoints.selectUniform":
+    "SURFPoints.selectUniform [vision]":
         prefix: "SURFPoints.selectUniform"
         body: '''SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-        description: '''SURFPoints.selectUniform(points, N, imageSize)'''
+        description: '''SURFPoints.selectUniform(points, N, imageSize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/SURFPoints.selectUniform.html'
 
 
-    "opticalFlowFarneback":
+    "opticalFlowFarneback [vision]":
         prefix: "opticalFlowFarneback"
         body: '''opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})'''
-        description: '''opticalFlowFarneback('NumPyramidLevels', value, 'PyramidScale', value, 'NumIterations', value, 'NeighborhoodSize', value, 'FilterSize', value)'''
+        description: '''opticalFlowFarneback('NumPyramidLevels', value, 'PyramidScale', value, 'NumIterations', value, 'NeighborhoodSize', value, 'FilterSize', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowFarneback.html'
 
 
-    "cameraParameters.pointsToWorld":
+    "cameraParameters.pointsToWorld [vision]":
         prefix: "cameraParameters.pointsToWorld"
         body: '''cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
-        description: '''cameraParameters.pointsToWorld(cameraParams, rotationMatrix, translationVector, imagePoints)'''
+        description: '''cameraParameters.pointsToWorld(cameraParams, rotationMatrix, translationVector, imagePoints)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.pointsToWorld.html'
 
 
-    "bagOfFeatures":
+    "bagOfFeatures [vision]":
         prefix: "bagOfFeatures"
         body: '''bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})'''
-        description: '''bagOfFeatures(imds, 'CustomExtractor', value, 'VocabularySize', value, 'StrongestFeatures', value, 'Verbose', value, 'PointSelection', value, 'GridStep', value, 'BlockWidth', value, 'Upright', value)'''
+        description: '''bagOfFeatures(imds, 'CustomExtractor', value, 'VocabularySize', value, 'StrongestFeatures', value, 'Verbose', value, 'PointSelection', value, 'GridStep', value, 'BlockWidth', value, 'Upright', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bagOfFeatures.html'
 
 
-    "fisheyeCalibrationErrors.displayErrors":
+    "fisheyeCalibrationErrors.displayErrors [vision]":
         prefix: "fisheyeCalibrationErrors.displayErrors"
         body: '''fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})'''
-        description: '''fisheyeCalibrationErrors.displayErrors(estimationErrors, fisheyeParams)'''
+        description: '''fisheyeCalibrationErrors.displayErrors(estimationErrors, fisheyeParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeCalibrationErrors.displayErrors.html'
 
 
-    "viewSet.updateView":
+    "viewSet.updateView [vision]":
         prefix: "viewSet.updateView"
         body: '''viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
-        description: '''viewSet.updateView(vSet, viewId, 'Points', value, 'Orientation', value, 'Location', value)'''
+        description: '''viewSet.updateView(vSet, viewId, 'Points', value, 'Orientation', value, 'Location', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.updateView.html'
 
 
-    "trainImageCategoryClassifier":
+    "trainImageCategoryClassifier [vision]":
         prefix: "trainImageCategoryClassifier"
         body: '''trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})'''
-        description: '''trainImageCategoryClassifier(imds, bag, 'Verbose', value, 'LearnerOptions', value)'''
+        description: '''trainImageCategoryClassifier(imds, bag, 'Verbose', value, 'LearnerOptions', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainImageCategoryClassifier.html'
 
 
-    "triangulate":
+    "triangulate [vision]":
         prefix: "triangulate"
         body: '''triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})'''
-        description: '''triangulate(matchedPoints1, matchedPoints2, stereoParams)'''
+        description: '''triangulate(matchedPoints1, matchedPoints2, stereoParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/triangulate.html'
 
 
-    "plotCamera":
+    "plotCamera [vision]":
         prefix: "plotCamera"
         body: '''plotCamera(${1:optional_cameraTable})'''
-        description: '''plotCamera(optional_cameraTable)'''
+        description: '''plotCamera(optional_cameraTable)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/plotCamera.html'
 
 
-    "ORBPoints.selectStrongest":
+    "ORBPoints.selectStrongest [vision]":
         prefix: "ORBPoints.selectStrongest"
         body: '''ORBPoints.selectStrongest(${1:points}, ${2:N})'''
-        description: '''ORBPoints.selectStrongest(points, N)'''
+        description: '''ORBPoints.selectStrongest(points, N)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ORBPoints.selectStrongest.html'
 
 
-    "evaluateSemanticSegmentation":
+    "evaluateSemanticSegmentation [vision]":
         prefix: "evaluateSemanticSegmentation"
         body: '''${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
-        description: '''metrics = evaluateSemanticSegmentation(pxdsResults, pxdsTruth, 'Metrics', value, 'Verbose', value)'''
+        description: '''metrics = evaluateSemanticSegmentation(pxdsResults, pxdsTruth, 'Metrics', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/evaluateSemanticSegmentation.html'
 
 
-    "opticalFlowLKDoG":
+    "opticalFlowLKDoG [vision]":
         prefix: "opticalFlowLKDoG"
         body: '''opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})'''
-        description: '''opticalFlowLKDoG('NumFrames', value, 'ImageFilterSigma', value, 'GradientFilterSigma', value, 'NoiseThreshold', value)'''
+        description: '''opticalFlowLKDoG('NumFrames', value, 'ImageFilterSigma', value, 'GradientFilterSigma', value, 'NoiseThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlowLKDoG.html'
 
 
-    "viewSet.findTracks":
+    "viewSet.findTracks [vision]":
         prefix: "viewSet.findTracks"
         body: '''viewSet.findTracks(${1:vSet}, ${2:viewIds})'''
-        description: '''viewSet.findTracks(vSet, viewIds)'''
+        description: '''viewSet.findTracks(vSet, viewIds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.findTracks.html'
 
 
-    "MSERRegions.plot":
+    "MSERRegions.plot [vision]":
         prefix: "MSERRegions.plot"
         body: '''MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})'''
-        description: '''MSERRegions.plot(points, optional_ax, 'showEllipses', value, 'ShowOrientation', value, 'showPixelList', value)'''
+        description: '''MSERRegions.plot(points, optional_ax, 'showEllipses', value, 'ShowOrientation', value, 'showPixelList', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/MSERRegions.plot.html'
 
 
-    "pixelClassificationLayer":
+    "pixelClassificationLayer [vision]":
         prefix: "pixelClassificationLayer"
         body: '''pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})'''
-        description: '''pixelClassificationLayer('Classes', value, 'ClassWeights', value, 'Name', value)'''
+        description: '''pixelClassificationLayer('Classes', value, 'ClassWeights', value, 'Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pixelClassificationLayer.html'
 
 
-    "roiMaxPooling2dLayer":
+    "roiMaxPooling2dLayer [vision]":
         prefix: "roiMaxPooling2dLayer"
         body: '''roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})'''
-        description: '''roiMaxPooling2dLayer(outputSize, 'Name', value)'''
+        description: '''roiMaxPooling2dLayer(outputSize, 'Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/roiMaxPooling2dLayer.html'
 
 
-    "pcdenoise":
+    "pcdenoise [vision]":
         prefix: "pcdenoise"
         body: '''pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})'''
-        description: '''pcdenoise(ptCloudIn, 'NumNeighbors', value, 'Threshold', value)'''
+        description: '''pcdenoise(ptCloudIn, 'NumNeighbors', value, 'Threshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/pcdenoise.html'
 
 
-    "extractFeatures":
+    "extractFeatures [vision]":
         prefix: "extractFeatures"
         body: '''extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})'''
-        description: '''extractFeatures(I, points, 'Method', value, 'BlockSize', value, 'Upright', value, 'FeatureSize', value)'''
+        description: '''extractFeatures(I, points, 'Method', value, 'BlockSize', value, 'Upright', value, 'FeatureSize', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/extractFeatures.html'
 
 
-    "groundTruthDataSource":
+    "groundTruthDataSource [vision]":
         prefix: "groundTruthDataSource"
         body: '''groundTruthDataSource(${1:videoFileName})'''
-        description: '''groundTruthDataSource(videoFileName)'''
+        description: '''groundTruthDataSource(videoFileName)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/groundTruthDataSource.html'
 
 
-    "velodyneFileReader.hasFrame":
+    "velodyneFileReader.hasFrame [vision]":
         prefix: "velodyneFileReader.hasFrame"
         body: '''velodyneFileReader.hasFrame(${1:veloReader})'''
-        description: '''velodyneFileReader.hasFrame(veloReader)'''
+        description: '''velodyneFileReader.hasFrame(veloReader)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/velodyneFileReader.hasFrame.html'
 
 
-    "bundleAdjustment":
+    "bundleAdjustment [vision]":
         prefix: "bundleAdjustment"
         body: '''bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})'''
-        description: '''bundleAdjustment(xyzPoints, pointTracks, cameraPoses, cameraParams, 'MaxIterations', value, 'AbsoluteTolerance', value, 'RelativeTolerance', value, 'PointsUndistorted', value, 'FixedViewIDs', value, 'Verbose', value)'''
+        description: '''bundleAdjustment(xyzPoints, pointTracks, cameraPoses, cameraParams, 'MaxIterations', value, 'AbsoluteTolerance', value, 'RelativeTolerance', value, 'PointsUndistorted', value, 'FixedViewIDs', value, 'Verbose', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bundleAdjustment.html'
 
 
-    "rotationMatrixToVector":
+    "rotationMatrixToVector [vision]":
         prefix: "rotationMatrixToVector"
         body: '''rotationMatrixToVector(${1:rotationMatrix})'''
-        description: '''rotationMatrixToVector(rotationMatrix)'''
+        description: '''rotationMatrixToVector(rotationMatrix)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rotationMatrixToVector.html'
 
 
-    "estimateAnchorBoxes":
+    "estimateAnchorBoxes [vision]":
         prefix: "estimateAnchorBoxes"
         body: '''estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})'''
-        description: '''estimateAnchorBoxes(trainingData, numAnchors)'''
+        description: '''estimateAnchorBoxes(trainingData, numAnchors)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateAnchorBoxes.html'
 
 
-    "retrieveImages":
+    "retrieveImages [vision]":
         prefix: "retrieveImages"
         body: '''retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})'''
-        description: '''retrieveImages(queryImage, imageIndex, 'NumResults', value, 'ROI', value)'''
+        description: '''retrieveImages(queryImage, imageIndex, 'NumResults', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/retrieveImages.html'
 
 
-    "KAZEPoints":
+    "KAZEPoints [vision]":
         prefix: "KAZEPoints"
         body: '''KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
-        description: '''KAZEPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)'''
+        description: '''KAZEPoints(location, 'Scale', value, 'Metric', value, 'Orientation', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/KAZEPoints.html'
 
 
-    "disparitySGM":
+    "disparitySGM [vision]":
         prefix: "disparitySGM"
         body: '''disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})'''
-        description: '''disparitySGM(I1, I2, 'DisparityRange', value, 'UniquenessThreshold', value)'''
+        description: '''disparitySGM(I1, I2, 'DisparityRange', value, 'UniquenessThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/disparitySGM.html'
 
 
-    "invertedImageIndex.addImages":
+    "invertedImageIndex.addImages [vision]":
         prefix: "invertedImageIndex.addImages"
         body: '''invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})'''
-        description: '''invertedImageIndex.addImages(imageIndex, imds)'''
+        description: '''invertedImageIndex.addImages(imageIndex, imds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/invertedImageIndex.addImages.html'
 
 
-    "estimateCameraParameters":
+    "estimateCameraParameters [vision]":
         prefix: "estimateCameraParameters"
         body: '''estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})'''
-        description: '''estimateCameraParameters(imagePoints, worldPoints, 'WorldUnits', value, 'EstimateSkew', value, 'NumRadialDistortionCoefficients', value, 'EstimateTangentialDistortion', value, 'InitialIntrinsicMatrix', value, 'InitialRadialDistortion', value, 'ImageSize', value)'''
+        description: '''estimateCameraParameters(imagePoints, worldPoints, 'WorldUnits', value, 'EstimateSkew', value, 'NumRadialDistortionCoefficients', value, 'EstimateTangentialDistortion', value, 'InitialIntrinsicMatrix', value, 'InitialRadialDistortion', value, 'ImageSize', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateCameraParameters.html'
 
 
-    "trainYOLOv2ObjectDetector":
+    "trainYOLOv2ObjectDetector [vision]":
         prefix: "trainYOLOv2ObjectDetector"
         body: '''trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})'''
-        description: '''trainYOLOv2ObjectDetector(trainingData, network, options, 'TrainingImageSize', value)'''
+        description: '''trainYOLOv2ObjectDetector(trainingData, network, options, 'TrainingImageSize', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainYOLOv2ObjectDetector.html'
 
 
-    "boxLabelDatastore.reset":
+    "boxLabelDatastore.reset [vision]":
         prefix: "boxLabelDatastore.reset"
         body: '''boxLabelDatastore.reset(${1:blds})'''
-        description: '''boxLabelDatastore.reset(blds)'''
+        description: '''boxLabelDatastore.reset(blds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.reset.html'
 
 
-    "isfilterseparable":
+    "isfilterseparable [vision]":
         prefix: "isfilterseparable"
         body: '''isfilterseparable(${1:H})'''
-        description: '''isfilterseparable(H)'''
+        description: '''isfilterseparable(H)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/isfilterseparable.html'
 
 
-    "rcnnObjectDetector.classifyRegions":
+    "rcnnObjectDetector.classifyRegions [vision]":
         prefix: "rcnnObjectDetector.classifyRegions"
         body: '''rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})'''
-        description: '''rcnnObjectDetector.classifyRegions(detector, I, optional_rois, 'MiniBatchSize', value, 'ExecutionEnvironment', value)'''
+        description: '''rcnnObjectDetector.classifyRegions(detector, I, optional_rois, 'MiniBatchSize', value, 'ExecutionEnvironment', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rcnnObjectDetector.classifyRegions.html'
 
 
-    "rpnClassificationLayer":
+    "rpnClassificationLayer [vision]":
         prefix: "rpnClassificationLayer"
         body: '''rpnClassificationLayer('Name', ${1:value})'''
-        description: '''rpnClassificationLayer('Name', value)'''
+        description: '''rpnClassificationLayer('Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/rpnClassificationLayer.html'
 
 
-    "yolov2Layers":
+    "yolov2Layers [vision]":
         prefix: "yolov2Layers"
         body: '''yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})'''
-        description: '''yolov2Layers(imageSize, numClasses, anchorBoxes, network, featureLayer, 'ReorgLayerSource', value)'''
+        description: '''yolov2Layers(imageSize, numClasses, anchorBoxes, network, featureLayer, 'ReorgLayerSource', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/yolov2Layers.html'
 
 
-    "videoLabeler":
+    "videoLabeler [vision]":
         prefix: "videoLabeler"
         body: '''videoLabeler(${1:optional_videoFileName})'''
-        description: '''videoLabeler(optional_videoFileName)'''
+        description: '''videoLabeler(optional_videoFileName)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/videoLabeler.html'
 
 
-    "fastRCNNObjectDetector.classifyRegions":
+    "fastRCNNObjectDetector.classifyRegions [vision]":
         prefix: "fastRCNNObjectDetector.classifyRegions"
         body: '''fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})'''
-        description: '''fastRCNNObjectDetector.classifyRegions(detector, I, optional_rois, 'ExecutionEnvironment', value)'''
+        description: '''fastRCNNObjectDetector.classifyRegions(detector, I, optional_rois, 'ExecutionEnvironment', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fastRCNNObjectDetector.classifyRegions.html'
 
 
-    "velodyneFileReader.readFrame":
+    "velodyneFileReader.readFrame [vision]":
         prefix: "velodyneFileReader.readFrame"
         body: '''velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})'''
-        description: '''velodyneFileReader.readFrame(veloReader, optional_frameNumber)'''
+        description: '''velodyneFileReader.readFrame(veloReader, optional_frameNumber)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/velodyneFileReader.readFrame.html'
 
 
-    "viewSet.deleteView":
+    "viewSet.deleteView [vision]":
         prefix: "viewSet.deleteView"
         body: '''viewSet.deleteView(${1:vSet}, ${2:viewId})'''
-        description: '''viewSet.deleteView(vSet, viewId)'''
+        description: '''viewSet.deleteView(vSet, viewId)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.deleteView.html'
 
 
-    "fcnLayers":
+    "fcnLayers [vision]":
         prefix: "fcnLayers"
         body: '''fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})'''
-        description: '''fcnLayers(imageSize, numClasses, 'Type', value)'''
+        description: '''fcnLayers(imageSize, numClasses, 'Type', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fcnLayers.html'
 
 
-    "undistortFisheyePoints":
+    "undistortFisheyePoints [vision]":
         prefix: "undistortFisheyePoints"
         body: '''undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})'''
-        description: '''undistortFisheyePoints(points, intrinsics, optional_scaleFactor)'''
+        description: '''undistortFisheyePoints(points, intrinsics, optional_scaleFactor)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/undistortFisheyePoints.html'
 
 
-    "trainFastRCNNObjectDetector":
+    "trainFastRCNNObjectDetector [vision]":
         prefix: "trainFastRCNNObjectDetector"
         body: '''trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})'''
-        description: '''trainFastRCNNObjectDetector(trainingData, network, options, 'RegionProposalFcn', value, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'NumRegionsToSample', value, 'SmallestImageDimension', value, 'FreezeBatchNormalization', value)'''
+        description: '''trainFastRCNNObjectDetector(trainingData, network, options, 'RegionProposalFcn', value, 'PositiveOverlapRange', value, 'NegativeOverlapRange', value, 'NumStrongestRegions', value, 'NumRegionsToSample', value, 'SmallestImageDimension', value, 'FreezeBatchNormalization', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/trainFastRCNNObjectDetector.html'
 
 
-    "integralFilter":
+    "integralFilter [vision]":
         prefix: "integralFilter"
         body: '''integralFilter(${1:intI}, ${2:H})'''
-        description: '''integralFilter(intI, H)'''
+        description: '''integralFilter(intI, H)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/integralFilter.html'
 
 
-    "estimateFisheyeParameters":
+    "estimateFisheyeParameters [vision]":
         prefix: "estimateFisheyeParameters"
         body: '''estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})'''
-        description: '''estimateFisheyeParameters(imagePoints, worldPoints, imageSize, 'EstimateAlignment', value, 'WorldUnits', value)'''
+        description: '''estimateFisheyeParameters(imagePoints, worldPoints, imageSize, 'EstimateAlignment', value, 'WorldUnits', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/estimateFisheyeParameters.html'
 
 
-    "bboxcrop":
+    "bboxcrop [vision]":
         prefix: "bboxcrop"
         body: '''bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})'''
-        description: '''bboxcrop(bboxA, win, 'OverlapThreshold', value)'''
+        description: '''bboxcrop(bboxA, win, 'OverlapThreshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/bboxcrop.html'
 
 
-    "sphereModel.plot":
+    "sphereModel.plot [vision]":
         prefix: "sphereModel.plot"
         body: '''sphereModel.plot(${1:model}, 'Parent', ${2:value})'''
-        description: '''sphereModel.plot(model, 'Parent', value)'''
+        description: '''sphereModel.plot(model, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/sphereModel.plot.html'
 
 
-    "imageCategoryClassifier.evaluate":
+    "imageCategoryClassifier.evaluate [vision]":
         prefix: "imageCategoryClassifier.evaluate"
         body: '''imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})'''
-        description: '''imageCategoryClassifier.evaluate(classifier, imds)'''
+        description: '''imageCategoryClassifier.evaluate(classifier, imds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/imageCategoryClassifier.evaluate.html'
 
 
-    "peopleDetectorACF":
+    "peopleDetectorACF [vision]":
         prefix: "peopleDetectorACF"
         body: '''peopleDetectorACF(${1:optional_name})'''
-        description: '''peopleDetectorACF(optional_name)'''
+        description: '''peopleDetectorACF(optional_name)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/peopleDetectorACF.html'
 
 
-    "cameraParameters":
+    "cameraParameters [vision]":
         prefix: "cameraParameters"
         body: '''cameraParameters(${1:paramStruct})'''
-        description: '''cameraParameters(paramStruct)'''
+        description: '''cameraParameters(paramStruct)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraParameters.html'
 
 
-    "cameraMatrix":
+    "cameraMatrix [vision]":
         prefix: "cameraMatrix"
         body: '''cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})'''
-        description: '''cameraMatrix(cameraParams, rotationMatrix, translationVector)'''
+        description: '''cameraMatrix(cameraParams, rotationMatrix, translationVector)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cameraMatrix.html'
 
 
-    "labelDefinitionCreator":
+    "labelDefinitionCreator [vision]":
         prefix: "labelDefinitionCreator"
         body: '''labelDefinitionCreator(${1:optional_ldc})'''
-        description: '''labelDefinitionCreator(optional_ldc)'''
+        description: '''labelDefinitionCreator(optional_ldc)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/labelDefinitionCreator.html'
 
 
-    "viewSet.hasView":
+    "viewSet.hasView [vision]":
         prefix: "viewSet.hasView"
         body: '''viewSet.hasView(${1:vSet}, ${2:viewId})'''
-        description: '''viewSet.hasView(vSet, viewId)'''
+        description: '''viewSet.hasView(vSet, viewId)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.hasView.html'
 
 
-    "viewSet.updateConnection":
+    "viewSet.updateConnection [vision]":
         prefix: "viewSet.updateConnection"
         body: '''viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
-        description: '''viewSet.updateConnection(vSet, viewId1, viewId2, 'Matches', value, 'Orientation', value, 'Location', value)'''
+        description: '''viewSet.updateConnection(vSet, viewId1, viewId2, 'Matches', value, 'Orientation', value, 'Location', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.updateConnection.html'
 
 
-    "epipolarLine":
+    "epipolarLine [vision]":
         prefix: "epipolarLine"
         body: '''epipolarLine(${1:F}, ${2:points})'''
-        description: '''epipolarLine(F, points)'''
+        description: '''epipolarLine(F, points)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/epipolarLine.html'
 
 
-    "viewSet.poses":
+    "viewSet.poses [vision]":
         prefix: "viewSet.poses"
         body: '''viewSet.poses(${1:vSet}, ${2:optional_viewIds})'''
-        description: '''viewSet.poses(vSet, optional_viewIds)'''
+        description: '''viewSet.poses(vSet, optional_viewIds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/viewSet.poses.html'
 
 
-    "imageLabeler":
+    "imageLabeler [vision]":
         prefix: "imageLabeler"
         body: '''imageLabeler(${1:optional_imageFolder})'''
-        description: '''imageLabeler(optional_imageFolder)'''
+        description: '''imageLabeler(optional_imageFolder)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/imageLabeler.html'
 
 
-    "BRISKPoints.plot":
+    "BRISKPoints.plot [vision]":
         prefix: "BRISKPoints.plot"
         body: '''BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-        description: '''BRISKPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)'''
+        description: '''BRISKPoints.plot(points, optional_ax, 'ShowOrientation', value, 'ShowScale', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/BRISKPoints.plot.html'
 
 
-    "ocrTrainer":
+    "ocrTrainer [vision]":
         prefix: "ocrTrainer"
         body: '''ocrTrainer(${1:optional_sessionFile})'''
-        description: '''ocrTrainer(optional_sessionFile)'''
+        description: '''ocrTrainer(optional_sessionFile)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/ocrTrainer.html'
 
 
-    "MSERRegions":
+    "MSERRegions [vision]":
         prefix: "MSERRegions"
         body: '''MSERRegions(${1:pixellist})'''
-        description: '''MSERRegions(pixellist)'''
+        description: '''MSERRegions(pixellist)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/MSERRegions.html'
 
 
-    "reconstructScene":
+    "reconstructScene [vision]":
         prefix: "reconstructScene"
         body: '''reconstructScene(${1:disparityMap}, ${2:stereoParams})'''
-        description: '''reconstructScene(disparityMap, stereoParams)'''
+        description: '''reconstructScene(disparityMap, stereoParams)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/reconstructScene.html'
 
 
-    "detectKAZEFeatures":
+    "detectKAZEFeatures [vision]":
         prefix: "detectKAZEFeatures"
         body: '''detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})'''
-        description: '''detectKAZEFeatures(I, 'Diffusion', value, 'Threshold', value, 'NumOctaves', value, 'NumScaleLevels', value, 'ROI', value)'''
+        description: '''detectKAZEFeatures(I, 'Diffusion', value, 'Threshold', value, 'NumOctaves', value, 'NumScaleLevels', value, 'ROI', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/detectKAZEFeatures.html'
 
 
-    "extractHOGFeatures":
+    "extractHOGFeatures [vision]":
         prefix: "extractHOGFeatures"
         body: '''extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})'''
-        description: '''extractHOGFeatures(I, optional_points, 'CellSize', value, 'BlockSize', value, 'BlockOverlap', value, 'NumBins', value, 'UseSignedOrientation', value)'''
+        description: '''extractHOGFeatures(I, optional_points, 'CellSize', value, 'BlockSize', value, 'BlockOverlap', value, 'NumBins', value, 'UseSignedOrientation', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/extractHOGFeatures.html'
 
 
-    "extractLBPFeatures":
+    "extractLBPFeatures [vision]":
         prefix: "extractLBPFeatures"
         body: '''extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})'''
-        description: '''extractLBPFeatures(I, 'NumNeighbors', value, 'Radius', value, 'Upright', value, 'Interpolation', value, 'CellSize', value, 'Normalization', value)'''
+        description: '''extractLBPFeatures(I, 'NumNeighbors', value, 'Radius', value, 'Upright', value, 'Interpolation', value, 'CellSize', value, 'Normalization', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/extractLBPFeatures.html'
 
 
-    "fisheyeIntrinsics":
+    "fisheyeIntrinsics [vision]":
         prefix: "fisheyeIntrinsics"
         body: '''fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})'''
-        description: '''fisheyeIntrinsics(mappingCoeffecients, imageSize, distortionCenter, optional_stretchMatrix)'''
+        description: '''fisheyeIntrinsics(mappingCoeffecients, imageSize, distortionCenter, optional_stretchMatrix)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/fisheyeIntrinsics.html'
 
 
-    "isEpipoleInImage":
+    "isEpipoleInImage [vision]":
         prefix: "isEpipoleInImage"
         body: '''isEpipoleInImage(${1:F}, ${2:imagesize})'''
-        description: '''isEpipoleInImage(F, imagesize)'''
+        description: '''isEpipoleInImage(F, imagesize)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/isEpipoleInImage.html'
 
 
-    "yolov2ReorgLayer":
+    "yolov2ReorgLayer [vision]":
         prefix: "yolov2ReorgLayer"
         body: '''yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})'''
-        description: '''yolov2ReorgLayer(stride, 'Name', value)'''
+        description: '''yolov2ReorgLayer(stride, 'Name', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/yolov2ReorgLayer.html'
 
 
-    "imageCategoryClassifier.predict":
+    "imageCategoryClassifier.predict [vision]":
         prefix: "imageCategoryClassifier.predict"
         body: '''imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})'''
-        description: '''imageCategoryClassifier.predict(categoryClassifier, imds)'''
+        description: '''imageCategoryClassifier.predict(categoryClassifier, imds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/imageCategoryClassifier.predict.html'
 
 
-    "matchFeatures":
+    "matchFeatures [vision]":
         prefix: "matchFeatures"
         body: '''matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})'''
-        description: '''matchFeatures(features1, features2, 'Method', value, 'MatchThreshold', value, 'MaxRatio', value, 'Metric', value, 'Unique', value)'''
+        description: '''matchFeatures(features1, features2, 'Method', value, 'MatchThreshold', value, 'MaxRatio', value, 'Metric', value, 'Unique', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/matchFeatures.html'
 
 
-    "acfObjectDetector.detect":
+    "acfObjectDetector.detect [vision]":
         prefix: "acfObjectDetector.detect"
         body: '''acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})'''
-        description: '''acfObjectDetector.detect(detector, I, optional_roi, 'NumScaleLevels', value, 'WindowStride', value, 'SelectStrongest', value, 'MinSize', value, 'MaxSize', value, 'Threshold', value)'''
+        description: '''acfObjectDetector.detect(detector, I, optional_roi, 'NumScaleLevels', value, 'WindowStride', value, 'SelectStrongest', value, 'MinSize', value, 'MaxSize', value, 'Threshold', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/acfObjectDetector.detect.html'
 
 
-    "yolov2OutputLayer":
+    "yolov2OutputLayer [vision]":
         prefix: "yolov2OutputLayer"
         body: '''yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})'''
-        description: '''yolov2OutputLayer(anchorBoxes, 'Name', value, 'LossFactors', value)'''
+        description: '''yolov2OutputLayer(anchorBoxes, 'Name', value, 'LossFactors', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/yolov2OutputLayer.html'
 
 
-    "insertMarker":
+    "insertMarker [vision]":
         prefix: "insertMarker"
         body: '''insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})'''
-        description: '''insertMarker(I, position, optional_marker, 'Size', value, 'Color', value)'''
+        description: '''insertMarker(I, position, optional_marker, 'Size', value, 'Color', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/insertMarker.html'
 
 
-    "velodyneFileReader":
+    "velodyneFileReader [vision]":
         prefix: "velodyneFileReader"
         body: '''velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})'''
-        description: '''velodyneFileReader(filename, deviceModel, 'CalibrationFile', value)'''
+        description: '''velodyneFileReader(filename, deviceModel, 'CalibrationFile', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/velodyneFileReader.html'
 
 
-    "boxLabelDatastore.hasdata":
+    "boxLabelDatastore.hasdata [vision]":
         prefix: "boxLabelDatastore.hasdata"
         body: '''${1:TF} = boxLabelDatastore.hasdata(${1:blds})'''
-        description: '''TF = boxLabelDatastore.hasdata(blds)'''
+        description: '''TF = boxLabelDatastore.hasdata(blds)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/boxLabelDatastore.hasdata.html'
 
 
-    "stereoParameters":
+    "stereoParameters [vision]":
         prefix: "stereoParameters"
         body: '''stereoParameters(${1:paramStruct})'''
-        description: '''stereoParameters(paramStruct)'''
+        description: '''stereoParameters(paramStruct)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/stereoParameters.html'
 
 
-    "cylinderModel.plot":
+    "cylinderModel.plot [vision]":
         prefix: "cylinderModel.plot"
         body: '''cylinderModel.plot(${1:model}, 'Parent', ${2:value})'''
-        description: '''cylinderModel.plot(model, 'Parent', value)'''
+        description: '''cylinderModel.plot(model, 'Parent', value)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/cylinderModel.plot.html'
 
 
-    "opticalFlow":
+    "opticalFlow [vision]":
         prefix: "opticalFlow"
         body: '''opticalFlow(${1:Vx}, ${2:Vy})'''
-        description: '''opticalFlow(Vx, Vy)'''
+        description: '''opticalFlow(Vx, Vy)    [vision]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/vision/opticalFlow.html'
 

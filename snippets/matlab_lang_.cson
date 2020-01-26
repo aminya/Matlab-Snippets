@@ -1,163 +1,163 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "MException.throwAsCaller":
+    "MException.throwAsCaller [matlab]":
         prefix: "MException.throwAsCaller"
         body: '''MException.throwAsCaller(${1:exception})'''
-        description: '''MException.throwAsCaller(exception)'''
+        description: '''MException.throwAsCaller(exception)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.throwAsCaller.html'
 
 
-    "MException.rethrow":
+    "MException.rethrow [matlab]":
         prefix: "MException.rethrow"
         body: '''MException.rethrow(${1:exception})'''
-        description: '''MException.rethrow(exception)'''
+        description: '''MException.rethrow(exception)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.rethrow.html'
 
 
-    "MException.throw":
+    "MException.throw [matlab]":
         prefix: "MException.throw"
         body: '''MException.throw(${1:exception})'''
-        description: '''MException.throw(exception)'''
+        description: '''MException.throw(exception)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.throw.html'
 
 
-    "validateattributes":
+    "validateattributes [matlab]":
         prefix: "validateattributes"
         body: '''validateattributes(${1:A}, ${2:classes}, ${3:attributes})'''
-        description: '''validateattributes(A, classes, attributes)'''
+        description: '''validateattributes(A, classes, attributes)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/validateattributes.html'
 
 
-    "MException.addCause":
+    "MException.addCause [matlab]":
         prefix: "MException.addCause"
         body: '''${1:baseException} = MException.addCause(${1:baseException}, ${2:causeException})'''
-        description: '''baseException = MException.addCause(baseException, causeException)'''
+        description: '''baseException = MException.addCause(baseException, causeException)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.addCause.html'
 
 
-    "disp":
+    "disp [matlab]":
         prefix: "disp"
         body: '''disp(${1:X})'''
-        description: '''disp(X)'''
+        description: '''disp(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/disp.html'
 
 
-    "assignin":
+    "assignin [matlab]":
         prefix: "assignin"
         body: '''assignin(${1:workspace}, ${2:var})'''
-        description: '''assignin(workspace, var)'''
+        description: '''assignin(workspace, var)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/assignin.html'
 
 
-    "display":
+    "display [matlab]":
         prefix: "display"
         body: '''display(${1:X})'''
-        description: '''display(X)'''
+        description: '''display(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/display.html'
 
 
-    "warning":
+    "warning [matlab]":
         prefix: "warning"
         body: '''${1:warnStruct} = warning()'''
-        description: '''warnStruct = warning()'''
+        description: '''warnStruct = warning()    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/warning.html'
 
 
-    "MException.getReport":
+    "MException.getReport [matlab]":
         prefix: "MException.getReport"
         body: '''${1:msgText} = MException.getReport(${1:exception}, ${2:type}, ${3:'hyperlinks'}, ${4:hlink})'''
-        description: '''msgText = MException.getReport(exception, type, 'hyperlinks', hlink)'''
+        description: '''msgText = MException.getReport(exception, type, 'hyperlinks', hlink)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.getReport.html'
 
 
-    "mfilename":
+    "mfilename [matlab]":
         prefix: "mfilename"
         body: '''${1:M} = mfilename(${1:'arg'})'''
-        description: '''M = mfilename('arg')'''
+        description: '''M = mfilename('arg')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mfilename.html'
 
 
-    "matlab.lang.correction.ReplaceIdentifierCorrection":
+    "matlab.lang.correction.ReplaceIdentifierCorrection [matlab]":
         prefix: "matlab.lang.correction.ReplaceIdentifierCorrection"
         body: '''${1:RIC} = matlab.lang.correction.ReplaceIdentifierCorrection(${1:identifier}, ${2:replacement})'''
-        description: '''RIC = matlab.lang.correction.ReplaceIdentifierCorrection(identifier, replacement)'''
+        description: '''RIC = matlab.lang.correction.ReplaceIdentifierCorrection(identifier, replacement)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.ReplaceIdentifierCorrection.html'
 
 
-    "MException":
+    "MException [matlab]":
         prefix: "MException"
         body: '''${1:ME} = MException(${1:message})'''
-        description: '''ME = MException(message)'''
+        description: '''ME = MException(message)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.html'
 
 
-    "error":
+    "error [matlab]":
         prefix: "error"
         body: '''error(${1:msg}, ${2:optional_A})'''
-        description: '''error(msg, optional_A)'''
+        description: '''error(msg, optional_A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/error.html'
 
 
-    "matlab.lang.correction.Correction.error":
+    "matlab.lang.correction.Correction.error [matlab]":
         prefix: "matlab.lang.correction.Correction.error"
         body: '''matlab.lang.correction.Correction.error(${1:correction}, ${2:msg}, ${3:optional_A})'''
-        description: '''matlab.lang.correction.Correction.error(correction, msg, optional_A)'''
+        description: '''matlab.lang.correction.Correction.error(correction, msg, optional_A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.Correction.error.html'
 
 
-    "evalin":
+    "evalin [matlab]":
         prefix: "evalin"
         body: '''evalin(${1:workspace})'''
-        description: '''evalin(workspace)'''
+        description: '''evalin(workspace)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/evalin.html'
 
 
-    "matlab.lang.correction.AppendArgumentsCorrection":
+    "matlab.lang.correction.AppendArgumentsCorrection [matlab]":
         prefix: "matlab.lang.correction.AppendArgumentsCorrection"
         body: '''${1:AAC} = matlab.lang.correction.AppendArgumentsCorrection(${1:arguments})'''
-        description: '''AAC = matlab.lang.correction.AppendArgumentsCorrection(arguments)'''
+        description: '''AAC = matlab.lang.correction.AppendArgumentsCorrection(arguments)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.AppendArgumentsCorrection.html'
 
 
-    "MException.last":
+    "MException.last [matlab]":
         prefix: "MException.last"
         body: '''MException.last(${1:optional_reset})'''
-        description: '''MException.last(optional_reset)'''
+        description: '''MException.last(optional_reset)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.last.html'
 
 
-    "message":
+    "message [matlab]":
         prefix: "message"
         body: '''message(${1:msgid}, ${2:optional_params})'''
-        description: '''message(msgid, optional_params)'''
+        description: '''message(msgid, optional_params)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/message.html'
 
 
-    "run":
+    "run [matlab]":
         prefix: "run"
         body: '''run(${1:scriptname})'''
-        description: '''run(scriptname)'''
+        description: '''run(scriptname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/run.html'
 
 
-    "exist":
+    "exist [matlab]":
         prefix: "exist"
         body: '''exist(${1:name}, ${2:optional_kind})'''
-        description: '''exist(name, optional_kind)'''
+        description: '''exist(name, optional_kind)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/exist.html'
 
 
-    "matlab.lang.correction.ConvertToFunctionNotationCorrection":
+    "matlab.lang.correction.ConvertToFunctionNotationCorrection [matlab]":
         prefix: "matlab.lang.correction.ConvertToFunctionNotationCorrection"
         body: '''${1:CFNC} = matlab.lang.correction.ConvertToFunctionNotationCorrection(${1:method})'''
-        description: '''CFNC = matlab.lang.correction.ConvertToFunctionNotationCorrection(method)'''
+        description: '''CFNC = matlab.lang.correction.ConvertToFunctionNotationCorrection(method)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.ConvertToFunctionNotationCorrection.html'
 
 
-    "MException.addCorrection":
+    "MException.addCorrection [matlab]":
         prefix: "MException.addCorrection"
         body: '''${1:baseException} = MException.addCorrection(${1:baseException}, ${2:correction})'''
-        description: '''baseException = MException.addCorrection(baseException, correction)'''
+        description: '''baseException = MException.addCorrection(baseException, correction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/MException.addCorrection.html'
 

@@ -1,93 +1,93 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "dbstop":
+    "dbstop [matlab]":
         prefix: "dbstop"
         body: '''dbstop(${1:s})'''
-        description: '''dbstop(s)'''
+        description: '''dbstop(s)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstop.html'
 
 
-    "publish":
+    "publish [matlab]":
         prefix: "publish"
         body: '''${1:my_doc} = publish(${1:file}, ${2:optional_format})'''
-        description: '''my_doc = publish(file, optional_format)'''
+        description: '''my_doc = publish(file, optional_format)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/publish.html'
 
 
-    "dbclear":
+    "dbclear [matlab]":
         prefix: "dbclear"
         body: '''dbclear(${1:optional_'all'})'''
-        description: '''dbclear(optional_'all')'''
+        description: '''dbclear(optional_'all')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbclear.html'
 
 
-    "dbquit":
+    "dbquit [matlab]":
         prefix: "dbquit"
         body: '''dbquit(${1:optional_'all'})'''
-        description: '''dbquit(optional_'all')'''
+        description: '''dbquit(optional_'all')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbquit.html'
 
 
-    "edit":
+    "edit [matlab]":
         prefix: "edit"
         body: '''edit(${1:optional_file})'''
-        description: '''edit(optional_file)'''
+        description: '''edit(optional_file)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/edit.html'
 
 
-    "checkcode":
+    "checkcode [matlab]":
         prefix: "checkcode"
         body: '''checkcode(${1:filename}, ${2:action})'''
-        description: '''checkcode(filename, action)'''
+        description: '''checkcode(filename, action)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/checkcode.html'
 
 
-    "dbtype":
+    "dbtype [matlab]":
         prefix: "dbtype"
         body: '''dbtype(${1:filespec}, ${2:optional_range})'''
-        description: '''dbtype(filespec, optional_range)'''
+        description: '''dbtype(filespec, optional_range)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbtype.html'
 
 
-    "uiimport":
+    "uiimport [matlab]":
         prefix: "uiimport"
         body: '''uiimport(${1:filename}, ${2:optional_varargin})'''
-        description: '''uiimport(filename, optional_varargin)'''
+        description: '''uiimport(filename, optional_varargin)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiimport.html'
 
 
-    "validateFunctionSignaturesJSON":
+    "validateFunctionSignaturesJSON [matlab]":
         prefix: "validateFunctionSignaturesJSON"
         body: '''validateFunctionSignaturesJSON(${1:optional_filename})'''
-        description: '''validateFunctionSignaturesJSON(optional_filename)'''
+        description: '''validateFunctionSignaturesJSON(optional_filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/validateFunctionSignaturesJSON.html'
 
 
-    "dbstep":
+    "dbstep [matlab]":
         prefix: "dbstep"
         body: '''dbstep(${1:optional_inout})'''
-        description: '''dbstep(optional_inout)'''
+        description: '''dbstep(optional_inout)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstep.html'
 
 
-    "profile":
+    "profile [matlab]":
         prefix: "profile"
         body: '''profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})'''
-        description: '''profile(action, historyFlag, '-historysize', value, '-timer', value)'''
+        description: '''profile(action, historyFlag, '-historysize', value, '-timer', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/profile.html'
 
 
-    "dbstatus":
+    "dbstatus [matlab]":
         prefix: "dbstatus"
         body: '''${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
-        description: '''s = dbstatus(optional_filespec, '-completenames')'''
+        description: '''s = dbstatus(optional_filespec, '-completenames')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstatus.html'
 
 
-    "dbstack":
+    "dbstack [matlab]":
         prefix: "dbstack"
         body: '''[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
-        description: '''[st, i] = dbstack(optional_nframes, '-completenames')'''
+        description: '''[st, i] = dbstack(optional_nframes, '-completenames')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dbstack.html'
 

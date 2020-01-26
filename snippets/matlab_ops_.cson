@@ -1,156 +1,156 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "bitget":
+    "bitget [matlab]":
         prefix: "bitget"
         body: '''bitget(${1:A}, ${2:bit}, ${3:assumedtype})'''
-        description: '''bitget(A, bit, assumedtype)'''
+        description: '''bitget(A, bit, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitget.html'
 
 
-    "setxor":
+    "setxor [matlab]":
         prefix: "setxor"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia, ib] = setxor(A, B, optional_'rows')'''
+        description: '''[C, ia, ib] = setxor(A, B, optional_'rows')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setxor.html'
 
 
-    "ismember":
+    "ismember [matlab]":
         prefix: "ismember"
         body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[Lia, Locb] = ismember(A, B, optional_'rows')'''
+        description: '''[Lia, Locb] = ismember(A, B, optional_'rows')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismember.html'
 
 
-    "any":
+    "any [matlab]":
         prefix: "any"
         body: '''any(${1:A}, ${2:optional_dim})'''
-        description: '''any(A, optional_dim)'''
+        description: '''any(A, optional_dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/any.html'
 
 
-    "vertcat":
+    "vertcat [matlab]":
         prefix: "vertcat"
         body: '''${1:C} = vertcat(${1:A})'''
-        description: '''C = vertcat(A)'''
+        description: '''C = vertcat(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/vertcat.html'
 
 
-    "bitset":
+    "bitset [matlab]":
         prefix: "bitset"
         body: '''bitset(${1:A}, ${2:bit}, ${3:optional_V}, ${4:assumedtype})'''
-        description: '''bitset(A, bit, optional_V, assumedtype)'''
+        description: '''bitset(A, bit, optional_V, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitset.html'
 
 
-    "subsref":
+    "subsref [matlab]":
         prefix: "subsref"
         body: '''${1:B} = subsref(${1:A}, ${2:S})'''
-        description: '''B = subsref(A, S)'''
+        description: '''B = subsref(A, S)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/subsref.html'
 
 
-    "bitand":
+    "bitand [matlab]":
         prefix: "bitand"
         body: '''bitand(${1:A}, ${2:B}, ${3:assumedtype})'''
-        description: '''bitand(A, B, assumedtype)'''
+        description: '''bitand(A, B, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitand.html'
 
 
-    "intersect":
+    "intersect [matlab]":
         prefix: "intersect"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia, ib] = intersect(A, B, optional_'rows')'''
+        description: '''[C, ia, ib] = intersect(A, B, optional_'rows')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intersect.html'
 
 
-    "idivide":
+    "idivide [matlab]":
         prefix: "idivide"
         body: '''idivide(${1:A}, ${2:B}, ${3:opt})'''
-        description: '''idivide(A, B, opt)'''
+        description: '''idivide(A, B, opt)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/idivide.html'
 
 
-    "bitor":
+    "bitor [matlab]":
         prefix: "bitor"
         body: '''bitor(${1:A}, ${2:B}, ${3:assumedtype})'''
-        description: '''bitor(A, B, assumedtype)'''
+        description: '''bitor(A, B, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitor.html'
 
 
-    "setdiff":
+    "setdiff [matlab]":
         prefix: "setdiff"
         body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia] = setdiff(A, B, optional_'rows')'''
+        description: '''[C, ia] = setdiff(A, B, optional_'rows')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setdiff.html'
 
 
-    "subsasgn":
+    "subsasgn [matlab]":
         prefix: "subsasgn"
         body: '''${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
-        description: '''A = subsasgn(A, S, B)'''
+        description: '''A = subsasgn(A, S, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/subsasgn.html'
 
 
-    "unique":
+    "unique [matlab]":
         prefix: "unique"
         body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
-        description: '''[C, ia, ic] = unique(A, optional_'rows', optional_occurrence)'''
+        description: '''[C, ia, ic] = unique(A, optional_'rows', optional_occurrence)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unique.html'
 
 
-    "bitcmp":
+    "bitcmp [matlab]":
         prefix: "bitcmp"
         body: '''bitcmp(${1:A}, ${2:assumedtype})'''
-        description: '''bitcmp(A, assumedtype)'''
+        description: '''bitcmp(A, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitcmp.html'
 
 
-    "ismembertol":
+    "ismembertol [matlab]":
         prefix: "ismembertol"
         body: '''[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
-        description: '''[LIA, L] = ismembertol(A, B, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)'''
+        description: '''[LIA, L] = ismembertol(A, B, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismembertol.html'
 
 
-    "union":
+    "union [matlab]":
         prefix: "union"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia, ib] = union(A, B, optional_'rows')'''
+        description: '''[C, ia, ib] = union(A, B, optional_'rows')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/union.html'
 
 
-    "bitxor":
+    "bitxor [matlab]":
         prefix: "bitxor"
         body: '''bitxor(${1:A}, ${2:B}, ${3:assumedtype})'''
-        description: '''bitxor(A, B, assumedtype)'''
+        description: '''bitxor(A, B, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitxor.html'
 
 
-    "all":
+    "all [matlab]":
         prefix: "all"
         body: '''all(${1:A}, ${2:optional_dim})'''
-        description: '''all(A, optional_dim)'''
+        description: '''all(A, optional_dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/all.html'
 
 
-    "bitshift":
+    "bitshift [matlab]":
         prefix: "bitshift"
         body: '''bitshift(${1:A}, ${2:k}, ${3:assumedtype})'''
-        description: '''bitshift(A, k, assumedtype)'''
+        description: '''bitshift(A, k, assumedtype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitshift.html'
 
 
-    "uniquetol":
+    "uniquetol [matlab]":
         prefix: "uniquetol"
         body: '''[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
-        description: '''[C, IA, IC] = uniquetol(A, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)'''
+        description: '''[C, IA, IC] = uniquetol(A, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uniquetol.html'
 
 
-    "horzcat":
+    "horzcat [matlab]":
         prefix: "horzcat"
         body: '''${1:C} = horzcat(${1:A})'''
-        description: '''C = horzcat(A)'''
+        description: '''C = horzcat(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/horzcat.html'
 

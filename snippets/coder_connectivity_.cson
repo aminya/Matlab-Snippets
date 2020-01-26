@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "buildStandaloneCoderAssumptions":
+    "buildStandaloneCoderAssumptions [coder]":
         prefix: "buildStandaloneCoderAssumptions"
         body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
-        description: '''buildStandaloneCoderAssumptions(buildFolder)'''
+        description: '''buildStandaloneCoderAssumptions(buildFolder)    [coder]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/coder/buildStandaloneCoderAssumptions.html'
 

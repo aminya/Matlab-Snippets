@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "canDatabase":
+    "canDatabase [shared]":
         prefix: "canDatabase"
         body: '''${1:obj} = canDatabase(${1:File})'''
-        description: '''obj = canDatabase(File)'''
+        description: '''obj = canDatabase(File)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/canDatabase.html'
 

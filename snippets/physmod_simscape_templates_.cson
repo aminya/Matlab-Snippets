@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "sscnewfile":
+    "sscnewfile [physmod]":
         prefix: "sscnewfile"
         body: '''sscnewfile(${1:name}, ${2:template})'''
-        description: '''sscnewfile(name, template)'''
+        description: '''sscnewfile(name, template)    [physmod]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/physmod/sscnewfile.html'
 

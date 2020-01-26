@@ -1,191 +1,191 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "interp1":
+    "interp1 [matlab]":
         prefix: "interp1"
         body: '''interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
-        description: '''interp1(x, v, xq, method, extrapolation)'''
+        description: '''interp1(x, v, xq, method, extrapolation)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp1.html'
 
 
-    "polyshape.polybuffer":
+    "polyshape.polybuffer [matlab]":
         prefix: "polyshape.polybuffer"
         body: '''polyshape.polybuffer(${1:polyin}, ${2:d}, 'JointType', ${3:value}, 'MiterLimit', ${4:value})'''
-        description: '''polyshape.polybuffer(polyin, d, 'JointType', value, 'MiterLimit', value)'''
+        description: '''polyshape.polybuffer(polyin, d, 'JointType', value, 'MiterLimit', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.polybuffer.html'
 
 
-    "stlread":
+    "stlread [matlab]":
         prefix: "stlread"
         body: '''stlread(${1:filename})'''
-        description: '''stlread(filename)'''
+        description: '''stlread(filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stlread.html'
 
 
-    "polyshape.plot":
+    "polyshape.plot [matlab]":
         prefix: "polyshape.plot"
         body: '''polyshape.plot(${1:pgon}, ${2:options})'''
-        description: '''polyshape.plot(pgon, options)'''
+        description: '''polyshape.plot(pgon, options)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.plot.html'
 
 
-    "alphaShape.criticalAlpha":
+    "alphaShape.criticalAlpha [matlab]":
         prefix: "alphaShape.criticalAlpha"
         body: '''alphaShape.criticalAlpha(${1:shp}, ${2:type})'''
-        description: '''alphaShape.criticalAlpha(shp, type)'''
+        description: '''alphaShape.criticalAlpha(shp, type)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/alphaShape.criticalAlpha.html'
 
 
-    "interpn":
+    "interpn [matlab]":
         prefix: "interpn"
         body: '''interpn(${1:X}, ${2:V}, ${3:Xq}, ${4:method}, ${5:extrapval})'''
-        description: '''interpn(X, V, Xq, method, extrapval)'''
+        description: '''interpn(X, V, Xq, method, extrapval)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interpn.html'
 
 
-    "scatteredInterpolant":
+    "scatteredInterpolant [matlab]":
         prefix: "scatteredInterpolant"
         body: '''scatteredInterpolant(${1:x}, ${2:y}, ${3:v}, ${4:Method}, ${5:ExtrapolationMethod})'''
-        description: '''scatteredInterpolant(x, y, v, Method, ExtrapolationMethod)'''
+        description: '''scatteredInterpolant(x, y, v, Method, ExtrapolationMethod)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/scatteredInterpolant.html'
 
 
-    "polyshape.simplify":
+    "polyshape.simplify [matlab]":
         prefix: "polyshape.simplify"
         body: '''polyshape.simplify(${1:polyin}, 'KeepCollinearPoints', ${2:value})'''
-        description: '''polyshape.simplify(polyin, 'KeepCollinearPoints', value)'''
+        description: '''polyshape.simplify(polyin, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.simplify.html'
 
 
-    "interp3":
+    "interp3 [matlab]":
         prefix: "interp3"
         body: '''interp3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xq}, ${6:Yq}, ${7:Zq}, ${8:method}, ${9:extrapval})'''
-        description: '''interp3(X, Y, Z, V, Xq, Yq, Zq, method, extrapval)'''
+        description: '''interp3(X, Y, Z, V, Xq, Yq, Zq, method, extrapval)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp3.html'
 
 
-    "polyshape.sortregions":
+    "polyshape.sortregions [matlab]":
         prefix: "polyshape.sortregions"
         body: '''polyshape.sortregions(${1:pgon}, ${2:criterion}, ${3:direction})'''
-        description: '''polyshape.sortregions(pgon, criterion, direction)'''
+        description: '''polyshape.sortregions(pgon, criterion, direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.sortregions.html'
 
 
-    "alphaShape.plot":
+    "alphaShape.plot [matlab]":
         prefix: "alphaShape.plot"
         body: '''alphaShape.plot(${1:shp}, ${2:options})'''
-        description: '''alphaShape.plot(shp, options)'''
+        description: '''alphaShape.plot(shp, options)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/alphaShape.plot.html'
 
 
-    "convhull":
+    "convhull [matlab]":
         prefix: "convhull"
         body: '''convhull(${1:x}, ${2:y}, ${3:z}, 'Simplify', ${4:value})'''
-        description: '''convhull(x, y, z, 'Simplify', value)'''
+        description: '''convhull(x, y, z, 'Simplify', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/convhull.html'
 
 
-    "polyshape.subtract":
+    "polyshape.subtract [matlab]":
         prefix: "polyshape.subtract"
         body: '''polyshape.subtract(${1:poly1}, ${2:poly2}, 'KeepCollinearPoints', ${3:value})'''
-        description: '''polyshape.subtract(poly1, poly2, 'KeepCollinearPoints', value)'''
+        description: '''polyshape.subtract(poly1, poly2, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.subtract.html'
 
 
-    "polyshape.union":
+    "polyshape.union [matlab]":
         prefix: "polyshape.union"
         body: '''polyshape.union(${1:polyvec}, 'KeepCollinearPoints', ${2:value})'''
-        description: '''polyshape.union(polyvec, 'KeepCollinearPoints', value)'''
+        description: '''polyshape.union(polyvec, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.union.html'
 
 
-    "griddatan":
+    "griddatan [matlab]":
         prefix: "griddatan"
         body: '''griddatan(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:options})'''
-        description: '''griddatan(x, v, xq, method, options)'''
+        description: '''griddatan(x, v, xq, method, options)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/griddatan.html'
 
 
-    "polyshape":
+    "polyshape [matlab]":
         prefix: "polyshape"
         body: '''polyshape(${1:x}, ${2:y}, 'SolidBoundaryOrientation', ${3:value}, 'Simplify', ${4:value}, 'KeepCollinearPoints', ${5:value})'''
-        description: '''polyshape(x, y, 'SolidBoundaryOrientation', value, 'Simplify', value, 'KeepCollinearPoints', value)'''
+        description: '''polyshape(x, y, 'SolidBoundaryOrientation', value, 'Simplify', value, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.html'
 
 
-    "polyshape.intersect":
+    "polyshape.intersect [matlab]":
         prefix: "polyshape.intersect"
         body: '''polyshape.intersect(${1:polyvec}, 'KeepCollinearPoints', ${2:value})'''
-        description: '''polyshape.intersect(polyvec, 'KeepCollinearPoints', value)'''
+        description: '''polyshape.intersect(polyvec, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html'
 
 
-    "polyshape.xor":
+    "polyshape.xor [matlab]":
         prefix: "polyshape.xor"
         body: '''polyshape.xor(${1:poly1}, ${2:poly2}, 'KeepCollinearPoints', ${3:value})'''
-        description: '''polyshape.xor(poly1, poly2, 'KeepCollinearPoints', value)'''
+        description: '''polyshape.xor(poly1, poly2, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.xor.html'
 
 
-    "polyshape.addboundary":
+    "polyshape.addboundary [matlab]":
         prefix: "polyshape.addboundary"
         body: '''polyshape.addboundary(${1:polyin}, ${2:x}, ${3:y}, 'SolidBoundaryOrientation', ${4:value}, 'Simplify', ${5:value}, 'KeepCollinearPoints', ${6:value})'''
-        description: '''polyshape.addboundary(polyin, x, y, 'SolidBoundaryOrientation', value, 'Simplify', value, 'KeepCollinearPoints', value)'''
+        description: '''polyshape.addboundary(polyin, x, y, 'SolidBoundaryOrientation', value, 'Simplify', value, 'KeepCollinearPoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.addboundary.html'
 
 
-    "polyshape.sortboundaries":
+    "polyshape.sortboundaries [matlab]":
         prefix: "polyshape.sortboundaries"
         body: '''polyshape.sortboundaries(${1:pgon}, ${2:criterion}, ${3:direction})'''
-        description: '''polyshape.sortboundaries(pgon, criterion, direction)'''
+        description: '''polyshape.sortboundaries(pgon, criterion, direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.sortboundaries.html'
 
 
-    "stlwrite":
+    "stlwrite [matlab]":
         prefix: "stlwrite"
         body: '''stlwrite(${1:tr}, ${2:filename}, ${3:fileformat}, 'Attribute', ${4:value}, 'SolidIndex', ${5:value})'''
-        description: '''stlwrite(tr, filename, fileformat, 'Attribute', value, 'SolidIndex', value)'''
+        description: '''stlwrite(tr, filename, fileformat, 'Attribute', value, 'SolidIndex', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stlwrite.html'
 
 
-    "alphaShape":
+    "alphaShape [matlab]":
         prefix: "alphaShape"
         body: '''alphaShape(${1:x}, ${2:y}, ${3:optional_a}, 'HoleThreshold', ${4:value}, 'RegionThreshold', ${5:value})'''
-        description: '''alphaShape(x, y, optional_a, 'HoleThreshold', value, 'RegionThreshold', value)'''
+        description: '''alphaShape(x, y, optional_a, 'HoleThreshold', value, 'RegionThreshold', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/alphaShape.html'
 
 
-    "polybuffer":
+    "polybuffer [matlab]":
         prefix: "polybuffer"
         body: '''polybuffer(${1:P}, ${2:points}, ${3:d})'''
-        description: '''polybuffer(P, points, d)'''
+        description: '''polybuffer(P, points, d)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polybuffer.html'
 
 
-    "griddedInterpolant":
+    "griddedInterpolant [matlab]":
         prefix: "griddedInterpolant"
         body: '''griddedInterpolant(${1:x}, ${2:v}, ${3:Method}, ${4:ExtrapolationMethod})'''
-        description: '''griddedInterpolant(x, v, Method, ExtrapolationMethod)'''
+        description: '''griddedInterpolant(x, v, Method, ExtrapolationMethod)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/griddedInterpolant.html'
 
 
-    "griddata":
+    "griddata [matlab]":
         prefix: "griddata"
         body: '''griddata(${1:x}, ${2:y}, ${3:v}, ${4:xq}, ${5:yq}, ${6:method})'''
-        description: '''griddata(x, y, v, xq, yq, method)'''
+        description: '''griddata(x, y, v, xq, yq, method)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/griddata.html'
 
 
-    "polyshape.rmboundary":
+    "polyshape.rmboundary [matlab]":
         prefix: "polyshape.rmboundary"
         body: '''polyshape.rmboundary(${1:polyin}, ${2:I}, 'Simplify', ${3:value})'''
-        description: '''polyshape.rmboundary(polyin, I, 'Simplify', value)'''
+        description: '''polyshape.rmboundary(polyin, I, 'Simplify', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.rmboundary.html'
 
 
-    "interp2":
+    "interp2 [matlab]":
         prefix: "interp2"
         body: '''interp2(${1:X}, ${2:Y}, ${3:V}, ${4:Xq}, ${5:Yq}, ${6:method}, ${7:extrapval})'''
-        description: '''interp2(X, Y, V, Xq, Yq, method, extrapval)'''
+        description: '''interp2(X, Y, V, Xq, Yq, method, extrapval)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp2.html'
 

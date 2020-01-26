@@ -1,870 +1,870 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "degrees2dm":
+    "degrees2dm [map]":
         prefix: "degrees2dm"
         body: '''${1:DM} = degrees2dm(${1:angleInDegrees})'''
-        description: '''DM = degrees2dm(angleInDegrees)'''
+        description: '''DM = degrees2dm(angleInDegrees)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/degrees2dm.html'
 
 
-    "km2sm":
+    "km2sm [map]":
         prefix: "km2sm"
         body: '''${1:sm} = km2sm(${1:km})'''
-        description: '''sm = km2sm(km)'''
+        description: '''sm = km2sm(km)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/km2sm.html'
 
 
-    "geopeaks":
+    "geopeaks [map]":
         prefix: "geopeaks"
         body: '''${1:Z} = geopeaks(${1:lat}, ${2:lon}, ${3:optional_spheroid})'''
-        description: '''Z = geopeaks(lat, lon, optional_spheroid)'''
+        description: '''Z = geopeaks(lat, lon, optional_spheroid)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geopeaks.html'
 
 
-    "maprefcells":
+    "maprefcells [map]":
         prefix: "maprefcells"
         body: '''${1:R} = maprefcells(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:cellExtentInWorldX}, ${4:cellExtentInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
-        description: '''R = maprefcells(xWorldLimits, yWorldLimits, cellExtentInWorldX, cellExtentInWorldY, 'ColumnsStartFrom', value, 'RowsStartFrom', value)'''
+        description: '''R = maprefcells(xWorldLimits, yWorldLimits, cellExtentInWorldX, cellExtentInWorldY, 'ColumnsStartFrom', value, 'RowsStartFrom', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/maprefcells.html'
 
 
-    "polyjoin":
+    "polyjoin [map]":
         prefix: "polyjoin"
         body: '''[${1:lat}, ${2:lon}] = polyjoin(${1:latcells}, ${2:loncells})'''
-        description: '''[lat, lon] = polyjoin(latcells, loncells)'''
+        description: '''[lat, lon] = polyjoin(latcells, loncells)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/polyjoin.html'
 
 
-    "newpole":
+    "newpole [map]":
         prefix: "newpole"
         body: '''${1:origin} = newpole(${1:polelat}, ${2:polelon}, ${3:optional_units})'''
-        description: '''origin = newpole(polelat, polelon, optional_units)'''
+        description: '''origin = newpole(polelat, polelon, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/newpole.html'
 
 
-    "rad2sm":
+    "rad2sm [map]":
         prefix: "rad2sm"
         body: '''${1:sm} = rad2sm(${1:rad}, ${2:optional_sphere})'''
-        description: '''sm = rad2sm(rad, optional_sphere)'''
+        description: '''sm = rad2sm(rad, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/rad2sm.html'
 
 
-    "scxsc":
+    "scxsc [map]":
         prefix: "scxsc"
         body: '''[${1:newlat}, ${2:newlon}] = scxsc(${1:lat1}, ${2:lon1}, ${3:range1}, ${4:lat2}, ${5:lon2}, ${6:range2}, ${7:units})'''
-        description: '''[newlat, newlon] = scxsc(lat1, lon1, range1, lat2, lon2, range2, units)'''
+        description: '''[newlat, newlon] = scxsc(lat1, lon1, range1, lat2, lon2, range2, units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/scxsc.html'
 
 
-    "rad2km":
+    "rad2km [map]":
         prefix: "rad2km"
         body: '''${1:km} = rad2km(${1:rad}, ${2:optional_sphere})'''
-        description: '''km = rad2km(rad, optional_sphere)'''
+        description: '''km = rad2km(rad, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/rad2km.html'
 
 
-    "map.rasterref.GeographicRasterReference.intrinsicToGeographic":
+    "map.rasterref.GeographicRasterReference.intrinsicToGeographic [map]":
         prefix: "map.rasterref.GeographicRasterReference.intrinsicToGeographic"
         body: '''[${1:lat}, ${2:lon}] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
-        description: '''[lat, lon] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(R, xIntrinsic, yIntrinsic)'''
+        description: '''[lat, lon] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(R, xIntrinsic, yIntrinsic)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.intrinsicToGeographic.html'
 
 
-    "ltln2val":
+    "ltln2val [map]":
         prefix: "ltln2val"
         body: '''${1:val} = ltln2val(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:method})'''
-        description: '''val = ltln2val(Z, R, lat, lon, method)'''
+        description: '''val = ltln2val(Z, R, lat, lon, method)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/ltln2val.html'
 
 
-    "km2deg":
+    "km2deg [map]":
         prefix: "km2deg"
         body: '''${1:deg} = km2deg(${1:km}, ${2:optional_sphere})'''
-        description: '''deg = km2deg(km, optional_sphere)'''
+        description: '''deg = km2deg(km, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/km2deg.html'
 
 
-    "dm2degrees":
+    "dm2degrees [map]":
         prefix: "dm2degrees"
         body: '''${1:angleInDegrees} = dm2degrees(${1:DM})'''
-        description: '''angleInDegrees = dm2degrees(DM)'''
+        description: '''angleInDegrees = dm2degrees(DM)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/dm2degrees.html'
 
 
-    "refmatToGeoRasterReference":
+    "refmatToGeoRasterReference [map]":
         prefix: "refmatToGeoRasterReference"
         body: '''${1:R} = refmatToGeoRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
-        description: '''R = refmatToGeoRasterReference(refmat, rasterSize, optional_rasterInterpretation, funcName, varName, argIndex)'''
+        description: '''R = refmatToGeoRasterReference(refmat, rasterSize, optional_rasterInterpretation, funcName, varName, argIndex)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/refmatToGeoRasterReference.html'
 
 
-    "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX":
+    "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX [map]":
         prefix: "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX"
         body: '''${1:xIntrinsic} = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(${1:R}, ${2:lon})'''
-        description: '''xIntrinsic = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(R, lon)'''
+        description: '''xIntrinsic = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(R, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.longitudeToIntrinsicX.html'
 
 
-    "str2angle":
+    "str2angle [map]":
         prefix: "str2angle"
         body: '''${1:angles} = str2angle(${1:strings})'''
-        description: '''angles = str2angle(strings)'''
+        description: '''angles = str2angle(strings)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/str2angle.html'
 
 
-    "maprasterref":
+    "maprasterref [map]":
         prefix: "maprasterref"
         body: '''${1:R} = maprasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'XLimWorld', ${8:value}, 'YLimWorld', ${9:value})'''
-        description: '''R = maprasterref(W, rasterSize, rasterInterpretation, 'RasterSize', value, 'RasterInterpretation', value, 'ColumnsStartFrom', value, 'RowsStartFrom', value, 'XLimWorld', value, 'YLimWorld', value)'''
+        description: '''R = maprasterref(W, rasterSize, rasterInterpretation, 'RasterSize', value, 'RasterInterpretation', value, 'ColumnsStartFrom', value, 'RowsStartFrom', value, 'XLimWorld', value, 'YLimWorld', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/maprasterref.html'
 
 
-    "worldFileMatrixToRefmat":
+    "worldFileMatrixToRefmat [map]":
         prefix: "worldFileMatrixToRefmat"
         body: '''${1:refmat} = worldFileMatrixToRefmat(${1:W})'''
-        description: '''refmat = worldFileMatrixToRefmat(W)'''
+        description: '''refmat = worldFileMatrixToRefmat(W)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/worldFileMatrixToRefmat.html'
 
 
-    "mapshape":
+    "mapshape [map]":
         prefix: "mapshape"
         body: '''${1:p} = mapshape(${1:optional_structArray})'''
-        description: '''p = mapshape(optional_structArray)'''
+        description: '''p = mapshape(optional_structArray)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mapshape.html'
 
 
-    "closePolygonParts":
+    "closePolygonParts [map]":
         prefix: "closePolygonParts"
         body: '''[${1:xdata}, ${2:ydata}] = closePolygonParts(${1:xdata}, ${2:ydata})'''
-        description: '''[xdata, ydata] = closePolygonParts(xdata, ydata)'''
+        description: '''[xdata, ydata] = closePolygonParts(xdata, ydata)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/closePolygonParts.html'
 
 
-    "map.rasterref.GeographicRasterReference.geographicToDiscrete":
+    "map.rasterref.GeographicRasterReference.geographicToDiscrete [map]":
         prefix: "map.rasterref.GeographicRasterReference.geographicToDiscrete"
         body: '''[${1:I}, ${2:J}] = map.rasterref.GeographicRasterReference.geographicToDiscrete(${1:R}, ${2:lat}, ${3:lon})'''
-        description: '''[I, J] = map.rasterref.GeographicRasterReference.geographicToDiscrete(R, lat, lon)'''
+        description: '''[I, J] = map.rasterref.GeographicRasterReference.geographicToDiscrete(R, lat, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.geographicToDiscrete.html'
 
 
-    "nm2deg":
+    "nm2deg [map]":
         prefix: "nm2deg"
         body: '''${1:deg} = nm2deg(${1:nm}, ${2:optional_sphere})'''
-        description: '''deg = nm2deg(nm, optional_sphere)'''
+        description: '''deg = nm2deg(nm, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/nm2deg.html'
 
 
-    "geoshape":
+    "geoshape [map]":
         prefix: "geoshape"
         body: '''${1:p} = geoshape(${1:optional_structArray})'''
-        description: '''p = geoshape(optional_structArray)'''
+        description: '''p = geoshape(optional_structArray)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geoshape.html'
 
 
-    "linecirc":
+    "linecirc [map]":
         prefix: "linecirc"
         body: '''[${1:xout}, ${2:yout}] = linecirc(${1:slope}, ${2:intercpt}, ${3:centerx}, ${4:centery}, ${5:radius})'''
-        description: '''[xout, yout] = linecirc(slope, intercpt, centerx, centery, radius)'''
+        description: '''[xout, yout] = linecirc(slope, intercpt, centerx, centery, radius)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/linecirc.html'
 
 
-    "geoquadline":
+    "geoquadline [map]":
         prefix: "geoquadline"
         body: '''[${1:latlim}, ${2:lonlim}] = geoquadline(${1:lat}, ${2:lon})'''
-        description: '''[latlim, lonlim] = geoquadline(lat, lon)'''
+        description: '''[latlim, lonlim] = geoquadline(lat, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geoquadline.html'
 
 
-    "map.rasterref.MapRasterReference.sizesMatch":
+    "map.rasterref.MapRasterReference.sizesMatch [map]":
         prefix: "map.rasterref.MapRasterReference.sizesMatch"
         body: '''${1:tf} = map.rasterref.MapRasterReference.sizesMatch(${1:R}, ${2:A})'''
-        description: '''tf = map.rasterref.MapRasterReference.sizesMatch(R, A)'''
+        description: '''tf = map.rasterref.MapRasterReference.sizesMatch(R, A)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.sizesMatch.html'
 
 
-    "putpole":
+    "putpole [map]":
         prefix: "putpole"
         body: '''${1:origin} = putpole(${1:pole}, ${2:optional_units})'''
-        description: '''origin = putpole(pole, optional_units)'''
+        description: '''origin = putpole(pole, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/putpole.html'
 
 
-    "sm2rad":
+    "sm2rad [map]":
         prefix: "sm2rad"
         body: '''${1:rad} = sm2rad(${1:sm}, ${2:optional_sphere})'''
-        description: '''rad = sm2rad(sm, optional_sphere)'''
+        description: '''rad = sm2rad(sm, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/sm2rad.html'
 
 
-    "map.internal.DynamicVector.rmfield":
+    "map.internal.DynamicVector.rmfield [map]":
         prefix: "map.internal.DynamicVector.rmfield"
         body: '''${1:P} = map.internal.DynamicVector.rmfield(${1:P}, ${2:fields})'''
-        description: '''P = map.internal.DynamicVector.rmfield(P, fields)'''
+        description: '''P = map.internal.DynamicVector.rmfield(P, fields)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.internal.DynamicVector.rmfield.html'
 
 
-    "flatearthpoly":
+    "flatearthpoly [map]":
         prefix: "flatearthpoly"
         body: '''[${1:latf}, ${2:lonf}] = flatearthpoly(${1:lat}, ${2:lon}, ${3:optional_longitudeOrigin})'''
-        description: '''[latf, lonf] = flatearthpoly(lat, lon, optional_longitudeOrigin)'''
+        description: '''[latf, lonf] = flatearthpoly(lat, lon, optional_longitudeOrigin)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/flatearthpoly.html'
 
 
-    "removeExtraNanSeparators":
+    "removeExtraNanSeparators [map]":
         prefix: "removeExtraNanSeparators"
         body: '''[${1:xdata}, ${2:ydata}, ${3:zdata}] = removeExtraNanSeparators(${1:xdata}, ${2:ydata}, ${3:zdata})'''
-        description: '''[xdata, ydata, zdata] = removeExtraNanSeparators(xdata, ydata, zdata)'''
+        description: '''[xdata, ydata, zdata] = removeExtraNanSeparators(xdata, ydata, zdata)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/removeExtraNanSeparators.html'
 
 
-    "georefpostings":
+    "georefpostings [map]":
         prefix: "georefpostings"
         body: '''${1:R} = georefpostings(${1:latlim}, ${2:lonlim}, ${3:sampleSpacingInLatitude}, ${4:sampleSpacingInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
-        description: '''R = georefpostings(latlim, lonlim, sampleSpacingInLatitude, sampleSpacingInLongitude, 'ColumnsStartFrom', value, 'RowsStartFrom', value)'''
+        description: '''R = georefpostings(latlim, lonlim, sampleSpacingInLatitude, sampleSpacingInLongitude, 'ColumnsStartFrom', value, 'RowsStartFrom', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/georefpostings.html'
 
 
-    "map.rasterref.MapRasterReference.intrinsicToWorld":
+    "map.rasterref.MapRasterReference.intrinsicToWorld [map]":
         prefix: "map.rasterref.MapRasterReference.intrinsicToWorld"
         body: '''[${1:xWorld}, ${2:yWorld}] = map.rasterref.MapRasterReference.intrinsicToWorld(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
-        description: '''[xWorld, yWorld] = map.rasterref.MapRasterReference.intrinsicToWorld(R, xIntrinsic, yIntrinsic)'''
+        description: '''[xWorld, yWorld] = map.rasterref.MapRasterReference.intrinsicToWorld(R, xIntrinsic, yIntrinsic)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.intrinsicToWorld.html'
 
 
-    "track2":
+    "track2 [map]":
         prefix: "track2"
         body: '''[${1:lat}, ${2:lon}] = track2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
-        description: '''[lat, lon] = track2(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, units, npts)'''
+        description: '''[lat, lon] = track2(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, units, npts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/track2.html'
 
 
-    "viewshed":
+    "viewshed [map]":
         prefix: "viewshed"
         body: '''[${1:vis}, ${2:R}] = viewshed(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:observerAltitude}, ${6:targetAltitude}, ${7:observerAltitudeOption}, ${8:targetAltitudeOption}, ${9:actualRadius}, ${10:effectiveRadius})'''
-        description: '''[vis, R] = viewshed(Z, R, lat1, lon1, observerAltitude, targetAltitude, observerAltitudeOption, targetAltitudeOption, actualRadius, effectiveRadius)'''
+        description: '''[vis, R] = viewshed(Z, R, lat1, lon1, observerAltitude, targetAltitude, observerAltitudeOption, targetAltitudeOption, actualRadius, effectiveRadius)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/viewshed.html'
 
 
-    "map.rasterref.GeographicRasterReference.intrinsicYToLatitude":
+    "map.rasterref.GeographicRasterReference.intrinsicYToLatitude [map]":
         prefix: "map.rasterref.GeographicRasterReference.intrinsicYToLatitude"
         body: '''${1:lat} = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(${1:R}, ${2:yIntrinsic})'''
-        description: '''lat = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(R, yIntrinsic)'''
+        description: '''lat = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(R, yIntrinsic)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.intrinsicYToLatitude.html'
 
 
-    "georefcells":
+    "georefcells [map]":
         prefix: "georefcells"
         body: '''${1:R} = georefcells(${1:latlim}, ${2:lonlim}, ${3:cellExtentInLatitude}, ${4:cellExtentInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
-        description: '''R = georefcells(latlim, lonlim, cellExtentInLatitude, cellExtentInLongitude, 'ColumnsStartFrom', value, 'RowsStartFrom', value)'''
+        description: '''R = georefcells(latlim, lonlim, cellExtentInLatitude, cellExtentInLongitude, 'ColumnsStartFrom', value, 'RowsStartFrom', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/georefcells.html'
 
 
-    "polyxpoly":
+    "polyxpoly [map]":
         prefix: "polyxpoly"
         body: '''[${1:xi}, ${2:yi}, ${3:ii}] = polyxpoly(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:optional_'unique'})'''
-        description: '''[xi, yi, ii] = polyxpoly(x1, y1, x2, y2, optional_'unique')'''
+        description: '''[xi, yi, ii] = polyxpoly(x1, y1, x2, y2, optional_'unique')    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/polyxpoly.html'
 
 
-    "poly2ccw":
+    "poly2ccw [map]":
         prefix: "poly2ccw"
         body: '''[${1:x2}, ${2:y2}] = poly2ccw(${1:x1}, ${2:y1})'''
-        description: '''[x2, y2] = poly2ccw(x1, y1)'''
+        description: '''[x2, y2] = poly2ccw(x1, y1)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/poly2ccw.html'
 
 
-    "map.internal.DynamicVector.rmprop":
+    "map.internal.DynamicVector.rmprop [map]":
         prefix: "map.internal.DynamicVector.rmprop"
         body: '''${1:PF} = map.internal.DynamicVector.rmprop(${1:P}, ${2:propnames})'''
-        description: '''PF = map.internal.DynamicVector.rmprop(P, propnames)'''
+        description: '''PF = map.internal.DynamicVector.rmprop(P, propnames)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.internal.DynamicVector.rmprop.html'
 
 
-    "scircle2":
+    "scircle2 [map]":
         prefix: "scircle2"
         body: '''[${1:lat}, ${2:lon}] = scircle2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
-        description: '''[lat, lon] = scircle2(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, units, npts)'''
+        description: '''[lat, lon] = scircle2(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, units, npts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/scircle2.html'
 
 
-    "map.rasterref.MapRasterReference.firstCornerY":
+    "map.rasterref.MapRasterReference.firstCornerY [map]":
         prefix: "map.rasterref.MapRasterReference.firstCornerY"
         body: '''${1:y} = map.rasterref.MapRasterReference.firstCornerY(${1:R})'''
-        description: '''y = map.rasterref.MapRasterReference.firstCornerY(R)'''
+        description: '''y = map.rasterref.MapRasterReference.firstCornerY(R)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.firstCornerY.html'
 
 
-    "distance":
+    "distance [map]":
         prefix: "distance"
         body: '''[${1:arclen}, ${2:az}] = distance(${1:optional_track}, ${2:pt1}, ${3:pt2}, ${4:optional_ellipsoid}, ${5:optional_units})'''
-        description: '''[arclen, az] = distance(optional_track, pt1, pt2, optional_ellipsoid, optional_units)'''
+        description: '''[arclen, az] = distance(optional_track, pt1, pt2, optional_ellipsoid, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/distance.html'
 
 
-    "refmatToWorldFileMatrix":
+    "refmatToWorldFileMatrix [map]":
         prefix: "refmatToWorldFileMatrix"
         body: '''${1:W} = refmatToWorldFileMatrix(${1:refmat})'''
-        description: '''W = refmatToWorldFileMatrix(refmat)'''
+        description: '''W = refmatToWorldFileMatrix(refmat)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/refmatToWorldFileMatrix.html'
 
 
-    "intersectgeoquad":
+    "intersectgeoquad [map]":
         prefix: "intersectgeoquad"
         body: '''[${1:latlim}, ${2:lonlim}] = intersectgeoquad(${1:latlim1}, ${2:lonlim1}, ${3:latlim2}, ${4:lonlim2})'''
-        description: '''[latlim, lonlim] = intersectgeoquad(latlim1, lonlim1, latlim2, lonlim2)'''
+        description: '''[latlim, lonlim] = intersectgeoquad(latlim1, lonlim1, latlim2, lonlim2)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/intersectgeoquad.html'
 
 
-    "mapoutline":
+    "mapoutline [map]":
         prefix: "mapoutline"
         body: '''[${1:lat}, ${2:lon}] = mapoutline(${1:R}, ${2:sizea}, ${3:optional_'close'})'''
-        description: '''[lat, lon] = mapoutline(R, sizea, optional_'close')'''
+        description: '''[lat, lon] = mapoutline(R, sizea, optional_'close')    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mapoutline.html'
 
 
-    "reckon":
+    "reckon [map]":
         prefix: "reckon"
         body: '''[${1:latout}, ${2:lonout}] = reckon(${1:optional_track}, ${2:lat}, ${3:lon}, ${4:arclen}, ${5:az}, ${6:optional_ellipsoid}, ${7:optional_units})'''
-        description: '''[latout, lonout] = reckon(optional_track, lat, lon, arclen, az, optional_ellipsoid, optional_units)'''
+        description: '''[latout, lonout] = reckon(optional_track, lat, lon, arclen, az, optional_ellipsoid, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/reckon.html'
 
 
-    "map.rasterref.GeographicRasterReference.sizesMatch":
+    "map.rasterref.GeographicRasterReference.sizesMatch [map]":
         prefix: "map.rasterref.GeographicRasterReference.sizesMatch"
         body: '''${1:tf} = map.rasterref.GeographicRasterReference.sizesMatch(${1:R}, ${2:A})'''
-        description: '''tf = map.rasterref.GeographicRasterReference.sizesMatch(R, A)'''
+        description: '''tf = map.rasterref.GeographicRasterReference.sizesMatch(R, A)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.sizesMatch.html'
 
 
-    "vec2mtx":
+    "vec2mtx [map]":
         prefix: "vec2mtx"
         body: '''[${1:Z}, ${2:R}] = vec2mtx(${1:lat}, ${2:lon}, ${3:Z1}, ${4:R1}, ${5:optional_'filled'})'''
-        description: '''[Z, R] = vec2mtx(lat, lon, Z1, R1, optional_'filled')'''
+        description: '''[Z, R] = vec2mtx(lat, lon, Z1, R1, optional_'filled')    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/vec2mtx.html'
 
 
-    "km2rad":
+    "km2rad [map]":
         prefix: "km2rad"
         body: '''${1:rad} = km2rad(${1:km}, ${2:optional_sphere})'''
-        description: '''rad = km2rad(km, optional_sphere)'''
+        description: '''rad = km2rad(km, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/km2rad.html'
 
 
-    "isShapeMultipart":
+    "isShapeMultipart [map]":
         prefix: "isShapeMultipart"
         body: '''${1:tf} = isShapeMultipart(${1:xdata}, ${2:ydata})'''
-        description: '''tf = isShapeMultipart(xdata, ydata)'''
+        description: '''tf = isShapeMultipart(xdata, ydata)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/isShapeMultipart.html'
 
 
-    "dms2degrees":
+    "dms2degrees [map]":
         prefix: "dms2degrees"
         body: '''${1:angleInDegrees} = dms2degrees(${1:DMS})'''
-        description: '''angleInDegrees = dms2degrees(DMS)'''
+        description: '''angleInDegrees = dms2degrees(DMS)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/dms2degrees.html'
 
 
-    "sm2deg":
+    "sm2deg [map]":
         prefix: "sm2deg"
         body: '''${1:deg} = sm2deg(${1:sm}, ${2:optional_sphere})'''
-        description: '''deg = sm2deg(sm, optional_sphere)'''
+        description: '''deg = sm2deg(sm, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/sm2deg.html'
 
 
-    "limitm":
+    "limitm [map]":
         prefix: "limitm"
         body: '''[${1:latlim}, ${2:lonlim}] = limitm(${1:Z}, ${2:R})'''
-        description: '''[latlim, lonlim] = limitm(Z, R)'''
+        description: '''[latlim, lonlim] = limitm(Z, R)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/limitm.html'
 
 
-    "extractfield":
+    "extractfield [map]":
         prefix: "extractfield"
         body: '''${1:a} = extractfield(${1:s}, ${2:name})'''
-        description: '''a = extractfield(s, name)'''
+        description: '''a = extractfield(s, name)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/extractfield.html'
 
 
-    "interpm":
+    "interpm [map]":
         prefix: "interpm"
         body: '''[${1:latout}, ${2:lonout}] = interpm(${1:lat}, ${2:lon}, ${3:maxdiff}, ${4:method}, ${5:optional_units})'''
-        description: '''[latout, lonout] = interpm(lat, lon, maxdiff, method, optional_units)'''
+        description: '''[latout, lonout] = interpm(lat, lon, maxdiff, method, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/interpm.html'
 
 
-    "areaquad":
+    "areaquad [map]":
         prefix: "areaquad"
         body: '''${1:area} = areaquad(${1:lat1}, ${2:lon1}, ${3:lat2}, ${4:lon2}, ${5:ellipsoid}, ${6:optional_units})'''
-        description: '''area = areaquad(lat1, lon1, lat2, lon2, ellipsoid, optional_units)'''
+        description: '''area = areaquad(lat1, lon1, lat2, lon2, ellipsoid, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/areaquad.html'
 
 
-    "org2pol":
+    "org2pol [map]":
         prefix: "org2pol"
         body: '''${1:pole} = org2pol(${1:origin}, ${2:optional_units})'''
-        description: '''pole = org2pol(origin, optional_units)'''
+        description: '''pole = org2pol(origin, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/org2pol.html'
 
 
-    "polybool":
+    "polybool [map]":
         prefix: "polybool"
         body: '''[${1:x}, ${2:y}] = polybool(${1:flag}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2})'''
-        description: '''[x, y] = polybool(flag, x1, y1, x2, y2)'''
+        description: '''[x, y] = polybool(flag, x1, y1, x2, y2)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/polybool.html'
 
 
-    "deg2nm":
+    "deg2nm [map]":
         prefix: "deg2nm"
         body: '''${1:nm} = deg2nm(${1:deg}, ${2:optional_sphere})'''
-        description: '''nm = deg2nm(deg, optional_sphere)'''
+        description: '''nm = deg2nm(deg, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/deg2nm.html'
 
 
-    "scircle1":
+    "scircle1 [map]":
         prefix: "scircle1"
         body: '''[${1:lat}, ${2:lon}] = scircle1(${1:optional_track}, ${2:lat0}, ${3:lon0}, ${4:rad}, ${5:optional_az}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
-        description: '''[lat, lon] = scircle1(optional_track, lat0, lon0, rad, optional_az, optional_ellipsoid, units, npts)'''
+        description: '''[lat, lon] = scircle1(optional_track, lat0, lon0, rad, optional_az, optional_ellipsoid, units, npts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/scircle1.html'
 
 
-    "geocontourxy":
+    "geocontourxy [map]":
         prefix: "geocontourxy"
         body: '''[${1:contourLines}, ${2:contourPolygons}] = geocontourxy(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, 'LevelList', ${7:value}, 'XYRotation', ${8:value}, 'Spheroid', ${9:value})'''
-        description: '''[contourLines, contourPolygons] = geocontourxy(X, Y, Z, lat0, lon0, h0, 'LevelList', value, 'XYRotation', value, 'Spheroid', value)'''
+        description: '''[contourLines, contourPolygons] = geocontourxy(X, Y, Z, lat0, lon0, h0, 'LevelList', value, 'XYRotation', value, 'Spheroid', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geocontourxy.html'
 
 
-    "track1":
+    "track1 [map]":
         prefix: "track1"
         body: '''[${1:lat}, ${2:lon}] = track1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:az}, ${5:optional_arclen}, ${6:optional_ellipsoid}, ${7:angleunits}, ${8:npts})'''
-        description: '''[lat, lon] = track1(optional_trackstr, lat0, lon0, az, optional_arclen, optional_ellipsoid, angleunits, npts)'''
+        description: '''[lat, lon] = track1(optional_trackstr, lat0, lon0, az, optional_arclen, optional_ellipsoid, angleunits, npts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/track1.html'
 
 
-    "geointerp":
+    "geointerp [map]":
         prefix: "geointerp"
         body: '''${1:Vq} = geointerp(${1:V}, ${2:R}, ${3:latq}, ${4:lonq}, ${5:method})'''
-        description: '''Vq = geointerp(V, R, latq, lonq, method)'''
+        description: '''Vq = geointerp(V, R, latq, lonq, method)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geointerp.html'
 
 
-    "mappoint":
+    "mappoint [map]":
         prefix: "mappoint"
         body: '''${1:p} = mappoint(${1:optional_structArray})'''
-        description: '''p = mappoint(optional_structArray)'''
+        description: '''p = mappoint(optional_structArray)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mappoint.html'
 
 
-    "map.rasterref.MapRasterReference.worldToDiscrete":
+    "map.rasterref.MapRasterReference.worldToDiscrete [map]":
         prefix: "map.rasterref.MapRasterReference.worldToDiscrete"
         body: '''[${1:I}, ${2:J}] = map.rasterref.MapRasterReference.worldToDiscrete(${1:R}, ${2:xWorld}, ${3:yWorld})'''
-        description: '''[I, J] = map.rasterref.MapRasterReference.worldToDiscrete(R, xWorld, yWorld)'''
+        description: '''[I, J] = map.rasterref.MapRasterReference.worldToDiscrete(R, xWorld, yWorld)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.worldToDiscrete.html'
 
 
-    "gcxgc":
+    "gcxgc [map]":
         prefix: "gcxgc"
         body: '''[${1:newlat}, ${2:newlon}] = gcxgc(${1:gclat}, ${2:gclon}, ${3:gcaz}, ${4:sclat}, ${5:sclon}, ${6:scrange}, ${7:optional_units})'''
-        description: '''[newlat, newlon] = gcxgc(gclat, gclon, gcaz, sclat, sclon, scrange, optional_units)'''
+        description: '''[newlat, newlon] = gcxgc(gclat, gclon, gcaz, sclat, sclon, scrange, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/gcxgc.html'
 
 
-    "mapshow":
+    "mapshow [map]":
         prefix: "mapshow"
         body: '''${1:h} = mapshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
-        description: '''h = mapshow(optional_ax, filename, opts)'''
+        description: '''h = mapshow(optional_ax, filename, opts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mapshow.html'
 
 
-    "rhxrh":
+    "rhxrh [map]":
         prefix: "rhxrh"
         body: '''[${1:newlat}, ${2:newlon}] = rhxrh(${1:lat1}, ${2:lon1}, ${3:az1}, ${4:lat2}, ${5:lon2}, ${6:az2}, ${7:optional_units})'''
-        description: '''[newlat, newlon] = rhxrh(lat1, lon1, az1, lat2, lon2, az2, optional_units)'''
+        description: '''[newlat, newlon] = rhxrh(lat1, lon1, az1, lat2, lon2, az2, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/rhxrh.html'
 
 
-    "unwrapMultipart":
+    "unwrapMultipart [map]":
         prefix: "unwrapMultipart"
         body: '''${1:unwrapped} = unwrapMultipart(${1:p}, ${2:optional_angleUnit})'''
-        description: '''unwrapped = unwrapMultipart(p, optional_angleUnit)'''
+        description: '''unwrapped = unwrapMultipart(p, optional_angleUnit)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/unwrapMultipart.html'
 
 
-    "maptrims":
+    "maptrims [map]":
         prefix: "maptrims"
         body: '''[${1:Z_trimmed}, ${2:R_trimmed}] = maptrims(${1:Z}, ${2:R}, ${3:latlim}, ${4:lonlim}, ${5:optional_cellDensity})'''
-        description: '''[Z_trimmed, R_trimmed] = maptrims(Z, R, latlim, lonlim, optional_cellDensity)'''
+        description: '''[Z_trimmed, R_trimmed] = maptrims(Z, R, latlim, lonlim, optional_cellDensity)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/maptrims.html'
 
 
-    "refmatToMapRasterReference":
+    "refmatToMapRasterReference [map]":
         prefix: "refmatToMapRasterReference"
         body: '''${1:R} = refmatToMapRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
-        description: '''R = refmatToMapRasterReference(refmat, rasterSize, optional_rasterInterpretation, funcName, varName, argIndex)'''
+        description: '''R = refmatToMapRasterReference(refmat, rasterSize, optional_rasterInterpretation, funcName, varName, argIndex)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/refmatToMapRasterReference.html'
 
 
-    "areamat":
+    "areamat [map]":
         prefix: "areamat"
         body: '''[${1:A}, ${2:cellarea}] = areamat(${1:BW}, ${2:R}, ${3:optional_ellipsoid})'''
-        description: '''[A, cellarea] = areamat(BW, R, optional_ellipsoid)'''
+        description: '''[A, cellarea] = areamat(BW, R, optional_ellipsoid)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/areamat.html'
 
 
-    "geoquadpt":
+    "geoquadpt [map]":
         prefix: "geoquadpt"
         body: '''[${1:latlim}, ${2:lonlim}] = geoquadpt(${1:lat}, ${2:lon})'''
-        description: '''[latlim, lonlim] = geoquadpt(lat, lon)'''
+        description: '''[latlim, lonlim] = geoquadpt(lat, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geoquadpt.html'
 
 
-    "geopoint":
+    "geopoint [map]":
         prefix: "geopoint"
         body: '''${1:p} = geopoint(${1:optional_structArray})'''
-        description: '''p = geopoint(optional_structArray)'''
+        description: '''p = geopoint(optional_structArray)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geopoint.html'
 
 
-    "mapprofile":
+    "mapprofile [map]":
         prefix: "mapprofile"
         body: '''[${1:zi}, ${2:ri}, ${3:lat}, ${4:lon}] = mapprofile(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:ellipsoid}, ${6:'trackmethod'}, ${7:'interpmethod'})'''
-        description: '''[zi, ri, lat, lon] = mapprofile(Z, R, lat, lon, ellipsoid, 'trackmethod', 'interpmethod')'''
+        description: '''[zi, ri, lat, lon] = mapprofile(Z, R, lat, lon, ellipsoid, 'trackmethod', 'interpmethod')    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mapprofile.html'
 
 
-    "poly2fv":
+    "poly2fv [map]":
         prefix: "poly2fv"
         body: '''[${1:F}, ${2:V}] = poly2fv(${1:x}, ${2:y})'''
-        description: '''[F, V] = poly2fv(x, y)'''
+        description: '''[F, V] = poly2fv(x, y)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/poly2fv.html'
 
 
-    "deg2km":
+    "deg2km [map]":
         prefix: "deg2km"
         body: '''${1:km} = deg2km(${1:deg}, ${2:optional_sphere})'''
-        description: '''km = deg2km(deg, optional_sphere)'''
+        description: '''km = deg2km(deg, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/deg2km.html'
 
 
-    "ingeoquad":
+    "ingeoquad [map]":
         prefix: "ingeoquad"
         body: '''${1:tf} = ingeoquad(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
-        description: '''tf = ingeoquad(lat, lon, latlim, lonlim)'''
+        description: '''tf = ingeoquad(lat, lon, latlim, lonlim)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/ingeoquad.html'
 
 
-    "gc2sc":
+    "gc2sc [map]":
         prefix: "gc2sc"
         body: '''[${1:lat}, ${2:lon}, ${3:radius}] = gc2sc(${1:lat0}, ${2:lon0}, ${3:az}, ${4:optional_angleunits})'''
-        description: '''[lat, lon, radius] = gc2sc(lat0, lon0, az, optional_angleunits)'''
+        description: '''[lat, lon, radius] = gc2sc(lat0, lon0, az, optional_angleunits)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/gc2sc.html'
 
 
-    "km2nm":
+    "km2nm [map]":
         prefix: "km2nm"
         body: '''${1:nm} = km2nm(${1:km})'''
-        description: '''nm = km2nm(km)'''
+        description: '''nm = km2nm(km)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/km2nm.html'
 
 
-    "makesymbolspec":
+    "makesymbolspec [map]":
         prefix: "makesymbolspec"
         body: '''${1:symbolspec} = makesymbolspec(${1:geometry}, ${2:rule})'''
-        description: '''symbolspec = makesymbolspec(geometry, rule)'''
+        description: '''symbolspec = makesymbolspec(geometry, rule)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/makesymbolspec.html'
 
 
-    "poly2cw":
+    "poly2cw [map]":
         prefix: "poly2cw"
         body: '''[${1:x2}, ${2:y2}] = poly2cw(${1:x1}, ${2:y1})'''
-        description: '''[x2, y2] = poly2cw(x1, y1)'''
+        description: '''[x2, y2] = poly2cw(x1, y1)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/poly2cw.html'
 
 
-    "polysplit":
+    "polysplit [map]":
         prefix: "polysplit"
         body: '''[${1:latcells}, ${2:loncells}] = polysplit(${1:lat}, ${2:lon})'''
-        description: '''[latcells, loncells] = polysplit(lat, lon)'''
+        description: '''[latcells, loncells] = polysplit(lat, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/polysplit.html'
 
 
-    "ispolycw":
+    "ispolycw [map]":
         prefix: "ispolycw"
         body: '''${1:tf} = ispolycw(${1:x}, ${2:y})'''
-        description: '''tf = ispolycw(x, y)'''
+        description: '''tf = ispolycw(x, y)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/ispolycw.html'
 
 
-    "georasterref":
+    "georasterref [map]":
         prefix: "georasterref"
         body: '''${1:R} = georasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'LatitudeLimits', ${8:value}, 'LongitudeLimits', ${9:value})'''
-        description: '''R = georasterref(W, rasterSize, rasterInterpretation, 'RasterSize', value, 'RasterInterpretation', value, 'ColumnsStartFrom', value, 'RowsStartFrom', value, 'LatitudeLimits', value, 'LongitudeLimits', value)'''
+        description: '''R = georasterref(W, rasterSize, rasterInterpretation, 'RasterSize', value, 'RasterInterpretation', value, 'ColumnsStartFrom', value, 'RowsStartFrom', value, 'LatitudeLimits', value, 'LongitudeLimits', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/georasterref.html'
 
 
-    "intrplon":
+    "intrplon [map]":
         prefix: "intrplon"
         body: '''${1:newlon} = intrplon(${1:lat}, ${2:lon}, ${3:newlat}, ${4:method}, ${5:optional_units})'''
-        description: '''newlon = intrplon(lat, lon, newlat, method, optional_units)'''
+        description: '''newlon = intrplon(lat, lon, newlat, method, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/intrplon.html'
 
 
-    "geoshow":
+    "geoshow [map]":
         prefix: "geoshow"
         body: '''${1:h} = geoshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
-        description: '''h = geoshow(optional_ax, filename, opts)'''
+        description: '''h = geoshow(optional_ax, filename, opts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geoshow.html'
 
 
-    "mapresize":
+    "mapresize [map]":
         prefix: "mapresize"
         body: '''[${1:B}, ${2:RB}] = mapresize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
-        description: '''[B, RB] = mapresize(A, RA, scale, method, 'Antialiasing', value)'''
+        description: '''[B, RB] = mapresize(A, RA, scale, method, 'Antialiasing', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mapresize.html'
 
 
-    "outlinegeoquad":
+    "outlinegeoquad [map]":
         prefix: "outlinegeoquad"
         body: '''[${1:lat}, ${2:lon}] = outlinegeoquad(${1:latlim}, ${2:lonlim}, ${3:dlat}, ${4:dlon})'''
-        description: '''[lat, lon] = outlinegeoquad(latlim, lonlim, dlat, dlon)'''
+        description: '''[lat, lon] = outlinegeoquad(latlim, lonlim, dlat, dlon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/outlinegeoquad.html'
 
 
-    "refvecToGeoRasterReference":
+    "refvecToGeoRasterReference [map]":
         prefix: "refvecToGeoRasterReference"
         body: '''${1:R} = refvecToGeoRasterReference(${1:refvec}, ${2:rasterSize}, ${3:funcName}, ${4:varName}, ${5:argIndex})'''
-        description: '''R = refvecToGeoRasterReference(refvec, rasterSize, funcName, varName, argIndex)'''
+        description: '''R = refvecToGeoRasterReference(refvec, rasterSize, funcName, varName, argIndex)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/refvecToGeoRasterReference.html'
 
 
-    "reducem":
+    "reducem [map]":
         prefix: "reducem"
         body: '''[${1:latout}, ${2:lonout}, ${3:cerr}, ${4:tol}] = reducem(${1:latin}, ${2:lonin}, ${3:tol})'''
-        description: '''[latout, lonout, cerr, tol] = reducem(latin, lonin, tol)'''
+        description: '''[latout, lonout, cerr, tol] = reducem(latin, lonin, tol)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/reducem.html'
 
 
-    "resizem":
+    "resizem [map]":
         prefix: "resizem"
         body: '''[${1:Z}, ${2:R}] = resizem(${1:Z1}, ${2:[numrows numcolumns]}, ${3:optional_R1}, ${4:method})'''
-        description: '''[Z, R] = resizem(Z1, [numrows numcolumns], optional_R1, method)'''
+        description: '''[Z, R] = resizem(Z1, [numrows numcolumns], optional_R1, method)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/resizem.html'
 
 
-    "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY":
+    "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY [map]":
         prefix: "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY"
         body: '''${1:yIntrinsic} = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(${1:R}, ${2:lat})'''
-        description: '''yIntrinsic = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(R, lat)'''
+        description: '''yIntrinsic = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(R, lat)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.latitudeToIntrinsicY.html'
 
 
-    "deg2sm":
+    "deg2sm [map]":
         prefix: "deg2sm"
         body: '''${1:sm} = deg2sm(${1:deg}, ${2:optional_sphere})'''
-        description: '''sm = deg2sm(deg, optional_sphere)'''
+        description: '''sm = deg2sm(deg, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/deg2sm.html'
 
 
-    "map.rasterref.MapRasterReference.firstCornerX":
+    "map.rasterref.MapRasterReference.firstCornerX [map]":
         prefix: "map.rasterref.MapRasterReference.firstCornerX"
         body: '''${1:x} = map.rasterref.MapRasterReference.firstCornerX(${1:R})'''
-        description: '''x = map.rasterref.MapRasterReference.firstCornerX(R)'''
+        description: '''x = map.rasterref.MapRasterReference.firstCornerX(R)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.firstCornerX.html'
 
 
-    "map.rasterref.MapRasterReference.worldToIntrinsic":
+    "map.rasterref.MapRasterReference.worldToIntrinsic [map]":
         prefix: "map.rasterref.MapRasterReference.worldToIntrinsic"
         body: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.MapRasterReference.worldToIntrinsic(${1:R}, ${2:xWorld}, ${3:yWorld})'''
-        description: '''[xIntrinsic, yIntrinsic] = map.rasterref.MapRasterReference.worldToIntrinsic(R, xWorld, yWorld)'''
+        description: '''[xIntrinsic, yIntrinsic] = map.rasterref.MapRasterReference.worldToIntrinsic(R, xWorld, yWorld)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.worldToIntrinsic.html'
 
 
-    "map.rasterref.MapRasterReference.contains":
+    "map.rasterref.MapRasterReference.contains [map]":
         prefix: "map.rasterref.MapRasterReference.contains"
         body: '''${1:tf} = map.rasterref.MapRasterReference.contains(${1:R}, ${2:xWorld}, ${3:yWorld})'''
-        description: '''tf = map.rasterref.MapRasterReference.contains(R, xWorld, yWorld)'''
+        description: '''tf = map.rasterref.MapRasterReference.contains(R, xWorld, yWorld)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.MapRasterReference.contains.html'
 
 
-    "bufferm":
+    "bufferm [map]":
         prefix: "bufferm"
         body: '''[${1:latb}, ${2:lonb}] = bufferm(${1:lat}, ${2:lon}, ${3:dist}, ${4:direction}, ${5:npts})'''
-        description: '''[latb, lonb] = bufferm(lat, lon, dist, direction, npts)'''
+        description: '''[latb, lonb] = bufferm(lat, lon, dist, direction, npts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/bufferm.html'
 
 
-    "makerefmat":
+    "makerefmat [map]":
         prefix: "makerefmat"
         body: '''${1:R} = makerefmat(${1:x11}, ${2:y11}, ${3:dx}, ${4:dy})'''
-        description: '''R = makerefmat(x11, y11, dx, dy)'''
+        description: '''R = makerefmat(x11, y11, dx, dy)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/makerefmat.html'
 
 
-    "bufgeoquad":
+    "bufgeoquad [map]":
         prefix: "bufgeoquad"
         body: '''[${1:latlim}, ${2:lonlim}] = bufgeoquad(${1:latlim}, ${2:lonlim}, ${3:buflat}, ${4:buflon})'''
-        description: '''[latlim, lonlim] = bufgeoquad(latlim, lonlim, buflat, buflon)'''
+        description: '''[latlim, lonlim] = bufgeoquad(latlim, lonlim, buflat, buflon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/bufgeoquad.html'
 
 
-    "angl2str":
+    "angl2str [map]":
         prefix: "angl2str"
         body: '''${1:str} = angl2str(${1:angle}, ${2:signcode}, ${3:units}, ${4:n})'''
-        description: '''str = angl2str(angle, signcode, units, n)'''
+        description: '''str = angl2str(angle, signcode, units, n)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/angl2str.html'
 
 
-    "degrees2dms":
+    "degrees2dms [map]":
         prefix: "degrees2dms"
         body: '''${1:DMS} = degrees2dms(${1:angleInDegrees})'''
-        description: '''DMS = degrees2dms(angleInDegrees)'''
+        description: '''DMS = degrees2dms(angleInDegrees)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/degrees2dms.html'
 
 
-    "mapinterp":
+    "mapinterp [map]":
         prefix: "mapinterp"
         body: '''${1:Vq} = mapinterp(${1:V}, ${2:R}, ${3:xq}, ${4:yq}, ${5:method})'''
-        description: '''Vq = mapinterp(V, R, xq, yq, method)'''
+        description: '''Vq = mapinterp(V, R, xq, yq, method)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/mapinterp.html'
 
 
-    "maprefpostings":
+    "maprefpostings [map]":
         prefix: "maprefpostings"
         body: '''${1:R} = maprefpostings(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:sampleSpacingInWorldX}, ${4:sampleSpacingInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
-        description: '''R = maprefpostings(xWorldLimits, yWorldLimits, sampleSpacingInWorldX, sampleSpacingInWorldY, 'ColumnsStartFrom', value, 'RowsStartFrom', value)'''
+        description: '''R = maprefpostings(xWorldLimits, yWorldLimits, sampleSpacingInWorldX, sampleSpacingInWorldY, 'ColumnsStartFrom', value, 'RowsStartFrom', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/maprefpostings.html'
 
 
-    "georesize":
+    "georesize [map]":
         prefix: "georesize"
         body: '''[${1:B}, ${2:RB}] = georesize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
-        description: '''[B, RB] = georesize(A, RA, scale, method, 'Antialiasing', value)'''
+        description: '''[B, RB] = georesize(A, RA, scale, method, 'Antialiasing', value)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/georesize.html'
 
 
-    "sm2km":
+    "sm2km [map]":
         prefix: "sm2km"
         body: '''${1:km} = sm2km(${1:sm})'''
-        description: '''km = sm2km(sm)'''
+        description: '''km = sm2km(sm)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/sm2km.html'
 
 
-    "intrplat":
+    "intrplat [map]":
         prefix: "intrplat"
         body: '''${1:newlat} = intrplat(${1:long}, ${2:lat}, ${3:newlong}, ${4:method}, ${5:optional_units})'''
-        description: '''newlat = intrplat(long, lat, newlong, method, optional_units)'''
+        description: '''newlat = intrplat(long, lat, newlong, method, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/intrplat.html'
 
 
-    "map.rasterref.GeographicRasterReference.contains":
+    "map.rasterref.GeographicRasterReference.contains [map]":
         prefix: "map.rasterref.GeographicRasterReference.contains"
         body: '''${1:tf} = map.rasterref.GeographicRasterReference.contains(${1:R}, ${2:lat}, ${3:lon})'''
-        description: '''tf = map.rasterref.GeographicRasterReference.contains(R, lat, lon)'''
+        description: '''tf = map.rasterref.GeographicRasterReference.contains(R, lat, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.contains.html'
 
 
-    "areaint":
+    "areaint [map]":
         prefix: "areaint"
         body: '''${1:area} = areaint(${1:lat}, ${2:lon}, ${3:optional_ellipsoid}, ${4:optional_units})'''
-        description: '''area = areaint(lat, lon, optional_ellipsoid, optional_units)'''
+        description: '''area = areaint(lat, lon, optional_ellipsoid, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/areaint.html'
 
 
-    "map.rasterref.GeographicRasterReference.intrinsicXToLongitude":
+    "map.rasterref.GeographicRasterReference.intrinsicXToLongitude [map]":
         prefix: "map.rasterref.GeographicRasterReference.intrinsicXToLongitude"
         body: '''${1:lon} = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(${1:R}, ${2:xIntrinsic})'''
-        description: '''lon = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(R, xIntrinsic)'''
+        description: '''lon = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(R, xIntrinsic)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.intrinsicXToLongitude.html'
 
 
-    "nm2km":
+    "nm2km [map]":
         prefix: "nm2km"
         body: '''${1:km} = nm2km(${1:nm})'''
-        description: '''km = nm2km(nm)'''
+        description: '''km = nm2km(nm)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/nm2km.html'
 
 
-    "azimuth":
+    "azimuth [map]":
         prefix: "azimuth"
         body: '''${1:az} = azimuth(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:optional_units})'''
-        description: '''az = azimuth(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, optional_units)'''
+        description: '''az = azimuth(optional_track, lat1, lon1, lat2, lon2, optional_ellipsoid, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/azimuth.html'
 
 
-    "nm2sm":
+    "nm2sm [map]":
         prefix: "nm2sm"
         body: '''${1:sm} = nm2sm(${1:nm})'''
-        description: '''sm = nm2sm(nm)'''
+        description: '''sm = nm2sm(nm)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/nm2sm.html'
 
 
-    "nm2rad":
+    "nm2rad [map]":
         prefix: "nm2rad"
         body: '''${1:rad} = nm2rad(${1:nm}, ${2:optional_sphere})'''
-        description: '''rad = nm2rad(nm, optional_sphere)'''
+        description: '''rad = nm2rad(nm, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/nm2rad.html'
 
 
-    "polymerge":
+    "polymerge [map]":
         prefix: "polymerge"
         body: '''[${1:latMerged}, ${2:lonMerged}] = polymerge(${1:lat}, ${2:lon}, ${3:tol}, ${4:optional_outputFormat})'''
-        description: '''[latMerged, lonMerged] = polymerge(lat, lon, tol, optional_outputFormat)'''
+        description: '''[latMerged, lonMerged] = polymerge(lat, lon, tol, optional_outputFormat)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/polymerge.html'
 
 
-    "map.rasterref.GeographicRasterReference.geographicToIntrinsic":
+    "map.rasterref.GeographicRasterReference.geographicToIntrinsic [map]":
         prefix: "map.rasterref.GeographicRasterReference.geographicToIntrinsic"
         body: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(${1:R}, ${2:lat}, ${3:lon})'''
-        description: '''[xIntrinsic, yIntrinsic] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(R, lat, lon)'''
+        description: '''[xIntrinsic, yIntrinsic] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(R, lat, lon)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/map.rasterref.GeographicRasterReference.geographicToIntrinsic.html'
 
 
-    "geoloc2grid":
+    "geoloc2grid [map]":
         prefix: "geoloc2grid"
         body: '''[${1:Z}, ${2:refvec}] = geoloc2grid(${1:lat}, ${2:lon}, ${3:A}, ${4:cellsize})'''
-        description: '''[Z, refvec] = geoloc2grid(lat, lon, A, cellsize)'''
+        description: '''[Z, refvec] = geoloc2grid(lat, lon, A, cellsize)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/geoloc2grid.html'
 
 
-    "ellipse1":
+    "ellipse1 [map]":
         prefix: "ellipse1"
         body: '''[${1:lat}, ${2:lon}] = ellipse1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:ellipse}, ${5:optional_offset}, ${6:optional_az}, ${7:optional_ellipsoid}, ${8:angleUnit}, ${9:npts})'''
-        description: '''[lat, lon] = ellipse1(optional_trackstr, lat0, lon0, ellipse, optional_offset, optional_az, optional_ellipsoid, angleUnit, npts)'''
+        description: '''[lat, lon] = ellipse1(optional_trackstr, lat0, lon0, ellipse, optional_offset, optional_az, optional_ellipsoid, angleUnit, npts)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/ellipse1.html'
 
 
-    "gradientm":
+    "gradientm [map]":
         prefix: "gradientm"
         body: '''[${1:ASPECT}, ${2:SLOPE}, ${3:gradN}, ${4:gradE}] = gradientm(${1:lat}, ${2:lon}, ${3:Z}, ${4:optional_ellipsoid}, ${5:optional_units})'''
-        description: '''[ASPECT, SLOPE, gradN, gradE] = gradientm(lat, lon, Z, optional_ellipsoid, optional_units)'''
+        description: '''[ASPECT, SLOPE, gradN, gradE] = gradientm(lat, lon, Z, optional_ellipsoid, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/gradientm.html'
 
 
-    "imbedm":
+    "imbedm [map]":
         prefix: "imbedm"
         body: '''[${1:Z}, ${2:indxPointOutsideGrid}] = imbedm(${1:lat}, ${2:lon}, ${3:value}, ${4:Z}, ${5:R}, ${6:optional_units})'''
-        description: '''[Z, indxPointOutsideGrid] = imbedm(lat, lon, value, Z, R, optional_units)'''
+        description: '''[Z, indxPointOutsideGrid] = imbedm(lat, lon, value, Z, R, optional_units)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/imbedm.html'
 
 
-    "sm2nm":
+    "sm2nm [map]":
         prefix: "sm2nm"
         body: '''${1:nm} = sm2nm(${1:sm})'''
-        description: '''nm = sm2nm(sm)'''
+        description: '''nm = sm2nm(sm)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/sm2nm.html'
 
 
-    "los2":
+    "los2 [map]":
         prefix: "los2"
         body: '''[${1:vis}, ${2:visprofile}, ${3:dist}, ${4:H}, ${5:lattrk}, ${6:lontrk}] = los2(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:lat2}, ${6:lon2}, ${7:alt1}, ${8:alt2}, ${9:alt1opt}, ${10:alt2opt}, ${11:actualradius}, ${12:effectiveradius})'''
-        description: '''[vis, visprofile, dist, H, lattrk, lontrk] = los2(Z, R, lat1, lon1, lat2, lon2, alt1, alt2, alt1opt, alt2opt, actualradius, effectiveradius)'''
+        description: '''[vis, visprofile, dist, H, lattrk, lontrk] = los2(Z, R, lat1, lon1, lat2, lon2, alt1, alt2, alt1opt, alt2opt, actualradius, effectiveradius)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/los2.html'
 
 
-    "rad2nm":
+    "rad2nm [map]":
         prefix: "rad2nm"
         body: '''${1:nm} = rad2nm(${1:rad}, ${2:optional_sphere})'''
-        description: '''nm = rad2nm(rad, optional_sphere)'''
+        description: '''nm = rad2nm(rad, optional_sphere)    [map]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/map/rad2nm.html'
 

@@ -1,23 +1,23 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "write":
+    "write [matlab]":
         prefix: "write"
         body: '''write(${1:obj}, ${2:data})'''
-        description: '''write(obj, data)'''
+        description: '''write(obj, data)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/write.html'
 
 
-    "tcpclient":
+    "tcpclient [matlab]":
         prefix: "tcpclient"
         body: '''${1:t} = tcpclient(${1:Address}, ${2:Port}, 'Timeout', ${3:value}, 'ConnectTimeout', ${4:value})'''
-        description: '''t = tcpclient(Address, Port, 'Timeout', value, 'ConnectTimeout', value)'''
+        description: '''t = tcpclient(Address, Port, 'Timeout', value, 'ConnectTimeout', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tcpclient.html'
 
 
-    "read":
+    "read [matlab]":
         prefix: "read"
         body: '''${1:data} = read(${1:obj}, ${2:size}, ${3:optional_datatype})'''
-        description: '''data = read(obj, size, optional_datatype)'''
+        description: '''data = read(obj, size, optional_datatype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/read.html'
 

@@ -1,156 +1,156 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "getselectedsource":
+    "getselectedsource [imaq]":
         prefix: "getselectedsource"
         body: '''${1:out} = getselectedsource(${1:obj})'''
-        description: '''out = getselectedsource(obj)'''
+        description: '''out = getselectedsource(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/getselectedsource.html'
 
 
-    "triggerinfo":
+    "triggerinfo [imaq]":
         prefix: "triggerinfo"
         body: '''${1:out} = triggerinfo(${1:obj}, ${2:optional_type})'''
-        description: '''out = triggerinfo(obj, optional_type)'''
+        description: '''out = triggerinfo(obj, optional_type)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/triggerinfo.html'
 
 
-    "getsnapshot":
+    "getsnapshot [imaq]":
         prefix: "getsnapshot"
         body: '''getsnapshot(${1:obj})'''
-        description: '''getsnapshot(obj)'''
+        description: '''getsnapshot(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/getsnapshot.html'
 
 
-    "imaqmex":
+    "imaqmex [imaq]":
         prefix: "imaqmex"
         body: '''imaqmex(${1:feature}, ${2:featureNames}, ${3:optional_value})'''
-        description: '''imaqmex(feature, featureNames, optional_value)'''
+        description: '''imaqmex(feature, featureNames, optional_value)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/imaqmex.html'
 
 
-    "flushdata":
+    "flushdata [imaq]":
         prefix: "flushdata"
         body: '''flushdata(${1:obj}, ${2:optional_mode})'''
-        description: '''flushdata(obj, optional_mode)'''
+        description: '''flushdata(obj, optional_mode)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/flushdata.html'
 
 
-    "commands":
+    "commands [imaq]":
         prefix: "commands"
         body: '''${1:out} = commands(${1:gigeCamera})'''
-        description: '''out = commands(gigeCamera)'''
+        description: '''out = commands(gigeCamera)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/commands.html'
 
 
-    "imaqhelp":
+    "imaqhelp [imaq]":
         prefix: "imaqhelp"
         body: '''${1:out} = imaqhelp(${1:optional_obj}, ${2:optional_name})'''
-        description: '''out = imaqhelp(optional_obj, optional_name)'''
+        description: '''out = imaqhelp(optional_obj, optional_name)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/imaqhelp.html'
 
 
-    "propinfo":
+    "propinfo [imaq]":
         prefix: "propinfo"
         body: '''${1:out} = propinfo(${1:obj}, ${2:optional_propName})'''
-        description: '''out = propinfo(obj, optional_propName)'''
+        description: '''out = propinfo(obj, optional_propName)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/propinfo.html'
 
 
-    "snapshot":
+    "snapshot [imaq]":
         prefix: "snapshot"
         body: '''snapshot(${1:optional_camera})'''
-        description: '''snapshot(optional_camera)'''
+        description: '''snapshot(optional_camera)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/snapshot.html'
 
 
-    "trigger":
+    "trigger [imaq]":
         prefix: "trigger"
         body: '''trigger(${1:obj})'''
-        description: '''trigger(obj)'''
+        description: '''trigger(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/trigger.html'
 
 
-    "videoinput":
+    "videoinput [imaq]":
         prefix: "videoinput"
         body: '''${1:obj} = videoinput(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'Disklogger', ${5:value}, 'FramesAcquiredFcnCount', ${6:value}, 'FrameGrabInterval', ${7:value}, 'FramesPerTrigger', ${8:value}, 'LoggingMode', ${9:value}, 'Name', ${10:value}, 'ReturnedColorSpace', ${11:value}, 'ROIPosition', ${12:value}, 'SelectedSourceName', ${13:value}, 'Tag', ${14:value}, 'Timeout', ${15:value}, 'TimerPeriod', ${16:value}, 'TriggerFrameDelay', ${17:value}, 'TriggerRepeat', ${18:value})'''
-        description: '''obj = videoinput(adaptorName, deviceID, format, 'BayerSensorAlignment', value, 'Disklogger', value, 'FramesAcquiredFcnCount', value, 'FrameGrabInterval', value, 'FramesPerTrigger', value, 'LoggingMode', value, 'Name', value, 'ReturnedColorSpace', value, 'ROIPosition', value, 'SelectedSourceName', value, 'Tag', value, 'Timeout', value, 'TimerPeriod', value, 'TriggerFrameDelay', value, 'TriggerRepeat', value)'''
+        description: '''obj = videoinput(adaptorName, deviceID, format, 'BayerSensorAlignment', value, 'Disklogger', value, 'FramesAcquiredFcnCount', value, 'FrameGrabInterval', value, 'FramesPerTrigger', value, 'LoggingMode', value, 'Name', value, 'ReturnedColorSpace', value, 'ROIPosition', value, 'SelectedSourceName', value, 'Tag', value, 'Timeout', value, 'TimerPeriod', value, 'TriggerFrameDelay', value, 'TriggerRepeat', value)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/videoinput.html'
 
 
-    "getdata":
+    "getdata [imaq]":
         prefix: "getdata"
         body: '''getdata(${1:obj}, ${2:frames}, ${3:type}, ${4:optional_format})'''
-        description: '''getdata(obj, frames, type, optional_format)'''
+        description: '''getdata(obj, frames, type, optional_format)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/getdata.html'
 
 
-    "imaqtool":
+    "imaqtool [imaq]":
         prefix: "imaqtool"
         body: '''imaqtool(${1:optional_file})'''
-        description: '''imaqtool(optional_file)'''
+        description: '''imaqtool(optional_file)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/imaqtool.html'
 
 
-    "closepreview":
+    "closepreview [imaq]":
         prefix: "closepreview"
         body: '''closepreview(${1:obj})'''
-        description: '''closepreview(obj)'''
+        description: '''closepreview(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/closepreview.html'
 
 
-    "islogging":
+    "islogging [imaq]":
         prefix: "islogging"
         body: '''${1:out} = islogging(${1:obj})'''
-        description: '''out = islogging(obj)'''
+        description: '''out = islogging(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/islogging.html'
 
 
-    "peekdata":
+    "peekdata [imaq]":
         prefix: "peekdata"
         body: '''peekdata(${1:obj}, ${2:frames})'''
-        description: '''peekdata(obj, frames)'''
+        description: '''peekdata(obj, frames)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/peekdata.html'
 
 
-    "isrunning":
+    "isrunning [imaq]":
         prefix: "isrunning"
         body: '''${1:out} = isrunning(${1:obj})'''
-        description: '''out = isrunning(obj)'''
+        description: '''out = isrunning(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/isrunning.html'
 
 
-    "stoppreview":
+    "stoppreview [imaq]":
         prefix: "stoppreview"
         body: '''stoppreview(${1:obj})'''
-        description: '''stoppreview(obj)'''
+        description: '''stoppreview(obj)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/stoppreview.html'
 
 
-    "triggerconfig":
+    "triggerconfig [imaq]":
         prefix: "triggerconfig"
         body: '''${1:out} = triggerconfig(${1:obj}, ${2:optional_type}, ${3:optional_condition})'''
-        description: '''out = triggerconfig(obj, optional_type, optional_condition)'''
+        description: '''out = triggerconfig(obj, optional_type, optional_condition)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/triggerconfig.html'
 
 
-    "imaqhwinfo":
+    "imaqhwinfo [imaq]":
         prefix: "imaqhwinfo"
         body: '''${1:out} = imaqhwinfo(${1:optional_obj}, ${2:optional_field})'''
-        description: '''out = imaqhwinfo(optional_obj, optional_field)'''
+        description: '''out = imaqhwinfo(optional_obj, optional_field)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/imaqhwinfo.html'
 
 
-    "wait":
+    "wait [imaq]":
         prefix: "wait"
         body: '''wait(${1:obj}, ${2:optional_waittime}, ${3:optional_state})'''
-        description: '''wait(obj, optional_waittime, optional_state)'''
+        description: '''wait(obj, optional_waittime, optional_state)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/wait.html'
 
 
-    "preview":
+    "preview [imaq]":
         prefix: "preview"
         body: '''${1:out} = preview(${1:obj}, ${2:optional_himage})'''
-        description: '''out = preview(obj, optional_himage)'''
+        description: '''out = preview(obj, optional_himage)    [imaq]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/imaq/preview.html'
 

@@ -1,401 +1,401 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "digraph.predecessors":
+    "digraph.predecessors [matlab]":
         prefix: "digraph.predecessors"
         body: '''digraph.predecessors(${1:G}, ${2:nodeID})'''
-        description: '''digraph.predecessors(G, nodeID)'''
+        description: '''digraph.predecessors(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.predecessors.html'
 
 
-    "digraph.conncomp":
+    "digraph.conncomp [matlab]":
         prefix: "digraph.conncomp"
         body: '''[${1:bins}, ${2:binSize}] = digraph.conncomp(${1:G}, 'OutputForm', ${2:value}, 'Type', ${3:value})'''
-        description: '''[bins, binSize] = digraph.conncomp(G, 'OutputForm', value, 'Type', value)'''
+        description: '''[bins, binSize] = digraph.conncomp(G, 'OutputForm', value, 'Type', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.conncomp.html'
 
 
-    "digraph.isisomorphic":
+    "digraph.isisomorphic [matlab]":
         prefix: "digraph.isisomorphic"
         body: '''${1:isiso} = digraph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
-        description: '''isiso = digraph.isisomorphic(G, G2, 'NodeVariables', value, 'EdgeVariables', value)'''
+        description: '''isiso = digraph.isisomorphic(G, G2, 'NodeVariables', value, 'EdgeVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.isisomorphic.html'
 
 
-    "digraph.toposort":
+    "digraph.toposort [matlab]":
         prefix: "digraph.toposort"
         body: '''[${1:pred}, ${2:t}] = digraph.toposort(${1:G}, 'Order', ${2:value})'''
-        description: '''[pred, t] = digraph.toposort(G, 'Order', value)'''
+        description: '''[pred, t] = digraph.toposort(G, 'Order', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.toposort.html'
 
 
-    "digraph.flipedge":
+    "digraph.flipedge [matlab]":
         prefix: "digraph.flipedge"
         body: '''digraph.flipedge(${1:G}, ${2:s}, ${3:t})'''
-        description: '''digraph.flipedge(G, s, t)'''
+        description: '''digraph.flipedge(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.flipedge.html'
 
 
-    "graph.rmnode":
+    "graph.rmnode [matlab]":
         prefix: "graph.rmnode"
         body: '''graph.rmnode(${1:G}, ${2:nodeIDs})'''
-        description: '''graph.rmnode(G, nodeIDs)'''
+        description: '''graph.rmnode(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.rmnode.html'
 
 
-    "digraph.findnode":
+    "digraph.findnode [matlab]":
         prefix: "digraph.findnode"
         body: '''digraph.findnode(${1:G}, ${2:nodeID})'''
-        description: '''digraph.findnode(G, nodeID)'''
+        description: '''digraph.findnode(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.findnode.html'
 
 
-    "graph.bfsearch":
+    "graph.bfsearch [matlab]":
         prefix: "graph.bfsearch"
         body: '''${1:t} = graph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
-        description: '''t = graph.bfsearch(G, s, optional_events, 'Restart', value)'''
+        description: '''t = graph.bfsearch(G, s, optional_events, 'Restart', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.bfsearch.html'
 
 
-    "graph.shortestpath":
+    "graph.shortestpath [matlab]":
         prefix: "graph.shortestpath"
         body: '''[${1:path}, ${2:d}] = graph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
-        description: '''[path, d] = graph.shortestpath(G, s, t, 'Method', value)'''
+        description: '''[path, d] = graph.shortestpath(G, s, t, 'Method', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.shortestpath.html'
 
 
-    "graph.isisomorphic":
+    "graph.isisomorphic [matlab]":
         prefix: "graph.isisomorphic"
         body: '''${1:isiso} = graph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
-        description: '''isiso = graph.isisomorphic(G, G2, 'NodeVariables', value, 'EdgeVariables', value)'''
+        description: '''isiso = graph.isisomorphic(G, G2, 'NodeVariables', value, 'EdgeVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.isisomorphic.html'
 
 
-    "graph.dfsearch":
+    "graph.dfsearch [matlab]":
         prefix: "graph.dfsearch"
         body: '''${1:t} = graph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
-        description: '''t = graph.dfsearch(G, s, optional_events, 'Restart', value)'''
+        description: '''t = graph.dfsearch(G, s, optional_events, 'Restart', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.dfsearch.html'
 
 
-    "digraph.isomorphism":
+    "digraph.isomorphism [matlab]":
         prefix: "digraph.isomorphism"
         body: '''${1:p} = digraph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
-        description: '''p = digraph.isomorphism(G, G2, 'NodeVariables', value, 'EdgeVariables', value)'''
+        description: '''p = digraph.isomorphism(G, G2, 'NodeVariables', value, 'EdgeVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.isomorphism.html'
 
 
-    "graph.distances":
+    "graph.distances [matlab]":
         prefix: "graph.distances"
         body: '''${1:d} = graph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
-        description: '''d = graph.distances(G, optional_s, optional_t, 'Method', value)'''
+        description: '''d = graph.distances(G, optional_s, optional_t, 'Method', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.distances.html'
 
 
-    "digraph.inedges":
+    "digraph.inedges [matlab]":
         prefix: "digraph.inedges"
         body: '''digraph.inedges(${1:G}, ${2:nodeID})'''
-        description: '''digraph.inedges(G, nodeID)'''
+        description: '''digraph.inedges(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.inedges.html'
 
 
-    "graph.degree":
+    "graph.degree [matlab]":
         prefix: "graph.degree"
         body: '''graph.degree(${1:G}, ${2:nodeIDs})'''
-        description: '''graph.degree(G, nodeIDs)'''
+        description: '''graph.degree(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.degree.html'
 
 
-    "graph.outedges":
+    "graph.outedges [matlab]":
         prefix: "graph.outedges"
         body: '''graph.outedges(${1:G}, ${2:nodeID})'''
-        description: '''graph.outedges(G, nodeID)'''
+        description: '''graph.outedges(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.outedges.html'
 
 
-    "graph":
+    "graph [matlab]":
         prefix: "graph"
         body: '''${1:g} = graph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
-        description: '''g = graph(EdgeTable, optional_NodeTable, omit)'''
+        description: '''g = graph(EdgeTable, optional_NodeTable, omit)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.html'
 
 
-    "digraph.rmnode":
+    "digraph.rmnode [matlab]":
         prefix: "digraph.rmnode"
         body: '''digraph.rmnode(${1:G}, ${2:nodeIDs})'''
-        description: '''digraph.rmnode(G, nodeIDs)'''
+        description: '''digraph.rmnode(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.rmnode.html'
 
 
-    "digraph.centrality":
+    "digraph.centrality [matlab]":
         prefix: "digraph.centrality"
         body: '''${1:c} = digraph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
-        description: '''c = digraph.centrality(G, type, 'Importance', value, 'FollowProbability', value, 'Tolerance', value, 'MaxIterations', value)'''
+        description: '''c = digraph.centrality(G, type, 'Importance', value, 'FollowProbability', value, 'Tolerance', value, 'MaxIterations', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.centrality.html'
 
 
-    "graph.nearest":
+    "graph.nearest [matlab]":
         prefix: "graph.nearest"
         body: '''[${1:nodes}, ${2:d}] = graph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value})'''
-        description: '''[nodes, d] = graph.nearest(G, s, d, 'Method', value)'''
+        description: '''[nodes, d] = graph.nearest(G, s, d, 'Method', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.nearest.html'
 
 
-    "graph.subgraph":
+    "graph.subgraph [matlab]":
         prefix: "graph.subgraph"
         body: '''graph.subgraph(${1:G}, ${2:nodeIDs})'''
-        description: '''graph.subgraph(G, nodeIDs)'''
+        description: '''graph.subgraph(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.subgraph.html'
 
 
-    "digraph.bfsearch":
+    "digraph.bfsearch [matlab]":
         prefix: "digraph.bfsearch"
         body: '''${1:t} = digraph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
-        description: '''t = digraph.bfsearch(G, s, optional_events, 'Restart', value)'''
+        description: '''t = digraph.bfsearch(G, s, optional_events, 'Restart', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.bfsearch.html'
 
 
-    "graph.edgecount":
+    "graph.edgecount [matlab]":
         prefix: "graph.edgecount"
         body: '''graph.edgecount(${1:G}, ${2:s}, ${3:t})'''
-        description: '''graph.edgecount(G, s, t)'''
+        description: '''graph.edgecount(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.edgecount.html'
 
 
-    "digraph.successors":
+    "digraph.successors [matlab]":
         prefix: "digraph.successors"
         body: '''digraph.successors(${1:G}, ${2:nodeID})'''
-        description: '''digraph.successors(G, nodeID)'''
+        description: '''digraph.successors(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.successors.html'
 
 
-    "plot":
+    "plot [matlab]":
         prefix: "plot"
         body: '''${1:h} = plot(${1:optional_ax}, ${2:G}, 'Layout', ${3:value}, ${4:options})'''
-        description: '''h = plot(optional_ax, G, 'Layout', value, options)'''
+        description: '''h = plot(optional_ax, G, 'Layout', value, options)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/plot.html'
 
 
-    "graph.adjacency":
+    "graph.adjacency [matlab]":
         prefix: "graph.adjacency"
         body: '''${1:A} = graph.adjacency(${1:G}, ${2:optional_weight})'''
-        description: '''A = graph.adjacency(G, optional_weight)'''
+        description: '''A = graph.adjacency(G, optional_weight)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.adjacency.html'
 
 
-    "graph.isomorphism":
+    "graph.isomorphism [matlab]":
         prefix: "graph.isomorphism"
         body: '''${1:p} = graph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
-        description: '''p = graph.isomorphism(G, G2, 'NodeVariables', value, 'EdgeVariables', value)'''
+        description: '''p = graph.isomorphism(G, G2, 'NodeVariables', value, 'EdgeVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.isomorphism.html'
 
 
-    "digraph.shortestpathtree":
+    "digraph.shortestpathtree [matlab]":
         prefix: "digraph.shortestpathtree"
         body: '''[${1:tree}, ${2:d}] = digraph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
-        description: '''[tree, d] = digraph.shortestpathtree(G, s, optional_t, 'Method', value, 'OutputForm', value)'''
+        description: '''[tree, d] = digraph.shortestpathtree(G, s, optional_t, 'Method', value, 'OutputForm', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.shortestpathtree.html'
 
 
-    "graph.reordernodes":
+    "graph.reordernodes [matlab]":
         prefix: "graph.reordernodes"
         body: '''graph.reordernodes(${1:G}, ${2:order})'''
-        description: '''graph.reordernodes(G, order)'''
+        description: '''graph.reordernodes(G, order)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.reordernodes.html'
 
 
-    "digraph.nearest":
+    "digraph.nearest [matlab]":
         prefix: "digraph.nearest"
         body: '''[${1:nodes}, ${2:d}] = digraph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value}, 'Direction', ${5:value})'''
-        description: '''[nodes, d] = digraph.nearest(G, s, d, 'Method', value, 'Direction', value)'''
+        description: '''[nodes, d] = digraph.nearest(G, s, d, 'Method', value, 'Direction', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.nearest.html'
 
 
-    "graph.simplify":
+    "graph.simplify [matlab]":
         prefix: "graph.simplify"
         body: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = graph.simplify(${1:G}, ${2:optional_selfLoops})'''
-        description: '''[gsimple, edgeind, edgecount] = graph.simplify(G, optional_selfLoops)'''
+        description: '''[gsimple, edgeind, edgecount] = graph.simplify(G, optional_selfLoops)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.simplify.html'
 
 
-    "digraph.shortestpath":
+    "digraph.shortestpath [matlab]":
         prefix: "digraph.shortestpath"
         body: '''[${1:path}, ${2:d}] = digraph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
-        description: '''[path, d] = digraph.shortestpath(G, s, t, 'Method', value)'''
+        description: '''[path, d] = digraph.shortestpath(G, s, t, 'Method', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.shortestpath.html'
 
 
-    "digraph.subgraph":
+    "digraph.subgraph [matlab]":
         prefix: "digraph.subgraph"
         body: '''digraph.subgraph(${1:G}, ${2:nodeIDs})'''
-        description: '''digraph.subgraph(G, nodeIDs)'''
+        description: '''digraph.subgraph(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.subgraph.html'
 
 
-    "graph.findnode":
+    "graph.findnode [matlab]":
         prefix: "graph.findnode"
         body: '''graph.findnode(${1:G}, ${2:nodeID})'''
-        description: '''graph.findnode(G, nodeID)'''
+        description: '''graph.findnode(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.findnode.html'
 
 
-    "graph.rmedge":
+    "graph.rmedge [matlab]":
         prefix: "graph.rmedge"
         body: '''graph.rmedge(${1:G}, ${2:s}, ${3:t})'''
-        description: '''graph.rmedge(G, s, t)'''
+        description: '''graph.rmedge(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.rmedge.html'
 
 
-    "graph.neighbors":
+    "graph.neighbors [matlab]":
         prefix: "graph.neighbors"
         body: '''graph.neighbors(${1:G}, ${2:nodeID})'''
-        description: '''graph.neighbors(G, nodeID)'''
+        description: '''graph.neighbors(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.neighbors.html'
 
 
-    "graph.addedge":
+    "graph.addedge [matlab]":
         prefix: "graph.addedge"
         body: '''graph.addedge(${1:G}, ${2:s}, ${3:t}, ${4:w})'''
-        description: '''graph.addedge(G, s, t, w)'''
+        description: '''graph.addedge(G, s, t, w)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.addedge.html'
 
 
-    "graph.maxflow":
+    "graph.maxflow [matlab]":
         prefix: "graph.maxflow"
         body: '''[${1:mf}, ${2:gf}, ${3:cs}, ${4:ct}] = graph.maxflow(${1:G}, ${2:source}, ${3:target})'''
-        description: '''[mf, gf, cs, ct] = graph.maxflow(G, source, target)'''
+        description: '''[mf, gf, cs, ct] = graph.maxflow(G, source, target)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.maxflow.html'
 
 
-    "graph.minspantree":
+    "graph.minspantree [matlab]":
         prefix: "graph.minspantree"
         body: '''[${1:t}, ${2:pred}] = graph.minspantree(${1:G}, 'Method', ${2:value}, 'Type', ${3:value}, 'Root', ${4:value})'''
-        description: '''[t, pred] = graph.minspantree(G, 'Method', value, 'Type', value, 'Root', value)'''
+        description: '''[t, pred] = graph.minspantree(G, 'Method', value, 'Type', value, 'Root', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.minspantree.html'
 
 
-    "digraph.reordernodes":
+    "digraph.reordernodes [matlab]":
         prefix: "digraph.reordernodes"
         body: '''digraph.reordernodes(${1:G}, ${2:order})'''
-        description: '''digraph.reordernodes(G, order)'''
+        description: '''digraph.reordernodes(G, order)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.reordernodes.html'
 
 
-    "digraph.findedge":
+    "digraph.findedge [matlab]":
         prefix: "digraph.findedge"
         body: '''digraph.findedge(${1:G}, ${2:s}, ${3:t})'''
-        description: '''digraph.findedge(G, s, t)'''
+        description: '''digraph.findedge(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.findedge.html'
 
 
-    "digraph.addedge":
+    "digraph.addedge [matlab]":
         prefix: "digraph.addedge"
         body: '''digraph.addedge(${1:G}, ${2:s}, ${3:t}, ${4:w})'''
-        description: '''digraph.addedge(G, s, t, w)'''
+        description: '''digraph.addedge(G, s, t, w)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.addedge.html'
 
 
-    "graph.centrality":
+    "graph.centrality [matlab]":
         prefix: "graph.centrality"
         body: '''${1:c} = graph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
-        description: '''c = graph.centrality(G, type, 'Importance', value, 'FollowProbability', value, 'Tolerance', value, 'MaxIterations', value)'''
+        description: '''c = graph.centrality(G, type, 'Importance', value, 'FollowProbability', value, 'Tolerance', value, 'MaxIterations', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.centrality.html'
 
 
-    "digraph.distances":
+    "digraph.distances [matlab]":
         prefix: "digraph.distances"
         body: '''${1:d} = digraph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
-        description: '''d = digraph.distances(G, optional_s, optional_t, 'Method', value)'''
+        description: '''d = digraph.distances(G, optional_s, optional_t, 'Method', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.distances.html'
 
 
-    "graph.shortestpathtree":
+    "graph.shortestpathtree [matlab]":
         prefix: "graph.shortestpathtree"
         body: '''[${1:tree}, ${2:d}] = graph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
-        description: '''[tree, d] = graph.shortestpathtree(G, s, optional_t, 'Method', value, 'OutputForm', value)'''
+        description: '''[tree, d] = graph.shortestpathtree(G, s, optional_t, 'Method', value, 'OutputForm', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.shortestpathtree.html'
 
 
-    "digraph.adjacency":
+    "digraph.adjacency [matlab]":
         prefix: "digraph.adjacency"
         body: '''${1:A} = digraph.adjacency(${1:G}, ${2:optional_weight})'''
-        description: '''A = digraph.adjacency(G, optional_weight)'''
+        description: '''A = digraph.adjacency(G, optional_weight)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.adjacency.html'
 
 
-    "digraph.simplify":
+    "digraph.simplify [matlab]":
         prefix: "digraph.simplify"
         body: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = digraph.simplify(${1:G}, ${2:optional_selfLoops})'''
-        description: '''[gsimple, edgeind, edgecount] = digraph.simplify(G, optional_selfLoops)'''
+        description: '''[gsimple, edgeind, edgecount] = digraph.simplify(G, optional_selfLoops)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.simplify.html'
 
 
-    "digraph.dfsearch":
+    "digraph.dfsearch [matlab]":
         prefix: "digraph.dfsearch"
         body: '''${1:t} = digraph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
-        description: '''t = digraph.dfsearch(G, s, optional_events, 'Restart', value)'''
+        description: '''t = digraph.dfsearch(G, s, optional_events, 'Restart', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.dfsearch.html'
 
 
-    "graph.findedge":
+    "graph.findedge [matlab]":
         prefix: "graph.findedge"
         body: '''graph.findedge(${1:G}, ${2:s}, ${3:t})'''
-        description: '''graph.findedge(G, s, t)'''
+        description: '''graph.findedge(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.findedge.html'
 
 
-    "graph.biconncomp":
+    "graph.biconncomp [matlab]":
         prefix: "graph.biconncomp"
         body: '''[${1:edgebins}, ${2:cutvert}] = graph.biconncomp(${1:G}, 'OutputForm', ${2:value})'''
-        description: '''[edgebins, cutvert] = graph.biconncomp(G, 'OutputForm', value)'''
+        description: '''[edgebins, cutvert] = graph.biconncomp(G, 'OutputForm', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.biconncomp.html'
 
 
-    "graph.conncomp":
+    "graph.conncomp [matlab]":
         prefix: "graph.conncomp"
         body: '''[${1:bins}, ${2:binSize}] = graph.conncomp(${1:G}, 'OutputForm', ${2:value})'''
-        description: '''[bins, binSize] = graph.conncomp(G, 'OutputForm', value)'''
+        description: '''[bins, binSize] = graph.conncomp(G, 'OutputForm', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/graph.conncomp.html'
 
 
-    "digraph.outdegree":
+    "digraph.outdegree [matlab]":
         prefix: "digraph.outdegree"
         body: '''digraph.outdegree(${1:G}, ${2:nodeIDs})'''
-        description: '''digraph.outdegree(G, nodeIDs)'''
+        description: '''digraph.outdegree(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.outdegree.html'
 
 
-    "digraph.outedges":
+    "digraph.outedges [matlab]":
         prefix: "digraph.outedges"
         body: '''digraph.outedges(${1:G}, ${2:nodeID})'''
-        description: '''digraph.outedges(G, nodeID)'''
+        description: '''digraph.outedges(G, nodeID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.outedges.html'
 
 
-    "digraph.edgecount":
+    "digraph.edgecount [matlab]":
         prefix: "digraph.edgecount"
         body: '''digraph.edgecount(${1:G}, ${2:s}, ${3:t})'''
-        description: '''digraph.edgecount(G, s, t)'''
+        description: '''digraph.edgecount(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.edgecount.html'
 
 
-    "digraph":
+    "digraph [matlab]":
         prefix: "digraph"
         body: '''${1:g} = digraph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
-        description: '''g = digraph(EdgeTable, optional_NodeTable, omit)'''
+        description: '''g = digraph(EdgeTable, optional_NodeTable, omit)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.html'
 
 
-    "digraph.indegree":
+    "digraph.indegree [matlab]":
         prefix: "digraph.indegree"
         body: '''digraph.indegree(${1:G}, ${2:nodeIDs})'''
-        description: '''digraph.indegree(G, nodeIDs)'''
+        description: '''digraph.indegree(G, nodeIDs)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.indegree.html'
 
 
-    "digraph.rmedge":
+    "digraph.rmedge [matlab]":
         prefix: "digraph.rmedge"
         body: '''digraph.rmedge(${1:G}, ${2:s}, ${3:t})'''
-        description: '''digraph.rmedge(G, s, t)'''
+        description: '''digraph.rmedge(G, s, t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/digraph.rmedge.html'
 

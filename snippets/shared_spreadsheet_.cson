@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "sheetnames":
+    "sheetnames [shared]":
         prefix: "sheetnames"
         body: '''${1:sn} = sheetnames(${1:filename})'''
-        description: '''sn = sheetnames(filename)'''
+        description: '''sn = sheetnames(filename)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/sheetnames.html'
 

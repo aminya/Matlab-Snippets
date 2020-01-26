@@ -1,233 +1,233 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "true":
+    "true [matlab]":
         prefix: "true"
         body: '''${1:T} = true(${1:sz}, ${2:'like'}, ${3:p})'''
-        description: '''T = true(sz, 'like', p)'''
+        description: '''T = true(sz, 'like', p)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/true.html'
 
 
-    "intmin":
+    "intmin [matlab]":
         prefix: "intmin"
         body: '''intmin(${1:optional_classname})'''
-        description: '''intmin(optional_classname)'''
+        description: '''intmin(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intmin.html'
 
 
-    "realmin":
+    "realmin [matlab]":
         prefix: "realmin"
         body: '''realmin(${1:optional_classname})'''
-        description: '''realmin(optional_classname)'''
+        description: '''realmin(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/realmin.html'
 
 
-    "find":
+    "find [matlab]":
         prefix: "find"
         body: '''find(${1:X}, ${2:n}, ${3:optional_direction})'''
-        description: '''find(X, n, optional_direction)'''
+        description: '''find(X, n, optional_direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/find.html'
 
 
-    "numel":
+    "numel [matlab]":
         prefix: "numel"
         body: '''${1:n} = numel(${1:A})'''
-        description: '''n = numel(A)'''
+        description: '''n = numel(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/numel.html'
 
 
-    "linspace":
+    "linspace [matlab]":
         prefix: "linspace"
         body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:optional_n})'''
-        description: '''y = linspace(x1, x2, optional_n)'''
+        description: '''y = linspace(x1, x2, optional_n)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/linspace.html'
 
 
-    "length":
+    "length [matlab]":
         prefix: "length"
         body: '''${1:L} = length(${1:X})'''
-        description: '''L = length(X)'''
+        description: '''L = length(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/length.html'
 
 
-    "hadamard":
+    "hadamard [matlab]":
         prefix: "hadamard"
         body: '''hadamard(${1:n}, ${2:optional_classname})'''
-        description: '''hadamard(n, optional_classname)'''
+        description: '''hadamard(n, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hadamard.html'
 
 
-    "false":
+    "false [matlab]":
         prefix: "false"
         body: '''${1:F} = false(${1:sz}, ${2:'like'}, ${3:p})'''
-        description: '''F = false(sz, 'like', p)'''
+        description: '''F = false(sz, 'like', p)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/false.html'
 
 
-    "flintmax":
+    "flintmax [matlab]":
         prefix: "flintmax"
         body: '''flintmax(${1:optional_classname})'''
-        description: '''flintmax(optional_classname)'''
+        description: '''flintmax(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/flintmax.html'
 
 
-    "isempty":
+    "isempty [matlab]":
         prefix: "isempty"
         body: '''${1:TF} = isempty(${1:A})'''
-        description: '''TF = isempty(A)'''
+        description: '''TF = isempty(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isempty.html'
 
 
-    "nan":
+    "nan [matlab]":
         prefix: "nan"
         body: '''${1:N} = nan(${1:sz}, ${2:optional_classname})'''
-        description: '''N = nan(sz, optional_classname)'''
+        description: '''N = nan(sz, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/nan.html'
 
 
-    "invhilb":
+    "invhilb [matlab]":
         prefix: "invhilb"
         body: '''invhilb(${1:n}, ${2:optional_classname})'''
-        description: '''invhilb(n, optional_classname)'''
+        description: '''invhilb(n, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/invhilb.html'
 
 
-    "inf":
+    "inf [matlab]":
         prefix: "inf"
         body: '''${1:I} = inf(${1:sz}, ${2:optional_classname})'''
-        description: '''I = inf(sz, optional_classname)'''
+        description: '''I = inf(sz, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inf.html'
 
 
-    "wilkinson":
+    "wilkinson [matlab]":
         prefix: "wilkinson"
         body: '''wilkinson(${1:n}, ${2:optional_classname})'''
-        description: '''wilkinson(n, optional_classname)'''
+        description: '''wilkinson(n, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/wilkinson.html'
 
 
-    "rosser":
+    "rosser [matlab]":
         prefix: "rosser"
         body: '''rosser(${1:optional_classname})'''
-        description: '''rosser(optional_classname)'''
+        description: '''rosser(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rosser.html'
 
 
-    "intmax":
+    "intmax [matlab]":
         prefix: "intmax"
         body: '''intmax(${1:optional_classname})'''
-        description: '''intmax(optional_classname)'''
+        description: '''intmax(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intmax.html'
 
 
-    "Inf":
+    "Inf [matlab]":
         prefix: "Inf"
         body: '''${1:I} = Inf(${1:sz}, ${2:optional_classname})'''
-        description: '''I = Inf(sz, optional_classname)'''
+        description: '''I = Inf(sz, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Inf.html'
 
 
-    "ones":
+    "ones [matlab]":
         prefix: "ones"
         body: '''${1:X} = ones(${1:sz}, ${2:optional_classname})'''
-        description: '''X = ones(sz, optional_classname)'''
+        description: '''X = ones(sz, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ones.html'
 
 
-    "zeros":
+    "zeros [matlab]":
         prefix: "zeros"
         body: '''${1:X} = zeros(${1:sz}, ${2:optional_classname})'''
-        description: '''X = zeros(sz, optional_classname)'''
+        description: '''X = zeros(sz, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/zeros.html'
 
 
-    "size":
+    "size [matlab]":
         prefix: "size"
         body: '''size(${1:A}, ${2:optional_dim})'''
-        description: '''size(A, optional_dim)'''
+        description: '''size(A, optional_dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/size.html'
 
 
-    "squeeze":
+    "squeeze [matlab]":
         prefix: "squeeze"
         body: '''squeeze(${1:A})'''
-        description: '''squeeze(A)'''
+        description: '''squeeze(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/squeeze.html'
 
 
-    "pascal":
+    "pascal [matlab]":
         prefix: "pascal"
         body: '''pascal(${1:n}, ${2:optional_opt}, ${3:optional_classname})'''
-        description: '''pascal(n, optional_opt, optional_classname)'''
+        description: '''pascal(n, optional_opt, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pascal.html'
 
 
-    "realmax":
+    "realmax [matlab]":
         prefix: "realmax"
         body: '''realmax(${1:optional_classname})'''
-        description: '''realmax(optional_classname)'''
+        description: '''realmax(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/realmax.html'
 
 
-    "hilb":
+    "hilb [matlab]":
         prefix: "hilb"
         body: '''hilb(${1:n}, ${2:optional_classname})'''
-        description: '''hilb(n, optional_classname)'''
+        description: '''hilb(n, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hilb.html'
 
 
-    "eps":
+    "eps [matlab]":
         prefix: "eps"
         body: '''eps(${1:optional_classname})'''
-        description: '''eps(optional_classname)'''
+        description: '''eps(optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eps.html'
 
 
-    "eye":
+    "eye [matlab]":
         prefix: "eye"
         body: '''${1:N} = eye(${1:optional_n}, ${2:m}, ${3:optional_classname})'''
-        description: '''N = eye(optional_n, m, optional_classname)'''
+        description: '''N = eye(optional_n, m, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eye.html'
 
 
-    "cat":
+    "cat [matlab]":
         prefix: "cat"
         body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
-        description: '''C = cat(dim, A, B)'''
+        description: '''C = cat(dim, A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cat.html'
 
 
-    "repmat":
+    "repmat [matlab]":
         prefix: "repmat"
         body: '''repmat(${1:A}, ${2:r})'''
-        description: '''repmat(A, r)'''
+        description: '''repmat(A, r)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/repmat.html'
 
 
-    "reshape":
+    "reshape [matlab]":
         prefix: "reshape"
         body: '''reshape(${1:A}, ${2:sz})'''
-        description: '''reshape(A, sz)'''
+        description: '''reshape(A, sz)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/reshape.html'
 
 
-    "freqspace":
+    "freqspace [matlab]":
         prefix: "freqspace"
         body: '''freqspace(${1:N}, ${2:optional_opt})'''
-        description: '''freqspace(N, optional_opt)'''
+        description: '''freqspace(N, optional_opt)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/freqspace.html'
 
 
-    "NaN":
+    "NaN [matlab]":
         prefix: "NaN"
         body: '''${1:N} = NaN(${1:sz}, ${2:optional_classname})'''
-        description: '''N = NaN(sz, optional_classname)'''
+        description: '''N = NaN(sz, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/NaN.html'
 
 
-    "gallery":
+    "gallery [matlab]":
         prefix: "gallery"
         body: '''gallery(${1:matname}, ${2:ilim}, ${3:sz}, ${4:j}, ${5:optional_classname})'''
-        description: '''gallery(matname, ilim, sz, j, optional_classname)'''
+        description: '''gallery(matname, ilim, sz, j, optional_classname)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gallery.html'
 

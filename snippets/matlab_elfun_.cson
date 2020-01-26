@@ -1,79 +1,79 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "rem":
+    "rem [matlab]":
         prefix: "rem"
         body: '''${1:r} = rem(${1:a}, ${2:b})'''
-        description: '''r = rem(a, b)'''
+        description: '''r = rem(a, b)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rem.html'
 
 
-    "ceil":
+    "ceil [matlab]":
         prefix: "ceil"
         body: '''${1:Y} = ceil(${1:X})'''
-        description: '''Y = ceil(X)'''
+        description: '''Y = ceil(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ceil.html'
 
 
-    "fix":
+    "fix [matlab]":
         prefix: "fix"
         body: '''${1:Y} = fix(${1:X})'''
-        description: '''Y = fix(X)'''
+        description: '''Y = fix(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fix.html'
 
 
-    "real":
+    "real [matlab]":
         prefix: "real"
         body: '''${1:X} = real(${1:Z})'''
-        description: '''X = real(Z)'''
+        description: '''X = real(Z)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/real.html'
 
 
-    "mod":
+    "mod [matlab]":
         prefix: "mod"
         body: '''${1:b} = mod(${1:a}, ${2:m})'''
-        description: '''b = mod(a, m)'''
+        description: '''b = mod(a, m)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mod.html'
 
 
-    "round":
+    "round [matlab]":
         prefix: "round"
         body: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
-        description: '''Y = round(X, N, type)'''
+        description: '''Y = round(X, N, type)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/round.html'
 
 
-    "conj":
+    "conj [matlab]":
         prefix: "conj"
         body: '''${1:ZC} = conj(${1:Z})'''
-        description: '''ZC = conj(Z)'''
+        description: '''ZC = conj(Z)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/conj.html'
 
 
-    "abs":
+    "abs [matlab]":
         prefix: "abs"
         body: '''${1:Y} = abs(${1:X})'''
-        description: '''Y = abs(X)'''
+        description: '''Y = abs(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/abs.html'
 
 
-    "floor":
+    "floor [matlab]":
         prefix: "floor"
         body: '''${1:Y} = floor(${1:X})'''
-        description: '''Y = floor(X)'''
+        description: '''Y = floor(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/floor.html'
 
 
-    "sign":
+    "sign [matlab]":
         prefix: "sign"
         body: '''${1:y} = sign(${1:x})'''
-        description: '''y = sign(x)'''
+        description: '''y = sign(x)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sign.html'
 
 
-    "imag":
+    "imag [matlab]":
         prefix: "imag"
         body: '''${1:Y} = imag(${1:Z})'''
-        description: '''Y = imag(Z)'''
+        description: '''Y = imag(Z)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imag.html'
 

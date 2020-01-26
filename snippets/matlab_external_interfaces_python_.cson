@@ -1,16 +1,16 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "pyenv":
+    "pyenv [matlab]":
         prefix: "pyenv"
         body: '''pyenv('Version', ${1:value}, 'ExecutionMode', ${2:value})'''
-        description: '''pyenv('Version', value, 'ExecutionMode', value)'''
+        description: '''pyenv('Version', value, 'ExecutionMode', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pyenv.html'
 
 
-    "pyversion":
+    "pyversion [matlab]":
         prefix: "pyversion"
         body: '''pyversion(${1:filename}, ${2:optional_varargin})'''
-        description: '''pyversion(filename, optional_varargin)'''
+        description: '''pyversion(filename, optional_varargin)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pyversion.html'
 

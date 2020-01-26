@@ -1,23 +1,23 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "comparisons.Comparison.publish":
+    "comparisons.Comparison.publish [shared]":
         prefix: "comparisons.Comparison.publish"
         body: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
-        description: '''file = comparisons.Comparison.publish(comparison, 'Format', value, 'Name', value, 'OutputFolder', value, optional_options)'''
+        description: '''file = comparisons.Comparison.publish(comparison, 'Format', value, 'Name', value, 'OutputFolder', value, optional_options)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/comparisons.Comparison.publish.html'
 
 
-    "comparisons.Comparison.filter":
+    "comparisons.Comparison.filter [shared]":
         prefix: "comparisons.Comparison.filter"
         body: '''comparisons.Comparison.filter(${1:comparison}, ${2:filterDefinition})'''
-        description: '''comparisons.Comparison.filter(comparison, filterDefinition)'''
+        description: '''comparisons.Comparison.filter(comparison, filterDefinition)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/comparisons.Comparison.filter.html'
 
 
-    "visdiff":
+    "visdiff [shared]":
         prefix: "visdiff"
         body: '''visdiff(${1:filename1}, ${2:filename2}, ${3:type})'''
-        description: '''visdiff(filename1, filename2, type)'''
+        description: '''visdiff(filename1, filename2, type)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/visdiff.html'
 

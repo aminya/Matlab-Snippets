@@ -1,205 +1,205 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "WebMapServer.getCapabilities":
+    "WebMapServer.getCapabilities [geoweb]":
         prefix: "WebMapServer.getCapabilities"
         body: '''${1:capabilities} = WebMapServer.getCapabilities(${1:server})'''
-        description: '''capabilities = WebMapServer.getCapabilities(server)'''
+        description: '''capabilities = WebMapServer.getCapabilities(server)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WebMapServer.getCapabilities.html'
 
 
-    "WMSLayer.refine":
+    "WMSLayer.refine [geoweb]":
         prefix: "WMSLayer.refine"
         body: '''${1:refined} = WMSLayer.refine(${1:layers}, ${2:querystr}, 'IgnoreCase', ${3:value}, 'MatchType', ${4:value}, 'SearchFields', ${5:value})'''
-        description: '''refined = WMSLayer.refine(layers, querystr, 'IgnoreCase', value, 'MatchType', value, 'SearchFields', value)'''
+        description: '''refined = WMSLayer.refine(layers, querystr, 'IgnoreCase', value, 'MatchType', value, 'SearchFields', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSLayer.refine.html'
 
 
-    "gpxread":
+    "gpxread [geoweb]":
         prefix: "gpxread"
         body: '''${1:P} = gpxread(${1:filename}, 'FeatureType', ${2:value}, 'Index', ${3:value})'''
-        description: '''P = gpxread(filename, 'FeatureType', value, 'Index', value)'''
+        description: '''P = gpxread(filename, 'FeatureType', value, 'Index', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/gpxread.html'
 
 
-    "WMSCapabilities.disp":
+    "WMSCapabilities.disp [geoweb]":
         prefix: "WMSCapabilities.disp"
         body: '''WMSCapabilities.disp(${1:capabilities})'''
-        description: '''WMSCapabilities.disp(capabilities)'''
+        description: '''WMSCapabilities.disp(capabilities)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSCapabilities.disp.html'
 
 
-    "wmprint":
+    "wmprint [geoweb]":
         prefix: "wmprint"
         body: '''wmprint(${1:optional_wm})'''
-        description: '''wmprint(optional_wm)'''
+        description: '''wmprint(optional_wm)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmprint.html'
 
 
-    "wmclose":
+    "wmclose [geoweb]":
         prefix: "wmclose"
         body: '''wmclose(${1:optional_wm})'''
-        description: '''wmclose(optional_wm)'''
+        description: '''wmclose(optional_wm)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmclose.html'
 
 
-    "WMSCapabilities":
+    "WMSCapabilities [geoweb]":
         prefix: "WMSCapabilities"
         body: '''${1:capabilities} = WMSCapabilities(${1:serverURL}, ${2:capabilitiesResponse})'''
-        description: '''capabilities = WMSCapabilities(serverURL, capabilitiesResponse)'''
+        description: '''capabilities = WMSCapabilities(serverURL, capabilitiesResponse)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSCapabilities.html'
 
 
-    "WMSLayer.disp":
+    "WMSLayer.disp [geoweb]":
         prefix: "WMSLayer.disp"
         body: '''WMSLayer.disp(${1:layers}, 'Properties', ${2:value}, 'Label', ${3:value}, 'Index', ${4:value})'''
-        description: '''WMSLayer.disp(layers, 'Properties', value, 'Label', value, 'Index', value)'''
+        description: '''WMSLayer.disp(layers, 'Properties', value, 'Label', value, 'Index', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSLayer.disp.html'
 
 
-    "WMSLayer.serverTitles":
+    "WMSLayer.serverTitles [geoweb]":
         prefix: "WMSLayer.serverTitles"
         body: '''${1:titles} = WMSLayer.serverTitles(${1:layers})'''
-        description: '''titles = WMSLayer.serverTitles(layers)'''
+        description: '''titles = WMSLayer.serverTitles(layers)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSLayer.serverTitles.html'
 
 
-    "WMSLayer.servers":
+    "WMSLayer.servers [geoweb]":
         prefix: "WMSLayer.servers"
         body: '''${1:serverURLs} = WMSLayer.servers(${1:layers})'''
-        description: '''serverURLs = WMSLayer.servers(layers)'''
+        description: '''serverURLs = WMSLayer.servers(layers)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSLayer.servers.html'
 
 
-    "wmpolygon":
+    "wmpolygon [geoweb]":
         prefix: "wmpolygon"
         body: '''${1:h} = wmpolygon(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value})'''
-        description: '''h = wmpolygon(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'LineWidth', value, 'FaceColor', value, 'FaceAlpha', value, 'EdgeColor', value, 'EdgeAlpha', value)'''
+        description: '''h = wmpolygon(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'LineWidth', value, 'FaceColor', value, 'FaceAlpha', value, 'EdgeColor', value, 'EdgeAlpha', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmpolygon.html'
 
 
-    "wmline":
+    "wmline [geoweb]":
         prefix: "wmline"
         body: '''${1:h} = wmline(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'Alpha', ${9:value})'''
-        description: '''h = wmline(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'LineWidth', value, 'Color', value, 'Alpha', value)'''
+        description: '''h = wmline(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'LineWidth', value, 'Color', value, 'Alpha', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmline.html'
 
 
-    "wmsfind":
+    "wmsfind [geoweb]":
         prefix: "wmsfind"
         body: '''${1:layers} = wmsfind(${1:querystr}, 'IgnoreCase', ${2:value}, 'Latlim', ${3:value}, 'Lonlim', ${4:value}, 'MatchType', ${5:value}, 'SearchFields', ${6:value}, 'Version', ${7:value})'''
-        description: '''layers = wmsfind(querystr, 'IgnoreCase', value, 'Latlim', value, 'Lonlim', value, 'MatchType', value, 'SearchFields', value, 'Version', value)'''
+        description: '''layers = wmsfind(querystr, 'IgnoreCase', value, 'Latlim', value, 'Lonlim', value, 'MatchType', value, 'SearchFields', value, 'Version', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmsfind.html'
 
 
-    "WMSLayer.refineLimits":
+    "WMSLayer.refineLimits [geoweb]":
         prefix: "WMSLayer.refineLimits"
         body: '''${1:refined} = WMSLayer.refineLimits(${1:layers}, 'Latlim', ${2:value}, 'Lonlim', ${3:value})'''
-        description: '''refined = WMSLayer.refineLimits(layers, 'Latlim', value, 'Lonlim', value)'''
+        description: '''refined = WMSLayer.refineLimits(layers, 'Latlim', value, 'Lonlim', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSLayer.refineLimits.html'
 
 
-    "wmmarker":
+    "wmmarker [geoweb]":
         prefix: "wmmarker"
         body: '''${1:h} = wmmarker(${1:optional_wm}, ${2:P}, 'Autofit', ${3:value}, 'Description', ${4:value}, 'OverlayName', ${5:value}, 'FeatureName', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value})'''
-        description: '''h = wmmarker(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'Icon', value, 'IconScale', value, 'Color', value, 'Alpha', value)'''
+        description: '''h = wmmarker(optional_wm, P, 'Autofit', value, 'Description', value, 'OverlayName', value, 'FeatureName', value, 'Icon', value, 'IconScale', value, 'Color', value, 'Alpha', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmmarker.html'
 
 
-    "WebMapServer.getMap":
+    "WebMapServer.getMap [geoweb]":
         prefix: "WebMapServer.getMap"
         body: '''${1:A} = WebMapServer.getMap(${1:server}, ${2:mapRequestURL})'''
-        description: '''A = WebMapServer.getMap(server, mapRequestURL)'''
+        description: '''A = WebMapServer.getMap(server, mapRequestURL)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WebMapServer.getMap.html'
 
 
-    "webmap":
+    "webmap [geoweb]":
         prefix: "webmap"
         body: '''webmap(${1:wm})'''
-        description: '''webmap(wm)'''
+        description: '''webmap(wm)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/webmap.html'
 
 
-    "wmzoom":
+    "wmzoom [geoweb]":
         prefix: "wmzoom"
         body: '''${1:zoomLevelOut} = wmzoom(${1:optional_wm}, ${2:optional_zoomLevel})'''
-        description: '''zoomLevelOut = wmzoom(optional_wm, optional_zoomLevel)'''
+        description: '''zoomLevelOut = wmzoom(optional_wm, optional_zoomLevel)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmzoom.html'
 
 
-    "wmlimits":
+    "wmlimits [geoweb]":
         prefix: "wmlimits"
         body: '''[${1:latlim}, ${2:lonlim}] = wmlimits(${1:optional_wm}, ${2:latitudeLimits}, ${3:longitudeLimits})'''
-        description: '''[latlim, lonlim] = wmlimits(optional_wm, latitudeLimits, longitudeLimits)'''
+        description: '''[latlim, lonlim] = wmlimits(optional_wm, latitudeLimits, longitudeLimits)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmlimits.html'
 
 
-    "wmsinfo":
+    "wmsinfo [geoweb]":
         prefix: "wmsinfo"
         body: '''[${1:capabilities}, ${2:infoRequestURL}] = wmsinfo(${1:serverURL}, 'TimeoutInSeconds', ${2:value})'''
-        description: '''[capabilities, infoRequestURL] = wmsinfo(serverURL, 'TimeoutInSeconds', value)'''
+        description: '''[capabilities, infoRequestURL] = wmsinfo(serverURL, 'TimeoutInSeconds', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmsinfo.html'
 
 
-    "WebMapServer":
+    "WebMapServer [geoweb]":
         prefix: "WebMapServer"
         body: '''${1:server} = WebMapServer(${1:serverURL})'''
-        description: '''server = WebMapServer(serverURL)'''
+        description: '''server = WebMapServer(serverURL)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WebMapServer.html'
 
 
-    "WMSLayer":
+    "WMSLayer [geoweb]":
         prefix: "WMSLayer"
         body: '''${1:layers} = WMSLayer('ServerTitle', ${1:value}, 'ServerURL', ${2:value}, 'LayerTitle', ${3:value}, 'LayerName', ${4:value}, 'Latlim', ${5:value}, 'Lonlim', ${6:value}, 'Abstract', ${7:value}, 'CoordRefSysCodes', ${8:value}, 'Details', ${9:value})'''
-        description: '''layers = WMSLayer('ServerTitle', value, 'ServerURL', value, 'LayerTitle', value, 'LayerName', value, 'Latlim', value, 'Lonlim', value, 'Abstract', value, 'CoordRefSysCodes', value, 'Details', value)'''
+        description: '''layers = WMSLayer('ServerTitle', value, 'ServerURL', value, 'LayerTitle', value, 'LayerName', value, 'Latlim', value, 'Lonlim', value, 'Abstract', value, 'CoordRefSysCodes', value, 'Details', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSLayer.html'
 
 
-    "WMSMapRequest.boundImageSize":
+    "WMSMapRequest.boundImageSize [geoweb]":
         prefix: "WMSMapRequest.boundImageSize"
         body: '''${1:mapBound} = WMSMapRequest.boundImageSize(${1:mapRequest}, ${2:imageLength})'''
-        description: '''mapBound = WMSMapRequest.boundImageSize(mapRequest, imageLength)'''
+        description: '''mapBound = WMSMapRequest.boundImageSize(mapRequest, imageLength)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSMapRequest.boundImageSize.html'
 
 
-    "wmcenter":
+    "wmcenter [geoweb]":
         prefix: "wmcenter"
         body: '''[${1:lat}, ${2:lon}] = wmcenter(${1:optional_wm}, ${2:centerLatitude}, ${3:centerLongitude}, ${4:optional_zoomLevel})'''
-        description: '''[lat, lon] = wmcenter(optional_wm, centerLatitude, centerLongitude, optional_zoomLevel)'''
+        description: '''[lat, lon] = wmcenter(optional_wm, centerLatitude, centerLongitude, optional_zoomLevel)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmcenter.html'
 
 
-    "WebMapServer.updateLayers":
+    "WebMapServer.updateLayers [geoweb]":
         prefix: "WebMapServer.updateLayers"
         body: '''[${1:updatedLayer}, ${2:index}] = WebMapServer.updateLayers(${1:server}, ${2:layer})'''
-        description: '''[updatedLayer, index] = WebMapServer.updateLayers(server, layer)'''
+        description: '''[updatedLayer, index] = WebMapServer.updateLayers(server, layer)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WebMapServer.updateLayers.html'
 
 
-    "wmsread":
+    "wmsread [geoweb]":
         prefix: "wmsread"
         body: '''[${1:A}, ${2:R}, ${3:mapRequestURL}] = wmsread(${1:layer}, 'latlim', ${2:value}, 'lonlim', ${3:value}, 'ImageHeight', ${4:value}, 'ImageWidth', ${5:value}, 'CellSize', ${6:value}, 'RelTolCellSize', ${7:value}, 'ImageFormat', ${8:value}, 'StyleName', ${9:value}, 'Transparent', ${10:value}, 'BackgroundColor', ${11:value}, 'Elevation', ${12:value}, 'Time', ${13:value}, 'SampleDimension', ${14:value}, 'TimeoutInSeconds', ${15:value})'''
-        description: '''[A, R, mapRequestURL] = wmsread(layer, 'latlim', value, 'lonlim', value, 'ImageHeight', value, 'ImageWidth', value, 'CellSize', value, 'RelTolCellSize', value, 'ImageFormat', value, 'StyleName', value, 'Transparent', value, 'BackgroundColor', value, 'Elevation', value, 'Time', value, 'SampleDimension', value, 'TimeoutInSeconds', value)'''
+        description: '''[A, R, mapRequestURL] = wmsread(layer, 'latlim', value, 'lonlim', value, 'ImageHeight', value, 'ImageWidth', value, 'CellSize', value, 'RelTolCellSize', value, 'ImageFormat', value, 'StyleName', value, 'Transparent', value, 'BackgroundColor', value, 'Elevation', value, 'Time', value, 'SampleDimension', value, 'TimeoutInSeconds', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmsread.html'
 
 
-    "WMSMapRequest":
+    "WMSMapRequest [geoweb]":
         prefix: "WMSMapRequest"
         body: '''${1:mapRequest} = WMSMapRequest(${1:layer}, ${2:optional_server})'''
-        description: '''mapRequest = WMSMapRequest(layer, optional_server)'''
+        description: '''mapRequest = WMSMapRequest(layer, optional_server)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/WMSMapRequest.html'
 
 
-    "wmsupdate":
+    "wmsupdate [geoweb]":
         prefix: "wmsupdate"
         body: '''[${1:updatedLayers}, ${2:index}] = wmsupdate(${1:layers}, 'TimeoutInSeconds', ${2:value}, 'AllowMultipleServers', ${3:value})'''
-        description: '''[updatedLayers, index] = wmsupdate(layers, 'TimeoutInSeconds', value, 'AllowMultipleServers', value)'''
+        description: '''[updatedLayers, index] = wmsupdate(layers, 'TimeoutInSeconds', value, 'AllowMultipleServers', value)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmsupdate.html'
 
 
-    "wmremove":
+    "wmremove [geoweb]":
         prefix: "wmremove"
         body: '''wmremove(${1:optional_h})'''
-        description: '''wmremove(optional_h)'''
+        description: '''wmremove(optional_h)    [geoweb]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/geoweb/wmremove.html'
 

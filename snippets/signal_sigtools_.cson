@@ -1,23 +1,23 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "wvtool":
+    "wvtool [signal]":
         prefix: "wvtool"
         body: '''${1:H} = wvtool(${1:WindowVector})'''
-        description: '''H = wvtool(WindowVector)'''
+        description: '''H = wvtool(WindowVector)    [signal]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/signal/wvtool.html'
 
 
-    "fvtool":
+    "fvtool [signal]":
         prefix: "fvtool"
         body: '''${1:h} = fvtool(${1:d})'''
-        description: '''h = fvtool(d)'''
+        description: '''h = fvtool(d)    [signal]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/signal/fvtool.html'
 
 
-    "fmethod.abstractdesign.isfir":
+    "fmethod.abstractdesign.isfir [signal]":
         prefix: "fmethod.abstractdesign.isfir"
         body: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
-        description: '''flag = fmethod.abstractdesign.isfir(d)'''
+        description: '''flag = fmethod.abstractdesign.isfir(d)    [signal]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/signal/fmethod.abstractdesign.isfir.html'
 

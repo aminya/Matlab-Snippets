@@ -1,30 +1,30 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "mat2dataset":
+    "mat2dataset [shared]":
         prefix: "mat2dataset"
         body: '''mat2dataset(${1:X}, 'VarNames', ${2:value}, 'ObsNames', ${3:value}, 'NumCols', ${4:value})'''
-        description: '''mat2dataset(X, 'VarNames', value, 'ObsNames', value, 'NumCols', value)'''
+        description: '''mat2dataset(X, 'VarNames', value, 'ObsNames', value, 'NumCols', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/mat2dataset.html'
 
 
-    "cell2dataset":
+    "cell2dataset [shared]":
         prefix: "cell2dataset"
         body: '''cell2dataset(${1:C}, 'ReadVarNames', ${2:value}, 'VarNames', ${3:value}, 'ReadObsNames', ${4:value}, 'ObsNames', ${5:value}, 'NumCols', ${6:value})'''
-        description: '''cell2dataset(C, 'ReadVarNames', value, 'VarNames', value, 'ReadObsNames', value, 'ObsNames', value, 'NumCols', value)'''
+        description: '''cell2dataset(C, 'ReadVarNames', value, 'VarNames', value, 'ReadObsNames', value, 'ObsNames', value, 'NumCols', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/cell2dataset.html'
 
 
-    "struct2dataset":
+    "struct2dataset [shared]":
         prefix: "struct2dataset"
         body: '''struct2dataset(${1:S}, 'ReadObsNames', ${2:value}, 'ObsNames', ${3:value}, 'AsScalar', ${4:value})'''
-        description: '''struct2dataset(S, 'ReadObsNames', value, 'ObsNames', value, 'AsScalar', value)'''
+        description: '''struct2dataset(S, 'ReadObsNames', value, 'ObsNames', value, 'AsScalar', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/struct2dataset.html'
 
 
-    "makedist":
+    "makedist [shared]":
         prefix: "makedist"
         body: '''makedist(${1:distname}, 'a', ${2:value}, 'b', ${3:value})'''
-        description: '''makedist(distname, 'a', value, 'b', value)'''
+        description: '''makedist(distname, 'a', value, 'b', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/makedist.html'
 

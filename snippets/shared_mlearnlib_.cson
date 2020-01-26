@@ -1,16 +1,16 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses":
+    "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses [shared]":
         prefix: "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses"
         body: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(${1:c}, ${2:direction})'''
-        description: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(c, direction)'''
+        description: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(c, direction)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses.html'
 
 
-    "confusionchart":
+    "confusionchart [shared]":
         prefix: "confusionchart"
         body: '''${1:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
-        description: '''c = confusionchart(optional_parent, trueLabels, predictedLabels, 'RowSummary', value, 'ColumnSummary', value, 'Normalization', value, opts)'''
+        description: '''c = confusionchart(optional_parent, trueLabels, predictedLabels, 'RowSummary', value, 'ColumnSummary', value, 'Normalization', value, opts)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/confusionchart.html'
 

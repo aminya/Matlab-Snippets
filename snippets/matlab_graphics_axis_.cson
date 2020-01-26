@@ -1,23 +1,23 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "yyaxis":
+    "yyaxis [matlab]":
         prefix: "yyaxis"
         body: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
-        description: '''yyaxis(optional_ax, optional_side)'''
+        description: '''yyaxis(optional_ax, optional_side)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/yyaxis.html'
 
 
-    "axes":
+    "axes [matlab]":
         prefix: "axes"
         body: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
-        description: '''h = axes(optional_parent, properties)'''
+        description: '''h = axes(optional_parent, properties)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/axes.html'
 
 
-    "hold":
+    "hold [matlab]":
         prefix: "hold"
         body: '''hold(${1:optional_ax}, ${2:optional_action})'''
-        description: '''hold(optional_ax, optional_action)'''
+        description: '''hold(optional_ax, optional_action)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hold.html'
 

@@ -1,16 +1,16 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "addCustomBasemap":
+    "addCustomBasemap [shared]":
         prefix: "addCustomBasemap"
         body: '''addCustomBasemap(${1:basemapName}, ${2:URL}, 'Attribution', ${3:value}, 'DisplayName', ${4:value}, 'MaxZoomLevel', ${5:value}, 'IsDeployable', ${6:value})'''
-        description: '''addCustomBasemap(basemapName, URL, 'Attribution', value, 'DisplayName', value, 'MaxZoomLevel', value, 'IsDeployable', value)'''
+        description: '''addCustomBasemap(basemapName, URL, 'Attribution', value, 'DisplayName', value, 'MaxZoomLevel', value, 'IsDeployable', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/addCustomBasemap.html'
 
 
-    "removeCustomBasemap":
+    "removeCustomBasemap [shared]":
         prefix: "removeCustomBasemap"
         body: '''removeCustomBasemap(${1:basemapName})'''
-        description: '''removeCustomBasemap(basemapName)'''
+        description: '''removeCustomBasemap(basemapName)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/removeCustomBasemap.html'
 

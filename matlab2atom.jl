@@ -148,10 +148,10 @@ function matlab2atom(data, group)
 
         final *= """
 
-            "$fun":
+            "$fun [$group]":
                 prefix: "$fun"
                 body: '''$body'''
-                description: '''$description'''
+                description: '''$description    [$group]'''
                 descriptionMoreURL: '$descriptionMoreURL'
 
         """

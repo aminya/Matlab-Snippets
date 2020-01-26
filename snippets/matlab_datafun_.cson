@@ -1,485 +1,485 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "standardizeMissing":
+    "standardizeMissing [matlab]":
         prefix: "standardizeMissing"
         body: '''standardizeMissing(${1:A}, ${2:indicator}, 'DataVariables', ${3:value})'''
-        description: '''standardizeMissing(A, indicator, 'DataVariables', value)'''
+        description: '''standardizeMissing(A, indicator, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/standardizeMissing.html'
 
 
-    "findgroups":
+    "findgroups [matlab]":
         prefix: "findgroups"
         body: '''[${1:G}, ${2:TID}] = findgroups(${1:T})'''
-        description: '''[G, TID] = findgroups(T)'''
+        description: '''[G, TID] = findgroups(T)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/findgroups.html'
 
 
-    "fftw":
+    "fftw [matlab]":
         prefix: "fftw"
         body: '''fftw(${1:wisdom}, ${2:optional_fftinfo})'''
-        description: '''fftw(wisdom, optional_fftinfo)'''
+        description: '''fftw(wisdom, optional_fftinfo)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fftw.html'
 
 
-    "isoutlier":
+    "isoutlier [matlab]":
         prefix: "isoutlier"
         body: '''isoutlier(${1:A}, ${2:optional_method}, ${3:optional_dim}, 'ThresholdFactor', ${4:value}, 'DataVariables', ${5:value})'''
-        description: '''isoutlier(A, optional_method, optional_dim, 'ThresholdFactor', value, 'DataVariables', value)'''
+        description: '''isoutlier(A, optional_method, optional_dim, 'ThresholdFactor', value, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isoutlier.html'
 
 
-    "fft2":
+    "fft2 [matlab]":
         prefix: "fft2"
         body: '''fft2(${1:X}, ${2:m}, ${3:n})'''
-        description: '''fft2(X, m, n)'''
+        description: '''fft2(X, m, n)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fft2.html'
 
 
-    "detrend":
+    "detrend [matlab]":
         prefix: "detrend"
         body: '''detrend(${1:x}, ${2:optional_N}, ${3:optional_BP}, 'Continuous', ${4:value}, 'SamplePoints', ${5:value})'''
-        description: '''detrend(x, optional_N, optional_BP, 'Continuous', value, 'SamplePoints', value)'''
+        description: '''detrend(x, optional_N, optional_BP, 'Continuous', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/detrend.html'
 
 
-    "fftn":
+    "fftn [matlab]":
         prefix: "fftn"
         body: '''fftn(${1:X}, ${2:optional_sz})'''
-        description: '''fftn(X, optional_sz)'''
+        description: '''fftn(X, optional_sz)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fftn.html'
 
 
-    "filter2":
+    "filter2 [matlab]":
         prefix: "filter2"
         body: '''filter2(${1:H}, ${2:X}, ${3:optional_shape})'''
-        description: '''filter2(H, X, optional_shape)'''
+        description: '''filter2(H, X, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/filter2.html'
 
 
-    "maxk":
+    "maxk [matlab]":
         prefix: "maxk"
         body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
-        description: '''[B, I] = maxk(A, k, optional_dim, 'ComparisonMethod', value)'''
+        description: '''[B, I] = maxk(A, k, optional_dim, 'ComparisonMethod', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/maxk.html'
 
 
-    "movmedian":
+    "movmedian [matlab]":
         prefix: "movmedian"
         body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmedian(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmedian(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmedian.html'
 
 
-    "fillmissing":
+    "fillmissing [matlab]":
         prefix: "fillmissing"
         body: '''fillmissing(${1:A}, ${2:method}, 'EndValues', ${3:value}, 'DataVariables', ${4:value})'''
-        description: '''fillmissing(A, method, 'EndValues', value, 'DataVariables', value)'''
+        description: '''fillmissing(A, method, 'EndValues', value, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fillmissing.html'
 
 
-    "mean":
+    "mean [matlab]":
         prefix: "mean"
         body: '''${1:M} = mean(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
-        description: '''M = mean(A, optional_dim, outtype, nanflag)'''
+        description: '''M = mean(A, optional_dim, outtype, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mean.html'
 
 
-    "corrcoef":
+    "corrcoef [matlab]":
         prefix: "corrcoef"
         body: '''corrcoef(${1:A}, ${2:optional_B}, 'Alpha', ${3:value}, 'Rows', ${4:value})'''
-        description: '''corrcoef(A, optional_B, 'Alpha', value, 'Rows', value)'''
+        description: '''corrcoef(A, optional_B, 'Alpha', value, 'Rows', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/corrcoef.html'
 
 
-    "normalize":
+    "normalize [matlab]":
         prefix: "normalize"
         body: '''${1:N} = normalize(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value})'''
-        description: '''N = normalize(A, optional_method, 'DataVariables', value)'''
+        description: '''N = normalize(A, optional_method, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/normalize.html'
 
 
-    "ischange":
+    "ischange [matlab]":
         prefix: "ischange"
         body: '''ischange(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value}, 'Threshold', ${4:value})'''
-        description: '''ischange(A, optional_method, 'DataVariables', value, 'Threshold', value)'''
+        description: '''ischange(A, optional_method, 'DataVariables', value, 'Threshold', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ischange.html'
 
 
-    "smoothdata":
+    "smoothdata [matlab]":
         prefix: "smoothdata"
         body: '''smoothdata(${1:A}, ${2:optional_method}, ${3:optional_nanflag}, 'SmoothingFactor', ${4:value}, 'DataVariables', ${5:value})'''
-        description: '''smoothdata(A, optional_method, optional_nanflag, 'SmoothingFactor', value, 'DataVariables', value)'''
+        description: '''smoothdata(A, optional_method, optional_nanflag, 'SmoothingFactor', value, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/smoothdata.html'
 
 
-    "cumsum":
+    "cumsum [matlab]":
         prefix: "cumsum"
         body: '''cumsum(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cumsum(A, optional_dim, direction, nanflag)'''
+        description: '''cumsum(A, optional_dim, direction, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cumsum.html'
 
 
-    "hist":
+    "hist [matlab]":
         prefix: "hist"
         body: '''[${1:counts}, ${2:centers}] = hist(${1:ax}, ${2:x}, ${3:xbins})'''
-        description: '''[counts, centers] = hist(ax, x, xbins)'''
+        description: '''[counts, centers] = hist(ax, x, xbins)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hist.html'
 
 
-    "cov":
+    "cov [matlab]":
         prefix: "cov"
         body: '''cov(${1:A}, ${2:optional_B}, ${3:optional_w}, ${4:nanflag})'''
-        description: '''cov(A, optional_B, optional_w, nanflag)'''
+        description: '''cov(A, optional_B, optional_w, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cov.html'
 
 
-    "issortedrows":
+    "issortedrows [matlab]":
         prefix: "issortedrows"
         body: '''${1:TF} = issortedrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''TF = issortedrows(A, optional_column, optional_direction, 'MissingPlacement', value)'''
+        description: '''TF = issortedrows(A, optional_column, optional_direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issortedrows.html'
 
 
-    "filloutliers":
+    "filloutliers [matlab]":
         prefix: "filloutliers"
         body: '''filloutliers(${1:A}, ${2:fillmethod}, ${3:optional_findmethod}, ${4:optional_dim}, 'ThresholdFactor', ${5:value}, 'DataVariables', ${6:value})'''
-        description: '''filloutliers(A, fillmethod, optional_findmethod, optional_dim, 'ThresholdFactor', value, 'DataVariables', value)'''
+        description: '''filloutliers(A, fillmethod, optional_findmethod, optional_dim, 'ThresholdFactor', value, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/filloutliers.html'
 
 
-    "cummax":
+    "cummax [matlab]":
         prefix: "cummax"
         body: '''cummax(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cummax(A, optional_dim, direction, nanflag)'''
+        description: '''cummax(A, optional_dim, direction, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cummax.html'
 
 
-    "sum":
+    "sum [matlab]":
         prefix: "sum"
         body: '''sum(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
-        description: '''sum(A, optional_dim, outtype, nanflag)'''
+        description: '''sum(A, optional_dim, outtype, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sum.html'
 
 
-    "ifft":
+    "ifft [matlab]":
         prefix: "ifft"
         body: '''ifft(${1:X}, ${2:optional_n}, ${3:optional_dim}, ${4:optional_symflag})'''
-        description: '''ifft(X, optional_n, optional_dim, optional_symflag)'''
+        description: '''ifft(X, optional_n, optional_dim, optional_symflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ifft.html'
 
 
-    "ifft2":
+    "ifft2 [matlab]":
         prefix: "ifft2"
         body: '''ifft2(${1:X}, ${2:m}, ${3:n}, ${4:optional_symflag})'''
-        description: '''ifft2(X, m, n, optional_symflag)'''
+        description: '''ifft2(X, m, n, optional_symflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ifft2.html'
 
 
-    "discretize":
+    "discretize [matlab]":
         prefix: "discretize"
         body: '''discretize(${1:X}, ${2:N}, ${3:optional_values}, ${4:optional_'categorical'}, ${5:optional_categoryNames}, 'IncludedEdge', ${6:value})'''
-        description: '''discretize(X, N, optional_values, optional_'categorical', optional_categoryNames, 'IncludedEdge', value)'''
+        description: '''discretize(X, N, optional_values, optional_'categorical', optional_categoryNames, 'IncludedEdge', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/discretize.html'
 
 
-    "var":
+    "var [matlab]":
         prefix: "var"
         body: '''${1:V} = var(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
-        description: '''V = var(A, w, optional_dim, nanflag)'''
+        description: '''V = var(A, w, optional_dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/var.html'
 
 
-    "max":
+    "max [matlab]":
         prefix: "max"
         body: '''max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
-        description: '''max(A, [], optional_dim, nanflag, indexflag)'''
+        description: '''max(A, [], optional_dim, nanflag, indexflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/max.html'
 
 
-    "rmoutliers":
+    "rmoutliers [matlab]":
         prefix: "rmoutliers"
         body: '''rmoutliers(${1:A}, ${2:optional_dim}, ${3:optional_method}, 'MinNumOutliers', ${4:value}, 'ThresholdFactor', ${5:value}, 'DataVariables', ${6:value})'''
-        description: '''rmoutliers(A, optional_dim, optional_method, 'MinNumOutliers', value, 'ThresholdFactor', value, 'DataVariables', value)'''
+        description: '''rmoutliers(A, optional_dim, optional_method, 'MinNumOutliers', value, 'ThresholdFactor', value, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rmoutliers.html'
 
 
-    "cumprod":
+    "cumprod [matlab]":
         prefix: "cumprod"
         body: '''cumprod(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cumprod(A, optional_dim, direction, nanflag)'''
+        description: '''cumprod(A, optional_dim, direction, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cumprod.html'
 
 
-    "xcorr":
+    "xcorr [matlab]":
         prefix: "xcorr"
         body: '''xcorr(${1:A}, ${2:optional_B}, ${3:optional_maxlag}, ${4:scaleopt})'''
-        description: '''xcorr(A, optional_B, optional_maxlag, scaleopt)'''
+        description: '''xcorr(A, optional_B, optional_maxlag, scaleopt)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xcorr.html'
 
 
-    "movprod":
+    "movprod [matlab]":
         prefix: "movprod"
         body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movprod(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movprod(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movprod.html'
 
 
-    "islocalmin":
+    "islocalmin [matlab]":
         prefix: "islocalmin"
         body: '''islocalmin(${1:A}, 'MinProminence', ${2:value}, 'FlatSelection', ${3:value}, 'MinSeparation', ${4:value}, 'MaxNumExtrema', ${5:value}, 'DataVariables', ${6:value}, 'ProminenceWindow', ${7:value})'''
-        description: '''islocalmin(A, 'MinProminence', value, 'FlatSelection', value, 'MinSeparation', value, 'MaxNumExtrema', value, 'DataVariables', value, 'ProminenceWindow', value)'''
+        description: '''islocalmin(A, 'MinProminence', value, 'FlatSelection', value, 'MinSeparation', value, 'MaxNumExtrema', value, 'DataVariables', value, 'ProminenceWindow', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/islocalmin.html'
 
 
-    "sort":
+    "sort [matlab]":
         prefix: "sort"
         body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''[B, I] = sort(A, optional_dim, optional_direction, 'MissingPlacement', value)'''
+        description: '''[B, I] = sort(A, optional_dim, optional_direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sort.html'
 
 
-    "movmean":
+    "movmean [matlab]":
         prefix: "movmean"
         body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmean(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmean(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmean.html'
 
 
-    "sortrows":
+    "sortrows [matlab]":
         prefix: "sortrows"
         body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''[B, Index] = sortrows(A, optional_column, optional_direction, 'MissingPlacement', value)'''
+        description: '''[B, Index] = sortrows(A, optional_column, optional_direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sortrows.html'
 
 
-    "groupsummary":
+    "groupsummary [matlab]":
         prefix: "groupsummary"
         body: '''groupsummary(${1:Data}, ${2:GroupVecs}, ${3:method}, 'IncludeMissingGroups', ${4:value}, 'IncludeEmptyGroups', ${5:value}, 'IncludedEdge', ${6:value})'''
-        description: '''groupsummary(Data, GroupVecs, method, 'IncludeMissingGroups', value, 'IncludeEmptyGroups', value, 'IncludedEdge', value)'''
+        description: '''groupsummary(Data, GroupVecs, method, 'IncludeMissingGroups', value, 'IncludeEmptyGroups', value, 'IncludedEdge', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/groupsummary.html'
 
 
-    "topkrows":
+    "topkrows [matlab]":
         prefix: "topkrows"
         body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:optional_column}, ${4:optional_direction}, 'ComparisonMethod', ${5:value})'''
-        description: '''[B, Index] = topkrows(A, k, optional_column, optional_direction, 'ComparisonMethod', value)'''
+        description: '''[B, Index] = topkrows(A, k, optional_column, optional_direction, 'ComparisonMethod', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/topkrows.html'
 
 
-    "mode":
+    "mode [matlab]":
         prefix: "mode"
         body: '''mode(${1:A}, ${2:optional_dim})'''
-        description: '''mode(A, optional_dim)'''
+        description: '''mode(A, optional_dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mode.html'
 
 
-    "cummin":
+    "cummin [matlab]":
         prefix: "cummin"
         body: '''cummin(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cummin(A, optional_dim, direction, nanflag)'''
+        description: '''cummin(A, optional_dim, direction, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cummin.html'
 
 
-    "xcov":
+    "xcov [matlab]":
         prefix: "xcov"
         body: '''xcov(${1:A}, ${2:optional_B}, ${3:optional_maxlag}, ${4:scaleopt})'''
-        description: '''xcov(A, optional_B, optional_maxlag, scaleopt)'''
+        description: '''xcov(A, optional_B, optional_maxlag, scaleopt)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xcov.html'
 
 
-    "movstd":
+    "movstd [matlab]":
         prefix: "movstd"
         body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''M = movstd(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movstd(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movstd.html'
 
 
-    "std":
+    "std [matlab]":
         prefix: "std"
         body: '''${1:S} = std(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
-        description: '''S = std(A, w, optional_dim, nanflag)'''
+        description: '''S = std(A, w, optional_dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/std.html'
 
 
-    "grouptransform":
+    "grouptransform [matlab]":
         prefix: "grouptransform"
         body: '''grouptransform(${1:Data}, ${2:GroupVecs}, ${3:method}, 'ReplaceValues', ${4:value}, 'IncludedEdge', ${5:value})'''
-        description: '''grouptransform(Data, GroupVecs, method, 'ReplaceValues', value, 'IncludedEdge', value)'''
+        description: '''grouptransform(Data, GroupVecs, method, 'ReplaceValues', value, 'IncludedEdge', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/grouptransform.html'
 
 
-    "histcounts":
+    "histcounts [matlab]":
         prefix: "histcounts"
         body: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:optional_edges}, 'BinWidth', ${3:value}, 'BinLimits', ${4:value}, 'Normalization', ${5:value}, 'BinMethod', ${6:value})'''
-        description: '''[N, edges, bin] = histcounts(X, optional_edges, 'BinWidth', value, 'BinLimits', value, 'Normalization', value, 'BinMethod', value)'''
+        description: '''[N, edges, bin] = histcounts(X, optional_edges, 'BinWidth', value, 'BinLimits', value, 'Normalization', value, 'BinMethod', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/histcounts.html'
 
 
-    "ifftn":
+    "ifftn [matlab]":
         prefix: "ifftn"
         body: '''ifftn(${1:X}, ${2:optional_sz}, ${3:optional_symflag})'''
-        description: '''ifftn(X, optional_sz, optional_symflag)'''
+        description: '''ifftn(X, optional_sz, optional_symflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ifftn.html'
 
 
-    "median":
+    "median [matlab]":
         prefix: "median"
         body: '''${1:M} = median(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
-        description: '''M = median(A, optional_dim, nanflag)'''
+        description: '''M = median(A, optional_dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/median.html'
 
 
-    "groupcounts":
+    "groupcounts [matlab]":
         prefix: "groupcounts"
         body: '''groupcounts(${1:X}, ${2:groupbins}, 'IncludeMissingGroups', ${3:value}, 'IncludeEmptyGroups', ${4:value}, 'IncludedEdge', ${5:value})'''
-        description: '''groupcounts(X, groupbins, 'IncludeMissingGroups', value, 'IncludeEmptyGroups', value, 'IncludedEdge', value)'''
+        description: '''groupcounts(X, groupbins, 'IncludeMissingGroups', value, 'IncludeEmptyGroups', value, 'IncludedEdge', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/groupcounts.html'
 
 
-    "conv":
+    "conv [matlab]":
         prefix: "conv"
         body: '''conv(${1:u}, ${2:v}, ${3:optional_shape})'''
-        description: '''conv(u, v, optional_shape)'''
+        description: '''conv(u, v, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/conv.html'
 
 
-    "bounds":
+    "bounds [matlab]":
         prefix: "bounds"
         body: '''bounds(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
-        description: '''bounds(A, optional_dim, nanflag)'''
+        description: '''bounds(A, optional_dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bounds.html'
 
 
-    "movmax":
+    "movmax [matlab]":
         prefix: "movmax"
         body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmax(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmax(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmax.html'
 
 
-    "conv2":
+    "conv2 [matlab]":
         prefix: "conv2"
         body: '''conv2(${1:u}, ${2:v}, ${3:A}, ${4:optional_shape})'''
-        description: '''conv2(u, v, A, optional_shape)'''
+        description: '''conv2(u, v, A, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/conv2.html'
 
 
-    "filter":
+    "filter [matlab]":
         prefix: "filter"
         body: '''filter(${1:b}, ${2:a}, ${3:x}, ${4:zi}, ${5:dim})'''
-        description: '''filter(b, a, x, zi, dim)'''
+        description: '''filter(b, a, x, zi, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/filter.html'
 
 
-    "movsum":
+    "movsum [matlab]":
         prefix: "movsum"
         body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movsum(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movsum(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movsum.html'
 
 
-    "rmmissing":
+    "rmmissing [matlab]":
         prefix: "rmmissing"
         body: '''rmmissing(${1:A}, ${2:dim}, 'MinNumMissing', ${3:value}, 'DataVariables', ${4:value})'''
-        description: '''rmmissing(A, dim, 'MinNumMissing', value, 'DataVariables', value)'''
+        description: '''rmmissing(A, dim, 'MinNumMissing', value, 'DataVariables', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rmmissing.html'
 
 
-    "groupfilter":
+    "groupfilter [matlab]":
         prefix: "groupfilter"
         body: '''groupfilter(${1:Data}, ${2:GroupVecs}, ${3:method}, 'IncludedEdge', ${4:value})'''
-        description: '''groupfilter(Data, GroupVecs, method, 'IncludedEdge', value)'''
+        description: '''groupfilter(Data, GroupVecs, method, 'IncludedEdge', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/groupfilter.html'
 
 
-    "min":
+    "min [matlab]":
         prefix: "min"
         body: '''min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
-        description: '''min(A, [], optional_dim, nanflag, indexflag)'''
+        description: '''min(A, [], optional_dim, nanflag, indexflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/min.html'
 
 
-    "mink":
+    "mink [matlab]":
         prefix: "mink"
         body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
-        description: '''[B, I] = mink(A, k, optional_dim, 'ComparisonMethod', value)'''
+        description: '''[B, I] = mink(A, k, optional_dim, 'ComparisonMethod', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mink.html'
 
 
-    "rescale":
+    "rescale [matlab]":
         prefix: "rescale"
         body: '''${1:R} = rescale(${1:A}, 'InputMin', ${2:value}, 'InputMax', ${3:value})'''
-        description: '''R = rescale(A, 'InputMin', value, 'InputMax', value)'''
+        description: '''R = rescale(A, 'InputMin', value, 'InputMax', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rescale.html'
 
 
-    "movmad":
+    "movmad [matlab]":
         prefix: "movmad"
         body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmad(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmad(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmad.html'
 
 
-    "fft":
+    "fft [matlab]":
         prefix: "fft"
         body: '''fft(${1:X}, ${2:n}, ${3:dim})'''
-        description: '''fft(X, n, dim)'''
+        description: '''fft(X, n, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fft.html'
 
 
-    "movmin":
+    "movmin [matlab]":
         prefix: "movmin"
         body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmin(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmin(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmin.html'
 
 
-    "issorted":
+    "issorted [matlab]":
         prefix: "issorted"
         body: '''${1:TF} = issorted(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''TF = issorted(A, optional_dim, optional_direction, 'MissingPlacement', value)'''
+        description: '''TF = issorted(A, optional_dim, optional_direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issorted.html'
 
 
-    "movvar":
+    "movvar [matlab]":
         prefix: "movvar"
         body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''M = movvar(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movvar(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movvar.html'
 
 
-    "prod":
+    "prod [matlab]":
         prefix: "prod"
         body: '''prod(${1:A}, ${2:optional_dim}, ${3:type}, ${4:nanflag})'''
-        description: '''prod(A, optional_dim, type, nanflag)'''
+        description: '''prod(A, optional_dim, type, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/prod.html'
 
 
-    "convn":
+    "convn [matlab]":
         prefix: "convn"
         body: '''convn(${1:A}, ${2:B}, ${3:optional_shape})'''
-        description: '''convn(A, B, optional_shape)'''
+        description: '''convn(A, B, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/convn.html'
 
 
-    "islocalmax":
+    "islocalmax [matlab]":
         prefix: "islocalmax"
         body: '''islocalmax(${1:A}, 'MinProminence', ${2:value}, 'FlatSelection', ${3:value}, 'MinSeparation', ${4:value}, 'MaxNumExtrema', ${5:value}, 'DataVariables', ${6:value}, 'ProminenceWindow', ${7:value})'''
-        description: '''islocalmax(A, 'MinProminence', value, 'FlatSelection', value, 'MinSeparation', value, 'MaxNumExtrema', value, 'DataVariables', value, 'ProminenceWindow', value)'''
+        description: '''islocalmax(A, 'MinProminence', value, 'FlatSelection', value, 'MinSeparation', value, 'MaxNumExtrema', value, 'DataVariables', value, 'ProminenceWindow', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/islocalmax.html'
 
 
-    "splitapply":
+    "splitapply [matlab]":
         prefix: "splitapply"
         body: '''${1:Y} = splitapply(${1:func}, ${2:T}, ${3:G})'''
-        description: '''Y = splitapply(func, T, G)'''
+        description: '''Y = splitapply(func, T, G)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/splitapply.html'
 
 
-    "histcounts2":
+    "histcounts2 [matlab]":
         prefix: "histcounts2"
         body: '''[${1:N}, ${2:xedges}, ${3:yedges}, ${4:binx}, ${5:biny}] = histcounts2(${1:X}, ${2:Y}, ${3:Xedges}, ${4:Yedges}, 'BinWidth', ${5:value}, 'XBinLimits', ${6:value}, 'YBinLimits', ${7:value}, 'Normalization', ${8:value}, 'BinMethod', ${9:value})'''
-        description: '''[N, xedges, yedges, binx, biny] = histcounts2(X, Y, Xedges, Yedges, 'BinWidth', value, 'XBinLimits', value, 'YBinLimits', value, 'Normalization', value, 'BinMethod', value)'''
+        description: '''[N, xedges, yedges, binx, biny] = histcounts2(X, Y, Xedges, Yedges, 'BinWidth', value, 'XBinLimits', value, 'YBinLimits', value, 'Normalization', value, 'BinMethod', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/histcounts2.html'
 

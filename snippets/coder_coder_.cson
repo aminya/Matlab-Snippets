@@ -1,16 +1,16 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "coder.config":
+    "coder.config [coder]":
         prefix: "coder.config"
         body: '''coder.config(${1:build_type}, 'ecoder', ${2:value})'''
-        description: '''coder.config(build_type, 'ecoder', value)'''
+        description: '''coder.config(build_type, 'ecoder', value)    [coder]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/coder/coder.config.html'
 
 
-    "coder.OutputType":
+    "coder.OutputType [coder]":
         prefix: "coder.OutputType"
         body: '''coder.OutputType(${1:name})'''
-        description: '''coder.OutputType(name)'''
+        description: '''coder.OutputType(name)    [coder]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/coder/coder.OutputType.html'
 

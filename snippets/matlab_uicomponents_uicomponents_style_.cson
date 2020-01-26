@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "uistyle":
+    "uistyle [matlab]":
         prefix: "uistyle"
         body: '''uistyle(${1:properties})'''
-        description: '''uistyle(properties)'''
+        description: '''uistyle(properties)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uistyle.html'
 

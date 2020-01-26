@@ -1,163 +1,163 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "eig":
+    "eig [matlab]":
         prefix: "eig"
         body: '''${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})'''
-        description: '''lambda = eig(A, balanceOption, eigvalOption)'''
+        description: '''lambda = eig(A, balanceOption, eigvalOption)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/eig.html'
 
 
-    "issymmetric":
+    "issymmetric [matlab]":
         prefix: "issymmetric"
         body: '''${1:tf} = issymmetric(${1:A}, ${2:optional_skew})'''
-        description: '''tf = issymmetric(A, optional_skew)'''
+        description: '''tf = issymmetric(A, optional_skew)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issymmetric.html'
 
 
-    "qz":
+    "qz [matlab]":
         prefix: "qz"
         body: '''[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})'''
-        description: '''[AA, BB, Q, Z, V, W] = qz(A, B, optional_complexity)'''
+        description: '''[AA, BB, Q, Z, V, W] = qz(A, B, optional_complexity)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qz.html'
 
 
-    "lsqminnorm":
+    "lsqminnorm [matlab]":
         prefix: "lsqminnorm"
         body: '''lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})'''
-        description: '''lsqminnorm(A, b, optional_tol, optional_rankwarn)'''
+        description: '''lsqminnorm(A, b, optional_tol, optional_rankwarn)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lsqminnorm.html'
 
 
-    "chol":
+    "chol [matlab]":
         prefix: "chol"
         body: '''[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})'''
-        description: '''[R, p, S] = chol(A, type, shape)'''
+        description: '''[R, p, S] = chol(A, type, shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/chol.html'
 
 
-    "ishermitian":
+    "ishermitian [matlab]":
         prefix: "ishermitian"
         body: '''${1:tf} = ishermitian(${1:A}, ${2:optional_skew})'''
-        description: '''tf = ishermitian(A, optional_skew)'''
+        description: '''tf = ishermitian(A, optional_skew)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ishermitian.html'
 
 
-    "bandwidth":
+    "bandwidth [matlab]":
         prefix: "bandwidth"
         body: '''[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})'''
-        description: '''[lower, upper] = bandwidth(A, optional_type)'''
+        description: '''[lower, upper] = bandwidth(A, optional_type)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bandwidth.html'
 
 
-    "gsvd":
+    "gsvd [matlab]":
         prefix: "gsvd"
         body: '''${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})'''
-        description: '''s = gsvd(A, B, optional_shape)'''
+        description: '''s = gsvd(A, B, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gsvd.html'
 
 
-    "lu":
+    "lu [matlab]":
         prefix: "lu"
         body: '''[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})'''
-        description: '''[L, U, P, Q, R] = lu(A, optional_threshold, optional_shape)'''
+        description: '''[L, U, P, Q, R] = lu(A, optional_threshold, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lu.html'
 
 
-    "cond":
+    "cond [matlab]":
         prefix: "cond"
         body: '''${1:cond} = cond(${1:A}, ${2:optional_type})'''
-        description: '''cond = cond(A, optional_type)'''
+        description: '''cond = cond(A, optional_type)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cond.html'
 
 
-    "qr":
+    "qr [matlab]":
         prefix: "qr"
         body: '''[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})'''
-        description: '''[C, R, E] = qr(A, b, optional_shape)'''
+        description: '''[C, R, E] = qr(A, b, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qr.html'
 
 
-    "schur":
+    "schur [matlab]":
         prefix: "schur"
         body: '''${1:T} = schur(${1:A}, ${2:optional_complexity})'''
-        description: '''T = schur(A, optional_complexity)'''
+        description: '''T = schur(A, optional_complexity)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/schur.html'
 
 
-    "qrdelete":
+    "qrdelete [matlab]":
         prefix: "qrdelete"
         body: '''[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})'''
-        description: '''[C, R, E] = qrdelete(Q, R, j, optional_shape)'''
+        description: '''[C, R, E] = qrdelete(Q, R, j, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qrdelete.html'
 
 
-    "balance":
+    "balance [matlab]":
         prefix: "balance"
         body: '''[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})'''
-        description: '''[T, B] = balance(A, optional_permFlag)'''
+        description: '''[T, B] = balance(A, optional_permFlag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/balance.html'
 
 
-    "svd":
+    "svd [matlab]":
         prefix: "svd"
         body: '''${1:s} = svd(${1:X}, ${2:optional_shape})'''
-        description: '''s = svd(X, optional_shape)'''
+        description: '''s = svd(X, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/svd.html'
 
 
-    "ldl":
+    "ldl [matlab]":
         prefix: "ldl"
         body: '''[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})'''
-        description: '''[L, D, p] = ldl(A, type, shape)'''
+        description: '''[L, D, p] = ldl(A, type, shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ldl.html'
 
 
-    "cholupdate":
+    "cholupdate [matlab]":
         prefix: "cholupdate"
         body: '''[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})'''
-        description: '''[R1, p] = cholupdate(R, x, optional_type)'''
+        description: '''[R1, p] = cholupdate(R, x, optional_type)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cholupdate.html'
 
 
-    "norm":
+    "norm [matlab]":
         prefix: "norm"
         body: '''${1:norm} = norm(${1:A}, ${2:optional_type})'''
-        description: '''norm = norm(A, optional_type)'''
+        description: '''norm = norm(A, optional_type)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/norm.html'
 
 
-    "ordqz":
+    "ordqz [matlab]":
         prefix: "ordqz"
         body: '''[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})'''
-        description: '''[AAS, BBS, QS, ZS] = ordqz(AA, BB, Q, Z, select)'''
+        description: '''[AAS, BBS, QS, ZS] = ordqz(AA, BB, Q, Z, select)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ordqz.html'
 
 
-    "ordschur":
+    "ordschur [matlab]":
         prefix: "ordschur"
         body: '''[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})'''
-        description: '''[US, TS] = ordschur(U, T, select)'''
+        description: '''[US, TS] = ordschur(U, T, select)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ordschur.html'
 
 
-    "qrinsert":
+    "qrinsert [matlab]":
         prefix: "qrinsert"
         body: '''[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})'''
-        description: '''[C, R, E] = qrinsert(Q, R, j, x, optional_shape)'''
+        description: '''[C, R, E] = qrinsert(Q, R, j, x, optional_shape)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/qrinsert.html'
 
 
-    "lscov":
+    "lscov [matlab]":
         prefix: "lscov"
         body: '''[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})'''
-        description: '''[x, stdx, mse, S] = lscov(A, b, V, optional_alg)'''
+        description: '''[x, stdx, mse, S] = lscov(A, b, V, optional_alg)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lscov.html'
 
 
-    "decomposition":
+    "decomposition [matlab]":
         prefix: "decomposition"
         body: '''decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})'''
-        description: '''decomposition(A, optional_type, 'BandDensity', value, 'LUPivotTolerance', value, 'LDLPivotTolerance', value, 'RankTolerance', value, 'CheckCondition', value)'''
+        description: '''decomposition(A, optional_type, 'BandDensity', value, 'LUPivotTolerance', value, 'LDLPivotTolerance', value, 'RankTolerance', value, 'CheckCondition', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/decomposition.html'
 

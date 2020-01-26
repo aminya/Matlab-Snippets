@@ -1,16 +1,16 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "comm.PhaseNoise":
+    "comm.PhaseNoise [shared]":
         prefix: "comm.PhaseNoise"
         body: '''comm.PhaseNoise(${1:Level}, ${2:FrequencyOffset}, ${3:SampleRate}, ${4:varargin})'''
-        description: '''comm.PhaseNoise(Level, FrequencyOffset, SampleRate, varargin)'''
+        description: '''comm.PhaseNoise(Level, FrequencyOffset, SampleRate, varargin)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/comm.PhaseNoise.html'
 
 
-    "comm.EyeDiagram":
+    "comm.EyeDiagram [shared]":
         prefix: "comm.EyeDiagram"
         body: '''comm.EyeDiagram(${1:varargin})'''
-        description: '''comm.EyeDiagram(varargin)'''
+        description: '''comm.EyeDiagram(varargin)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/comm.EyeDiagram.html'
 

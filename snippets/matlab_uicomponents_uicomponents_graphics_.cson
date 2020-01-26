@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "uiaxes":
+    "uiaxes [matlab]":
         prefix: "uiaxes"
         body: '''uiaxes(${1:optional_Parent}, ${2:properties})'''
-        description: '''uiaxes(optional_Parent, properties)'''
+        description: '''uiaxes(optional_Parent, properties)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiaxes.html'
 

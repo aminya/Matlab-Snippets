@@ -1,23 +1,23 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "parquetread":
+    "parquetread [matlab]":
         prefix: "parquetread"
         body: '''${1:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
-        description: '''T = parquetread(filename, 'SelectedVariableNames', value, 'PreserveVariableNames', value, 'OutputType', value)'''
+        description: '''T = parquetread(filename, 'SelectedVariableNames', value, 'PreserveVariableNames', value, 'OutputType', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetread.html'
 
 
-    "parquetwrite":
+    "parquetwrite [matlab]":
         prefix: "parquetwrite"
         body: '''parquetwrite(${1:filename}, ${2:T}, 'VariableCompression', ${3:value})'''
-        description: '''parquetwrite(filename, T, 'VariableCompression', value)'''
+        description: '''parquetwrite(filename, T, 'VariableCompression', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetwrite.html'
 
 
-    "parquetinfo":
+    "parquetinfo [matlab]":
         prefix: "parquetinfo"
         body: '''${1:P} = parquetinfo(${1:filename})'''
-        description: '''P = parquetinfo(filename)'''
+        description: '''P = parquetinfo(filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetinfo.html'
 

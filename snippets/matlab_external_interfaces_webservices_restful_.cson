@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "weboptions":
+    "weboptions [matlab]":
         prefix: "weboptions"
         body: '''weboptions(${1:name})'''
-        description: '''weboptions(name)'''
+        description: '''weboptions(name)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/weboptions.html'
 

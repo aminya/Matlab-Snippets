@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "dsp.LogicAnalyzer":
+    "dsp.LogicAnalyzer [shared]":
         prefix: "dsp.LogicAnalyzer"
         body: '''dsp.LogicAnalyzer(${1:NumInputPorts}, ${2:SampleTime}, ${3:varargin})'''
-        description: '''dsp.LogicAnalyzer(NumInputPorts, SampleTime, varargin)'''
+        description: '''dsp.LogicAnalyzer(NumInputPorts, SampleTime, varargin)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.LogicAnalyzer.html'
 

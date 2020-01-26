@@ -1,247 +1,247 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "aviinfo":
+    "aviinfo [matlab]":
         prefix: "aviinfo"
         body: '''${1:fileinfo} = aviinfo(${1:filename})'''
-        description: '''fileinfo = aviinfo(filename)'''
+        description: '''fileinfo = aviinfo(filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/aviinfo.html'
 
 
-    "VideoReader.read":
+    "VideoReader.read [matlab]":
         prefix: "VideoReader.read"
         body: '''${1:video} = VideoReader.read(${1:v}, ${2:optional_range}, ${3:optional_'native'})'''
-        description: '''video = VideoReader.read(v, optional_range, optional_'native')'''
+        description: '''video = VideoReader.read(v, optional_range, optional_'native')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoReader.read.html'
 
 
-    "audiorecorder.record":
+    "audiorecorder.record [matlab]":
         prefix: "audiorecorder.record"
         body: '''audiorecorder.record(${1:recorderObj}, ${2:optional_length})'''
-        description: '''audiorecorder.record(recorderObj, optional_length)'''
+        description: '''audiorecorder.record(recorderObj, optional_length)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.record.html'
 
 
-    "lin2mu":
+    "lin2mu [matlab]":
         prefix: "lin2mu"
         body: '''${1:mu} = lin2mu(${1:y})'''
-        description: '''mu = lin2mu(y)'''
+        description: '''mu = lin2mu(y)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lin2mu.html'
 
 
-    "audiorecorder.isrecording":
+    "audiorecorder.isrecording [matlab]":
         prefix: "audiorecorder.isrecording"
         body: '''${1:status} = audiorecorder.isrecording(${1:recorderObj})'''
-        description: '''status = audiorecorder.isrecording(recorderObj)'''
+        description: '''status = audiorecorder.isrecording(recorderObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.isrecording.html'
 
 
-    "audioplayer.playblocking":
+    "audioplayer.playblocking [matlab]":
         prefix: "audioplayer.playblocking"
         body: '''audioplayer.playblocking(${1:playerObj}, ${2:optional_range})'''
-        description: '''audioplayer.playblocking(playerObj, optional_range)'''
+        description: '''audioplayer.playblocking(playerObj, optional_range)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.playblocking.html'
 
 
-    "audiorecorder":
+    "audiorecorder [matlab]":
         prefix: "audiorecorder"
         body: '''${1:recorder} = audiorecorder(${1:Fs}, ${2:nBits}, ${3:nChannels}, ${4:ID})'''
-        description: '''recorder = audiorecorder(Fs, nBits, nChannels, ID)'''
+        description: '''recorder = audiorecorder(Fs, nBits, nChannels, ID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.html'
 
 
-    "VideoWriter":
+    "VideoWriter [matlab]":
         prefix: "VideoWriter"
         body: '''${1:obj} = VideoWriter(${1:filename}, ${2:optional_profile})'''
-        description: '''obj = VideoWriter(filename, optional_profile)'''
+        description: '''obj = VideoWriter(filename, optional_profile)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoWriter.html'
 
 
-    "audiowrite":
+    "audiowrite [matlab]":
         prefix: "audiowrite"
         body: '''audiowrite(${1:filename}, ${2:y}, ${3:Fs}, 'Title', ${4:value}, 'Artist', ${5:value}, 'Comment', ${6:value}, 'BitRate', ${7:value})'''
-        description: '''audiowrite(filename, y, Fs, 'Title', value, 'Artist', value, 'Comment', value, 'BitRate', value)'''
+        description: '''audiowrite(filename, y, Fs, 'Title', value, 'Artist', value, 'Comment', value, 'BitRate', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiowrite.html'
 
 
-    "audiorecorder.recordblocking":
+    "audiorecorder.recordblocking [matlab]":
         prefix: "audiorecorder.recordblocking"
         body: '''audiorecorder.recordblocking(${1:recorderObj}, ${2:length})'''
-        description: '''audiorecorder.recordblocking(recorderObj, length)'''
+        description: '''audiorecorder.recordblocking(recorderObj, length)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.recordblocking.html'
 
 
-    "mu2lin":
+    "mu2lin [matlab]":
         prefix: "mu2lin"
         body: '''${1:y} = mu2lin(${1:mu})'''
-        description: '''y = mu2lin(mu)'''
+        description: '''y = mu2lin(mu)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mu2lin.html'
 
 
-    "sound":
+    "sound [matlab]":
         prefix: "sound"
         body: '''sound(${1:y}, ${2:Fs}, ${3:nBits})'''
-        description: '''sound(y, Fs, nBits)'''
+        description: '''sound(y, Fs, nBits)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sound.html'
 
 
-    "audioplayer.stop":
+    "audioplayer.stop [matlab]":
         prefix: "audioplayer.stop"
         body: '''audioplayer.stop(${1:playerObj})'''
-        description: '''audioplayer.stop(playerObj)'''
+        description: '''audioplayer.stop(playerObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.stop.html'
 
 
-    "audiorecorder.getaudiodata":
+    "audiorecorder.getaudiodata [matlab]":
         prefix: "audiorecorder.getaudiodata"
         body: '''${1:y} = audiorecorder.getaudiodata(${1:recorderObj}, ${2:optional_datatype})'''
-        description: '''y = audiorecorder.getaudiodata(recorderObj, optional_datatype)'''
+        description: '''y = audiorecorder.getaudiodata(recorderObj, optional_datatype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.getaudiodata.html'
 
 
-    "VideoWriter.open":
+    "VideoWriter.open [matlab]":
         prefix: "VideoWriter.open"
         body: '''VideoWriter.open(${1:v})'''
-        description: '''VideoWriter.open(v)'''
+        description: '''VideoWriter.open(v)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoWriter.open.html'
 
 
-    "soundsc":
+    "soundsc [matlab]":
         prefix: "soundsc"
         body: '''soundsc(${1:y}, ${2:Fs}, ${3:nBits}, ${4:optional_yRange})'''
-        description: '''soundsc(y, Fs, nBits, optional_yRange)'''
+        description: '''soundsc(y, Fs, nBits, optional_yRange)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/soundsc.html'
 
 
-    "audioplayer":
+    "audioplayer [matlab]":
         prefix: "audioplayer"
         body: '''${1:player} = audioplayer(${1:recorder}, ${2:ID})'''
-        description: '''player = audioplayer(recorder, ID)'''
+        description: '''player = audioplayer(recorder, ID)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.html'
 
 
-    "VideoWriter.writeVideo":
+    "VideoWriter.writeVideo [matlab]":
         prefix: "VideoWriter.writeVideo"
         body: '''VideoWriter.writeVideo(${1:v}, ${2:frame})'''
-        description: '''VideoWriter.writeVideo(v, frame)'''
+        description: '''VideoWriter.writeVideo(v, frame)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoWriter.writeVideo.html'
 
 
-    "mmfileinfo":
+    "mmfileinfo [matlab]":
         prefix: "mmfileinfo"
         body: '''${1:fileinfo} = mmfileinfo(${1:filename})'''
-        description: '''fileinfo = mmfileinfo(filename)'''
+        description: '''fileinfo = mmfileinfo(filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mmfileinfo.html'
 
 
-    "audioplayer.resume":
+    "audioplayer.resume [matlab]":
         prefix: "audioplayer.resume"
         body: '''audioplayer.resume(${1:playerObj})'''
-        description: '''audioplayer.resume(playerObj)'''
+        description: '''audioplayer.resume(playerObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.resume.html'
 
 
-    "audiorecorder.play":
+    "audiorecorder.play [matlab]":
         prefix: "audiorecorder.play"
         body: '''${1:player} = audiorecorder.play(${1:recObj}, ${2:optional_range})'''
-        description: '''player = audiorecorder.play(recObj, optional_range)'''
+        description: '''player = audiorecorder.play(recObj, optional_range)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.play.html'
 
 
-    "audioinfo":
+    "audioinfo [matlab]":
         prefix: "audioinfo"
         body: '''${1:info} = audioinfo(${1:filename})'''
-        description: '''info = audioinfo(filename)'''
+        description: '''info = audioinfo(filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioinfo.html'
 
 
-    "audioplayer.play":
+    "audioplayer.play [matlab]":
         prefix: "audioplayer.play"
         body: '''audioplayer.play(${1:playerObj}, ${2:optional_range})'''
-        description: '''audioplayer.play(playerObj, optional_range)'''
+        description: '''audioplayer.play(playerObj, optional_range)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.play.html'
 
 
-    "VideoReader.readFrame":
+    "VideoReader.readFrame [matlab]":
         prefix: "VideoReader.readFrame"
         body: '''${1:video} = VideoReader.readFrame(${1:v}, ${2:optional_'native'})'''
-        description: '''video = VideoReader.readFrame(v, optional_'native')'''
+        description: '''video = VideoReader.readFrame(v, optional_'native')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoReader.readFrame.html'
 
 
-    "audiorecorder.stop":
+    "audiorecorder.stop [matlab]":
         prefix: "audiorecorder.stop"
         body: '''audiorecorder.stop(${1:recorderObj})'''
-        description: '''audiorecorder.stop(recorderObj)'''
+        description: '''audiorecorder.stop(recorderObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.stop.html'
 
 
-    "audioread":
+    "audioread [matlab]":
         prefix: "audioread"
         body: '''[${1:y}, ${2:Fs}] = audioread(${1:filename}, ${2:optional_range}, ${3:optional_datatype})'''
-        description: '''[y, Fs] = audioread(filename, optional_range, optional_datatype)'''
+        description: '''[y, Fs] = audioread(filename, optional_range, optional_datatype)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioread.html'
 
 
-    "VideoReader":
+    "VideoReader [matlab]":
         prefix: "VideoReader"
         body: '''${1:obj} = VideoReader(${1:filename}, 'Tag', ${2:value}, 'UserData', ${3:value}, 'CurrentTime', ${4:value})'''
-        description: '''obj = VideoReader(filename, 'Tag', value, 'UserData', value, 'CurrentTime', value)'''
+        description: '''obj = VideoReader(filename, 'Tag', value, 'UserData', value, 'CurrentTime', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoReader.html'
 
 
-    "VideoReader.hasFrame":
+    "VideoReader.hasFrame [matlab]":
         prefix: "VideoReader.hasFrame"
         body: '''${1:video} = VideoReader.hasFrame(${1:v})'''
-        description: '''video = VideoReader.hasFrame(v)'''
+        description: '''video = VideoReader.hasFrame(v)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoReader.hasFrame.html'
 
 
-    "audiorecorder.getplayer":
+    "audiorecorder.getplayer [matlab]":
         prefix: "audiorecorder.getplayer"
         body: '''${1:playerObj} = audiorecorder.getplayer(${1:recorderObj})'''
-        description: '''playerObj = audiorecorder.getplayer(recorderObj)'''
+        description: '''playerObj = audiorecorder.getplayer(recorderObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.getplayer.html'
 
 
-    "audiodevinfo":
+    "audiodevinfo [matlab]":
         prefix: "audiodevinfo"
         body: '''${1:ID} = audiodevinfo(${1:IO}, ${2:name}, ${3:Fs}, ${4:nChannels})'''
-        description: '''ID = audiodevinfo(IO, name, Fs, nChannels)'''
+        description: '''ID = audiodevinfo(IO, name, Fs, nChannels)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiodevinfo.html'
 
 
-    "audiorecorder.pause":
+    "audiorecorder.pause [matlab]":
         prefix: "audiorecorder.pause"
         body: '''audiorecorder.pause(${1:recorderObj})'''
-        description: '''audiorecorder.pause(recorderObj)'''
+        description: '''audiorecorder.pause(recorderObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.pause.html'
 
 
-    "audioplayer.isplaying":
+    "audioplayer.isplaying [matlab]":
         prefix: "audioplayer.isplaying"
         body: '''${1:status} = audioplayer.isplaying(${1:playerObj})'''
-        description: '''status = audioplayer.isplaying(playerObj)'''
+        description: '''status = audioplayer.isplaying(playerObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.isplaying.html'
 
 
-    "VideoWriter.close":
+    "VideoWriter.close [matlab]":
         prefix: "VideoWriter.close"
         body: '''VideoWriter.close(${1:v})'''
-        description: '''VideoWriter.close(v)'''
+        description: '''VideoWriter.close(v)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoWriter.close.html'
 
 
-    "audioplayer.pause":
+    "audioplayer.pause [matlab]":
         prefix: "audioplayer.pause"
         body: '''audioplayer.pause(${1:playerObj})'''
-        description: '''audioplayer.pause(playerObj)'''
+        description: '''audioplayer.pause(playerObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audioplayer.pause.html'
 
 
-    "audiorecorder.resume":
+    "audiorecorder.resume [matlab]":
         prefix: "audiorecorder.resume"
         body: '''audiorecorder.resume(${1:recorderObj})'''
-        description: '''audiorecorder.resume(recorderObj)'''
+        description: '''audiorecorder.resume(recorderObj)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiorecorder.resume.html'
 

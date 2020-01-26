@@ -1,72 +1,72 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "semilogy":
+    "semilogy [matlab]":
         prefix: "semilogy"
         body: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''h = semilogy(optional_ax, Y, optional_LineSpec, opts)'''
+        description: '''h = semilogy(optional_ax, Y, optional_LineSpec, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/semilogy.html'
 
 
-    "loglog":
+    "loglog [matlab]":
         prefix: "loglog"
         body: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''h = loglog(optional_ax, Y, optional_LineSpec, opts)'''
+        description: '''h = loglog(optional_ax, Y, optional_LineSpec, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/loglog.html'
 
 
-    "axis":
+    "axis [matlab]":
         prefix: "axis"
         body: '''${1:limits} = axis(${1:optional_ax})'''
-        description: '''limits = axis(optional_ax)'''
+        description: '''limits = axis(optional_ax)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/axis.html'
 
 
-    "box":
+    "box [matlab]":
         prefix: "box"
         body: '''box(${1:optional_ax}, ${2:optional_action})'''
-        description: '''box(optional_ax, optional_action)'''
+        description: '''box(optional_ax, optional_action)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/box.html'
 
 
-    "plot":
+    "plot [matlab]":
         prefix: "plot"
         body: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''h = plot(optional_ax, Y, optional_LineSpec, opts)'''
+        description: '''h = plot(optional_ax, Y, optional_LineSpec, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/plot.html'
 
 
-    "grid":
+    "grid [matlab]":
         prefix: "grid"
         body: '''grid(${1:optional_target}, ${2:optional_action})'''
-        description: '''grid(optional_target, optional_action)'''
+        description: '''grid(optional_target, optional_action)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/grid.html'
 
 
-    "semilogx":
+    "semilogx [matlab]":
         prefix: "semilogx"
         body: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''h = semilogx(optional_ax, Y, optional_LineSpec, opts)'''
+        description: '''h = semilogx(optional_ax, Y, optional_LineSpec, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/semilogx.html'
 
 
-    "title":
+    "title [matlab]":
         prefix: "title"
         body: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
-        description: '''h = title(target, txt, opts)'''
+        description: '''h = title(target, txt, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/title.html'
 
 
-    "xlabel":
+    "xlabel [matlab]":
         prefix: "xlabel"
         body: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
-        description: '''h = xlabel(optional_target, txt, opts)'''
+        description: '''h = xlabel(optional_target, txt, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/xlabel.html'
 
 
-    "ylabel":
+    "ylabel [matlab]":
         prefix: "ylabel"
         body: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
-        description: '''h = ylabel(optional_target, txt, opts)'''
+        description: '''h = ylabel(optional_target, txt, opts)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ylabel.html'
 

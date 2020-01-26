@@ -1,856 +1,856 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "posixtime":
+    "posixtime [matlab]":
         prefix: "posixtime"
         body: '''${1:p} = posixtime(${1:t})'''
-        description: '''p = posixtime(t)'''
+        description: '''p = posixtime(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/posixtime.html'
 
 
-    "calmonths":
+    "calmonths [matlab]":
         prefix: "calmonths"
         body: '''${1:M} = calmonths(${1:X})'''
-        description: '''M = calmonths(X)'''
+        description: '''M = calmonths(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calmonths.html'
 
 
-    "rem":
+    "rem [matlab]":
         prefix: "rem"
         body: '''${1:r} = rem(${1:a}, ${2:b})'''
-        description: '''r = rem(a, b)'''
+        description: '''r = rem(a, b)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rem.html'
 
 
-    "linspace":
+    "linspace [matlab]":
         prefix: "linspace"
         body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:n})'''
-        description: '''y = linspace(x1, x2, n)'''
+        description: '''y = linspace(x1, x2, n)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/linspace.html'
 
 
-    "datestr":
+    "datestr [matlab]":
         prefix: "datestr"
         body: '''${1:DateString} = datestr(${1:t}, ${2:formatOut}, ${3:local})'''
-        description: '''DateString = datestr(t, formatOut, local)'''
+        description: '''DateString = datestr(t, formatOut, local)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/datestr.html'
 
 
-    "ismatrix":
+    "ismatrix [matlab]":
         prefix: "ismatrix"
         body: '''${1:TF} = ismatrix(${1:V})'''
-        description: '''TF = ismatrix(V)'''
+        description: '''TF = ismatrix(V)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismatrix.html'
 
 
-    "maxk":
+    "maxk [matlab]":
         prefix: "maxk"
         body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
-        description: '''[B, I] = maxk(A, k, dim)'''
+        description: '''[B, I] = maxk(A, k, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/maxk.html'
 
 
-    "movmedian":
+    "movmedian [matlab]":
         prefix: "movmedian"
         body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmedian(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmedian(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmedian.html'
 
 
-    "length":
+    "length [matlab]":
         prefix: "length"
         body: '''${1:L} = length(${1:X})'''
-        description: '''L = length(X)'''
+        description: '''L = length(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/length.html'
 
 
-    "days":
+    "days [matlab]":
         prefix: "days"
         body: '''${1:D} = days(${1:X})'''
-        description: '''D = days(X)'''
+        description: '''D = days(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/days.html'
 
 
-    "mean":
+    "mean [matlab]":
         prefix: "mean"
         body: '''${1:M} = mean(${1:T}, ${2:dim}, ${3:nanflag})'''
-        description: '''M = mean(T, dim, nanflag)'''
+        description: '''M = mean(T, dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mean.html'
 
 
-    "minute":
+    "minute [matlab]":
         prefix: "minute"
         body: '''${1:m} = minute(${1:t})'''
-        description: '''m = minute(t)'''
+        description: '''m = minute(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/minute.html'
 
 
-    "round":
+    "round [matlab]":
         prefix: "round"
         body: '''${1:Y} = round(${1:t}, ${2:unit})'''
-        description: '''Y = round(t, unit)'''
+        description: '''Y = round(t, unit)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/round.html'
 
 
-    "calendarDuration":
+    "calendarDuration [matlab]":
         prefix: "calendarDuration"
         body: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
-        description: '''D = calendarDuration(YMD, 'Format', value)'''
+        description: '''D = calendarDuration(YMD, 'Format', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendarDuration.html'
 
 
-    "day":
+    "day [matlab]":
         prefix: "day"
         body: '''${1:d} = day(${1:t}, ${2:dayType})'''
-        description: '''d = day(t, dayType)'''
+        description: '''d = day(t, dayType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/day.html'
 
 
-    "split":
+    "split [matlab]":
         prefix: "split"
         body: '''${1:C} = split(${1:t}, ${2:units})'''
-        description: '''C = split(t, units)'''
+        description: '''C = split(t, units)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/split.html'
 
 
-    "ymd":
+    "ymd [matlab]":
         prefix: "ymd"
         body: '''[${1:y}, ${2:m}, ${3:d}] = ymd(${1:t})'''
-        description: '''[y, m, d] = ymd(t)'''
+        description: '''[y, m, d] = ymd(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ymd.html'
 
 
-    "juliandate":
+    "juliandate [matlab]":
         prefix: "juliandate"
         body: '''${1:d} = juliandate(${1:t}, ${2:dateType})'''
-        description: '''d = juliandate(t, dateType)'''
+        description: '''d = juliandate(t, dateType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/juliandate.html'
 
 
-    "union":
+    "union [matlab]":
         prefix: "union"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-        description: '''[C, ia, ib] = union(A, B, 'rows', setOrder)'''
+        description: '''[C, ia, ib] = union(A, B, 'rows', setOrder)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/union.html'
 
 
-    "cumsum":
+    "cumsum [matlab]":
         prefix: "cumsum"
         body: '''${1:B} = cumsum(${1:A}, ${2:dim}, ${3:direction})'''
-        description: '''B = cumsum(A, dim, direction)'''
+        description: '''B = cumsum(A, dim, direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cumsum.html'
 
 
-    "caldiff":
+    "caldiff [matlab]":
         prefix: "caldiff"
         body: '''${1:dt} = caldiff(${1:t}, ${2:components}, ${3:dim})'''
-        description: '''dt = caldiff(t, components, dim)'''
+        description: '''dt = caldiff(t, components, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/caldiff.html'
 
 
-    "timeofday":
+    "timeofday [matlab]":
         prefix: "timeofday"
         body: '''${1:d} = timeofday(${1:t})'''
-        description: '''d = timeofday(t)'''
+        description: '''d = timeofday(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timeofday.html'
 
 
-    "month":
+    "month [matlab]":
         prefix: "month"
         body: '''${1:d} = month(${1:t}, ${2:monthType})'''
-        description: '''d = month(t, monthType)'''
+        description: '''d = month(t, monthType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/month.html'
 
 
-    "floor":
+    "floor [matlab]":
         prefix: "floor"
         body: '''${1:Y} = floor(${1:t}, ${2:unit})'''
-        description: '''Y = floor(t, unit)'''
+        description: '''Y = floor(t, unit)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/floor.html'
 
 
-    "issortedrows":
+    "issortedrows [matlab]":
         prefix: "issortedrows"
         body: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-        description: '''TF = issortedrows(A, column, direction, 'MissingPlacement', value)'''
+        description: '''TF = issortedrows(A, column, direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issortedrows.html'
 
 
-    "quarter":
+    "quarter [matlab]":
         prefix: "quarter"
         body: '''${1:q} = quarter(${1:t})'''
-        description: '''q = quarter(t)'''
+        description: '''q = quarter(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/quarter.html'
 
 
-    "calquarters":
+    "calquarters [matlab]":
         prefix: "calquarters"
         body: '''${1:Q} = calquarters(${1:X})'''
-        description: '''Q = calquarters(X)'''
+        description: '''Q = calquarters(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calquarters.html'
 
 
-    "cummax":
+    "cummax [matlab]":
         prefix: "cummax"
         body: '''${1:M} = cummax(${1:A}, ${2:dim}, ${3:direction})'''
-        description: '''M = cummax(A, dim, direction)'''
+        description: '''M = cummax(A, dim, direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cummax.html'
 
 
-    "tzoffset":
+    "tzoffset [matlab]":
         prefix: "tzoffset"
         body: '''[${1:dt}, ${2:dst}] = tzoffset(${1:t})'''
-        description: '''[dt, dst] = tzoffset(t)'''
+        description: '''[dt, dst] = tzoffset(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tzoffset.html'
 
 
-    "sum":
+    "sum [matlab]":
         prefix: "sum"
         body: '''${1:S} = sum(${1:A}, ${2:dim}, ${3:nanflag})'''
-        description: '''S = sum(A, dim, nanflag)'''
+        description: '''S = sum(A, dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sum.html'
 
 
-    "setxor":
+    "setxor [matlab]":
         prefix: "setxor"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-        description: '''[C, ia, ib] = setxor(A, B, 'rows', setOrder)'''
+        description: '''[C, ia, ib] = setxor(A, B, 'rows', setOrder)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setxor.html'
 
 
-    "time":
+    "time [matlab]":
         prefix: "time"
         body: '''${1:t} = time(${1:d})'''
-        description: '''t = time(d)'''
+        description: '''t = time(d)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/time.html'
 
 
-    "isnan":
+    "isnan [matlab]":
         prefix: "isnan"
         body: '''${1:TF} = isnan(${1:A})'''
-        description: '''TF = isnan(A)'''
+        description: '''TF = isnan(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isnan.html'
 
 
-    "isdst":
+    "isdst [matlab]":
         prefix: "isdst"
         body: '''${1:tf} = isdst(${1:t})'''
-        description: '''tf = isdst(t)'''
+        description: '''tf = isdst(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isdst.html'
 
 
-    "discretize":
+    "discretize [matlab]":
         prefix: "discretize"
         body: '''[${1:Y}, ${2:E}] = discretize(${1:X}, ${2:N}, ${3:values}, ${4:'categorical'}, 'IncludedEdge', ${5:value})'''
-        description: '''[Y, E] = discretize(X, N, values, 'categorical', 'IncludedEdge', value)'''
+        description: '''[Y, E] = discretize(X, N, values, 'categorical', 'IncludedEdge', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/discretize.html'
 
 
-    "isinf":
+    "isinf [matlab]":
         prefix: "isinf"
         body: '''${1:TF} = isinf(${1:A})'''
-        description: '''TF = isinf(A)'''
+        description: '''TF = isinf(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isinf.html'
 
 
-    "mod":
+    "mod [matlab]":
         prefix: "mod"
         body: '''${1:b} = mod(${1:a}, ${2:m})'''
-        description: '''b = mod(a, m)'''
+        description: '''b = mod(a, m)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mod.html'
 
 
-    "datenum":
+    "datenum [matlab]":
         prefix: "datenum"
         body: '''${1:DateNumber} = datenum(${1:t})'''
-        description: '''DateNumber = datenum(t)'''
+        description: '''DateNumber = datenum(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/datenum.html'
 
 
-    "intersect":
+    "intersect [matlab]":
         prefix: "intersect"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-        description: '''[C, ia, ib] = intersect(A, B, 'rows', setOrder)'''
+        description: '''[C, ia, ib] = intersect(A, B, 'rows', setOrder)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intersect.html'
 
 
-    "isweekend":
+    "isweekend [matlab]":
         prefix: "isweekend"
         body: '''${1:tf} = isweekend(${1:t})'''
-        description: '''tf = isweekend(t)'''
+        description: '''tf = isweekend(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isweekend.html'
 
 
-    "max":
+    "max [matlab]":
         prefix: "max"
         body: '''${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
-        description: '''C = max(A, B, nanflag)'''
+        description: '''C = max(A, B, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/max.html'
 
 
-    "year":
+    "year [matlab]":
         prefix: "year"
         body: '''${1:y} = year(${1:t}, ${2:yearType})'''
-        description: '''y = year(t, yearType)'''
+        description: '''y = year(t, yearType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/year.html'
 
 
-    "dateshift":
+    "dateshift [matlab]":
         prefix: "dateshift"
         body: '''${1:t2} = dateshift(${1:t}, ${2:'start'}, ${3:unit}, ${4:rule})'''
-        description: '''t2 = dateshift(t, 'start', unit, rule)'''
+        description: '''t2 = dateshift(t, 'start', unit, rule)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dateshift.html'
 
 
-    "hours":
+    "hours [matlab]":
         prefix: "hours"
         body: '''${1:H} = hours(${1:X})'''
-        description: '''H = hours(X)'''
+        description: '''H = hours(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hours.html'
 
 
-    "plus":
+    "plus [matlab]":
         prefix: "plus"
         body: '''${1:C} = plus(${1:A}, ${2:B})'''
-        description: '''C = plus(A, B)'''
+        description: '''C = plus(A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/plus.html'
 
 
-    "movprod":
+    "movprod [matlab]":
         prefix: "movprod"
         body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movprod(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movprod(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movprod.html'
 
 
-    "char":
+    "char [matlab]":
         prefix: "char"
         body: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
-        description: '''S = char(D, fmt, locale)'''
+        description: '''S = char(D, fmt, locale)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/char.html'
 
 
-    "cat":
+    "cat [matlab]":
         prefix: "cat"
         body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
-        description: '''C = cat(dim, A, B)'''
+        description: '''C = cat(dim, A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cat.html'
 
 
-    "sort":
+    "sort [matlab]":
         prefix: "sort"
         body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-        description: '''[B, I] = sort(A, dim, direction, 'MissingPlacement', value)'''
+        description: '''[B, I] = sort(A, dim, direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sort.html'
 
 
-    "movmean":
+    "movmean [matlab]":
         prefix: "movmean"
         body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmean(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmean(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmean.html'
 
 
-    "sortrows":
+    "sortrows [matlab]":
         prefix: "sortrows"
         body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-        description: '''[B, Index] = sortrows(A, column, direction, 'MissingPlacement', value)'''
+        description: '''[B, Index] = sortrows(A, column, direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sortrows.html'
 
 
-    "interp1":
+    "interp1 [matlab]":
         prefix: "interp1"
         body: '''${1:vq} = interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
-        description: '''vq = interp1(x, v, xq, method, extrapolation)'''
+        description: '''vq = interp1(x, v, xq, method, extrapolation)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/interp1.html'
 
 
-    "topkrows":
+    "topkrows [matlab]":
         prefix: "topkrows"
         body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
-        description: '''[B, Index] = topkrows(A, k, column, direction)'''
+        description: '''[B, Index] = topkrows(A, k, column, direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/topkrows.html'
 
 
-    "ismember":
+    "ismember [matlab]":
         prefix: "ismember"
         body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
-        description: '''[Lia, Locb] = ismember(A, B, 'rows')'''
+        description: '''[Lia, Locb] = ismember(A, B, 'rows')    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismember.html'
 
 
-    "caldays":
+    "caldays [matlab]":
         prefix: "caldays"
         body: '''${1:D} = caldays(${1:X})'''
-        description: '''D = caldays(X)'''
+        description: '''D = caldays(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/caldays.html'
 
 
-    "ctranspose":
+    "ctranspose [matlab]":
         prefix: "ctranspose"
         body: '''${1:B} = ctranspose(${1:A})'''
-        description: '''B = ctranspose(A)'''
+        description: '''B = ctranspose(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ctranspose.html'
 
 
-    "mode":
+    "mode [matlab]":
         prefix: "mode"
         body: '''[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})'''
-        description: '''[M, F, C] = mode(A, dim)'''
+        description: '''[M, F, C] = mode(A, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mode.html'
 
 
-    "vertcat":
+    "vertcat [matlab]":
         prefix: "vertcat"
         body: '''${1:C} = vertcat(${1:A})'''
-        description: '''C = vertcat(A)'''
+        description: '''C = vertcat(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/vertcat.html'
 
 
-    "calyears":
+    "calyears [matlab]":
         prefix: "calyears"
         body: '''${1:Y} = calyears(${1:X})'''
-        description: '''Y = calyears(X)'''
+        description: '''Y = calyears(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calyears.html'
 
 
-    "addtodate":
+    "addtodate [matlab]":
         prefix: "addtodate"
         body: '''${1:R} = addtodate(${1:D}, ${2:Q}, ${3:F})'''
-        description: '''R = addtodate(D, Q, F)'''
+        description: '''R = addtodate(D, Q, F)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/addtodate.html'
 
 
-    "ceil":
+    "ceil [matlab]":
         prefix: "ceil"
         body: '''${1:Y} = ceil(${1:t}, ${2:unit})'''
-        description: '''Y = ceil(t, unit)'''
+        description: '''Y = ceil(t, unit)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ceil.html'
 
 
-    "times":
+    "times [matlab]":
         prefix: "times"
         body: '''${1:C} = times(${1:A}, ${2:B})'''
-        description: '''C = times(A, B)'''
+        description: '''C = times(A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/times.html'
 
 
-    "cummin":
+    "cummin [matlab]":
         prefix: "cummin"
         body: '''${1:M} = cummin(${1:A}, ${2:dim}, ${3:direction})'''
-        description: '''M = cummin(A, dim, direction)'''
+        description: '''M = cummin(A, dim, direction)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cummin.html'
 
 
-    "minutes":
+    "minutes [matlab]":
         prefix: "minutes"
         body: '''${1:M} = minutes(${1:X})'''
-        description: '''M = minutes(X)'''
+        description: '''M = minutes(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/minutes.html'
 
 
-    "setdiff":
+    "setdiff [matlab]":
         prefix: "setdiff"
         body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-        description: '''[C, ia] = setdiff(A, B, 'rows', setOrder)'''
+        description: '''[C, ia] = setdiff(A, B, 'rows', setOrder)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setdiff.html'
 
 
-    "movstd":
+    "movstd [matlab]":
         prefix: "movstd"
         body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''M = movstd(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movstd(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movstd.html'
 
 
-    "isempty":
+    "isempty [matlab]":
         prefix: "isempty"
         body: '''${1:TF} = isempty(${1:A})'''
-        description: '''TF = isempty(A)'''
+        description: '''TF = isempty(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isempty.html'
 
 
-    "isrow":
+    "isrow [matlab]":
         prefix: "isrow"
         body: '''${1:TF} = isrow(${1:V})'''
-        description: '''TF = isrow(V)'''
+        description: '''TF = isrow(V)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isrow.html'
 
 
-    "abs":
+    "abs [matlab]":
         prefix: "abs"
         body: '''${1:Y} = abs(${1:X})'''
-        description: '''Y = abs(X)'''
+        description: '''Y = abs(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/abs.html'
 
 
-    "std":
+    "std [matlab]":
         prefix: "std"
         body: '''${1:S} = std(${1:A}, ${2:w}, ${3:dim}, ${4:nanflag})'''
-        description: '''S = std(A, w, dim, nanflag)'''
+        description: '''S = std(A, w, dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/std.html'
 
 
-    "datetime":
+    "datetime [matlab]":
         prefix: "datetime"
         body: '''${1:t} = datetime(${1:X}, ${2:ConvertFrom}, ${3:dateType}, 'Epoch', ${4:value}, 'TicksPerSecond', ${5:value}, 'TimeZone', ${6:value}, 'Format', ${7:value})'''
-        description: '''t = datetime(X, ConvertFrom, dateType, 'Epoch', value, 'TicksPerSecond', value, 'TimeZone', value, 'Format', value)'''
+        description: '''t = datetime(X, ConvertFrom, dateType, 'Epoch', value, 'TicksPerSecond', value, 'TimeZone', value, 'Format', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/datetime.html'
 
 
-    "calendar":
+    "calendar [matlab]":
         prefix: "calendar"
         body: '''${1:c} = calendar(${1:d})'''
-        description: '''c = calendar(d)'''
+        description: '''c = calendar(d)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calendar.html'
 
 
-    "weekday":
+    "weekday [matlab]":
         prefix: "weekday"
         body: '''[${1:DayNumber}, ${2:DayName}] = weekday(${1:D}, ${2:DayForm}, ${3:language})'''
-        description: '''[DayNumber, DayName] = weekday(D, DayForm, language)'''
+        description: '''[DayNumber, DayName] = weekday(D, DayForm, language)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/weekday.html'
 
 
-    "histcounts":
+    "histcounts [matlab]":
         prefix: "histcounts"
         body: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:edges}, 'BinLimits', ${3:value}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Normalization', ${6:value})'''
-        description: '''[N, edges, bin] = histcounts(X, edges, 'BinLimits', value, 'BinMethod', value, 'BinWidth', value, 'Normalization', value)'''
+        description: '''[N, edges, bin] = histcounts(X, edges, 'BinLimits', value, 'BinMethod', value, 'BinWidth', value, 'Normalization', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/histcounts.html'
 
 
-    "NaT":
+    "NaT [matlab]":
         prefix: "NaT"
         body: '''${1:t} = NaT(${1:n}, 'Format', ${2:value}, 'TimeZone', ${3:value})'''
-        description: '''t = NaT(n, 'Format', value, 'TimeZone', value)'''
+        description: '''t = NaT(n, 'Format', value, 'TimeZone', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/NaT.html'
 
 
-    "unique":
+    "unique [matlab]":
         prefix: "unique"
         body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
-        description: '''[C, ia, ic] = unique(A, 'rows', setOrder)'''
+        description: '''[C, ia, ic] = unique(A, 'rows', setOrder)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unique.html'
 
 
-    "cellstr":
+    "cellstr [matlab]":
         prefix: "cellstr"
         body: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
-        description: '''S = cellstr(D, fmt, locale)'''
+        description: '''S = cellstr(D, fmt, locale)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cellstr.html'
 
 
-    "yyyymmdd":
+    "yyyymmdd [matlab]":
         prefix: "yyyymmdd"
         body: '''${1:pd} = yyyymmdd(${1:t})'''
-        description: '''pd = yyyymmdd(t)'''
+        description: '''pd = yyyymmdd(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/yyyymmdd.html'
 
 
-    "years":
+    "years [matlab]":
         prefix: "years"
         body: '''${1:Y} = years(${1:X})'''
-        description: '''Y = years(X)'''
+        description: '''Y = years(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/years.html'
 
 
-    "isvector":
+    "isvector [matlab]":
         prefix: "isvector"
         body: '''${1:TF} = isvector(${1:A})'''
-        description: '''TF = isvector(A)'''
+        description: '''TF = isvector(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isvector.html'
 
 
-    "seconds":
+    "seconds [matlab]":
         prefix: "seconds"
         body: '''${1:S} = seconds(${1:X})'''
-        description: '''S = seconds(X)'''
+        description: '''S = seconds(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/seconds.html'
 
 
-    "calweeks":
+    "calweeks [matlab]":
         prefix: "calweeks"
         body: '''${1:W} = calweeks(${1:X})'''
-        description: '''W = calweeks(X)'''
+        description: '''W = calweeks(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/calweeks.html'
 
 
-    "median":
+    "median [matlab]":
         prefix: "median"
         body: '''${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
-        description: '''M = median(A, dim, nanflag)'''
+        description: '''M = median(A, dim, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/median.html'
 
 
-    "minus":
+    "minus [matlab]":
         prefix: "minus"
         body: '''${1:C} = minus(${1:A}, ${2:B})'''
-        description: '''C = minus(A, B)'''
+        description: '''C = minus(A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/minus.html'
 
 
-    "isfinite":
+    "isfinite [matlab]":
         prefix: "isfinite"
         body: '''${1:TF} = isfinite(${1:A})'''
-        description: '''TF = isfinite(A)'''
+        description: '''TF = isfinite(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isfinite.html'
 
 
-    "horzcat":
+    "horzcat [matlab]":
         prefix: "horzcat"
         body: '''${1:C} = horzcat(${1:A})'''
-        description: '''C = horzcat(A)'''
+        description: '''C = horzcat(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/horzcat.html'
 
 
-    "isnat":
+    "isnat [matlab]":
         prefix: "isnat"
         body: '''${1:tf} = isnat(${1:A})'''
-        description: '''tf = isnat(A)'''
+        description: '''tf = isnat(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isnat.html'
 
 
-    "hour":
+    "hour [matlab]":
         prefix: "hour"
         body: '''${1:h} = hour(${1:t})'''
-        description: '''h = hour(t)'''
+        description: '''h = hour(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hour.html'
 
 
-    "isscalar":
+    "isscalar [matlab]":
         prefix: "isscalar"
         body: '''${1:TF} = isscalar(${1:A})'''
-        description: '''TF = isscalar(A)'''
+        description: '''TF = isscalar(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isscalar.html'
 
 
-    "isduration":
+    "isduration [matlab]":
         prefix: "isduration"
         body: '''${1:tf} = isduration(${1:t})'''
-        description: '''tf = isduration(t)'''
+        description: '''tf = isduration(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isduration.html'
 
 
-    "movmax":
+    "movmax [matlab]":
         prefix: "movmax"
         body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmax(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmax(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmax.html'
 
 
-    "ndims":
+    "ndims [matlab]":
         prefix: "ndims"
         body: '''${1:N} = ndims(${1:X})'''
-        description: '''N = ndims(X)'''
+        description: '''N = ndims(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ndims.html'
 
 
-    "uminus":
+    "uminus [matlab]":
         prefix: "uminus"
         body: '''${1:C} = uminus(${1:A})'''
-        description: '''C = uminus(A)'''
+        description: '''C = uminus(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uminus.html'
 
 
-    "string":
+    "string [matlab]":
         prefix: "string"
         body: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
-        description: '''str = string(D, fmt, locale)'''
+        description: '''str = string(D, fmt, locale)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/string.html'
 
 
-    "convertTo":
+    "convertTo [matlab]":
         prefix: "convertTo"
         body: '''${1:t} = convertTo(${1:t}, ${2:dateType}, 'Epoch', ${3:value}, 'TicksPerSecond', ${4:value})'''
-        description: '''t = convertTo(t, dateType, 'Epoch', value, 'TicksPerSecond', value)'''
+        description: '''t = convertTo(t, dateType, 'Epoch', value, 'TicksPerSecond', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/convertTo.html'
 
 
-    "isequaln":
+    "isequaln [matlab]":
         prefix: "isequaln"
         body: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
-        description: '''tf = isequaln(A, B)'''
+        description: '''tf = isequaln(A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isequaln.html'
 
 
-    "transpose":
+    "transpose [matlab]":
         prefix: "transpose"
         body: '''${1:B} = transpose(${1:A})'''
-        description: '''B = transpose(A)'''
+        description: '''B = transpose(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/transpose.html'
 
 
-    "numel":
+    "numel [matlab]":
         prefix: "numel"
         body: '''${1:n} = numel(${1:A})'''
-        description: '''n = numel(A)'''
+        description: '''n = numel(A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/numel.html'
 
 
-    "week":
+    "week [matlab]":
         prefix: "week"
         body: '''${1:w} = week(${1:t}, ${2:weekType})'''
-        description: '''w = week(t, weekType)'''
+        description: '''w = week(t, weekType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/week.html'
 
 
-    "movsum":
+    "movsum [matlab]":
         prefix: "movsum"
         body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movsum(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movsum(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movsum.html'
 
 
-    "diff":
+    "diff [matlab]":
         prefix: "diff"
         body: '''${1:Y} = diff(${1:X}, ${2:n}, ${3:dim})'''
-        description: '''Y = diff(X, n, dim)'''
+        description: '''Y = diff(X, n, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/diff.html'
 
 
-    "timezones":
+    "timezones [matlab]":
         prefix: "timezones"
         body: '''${1:T} = timezones(${1:area})'''
-        description: '''T = timezones(area)'''
+        description: '''T = timezones(area)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/timezones.html'
 
 
-    "duration":
+    "duration [matlab]":
         prefix: "duration"
         body: '''${1:D} = duration(${1:X}, 'Format', ${2:value}, 'InputFormat', ${3:value})'''
-        description: '''D = duration(X, 'Format', value, 'InputFormat', value)'''
+        description: '''D = duration(X, 'Format', value, 'InputFormat', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/duration.html'
 
 
-    "mtimes":
+    "mtimes [matlab]":
         prefix: "mtimes"
         body: '''${1:C} = mtimes(${1:A}, ${2:B})'''
-        description: '''C = mtimes(A, B)'''
+        description: '''C = mtimes(A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mtimes.html'
 
 
-    "min":
+    "min [matlab]":
         prefix: "min"
         body: '''${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
-        description: '''C = min(A, B, nanflag)'''
+        description: '''C = min(A, B, nanflag)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/min.html'
 
 
-    "mink":
+    "mink [matlab]":
         prefix: "mink"
         body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
-        description: '''[B, I] = mink(A, k, dim)'''
+        description: '''[B, I] = mink(A, k, dim)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mink.html'
 
 
-    "ldivide":
+    "ldivide [matlab]":
         prefix: "ldivide"
         body: '''${1:x} = ldivide(${1:B}, ${2:A})'''
-        description: '''x = ldivide(B, A)'''
+        description: '''x = ldivide(B, A)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ldivide.html'
 
 
-    "iscalendarduration":
+    "iscalendarduration [matlab]":
         prefix: "iscalendarduration"
         body: '''${1:tf} = iscalendarduration(${1:d})'''
-        description: '''tf = iscalendarduration(d)'''
+        description: '''tf = iscalendarduration(d)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscalendarduration.html'
 
 
-    "exceltime":
+    "exceltime [matlab]":
         prefix: "exceltime"
         body: '''${1:d} = exceltime(${1:t}, ${2:dateType})'''
-        description: '''d = exceltime(t, dateType)'''
+        description: '''d = exceltime(t, dateType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/exceltime.html'
 
 
-    "movmad":
+    "movmad [matlab]":
         prefix: "movmad"
         body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmad(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmad(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmad.html'
 
 
-    "hms":
+    "hms [matlab]":
         prefix: "hms"
         body: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
-        description: '''[h, m, s] = hms(t)'''
+        description: '''[h, m, s] = hms(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hms.html'
 
 
-    "iscolumn":
+    "iscolumn [matlab]":
         prefix: "iscolumn"
         body: '''${1:TF} = iscolumn(${1:V})'''
-        description: '''TF = iscolumn(V)'''
+        description: '''TF = iscolumn(V)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/iscolumn.html'
 
 
-    "second":
+    "second [matlab]":
         prefix: "second"
         body: '''${1:s} = second(${1:t}, ${2:secondType})'''
-        description: '''s = second(t, secondType)'''
+        description: '''s = second(t, secondType)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/second.html'
 
 
-    "isdatetime":
+    "isdatetime [matlab]":
         prefix: "isdatetime"
         body: '''${1:tf} = isdatetime(${1:t})'''
-        description: '''tf = isdatetime(t)'''
+        description: '''tf = isdatetime(t)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isdatetime.html'
 
 
-    "movmin":
+    "movmin [matlab]":
         prefix: "movmin"
         body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''M = movmin(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movmin(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movmin.html'
 
 
-    "isequal":
+    "isequal [matlab]":
         prefix: "isequal"
         body: '''${1:tf} = isequal(${1:A}, ${2:B})'''
-        description: '''tf = isequal(A, B)'''
+        description: '''tf = isequal(A, B)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isequal.html'
 
 
-    "movvar":
+    "movvar [matlab]":
         prefix: "movvar"
         body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''M = movvar(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
+        description: '''M = movvar(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movvar.html'
 
 
-    "issorted":
+    "issorted [matlab]":
         prefix: "issorted"
         body: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-        description: '''TF = issorted(A, dim, direction, 'MissingPlacement', value)'''
+        description: '''TF = issorted(A, dim, direction, 'MissingPlacement', value)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/issorted.html'
 
 
-    "milliseconds":
+    "milliseconds [matlab]":
         prefix: "milliseconds"
         body: '''${1:MS} = milliseconds(${1:X})'''
-        description: '''MS = milliseconds(X)'''
+        description: '''MS = milliseconds(X)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/milliseconds.html'
 
 
-    "reshape":
+    "reshape [matlab]":
         prefix: "reshape"
         body: '''${1:B} = reshape(${1:A}, ${2:sz})'''
-        description: '''B = reshape(A, sz)'''
+        description: '''B = reshape(A, sz)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/reshape.html'
 
 
-    "permute":
+    "permute [matlab]":
         prefix: "permute"
         body: '''${1:B} = permute(${1:A}, ${2:order})'''
-        description: '''B = permute(A, order)'''
+        description: '''B = permute(A, order)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/permute.html'
 
 
-    "between":
+    "between [matlab]":
         prefix: "between"
         body: '''${1:dt} = between(${1:t1}, ${2:t2}, ${3:components})'''
-        description: '''dt = between(t1, t2, components)'''
+        description: '''dt = between(t1, t2, components)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/between.html'
 

@@ -1,51 +1,51 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "rgb2lin":
+    "rgb2lin [images]":
         prefix: "rgb2lin"
         body: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
-        description: '''B = rgb2lin(A, 'ColorSpace', value, 'OutputType', value)'''
+        description: '''B = rgb2lin(A, 'ColorSpace', value, 'OutputType', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/rgb2lin.html'
 
 
-    "colorangle":
+    "colorangle [images]":
         prefix: "colorangle"
         body: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
-        description: '''angle = colorangle(RGB1, RGB2)'''
+        description: '''angle = colorangle(RGB1, RGB2)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/colorangle.html'
 
 
-    "lin2rgb":
+    "lin2rgb [images]":
         prefix: "lin2rgb"
         body: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
-        description: '''B = lin2rgb(A, 'ColorSpace', value, 'OutputType', value)'''
+        description: '''B = lin2rgb(A, 'ColorSpace', value, 'OutputType', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/lin2rgb.html'
 
 
-    "chromadapt":
+    "chromadapt [images]":
         prefix: "chromadapt"
         body: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
-        description: '''B = chromadapt(A, illuminant, 'ColorSpace', value, 'Method', value)'''
+        description: '''B = chromadapt(A, illuminant, 'ColorSpace', value, 'Method', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/chromadapt.html'
 
 
-    "illumpca":
+    "illumpca [images]":
         prefix: "illumpca"
         body: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
-        description: '''illuminant = illumpca(A, optional_percentage, 'Mask', value)'''
+        description: '''illuminant = illumpca(A, optional_percentage, 'Mask', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/illumpca.html'
 
 
-    "illumgray":
+    "illumgray [images]":
         prefix: "illumgray"
         body: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
-        description: '''illuminant = illumgray(A, optional_percentiles, 'Mask', value, 'Norm', value)'''
+        description: '''illuminant = illumgray(A, optional_percentiles, 'Mask', value, 'Norm', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/illumgray.html'
 
 
-    "illumwhite":
+    "illumwhite [images]":
         prefix: "illumwhite"
         body: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
-        description: '''illuminant = illumwhite(A, optional_topPercentile, 'Mask', value)'''
+        description: '''illuminant = illumwhite(A, optional_topPercentile, 'Mask', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/illumwhite.html'
 

@@ -1,58 +1,58 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "uiaerohorizon":
+    "uiaerohorizon [aero]":
         prefix: "uiaerohorizon"
         body: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
-        description: '''uiaerohorizon(Parent, properties)'''
+        description: '''uiaerohorizon(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaerohorizon.html'
 
 
-    "uiaeroairspeed":
+    "uiaeroairspeed [aero]":
         prefix: "uiaeroairspeed"
         body: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
-        description: '''uiaeroairspeed(Parent, properties)'''
+        description: '''uiaeroairspeed(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroairspeed.html'
 
 
-    "uiaerorpm":
+    "uiaerorpm [aero]":
         prefix: "uiaerorpm"
         body: '''uiaerorpm(${1:Parent}, ${2:properties})'''
-        description: '''uiaerorpm(Parent, properties)'''
+        description: '''uiaerorpm(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaerorpm.html'
 
 
-    "uiaeroclimb":
+    "uiaeroclimb [aero]":
         prefix: "uiaeroclimb"
         body: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
-        description: '''uiaeroclimb(Parent, properties)'''
+        description: '''uiaeroclimb(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroclimb.html'
 
 
-    "uiaeroturn":
+    "uiaeroturn [aero]":
         prefix: "uiaeroturn"
         body: '''uiaeroturn(${1:Parent}, ${2:properties})'''
-        description: '''uiaeroturn(Parent, properties)'''
+        description: '''uiaeroturn(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroturn.html'
 
 
-    "uiaeroheading":
+    "uiaeroheading [aero]":
         prefix: "uiaeroheading"
         body: '''uiaeroheading(${1:Parent}, ${2:properties})'''
-        description: '''uiaeroheading(Parent, properties)'''
+        description: '''uiaeroheading(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroheading.html'
 
 
-    "uiaeroegt":
+    "uiaeroegt [aero]":
         prefix: "uiaeroegt"
         body: '''uiaeroegt(${1:Parent}, ${2:properties})'''
-        description: '''uiaeroegt(Parent, properties)'''
+        description: '''uiaeroegt(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroegt.html'
 
 
-    "uiaeroaltimeter":
+    "uiaeroaltimeter [aero]":
         prefix: "uiaeroaltimeter"
         body: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
-        description: '''uiaeroaltimeter(Parent, properties)'''
+        description: '''uiaeroaltimeter(Parent, properties)    [aero]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroaltimeter.html'
 

@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "deploytool":
+    "deploytool [compiler]":
         prefix: "deploytool"
         body: '''deploytool(${1:filename}, ${2:optional_varargin})'''
-        description: '''deploytool(filename, optional_varargin)'''
+        description: '''deploytool(filename, optional_varargin)    [compiler]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/compiler/deploytool.html'
 

@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "mpiSettings":
+    "mpiSettings [parallel]":
         prefix: "mpiSettings"
         body: '''mpiSettings('MessageLoggingDestination', ${1:value})'''
-        description: '''mpiSettings('MessageLoggingDestination', value)'''
+        description: '''mpiSettings('MessageLoggingDestination', value)    [parallel]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/parallel/mpiSettings.html'
 

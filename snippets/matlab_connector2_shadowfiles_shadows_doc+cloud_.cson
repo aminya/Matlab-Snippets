@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "doc":
+    "doc [matlab]":
         prefix: "doc"
         body: '''doc(${1:optional_filename})'''
-        description: '''doc(optional_filename)'''
+        description: '''doc(optional_filename)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/doc.html'
 

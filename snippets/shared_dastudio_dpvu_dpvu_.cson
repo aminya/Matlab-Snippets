@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "depview":
+    "depview [shared]":
         prefix: "depview"
         body: '''depview(${1:optional_models}, 'FileDependenciesIncludingLibraries', ${2:value}, 'FileDependenciesExcludingLibraries', ${3:value}, 'ModelReferenceInstance', ${4:value})'''
-        description: '''depview(optional_models, 'FileDependenciesIncludingLibraries', value, 'FileDependenciesExcludingLibraries', value, 'ModelReferenceInstance', value)'''
+        description: '''depview(optional_models, 'FileDependenciesIncludingLibraries', value, 'FileDependenciesExcludingLibraries', value, 'ModelReferenceInstance', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/depview.html'
 

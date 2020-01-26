@@ -1,58 +1,58 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "matlabshared.blelib.Characteristic.write":
+    "matlabshared.blelib.Characteristic.write [shared]":
         prefix: "matlabshared.blelib.Characteristic.write"
         body: '''matlabshared.blelib.Characteristic.write(${1:obj}, ${2:data}, ${3:type}, ${4:precision})'''
-        description: '''matlabshared.blelib.Characteristic.write(obj, data, type, precision)'''
+        description: '''matlabshared.blelib.Characteristic.write(obj, data, type, precision)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.write.html'
 
 
-    "ble":
+    "ble [shared]":
         prefix: "ble"
         body: '''${1:b} = ble(${1:input})'''
-        description: '''b = ble(input)'''
+        description: '''b = ble(input)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/ble.html'
 
 
-    "matlabshared.blelib.Descriptor.write":
+    "matlabshared.blelib.Descriptor.write [shared]":
         prefix: "matlabshared.blelib.Descriptor.write"
         body: '''matlabshared.blelib.Descriptor.write(${1:obj}, ${2:data}, ${3:precision})'''
-        description: '''matlabshared.blelib.Descriptor.write(obj, data, precision)'''
+        description: '''matlabshared.blelib.Descriptor.write(obj, data, precision)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Descriptor.write.html'
 
 
-    "ble.characteristic":
+    "ble.characteristic [shared]":
         prefix: "ble.characteristic"
         body: '''${1:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
-        description: '''c = ble.characteristic(obj, sid, cid)'''
+        description: '''c = ble.characteristic(obj, sid, cid)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/ble.characteristic.html'
 
 
-    "matlabshared.blelib.Characteristic.subscribe":
+    "matlabshared.blelib.Characteristic.subscribe [shared]":
         prefix: "matlabshared.blelib.Characteristic.subscribe"
         body: '''matlabshared.blelib.Characteristic.subscribe(${1:obj}, ${2:type})'''
-        description: '''matlabshared.blelib.Characteristic.subscribe(obj, type)'''
+        description: '''matlabshared.blelib.Characteristic.subscribe(obj, type)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.subscribe.html'
 
 
-    "matlabshared.blelib.Characteristic.descriptor":
+    "matlabshared.blelib.Characteristic.descriptor [shared]":
         prefix: "matlabshared.blelib.Characteristic.descriptor"
         body: '''${1:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
-        description: '''d = matlabshared.blelib.Characteristic.descriptor(obj, did)'''
+        description: '''d = matlabshared.blelib.Characteristic.descriptor(obj, did)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.descriptor.html'
 
 
-    "matlabshared.blelib.Characteristic.read":
+    "matlabshared.blelib.Characteristic.read [shared]":
         prefix: "matlabshared.blelib.Characteristic.read"
         body: '''[${1:value}, ${2:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
-        description: '''[value, timestamp] = matlabshared.blelib.Characteristic.read(obj, mode)'''
+        description: '''[value, timestamp] = matlabshared.blelib.Characteristic.read(obj, mode)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.blelib.Characteristic.read.html'
 
 
-    "blelist":
+    "blelist [shared]":
         prefix: "blelist"
         body: '''${1:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
-        description: '''list = blelist('Name', value, 'Timeout', value, 'Services', value)'''
+        description: '''list = blelist('Name', value, 'Timeout', value, 'Services', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/blelist.html'
 

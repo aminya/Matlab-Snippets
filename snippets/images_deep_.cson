@@ -1,37 +1,37 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "denoisingImageDatastore":
+    "denoisingImageDatastore [images]":
         prefix: "denoisingImageDatastore"
         body: '''${1:source} = denoisingImageDatastore(${1:imds}, 'PatchesPerImage', ${2:value}, 'PatchSize', ${3:value}, 'GaussianNoiseLevel', ${4:value}, 'BackgroundExecution', ${5:value}, 'ChannelFormat', ${6:value})'''
-        description: '''source = denoisingImageDatastore(imds, 'PatchesPerImage', value, 'PatchSize', value, 'GaussianNoiseLevel', value, 'BackgroundExecution', value, 'ChannelFormat', value)'''
+        description: '''source = denoisingImageDatastore(imds, 'PatchesPerImage', value, 'PatchSize', value, 'GaussianNoiseLevel', value, 'BackgroundExecution', value, 'ChannelFormat', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/denoisingImageDatastore.html'
 
 
-    "denoiseImage":
+    "denoiseImage [images]":
         prefix: "denoiseImage"
         body: '''${1:I} = denoiseImage(${1:A}, ${2:net})'''
-        description: '''I = denoiseImage(A, net)'''
+        description: '''I = denoiseImage(A, net)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/denoiseImage.html'
 
 
-    "denoisingNetwork":
+    "denoisingNetwork [images]":
         prefix: "denoisingNetwork"
         body: '''${1:net} = denoisingNetwork(${1:ModelName})'''
-        description: '''net = denoisingNetwork(ModelName)'''
+        description: '''net = denoisingNetwork(ModelName)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/denoisingNetwork.html'
 
 
-    "randomPatchExtractionDatastore":
+    "randomPatchExtractionDatastore [images]":
         prefix: "randomPatchExtractionDatastore"
         body: '''${1:source} = randomPatchExtractionDatastore(${1:imds1}, ${2:imds2}, ${3:patchSize}, 'PatchesPerImage', ${4:value}, 'DispatchInBackground', ${5:value}, 'DataAugmentation', ${6:value})'''
-        description: '''source = randomPatchExtractionDatastore(imds1, imds2, patchSize, 'PatchesPerImage', value, 'DispatchInBackground', value, 'DataAugmentation', value)'''
+        description: '''source = randomPatchExtractionDatastore(imds1, imds2, patchSize, 'PatchesPerImage', value, 'DispatchInBackground', value, 'DataAugmentation', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/randomPatchExtractionDatastore.html'
 
 
-    "dnCNNLayers":
+    "dnCNNLayers [images]":
         prefix: "dnCNNLayers"
         body: '''${1:layers} = dnCNNLayers('NetworkDepth', ${1:value})'''
-        description: '''layers = dnCNNLayers('NetworkDepth', value)'''
+        description: '''layers = dnCNNLayers('NetworkDepth', value)    [images]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/images/dnCNNLayers.html'
 

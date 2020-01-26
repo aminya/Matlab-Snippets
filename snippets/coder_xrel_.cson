@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "sharedCodeUpdate":
+    "sharedCodeUpdate [coder]":
         prefix: "sharedCodeUpdate"
         body: '''sharedCodeUpdate(${1:sourceFolder}, ${2:destinationFolder}, 'ExistingCodeSubfolder', ${3:value})'''
-        description: '''sharedCodeUpdate(sourceFolder, destinationFolder, 'ExistingCodeSubfolder', value)'''
+        description: '''sharedCodeUpdate(sourceFolder, destinationFolder, 'ExistingCodeSubfolder', value)    [coder]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/coder/sharedCodeUpdate.html'
 

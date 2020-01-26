@@ -1,58 +1,58 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius":
+    "pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius [shared]":
         prefix: "pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius"
         body: '''pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(${1:ptCloud}, ${2:point}, ${3:radius}, 'Sort', ${4:value}, 'MaxLeafChecks', ${5:value})'''
-        description: '''pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(ptCloud, point, radius, 'Sort', value, 'MaxLeafChecks', value)'''
+        description: '''pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(ptCloud, point, radius, 'Sort', value, 'MaxLeafChecks', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius.html'
 
 
-    "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors":
+    "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors [shared]":
         prefix: "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors"
         body: '''pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(${1:ptCloud}, ${2:point}, ${3:K}, 'Sort', ${4:value}, 'MaxLeafChecks', ${5:value})'''
-        description: '''pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(ptCloud, point, K, 'Sort', value, 'MaxLeafChecks', value)'''
+        description: '''pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(ptCloud, point, K, 'Sort', value, 'MaxLeafChecks', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors.html'
 
 
-    "pointCloud":
+    "pointCloud [shared]":
         prefix: "pointCloud"
         body: '''pointCloud(${1:xyzPoints}, 'Color', ${2:value}, 'Normal', ${3:value}, 'Intensity', ${4:value})'''
-        description: '''pointCloud(xyzPoints, 'Color', value, 'Normal', value, 'Intensity', value)'''
+        description: '''pointCloud(xyzPoints, 'Color', value, 'Normal', value, 'Intensity', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointCloud.html'
 
 
-    "pcplayer.view":
+    "pcplayer.view [shared]":
         prefix: "pcplayer.view"
         body: '''pcplayer.view(${1:player}, ${2:ptCloud})'''
-        description: '''pcplayer.view(player, ptCloud)'''
+        description: '''pcplayer.view(player, ptCloud)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pcplayer.view.html'
 
 
-    "pcplayer":
+    "pcplayer [shared]":
         prefix: "pcplayer"
         body: '''pcplayer(${1:xlimits}, ${2:ylimits}, ${3:zlimits}, 'MarkerSize', ${4:value}, 'VerticalAxis', ${5:value}, 'VerticalAxisDir', ${6:value})'''
-        description: '''pcplayer(xlimits, ylimits, zlimits, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value)'''
+        description: '''pcplayer(xlimits, ylimits, zlimits, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pcplayer.html'
 
 
-    "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints":
+    "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints [shared]":
         prefix: "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints"
         body: '''pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(${1:ptCloud})'''
-        description: '''pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(ptCloud)'''
+        description: '''pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(ptCloud)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints.html'
 
 
-    "pointclouds.internal.pc.pointCloudImpl.select":
+    "pointclouds.internal.pc.pointCloudImpl.select [shared]":
         prefix: "pointclouds.internal.pc.pointCloudImpl.select"
         body: '''pointclouds.internal.pc.pointCloudImpl.select(${1:ptCloud}, ${2:row}, ${3:column}, 'OutputSize', ${4:value})'''
-        description: '''pointclouds.internal.pc.pointCloudImpl.select(ptCloud, row, column, 'OutputSize', value)'''
+        description: '''pointclouds.internal.pc.pointCloudImpl.select(ptCloud, row, column, 'OutputSize', value)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.select.html'
 
 
-    "pointclouds.internal.pc.pointCloudImpl.findPointsInROI":
+    "pointclouds.internal.pc.pointCloudImpl.findPointsInROI [shared]":
         prefix: "pointclouds.internal.pc.pointCloudImpl.findPointsInROI"
         body: '''pointclouds.internal.pc.pointCloudImpl.findPointsInROI(${1:ptCloud}, ${2:roi})'''
-        description: '''pointclouds.internal.pc.pointCloudImpl.findPointsInROI(ptCloud, roi)'''
+        description: '''pointclouds.internal.pc.pointCloudImpl.findPointsInROI(ptCloud, roi)    [shared]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/pointclouds.internal.pc.pointCloudImpl.findPointsInROI.html'
 

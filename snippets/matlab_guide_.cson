@@ -1,9 +1,9 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
-    "guide":
+    "guide [matlab]":
         prefix: "guide"
         body: '''guide(${1:HandleList})'''
-        description: '''guide(HandleList)'''
+        description: '''guide(HandleList)    [matlab]'''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/guide.html'
 
