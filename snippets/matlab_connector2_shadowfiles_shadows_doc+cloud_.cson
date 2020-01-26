@@ -4,5 +4,5 @@
     "doc":
         prefix: "doc"
         body: '''doc(${1:optional_filename})'''
-        description: '''doc(${1:optional_filename})'''
+        description: '''doc(optional_filename)'''
 

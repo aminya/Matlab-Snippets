@@ -4,5 +4,5 @@
     "winopen":
         prefix: "winopen"
         body: '''winopen(${1:filename}, ${2:optional_varargin})'''
-        description: '''winopen(${1:filename}, ${2:optional_varargin})'''
+        description: '''winopen(filename, optional_varargin)'''
 

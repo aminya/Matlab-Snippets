@@ -4,5 +4,5 @@
     "uiaxes":
         prefix: "uiaxes"
         body: '''uiaxes(${1:optional_Parent}, ${2:properties})'''
-        description: '''uiaxes(${1:optional_Parent}, ${2:properties})'''
+        description: '''uiaxes(optional_Parent, properties)'''
 

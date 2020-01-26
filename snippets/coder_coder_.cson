@@ -4,11 +4,11 @@
     "coder.config":
         prefix: "coder.config"
         body: '''coder.config(${1:build_type}, 'ecoder', ${2:value})'''
-        description: '''coder.config(${1:build_type}, 'ecoder', ${2:value})'''
+        description: '''coder.config(build_type, 'ecoder', value)'''
 
 
     "coder.OutputType":
         prefix: "coder.OutputType"
         body: '''coder.OutputType(${1:name})'''
-        description: '''coder.OutputType(${1:name})'''
+        description: '''coder.OutputType(name)'''
 

@@ -4,41 +4,41 @@
     "figure":
         prefix: "figure"
         body: '''figure(${1:optional_f}, ${2:optional_n}, ${3:opts})'''
-        description: '''figure(${1:optional_f}, ${2:optional_n}, ${3:opts})'''
+        description: '''figure(optional_f, optional_n, opts)'''
 
 
     "tiledlayout":
         prefix: "tiledlayout"
         body: '''${1:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
-        description: '''${1:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
+        description: '''Layout = tiledlayout(optional_parent, m, n, Options)'''
 
 
     "uicontrol":
         prefix: "uicontrol"
         body: '''uicontrol(${1:optional_parent}, ${2:opts})'''
-        description: '''uicontrol(${1:optional_parent}, ${2:opts})'''
+        description: '''uicontrol(optional_parent, opts)'''
 
 
     "uicontextmenu":
         prefix: "uicontextmenu"
         body: '''uicontextmenu(${1:optional_parent}, ${2:opts})'''
-        description: '''uicontextmenu(${1:optional_parent}, ${2:opts})'''
+        description: '''uicontextmenu(optional_parent, opts)'''
 
 
     "uimenu":
         prefix: "uimenu"
         body: '''uimenu(${1:optional_parent}, ${2:opts})'''
-        description: '''uimenu(${1:optional_parent}, ${2:opts})'''
+        description: '''uimenu(optional_parent, opts)'''
 
 
     "nexttile":
         prefix: "nexttile"
         body: '''${1:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
-        description: '''${1:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
+        description: '''ax = nexttile(optional_layout, optional_tilenumber, optional_tilespan)'''
 
 
     "close":
         prefix: "close"
         body: '''${1:status} = close(${1:optional_option})'''
-        description: '''${1:status} = close(${1:optional_option})'''
+        description: '''status = close(optional_option)'''
 

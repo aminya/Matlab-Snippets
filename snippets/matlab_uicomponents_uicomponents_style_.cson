@@ -4,5 +4,5 @@
     "uistyle":
         prefix: "uistyle"
         body: '''uistyle(${1:properties})'''
-        description: '''uistyle(${1:properties})'''
+        description: '''uistyle(properties)'''
 

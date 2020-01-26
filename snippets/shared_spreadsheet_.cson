@@ -4,5 +4,5 @@
     "sheetnames":
         prefix: "sheetnames"
         body: '''${1:sn} = sheetnames(${1:filename})'''
-        description: '''${1:sn} = sheetnames(${1:filename})'''
+        description: '''sn = sheetnames(filename)'''
 

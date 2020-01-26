@@ -4,59 +4,59 @@
     "semilogy":
         prefix: "semilogy"
         body: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''h = semilogy(optional_ax, Y, optional_LineSpec, opts)'''
 
 
     "loglog":
         prefix: "loglog"
         body: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''h = loglog(optional_ax, Y, optional_LineSpec, opts)'''
 
 
     "axis":
         prefix: "axis"
         body: '''${1:limits} = axis(${1:optional_ax})'''
-        description: '''${1:limits} = axis(${1:optional_ax})'''
+        description: '''limits = axis(optional_ax)'''
 
 
     "box":
         prefix: "box"
         body: '''box(${1:optional_ax}, ${2:optional_action})'''
-        description: '''box(${1:optional_ax}, ${2:optional_action})'''
+        description: '''box(optional_ax, optional_action)'''
 
 
     "plot":
         prefix: "plot"
         body: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''h = plot(optional_ax, Y, optional_LineSpec, opts)'''
 
 
     "grid":
         prefix: "grid"
         body: '''grid(${1:optional_target}, ${2:optional_action})'''
-        description: '''grid(${1:optional_target}, ${2:optional_action})'''
+        description: '''grid(optional_target, optional_action)'''
 
 
     "semilogx":
         prefix: "semilogx"
         body: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-        description: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''h = semilogx(optional_ax, Y, optional_LineSpec, opts)'''
 
 
     "title":
         prefix: "title"
         body: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
-        description: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
+        description: '''h = title(target, txt, opts)'''
 
 
     "xlabel":
         prefix: "xlabel"
         body: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
-        description: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        description: '''h = xlabel(optional_target, txt, opts)'''
 
 
     "ylabel":
         prefix: "ylabel"
         body: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
-        description: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        description: '''h = ylabel(optional_target, txt, opts)'''
 

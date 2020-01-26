@@ -4,11 +4,11 @@
     "pyenv":
         prefix: "pyenv"
         body: '''pyenv('Version', ${1:value}, 'ExecutionMode', ${2:value})'''
-        description: '''pyenv('Version', ${1:value}, 'ExecutionMode', ${2:value})'''
+        description: '''pyenv('Version', value, 'ExecutionMode', value)'''
 
 
     "pyversion":
         prefix: "pyversion"
         body: '''pyversion(${1:filename}, ${2:optional_varargin})'''
-        description: '''pyversion(${1:filename}, ${2:optional_varargin})'''
+        description: '''pyversion(filename, optional_varargin)'''
 

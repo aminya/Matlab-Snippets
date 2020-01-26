@@ -4,29 +4,29 @@
     "matlab.tall.movingWindow":
         prefix: "matlab.tall.movingWindow"
         body: '''${1:tA} = matlab.tall.movingWindow(${1:fcn}, ${2:window}, ${3:tX}, 'Stride', ${4:value}, 'EndPoints', ${5:value}, 'OutputsLike', ${6:value})'''
-        description: '''${1:tA} = matlab.tall.movingWindow(${1:fcn}, ${2:window}, ${3:tX}, 'Stride', ${4:value}, 'EndPoints', ${5:value}, 'OutputsLike', ${6:value})'''
+        description: '''tA = matlab.tall.movingWindow(fcn, window, tX, 'Stride', value, 'EndPoints', value, 'OutputsLike', value)'''
 
 
     "matlab.tall.blockMovingWindow":
         prefix: "matlab.tall.blockMovingWindow"
         body: '''${1:tA} = matlab.tall.blockMovingWindow(${1:windowFcn}, ${2:blockFcn}, ${3:window}, ${4:tX}, 'Stride', ${5:value}, 'EndPoints', ${6:value}, 'OutputsLike', ${7:value})'''
-        description: '''${1:tA} = matlab.tall.blockMovingWindow(${1:windowFcn}, ${2:blockFcn}, ${3:window}, ${4:tX}, 'Stride', ${5:value}, 'EndPoints', ${6:value}, 'OutputsLike', ${7:value})'''
+        description: '''tA = matlab.tall.blockMovingWindow(windowFcn, blockFcn, window, tX, 'Stride', value, 'EndPoints', value, 'OutputsLike', value)'''
 
 
     "matlab.tall.transform":
         prefix: "matlab.tall.transform"
         body: '''${1:tA} = matlab.tall.transform(${1:fcn}, ${2:tX}, 'OutputsLike', ${3:value})'''
-        description: '''${1:tA} = matlab.tall.transform(${1:fcn}, ${2:tX}, 'OutputsLike', ${3:value})'''
+        description: '''tA = matlab.tall.transform(fcn, tX, 'OutputsLike', value)'''
 
 
     "write":
         prefix: "write"
         body: '''write(${1:location}, ${2:tA}, 'FileType', ${3:value})'''
-        description: '''write(${1:location}, ${2:tA}, 'FileType', ${3:value})'''
+        description: '''write(location, tA, 'FileType', value)'''
 
 
     "matlab.tall.reduce":
         prefix: "matlab.tall.reduce"
         body: '''${1:tA} = matlab.tall.reduce(${1:fcn}, ${2:reducefcn}, ${3:tX}, 'OutputsLike', ${4:value})'''
-        description: '''${1:tA} = matlab.tall.reduce(${1:fcn}, ${2:reducefcn}, ${3:tX}, 'OutputsLike', ${4:value})'''
+        description: '''tA = matlab.tall.reduce(fcn, reducefcn, tX, 'OutputsLike', value)'''
 

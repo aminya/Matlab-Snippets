@@ -53,6 +53,7 @@ function matlab2atom(data)
             numIn = length(argsIn)
             if numIn > 0
                 in = Vector{String}(undef, numIn)
+                inDesc = Vector{String}(undef, numIn)
                 for (iIn, arg) in enumerate(argsIn)
 
                     # mutuallyExclusiveGroup handler
@@ -81,16 +82,23 @@ function matlab2atom(data)
 
                     if kind == "namevalue"
                         in[iIn]="\'$name\', \${$iIn:value}"
+                        inDesc[iIn] = "\'$name\', value"
                     elseif kind == "ordered"
                         in[iIn]="\${$iIn:optional_$name}"
+                        inDesc[iIn] = "optional_$name"
                     else
                         in[iIn]="\${$iIn:$name}"
+                        inDesc[iIn] = "$name"
                     end
                 end
                 argsInStr = join(in, ", ")
                 strIn = "$fun($argsInStr)"
+
+                argsInStrDesc = join(inDesc, ", ")
+                strInDesc = "$fun($argsInStrDesc)"
             else
                 strIn = "$fun()"
+                strInDesc = "$fun()"
             end
         end
 
@@ -98,25 +106,38 @@ function matlab2atom(data)
             argsOut = val["outputs"]
             numOut = length(argsOut)
             out = Vector{String}(undef, numOut)
+            outDesc = Vector{String}(undef, numOut)
+
             for (iOut, arg) in enumerate(argsOut)
                 out[iOut]="\${$iOut:$(arg["name"])}"
+
+                outDesc[iOut]="$(arg["name"])"
             end
             if numOut > 1
-                argsOuStr = join(out, ", ")
-                strOut = "[$argsOuStr]"
+                argsOutStr = join(out, ", ")
+                strOut = "[$argsOutStr]"
                 body = "$strOut = $strIn"
+
+                argsOutStrDesc = join(outDesc, ", ")
+                strOutDesc = "[$argsOutStrDesc]"
+                description = "$strOutDesc = $strInDesc"
 
             elseif numOut == 1
                 strOut = "$(out[1])"
                 body = "$strOut = $strIn"
 
+                strOutDesc = "$(outDesc[1])"
+                description = "$strOutDesc = $strInDesc"
+
             else
                 body = "$strIn"
+                description = "$strInDesc"
 
             end
 
         else
             body = "$strIn"
+            description = "$strInDesc"
         end
 
 
@@ -125,7 +146,7 @@ function matlab2atom(data)
             "$fun":
                 prefix: "$fun"
                 body: '''$body'''
-                description: '''$body'''
+                description: '''$description'''
 
         """
         catch

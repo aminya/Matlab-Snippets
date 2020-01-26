@@ -4,23 +4,23 @@
     "rectangle":
         prefix: "rectangle"
         body: '''${1:h} = rectangle(${1:optional_ax}, ${2:opts})'''
-        description: '''${1:h} = rectangle(${1:optional_ax}, ${2:opts})'''
+        description: '''h = rectangle(optional_ax, opts)'''
 
 
     "makehgtform":
         prefix: "makehgtform"
         body: '''makehgtform(${1:optional_transform})'''
-        description: '''makehgtform(${1:optional_transform})'''
+        description: '''makehgtform(optional_transform)'''
 
 
     "surface":
         prefix: "surface"
         body: '''${1:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
-        description: '''${1:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+        description: '''h = surface(optional_ax, optional_x, optional_y, z, optional_c, opts)'''
 
 
     "text":
         prefix: "text"
         body: '''${1:h} = text(${1:optional_ax}, ${2:opts})'''
-        description: '''${1:h} = text(${1:optional_ax}, ${2:opts})'''
+        description: '''h = text(optional_ax, opts)'''
 

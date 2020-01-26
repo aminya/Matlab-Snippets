@@ -4,443 +4,443 @@
     "dsp.Minimum":
         prefix: "dsp.Minimum"
         body: '''dsp.Minimum(${1:varargin})'''
-        description: '''dsp.Minimum(${1:varargin})'''
+        description: '''dsp.Minimum(varargin)'''
 
 
     "dsp.ArrayVectorDivider":
         prefix: "dsp.ArrayVectorDivider"
         body: '''dsp.ArrayVectorDivider(${1:varargin})'''
-        description: '''dsp.ArrayVectorDivider(${1:varargin})'''
+        description: '''dsp.ArrayVectorDivider(varargin)'''
 
 
     "dsp.VariableFractionalDelay":
         prefix: "dsp.VariableFractionalDelay"
         body: '''dsp.VariableFractionalDelay(${1:varargin})'''
-        description: '''dsp.VariableFractionalDelay(${1:varargin})'''
+        description: '''dsp.VariableFractionalDelay(varargin)'''
 
 
     "dsp.LowerTriangularSolver":
         prefix: "dsp.LowerTriangularSolver"
         body: '''dsp.LowerTriangularSolver(${1:varargin})'''
-        description: '''dsp.LowerTriangularSolver(${1:varargin})'''
+        description: '''dsp.LowerTriangularSolver(varargin)'''
 
 
     "dsp.AudioRecorder":
         prefix: "dsp.AudioRecorder"
         body: '''dsp.AudioRecorder(${1:SampleRate}, ${2:SamplesPerFrame}, ${3:varargin})'''
-        description: '''dsp.AudioRecorder(${1:SampleRate}, ${2:SamplesPerFrame}, ${3:varargin})'''
+        description: '''dsp.AudioRecorder(SampleRate, SamplesPerFrame, varargin)'''
 
 
     "dsp.LPCToLSP":
         prefix: "dsp.LPCToLSP"
         body: '''dsp.LPCToLSP(${1:varargin})'''
-        description: '''dsp.LPCToLSP(${1:varargin})'''
+        description: '''dsp.LPCToLSP(varargin)'''
 
 
     "dsp.StandardDeviation":
         prefix: "dsp.StandardDeviation"
         body: '''dsp.StandardDeviation(${1:varargin})'''
-        description: '''dsp.StandardDeviation(${1:varargin})'''
+        description: '''dsp.StandardDeviation(varargin)'''
 
 
     "dsp.NCO":
         prefix: "dsp.NCO"
         body: '''dsp.NCO(${1:varargin})'''
-        description: '''dsp.NCO(${1:varargin})'''
+        description: '''dsp.NCO(varargin)'''
 
 
     "dsp.RMS":
         prefix: "dsp.RMS"
         body: '''dsp.RMS(${1:varargin})'''
-        description: '''dsp.RMS(${1:varargin})'''
+        description: '''dsp.RMS(varargin)'''
 
 
     "dsp.CumulativeProduct":
         prefix: "dsp.CumulativeProduct"
         body: '''dsp.CumulativeProduct(${1:varargin})'''
-        description: '''dsp.CumulativeProduct(${1:varargin})'''
+        description: '''dsp.CumulativeProduct(varargin)'''
 
 
     "dsp.UpperTriangularSolver":
         prefix: "dsp.UpperTriangularSolver"
         body: '''dsp.UpperTriangularSolver(${1:varargin})'''
-        description: '''dsp.UpperTriangularSolver(${1:varargin})'''
+        description: '''dsp.UpperTriangularSolver(varargin)'''
 
 
     "dsp.ArrayVectorAdder":
         prefix: "dsp.ArrayVectorAdder"
         body: '''dsp.ArrayVectorAdder(${1:varargin})'''
-        description: '''dsp.ArrayVectorAdder(${1:varargin})'''
+        description: '''dsp.ArrayVectorAdder(varargin)'''
 
 
     "dsp.AudioFileWriter":
         prefix: "dsp.AudioFileWriter"
         body: '''dsp.AudioFileWriter(${1:Filename}, ${2:varargin})'''
-        description: '''dsp.AudioFileWriter(${1:Filename}, ${2:varargin})'''
+        description: '''dsp.AudioFileWriter(Filename, varargin)'''
 
 
     "dsp.UDPSender":
         prefix: "dsp.UDPSender"
         body: '''dsp.UDPSender(${1:varargin})'''
-        description: '''dsp.UDPSender(${1:varargin})'''
+        description: '''dsp.UDPSender(varargin)'''
 
 
     "dsp.Crosscorrelator":
         prefix: "dsp.Crosscorrelator"
         body: '''dsp.Crosscorrelator(${1:varargin})'''
-        description: '''dsp.Crosscorrelator(${1:varargin})'''
+        description: '''dsp.Crosscorrelator(varargin)'''
 
 
     "dsp.LDLFactor":
         prefix: "dsp.LDLFactor"
         body: '''dsp.LDLFactor(${1:varargin})'''
-        description: '''dsp.LDLFactor(${1:varargin})'''
+        description: '''dsp.LDLFactor(varargin)'''
 
 
     "dsp.ZeroCrossingDetector":
         prefix: "dsp.ZeroCrossingDetector"
         body: '''dsp.ZeroCrossingDetector(${1:varargin})'''
-        description: '''dsp.ZeroCrossingDetector(${1:varargin})'''
+        description: '''dsp.ZeroCrossingDetector(varargin)'''
 
 
     "dsp.UniformEncoder":
         prefix: "dsp.UniformEncoder"
         body: '''dsp.UniformEncoder(${1:PeakValue}, ${2:NumBits}, ${3:varargin})'''
-        description: '''dsp.UniformEncoder(${1:PeakValue}, ${2:NumBits}, ${3:varargin})'''
+        description: '''dsp.UniformEncoder(PeakValue, NumBits, varargin)'''
 
 
     "dsp.VectorQuantizerDecoder":
         prefix: "dsp.VectorQuantizerDecoder"
         body: '''dsp.VectorQuantizerDecoder(${1:varargin})'''
-        description: '''dsp.VectorQuantizerDecoder(${1:varargin})'''
+        description: '''dsp.VectorQuantizerDecoder(varargin)'''
 
 
     "dsp.ArrayVectorMultiplier":
         prefix: "dsp.ArrayVectorMultiplier"
         body: '''dsp.ArrayVectorMultiplier(${1:varargin})'''
-        description: '''dsp.ArrayVectorMultiplier(${1:varargin})'''
+        description: '''dsp.ArrayVectorMultiplier(varargin)'''
 
 
     "dsp.CepstralToLPC":
         prefix: "dsp.CepstralToLPC"
         body: '''dsp.CepstralToLPC(${1:varargin})'''
-        description: '''dsp.CepstralToLPC(${1:varargin})'''
+        description: '''dsp.CepstralToLPC(varargin)'''
 
 
     "dsp.PhaseUnwrapper":
         prefix: "dsp.PhaseUnwrapper"
         body: '''dsp.PhaseUnwrapper(${1:varargin})'''
-        description: '''dsp.PhaseUnwrapper(${1:varargin})'''
+        description: '''dsp.PhaseUnwrapper(varargin)'''
 
 
     "dsp.RCToAutocorrelation":
         prefix: "dsp.RCToAutocorrelation"
         body: '''dsp.RCToAutocorrelation(${1:varargin})'''
-        description: '''dsp.RCToAutocorrelation(${1:varargin})'''
+        description: '''dsp.RCToAutocorrelation(varargin)'''
 
 
     "dsp.Maximum":
         prefix: "dsp.Maximum"
         body: '''dsp.Maximum(${1:varargin})'''
-        description: '''dsp.Maximum(${1:varargin})'''
+        description: '''dsp.Maximum(varargin)'''
 
 
     "dsp.VectorQuantizerEncoder":
         prefix: "dsp.VectorQuantizerEncoder"
         body: '''dsp.VectorQuantizerEncoder(${1:varargin})'''
-        description: '''dsp.VectorQuantizerEncoder(${1:varargin})'''
+        description: '''dsp.VectorQuantizerEncoder(varargin)'''
 
 
     "dsp.Chirp":
         prefix: "dsp.Chirp"
         body: '''dsp.Chirp(${1:varargin})'''
-        description: '''dsp.Chirp(${1:varargin})'''
+        description: '''dsp.Chirp(varargin)'''
 
 
     "dsp.IIRFilter":
         prefix: "dsp.IIRFilter"
         body: '''dsp.IIRFilter(${1:varargin})'''
-        description: '''dsp.IIRFilter(${1:varargin})'''
+        description: '''dsp.IIRFilter(varargin)'''
 
 
     "dsp.DyadicSynthesisFilterBank":
         prefix: "dsp.DyadicSynthesisFilterBank"
         body: '''dsp.DyadicSynthesisFilterBank(${1:varargin})'''
-        description: '''dsp.DyadicSynthesisFilterBank(${1:varargin})'''
+        description: '''dsp.DyadicSynthesisFilterBank(varargin)'''
 
 
     "dsp.LSFToLPC":
         prefix: "dsp.LSFToLPC"
         body: '''dsp.LSFToLPC(${1:varargin})'''
-        description: '''dsp.LSFToLPC(${1:varargin})'''
+        description: '''dsp.LSFToLPC(varargin)'''
 
 
     "dsp.DyadicAnalysisFilterBank":
         prefix: "dsp.DyadicAnalysisFilterBank"
         body: '''dsp.DyadicAnalysisFilterBank(${1:varargin})'''
-        description: '''dsp.DyadicAnalysisFilterBank(${1:varargin})'''
+        description: '''dsp.DyadicAnalysisFilterBank(varargin)'''
 
 
     "dsp.SineWave":
         prefix: "dsp.SineWave"
         body: '''dsp.SineWave(${1:Amplitude}, ${2:Frequency}, ${3:PhaseOffset}, ${4:varargin})'''
-        description: '''dsp.SineWave(${1:Amplitude}, ${2:Frequency}, ${3:PhaseOffset}, ${4:varargin})'''
+        description: '''dsp.SineWave(Amplitude, Frequency, PhaseOffset, varargin)'''
 
 
     "dsp.LPCToRC":
         prefix: "dsp.LPCToRC"
         body: '''dsp.LPCToRC(${1:varargin})'''
-        description: '''dsp.LPCToRC(${1:varargin})'''
+        description: '''dsp.LPCToRC(varargin)'''
 
 
     "dsp.UDPReceiver":
         prefix: "dsp.UDPReceiver"
         body: '''dsp.UDPReceiver(${1:varargin})'''
-        description: '''dsp.UDPReceiver(${1:varargin})'''
+        description: '''dsp.UDPReceiver(varargin)'''
 
 
     "dsp.Window":
         prefix: "dsp.Window"
         body: '''dsp.Window(${1:WindowFunction}, ${2:varargin})'''
-        description: '''dsp.Window(${1:WindowFunction}, ${2:varargin})'''
+        description: '''dsp.Window(WindowFunction, varargin)'''
 
 
     "dsp.Autocorrelator":
         prefix: "dsp.Autocorrelator"
         body: '''dsp.Autocorrelator(${1:varargin})'''
-        description: '''dsp.Autocorrelator(${1:varargin})'''
+        description: '''dsp.Autocorrelator(varargin)'''
 
 
     "dsp.LMSFilter":
         prefix: "dsp.LMSFilter"
         body: '''dsp.LMSFilter(${1:Length}, ${2:varargin})'''
-        description: '''dsp.LMSFilter(${1:Length}, ${2:varargin})'''
+        description: '''dsp.LMSFilter(Length, varargin)'''
 
 
     "dsp.AudioFileReader":
         prefix: "dsp.AudioFileReader"
         body: '''dsp.AudioFileReader(${1:Filename}, ${2:varargin})'''
-        description: '''dsp.AudioFileReader(${1:Filename}, ${2:varargin})'''
+        description: '''dsp.AudioFileReader(Filename, varargin)'''
 
 
     "dsp.CumulativeSum":
         prefix: "dsp.CumulativeSum"
         body: '''dsp.CumulativeSum(${1:varargin})'''
-        description: '''dsp.CumulativeSum(${1:varargin})'''
+        description: '''dsp.CumulativeSum(varargin)'''
 
 
     "dsp.Delay":
         prefix: "dsp.Delay"
         body: '''dsp.Delay(${1:Length}, ${2:varargin})'''
-        description: '''dsp.Delay(${1:Length}, ${2:varargin})'''
+        description: '''dsp.Delay(Length, varargin)'''
 
 
     "dsp.LPCToLSF":
         prefix: "dsp.LPCToLSF"
         body: '''dsp.LPCToLSF(${1:varargin})'''
-        description: '''dsp.LPCToLSF(${1:varargin})'''
+        description: '''dsp.LPCToLSF(varargin)'''
 
 
     "dsp.Mean":
         prefix: "dsp.Mean"
         body: '''dsp.Mean(${1:varargin})'''
-        description: '''dsp.Mean(${1:varargin})'''
+        description: '''dsp.Mean(varargin)'''
 
 
     "dsp.Interpolator":
         prefix: "dsp.Interpolator"
         body: '''dsp.Interpolator(${1:varargin})'''
-        description: '''dsp.Interpolator(${1:varargin})'''
+        description: '''dsp.Interpolator(varargin)'''
 
 
     "dsp.Convolver":
         prefix: "dsp.Convolver"
         body: '''dsp.Convolver(${1:varargin})'''
-        description: '''dsp.Convolver(${1:varargin})'''
+        description: '''dsp.Convolver(varargin)'''
 
 
     "dsp.FFT":
         prefix: "dsp.FFT"
         body: '''dsp.FFT(${1:varargin})'''
-        description: '''dsp.FFT(${1:varargin})'''
+        description: '''dsp.FFT(varargin)'''
 
 
     "dsp.DelayLine":
         prefix: "dsp.DelayLine"
         body: '''dsp.DelayLine(${1:Length}, ${2:InitialConditions}, ${3:varargin})'''
-        description: '''dsp.DelayLine(${1:Length}, ${2:InitialConditions}, ${3:varargin})'''
+        description: '''dsp.DelayLine(Length, InitialConditions, varargin)'''
 
 
     "dsp.FIRFilter":
         prefix: "dsp.FIRFilter"
         body: '''dsp.FIRFilter(${1:Numerator}, ${2:varargin})'''
-        description: '''dsp.FIRFilter(${1:Numerator}, ${2:varargin})'''
+        description: '''dsp.FIRFilter(Numerator, varargin)'''
 
 
     "dsp.BiquadFilter":
         prefix: "dsp.BiquadFilter"
         body: '''dsp.BiquadFilter(${1:SOSMatrix}, ${2:ScaleValues}, ${3:varargin})'''
-        description: '''dsp.BiquadFilter(${1:SOSMatrix}, ${2:ScaleValues}, ${3:varargin})'''
+        description: '''dsp.BiquadFilter(SOSMatrix, ScaleValues, varargin)'''
 
 
     "dsp.Variance":
         prefix: "dsp.Variance"
         body: '''dsp.Variance(${1:varargin})'''
-        description: '''dsp.Variance(${1:varargin})'''
+        description: '''dsp.Variance(varargin)'''
 
 
     "dsp.UniformDecoder":
         prefix: "dsp.UniformDecoder"
         body: '''dsp.UniformDecoder(${1:PeakValue}, ${2:NumBits}, ${3:varargin})'''
-        description: '''dsp.UniformDecoder(${1:PeakValue}, ${2:NumBits}, ${3:varargin})'''
+        description: '''dsp.UniformDecoder(PeakValue, NumBits, varargin)'''
 
 
     "dsp.RCToLPC":
         prefix: "dsp.RCToLPC"
         body: '''dsp.RCToLPC(${1:varargin})'''
-        description: '''dsp.RCToLPC(${1:varargin})'''
+        description: '''dsp.RCToLPC(varargin)'''
 
 
     "dsp.FIRDecimator":
         prefix: "dsp.FIRDecimator"
         body: '''dsp.FIRDecimator(${1:DecimationFactor}, ${2:Numerator}, ${3:varargin})'''
-        description: '''dsp.FIRDecimator(${1:DecimationFactor}, ${2:Numerator}, ${3:varargin})'''
+        description: '''dsp.FIRDecimator(DecimationFactor, Numerator, varargin)'''
 
 
     "dsp.LPCToAutocorrelation":
         prefix: "dsp.LPCToAutocorrelation"
         body: '''dsp.LPCToAutocorrelation(${1:varargin})'''
-        description: '''dsp.LPCToAutocorrelation(${1:varargin})'''
+        description: '''dsp.LPCToAutocorrelation(varargin)'''
 
 
     "dsp.PeakFinder":
         prefix: "dsp.PeakFinder"
         body: '''dsp.PeakFinder(${1:varargin})'''
-        description: '''dsp.PeakFinder(${1:varargin})'''
+        description: '''dsp.PeakFinder(varargin)'''
 
 
     "dsp.IDCT":
         prefix: "dsp.IDCT"
         body: '''dsp.IDCT(${1:varargin})'''
-        description: '''dsp.IDCT(${1:varargin})'''
+        description: '''dsp.IDCT(varargin)'''
 
 
     "dsp.BurgAREstimator":
         prefix: "dsp.BurgAREstimator"
         body: '''dsp.BurgAREstimator(${1:varargin})'''
-        description: '''dsp.BurgAREstimator(${1:varargin})'''
+        description: '''dsp.BurgAREstimator(varargin)'''
 
 
     "dsp.IFFT":
         prefix: "dsp.IFFT"
         body: '''dsp.IFFT(${1:varargin})'''
-        description: '''dsp.IFFT(${1:varargin})'''
+        description: '''dsp.IFFT(varargin)'''
 
 
     "dsp.AllpoleFilter":
         prefix: "dsp.AllpoleFilter"
         body: '''dsp.AllpoleFilter(${1:varargin})'''
-        description: '''dsp.AllpoleFilter(${1:varargin})'''
+        description: '''dsp.AllpoleFilter(varargin)'''
 
 
     "dsp.Counter":
         prefix: "dsp.Counter"
         body: '''dsp.Counter(${1:varargin})'''
-        description: '''dsp.Counter(${1:varargin})'''
+        description: '''dsp.Counter(varargin)'''
 
 
     "dsp.ScalarQuantizerDecoder":
         prefix: "dsp.ScalarQuantizerDecoder"
         body: '''dsp.ScalarQuantizerDecoder(${1:varargin})'''
-        description: '''dsp.ScalarQuantizerDecoder(${1:varargin})'''
+        description: '''dsp.ScalarQuantizerDecoder(varargin)'''
 
 
     "dsp.FIRRateConverter":
         prefix: "dsp.FIRRateConverter"
         body: '''dsp.FIRRateConverter(${1:InterpolationFactor}, ${2:DecimationFactor}, ${3:Numerator}, ${4:varargin})'''
-        description: '''dsp.FIRRateConverter(${1:InterpolationFactor}, ${2:DecimationFactor}, ${3:Numerator}, ${4:varargin})'''
+        description: '''dsp.FIRRateConverter(InterpolationFactor, DecimationFactor, Numerator, varargin)'''
 
 
     "dsp.Median":
         prefix: "dsp.Median"
         body: '''dsp.Median(${1:varargin})'''
-        description: '''dsp.Median(${1:varargin})'''
+        description: '''dsp.Median(varargin)'''
 
 
     "dsp.FIRInterpolator":
         prefix: "dsp.FIRInterpolator"
         body: '''dsp.FIRInterpolator(${1:InterpolationFactor}, ${2:Numerator}, ${3:varargin})'''
-        description: '''dsp.FIRInterpolator(${1:InterpolationFactor}, ${2:Numerator}, ${3:varargin})'''
+        description: '''dsp.FIRInterpolator(InterpolationFactor, Numerator, varargin)'''
 
 
     "audioDeviceWriter":
         prefix: "audioDeviceWriter"
         body: '''audioDeviceWriter(${1:SampleRate}, ${2:varargin})'''
-        description: '''audioDeviceWriter(${1:SampleRate}, ${2:varargin})'''
+        description: '''audioDeviceWriter(SampleRate, varargin)'''
 
 
     "dsp.LPCToCepstral":
         prefix: "dsp.LPCToCepstral"
         body: '''dsp.LPCToCepstral(${1:varargin})'''
-        description: '''dsp.LPCToCepstral(${1:varargin})'''
+        description: '''dsp.LPCToCepstral(varargin)'''
 
 
     "dsp.AudioPlayer":
         prefix: "dsp.AudioPlayer"
         body: '''dsp.AudioPlayer(${1:SampleRate}, ${2:varargin})'''
-        description: '''dsp.AudioPlayer(${1:SampleRate}, ${2:varargin})'''
+        description: '''dsp.AudioPlayer(SampleRate, varargin)'''
 
 
     "dsp.BlockLMSFilter":
         prefix: "dsp.BlockLMSFilter"
         body: '''dsp.BlockLMSFilter(${1:Length}, ${2:BlockSize}, ${3:varargin})'''
-        description: '''dsp.BlockLMSFilter(${1:Length}, ${2:BlockSize}, ${3:varargin})'''
+        description: '''dsp.BlockLMSFilter(Length, BlockSize, varargin)'''
 
 
     "dsp.LevinsonSolver":
         prefix: "dsp.LevinsonSolver"
         body: '''dsp.LevinsonSolver(${1:varargin})'''
-        description: '''dsp.LevinsonSolver(${1:varargin})'''
+        description: '''dsp.LevinsonSolver(varargin)'''
 
 
     "dsp.LSPToLPC":
         prefix: "dsp.LSPToLPC"
         body: '''dsp.LSPToLPC(${1:varargin})'''
-        description: '''dsp.LSPToLPC(${1:varargin})'''
+        description: '''dsp.LSPToLPC(varargin)'''
 
 
     "dsp.Buffer":
         prefix: "dsp.Buffer"
         body: '''dsp.Buffer(${1:Length}, ${2:OverlapLength}, ${3:InitialConditions}, ${4:varargin})'''
-        description: '''dsp.Buffer(${1:Length}, ${2:OverlapLength}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''dsp.Buffer(Length, OverlapLength, InitialConditions, varargin)'''
 
 
     "dsp.VariableIntegerDelay":
         prefix: "dsp.VariableIntegerDelay"
         body: '''dsp.VariableIntegerDelay(${1:varargin})'''
-        description: '''dsp.VariableIntegerDelay(${1:varargin})'''
+        description: '''dsp.VariableIntegerDelay(varargin)'''
 
 
     "dsp.Histogram":
         prefix: "dsp.Histogram"
         body: '''dsp.Histogram(${1:LowerLimit}, ${2:UpperLimit}, ${3:NumBins}, ${4:varargin})'''
-        description: '''dsp.Histogram(${1:LowerLimit}, ${2:UpperLimit}, ${3:NumBins}, ${4:varargin})'''
+        description: '''dsp.Histogram(LowerLimit, UpperLimit, NumBins, varargin)'''
 
 
     "dsp.LUFactor":
         prefix: "dsp.LUFactor"
         body: '''dsp.LUFactor(${1:varargin})'''
-        description: '''dsp.LUFactor(${1:varargin})'''
+        description: '''dsp.LUFactor(varargin)'''
 
 
     "dsp.ScalarQuantizerEncoder":
         prefix: "dsp.ScalarQuantizerEncoder"
         body: '''dsp.ScalarQuantizerEncoder(${1:varargin})'''
-        description: '''dsp.ScalarQuantizerEncoder(${1:varargin})'''
+        description: '''dsp.ScalarQuantizerEncoder(varargin)'''
 
 
     "dsp.Normalizer":
         prefix: "dsp.Normalizer"
         body: '''dsp.Normalizer(${1:varargin})'''
-        description: '''dsp.Normalizer(${1:varargin})'''
+        description: '''dsp.Normalizer(varargin)'''
 

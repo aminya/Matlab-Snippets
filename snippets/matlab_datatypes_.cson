@@ -4,497 +4,497 @@
     "mat2cell":
         prefix: "mat2cell"
         body: '''${1:C} = mat2cell(${1:A}, ${2:rowDist})'''
-        description: '''${1:C} = mat2cell(${1:A}, ${2:rowDist})'''
+        description: '''C = mat2cell(A, rowDist)'''
 
 
     "table2cell":
         prefix: "table2cell"
         body: '''${1:C} = table2cell(${1:T})'''
-        description: '''${1:C} = table2cell(${1:T})'''
+        description: '''C = table2cell(T)'''
 
 
     "addprop":
         prefix: "addprop"
         body: '''${1:T} = addprop(${1:T}, ${2:pname}, ${3:pname})'''
-        description: '''${1:T} = addprop(${1:T}, ${2:pname}, ${3:pname})'''
+        description: '''T = addprop(T, pname, pname)'''
 
 
     "rows2vars":
         prefix: "rows2vars"
         body: '''${1:T2} = rows2vars(${1:T1}, 'VariableNamesSource', ${2:value}, 'DataVariables', ${3:value})'''
-        description: '''${1:T2} = rows2vars(${1:T1}, 'VariableNamesSource', ${2:value}, 'DataVariables', ${3:value})'''
+        description: '''T2 = rows2vars(T1, 'VariableNamesSource', value, 'DataVariables', value)'''
 
 
     "istable":
         prefix: "istable"
         body: '''${1:tf} = istable(${1:A})'''
-        description: '''${1:tf} = istable(${1:A})'''
+        description: '''tf = istable(A)'''
 
 
     "rowfun":
         prefix: "rowfun"
         body: '''${1:B} = rowfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'SeparateInputs', ${6:value}, 'ExtractCellContents', ${7:value}, 'OutputVariableNames', ${8:value}, 'NumOutputs', ${9:value}, 'ErrorHandler', ${10:value})'''
-        description: '''${1:B} = rowfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'SeparateInputs', ${6:value}, 'ExtractCellContents', ${7:value}, 'OutputVariableNames', ${8:value}, 'NumOutputs', ${9:value}, 'ErrorHandler', ${10:value})'''
+        description: '''B = rowfun(func, A, 'OutputFormat', value, 'InputVariables', value, 'GroupingVariables', value, 'SeparateInputs', value, 'ExtractCellContents', value, 'OutputVariableNames', value, 'NumOutputs', value, 'ErrorHandler', value)'''
 
 
     "array2table":
         prefix: "array2table"
         body: '''${1:T} = array2table(${1:A}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})'''
-        description: '''${1:T} = array2table(${1:A}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})'''
+        description: '''T = array2table(A, 'RowNames', value, 'VariableNames', value)'''
 
 
     "head":
         prefix: "head"
         body: '''${1:B} = head(${1:A}, ${2:k})'''
-        description: '''${1:B} = head(${1:A}, ${2:k})'''
+        description: '''B = head(A, k)'''
 
 
     "retime":
         prefix: "retime"
         body: '''${1:TT2} = retime(${1:TT1}, ${2:newTimeStep})'''
-        description: '''${1:TT2} = retime(${1:TT1}, ${2:newTimeStep})'''
+        description: '''TT2 = retime(TT1, newTimeStep)'''
 
 
     "union":
         prefix: "union"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:setOrder})'''
-        description: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[C, ia, ib] = union(A, B, setOrder)'''
 
 
     "struct2table":
         prefix: "struct2table"
         body: '''${1:T} = struct2table(${1:s}, 'RowNames', ${2:value}, 'AsArray', ${3:value})'''
-        description: '''${1:T} = struct2table(${1:s}, 'RowNames', ${2:value}, 'AsArray', ${3:value})'''
+        description: '''T = struct2table(s, 'RowNames', value, 'AsArray', value)'''
 
 
     "issortedrows":
         prefix: "issortedrows"
         body: '''${1:TF} = issortedrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})'''
-        description: '''${1:TF} = issortedrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})'''
+        description: '''TF = issortedrows(tblA, vars, direction, 'MissingPlacement', value, 'ComparisonMethod', value)'''
 
 
     "orderfields":
         prefix: "orderfields"
         body: '''[${1:s}, ${2:perm}] = orderfields(${1:s1 }, ${2:perm})'''
-        description: '''[${1:s}, ${2:perm}] = orderfields(${1:s1 }, ${2:perm})'''
+        description: '''[s, perm] = orderfields(s1 , perm)'''
 
 
     "double._parenReference":
         prefix: "double._parenReference"
         body: '''double._parenReference(${1:d}, ${2:index})'''
-        description: '''double._parenReference(${1:d}, ${2:index})'''
+        description: '''double._parenReference(d, index)'''
 
 
     "outerjoin":
         prefix: "outerjoin"
         body: '''[${1:T}, ${2:ileft}, ${3:iright}] = outerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'MergeKeys', ${6:value}, 'Type', ${7:value})'''
-        description: '''[${1:T}, ${2:ileft}, ${3:iright}] = outerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'MergeKeys', ${6:value}, 'Type', ${7:value})'''
+        description: '''[T, ileft, iright] = outerjoin(Tleft, Tright, 'Keys', value, 'LeftVariables', value, 'RightVariables', value, 'MergeKeys', value, 'Type', value)'''
 
 
     "cell":
         prefix: "cell"
         body: '''${1:D} = cell(${1:obj})'''
-        description: '''${1:D} = cell(${1:obj})'''
+        description: '''D = cell(obj)'''
 
 
     "tail":
         prefix: "tail"
         body: '''${1:B} = tail(${1:A}, ${2:k})'''
-        description: '''${1:B} = tail(${1:A}, ${2:k})'''
+        description: '''B = tail(A, k)'''
 
 
     "mergevars":
         prefix: "mergevars"
         body: '''${1:T} = mergevars(${1:T}, ${2:vars}, 'NewVariableName', ${3:value}, 'MergeAsTable', ${4:value})'''
-        description: '''${1:T} = mergevars(${1:T}, ${2:vars}, 'NewVariableName', ${3:value}, 'MergeAsTable', ${4:value})'''
+        description: '''T = mergevars(T, vars, 'NewVariableName', value, 'MergeAsTable', value)'''
 
 
     "setxor":
         prefix: "setxor"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:setOrder})'''
-        description: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[C, ia, ib] = setxor(A, B, setOrder)'''
 
 
     "tabular._parenAssign":
         prefix: "tabular._parenAssign"
         body: '''tabular._parenAssign(${1:T}, ${2:rows}, ${3:vars})'''
-        description: '''tabular._parenAssign(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''tabular._parenAssign(T, rows, vars)'''
 
 
     "lag":
         prefix: "lag"
         body: '''${1:TT2} = lag(${1:TT1}, ${2:dt})'''
-        description: '''${1:TT2} = lag(${1:TT1}, ${2:dt})'''
+        description: '''TT2 = lag(TT1, dt)'''
 
 
     "namedargs2cell":
         prefix: "namedargs2cell"
         body: '''${1:c} = namedargs2cell(${1:s})'''
-        description: '''${1:c} = namedargs2cell(${1:s})'''
+        description: '''c = namedargs2cell(s)'''
 
 
     "inner2outer":
         prefix: "inner2outer"
         body: '''${1:T1} = inner2outer(${1:T})'''
-        description: '''${1:T1} = inner2outer(${1:T})'''
+        description: '''T1 = inner2outer(T)'''
 
 
     "timerange":
         prefix: "timerange"
         body: '''${1:S} = timerange(${1:timePeriod}, ${2:unitOfTime})'''
-        description: '''${1:S} = timerange(${1:timePeriod}, ${2:unitOfTime})'''
+        description: '''S = timerange(timePeriod, unitOfTime)'''
 
 
     "height":
         prefix: "height"
         body: '''${1:H} = height(${1:T})'''
-        description: '''${1:H} = height(${1:T})'''
+        description: '''H = height(T)'''
 
 
     "timetable":
         prefix: "timetable"
         body: '''${1:TT} = timetable(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, ${5:'RowTimes'}, ${6:rowTimes}, 'VariableNames', ${7:value})'''
-        description: '''${1:TT} = timetable(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, ${5:'RowTimes'}, ${6:rowTimes}, 'VariableNames', ${7:value})'''
+        description: '''TT = timetable('Size', sz, 'VariableTypes', varTypes, 'RowTimes', rowTimes, 'VariableNames', value)'''
 
 
     "intersect":
         prefix: "intersect"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:setOrder})'''
-        description: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[C, ia, ib] = intersect(A, B, setOrder)'''
 
 
     "saveobj":
         prefix: "saveobj"
         body: '''${1:b} = saveobj(${1:a})'''
-        description: '''${1:b} = saveobj(${1:a})'''
+        description: '''b = saveobj(a)'''
 
 
     "istimetable":
         prefix: "istimetable"
         body: '''${1:tf} = istimetable(${1:A})'''
-        description: '''${1:tf} = istimetable(${1:A})'''
+        description: '''tf = istimetable(A)'''
 
 
     "cell2table":
         prefix: "cell2table"
         body: '''${1:T} = cell2table(${1:C}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})'''
-        description: '''${1:T} = cell2table(${1:C}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})'''
+        description: '''T = cell2table(C, 'RowNames', value, 'VariableNames', value)'''
 
 
     "movevars":
         prefix: "movevars"
         body: '''${1:T} = movevars(${1:T}, ${2:vars}, 'Before', ${3:value})'''
-        description: '''${1:T} = movevars(${1:T}, ${2:vars}, 'Before', ${3:value})'''
+        description: '''T = movevars(T, vars, 'Before', value)'''
 
 
     "isregular":
         prefix: "isregular"
         body: '''[${1:TF}, ${2:dt}] = isregular(${1:TT}, ${2:unit})'''
-        description: '''[${1:TF}, ${2:dt}] = isregular(${1:TT}, ${2:unit})'''
+        description: '''[TF, dt] = isregular(TT, unit)'''
 
 
     "width":
         prefix: "width"
         body: '''${1:W} = width(${1:T})'''
-        description: '''${1:W} = width(${1:T})'''
+        description: '''W = width(T)'''
 
 
     "join":
         prefix: "join"
         body: '''[${1:T}, ${2:iright}] = join(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'KeepOneCopy', ${6:value})'''
-        description: '''[${1:T}, ${2:iright}] = join(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'KeepOneCopy', ${6:value})'''
+        description: '''[T, iright] = join(Tleft, Tright, 'Keys', value, 'LeftVariables', value, 'RightVariables', value, 'KeepOneCopy', value)'''
 
 
     "cat":
         prefix: "cat"
         body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
-        description: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''C = cat(dim, A, B)'''
 
 
     "double._parenAssign":
         prefix: "double._parenAssign"
         body: '''double._parenAssign(${1:d}, ${2:index})'''
-        description: '''double._parenAssign(${1:d}, ${2:index})'''
+        description: '''double._parenAssign(d, index)'''
 
 
     "isfield":
         prefix: "isfield"
         body: '''${1:tf} = isfield(${1:S}, ${2:C})'''
-        description: '''${1:tf} = isfield(${1:S}, ${2:C})'''
+        description: '''tf = isfield(S, C)'''
 
 
     "table2struct":
         prefix: "table2struct"
         body: '''${1:S} = table2struct(${1:T}, 'ToScalar', ${2:value})'''
-        description: '''${1:S} = table2struct(${1:T}, 'ToScalar', ${2:value})'''
+        description: '''S = table2struct(T, 'ToScalar', value)'''
 
 
     "table2timetable":
         prefix: "table2timetable"
         body: '''${1:TT} = table2timetable(${1:T}, 'RowTimes', ${2:value})'''
-        description: '''${1:TT} = table2timetable(${1:T}, 'RowTimes', ${2:value})'''
+        description: '''TT = table2timetable(T, 'RowTimes', value)'''
 
 
     "sortrows":
         prefix: "sortrows"
         body: '''[${1:tblB}, ${2:index}] = sortrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})'''
-        description: '''[${1:tblB}, ${2:index}] = sortrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})'''
+        description: '''[tblB, index] = sortrows(tblA, vars, direction, 'MissingPlacement', value, 'ComparisonMethod', value)'''
 
 
     "vartype":
         prefix: "vartype"
         body: '''${1:S} = vartype(${1:type})'''
-        description: '''${1:S} = vartype(${1:type})'''
+        description: '''S = vartype(type)'''
 
 
     "topkrows":
         prefix: "topkrows"
         body: '''[${1:tblB}, ${2:index}] = topkrows(${1:tblA}, ${2:k}, ${3:vars}, ${4:direction}, 'ComparisonMethod', ${5:value})'''
-        description: '''[${1:tblB}, ${2:index}] = topkrows(${1:tblA}, ${2:k}, ${3:vars}, ${4:direction}, 'ComparisonMethod', ${5:value})'''
+        description: '''[tblB, index] = topkrows(tblA, k, vars, direction, 'ComparisonMethod', value)'''
 
 
     "struct2cell":
         prefix: "struct2cell"
         body: '''${1:c} = struct2cell(${1:s})'''
-        description: '''${1:c} = struct2cell(${1:s})'''
+        description: '''c = struct2cell(s)'''
 
 
     "cell2struct":
         prefix: "cell2struct"
         body: '''${1:structArray} = cell2struct(${1:cellArray}, ${2:fields}, ${3:dim})'''
-        description: '''${1:structArray} = cell2struct(${1:cellArray}, ${2:fields}, ${3:dim})'''
+        description: '''structArray = cell2struct(cellArray, fields, dim)'''
 
 
     "ismember":
         prefix: "ismember"
         body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B})'''
-        description: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B})'''
+        description: '''[Lia, Locb] = ismember(A, B)'''
 
 
     "vertcat":
         prefix: "vertcat"
         body: '''${1:C} = vertcat(${1:A})'''
-        description: '''${1:C} = vertcat(${1:A})'''
+        description: '''C = vertcat(A)'''
 
 
     "withtol":
         prefix: "withtol"
         body: '''${1:S} = withtol(${1:rowTimes}, ${2:tol})'''
-        description: '''${1:S} = withtol(${1:rowTimes}, ${2:tol})'''
+        description: '''S = withtol(rowTimes, tol)'''
 
 
     "varfun":
         prefix: "varfun"
         body: '''${1:B} = varfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'ErrorHandler', ${6:value})'''
-        description: '''${1:B} = varfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'ErrorHandler', ${6:value})'''
+        description: '''B = varfun(func, A, 'OutputFormat', value, 'InputVariables', value, 'GroupingVariables', value, 'ErrorHandler', value)'''
 
 
     "array2timetable":
         prefix: "array2timetable"
         body: '''${1:TT} = array2timetable(${1:X}, 'RowTimes', ${2:value}, 'VariableNames', ${3:value})'''
-        description: '''${1:TT} = array2timetable(${1:X}, 'RowTimes', ${2:value}, 'VariableNames', ${3:value})'''
+        description: '''TT = array2timetable(X, 'RowTimes', value, 'VariableNames', value)'''
 
 
     "tabular._curlyBraceReference":
         prefix: "tabular._curlyBraceReference"
         body: '''tabular._curlyBraceReference(${1:T}, ${2:rows}, ${3:vars})'''
-        description: '''tabular._curlyBraceReference(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''tabular._curlyBraceReference(T, rows, vars)'''
 
 
     "convertvars":
         prefix: "convertvars"
         body: '''${1:T} = convertvars(${1:T}, ${2:vars}, ${3:type})'''
-        description: '''${1:T} = convertvars(${1:T}, ${2:vars}, ${3:type})'''
+        description: '''T = convertvars(T, vars, type)'''
 
 
     "arrayfun":
         prefix: "arrayfun"
         body: '''${1:B} = arrayfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})'''
-        description: '''${1:B} = arrayfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})'''
+        description: '''B = arrayfun(func, A, 'UniformOutput', value, 'ErrorHandler', value)'''
 
 
     "num2cell":
         prefix: "num2cell"
         body: '''${1:C} = num2cell(${1:A}, ${2:dim})'''
-        description: '''${1:C} = num2cell(${1:A}, ${2:dim})'''
+        description: '''C = num2cell(A, dim)'''
 
 
     "isempty":
         prefix: "isempty"
         body: '''${1:TF} = isempty(${1:A})'''
-        description: '''${1:TF} = isempty(${1:A})'''
+        description: '''TF = isempty(A)'''
 
 
     "setdiff":
         prefix: "setdiff"
         body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:setOrder})'''
-        description: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:setOrder})'''
+        description: '''[C, ia] = setdiff(A, B, setOrder)'''
 
 
     "table":
         prefix: "table"
         body: '''${1:T} = table(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, 'RowNames', ${5:value}, 'VariableNames', ${6:value})'''
-        description: '''${1:T} = table(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, 'RowNames', ${5:value}, 'VariableNames', ${6:value})'''
+        description: '''T = table('Size', sz, 'VariableTypes', varTypes, 'RowNames', value, 'VariableNames', value)'''
 
 
     "rmprop":
         prefix: "rmprop"
         body: '''${1:T} = rmprop(${1:T}, ${2:pname})'''
-        description: '''${1:T} = rmprop(${1:T}, ${2:pname})'''
+        description: '''T = rmprop(T, pname)'''
 
 
     "setfield":
         prefix: "setfield"
         body: '''${1:s} = setfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}}, ${5:value})'''
-        description: '''${1:s} = setfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}}, ${5:value})'''
+        description: '''s = setfield(s, {sIndx1,...,sIndxM}, field, {fIndx1,...,fIndxN}, value)'''
 
 
     "unique":
         prefix: "unique"
         body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:setOrder})'''
-        description: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:setOrder})'''
+        description: '''[C, ia, ic] = unique(A, setOrder)'''
 
 
     "unstack":
         prefix: "unstack"
         body: '''[${1:U}, ${2:is}] = unstack(${1:S}, ${2:vars}, ${3:ivar}, 'GroupingVariables', ${4:value}, 'ConstantVariables', ${5:value}, 'NewDataVariableNames', ${6:value}, 'AggregationFunction', ${7:value})'''
-        description: '''[${1:U}, ${2:is}] = unstack(${1:S}, ${2:vars}, ${3:ivar}, 'GroupingVariables', ${4:value}, 'ConstantVariables', ${5:value}, 'NewDataVariableNames', ${6:value}, 'AggregationFunction', ${7:value})'''
+        description: '''[U, is] = unstack(S, vars, ivar, 'GroupingVariables', value, 'ConstantVariables', value, 'NewDataVariableNames', value, 'AggregationFunction', value)'''
 
 
     "horzcat":
         prefix: "horzcat"
         body: '''${1:C} = horzcat(${1:A})'''
-        description: '''${1:C} = horzcat(${1:A})'''
+        description: '''C = horzcat(A)'''
 
 
     "addvars":
         prefix: "addvars"
         body: '''${1:T} = addvars(${1:T}, ${2:var}, 'Before', ${3:value}, 'NewVariableNames', ${4:value})'''
-        description: '''${1:T} = addvars(${1:T}, ${2:var}, 'Before', ${3:value}, 'NewVariableNames', ${4:value})'''
+        description: '''T = addvars(T, var, 'Before', value, 'NewVariableNames', value)'''
 
 
     "ndims":
         prefix: "ndims"
         body: '''${1:N} = ndims(${1:A})'''
-        description: '''${1:N} = ndims(${1:A})'''
+        description: '''N = ndims(A)'''
 
 
     "cellplot":
         prefix: "cellplot"
         body: '''${1:handles} = cellplot(${1:c}, ${2:legend})'''
-        description: '''${1:handles} = cellplot(${1:c}, ${2:legend})'''
+        description: '''handles = cellplot(c, legend)'''
 
 
     "numel":
         prefix: "numel"
         body: '''${1:n} = numel(${1:A})'''
-        description: '''${1:n} = numel(${1:A})'''
+        description: '''n = numel(A)'''
 
 
     "timetable2table":
         prefix: "timetable2table"
         body: '''${1:TT} = timetable2table(${1:T}, 'ConvertRowTimes', ${2:value})'''
-        description: '''${1:TT} = timetable2table(${1:T}, 'ConvertRowTimes', ${2:value})'''
+        description: '''TT = timetable2table(T, 'ConvertRowTimes', value)'''
 
 
     "getfield":
         prefix: "getfield"
         body: '''${1:value} = getfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}})'''
-        description: '''${1:value} = getfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}})'''
+        description: '''value = getfield(s, {sIndx1,...,sIndxM}, field, {fIndx1,...,fIndxN})'''
 
 
     "stack":
         prefix: "stack"
         body: '''[${1:S}, ${2:iu}] = stack(${1:U}, ${2:vars}, 'ConstantVariables', ${3:value}, 'NewDataVariableName', ${4:value}, 'IndexVariableName', ${5:value})'''
-        description: '''[${1:S}, ${2:iu}] = stack(${1:U}, ${2:vars}, 'ConstantVariables', ${3:value}, 'NewDataVariableName', ${4:value}, 'IndexVariableName', ${5:value})'''
+        description: '''[S, iu] = stack(U, vars, 'ConstantVariables', value, 'NewDataVariableName', value, 'IndexVariableName', value)'''
 
 
     "rmfield":
         prefix: "rmfield"
         body: '''${1:s} = rmfield(${1:s}, ${2:field})'''
-        description: '''${1:s} = rmfield(${1:s}, ${2:field})'''
+        description: '''s = rmfield(s, field)'''
 
 
     "removevars":
         prefix: "removevars"
         body: '''${1:T} = removevars(${1:T}, ${2:vars})'''
-        description: '''${1:T} = removevars(${1:T}, ${2:vars})'''
+        description: '''T = removevars(T, vars)'''
 
 
     "splitvars":
         prefix: "splitvars"
         body: '''${1:T} = splitvars(${1:T}, ${2:vars}, 'NewVariableNames', ${3:value})'''
-        description: '''${1:T} = splitvars(${1:T}, ${2:vars}, 'NewVariableNames', ${3:value})'''
+        description: '''T = splitvars(T, vars, 'NewVariableNames', value)'''
 
 
     "summary":
         prefix: "summary"
         body: '''${1:s} = summary(${1:T})'''
-        description: '''${1:s} = summary(${1:T})'''
+        description: '''s = summary(T)'''
 
 
     "table2array":
         prefix: "table2array"
         body: '''${1:A} = table2array(${1:T})'''
-        description: '''${1:A} = table2array(${1:T})'''
+        description: '''A = table2array(T)'''
 
 
     "synchronize":
         prefix: "synchronize"
         body: '''${1:TT2} = synchronize(${1:TT1})'''
-        description: '''${1:TT2} = synchronize(${1:TT1})'''
+        description: '''TT2 = synchronize(TT1)'''
 
 
     "structfun":
         prefix: "structfun"
         body: '''${1:B} = structfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})'''
-        description: '''${1:B} = structfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})'''
+        description: '''B = structfun(func, A, 'UniformOutput', value, 'ErrorHandler', value)'''
 
 
     "tabular._curlyBraceAssign":
         prefix: "tabular._curlyBraceAssign"
         body: '''tabular._curlyBraceAssign(${1:T}, ${2:rows}, ${3:vars})'''
-        description: '''tabular._curlyBraceAssign(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''tabular._curlyBraceAssign(T, rows, vars)'''
 
 
     "issorted":
         prefix: "issorted"
         body: '''${1:TF} = issorted(${1:TT})'''
-        description: '''${1:TF} = issorted(${1:TT})'''
+        description: '''TF = issorted(TT)'''
 
 
     "loadobj":
         prefix: "loadobj"
         body: '''${1:b} = loadobj(${1:a})'''
-        description: '''${1:b} = loadobj(${1:a})'''
+        description: '''b = loadobj(a)'''
 
 
     "innerjoin":
         prefix: "innerjoin"
         body: '''[${1:T}, ${2:ileft}, ${3:iright}] = innerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value})'''
-        description: '''[${1:T}, ${2:ileft}, ${3:iright}] = innerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value})'''
+        description: '''[T, ileft, iright] = innerjoin(Tleft, Tright, 'Keys', value, 'LeftVariables', value, 'RightVariables', value)'''
 
 
     "cell2mat":
         prefix: "cell2mat"
         body: '''${1:A} = cell2mat(${1:C})'''
-        description: '''${1:A} = cell2mat(${1:C})'''
+        description: '''A = cell2mat(C)'''
 
 
     "cellfun":
         prefix: "cellfun"
         body: '''${1:A} = cellfun(${1:func}, ${2:C})'''
-        description: '''${1:A} = cellfun(${1:func}, ${2:C})'''
+        description: '''A = cellfun(func, C)'''
 
 
     "tabular._parenReference":
         prefix: "tabular._parenReference"
         body: '''tabular._parenReference(${1:T}, ${2:rows}, ${3:vars})'''
-        description: '''tabular._parenReference(${1:T}, ${2:rows}, ${3:vars})'''
+        description: '''tabular._parenReference(T, rows, vars)'''
 
 
     "double":
         prefix: "double"
         body: '''${1:y} = double(${1:x})'''
-        description: '''${1:y} = double(${1:x})'''
+        description: '''y = double(x)'''
 

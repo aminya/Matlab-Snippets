@@ -4,311 +4,311 @@
     "calmonths":
         prefix: "calmonths"
         body: '''${1:M} = calmonths(${1:X})'''
-        description: '''${1:M} = calmonths(${1:X})'''
+        description: '''M = calmonths(X)'''
 
 
     "ismatrix":
         prefix: "ismatrix"
         body: '''${1:TF} = ismatrix(${1:V})'''
-        description: '''${1:TF} = ismatrix(${1:V})'''
+        description: '''TF = ismatrix(V)'''
 
 
     "length":
         prefix: "length"
         body: '''${1:L} = length(${1:X})'''
-        description: '''${1:L} = length(${1:X})'''
+        description: '''L = length(X)'''
 
 
     "movmedian":
         prefix: "movmedian"
         body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmedian(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "calendarDuration":
         prefix: "calendarDuration"
         body: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
-        description: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
+        description: '''D = calendarDuration(YMD, 'Format', value)'''
 
 
     "split":
         prefix: "split"
         body: '''${1:C} = split(${1:t}, ${2:units})'''
-        description: '''${1:C} = split(${1:t}, ${2:units})'''
+        description: '''C = split(t, units)'''
 
 
     "issortedrows":
         prefix: "issortedrows"
         body: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-        description: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''TF = issortedrows(A, column, direction, 'MissingPlacement', value)'''
 
 
     "calquarters":
         prefix: "calquarters"
         body: '''${1:Q} = calquarters(${1:X})'''
-        description: '''${1:Q} = calquarters(${1:X})'''
+        description: '''Q = calquarters(X)'''
 
 
     "time":
         prefix: "time"
         body: '''${1:t} = time(${1:d})'''
-        description: '''${1:t} = time(${1:d})'''
+        description: '''t = time(d)'''
 
 
     "isdst":
         prefix: "isdst"
         body: '''${1:tf} = isdst(${1:t})'''
-        description: '''${1:tf} = isdst(${1:t})'''
+        description: '''tf = isdst(t)'''
 
 
     "isinf":
         prefix: "isinf"
         body: '''${1:TF} = isinf(${1:A})'''
-        description: '''${1:TF} = isinf(${1:A})'''
+        description: '''TF = isinf(A)'''
 
 
     "datenum":
         prefix: "datenum"
         body: '''${1:DateNumber} = datenum(${1:t})'''
-        description: '''${1:DateNumber} = datenum(${1:t})'''
+        description: '''DateNumber = datenum(t)'''
 
 
     "plus":
         prefix: "plus"
         body: '''${1:C} = plus(${1:A}, ${2:B})'''
-        description: '''${1:C} = plus(${1:A}, ${2:B})'''
+        description: '''C = plus(A, B)'''
 
 
     "movprod":
         prefix: "movprod"
         body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movprod(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "char":
         prefix: "char"
         body: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
-        description: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''S = char(D, fmt, locale)'''
 
 
     "cat":
         prefix: "cat"
         body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
-        description: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''C = cat(dim, A, B)'''
 
 
     "movmean":
         prefix: "movmean"
         body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmean(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "caldays":
         prefix: "caldays"
         body: '''${1:D} = caldays(${1:X})'''
-        description: '''${1:D} = caldays(${1:X})'''
+        description: '''D = caldays(X)'''
 
 
     "ctranspose":
         prefix: "ctranspose"
         body: '''${1:B} = ctranspose(${1:A})'''
-        description: '''${1:B} = ctranspose(${1:A})'''
+        description: '''B = ctranspose(A)'''
 
 
     "vertcat":
         prefix: "vertcat"
         body: '''${1:C} = vertcat(${1:A})'''
-        description: '''${1:C} = vertcat(${1:A})'''
+        description: '''C = vertcat(A)'''
 
 
     "calyears":
         prefix: "calyears"
         body: '''${1:Y} = calyears(${1:X})'''
-        description: '''${1:Y} = calyears(${1:X})'''
+        description: '''Y = calyears(X)'''
 
 
     "times":
         prefix: "times"
         body: '''${1:C} = times(${1:A}, ${2:B})'''
-        description: '''${1:C} = times(${1:A}, ${2:B})'''
+        description: '''C = times(A, B)'''
 
 
     "isrow":
         prefix: "isrow"
         body: '''${1:TF} = isrow(${1:V})'''
-        description: '''${1:TF} = isrow(${1:V})'''
+        description: '''TF = isrow(V)'''
 
 
     "movstd":
         prefix: "movstd"
         body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''M = movstd(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "isempty":
         prefix: "isempty"
         body: '''${1:TF} = isempty(${1:A})'''
-        description: '''${1:TF} = isempty(${1:A})'''
+        description: '''TF = isempty(A)'''
 
 
     "cellstr":
         prefix: "cellstr"
         body: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
-        description: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''S = cellstr(D, fmt, locale)'''
 
 
     "isvector":
         prefix: "isvector"
         body: '''${1:TF} = isvector(${1:A})'''
-        description: '''${1:TF} = isvector(${1:A})'''
+        description: '''TF = isvector(A)'''
 
 
     "calweeks":
         prefix: "calweeks"
         body: '''${1:W} = calweeks(${1:X})'''
-        description: '''${1:W} = calweeks(${1:X})'''
+        description: '''W = calweeks(X)'''
 
 
     "minus":
         prefix: "minus"
         body: '''${1:C} = minus(${1:A}, ${2:B})'''
-        description: '''${1:C} = minus(${1:A}, ${2:B})'''
+        description: '''C = minus(A, B)'''
 
 
     "isfinite":
         prefix: "isfinite"
         body: '''${1:TF} = isfinite(${1:A})'''
-        description: '''${1:TF} = isfinite(${1:A})'''
+        description: '''TF = isfinite(A)'''
 
 
     "horzcat":
         prefix: "horzcat"
         body: '''${1:C} = horzcat(${1:A})'''
-        description: '''${1:C} = horzcat(${1:A})'''
+        description: '''C = horzcat(A)'''
 
 
     "isscalar":
         prefix: "isscalar"
         body: '''${1:TF} = isscalar(${1:A})'''
-        description: '''${1:TF} = isscalar(${1:A})'''
+        description: '''TF = isscalar(A)'''
 
 
     "ndims":
         prefix: "ndims"
         body: '''${1:N} = ndims(${1:X})'''
-        description: '''${1:N} = ndims(${1:X})'''
+        description: '''N = ndims(X)'''
 
 
     "movmax":
         prefix: "movmax"
         body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmax(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "uminus":
         prefix: "uminus"
         body: '''${1:C} = uminus(${1:A})'''
-        description: '''${1:C} = uminus(${1:A})'''
+        description: '''C = uminus(A)'''
 
 
     "string":
         prefix: "string"
         body: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
-        description: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''str = string(D, fmt, locale)'''
 
 
     "isequaln":
         prefix: "isequaln"
         body: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
-        description: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
+        description: '''tf = isequaln(A, B)'''
 
 
     "transpose":
         prefix: "transpose"
         body: '''${1:B} = transpose(${1:A})'''
-        description: '''${1:B} = transpose(${1:A})'''
+        description: '''B = transpose(A)'''
 
 
     "numel":
         prefix: "numel"
         body: '''${1:n} = numel(${1:A})'''
-        description: '''${1:n} = numel(${1:A})'''
+        description: '''n = numel(A)'''
 
 
     "movsum":
         prefix: "movsum"
         body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movsum(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "mtimes":
         prefix: "mtimes"
         body: '''${1:C} = mtimes(${1:A}, ${2:B})'''
-        description: '''${1:C} = mtimes(${1:A}, ${2:B})'''
+        description: '''C = mtimes(A, B)'''
 
 
     "iscalendarduration":
         prefix: "iscalendarduration"
         body: '''${1:tf} = iscalendarduration(${1:d})'''
-        description: '''${1:tf} = iscalendarduration(${1:d})'''
+        description: '''tf = iscalendarduration(d)'''
 
 
     "movmad":
         prefix: "movmad"
         body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmad(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "hms":
         prefix: "hms"
         body: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
-        description: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
+        description: '''[h, m, s] = hms(t)'''
 
 
     "iscolumn":
         prefix: "iscolumn"
         body: '''${1:TF} = iscolumn(${1:V})'''
-        description: '''${1:TF} = iscolumn(${1:V})'''
+        description: '''TF = iscolumn(V)'''
 
 
     "movmin":
         prefix: "movmin"
         body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmin(A, k, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "isequal":
         prefix: "isequal"
         body: '''${1:tf} = isequal(${1:A}, ${2:B})'''
-        description: '''${1:tf} = isequal(${1:A}, ${2:B})'''
+        description: '''tf = isequal(A, B)'''
 
 
     "movvar":
         prefix: "movvar"
         body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''M = movvar(A, k, w, dim, nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "issorted":
         prefix: "issorted"
         body: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-        description: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''TF = issorted(A, dim, direction, 'MissingPlacement', value)'''
 
 
     "size":
         prefix: "size"
         body: '''${1:szdim} = size(${1:A}, ${2:dim})'''
-        description: '''${1:szdim} = size(${1:A}, ${2:dim})'''
+        description: '''szdim = size(A, dim)'''
 
 
     "reshape":
         prefix: "reshape"
         body: '''${1:B} = reshape(${1:A}, ${2:sz})'''
-        description: '''${1:B} = reshape(${1:A}, ${2:sz})'''
+        description: '''B = reshape(A, sz)'''
 
 
     "permute":
         prefix: "permute"
         body: '''${1:B} = permute(${1:A}, ${2:order})'''
-        description: '''${1:B} = permute(${1:A}, ${2:order})'''
+        description: '''B = permute(A, order)'''
 

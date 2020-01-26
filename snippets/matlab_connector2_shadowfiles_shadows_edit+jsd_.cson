@@ -4,5 +4,5 @@
     "edit":
         prefix: "edit"
         body: '''edit(${1:optional_file})'''
-        description: '''edit(${1:optional_file})'''
+        description: '''edit(optional_file)'''
 

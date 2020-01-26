@@ -4,5 +4,5 @@
     "sscnewfile":
         prefix: "sscnewfile"
         body: '''sscnewfile(${1:name}, ${2:template})'''
-        description: '''sscnewfile(${1:name}, ${2:template})'''
+        description: '''sscnewfile(name, template)'''
 

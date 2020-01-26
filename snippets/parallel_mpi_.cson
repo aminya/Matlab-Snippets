@@ -4,5 +4,5 @@
     "mpiSettings":
         prefix: "mpiSettings"
         body: '''mpiSettings('MessageLoggingDestination', ${1:value})'''
-        description: '''mpiSettings('MessageLoggingDestination', ${1:value})'''
+        description: '''mpiSettings('MessageLoggingDestination', value)'''
 

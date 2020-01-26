@@ -4,11 +4,11 @@
     "parquetDatastore":
         prefix: "parquetDatastore"
         body: '''${1:pds} = parquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})'''
-        description: '''${1:pds} = parquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})'''
+        description: '''pds = parquetDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'VariableNames', value, 'SelectedVariableNames', value, 'ReadSize', value, 'OutputType', value, 'PreserveVariableNames', value)'''
 
 
     "matlab.io.datastore.ParquetDatastore":
         prefix: "matlab.io.datastore.ParquetDatastore"
         body: '''${1:pds} = matlab.io.datastore.ParquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})'''
-        description: '''${1:pds} = matlab.io.datastore.ParquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})'''
+        description: '''pds = matlab.io.datastore.ParquetDatastore(location, 'IncludeSubfolders', value, 'FileExtensions', value, 'AlternateFileSystemRoots', value, 'VariableNames', value, 'SelectedVariableNames', value, 'ReadSize', value, 'OutputType', value, 'PreserveVariableNames', value)'''
 

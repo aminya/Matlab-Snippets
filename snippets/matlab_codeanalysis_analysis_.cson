@@ -4,11 +4,11 @@
     "codeCompatibilityReport":
         prefix: "codeCompatibilityReport"
         body: '''codeCompatibilityReport(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
-        description: '''codeCompatibilityReport(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
+        description: '''codeCompatibilityReport(optional_names, 'IncludeSubfolders', value)'''
 
 
     "analyzeCodeCompatibility":
         prefix: "analyzeCodeCompatibility"
         body: '''analyzeCodeCompatibility(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
-        description: '''analyzeCodeCompatibility(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
+        description: '''analyzeCodeCompatibility(optional_names, 'IncludeSubfolders', value)'''
 

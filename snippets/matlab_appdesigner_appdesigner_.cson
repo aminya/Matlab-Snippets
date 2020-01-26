@@ -4,5 +4,5 @@
     "appdesigner":
         prefix: "appdesigner"
         body: '''appdesigner(${1:filename})'''
-        description: '''appdesigner(${1:filename})'''
+        description: '''appdesigner(filename)'''
 

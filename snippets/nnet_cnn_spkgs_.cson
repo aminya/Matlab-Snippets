@@ -4,31 +4,31 @@
     "importCaffeLayers":
         prefix: "importCaffeLayers"
         body: '''importCaffeLayers(${1:protofile}, 'InputSize', ${2:value})'''
-        description: '''importCaffeLayers(${1:protofile}, 'InputSize', ${2:value})'''
+        description: '''importCaffeLayers(protofile, 'InputSize', value)'''
 
 
     "exportONNXNetwork":
         prefix: "exportONNXNetwork"
         body: '''exportONNXNetwork(${1:net}, ${2:filename}, 'NetworkName', ${3:value}, 'OpsetVersion', ${4:value})'''
-        description: '''exportONNXNetwork(${1:net}, ${2:filename}, 'NetworkName', ${3:value}, 'OpsetVersion', ${4:value})'''
+        description: '''exportONNXNetwork(net, filename, 'NetworkName', value, 'OpsetVersion', value)'''
 
 
     "importONNXNetwork":
         prefix: "importONNXNetwork"
         body: '''importONNXNetwork(${1:modelfile}, 'OutputLayerType', ${2:value}, 'Classes', ${3:value})'''
-        description: '''importONNXNetwork(${1:modelfile}, 'OutputLayerType', ${2:value}, 'Classes', ${3:value})'''
+        description: '''importONNXNetwork(modelfile, 'OutputLayerType', value, 'Classes', value)'''
 
 
     "importKerasNetwork":
         prefix: "importKerasNetwork"
         body: '''importKerasNetwork(${1:modelfile}, 'WeightFile', ${2:value}, 'OutputLayerType', ${3:value}, 'ImageInputSize', ${4:value}, 'Classes', ${5:value})'''
-        description: '''importKerasNetwork(${1:modelfile}, 'WeightFile', ${2:value}, 'OutputLayerType', ${3:value}, 'ImageInputSize', ${4:value}, 'Classes', ${5:value})'''
+        description: '''importKerasNetwork(modelfile, 'WeightFile', value, 'OutputLayerType', value, 'ImageInputSize', value, 'Classes', value)'''
 
 
     "importONNXLayers":
         prefix: "importONNXLayers"
         body: '''importONNXLayers(${1:modelfile}, 'ImportWeights', ${2:value}, 'OutputLayerType', ${3:value})'''
-        description: '''importONNXLayers(${1:modelfile}, 'ImportWeights', ${2:value}, 'OutputLayerType', ${3:value})'''
+        description: '''importONNXLayers(modelfile, 'ImportWeights', value, 'OutputLayerType', value)'''
 
 
     "alexnet":
@@ -40,11 +40,11 @@
     "importKerasLayers":
         prefix: "importKerasLayers"
         body: '''importKerasLayers(${1:modelfile}, 'OutputLayerType', ${2:value}, 'ImageInputSize', ${3:value}, 'ImportWeights', ${4:value}, 'WeightFile', ${5:value})'''
-        description: '''importKerasLayers(${1:modelfile}, 'OutputLayerType', ${2:value}, 'ImageInputSize', ${3:value}, 'ImportWeights', ${4:value}, 'WeightFile', ${5:value})'''
+        description: '''importKerasLayers(modelfile, 'OutputLayerType', value, 'ImageInputSize', value, 'ImportWeights', value, 'WeightFile', value)'''
 
 
     "importCaffeNetwork":
         prefix: "importCaffeNetwork"
         body: '''importCaffeNetwork(${1:protofile}, ${2:datafile}, 'InputSize', ${3:value}, 'AverageImage', ${4:value}, 'Classes', ${5:value})'''
-        description: '''importCaffeNetwork(${1:protofile}, ${2:datafile}, 'InputSize', ${3:value}, 'AverageImage', ${4:value}, 'Classes', ${5:value})'''
+        description: '''importCaffeNetwork(protofile, datafile, 'InputSize', value, 'AverageImage', value, 'Classes', value)'''
 

@@ -4,41 +4,41 @@
     "rgb2lin":
         prefix: "rgb2lin"
         body: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
-        description: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        description: '''B = rgb2lin(A, 'ColorSpace', value, 'OutputType', value)'''
 
 
     "colorangle":
         prefix: "colorangle"
         body: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
-        description: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
+        description: '''angle = colorangle(RGB1, RGB2)'''
 
 
     "lin2rgb":
         prefix: "lin2rgb"
         body: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
-        description: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        description: '''B = lin2rgb(A, 'ColorSpace', value, 'OutputType', value)'''
 
 
     "chromadapt":
         prefix: "chromadapt"
         body: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
-        description: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
+        description: '''B = chromadapt(A, illuminant, 'ColorSpace', value, 'Method', value)'''
 
 
     "illumpca":
         prefix: "illumpca"
         body: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
-        description: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
+        description: '''illuminant = illumpca(A, optional_percentage, 'Mask', value)'''
 
 
     "illumgray":
         prefix: "illumgray"
         body: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
-        description: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
+        description: '''illuminant = illumgray(A, optional_percentiles, 'Mask', value, 'Norm', value)'''
 
 
     "illumwhite":
         prefix: "illumwhite"
         body: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
-        description: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
+        description: '''illuminant = illumwhite(A, optional_topPercentile, 'Mask', value)'''
 

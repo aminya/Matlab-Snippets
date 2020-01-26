@@ -4,5 +4,5 @@
     "weboptions":
         prefix: "weboptions"
         body: '''weboptions(${1:name})'''
-        description: '''weboptions(${1:name})'''
+        description: '''weboptions(name)'''
 

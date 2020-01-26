@@ -4,31 +4,31 @@
     "groupedConvolution2dLayer":
         prefix: "groupedConvolution2dLayer"
         body: '''groupedConvolution2dLayer(${1:filterSize}, ${2:numFiltersPerGroup}, ${3:numGroups}, 'Stride', ${4:value}, 'DilationFactor', ${5:value}, 'Padding', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
-        description: '''groupedConvolution2dLayer(${1:filterSize}, ${2:numFiltersPerGroup}, ${3:numGroups}, 'Stride', ${4:value}, 'DilationFactor', ${5:value}, 'Padding', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
+        description: '''groupedConvolution2dLayer(filterSize, numFiltersPerGroup, numGroups, 'Stride', value, 'DilationFactor', value, 'Padding', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value, 'Name', value)'''
 
 
     "DAGNetwork.predict":
         prefix: "DAGNetwork.predict"
         body: '''DAGNetwork.predict(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
-        description: '''DAGNetwork.predict(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''DAGNetwork.predict(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "augmentedImageDatastore":
         prefix: "augmentedImageDatastore"
         body: '''augmentedImageDatastore(${1:OutputSize}, ${2:imds}, 'DataAugmentation', ${3:value}, 'ColorPreprocessing', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
-        description: '''augmentedImageDatastore(${1:OutputSize}, ${2:imds}, 'DataAugmentation', ${3:value}, 'ColorPreprocessing', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
+        description: '''augmentedImageDatastore(OutputSize, imds, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSizeMode', value, 'DispatchInBackground', value)'''
 
 
     "leakyReluLayer":
         prefix: "leakyReluLayer"
         body: '''leakyReluLayer(${1:Scale}, 'Name', ${2:value})'''
-        description: '''leakyReluLayer(${1:Scale}, 'Name', ${2:value})'''
+        description: '''leakyReluLayer(Scale, 'Name', value)'''
 
 
     "flattenLayer":
         prefix: "flattenLayer"
         body: '''flattenLayer('Name', ${1:value})'''
-        description: '''flattenLayer('Name', ${1:value})'''
+        description: '''flattenLayer('Name', value)'''
 
 
     "alexnet":
@@ -40,157 +40,157 @@
     "sequenceUnfoldingLayer":
         prefix: "sequenceUnfoldingLayer"
         body: '''sequenceUnfoldingLayer('Name', ${1:value})'''
-        description: '''sequenceUnfoldingLayer('Name', ${1:value})'''
+        description: '''sequenceUnfoldingLayer('Name', value)'''
 
 
     "batchNormalizationLayer":
         prefix: "batchNormalizationLayer"
         body: '''batchNormalizationLayer('Name', ${1:value}, 'Offset', ${2:value}, 'Scale', ${3:value}, 'TrainedMean', ${4:value}, 'TrainedVariance', ${5:value}, 'Epsilon', ${6:value}, 'OffsetLearnRateFactor', ${7:value}, 'ScaleLearnRateFactor', ${8:value}, 'OffsetL2Factor', ${9:value}, 'ScaleL2Factor', ${10:value}, 'OffsetInitializer', ${11:value}, 'ScaleInitializer', ${12:value})'''
-        description: '''batchNormalizationLayer('Name', ${1:value}, 'Offset', ${2:value}, 'Scale', ${3:value}, 'TrainedMean', ${4:value}, 'TrainedVariance', ${5:value}, 'Epsilon', ${6:value}, 'OffsetLearnRateFactor', ${7:value}, 'ScaleLearnRateFactor', ${8:value}, 'OffsetL2Factor', ${9:value}, 'ScaleL2Factor', ${10:value}, 'OffsetInitializer', ${11:value}, 'ScaleInitializer', ${12:value})'''
+        description: '''batchNormalizationLayer('Name', value, 'Offset', value, 'Scale', value, 'TrainedMean', value, 'TrainedVariance', value, 'Epsilon', value, 'OffsetLearnRateFactor', value, 'ScaleLearnRateFactor', value, 'OffsetL2Factor', value, 'ScaleL2Factor', value, 'OffsetInitializer', value, 'ScaleInitializer', value)'''
 
 
     "trainNetwork":
         prefix: "trainNetwork"
         body: '''trainNetwork(${1:tbl}, ${2:responseNames}, ${3:layers}, ${4:options})'''
-        description: '''trainNetwork(${1:tbl}, ${2:responseNames}, ${3:layers}, ${4:options})'''
+        description: '''trainNetwork(tbl, responseNames, layers, options)'''
 
 
     "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor":
         prefix: "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor"
         body: '''nnet.internal.cnn.layer.Externalizable.getLearnRateFactor(${1:layer}, ${2:learnableParameterName})'''
-        description: '''nnet.internal.cnn.layer.Externalizable.getLearnRateFactor(${1:layer}, ${2:learnableParameterName})'''
+        description: '''nnet.internal.cnn.layer.Externalizable.getLearnRateFactor(layer, learnableParameterName)'''
 
 
     "nnet.cnn.LayerGraph.removeLayers":
         prefix: "nnet.cnn.LayerGraph.removeLayers"
         body: '''nnet.cnn.LayerGraph.removeLayers(${1:lgraph}, ${2:layerNames})'''
-        description: '''nnet.cnn.LayerGraph.removeLayers(${1:lgraph}, ${2:layerNames})'''
+        description: '''nnet.cnn.LayerGraph.removeLayers(lgraph, layerNames)'''
 
 
     "crossChannelNormalizationLayer":
         prefix: "crossChannelNormalizationLayer"
         body: '''crossChannelNormalizationLayer(${1:WindowChannelSize}, 'Alpha', ${2:value}, 'Beta', ${3:value}, 'K', ${4:value}, 'Name', ${5:value})'''
-        description: '''crossChannelNormalizationLayer(${1:WindowChannelSize}, 'Alpha', ${2:value}, 'Beta', ${3:value}, 'K', ${4:value}, 'Name', ${5:value})'''
+        description: '''crossChannelNormalizationLayer(WindowChannelSize, 'Alpha', value, 'Beta', value, 'K', value, 'Name', value)'''
 
 
     "tanhLayer":
         prefix: "tanhLayer"
         body: '''tanhLayer('Name', ${1:value})'''
-        description: '''tanhLayer('Name', ${1:value})'''
+        description: '''tanhLayer('Name', value)'''
 
 
     "maxPooling3dLayer":
         prefix: "maxPooling3dLayer"
         body: '''maxPooling3dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value}, 'HasUnpoolingOutputs', ${5:value})'''
-        description: '''maxPooling3dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value}, 'HasUnpoolingOutputs', ${5:value})'''
+        description: '''maxPooling3dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value, 'HasUnpoolingOutputs', value)'''
 
 
     "nnet.internal.cnn.layer.Externalizable.setL2Factor":
         prefix: "nnet.internal.cnn.layer.Externalizable.setL2Factor"
         body: '''nnet.internal.cnn.layer.Externalizable.setL2Factor(${1:layer}, ${2:learnableParameterName}, ${3:learnRateFactor})'''
-        description: '''nnet.internal.cnn.layer.Externalizable.setL2Factor(${1:layer}, ${2:learnableParameterName}, ${3:learnRateFactor})'''
+        description: '''nnet.internal.cnn.layer.Externalizable.setL2Factor(layer, learnableParameterName, learnRateFactor)'''
 
 
     "eluLayer":
         prefix: "eluLayer"
         body: '''eluLayer(${1:Alpha}, 'Name', ${2:value})'''
-        description: '''eluLayer(${1:Alpha}, 'Name', ${2:value})'''
+        description: '''eluLayer(Alpha, 'Name', value)'''
 
 
     "DAGNetwork.plot":
         prefix: "DAGNetwork.plot"
         body: '''DAGNetwork.plot(${1:net})'''
-        description: '''DAGNetwork.plot(${1:net})'''
+        description: '''DAGNetwork.plot(net)'''
 
 
     "nnet.cnn.LayerGraph.connectLayers":
         prefix: "nnet.cnn.LayerGraph.connectLayers"
         body: '''nnet.cnn.LayerGraph.connectLayers(${1:lgraph}, ${2:source}, ${3:destination})'''
-        description: '''nnet.cnn.LayerGraph.connectLayers(${1:lgraph}, ${2:source}, ${3:destination})'''
+        description: '''nnet.cnn.LayerGraph.connectLayers(lgraph, source, destination)'''
 
 
     "concatenationLayer":
         prefix: "concatenationLayer"
         body: '''concatenationLayer(${1:Dim}, ${2:NumInputs}, 'Name', ${3:value})'''
-        description: '''concatenationLayer(${1:Dim}, ${2:NumInputs}, 'Name', ${3:value})'''
+        description: '''concatenationLayer(Dim, NumInputs, 'Name', value)'''
 
 
     "nnet.cnn.LayerGraph.replaceLayer":
         prefix: "nnet.cnn.LayerGraph.replaceLayer"
         body: '''nnet.cnn.LayerGraph.replaceLayer(${1:lgraph}, ${2:layerName}, ${3:larray}, 'ReconnectBy', ${4:value})'''
-        description: '''nnet.cnn.LayerGraph.replaceLayer(${1:lgraph}, ${2:layerName}, ${3:larray}, 'ReconnectBy', ${4:value})'''
+        description: '''nnet.cnn.LayerGraph.replaceLayer(lgraph, layerName, larray, 'ReconnectBy', value)'''
 
 
     "transposedConv2dLayer":
         prefix: "transposedConv2dLayer"
         body: '''transposedConv2dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'Cropping', ${4:value}, 'NumChannels', ${5:value}, 'WeightLearnRateFactor', ${6:value}, 'BiasLearnRateFactor', ${7:value}, 'WeightL2Factor', ${8:value}, 'BiasL2Factor', ${9:value}, 'Name', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value})'''
-        description: '''transposedConv2dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'Cropping', ${4:value}, 'NumChannels', ${5:value}, 'WeightLearnRateFactor', ${6:value}, 'BiasLearnRateFactor', ${7:value}, 'WeightL2Factor', ${8:value}, 'BiasL2Factor', ${9:value}, 'Name', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value})'''
+        description: '''transposedConv2dLayer(filterSize, numFilters, 'Stride', value, 'Cropping', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'Name', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value)'''
 
 
     "transposedConv3dLayer":
         prefix: "transposedConv3dLayer"
         body: '''transposedConv3dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'Cropping', ${4:value}, 'NumChannels', ${5:value}, 'WeightLearnRateFactor', ${6:value}, 'BiasLearnRateFactor', ${7:value}, 'WeightL2Factor', ${8:value}, 'BiasL2Factor', ${9:value}, 'Name', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value})'''
-        description: '''transposedConv3dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'Cropping', ${4:value}, 'NumChannels', ${5:value}, 'WeightLearnRateFactor', ${6:value}, 'BiasLearnRateFactor', ${7:value}, 'WeightL2Factor', ${8:value}, 'BiasL2Factor', ${9:value}, 'Name', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value})'''
+        description: '''transposedConv3dLayer(filterSize, numFilters, 'Stride', value, 'Cropping', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'Name', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value)'''
 
 
     "classificationLayer":
         prefix: "classificationLayer"
         body: '''classificationLayer('Name', ${1:value}, 'Classes', ${2:value})'''
-        description: '''classificationLayer('Name', ${1:value}, 'Classes', ${2:value})'''
+        description: '''classificationLayer('Name', value, 'Classes', value)'''
 
 
     "maxPooling2dLayer":
         prefix: "maxPooling2dLayer"
         body: '''maxPooling2dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value}, 'HasUnpoolingOutputs', ${5:value})'''
-        description: '''maxPooling2dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value}, 'HasUnpoolingOutputs', ${5:value})'''
+        description: '''maxPooling2dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value, 'HasUnpoolingOutputs', value)'''
 
 
     "regressionLayer":
         prefix: "regressionLayer"
         body: '''regressionLayer('Name', ${1:value}, 'ResponseNames', ${2:value})'''
-        description: '''regressionLayer('Name', ${1:value}, 'ResponseNames', ${2:value})'''
+        description: '''regressionLayer('Name', value, 'ResponseNames', value)'''
 
 
     "dlnetwork":
         prefix: "dlnetwork"
         body: '''dlnetwork(${1:lgraph})'''
-        description: '''dlnetwork(${1:lgraph})'''
+        description: '''dlnetwork(lgraph)'''
 
 
     "dlnetwork.predict":
         prefix: "dlnetwork.predict"
         body: '''dlnetwork.predict(${1:dlnet}, ${2:dlX}, 'Outputs', ${3:value})'''
-        description: '''dlnetwork.predict(${1:dlnet}, ${2:dlX}, 'Outputs', ${3:value})'''
+        description: '''dlnetwork.predict(dlnet, dlX, 'Outputs', value)'''
 
 
     "augmentedImageSource":
         prefix: "augmentedImageSource"
         body: '''augmentedImageSource(${1:OutputSize}, ${2:imds}, 'DataAugmentation', ${3:value}, 'ColorPreprocessing', ${4:value}, 'OutputSizeMode', ${5:value}, 'BackgroundExecution', ${6:value})'''
-        description: '''augmentedImageSource(${1:OutputSize}, ${2:imds}, 'DataAugmentation', ${3:value}, 'ColorPreprocessing', ${4:value}, 'OutputSizeMode', ${5:value}, 'BackgroundExecution', ${6:value})'''
+        description: '''augmentedImageSource(OutputSize, imds, 'DataAugmentation', value, 'ColorPreprocessing', value, 'OutputSizeMode', value, 'BackgroundExecution', value)'''
 
 
     "checkLayer":
         prefix: "checkLayer"
         body: '''checkLayer(${1:layer}, ${2:validInputSize}, 'ObservationDimension', ${3:value})'''
-        description: '''checkLayer(${1:layer}, ${2:validInputSize}, 'ObservationDimension', ${3:value})'''
+        description: '''checkLayer(layer, validInputSize, 'ObservationDimension', value)'''
 
 
     "clippedReluLayer":
         prefix: "clippedReluLayer"
         body: '''clippedReluLayer(${1:Ceiling}, 'Name', ${2:value})'''
-        description: '''clippedReluLayer(${1:Ceiling}, 'Name', ${2:value})'''
+        description: '''clippedReluLayer(Ceiling, 'Name', value)'''
 
 
     "sequenceFoldingLayer":
         prefix: "sequenceFoldingLayer"
         body: '''sequenceFoldingLayer('Name', ${1:value})'''
-        description: '''sequenceFoldingLayer('Name', ${1:value})'''
+        description: '''sequenceFoldingLayer('Name', value)'''
 
 
     "DAGNetwork.activations":
         prefix: "DAGNetwork.activations"
         body: '''DAGNetwork.activations(${1:net}, ${2:X}, ${3:layer}, 'OutputAs', ${4:value}, 'MiniBatchSize', ${5:value}, 'ExecutionEnvironment', ${6:value}, 'Acceleration', ${7:value}, 'SequenceLength', ${8:value}, 'SequencePaddingValue', ${9:value}, 'SequencePaddingDirection', ${10:value})'''
-        description: '''DAGNetwork.activations(${1:net}, ${2:X}, ${3:layer}, 'OutputAs', ${4:value}, 'MiniBatchSize', ${5:value}, 'ExecutionEnvironment', ${6:value}, 'Acceleration', ${7:value}, 'SequenceLength', ${8:value}, 'SequencePaddingValue', ${9:value}, 'SequencePaddingDirection', ${10:value})'''
+        description: '''DAGNetwork.activations(net, X, layer, 'OutputAs', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "vgg19":
@@ -202,121 +202,121 @@
     "DAGNetwork.classify":
         prefix: "DAGNetwork.classify"
         body: '''DAGNetwork.classify(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
-        description: '''DAGNetwork.classify(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''DAGNetwork.classify(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "SeriesNetwork.activations":
         prefix: "SeriesNetwork.activations"
         body: '''SeriesNetwork.activations(${1:net}, ${2:X}, ${3:layer}, 'OutputAs', ${4:value}, 'MiniBatchSize', ${5:value}, 'ExecutionEnvironment', ${6:value}, 'Acceleration', ${7:value}, 'SequenceLength', ${8:value}, 'SequencePaddingValue', ${9:value}, 'SequencePaddingDirection', ${10:value})'''
-        description: '''SeriesNetwork.activations(${1:net}, ${2:X}, ${3:layer}, 'OutputAs', ${4:value}, 'MiniBatchSize', ${5:value}, 'ExecutionEnvironment', ${6:value}, 'Acceleration', ${7:value}, 'SequenceLength', ${8:value}, 'SequencePaddingValue', ${9:value}, 'SequencePaddingDirection', ${10:value})'''
+        description: '''SeriesNetwork.activations(net, X, layer, 'OutputAs', value, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "SeriesNetwork.classifyAndUpdateState":
         prefix: "SeriesNetwork.classifyAndUpdateState"
         body: '''SeriesNetwork.classifyAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
-        description: '''SeriesNetwork.classifyAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''SeriesNetwork.classifyAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)'''
 
 
     "convolution2dLayer":
         prefix: "convolution2dLayer"
         body: '''convolution2dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'DilationFactor', ${4:value}, 'Padding', ${5:value}, 'NumChannels', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
-        description: '''convolution2dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'DilationFactor', ${4:value}, 'Padding', ${5:value}, 'NumChannels', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
+        description: '''convolution2dLayer(filterSize, numFilters, 'Stride', value, 'DilationFactor', value, 'Padding', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value, 'Name', value)'''
 
 
     "softmaxLayer":
         prefix: "softmaxLayer"
         body: '''softmaxLayer('Name', ${1:value})'''
-        description: '''softmaxLayer('Name', ${1:value})'''
+        description: '''softmaxLayer('Name', value)'''
 
 
     "globalAveragePooling2dLayer":
         prefix: "globalAveragePooling2dLayer"
         body: '''globalAveragePooling2dLayer('Name', ${1:value})'''
-        description: '''globalAveragePooling2dLayer('Name', ${1:value})'''
+        description: '''globalAveragePooling2dLayer('Name', value)'''
 
 
     "nnet.cnn.LayerGraph.plot":
         prefix: "nnet.cnn.LayerGraph.plot"
         body: '''nnet.cnn.LayerGraph.plot(${1:lgraph})'''
-        description: '''nnet.cnn.LayerGraph.plot(${1:lgraph})'''
+        description: '''nnet.cnn.LayerGraph.plot(lgraph)'''
 
 
     "SeriesNetwork.resetState":
         prefix: "SeriesNetwork.resetState"
         body: '''SeriesNetwork.resetState(${1:net})'''
-        description: '''SeriesNetwork.resetState(${1:net})'''
+        description: '''SeriesNetwork.resetState(net)'''
 
 
     "dlnetwork.forward":
         prefix: "dlnetwork.forward"
         body: '''dlnetwork.forward(${1:dlnet}, ${2:dlX}, 'Outputs', ${3:value})'''
-        description: '''dlnetwork.forward(${1:dlnet}, ${2:dlX}, 'Outputs', ${3:value})'''
+        description: '''dlnetwork.forward(dlnet, dlX, 'Outputs', value)'''
 
 
     "maxUnpooling2dLayer":
         prefix: "maxUnpooling2dLayer"
         body: '''maxUnpooling2dLayer('Name', ${1:value})'''
-        description: '''maxUnpooling2dLayer('Name', ${1:value})'''
+        description: '''maxUnpooling2dLayer('Name', value)'''
 
 
     "crop2dLayer":
         prefix: "crop2dLayer"
         body: '''crop2dLayer(${1:Mode}, 'Name', ${2:value})'''
-        description: '''crop2dLayer(${1:Mode}, 'Name', ${2:value})'''
+        description: '''crop2dLayer(Mode, 'Name', value)'''
 
 
     "DAGNetwork.classifyAndUpdateState":
         prefix: "DAGNetwork.classifyAndUpdateState"
         body: '''DAGNetwork.classifyAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
-        description: '''DAGNetwork.classifyAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''DAGNetwork.classifyAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "nnet.cnn.LayerGraph.disconnectLayers":
         prefix: "nnet.cnn.LayerGraph.disconnectLayers"
         body: '''nnet.cnn.LayerGraph.disconnectLayers(${1:lgraph}, ${2:source}, ${3:destination})'''
-        description: '''nnet.cnn.LayerGraph.disconnectLayers(${1:lgraph}, ${2:source}, ${3:destination})'''
+        description: '''nnet.cnn.LayerGraph.disconnectLayers(lgraph, source, destination)'''
 
 
     "SeriesNetwork.predict":
         prefix: "SeriesNetwork.predict"
         body: '''SeriesNetwork.predict(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
-        description: '''SeriesNetwork.predict(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''SeriesNetwork.predict(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)'''
 
 
     "deepDreamImage":
         prefix: "deepDreamImage"
         body: '''deepDreamImage(${1:net}, ${2:layer}, ${3:channels}, 'InitialImage', ${4:value}, 'PyramidLevels', ${5:value}, 'PyramidScale', ${6:value}, 'NumIterations', ${7:value}, 'OutputScaling', ${8:value}, 'Verbose', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
-        description: '''deepDreamImage(${1:net}, ${2:layer}, ${3:channels}, 'InitialImage', ${4:value}, 'PyramidLevels', ${5:value}, 'PyramidScale', ${6:value}, 'NumIterations', ${7:value}, 'OutputScaling', ${8:value}, 'Verbose', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        description: '''deepDreamImage(net, layer, channels, 'InitialImage', value, 'PyramidLevels', value, 'PyramidScale', value, 'NumIterations', value, 'OutputScaling', value, 'Verbose', value, 'ExecutionEnvironment', value)'''
 
 
     "image3dInputLayer":
         prefix: "image3dInputLayer"
         body: '''image3dInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
-        description: '''image3dInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
+        description: '''image3dInputLayer(inputSize, 'Normalization', value, 'NormalizationDimension', value, 'Name', value, 'Mean', value, 'StandardDeviation', value, 'Min', value, 'Max', value)'''
 
 
     "averagePooling3dLayer":
         prefix: "averagePooling3dLayer"
         body: '''averagePooling3dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value})'''
-        description: '''averagePooling3dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value})'''
+        description: '''averagePooling3dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value)'''
 
 
     "SeriesNetwork.classify":
         prefix: "SeriesNetwork.classify"
         body: '''SeriesNetwork.classify(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
-        description: '''SeriesNetwork.classify(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''SeriesNetwork.classify(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)'''
 
 
     "trainingOptions":
         prefix: "trainingOptions"
         body: '''trainingOptions(${1:solverName}, 'SquaredGradientDecayFactor', ${2:value}, 'Epsilon', ${3:value}, 'CheckpointPath', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'InitialLearnRate', ${6:value}, 'LearnRateSchedule', ${7:value}, 'LearnRateDropFactor', ${8:value}, 'LearnRateDropPeriod', ${9:value}, 'L2Regularization', ${10:value}, 'GradientThresholdMethod', ${11:value}, 'GradientThreshold', ${12:value}, 'MaxEpochs', ${13:value}, 'MiniBatchSize', ${14:value}, 'ResetInputNormalization', ${15:value}, 'OutputFcn', ${16:value}, 'Plots', ${17:value}, 'Shuffle', ${18:value}, 'ValidationData', ${19:value}, 'ValidationFrequency', ${20:value}, 'ValidationPatience', ${21:value}, 'Verbose', ${22:value}, 'VerboseFrequency', ${23:value}, 'WorkerLoad', ${24:value}, 'SequenceLength', ${25:value}, 'SequencePaddingValue', ${26:value}, 'SequencePaddingDirection', ${27:value})'''
-        description: '''trainingOptions(${1:solverName}, 'SquaredGradientDecayFactor', ${2:value}, 'Epsilon', ${3:value}, 'CheckpointPath', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'InitialLearnRate', ${6:value}, 'LearnRateSchedule', ${7:value}, 'LearnRateDropFactor', ${8:value}, 'LearnRateDropPeriod', ${9:value}, 'L2Regularization', ${10:value}, 'GradientThresholdMethod', ${11:value}, 'GradientThreshold', ${12:value}, 'MaxEpochs', ${13:value}, 'MiniBatchSize', ${14:value}, 'ResetInputNormalization', ${15:value}, 'OutputFcn', ${16:value}, 'Plots', ${17:value}, 'Shuffle', ${18:value}, 'ValidationData', ${19:value}, 'ValidationFrequency', ${20:value}, 'ValidationPatience', ${21:value}, 'Verbose', ${22:value}, 'VerboseFrequency', ${23:value}, 'WorkerLoad', ${24:value}, 'SequenceLength', ${25:value}, 'SequencePaddingValue', ${26:value}, 'SequencePaddingDirection', ${27:value})'''
+        description: '''trainingOptions(solverName, 'SquaredGradientDecayFactor', value, 'Epsilon', value, 'CheckpointPath', value, 'ExecutionEnvironment', value, 'InitialLearnRate', value, 'LearnRateSchedule', value, 'LearnRateDropFactor', value, 'LearnRateDropPeriod', value, 'L2Regularization', value, 'GradientThresholdMethod', value, 'GradientThreshold', value, 'MaxEpochs', value, 'MiniBatchSize', value, 'ResetInputNormalization', value, 'OutputFcn', value, 'Plots', value, 'Shuffle', value, 'ValidationData', value, 'ValidationFrequency', value, 'ValidationPatience', value, 'Verbose', value, 'VerboseFrequency', value, 'WorkerLoad', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "lstmLayer":
         prefix: "lstmLayer"
         body: '''lstmLayer(${1:numHiddenUnits}, 'Name', ${2:value}, 'OutputMode', ${3:value}, 'StateActivationFunction', ${4:value}, 'GateActivationFunction', ${5:value}, 'InputWeightsLearnRateFactor', ${6:value}, 'RecurrentWeightsLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'InputWeightsL2Factor', ${9:value}, 'RecurrentWeightsL2Factor', ${10:value}, 'BiasL2Factor', ${11:value}, 'InputWeightsInitializer', ${12:value}, 'RecurrentWeightsInitializer', ${13:value}, 'BiasInitializer', ${14:value}, 'InputWeights', ${15:value}, 'RecurrentWeights', ${16:value}, 'Bias', ${17:value}, 'HiddenState', ${18:value}, 'CellState', ${19:value})'''
-        description: '''lstmLayer(${1:numHiddenUnits}, 'Name', ${2:value}, 'OutputMode', ${3:value}, 'StateActivationFunction', ${4:value}, 'GateActivationFunction', ${5:value}, 'InputWeightsLearnRateFactor', ${6:value}, 'RecurrentWeightsLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'InputWeightsL2Factor', ${9:value}, 'RecurrentWeightsL2Factor', ${10:value}, 'BiasL2Factor', ${11:value}, 'InputWeightsInitializer', ${12:value}, 'RecurrentWeightsInitializer', ${13:value}, 'BiasInitializer', ${14:value}, 'InputWeights', ${15:value}, 'RecurrentWeights', ${16:value}, 'Bias', ${17:value}, 'HiddenState', ${18:value}, 'CellState', ${19:value})'''
+        description: '''lstmLayer(numHiddenUnits, 'Name', value, 'OutputMode', value, 'StateActivationFunction', value, 'GateActivationFunction', value, 'InputWeightsLearnRateFactor', value, 'RecurrentWeightsLearnRateFactor', value, 'BiasLearnRateFactor', value, 'InputWeightsL2Factor', value, 'RecurrentWeightsL2Factor', value, 'BiasL2Factor', value, 'InputWeightsInitializer', value, 'RecurrentWeightsInitializer', value, 'BiasInitializer', value, 'InputWeights', value, 'RecurrentWeights', value, 'Bias', value, 'HiddenState', value, 'CellState', value)'''
 
 
     "vgg16":
@@ -328,113 +328,113 @@
     "averagePooling2dLayer":
         prefix: "averagePooling2dLayer"
         body: '''averagePooling2dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value})'''
-        description: '''averagePooling2dLayer(${1:poolSize}, 'Stride', ${2:value}, 'Padding', ${3:value}, 'Name', ${4:value})'''
+        description: '''averagePooling2dLayer(poolSize, 'Stride', value, 'Padding', value, 'Name', value)'''
 
 
     "crop3dLayer":
         prefix: "crop3dLayer"
         body: '''crop3dLayer(${1:CropLocation}, 'Name', ${2:value})'''
-        description: '''crop3dLayer(${1:CropLocation}, 'Name', ${2:value})'''
+        description: '''crop3dLayer(CropLocation, 'Name', value)'''
 
 
     "fullyConnectedLayer":
         prefix: "fullyConnectedLayer"
         body: '''fullyConnectedLayer(${1:outputSize}, 'WeightLearnRateFactor', ${2:value}, 'BiasLearnRateFactor', ${3:value}, 'WeightL2Factor', ${4:value}, 'BiasL2Factor', ${5:value}, 'Name', ${6:value}, 'WeightsInitializer', ${7:value}, 'BiasInitializer', ${8:value}, 'Weights', ${9:value}, 'Bias', ${10:value})'''
-        description: '''fullyConnectedLayer(${1:outputSize}, 'WeightLearnRateFactor', ${2:value}, 'BiasLearnRateFactor', ${3:value}, 'WeightL2Factor', ${4:value}, 'BiasL2Factor', ${5:value}, 'Name', ${6:value}, 'WeightsInitializer', ${7:value}, 'BiasInitializer', ${8:value}, 'Weights', ${9:value}, 'Bias', ${10:value})'''
+        description: '''fullyConnectedLayer(outputSize, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'Name', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value)'''
 
 
     "reluLayer":
         prefix: "reluLayer"
         body: '''reluLayer('Name', ${1:value})'''
-        description: '''reluLayer('Name', ${1:value})'''
+        description: '''reluLayer('Name', value)'''
 
 
     "imageDataAugmenter":
         prefix: "imageDataAugmenter"
         body: '''imageDataAugmenter('FillValue', ${1:value}, 'RandXReflection', ${2:value}, 'RandYReflection', ${3:value}, 'RandRotation', ${4:value}, 'RandXScale', ${5:value}, 'RandScale', ${6:value}, 'RandYScale', ${7:value}, 'RandXShear', ${8:value}, 'RandYShear', ${9:value}, 'RandXTranslation', ${10:value}, 'RandYTranslation', ${11:value})'''
-        description: '''imageDataAugmenter('FillValue', ${1:value}, 'RandXReflection', ${2:value}, 'RandYReflection', ${3:value}, 'RandRotation', ${4:value}, 'RandXScale', ${5:value}, 'RandScale', ${6:value}, 'RandYScale', ${7:value}, 'RandXShear', ${8:value}, 'RandYShear', ${9:value}, 'RandXTranslation', ${10:value}, 'RandYTranslation', ${11:value})'''
+        description: '''imageDataAugmenter('FillValue', value, 'RandXReflection', value, 'RandYReflection', value, 'RandRotation', value, 'RandXScale', value, 'RandScale', value, 'RandYScale', value, 'RandXShear', value, 'RandYShear', value, 'RandXTranslation', value, 'RandYTranslation', value)'''
 
 
     "additionLayer":
         prefix: "additionLayer"
         body: '''additionLayer(${1:NumInputs}, 'Name', ${2:value})'''
-        description: '''additionLayer(${1:NumInputs}, 'Name', ${2:value})'''
+        description: '''additionLayer(NumInputs, 'Name', value)'''
 
 
     "bilstmLayer":
         prefix: "bilstmLayer"
         body: '''bilstmLayer(${1:numHiddenUnits}, 'Name', ${2:value}, 'OutputMode', ${3:value}, 'StateActivationFunction', ${4:value}, 'GateActivationFunction', ${5:value}, 'InputWeightsLearnRateFactor', ${6:value}, 'RecurrentWeightsLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'InputWeightsL2Factor', ${9:value}, 'RecurrentWeightsL2Factor', ${10:value}, 'BiasL2Factor', ${11:value}, 'InputWeightsInitializer', ${12:value}, 'RecurrentWeightsInitializer', ${13:value}, 'BiasInitializer', ${14:value}, 'InputWeights', ${15:value}, 'RecurrentWeights', ${16:value}, 'Bias', ${17:value}, 'HiddenState', ${18:value}, 'CellState', ${19:value})'''
-        description: '''bilstmLayer(${1:numHiddenUnits}, 'Name', ${2:value}, 'OutputMode', ${3:value}, 'StateActivationFunction', ${4:value}, 'GateActivationFunction', ${5:value}, 'InputWeightsLearnRateFactor', ${6:value}, 'RecurrentWeightsLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'InputWeightsL2Factor', ${9:value}, 'RecurrentWeightsL2Factor', ${10:value}, 'BiasL2Factor', ${11:value}, 'InputWeightsInitializer', ${12:value}, 'RecurrentWeightsInitializer', ${13:value}, 'BiasInitializer', ${14:value}, 'InputWeights', ${15:value}, 'RecurrentWeights', ${16:value}, 'Bias', ${17:value}, 'HiddenState', ${18:value}, 'CellState', ${19:value})'''
+        description: '''bilstmLayer(numHiddenUnits, 'Name', value, 'OutputMode', value, 'StateActivationFunction', value, 'GateActivationFunction', value, 'InputWeightsLearnRateFactor', value, 'RecurrentWeightsLearnRateFactor', value, 'BiasLearnRateFactor', value, 'InputWeightsL2Factor', value, 'RecurrentWeightsL2Factor', value, 'BiasL2Factor', value, 'InputWeightsInitializer', value, 'RecurrentWeightsInitializer', value, 'BiasInitializer', value, 'InputWeights', value, 'RecurrentWeights', value, 'Bias', value, 'HiddenState', value, 'CellState', value)'''
 
 
     "layerGraph":
         prefix: "layerGraph"
         body: '''layerGraph(${1:dlnet})'''
-        description: '''layerGraph(${1:dlnet})'''
+        description: '''layerGraph(dlnet)'''
 
 
     "SeriesNetwork.predictAndUpdateState":
         prefix: "SeriesNetwork.predictAndUpdateState"
         body: '''SeriesNetwork.predictAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
-        description: '''SeriesNetwork.predictAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'SequenceLength', ${5:value}, 'SequencePaddingValue', ${6:value}, 'SequencePaddingDirection', ${7:value}, 'Acceleration', ${8:value})'''
+        description: '''SeriesNetwork.predictAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value, 'Acceleration', value)'''
 
 
     "nnet.cnn.LayerGraph.addLayers":
         prefix: "nnet.cnn.LayerGraph.addLayers"
         body: '''nnet.cnn.LayerGraph.addLayers(${1:lgraph}, ${2:larray})'''
-        description: '''nnet.cnn.LayerGraph.addLayers(${1:lgraph}, ${2:larray})'''
+        description: '''nnet.cnn.LayerGraph.addLayers(lgraph, larray)'''
 
 
     "sequenceInputLayer":
         prefix: "sequenceInputLayer"
         body: '''sequenceInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
-        description: '''sequenceInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
+        description: '''sequenceInputLayer(inputSize, 'Normalization', value, 'NormalizationDimension', value, 'Name', value, 'Mean', value, 'StandardDeviation', value, 'Min', value, 'Max', value)'''
 
 
     "DAGNetwork.predictAndUpdateState":
         prefix: "DAGNetwork.predictAndUpdateState"
         body: '''DAGNetwork.predictAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
-        description: '''DAGNetwork.predictAndUpdateState(${1:net}, ${2:X}, 'MiniBatchSize', ${3:value}, 'ExecutionEnvironment', ${4:value}, 'Acceleration', ${5:value}, 'SequenceLength', ${6:value}, 'SequencePaddingValue', ${7:value}, 'SequencePaddingDirection', ${8:value})'''
+        description: '''DAGNetwork.predictAndUpdateState(net, X, 'MiniBatchSize', value, 'ExecutionEnvironment', value, 'Acceleration', value, 'SequenceLength', value, 'SequencePaddingValue', value, 'SequencePaddingDirection', value)'''
 
 
     "nnet.internal.cnn.layer.Externalizable.getL2Factor":
         prefix: "nnet.internal.cnn.layer.Externalizable.getL2Factor"
         body: '''nnet.internal.cnn.layer.Externalizable.getL2Factor(${1:layer}, ${2:learnableParameterName})'''
-        description: '''nnet.internal.cnn.layer.Externalizable.getL2Factor(${1:layer}, ${2:learnableParameterName})'''
+        description: '''nnet.internal.cnn.layer.Externalizable.getL2Factor(layer, learnableParameterName)'''
 
 
     "imageInputLayer":
         prefix: "imageInputLayer"
         body: '''imageInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
-        description: '''imageInputLayer(${1:inputSize}, 'Normalization', ${2:value}, 'NormalizationDimension', ${3:value}, 'Name', ${4:value}, 'Mean', ${5:value}, 'StandardDeviation', ${6:value}, 'Min', ${7:value}, 'Max', ${8:value})'''
+        description: '''imageInputLayer(inputSize, 'Normalization', value, 'NormalizationDimension', value, 'Name', value, 'Mean', value, 'StandardDeviation', value, 'Min', value, 'Max', value)'''
 
 
     "globalAveragePooling3dLayer":
         prefix: "globalAveragePooling3dLayer"
         body: '''globalAveragePooling3dLayer('Name', ${1:value})'''
-        description: '''globalAveragePooling3dLayer('Name', ${1:value})'''
+        description: '''globalAveragePooling3dLayer('Name', value)'''
 
 
     "dropoutLayer":
         prefix: "dropoutLayer"
         body: '''dropoutLayer(${1:probability}, 'Name', ${2:value})'''
-        description: '''dropoutLayer(${1:probability}, 'Name', ${2:value})'''
+        description: '''dropoutLayer(probability, 'Name', value)'''
 
 
     "convolution3dLayer":
         prefix: "convolution3dLayer"
         body: '''convolution3dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'DilationFactor', ${4:value}, 'Padding', ${5:value}, 'NumChannels', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
-        description: '''convolution3dLayer(${1:filterSize}, ${2:numFilters}, 'Stride', ${3:value}, 'DilationFactor', ${4:value}, 'Padding', ${5:value}, 'NumChannels', ${6:value}, 'WeightLearnRateFactor', ${7:value}, 'BiasLearnRateFactor', ${8:value}, 'WeightL2Factor', ${9:value}, 'BiasL2Factor', ${10:value}, 'WeightsInitializer', ${11:value}, 'BiasInitializer', ${12:value}, 'Weights', ${13:value}, 'Bias', ${14:value}, 'Name', ${15:value})'''
+        description: '''convolution3dLayer(filterSize, numFilters, 'Stride', value, 'DilationFactor', value, 'Padding', value, 'NumChannels', value, 'WeightLearnRateFactor', value, 'BiasLearnRateFactor', value, 'WeightL2Factor', value, 'BiasL2Factor', value, 'WeightsInitializer', value, 'BiasInitializer', value, 'Weights', value, 'Bias', value, 'Name', value)'''
 
 
     "depthConcatenationLayer":
         prefix: "depthConcatenationLayer"
         body: '''depthConcatenationLayer(${1:NumInputs}, 'Name', ${2:value})'''
-        description: '''depthConcatenationLayer(${1:NumInputs}, 'Name', ${2:value})'''
+        description: '''depthConcatenationLayer(NumInputs, 'Name', value)'''
 
 
     "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor":
         prefix: "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor"
         body: '''nnet.internal.cnn.layer.Externalizable.setLearnRateFactor(${1:layer}, ${2:learnableParameterName}, ${3:learnRateFactor})'''
-        description: '''nnet.internal.cnn.layer.Externalizable.setLearnRateFactor(${1:layer}, ${2:learnableParameterName}, ${3:learnRateFactor})'''
+        description: '''nnet.internal.cnn.layer.Externalizable.setLearnRateFactor(layer, learnableParameterName, learnRateFactor)'''
 

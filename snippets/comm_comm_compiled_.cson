@@ -4,365 +4,365 @@
     "comm.BCHDecoder":
         prefix: "comm.BCHDecoder"
         body: '''comm.BCHDecoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
-        description: '''comm.BCHDecoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
+        description: '''comm.BCHDecoder(CodewordLength, MessageLength, GeneratorPolynomial, ShortMessageLength, varargin)'''
 
 
     "comm.BlockDeinterleaver":
         prefix: "comm.BlockDeinterleaver"
         body: '''comm.BlockDeinterleaver(${1:PermutationVector}, ${2:varargin})'''
-        description: '''comm.BlockDeinterleaver(${1:PermutationVector}, ${2:varargin})'''
+        description: '''comm.BlockDeinterleaver(PermutationVector, varargin)'''
 
 
     "comm.PSKTCMDemodulator":
         prefix: "comm.PSKTCMDemodulator"
         body: '''comm.PSKTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
-        description: '''comm.PSKTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''comm.PSKTCMDemodulator(TrellisStructure, varargin)'''
 
 
     "comm.FSKDemodulator":
         prefix: "comm.FSKDemodulator"
         body: '''comm.FSKDemodulator(${1:ModulationOrder}, ${2:FrequencySeparation}, ${3:SymbolRate}, ${4:varargin})'''
-        description: '''comm.FSKDemodulator(${1:ModulationOrder}, ${2:FrequencySeparation}, ${3:SymbolRate}, ${4:varargin})'''
+        description: '''comm.FSKDemodulator(ModulationOrder, FrequencySeparation, SymbolRate, varargin)'''
 
 
     "comm.PSKModulator":
         prefix: "comm.PSKModulator"
         body: '''comm.PSKModulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
-        description: '''comm.PSKModulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
+        description: '''comm.PSKModulator(ModulationOrder, PhaseOffset, varargin)'''
 
 
     "comm.ErrorRate":
         prefix: "comm.ErrorRate"
         body: '''comm.ErrorRate(${1:varargin})'''
-        description: '''comm.ErrorRate(${1:varargin})'''
+        description: '''comm.ErrorRate(varargin)'''
 
 
     "comm.AlgebraicDeinterleaver":
         prefix: "comm.AlgebraicDeinterleaver"
         body: '''comm.AlgebraicDeinterleaver(${1:varargin})'''
-        description: '''comm.AlgebraicDeinterleaver(${1:varargin})'''
+        description: '''comm.AlgebraicDeinterleaver(varargin)'''
 
 
     "comm.QPSKDemodulator":
         prefix: "comm.QPSKDemodulator"
         body: '''comm.QPSKDemodulator(${1:PhaseOffset}, ${2:varargin})'''
-        description: '''comm.QPSKDemodulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''comm.QPSKDemodulator(PhaseOffset, varargin)'''
 
 
     "comm.MatrixInterleaver":
         prefix: "comm.MatrixInterleaver"
         body: '''comm.MatrixInterleaver(${1:NumRows}, ${2:NumColumns}, ${3:varargin})'''
-        description: '''comm.MatrixInterleaver(${1:NumRows}, ${2:NumColumns}, ${3:varargin})'''
+        description: '''comm.MatrixInterleaver(NumRows, NumColumns, varargin)'''
 
 
     "comm.FSKModulator":
         prefix: "comm.FSKModulator"
         body: '''comm.FSKModulator(${1:ModulationOrder}, ${2:FrequencySeparation}, ${3:SymbolRate}, ${4:varargin})'''
-        description: '''comm.FSKModulator(${1:ModulationOrder}, ${2:FrequencySeparation}, ${3:SymbolRate}, ${4:varargin})'''
+        description: '''comm.FSKModulator(ModulationOrder, FrequencySeparation, SymbolRate, varargin)'''
 
 
     "comm.MatrixDeinterleaver":
         prefix: "comm.MatrixDeinterleaver"
         body: '''comm.MatrixDeinterleaver(${1:NumRows}, ${2:NumColumns}, ${3:varargin})'''
-        description: '''comm.MatrixDeinterleaver(${1:NumRows}, ${2:NumColumns}, ${3:varargin})'''
+        description: '''comm.MatrixDeinterleaver(NumRows, NumColumns, varargin)'''
 
 
     "comm.BlockInterleaver":
         prefix: "comm.BlockInterleaver"
         body: '''comm.BlockInterleaver(${1:PermutationVector}, ${2:varargin})'''
-        description: '''comm.BlockInterleaver(${1:PermutationVector}, ${2:varargin})'''
+        description: '''comm.BlockInterleaver(PermutationVector, varargin)'''
 
 
     "comm.DPSKDemodulator":
         prefix: "comm.DPSKDemodulator"
         body: '''comm.DPSKDemodulator(${1:ModulationOrder}, ${2:PhaseRotation}, ${3:varargin})'''
-        description: '''comm.DPSKDemodulator(${1:ModulationOrder}, ${2:PhaseRotation}, ${3:varargin})'''
+        description: '''comm.DPSKDemodulator(ModulationOrder, PhaseRotation, varargin)'''
 
 
     "comm.MultiplexedDeinterleaver":
         prefix: "comm.MultiplexedDeinterleaver"
         body: '''comm.MultiplexedDeinterleaver(${1:varargin})'''
-        description: '''comm.MultiplexedDeinterleaver(${1:varargin})'''
+        description: '''comm.MultiplexedDeinterleaver(varargin)'''
 
 
     "comm.ConvolutionalEncoder":
         prefix: "comm.ConvolutionalEncoder"
         body: '''comm.ConvolutionalEncoder(${1:TrellisStructure}, ${2:varargin})'''
-        description: '''comm.ConvolutionalEncoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''comm.ConvolutionalEncoder(TrellisStructure, varargin)'''
 
 
     "comm.Scrambler":
         prefix: "comm.Scrambler"
         body: '''comm.Scrambler(${1:CalculationBase}, ${2:Polynomial}, ${3:InitialConditions}, ${4:varargin})'''
-        description: '''comm.Scrambler(${1:CalculationBase}, ${2:Polynomial}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''comm.Scrambler(CalculationBase, Polynomial, InitialConditions, varargin)'''
 
 
     "comm.GMSKModulator":
         prefix: "comm.GMSKModulator"
         body: '''comm.GMSKModulator(${1:varargin})'''
-        description: '''comm.GMSKModulator(${1:varargin})'''
+        description: '''comm.GMSKModulator(varargin)'''
 
 
     "comm.OSTBCEncoder":
         prefix: "comm.OSTBCEncoder"
         body: '''comm.OSTBCEncoder(${1:NumTransmitAntennas}, ${2:varargin})'''
-        description: '''comm.OSTBCEncoder(${1:NumTransmitAntennas}, ${2:varargin})'''
+        description: '''comm.OSTBCEncoder(NumTransmitAntennas, varargin)'''
 
 
     "comm.CPFSKModulator":
         prefix: "comm.CPFSKModulator"
         body: '''comm.CPFSKModulator(${1:ModulationOrder}, ${2:varargin})'''
-        description: '''comm.CPFSKModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''comm.CPFSKModulator(ModulationOrder, varargin)'''
 
 
     "comm.MSKDemodulator":
         prefix: "comm.MSKDemodulator"
         body: '''comm.MSKDemodulator(${1:varargin})'''
-        description: '''comm.MSKDemodulator(${1:varargin})'''
+        description: '''comm.MSKDemodulator(varargin)'''
 
 
     "comm.IntegerToBit":
         prefix: "comm.IntegerToBit"
         body: '''comm.IntegerToBit(${1:BitsPerInteger}, ${2:varargin})'''
-        description: '''comm.IntegerToBit(${1:BitsPerInteger}, ${2:varargin})'''
+        description: '''comm.IntegerToBit(BitsPerInteger, varargin)'''
 
 
     "comm.ConvolutionalDeinterleaver":
         prefix: "comm.ConvolutionalDeinterleaver"
         body: '''comm.ConvolutionalDeinterleaver(${1:varargin})'''
-        description: '''comm.ConvolutionalDeinterleaver(${1:varargin})'''
+        description: '''comm.ConvolutionalDeinterleaver(varargin)'''
 
 
     "comm.DQPSKDemodulator":
         prefix: "comm.DQPSKDemodulator"
         body: '''comm.DQPSKDemodulator(${1:PhaseRotation}, ${2:varargin})'''
-        description: '''comm.DQPSKDemodulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''comm.DQPSKDemodulator(PhaseRotation, varargin)'''
 
 
     "comm.QPSKModulator":
         prefix: "comm.QPSKModulator"
         body: '''comm.QPSKModulator(${1:PhaseOffset}, ${2:varargin})'''
-        description: '''comm.QPSKModulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''comm.QPSKModulator(PhaseOffset, varargin)'''
 
 
     "comm.CPFSKDemodulator":
         prefix: "comm.CPFSKDemodulator"
         body: '''comm.CPFSKDemodulator(${1:ModulationOrder}, ${2:varargin})'''
-        description: '''comm.CPFSKDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''comm.CPFSKDemodulator(ModulationOrder, varargin)'''
 
 
     "comm.DBPSKModulator":
         prefix: "comm.DBPSKModulator"
         body: '''comm.DBPSKModulator(${1:PhaseRotation}, ${2:varargin})'''
-        description: '''comm.DBPSKModulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''comm.DBPSKModulator(PhaseRotation, varargin)'''
 
 
     "comm.MultiplexedInterleaver":
         prefix: "comm.MultiplexedInterleaver"
         body: '''comm.MultiplexedInterleaver(${1:varargin})'''
-        description: '''comm.MultiplexedInterleaver(${1:varargin})'''
+        description: '''comm.MultiplexedInterleaver(varargin)'''
 
 
     "comm.GeneralQAMDemodulator":
         prefix: "comm.GeneralQAMDemodulator"
         body: '''comm.GeneralQAMDemodulator(${1:Constellation}, ${2:varargin})'''
-        description: '''comm.GeneralQAMDemodulator(${1:Constellation}, ${2:varargin})'''
+        description: '''comm.GeneralQAMDemodulator(Constellation, varargin)'''
 
 
     "comm.ConvolutionalInterleaver":
         prefix: "comm.ConvolutionalInterleaver"
         body: '''comm.ConvolutionalInterleaver(${1:varargin})'''
-        description: '''comm.ConvolutionalInterleaver(${1:varargin})'''
+        description: '''comm.ConvolutionalInterleaver(varargin)'''
 
 
     "comm.DPSKModulator":
         prefix: "comm.DPSKModulator"
         body: '''comm.DPSKModulator(${1:ModulationOrder}, ${2:PhaseRotation}, ${3:varargin})'''
-        description: '''comm.DPSKModulator(${1:ModulationOrder}, ${2:PhaseRotation}, ${3:varargin})'''
+        description: '''comm.DPSKModulator(ModulationOrder, PhaseRotation, varargin)'''
 
 
     "comm.MSKModulator":
         prefix: "comm.MSKModulator"
         body: '''comm.MSKModulator(${1:varargin})'''
-        description: '''comm.MSKModulator(${1:varargin})'''
+        description: '''comm.MSKModulator(varargin)'''
 
 
     "comm.GMSKDemodulator":
         prefix: "comm.GMSKDemodulator"
         body: '''comm.GMSKDemodulator(${1:varargin})'''
-        description: '''comm.GMSKDemodulator(${1:varargin})'''
+        description: '''comm.GMSKDemodulator(varargin)'''
 
 
     "comm.CRCGenerator":
         prefix: "comm.CRCGenerator"
         body: '''comm.CRCGenerator(${1:Polynomial}, ${2:varargin})'''
-        description: '''comm.CRCGenerator(${1:Polynomial}, ${2:varargin})'''
+        description: '''comm.CRCGenerator(Polynomial, varargin)'''
 
 
     "comm.BPSKDemodulator":
         prefix: "comm.BPSKDemodulator"
         body: '''comm.BPSKDemodulator(${1:PhaseOffset}, ${2:varargin})'''
-        description: '''comm.BPSKDemodulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''comm.BPSKDemodulator(PhaseOffset, varargin)'''
 
 
     "comm.MLSEEqualizer":
         prefix: "comm.MLSEEqualizer"
         body: '''comm.MLSEEqualizer(${1:Channel}, ${2:varargin})'''
-        description: '''comm.MLSEEqualizer(${1:Channel}, ${2:varargin})'''
+        description: '''comm.MLSEEqualizer(Channel, varargin)'''
 
 
     "comm.CRCDetector":
         prefix: "comm.CRCDetector"
         body: '''comm.CRCDetector(${1:Polynomial}, ${2:varargin})'''
-        description: '''comm.CRCDetector(${1:Polynomial}, ${2:varargin})'''
+        description: '''comm.CRCDetector(Polynomial, varargin)'''
 
 
     "comm.IntegrateAndDumpFilter":
         prefix: "comm.IntegrateAndDumpFilter"
         body: '''comm.IntegrateAndDumpFilter(${1:IntegrationPeriod}, ${2:varargin})'''
-        description: '''comm.IntegrateAndDumpFilter(${1:IntegrationPeriod}, ${2:varargin})'''
+        description: '''comm.IntegrateAndDumpFilter(IntegrationPeriod, varargin)'''
 
 
     "comm.OSTBCCombiner":
         prefix: "comm.OSTBCCombiner"
         body: '''comm.OSTBCCombiner(${1:NumTransmitAntennas}, ${2:NumReceiveAntennas}, ${3:varargin})'''
-        description: '''comm.OSTBCCombiner(${1:NumTransmitAntennas}, ${2:NumReceiveAntennas}, ${3:varargin})'''
+        description: '''comm.OSTBCCombiner(NumTransmitAntennas, NumReceiveAntennas, varargin)'''
 
 
     "comm.PhaseFrequencyOffset":
         prefix: "comm.PhaseFrequencyOffset"
         body: '''comm.PhaseFrequencyOffset(${1:varargin})'''
-        description: '''comm.PhaseFrequencyOffset(${1:varargin})'''
+        description: '''comm.PhaseFrequencyOffset(varargin)'''
 
 
     "comm.KasamiSequence":
         prefix: "comm.KasamiSequence"
         body: '''comm.KasamiSequence(${1:varargin})'''
-        description: '''comm.KasamiSequence(${1:varargin})'''
+        description: '''comm.KasamiSequence(varargin)'''
 
 
     "comm.BCHEncoder":
         prefix: "comm.BCHEncoder"
         body: '''comm.BCHEncoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
-        description: '''comm.BCHEncoder(${1:CodewordLength}, ${2:MessageLength}, ${3:GeneratorPolynomial}, ${4:ShortMessageLength}, ${5:varargin})'''
+        description: '''comm.BCHEncoder(CodewordLength, MessageLength, GeneratorPolynomial, ShortMessageLength, varargin)'''
 
 
     "comm.RectangularQAMModulator":
         prefix: "comm.RectangularQAMModulator"
         body: '''comm.RectangularQAMModulator(${1:ModulationOrder}, ${2:varargin})'''
-        description: '''comm.RectangularQAMModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''comm.RectangularQAMModulator(ModulationOrder, varargin)'''
 
 
     "comm.BitToInteger":
         prefix: "comm.BitToInteger"
         body: '''comm.BitToInteger(${1:BitsPerInteger}, ${2:varargin})'''
-        description: '''comm.BitToInteger(${1:BitsPerInteger}, ${2:varargin})'''
+        description: '''comm.BitToInteger(BitsPerInteger, varargin)'''
 
 
     "comm.LDPCEncoder":
         prefix: "comm.LDPCEncoder"
         body: '''comm.LDPCEncoder(${1:ParityCheckMatrix}, ${2:varargin})'''
-        description: '''comm.LDPCEncoder(${1:ParityCheckMatrix}, ${2:varargin})'''
+        description: '''comm.LDPCEncoder(ParityCheckMatrix, varargin)'''
 
 
     "comm.PAMModulator":
         prefix: "comm.PAMModulator"
         body: '''comm.PAMModulator(${1:ModulationOrder}, ${2:varargin})'''
-        description: '''comm.PAMModulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''comm.PAMModulator(ModulationOrder, varargin)'''
 
 
     "comm.PSKDemodulator":
         prefix: "comm.PSKDemodulator"
         body: '''comm.PSKDemodulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
-        description: '''comm.PSKDemodulator(${1:ModulationOrder}, ${2:PhaseOffset}, ${3:varargin})'''
+        description: '''comm.PSKDemodulator(ModulationOrder, PhaseOffset, varargin)'''
 
 
     "comm.DQPSKModulator":
         prefix: "comm.DQPSKModulator"
         body: '''comm.DQPSKModulator(${1:PhaseRotation}, ${2:varargin})'''
-        description: '''comm.DQPSKModulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''comm.DQPSKModulator(PhaseRotation, varargin)'''
 
 
     "comm.APPDecoder":
         prefix: "comm.APPDecoder"
         body: '''comm.APPDecoder(${1:TrellisStructure}, ${2:varargin})'''
-        description: '''comm.APPDecoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''comm.APPDecoder(TrellisStructure, varargin)'''
 
 
     "comm.PAMDemodulator":
         prefix: "comm.PAMDemodulator"
         body: '''comm.PAMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
-        description: '''comm.PAMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''comm.PAMDemodulator(ModulationOrder, varargin)'''
 
 
     "comm.MatrixHelicalScanDeinterleaver":
         prefix: "comm.MatrixHelicalScanDeinterleaver"
         body: '''comm.MatrixHelicalScanDeinterleaver(${1:varargin})'''
-        description: '''comm.MatrixHelicalScanDeinterleaver(${1:varargin})'''
+        description: '''comm.MatrixHelicalScanDeinterleaver(varargin)'''
 
 
     "comm.Descrambler":
         prefix: "comm.Descrambler"
         body: '''comm.Descrambler(${1:CalculationBase}, ${2:Polynomial}, ${3:InitialConditions}, ${4:varargin})'''
-        description: '''comm.Descrambler(${1:CalculationBase}, ${2:Polynomial}, ${3:InitialConditions}, ${4:varargin})'''
+        description: '''comm.Descrambler(CalculationBase, Polynomial, InitialConditions, varargin)'''
 
 
     "comm.MatrixHelicalScanInterleaver":
         prefix: "comm.MatrixHelicalScanInterleaver"
         body: '''comm.MatrixHelicalScanInterleaver(${1:varargin})'''
-        description: '''comm.MatrixHelicalScanInterleaver(${1:varargin})'''
+        description: '''comm.MatrixHelicalScanInterleaver(varargin)'''
 
 
     "comm.GeneralQAMModulator":
         prefix: "comm.GeneralQAMModulator"
         body: '''comm.GeneralQAMModulator(${1:Constellation}, ${2:varargin})'''
-        description: '''comm.GeneralQAMModulator(${1:Constellation}, ${2:varargin})'''
+        description: '''comm.GeneralQAMModulator(Constellation, varargin)'''
 
 
     "comm.RectangularQAMTCMDemodulator":
         prefix: "comm.RectangularQAMTCMDemodulator"
         body: '''comm.RectangularQAMTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
-        description: '''comm.RectangularQAMTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''comm.RectangularQAMTCMDemodulator(TrellisStructure, varargin)'''
 
 
     "comm.BPSKModulator":
         prefix: "comm.BPSKModulator"
         body: '''comm.BPSKModulator(${1:PhaseOffset}, ${2:varargin})'''
-        description: '''comm.BPSKModulator(${1:PhaseOffset}, ${2:varargin})'''
+        description: '''comm.BPSKModulator(PhaseOffset, varargin)'''
 
 
     "comm.PNSequence":
         prefix: "comm.PNSequence"
         body: '''comm.PNSequence(${1:varargin})'''
-        description: '''comm.PNSequence(${1:varargin})'''
+        description: '''comm.PNSequence(varargin)'''
 
 
     "comm.AlgebraicInterleaver":
         prefix: "comm.AlgebraicInterleaver"
         body: '''comm.AlgebraicInterleaver(${1:varargin})'''
-        description: '''comm.AlgebraicInterleaver(${1:varargin})'''
+        description: '''comm.AlgebraicInterleaver(varargin)'''
 
 
     "comm.GeneralQAMTCMDemodulator":
         prefix: "comm.GeneralQAMTCMDemodulator"
         body: '''comm.GeneralQAMTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
-        description: '''comm.GeneralQAMTCMDemodulator(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''comm.GeneralQAMTCMDemodulator(TrellisStructure, varargin)'''
 
 
     "comm.ViterbiDecoder":
         prefix: "comm.ViterbiDecoder"
         body: '''comm.ViterbiDecoder(${1:TrellisStructure}, ${2:varargin})'''
-        description: '''comm.ViterbiDecoder(${1:TrellisStructure}, ${2:varargin})'''
+        description: '''comm.ViterbiDecoder(TrellisStructure, varargin)'''
 
 
     "comm.DBPSKDemodulator":
         prefix: "comm.DBPSKDemodulator"
         body: '''comm.DBPSKDemodulator(${1:PhaseRotation}, ${2:varargin})'''
-        description: '''comm.DBPSKDemodulator(${1:PhaseRotation}, ${2:varargin})'''
+        description: '''comm.DBPSKDemodulator(PhaseRotation, varargin)'''
 
 
     "comm.RectangularQAMDemodulator":
         prefix: "comm.RectangularQAMDemodulator"
         body: '''comm.RectangularQAMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
-        description: '''comm.RectangularQAMDemodulator(${1:ModulationOrder}, ${2:varargin})'''
+        description: '''comm.RectangularQAMDemodulator(ModulationOrder, varargin)'''
 

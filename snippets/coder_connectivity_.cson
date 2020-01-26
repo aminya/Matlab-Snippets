@@ -4,5 +4,5 @@
     "buildStandaloneCoderAssumptions":
         prefix: "buildStandaloneCoderAssumptions"
         body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
-        description: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
+        description: '''buildStandaloneCoderAssumptions(buildFolder)'''
 

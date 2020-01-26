@@ -4,503 +4,503 @@
     "strings":
         prefix: "strings"
         body: '''${1:str} = strings(${1:optional_n})'''
-        description: '''${1:str} = strings(${1:optional_n})'''
+        description: '''str = strings(optional_n)'''
 
 
     "int2str":
         prefix: "int2str"
         body: '''${1:str} = int2str(${1:N})'''
-        description: '''${1:str} = int2str(${1:N})'''
+        description: '''str = int2str(N)'''
 
 
     "string.splitlines":
         prefix: "string.splitlines"
         body: '''${1:newStr} = string.splitlines(${1:str})'''
-        description: '''${1:newStr} = string.splitlines(${1:str})'''
+        description: '''newStr = string.splitlines(str)'''
 
 
     "regexprep":
         prefix: "regexprep"
         body: '''${1:newStr} = regexprep(${1:str}, ${2:expression}, ${3:replace}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing})'''
-        description: '''${1:newStr} = regexprep(${1:str}, ${2:expression}, ${3:replace}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing})'''
+        description: '''newStr = regexprep(str, expression, replace, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing)'''
 
 
     "sprintf":
         prefix: "sprintf"
         body: '''[${1:str}, ${2:errmsg}] = sprintf(${1:formatSpec}, ${2:A})'''
-        description: '''[${1:str}, ${2:errmsg}] = sprintf(${1:formatSpec}, ${2:A})'''
+        description: '''[str, errmsg] = sprintf(formatSpec, A)'''
 
 
     "string.pad":
         prefix: "string.pad"
         body: '''${1:tf} = string.pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
-        description: '''${1:tf} = string.pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
+        description: '''tf = string.pad(str, optional_width, side, padCharacter)'''
 
 
     "native2unicode":
         prefix: "native2unicode"
         body: '''${1:unicodestr} = native2unicode(${1:bytes}, ${2:optional_encoding})'''
-        description: '''${1:unicodestr} = native2unicode(${1:bytes}, ${2:optional_encoding})'''
+        description: '''unicodestr = native2unicode(bytes, optional_encoding)'''
 
 
     "extractBefore":
         prefix: "extractBefore"
         body: '''${1:newStr} = extractBefore(${1:str}, ${2:matchStr})'''
-        description: '''${1:newStr} = extractBefore(${1:str}, ${2:matchStr})'''
+        description: '''newStr = extractBefore(str, matchStr)'''
 
 
     "string.insertAfter":
         prefix: "string.insertAfter"
         body: '''${1:newStr} = string.insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
-        description: '''${1:newStr} = string.insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
+        description: '''newStr = string.insertAfter(str, startStr, newText)'''
 
 
     "split":
         prefix: "split"
         body: '''[${1:newStr}, ${2:matches}] = split(${1:str}, ${2:delimiter}, ${3:dim})'''
-        description: '''[${1:newStr}, ${2:matches}] = split(${1:str}, ${2:delimiter}, ${3:dim})'''
+        description: '''[newStr, matches] = split(str, delimiter, dim)'''
 
 
     "endsWith":
         prefix: "endsWith"
         body: '''${1:tf} = endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = endsWith(str, pattern, 'IgnoreCase', value)'''
 
 
     "strfind":
         prefix: "strfind"
         body: '''${1:k} = strfind(${1:text}, ${2:pattern}, 'ForceCellOutput', ${3:value})'''
-        description: '''${1:k} = strfind(${1:text}, ${2:pattern}, 'ForceCellOutput', ${3:value})'''
+        description: '''k = strfind(text, pattern, 'ForceCellOutput', value)'''
 
 
     "strncmpi":
         prefix: "strncmpi"
         body: '''${1:tf} = strncmpi(${1:C}, ${2:C}, ${3:n})'''
-        description: '''${1:tf} = strncmpi(${1:C}, ${2:C}, ${3:n})'''
+        description: '''tf = strncmpi(C, C, n)'''
 
 
     "strsplit":
         prefix: "strsplit"
         body: '''[${1:C}, ${2:matches}] = strsplit(${1:str}, ${2:delimiter}, 'CollapseDelimiters', ${3:value}, 'DelimiterType', ${4:value})'''
-        description: '''[${1:C}, ${2:matches}] = strsplit(${1:str}, ${2:delimiter}, 'CollapseDelimiters', ${3:value}, 'DelimiterType', ${4:value})'''
+        description: '''[C, matches] = strsplit(str, delimiter, 'CollapseDelimiters', value, 'DelimiterType', value)'''
 
 
     "insertBefore":
         prefix: "insertBefore"
         body: '''${1:newStr} = insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
-        description: '''${1:newStr} = insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
+        description: '''newStr = insertBefore(str, endStr, newText)'''
 
 
     "string.replace":
         prefix: "string.replace"
         body: '''${1:newStr} = string.replace(${1:str}, ${2:old}, ${3:new})'''
-        description: '''${1:newStr} = string.replace(${1:str}, ${2:old}, ${3:new})'''
+        description: '''newStr = string.replace(str, old, new)'''
 
 
     "strjoin":
         prefix: "strjoin"
         body: '''${1:str} = strjoin(${1:C}, ${2:optional_delimiter})'''
-        description: '''${1:str} = strjoin(${1:C}, ${2:optional_delimiter})'''
+        description: '''str = strjoin(C, optional_delimiter)'''
 
 
     "pad":
         prefix: "pad"
         body: '''${1:tf} = pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
-        description: '''${1:tf} = pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})'''
+        description: '''tf = pad(str, optional_width, side, padCharacter)'''
 
 
     "contains":
         prefix: "contains"
         body: '''${1:tf} = contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = contains(str, pattern, 'IgnoreCase', value)'''
 
 
     "regexpi":
         prefix: "regexpi"
         body: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexpi(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
-        description: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexpi(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
+        description: '''[out1, out2, out3, out4, out5, out6, out7] = regexpi(str, expression, outkeys, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing, optForceCell)'''
 
 
     "deblank":
         prefix: "deblank"
         body: '''${1:newTxt} = deblank(${1:txt})'''
-        description: '''${1:newTxt} = deblank(${1:txt})'''
+        description: '''newTxt = deblank(txt)'''
 
 
     "strncmp":
         prefix: "strncmp"
         body: '''${1:tf} = strncmp(${1:C}, ${2:C}, ${3:n})'''
-        description: '''${1:tf} = strncmp(${1:C}, ${2:C}, ${3:n})'''
+        description: '''tf = strncmp(C, C, n)'''
 
 
     "extractAfter":
         prefix: "extractAfter"
         body: '''${1:newStr} = extractAfter(${1:str}, ${2:matchStr})'''
-        description: '''${1:newStr} = extractAfter(${1:str}, ${2:matchStr})'''
+        description: '''newStr = extractAfter(str, matchStr)'''
 
 
     "reverse":
         prefix: "reverse"
         body: '''${1:newStr} = reverse(${1:str})'''
-        description: '''${1:newStr} = reverse(${1:str})'''
+        description: '''newStr = reverse(str)'''
 
 
     "str2double":
         prefix: "str2double"
         body: '''${1:X} = str2double(${1:str})'''
-        description: '''${1:X} = str2double(${1:str})'''
+        description: '''X = str2double(str)'''
 
 
     "strcmp":
         prefix: "strcmp"
         body: '''${1:tf} = strcmp(${1:s1}, ${2:s2})'''
-        description: '''${1:tf} = strcmp(${1:s1}, ${2:s2})'''
+        description: '''tf = strcmp(s1, s2)'''
 
 
     "splitlines":
         prefix: "splitlines"
         body: '''${1:newStr} = splitlines(${1:str})'''
-        description: '''${1:newStr} = splitlines(${1:str})'''
+        description: '''newStr = splitlines(str)'''
 
 
     "mat2str":
         prefix: "mat2str"
         body: '''${1:str} = mat2str(${1:A}, ${2:optional_n}, ${3:optional_'class'})'''
-        description: '''${1:str} = mat2str(${1:A}, ${2:optional_n}, ${3:optional_'class'})'''
+        description: '''str = mat2str(A, optional_n, optional_'class')'''
 
 
     "strtrim":
         prefix: "strtrim"
         body: '''${1:newTxt} = strtrim(${1:txt})'''
-        description: '''${1:newTxt} = strtrim(${1:txt})'''
+        description: '''newTxt = strtrim(txt)'''
 
 
     "isstring":
         prefix: "isstring"
         body: '''${1:tf} = isstring(${1:A})'''
-        description: '''${1:tf} = isstring(${1:A})'''
+        description: '''tf = isstring(A)'''
 
 
     "string.replaceBetween":
         prefix: "string.replaceBetween"
         body: '''${1:out} = string.replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
-        description: '''${1:out} = string.replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
+        description: '''out = string.replaceBetween(str, startPosition, endPosition, replaceStr, 'Boundaries', value)'''
 
 
     "count":
         prefix: "count"
         body: '''${1:count} = count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:count} = count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''count = count(str, pattern, 'IgnoreCase', value)'''
 
 
     "bin2dec":
         prefix: "bin2dec"
         body: '''${1:d} = bin2dec(${1:binarystr})'''
-        description: '''${1:d} = bin2dec(${1:binarystr})'''
+        description: '''d = bin2dec(binarystr)'''
 
 
     "strip":
         prefix: "strip"
         body: '''${1:tf} = strip(${1:str}, ${2:side}, ${3:padCharacter})'''
-        description: '''${1:tf} = strip(${1:str}, ${2:side}, ${3:padCharacter})'''
+        description: '''tf = strip(str, side, padCharacter)'''
 
 
     "isstrprop":
         prefix: "isstrprop"
         body: '''${1:out} = isstrprop(${1:text}, ${2:category}, 'ForceCellOutput', ${3:value})'''
-        description: '''${1:out} = isstrprop(${1:text}, ${2:category}, 'ForceCellOutput', ${3:value})'''
+        description: '''out = isstrprop(text, category, 'ForceCellOutput', value)'''
 
 
     "string.eraseBetween":
         prefix: "string.eraseBetween"
         body: '''${1:count} = string.eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
-        description: '''${1:count} = string.eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''count = string.eraseBetween(str, startPosition, endPosition, 'Boundaries', value)'''
 
 
     "string.extractBefore":
         prefix: "string.extractBefore"
         body: '''${1:newStr} = string.extractBefore(${1:str}, ${2:matchStr})'''
-        description: '''${1:newStr} = string.extractBefore(${1:str}, ${2:matchStr})'''
+        description: '''newStr = string.extractBefore(str, matchStr)'''
 
 
     "strtok":
         prefix: "strtok"
         body: '''[${1:token}, ${2:remain}] = strtok(${1:str}, ${2:delimiter})'''
-        description: '''[${1:token}, ${2:remain}] = strtok(${1:str}, ${2:delimiter})'''
+        description: '''[token, remain] = strtok(str, delimiter)'''
 
 
     "base2dec":
         prefix: "base2dec"
         body: '''${1:d} = base2dec(${1:strn}, ${2:base})'''
-        description: '''${1:d} = base2dec(${1:strn}, ${2:base})'''
+        description: '''d = base2dec(strn, base)'''
 
 
     "char":
         prefix: "char"
         body: '''${1:c} = char(${1:A})'''
-        description: '''${1:c} = char(${1:A})'''
+        description: '''c = char(A)'''
 
 
     "strcat":
         prefix: "strcat"
         body: '''${1:s} = strcat(${1:s})'''
-        description: '''${1:s} = strcat(${1:s})'''
+        description: '''s = strcat(s)'''
 
 
     "string.endsWith":
         prefix: "string.endsWith"
         body: '''${1:tf} = string.endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = string.endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = string.endsWith(str, pattern, 'IgnoreCase', value)'''
 
 
     "string.matches":
         prefix: "string.matches"
         body: '''${1:tf} = string.matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = string.matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = string.matches(str, pattern, 'IgnoreCase', value)'''
 
 
     "strjust":
         prefix: "strjust"
         body: '''${1:T} = strjust(${1:S}, ${2:optional_justification})'''
-        description: '''${1:T} = strjust(${1:S}, ${2:optional_justification})'''
+        description: '''T = strjust(S, optional_justification)'''
 
 
     "extractBetween":
         prefix: "extractBetween"
         body: '''${1:out} = extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
-        description: '''${1:out} = extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''out = extractBetween(str, startPosition, endPosition, 'Boundaries', value)'''
 
 
     "replaceBetween":
         prefix: "replaceBetween"
         body: '''${1:out} = replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
-        description: '''${1:out} = replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})'''
+        description: '''out = replaceBetween(str, startPosition, endPosition, replaceStr, 'Boundaries', value)'''
 
 
     "string.contains":
         prefix: "string.contains"
         body: '''${1:tf} = string.contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = string.contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = string.contains(str, pattern, 'IgnoreCase', value)'''
 
 
     "regexp":
         prefix: "regexp"
         body: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexp(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
-        description: '''[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexp(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})'''
+        description: '''[out1, out2, out3, out4, out5, out6, out7] = regexp(str, expression, outkeys, optMatch, optWarnings, optCase, optEmptyMatch, optDotAll, optStringAnchors, optSpacing, optForceCell)'''
 
 
     "upper":
         prefix: "upper"
         body: '''${1:newTxt} = upper(${1:txt})'''
-        description: '''${1:newTxt} = upper(${1:txt})'''
+        description: '''newTxt = upper(txt)'''
 
 
     "regexptranslate":
         prefix: "regexptranslate"
         body: '''${1:s2} = regexptranslate(${1:type}, ${2:s1})'''
-        description: '''${1:s2} = regexptranslate(${1:type}, ${2:s1})'''
+        description: '''s2 = regexptranslate(type, s1)'''
 
 
     "compose":
         prefix: "compose"
         body: '''${1:str} = compose(${1:txt})'''
-        description: '''${1:str} = compose(${1:txt})'''
+        description: '''str = compose(txt)'''
 
 
     "lower":
         prefix: "lower"
         body: '''${1:newTxt} = lower(${1:txt})'''
-        description: '''${1:newTxt} = lower(${1:txt})'''
+        description: '''newTxt = lower(txt)'''
 
 
     "string.insertBefore":
         prefix: "string.insertBefore"
         body: '''${1:newStr} = string.insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
-        description: '''${1:newStr} = string.insertBefore(${1:str}, ${2:endStr}, ${3:newText})'''
+        description: '''newStr = string.insertBefore(str, endStr, newText)'''
 
 
     "string.strip":
         prefix: "string.strip"
         body: '''${1:tf} = string.strip(${1:str}, ${2:side}, ${3:padCharacter})'''
-        description: '''${1:tf} = string.strip(${1:str}, ${2:side}, ${3:padCharacter})'''
+        description: '''tf = string.strip(str, side, padCharacter)'''
 
 
     "cellstr":
         prefix: "cellstr"
         body: '''${1:c} = cellstr(${1:S})'''
-        description: '''${1:c} = cellstr(${1:S})'''
+        description: '''c = cellstr(S)'''
 
 
     "isspace":
         prefix: "isspace"
         body: '''${1:tf} = isspace(${1:str})'''
-        description: '''${1:tf} = isspace(${1:str})'''
+        description: '''tf = isspace(str)'''
 
 
     "blanks":
         prefix: "blanks"
         body: '''${1:c} = blanks(${1:n})'''
-        description: '''${1:c} = blanks(${1:n})'''
+        description: '''c = blanks(n)'''
 
 
     "isletter":
         prefix: "isletter"
         body: '''${1:tf} = isletter(${1:str})'''
-        description: '''${1:tf} = isletter(${1:str})'''
+        description: '''tf = isletter(str)'''
 
 
     "hex2num":
         prefix: "hex2num"
         body: '''${1:n} = hex2num(${1:S})'''
-        description: '''${1:n} = hex2num(${1:S})'''
+        description: '''n = hex2num(S)'''
 
 
     "num2hex":
         prefix: "num2hex"
         body: '''${1:c} = num2hex(${1:X})'''
-        description: '''${1:c} = num2hex(${1:X})'''
+        description: '''c = num2hex(X)'''
 
 
     "str2num":
         prefix: "str2num"
         body: '''[${1:x}, ${2:status}] = str2num(${1:str})'''
-        description: '''[${1:x}, ${2:status}] = str2num(${1:str})'''
+        description: '''[x, status] = str2num(str)'''
 
 
     "num2str":
         prefix: "num2str"
         body: '''${1:s} = num2str(${1:A}, ${2:formatSpec})'''
-        description: '''${1:s} = num2str(${1:A}, ${2:formatSpec})'''
+        description: '''s = num2str(A, formatSpec)'''
 
 
     "string.upper":
         prefix: "string.upper"
         body: '''${1:newTxt} = string.upper(${1:txt})'''
-        description: '''${1:newTxt} = string.upper(${1:txt})'''
+        description: '''newTxt = string.upper(txt)'''
 
 
     "string.join":
         prefix: "string.join"
         body: '''${1:newStr} = string.join(${1:str}, ${2:optional_delimiter}, ${3:optional_dim})'''
-        description: '''${1:newStr} = string.join(${1:str}, ${2:optional_delimiter}, ${3:optional_dim})'''
+        description: '''newStr = string.join(str, optional_delimiter, optional_dim)'''
 
 
     "ischar":
         prefix: "ischar"
         body: '''${1:tf} = ischar(${1:A})'''
-        description: '''${1:tf} = ischar(${1:A})'''
+        description: '''tf = ischar(A)'''
 
 
     "startsWith":
         prefix: "startsWith"
         body: '''${1:tf} = startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = startsWith(str, pattern, 'IgnoreCase', value)'''
 
 
     "insertAfter":
         prefix: "insertAfter"
         body: '''${1:newStr} = insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
-        description: '''${1:newStr} = insertAfter(${1:str}, ${2:startStr}, ${3:newText})'''
+        description: '''newStr = insertAfter(str, startStr, newText)'''
 
 
     "iscellstr":
         prefix: "iscellstr"
         body: '''${1:tf} = iscellstr(${1:A})'''
-        description: '''${1:tf} = iscellstr(${1:A})'''
+        description: '''tf = iscellstr(A)'''
 
 
     "string.split":
         prefix: "string.split"
         body: '''[${1:newStr}, ${2:matches}] = string.split(${1:str}, ${2:delimiter}, ${3:dim})'''
-        description: '''[${1:newStr}, ${2:matches}] = string.split(${1:str}, ${2:delimiter}, ${3:dim})'''
+        description: '''[newStr, matches] = string.split(str, delimiter, dim)'''
 
 
     "string.startsWith":
         prefix: "string.startsWith"
         body: '''${1:tf} = string.startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = string.startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = string.startsWith(str, pattern, 'IgnoreCase', value)'''
 
 
     "unicode2native":
         prefix: "unicode2native"
         body: '''${1:bytes} = unicode2native(${1:unicodestr}, ${2:optional_encoding})'''
-        description: '''${1:bytes} = unicode2native(${1:unicodestr}, ${2:optional_encoding})'''
+        description: '''bytes = unicode2native(unicodestr, optional_encoding)'''
 
 
     "strcmpi":
         prefix: "strcmpi"
         body: '''${1:tf} = strcmpi(${1:C}, ${2:C})'''
-        description: '''${1:tf} = strcmpi(${1:C}, ${2:C})'''
+        description: '''tf = strcmpi(C, C)'''
 
 
     "sscanf":
         prefix: "sscanf"
         body: '''[${1:A}, ${2:count}, ${3:errmsg}, ${4:nextindex}] = sscanf(${1:str}, ${2:format}, ${3:optional_sizeA})'''
-        description: '''[${1:A}, ${2:count}, ${3:errmsg}, ${4:nextindex}] = sscanf(${1:str}, ${2:format}, ${3:optional_sizeA})'''
+        description: '''[A, count, errmsg, nextindex] = sscanf(str, format, optional_sizeA)'''
 
 
     "strrep":
         prefix: "strrep"
         body: '''${1:modifiedStr} = strrep(${1:origStr}, ${2:oldSubstr}, ${3:newSubstr})'''
-        description: '''${1:modifiedStr} = strrep(${1:origStr}, ${2:oldSubstr}, ${3:newSubstr})'''
+        description: '''modifiedStr = strrep(origStr, oldSubstr, newSubstr)'''
 
 
     "strlength":
         prefix: "strlength"
         body: '''${1:L} = strlength(${1:str})'''
-        description: '''${1:L} = strlength(${1:str})'''
+        description: '''L = strlength(str)'''
 
 
     "eraseBetween":
         prefix: "eraseBetween"
         body: '''${1:count} = eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
-        description: '''${1:count} = eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''count = eraseBetween(str, startPosition, endPosition, 'Boundaries', value)'''
 
 
     "string.count":
         prefix: "string.count"
         body: '''${1:count} = string.count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:count} = string.count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''count = string.count(str, pattern, 'IgnoreCase', value)'''
 
 
     "matches":
         prefix: "matches"
         body: '''${1:tf} = matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
-        description: '''${1:tf} = matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})'''
+        description: '''tf = matches(str, pattern, 'IgnoreCase', value)'''
 
 
     "string.reverse":
         prefix: "string.reverse"
         body: '''${1:newStr} = string.reverse(${1:str})'''
-        description: '''${1:newStr} = string.reverse(${1:str})'''
+        description: '''newStr = string.reverse(str)'''
 
 
     "newline":
         prefix: "newline"
         body: '''${1:c} = newline()'''
-        description: '''${1:c} = newline()'''
+        description: '''c = newline()'''
 
 
     "hex2dec":
         prefix: "hex2dec"
         body: '''${1:d} = hex2dec(${1:hex_value})'''
-        description: '''${1:d} = hex2dec(${1:hex_value})'''
+        description: '''d = hex2dec(hex_value)'''
 
 
     "string.extractAfter":
         prefix: "string.extractAfter"
         body: '''${1:newStr} = string.extractAfter(${1:str}, ${2:matchStr})'''
-        description: '''${1:newStr} = string.extractAfter(${1:str}, ${2:matchStr})'''
+        description: '''newStr = string.extractAfter(str, matchStr)'''
 
 
     "string.extractBetween":
         prefix: "string.extractBetween"
         body: '''${1:out} = string.extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
-        description: '''${1:out} = string.extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})'''
+        description: '''out = string.extractBetween(str, startPosition, endPosition, 'Boundaries', value)'''
 
 
     "string.lower":
         prefix: "string.lower"
         body: '''${1:newTxt} = string.lower(${1:txt})'''
-        description: '''${1:newTxt} = string.lower(${1:txt})'''
+        description: '''newTxt = string.lower(txt)'''
 

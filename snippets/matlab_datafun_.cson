@@ -4,413 +4,413 @@
     "standardizeMissing":
         prefix: "standardizeMissing"
         body: '''standardizeMissing(${1:A}, ${2:indicator}, 'DataVariables', ${3:value})'''
-        description: '''standardizeMissing(${1:A}, ${2:indicator}, 'DataVariables', ${3:value})'''
+        description: '''standardizeMissing(A, indicator, 'DataVariables', value)'''
 
 
     "findgroups":
         prefix: "findgroups"
         body: '''[${1:G}, ${2:TID}] = findgroups(${1:T})'''
-        description: '''[${1:G}, ${2:TID}] = findgroups(${1:T})'''
+        description: '''[G, TID] = findgroups(T)'''
 
 
     "fftw":
         prefix: "fftw"
         body: '''fftw(${1:wisdom}, ${2:optional_fftinfo})'''
-        description: '''fftw(${1:wisdom}, ${2:optional_fftinfo})'''
+        description: '''fftw(wisdom, optional_fftinfo)'''
 
 
     "isoutlier":
         prefix: "isoutlier"
         body: '''isoutlier(${1:A}, ${2:optional_method}, ${3:optional_dim}, 'ThresholdFactor', ${4:value}, 'DataVariables', ${5:value})'''
-        description: '''isoutlier(${1:A}, ${2:optional_method}, ${3:optional_dim}, 'ThresholdFactor', ${4:value}, 'DataVariables', ${5:value})'''
+        description: '''isoutlier(A, optional_method, optional_dim, 'ThresholdFactor', value, 'DataVariables', value)'''
 
 
     "fft2":
         prefix: "fft2"
         body: '''fft2(${1:X}, ${2:m}, ${3:n})'''
-        description: '''fft2(${1:X}, ${2:m}, ${3:n})'''
+        description: '''fft2(X, m, n)'''
 
 
     "detrend":
         prefix: "detrend"
         body: '''detrend(${1:x}, ${2:optional_N}, ${3:optional_BP}, 'Continuous', ${4:value}, 'SamplePoints', ${5:value})'''
-        description: '''detrend(${1:x}, ${2:optional_N}, ${3:optional_BP}, 'Continuous', ${4:value}, 'SamplePoints', ${5:value})'''
+        description: '''detrend(x, optional_N, optional_BP, 'Continuous', value, 'SamplePoints', value)'''
 
 
     "fftn":
         prefix: "fftn"
         body: '''fftn(${1:X}, ${2:optional_sz})'''
-        description: '''fftn(${1:X}, ${2:optional_sz})'''
+        description: '''fftn(X, optional_sz)'''
 
 
     "filter2":
         prefix: "filter2"
         body: '''filter2(${1:H}, ${2:X}, ${3:optional_shape})'''
-        description: '''filter2(${1:H}, ${2:X}, ${3:optional_shape})'''
+        description: '''filter2(H, X, optional_shape)'''
 
 
     "maxk":
         prefix: "maxk"
         body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
-        description: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
+        description: '''[B, I] = maxk(A, k, optional_dim, 'ComparisonMethod', value)'''
 
 
     "movmedian":
         prefix: "movmedian"
         body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmedian(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "fillmissing":
         prefix: "fillmissing"
         body: '''fillmissing(${1:A}, ${2:method}, 'EndValues', ${3:value}, 'DataVariables', ${4:value})'''
-        description: '''fillmissing(${1:A}, ${2:method}, 'EndValues', ${3:value}, 'DataVariables', ${4:value})'''
+        description: '''fillmissing(A, method, 'EndValues', value, 'DataVariables', value)'''
 
 
     "mean":
         prefix: "mean"
         body: '''${1:M} = mean(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
-        description: '''${1:M} = mean(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
+        description: '''M = mean(A, optional_dim, outtype, nanflag)'''
 
 
     "corrcoef":
         prefix: "corrcoef"
         body: '''corrcoef(${1:A}, ${2:optional_B}, 'Alpha', ${3:value}, 'Rows', ${4:value})'''
-        description: '''corrcoef(${1:A}, ${2:optional_B}, 'Alpha', ${3:value}, 'Rows', ${4:value})'''
+        description: '''corrcoef(A, optional_B, 'Alpha', value, 'Rows', value)'''
 
 
     "normalize":
         prefix: "normalize"
         body: '''${1:N} = normalize(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value})'''
-        description: '''${1:N} = normalize(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value})'''
+        description: '''N = normalize(A, optional_method, 'DataVariables', value)'''
 
 
     "ischange":
         prefix: "ischange"
         body: '''ischange(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value}, 'Threshold', ${4:value})'''
-        description: '''ischange(${1:A}, ${2:optional_method}, 'DataVariables', ${3:value}, 'Threshold', ${4:value})'''
+        description: '''ischange(A, optional_method, 'DataVariables', value, 'Threshold', value)'''
 
 
     "smoothdata":
         prefix: "smoothdata"
         body: '''smoothdata(${1:A}, ${2:optional_method}, ${3:optional_nanflag}, 'SmoothingFactor', ${4:value}, 'DataVariables', ${5:value})'''
-        description: '''smoothdata(${1:A}, ${2:optional_method}, ${3:optional_nanflag}, 'SmoothingFactor', ${4:value}, 'DataVariables', ${5:value})'''
+        description: '''smoothdata(A, optional_method, optional_nanflag, 'SmoothingFactor', value, 'DataVariables', value)'''
 
 
     "cumsum":
         prefix: "cumsum"
         body: '''cumsum(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cumsum(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
+        description: '''cumsum(A, optional_dim, direction, nanflag)'''
 
 
     "hist":
         prefix: "hist"
         body: '''[${1:counts}, ${2:centers}] = hist(${1:ax}, ${2:x}, ${3:xbins})'''
-        description: '''[${1:counts}, ${2:centers}] = hist(${1:ax}, ${2:x}, ${3:xbins})'''
+        description: '''[counts, centers] = hist(ax, x, xbins)'''
 
 
     "cov":
         prefix: "cov"
         body: '''cov(${1:A}, ${2:optional_B}, ${3:optional_w}, ${4:nanflag})'''
-        description: '''cov(${1:A}, ${2:optional_B}, ${3:optional_w}, ${4:nanflag})'''
+        description: '''cov(A, optional_B, optional_w, nanflag)'''
 
 
     "issortedrows":
         prefix: "issortedrows"
         body: '''${1:TF} = issortedrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''${1:TF} = issortedrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        description: '''TF = issortedrows(A, optional_column, optional_direction, 'MissingPlacement', value)'''
 
 
     "filloutliers":
         prefix: "filloutliers"
         body: '''filloutliers(${1:A}, ${2:fillmethod}, ${3:optional_findmethod}, ${4:optional_dim}, 'ThresholdFactor', ${5:value}, 'DataVariables', ${6:value})'''
-        description: '''filloutliers(${1:A}, ${2:fillmethod}, ${3:optional_findmethod}, ${4:optional_dim}, 'ThresholdFactor', ${5:value}, 'DataVariables', ${6:value})'''
+        description: '''filloutliers(A, fillmethod, optional_findmethod, optional_dim, 'ThresholdFactor', value, 'DataVariables', value)'''
 
 
     "cummax":
         prefix: "cummax"
         body: '''cummax(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cummax(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
+        description: '''cummax(A, optional_dim, direction, nanflag)'''
 
 
     "sum":
         prefix: "sum"
         body: '''sum(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
-        description: '''sum(${1:A}, ${2:optional_dim}, ${3:outtype}, ${4:nanflag})'''
+        description: '''sum(A, optional_dim, outtype, nanflag)'''
 
 
     "ifft":
         prefix: "ifft"
         body: '''ifft(${1:X}, ${2:optional_n}, ${3:optional_dim}, ${4:optional_symflag})'''
-        description: '''ifft(${1:X}, ${2:optional_n}, ${3:optional_dim}, ${4:optional_symflag})'''
+        description: '''ifft(X, optional_n, optional_dim, optional_symflag)'''
 
 
     "ifft2":
         prefix: "ifft2"
         body: '''ifft2(${1:X}, ${2:m}, ${3:n}, ${4:optional_symflag})'''
-        description: '''ifft2(${1:X}, ${2:m}, ${3:n}, ${4:optional_symflag})'''
+        description: '''ifft2(X, m, n, optional_symflag)'''
 
 
     "discretize":
         prefix: "discretize"
         body: '''discretize(${1:X}, ${2:N}, ${3:optional_values}, ${4:optional_'categorical'}, ${5:optional_categoryNames}, 'IncludedEdge', ${6:value})'''
-        description: '''discretize(${1:X}, ${2:N}, ${3:optional_values}, ${4:optional_'categorical'}, ${5:optional_categoryNames}, 'IncludedEdge', ${6:value})'''
+        description: '''discretize(X, N, optional_values, optional_'categorical', optional_categoryNames, 'IncludedEdge', value)'''
 
 
     "var":
         prefix: "var"
         body: '''${1:V} = var(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
-        description: '''${1:V} = var(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
+        description: '''V = var(A, w, optional_dim, nanflag)'''
 
 
     "max":
         prefix: "max"
         body: '''max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
-        description: '''max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        description: '''max(A, [], optional_dim, nanflag, indexflag)'''
 
 
     "rmoutliers":
         prefix: "rmoutliers"
         body: '''rmoutliers(${1:A}, ${2:optional_dim}, ${3:optional_method}, 'MinNumOutliers', ${4:value}, 'ThresholdFactor', ${5:value}, 'DataVariables', ${6:value})'''
-        description: '''rmoutliers(${1:A}, ${2:optional_dim}, ${3:optional_method}, 'MinNumOutliers', ${4:value}, 'ThresholdFactor', ${5:value}, 'DataVariables', ${6:value})'''
+        description: '''rmoutliers(A, optional_dim, optional_method, 'MinNumOutliers', value, 'ThresholdFactor', value, 'DataVariables', value)'''
 
 
     "cumprod":
         prefix: "cumprod"
         body: '''cumprod(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cumprod(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
+        description: '''cumprod(A, optional_dim, direction, nanflag)'''
 
 
     "xcorr":
         prefix: "xcorr"
         body: '''xcorr(${1:A}, ${2:optional_B}, ${3:optional_maxlag}, ${4:scaleopt})'''
-        description: '''xcorr(${1:A}, ${2:optional_B}, ${3:optional_maxlag}, ${4:scaleopt})'''
+        description: '''xcorr(A, optional_B, optional_maxlag, scaleopt)'''
 
 
     "movprod":
         prefix: "movprod"
         body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movprod(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "islocalmin":
         prefix: "islocalmin"
         body: '''islocalmin(${1:A}, 'MinProminence', ${2:value}, 'FlatSelection', ${3:value}, 'MinSeparation', ${4:value}, 'MaxNumExtrema', ${5:value}, 'DataVariables', ${6:value}, 'ProminenceWindow', ${7:value})'''
-        description: '''islocalmin(${1:A}, 'MinProminence', ${2:value}, 'FlatSelection', ${3:value}, 'MinSeparation', ${4:value}, 'MaxNumExtrema', ${5:value}, 'DataVariables', ${6:value}, 'ProminenceWindow', ${7:value})'''
+        description: '''islocalmin(A, 'MinProminence', value, 'FlatSelection', value, 'MinSeparation', value, 'MaxNumExtrema', value, 'DataVariables', value, 'ProminenceWindow', value)'''
 
 
     "sort":
         prefix: "sort"
         body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[B, I] = sort(A, optional_dim, optional_direction, 'MissingPlacement', value)'''
 
 
     "movmean":
         prefix: "movmean"
         body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmean(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "sortrows":
         prefix: "sortrows"
         body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:optional_column}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[B, Index] = sortrows(A, optional_column, optional_direction, 'MissingPlacement', value)'''
 
 
     "groupsummary":
         prefix: "groupsummary"
         body: '''groupsummary(${1:Data}, ${2:GroupVecs}, ${3:method}, 'IncludeMissingGroups', ${4:value}, 'IncludeEmptyGroups', ${5:value}, 'IncludedEdge', ${6:value})'''
-        description: '''groupsummary(${1:Data}, ${2:GroupVecs}, ${3:method}, 'IncludeMissingGroups', ${4:value}, 'IncludeEmptyGroups', ${5:value}, 'IncludedEdge', ${6:value})'''
+        description: '''groupsummary(Data, GroupVecs, method, 'IncludeMissingGroups', value, 'IncludeEmptyGroups', value, 'IncludedEdge', value)'''
 
 
     "topkrows":
         prefix: "topkrows"
         body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:optional_column}, ${4:optional_direction}, 'ComparisonMethod', ${5:value})'''
-        description: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:optional_column}, ${4:optional_direction}, 'ComparisonMethod', ${5:value})'''
+        description: '''[B, Index] = topkrows(A, k, optional_column, optional_direction, 'ComparisonMethod', value)'''
 
 
     "mode":
         prefix: "mode"
         body: '''mode(${1:A}, ${2:optional_dim})'''
-        description: '''mode(${1:A}, ${2:optional_dim})'''
+        description: '''mode(A, optional_dim)'''
 
 
     "cummin":
         prefix: "cummin"
         body: '''cummin(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
-        description: '''cummin(${1:A}, ${2:optional_dim}, ${3:direction}, ${4:nanflag})'''
+        description: '''cummin(A, optional_dim, direction, nanflag)'''
 
 
     "xcov":
         prefix: "xcov"
         body: '''xcov(${1:A}, ${2:optional_B}, ${3:optional_maxlag}, ${4:scaleopt})'''
-        description: '''xcov(${1:A}, ${2:optional_B}, ${3:optional_maxlag}, ${4:scaleopt})'''
+        description: '''xcov(A, optional_B, optional_maxlag, scaleopt)'''
 
 
     "movstd":
         prefix: "movstd"
         body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''M = movstd(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "std":
         prefix: "std"
         body: '''${1:S} = std(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
-        description: '''${1:S} = std(${1:A}, ${2:w}, ${3:optional_dim}, ${4:nanflag})'''
+        description: '''S = std(A, w, optional_dim, nanflag)'''
 
 
     "grouptransform":
         prefix: "grouptransform"
         body: '''grouptransform(${1:Data}, ${2:GroupVecs}, ${3:method}, 'ReplaceValues', ${4:value}, 'IncludedEdge', ${5:value})'''
-        description: '''grouptransform(${1:Data}, ${2:GroupVecs}, ${3:method}, 'ReplaceValues', ${4:value}, 'IncludedEdge', ${5:value})'''
+        description: '''grouptransform(Data, GroupVecs, method, 'ReplaceValues', value, 'IncludedEdge', value)'''
 
 
     "histcounts":
         prefix: "histcounts"
         body: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:optional_edges}, 'BinWidth', ${3:value}, 'BinLimits', ${4:value}, 'Normalization', ${5:value}, 'BinMethod', ${6:value})'''
-        description: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:optional_edges}, 'BinWidth', ${3:value}, 'BinLimits', ${4:value}, 'Normalization', ${5:value}, 'BinMethod', ${6:value})'''
+        description: '''[N, edges, bin] = histcounts(X, optional_edges, 'BinWidth', value, 'BinLimits', value, 'Normalization', value, 'BinMethod', value)'''
 
 
     "ifftn":
         prefix: "ifftn"
         body: '''ifftn(${1:X}, ${2:optional_sz}, ${3:optional_symflag})'''
-        description: '''ifftn(${1:X}, ${2:optional_sz}, ${3:optional_symflag})'''
+        description: '''ifftn(X, optional_sz, optional_symflag)'''
 
 
     "median":
         prefix: "median"
         body: '''${1:M} = median(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
-        description: '''${1:M} = median(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
+        description: '''M = median(A, optional_dim, nanflag)'''
 
 
     "groupcounts":
         prefix: "groupcounts"
         body: '''groupcounts(${1:X}, ${2:groupbins}, 'IncludeMissingGroups', ${3:value}, 'IncludeEmptyGroups', ${4:value}, 'IncludedEdge', ${5:value})'''
-        description: '''groupcounts(${1:X}, ${2:groupbins}, 'IncludeMissingGroups', ${3:value}, 'IncludeEmptyGroups', ${4:value}, 'IncludedEdge', ${5:value})'''
+        description: '''groupcounts(X, groupbins, 'IncludeMissingGroups', value, 'IncludeEmptyGroups', value, 'IncludedEdge', value)'''
 
 
     "conv":
         prefix: "conv"
         body: '''conv(${1:u}, ${2:v}, ${3:optional_shape})'''
-        description: '''conv(${1:u}, ${2:v}, ${3:optional_shape})'''
+        description: '''conv(u, v, optional_shape)'''
 
 
     "bounds":
         prefix: "bounds"
         body: '''bounds(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
-        description: '''bounds(${1:A}, ${2:optional_dim}, ${3:nanflag})'''
+        description: '''bounds(A, optional_dim, nanflag)'''
 
 
     "movmax":
         prefix: "movmax"
         body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmax(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "conv2":
         prefix: "conv2"
         body: '''conv2(${1:u}, ${2:v}, ${3:A}, ${4:optional_shape})'''
-        description: '''conv2(${1:u}, ${2:v}, ${3:A}, ${4:optional_shape})'''
+        description: '''conv2(u, v, A, optional_shape)'''
 
 
     "filter":
         prefix: "filter"
         body: '''filter(${1:b}, ${2:a}, ${3:x}, ${4:zi}, ${5:dim})'''
-        description: '''filter(${1:b}, ${2:a}, ${3:x}, ${4:zi}, ${5:dim})'''
+        description: '''filter(b, a, x, zi, dim)'''
 
 
     "movsum":
         prefix: "movsum"
         body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movsum(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "rmmissing":
         prefix: "rmmissing"
         body: '''rmmissing(${1:A}, ${2:dim}, 'MinNumMissing', ${3:value}, 'DataVariables', ${4:value})'''
-        description: '''rmmissing(${1:A}, ${2:dim}, 'MinNumMissing', ${3:value}, 'DataVariables', ${4:value})'''
+        description: '''rmmissing(A, dim, 'MinNumMissing', value, 'DataVariables', value)'''
 
 
     "groupfilter":
         prefix: "groupfilter"
         body: '''groupfilter(${1:Data}, ${2:GroupVecs}, ${3:method}, 'IncludedEdge', ${4:value})'''
-        description: '''groupfilter(${1:Data}, ${2:GroupVecs}, ${3:method}, 'IncludedEdge', ${4:value})'''
+        description: '''groupfilter(Data, GroupVecs, method, 'IncludedEdge', value)'''
 
 
     "min":
         prefix: "min"
         body: '''min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
-        description: '''min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        description: '''min(A, [], optional_dim, nanflag, indexflag)'''
 
 
     "mink":
         prefix: "mink"
         body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
-        description: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:optional_dim}, 'ComparisonMethod', ${4:value})'''
+        description: '''[B, I] = mink(A, k, optional_dim, 'ComparisonMethod', value)'''
 
 
     "rescale":
         prefix: "rescale"
         body: '''${1:R} = rescale(${1:A}, 'InputMin', ${2:value}, 'InputMax', ${3:value})'''
-        description: '''${1:R} = rescale(${1:A}, 'InputMin', ${2:value}, 'InputMax', ${3:value})'''
+        description: '''R = rescale(A, 'InputMin', value, 'InputMax', value)'''
 
 
     "movmad":
         prefix: "movmad"
         body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmad(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "fft":
         prefix: "fft"
         body: '''fft(${1:X}, ${2:n}, ${3:dim})'''
-        description: '''fft(${1:X}, ${2:n}, ${3:dim})'''
+        description: '''fft(X, n, dim)'''
 
 
     "movmin":
         prefix: "movmin"
         body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-        description: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:optional_dim}, ${4:optional_nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''M = movmin(A, k, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "issorted":
         prefix: "issorted"
         body: '''${1:TF} = issorted(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
-        description: '''${1:TF} = issorted(${1:A}, ${2:optional_dim}, ${3:optional_direction}, 'MissingPlacement', ${4:value})'''
+        description: '''TF = issorted(A, optional_dim, optional_direction, 'MissingPlacement', value)'''
 
 
     "movvar":
         prefix: "movvar"
         body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-        description: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:optional_w}, ${4:optional_dim}, ${5:optional_nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''M = movvar(A, k, optional_w, optional_dim, optional_nanflag, 'Endpoints', value, 'SamplePoints', value)'''
 
 
     "prod":
         prefix: "prod"
         body: '''prod(${1:A}, ${2:optional_dim}, ${3:type}, ${4:nanflag})'''
-        description: '''prod(${1:A}, ${2:optional_dim}, ${3:type}, ${4:nanflag})'''
+        description: '''prod(A, optional_dim, type, nanflag)'''
 
 
     "convn":
         prefix: "convn"
         body: '''convn(${1:A}, ${2:B}, ${3:optional_shape})'''
-        description: '''convn(${1:A}, ${2:B}, ${3:optional_shape})'''
+        description: '''convn(A, B, optional_shape)'''
 
 
     "islocalmax":
         prefix: "islocalmax"
         body: '''islocalmax(${1:A}, 'MinProminence', ${2:value}, 'FlatSelection', ${3:value}, 'MinSeparation', ${4:value}, 'MaxNumExtrema', ${5:value}, 'DataVariables', ${6:value}, 'ProminenceWindow', ${7:value})'''
-        description: '''islocalmax(${1:A}, 'MinProminence', ${2:value}, 'FlatSelection', ${3:value}, 'MinSeparation', ${4:value}, 'MaxNumExtrema', ${5:value}, 'DataVariables', ${6:value}, 'ProminenceWindow', ${7:value})'''
+        description: '''islocalmax(A, 'MinProminence', value, 'FlatSelection', value, 'MinSeparation', value, 'MaxNumExtrema', value, 'DataVariables', value, 'ProminenceWindow', value)'''
 
 
     "splitapply":
         prefix: "splitapply"
         body: '''${1:Y} = splitapply(${1:func}, ${2:T}, ${3:G})'''
-        description: '''${1:Y} = splitapply(${1:func}, ${2:T}, ${3:G})'''
+        description: '''Y = splitapply(func, T, G)'''
 
 
     "histcounts2":
         prefix: "histcounts2"
         body: '''[${1:N}, ${2:xedges}, ${3:yedges}, ${4:binx}, ${5:biny}] = histcounts2(${1:X}, ${2:Y}, ${3:Xedges}, ${4:Yedges}, 'BinWidth', ${5:value}, 'XBinLimits', ${6:value}, 'YBinLimits', ${7:value}, 'Normalization', ${8:value}, 'BinMethod', ${9:value})'''
-        description: '''[${1:N}, ${2:xedges}, ${3:yedges}, ${4:binx}, ${5:biny}] = histcounts2(${1:X}, ${2:Y}, ${3:Xedges}, ${4:Yedges}, 'BinWidth', ${5:value}, 'XBinLimits', ${6:value}, 'YBinLimits', ${7:value}, 'Normalization', ${8:value}, 'BinMethod', ${9:value})'''
+        description: '''[N, xedges, yedges, binx, biny] = histcounts2(X, Y, Xedges, Yedges, 'BinWidth', value, 'XBinLimits', value, 'YBinLimits', value, 'Normalization', value, 'BinMethod', value)'''
 

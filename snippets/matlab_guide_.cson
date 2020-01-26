@@ -4,5 +4,5 @@
     "guide":
         prefix: "guide"
         body: '''guide(${1:HandleList})'''
-        description: '''guide(${1:HandleList})'''
+        description: '''guide(HandleList)'''
 

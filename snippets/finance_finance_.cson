@@ -4,287 +4,287 @@
     "modifybins":
         prefix: "modifybins"
         body: '''modifybins(${1:sc}, ${2:PredictorVar}, 'CutPoints', ${3:value}, 'CatGrouping', ${4:value}, 'BinLabels', ${5:value}, 'MinValue', ${6:value}, 'MaxValue', ${7:value})'''
-        description: '''modifybins(${1:sc}, ${2:PredictorVar}, 'CutPoints', ${3:value}, 'CatGrouping', ${4:value}, 'BinLabels', ${5:value}, 'MinValue', ${6:value}, 'MaxValue', ${7:value})'''
+        description: '''modifybins(sc, PredictorVar, 'CutPoints', value, 'CatGrouping', value, 'BinLabels', value, 'MinValue', value, 'MaxValue', value)'''
 
 
     "fwd2zero":
         prefix: "fwd2zero"
         body: '''[${1:ZeroRates}, ${2:CurveDates}] = fwd2zero(${1:forwardRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
-        description: '''[${1:ZeroRates}, ${2:CurveDates}] = fwd2zero(${1:forwardRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
+        description: '''[ZeroRates, CurveDates] = fwd2zero(forwardRates, curveDates, settle, 'InputCompounding', value, 'InputBasis', value, 'OutputCompounding', value, 'OutputBasis', value)'''
 
 
     "PortfolioMAD.setSolverMINLP":
         prefix: "PortfolioMAD.setSolverMINLP"
         body: '''PortfolioMAD.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
-        description: '''PortfolioMAD.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
+        description: '''PortfolioMAD.setSolverMINLP(obj, solverType, 'MaxIterations', value, 'AbsoluteGapTolerance', value, 'RelativeGapTolerance', value, 'Display', value, 'NonlinearScalingFactor', value, 'ObjectiveScalingFactor', value, 'NumIterationsEarlyIntegerConvergence', value, 'ActiveCutTolerance', value, 'CutGeneration', value, 'MaxIterationsInactiveCut', value, 'TrustRegionStartIteration', value, 'DeltaLimit', value, 'ShrinkRatio', value, 'IntMasterSolverOptions', value)'''
 
 
     "Portfolio.estimateFrontierByRisk":
         prefix: "Portfolio.estimateFrontierByRisk"
         body: '''Portfolio.estimateFrontierByRisk(${1:obj}, ${2:TargetRisk}, 'Method', ${3:value})'''
-        description: '''Portfolio.estimateFrontierByRisk(${1:obj}, ${2:TargetRisk}, 'Method', ${3:value})'''
+        description: '''Portfolio.estimateFrontierByRisk(obj, TargetRisk, 'Method', value)'''
 
 
     "Portfolio.estimateAssetMoments":
         prefix: "Portfolio.estimateAssetMoments"
         body: '''Portfolio.estimateAssetMoments(${1:obj}, ${2:AssetReturns}, 'DataFormat', ${3:value}, 'MissingData', ${4:value}, 'GetAssetList', ${5:value})'''
-        description: '''Portfolio.estimateAssetMoments(${1:obj}, ${2:AssetReturns}, 'DataFormat', ${3:value}, 'MissingData', ${4:value}, 'GetAssetList', ${5:value})'''
+        description: '''Portfolio.estimateAssetMoments(obj, AssetReturns, 'DataFormat', value, 'MissingData', value, 'GetAssetList', value)'''
 
 
     "displaypoints":
         prefix: "displaypoints"
         body: '''[${1:PointsInfo}, ${2:MinScore}, ${3:MaxScore}] = displaypoints(${1:sc}, 'ShowCategoricalMembers', ${2:value})'''
-        description: '''[${1:PointsInfo}, ${2:MinScore}, ${3:MaxScore}] = displaypoints(${1:sc}, 'ShowCategoricalMembers', ${2:value})'''
+        description: '''[PointsInfo, MinScore, MaxScore] = displaypoints(sc, 'ShowCategoricalMembers', value)'''
 
 
     "plotbins":
         prefix: "plotbins"
         body: '''plotbins(${1:sc}, ${2:PredictorVar}, 'BinText', ${3:value}, 'WOE', ${4:value}, 'Legend', ${5:value})'''
-        description: '''plotbins(${1:sc}, ${2:PredictorVar}, 'BinText', ${3:value}, 'WOE', ${4:value}, 'Legend', ${5:value})'''
+        description: '''plotbins(sc, PredictorVar, 'BinText', value, 'WOE', value, 'Legend', value)'''
 
 
     "PortfolioMAD.setBounds":
         prefix: "PortfolioMAD.setBounds"
         body: '''PortfolioMAD.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
-        description: '''PortfolioMAD.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
+        description: '''PortfolioMAD.setBounds(obj, LowerBound, UpperBound, 'BoundType', value, 'NumAssets', value)'''
 
 
     "PortfolioCVaR.setSolver":
         prefix: "PortfolioCVaR.setSolver"
         body: '''PortfolioCVaR.setSolver(${1:obj}, ${2:solverType}, 'Algorithm', ${3:value}, 'CheckGradients', ${4:value}, 'ConstraintTolerance', ${5:value}, 'Display', ${6:value}, 'FiniteDifferenceStepSize', ${7:value}, 'FiniteDifferenceType', ${8:value}, 'FunctionTolerance', ${9:value}, 'HonorBounds', ${10:value}, 'MaxFunctionEvaluations', ${11:value}, 'MaxIterations', ${12:value}, 'ObjectiveLimit', ${13:value}, 'OptimalityTolerance', ${14:value}, 'ScaleProblem', ${15:value}, 'SpecifyConstraintGradient', ${16:value}, 'SpecifyObjectiveGradient', ${17:value}, 'StepTolerance', ${18:value}, 'SubproblemAlgorithm', ${19:value}, 'TypicalX', ${20:value}, 'UseParallel', ${21:value})'''
-        description: '''PortfolioCVaR.setSolver(${1:obj}, ${2:solverType}, 'Algorithm', ${3:value}, 'CheckGradients', ${4:value}, 'ConstraintTolerance', ${5:value}, 'Display', ${6:value}, 'FiniteDifferenceStepSize', ${7:value}, 'FiniteDifferenceType', ${8:value}, 'FunctionTolerance', ${9:value}, 'HonorBounds', ${10:value}, 'MaxFunctionEvaluations', ${11:value}, 'MaxIterations', ${12:value}, 'ObjectiveLimit', ${13:value}, 'OptimalityTolerance', ${14:value}, 'ScaleProblem', ${15:value}, 'SpecifyConstraintGradient', ${16:value}, 'SpecifyObjectiveGradient', ${17:value}, 'StepTolerance', ${18:value}, 'SubproblemAlgorithm', ${19:value}, 'TypicalX', ${20:value}, 'UseParallel', ${21:value})'''
+        description: '''PortfolioCVaR.setSolver(obj, solverType, 'Algorithm', value, 'CheckGradients', value, 'ConstraintTolerance', value, 'Display', value, 'FiniteDifferenceStepSize', value, 'FiniteDifferenceType', value, 'FunctionTolerance', value, 'HonorBounds', value, 'MaxFunctionEvaluations', value, 'MaxIterations', value, 'ObjectiveLimit', value, 'OptimalityTolerance', value, 'ScaleProblem', value, 'SpecifyConstraintGradient', value, 'SpecifyObjectiveGradient', value, 'StepTolerance', value, 'SubproblemAlgorithm', value, 'TypicalX', value, 'UseParallel', value)'''
 
 
     "PortfolioCVaR.simulateNormalScenariosByData":
         prefix: "PortfolioCVaR.simulateNormalScenariosByData"
         body: '''PortfolioCVaR.simulateNormalScenariosByData(${1:obj}, ${2:AssetReturns}, ${3:NumScenarios}, 'DataFormat', ${4:value}, 'MissingData', ${5:value}, 'GetAssetList', ${6:value})'''
-        description: '''PortfolioCVaR.simulateNormalScenariosByData(${1:obj}, ${2:AssetReturns}, ${3:NumScenarios}, 'DataFormat', ${4:value}, 'MissingData', ${5:value}, 'GetAssetList', ${6:value})'''
+        description: '''PortfolioCVaR.simulateNormalScenariosByData(obj, AssetReturns, NumScenarios, 'DataFormat', value, 'MissingData', value, 'GetAssetList', value)'''
 
 
     "PortfolioMAD.estimateFrontierByRisk":
         prefix: "PortfolioMAD.estimateFrontierByRisk"
         body: '''PortfolioMAD.estimateFrontierByRisk(${1:obj}, ${2:TargetRisk}, 'Method', ${3:value})'''
-        description: '''PortfolioMAD.estimateFrontierByRisk(${1:obj}, ${2:TargetRisk}, 'Method', ${3:value})'''
+        description: '''PortfolioMAD.estimateFrontierByRisk(obj, TargetRisk, 'Method', value)'''
 
 
     "validatemodel":
         prefix: "validatemodel"
         body: '''validatemodel(${1:sc}, 'data', ${2:value}, 'AnalysisLevel', ${3:value}, 'Plot', ${4:value})'''
-        description: '''validatemodel(${1:sc}, 'data', ${2:value}, 'AnalysisLevel', ${3:value}, 'Plot', ${4:value})'''
+        description: '''validatemodel(sc, 'data', value, 'AnalysisLevel', value, 'Plot', value)'''
 
 
     "predictorinfo":
         prefix: "predictorinfo"
         body: '''[${1:T}, ${2:Stats}] = predictorinfo(${1:sc}, ${2:PredictorVar})'''
-        description: '''[${1:T}, ${2:Stats}] = predictorinfo(${1:sc}, ${2:PredictorVar})'''
+        description: '''[T, Stats] = predictorinfo(sc, PredictorVar)'''
 
 
     "transprobgrouptotals":
         prefix: "transprobgrouptotals"
         body: '''${1:totalsGrouped} = transprobgrouptotals(${1:totals}, ${2:groupingEdges})'''
-        description: '''${1:totalsGrouped} = transprobgrouptotals(${1:totals}, ${2:groupingEdges})'''
+        description: '''totalsGrouped = transprobgrouptotals(totals, groupingEdges)'''
 
 
     "PortfolioMAD.simulateNormalScenariosByData":
         prefix: "PortfolioMAD.simulateNormalScenariosByData"
         body: '''PortfolioMAD.simulateNormalScenariosByData(${1:obj}, ${2:AssetReturns}, ${3:NumScenarios}, 'DataFormat', ${4:value}, 'MissingData', ${5:value}, 'GetAssetList', ${6:value})'''
-        description: '''PortfolioMAD.simulateNormalScenariosByData(${1:obj}, ${2:AssetReturns}, ${3:NumScenarios}, 'DataFormat', ${4:value}, 'MissingData', ${5:value}, 'GetAssetList', ${6:value})'''
+        description: '''PortfolioMAD.simulateNormalScenariosByData(obj, AssetReturns, NumScenarios, 'DataFormat', value, 'MissingData', value, 'GetAssetList', value)'''
 
 
     "creditscorecard":
         prefix: "creditscorecard"
         body: '''creditscorecard(${1:data}, 'ResponseVar', ${2:value}, 'GoodLabel', ${3:value}, 'IDVar', ${4:value}, 'PredictorVars', ${5:value}, 'BinMissingData', ${6:value}, 'WeightsVar', ${7:value})'''
-        description: '''creditscorecard(${1:data}, 'ResponseVar', ${2:value}, 'GoodLabel', ${3:value}, 'IDVar', ${4:value}, 'PredictorVars', ${5:value}, 'BinMissingData', ${6:value}, 'WeightsVar', ${7:value})'''
+        description: '''creditscorecard(data, 'ResponseVar', value, 'GoodLabel', value, 'IDVar', value, 'PredictorVars', value, 'BinMissingData', value, 'WeightsVar', value)'''
 
 
     "blsimpv":
         prefix: "blsimpv"
         body: '''${1:Volatility} = blsimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Yield', ${7:value}, 'Tolerance', ${8:value}, 'Class', ${9:value}, 'Method', ${10:value})'''
-        description: '''${1:Volatility} = blsimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Yield', ${7:value}, 'Tolerance', ${8:value}, 'Class', ${9:value}, 'Method', ${10:value})'''
+        description: '''Volatility = blsimpv(Price, Strike, Rate, Time, Value, 'Limit', value, 'Yield', value, 'Tolerance', value, 'Class', value, 'Method', value)'''
 
 
     "Portfolio.estimateMaxSharpeRatio":
         prefix: "Portfolio.estimateMaxSharpeRatio"
         body: '''Portfolio.estimateMaxSharpeRatio(${1:obj}, 'Method', ${2:value})'''
-        description: '''Portfolio.estimateMaxSharpeRatio(${1:obj}, 'Method', ${2:value})'''
+        description: '''Portfolio.estimateMaxSharpeRatio(obj, 'Method', value)'''
 
 
     "modifypredictor":
         prefix: "modifypredictor"
         body: '''modifypredictor(${1:sc}, ${2:PredictorVar}, 'PredictorType', ${3:value}, 'Ordinal', ${4:value})'''
-        description: '''modifypredictor(${1:sc}, ${2:PredictorVar}, 'PredictorType', ${3:value}, 'Ordinal', ${4:value})'''
+        description: '''modifypredictor(sc, PredictorVar, 'PredictorType', value, 'Ordinal', value)'''
 
 
     "PortfolioCVaR.setBounds":
         prefix: "PortfolioCVaR.setBounds"
         body: '''PortfolioCVaR.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
-        description: '''PortfolioCVaR.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
+        description: '''PortfolioCVaR.setBounds(obj, LowerBound, UpperBound, 'BoundType', value, 'NumAssets', value)'''
 
 
     "PortfolioMAD":
         prefix: "PortfolioMAD"
         body: '''PortfolioMAD('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'RiskFreeRate', ${5:value}, 'Budget', ${6:value}, 'LowerBudget', ${7:value}, 'UpperBudget', ${8:value}, 'BuyCost', ${9:value}, 'SellCost', ${10:value}, 'Turnover', ${11:value}, 'BuyTurnover', ${12:value}, 'SellTurnover', ${13:value}, 'LowerBound', ${14:value}, 'UpperBound', ${15:value}, 'AEquality', ${16:value}, 'bEquality', ${17:value}, 'AInequality', ${18:value}, 'bInequality', ${19:value}, 'GroupA', ${20:value}, 'GroupB', ${21:value}, 'LowerRatio', ${22:value}, 'UpperRatio', ${23:value}, 'GroupMatrix', ${24:value}, 'LowerGroup', ${25:value}, 'UpperGroup', ${26:value}, 'Scenarios', ${27:value}, 'BoundType', ${28:value}, 'MinNumAssets', ${29:value}, 'MaxNumAssets', ${30:value})'''
-        description: '''PortfolioMAD('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'RiskFreeRate', ${5:value}, 'Budget', ${6:value}, 'LowerBudget', ${7:value}, 'UpperBudget', ${8:value}, 'BuyCost', ${9:value}, 'SellCost', ${10:value}, 'Turnover', ${11:value}, 'BuyTurnover', ${12:value}, 'SellTurnover', ${13:value}, 'LowerBound', ${14:value}, 'UpperBound', ${15:value}, 'AEquality', ${16:value}, 'bEquality', ${17:value}, 'AInequality', ${18:value}, 'bInequality', ${19:value}, 'GroupA', ${20:value}, 'GroupB', ${21:value}, 'LowerRatio', ${22:value}, 'UpperRatio', ${23:value}, 'GroupMatrix', ${24:value}, 'LowerGroup', ${25:value}, 'UpperGroup', ${26:value}, 'Scenarios', ${27:value}, 'BoundType', ${28:value}, 'MinNumAssets', ${29:value}, 'MaxNumAssets', ${30:value})'''
+        description: '''PortfolioMAD('AssetList', value, 'Name', value, 'NumAssets', value, 'InitPort', value, 'RiskFreeRate', value, 'Budget', value, 'LowerBudget', value, 'UpperBudget', value, 'BuyCost', value, 'SellCost', value, 'Turnover', value, 'BuyTurnover', value, 'SellTurnover', value, 'LowerBound', value, 'UpperBound', value, 'AEquality', value, 'bEquality', value, 'AInequality', value, 'bInequality', value, 'GroupA', value, 'GroupB', value, 'LowerRatio', value, 'UpperRatio', value, 'GroupMatrix', value, 'LowerGroup', value, 'UpperGroup', value, 'Scenarios', value, 'BoundType', value, 'MinNumAssets', value, 'MaxNumAssets', value)'''
 
 
     "transprobbytotals":
         prefix: "transprobbytotals"
         body: '''[${1:transMat}, ${2:sampleTotals}] = transprobbytotals(${1:totals}, 'snapsPerYear', ${2:value}, 'transInterval', ${3:value})'''
-        description: '''[${1:transMat}, ${2:sampleTotals}] = transprobbytotals(${1:totals}, 'snapsPerYear', ${2:value}, 'transInterval', ${3:value})'''
+        description: '''[transMat, sampleTotals] = transprobbytotals(totals, 'snapsPerYear', value, 'transInterval', value)'''
 
 
     "blkimpv":
         prefix: "blkimpv"
         body: '''${1:Volatility} = blkimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Tolerance', ${7:value}, 'Class', ${8:value}, 'Method', ${9:value})'''
-        description: '''${1:Volatility} = blkimpv(${1:Price}, ${2:Strike}, ${3:Rate}, ${4:Time}, ${5:Value}, 'Limit', ${6:value}, 'Tolerance', ${7:value}, 'Class', ${8:value}, 'Method', ${9:value})'''
+        description: '''Volatility = blkimpv(Price, Strike, Rate, Time, Value, 'Limit', value, 'Tolerance', value, 'Class', value, 'Method', value)'''
 
 
     "bininfo":
         prefix: "bininfo"
         body: '''bininfo(${1:PredictorVar}, 'Statistics', ${2:value}, 'Totals', ${3:value})'''
-        description: '''bininfo(${1:PredictorVar}, 'Statistics', ${2:value}, 'Totals', ${3:value})'''
+        description: '''bininfo(PredictorVar, 'Statistics', value, 'Totals', value)'''
 
 
     "disc2zero":
         prefix: "disc2zero"
         body: '''[${1:ZeroRates}, ${2:CurveDates}] = disc2zero(${1:discRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
-        description: '''[${1:ZeroRates}, ${2:CurveDates}] = disc2zero(${1:discRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
+        description: '''[ZeroRates, CurveDates] = disc2zero(discRates, curveDates, settle, 'Compounding', value, 'Basis', value)'''
 
 
     "transprobfromthresholds":
         prefix: "transprobfromthresholds"
         body: '''${1:trans} = transprobfromthresholds(${1:thresh})'''
-        description: '''${1:trans} = transprobfromthresholds(${1:thresh})'''
+        description: '''trans = transprobfromthresholds(thresh)'''
 
 
     "score":
         prefix: "score"
         body: '''[${1:Scores}, ${2:Points}] = score(${1:sc}, 'data', ${2:value})'''
-        description: '''[${1:Scores}, ${2:Points}] = score(${1:sc}, 'data', ${2:value})'''
+        description: '''[Scores, Points] = score(sc, 'data', value)'''
 
 
     "fitConstrainedModel":
         prefix: "fitConstrainedModel"
         body: '''fitConstrainedModel(${1:sc}, 'PredictorVars', ${2:value}, 'LowerBound', ${3:value}, 'UpperBound', ${4:value}, 'AInequality', ${5:value}, 'bInequality', ${6:value}, 'AEquality', ${7:value}, 'bEquality', ${8:value}, 'Bootstrap', ${9:value}, 'BootstrapIter', ${10:value}, 'Options', ${11:value})'''
-        description: '''fitConstrainedModel(${1:sc}, 'PredictorVars', ${2:value}, 'LowerBound', ${3:value}, 'UpperBound', ${4:value}, 'AInequality', ${5:value}, 'bInequality', ${6:value}, 'AEquality', ${7:value}, 'bEquality', ${8:value}, 'Bootstrap', ${9:value}, 'BootstrapIter', ${10:value}, 'Options', ${11:value})'''
+        description: '''fitConstrainedModel(sc, 'PredictorVars', value, 'LowerBound', value, 'UpperBound', value, 'AInequality', value, 'bInequality', value, 'AEquality', value, 'bEquality', value, 'Bootstrap', value, 'BootstrapIter', value, 'Options', value)'''
 
 
     "zero2fwd":
         prefix: "zero2fwd"
         body: '''[${1:ForwardRates}, ${2:CurveDates}] = zero2fwd(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
-        description: '''[${1:ForwardRates}, ${2:CurveDates}] = zero2fwd(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'InputCompounding', ${4:value}, 'InputBasis', ${5:value}, 'OutputCompounding', ${6:value}, 'OutputBasis', ${7:value})'''
+        description: '''[ForwardRates, CurveDates] = zero2fwd(zeroRates, curveDates, settle, 'InputCompounding', value, 'InputBasis', value, 'OutputCompounding', value, 'OutputBasis', value)'''
 
 
     "PortfolioCVaR":
         prefix: "PortfolioCVaR"
         body: '''PortfolioCVaR('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'ProbabilityLevel', ${5:value}, 'RiskFreeRate', ${6:value}, 'Budget', ${7:value}, 'LowerBudget', ${8:value}, 'UpperBudget', ${9:value}, 'BuyCost', ${10:value}, 'SellCost', ${11:value}, 'Turnover', ${12:value}, 'BuyTurnover', ${13:value}, 'SellTurnover', ${14:value}, 'LowerBound', ${15:value}, 'UpperBound', ${16:value}, 'AEquality', ${17:value}, 'bEquality', ${18:value}, 'AInequality', ${19:value}, 'bInequality', ${20:value}, 'GroupA', ${21:value}, 'GroupB', ${22:value}, 'LowerRatio', ${23:value}, 'UpperRatio', ${24:value}, 'GroupMatrix', ${25:value}, 'LowerGroup', ${26:value}, 'UpperGroup', ${27:value}, 'ProbabilityLevel', ${28:value}, 'Scenarios', ${29:value}, 'BoundType', ${30:value}, 'MinNumAssets', ${31:value}, 'MaxNumAssets', ${32:value})'''
-        description: '''PortfolioCVaR('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'ProbabilityLevel', ${5:value}, 'RiskFreeRate', ${6:value}, 'Budget', ${7:value}, 'LowerBudget', ${8:value}, 'UpperBudget', ${9:value}, 'BuyCost', ${10:value}, 'SellCost', ${11:value}, 'Turnover', ${12:value}, 'BuyTurnover', ${13:value}, 'SellTurnover', ${14:value}, 'LowerBound', ${15:value}, 'UpperBound', ${16:value}, 'AEquality', ${17:value}, 'bEquality', ${18:value}, 'AInequality', ${19:value}, 'bInequality', ${20:value}, 'GroupA', ${21:value}, 'GroupB', ${22:value}, 'LowerRatio', ${23:value}, 'UpperRatio', ${24:value}, 'GroupMatrix', ${25:value}, 'LowerGroup', ${26:value}, 'UpperGroup', ${27:value}, 'ProbabilityLevel', ${28:value}, 'Scenarios', ${29:value}, 'BoundType', ${30:value}, 'MinNumAssets', ${31:value}, 'MaxNumAssets', ${32:value})'''
+        description: '''PortfolioCVaR('AssetList', value, 'Name', value, 'NumAssets', value, 'InitPort', value, 'ProbabilityLevel', value, 'RiskFreeRate', value, 'Budget', value, 'LowerBudget', value, 'UpperBudget', value, 'BuyCost', value, 'SellCost', value, 'Turnover', value, 'BuyTurnover', value, 'SellTurnover', value, 'LowerBound', value, 'UpperBound', value, 'AEquality', value, 'bEquality', value, 'AInequality', value, 'bInequality', value, 'GroupA', value, 'GroupB', value, 'LowerRatio', value, 'UpperRatio', value, 'GroupMatrix', value, 'LowerGroup', value, 'UpperGroup', value, 'ProbabilityLevel', value, 'Scenarios', value, 'BoundType', value, 'MinNumAssets', value, 'MaxNumAssets', value)'''
 
 
     "formatpoints":
         prefix: "formatpoints"
         body: '''formatpoints(${1:sc}, 'BasePoints', ${2:value}, 'Round', ${3:value}, 'Missing', ${4:value}, 'ShiftAndSlope', ${5:value}, 'WorstAndBestScores', ${6:value}, 'PointsOddsAndPDO', ${7:value})'''
-        description: '''formatpoints(${1:sc}, 'BasePoints', ${2:value}, 'Round', ${3:value}, 'Missing', ${4:value}, 'ShiftAndSlope', ${5:value}, 'WorstAndBestScores', ${6:value}, 'PointsOddsAndPDO', ${7:value})'''
+        description: '''formatpoints(sc, 'BasePoints', value, 'Round', value, 'Missing', value, 'ShiftAndSlope', value, 'WorstAndBestScores', value, 'PointsOddsAndPDO', value)'''
 
 
     "compact":
         prefix: "compact"
         body: '''${1:ccsc} = compact(${1:sc})'''
-        description: '''${1:ccsc} = compact(${1:sc})'''
+        description: '''ccsc = compact(sc)'''
 
 
     "PortfolioCVaR.setSolverMINLP":
         prefix: "PortfolioCVaR.setSolverMINLP"
         body: '''PortfolioCVaR.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
-        description: '''PortfolioCVaR.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
+        description: '''PortfolioCVaR.setSolverMINLP(obj, solverType, 'MaxIterations', value, 'AbsoluteGapTolerance', value, 'RelativeGapTolerance', value, 'Display', value, 'NonlinearScalingFactor', value, 'ObjectiveScalingFactor', value, 'NumIterationsEarlyIntegerConvergence', value, 'ActiveCutTolerance', value, 'CutGeneration', value, 'MaxIterationsInactiveCut', value, 'TrustRegionStartIteration', value, 'DeltaLimit', value, 'ShrinkRatio', value, 'IntMasterSolverOptions', value)'''
 
 
     "autobinning":
         prefix: "autobinning"
         body: '''${1:sc} = autobinning(${1:sc}, 'PredictorVar', ${2:value}, 'Algorithm', ${3:value}, 'AlgorithmOptions', ${4:value}, 'Display', ${5:value})'''
-        description: '''${1:sc} = autobinning(${1:sc}, 'PredictorVar', ${2:value}, 'Algorithm', ${3:value}, 'AlgorithmOptions', ${4:value}, 'Display', ${5:value})'''
+        description: '''sc = autobinning(sc, 'PredictorVar', value, 'Algorithm', value, 'AlgorithmOptions', value, 'Display', value)'''
 
 
     "Portfolio":
         prefix: "Portfolio"
         body: '''Portfolio('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'AssetMean', ${5:value}, 'AssetCovar', ${6:value}, 'RiskFreeRate', ${7:value}, 'Budget', ${8:value}, 'LowerBudget', ${9:value}, 'UpperBudget', ${10:value}, 'BuyCost', ${11:value}, 'SellCost', ${12:value}, 'TrackingPort', ${13:value}, 'TrackingError', ${14:value}, 'Turnover', ${15:value}, 'BuyTurnover', ${16:value}, 'SellTurnover', ${17:value}, 'LowerBound', ${18:value}, 'UpperBound', ${19:value}, 'AEquality', ${20:value}, 'bEquality', ${21:value}, 'AInequality', ${22:value}, 'bInequality', ${23:value}, 'GroupA', ${24:value}, 'GroupB', ${25:value}, 'LowerRatio', ${26:value}, 'UpperRatio', ${27:value}, 'GroupMatrix', ${28:value}, 'LowerGroup', ${29:value}, 'UpperGroup', ${30:value}, 'BoundType', ${31:value}, 'MinNumAssets', ${32:value}, 'MaxNumAssets', ${33:value})'''
-        description: '''Portfolio('AssetList', ${1:value}, 'Name', ${2:value}, 'NumAssets', ${3:value}, 'InitPort', ${4:value}, 'AssetMean', ${5:value}, 'AssetCovar', ${6:value}, 'RiskFreeRate', ${7:value}, 'Budget', ${8:value}, 'LowerBudget', ${9:value}, 'UpperBudget', ${10:value}, 'BuyCost', ${11:value}, 'SellCost', ${12:value}, 'TrackingPort', ${13:value}, 'TrackingError', ${14:value}, 'Turnover', ${15:value}, 'BuyTurnover', ${16:value}, 'SellTurnover', ${17:value}, 'LowerBound', ${18:value}, 'UpperBound', ${19:value}, 'AEquality', ${20:value}, 'bEquality', ${21:value}, 'AInequality', ${22:value}, 'bInequality', ${23:value}, 'GroupA', ${24:value}, 'GroupB', ${25:value}, 'LowerRatio', ${26:value}, 'UpperRatio', ${27:value}, 'GroupMatrix', ${28:value}, 'LowerGroup', ${29:value}, 'UpperGroup', ${30:value}, 'BoundType', ${31:value}, 'MinNumAssets', ${32:value}, 'MaxNumAssets', ${33:value})'''
+        description: '''Portfolio('AssetList', value, 'Name', value, 'NumAssets', value, 'InitPort', value, 'AssetMean', value, 'AssetCovar', value, 'RiskFreeRate', value, 'Budget', value, 'LowerBudget', value, 'UpperBudget', value, 'BuyCost', value, 'SellCost', value, 'TrackingPort', value, 'TrackingError', value, 'Turnover', value, 'BuyTurnover', value, 'SellTurnover', value, 'LowerBound', value, 'UpperBound', value, 'AEquality', value, 'bEquality', value, 'AInequality', value, 'bInequality', value, 'GroupA', value, 'GroupB', value, 'LowerRatio', value, 'UpperRatio', value, 'GroupMatrix', value, 'LowerGroup', value, 'UpperGroup', value, 'BoundType', value, 'MinNumAssets', value, 'MaxNumAssets', value)'''
 
 
     "PortfolioCVaR.setScenarios":
         prefix: "PortfolioCVaR.setScenarios"
         body: '''PortfolioCVaR.setScenarios(${1:obj}, ${2:AssetScenarios}, 'DataFormat', ${3:value}, 'GetAssetList', ${4:value})'''
-        description: '''PortfolioCVaR.setScenarios(${1:obj}, ${2:AssetScenarios}, 'DataFormat', ${3:value}, 'GetAssetList', ${4:value})'''
+        description: '''PortfolioCVaR.setScenarios(obj, AssetScenarios, 'DataFormat', value, 'GetAssetList', value)'''
 
 
     "zero2disc":
         prefix: "zero2disc"
         body: '''[${1:DiscRates}, ${2:CurveDates}] = zero2disc(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
-        description: '''[${1:DiscRates}, ${2:CurveDates}] = zero2disc(${1:zeroRates}, ${2:curveDates}, ${3:settle}, 'Compounding', ${4:value}, 'Basis', ${5:value})'''
+        description: '''[DiscRates, CurveDates] = zero2disc(zeroRates, curveDates, settle, 'Compounding', value, 'Basis', value)'''
 
 
     "setmodel":
         prefix: "setmodel"
         body: '''setmodel(${1:sc}, ${2:ModelPredictors}, ${3:ModelCoefficients})'''
-        description: '''setmodel(${1:sc}, ${2:ModelPredictors}, ${3:ModelCoefficients})'''
+        description: '''setmodel(sc, ModelPredictors, ModelCoefficients)'''
 
 
     "PortfolioMAD.setScenarios":
         prefix: "PortfolioMAD.setScenarios"
         body: '''PortfolioMAD.setScenarios(${1:obj}, ${2:AssetScenarios}, 'DataFormat', ${3:value}, 'GetAssetList', ${4:value})'''
-        description: '''PortfolioMAD.setScenarios(${1:obj}, ${2:AssetScenarios}, 'DataFormat', ${3:value}, 'GetAssetList', ${4:value})'''
+        description: '''PortfolioMAD.setScenarios(obj, AssetScenarios, 'DataFormat', value, 'GetAssetList', value)'''
 
 
     "cdsspread":
         prefix: "cdsspread"
         body: '''[${1:Spread}, ${2:PaymentDates}, ${3:PaymentTimes}] = cdsspread(${1:ZeroData}, ${2:ProbData}, ${3:Settle}, ${4:Maturity}, 'RecoveryRate', ${5:value}, 'Period', ${6:value}, 'Basis', ${7:value}, 'BusDayConvention', ${8:value}, 'PayAccruedPremium', ${9:value}, 'TimeStep', ${10:value}, 'ZeroCompounding', ${11:value}, 'ZeroBasis', ${12:value})'''
-        description: '''[${1:Spread}, ${2:PaymentDates}, ${3:PaymentTimes}] = cdsspread(${1:ZeroData}, ${2:ProbData}, ${3:Settle}, ${4:Maturity}, 'RecoveryRate', ${5:value}, 'Period', ${6:value}, 'Basis', ${7:value}, 'BusDayConvention', ${8:value}, 'PayAccruedPremium', ${9:value}, 'TimeStep', ${10:value}, 'ZeroCompounding', ${11:value}, 'ZeroBasis', ${12:value})'''
+        description: '''[Spread, PaymentDates, PaymentTimes] = cdsspread(ZeroData, ProbData, Settle, Maturity, 'RecoveryRate', value, 'Period', value, 'Basis', value, 'BusDayConvention', value, 'PayAccruedPremium', value, 'TimeStep', value, 'ZeroCompounding', value, 'ZeroBasis', value)'''
 
 
     "Portfolio.setSolverMINLP":
         prefix: "Portfolio.setSolverMINLP"
         body: '''Portfolio.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
-        description: '''Portfolio.setSolverMINLP(${1:obj}, ${2:solverType}, 'MaxIterations', ${3:value}, 'AbsoluteGapTolerance', ${4:value}, 'RelativeGapTolerance', ${5:value}, 'Display', ${6:value}, 'NonlinearScalingFactor', ${7:value}, 'ObjectiveScalingFactor', ${8:value}, 'NumIterationsEarlyIntegerConvergence', ${9:value}, 'ActiveCutTolerance', ${10:value}, 'CutGeneration', ${11:value}, 'MaxIterationsInactiveCut', ${12:value}, 'TrustRegionStartIteration', ${13:value}, 'DeltaLimit', ${14:value}, 'ShrinkRatio', ${15:value}, 'IntMasterSolverOptions', ${16:value})'''
+        description: '''Portfolio.setSolverMINLP(obj, solverType, 'MaxIterations', value, 'AbsoluteGapTolerance', value, 'RelativeGapTolerance', value, 'Display', value, 'NonlinearScalingFactor', value, 'ObjectiveScalingFactor', value, 'NumIterationsEarlyIntegerConvergence', value, 'ActiveCutTolerance', value, 'CutGeneration', value, 'MaxIterationsInactiveCut', value, 'TrustRegionStartIteration', value, 'DeltaLimit', value, 'ShrinkRatio', value, 'IntMasterSolverOptions', value)'''
 
 
     "transprobtothresholds":
         prefix: "transprobtothresholds"
         body: '''${1:thresh} = transprobtothresholds(${1:trans})'''
-        description: '''${1:thresh} = transprobtothresholds(${1:trans})'''
+        description: '''thresh = transprobtothresholds(trans)'''
 
 
     "Portfolio.setBounds":
         prefix: "Portfolio.setBounds"
         body: '''Portfolio.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
-        description: '''Portfolio.setBounds(${1:obj}, ${2:LowerBound}, ${3:UpperBound}, 'BoundType', ${4:value}, 'NumAssets', ${5:value})'''
+        description: '''Portfolio.setBounds(obj, LowerBound, UpperBound, 'BoundType', value, 'NumAssets', value)'''
 
 
     "transprobprep":
         prefix: "transprobprep"
         body: '''${1:prepData} = transprobprep(${1:data}, 'labels', ${2:value})'''
-        description: '''${1:prepData} = transprobprep(${1:data}, 'labels', ${2:value})'''
+        description: '''prepData = transprobprep(data, 'labels', value)'''
 
 
     "fitmodel":
         prefix: "fitmodel"
         body: '''fitmodel(${1:sc}, 'PredictorVars', ${2:value}, 'VariableSelection', ${3:value}, 'StartingModel', ${4:value}, 'Display', ${5:value})'''
-        description: '''fitmodel(${1:sc}, 'PredictorVars', ${2:value}, 'VariableSelection', ${3:value}, 'StartingModel', ${4:value}, 'Display', ${5:value})'''
+        description: '''fitmodel(sc, 'PredictorVars', value, 'VariableSelection', value, 'StartingModel', value, 'Display', value)'''
 
 
     "probdefault":
         prefix: "probdefault"
         body: '''${1:pd} = probdefault(${1:sc}, 'data', ${2:value})'''
-        description: '''${1:pd} = probdefault(${1:sc}, 'data', ${2:value})'''
+        description: '''pd = probdefault(sc, 'data', value)'''
 
 
     "PortfolioMAD.setSolver":
         prefix: "PortfolioMAD.setSolver"
         body: '''PortfolioMAD.setSolver(${1:obj}, ${2:solverType}, 'Algorithm', ${3:value}, 'CheckGradients', ${4:value}, 'ConstraintTolerance', ${5:value}, 'Display', ${6:value}, 'FiniteDifferenceStepSize', ${7:value}, 'FiniteDifferenceType', ${8:value}, 'FunctionTolerance', ${9:value}, 'HonorBounds', ${10:value}, 'MaxFunctionEvaluations', ${11:value}, 'MaxIterations', ${12:value}, 'ObjectiveLimit', ${13:value}, 'OptimalityTolerance', ${14:value}, 'ScaleProblem', ${15:value}, 'SpecifyConstraintGradient', ${16:value}, 'SpecifyObjectiveGradient', ${17:value}, 'StepTolerance', ${18:value}, 'SubproblemAlgorithm', ${19:value}, 'TypicalX', ${20:value}, 'UseParallel', ${21:value})'''
-        description: '''PortfolioMAD.setSolver(${1:obj}, ${2:solverType}, 'Algorithm', ${3:value}, 'CheckGradients', ${4:value}, 'ConstraintTolerance', ${5:value}, 'Display', ${6:value}, 'FiniteDifferenceStepSize', ${7:value}, 'FiniteDifferenceType', ${8:value}, 'FunctionTolerance', ${9:value}, 'HonorBounds', ${10:value}, 'MaxFunctionEvaluations', ${11:value}, 'MaxIterations', ${12:value}, 'ObjectiveLimit', ${13:value}, 'OptimalityTolerance', ${14:value}, 'ScaleProblem', ${15:value}, 'SpecifyConstraintGradient', ${16:value}, 'SpecifyObjectiveGradient', ${17:value}, 'StepTolerance', ${18:value}, 'SubproblemAlgorithm', ${19:value}, 'TypicalX', ${20:value}, 'UseParallel', ${21:value})'''
+        description: '''PortfolioMAD.setSolver(obj, solverType, 'Algorithm', value, 'CheckGradients', value, 'ConstraintTolerance', value, 'Display', value, 'FiniteDifferenceStepSize', value, 'FiniteDifferenceType', value, 'FunctionTolerance', value, 'HonorBounds', value, 'MaxFunctionEvaluations', value, 'MaxIterations', value, 'ObjectiveLimit', value, 'OptimalityTolerance', value, 'ScaleProblem', value, 'SpecifyConstraintGradient', value, 'SpecifyObjectiveGradient', value, 'StepTolerance', value, 'SubproblemAlgorithm', value, 'TypicalX', value, 'UseParallel', value)'''
 
 
     "transprob":
         prefix: "transprob"
         body: '''[${1:transMat}, ${2:sampleTotals}, ${3:idTotals}] = transprob(${1:data}, 'labels', ${2:value}, 'excludeLabels', ${3:value}, 'startDate', ${4:value}, 'endDate', ${5:value}, 'algorithm', ${6:value}, 'snapsPerYear', ${7:value}, 'transInterval', ${8:value})'''
-        description: '''[${1:transMat}, ${2:sampleTotals}, ${3:idTotals}] = transprob(${1:data}, 'labels', ${2:value}, 'excludeLabels', ${3:value}, 'startDate', ${4:value}, 'endDate', ${5:value}, 'algorithm', ${6:value}, 'snapsPerYear', ${7:value}, 'transInterval', ${8:value})'''
+        description: '''[transMat, sampleTotals, idTotals] = transprob(data, 'labels', value, 'excludeLabels', value, 'startDate', value, 'endDate', value, 'algorithm', value, 'snapsPerYear', value, 'transInterval', value)'''
 

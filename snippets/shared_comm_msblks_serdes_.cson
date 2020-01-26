@@ -4,11 +4,11 @@
     "comm.PhaseNoise":
         prefix: "comm.PhaseNoise"
         body: '''comm.PhaseNoise(${1:Level}, ${2:FrequencyOffset}, ${3:SampleRate}, ${4:varargin})'''
-        description: '''comm.PhaseNoise(${1:Level}, ${2:FrequencyOffset}, ${3:SampleRate}, ${4:varargin})'''
+        description: '''comm.PhaseNoise(Level, FrequencyOffset, SampleRate, varargin)'''
 
 
     "comm.EyeDiagram":
         prefix: "comm.EyeDiagram"
         body: '''comm.EyeDiagram(${1:varargin})'''
-        description: '''comm.EyeDiagram(${1:varargin})'''
+        description: '''comm.EyeDiagram(varargin)'''
 

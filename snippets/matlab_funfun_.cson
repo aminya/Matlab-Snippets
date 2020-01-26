@@ -4,71 +4,71 @@
     "quad2d":
         prefix: "quad2d"
         body: '''[${1:q}, ${2:errbnd}] = quad2d(${1:fun}, ${2:a}, ${3:b}, ${4:c}, ${5:d}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'MaxFunEvals', ${8:value}, 'FailurePlot', ${9:value}, 'Singular', ${10:value})'''
-        description: '''[${1:q}, ${2:errbnd}] = quad2d(${1:fun}, ${2:a}, ${3:b}, ${4:c}, ${5:d}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'MaxFunEvals', ${8:value}, 'FailurePlot', ${9:value}, 'Singular', ${10:value})'''
+        description: '''[q, errbnd] = quad2d(fun, a, b, c, d, 'AbsTol', value, 'RelTol', value, 'MaxFunEvals', value, 'FailurePlot', value, 'Singular', value)'''
 
 
     "integral3":
         prefix: "integral3"
         body: '''${1:q} = integral3(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, ${6:zmin}, ${7:zmax}, 'AbsTol', ${8:value}, 'RelTol', ${9:value}, 'Method', ${10:value})'''
-        description: '''${1:q} = integral3(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, ${6:zmin}, ${7:zmax}, 'AbsTol', ${8:value}, 'RelTol', ${9:value}, 'Method', ${10:value})'''
+        description: '''q = integral3(fun, xmin, xmax, ymin, ymax, zmin, zmax, 'AbsTol', value, 'RelTol', value, 'Method', value)'''
 
 
     "bvpxtend":
         prefix: "bvpxtend"
         body: '''bvpxtend(${1:sol}, ${2:xnew}, ${3:optional_ynew}, ${4:optional_pnew})'''
-        description: '''bvpxtend(${1:sol}, ${2:xnew}, ${3:optional_ynew}, ${4:optional_pnew})'''
+        description: '''bvpxtend(sol, xnew, optional_ynew, optional_pnew)'''
 
 
     "odeset":
         prefix: "odeset"
         body: '''${1:options} = odeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'Refine', ${5:value}, 'OutputFcn', ${6:value}, 'OutputSel', ${7:value}, 'Stats', ${8:value}, 'Jacobian', ${9:value}, 'JPattern', ${10:value}, 'Vectorized', ${11:value}, 'Events', ${12:value}, 'Mass', ${13:value}, 'MStateDependence', ${14:value}, 'MassSingular', ${15:value}, 'MvPattern', ${16:value}, 'InitialSlope', ${17:value}, 'InitialStep', ${18:value}, 'MaxStep', ${19:value}, 'NonNegative', ${20:value}, 'BDF', ${21:value}, 'MaxOrder', ${22:value})'''
-        description: '''${1:options} = odeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'Refine', ${5:value}, 'OutputFcn', ${6:value}, 'OutputSel', ${7:value}, 'Stats', ${8:value}, 'Jacobian', ${9:value}, 'JPattern', ${10:value}, 'Vectorized', ${11:value}, 'Events', ${12:value}, 'Mass', ${13:value}, 'MStateDependence', ${14:value}, 'MassSingular', ${15:value}, 'MvPattern', ${16:value}, 'InitialSlope', ${17:value}, 'InitialStep', ${18:value}, 'MaxStep', ${19:value}, 'NonNegative', ${20:value}, 'BDF', ${21:value}, 'MaxOrder', ${22:value})'''
+        description: '''options = odeset(optional_oldopts, 'RelTol', value, 'AbsTol', value, 'NormControl', value, 'Refine', value, 'OutputFcn', value, 'OutputSel', value, 'Stats', value, 'Jacobian', value, 'JPattern', value, 'Vectorized', value, 'Events', value, 'Mass', value, 'MStateDependence', value, 'MassSingular', value, 'MvPattern', value, 'InitialSlope', value, 'InitialStep', value, 'MaxStep', value, 'NonNegative', value, 'BDF', value, 'MaxOrder', value)'''
 
 
     "ddeget":
         prefix: "ddeget"
         body: '''ddeget(${1:options}, ${2:name}, ${3:optional_default})'''
-        description: '''ddeget(${1:options}, ${2:name}, ${3:optional_default})'''
+        description: '''ddeget(options, name, optional_default)'''
 
 
     "quadgk":
         prefix: "quadgk"
         body: '''[${1:q}, ${2:errbnd}] = quadgk(${1:fun}, ${2:a}, ${3:b}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'Waypoints', ${6:value}, 'MaxIntervalCount', ${7:value})'''
-        description: '''[${1:q}, ${2:errbnd}] = quadgk(${1:fun}, ${2:a}, ${3:b}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'Waypoints', ${6:value}, 'MaxIntervalCount', ${7:value})'''
+        description: '''[q, errbnd] = quadgk(fun, a, b, 'AbsTol', value, 'RelTol', value, 'Waypoints', value, 'MaxIntervalCount', value)'''
 
 
     "odeget":
         prefix: "odeget"
         body: '''odeget(${1:options}, ${2:name}, ${3:optional_default})'''
-        description: '''odeget(${1:options}, ${2:name}, ${3:optional_default})'''
+        description: '''odeget(options, name, optional_default)'''
 
 
     "integral":
         prefix: "integral"
         body: '''${1:q} = integral(${1:fun}, ${2:xmin}, ${3:xmax}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'ArrayValued', ${6:value}, 'Waypoints', ${7:value})'''
-        description: '''${1:q} = integral(${1:fun}, ${2:xmin}, ${3:xmax}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'ArrayValued', ${6:value}, 'Waypoints', ${7:value})'''
+        description: '''q = integral(fun, xmin, xmax, 'AbsTol', value, 'RelTol', value, 'ArrayValued', value, 'Waypoints', value)'''
 
 
     "bvpget":
         prefix: "bvpget"
         body: '''bvpget(${1:options}, ${2:name}, ${3:optional_default})'''
-        description: '''bvpget(${1:options}, ${2:name}, ${3:optional_default})'''
+        description: '''bvpget(options, name, optional_default)'''
 
 
     "ddeset":
         prefix: "ddeset"
         body: '''${1:options} = ddeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'OutputFcn', ${5:value}, 'OutputSel', ${6:value}, 'Refine', ${7:value}, 'Stats', ${8:value}, 'InitialStep', ${9:value}, 'MaxStep', ${10:value}, 'Events', ${11:value}, 'Jumps', ${12:value}, 'InitialY', ${13:value})'''
-        description: '''${1:options} = ddeset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'NormControl', ${4:value}, 'OutputFcn', ${5:value}, 'OutputSel', ${6:value}, 'Refine', ${7:value}, 'Stats', ${8:value}, 'InitialStep', ${9:value}, 'MaxStep', ${10:value}, 'Events', ${11:value}, 'Jumps', ${12:value}, 'InitialY', ${13:value})'''
+        description: '''options = ddeset(optional_oldopts, 'RelTol', value, 'AbsTol', value, 'NormControl', value, 'OutputFcn', value, 'OutputSel', value, 'Refine', value, 'Stats', value, 'InitialStep', value, 'MaxStep', value, 'Events', value, 'Jumps', value, 'InitialY', value)'''
 
 
     "bvpset":
         prefix: "bvpset"
         body: '''bvpset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'Vectorized', ${4:value}, 'FJacobian', ${5:value}, 'BCJacobian', ${6:value}, 'SingularTerm', ${7:value}, 'Nmax', ${8:value}, 'Stats', ${9:value})'''
-        description: '''bvpset(${1:optional_oldopts}, 'RelTol', ${2:value}, 'AbsTol', ${3:value}, 'Vectorized', ${4:value}, 'FJacobian', ${5:value}, 'BCJacobian', ${6:value}, 'SingularTerm', ${7:value}, 'Nmax', ${8:value}, 'Stats', ${9:value})'''
+        description: '''bvpset(optional_oldopts, 'RelTol', value, 'AbsTol', value, 'Vectorized', value, 'FJacobian', value, 'BCJacobian', value, 'SingularTerm', value, 'Nmax', value, 'Stats', value)'''
 
 
     "integral2":
         prefix: "integral2"
         body: '''${1:q} = integral2(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'Method', ${8:value})'''
-        description: '''${1:q} = integral2(${1:fun}, ${2:xmin}, ${3:xmax}, ${4:ymin}, ${5:ymax}, 'AbsTol', ${6:value}, 'RelTol', ${7:value}, 'Method', ${8:value})'''
+        description: '''q = integral2(fun, xmin, xmax, ymin, ymax, 'AbsTol', value, 'RelTol', value, 'Method', value)'''
 

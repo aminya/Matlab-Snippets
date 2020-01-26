@@ -4,5 +4,5 @@
     "userpath":
         prefix: "userpath"
         body: '''userpath(${1:optional_path})'''
-        description: '''userpath(${1:optional_path})'''
+        description: '''userpath(optional_path)'''
 

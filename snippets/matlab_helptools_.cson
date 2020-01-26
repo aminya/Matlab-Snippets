@@ -4,17 +4,17 @@
     "docroot":
         prefix: "docroot"
         body: '''docroot(${1:newRoot})'''
-        description: '''docroot(${1:newRoot})'''
+        description: '''docroot(newRoot)'''
 
 
     "doc":
         prefix: "doc"
         body: '''doc(${1:optional_filename})'''
-        description: '''doc(${1:optional_filename})'''
+        description: '''doc(optional_filename)'''
 
 
     "help":
         prefix: "help"
         body: '''help(${1:optional_filename})'''
-        description: '''help(${1:optional_filename})'''
+        description: '''help(optional_filename)'''
 

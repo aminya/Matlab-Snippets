@@ -4,5 +4,5 @@
     "dsp.LogicAnalyzer":
         prefix: "dsp.LogicAnalyzer"
         body: '''dsp.LogicAnalyzer(${1:NumInputPorts}, ${2:SampleTime}, ${3:varargin})'''
-        description: '''dsp.LogicAnalyzer(${1:NumInputPorts}, ${2:SampleTime}, ${3:varargin})'''
+        description: '''dsp.LogicAnalyzer(NumInputPorts, SampleTime, varargin)'''
 

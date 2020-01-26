@@ -4,5 +4,5 @@
     "help":
         prefix: "help"
         body: '''help(${1:optional_filename})'''
-        description: '''help(${1:optional_filename})'''
+        description: '''help(optional_filename)'''
 

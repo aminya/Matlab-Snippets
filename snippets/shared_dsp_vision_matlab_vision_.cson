@@ -4,5 +4,5 @@
     "dsp.DCT":
         prefix: "dsp.DCT"
         body: '''dsp.DCT(${1:arg})'''
-        description: '''dsp.DCT(${1:arg})'''
+        description: '''dsp.DCT(arg)'''
 

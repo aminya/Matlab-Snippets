@@ -4,11 +4,11 @@
     "mbuild":
         prefix: "mbuild"
         body: '''mbuild(${1:args})'''
-        description: '''mbuild(${1:args})'''
+        description: '''mbuild(args)'''
 
 
     "mcc":
         prefix: "mcc"
         body: '''mcc(${1:args})'''
-        description: '''mcc(${1:args})'''
+        description: '''mcc(args)'''
 

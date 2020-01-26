@@ -4,11 +4,11 @@
     "coder.hardware":
         prefix: "coder.hardware"
         body: '''coder.hardware(${1:name})'''
-        description: '''coder.hardware(${1:name})'''
+        description: '''coder.hardware(name)'''
 
 
     "targetHardware":
         prefix: "targetHardware"
         body: '''${1:obj} = targetHardware(${1:hardwareName})'''
-        description: '''${1:obj} = targetHardware(${1:hardwareName})'''
+        description: '''obj = targetHardware(hardwareName)'''
 

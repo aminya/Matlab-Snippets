@@ -4,5 +4,5 @@
     "canDatabase":
         prefix: "canDatabase"
         body: '''${1:obj} = canDatabase(${1:File})'''
-        description: '''${1:obj} = canDatabase(${1:File})'''
+        description: '''obj = canDatabase(File)'''
 

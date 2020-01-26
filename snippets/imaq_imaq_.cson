@@ -4,131 +4,131 @@
     "getselectedsource":
         prefix: "getselectedsource"
         body: '''${1:out} = getselectedsource(${1:obj})'''
-        description: '''${1:out} = getselectedsource(${1:obj})'''
+        description: '''out = getselectedsource(obj)'''
 
 
     "triggerinfo":
         prefix: "triggerinfo"
         body: '''${1:out} = triggerinfo(${1:obj}, ${2:optional_type})'''
-        description: '''${1:out} = triggerinfo(${1:obj}, ${2:optional_type})'''
+        description: '''out = triggerinfo(obj, optional_type)'''
 
 
     "getsnapshot":
         prefix: "getsnapshot"
         body: '''getsnapshot(${1:obj})'''
-        description: '''getsnapshot(${1:obj})'''
+        description: '''getsnapshot(obj)'''
 
 
     "imaqmex":
         prefix: "imaqmex"
         body: '''imaqmex(${1:feature}, ${2:featureNames}, ${3:optional_value})'''
-        description: '''imaqmex(${1:feature}, ${2:featureNames}, ${3:optional_value})'''
+        description: '''imaqmex(feature, featureNames, optional_value)'''
 
 
     "flushdata":
         prefix: "flushdata"
         body: '''flushdata(${1:obj}, ${2:optional_mode})'''
-        description: '''flushdata(${1:obj}, ${2:optional_mode})'''
+        description: '''flushdata(obj, optional_mode)'''
 
 
     "commands":
         prefix: "commands"
         body: '''${1:out} = commands(${1:gigeCamera})'''
-        description: '''${1:out} = commands(${1:gigeCamera})'''
+        description: '''out = commands(gigeCamera)'''
 
 
     "imaqhelp":
         prefix: "imaqhelp"
         body: '''${1:out} = imaqhelp(${1:optional_obj}, ${2:optional_name})'''
-        description: '''${1:out} = imaqhelp(${1:optional_obj}, ${2:optional_name})'''
+        description: '''out = imaqhelp(optional_obj, optional_name)'''
 
 
     "propinfo":
         prefix: "propinfo"
         body: '''${1:out} = propinfo(${1:obj}, ${2:optional_propName})'''
-        description: '''${1:out} = propinfo(${1:obj}, ${2:optional_propName})'''
+        description: '''out = propinfo(obj, optional_propName)'''
 
 
     "snapshot":
         prefix: "snapshot"
         body: '''snapshot(${1:optional_camera})'''
-        description: '''snapshot(${1:optional_camera})'''
+        description: '''snapshot(optional_camera)'''
 
 
     "trigger":
         prefix: "trigger"
         body: '''trigger(${1:obj})'''
-        description: '''trigger(${1:obj})'''
+        description: '''trigger(obj)'''
 
 
     "videoinput":
         prefix: "videoinput"
         body: '''${1:obj} = videoinput(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'Disklogger', ${5:value}, 'FramesAcquiredFcnCount', ${6:value}, 'FrameGrabInterval', ${7:value}, 'FramesPerTrigger', ${8:value}, 'LoggingMode', ${9:value}, 'Name', ${10:value}, 'ReturnedColorSpace', ${11:value}, 'ROIPosition', ${12:value}, 'SelectedSourceName', ${13:value}, 'Tag', ${14:value}, 'Timeout', ${15:value}, 'TimerPeriod', ${16:value}, 'TriggerFrameDelay', ${17:value}, 'TriggerRepeat', ${18:value})'''
-        description: '''${1:obj} = videoinput(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'Disklogger', ${5:value}, 'FramesAcquiredFcnCount', ${6:value}, 'FrameGrabInterval', ${7:value}, 'FramesPerTrigger', ${8:value}, 'LoggingMode', ${9:value}, 'Name', ${10:value}, 'ReturnedColorSpace', ${11:value}, 'ROIPosition', ${12:value}, 'SelectedSourceName', ${13:value}, 'Tag', ${14:value}, 'Timeout', ${15:value}, 'TimerPeriod', ${16:value}, 'TriggerFrameDelay', ${17:value}, 'TriggerRepeat', ${18:value})'''
+        description: '''obj = videoinput(adaptorName, deviceID, format, 'BayerSensorAlignment', value, 'Disklogger', value, 'FramesAcquiredFcnCount', value, 'FrameGrabInterval', value, 'FramesPerTrigger', value, 'LoggingMode', value, 'Name', value, 'ReturnedColorSpace', value, 'ROIPosition', value, 'SelectedSourceName', value, 'Tag', value, 'Timeout', value, 'TimerPeriod', value, 'TriggerFrameDelay', value, 'TriggerRepeat', value)'''
 
 
     "getdata":
         prefix: "getdata"
         body: '''getdata(${1:obj}, ${2:frames}, ${3:type}, ${4:optional_format})'''
-        description: '''getdata(${1:obj}, ${2:frames}, ${3:type}, ${4:optional_format})'''
+        description: '''getdata(obj, frames, type, optional_format)'''
 
 
     "imaqtool":
         prefix: "imaqtool"
         body: '''imaqtool(${1:optional_file})'''
-        description: '''imaqtool(${1:optional_file})'''
+        description: '''imaqtool(optional_file)'''
 
 
     "closepreview":
         prefix: "closepreview"
         body: '''closepreview(${1:obj})'''
-        description: '''closepreview(${1:obj})'''
+        description: '''closepreview(obj)'''
 
 
     "islogging":
         prefix: "islogging"
         body: '''${1:out} = islogging(${1:obj})'''
-        description: '''${1:out} = islogging(${1:obj})'''
+        description: '''out = islogging(obj)'''
 
 
     "peekdata":
         prefix: "peekdata"
         body: '''peekdata(${1:obj}, ${2:frames})'''
-        description: '''peekdata(${1:obj}, ${2:frames})'''
+        description: '''peekdata(obj, frames)'''
 
 
     "isrunning":
         prefix: "isrunning"
         body: '''${1:out} = isrunning(${1:obj})'''
-        description: '''${1:out} = isrunning(${1:obj})'''
+        description: '''out = isrunning(obj)'''
 
 
     "stoppreview":
         prefix: "stoppreview"
         body: '''stoppreview(${1:obj})'''
-        description: '''stoppreview(${1:obj})'''
+        description: '''stoppreview(obj)'''
 
 
     "triggerconfig":
         prefix: "triggerconfig"
         body: '''${1:out} = triggerconfig(${1:obj}, ${2:optional_type}, ${3:optional_condition})'''
-        description: '''${1:out} = triggerconfig(${1:obj}, ${2:optional_type}, ${3:optional_condition})'''
+        description: '''out = triggerconfig(obj, optional_type, optional_condition)'''
 
 
     "imaqhwinfo":
         prefix: "imaqhwinfo"
         body: '''${1:out} = imaqhwinfo(${1:optional_obj}, ${2:optional_field})'''
-        description: '''${1:out} = imaqhwinfo(${1:optional_obj}, ${2:optional_field})'''
+        description: '''out = imaqhwinfo(optional_obj, optional_field)'''
 
 
     "wait":
         prefix: "wait"
         body: '''wait(${1:obj}, ${2:optional_waittime}, ${3:optional_state})'''
-        description: '''wait(${1:obj}, ${2:optional_waittime}, ${3:optional_state})'''
+        description: '''wait(obj, optional_waittime, optional_state)'''
 
 
     "preview":
         prefix: "preview"
         body: '''${1:out} = preview(${1:obj}, ${2:optional_himage})'''
-        description: '''${1:out} = preview(${1:obj}, ${2:optional_himage})'''
+        description: '''out = preview(obj, optional_himage)'''
 

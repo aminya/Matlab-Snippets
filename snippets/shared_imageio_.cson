@@ -4,5 +4,5 @@
     "matlab.io.internal.TiffReader":
         prefix: "matlab.io.internal.TiffReader"
         body: '''matlab.io.internal.TiffReader(${1:filename}, 'ImageIndex', ${2:value}, 'SubIFDOffset', ${3:value})'''
-        description: '''matlab.io.internal.TiffReader(${1:filename}, 'ImageIndex', ${2:value}, 'SubIFDOffset', ${3:value})'''
+        description: '''matlab.io.internal.TiffReader(filename, 'ImageIndex', value, 'SubIFDOffset', value)'''
 

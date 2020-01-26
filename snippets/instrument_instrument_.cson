@@ -4,401 +4,401 @@
     "instrument.interface.modbus.Modbus.writeRead":
         prefix: "instrument.interface.modbus.Modbus.writeRead"
         body: '''${1:data} = instrument.interface.modbus.Modbus.writeRead(${1:obj}, ${2:writeAddress}, ${3:writeData}, ${4:optional_writePrecision}, ${5:readAddress}, ${6:readCount}, ${7:optional_readPrecision}, ${8:optional_serverId})'''
-        description: '''${1:data} = instrument.interface.modbus.Modbus.writeRead(${1:obj}, ${2:writeAddress}, ${3:writeData}, ${4:optional_writePrecision}, ${5:readAddress}, ${6:readCount}, ${7:optional_readPrecision}, ${8:optional_serverId})'''
+        description: '''data = instrument.interface.modbus.Modbus.writeRead(obj, writeAddress, writeData, optional_writePrecision, readAddress, readCount, optional_readPrecision, optional_serverId)'''
 
 
     "instrument.interface.modbus.Modbus.maskWrite":
         prefix: "instrument.interface.modbus.Modbus.maskWrite"
         body: '''instrument.interface.modbus.Modbus.maskWrite(${1:obj}, ${2:address}, ${3:andMask}, ${4:orMask}, ${5:optional_serverId})'''
-        description: '''instrument.interface.modbus.Modbus.maskWrite(${1:obj}, ${2:address}, ${3:andMask}, ${4:orMask}, ${5:optional_serverId})'''
+        description: '''instrument.interface.modbus.Modbus.maskWrite(obj, address, andMask, orMask, optional_serverId)'''
 
 
     "icdevice":
         prefix: "icdevice"
         body: '''${1:obj} = icdevice(${1:driver}, ${2:hwobj}, 'ConfirmationFcn', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Tag', ${6:value}, 'Timeout', ${7:value}, 'UserData', ${8:value})'''
-        description: '''${1:obj} = icdevice(${1:driver}, ${2:hwobj}, 'ConfirmationFcn', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Tag', ${6:value}, 'Timeout', ${7:value}, 'UserData', ${8:value})'''
+        description: '''obj = icdevice(driver, hwobj, 'ConfirmationFcn', value, 'Name', value, 'ObjectVisibility', value, 'Tag', value, 'Timeout', value, 'UserData', value)'''
 
 
     "tcpip":
         prefix: "tcpip"
         body: '''${1:obj} = tcpip(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'LocalHost', ${9:value}, 'LocalPort', ${10:value}, 'LocalPortMode', ${11:value}, 'Name', ${12:value}, 'NetworkRole', ${13:value}, 'ObjectVisibility', ${14:value}, 'OutputBufferSize', ${15:value}, 'OutputEmptyFcn', ${16:value}, 'ReadAsyncMode', ${17:value}, 'RecordDetail', ${18:value}, 'RecordMode', ${19:value}, 'RecordName', ${20:value}, 'RemoteHost', ${21:value}, 'RemotePort', ${22:value}, 'Tag', ${23:value}, 'Terminator', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'TransferDelay', ${28:value}, 'UserData', ${29:value})'''
-        description: '''${1:obj} = tcpip(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'LocalHost', ${9:value}, 'LocalPort', ${10:value}, 'LocalPortMode', ${11:value}, 'Name', ${12:value}, 'NetworkRole', ${13:value}, 'ObjectVisibility', ${14:value}, 'OutputBufferSize', ${15:value}, 'OutputEmptyFcn', ${16:value}, 'ReadAsyncMode', ${17:value}, 'RecordDetail', ${18:value}, 'RecordMode', ${19:value}, 'RecordName', ${20:value}, 'RemoteHost', ${21:value}, 'RemotePort', ${22:value}, 'Tag', ${23:value}, 'Terminator', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'TransferDelay', ${28:value}, 'UserData', ${29:value})'''
+        description: '''obj = tcpip(rhost, rport, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'ErrorFcn', value, 'InputBufferSize', value, 'LocalHost', value, 'LocalPort', value, 'LocalPortMode', value, 'Name', value, 'NetworkRole', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RemoteHost', value, 'RemotePort', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferDelay', value, 'UserData', value)'''
 
 
     "instrument.interface.spi.ni845x.Spi.connect":
         prefix: "instrument.interface.spi.ni845x.Spi.connect"
         body: '''instrument.interface.spi.ni845x.Spi.connect(${1:obj})'''
-        description: '''instrument.interface.spi.ni845x.Spi.connect(${1:obj})'''
+        description: '''instrument.interface.spi.ni845x.Spi.connect(obj)'''
 
 
     "instrfind":
         prefix: "instrfind"
         body: '''${1:out} = instrfind(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
-        description: '''${1:out} = instrfind(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
+        description: '''out = instrfind(optional_obj, 'BitRate', value, 'BoardIndex', value, 'BoardSerial', value, 'ByteOrder', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'PullupResistors', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RecordStatus', value, 'RemoteAddress', value, 'Status', value, 'Tag', value, 'TargetPower', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferStatus', value, 'Type', value, 'UserData', value, 'ValuesReceived', value, 'ValuesSent', value, 'Vendor', value)'''
 
 
     "rfsiggen":
         prefix: "rfsiggen"
         body: '''rfsiggen(${1:Resource}, ${2:optional_Driver})'''
-        description: '''rfsiggen(${1:Resource}, ${2:optional_Driver})'''
+        description: '''rfsiggen(Resource, optional_Driver)'''
 
 
     "length":
         prefix: "length"
         body: '''${1:out} = length(${1:obj})'''
-        description: '''${1:out} = length(${1:obj})'''
+        description: '''out = length(obj)'''
 
 
     "memread":
         prefix: "memread"
         body: '''${1:out} = memread(${1:obj}, ${2:optional_offset}, ${3:optional_precision}, ${4:optional_adrspace}, ${5:optional_size})'''
-        description: '''${1:out} = memread(${1:obj}, ${2:optional_offset}, ${3:optional_precision}, ${4:optional_adrspace}, ${5:optional_size})'''
+        description: '''out = memread(obj, optional_offset, optional_precision, optional_adrspace, optional_size)'''
 
 
     "instrument.interface.modbus.Modbus.read":
         prefix: "instrument.interface.modbus.Modbus.read"
         body: '''${1:data} = instrument.interface.modbus.Modbus.read(${1:obj}, ${2:target}, ${3:address}, ${4:count}, ${5:optional_serverId}, ${6:optional_precision})'''
-        description: '''${1:data} = instrument.interface.modbus.Modbus.read(${1:obj}, ${2:target}, ${3:address}, ${4:count}, ${5:optional_serverId}, ${6:optional_precision})'''
+        description: '''data = instrument.interface.modbus.Modbus.read(obj, target, address, count, optional_serverId, optional_precision)'''
 
 
     "instrhwinfo":
         prefix: "instrhwinfo"
         body: '''${1:out} = instrhwinfo(${1:optional_obj}, ${2:optional_FieldName})'''
-        description: '''${1:out} = instrhwinfo(${1:optional_obj}, ${2:optional_FieldName})'''
+        description: '''out = instrhwinfo(optional_obj, optional_FieldName)'''
 
 
     "connect":
         prefix: "connect"
         body: '''connect(${1:obj}, ${2:update})'''
-        description: '''connect(${1:obj}, ${2:update})'''
+        description: '''connect(obj, update)'''
 
 
     "memwrite":
         prefix: "memwrite"
         body: '''memwrite(${1:obj}, ${2:data}, ${3:optional_offset}, ${4:optional_precision}, ${5:optional_adrspace})'''
-        description: '''memwrite(${1:obj}, ${2:data}, ${3:optional_offset}, ${4:optional_precision}, ${5:optional_adrspace})'''
+        description: '''memwrite(obj, data, optional_offset, optional_precision, optional_adrspace)'''
 
 
     "update":
         prefix: "update"
         body: '''update(${1:obj}, ${2:type}, ${3:name}, 'Name', ${4:value}, 'Description', ${5:value}, 'Session', ${6:value})'''
-        description: '''update(${1:obj}, ${2:type}, ${3:name}, 'Name', ${4:value}, 'Description', ${5:value}, 'Session', ${6:value})'''
+        description: '''update(obj, type, name, 'Name', value, 'Description', value, 'Session', value)'''
 
 
     "visa":
         prefix: "visa"
         body: '''${1:obj} = visa(${1:vendor}, ${2:rsrcname}, 'Alias', ${3:value}, 'BaudRate', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'DataBits', ${9:value}, 'DataTerminalReady', ${10:value}, 'ErrorFcn', ${11:value}, 'FlowControl', ${12:value}, 'InputBufferSize', ${13:value}, 'Name', ${14:value}, 'ObjectVisibility', ${15:value}, 'OutputBufferSize', ${16:value}, 'OutputEmptyFcn', ${17:value}, 'Parity', ${18:value}, 'Port', ${19:value}, 'ReadAsyncMode', ${20:value}, 'RecordDetail', ${21:value}, 'RecordMode', ${22:value}, 'RecordName', ${23:value}, 'RequestToSend', ${24:value}, 'RsrcName', ${25:value}, 'StopBits', ${26:value}, 'Tag', ${27:value}, 'Terminator', ${28:value}, 'Timeout', ${29:value}, 'TimerFcn', ${30:value}, 'TimerPeriod', ${31:value}, 'UserData', ${32:value})'''
-        description: '''${1:obj} = visa(${1:vendor}, ${2:rsrcname}, 'Alias', ${3:value}, 'BaudRate', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'DataBits', ${9:value}, 'DataTerminalReady', ${10:value}, 'ErrorFcn', ${11:value}, 'FlowControl', ${12:value}, 'InputBufferSize', ${13:value}, 'Name', ${14:value}, 'ObjectVisibility', ${15:value}, 'OutputBufferSize', ${16:value}, 'OutputEmptyFcn', ${17:value}, 'Parity', ${18:value}, 'Port', ${19:value}, 'ReadAsyncMode', ${20:value}, 'RecordDetail', ${21:value}, 'RecordMode', ${22:value}, 'RecordName', ${23:value}, 'RequestToSend', ${24:value}, 'RsrcName', ${25:value}, 'StopBits', ${26:value}, 'Tag', ${27:value}, 'Terminator', ${28:value}, 'Timeout', ${29:value}, 'TimerFcn', ${30:value}, 'TimerPeriod', ${31:value}, 'UserData', ${32:value})'''
+        description: '''obj = visa(vendor, rsrcname, 'Alias', value, 'BaudRate', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DataBits', value, 'DataTerminalReady', value, 'ErrorFcn', value, 'FlowControl', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'Parity', value, 'Port', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RequestToSend', value, 'RsrcName', value, 'StopBits', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)'''
 
 
     "instrument.interface.spi.aardvark.Spi.read":
         prefix: "instrument.interface.spi.aardvark.Spi.read"
         body: '''${1:data} = instrument.interface.spi.aardvark.Spi.read(${1:obj}, ${2:size})'''
-        description: '''${1:data} = instrument.interface.spi.aardvark.Spi.read(${1:obj}, ${2:size})'''
+        description: '''data = instrument.interface.spi.aardvark.Spi.read(obj, size)'''
 
 
     "devicereset":
         prefix: "devicereset"
         body: '''devicereset(${1:obj})'''
-        description: '''devicereset(${1:obj})'''
+        description: '''devicereset(obj)'''
 
 
     "remove":
         prefix: "remove"
         body: '''remove(${1:obj}, ${2:struct})'''
-        description: '''remove(${1:obj}, ${2:struct})'''
+        description: '''remove(obj, struct)'''
 
 
     "instrument.interface.spi.ni845x.Spi.read":
         prefix: "instrument.interface.spi.ni845x.Spi.read"
         body: '''${1:data} = instrument.interface.spi.ni845x.Spi.read(${1:obj}, ${2:size})'''
-        description: '''${1:data} = instrument.interface.spi.ni845x.Spi.read(${1:obj}, ${2:size})'''
+        description: '''data = instrument.interface.spi.ni845x.Spi.read(obj, size)'''
 
 
     "makemid":
         prefix: "makemid"
         body: '''makemid(${1:driver}, ${2:optional_filename}, ${3:optional_type})'''
-        description: '''makemid(${1:driver}, ${2:optional_filename}, ${3:optional_type})'''
+        description: '''makemid(driver, optional_filename, optional_type)'''
 
 
     "Bluetooth":
         prefix: "Bluetooth"
         body: '''${1:B} = Bluetooth(${1:RemoteName/ID}, ${2:Channel}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'Name', ${9:value}, 'ObjectVisibility', ${10:value}, 'OutputBufferSize', ${11:value}, 'OutputEmptyFcn', ${12:value}, 'ReadAsyncMode', ${13:value}, 'RecordDetail', ${14:value}, 'RecordMode', ${15:value}, 'RecordName', ${16:value}, 'RemoteID', ${17:value}, 'RemoteName', ${18:value}, 'Tag', ${19:value}, 'Terminator', ${20:value}, 'Timeout', ${21:value}, 'TimerFcn', ${22:value}, 'TimerPeriod', ${23:value}, 'UserData', ${24:value})'''
-        description: '''${1:B} = Bluetooth(${1:RemoteName/ID}, ${2:Channel}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'ErrorFcn', ${7:value}, 'InputBufferSize', ${8:value}, 'Name', ${9:value}, 'ObjectVisibility', ${10:value}, 'OutputBufferSize', ${11:value}, 'OutputEmptyFcn', ${12:value}, 'ReadAsyncMode', ${13:value}, 'RecordDetail', ${14:value}, 'RecordMode', ${15:value}, 'RecordName', ${16:value}, 'RemoteID', ${17:value}, 'RemoteName', ${18:value}, 'Tag', ${19:value}, 'Terminator', ${20:value}, 'Timeout', ${21:value}, 'TimerFcn', ${22:value}, 'TimerPeriod', ${23:value}, 'UserData', ${24:value})'''
+        description: '''B = Bluetooth(RemoteName/ID, Channel, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'ErrorFcn', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RemoteID', value, 'RemoteName', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)'''
 
 
     "disp":
         prefix: "disp"
         body: '''disp(${1:obj})'''
-        description: '''disp(${1:obj})'''
+        description: '''disp(obj)'''
 
 
     "spi":
         prefix: "spi"
         body: '''${1:S} = spi(${1:Vendor}, ${2:BoardIndex}, ${3:Port})'''
-        description: '''${1:S} = spi(${1:Vendor}, ${2:BoardIndex}, ${3:Port})'''
+        description: '''S = spi(Vendor, BoardIndex, Port)'''
 
 
     "propinfo":
         prefix: "propinfo"
         body: '''${1:out} = propinfo(${1:obj}, ${2:optional_PropertyName})'''
-        description: '''${1:out} = propinfo(${1:obj}, ${2:optional_PropertyName})'''
+        description: '''out = propinfo(obj, optional_PropertyName)'''
 
 
     "selftest":
         prefix: "selftest"
         body: '''${1:out} = selftest(${1:obj})'''
-        description: '''${1:out} = selftest(${1:obj})'''
+        description: '''out = selftest(obj)'''
 
 
     "trigger":
         prefix: "trigger"
         body: '''trigger(${1:obj})'''
-        description: '''trigger(${1:obj})'''
+        description: '''trigger(obj)'''
 
 
     "i2c":
         prefix: "i2c"
         body: '''${1:I} = i2c(${1:Vendor}, ${2:BoardIndex}, ${3:RemoteAddress})'''
-        description: '''${1:I} = i2c(${1:Vendor}, ${2:BoardIndex}, ${3:RemoteAddress})'''
+        description: '''I = i2c(Vendor, BoardIndex, RemoteAddress)'''
 
 
     "fgen":
         prefix: "fgen"
         body: '''fgen(${1:Resource}, ${2:optional_Driver})'''
-        description: '''fgen(${1:Resource}, ${2:optional_Driver})'''
+        description: '''fgen(Resource, optional_Driver)'''
 
 
     "fgetl":
         prefix: "fgetl"
         body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
-        description: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
+        description: '''[tline, count, msg, datagramaddress, datagramport] = fgetl(obj)'''
 
 
     "instrnotify":
         prefix: "instrnotify"
         body: '''instrnotify(${1:optional_obj}, ${2:optional_PropertyName}, ${3:Type}, ${4:callback}, ${5:-remove})'''
-        description: '''instrnotify(${1:optional_obj}, ${2:optional_PropertyName}, ${3:Type}, ${4:callback}, ${5:-remove})'''
+        description: '''instrnotify(optional_obj, optional_PropertyName, Type, callback, -remove)'''
 
 
     "instrument.interface.spi.aardvark.Spi.write":
         prefix: "instrument.interface.spi.aardvark.Spi.write"
         body: '''instrument.interface.spi.aardvark.Spi.write(${1:obj}, ${2:data})'''
-        description: '''instrument.interface.spi.aardvark.Spi.write(${1:obj}, ${2:data})'''
+        description: '''instrument.interface.spi.aardvark.Spi.write(obj, data)'''
 
 
     "fwrite":
         prefix: "fwrite"
         body: '''fwrite(${1:obj}, ${2:data}, ${3:optional_precision}, ${4:optional_mode})'''
-        description: '''fwrite(${1:obj}, ${2:data}, ${3:optional_precision}, ${4:optional_mode})'''
+        description: '''fwrite(obj, data, optional_precision, optional_mode)'''
 
 
     "spoll":
         prefix: "spoll"
         body: '''[${1:out}, ${2:statusByte}] = spoll(${1:obj}, ${2:optional_val})'''
-        description: '''[${1:out}, ${2:statusByte}] = spoll(${1:obj}, ${2:optional_val})'''
+        description: '''[out, statusByte] = spoll(obj, optional_val)'''
 
 
     "mempoke":
         prefix: "mempoke"
         body: '''mempoke(${1:obj}, ${2:data}, ${3:optional_offset}, ${4:optional_precision})'''
-        description: '''mempoke(${1:obj}, ${2:data}, ${3:optional_offset}, ${4:optional_precision})'''
+        description: '''mempoke(obj, data, optional_offset, optional_precision)'''
 
 
     "clrdevice":
         prefix: "clrdevice"
         body: '''clrdevice(${1:obj})'''
-        description: '''clrdevice(${1:obj})'''
+        description: '''clrdevice(obj)'''
 
 
     "instrument.interface.spi.ni845x.disconnect":
         prefix: "instrument.interface.spi.ni845x.disconnect"
         body: '''instrument.interface.spi.ni845x.disconnect(${1:obj})'''
-        description: '''instrument.interface.spi.ni845x.disconnect(${1:obj})'''
+        description: '''instrument.interface.spi.ni845x.disconnect(obj)'''
 
 
     "midedit":
         prefix: "midedit"
         body: '''midedit(${1:optional_driver})'''
-        description: '''midedit(${1:optional_driver})'''
+        description: '''midedit(optional_driver)'''
 
 
     "query":
         prefix: "query"
         body: '''[${1:out}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = query(${1:obj}, ${2:cmd}, ${3:optional_wformat}, ${4:optional_rformat})'''
-        description: '''[${1:out}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = query(${1:obj}, ${2:cmd}, ${3:optional_wformat}, ${4:optional_rformat})'''
+        description: '''[out, count, msg, datagramaddress, datagramport] = query(obj, cmd, optional_wformat, optional_rformat)'''
 
 
     "oscilloscope":
         prefix: "oscilloscope"
         body: '''oscilloscope(${1:Resource}, ${2:optional_Driver})'''
-        description: '''oscilloscope(${1:Resource}, ${2:optional_Driver})'''
+        description: '''oscilloscope(Resource, optional_Driver)'''
 
 
     "instrument.interface.spi.aardvark.Spi.writeAndRead":
         prefix: "instrument.interface.spi.aardvark.Spi.writeAndRead"
         body: '''${1:data} = instrument.interface.spi.aardvark.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
-        description: '''${1:data} = instrument.interface.spi.aardvark.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
+        description: '''data = instrument.interface.spi.aardvark.Spi.writeAndRead(obj, dataToWrite)'''
 
 
     "gpib":
         prefix: "gpib"
         body: '''${1:obj} = gpib(${1:vendor}, ${2:boardindex}, ${3:primaryaddress}, 'BoardIndex', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'CompareBits', ${9:value}, 'EOIMode', ${10:value}, 'EOSCharCode', ${11:value}, 'EOSMode', ${12:value}, 'ErrorFcn', ${13:value}, 'InputBufferSize', ${14:value}, 'Name', ${15:value}, 'ObjectVisibility', ${16:value}, 'OutputBufferSize', ${17:value}, 'OutputEmptyFcn', ${18:value}, 'PrimaryAddress', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'SecondaryAddress', ${23:value}, 'Tag', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'UserData', ${28:value})'''
-        description: '''${1:obj} = gpib(${1:vendor}, ${2:boardindex}, ${3:primaryaddress}, 'BoardIndex', ${4:value}, 'ByteOrder', ${5:value}, 'BytesAvailableFcn', ${6:value}, 'BytesAvailableFcnCount', ${7:value}, 'BytesAvailableFcnMode', ${8:value}, 'CompareBits', ${9:value}, 'EOIMode', ${10:value}, 'EOSCharCode', ${11:value}, 'EOSMode', ${12:value}, 'ErrorFcn', ${13:value}, 'InputBufferSize', ${14:value}, 'Name', ${15:value}, 'ObjectVisibility', ${16:value}, 'OutputBufferSize', ${17:value}, 'OutputEmptyFcn', ${18:value}, 'PrimaryAddress', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'SecondaryAddress', ${23:value}, 'Tag', ${24:value}, 'Timeout', ${25:value}, 'TimerFcn', ${26:value}, 'TimerPeriod', ${27:value}, 'UserData', ${28:value})'''
+        description: '''obj = gpib(vendor, boardindex, primaryaddress, 'BoardIndex', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'CompareBits', value, 'EOIMode', value, 'EOSCharCode', value, 'EOSMode', value, 'ErrorFcn', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'PrimaryAddress', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'SecondaryAddress', value, 'Tag', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)'''
 
 
     "midtest":
         prefix: "midtest"
         body: '''midtest(${1:optional_file})'''
-        description: '''midtest(${1:optional_file})'''
+        description: '''midtest(optional_file)'''
 
 
     "instrument.interface.spi.ni845x.Spi.write":
         prefix: "instrument.interface.spi.ni845x.Spi.write"
         body: '''instrument.interface.spi.ni845x.Spi.write(${1:obj}, ${2:data})'''
-        description: '''instrument.interface.spi.ni845x.Spi.write(${1:obj}, ${2:data})'''
+        description: '''instrument.interface.spi.ni845x.Spi.write(obj, data)'''
 
 
     "instrument.interface.spi.ni845x.Spi.writeAndRead":
         prefix: "instrument.interface.spi.ni845x.Spi.writeAndRead"
         body: '''${1:data} = instrument.interface.spi.ni845x.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
-        description: '''${1:data} = instrument.interface.spi.ni845x.Spi.writeAndRead(${1:obj}, ${2:dataToWrite})'''
+        description: '''data = instrument.interface.spi.ni845x.Spi.writeAndRead(obj, dataToWrite)'''
 
 
     "disconnect":
         prefix: "disconnect"
         body: '''disconnect(${1:obj})'''
-        description: '''disconnect(${1:obj})'''
+        description: '''disconnect(obj)'''
 
 
     "fgets":
         prefix: "fgets"
         body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
-        description: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
+        description: '''[tline, count, msg, datagramaddress, datagramport] = fgets(obj)'''
 
 
     "instrument.interface.spi.aardvark.Spi.connect":
         prefix: "instrument.interface.spi.aardvark.Spi.connect"
         body: '''instrument.interface.spi.aardvark.Spi.connect(${1:obj})'''
-        description: '''instrument.interface.spi.aardvark.Spi.connect(${1:obj})'''
+        description: '''instrument.interface.spi.aardvark.Spi.connect(obj)'''
 
 
     "add":
         prefix: "add"
         body: '''add(${1:obj}, ${2:struct})'''
-        description: '''add(${1:obj}, ${2:struct})'''
+        description: '''add(obj, struct)'''
 
 
     "isvalid":
         prefix: "isvalid"
         body: '''${1:out} = isvalid(${1:obj})'''
-        description: '''${1:out} = isvalid(${1:obj})'''
+        description: '''out = isvalid(obj)'''
 
 
     "iviconfigurationstore":
         prefix: "iviconfigurationstore"
         body: '''${1:obj} = iviconfigurationstore(${1:optional_file})'''
-        description: '''${1:obj} = iviconfigurationstore(${1:optional_file})'''
+        description: '''obj = iviconfigurationstore(optional_file)'''
 
 
     "instrument.interface.spi.aardvark.disconnect":
         prefix: "instrument.interface.spi.aardvark.disconnect"
         body: '''instrument.interface.spi.aardvark.disconnect(${1:obj})'''
-        description: '''instrument.interface.spi.aardvark.disconnect(${1:obj})'''
+        description: '''instrument.interface.spi.aardvark.disconnect(obj)'''
 
 
     "modbus":
         prefix: "modbus"
         body: '''${1:obj} = modbus(${1:transport}, ${2:DeviceAddress}, ${3:optional_Port}, 'ByteOrder', ${4:value}, 'NumRetries', ${5:value}, 'Timeout', ${6:value}, 'WordOrder', ${7:value})'''
-        description: '''${1:obj} = modbus(${1:transport}, ${2:DeviceAddress}, ${3:optional_Port}, 'ByteOrder', ${4:value}, 'NumRetries', ${5:value}, 'Timeout', ${6:value}, 'WordOrder', ${7:value})'''
+        description: '''obj = modbus(transport, DeviceAddress, optional_Port, 'ByteOrder', value, 'NumRetries', value, 'Timeout', value, 'WordOrder', value)'''
 
 
     "invoke":
         prefix: "invoke"
         body: '''${1:out} = invoke(${1:obj}, ${2:name}, ${3:optional_arguments})'''
-        description: '''${1:out} = invoke(${1:obj}, ${2:name}, ${3:optional_arguments})'''
+        description: '''out = invoke(obj, name, optional_arguments)'''
 
 
     "instrhelp":
         prefix: "instrhelp"
         body: '''${1:out} = instrhelp(${1:obj}, ${2:optional_Property/FunctionName})'''
-        description: '''${1:out} = instrhelp(${1:obj}, ${2:optional_Property/FunctionName})'''
+        description: '''out = instrhelp(obj, optional_Property/FunctionName)'''
 
 
     "instrument.interface.modbus.Modbus.write":
         prefix: "instrument.interface.modbus.Modbus.write"
         body: '''instrument.interface.modbus.Modbus.write(${1:obj}, ${2:target}, ${3:address}, ${4:data}, ${5:optional_serverId}, ${6:optional_precision})'''
-        description: '''instrument.interface.modbus.Modbus.write(${1:obj}, ${2:target}, ${3:address}, ${4:data}, ${5:optional_serverId}, ${6:optional_precision})'''
+        description: '''instrument.interface.modbus.Modbus.write(obj, target, address, data, optional_serverId, optional_precision)'''
 
 
     "obj2mfile":
         prefix: "obj2mfile"
         body: '''obj2mfile(${1:obj}, ${2:optional_filename}, ${3:optional_syntax}, ${4:optional_mode}, ${5:reuse})'''
-        description: '''obj2mfile(${1:obj}, ${2:optional_filename}, ${3:optional_syntax}, ${4:optional_mode}, ${5:reuse})'''
+        description: '''obj2mfile(obj, optional_filename, optional_syntax, optional_mode, reuse)'''
 
 
     "fscanf":
         prefix: "fscanf"
         body: '''[${1:A}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
-        description: '''[${1:A}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
+        description: '''[A, count, msg, datagramaddress, datagramport] = fscanf(obj, optional_format, optional_size)'''
 
 
     "memunmap":
         prefix: "memunmap"
         body: '''memunmap(${1:obj})'''
-        description: '''memunmap(${1:obj})'''
+        description: '''memunmap(obj)'''
 
 
     "instrid":
         prefix: "instrid"
         body: '''${1:out} = instrid(${1:optional_cmd})'''
-        description: '''${1:out} = instrid(${1:optional_cmd})'''
+        description: '''out = instrid(optional_cmd)'''
 
 
     "geterror":
         prefix: "geterror"
         body: '''${1:msg} = geterror(${1:obj})'''
-        description: '''${1:msg} = geterror(${1:obj})'''
+        description: '''msg = geterror(obj)'''
 
 
     "size":
         prefix: "size"
         body: '''${1:m} = size(${1:obj}, ${2:optional_dim})'''
-        description: '''${1:m} = size(${1:obj}, ${2:optional_dim})'''
+        description: '''m = size(obj, optional_dim)'''
 
 
     "fopen":
         prefix: "fopen"
         body: '''fopen(${1:obj})'''
-        description: '''fopen(${1:obj})'''
+        description: '''fopen(obj)'''
 
 
     "udp":
         prefix: "udp"
         body: '''${1:obj} = udp(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DatagramAddress', ${7:value}, 'DatagramPort', ${8:value}, 'DatagramReceivedFcn', ${9:value}, 'DatagramTerminateMode', ${10:value}, 'EnablePortSharing', ${11:value}, 'ErrorFcn', ${12:value}, 'InputBufferSize', ${13:value}, 'InputDatagramPacketSize', ${14:value}, 'LocalHost', ${15:value}, 'LocalPort', ${16:value}, 'LocalPortMode', ${17:value}, 'Name', ${18:value}, 'ObjectVisibility', ${19:value}, 'OutputBufferSize', ${20:value}, 'OutputDatagramPacketSize', ${21:value}, 'OutputEmptyFcn', ${22:value}, 'ReadAsyncMode', ${23:value}, 'RecordDetail', ${24:value}, 'RecordMode', ${25:value}, 'RecordName', ${26:value}, 'RemoteHost', ${27:value}, 'RemotePort', ${28:value}, 'Tag', ${29:value}, 'Terminator', ${30:value}, 'Timeout', ${31:value}, 'TimerFcn', ${32:value}, 'TimerPeriod', ${33:value}, 'UserData', ${34:value})'''
-        description: '''${1:obj} = udp(${1:rhost}, ${2:rport}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DatagramAddress', ${7:value}, 'DatagramPort', ${8:value}, 'DatagramReceivedFcn', ${9:value}, 'DatagramTerminateMode', ${10:value}, 'EnablePortSharing', ${11:value}, 'ErrorFcn', ${12:value}, 'InputBufferSize', ${13:value}, 'InputDatagramPacketSize', ${14:value}, 'LocalHost', ${15:value}, 'LocalPort', ${16:value}, 'LocalPortMode', ${17:value}, 'Name', ${18:value}, 'ObjectVisibility', ${19:value}, 'OutputBufferSize', ${20:value}, 'OutputDatagramPacketSize', ${21:value}, 'OutputEmptyFcn', ${22:value}, 'ReadAsyncMode', ${23:value}, 'RecordDetail', ${24:value}, 'RecordMode', ${25:value}, 'RecordName', ${26:value}, 'RemoteHost', ${27:value}, 'RemotePort', ${28:value}, 'Tag', ${29:value}, 'Terminator', ${30:value}, 'Timeout', ${31:value}, 'TimerFcn', ${32:value}, 'TimerPeriod', ${33:value}, 'UserData', ${34:value})'''
+        description: '''obj = udp(rhost, rport, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DatagramAddress', value, 'DatagramPort', value, 'DatagramReceivedFcn', value, 'DatagramTerminateMode', value, 'EnablePortSharing', value, 'ErrorFcn', value, 'InputBufferSize', value, 'InputDatagramPacketSize', value, 'LocalHost', value, 'LocalPort', value, 'LocalPortMode', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputDatagramPacketSize', value, 'OutputEmptyFcn', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RemoteHost', value, 'RemotePort', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)'''
 
 
     "mempeek":
         prefix: "mempeek"
         body: '''${1:out} = mempeek(${1:obj}, ${2:offset}, ${3:optional_precision})'''
-        description: '''${1:out} = mempeek(${1:obj}, ${2:offset}, ${3:optional_precision})'''
+        description: '''out = mempeek(obj, offset, optional_precision)'''
 
 
     "fread":
         prefix: "fread"
         body: '''[${1:A}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
-        description: '''[${1:A}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
+        description: '''[A, count, msg, datagramaddress, datagramport] = fread(obj, size, optional_precision)'''
 
 
     "commit":
         prefix: "commit"
         body: '''commit(${1:obj}, ${2:optional_file})'''
-        description: '''commit(${1:obj}, ${2:optional_file})'''
+        description: '''commit(obj, optional_file)'''
 
 
     "memmap":
         prefix: "memmap"
         body: '''memmap(${1:obj}, ${2:adrspace}, ${3:offset}, ${4:size})'''
-        description: '''memmap(${1:obj}, ${2:adrspace}, ${3:offset}, ${4:size})'''
+        description: '''memmap(obj, adrspace, offset, size)'''
 

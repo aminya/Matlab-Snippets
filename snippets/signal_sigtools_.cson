@@ -4,17 +4,17 @@
     "wvtool":
         prefix: "wvtool"
         body: '''${1:H} = wvtool(${1:WindowVector})'''
-        description: '''${1:H} = wvtool(${1:WindowVector})'''
+        description: '''H = wvtool(WindowVector)'''
 
 
     "fvtool":
         prefix: "fvtool"
         body: '''${1:h} = fvtool(${1:d})'''
-        description: '''${1:h} = fvtool(${1:d})'''
+        description: '''h = fvtool(d)'''
 
 
     "fmethod.abstractdesign.isfir":
         prefix: "fmethod.abstractdesign.isfir"
         body: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
-        description: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
+        description: '''flag = fmethod.abstractdesign.isfir(d)'''
 

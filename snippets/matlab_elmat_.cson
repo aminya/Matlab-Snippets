@@ -4,197 +4,197 @@
     "true":
         prefix: "true"
         body: '''${1:T} = true(${1:sz}, ${2:'like'}, ${3:p})'''
-        description: '''${1:T} = true(${1:sz}, ${2:'like'}, ${3:p})'''
+        description: '''T = true(sz, 'like', p)'''
 
 
     "intmin":
         prefix: "intmin"
         body: '''intmin(${1:optional_classname})'''
-        description: '''intmin(${1:optional_classname})'''
+        description: '''intmin(optional_classname)'''
 
 
     "realmin":
         prefix: "realmin"
         body: '''realmin(${1:optional_classname})'''
-        description: '''realmin(${1:optional_classname})'''
+        description: '''realmin(optional_classname)'''
 
 
     "find":
         prefix: "find"
         body: '''find(${1:X}, ${2:n}, ${3:optional_direction})'''
-        description: '''find(${1:X}, ${2:n}, ${3:optional_direction})'''
+        description: '''find(X, n, optional_direction)'''
 
 
     "numel":
         prefix: "numel"
         body: '''${1:n} = numel(${1:A})'''
-        description: '''${1:n} = numel(${1:A})'''
+        description: '''n = numel(A)'''
 
 
     "linspace":
         prefix: "linspace"
         body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:optional_n})'''
-        description: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:optional_n})'''
+        description: '''y = linspace(x1, x2, optional_n)'''
 
 
     "length":
         prefix: "length"
         body: '''${1:L} = length(${1:X})'''
-        description: '''${1:L} = length(${1:X})'''
+        description: '''L = length(X)'''
 
 
     "hadamard":
         prefix: "hadamard"
         body: '''hadamard(${1:n}, ${2:optional_classname})'''
-        description: '''hadamard(${1:n}, ${2:optional_classname})'''
+        description: '''hadamard(n, optional_classname)'''
 
 
     "false":
         prefix: "false"
         body: '''${1:F} = false(${1:sz}, ${2:'like'}, ${3:p})'''
-        description: '''${1:F} = false(${1:sz}, ${2:'like'}, ${3:p})'''
+        description: '''F = false(sz, 'like', p)'''
 
 
     "flintmax":
         prefix: "flintmax"
         body: '''flintmax(${1:optional_classname})'''
-        description: '''flintmax(${1:optional_classname})'''
+        description: '''flintmax(optional_classname)'''
 
 
     "isempty":
         prefix: "isempty"
         body: '''${1:TF} = isempty(${1:A})'''
-        description: '''${1:TF} = isempty(${1:A})'''
+        description: '''TF = isempty(A)'''
 
 
     "nan":
         prefix: "nan"
         body: '''${1:N} = nan(${1:sz}, ${2:optional_classname})'''
-        description: '''${1:N} = nan(${1:sz}, ${2:optional_classname})'''
+        description: '''N = nan(sz, optional_classname)'''
 
 
     "invhilb":
         prefix: "invhilb"
         body: '''invhilb(${1:n}, ${2:optional_classname})'''
-        description: '''invhilb(${1:n}, ${2:optional_classname})'''
+        description: '''invhilb(n, optional_classname)'''
 
 
     "inf":
         prefix: "inf"
         body: '''${1:I} = inf(${1:sz}, ${2:optional_classname})'''
-        description: '''${1:I} = inf(${1:sz}, ${2:optional_classname})'''
+        description: '''I = inf(sz, optional_classname)'''
 
 
     "wilkinson":
         prefix: "wilkinson"
         body: '''wilkinson(${1:n}, ${2:optional_classname})'''
-        description: '''wilkinson(${1:n}, ${2:optional_classname})'''
+        description: '''wilkinson(n, optional_classname)'''
 
 
     "rosser":
         prefix: "rosser"
         body: '''rosser(${1:optional_classname})'''
-        description: '''rosser(${1:optional_classname})'''
+        description: '''rosser(optional_classname)'''
 
 
     "intmax":
         prefix: "intmax"
         body: '''intmax(${1:optional_classname})'''
-        description: '''intmax(${1:optional_classname})'''
+        description: '''intmax(optional_classname)'''
 
 
     "Inf":
         prefix: "Inf"
         body: '''${1:I} = Inf(${1:sz}, ${2:optional_classname})'''
-        description: '''${1:I} = Inf(${1:sz}, ${2:optional_classname})'''
+        description: '''I = Inf(sz, optional_classname)'''
 
 
     "ones":
         prefix: "ones"
         body: '''${1:X} = ones(${1:sz}, ${2:optional_classname})'''
-        description: '''${1:X} = ones(${1:sz}, ${2:optional_classname})'''
+        description: '''X = ones(sz, optional_classname)'''
 
 
     "zeros":
         prefix: "zeros"
         body: '''${1:X} = zeros(${1:sz}, ${2:optional_classname})'''
-        description: '''${1:X} = zeros(${1:sz}, ${2:optional_classname})'''
+        description: '''X = zeros(sz, optional_classname)'''
 
 
     "size":
         prefix: "size"
         body: '''size(${1:A}, ${2:optional_dim})'''
-        description: '''size(${1:A}, ${2:optional_dim})'''
+        description: '''size(A, optional_dim)'''
 
 
     "squeeze":
         prefix: "squeeze"
         body: '''squeeze(${1:A})'''
-        description: '''squeeze(${1:A})'''
+        description: '''squeeze(A)'''
 
 
     "pascal":
         prefix: "pascal"
         body: '''pascal(${1:n}, ${2:optional_opt}, ${3:optional_classname})'''
-        description: '''pascal(${1:n}, ${2:optional_opt}, ${3:optional_classname})'''
+        description: '''pascal(n, optional_opt, optional_classname)'''
 
 
     "realmax":
         prefix: "realmax"
         body: '''realmax(${1:optional_classname})'''
-        description: '''realmax(${1:optional_classname})'''
+        description: '''realmax(optional_classname)'''
 
 
     "hilb":
         prefix: "hilb"
         body: '''hilb(${1:n}, ${2:optional_classname})'''
-        description: '''hilb(${1:n}, ${2:optional_classname})'''
+        description: '''hilb(n, optional_classname)'''
 
 
     "eps":
         prefix: "eps"
         body: '''eps(${1:optional_classname})'''
-        description: '''eps(${1:optional_classname})'''
+        description: '''eps(optional_classname)'''
 
 
     "eye":
         prefix: "eye"
         body: '''${1:N} = eye(${1:optional_n}, ${2:m}, ${3:optional_classname})'''
-        description: '''${1:N} = eye(${1:optional_n}, ${2:m}, ${3:optional_classname})'''
+        description: '''N = eye(optional_n, m, optional_classname)'''
 
 
     "cat":
         prefix: "cat"
         body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
-        description: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''C = cat(dim, A, B)'''
 
 
     "repmat":
         prefix: "repmat"
         body: '''repmat(${1:A}, ${2:r})'''
-        description: '''repmat(${1:A}, ${2:r})'''
+        description: '''repmat(A, r)'''
 
 
     "reshape":
         prefix: "reshape"
         body: '''reshape(${1:A}, ${2:sz})'''
-        description: '''reshape(${1:A}, ${2:sz})'''
+        description: '''reshape(A, sz)'''
 
 
     "freqspace":
         prefix: "freqspace"
         body: '''freqspace(${1:N}, ${2:optional_opt})'''
-        description: '''freqspace(${1:N}, ${2:optional_opt})'''
+        description: '''freqspace(N, optional_opt)'''
 
 
     "NaN":
         prefix: "NaN"
         body: '''${1:N} = NaN(${1:sz}, ${2:optional_classname})'''
-        description: '''${1:N} = NaN(${1:sz}, ${2:optional_classname})'''
+        description: '''N = NaN(sz, optional_classname)'''
 
 
     "gallery":
         prefix: "gallery"
         body: '''gallery(${1:matname}, ${2:ilim}, ${3:sz}, ${4:j}, ${5:optional_classname})'''
-        description: '''gallery(${1:matname}, ${2:ilim}, ${3:sz}, ${4:j}, ${5:optional_classname})'''
+        description: '''gallery(matname, ilim, sz, j, optional_classname)'''
 

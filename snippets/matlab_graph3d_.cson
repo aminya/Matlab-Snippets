@@ -4,41 +4,41 @@
     "lighting":
         prefix: "lighting"
         body: '''lighting(${1:optional_ax}, ${2:style})'''
-        description: '''lighting(${1:optional_ax}, ${2:style})'''
+        description: '''lighting(optional_ax, style)'''
 
 
     "material":
         prefix: "material"
         body: '''material(${1:optional_ax}, ${2:properties})'''
-        description: '''material(${1:optional_ax}, ${2:properties})'''
+        description: '''material(optional_ax, properties)'''
 
 
     "shading":
         prefix: "shading"
         body: '''shading(${1:optional_ax}, ${2:style})'''
-        description: '''shading(${1:optional_ax}, ${2:style})'''
+        description: '''shading(optional_ax, style)'''
 
 
     "zlabel":
         prefix: "zlabel"
         body: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
-        description: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
+        description: '''h = zlabel(optional_ax, str, opts)'''
 
 
     "caxis":
         prefix: "caxis"
         body: '''${1:limits} = caxis(${1:optional_ax})'''
-        description: '''${1:limits} = caxis(${1:optional_ax})'''
+        description: '''limits = caxis(optional_ax)'''
 
 
     "surf":
         prefix: "surf"
         body: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
-        description: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+        description: '''h = surf(optional_ax, x, y, z, optional_c, opts)'''
 
 
     "colormap":
         prefix: "colormap"
         body: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
-        description: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
+        description: '''cmap = colormap(optional_ax, map)'''
 

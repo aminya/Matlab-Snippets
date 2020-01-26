@@ -4,5 +4,5 @@
     "deploytool":
         prefix: "deploytool"
         body: '''deploytool(${1:filename}, ${2:optional_varargin})'''
-        description: '''deploytool(${1:filename}, ${2:optional_varargin})'''
+        description: '''deploytool(filename, optional_varargin)'''
 
