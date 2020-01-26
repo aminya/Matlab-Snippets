@@ -1,0 +1,1803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="interface-based-instrument-communication.html">Interface-Based Instrument Communication
+<tocitem target="interface-based-communication.html">Interface-Based Communication
+<tocitem target="bluetooth.html">
+<name>bluetooth</name>
+<purpose>Create Bluetooth object</purpose>
+</tocitem>
+<tocitem target="i2c.html">
+<name>i2c</name>
+<purpose>Create I2C object</purpose>
+</tocitem>
+<tocitem target="spi.html">
+<name>spi</name>
+<purpose>Create SPI object</purpose>
+</tocitem>
+<tocitem target="tcpip.html">
+<name>tcpip</name>
+<purpose>Create TCPIP object</purpose>
+</tocitem>
+<tocitem target="udp.html">
+<name>udp</name>
+<purpose>Create UDP object</purpose>
+</tocitem>
+<tocitem target="serial.html">
+<name>serial</name>
+<purpose>(Not recommended) Create serial port object</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="fclose.html">
+<name>fclose</name>
+<purpose>Disconnect interface object from instrument</purpose>
+</tocitem>
+<tocitem target="fopen.html">
+<name>fopen</name>
+<purpose>Connect interface object to instrument</purpose>
+</tocitem>
+<tocitem target="fprintf.html">
+<name>fprintf</name>
+<purpose>Write text to instrument</purpose>
+</tocitem>
+<tocitem target="fread.html">
+<name>fread</name>
+<purpose>Read binary data from instrument</purpose>
+</tocitem>
+<tocitem target="fscanf.html">
+<name>fscanf</name>
+<purpose>Read data from instrument, and format as text</purpose>
+</tocitem>
+<tocitem target="fwrite.html">
+<name>fwrite</name>
+<purpose>Write binary data to instrument</purpose>
+</tocitem>
+<tocitem target="readasync.html">
+<name>readasync</name>
+<purpose>Read data asynchronously from instrument</purpose>
+</tocitem>
+<tocitem target="stopasync.html">
+<name>stopasync</name>
+<purpose>Stop asynchronous read and write operations</purpose>
+</tocitem>
+<tocitem target="binblockread.html">
+<name>binblockread</name>
+<purpose>Read binblock data from instrument</purpose>
+</tocitem>
+<tocitem target="binblockwrite.html">
+<name>binblockwrite</name>
+<purpose>Write binblock data to instrument</purpose>
+</tocitem>
+<tocitem target="flushinput.html">
+<name>flushinput</name>
+<purpose>Remove data from input buffer</purpose>
+</tocitem>
+<tocitem target="flushoutput.html">
+<name>flushoutput</name>
+<purpose>Remove data from output buffer</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="fgetl.html">
+<name>fgetl</name>
+<purpose>Read line of text from instrument and discard terminator</purpose>
+</tocitem>
+<tocitem target="fgets.html">
+<name>fgets</name>
+<purpose>Read line of text from instrument and include terminator</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="query.html">
+<name>query</name>
+<purpose>Write text to instrument, and read data from instrument</purpose>
+</tocitem>
+<tocitem target="record.html">
+<name>record</name>
+<purpose>Record data and event information to file</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="scanstr.html">
+<name>scanstr</name>
+<purpose>Read data from instrument, format as text, and parse</purpose>
+</tocitem>
+<tocitem target="serial.html">
+<name>serial</name>
+<purpose>(Not recommended) Create serial port object</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="bluetooth-communication.html">Bluetooth Communication
+<tocitem target="bluetooth.html">
+<name>bluetooth</name>
+<purpose>Create Bluetooth object</purpose>
+</tocitem>
+<tocitem target="fopen.html">
+<name>fopen</name>
+<purpose>Connect interface object to instrument</purpose>
+</tocitem>
+<tocitem target="fclose.html">
+<name>fclose</name>
+<purpose>Disconnect interface object from instrument</purpose>
+</tocitem>
+<tocitem target="fprintf.html">
+<name>fprintf</name>
+<purpose>Write text to instrument</purpose>
+</tocitem>
+<tocitem target="fread.html">
+<name>fread</name>
+<purpose>Read binary data from instrument</purpose>
+</tocitem>
+<tocitem target="fscanf.html">
+<name>fscanf</name>
+<purpose>Read data from instrument, and format as text</purpose>
+</tocitem>
+<tocitem target="fwrite.html">
+<name>fwrite</name>
+<purpose>Write binary data to instrument</purpose>
+</tocitem>
+<tocitem target="fgetl.html">
+<name>fgetl</name>
+<purpose>Read line of text from instrument and discard terminator</purpose>
+</tocitem>
+<tocitem target="fgets.html">
+<name>fgets</name>
+<purpose>Read line of text from instrument and include terminator</purpose>
+</tocitem>
+<tocitem target="flushinput.html">
+<name>flushinput</name>
+<purpose>Remove data from input buffer</purpose>
+</tocitem>
+<tocitem target="flushoutput.html">
+<name>flushoutput</name>
+<purpose>Remove data from output buffer</purpose>
+</tocitem>
+<tocitem target="binblockread.html">
+<name>binblockread</name>
+<purpose>Read binblock data from instrument</purpose>
+</tocitem>
+<tocitem target="binblockwrite.html">
+<name>binblockwrite</name>
+<purpose>Write binblock data to instrument</purpose>
+</tocitem>
+<tocitem target="query.html">
+<name>query</name>
+<purpose>Write text to instrument, and read data from instrument</purpose>
+</tocitem>
+<tocitem target="readasync.html">
+<name>readasync</name>
+<purpose>Read data asynchronously from instrument</purpose>
+</tocitem>
+<tocitem target="stopasync.html">
+<name>stopasync</name>
+<purpose>Stop asynchronous read and write operations</purpose>
+</tocitem>
+<tocitem target="scanstr.html">
+<name>scanstr</name>
+<purpose>Read data from instrument, format as text, and parse</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="record.html">
+<name>record</name>
+<purpose>Record data and event information to file</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="i2c-communication.html">I2C Communication
+<tocitem target="i2c.html">
+<name>i2c</name>
+<purpose>Create I2C object</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="fclose.html">
+<name>fclose</name>
+<purpose>Disconnect interface object from instrument</purpose>
+</tocitem>
+<tocitem target="fopen.html">
+<name>fopen</name>
+<purpose>Connect interface object to instrument</purpose>
+</tocitem>
+<tocitem target="fread.html">
+<name>fread</name>
+<purpose>Read binary data from instrument</purpose>
+</tocitem>
+<tocitem target="fwrite.html">
+<name>fwrite</name>
+<purpose>Write binary data to instrument</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="record.html">
+<name>record</name>
+<purpose>Record data and event information to file</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spi-communication.html">SPI Communication
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="spi.html">
+<name>spi</name>
+<purpose>Create SPI object</purpose>
+</tocitem>
+<tocitem target="read.html">
+<name>read</name>
+<purpose>Read binary data from SPI instrument</purpose>
+</tocitem>
+<tocitem target="write.html">
+<name>write</name>
+<purpose>Write binary data to SPI instrument</purpose>
+</tocitem>
+<tocitem target="writeandread.html">
+<name>writeAndRead</name>
+<purpose>Write and read binary data from SPI instrument</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="modbus-communication.html">MODBUS Communication
+<tocitem target="modbus.html">
+<name>modbus</name>
+<purpose>Create MODBUS object</purpose>
+</tocitem>
+<tocitem target="modbus.read.html">
+<name>read</name>
+<purpose>Read data from a MODBUS server</purpose>
+</tocitem>
+<tocitem target="modbus.write.html">
+<name>write</name>
+<purpose>Perform a write operation to the connected MODBUS server</purpose>
+</tocitem>
+<tocitem target="writeread.html">
+<name>writeRead</name>
+<purpose>Perform a write then read operation on groups of holding registers in a
+                single MODBUS transaction</purpose>
+</tocitem>
+<tocitem target="maskwrite.html">
+<name>maskWrite</name>
+<purpose>Perform mask write operation on a holding register</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="tcp-ip-and-udp-interface.html">TCP/IP and UDP Interface
+<tocitem target="tcpip.html">
+<name>tcpip</name>
+<purpose>Create TCPIP object</purpose>
+</tocitem>
+<tocitem target="udp.html">
+<name>udp</name>
+<purpose>Create UDP object</purpose>
+</tocitem>
+<tocitem target="echotcpip.html">
+<name>echotcpip</name>
+<purpose>Start or stop TCP/IP echo server</purpose>
+</tocitem>
+<tocitem target="echoudp.html">
+<name>echoudp</name>
+<purpose>Start or stop UDP echo server</purpose>
+</tocitem>
+<tocitem target="resolvehost.html">
+<name>resolvehost</name>
+<purpose>Network name or network address</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="fopen.html">
+<name>fopen</name>
+<purpose>Connect interface object to instrument</purpose>
+</tocitem>
+<tocitem target="fclose.html">
+<name>fclose</name>
+<purpose>Disconnect interface object from instrument</purpose>
+</tocitem>
+<tocitem target="fread.html">
+<name>fread</name>
+<purpose>Read binary data from instrument</purpose>
+</tocitem>
+<tocitem target="fwrite.html">
+<name>fwrite</name>
+<purpose>Write binary data to instrument</purpose>
+</tocitem>
+<tocitem target="fscanf.html">
+<name>fscanf</name>
+<purpose>Read data from instrument, and format as text</purpose>
+</tocitem>
+<tocitem target="fprintf.html">
+<name>fprintf</name>
+<purpose>Write text to instrument</purpose>
+</tocitem>
+<tocitem target="readasync.html">
+<name>readasync</name>
+<purpose>Read data asynchronously from instrument</purpose>
+</tocitem>
+<tocitem target="stopasync.html">
+<name>stopasync</name>
+<purpose>Stop asynchronous read and write operations</purpose>
+</tocitem>
+<tocitem target="binblockread.html">
+<name>binblockread</name>
+<purpose>Read binblock data from instrument</purpose>
+</tocitem>
+<tocitem target="binblockwrite.html">
+<name>binblockwrite</name>
+<purpose>Write binblock data to instrument</purpose>
+</tocitem>
+<tocitem target="fgetl.html">
+<name>fgetl</name>
+<purpose>Read line of text from instrument and discard terminator</purpose>
+</tocitem>
+<tocitem target="fgets.html">
+<name>fgets</name>
+<purpose>Read line of text from instrument and include terminator</purpose>
+</tocitem>
+<tocitem target="query.html">
+<name>query</name>
+<purpose>Write text to instrument, and read data from instrument</purpose>
+</tocitem>
+<tocitem target="scanstr.html">
+<name>scanstr</name>
+<purpose>Read data from instrument, format as text, and parse</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="flushinput.html">
+<name>flushinput</name>
+<purpose>Remove data from input buffer</purpose>
+</tocitem>
+<tocitem target="flushoutput.html">
+<name>flushoutput</name>
+<purpose>Remove data from output buffer</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="serial-port-interface.html">Serial Port Interface
+<tocitem target="serialportlist.html">
+<name>serialportlist</name>
+<purpose>List of serial ports connected to your system</purpose>
+</tocitem>
+<tocitem target="serialport.html">
+<name>serialport</name>
+<purpose>Connection to serial port</purpose>
+</tocitem>
+<tocitem target="serialport.configureterminator.html">
+<name>configureTerminator</name>
+<purpose>Set terminator for ASCII string communication on serial port</purpose>
+</tocitem>
+<tocitem target="serialport.configurecallback.html">
+<name>configureCallback</name>
+<purpose>Set serial port callback function and trigger</purpose>
+</tocitem>
+<tocitem target="serialport.read.html">
+<name>read</name>
+<purpose>Read data from serial port</purpose>
+</tocitem>
+<tocitem target="serialport.readline.html">
+<name>readline</name>
+<purpose>Read line of ASCII string data from serial port</purpose>
+</tocitem>
+<tocitem target="serialport.readbinblock.html">
+<name>readbinblock</name>
+<purpose>Read one binblock of data from serial port</purpose>
+</tocitem>
+<tocitem target="serialport.write.html">
+<name>write</name>
+<purpose>Write data to serial port</purpose>
+</tocitem>
+<tocitem target="serialport.writeline.html">
+<name>writeline</name>
+<purpose>Write line of ASCII data to serial port</purpose>
+</tocitem>
+<tocitem target="serialport.writebinblock.html">
+<name>writebinblock</name>
+<purpose>Write one binblock of data to serial port</purpose>
+</tocitem>
+<tocitem target="serialport.writeread.html">
+<name>writeread</name>
+<purpose>Write command to serial port and read response</purpose>
+</tocitem>
+<tocitem target="serialport.flush.html">
+<name>flush</name>
+<purpose>Flush serial port buffers</purpose>
+</tocitem>
+<tocitem target="serialport.getpinstatus.html">
+<name>getpinstatus</name>
+<purpose>Get serial pin status</purpose>
+</tocitem>
+<tocitem target="serialport.setrts.html">
+<name>setRTS</name>
+<purpose>Set serial RTS pin</purpose>
+</tocitem>
+<tocitem target="serialport.setdtr.html">
+<name>setDTR</name>
+<purpose>Set serial DTR pin</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="query.html">
+<name>query</name>
+<purpose>Write text to instrument, and read data from instrument</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="scanstr.html">
+<name>scanstr</name>
+<purpose>Read data from instrument, format as text, and parse</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+<tocitem target="serial.html">
+<name>serial</name>
+<purpose>(Not recommended) Create serial port object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gpib-interface.html">GPIB Interface
+<tocitem target="binblockread.html">
+<name>binblockread</name>
+<purpose>Read binblock data from instrument</purpose>
+</tocitem>
+<tocitem target="binblockwrite.html">
+<name>binblockwrite</name>
+<purpose>Write binblock data to instrument</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="clrdevice.html">
+<name>clrdevice</name>
+<purpose>Clear instrument buffer</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="fclose.html">
+<name>fclose</name>
+<purpose>Disconnect interface object from instrument</purpose>
+</tocitem>
+<tocitem target="fopen.html">
+<name>fopen</name>
+<purpose>Connect interface object to instrument</purpose>
+</tocitem>
+<tocitem target="fprintf.html">
+<name>fprintf</name>
+<purpose>Write text to instrument</purpose>
+</tocitem>
+<tocitem target="fscanf.html">
+<name>fscanf</name>
+<purpose>Read data from instrument, and format as text</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="gpib.html">
+<name>gpib</name>
+<purpose>Create GPIB object</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="spoll.html">
+<name>spoll</name>
+<purpose>Perform serial poll on GPIB objects</purpose>
+</tocitem>
+<tocitem target="trigger.html">
+<name>trigger</name>
+<purpose>Send trigger message to instrument</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="fgetl.html">
+<name>fgetl</name>
+<purpose>Read line of text from instrument and discard terminator</purpose>
+</tocitem>
+<tocitem target="fgets.html">
+<name>fgets</name>
+<purpose>Read line of text from instrument and include terminator</purpose>
+</tocitem>
+<tocitem target="flushinput.html">
+<name>flushinput</name>
+<purpose>Remove data from input buffer</purpose>
+</tocitem>
+<tocitem target="flushoutput.html">
+<name>flushoutput</name>
+<purpose>Remove data from output buffer</purpose>
+</tocitem>
+<tocitem target="fread.html">
+<name>fread</name>
+<purpose>Read binary data from instrument</purpose>
+</tocitem>
+<tocitem target="fwrite.html">
+<name>fwrite</name>
+<purpose>Write binary data to instrument</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="query.html">
+<name>query</name>
+<purpose>Write text to instrument, and read data from instrument</purpose>
+</tocitem>
+<tocitem target="readasync.html">
+<name>readasync</name>
+<purpose>Read data asynchronously from instrument</purpose>
+</tocitem>
+<tocitem target="record.html">
+<name>record</name>
+<purpose>Record data and event information to file</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="scanstr.html">
+<name>scanstr</name>
+<purpose>Read data from instrument, format as text, and parse</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+<tocitem target="stopasync.html">
+<name>stopasync</name>
+<purpose>Stop asynchronous read and write operations</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="visa-interface-includes-vxi-pxi-usb.html">VISA Interface (Includes VXI, PXI, USB)
+<tocitem target="binblockread.html">
+<name>binblockread</name>
+<purpose>Read binblock data from instrument</purpose>
+</tocitem>
+<tocitem target="binblockwrite.html">
+<name>binblockwrite</name>
+<purpose>Write binblock data to instrument</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="clrdevice.html">
+<name>clrdevice</name>
+<purpose>Clear instrument buffer</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="fclose.html">
+<name>fclose</name>
+<purpose>Disconnect interface object from instrument</purpose>
+</tocitem>
+<tocitem target="fopen.html">
+<name>fopen</name>
+<purpose>Connect interface object to instrument</purpose>
+</tocitem>
+<tocitem target="fprintf.html">
+<name>fprintf</name>
+<purpose>Write text to instrument</purpose>
+</tocitem>
+<tocitem target="fscanf.html">
+<name>fscanf</name>
+<purpose>Read data from instrument, and format as text</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="trigger.html">
+<name>trigger</name>
+<purpose>Send trigger message to instrument</purpose>
+</tocitem>
+<tocitem target="visa.html">
+<name>visa</name>
+<purpose>Create VISA object</purpose>
+</tocitem>
+<tocitem target="visa.spoll.html">
+<name>visa.spoll</name>
+<purpose>Perform serial poll on VISA objects</purpose>
+</tocitem>
+<tocitem target="fgetl.html">
+<name>fgetl</name>
+<purpose>Read line of text from instrument and discard terminator</purpose>
+</tocitem>
+<tocitem target="fgets.html">
+<name>fgets</name>
+<purpose>Read line of text from instrument and include terminator</purpose>
+</tocitem>
+<tocitem target="flushinput.html">
+<name>flushinput</name>
+<purpose>Remove data from input buffer</purpose>
+</tocitem>
+<tocitem target="flushoutput.html">
+<name>flushoutput</name>
+<purpose>Remove data from output buffer</purpose>
+</tocitem>
+<tocitem target="fread.html">
+<name>fread</name>
+<purpose>Read binary data from instrument</purpose>
+</tocitem>
+<tocitem target="fwrite.html">
+<name>fwrite</name>
+<purpose>Write binary data to instrument</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="query.html">
+<name>query</name>
+<purpose>Write text to instrument, and read data from instrument</purpose>
+</tocitem>
+<tocitem target="readasync.html">
+<name>readasync</name>
+<purpose>Read data asynchronously from instrument</purpose>
+</tocitem>
+<tocitem target="record.html">
+<name>record</name>
+<purpose>Record data and event information to file</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="scanstr.html">
+<name>scanstr</name>
+<purpose>Read data from instrument, format as text, and parse</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+<tocitem target="stopasync.html">
+<name>stopasync</name>
+<purpose>Stop asynchronous read and write operations</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="memmap.html">
+<name>memmap</name>
+<purpose>Map memory for low-level memory read and write operations</purpose>
+</tocitem>
+<tocitem target="mempeek.html">
+<name>mempeek</name>
+<purpose>Low-level memory read from VXI register</purpose>
+</tocitem>
+<tocitem target="mempoke.html">
+<name>mempoke</name>
+<purpose>Low-level memory write to VXI register</purpose>
+</tocitem>
+<tocitem target="memread.html">
+<name>memread</name>
+<purpose>High-level memory read from VXI register</purpose>
+</tocitem>
+<tocitem target="memunmap.html">
+<name>memunmap</name>
+<purpose>Unmap memory for low-level memory read and write operations</purpose>
+</tocitem>
+<tocitem target="memwrite.html">
+<name>memwrite</name>
+<purpose>High-level memory write to VXI register</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="driver-based-instrument-communication.html">Driver-Based Instrument Communication
+<tocitem target="instrument-driver-communication.html">Instrument Driver Communication
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="devicereset.html">
+<name>devicereset</name>
+<purpose>Reset instrument</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="icdevice.html">
+<name>icdevice</name>
+<purpose>Create device object</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="invoke.html">
+<name>invoke</name>
+<purpose>Execute driver-specific function on device object</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="geterror.html">
+<name>geterror</name>
+<purpose>Check and return error message from instrument</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="makemid.html">
+<name>makemid</name>
+<purpose>Convert driver to MATLAB instrument driver format</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="selftest.html">
+<name>selftest</name>
+<purpose>Run instrument self-test</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="ivi-driver.html">IVI Driver
+<tocitem target="add.html">
+<name>add</name>
+<purpose>Add entry to IVI configuration store object</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="commit.html">
+<name>commit</name>
+<purpose>Save IVI configuration store object to data file</purpose>
+</tocitem>
+<tocitem target="devicereset.html">
+<name>devicereset</name>
+<purpose>Reset instrument</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="fgen.html">
+<name>fgen</name>
+<purpose>Create Quick-Control Function Generator object</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="getwaveform.html">
+<name>getWaveform</name>
+<purpose>Returns waveform displayed on scope</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="iviconfigurationstore.html">
+<name>iviconfigurationstore</name>
+<purpose>Create IVI configuration store object</purpose>
+</tocitem>
+<tocitem target="oscilloscope.html">
+<name>oscilloscope</name>
+<purpose>Create Quick-Control Oscilloscope object</purpose>
+</tocitem>
+<tocitem target="remove.html">
+<name>remove</name>
+<purpose>Remove entry from IVI configuration store object</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="update.html">
+<name>update</name>
+<purpose>Update entry of IVI configuration store object</purpose>
+</tocitem>
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+<tocitem target="geterror.html">
+<name>geterror</name>
+<purpose>Check and return error message from instrument</purpose>
+</tocitem>
+<tocitem target="icdevice.html">
+<name>icdevice</name>
+<purpose>Create device object</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="invoke.html">
+<name>invoke</name>
+<purpose>Execute driver-specific function on device object</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="makemid.html">
+<name>makemid</name>
+<purpose>Convert driver to MATLAB instrument driver format</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="selftest.html">
+<name>selftest</name>
+<purpose>Run instrument self-test</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="quick-control-interfaces.html">Quick-Control Interfaces
+<tocitem target="oscilloscope.html">
+<name>oscilloscope</name>
+<purpose>Create Quick-Control Oscilloscope object</purpose>
+</tocitem>
+<tocitem target="fgen.html">
+<name>fgen</name>
+<purpose>Create Quick-Control Function Generator object</purpose>
+</tocitem>
+<tocitem target="rfsiggen.html">
+<name>rfsiggen</name>
+<purpose>Create Quick-Control RF Signal Generator object</purpose>
+</tocitem>
+<tocitem target="readwaveform.html">
+<name>readWaveform</name>
+<purpose>Returns waveform displayed on scope</purpose>
+</tocitem>
+<tocitem target="instrument.oscilloscope.configurechannel.html">
+<name>configureChannel</name>
+<purpose>Return or set specified oscilloscope control on selected
+                channel</purpose>
+</tocitem>
+<tocitem target="download.html">
+<name>download</name>
+<purpose>Downloads arbitrary waveform to RF signal generator</purpose>
+</tocitem>
+<tocitem target="start.html">
+<name>start</name>
+<purpose>Enables RF signal generator signal output and modulation output</purpose>
+</tocitem>
+<tocitem target="resources.html">
+<name>resources</name>
+<purpose>List of available instrument resources for Quick-Control
+                interfaces</purpose>
+</tocitem>
+<tocitem target="drivers.html">
+<name>drivers</name>
+<purpose>List of available instrument drivers for Quick-Control
+                interfaces</purpose>
+</tocitem>
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="vxi-plug-and-play-driver.html">VXI plug and play Driver
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="devicereset.html">
+<name>devicereset</name>
+<purpose>Reset instrument</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="geterror.html">
+<name>geterror</name>
+<purpose>Check and return error message from instrument</purpose>
+</tocitem>
+<tocitem target="icdevice.html">
+<name>icdevice</name>
+<purpose>Create device object</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="invoke.html">
+<name>invoke</name>
+<purpose>Execute driver-specific function on device object</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="trigger.html">
+<name>trigger</name>
+<purpose>Send trigger message to instrument</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="makemid.html">
+<name>makemid</name>
+<purpose>Convert driver to MATLAB instrument driver format</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="selftest.html">
+<name>selftest</name>
+<purpose>Run instrument self-test</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="generic-instrument-drivers.html">Generic Instrument Drivers
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="instrhelp.html">
+<name>instrhelp</name>
+<purpose>Help for instrument object type, function, or property</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="invoke.html">
+<name>invoke</name>
+<purpose>Execute driver-specific function on device object</purpose>
+</tocitem>
+<tocitem target="makemid.html">
+<name>makemid</name>
+<purpose>Convert driver to MATLAB instrument driver format</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="midedit.html">
+<name>midedit</name>
+<purpose>Open graphical tool for creating and editing MATLAB instrument driver</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+<tocitem target="devicereset.html">
+<name>devicereset</name>
+<purpose>Reset instrument</purpose>
+</tocitem>
+<tocitem target="geterror.html">
+<name>geterror</name>
+<purpose>Check and return error message from instrument</purpose>
+</tocitem>
+<tocitem target="icdevice.html">
+<name>icdevice</name>
+<purpose>Create device object</purpose>
+</tocitem>
+<tocitem target="instrcallback.html">
+<name>instrcallback</name>
+<purpose>Display event information when event occurs</purpose>
+</tocitem>
+<tocitem target="instrfind.html">
+<name>instrfind</name>
+<purpose>Read instrument objects from memory to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="instrfindall.html">
+<name>instrfindall</name>
+<purpose>Find visible and hidden instrument objects</purpose>
+</tocitem>
+<tocitem target="instrid.html">
+<name>instrid</name>
+<purpose>Define and retrieve commands that identify instruments</purpose>
+</tocitem>
+<tocitem target="instrnotify.html">
+<name>instrnotify</name>
+<purpose>Define notification for instrument events</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether instrument objects are valid</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Length of instrument object array</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load instrument objects and variables into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert instrument object to MATLAB code</purpose>
+</tocitem>
+<tocitem target="selftest.html">
+<name>selftest</name>
+<purpose>Run instrument self-test</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Size of instrument object array</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="instrument-driver-editing-and-testing.html">Instrument Driver Editing and Testing
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove instrument objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="connect.html">
+<name>connect</name>
+<purpose>Connect device object to instrument</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove instrument objects from memory</purpose>
+</tocitem>
+<tocitem target="disconnect.html">
+<name>disconnect</name>
+<purpose>Disconnect device object from instrument</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display instrument object summary information</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Instrument object properties</purpose>
+</tocitem>
+<tocitem target="inspect.html">
+<name>inspect</name>
+<purpose>Open Property Inspector</purpose>
+</tocitem>
+<tocitem target="instrhwinfo.html">
+<name>instrhwinfo</name>
+<purpose>Information about available hardware</purpose>
+</tocitem>
+<tocitem target="instrreset.html">
+<name>instrreset</name>
+<purpose>Disconnect and delete all instrument objects</purpose>
+</tocitem>
+<tocitem target="invoke.html">
+<name>invoke</name>
+<purpose>Execute driver-specific function on device object</purpose>
+</tocitem>
+<tocitem target="makemid.html">
+<name>makemid</name>
+<purpose>Convert driver to MATLAB instrument driver format</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>Class method names and descriptions</purpose>
+</tocitem>
+<tocitem target="midedit.html">
+<name>midedit</name>
+<purpose>Open graphical tool for creating and editing MATLAB instrument driver</purpose>
+</tocitem>
+<tocitem target="midtest.html">
+<name>midtest</name>
+<purpose>Open graphical tool for testing MATLAB instrument driver</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Instrument object property information</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save instrument objects and variables to MAT-file</purpose>
+</tocitem>
+<tocitem target="selftest.html">
+<name>selftest</name>
+<purpose>Run instrument self-test</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display instrument object properties</purpose>
+</tocitem>
+<tocitem target="tmtool.html">
+<name>tmtool</name>
+<purpose>Open Test &amp; Measurement Tool</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

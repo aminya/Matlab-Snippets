@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="standalone-applications.html">Standalone Applications
+<tocitem target="applicationcompiler.html">
+<name>applicationCompiler</name>
+<purpose>Build and package functions into standalone applications</purpose>
+</tocitem>
+<tocitem target="mcc.html">
+<name>mcc</name>
+<purpose>Compile MATLAB functions for deployment</purpose>
+</tocitem>
+<tocitem target="deploytool.html">
+<name>deploytool</name>
+<purpose>Compile and package functions for external deployment</purpose>
+</tocitem>
+<tocitem target="isdeployed.html">
+<name>isdeployed</name>
+<purpose>Determine whether code is running in deployed or MATLAB mode </purpose>
+</tocitem>
+<tocitem target="ismcc.html">
+<name>ismcc</name>
+<purpose>Test if code is running during compilation process (using
+               mcc)</purpose>
+</tocitem>
+<tocitem target="ctfroot.html">
+<name>ctfroot</name>
+<purpose>Location of files related to deployed application</purpose>
+</tocitem>
+<tocitem target="mcrversion.html">
+<name>mcrversion</name>
+<purpose>Determine version of installed MATLAB Runtime</purpose>
+</tocitem>
+<tocitem target="function.html">
+<name>%#function</name>
+<purpose>Pragma to help MATLAB
+            Compiler locate functions called
+through feval, eval, Handle
+            Graphics callback,
+or objects loaded from MAT-files</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="create-excel-add-ins.html">Excel Add-Ins
+<tocitem target="create-excel-add-ins-1.html">Create Excel Add-Ins
+<tocitem target="excel/librarycompiler.html">
+<name>libraryCompiler</name>
+<purpose>Build and package functions for use in external applications</purpose>
+</tocitem>
+<tocitem target="excel/componentinfo.html">
+<name>componentinfo</name>
+<purpose>Query system registry about component created with MATLAB
+            Compiler </purpose>
+</tocitem>
+<tocitem target="mcc.html">
+<name>mcc</name>
+<purpose>Compile MATLAB functions for deployment</purpose>
+</tocitem>
+<tocitem target="deploytool.html">
+<name>deploytool</name>
+<purpose>Compile and package functions for external deployment</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="advanced_excel_integration.html">Integrate Using Visual Basic
+<tocitem target="excel/mcc.html">
+<name>mcc</name>
+<purpose>Compile MATLAB functions for deployment</purpose>
+</tocitem>
+<tocitem target="excel/deploytool.html">
+<name>deploytool</name>
+<purpose>Compile and package functions for external deployment</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="hadoop-integration.html">MapReduce Applications on Hadoop Clusters
+<tocitem target="run-standalone-matlab-mapreduce-applications-against-a-hadoop-cluster.html">Run Standalone MATLAB MapReduce Applications Against a Hadoop Cluster
+<tocitem target="deploytool.html">
+<name>deploytool</name>
+<purpose>Compile and package functions for external deployment</purpose>
+</tocitem>
+<tocitem target="mcc.html">
+<name>mcc</name>
+<purpose>Compile MATLAB functions for deployment</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/mapreduce.html">
+<name>mapreduce</name>
+<purpose>Programming technique for analyzing data sets that do
+not fit in memory</purpose>
+</tocitem>
+<tocitem target="hadoop/mapreducer.html">
+<name>mapreducer</name>
+<purpose>Define deployed execution for mapreduce</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="incorporate-matlab-map-and-reduce-functions-into-a-hadoop-mapreduce-job.html">Incorporate MATLAB Map and Reduce Functions into a Hadoop MapReduce Job
+<tocitem target="deploytool.html">
+<name>deploytool</name>
+<purpose>Compile and package functions for external deployment</purpose>
+</tocitem>
+<tocitem target="mcc.html">
+<name>mcc</name>
+<purpose>Compile MATLAB functions for deployment</purpose>
+</tocitem>
+<tocitem target="hadoop/hadoopcompiler.html">
+<name>hadoopCompiler</name>
+<purpose>Package MATLAB
+            Compiler programs for deployment against Hadoop clusters as MapReduce programs</purpose>
+</tocitem>
+<tocitem target="hadoop/mcc.html">
+<name>mcc</name>
+<purpose>Compile MATLAB functions for deployment</purpose>
+</tocitem>
+<tocitem target="hadoop/deploytool.html">
+<name>deploytool</name>
+<purpose>Compile and package functions for external deployment</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="spark-applications.html">Spark Applications
+<tocitem target="deploy-tall-arrays-to-a-spark-enabled-hadoop-cluster.html">Deploy Tall Arrays to a Spark Enabled Hadoop Cluster
+<tocitem target="../matlab/ref/mapreducer.html">
+<name>mapreducer</name>
+<purpose>Define execution environment for mapreduce or tall arrays</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="web-apps.html">Web Apps
+<tocitem target="webapps/webappcompiler.html">
+<name>webAppCompiler</name>
+<purpose>Package App Designer apps for web deployment</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="deployment-process.html">
+                    MATLAB Runtime
+                
+<tocitem target="mcrinstaller.html">
+<name>mcrinstaller</name>
+<purpose>Display version and location information for MATLAB Runtime installer
+corresponding to current platform </purpose>
+</tocitem>
+<tocitem target="mcrversion.html">
+<name>mcrversion</name>
+<purpose>Determine version of installed MATLAB Runtime</purpose>
+</tocitem>
+<tocitem target="compiler.runtime.download.html">
+<name>compiler.runtime.download</name>
+<purpose>Download MATLAB Runtime installer</purpose>
+</tocitem>
+<tocitem target="getmcruserdata.html">
+<name>getmcruserdata</name>
+<purpose>Retrieve MATLAB array value associated with a given
+key</purpose>
+</tocitem>
+<tocitem target="setmcruserdata.html">
+<name>setmcruserdata</name>
+<purpose>Associate MATLAB data value with a key</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

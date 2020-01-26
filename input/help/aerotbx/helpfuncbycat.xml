@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="data-import.html">Data Import
+<tocitem target="ug/datcomimport.html">
+<name>datcomimport</name>
+<purpose>Bring DATCOM file into MATLAB environment</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="coordinate-systems-1.html">Coordinate Systems
+<tocitem target="axes-transformations.html">Axes Transformations
+<tocitem target="ug/angle2dcm.html">
+<name>angle2dcm</name>
+<purpose>Convert rotation angles to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/angle2quat.html">
+<name>angle2quat</name>
+<purpose>Convert rotation angles to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/angle2rod.html">
+<name>angle2rod</name>
+<purpose>Convert rotation angles to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/dcm2angle.html">
+<name>dcm2angle</name>
+<purpose>Create rotation angles from direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/rod2angle.html">
+<name>rod2angle</name>
+<purpose>Convert Euler-Rodrigues vector to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/quat2angle.html">
+<name>quat2angle</name>
+<purpose>Convert quaternion to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/angle2dcm.html">
+<name>angle2dcm</name>
+<purpose>Convert rotation angles to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/dcm2alphabeta.html">
+<name>dcm2alphabeta</name>
+<purpose>Convert direction cosine matrix to angle of attack and
+sideslip angle</purpose>
+</tocitem>
+<tocitem target="ug/dcm2latlon.html">
+<name>dcm2latlon</name>
+<purpose>Convert direction cosine matrix to geodetic latitude and
+longitude</purpose>
+</tocitem>
+<tocitem target="ug/dcm2quat.html">
+<name>dcm2quat</name>
+<purpose>Convert direction cosine matrix to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/dcm2rod.html">
+<name>dcm2rod</name>
+<purpose>Convert direction cosine matrix to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/dcmbody2wind.html">
+<name>dcmbody2wind</name>
+<purpose>Convert angle of attack and sideslip angle to direction
+cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/dcmecef2ned.html">
+<name>dcmecef2ned</name>
+<purpose>Convert geodetic latitude and longitude to direction cosine
+matrix</purpose>
+</tocitem>
+<tocitem target="ug/dcmeci2ecef.html">
+<name>dcmeci2ecef</name>
+<purpose>Convert Earth-centered inertial (ECI) to Earth-centered
+Earth-fixed (ECEF) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/quat2dcm.html">
+<name>quat2dcm</name>
+<purpose>Convert quaternion to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/rod2dcm.html">
+<name>rod2dcm</name>
+<purpose>Convert Euler-Rodrigues vector to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/ecef2lla.html">
+<name>ecef2lla</name>
+<purpose>Convert Earth-centered Earth-fixed (ECEF) coordinates
+to geodetic coordinates</purpose>
+</tocitem>
+<tocitem target="ug/eci2lla.html">
+<name>eci2lla</name>
+<purpose>Convert Earth-centered inertial (ECI) coordinates to latitude,
+longitude, altitude (LLA) geodetic coordinates</purpose>
+</tocitem>
+<tocitem target="ug/flat2lla.html">
+<name>flat2lla</name>
+<purpose>Convert from flat Earth position to array of geodetic latitude, longitude, and altitude
+      coordinates</purpose>
+</tocitem>
+<tocitem target="ug/lla2ecef.html">
+<name>lla2ecef</name>
+<purpose>Convert geodetic coordinates to Earth-centered Earth-fixed
+(ECEF) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/lla2eci.html">
+<name>lla2eci</name>
+<purpose>Convert geodetic latitude, longitude, altitude (LLA) coordinates
+to Earth-centered inertial (ECI) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/lla2flat.html">
+<name>lla2flat</name>
+<purpose>Convert from geodetic latitude, longitude, and altitude
+to flat Earth position</purpose>
+</tocitem>
+<tocitem target="ug/geoc2geod.html">
+<name>geoc2geod</name>
+<purpose>Convert geocentric latitude to geodetic latitude</purpose>
+</tocitem>
+<tocitem target="ug/geod2geoc.html">
+<name>geod2geoc</name>
+<purpose>Convert geodetic latitude to geocentric latitude</purpose>
+</tocitem>
+<tocitem target="ug/angle2quat.html">
+<name>angle2quat</name>
+<purpose>Convert rotation angles to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/dcm2quat.html">
+<name>dcm2quat</name>
+<purpose>Convert direction cosine matrix to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quat2angle.html">
+<name>quat2angle</name>
+<purpose>Convert quaternion to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/quat2dcm.html">
+<name>quat2dcm</name>
+<purpose>Convert quaternion to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/quat2rod.html">
+<name>quat2rod</name>
+<purpose>Convert quaternion to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/rod2quat.html">
+<name>rod2quat</name>
+<purpose>Convert Euler-Rodrigues vector to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/eci2aer.html">
+<name>eci2aer</name>
+<purpose>Convert Earth-centered inertial (ECI) coordinates to azimuth,
+elevation, slant range (AER) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/angle2rod.html">
+<name>angle2rod</name>
+<purpose>Convert rotation angles to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/dcm2rod.html">
+<name>dcm2rod</name>
+<purpose>Convert direction cosine matrix to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/quat2rod.html">
+<name>quat2rod</name>
+<purpose>Convert quaternion to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/rod2angle.html">
+<name>rod2angle</name>
+<purpose>Convert Euler-Rodrigues vector to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/rod2dcm.html">
+<name>rod2dcm</name>
+<purpose>Convert Euler-Rodrigues vector to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/rod2quat.html">
+<name>rod2quat</name>
+<purpose>Convert Euler-Rodrigues vector to quaternion</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="flight-parameters-1.html">Flight Parameters and Quaternion Math
+<tocitem target="ug/airspeed.html">
+<name>airspeed</name>
+<purpose>Airspeed from velocity</purpose>
+</tocitem>
+<tocitem target="ug/alphabeta.html">
+<name>alphabeta</name>
+<purpose>Incidence and sideslip angles</purpose>
+</tocitem>
+<tocitem target="ug/correctairspeed.html">
+<name>correctairspeed</name>
+<purpose>Convert from one of other two airspeeds to equivalent
+airspeed (EAS), calibrated airspeed (CAS), or true airspeed (TAS)</purpose>
+</tocitem>
+<tocitem target="ug/dpressure.html">
+<name>dpressure</name>
+<purpose>Compute dynamic pressure using velocity and density</purpose>
+</tocitem>
+<tocitem target="ug/machnumber.html">
+<name>machnumber</name>
+<purpose>Compute Mach number using velocity and speed of sound</purpose>
+</tocitem>
+<tocitem target="ug/rrdelta.html">
+<name>rrdelta</name>
+<purpose>Compute relative pressure ratio</purpose>
+</tocitem>
+<tocitem target="ug/rrsigma.html">
+<name>rrsigma</name>
+<purpose>Compute relative density ratio</purpose>
+</tocitem>
+<tocitem target="ug/rrtheta.html">
+<name>rrtheta</name>
+<purpose>Compute relative temperature ratio</purpose>
+</tocitem>
+<tocitem target="ug/quatconj.html">
+<name>quatconj</name>
+<purpose>Calculate conjugate of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatdivide.html">
+<name>quatdivide</name>
+<purpose>Divide quaternion by another quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatexp.html">
+<name>quatexp</name>
+<purpose>Exponential of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatinterp.html">
+<name>quatinterp</name>
+<purpose>Quaternion interpolation between two quaternions</purpose>
+</tocitem>
+<tocitem target="ug/quatinv.html">
+<name>quatinv</name>
+<purpose>Calculate inverse of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatlog.html">
+<name>quatlog</name>
+<purpose>Natural logarithm of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatmod.html">
+<name>quatmod</name>
+<purpose>Calculate modulus of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatmultiply.html">
+<name>quatmultiply</name>
+<purpose>Calculate product of two quaternions</purpose>
+</tocitem>
+<tocitem target="ug/quatnorm.html">
+<name>quatnorm</name>
+<purpose>Calculate norm of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatnormalize.html">
+<name>quatnormalize</name>
+<purpose>Normalize quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatpower.html">
+<name>quatpower</name>
+<purpose>Power of quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quatrotate.html">
+<name>quatrotate</name>
+<purpose>Rotate vector by quaternion</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="unit-conversions-1.html">Unit Conversions
+<tocitem target="ug/aeroreadiersdata.html">
+<name>aeroReadIERSData</name>
+<purpose>File containing current International Astronomical Union (IAU) 2000A Earth
+            orientation data</purpose>
+</tocitem>
+<tocitem target="ug/convacc.html">
+<name>convacc</name>
+<purpose>Convert from acceleration units to desired acceleration
+units</purpose>
+</tocitem>
+<tocitem target="ug/convang.html">
+<name>convang</name>
+<purpose>Convert from angle units to desired angle units</purpose>
+</tocitem>
+<tocitem target="ug/convangacc.html">
+<name>convangacc</name>
+<purpose>Convert from angular acceleration units to desired angular
+acceleration units</purpose>
+</tocitem>
+<tocitem target="ug/convangvel.html">
+<name>convangvel</name>
+<purpose>Convert from angular velocity units to desired angular
+velocity units</purpose>
+</tocitem>
+<tocitem target="ug/convdensity.html">
+<name>convdensity</name>
+<purpose>Convert from density units to desired density units</purpose>
+</tocitem>
+<tocitem target="ug/convforce.html">
+<name>convforce</name>
+<purpose>Convert from force units to desired force units</purpose>
+</tocitem>
+<tocitem target="ug/convlength.html">
+<name>convlength</name>
+<purpose>Convert from length units to desired length units</purpose>
+</tocitem>
+<tocitem target="ug/convmass.html">
+<name>convmass</name>
+<purpose>Convert from mass units to desired mass units</purpose>
+</tocitem>
+<tocitem target="ug/convpres.html">
+<name>convpres</name>
+<purpose>Convert from pressure units to desired pressure units</purpose>
+</tocitem>
+<tocitem target="ug/convtemp.html">
+<name>convtemp</name>
+<purpose>Convert to desired temperature units</purpose>
+</tocitem>
+<tocitem target="ug/convvel.html">
+<name>convvel</name>
+<purpose>Convert from velocity units to desired velocity units</purpose>
+</tocitem>
+<tocitem target="ug/decyear.html">
+<name>decyear</name>
+<purpose>Decimal year calculator</purpose>
+</tocitem>
+<tocitem target="ug/juliandate.html">
+<name>juliandate</name>
+<purpose>Julian date calculator</purpose>
+</tocitem>
+<tocitem target="ug/leapyear.html">
+<name>leapyear</name>
+<purpose>Determine leap year</purpose>
+</tocitem>
+<tocitem target="ug/mjuliandate.html">
+<name>mjuliandate</name>
+<purpose>Modified Julian date calculator</purpose>
+</tocitem>
+<tocitem target="ug/tdbjuliandate.html">
+<name>tdbjuliandate</name>
+<purpose>Convert from Barycentric Dynamical Time Estimate to Julian date</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="environment-models-1.html">Environment
+<tocitem target="ug/aerodatapackage.html">
+<name>aeroDataPackage</name>
+<purpose>Start Add-On Explorer to download, install, or uninstall aerospace-specific
+            data</purpose>
+</tocitem>
+<tocitem target="ug/atmoscira.html">
+<name>atmoscira</name>
+<purpose>Use COSPAR International Reference Atmosphere 1986 model</purpose>
+</tocitem>
+<tocitem target="ug/atmoscoesa.html">
+<name>atmoscoesa</name>
+<purpose>Use 1976 COESA model</purpose>
+</tocitem>
+<tocitem target="ug/atmoshwm.html">
+<name>atmoshwm</name>
+<purpose>Implement horizontal wind model</purpose>
+</tocitem>
+<tocitem target="ug/atmosisa.html">
+<name>atmosisa</name>
+<purpose>Use International Standard Atmosphere model</purpose>
+</tocitem>
+<tocitem target="ug/atmoslapse.html">
+<name>atmoslapse</name>
+<purpose>Use Lapse Rate Atmosphere model</purpose>
+</tocitem>
+<tocitem target="ug/atmosnonstd.html">
+<name>atmosnonstd</name>
+<purpose>Use climatic data from MIL-STD-210 or MIL-HDBK-310</purpose>
+</tocitem>
+<tocitem target="ug/atmosnrlmsise00.html">
+<name>atmosnrlmsise00</name>
+<purpose>Implement mathematical representation of 2001 United States
+Naval Research Laboratory Mass Spectrometer and Incoherent Scatter
+Radar Exosphere</purpose>
+</tocitem>
+<tocitem target="ug/atmospalt.html">
+<name>atmospalt</name>
+<purpose>Calculate pressure altitude based on ambient pressure</purpose>
+</tocitem>
+<tocitem target="ug/deltacip.html">
+<name>deltaCIP</name>
+<purpose>Calculate Celestial Intermediate Pole (CIP) location adjustment</purpose>
+</tocitem>
+<tocitem target="ug/deltaut1.html">
+<name>deltaUT1</name>
+<purpose>Calculate difference between Coordinated Universal Time (UTC) and Principal
+            Universal Time (UT1)</purpose>
+</tocitem>
+<tocitem target="ug/earthnutation.html">
+<name>earthNutation</name>
+<purpose>Implement Earth nutation</purpose>
+</tocitem>
+<tocitem target="ug/moonlibration.html">
+<name>moonLibration</name>
+<purpose>Moon librations</purpose>
+</tocitem>
+<tocitem target="ug/planetephemeris.html">
+<name>planetEphemeris</name>
+<purpose>Position and velocity of astronomical objects</purpose>
+</tocitem>
+<tocitem target="ug/polarmotion.html">
+<name>polarMotion</name>
+<purpose>Calculate Earth polar motion</purpose>
+</tocitem>
+<tocitem target="ug/geocradius.html">
+<name>geocradius</name>
+<purpose>Convert from geocentric latitude to radius of ellipsoid
+planet</purpose>
+</tocitem>
+<tocitem target="ug/geoidegm96.html">
+<name>geoidegm96</name>
+<purpose>Calculate geoid height as determined from EGM96 Geopotential
+Model</purpose>
+</tocitem>
+<tocitem target="ug/geoidheight.html">
+<name>geoidheight</name>
+<purpose>Calculate geoid height</purpose>
+</tocitem>
+<tocitem target="ug/gravitycentrifugal.html">
+<name>gravitycentrifugal</name>
+<purpose>Implement centrifugal effect of planetary gravity</purpose>
+</tocitem>
+<tocitem target="ug/gravitysphericalharmonic.html">
+<name>gravitysphericalharmonic</name>
+<purpose>Implement spherical harmonic representation of planetary
+gravity</purpose>
+</tocitem>
+<tocitem target="ug/gravitywgs84.html">
+<name>gravitywgs84</name>
+<purpose>Implement 1984 World Geodetic System (WGS84) representation
+of Earth's gravity</purpose>
+</tocitem>
+<tocitem target="ug/gravityzonal.html">
+<name>gravityzonal</name>
+<purpose>Implement zonal harmonic representation of planetary gravity</purpose>
+</tocitem>
+<tocitem target="ug/igrfmagm.html">
+<name>igrfmagm</name>
+<purpose>Calculate Earth magnetic field and secular variation using
+International Geomagnetic Reference Field</purpose>
+</tocitem>
+<tocitem target="ug/wrldmagm.html">
+<name>wrldmagm</name>
+<purpose>Use World Magnetic Model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gas-dynamics-1.html">Gas Dynamics
+<tocitem target="ug/flowfanno.html">
+<name>flowfanno</name>
+<purpose>Fanno line flow relations</purpose>
+</tocitem>
+<tocitem target="ug/flowisentropic.html">
+<name>flowisentropic</name>
+<purpose>Isentropic flow ratios</purpose>
+</tocitem>
+<tocitem target="ug/flownormalshock.html">
+<name>flownormalshock</name>
+<purpose>Normal shock relations</purpose>
+</tocitem>
+<tocitem target="ug/flowprandtlmeyer.html">
+<name>flowprandtlmeyer</name>
+<purpose>Calculate Prandtl-Meyer functions for expansion waves</purpose>
+</tocitem>
+<tocitem target="ug/flowrayleigh.html">
+<name>flowrayleigh</name>
+<purpose>Rayleigh line flow relations</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="view-simulation-results.html">Visualize Trajectory and Attitude
+<tocitem target="axes-transformations-1.html">Axes Transformations
+<tocitem target="ug/angle2dcm.html">
+<name>angle2dcm</name>
+<purpose>Convert rotation angles to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/angle2quat.html">
+<name>angle2quat</name>
+<purpose>Convert rotation angles to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/angle2rod.html">
+<name>angle2rod</name>
+<purpose>Convert rotation angles to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/dcm2angle.html">
+<name>dcm2angle</name>
+<purpose>Create rotation angles from direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/rod2angle.html">
+<name>rod2angle</name>
+<purpose>Convert Euler-Rodrigues vector to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/quat2angle.html">
+<name>quat2angle</name>
+<purpose>Convert quaternion to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/angle2dcm.html">
+<name>angle2dcm</name>
+<purpose>Convert rotation angles to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/dcm2alphabeta.html">
+<name>dcm2alphabeta</name>
+<purpose>Convert direction cosine matrix to angle of attack and
+sideslip angle</purpose>
+</tocitem>
+<tocitem target="ug/dcm2latlon.html">
+<name>dcm2latlon</name>
+<purpose>Convert direction cosine matrix to geodetic latitude and
+longitude</purpose>
+</tocitem>
+<tocitem target="ug/dcm2quat.html">
+<name>dcm2quat</name>
+<purpose>Convert direction cosine matrix to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/dcm2rod.html">
+<name>dcm2rod</name>
+<purpose>Convert direction cosine matrix to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/dcmbody2wind.html">
+<name>dcmbody2wind</name>
+<purpose>Convert angle of attack and sideslip angle to direction
+cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/dcmecef2ned.html">
+<name>dcmecef2ned</name>
+<purpose>Convert geodetic latitude and longitude to direction cosine
+matrix</purpose>
+</tocitem>
+<tocitem target="ug/dcmeci2ecef.html">
+<name>dcmeci2ecef</name>
+<purpose>Convert Earth-centered inertial (ECI) to Earth-centered
+Earth-fixed (ECEF) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/quat2dcm.html">
+<name>quat2dcm</name>
+<purpose>Convert quaternion to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/rod2dcm.html">
+<name>rod2dcm</name>
+<purpose>Convert Euler-Rodrigues vector to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/ecef2lla.html">
+<name>ecef2lla</name>
+<purpose>Convert Earth-centered Earth-fixed (ECEF) coordinates
+to geodetic coordinates</purpose>
+</tocitem>
+<tocitem target="ug/eci2lla.html">
+<name>eci2lla</name>
+<purpose>Convert Earth-centered inertial (ECI) coordinates to latitude,
+longitude, altitude (LLA) geodetic coordinates</purpose>
+</tocitem>
+<tocitem target="ug/flat2lla.html">
+<name>flat2lla</name>
+<purpose>Convert from flat Earth position to array of geodetic latitude, longitude, and altitude
+      coordinates</purpose>
+</tocitem>
+<tocitem target="ug/lla2ecef.html">
+<name>lla2ecef</name>
+<purpose>Convert geodetic coordinates to Earth-centered Earth-fixed
+(ECEF) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/lla2eci.html">
+<name>lla2eci</name>
+<purpose>Convert geodetic latitude, longitude, altitude (LLA) coordinates
+to Earth-centered inertial (ECI) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/lla2flat.html">
+<name>lla2flat</name>
+<purpose>Convert from geodetic latitude, longitude, and altitude
+to flat Earth position</purpose>
+</tocitem>
+<tocitem target="ug/geoc2geod.html">
+<name>geoc2geod</name>
+<purpose>Convert geocentric latitude to geodetic latitude</purpose>
+</tocitem>
+<tocitem target="ug/geod2geoc.html">
+<name>geod2geoc</name>
+<purpose>Convert geodetic latitude to geocentric latitude</purpose>
+</tocitem>
+<tocitem target="ug/angle2quat.html">
+<name>angle2quat</name>
+<purpose>Convert rotation angles to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/dcm2quat.html">
+<name>dcm2quat</name>
+<purpose>Convert direction cosine matrix to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/quat2angle.html">
+<name>quat2angle</name>
+<purpose>Convert quaternion to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/quat2dcm.html">
+<name>quat2dcm</name>
+<purpose>Convert quaternion to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/quat2rod.html">
+<name>quat2rod</name>
+<purpose>Convert quaternion to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/rod2quat.html">
+<name>rod2quat</name>
+<purpose>Convert Euler-Rodrigues vector to quaternion</purpose>
+</tocitem>
+<tocitem target="ug/eci2aer.html">
+<name>eci2aer</name>
+<purpose>Convert Earth-centered inertial (ECI) coordinates to azimuth,
+elevation, slant range (AER) coordinates</purpose>
+</tocitem>
+<tocitem target="ug/angle2rod.html">
+<name>angle2rod</name>
+<purpose>Convert rotation angles to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/dcm2rod.html">
+<name>dcm2rod</name>
+<purpose>Convert direction cosine matrix to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/quat2rod.html">
+<name>quat2rod</name>
+<purpose>Convert quaternion to Euler-Rodrigues vector</purpose>
+</tocitem>
+<tocitem target="ug/rod2angle.html">
+<name>rod2angle</name>
+<purpose>Convert Euler-Rodrigues vector to rotation angles</purpose>
+</tocitem>
+<tocitem target="ug/rod2dcm.html">
+<name>rod2dcm</name>
+<purpose>Convert Euler-Rodrigues vector to direction cosine matrix</purpose>
+</tocitem>
+<tocitem target="ug/rod2quat.html">
+<name>rod2quat</name>
+<purpose>Convert Euler-Rodrigues vector to quaternion</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="flight-instruments.html">Flight Instruments
+<tocitem target="ug/aero.ui.control.airspeedindicator.uiaeroairspeed.html">
+<name>uiaeroairspeed</name>
+<purpose>Create airspeed indicator component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.altimeter.uiaeroaltimeter.html">
+<name>uiaeroaltimeter</name>
+<purpose>Create altimeter component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.climbindicator.uiaeroclimb.html">
+<name>uiaeroclimb</name>
+<purpose>Create climb rate indicator component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.egtindicator.uiaeroegt.html">
+<name>uiaeroegt</name>
+<purpose>Create exhaust gas temperature (EGT) indicator component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.headingindicator.uiaeroheading.html">
+<name>uiaeroheading</name>
+<purpose>Create heading indicator component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.artificialhorizon.uiaerohorizon.html">
+<name>uiaerohorizon</name>
+<purpose>Create artificial horizon component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.rpmindicator.uiaerorpm.html">
+<name>uiaerorpm</name>
+<purpose>Create revolutions per minute (RPM) indicator component</purpose>
+</tocitem>
+<tocitem target="ug/aero.ui.control.turncoordinator.uiaeroturn.html">
+<name>uiaeroturn</name>
+<purpose>Create turn coordinator component</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

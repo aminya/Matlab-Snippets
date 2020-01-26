@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="hardware-discovery-and-session-setup.html">Hardware Discovery and Session Setup
+<tocitem target="ref/daq.createsession.html">
+<name>daq.createSession</name>
+<purpose>Create data acquisition session for specific vendor hardware</purpose>
+</tocitem>
+<tocitem target="ref/daq.getdevices.html">
+<name>daq.getDevices</name>
+<purpose> Display available data acquisition devices</purpose>
+</tocitem>
+<tocitem target="ref/daq.getvendors.html">
+<name>daq.getVendors</name>
+<purpose>Display available vendors</purpose>
+</tocitem>
+<tocitem target="ref/release.html">
+<name>release</name>
+<purpose>Release session hardware resources</purpose>
+</tocitem>
+<tocitem target="ref/prepare.html">
+<name>prepare</name>
+<purpose>Prepare session for operation</purpose>
+</tocitem>
+<tocitem target="ref/daqreset.html">
+<name>daqreset</name>
+<purpose>Reset Data Acquisition
+            Toolbox</purpose>
+</tocitem>
+<tocitem target="ref/daqhelp.html">
+<name>daqhelp</name>
+<purpose>Help for toolbox interface</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analog-input-and-output.html">Analog Input and Output
+<tocitem target="analog-data-acquisition.html">Analog Data Acquisition
+<tocitem target="ref/addanaloginputchannel.html">
+<name>addAnalogInputChannel</name>
+<purpose>Add analog input channel</purpose>
+</tocitem>
+<tocitem target="ref/inputsinglescan.html">
+<name>inputSingleScan</name>
+<purpose>Acquire single scan from all input channels</purpose>
+</tocitem>
+<tocitem target="ref/startforeground.html">
+<name>startForeground</name>
+<purpose>Start foreground operations</purpose>
+</tocitem>
+<tocitem target="ref/startbackground.html">
+<name>startBackground</name>
+<purpose>Start background operations </purpose>
+</tocitem>
+<tocitem target="ref/removechannel.html">
+<name>removeChannel</name>
+<purpose>Remove channel from session object</purpose>
+</tocitem>
+<tocitem target="ref/addlistener.html">
+<name>addlistener</name>
+<purpose>Create event listener</purpose>
+</tocitem>
+<tocitem target="ref/stop_session.html">
+<name>stop</name>
+<purpose>Stop background operation</purpose>
+</tocitem>
+<tocitem target="ref/wait_session.html">
+<name>wait</name>
+<purpose>Block MATLAB until background operation completes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analog-signal-generation.html">Analog Signal Generation
+<tocitem target="ref/addanalogoutputchannel.html">
+<name>addAnalogOutputChannel</name>
+<purpose>Add analog output channel to session</purpose>
+</tocitem>
+<tocitem target="ref/outputsinglescan.html">
+<name>outputSingleScan</name>
+<purpose>Generate single scan on all output channels</purpose>
+</tocitem>
+<tocitem target="ref/queueoutputdata.html">
+<name>queueOutputData</name>
+<purpose>Queue data to be output</purpose>
+</tocitem>
+<tocitem target="ref/startforeground.html">
+<name>startForeground</name>
+<purpose>Start foreground operations</purpose>
+</tocitem>
+<tocitem target="ref/startbackground.html">
+<name>startBackground</name>
+<purpose>Start background operations </purpose>
+</tocitem>
+<tocitem target="ref/addlistener.html">
+<name>addlistener</name>
+<purpose>Create event listener</purpose>
+</tocitem>
+<tocitem target="ref/stop_session.html">
+<name>stop</name>
+<purpose>Stop background operation</purpose>
+</tocitem>
+<tocitem target="ref/wait_session.html">
+<name>wait</name>
+<purpose>Block MATLAB until background operation completes</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="digital-input-and-output.html">Digital Input and Output
+<tocitem target="ref/adddigitalchannel.html">
+<name>addDigitalChannel</name>
+<purpose>Add digital channel</purpose>
+</tocitem>
+<tocitem target="ref/inputsinglescan.html">
+<name>inputSingleScan</name>
+<purpose>Acquire single scan from all input channels</purpose>
+</tocitem>
+<tocitem target="ref/outputsinglescan.html">
+<name>outputSingleScan</name>
+<purpose>Generate single scan on all output channels</purpose>
+</tocitem>
+<tocitem target="ref/queueoutputdata.html">
+<name>queueOutputData</name>
+<purpose>Queue data to be output</purpose>
+</tocitem>
+<tocitem target="ref/startforeground.html">
+<name>startForeground</name>
+<purpose>Start foreground operations</purpose>
+</tocitem>
+<tocitem target="ref/startbackground.html">
+<name>startBackground</name>
+<purpose>Start background operations </purpose>
+</tocitem>
+<tocitem target="ref/addclockconnection.html">
+<name>addClockConnection</name>
+<purpose>Add clock connection</purpose>
+</tocitem>
+<tocitem target="ref/stop_session.html">
+<name>stop</name>
+<purpose>Stop background operation</purpose>
+</tocitem>
+<tocitem target="ref/wait_session.html">
+<name>wait</name>
+<purpose>Block MATLAB until background operation completes</purpose>
+</tocitem>
+<tocitem target="ref/decimaltobinaryvector.html">
+<name>decimalToBinaryVector</name>
+<purpose>Convert decimal value to binary vector</purpose>
+</tocitem>
+<tocitem target="ref/binaryvectortodecimal.html">
+<name>binaryVectorToDecimal</name>
+<purpose>Convert binary vector value to decimal value</purpose>
+</tocitem>
+<tocitem target="ref/hextobinaryvector.html">
+<name>hexToBinaryVector</name>
+<purpose>Convert hexadecimal value to binary vector</purpose>
+</tocitem>
+<tocitem target="ref/binaryvectortohex.html">
+<name>binaryVectorToHex</name>
+<purpose>Convert binary vector value to hexadecimal</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="counter-and-timer-input-and-output.html">Counter and Timer Input and Output
+<tocitem target="ref/addcounterinputchannel.html">
+<name>addCounterInputChannel</name>
+<purpose>Add counter input channel</purpose>
+</tocitem>
+<tocitem target="ref/addcounteroutputchannel.html">
+<name>addCounterOutputChannel</name>
+<purpose>Add counter output channel</purpose>
+</tocitem>
+<tocitem target="ref/inputsinglescan.html">
+<name>inputSingleScan</name>
+<purpose>Acquire single scan from all input channels</purpose>
+</tocitem>
+<tocitem target="ref/resetcounters.html">
+<name>resetCounters</name>
+<purpose>Reset counter channel to initial count</purpose>
+</tocitem>
+<tocitem target="ref/startforeground.html">
+<name>startForeground</name>
+<purpose>Start foreground operations</purpose>
+</tocitem>
+<tocitem target="ref/startbackground.html">
+<name>startBackground</name>
+<purpose>Start background operations </purpose>
+</tocitem>
+<tocitem target="ref/removechannel.html">
+<name>removeChannel</name>
+<purpose>Remove channel from session object</purpose>
+</tocitem>
+<tocitem target="ref/stop_session.html">
+<name>stop</name>
+<purpose>Stop background operation</purpose>
+</tocitem>
+<tocitem target="ref/wait_session.html">
+<name>wait</name>
+<purpose>Block MATLAB until background operation completes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multichannel-audio-input-and-output.html">Multichannel Audio Input and Output
+<tocitem target="ref/addaudioinputchannel.html">
+<name>addAudioInputChannel</name>
+<purpose>Add audio input channel to session</purpose>
+</tocitem>
+<tocitem target="ref/addaudiooutputchannel.html">
+<name>addAudioOutputChannel</name>
+<purpose>Add audio output channel to session</purpose>
+</tocitem>
+<tocitem target="ref/startforeground.html">
+<name>startForeground</name>
+<purpose>Start foreground operations</purpose>
+</tocitem>
+<tocitem target="ref/startbackground.html">
+<name>startBackground</name>
+<purpose>Start background operations </purpose>
+</tocitem>
+<tocitem target="ref/removechannel.html">
+<name>removeChannel</name>
+<purpose>Remove channel from session object</purpose>
+</tocitem>
+<tocitem target="ref/stop_session.html">
+<name>stop</name>
+<purpose>Stop background operation</purpose>
+</tocitem>
+<tocitem target="ref/wait_session.html">
+<name>wait</name>
+<purpose>Block MATLAB until background operation completes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="periodic-waveform-generation.html">Periodic Waveform Generation
+<tocitem target="ref/addfunctiongeneratorchannel.html">
+<name>addFunctionGeneratorChannel</name>
+<purpose>Add function generator channel</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simultaneous-and-synchronized-operations.html">Simultaneous and Synchronized Operations
+<tocitem target="ref/addtriggerconnection.html">
+<name>addTriggerConnection</name>
+<purpose>Add trigger connection</purpose>
+</tocitem>
+<tocitem target="ref/addclockconnection.html">
+<name>addClockConnection</name>
+<purpose>Add clock connection</purpose>
+</tocitem>
+<tocitem target="ref/removeconnection.html">
+<name>removeConnection</name>
+<purpose>Remove clock or trigger connection</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="build-custom-adaptors.html">Build Custom Adaptors
+<tocitem target="sdk/buildadaptor.html">
+<name>buildAdaptor</name>
+<purpose>Build adaptor for third-party data acquisition interface</purpose>
+</tocitem>
+<tocitem target="sdk/enabledemoadaptordiscovery.html">
+<name>enableDemoAdaptorDiscovery</name>
+<purpose>Allow SDK demo adaptor to be enabled for device discovery
+and usage</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

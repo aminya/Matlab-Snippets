@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="modeling-and-simulation-basics.html">Modeling and Simulation Basics
+<tocitem target="parameterization.html">Parameterization Methods
+<tocitem target="ref/subcircuit2ssc.html">
+<name>subcircuit2ssc</name>
+<purpose>Convert SPICE subcircuit to custom Simscape components</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="simscape-based-blocks.html">Electrical Block Libraries
+<tocitem target="electromechanical.html">Electromechanical
+<tocitem target="permanent-magnet.html">Permanent Magnet
+<tocitem target="ref/ee_calculatefluxpartialderivatives.html">
+<name>ee_calculateFluxPartialDerivatives</name>
+<purpose>Calculate flux partial derivatives for FEM-Parameterized
+PMSM block </purpose>
+</tocitem>
+<tocitem target="ref/ee_generateidealpmsmfluxdata.html">
+<name>ee_generateIdealPMSMfluxData</name>
+<purpose>Generate tabulated flux linkage data for ideal PMSM</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="semiconductors-and-converters.html">Semiconductors and Converters
+<tocitem target="semiconductors.html">Semiconductors
+<tocitem target="ref/ee_getefficiency.html">
+<name>ee_getEfficiency</name>
+<purpose>Calculate efficiency as function of dissipated power losses</purpose>
+</tocitem>
+<tocitem target="ref/ee_getpowerlosssummary.html">
+<name>ee_getPowerLossSummary</name>
+<purpose>Calculate dissipated power losses</purpose>
+</tocitem>
+<tocitem target="ref/ee_getpowerlosstimeseries.html">
+<name>ee_getPowerLossTimeSeries</name>
+<purpose>Calculate dissipated power losses and return time series
+data</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="additional-components.html">Additional Components
+<tocitem target="spice-passives.html">SPICE Passives
+<tocitem target="ref/subcircuit2ssc.html">
+<name>subcircuit2ssc</name>
+<purpose>Convert SPICE subcircuit to custom Simscape components</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spice-semiconductors.html">SPICE Semiconductors
+<tocitem target="ref/subcircuit2ssc.html">
+<name>subcircuit2ssc</name>
+<purpose>Convert SPICE subcircuit to custom Simscape components</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spice-sources.html">SPICE Sources
+<tocitem target="ref/subcircuit2ssc.html">
+<name>subcircuit2ssc</name>
+<purpose>Convert SPICE subcircuit to custom Simscape components</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="simulation-and-analysis-1.html">Simulation and Analysis
+<tocitem target="ref/ee_calculatefluxpartialderivatives.html">
+<name>ee_calculateFluxPartialDerivatives</name>
+<purpose>Calculate flux partial derivatives for FEM-Parameterized
+PMSM block </purpose>
+</tocitem>
+<tocitem target="ref/ee_calculatethdpercent.html">
+<name>ee_calculateThdPercent</name>
+<purpose>Compute the total harmonic distortion (THD) percentage</purpose>
+</tocitem>
+<tocitem target="ref/ee_getefficiency.html">
+<name>ee_getEfficiency</name>
+<purpose>Calculate efficiency as function of dissipated power losses</purpose>
+</tocitem>
+<tocitem target="ref/ee_generateidealpmsmfluxdata.html">
+<name>ee_generateIdealPMSMfluxData</name>
+<purpose>Generate tabulated flux linkage data for ideal PMSM</purpose>
+</tocitem>
+<tocitem target="ref/ee_getharmonics.html">
+<name>ee_getHarmonics</name>
+<purpose>Return harmonic orders, magnitudes, and fundamental frequency</purpose>
+</tocitem>
+<tocitem target="ref/ee_getnodedvdtsummary.html">
+<name>ee_getNodeDvDtSummary</name>
+<purpose>Calculate maximum absolute values of terminal voltage time derivatives (dv/dt) based
+      on logged simulation data</purpose>
+</tocitem>
+<tocitem target="ref/ee_getnodedvdttimeseries.html">
+<name>ee_getNodeDvDtTimeSeries</name>
+<purpose>Calculate rates-of-change of voltage variables</purpose>
+</tocitem>
+<tocitem target="ref/ee_getpowerlosssummary.html">
+<name>ee_getPowerLossSummary</name>
+<purpose>Calculate dissipated power losses</purpose>
+</tocitem>
+<tocitem target="ref/ee_getpowerlosstimeseries.html">
+<name>ee_getPowerLossTimeSeries</name>
+<purpose>Calculate dissipated power losses and return time series
+data</purpose>
+</tocitem>
+<tocitem target="ref/ee_plotharmonics.html">
+<name>ee_plotHarmonics</name>
+<purpose>Plot percentage of fundamental magnitude versus harmonic
+order</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="specialized-power-systems.html">Specialized Power Systems
+<tocitem target="electrical-sources-and-elements.html">Electrical Sources and Elements
+<tocitem target="powersys/ref/power_new.html">
+<name>power_new</name>
+<purpose>Create new Simscape
+            Electrical Specialized Power Systems model populated by required and commonly used
+            blocks</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_cableparam.html">
+<name>power_cableparam</name>
+<purpose>Compute RLC parameters of radial copper cables with single
+screen, based on conductor and insulator characteristics</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_hysteresis.html">
+<name>power_hysteresis</name>
+<purpose>View and edit hysteresis characteristic for saturable
+core of Saturable Transformer blocks</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_lineparam.html">
+<name>power_lineparam</name>
+<purpose>Compute RLC parameters of overhead transmission line from
+its conductor characteristics and tower geometry</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="motors-and-generators.html">Motors and Generators
+<tocitem target="powersys/ref/power_asynchronousmachineparams.html">
+<name>power_AsynchronousMachineParams</name>
+<purpose>Estimate electrical parameters of double cage asynchronous
+machine based on standard manufacturer specifications</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_pmsynchronousmachineparams.html">
+<name>power_PMSynchronousMachineParams</name>
+<purpose>Convert manufacturer specifications to mask parameters
+of Permanent Magnet Synchronous Machine block</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_loadflow.html">
+<name>power_loadflow</name>
+<purpose>Perform positive-sequence load flow or unbalanced load
+flow. Initialize models containing three-phase machines and dynamic
+load blocks</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sensors-and-measurements.html">Sensors and Measurements
+<tocitem target="powersys/ref/power_fftscope.html">
+<name>power_fftscope</name>
+<purpose>Fourier analysis of simulation data signals</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_flicker.html">
+<name>power_flicker</name>
+<purpose>Perform statistical analysis of instantaneous flicker
+level signal</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_ltiview.html">
+<name>power_ltiview</name>
+<purpose>Create state-space object of model for use with the Linear
+System Analyzer tool</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_zmeter.html">
+<name>power_zmeter</name>
+<purpose>Compute impedance versus frequency of Impedance Measurement
+blocks of model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulation-and-analysis.html">Simulation and Analysis
+<tocitem target="powersys/ref/power_analyze.html">
+<name>power_analyze</name>
+<purpose>Analyze electric circuit</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_customize.html">
+<name>power_customize</name>
+<purpose>Prepare a Simscape
+            Electrical Specialized Power Systems block for customization</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_init.html">
+<name>power_init</name>
+<purpose>Set initial state values of model built with Simscape
+            Electrical Specialized Power Systems software</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_initstates.html">
+<name>power_initstates</name>
+<purpose>Compute and modify initial values of voltages and currents
+of model</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_loadflow.html">
+<name>power_loadflow</name>
+<purpose>Perform positive-sequence load flow or unbalanced load
+flow. Initialize models containing three-phase machines and dynamic
+load blocks</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_report.html">
+<name>power_report</name>
+<purpose>Generate report of steady state variables, initial states,
+and machine load flow for model</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_statespace.html">
+<name>power_statespace</name>
+<purpose>Compute state-space model of linear electrical circuit</purpose>
+</tocitem>
+<tocitem target="powersys/ref/power_steadystate.html">
+<name>power_steadystate</name>
+<purpose>Compute steady-state values of voltages and currents of
+model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

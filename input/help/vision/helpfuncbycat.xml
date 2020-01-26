@@ -1,0 +1,1998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="feature-detection-and-extraction.html">Feature Detection and Extraction
+<tocitem target="ref/detectbriskfeatures.html">
+<name>detectBRISKFeatures</name>
+<purpose>Detect BRISK features and return BRISKPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectfastfeatures.html">
+<name>detectFASTFeatures</name>
+<purpose>Detect corners using FAST algorithm and return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectharrisfeatures.html">
+<name>detectHarrisFeatures</name>
+<purpose>Detect corners using Harris–Stephens algorithm
+and return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectmineigenfeatures.html">
+<name>detectMinEigenFeatures</name>
+<purpose>Detect corners using minimum eigenvalue algorithm and
+return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectmserfeatures.html">
+<name>detectMSERFeatures</name>
+<purpose>Detect MSER features and return MSERRegions object</purpose>
+</tocitem>
+<tocitem target="ref/detectorbfeatures.html">
+<name>detectORBFeatures</name>
+<purpose>Detect and store ORB keypoints</purpose>
+</tocitem>
+<tocitem target="ref/detectsurffeatures.html">
+<name>detectSURFFeatures</name>
+<purpose>Detect SURF features and return SURFPoints
+      object</purpose>
+</tocitem>
+<tocitem target="ref/detectkazefeatures.html">
+<name>detectKAZEFeatures</name>
+<purpose>Detect KAZE features</purpose>
+</tocitem>
+<tocitem target="ref/extractfeatures.html">
+<name>extractFeatures</name>
+<purpose>Extract interest point descriptors</purpose>
+</tocitem>
+<tocitem target="ref/extractlbpfeatures.html">
+<name>extractLBPFeatures</name>
+<purpose>Extract local binary pattern (LBP) features</purpose>
+</tocitem>
+<tocitem target="ref/extracthogfeatures.html">
+<name>extractHOGFeatures</name>
+<purpose>Extract histogram of oriented gradients (HOG) features</purpose>
+</tocitem>
+<tocitem target="ref/matchfeatures.html">
+<name>matchFeatures</name>
+<purpose>Find matching features</purpose>
+</tocitem>
+<tocitem target="ref/showmatchedfeatures.html">
+<name>showMatchedFeatures</name>
+<purpose>Display corresponding feature points</purpose>
+</tocitem>
+<tocitem target="../images/ref/imwarp.html">
+<name>imwarp</name>
+<purpose>Apply geometric transformation to image</purpose>
+</tocitem>
+<tocitem target="ref/estimategeometrictransform.html">
+<name>estimateGeometricTransform</name>
+<purpose>Estimate geometric transform from matching point pairs</purpose>
+</tocitem>
+<tocitem target="ref/vision.blockmatcher-system-object.html">
+<name>vision.BlockMatcher</name>
+<purpose>Estimate motion between images or video frames</purpose>
+</tocitem>
+<tocitem target="ref/vision.localmaximafinder-system-object.html">
+<name>vision.LocalMaximaFinder</name>
+<purpose>Find local maxima in matrices</purpose>
+</tocitem>
+<tocitem target="ref/vision.templatematcher-system-object.html">
+<name>vision.TemplateMatcher</name>
+<purpose>Locate template in image</purpose>
+</tocitem>
+<tocitem target="ref/insertmarker.html">
+<name>insertMarker</name>
+<purpose>Insert markers in image or video</purpose>
+</tocitem>
+<tocitem target="ref/insertshape.html">
+<name>insertShape</name>
+<purpose>Insert shapes in image or video</purpose>
+</tocitem>
+<tocitem target="ref/insertobjectannotation.html">
+<name>insertObjectAnnotation</name>
+<purpose>Annotate truecolor or grayscale image or video stream</purpose>
+</tocitem>
+<tocitem target="ref/inserttext.html">
+<name>insertText</name>
+<purpose>Insert text in image or video</purpose>
+</tocitem>
+<tocitem target="../images/ref/imshow.html">
+<name>imshow</name>
+<purpose>Display image</purpose>
+</tocitem>
+<tocitem target="../images/ref/imshowpair.html">
+<name>imshowpair</name>
+<purpose>Compare differences between images</purpose>
+</tocitem>
+<tocitem target="ref/binaryfeatures.html">
+<name>binaryFeatures</name>
+<purpose>Object for storing binary feature vectors</purpose>
+</tocitem>
+<tocitem target="ref/briskpoints.html">
+<name>BRISKPoints</name>
+<purpose>Object for storing BRISK interest points</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.html">
+<name>KAZEPoints</name>
+<purpose>Object for storing KAZE interest points</purpose>
+</tocitem>
+<tocitem target="ref/cornerpoints.html">
+<name>cornerPoints</name>
+<purpose>Object for storing corner points</purpose>
+</tocitem>
+<tocitem target="ref/surfpoints.html">
+<name>SURFPoints</name>
+<purpose>Object for storing SURF interest points</purpose>
+</tocitem>
+<tocitem target="ref/mserregions.html">
+<name>MSERRegions</name>
+<purpose>Object for storing MSER regions</purpose>
+</tocitem>
+<tocitem target="ref/orbpoints.html">
+<name>ORBPoints</name>
+<purpose>Object for storing ORB keypoints</purpose>
+</tocitem>
+<tocitem target="../images/ref/affine2d.html">
+<name>affine2d</name>
+<purpose>2-D affine geometric transformation</purpose>
+</tocitem>
+<tocitem target="../images/ref/affine3d.html">
+<name>affine3d</name>
+<purpose> 3-D affine geometric transformation</purpose>
+</tocitem>
+<tocitem target="../images/ref/projective2d.html">
+<name>projective2d</name>
+<purpose> 2-D projective geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.isempty.html">
+<name>isempty</name>
+<purpose>Determine if points object is empty</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.length.html">
+<name>length</name>
+<purpose>Number of stored points</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.plot.html">
+<name>plot</name>
+<purpose>Plot points</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.selectstrongest.html">
+<name>selectStrongest</name>
+<purpose>Select points with strongest metrics</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.size.html">
+<name>size</name>
+<purpose>Return the size of a points object</purpose>
+</tocitem>
+<tocitem target="ref/kazepoints.selectuniform.html">
+<name>selectUniform</name>
+<purpose>Select uniformly distributed subset of feature points</purpose>
+</tocitem>
+<tocitem target="ref/cornerpoints.gather.html">
+<name>gather</name>
+<purpose>Retrieve cornerPoints from the GPU</purpose>
+</tocitem>
+<tocitem target="ref/mserregions.plot.html">
+<name>plot</name>
+<purpose>Plot MSER regions</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-semantic-segmentation-and-detection.html">Deep Learning, Semantic Segmentation, and Detection
+<tocitem target="image-labeling.html">Image Labeling
+<tocitem target="ref/pixellabeldatastore.html">
+<name>pixelLabelDatastore</name>
+<purpose>Datastore for pixel label data</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeltrainingdata.html">
+<name>pixelLabelTrainingData</name>
+<purpose>Create training data for semantic segmentation from ground truth</purpose>
+</tocitem>
+<tocitem target="ref/groundtruthdatasource.html">
+<name>groundTruthDataSource</name>
+<purpose>Object for storing ground truth data sources</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.html">
+<name>groundTruth</name>
+<purpose>Object for storing ground truth labels</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.html">
+<name>labelDefinitionCreator</name>
+<purpose>Object for storing, modifying and creating label definitions table</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.html">
+<name>labelType</name>
+<purpose>Enumeration of supported label types</purpose>
+</tocitem>
+<tocitem target="ref/vision.labeler.automationalgorithm.html">
+<name>vision.labeler.AutomationAlgorithm</name>
+<purpose>Interface for algorithm automation in ground truth labeling</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.selectlabelsbygroup.html">
+<name>selectLabelsByGroup</name>
+<purpose>Select ground truth data for set of labels by group</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.selectlabelsbytype.html">
+<name>selectLabelsByType</name>
+<purpose>Select ground truth data for a set of labels by type</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.selectlabelsbyname.html">
+<name>selectLabelsByName</name>
+<purpose>Select ground truth data by name</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.changefilepaths.html">
+<name>changeFilePaths</name>
+<purpose>Change file paths in data source and pixel label data of ground truth object </purpose>
+</tocitem>
+<tocitem target="ref/objectdetectortrainingdata.html">
+<name>objectDetectorTrainingData</name>
+<purpose>Create training data for an object detector</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.addlabel.html">
+<name>addLabel</name>
+<purpose>Add label to label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.addsublabel.html">
+<name>addSublabel</name>
+<purpose>Add sublabel to label in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.addattribute.html">
+<name>addAttribute</name>
+<purpose>Add attributes to label or sublabel in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.removelabel.html">
+<name>removeLabel</name>
+<purpose>Remove label from label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.removesublabel.html">
+<name>removeSublabel</name>
+<purpose>Remove sublabel from label in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.removeattribute.html">
+<name>removeAttribute</name>
+<purpose>Remove attribute from label or sublabel in label definition creator
+      object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.editlabeldescription.html">
+<name>editLabelDescription</name>
+<purpose>Modify description of label or sublabel in label definition creator
+      object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.editattributedescription.html">
+<name>editAttributeDescription</name>
+<purpose>Modify description of attribute in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.create.html">
+<name>create</name>
+<purpose> Create label definitions table from the label definition creator
+      object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.info.html">
+<name>info</name>
+<purpose>Display information about a label, sublabel, or attribute stored in label definition
+      creator object</purpose>
+</tocitem>
+<tocitem target="ref/checklabeldefinition.html">
+<name>checkLabelDefinition</name>
+<purpose>Validate label definition</purpose>
+</tocitem>
+<tocitem target="ref/run.html">
+<name>run</name>
+<purpose>Run label automation on every frame in interval</purpose>
+</tocitem>
+<tocitem target="ref/settingsdialog.html">
+<name>settingsDialog</name>
+<purpose>Display algorithm settings (optional)</purpose>
+</tocitem>
+<tocitem target="ref/terminate.html">
+<name>terminate</name>
+<purpose>Terminate automated algorithm (optional)</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.iscustom.html">
+<name>isCustom</name>
+<purpose>Determine if label types are Custom labels</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.isscene.html">
+<name>isScene</name>
+<purpose>Determine if label types are Scene labels</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.isroi.html">
+<name>isROI</name>
+<purpose>Determine if label types are ROI labels</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.selectlabels.html">
+<name>selectLabels</name>
+<purpose>Select ground truth data for a set of labels</purpose>
+</tocitem>
+<tocitem target="ref/integralfilter.html">
+<name>integralFilter</name>
+<purpose>Filter using integral image</purpose>
+</tocitem>
+<tocitem target="ref/isfilterseparable.html">
+<name>isfilterseparable</name>
+<purpose>Determine whether filter coefficients are separable</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="video-labeling.html">Video Labeling
+<tocitem target="ref/groundtruthdatasource.html">
+<name>groundTruthDataSource</name>
+<purpose>Object for storing ground truth data sources</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.html">
+<name>labelDefinitionCreator</name>
+<purpose>Object for storing, modifying and creating label definitions table</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.html">
+<name>labelType</name>
+<purpose>Enumeration of supported label types</purpose>
+</tocitem>
+<tocitem target="ref/attributetype.html">
+<name>attributeType</name>
+<purpose>Enumeration of supported attribute types</purpose>
+</tocitem>
+<tocitem target="ref/vision.labeler.automationalgorithm.html">
+<name>vision.labeler.AutomationAlgorithm</name>
+<purpose>Interface for algorithm automation in ground truth labeling</purpose>
+</tocitem>
+<tocitem target="ref/vision.labeler.mixin.temporal.html">
+<name>vision.labeler.mixin.Temporal</name>
+<purpose>Mixin interface for adding temporal context to automation
+            algorithms</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.html">
+<name>groundTruth</name>
+<purpose>Object for storing ground truth labels</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.selectlabels.html">
+<name>selectLabels</name>
+<purpose>Select ground truth data for a set of labels</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.changefilepaths.html">
+<name>changeFilePaths</name>
+<purpose>Change file paths in data source and pixel label data of ground truth object </purpose>
+</tocitem>
+<tocitem target="ref/pixellabeltrainingdata.html">
+<name>pixelLabelTrainingData</name>
+<purpose>Create training data for semantic segmentation from ground truth</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeldatastore.html">
+<name>pixelLabelDatastore</name>
+<purpose>Datastore for pixel label data</purpose>
+</tocitem>
+<tocitem target="ref/objectdetectortrainingdata.html">
+<name>objectDetectorTrainingData</name>
+<purpose>Create training data for an object detector</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.addlabel.html">
+<name>addLabel</name>
+<purpose>Add label to label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.addsublabel.html">
+<name>addSublabel</name>
+<purpose>Add sublabel to label in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.addattribute.html">
+<name>addAttribute</name>
+<purpose>Add attributes to label or sublabel in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.removelabel.html">
+<name>removeLabel</name>
+<purpose>Remove label from label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.removesublabel.html">
+<name>removeSublabel</name>
+<purpose>Remove sublabel from label in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.removeattribute.html">
+<name>removeAttribute</name>
+<purpose>Remove attribute from label or sublabel in label definition creator
+      object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.editlabelgroup.html">
+<name>editLabelGroup</name>
+<purpose>Modify a label group name</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.editgroupname.html">
+<name>editGroupName</name>
+<purpose>Change group name</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.editlabeldescription.html">
+<name>editLabelDescription</name>
+<purpose>Modify description of label or sublabel in label definition creator
+      object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.editattributedescription.html">
+<name>editAttributeDescription</name>
+<purpose>Modify description of attribute in label definition creator object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.create.html">
+<name>create</name>
+<purpose> Create label definitions table from the label definition creator
+      object</purpose>
+</tocitem>
+<tocitem target="ref/labeldefinitioncreator.info.html">
+<name>info</name>
+<purpose>Display information about a label, sublabel, or attribute stored in label definition
+      creator object</purpose>
+</tocitem>
+<tocitem target="ref/checksetup.html">
+<name>checkSetup</name>
+<purpose>Set up validation (optional)</purpose>
+</tocitem>
+<tocitem target="ref/checklabeldefinition.html">
+<name>checkLabelDefinition</name>
+<purpose>Validate label definition</purpose>
+</tocitem>
+<tocitem target="ref/initialize.html">
+<name>initialize</name>
+<purpose>Initialize state for algorithm execution (optional)</purpose>
+</tocitem>
+<tocitem target="ref/run.html">
+<name>run</name>
+<purpose>Run label automation on every frame in interval</purpose>
+</tocitem>
+<tocitem target="ref/settingsdialog.html">
+<name>settingsDialog</name>
+<purpose>Display algorithm settings (optional)</purpose>
+</tocitem>
+<tocitem target="ref/terminate.html">
+<name>terminate</name>
+<purpose>Terminate automated algorithm (optional)</purpose>
+</tocitem>
+<tocitem target="ref/vision.labeler.mixin.temporal.supportsreverseautomation.html">
+<name>supportsReverseAutomation</name>
+<purpose>Set reverse algorithm automation flag</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.iscustom.html">
+<name>isCustom</name>
+<purpose>Determine if label types are Custom labels</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.isscene.html">
+<name>isScene</name>
+<purpose>Determine if label types are Scene labels</purpose>
+</tocitem>
+<tocitem target="ref/labeltype.isroi.html">
+<name>isROI</name>
+<purpose>Determine if label types are ROI labels</purpose>
+</tocitem>
+<tocitem target="ref/attributetype.hasvalue.html">
+<name>hasValue</name>
+<purpose>Determine if the attribute type is numeric or logical</purpose>
+</tocitem>
+<tocitem target="ref/trainingimagelabeler-app.html">
+<name>Training Image Labeler</name>
+<purpose>Label images for training a classifier</purpose>
+</tocitem>
+<tocitem target="ref/visionlib.html">
+<name>visionlib</name>
+<purpose>Open top-level Computer
+            Vision Toolbox Simulink library</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="semantic-segmentation.html">Semantic Segmentation
+<tocitem target="../matlab/ref/matlab.io.datastore.combine.html">
+<name>combine</name>
+<purpose>Combine data from multiple datastores</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.counteachlabel.html">
+<name>countEachLabel</name>
+<purpose>Count occurrence of pixel or box labels</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.html">
+<name>groundTruth</name>
+<purpose>Object for storing ground truth labels</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.imagedatastore.html">
+<name>imageDatastore</name>
+<purpose>Datastore for image data</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.html">
+<name>pixelLabelImageDatastore</name>
+<purpose>Datastore for semantic segmentation networks</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeldatastore.html">
+<name>pixelLabelDatastore</name>
+<purpose>Datastore for pixel label data</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeltrainingdata.html">
+<name>pixelLabelTrainingData</name>
+<purpose>Create training data for semantic segmentation from ground truth</purpose>
+</tocitem>
+<tocitem target="../images/ref/imwarp.html">
+<name>imwarp</name>
+<purpose>Apply geometric transformation to image</purpose>
+</tocitem>
+<tocitem target="../images/ref/imcrop.html">
+<name>imcrop</name>
+<purpose>Crop image</purpose>
+</tocitem>
+<tocitem target="../images/ref/imresize.html">
+<name>imresize</name>
+<purpose>Resize image</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.transform.html">
+<name>transform</name>
+<purpose>Transform datastore</purpose>
+</tocitem>
+<tocitem target="../images/ref/randomaffine2d.html">
+<name>randomAffine2d</name>
+<purpose>Create randomized 2-D affine transformation</purpose>
+</tocitem>
+<tocitem target="../images/ref/centercropwindow2d.html">
+<name>centerCropWindow2d</name>
+<purpose>Create rectangular center cropping window</purpose>
+</tocitem>
+<tocitem target="../images/ref/randomcropwindow2d.html">
+<name>randomCropWindow2d</name>
+<purpose>Create randomized rectangular cropping window</purpose>
+</tocitem>
+<tocitem target="ref/deeplabv3pluslayers.html">
+<name>deeplabv3plusLayers</name>
+<purpose>Create DeepLab v3+ convolutional neural network for semantic image
+      segmentation</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.dicepixelclassificationlayer.html">
+<name>dicePixelClassificationLayer</name>
+<purpose>Create pixel classification layer using generalized Dice loss for semantic
+      segmentation</purpose>
+</tocitem>
+<tocitem target="ref/fcnlayers.html">
+<name>fcnLayers</name>
+<purpose>Create fully convolutional network layers for semantic segmentation</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.pixelclassificationlayer.html">
+<name>pixelClassificationLayer</name>
+<purpose>Create pixel classification layer for semantic segmentation</purpose>
+</tocitem>
+<tocitem target="ref/segnetlayers.html">
+<name>segnetLayers</name>
+<purpose>Create SegNet layers for semantic segmentation</purpose>
+</tocitem>
+<tocitem target="ref/unetlayers.html">
+<name>unetLayers</name>
+<purpose>Create U-Net layers for semantic segmentation</purpose>
+</tocitem>
+<tocitem target="ref/unet3dlayers.html">
+<name>unet3dLayers</name>
+<purpose>Create 3-D U-Net layers for semantic segmentation of volumetric images</purpose>
+</tocitem>
+<tocitem target="ref/semanticseg.html">
+<name>semanticseg</name>
+<purpose>Semantic image segmentation using deep learning</purpose>
+</tocitem>
+<tocitem target="../images/ref/labeloverlay.html">
+<name>labeloverlay</name>
+<purpose>Overlay label matrix regions on 2-D image</purpose>
+</tocitem>
+<tocitem target="../images/ref/labelvolshow.html">
+<name>labelvolshow</name>
+<purpose>Display labeled volume</purpose>
+</tocitem>
+<tocitem target="ref/evaluatesemanticsegmentation.html">
+<name>evaluateSemanticSegmentation</name>
+<purpose>Evaluate semantic segmentation data set against ground truth</purpose>
+</tocitem>
+<tocitem target="../images/ref/bfscore.html">
+<name>bfscore</name>
+<purpose>Contour matching score for image segmentation</purpose>
+</tocitem>
+<tocitem target="../images/ref/dice.html">
+<name>dice</name>
+<purpose>Sørensen-Dice similarity coefficient for image segmentation</purpose>
+</tocitem>
+<tocitem target="../images/ref/jaccard.html">
+<name>jaccard</name>
+<purpose>Jaccard similarity coefficient for image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/semanticsegmentationmetrics.html">
+<name>semanticSegmentationMetrics</name>
+<purpose>Semantic segmentation quality metrics</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.partitionbyindex.html">
+<name>partitionByIndex</name>
+<purpose>Partition pixelLabelImageDatastore according to
+            indices</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.readbyindex.html">
+<name>readByIndex</name>
+<purpose>Read data specified by index from
+            pixelLabelImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.shuffle.html">
+<name>shuffle</name>
+<purpose>Shuffle data in pixelLabelImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.hasdata.html">
+<name>hasdata</name>
+<purpose>Determine if data is available to read from datastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeldatastore.readimage.html">
+<name>readimage</name>
+<purpose>Read specified pixel label data file</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.readall.html">
+<name>readall</name>
+<purpose>Read all data in datastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeldatastore.read.html">
+<name>read</name>
+<purpose>Read data from a datastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabeldatastore.preview.html">
+<name>preview</name>
+<purpose>Reads first image from pixel label datastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.numpartitions.html">
+<name>numpartitions</name>
+<purpose>Number of partitions for a datastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.partition.html">
+<name>partition</name>
+<purpose>Partition a label datastore</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagedatastore.reset.html">
+<name>reset</name>
+<purpose>Reset datastore to initial state</purpose>
+</tocitem>
+<tocitem target="ref/pixellabelimagesource.html">
+<name>pixelLabelImageSource</name>
+<purpose>(To be removed) Create datastore for semantic segmentation networks</purpose>
+</tocitem>
+<tocitem target="ug/semantic-segmentation-examples.html">
+<name>Semantic Segmentation Examples</name>
+<purpose/>
+</tocitem>
+</tocitem>
+<tocitem target="object-detection-using-deep-learning.html">Object Detection using Deep Learning
+<tocitem target="ref/boxlabeldatastore.html">
+<name>boxLabelDatastore</name>
+<purpose>Datastore for bounding box label data</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.imagedatastore.html">
+<name>imageDatastore</name>
+<purpose>Datastore for image data</purpose>
+</tocitem>
+<tocitem target="ref/groundtruth.html">
+<name>groundTruth</name>
+<purpose>Object for storing ground truth labels</purpose>
+</tocitem>
+<tocitem target="ref/objectdetectortrainingdata.html">
+<name>objectDetectorTrainingData</name>
+<purpose>Create training data for an object detector</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.combine.html">
+<name>combine</name>
+<purpose>Combine data from multiple datastores</purpose>
+</tocitem>
+<tocitem target="ref/bboxcrop.html">
+<name>bboxcrop</name>
+<purpose>Crop bounding boxes</purpose>
+</tocitem>
+<tocitem target="ref/bboxresize.html">
+<name>bboxresize</name>
+<purpose>Resize bounding boxes</purpose>
+</tocitem>
+<tocitem target="ref/bboxwarp.html">
+<name>bboxwarp</name>
+<purpose>Apply geometric transformation to bounding boxes</purpose>
+</tocitem>
+<tocitem target="ref/bbox2points.html">
+<name>bbox2points</name>
+<purpose>Convert rectangle to corner points list</purpose>
+</tocitem>
+<tocitem target="../images/ref/imwarp.html">
+<name>imwarp</name>
+<purpose>Apply geometric transformation to image</purpose>
+</tocitem>
+<tocitem target="../images/ref/imcrop.html">
+<name>imcrop</name>
+<purpose>Crop image</purpose>
+</tocitem>
+<tocitem target="../images/ref/imresize.html">
+<name>imresize</name>
+<purpose>Resize image</purpose>
+</tocitem>
+<tocitem target="../images/ref/randomaffine2d.html">
+<name>randomAffine2d</name>
+<purpose>Create randomized 2-D affine transformation</purpose>
+</tocitem>
+<tocitem target="../images/ref/centercropwindow2d.html">
+<name>centerCropWindow2d</name>
+<purpose>Create rectangular center cropping window</purpose>
+</tocitem>
+<tocitem target="../images/ref/randomcropwindow2d.html">
+<name>randomCropWindow2d</name>
+<purpose>Create randomized rectangular cropping window</purpose>
+</tocitem>
+<tocitem target="../images/ref/integralimage.html">
+<name>integralImage</name>
+<purpose>Calculate 2-D integral image</purpose>
+</tocitem>
+<tocitem target="ref/estimateanchorboxes.html">
+<name>estimateAnchorBoxes</name>
+<purpose>Estimate anchor boxes for deep learning object detectors</purpose>
+</tocitem>
+<tocitem target="ref/fasterrcnnlayers.html">
+<name>fasterRCNNLayers</name>
+<purpose>Create a faster R-CNN object detection network</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.roiinputlayer.html">
+<name>roiInputLayer</name>
+<purpose>ROI input layer for Fast R-CNN</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.roimaxpooling2dlayer.html">
+<name>roiMaxPooling2dLayer</name>
+<purpose>Neural network layer used to output fixed-size feature maps for rectangular
+      ROIs</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.rpnsoftmaxlayer.html">
+<name>rpnSoftmaxLayer</name>
+<purpose>Softmax layer for region proposal network (RPN)</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.rpnclassificationlayer.html">
+<name>rpnClassificationLayer</name>
+<purpose>Classification layer for region proposal networks (RPNs)</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.rcnnboxregressionlayer.html">
+<name>rcnnBoxRegressionLayer</name>
+<purpose>Box regression layer for Fast and Faster R-CNN</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.regionproposallayer.html">
+<name>regionProposalLayer</name>
+<purpose>Region proposal layer for Faster R-CNN</purpose>
+</tocitem>
+<tocitem target="ref/yolov2layers.html">
+<name>yolov2Layers</name>
+<purpose>Create YOLO v2 object detection network</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.yolov2transformlayer.html">
+<name>yolov2TransformLayer</name>
+<purpose>Create transform layer for YOLO v2 object detection network</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.yolov2outputlayer.html">
+<name>yolov2OutputLayer</name>
+<purpose>Create output layer for YOLO v2 object detection network</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.yolov2reorglayer.html">
+<name>yolov2ReorgLayer</name>
+<purpose>Create reorganization layer for YOLO v2 object detection network</purpose>
+</tocitem>
+<tocitem target="ref/trainrcnnobjectdetector.html">
+<name>trainRCNNObjectDetector</name>
+<purpose>Train an R-CNN deep learning object detector</purpose>
+</tocitem>
+<tocitem target="ref/trainfastrcnnobjectdetector.html">
+<name>trainFastRCNNObjectDetector</name>
+<purpose>Train a Fast R-CNN deep learning object detector</purpose>
+</tocitem>
+<tocitem target="ref/trainfasterrcnnobjectdetector.html">
+<name>trainFasterRCNNObjectDetector</name>
+<purpose>Train a Faster R-CNN deep learning object detector</purpose>
+</tocitem>
+<tocitem target="ref/trainyolov2objectdetector.html">
+<name>trainYOLOv2ObjectDetector</name>
+<purpose>Train YOLO v2 object detector</purpose>
+</tocitem>
+<tocitem target="ref/evaluatedetectionmissrate.html">
+<name>evaluateDetectionMissRate</name>
+<purpose>Evaluate miss rate metric for object detection</purpose>
+</tocitem>
+<tocitem target="ref/evaluatedetectionprecision.html">
+<name>evaluateDetectionPrecision</name>
+<purpose>Evaluate precision metric for object detection</purpose>
+</tocitem>
+<tocitem target="ref/bboxoverlapratio.html">
+<name>bboxOverlapRatio</name>
+<purpose>Compute bounding box overlap ratio</purpose>
+</tocitem>
+<tocitem target="ref/bboxprecisionrecall.html">
+<name>bboxPrecisionRecall</name>
+<purpose>Compute bounding box precision and recall against ground truth</purpose>
+</tocitem>
+<tocitem target="ref/rcnnobjectdetector.html">
+<name>rcnnObjectDetector</name>
+<purpose>Detect objects using R-CNN deep learning detector</purpose>
+</tocitem>
+<tocitem target="ref/fastrcnnobjectdetector.html">
+<name>fastRCNNObjectDetector</name>
+<purpose>Detect objects using Fast R-CNN deep learning detector</purpose>
+</tocitem>
+<tocitem target="ref/fasterrcnnobjectdetector.html">
+<name>fasterRCNNObjectDetector</name>
+<purpose>Detect objects using Faster R-CNN deep learning detector</purpose>
+</tocitem>
+<tocitem target="ref/yolov2objectdetector.html">
+<name>yolov2ObjectDetector</name>
+<purpose>Detect objects using YOLO v2 object detector</purpose>
+</tocitem>
+<tocitem target="ref/selectstrongestbbox.html">
+<name>selectStrongestBbox</name>
+<purpose>Select strongest bounding boxes from overlapping clusters</purpose>
+</tocitem>
+<tocitem target="ref/selectstrongestbboxmulticlass.html">
+<name>selectStrongestBboxMulticlass</name>
+<purpose>Select strongest multiclass bounding boxes from overlapping
+            clusters</purpose>
+</tocitem>
+<tocitem target="ref/insertobjectannotation.html">
+<name>insertObjectAnnotation</name>
+<purpose>Annotate truecolor or grayscale image or video stream</purpose>
+</tocitem>
+<tocitem target="ref/insertshape.html">
+<name>insertShape</name>
+<purpose>Insert shapes in image or video</purpose>
+</tocitem>
+<tocitem target="ref/rcnnobjectdetector.detect.html">
+<name>detect</name>
+<purpose>Detect objects using R-CNN deep learning detector</purpose>
+</tocitem>
+<tocitem target="ref/fastrcnnobjectdetector.detect.html">
+<name>detect</name>
+<purpose>Detect objects using Fast R-CNN object detector</purpose>
+</tocitem>
+<tocitem target="ref/fasterrcnnobjectdetector.detect.html">
+<name>detect</name>
+<purpose>Detect objects using Faster R-CNN object detector</purpose>
+</tocitem>
+<tocitem target="ref/rcnnobjectdetector.classifyregions.html">
+<name>classifyRegions</name>
+<purpose>Classify objects in image regions using R-CNN object detector</purpose>
+</tocitem>
+<tocitem target="ref/fastrcnnobjectdetector.classifyregions.html">
+<name>classifyRegions</name>
+<purpose>Classify objects in image regions using Fast R-CNN object detector</purpose>
+</tocitem>
+<tocitem target="ref/yolov2objectdetector.detect.html">
+<name>detect</name>
+<purpose>Detect objects using YOLO v2 object detector</purpose>
+</tocitem>
+<tocitem target="ref/integralkernel-class.html">
+<name>integralKernel</name>
+<purpose> Define filter for use with integral images</purpose>
+</tocitem>
+<tocitem target="ref/integralkernel.transpose.html">
+<name>integralKernel.transpose</name>
+<purpose>Transpose filter</purpose>
+</tocitem>
+<tocitem target="ref/integralkernel.rot45.html">
+<name>integralKernel.rot45</name>
+<purpose>Rotates upright kernel clockwise by 45 degrees</purpose>
+</tocitem>
+<tocitem target="ug/faster-r-cnn-examples.html">
+<name>Faster R-CNN Examples</name>
+<purpose/>
+</tocitem>
+<tocitem target="ref/boxlabeldatastore.progress.html">
+<name>progress</name>
+<purpose>Percentage of data read from a datastore</purpose>
+</tocitem>
+<tocitem target="ug/estimate-anchor-boxes-from-training-data.html">
+<name>Estimate Anchor Boxes From Training Data</name>
+<purpose/>
+</tocitem>
+</tocitem>
+<tocitem target="object-detection-using-features.html">Object Detection Using Features
+<tocitem target="ref/acfobjectdetector.html">
+<name>acfObjectDetector</name>
+<purpose>Detect objects using aggregate channel features</purpose>
+</tocitem>
+<tocitem target="ref/peopledetectoracf.html">
+<name>peopleDetectorACF</name>
+<purpose>Detect people using aggregate channel features</purpose>
+</tocitem>
+<tocitem target="ref/vision.cascadeobjectdetector-system-object.html">
+<name>vision.CascadeObjectDetector</name>
+<purpose>Detect objects using the Viola-Jones algorithm</purpose>
+</tocitem>
+<tocitem target="ref/vision.foregrounddetector-system-object.html">
+<name>vision.ForegroundDetector</name>
+<purpose>Foreground detection using Gaussian mixture models</purpose>
+</tocitem>
+<tocitem target="ref/vision.peopledetector-system-object.html">
+<name>vision.PeopleDetector</name>
+<purpose>Detect upright people using HOG features</purpose>
+</tocitem>
+<tocitem target="ref/vision.blobanalysis-system-object.html">
+<name>vision.BlobAnalysis</name>
+<purpose>Properties of connected regions</purpose>
+</tocitem>
+<tocitem target="ref/trainacfobjectdetector.html">
+<name>trainACFObjectDetector</name>
+<purpose>Train ACF object detector</purpose>
+</tocitem>
+<tocitem target="ref/traincascadeobjectdetector.html">
+<name>trainCascadeObjectDetector</name>
+<purpose>Train cascade object detector model</purpose>
+</tocitem>
+<tocitem target="ref/trainimagecategoryclassifier.html">
+<name>trainImageCategoryClassifier</name>
+<purpose>Train an image category classifier</purpose>
+</tocitem>
+<tocitem target="ref/detectbriskfeatures.html">
+<name>detectBRISKFeatures</name>
+<purpose>Detect BRISK features and return BRISKPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectfastfeatures.html">
+<name>detectFASTFeatures</name>
+<purpose>Detect corners using FAST algorithm and return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectharrisfeatures.html">
+<name>detectHarrisFeatures</name>
+<purpose>Detect corners using Harris–Stephens algorithm
+and return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectkazefeatures.html">
+<name>detectKAZEFeatures</name>
+<purpose>Detect KAZE features</purpose>
+</tocitem>
+<tocitem target="ref/detectmineigenfeatures.html">
+<name>detectMinEigenFeatures</name>
+<purpose>Detect corners using minimum eigenvalue algorithm and
+return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectmserfeatures.html">
+<name>detectMSERFeatures</name>
+<purpose>Detect MSER features and return MSERRegions object</purpose>
+</tocitem>
+<tocitem target="ref/detectsurffeatures.html">
+<name>detectSURFFeatures</name>
+<purpose>Detect SURF features and return SURFPoints
+      object</purpose>
+</tocitem>
+<tocitem target="ref/extractfeatures.html">
+<name>extractFeatures</name>
+<purpose>Extract interest point descriptors</purpose>
+</tocitem>
+<tocitem target="ref/matchfeatures.html">
+<name>matchFeatures</name>
+<purpose>Find matching features</purpose>
+</tocitem>
+<tocitem target="ref/evaluatedetectionmissrate.html">
+<name>evaluateDetectionMissRate</name>
+<purpose>Evaluate miss rate metric for object detection</purpose>
+</tocitem>
+<tocitem target="ref/evaluatedetectionprecision.html">
+<name>evaluateDetectionPrecision</name>
+<purpose>Evaluate precision metric for object detection</purpose>
+</tocitem>
+<tocitem target="ref/bbox2points.html">
+<name>bbox2points</name>
+<purpose>Convert rectangle to corner points list</purpose>
+</tocitem>
+<tocitem target="ref/bboxoverlapratio.html">
+<name>bboxOverlapRatio</name>
+<purpose>Compute bounding box overlap ratio</purpose>
+</tocitem>
+<tocitem target="ref/bboxprecisionrecall.html">
+<name>bboxPrecisionRecall</name>
+<purpose>Compute bounding box precision and recall against ground truth</purpose>
+</tocitem>
+<tocitem target="ref/selectstrongestbbox.html">
+<name>selectStrongestBbox</name>
+<purpose>Select strongest bounding boxes from overlapping clusters</purpose>
+</tocitem>
+<tocitem target="ref/selectstrongestbboxmulticlass.html">
+<name>selectStrongestBboxMulticlass</name>
+<purpose>Select strongest multiclass bounding boxes from overlapping
+            clusters</purpose>
+</tocitem>
+<tocitem target="ref/detectpeopleacf.html">
+<name>detectPeopleACF</name>
+<purpose>Detect people using aggregate channel features (ACF)</purpose>
+</tocitem>
+<tocitem target="ref/acfobjectdetector.detect.html">
+<name>detect</name>
+<purpose>Detect objects using ACF object detector</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-category-classification-and-image-retrieval.html">Image Category Classification and Image Retrieval
+<tocitem target="ref/trainimagecategoryclassifier.html">
+<name>trainImageCategoryClassifier</name>
+<purpose>Train an image category classifier</purpose>
+</tocitem>
+<tocitem target="ref/bagoffeatures.html">
+<name>bagOfFeatures</name>
+<purpose>Bag of visual words object</purpose>
+</tocitem>
+<tocitem target="ref/imagecategoryclassifier.html">
+<name>imageCategoryClassifier</name>
+<purpose>Predict image category</purpose>
+</tocitem>
+<tocitem target="ref/invertedimageindex-class.html">
+<name>invertedImageIndex</name>
+<purpose>Search index that maps visual words to images</purpose>
+</tocitem>
+<tocitem target="ref/evaluateimageretrieval.html">
+<name>evaluateImageRetrieval</name>
+<purpose>Evaluate image search results</purpose>
+</tocitem>
+<tocitem target="ref/indeximages.html">
+<name>indexImages</name>
+<purpose>Create image search index</purpose>
+</tocitem>
+<tocitem target="ref/retrieveimages.html">
+<name>retrieveImages</name>
+<purpose>Search image set for similar image</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.imagedatastore.html">
+<name>imageDatastore</name>
+<purpose>Datastore for image data</purpose>
+</tocitem>
+<tocitem target="ref/bagoffeatures.encode.html">
+<name>encode</name>
+<purpose>Create histogram of visual word occurrences</purpose>
+</tocitem>
+<tocitem target="ref/imageset.partition.html">
+<name>partition</name>
+<purpose>Divide image set into subsets</purpose>
+</tocitem>
+<tocitem target="ref/addimages.html">
+<name>addImages</name>
+<purpose>Add new images to image index</purpose>
+</tocitem>
+<tocitem target="ref/imageset.read.html">
+<name>read</name>
+<purpose>Read image at specified index</purpose>
+</tocitem>
+<tocitem target="ref/imageset.select.html">
+<name>select</name>
+<purpose>Select subset of images from image set</purpose>
+</tocitem>
+<tocitem target="ref/predict.html">
+<name>predict</name>
+<purpose>Predict image category</purpose>
+</tocitem>
+<tocitem target="ref/evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate image classifier on collection of image sets</purpose>
+</tocitem>
+<tocitem target="ref/invertedimageindex.removeimages.html">
+<name>removeImages</name>
+<purpose>Remove images from image index</purpose>
+</tocitem>
+<tocitem target="ref/imageset-class.html">
+<name>imageSet</name>
+<purpose>Define collection of images</purpose>
+</tocitem>
+<tocitem target="ref/viewset.updateconnection.html">
+<name>viewSet.updateConnection</name>
+<purpose>Modify a connection between two views in a view set object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="optical-character-recognition-ocr.html">Optical Character Recognition (OCR)
+<tocitem target="ref/ocr.html">
+<name>ocr</name>
+<purpose>Recognize text using optical character recognition</purpose>
+</tocitem>
+<tocitem target="ref/ocrtext-class.html">
+<name>ocrText</name>
+<purpose>Object for storing OCR results</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="camera-calibration-and-3-d-vision.html">Camera Calibration and 3-D Vision
+<tocitem target="single-and-stereo-camera-calibration.html">Single and Stereo Camera Calibration
+<tocitem target="ref/detectcheckerboardpoints.html">
+<name>detectCheckerboardPoints</name>
+<purpose>Detect checkerboard pattern in image</purpose>
+</tocitem>
+<tocitem target="ref/generatecheckerboardpoints.html">
+<name>generateCheckerboardPoints</name>
+<purpose>Generate checkerboard corner locations</purpose>
+</tocitem>
+<tocitem target="ref/undistortimage.html">
+<name>undistortImage</name>
+<purpose>Correct image for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/undistortpoints.html">
+<name>undistortPoints</name>
+<purpose>Correct point coordinates for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/estimatecameraparameters.html">
+<name>estimateCameraParameters</name>
+<purpose>Calibrate a single or stereo camera</purpose>
+</tocitem>
+<tocitem target="ref/cameraposetoextrinsics.html">
+<name>cameraPoseToExtrinsics</name>
+<purpose>Convert camera pose to extrinsics</purpose>
+</tocitem>
+<tocitem target="ref/estimatecameramatrix.html">
+<name>estimateCameraMatrix</name>
+<purpose>Estimate camera projection matrix from world-to-image point
+      correspondences</purpose>
+</tocitem>
+<tocitem target="ref/estimatestereobaseline.html">
+<name>estimateStereoBaseline</name>
+<purpose>Estimate baseline of stereo camera</purpose>
+</tocitem>
+<tocitem target="ref/cameramatrix.html">
+<name>cameraMatrix</name>
+<purpose>Camera projection matrix</purpose>
+</tocitem>
+<tocitem target="ref/cameraintrinsics.html">
+<name>cameraIntrinsics</name>
+<purpose> Object for storing intrinsic camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/cameraparameters.html">
+<name>cameraParameters</name>
+<purpose>Object for storing camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/cameracalibrationerrors.html">
+<name>cameraCalibrationErrors</name>
+<purpose>Object for storing standard errors of estimated camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/intrinsicsestimationerrors-class.html">
+<name>intrinsicsEstimationErrors</name>
+<purpose>Object for storing standard errors of estimated camera
+intrinsics and distortion coefficients</purpose>
+</tocitem>
+<tocitem target="ref/extrinsicsestimationerrors-class.html">
+<name>extrinsicsEstimationErrors</name>
+<purpose>Object for storing standard errors of estimated camera
+extrinsics</purpose>
+</tocitem>
+<tocitem target="ref/stereocalibrationerrors-class.html">
+<name>stereoCalibrationErrors</name>
+<purpose>Object for storing standard errors of estimated stereo
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/stereoparameters.html">
+<name>stereoParameters</name>
+<purpose>Object for storing stereo camera system parameters</purpose>
+</tocitem>
+<tocitem target="ref/estimatefisheyeparameters.html">
+<name>estimateFisheyeParameters</name>
+<purpose>Calibrate fisheye camera</purpose>
+</tocitem>
+<tocitem target="ref/undistortfisheyeimage.html">
+<name>undistortFisheyeImage</name>
+<purpose>Correct fisheye image for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/undistortfisheyepoints.html">
+<name>undistortFisheyePoints</name>
+<purpose>Correct point coordinates for fisheye lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/fisheyecalibrationerrors.html">
+<name>fisheyeCalibrationErrors</name>
+<purpose>Object for storing standard errors of estimated fisheye camera
+            parameters</purpose>
+</tocitem>
+<tocitem target="ref/fisheyeintrinsics.html">
+<name>fisheyeIntrinsics</name>
+<purpose>Object for storing intrinsic fisheye camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/fisheyeintrinsicsestimationerrors.html">
+<name>fisheyeIntrinsicsEstimationErrors</name>
+<purpose>Object for storing standard errors of estimated fisheye camera
+            intrinsics</purpose>
+</tocitem>
+<tocitem target="ref/fisheyeparameters.html">
+<name>fisheyeParameters</name>
+<purpose>Object for storing fisheye camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/disparitybm.html">
+<name>disparityBM</name>
+<purpose>Compute disparity map using block matching</purpose>
+</tocitem>
+<tocitem target="ref/disparitysgm.html">
+<name>disparitySGM</name>
+<purpose>Compute disparity map through semi-global matching</purpose>
+</tocitem>
+<tocitem target="ref/reconstructscene.html">
+<name>reconstructScene</name>
+<purpose>Reconstruct 3-D scene from disparity map</purpose>
+</tocitem>
+<tocitem target="ref/rectifystereoimages.html">
+<name>rectifyStereoImages</name>
+<purpose>Rectify a pair of stereo images</purpose>
+</tocitem>
+<tocitem target="ref/triangulate.html">
+<name>triangulate</name>
+<purpose>3-D locations of undistorted matching points in stereo
+images</purpose>
+</tocitem>
+<tocitem target="ref/extrinsics.html">
+<name>extrinsics</name>
+<purpose>Compute location of calibrated camera</purpose>
+</tocitem>
+<tocitem target="ref/extrinsicstocamerapose.html">
+<name>extrinsicsToCameraPose</name>
+<purpose>Convert extrinsics to camera pose</purpose>
+</tocitem>
+<tocitem target="ref/relativecamerapose.html">
+<name>relativeCameraPose</name>
+<purpose>Compute relative rotation and translation between camera
+poses</purpose>
+</tocitem>
+<tocitem target="ref/pcshow.html">
+<name>pcshow</name>
+<purpose>Plot 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/plotcamera.html">
+<name>plotCamera</name>
+<purpose>Plot a camera in 3-D coordinates</purpose>
+</tocitem>
+<tocitem target="ref/showextrinsics.html">
+<name>showExtrinsics</name>
+<purpose>Visualize extrinsic camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/showreprojectionerrors.html">
+<name>showReprojectionErrors</name>
+<purpose>Visualize calibration errors</purpose>
+</tocitem>
+<tocitem target="ref/stereoanaglyph.html">
+<name>stereoAnaglyph</name>
+<purpose>Create red-cyan anaglyph from stereo pair of images</purpose>
+</tocitem>
+<tocitem target="ref/rotationmatrixtovector.html">
+<name>rotationMatrixToVector</name>
+<purpose>Convert 3-D rotation matrix to rotation vector</purpose>
+</tocitem>
+<tocitem target="ref/rotationvectortomatrix.html">
+<name>rotationVectorToMatrix</name>
+<purpose>Convert 3-D rotation vector to rotation matrix</purpose>
+</tocitem>
+<tocitem target="ref/tostruct.html">
+<name>toStruct</name>
+<purpose>Convert a camera parameters object into a struct</purpose>
+</tocitem>
+<tocitem target="ref/camerapose.html">
+<name>cameraPose</name>
+<purpose>Compute relative rotation and translation between camera
+poses</purpose>
+</tocitem>
+<tocitem target="ref/disparity.html">
+<name>disparity</name>
+<purpose>(Not recommended) Disparity map between stereo images</purpose>
+</tocitem>
+<tocitem target="ref/cameraparameters.worldtoimage.html">
+<name>worldToImage</name>
+<purpose>Project world points into image</purpose>
+</tocitem>
+<tocitem target="ref/cameraparameters.pointstoworld.html">
+<name>pointsToWorld</name>
+<purpose>Determine world coordinates of image points</purpose>
+</tocitem>
+<tocitem target="ref/fisheyecalibrationerrors.displayerrors.html">
+<name>displayErrors</name>
+<purpose>Display standard errors of camera parameter estimates</purpose>
+</tocitem>
+<tocitem target="ref/stereoparameters.tostruct.html">
+<name>toStruct</name>
+<purpose>Convert a stereo parameters object into a struct</purpose>
+</tocitem>
+<tocitem target="ref/stereocalibrationerrors.displayerrors.html">
+<name>displayErrors</name>
+<purpose>Display standard errors of camera parameter estimation</purpose>
+</tocitem>
+<tocitem target="ref/plotcamera.html">
+<name>plotCamera</name>
+<purpose>Plot a camera in 3-D coordinates</purpose>
+</tocitem>
+<tocitem target="ug/reconstruct-3-d-scene-from-disparity-map.html">
+<name>Reconstruct 3-D Scene from Disparity Map</name>
+<purpose/>
+</tocitem>
+<tocitem target="ug/create-3-d-stereo-display.html">
+<name>Create 3-D Stereo Display</name>
+<purpose/>
+</tocitem>
+<tocitem target="ug/remove-distortion-from-an-image-using-the-cameraparameters-object.html">
+<name>Remove Distortion from an Image Using the Camera Parameters Object</name>
+<purpose/>
+</tocitem>
+<tocitem target="ug/visualize-stereo-pair-of-camera-extrinsic-parameters.html">
+<name>Visualize Stereo Pair of Camera Extrinsic Parameters</name>
+<purpose/>
+</tocitem>
+</tocitem>
+<tocitem target="stereo-vision.html">Stereo Vision
+<tocitem target="ref/triangulate.html">
+<name>triangulate</name>
+<purpose>3-D locations of undistorted matching points in stereo
+images</purpose>
+</tocitem>
+<tocitem target="ref/undistortimage.html">
+<name>undistortImage</name>
+<purpose>Correct image for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/undistortpoints.html">
+<name>undistortPoints</name>
+<purpose>Correct point coordinates for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/cameramatrix.html">
+<name>cameraMatrix</name>
+<purpose>Camera projection matrix</purpose>
+</tocitem>
+<tocitem target="ref/estimatecameramatrix.html">
+<name>estimateCameraMatrix</name>
+<purpose>Estimate camera projection matrix from world-to-image point
+      correspondences</purpose>
+</tocitem>
+<tocitem target="ref/disparitybm.html">
+<name>disparityBM</name>
+<purpose>Compute disparity map using block matching</purpose>
+</tocitem>
+<tocitem target="ref/disparitysgm.html">
+<name>disparitySGM</name>
+<purpose>Compute disparity map through semi-global matching</purpose>
+</tocitem>
+<tocitem target="ref/estimateuncalibratedrectification.html">
+<name>estimateUncalibratedRectification</name>
+<purpose>Uncalibrated stereo rectification</purpose>
+</tocitem>
+<tocitem target="ref/rectifystereoimages.html">
+<name>rectifyStereoImages</name>
+<purpose>Rectify a pair of stereo images</purpose>
+</tocitem>
+<tocitem target="ref/reconstructscene.html">
+<name>reconstructScene</name>
+<purpose>Reconstruct 3-D scene from disparity map</purpose>
+</tocitem>
+<tocitem target="ref/stereoparameters.html">
+<name>stereoParameters</name>
+<purpose>Object for storing stereo camera system parameters</purpose>
+</tocitem>
+<tocitem target="ref/stereoanaglyph.html">
+<name>stereoAnaglyph</name>
+<purpose>Create red-cyan anaglyph from stereo pair of images</purpose>
+</tocitem>
+<tocitem target="ref/pcshow.html">
+<name>pcshow</name>
+<purpose>Plot 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/plotcamera.html">
+<name>plotCamera</name>
+<purpose>Plot a camera in 3-D coordinates</purpose>
+</tocitem>
+<tocitem target="ref/rotationmatrixtovector.html">
+<name>rotationMatrixToVector</name>
+<purpose>Convert 3-D rotation matrix to rotation vector</purpose>
+</tocitem>
+<tocitem target="ref/rotationvectortomatrix.html">
+<name>rotationVectorToMatrix</name>
+<purpose>Convert 3-D rotation vector to rotation matrix</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="structure-from-motion.html">Structure From Motion
+<tocitem target="ref/bundleadjustment.html">
+<name>bundleAdjustment</name>
+<purpose>Refine camera poses and 3-D points</purpose>
+</tocitem>
+<tocitem target="ref/cameramatrix.html">
+<name>cameraMatrix</name>
+<purpose>Camera projection matrix</purpose>
+</tocitem>
+<tocitem target="ref/cameraposetoextrinsics.html">
+<name>cameraPoseToExtrinsics</name>
+<purpose>Convert camera pose to extrinsics</purpose>
+</tocitem>
+<tocitem target="ref/epipolarline.html">
+<name>epipolarLine</name>
+<purpose>Compute epipolar lines for stereo images</purpose>
+</tocitem>
+<tocitem target="ref/estimatecameraparameters.html">
+<name>estimateCameraParameters</name>
+<purpose>Calibrate a single or stereo camera</purpose>
+</tocitem>
+<tocitem target="ref/estimateessentialmatrix.html">
+<name>estimateEssentialMatrix</name>
+<purpose>Estimate essential matrix from corresponding points in
+a pair of images</purpose>
+</tocitem>
+<tocitem target="ref/estimatefundamentalmatrix.html">
+<name>estimateFundamentalMatrix</name>
+<purpose>Estimate fundamental matrix from corresponding points
+in stereo images</purpose>
+</tocitem>
+<tocitem target="ref/estimateworldcamerapose.html">
+<name>estimateWorldCameraPose</name>
+<purpose>Estimate camera pose from 3-D to 2-D point correspondences</purpose>
+</tocitem>
+<tocitem target="ref/extrinsics.html">
+<name>extrinsics</name>
+<purpose>Compute location of calibrated camera</purpose>
+</tocitem>
+<tocitem target="ref/extrinsicstocamerapose.html">
+<name>extrinsicsToCameraPose</name>
+<purpose>Convert extrinsics to camera pose</purpose>
+</tocitem>
+<tocitem target="ref/isepipoleinimage.html">
+<name>isEpipoleInImage</name>
+<purpose>Determine whether image contains epipole</purpose>
+</tocitem>
+<tocitem target="ref/linetoborderpoints.html">
+<name>lineToBorderPoints</name>
+<purpose>Intersection points of lines in image and image border</purpose>
+</tocitem>
+<tocitem target="ref/relativecamerapose.html">
+<name>relativeCameraPose</name>
+<purpose>Compute relative rotation and translation between camera
+poses</purpose>
+</tocitem>
+<tocitem target="ref/triangulate.html">
+<name>triangulate</name>
+<purpose>3-D locations of undistorted matching points in stereo
+images</purpose>
+</tocitem>
+<tocitem target="ref/triangulatemultiview.html">
+<name>triangulateMultiview</name>
+<purpose>3-D locations of undistorted points matched across multiple
+images</purpose>
+</tocitem>
+<tocitem target="ref/undistortimage.html">
+<name>undistortImage</name>
+<purpose>Correct image for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/undistortpoints.html">
+<name>undistortPoints</name>
+<purpose>Correct point coordinates for lens distortion</purpose>
+</tocitem>
+<tocitem target="ref/cameraparameters.html">
+<name>cameraParameters</name>
+<purpose>Object for storing camera parameters</purpose>
+</tocitem>
+<tocitem target="ref/pointtrack-class.html">
+<name>pointTrack</name>
+<purpose>Object for storing matching points from multiple views</purpose>
+</tocitem>
+<tocitem target="ref/viewset-class.html">
+<name>viewSet</name>
+<purpose>Object for managing data for structure-from-motion and
+visual odometry</purpose>
+</tocitem>
+<tocitem target="ref/detectbriskfeatures.html">
+<name>detectBRISKFeatures</name>
+<purpose>Detect BRISK features and return BRISKPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectfastfeatures.html">
+<name>detectFASTFeatures</name>
+<purpose>Detect corners using FAST algorithm and return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectharrisfeatures.html">
+<name>detectHarrisFeatures</name>
+<purpose>Detect corners using Harris–Stephens algorithm
+and return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectmineigenfeatures.html">
+<name>detectMinEigenFeatures</name>
+<purpose>Detect corners using minimum eigenvalue algorithm and
+return cornerPoints object</purpose>
+</tocitem>
+<tocitem target="ref/detectmserfeatures.html">
+<name>detectMSERFeatures</name>
+<purpose>Detect MSER features and return MSERRegions object</purpose>
+</tocitem>
+<tocitem target="ref/detectsurffeatures.html">
+<name>detectSURFFeatures</name>
+<purpose>Detect SURF features and return SURFPoints
+      object</purpose>
+</tocitem>
+<tocitem target="ref/extractfeatures.html">
+<name>extractFeatures</name>
+<purpose>Extract interest point descriptors</purpose>
+</tocitem>
+<tocitem target="ref/extracthogfeatures.html">
+<name>extractHOGFeatures</name>
+<purpose>Extract histogram of oriented gradients (HOG) features</purpose>
+</tocitem>
+<tocitem target="ref/matchfeatures.html">
+<name>matchFeatures</name>
+<purpose>Find matching features</purpose>
+</tocitem>
+<tocitem target="ref/vision.pointtracker-system-object.html">
+<name>vision.PointTracker</name>
+<purpose>Track points in video using Kanade-Lucas-Tomasi (KLT) algorithm</purpose>
+</tocitem>
+<tocitem target="ref/stereoanaglyph.html">
+<name>stereoAnaglyph</name>
+<purpose>Create red-cyan anaglyph from stereo pair of images</purpose>
+</tocitem>
+<tocitem target="ref/pcshow.html">
+<name>pcshow</name>
+<purpose>Plot 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/plotcamera.html">
+<name>plotCamera</name>
+<purpose>Plot a camera in 3-D coordinates</purpose>
+</tocitem>
+<tocitem target="ref/showmatchedfeatures.html">
+<name>showMatchedFeatures</name>
+<purpose>Display corresponding feature points</purpose>
+</tocitem>
+<tocitem target="ref/showreprojectionerrors.html">
+<name>showReprojectionErrors</name>
+<purpose>Visualize calibration errors</purpose>
+</tocitem>
+<tocitem target="ref/rotationmatrixtovector.html">
+<name>rotationMatrixToVector</name>
+<purpose>Convert 3-D rotation matrix to rotation vector</purpose>
+</tocitem>
+<tocitem target="ref/rotationvectortomatrix.html">
+<name>rotationVectorToMatrix</name>
+<purpose>Convert 3-D rotation vector to rotation matrix</purpose>
+</tocitem>
+<tocitem target="ref/viewset.addview.html">
+<name>addView</name>
+<purpose>Add a new view to view set object</purpose>
+</tocitem>
+<tocitem target="ref/viewset.updateview.html">
+<name>updateView</name>
+<purpose>Modify an existing view in a view set object</purpose>
+</tocitem>
+<tocitem target="ref/viewset.deleteview.html">
+<name>deleteView</name>
+<purpose>Delete an existing view from view set object</purpose>
+</tocitem>
+<tocitem target="ref/viewset.hasview.html">
+<name>hasView</name>
+<purpose>Check if view exists</purpose>
+</tocitem>
+<tocitem target="ref/viewset.addconnection.html">
+<name>addConnection</name>
+<purpose>Add a connection between two views</purpose>
+</tocitem>
+<tocitem target="ref/viewset.deleteconnection.html">
+<name>deleteConnection</name>
+<purpose>Delete a connection between two views from view set object</purpose>
+</tocitem>
+<tocitem target="ref/viewset.hasconnection.html">
+<name>hasConnection</name>
+<purpose>Check if a connection exists between two views</purpose>
+</tocitem>
+<tocitem target="ref/viewset.findtracks.html">
+<name>findTracks</name>
+<purpose>Find matched points across multiple views</purpose>
+</tocitem>
+<tocitem target="ref/viewset.poses.html">
+<name>poses</name>
+<purpose>Returns camera poses associated to views</purpose>
+</tocitem>
+<tocitem target="ug/pattern-matching.html">
+<name>Pattern Matching</name>
+<purpose/>
+</tocitem>
+<tocitem target="ug/pattern-matching-1.html">
+<name>Pattern Matching</name>
+<purpose/>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="lidar-and-point-cloud-processing.html">Lidar and Point Cloud Processing
+<tocitem target="ref/pcdenoise.html">
+<name>pcdenoise</name>
+<purpose>Remove noise from 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcdownsample.html">
+<name>pcdownsample</name>
+<purpose>Downsample a 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcnormals.html">
+<name>pcnormals</name>
+<purpose>Estimate normals for point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcmerge.html">
+<name>pcmerge</name>
+<purpose>Merge two 3-D point clouds</purpose>
+</tocitem>
+<tocitem target="ref/pcsegdist.html">
+<name>pcsegdist</name>
+<purpose>Segment point cloud into clusters based on Euclidean distance</purpose>
+</tocitem>
+<tocitem target="ref/segmentlidardata.html">
+<name>segmentLidarData</name>
+<purpose>Segment organized 3-D range data into clusters</purpose>
+</tocitem>
+<tocitem target="ref/segmentgroundfromlidardata.html">
+<name>segmentGroundFromLidarData</name>
+<purpose>Segment  ground points from organized lidar data</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.findnearestneighbors.html">
+<name>findNearestNeighbors</name>
+<purpose>Find nearest neighbors of a point in point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.findneighborsinradius.html">
+<name>findNeighborsInRadius</name>
+<purpose>Find neighbors within a radius of a point in the point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.findpointsinroi.html">
+<name>findPointsInROI</name>
+<purpose>Find points within a region of interest in the point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.removeinvalidpoints.html">
+<name>removeInvalidPoints</name>
+<purpose>Remove invalid points from point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcdownsample.html">
+<name>pcdownsample</name>
+<purpose>Downsample a 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pctransform.html">
+<name>pctransform</name>
+<purpose>Transform 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcregistericp.html">
+<name>pcregistericp</name>
+<purpose>Register two point clouds using ICP algorithm</purpose>
+</tocitem>
+<tocitem target="ref/pcregistercpd.html">
+<name>pcregistercpd</name>
+<purpose>Register two point clouds using CPD algorithm</purpose>
+</tocitem>
+<tocitem target="ref/pcregisterndt.html">
+<name>pcregisterndt</name>
+<purpose>Register two point clouds using NDT algorithm</purpose>
+</tocitem>
+<tocitem target="ref/pcfitcylinder.html">
+<name>pcfitcylinder</name>
+<purpose>Fit cylinder to 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcfitplane.html">
+<name>pcfitplane</name>
+<purpose>Fit plane to 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcfitsphere.html">
+<name>pcfitsphere</name>
+<purpose>Fit sphere to 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcnormals.html">
+<name>pcnormals</name>
+<purpose>Estimate normals for point cloud</purpose>
+</tocitem>
+<tocitem target="ref/fitpolynomialransac.html">
+<name>fitPolynomialRANSAC</name>
+<purpose>Fit polynomial to points using RANSAC</purpose>
+</tocitem>
+<tocitem target="ref/ransac.html">
+<name>ransac</name>
+<purpose>Fit model to noisy data</purpose>
+</tocitem>
+<tocitem target="ref/cylindermodel-class.html">
+<name>cylinderModel</name>
+<purpose>Object for storing a parametric cylinder model</purpose>
+</tocitem>
+<tocitem target="ref/planemodel.html">
+<name>planeModel</name>
+<purpose>Object for storing a parametric plane model</purpose>
+</tocitem>
+<tocitem target="ref/spheremodel-class.html">
+<name>sphereModel</name>
+<purpose>Object for storing a parametric sphere model</purpose>
+</tocitem>
+<tocitem target="ref/pcread.html">
+<name>pcread</name>
+<purpose>Read 3-D point cloud from PLY or PCD file</purpose>
+</tocitem>
+<tocitem target="ref/pcwrite.html">
+<name>pcwrite</name>
+<purpose>Write 3-D point cloud to PLY or PCD file</purpose>
+</tocitem>
+<tocitem target="ref/pcfromkinect.html">
+<name>pcfromkinect</name>
+<purpose>Point cloud from Kinect for Windows</purpose>
+</tocitem>
+<tocitem target="ref/velodynefilereader.html">
+<name>velodyneFileReader</name>
+<purpose>Read point cloud data from Velodyne PCAP file</purpose>
+</tocitem>
+<tocitem target="ref/pcshow.html">
+<name>pcshow</name>
+<purpose>Plot 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcshowpair.html">
+<name>pcshowpair</name>
+<purpose>Visualize difference between two point clouds</purpose>
+</tocitem>
+<tocitem target="ref/pcplayer.html">
+<name>pcplayer</name>
+<purpose>Visualize streaming 3-D point cloud data</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.html">
+<name>pointCloud</name>
+<purpose>Object for storing 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.findnearestneighbors.html">
+<name>findNearestNeighbors</name>
+<purpose>Find nearest neighbors of a point in point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.findneighborsinradius.html">
+<name>findNeighborsInRadius</name>
+<purpose>Find neighbors within a radius of a point in the point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.findpointsinroi.html">
+<name>findPointsInROI</name>
+<purpose>Find points within a region of interest in the point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.removeinvalidpoints.html">
+<name>removeInvalidPoints</name>
+<purpose>Remove invalid points from point cloud</purpose>
+</tocitem>
+<tocitem target="ref/velodynefilereader.reset.html">
+<name>reset</name>
+<purpose>Reset the CurrentTime property of
+        velodyneFileReader object to the default value</purpose>
+</tocitem>
+<tocitem target="ref/pointcloud.select.html">
+<name>select</name>
+<purpose>Select points in point cloud</purpose>
+</tocitem>
+<tocitem target="ref/showpointcloud.html">
+<name>showPointCloud</name>
+<purpose>Plot 3-D point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcplayer.show.html">
+<name>show</name>
+<purpose>Show player</purpose>
+</tocitem>
+<tocitem target="ref/bbox2points.html">
+<name>bbox2points</name>
+<purpose>Convert rectangle to corner points list</purpose>
+</tocitem>
+<tocitem target="ref/velodynefilereader.hasframe.html">
+<name>hasFrame</name>
+<purpose>Determine if another Velodyne point cloud is available</purpose>
+</tocitem>
+<tocitem target="ref/velodynefilereader.readframe.html">
+<name>readFrame</name>
+<purpose>Read Velodyne point cloud from file</purpose>
+</tocitem>
+<tocitem target="ref/pcplayer.hide.html">
+<name>hide</name>
+<purpose>Hide player figure</purpose>
+</tocitem>
+<tocitem target="ref/cylindermodel.plot.html">
+<name>plot</name>
+<purpose>Plot cylinder in a figure window</purpose>
+</tocitem>
+<tocitem target="ref/planemodel.plot.html">
+<name>planeModel.plot</name>
+<purpose>Plot plane in a figure window</purpose>
+</tocitem>
+<tocitem target="ref/spheremodel.plot.html">
+<name>plot</name>
+<purpose>Plot sphere in a figure window</purpose>
+</tocitem>
+<tocitem target="ref/videofilereader.isdone.html">
+<name>isDone</name>
+<purpose>End-of-file status (logical)</purpose>
+</tocitem>
+<tocitem target="ref/videofilereader.info.html">
+<name>info</name>
+<purpose>Information about specified video file</purpose>
+</tocitem>
+<tocitem target="ref/pcplayer.isopen.html">
+<name>isOpen</name>
+<purpose>Visible or hidden status  for player</purpose>
+</tocitem>
+<tocitem target="ref/pcplayer.view.html">
+<name>view</name>
+<purpose>Display point cloud</purpose>
+</tocitem>
+<tocitem target="ref/pcregrigid.html">
+<name>pcregrigid</name>
+<purpose>Register two point clouds using ICP algorithm</purpose>
+</tocitem>
+<tocitem target="ref/pctransform.html">
+<name>pctransform</name>
+<purpose>Transform 3-D point cloud</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="tracking-and-motion-estimation.html">Tracking and Motion Estimation
+<tocitem target="ref/assigndetectionstotracks.html">
+<name>assignDetectionsToTracks</name>
+<purpose>Assign detections to tracks for multiobject tracking</purpose>
+</tocitem>
+<tocitem target="ref/configurekalmanfilter.html">
+<name>configureKalmanFilter</name>
+<purpose>Create Kalman filter for object tracking</purpose>
+</tocitem>
+<tocitem target="ref/kalmanfilter.html">
+<name>vision.KalmanFilter</name>
+<purpose>Correction of measurement, state, and state estimation error covariance</purpose>
+</tocitem>
+<tocitem target="ref/vision.histogrambasedtracker-system-object.html">
+<name>vision.HistogramBasedTracker</name>
+<purpose>Histogram-based object tracking</purpose>
+</tocitem>
+<tocitem target="ref/vision.pointtracker-system-object.html">
+<name>vision.PointTracker</name>
+<purpose>Track points in video using Kanade-Lucas-Tomasi (KLT) algorithm</purpose>
+</tocitem>
+<tocitem target="ref/vision.blockmatcher-system-object.html">
+<name>vision.BlockMatcher</name>
+<purpose>Estimate motion between images or video frames</purpose>
+</tocitem>
+<tocitem target="ref/vision.templatematcher-system-object.html">
+<name>vision.TemplateMatcher</name>
+<purpose>Locate template in image</purpose>
+</tocitem>
+<tocitem target="ref/opticalflowobject.html">
+<name>opticalFlow</name>
+<purpose>Object for storing optical flow matrices</purpose>
+</tocitem>
+<tocitem target="ref/opticalflowfarneback.html">
+<name>opticalFlowFarneback</name>
+<purpose>Object for estimating optical flow using Farneback method</purpose>
+</tocitem>
+<tocitem target="ref/opticalflowhs.html">
+<name>opticalFlowHS</name>
+<purpose>Object for estimating optical flow using Horn-Schunck method</purpose>
+</tocitem>
+<tocitem target="ref/opticalflowlk.html">
+<name>opticalFlowLK</name>
+<purpose>Object for estimating optical flow using Lucas-Kanade method</purpose>
+</tocitem>
+<tocitem target="ref/opticalflowlkdog.html">
+<name>opticalFlowLKDoG</name>
+<purpose>Object for estimating optical flow using Lucas-Kanade derivative of Gaussian
+      method</purpose>
+</tocitem>
+<tocitem target="ref/vision.blockmatcher-system-object.html">
+<name>vision.BlockMatcher</name>
+<purpose>Estimate motion between images or video frames</purpose>
+</tocitem>
+<tocitem target="ref/vision.templatematcher-system-object.html">
+<name>vision.TemplateMatcher</name>
+<purpose>Locate template in image</purpose>
+</tocitem>
+<tocitem target="ref/insertmarker.html">
+<name>insertMarker</name>
+<purpose>Insert markers in image or video</purpose>
+</tocitem>
+<tocitem target="ref/insertshape.html">
+<name>insertShape</name>
+<purpose>Insert shapes in image or video</purpose>
+</tocitem>
+<tocitem target="ref/insertobjectannotation.html">
+<name>insertObjectAnnotation</name>
+<purpose>Annotate truecolor or grayscale image or video stream</purpose>
+</tocitem>
+<tocitem target="ref/inserttext.html">
+<name>insertText</name>
+<purpose>Insert text in image or video</purpose>
+</tocitem>
+<tocitem target="../images/ref/imshow.html">
+<name>imshow</name>
+<purpose>Display image</purpose>
+</tocitem>
+<tocitem target="../images/ref/imshowpair.html">
+<name>imshowpair</name>
+<purpose>Compare differences between images</purpose>
+</tocitem>
+<tocitem target="ref/initializeobject.html">
+<name>initializeObject</name>
+<purpose>Set object to track</purpose>
+</tocitem>
+<tocitem target="ref/histogrambasedtracker.initializesearchwindow.html">
+<name>initializeSearchWindow</name>
+<purpose>Set initial search window</purpose>
+</tocitem>
+<tocitem target="ref/pointtracker.initialize.html">
+<name>initialize</name>
+<purpose>Initialize video frame and points to track</purpose>
+</tocitem>
+<tocitem target="ref/vision.kalmanfilter.correct.html">
+<name>correct</name>
+<purpose>Correction of measurement, state, and state estimation error covariance</purpose>
+</tocitem>
+<tocitem target="ref/vision.kalmanfilter.distance.html">
+<name>distance</name>
+<purpose>Confidence value of measurement</purpose>
+</tocitem>
+<tocitem target="ref/vision.kalmanfilter.vision.kalmanfilter.predict.html">
+<name>predict</name>
+<purpose>Prediction of measurement</purpose>
+</tocitem>
+<tocitem target="ref/opticalflow.plot.html">
+<name>plot</name>
+<purpose>Plot optical flow vectors </purpose>
+</tocitem>
+<tocitem target="ref/opticalflowhs.reset.html">
+<name>reset</name>
+<purpose>Reset the internal state of the optical flow estimation object</purpose>
+</tocitem>
+<tocitem target="ref/opticalflowhs.estimateflow.html">
+<name>estimateFlow</name>
+<purpose>Estimate optical flow</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation-and-third-party-support-1.html">Code Generation and Third-Party Support
+<tocitem target="ocr-language-data-support-package.html">OCR Language Data Support Files
+<tocitem target="ref/ocr.html">
+<name>ocr</name>
+<purpose>Recognize text using optical character recognition</purpose>
+</tocitem>
+<tocitem target="ref/visionsupportpackages.html">
+<name>visionSupportPackages</name>
+<purpose>Start installer to download, install, or uninstall Computer
+            Vision Toolbox data</purpose>
+</tocitem>
+<tocitem target="ref/ocrtext-class.html">
+<name>ocrText</name>
+<purpose>Object for storing OCR results</purpose>
+</tocitem>
+<tocitem target="ref/ocrtext.locatetext.html">
+<name>locateText</name>
+<purpose>Locate text pattern</purpose>
+</tocitem>
+<tocitem target="ref/listtruetypefonts.html">
+<name>listTrueTypeFonts</name>
+<purpose>List available TrueType fonts</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="opencv-interface-support-package.html">OpenCV Interface Support
+<tocitem target="ref/ocvcheckfeaturepointsstruct.html">
+<name>ocvCheckFeaturePointsStruct</name>
+<purpose>Check that MATLAB struct represents feature points</purpose>
+</tocitem>
+<tocitem target="ref/ocvstructtokeypoints.html">
+<name>ocvStructToKeyPoints</name>
+<purpose>Convert MATLAB feature points struct to OpenCV KeyPoint vector</purpose>
+</tocitem>
+<tocitem target="ref/ocvkeypointstostruct.html">
+<name>ocvKeyPointsToStruct</name>
+<purpose>Convert OpenCV KeyPoint vector to MATLAB struct</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarraytocvrect.html">
+<name>ocvMxArrayToCvRect</name>
+<purpose>Convert a MATLAB struct representing a rectangle
+to an OpenCV CvRect</purpose>
+</tocitem>
+<tocitem target="ref/ocvcvrecttomxarray.html">
+<name>ocvCvRectToMxArray</name>
+<purpose>Convert OpenCV CvRect to a MATLAB struct</purpose>
+</tocitem>
+<tocitem target="ref/ocvcvbox2dtomxarray.html">
+<name>ocvCvBox2DToMxArray</name>
+<purpose>Convert OpenCV CvBox2D to a MATLAB struct</purpose>
+</tocitem>
+<tocitem target="ref/ocvcvrecttoboundingbox_datatype.html">
+<name>ocvCvRectToBoundingBox_{DataType}</name>
+<purpose>Convert vector&lt;cv::Rect&gt; to M-by-4 mxArray of bounding boxes</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarraytosize_datatype.html">
+<name>ocvMxArrayToSize_{DataType}</name>
+<purpose>Convert 2-element mxArray to cv::Size.</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarraytoimage_datatype.html">
+<name>ocvMxArrayToImage_{DataType}</name>
+<purpose>Convert column major mxArray to
+row major cv::Mat for image</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarraytomat_datatype.html">
+<name>ocvMxArrayToMat_{DataType}</name>
+<purpose>Convert column major mxArray to
+row major cv::Mat for generic matrix</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarrayfromimage_datatype.html">
+<name>ocvMxArrayFromImage_{DataType}</name>
+<purpose>Convert row major cv::Mat to column
+major mxArray for image</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarrayfrommat_datatype.html">
+<name>ocvMxArrayFromMat_{DataType}</name>
+<purpose>Convert row major cv::Mat to column
+major mxArray for generic matrix</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarrayfromvector_datatype.html">
+<name>ocvMxArrayFromVector_{DataType}</name>
+<purpose>Convert numeric vectorT to
+                                                  mxArray</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxarrayfrompoints2f.html">
+<name>ocvMxArrayFromPoints2f</name>
+<purpose>Converts vector&lt;cv::Point2f&gt; to mxArray</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxgpuarraytogpumat_datatype.html">
+<name>ocvMxGpuArrayToGpuMat_{DataType}</name>
+<purpose>Create cv::gpu::GpuMat from mxArray containing GPU data</purpose>
+</tocitem>
+<tocitem target="ref/ocvmxgpuarrayfromgpumat_datatype.html">
+<name>ocvMxGpuArrayFromGpuMat_{DataType}</name>
+<purpose>Create an mxArray from cv::gpu::GpuMat object</purpose>
+</tocitem>
+<tocitem target="ref/visionsupportpackages.html">
+<name>visionSupportPackages</name>
+<purpose>Start installer to download, install, or uninstall Computer
+            Vision Toolbox data</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

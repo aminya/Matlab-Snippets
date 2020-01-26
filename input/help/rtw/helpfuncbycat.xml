@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="model-architecture-and-design.html">Model Architecture and Design
+<tocitem target="component-based-modeling.html">Component-Based Modeling
+<tocitem target="referenced-models.html">Referenced Models
+<tocitem target="../simulink/slref/depview.html">
+<name>depview</name>
+<purpose>Display graph of model referencing dependencies with or without library
+            dependencies</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/find_mdlrefs.html">
+<name>find_mdlrefs</name>
+<purpose>Find Model blocks and referenced models at all levels or at top level only</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/view_mdlrefs.html">
+<name>view_mdlrefs</name>
+<purpose>Display graph of model referencing dependencies without library
+      dependencies</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/simulink.subsystem.converttomodelreference.html">
+<name>Simulink.SubSystem.convertToModelReference</name>
+<purpose>Convert subsystem to model reference</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/slbuild.html">
+<name>slbuild</name>
+<purpose>Build standalone executable or model reference target for model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-protection.html">Model Protection
+<tocitem target="ref/simulink.modelreference.protect.html">
+<name>Simulink.ModelReference.protect</name>
+<purpose>Obscure referenced model contents to hide intellectual
+property</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.modifyprotectedmodel.html">
+<name>Simulink.ModelReference.modifyProtectedModel</name>
+<purpose>Modify existing protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordforcodegeneration.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForCodeGeneration</name>
+<purpose>Add or provide encryption password for code generation
+from protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordformodify.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForModify</name>
+<purpose>Add or provide password for modifying protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordforsimulation.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForSimulation</name>
+<purpose>Add or provide encryption password for simulation of protected
+model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordforview.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForView</name>
+<purpose>Add or provide encryption password for read-only view
+of protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.clearpasswords.html">
+<name>Simulink.ModelReference.ProtectedModel.clearPasswords</name>
+<purpose>Clear cached passwords for protected models</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.clearpasswordsformodel.html">
+<name>Simulink.ModelReference.ProtectedModel.clearPasswordsForModel</name>
+<purpose>Clear cached passwords for a protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.addtarget.html">
+<name>Simulink.ProtectedModel.addTarget</name>
+<purpose>Add code generation support for current target to protected
+model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getcallbackinfo.html">
+<name>Simulink.ProtectedModel.getCallbackInfo</name>
+<purpose>Get Simulink.ProtectedModel.CallbackInfo object
+for use by callbacks</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getconfigset.html">
+<name>Simulink.ProtectedModel.getConfigSet</name>
+<purpose>Get configuration set for current protected model target
+or for specified target</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getcurrenttarget.html">
+<name>Simulink.ProtectedModel.getCurrentTarget</name>
+<purpose>Get current protected model target</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getsupportedtargets.html">
+<name>Simulink.ProtectedModel.getSupportedTargets</name>
+<purpose>Get list of targets that protected model supports</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.open.html">
+<name>Simulink.ProtectedModel.open</name>
+<purpose>Open protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.removetarget.html">
+<name>Simulink.ProtectedModel.removeTarget</name>
+<purpose>Remove support for specified target from protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.setcurrenttarget.html">
+<name>Simulink.ProtectedModel.setCurrentTarget</name>
+<purpose>Configure protected model to use specified target</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.callback.setoverridebuild.html">
+<name>Simulink.ProtectedModel.Callback.setOverrideBuild</name>
+<purpose>Specify option to override protected model build</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.callbackinfo.getbuildinfoformodel.html">
+<name>Simulink.ProtectedModel.CallbackInfo.getBuildInfoForModel</name>
+<purpose>Get build information object for specified model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="block-authoring.html">Block Authoring and Customization
+<tocitem target="block-authoring-with-tlc.html">Target Language Compiler
+<tocitem target="ref/tlc.html">
+<name>tlc</name>
+<purpose>Invoke Target Language Compiler to convert model description
+file to generated code</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="data-function-and-file-definition.html">Data, Function, and File Definition
+<tocitem target="data-exchange-interface.html">Data Exchange Interfaces
+<tocitem target="ref/coder.xcp.a2l.addcoderxcpinfo.html">
+<name>addCoderXCPInfo</name>
+<purpose>Create ASAP2 file with IF_DATA XCP block that describes the Simulink Coder XCP slave
+      configuration</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="function-interfaces.html">Function and Class Interfaces
+<tocitem target="ref/model_initialize.html">
+<name>model_initialize</name>
+<purpose>Initialization entry-point function in generated code
+for Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/model_step.html">
+<name>model_step</name>
+<purpose>Step routine entry point in generated code for Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/model_terminate.html">
+<name>model_terminate</name>
+<purpose>Termination entry point in generated code for Simulink model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="target.html">Run-Time Environment Configuration
+<tocitem target="ref/target.add.html">
+<name>target.add</name>
+<purpose>Add target  feature object to MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.create.html">
+<name>target.create</name>
+<purpose>Create target feature object</purpose>
+</tocitem>
+<tocitem target="ref/target.export.html">
+<name>target.export</name>
+<purpose>Export target feature data</purpose>
+</tocitem>
+<tocitem target="ref/target.get.html">
+<name>target.get</name>
+<purpose>Retrieve target feature object from MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.remove.html">
+<name>target.remove</name>
+<purpose>Remove target feature object from MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.upgrade.html">
+<name>target.upgrade</name>
+<purpose>Upgrade existing definitions of hardware devices</purpose>
+</tocitem>
+<tocitem target="ref/target.object.validate.html">
+<name>validate</name>
+<purpose>Validate data integrity of target feature object </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="report-generation.html">Report Generation
+<tocitem target="ref/rtwreport.html">
+<name>rtwreport</name>
+<purpose>Create generated code report for model with Simulink
+            Report Generator</purpose>
+</tocitem>
+<tocitem target="ref/coder.report.open.html">
+<name>coder.report.open</name>
+<purpose>Open existing HTML code generation report</purpose>
+</tocitem>
+<tocitem target="ref/coder.report.generate.html">
+<name>coder.report.generate</name>
+<purpose>Generate HTML code generation report</purpose>
+</tocitem>
+<tocitem target="ref/coder.report.close.html">
+<name>coder.report.close</name>
+<purpose>Close HTML code generation report</purpose>
+</tocitem>
+<tocitem target="ref/getcodedescriptor.html">
+<name>getCodeDescriptor</name>
+<purpose>Create coder.codedescriptor.CodeDescriptor object for
+            model</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getalldatainterfacetypes.html">
+<name>getAllDataInterfaceTypes</name>
+<purpose>Return data interface types</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getallfunctioninterfacetypes.html">
+<name>getAllFunctionInterfaceTypes</name>
+<purpose> Return function interface types</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getarraylayout.html">
+<name>getArrayLayout</name>
+<purpose> Return array layout of the generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getdatainterfaces.html">
+<name>getDataInterfaces</name>
+<purpose> Return information of the specified data interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getdatainterfacetypes.html">
+<name>getDataInterfaceTypes</name>
+<purpose>Return data interface types in the generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getfunctioninterfaces.html">
+<name>getFunctionInterfaces</name>
+<purpose>Return information of the specified function interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getfunctioninterfacetypes.html">
+<name>getFunctionInterfaceTypes</name>
+<purpose>Return function interface types in the generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getreferencedmodelcodedescriptor.html">
+<name>getReferencedModelCodeDescriptor</name>
+<purpose>Return coder.codedescriptor.CodeDescriptor object for the
+            specified referenced model</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getreferencedmodelnames.html">
+<name>getReferencedModelNames</name>
+<purpose>Return names of the referenced models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="target-extensions.html">Target Development
+<tocitem target="ref/slconfiguigetval.html">
+<name>slConfigUIGetVal</name>
+<purpose>Return current value for custom target configuration option</purpose>
+</tocitem>
+<tocitem target="ref/slconfiguisetenabled.html">
+<name>slConfigUISetEnabled</name>
+<purpose>Enable or disable custom target configuration option</purpose>
+</tocitem>
+<tocitem target="ref/slconfiguisetval.html">
+<name>slConfigUISetVal</name>
+<purpose>Set value for custom target configuration option</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="deployment.html">Deployment
+<tocitem target="rapid-prototyping-deployment.html">Rapid-Prototyping Deployment
+<tocitem target="ref/rsimgetrtp.html">
+<name>rsimgetrtp</name>
+<purpose>Global model parameter structure</purpose>
+</tocitem>
+<tocitem target="ref/rsimsetrtpparam.html">
+<name>rsimsetrtpparam</name>
+<purpose>Set parameters of rtP model parameter
+structure</purpose>
+</tocitem>
+<tocitem target="ref/extmodebackgroundrun.html">
+<name>extmodeBackgroundRun</name>
+<purpose>Perform external mode background activity</purpose>
+</tocitem>
+<tocitem target="ref/extmodeevent.html">
+<name>extmodeEvent</name>
+<purpose>External mode event trigger</purpose>
+</tocitem>
+<tocitem target="ref/extmodegetfinalsimulationtime.html">
+<name>extmodeGetFinalSimulationTime</name>
+<purpose>Get final simulation time for external mode platform abstraction
+            layer</purpose>
+</tocitem>
+<tocitem target="ref/extmodeinit.html">
+<name>extmodeInit</name>
+<purpose>Initialize external mode target connectivity</purpose>
+</tocitem>
+<tocitem target="ref/extmodeparseargs.html">
+<name>extmodeParseArgs</name>
+<purpose>Extract values of configuration parameters supported by external mode
+            abstraction layer</purpose>
+</tocitem>
+<tocitem target="ref/extmodereset.html">
+<name>extmodeReset</name>
+<purpose>Reset external mode target connectivity</purpose>
+</tocitem>
+<tocitem target="ref/extmodesetfinalsimulationtime.html">
+<name>extmodeSetFinalSimulationTime</name>
+<purpose>Set final simulation time in external mode platform abstraction
+            layer</purpose>
+</tocitem>
+<tocitem target="ref/extmodesimulationcomplete.html">
+<name>extmodeSimulationComplete</name>
+<purpose>Check that external mode simulation is complete</purpose>
+</tocitem>
+<tocitem target="ref/extmodestoprequested.html">
+<name>extmodeStopRequested</name>
+<purpose>Check whether request to stop external mode simulation is received from
+            model</purpose>
+</tocitem>
+<tocitem target="ref/extmodewaitforhostrequest.html">
+<name>extmodeWaitForHostRequest</name>
+<purpose>Wait for request from development computer to start or stop external mode
+            simulation</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamtest.html">
+<name>rtiostreamtest</name>
+<purpose>Test custom rtiostream interface implementation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="program-builds-and-debugging.html">Build Process
+<tocitem target="ref/packngo.html">
+<name>packNGo</name>
+<purpose>Package generated code in zip file for relocation</purpose>
+</tocitem>
+<tocitem target="ref/rtw_precompile_libs.html">
+<name>rtw_precompile_libs</name>
+<purpose>Rebuild precompiled libraries within model without building model</purpose>
+</tocitem>
+<tocitem target="ref/rtwbuild.html">
+<name>rtwbuild</name>
+<purpose>Build generated code from a model</purpose>
+</tocitem>
+<tocitem target="ref/rtwrebuild.html">
+<name>rtwrebuild</name>
+<purpose>Rebuild generated code from model</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildstatus.close.html">
+<name>coder.buildstatus.close</name>
+<purpose>Close build process status window</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildstatus.open.html">
+<name>coder.buildstatus.open</name>
+<purpose>Open build process status window</purpose>
+</tocitem>
+<tocitem target="ref/rtw.getbuilddir.html">
+<name>RTW.getBuildDir</name>
+<purpose>Get build folder information from model build information</purpose>
+</tocitem>
+<tocitem target="ref/simulink.filegencontrol.html">
+<name>Simulink.fileGenControl</name>
+<purpose>Specify root folders for files generated by diagram updates and model
+   builds</purpose>
+</tocitem>
+<tocitem target="ref/switchtarget.html">
+<name>switchTarget</name>
+<purpose>Select target for model configuration set</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="build-process-customization.html">Build Process Customization
+<tocitem target="ref/addcompileflags.html">
+<name>addCompileFlags</name>
+<purpose>Add compiler options to model build information</purpose>
+</tocitem>
+<tocitem target="ref/adddefines.html">
+<name>addDefines</name>
+<purpose>Add preprocessor macro definitions to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addincludefiles.html">
+<name>addIncludeFiles</name>
+<purpose>Add include files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addincludepaths.html">
+<name>addIncludePaths</name>
+<purpose>Add include paths to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addlinkflags.html">
+<name>addLinkFlags</name>
+<purpose>Add link options to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addlinkobjects.html">
+<name>addLinkObjects</name>
+<purpose>Add link objects to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addnonbuildfiles.html">
+<name>addNonBuildFiles</name>
+<purpose>Add nonbuild-related files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addsourcefiles.html">
+<name>addSourceFiles</name>
+<purpose>Add source files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addsourcepaths.html">
+<name>addSourcePaths</name>
+<purpose>Add source paths to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addtmftokens.html">
+<name>addTMFTokens</name>
+<purpose>Add template makefile (TMF) tokens to model build
+                                 information</purpose>
+</tocitem>
+<tocitem target="ref/findbuildarg.html">
+<name>findBuildArg</name>
+<purpose>Find a specific build argument in model build information</purpose>
+</tocitem>
+<tocitem target="ref/findincludefiles.html">
+<name>findIncludeFiles</name>
+<purpose>Find and add include (header) files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/getbuildargs.html">
+<name>getBuildArgs</name>
+<purpose>Get build arguments from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getcompileflags.html">
+<name>getCompileFlags</name>
+<purpose>Get compiler options from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getdefines.html">
+<name>getDefines</name>
+<purpose>Get preprocessor macro definitions from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getfullfilelist.html">
+<name>getFullFileList</name>
+<purpose>Get list of files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getincludefiles.html">
+<name>getIncludeFiles</name>
+<purpose>Get include files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getincludepaths.html">
+<name>getIncludePaths</name>
+<purpose>Get include paths from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getlinkflags.html">
+<name>getLinkFlags</name>
+<purpose>Get link options from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getnonbuildfiles.html">
+<name>getNonBuildFiles</name>
+<purpose>Get nonbuild-related files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getsourcefiles.html">
+<name>getSourceFiles</name>
+<purpose>Get source files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getsourcepaths.html">
+<name>getSourcePaths</name>
+<purpose>Get source paths from model build information</purpose>
+</tocitem>
+<tocitem target="ref/settargetprovidesmain.html">
+<name>setTargetProvidesMain</name>
+<purpose>Disable inclusion of code generator provided (generated or static)
+    main.c source file during model build</purpose>
+</tocitem>
+<tocitem target="ref/updatefilepathsandextensions.html">
+<name>updateFilePathsAndExtensions</name>
+<purpose>Update files in model build information with missing paths and file
+            extensions</purpose>
+</tocitem>
+<tocitem target="ref/updatefileseparator.html">
+<name>updateFileSeparator</name>
+<purpose>Update file separator character for file lists in model build
+            information</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

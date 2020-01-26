@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="linear-and-nonlinear-regression.html">Linear and Nonlinear Regression
+<tocitem target="excludedata.html">
+<name>excludedata</name>
+<purpose>Exclude data from fit</purpose>
+</tocitem>
+<tocitem target="fit.html">
+<name>fit</name>
+<purpose>Fit curve or surface to data</purpose>
+</tocitem>
+<tocitem target="fittype.html">
+<name>fittype</name>
+<purpose>Fit type for curve and surface fitting</purpose>
+</tocitem>
+<tocitem target="fitoptions.html">
+<name>fitoptions</name>
+<purpose>Create or modify fit options object</purpose>
+</tocitem>
+<tocitem target="preparecurvedata.html">
+<name>prepareCurveData</name>
+<purpose> Prepare data inputs for curve fitting</purpose>
+</tocitem>
+<tocitem target="preparesurfacedata.html">
+<name>prepareSurfaceData</name>
+<purpose>Prepare data inputs for surface fitting</purpose>
+</tocitem>
+<tocitem target="cfit.argnames.html">
+<name>argnames</name>
+<purpose> Input argument names of cfit, sfit,
+                or fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.category.html">
+<name>category</name>
+<purpose>Category of fit of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="sfit.coeffnames.html">
+<name>coeffnames</name>
+<purpose>Coefficient names of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.coeffvalues.html">
+<name>coeffvalues</name>
+<purpose>Coefficient values of cfit or sfit
+                object</purpose>
+</tocitem>
+<tocitem target="cfit.dependnames.html">
+<name>dependnames</name>
+<purpose>Dependent variable of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="sfit.feval.html">
+<name>feval</name>
+<purpose>Evaluate cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.formula.html">
+<name>formula</name>
+<purpose>Formula of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Get fit options structure property names and values</purpose>
+</tocitem>
+<tocitem target="cfit.indepnames.html">
+<name>indepnames</name>
+<purpose>Independent variable of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.islinear.html">
+<name>islinear</name>
+<purpose>Determine if cfit, sfit, or
+                    fittype object is linear</purpose>
+</tocitem>
+<tocitem target="cfit.numargs.html">
+<name>numargs</name>
+<purpose>Number of input arguments of cfit,
+                    sfit, or fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.numcoeffs.html">
+<name>numcoeffs</name>
+<purpose>Number of coefficients of cfit, sfit,
+                or fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.probnames.html">
+<name>probnames</name>
+<purpose>Problem-dependent parameter names of cfit,
+                    sfit, or fittype object</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Assign values in fit options structure</purpose>
+</tocitem>
+<tocitem target="cfit.setoptions.html">
+<name>setoptions</name>
+<purpose> Set model fit options</purpose>
+</tocitem>
+<tocitem target="cfit.type.html">
+<name>type</name>
+<purpose>Name of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="sftool.html">
+<name>sftool</name>
+<purpose>Open Curve Fitting app</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="interpolation.html">Interpolation
+<tocitem target="excludedata.html">
+<name>excludedata</name>
+<purpose>Exclude data from fit</purpose>
+</tocitem>
+<tocitem target="fit.html">
+<name>fit</name>
+<purpose>Fit curve or surface to data</purpose>
+</tocitem>
+<tocitem target="fittype.html">
+<name>fittype</name>
+<purpose>Fit type for curve and surface fitting</purpose>
+</tocitem>
+<tocitem target="fitoptions.html">
+<name>fitoptions</name>
+<purpose>Create or modify fit options object</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Get fit options structure property names and values</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Assign values in fit options structure</purpose>
+</tocitem>
+<tocitem target="sfit.feval.html">
+<name>feval</name>
+<purpose>Evaluate cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="preparecurvedata.html">
+<name>prepareCurveData</name>
+<purpose> Prepare data inputs for curve fitting</purpose>
+</tocitem>
+<tocitem target="preparesurfacedata.html">
+<name>prepareSurfaceData</name>
+<purpose>Prepare data inputs for surface fitting</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="smoothing.html">Smoothing
+<tocitem target="datastats.html">
+<name>datastats</name>
+<purpose>Data statistics</purpose>
+</tocitem>
+<tocitem target="excludedata.html">
+<name>excludedata</name>
+<purpose>Exclude data from fit</purpose>
+</tocitem>
+<tocitem target="fit.html">
+<name>fit</name>
+<purpose>Fit curve or surface to data</purpose>
+</tocitem>
+<tocitem target="fittype.html">
+<name>fittype</name>
+<purpose>Fit type for curve and surface fitting</purpose>
+</tocitem>
+<tocitem target="fitoptions.html">
+<name>fitoptions</name>
+<purpose>Create or modify fit options object</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Get fit options structure property names and values</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Assign values in fit options structure</purpose>
+</tocitem>
+<tocitem target="smooth.html">
+<name>smooth</name>
+<purpose>Smooth response data</purpose>
+</tocitem>
+<tocitem target="preparecurvedata.html">
+<name>prepareCurveData</name>
+<purpose> Prepare data inputs for curve fitting</purpose>
+</tocitem>
+<tocitem target="preparesurfacedata.html">
+<name>prepareSurfaceData</name>
+<purpose>Prepare data inputs for surface fitting</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="fit-postprocessing.html">Fit Postprocessing
+<tocitem target="cfit.html">
+<name>cfit</name>
+<purpose>Constructor for cfit object</purpose>
+</tocitem>
+<tocitem target="sfit.coeffnames.html">
+<name>coeffnames</name>
+<purpose>Coefficient names of cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.coeffvalues.html">
+<name>coeffvalues</name>
+<purpose>Coefficient values of cfit or sfit
+                object</purpose>
+</tocitem>
+<tocitem target="cfit.confint.html">
+<name>confint</name>
+<purpose>Confidence intervals for fit coefficients of cfit or
+                    sfit object</purpose>
+</tocitem>
+<tocitem target="sfit.differentiate.html">
+<name>differentiate</name>
+<purpose>Differentiate cfit or sfit
+                object</purpose>
+</tocitem>
+<tocitem target="sfit.feval.html">
+<name>feval</name>
+<purpose>Evaluate cfit, sfit, or
+                    fittype object</purpose>
+</tocitem>
+<tocitem target="cfit.integrate.html">
+<name>integrate</name>
+<purpose>Integrate cfit object</purpose>
+</tocitem>
+<tocitem target="cfit.plot.html">
+<name>plot</name>
+<purpose>Plot cfit or sfit object</purpose>
+</tocitem>
+<tocitem target="cfit.predint.html">
+<name>predint</name>
+<purpose>Prediction intervals for cfit or sfit
+                object</purpose>
+</tocitem>
+<tocitem target="cfit.probvalues.html">
+<name>probvalues</name>
+<purpose>Problem-dependent parameter values of cfit or
+                    sfit object</purpose>
+</tocitem>
+<tocitem target="sfit.quad2d.html">
+<name>quad2d</name>
+<purpose>Numerically integrate sfit object</purpose>
+</tocitem>
+<tocitem target="sfit.html">
+<name>sfit</name>
+<purpose>Constructor for sfit object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="splines.html">Splines
+<tocitem target="construction.html">Construction
+<tocitem target="bspline.html">
+<name>bspline</name>
+<purpose>Plot B-spline and its polynomial pieces </purpose>
+</tocitem>
+<tocitem target="csape.html">
+<name>csape</name>
+<purpose>Cubic spline interpolation with end conditions</purpose>
+</tocitem>
+<tocitem target="csapi.html">
+<name>csapi</name>
+<purpose>Cubic
+spline interpolation </purpose>
+</tocitem>
+<tocitem target="csaps.html">
+<name>csaps</name>
+<purpose>Cubic smoothing spline</purpose>
+</tocitem>
+<tocitem target="cscvn.html">
+<name>cscvn</name>
+<purpose>“Natural” or periodic interpolating cubic spline curve</purpose>
+</tocitem>
+<tocitem target="franke.html">
+<name>franke</name>
+<purpose>Franke's bivariate test function</purpose>
+</tocitem>
+<tocitem target="getcurve.html">
+<name>getcurve</name>
+<purpose>Interactive creation of cubic spline curve</purpose>
+</tocitem>
+<tocitem target="ppmak.html">
+<name>ppmak</name>
+<purpose>Put together spline in ppform</purpose>
+</tocitem>
+<tocitem target="rpmak.html">
+<name>rpmak</name>
+<purpose>Put together rational spline</purpose>
+</tocitem>
+<tocitem target="rscvn.html">
+<name>rscvn</name>
+<purpose>Piecewise biarc
+Hermite interpolation</purpose>
+</tocitem>
+<tocitem target="rsmak.html">
+<name>rsmak</name>
+<purpose>Put together rational spline for standard geometric shapes</purpose>
+</tocitem>
+<tocitem target="spap2.html">
+<name>spap2</name>
+<purpose>Least-squares spline approximation </purpose>
+</tocitem>
+<tocitem target="spapi.html">
+<name>spapi</name>
+<purpose>Spline interpolation </purpose>
+</tocitem>
+<tocitem target="spaps.html">
+<name>spaps</name>
+<purpose>Smoothing spline</purpose>
+</tocitem>
+<tocitem target="spcrv.html">
+<name>spcrv</name>
+<purpose>Spline curve
+by uniform subdivision</purpose>
+</tocitem>
+<tocitem target="splinetool.html">
+<name>splinetool</name>
+<purpose>Experiment with some spline approximation methods</purpose>
+</tocitem>
+<tocitem target="spmak.html">
+<name>spmak</name>
+<purpose>Put together spline in B-form</purpose>
+</tocitem>
+<tocitem target="spterms.html">
+<name>spterms</name>
+<purpose>Explain spline terms</purpose>
+</tocitem>
+<tocitem target="stmak.html">
+<name>stmak</name>
+<purpose>Put together function in stform</purpose>
+</tocitem>
+<tocitem target="tpaps.html">
+<name>tpaps</name>
+<purpose>Thin-plate smoothing spline</purpose>
+</tocitem>
+<tocitem target="titanium.html">
+<name>titanium</name>
+<purpose>Titanium test data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="postprocessing.html">Postprocessing
+<tocitem target="fn2fm.html">
+<name>fn2fm</name>
+<purpose>Convert to specified form</purpose>
+</tocitem>
+<tocitem target="fnbrk.html">
+<name>fnbrk</name>
+<purpose>Name and part(s) of form</purpose>
+</tocitem>
+<tocitem target="fnchg.html">
+<name>fnchg</name>
+<purpose>Change part(s) of form</purpose>
+</tocitem>
+<tocitem target="fncmb.html">
+<name>fncmb</name>
+<purpose>Arithmetic with function(s)</purpose>
+</tocitem>
+<tocitem target="fnder.html">
+<name>fnder</name>
+<purpose>Differentiate function</purpose>
+</tocitem>
+<tocitem target="fndir.html">
+<name>fndir</name>
+<purpose>Directional derivative of function</purpose>
+</tocitem>
+<tocitem target="fnint.html">
+<name>fnint</name>
+<purpose>Integrate function</purpose>
+</tocitem>
+<tocitem target="fnjmp.html">
+<name>fnjmp</name>
+<purpose>Jumps, i.e., f(x+)-f(x-)</purpose>
+</tocitem>
+<tocitem target="fnmin.html">
+<name>fnmin</name>
+<purpose>Minimum of function in given interval</purpose>
+</tocitem>
+<tocitem target="fnplt.html">
+<name>fnplt</name>
+<purpose>Plot function</purpose>
+</tocitem>
+<tocitem target="fnrfn.html">
+<name>fnrfn</name>
+<purpose>Refine partition of form</purpose>
+</tocitem>
+<tocitem target="fntlr.html">
+<name>fntlr</name>
+<purpose>Taylor coefficients</purpose>
+</tocitem>
+<tocitem target="fnval.html">
+<name>fnval</name>
+<purpose>Evaluate spline function</purpose>
+</tocitem>
+<tocitem target="fnxtr.html">
+<name>fnxtr</name>
+<purpose>Extrapolate spline</purpose>
+</tocitem>
+<tocitem target="fnzeros.html">
+<name>fnzeros</name>
+<purpose>Roots of spline</purpose>
+</tocitem>
+<tocitem target="franke.html">
+<name>franke</name>
+<purpose>Franke's bivariate test function</purpose>
+</tocitem>
+<tocitem target="spterms.html">
+<name>spterms</name>
+<purpose>Explain spline terms</purpose>
+</tocitem>
+<tocitem target="titanium.html">
+<name>titanium</name>
+<purpose>Titanium test data</purpose>
+</tocitem>
+<tocitem target="bkbrk.html">
+<name>bkbrk</name>
+<purpose>Part(s) of  almost block-diagonal matrix</purpose>
+</tocitem>
+<tocitem target="slvblk.html">
+<name>slvblk</name>
+<purpose>Solve almost block-diagonal linear system</purpose>
+</tocitem>
+<tocitem target="splppsprpp.html">
+<name>splpp, sprpp</name>
+<purpose>Taylor coefficients from local B-coefficients</purpose>
+</tocitem>
+<tocitem target="spcol.html">
+<name>spcol</name>
+<purpose>B-spline collocation
+matrix</purpose>
+</tocitem>
+<tocitem target="stcol.html">
+<name>stcol</name>
+<purpose>Scattered translates collocation
+matrix</purpose>
+</tocitem>
+<tocitem target="subplus.html">
+<name>subplus</name>
+<purpose>Positive part</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="breaks-knots-and-sites.html">Breaks, Knots, and Sites
+<tocitem target="aptknt.html">
+<name>aptknt</name>
+<purpose>Acceptable knot sequence</purpose>
+</tocitem>
+<tocitem target="augknt.html">
+<name>augknt</name>
+<purpose>Augment knot sequence</purpose>
+</tocitem>
+<tocitem target="aveknt.html">
+<name>aveknt</name>
+<purpose>Provide knot averages</purpose>
+</tocitem>
+<tocitem target="brk2knt.html">
+<name>brk2knt</name>
+<purpose>Convert breaks with multiplicities into knots</purpose>
+</tocitem>
+<tocitem target="chbpnt.html">
+<name>chbpnt</name>
+<purpose>Good data sites, Chebyshev-Demko points</purpose>
+</tocitem>
+<tocitem target="knt2brkknt2mlt.html">
+<name>knt2brk, knt2mlt</name>
+<purpose>Convert knots to breaks and their multiplicities</purpose>
+</tocitem>
+<tocitem target="newknt.html">
+<name>newknt</name>
+<purpose>New break distribution</purpose>
+</tocitem>
+<tocitem target="optknt.html">
+<name>optknt</name>
+<purpose>Knot distribution “optimal” for interpolation</purpose>
+</tocitem>
+<tocitem target="sorted.html">
+<name>sorted</name>
+<purpose>Locate sites with respect to mesh sites</purpose>
+</tocitem>
+<tocitem target="bspligui.html">
+<name>bspligui</name>
+<purpose>Experiment with B-spline as function of its knots</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

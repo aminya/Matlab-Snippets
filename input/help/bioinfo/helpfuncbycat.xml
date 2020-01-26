@@ -1,0 +1,2300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="high-throughput-sequencing.html">High-Throughput Sequencing
+<tocitem target="data-import-and-management.html">Data Import
+<tocitem target="ref/fastainfo.html">
+<name>fastainfo</name>
+<purpose>Return information about FASTA file</purpose>
+</tocitem>
+<tocitem target="ref/fastaread.html">
+<name>fastaread</name>
+<purpose>Read data from FASTA file</purpose>
+</tocitem>
+<tocitem target="ref/fastawrite.html">
+<name>fastawrite</name>
+<purpose>Write to file using FASTA format</purpose>
+</tocitem>
+<tocitem target="ref/fastqinfo.html">
+<name>fastqinfo</name>
+<purpose>Return information about FASTQ file</purpose>
+</tocitem>
+<tocitem target="ref/fastqread.html">
+<name>fastqread</name>
+<purpose>Read data from FASTQ file</purpose>
+</tocitem>
+<tocitem target="ref/fastqwrite.html">
+<name>fastqwrite</name>
+<purpose>Write to file using FASTQ format</purpose>
+</tocitem>
+<tocitem target="ref/saminfo.html">
+<name>saminfo</name>
+<purpose>Return information about SAM file</purpose>
+</tocitem>
+<tocitem target="ref/samsort.html">
+<name>samsort</name>
+<purpose>Sort SAM files</purpose>
+</tocitem>
+<tocitem target="ref/samread.html">
+<name>samread</name>
+<purpose>Read data from SAM file</purpose>
+</tocitem>
+<tocitem target="ref/baminfo.html">
+<name>baminfo</name>
+<purpose>Return information about BAM file</purpose>
+</tocitem>
+<tocitem target="ref/bamread.html">
+<name>bamread</name>
+<purpose>Read data from BAM file</purpose>
+</tocitem>
+<tocitem target="ref/bamsort.html">
+<name>bamsort</name>
+<purpose>Sort BAM files</purpose>
+</tocitem>
+<tocitem target="ref/bamindexread.html">
+<name>bamindexread</name>
+<purpose>Read BAM Index, BAI, file</purpose>
+</tocitem>
+<tocitem target="ref/bioread.combine.html">
+<name>combine</name>
+<purpose>Combine two objects</purpose>
+</tocitem>
+<tocitem target="ref/bioread.get.html">
+<name>get</name>
+<purpose>Retrieve property of object</purpose>
+</tocitem>
+<tocitem target="ref/getdatagffannotation.html">
+<name>getData</name>
+<purpose>Create structure containing subset of data from
+            GFFAnnotation</purpose>
+</tocitem>
+<tocitem target="ref/getdatagtfannotation.html">
+<name>getData</name>
+<purpose>Create structure containing subset of data from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getdictionarybioindexedfile.html">
+<name>getDictionary</name>
+<purpose>Retrieve reference sequence names from SAM-formatted source
+file associated with BioIndexedFile object</purpose>
+</tocitem>
+<tocitem target="ref/getentrybyindexbioindexedfile.html">
+<name>getEntryByIndex</name>
+<purpose>Retrieve entries from source file associated with BioIndexedFile
+object using numeric index</purpose>
+</tocitem>
+<tocitem target="ref/getentrybykeybioindexedfile.html">
+<name>getEntryByKey</name>
+<purpose>Retrieve entries from source file associated with BioIndexedFile
+object using alphanumeric key</purpose>
+</tocitem>
+<tocitem target="ref/getexonsgtfannotation.html">
+<name>getExons</name>
+<purpose>Return table of exons from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getfeaturenamesgffannotation.html">
+<name>getFeatureNames</name>
+<purpose>Retrieve unique feature names from GFFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getfeaturenamesgtfannotation.html">
+<name>getFeatureNames</name>
+<purpose>Retrieve unique feature names from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getgenesgtfannotation.html">
+<name>getGenes</name>
+<purpose>Return table of unique genes in GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getgenenamesgtfannotation.html">
+<name>getGeneNames</name>
+<purpose>Retrieve unique gene names from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.getheader.html">
+<name>getHeader</name>
+<purpose>Retrieve sequence headers from object</purpose>
+</tocitem>
+<tocitem target="ref/getindexgffannotation.html">
+<name>getIndex</name>
+<purpose>Return index array of annotations from GFFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getindexgtfannotation.html">
+<name>getIndex</name>
+<purpose>Return index array of annotations from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getindexbykeybioindexedfile.html">
+<name>getIndexByKey</name>
+<purpose>Retrieve indices from source file associated with BioIndexedFile
+object using alphanumeric key</purpose>
+</tocitem>
+<tocitem target="ref/getkeysbioindexedfile.html">
+<name>getKeys</name>
+<purpose> Retrieve alphanumeric keys from source file associated
+with BioIndexedFile object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.getquality.html">
+<name>getQuality</name>
+<purpose>Retrieve sequence quality information from object </purpose>
+</tocitem>
+<tocitem target="ref/getrangegffannotation.html">
+<name>getRange</name>
+<purpose>Retrieve range of annotations from GFFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getrangegtfannotation.html">
+<name>getRange</name>
+<purpose>Retrieve range of annotations from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getreferencenamesgffannotation.html">
+<name>getReferenceNames</name>
+<purpose>Retrieve reference names from GFFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getreferencenamesgtfannotation.html">
+<name>getReferenceNames</name>
+<purpose>Retrieve reference names from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getsegmentsgtfannotation.html">
+<name>getSegments</name>
+<purpose>Return table of non-overlapping segments from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.getsequence.html">
+<name>getSequence</name>
+<purpose>Retrieve sequences from object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.getsubsequence.html">
+<name>getSubsequence</name>
+<purpose>Retrieve partial sequences from object</purpose>
+</tocitem>
+<tocitem target="ref/getsubsetbioindexedfile.html">
+<name>getSubset</name>
+<purpose>Create object containing subset of elements from BioIndexedFile
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.getsubset.html">
+<name>getSubset</name>
+<purpose>Retrieve subset of elements from object</purpose>
+</tocitem>
+<tocitem target="ref/getsubsetgffannotation.html">
+<name>getSubset</name>
+<purpose>Retrieve subset of elements from GFFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/getsubsetgtfannotation.html">
+<name>getSubset</name>
+<purpose>Create object containing subset of elements from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/gettranscriptsgtfannotation.html">
+<name>getTranscripts</name>
+<purpose>Return table of unique transcripts in GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/gettranscriptnamesgtfannotation.html">
+<name>getTranscriptNames</name>
+<purpose>Retrieve unique transcript names from GTFAnnotation object</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plotperpositioncountbyquality.html">
+<name>plotPerPositionCountByQuality</name>
+<purpose>Plot fractions of reads with Phred scores in ranges</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plotperpositiongc.html">
+<name>plotPerPositionGC</name>
+<purpose>Plot percentages of G or C nucleotides at each base position</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plotperpositionquality.html">
+<name>plotPerPositionQuality</name>
+<purpose>Plot Phred score distributions</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plotpersequencegc.html">
+<name>plotPerSequenceGC</name>
+<purpose>Plot G or C nucleotide distribution</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plotpersequencequality.html">
+<name>plotPerSequenceQuality</name>
+<purpose>Plot distribution of average quality scores</purpose>
+</tocitem>
+<tocitem target="ref/bioread.plotsummary.html">
+<name>plotSummary</name>
+<purpose>(Removed) Plot summary statistics of NGS data</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plotsummary.html">
+<name>plotSummary</name>
+<purpose>Plot summary statistics of a BioReadQualityStatistics
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioreadqualitystatistics.plottotalgc.html">
+<name>plotTotalGC</name>
+<purpose>Plot distribution of all nucleotides of short-read sequences</purpose>
+</tocitem>
+<tocitem target="ref/readbioindexedfile.html">
+<name>read</name>
+<purpose>Read one or more entries from source file associated with
+BioIndexedFile object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.set.html">
+<name>set</name>
+<purpose>Set property of object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.setheader.html">
+<name>setHeader</name>
+<purpose>Update header information of reads</purpose>
+</tocitem>
+<tocitem target="ref/bioread.setquality.html">
+<name>setQuality</name>
+<purpose>Update quality information</purpose>
+</tocitem>
+<tocitem target="ref/bioread.setsubsequence.html">
+<name>setSubsequence</name>
+<purpose>Update partial sequences</purpose>
+</tocitem>
+<tocitem target="ref/bioread.setsequence.html">
+<name>setSequence</name>
+<purpose>Update read sequences</purpose>
+</tocitem>
+<tocitem target="ref/bioread.setsubset.html">
+<name>setSubset</name>
+<purpose>Update elements of object</purpose>
+</tocitem>
+<tocitem target="ref/bioread.write.html">
+<name>write</name>
+<purpose>Write contents of BioRead or BioMap object to file</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="preprocessing-ngs-data.html">Preprocessing
+<tocitem target="ref/seqfilter.html">
+<name>seqfilter</name>
+<purpose>Filter out sequences based on specified criterion</purpose>
+</tocitem>
+<tocitem target="ref/seqtrim.html">
+<name>seqtrim</name>
+<purpose>Trim sequences based on specified criterion</purpose>
+</tocitem>
+<tocitem target="ref/seqsplit.html">
+<name>seqsplit</name>
+<purpose>Split sequences into separate files based on barcodes</purpose>
+</tocitem>
+<tocitem target="ref/seqsplitpe.html">
+<name>seqsplitpe</name>
+<purpose>Split merged paired-end sequences into separate files</purpose>
+</tocitem>
+<tocitem target="ref/seqqcplot.html">
+<name>seqqcplot</name>
+<purpose>Create quality control plots for sequence and quality
+data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="alignment-bowtie.html">Alignment
+<tocitem target="ref/bowtie.html">
+<name>bowtie</name>
+<purpose>Map short reads to reference sequence using Burrows-Wheeler
+transform</purpose>
+</tocitem>
+<tocitem target="ref/bowtiebuild.html">
+<name>bowtiebuild</name>
+<purpose>Generate index using Burrows-Wheeler transform</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2.html">
+<name>bowtie2</name>
+<purpose>Map sequence reads to reference sequence</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2build.html">
+<name>bowtie2build</name>
+<purpose>Create Bowtie 2 index files from reference sequences</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2inspect.html">
+<name>bowtie2inspect</name>
+<purpose>Inspect Bowtie 2 index files</purpose>
+</tocitem>
+<tocitem target="ref/align2cigar.html">
+<name>align2cigar</name>
+<purpose>Convert aligned sequences to corresponding signatures in CIGAR format</purpose>
+</tocitem>
+<tocitem target="ref/cigar2align.html">
+<name>cigar2align</name>
+<purpose>Convert unaligned sequences to aligned sequences using signatures in CIGAR format </purpose>
+</tocitem>
+<tocitem target="ref/bowtie2alignoptions.preset.html">
+<name>preset</name>
+<purpose>Set combination of alignment options</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2alignoptions.getbowtie2table.html">
+<name>getBowtie2Table</name>
+<purpose>Retrieve table with object properties and equivalent Bowtie 2
+            options</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2alignoptions.getbowtie2command.html">
+<name>getBowtie2Command</name>
+<purpose>Translate object properties to Bowtie 2 options</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2alignoptions.run.html">
+<name>run</name>
+<purpose>Map sequence reads to reference sequence using Bowtie 2</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2buildoptions.run.html">
+<name>run</name>
+<purpose>Build Bowtie 2 index files</purpose>
+</tocitem>
+<tocitem target="ref/bowtie2inspectoptions.run.html">
+<name>run</name>
+<purpose>Inspect Bowtie 2 index files</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getstop.html">
+<name>getStop</name>
+<purpose>Compute stop positions of aligned read sequences from BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.filterbyflag.html">
+<name>filterByFlag</name>
+<purpose>Filter sequence reads by SAM flag</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getalignment.html">
+<name>getAlignment</name>
+<purpose>Construct alignment represented in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getbasecoverage.html">
+<name>getBaseCoverage</name>
+<purpose>Return base-by-base alignment coverage of reference sequence
+in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getcompactalignment.html">
+<name>getCompactAlignment</name>
+<purpose>Construct compact alignment represented in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getcounts.html">
+<name>getCounts</name>
+<purpose>Return count of read sequences aligned to reference sequence
+in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getcoverage.html">
+<name>getCoverage</name>
+<purpose>Compute read coverage in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getflag.html">
+<name>getFlag</name>
+<purpose>Retrieve read sequence flags from BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getindex.html">
+<name>getIndex</name>
+<purpose>Return indices of read sequences aligned to reference
+sequence in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getinfo.html">
+<name>getInfo</name>
+<purpose>Retrieve information for single element of BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getmappingquality.html">
+<name>getMappingQuality</name>
+<purpose>Retrieve sequence mapping quality scores from  BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getmateposition.html">
+<name>getMatePosition</name>
+<purpose>Retrieve mate positions of read sequences from BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.getreference.html">
+<name>getReference</name>
+<purpose>Retrieve reference sequence from BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.getsignature.html">
+<name>getSignature</name>
+<purpose>Retrieve signature (alignment information) from BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.getstart.html">
+<name>getStart</name>
+<purpose>Retrieve start positions of aligned read sequences from BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.getsummary.html">
+<name>getSummary</name>
+<purpose>Print summary of BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.setflag.html">
+<name>setFlag</name>
+<purpose>Set read sequence flags for BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.setmappingquality.html">
+<name>setMappingQuality</name>
+<purpose>Set sequence mapping quality scores for BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.setmateposition.html">
+<name>setMatePosition</name>
+<purpose>Set mate positions of read sequences in BioMap object</purpose>
+</tocitem>
+<tocitem target="ref/biomap.setreference.html">
+<name>setReference</name>
+<purpose>Set name of reference sequence for BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.setsignature.html">
+<name>setSignature</name>
+<purpose>Set signature (alignment information) for BioMap object </purpose>
+</tocitem>
+<tocitem target="ref/biomap.setstart.html">
+<name>setStart</name>
+<purpose>Set start positions of aligned read sequences in BioMap object </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="statistical-analysis-ngs.html">Statistical Analysis
+<tocitem target="ref/cufflinks.html">
+<name>cufflinks</name>
+<purpose>Assemble transcriptome from aligned reads</purpose>
+</tocitem>
+<tocitem target="ref/cuffcompare.html">
+<name>cuffcompare</name>
+<purpose>Compare assembled transcripts across multiple experiments</purpose>
+</tocitem>
+<tocitem target="ref/cuffdiff.html">
+<name>cuffdiff</name>
+<purpose>Identify significant changes in transcript expression</purpose>
+</tocitem>
+<tocitem target="ref/cuffmerge.html">
+<name>cuffmerge</name>
+<purpose>Merge RNA-seq assemblies into a master transcriptome</purpose>
+</tocitem>
+<tocitem target="ref/cuffnorm.html">
+<name>cuffnorm</name>
+<purpose>Normalize transcript expression levels</purpose>
+</tocitem>
+<tocitem target="ref/cuffquant.html">
+<name>cuffquant</name>
+<purpose>Quantify gene and transcript expression profiles</purpose>
+</tocitem>
+<tocitem target="ref/cuffgffread.html">
+<name>cuffgffread</name>
+<purpose>Filter and convert GFF and GTF files</purpose>
+</tocitem>
+<tocitem target="ref/cuffgtf2sam.html">
+<name>cuffgtf2sam</name>
+<purpose>Convert GTF files to SAM files</purpose>
+</tocitem>
+<tocitem target="ref/mattest.html">
+<name>mattest</name>
+<purpose>Perform two-sample t-test to evaluate differential expression
+of genes from two experimental conditions or phenotypes</purpose>
+</tocitem>
+<tocitem target="ref/mafdr.html">
+<name>mafdr</name>
+<purpose>Estimate positive false discovery rate for multiple hypothesis testing</purpose>
+</tocitem>
+<tocitem target="ref/nbintest.html">
+<name>nbintest</name>
+<purpose>Unpaired hypothesis test for count data with small sample sizes</purpose>
+</tocitem>
+<tocitem target="ref/featurecount.html">
+<name>featurecount</name>
+<purpose>Compute the number of reads mapped to genomic features</purpose>
+</tocitem>
+<tocitem target="ref/metafeatures.html">
+<name>metafeatures</name>
+<purpose>Attractor metagene algorithm for feature engineering using
+mutual information-based learning</purpose>
+</tocitem>
+<tocitem target="ref/rankfeatures.html">
+<name>rankfeatures</name>
+<purpose>Rank key features by class separability criteria</purpose>
+</tocitem>
+<tocitem target="ref/randfeatures.html">
+<name>randfeatures</name>
+<purpose>Generate randomized subset of features</purpose>
+</tocitem>
+<tocitem target="ref/knnimpute.html">
+<name>knnimpute</name>
+<purpose>Impute missing data using nearest-neighbor method</purpose>
+</tocitem>
+<tocitem target="ref/crossvalind.html">
+<name>crossvalind</name>
+<purpose>Generate cross-validation indices</purpose>
+</tocitem>
+<tocitem target="ref/classperf.html">
+<name>classperf</name>
+<purpose>Evaluate classifier performance</purpose>
+</tocitem>
+<tocitem target="ref/plotchisquaredfit.html">
+<name>plotChiSquaredFit</name>
+<purpose>Plot goodnesss-of-fit for variance regression</purpose>
+</tocitem>
+<tocitem target="ref/plotvariancelink.html">
+<name>plotVarianceLink</name>
+<purpose>Plot the sample variance versus the estimate of the condition-dependent
+mean</purpose>
+</tocitem>
+<tocitem target="ref/cufflinksoptions.getcommand.html">
+<name>getCommand</name>
+<purpose>Translate object properties to original options syntax</purpose>
+</tocitem>
+<tocitem target="ref/cufflinksoptions.getoptionstable.html">
+<name>getOptionsTable</name>
+<purpose>Return table with all properties and equivalent options in original
+      syntax</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="visualize-ngs-data.html">Visualization
+<tocitem target="ref/ngsbrowser.html">
+<name>ngsbrowser</name>
+<purpose>(To be removed) Open NGS Browser to visualize and explore
+            alignments</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="microarray-analysis.html">Microarray Analysis
+<tocitem target="data-import-and-management-1.html">Data Import and Management
+<tocitem target="ref/affyread.html">
+<name>affyread</name>
+<purpose>Read microarray data from Affymetrix GeneChip file</purpose>
+</tocitem>
+<tocitem target="ref/affysnpannotread.html">
+<name>affysnpannotread</name>
+<purpose>Read Affymetrix Mapping DNA array data from CSV-format
+annotation file</purpose>
+</tocitem>
+<tocitem target="ref/affyprobeseqread.html">
+<name>affyprobeseqread</name>
+<purpose>Read data file containing probe sequence information for Affymetrix GeneChip array</purpose>
+</tocitem>
+<tocitem target="ref/celintensityread.html">
+<name>celintensityread</name>
+<purpose>Read probe intensities from Affymetrix CEL files</purpose>
+</tocitem>
+<tocitem target="ref/getgeodata.html">
+<name>getgeodata</name>
+<purpose>Retrieve Gene Expression Omnibus (GEO) format data</purpose>
+</tocitem>
+<tocitem target="ref/geoseriesread.html">
+<name>geoseriesread</name>
+<purpose>Read Gene Expression Omnibus (GEO) Series (GSE) format
+data</purpose>
+</tocitem>
+<tocitem target="ref/geosoftread.html">
+<name>geosoftread</name>
+<purpose>Read Gene Expression Omnibus (GEO) SOFT format data</purpose>
+</tocitem>
+<tocitem target="ref/galread.html">
+<name>galread</name>
+<purpose>Read microarray data from GenePix array list file</purpose>
+</tocitem>
+<tocitem target="ref/gprread.html">
+<name>gprread</name>
+<purpose>Read microarray data from GenePix Results (GPR) file</purpose>
+</tocitem>
+<tocitem target="ref/agferead.html">
+<name>agferead</name>
+<purpose>Read Agilent Feature Extraction Software file</purpose>
+</tocitem>
+<tocitem target="ref/ilmnbsread.html">
+<name>ilmnbsread</name>
+<purpose>Read gene expression data exported from Illumina BeadStudio software</purpose>
+</tocitem>
+<tocitem target="ref/imageneread.html">
+<name>imageneread</name>
+<purpose>Read microarray data from ImaGene Results file</purpose>
+</tocitem>
+<tocitem target="ref/sptread.html">
+<name>sptread</name>
+<purpose>Read data from SPOT file</purpose>
+</tocitem>
+<tocitem target="ref/goannotread.html">
+<name>goannotread</name>
+<purpose>Read annotations from Gene Ontology annotated file</purpose>
+</tocitem>
+<tocitem target="ref/cytobandread.html">
+<name>cytobandread</name>
+<purpose>Read cytogenetic banding information</purpose>
+</tocitem>
+<tocitem target="ref/datamatrixobject.html">
+<name>DataMatrix object</name>
+<purpose>Data structure encapsulating data and metadata from microarray
+experiment so that it can be indexed by gene or probe identifiers
+and by sample identifiers</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.abstract.html">
+<name>abstract</name>
+<purpose>Retrieve or set abstract describing experiment in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/dispdatamatrix.html">
+<name>disp (DataMatrix)</name>
+<purpose>Display DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/dmarrayfundatamatrix.html">
+<name>dmarrayfun (DataMatrix)</name>
+<purpose>Apply function to each element in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/dmbsxfundatamatrix.html">
+<name>dmbsxfun (DataMatrix)</name>
+<purpose>Apply element-by-element binary operation to two DataMatrix
+objects with singleton expansion enabled</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.dmnames.html">
+<name>dmNames</name>
+<purpose>Retrieve or set Name properties of
+DataMatrix objects in ExptData object</purpose>
+</tocitem>
+<tocitem target="ref/dmwritedatamatrix.html">
+<name>dmwrite (DataMatrix)</name>
+<purpose>Write DataMatrix object to text file</purpose>
+</tocitem>
+<tocitem target="ref/doubledatamatrix.html">
+<name>double (DataMatrix)</name>
+<purpose>Convert DataMatrix object to double-precision array</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.elementdata.html">
+<name>elementData</name>
+<purpose>Retrieve or set data element (DataMatrix object) in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.elementdata.html">
+<name>elementData</name>
+<purpose>Retrieve or set data element (DataMatrix object) in ExptData
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.elementnames.html">
+<name>elementNames</name>
+<purpose>Retrieve or set element names of DataMatrix objects in
+ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.elementnames.html">
+<name>elementNames</name>
+<purpose>Retrieve or set element names of DataMatrix objects in
+ExptData object</purpose>
+</tocitem>
+<tocitem target="ref/eqdatamatrix.html">
+<name>eq (DataMatrix)</name>
+<purpose>Test DataMatrix objects for equality</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.expressions.html">
+<name>expressions</name>
+<purpose>Retrieve or set Expressions DataMatrix
+object from ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.exprwrite.html">
+<name>exprWrite</name>
+<purpose>Write expression values in ExpressionSet object to text
+file</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.exptdata.html">
+<name>exptData</name>
+<purpose>Retrieve or set experiment data in ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.exptinfo.html">
+<name>exptInfo</name>
+<purpose>Retrieve or set experiment information in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.featuredata.html">
+<name>featureData</name>
+<purpose>Retrieve or set feature metadata in ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.featurenames.html">
+<name>featureNames</name>
+<purpose>Retrieve or set feature names in ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.featurenames.html">
+<name>featureNames</name>
+<purpose>Retrieve or set feature names in ExptData object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.featurevardesc.html">
+<name>featureVarDesc</name>
+<purpose>Retrieve or set feature variable descriptions in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.featurevarnames.html">
+<name>featureVarNames</name>
+<purpose>Retrieve or set feature variable names in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.featurevarvalues.html">
+<name>featureVarValues</name>
+<purpose>Retrieve or set feature variable data values in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/gedatamatrix.html">
+<name>ge (DataMatrix)</name>
+<purpose>Test DataMatrix objects for greater than or equal to</purpose>
+</tocitem>
+<tocitem target="ref/getdatamatrix.html">
+<name>get (DataMatrix)</name>
+<purpose>Retrieve information about DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/gtdatamatrix.html">
+<name>gt (DataMatrix)</name>
+<purpose>Test DataMatrix objects for greater than</purpose>
+</tocitem>
+<tocitem target="ref/horzcatdatamatrix.html">
+<name>horzcat (DataMatrix)</name>
+<purpose>Concatenate DataMatrix objects horizontally</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.isempty.html">
+<name>isempty</name>
+<purpose>Determine whether ExptData object is empty</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.miame.isempty.html">
+<name>isempty</name>
+<purpose>Determine whether MIAME object is empty</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.isempty.html">
+<name>isempty</name>
+<purpose>Determine whether MetaData object is empty</purpose>
+</tocitem>
+<tocitem target="ref/isequaldatamatrix.html">
+<name>isequal (DataMatrix)</name>
+<purpose>Test DataMatrix objects for equality</purpose>
+</tocitem>
+<tocitem target="ref/isequalndatamatrix.html">
+<name>isequaln (DataMatrix)</name>
+<purpose>Test DataMatrix objects for equality, treating NaNs as
+equal</purpose>
+</tocitem>
+<tocitem target="ref/isequalwithequalnansdatamatrix.html">
+<name>isequalwithequalnans (DataMatrix)</name>
+<purpose>Test DataMatrix objects for equality, treating NaNs as
+equal</purpose>
+</tocitem>
+<tocitem target="ref/ldividedatamatrix.html">
+<name>ldivide (DataMatrix)</name>
+<purpose>Left array divide DataMatrix objects</purpose>
+</tocitem>
+<tocitem target="ref/ledatamatrix.html">
+<name>le (DataMatrix)</name>
+<purpose>Test DataMatrix objects for less than or equal to</purpose>
+</tocitem>
+<tocitem target="ref/ltdatamatrix.html">
+<name>lt (DataMatrix)</name>
+<purpose>Test DataMatrix objects for less than</purpose>
+</tocitem>
+<tocitem target="ref/maxdatamatrix.html">
+<name>max (DataMatrix)</name>
+<purpose>Return maximum values in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/meandatamatrix.html">
+<name>mean (DataMatrix)</name>
+<purpose>Return average or mean values in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/mediandatamatrix.html">
+<name>median (DataMatrix)</name>
+<purpose>Return median values in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/mindatamatrix.html">
+<name>min (DataMatrix)</name>
+<purpose>Return minimum values in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/minusdatamatrix.html">
+<name>minus (DataMatrix)</name>
+<purpose>Subtract DataMatrix objects</purpose>
+</tocitem>
+<tocitem target="ref/ndimsdatamatrix.html">
+<name>ndims (DataMatrix)</name>
+<purpose>Return number of dimensions in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/nedatamatrix.html">
+<name>ne (DataMatrix)</name>
+<purpose>Test DataMatrix objects for inequality</purpose>
+</tocitem>
+<tocitem target="ref/numeldatamatrix.html">
+<name>numel (DataMatrix)</name>
+<purpose>Return number of elements in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/plotdatamatrix.html">
+<name>plot (DataMatrix)</name>
+<purpose>Draw 2-D line plot of DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/plusdatamatrix.html">
+<name>plus (DataMatrix)</name>
+<purpose>Add DataMatrix objects</purpose>
+</tocitem>
+<tocitem target="ref/powerdatamatrix.html">
+<name>power (DataMatrix)</name>
+<purpose>Array power DataMatrix objects</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.pubmedid.html">
+<name>pubMedID</name>
+<purpose>Retrieve or set PubMed IDs in ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/rdividedatamatrix.html">
+<name>rdivide (DataMatrix)</name>
+<purpose>Right array divide DataMatrix objects</purpose>
+</tocitem>
+<tocitem target="ref/rownamesdatamatrix.html">
+<name>rownames (DataMatrix)</name>
+<purpose>Retrieve or set row names of DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.sampledata.html">
+<name>sampleData</name>
+<purpose>Retrieve or set sample metadata in ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.samplenames.html">
+<name>sampleNames</name>
+<purpose>Retrieve or set sample names in ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.samplenames.html">
+<name>sampleNames</name>
+<purpose>Retrieve or set sample names in ExptData object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.samplenames.html">
+<name>sampleNames</name>
+<purpose>Retrieve or set sample names in MetaData object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.samplevardesc.html">
+<name>sampleVarDesc</name>
+<purpose>Retrieve or set sample variable descriptions in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.samplevarnames.html">
+<name>sampleVarNames</name>
+<purpose>Retrieve or set sample variable names in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.samplevarvalues.html">
+<name>sampleVarValues</name>
+<purpose>Retrieve or set sample variable values in ExpressionSet
+object</purpose>
+</tocitem>
+<tocitem target="ref/setdatamatrix.html">
+<name>set (DataMatrix)</name>
+<purpose>Set property of DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/singledatamatrix.html">
+<name>single (DataMatrix)</name>
+<purpose>Convert DataMatrix object to single-precision array</purpose>
+</tocitem>
+<tocitem target="ref/bioma.expressionset.size.html">
+<name>size</name>
+<purpose>Return size of ExpressionSet object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.size.html">
+<name>size</name>
+<purpose>Return size of ExptData object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.size.html">
+<name>size</name>
+<purpose>Return size of MetaData object</purpose>
+</tocitem>
+<tocitem target="ref/sortcolsdatamatrix.html">
+<name>sortcols (DataMatrix)</name>
+<purpose>Sort columns of DataMatrix object in ascending or descending
+order</purpose>
+</tocitem>
+<tocitem target="ref/sortrowsdatamatrix.html">
+<name>sortrows (DataMatrix)</name>
+<purpose>Sort rows of DataMatrix object in ascending or descending
+order</purpose>
+</tocitem>
+<tocitem target="ref/stddatamatrix.html">
+<name>std (DataMatrix)</name>
+<purpose>Return standard deviation values in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/sumdatamatrix.html">
+<name>sum (DataMatrix)</name>
+<purpose>Return sum of elements in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/timesdatamatrix.html">
+<name>times (DataMatrix)</name>
+<purpose>Multiply DataMatrix objects</purpose>
+</tocitem>
+<tocitem target="ref/vardatamatrix.html">
+<name>var (DataMatrix)</name>
+<purpose>Return variance values in DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.variabledesc.html">
+<name>variableDesc</name>
+<purpose>Retrieve or set variable descriptions for samples in MetaData
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.variablenames.html">
+<name>variableNames</name>
+<purpose>Retrieve or set variable names for samples in MetaData
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.variablevalues.html">
+<name>variableValues</name>
+<purpose>Retrieve or set variable values for samples in MetaData
+object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.varvaluestable.html">
+<name>varValuesTable</name>
+<purpose>Create 2-D graphic table GUI of variable values in MetaData
+object</purpose>
+</tocitem>
+<tocitem target="ref/vertcatdatamatrix.html">
+<name>vertcat (DataMatrix)</name>
+<purpose>Concatenate DataMatrix objects vertically</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="preprocessing-1.html">Preprocessing
+<tocitem target="ref/affyrma.html">
+<name>affyrma</name>
+<purpose>Perform Robust Multi-array Average (RMA) procedure on Affymetrix microarray
+probe-level data</purpose>
+</tocitem>
+<tocitem target="ref/affygcrma.html">
+<name>affygcrma</name>
+<purpose>Perform GC Robust Multi-array Average (GCRMA) procedure
+on Affymetrix microarray probe-level data</purpose>
+</tocitem>
+<tocitem target="ref/affyinvarsetnorm.html">
+<name>affyinvarsetnorm</name>
+<purpose>Perform rank invariant set normalization on probe intensities
+from multiple Affymetrix CEL or DAT files</purpose>
+</tocitem>
+<tocitem target="ref/affyprobeaffinities.html">
+<name>affyprobeaffinities</name>
+<purpose>Compute Affymetrix probe affinities from their sequences
+and MM probe intensities</purpose>
+</tocitem>
+<tocitem target="ref/affysnpintensitysplit.html">
+<name>affysnpintensitysplit</name>
+<purpose>Split Affymetrix SNP probe intensity information
+for alleles A and B</purpose>
+</tocitem>
+<tocitem target="ref/affysnpquartets.html">
+<name>affysnpquartets</name>
+<purpose>Create table of SNP probe quartet results for Affymetrix probe
+set</purpose>
+</tocitem>
+<tocitem target="ref/probesetvalues.html">
+<name>probesetvalues</name>
+<purpose>Create table of Affymetrix probe set intensity values</purpose>
+</tocitem>
+<tocitem target="ref/probesetlookup.html">
+<name>probesetlookup</name>
+<purpose>Look up information for Affymetrix probe set</purpose>
+</tocitem>
+<tocitem target="ref/probesetplot.html">
+<name>probesetplot</name>
+<purpose>Plot Affymetrix probe set intensity values</purpose>
+</tocitem>
+<tocitem target="ref/probesetlink.html">
+<name>probesetlink</name>
+<purpose>Display probe set information on NetAffx Web site</purpose>
+</tocitem>
+<tocitem target="ref/probelibraryinfo.html">
+<name>probelibraryinfo</name>
+<purpose>Create table of probe set library information</purpose>
+</tocitem>
+<tocitem target="ref/rmabackadj.html">
+<name>rmabackadj</name>
+<purpose>Perform background adjustment on Affymetrix microarray
+probe-level data using Robust Multi-array Average (RMA) procedure</purpose>
+</tocitem>
+<tocitem target="ref/rmasummary.html">
+<name>rmasummary</name>
+<purpose>Calculate gene expression values from Affymetrix microarray
+probe-level data using Robust Multi-array Average (RMA) procedure</purpose>
+</tocitem>
+<tocitem target="ref/gcrma.html">
+<name>gcrma</name>
+<purpose>Perform GC Robust Multi-array Average (GCRMA) background
+adjustment, quantile normalization, and median-polish summarization
+on Affymetrix microarray probe-level data</purpose>
+</tocitem>
+<tocitem target="ref/gcrmabackadj.html">
+<name>gcrmabackadj</name>
+<purpose>Perform GC Robust Multi-array Average (GCRMA) background
+adjustment on Affymetrix microarray probe-level data using sequence
+information</purpose>
+</tocitem>
+<tocitem target="ref/zonebackadj.html">
+<name>zonebackadj</name>
+<purpose>Perform background adjustment on Affymetrix microarray
+probe-level data using zone-based method</purpose>
+</tocitem>
+<tocitem target="ref/manorm.html">
+<name>manorm</name>
+<purpose>Normalize microarray data</purpose>
+</tocitem>
+<tocitem target="ref/quantilenorm.html">
+<name>quantilenorm</name>
+<purpose>Quantile normalization over multiple arrays</purpose>
+</tocitem>
+<tocitem target="ref/mainvarsetnorm.html">
+<name>mainvarsetnorm</name>
+<purpose>Perform rank invariant set normalization on gene expression
+values from two experimental conditions or phenotypes</purpose>
+</tocitem>
+<tocitem target="ref/malowess.html">
+<name>malowess</name>
+<purpose>Smooth microarray data using Lowess method</purpose>
+</tocitem>
+<tocitem target="ref/exprprofrange.html">
+<name>exprprofrange</name>
+<purpose>Calculate range of gene expression profiles</purpose>
+</tocitem>
+<tocitem target="ref/exprprofvar.html">
+<name>exprprofvar</name>
+<purpose>Calculate variance of gene expression profiles</purpose>
+</tocitem>
+<tocitem target="ref/geneentropyfilter.html">
+<name>geneentropyfilter</name>
+<purpose>Remove genes with low entropy expression values</purpose>
+</tocitem>
+<tocitem target="ref/genelowvalfilter.html">
+<name>genelowvalfilter</name>
+<purpose>Remove gene profiles with low absolute values</purpose>
+</tocitem>
+<tocitem target="ref/generangefilter.html">
+<name>generangefilter</name>
+<purpose>Remove gene profiles with small profile ranges</purpose>
+</tocitem>
+<tocitem target="ref/genevarfilter.html">
+<name>genevarfilter</name>
+<purpose>Filter genes with small profile variance</purpose>
+</tocitem>
+<tocitem target="ref/maimage.html">
+<name>maimage</name>
+<purpose>Spatial image for microarray data</purpose>
+</tocitem>
+<tocitem target="ref/microplateplot.html">
+<name>microplateplot</name>
+<purpose>Display visualization of microtiter plate</purpose>
+</tocitem>
+<tocitem target="ref/ilmnbslookup.html">
+<name>ilmnbslookup</name>
+<purpose>Look up Illumina BeadStudio target (probe) sequence
+and annotation information</purpose>
+</tocitem>
+<tocitem target="ref/magetfield.html">
+<name>magetfield</name>
+<purpose>Extract data from microarray structure</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="expression-analysis.html">Expression Analysis
+<tocitem target="ref/mattest.html">
+<name>mattest</name>
+<purpose>Perform two-sample t-test to evaluate differential expression
+of genes from two experimental conditions or phenotypes</purpose>
+</tocitem>
+<tocitem target="ref/mafdr.html">
+<name>mafdr</name>
+<purpose>Estimate positive false discovery rate for multiple hypothesis testing</purpose>
+</tocitem>
+<tocitem target="ref/mavolcanoplot.html">
+<name>mavolcanoplot</name>
+<purpose>Create significance versus gene expression ratio (fold
+change) scatter plot of microarray data</purpose>
+</tocitem>
+<tocitem target="ref/mairplot.html">
+<name>mairplot</name>
+<purpose>Create intensity versus ratio scatter plot of microarray
+data</purpose>
+</tocitem>
+<tocitem target="ref/maboxplot.html">
+<name>maboxplot</name>
+<purpose>Create box plot for microarray data</purpose>
+</tocitem>
+<tocitem target="ref/maloglog.html">
+<name>maloglog</name>
+<purpose>Create loglog plot of microarray data</purpose>
+</tocitem>
+<tocitem target="ref/mapcaplot.html">
+<name>mapcaplot</name>
+<purpose>Create Principal Component Analysis (PCA) plot of microarray data</purpose>
+</tocitem>
+<tocitem target="ref/nbintest.html">
+<name>nbintest</name>
+<purpose>Unpaired hypothesis test for count data with small sample sizes</purpose>
+</tocitem>
+<tocitem target="ref/redbluecmap.html">
+<name>redbluecmap</name>
+<purpose>Create red and blue colormap</purpose>
+</tocitem>
+<tocitem target="ref/redgreencmap.html">
+<name>redgreencmap</name>
+<purpose>Create red and green colormap</purpose>
+</tocitem>
+<tocitem target="ref/probesetplot.html">
+<name>probesetplot</name>
+<purpose>Plot Affymetrix probe set intensity values</purpose>
+</tocitem>
+<tocitem target="ref/metafeatures.html">
+<name>metafeatures</name>
+<purpose>Attractor metagene algorithm for feature engineering using
+mutual information-based learning</purpose>
+</tocitem>
+<tocitem target="ref/rankfeatures.html">
+<name>rankfeatures</name>
+<purpose>Rank key features by class separability criteria</purpose>
+</tocitem>
+<tocitem target="ref/randfeatures.html">
+<name>randfeatures</name>
+<purpose>Generate randomized subset of features</purpose>
+</tocitem>
+<tocitem target="ref/knnimpute.html">
+<name>knnimpute</name>
+<purpose>Impute missing data using nearest-neighbor method</purpose>
+</tocitem>
+<tocitem target="ref/crossvalind.html">
+<name>crossvalind</name>
+<purpose>Generate cross-validation indices</purpose>
+</tocitem>
+<tocitem target="ref/classperf.html">
+<name>classperf</name>
+<purpose>Evaluate classifier performance</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.addtitle.html">
+<name>addTitle (HeatMap)</name>
+<purpose>Add title to heatmap or clustergram</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.addxlabel.html">
+<name>addXLabel (HeatMap)</name>
+<purpose>Label x-axis of heatmap or clustergram</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.addylabel.html">
+<name>addYLabel (HeatMap)</name>
+<purpose>Label y-axis of heatmap or clustergram</purpose>
+</tocitem>
+<tocitem target="ref/clustergram.clustergroup.html">
+<name>clusterGroup (clustergram)</name>
+<purpose>Select cluster group</purpose>
+</tocitem>
+<tocitem target="ref/colnamesdatamatrix.html">
+<name>colnames (DataMatrix)</name>
+<purpose>Retrieve or set column names of DataMatrix object</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.exptdata.combine.html">
+<name>combine</name>
+<purpose>Combine two ExptData objects</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.metadata.combine.html">
+<name>combine</name>
+<purpose>Combine two MetaData objects</purpose>
+</tocitem>
+<tocitem target="ref/bioma.data.miame.combine.html">
+<name>combine</name>
+<purpose>Combine two MIAME objects</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.plot.html">
+<name>plot (HeatMap)</name>
+<purpose>Render heatmap or clustergram</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="genetic-variant-analysis.html">Genetic Variant Analysis
+<tocitem target="ref/cghcbs.html">
+<name>cghcbs</name>
+<purpose>Perform circular binary segmentation (CBS) on array-based
+comparative genomic hybridization (aCGH) data</purpose>
+</tocitem>
+<tocitem target="ref/cghfreqplot.html">
+<name>cghfreqplot</name>
+<purpose>Display frequency of DNA copy number alterations across
+multiple samples</purpose>
+</tocitem>
+<tocitem target="ref/chromosomeplot.html">
+<name>chromosomeplot</name>
+<purpose>Plot chromosome ideogram with G-banding pattern</purpose>
+</tocitem>
+<tocitem target="ref/gcrma.html">
+<name>gcrma</name>
+<purpose>Perform GC Robust Multi-array Average (GCRMA) background
+adjustment, quantile normalization, and median-polish summarization
+on Affymetrix microarray probe-level data</purpose>
+</tocitem>
+<tocitem target="ref/gcrmabackadj.html">
+<name>gcrmabackadj</name>
+<purpose>Perform GC Robust Multi-array Average (GCRMA) background
+adjustment on Affymetrix microarray probe-level data using sequence
+information</purpose>
+</tocitem>
+<tocitem target="ref/mattest.html">
+<name>mattest</name>
+<purpose>Perform two-sample t-test to evaluate differential expression
+of genes from two experimental conditions or phenotypes</purpose>
+</tocitem>
+<tocitem target="ref/mafdr.html">
+<name>mafdr</name>
+<purpose>Estimate positive false discovery rate for multiple hypothesis testing</purpose>
+</tocitem>
+<tocitem target="ref/mavolcanoplot.html">
+<name>mavolcanoplot</name>
+<purpose>Create significance versus gene expression ratio (fold
+change) scatter plot of microarray data</purpose>
+</tocitem>
+<tocitem target="ref/mairplot.html">
+<name>mairplot</name>
+<purpose>Create intensity versus ratio scatter plot of microarray
+data</purpose>
+</tocitem>
+<tocitem target="ref/maboxplot.html">
+<name>maboxplot</name>
+<purpose>Create box plot for microarray data</purpose>
+</tocitem>
+<tocitem target="ref/maloglog.html">
+<name>maloglog</name>
+<purpose>Create loglog plot of microarray data</purpose>
+</tocitem>
+<tocitem target="ref/mapcaplot.html">
+<name>mapcaplot</name>
+<purpose>Create Principal Component Analysis (PCA) plot of microarray data</purpose>
+</tocitem>
+<tocitem target="ref/nbintest.html">
+<name>nbintest</name>
+<purpose>Unpaired hypothesis test for count data with small sample sizes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gene-ontology-1.html">Gene Ontology
+<tocitem target="ref/goannotread.html">
+<name>goannotread</name>
+<purpose>Read annotations from Gene Ontology annotated file</purpose>
+</tocitem>
+<tocitem target="ref/num2goid.html">
+<name>num2goid</name>
+<purpose>Convert numbers to Gene Ontology IDs</purpose>
+</tocitem>
+<tocitem target="ref/geneont-class.html">
+<name>geneont</name>
+<purpose>Data structure containing Gene Ontology (GO) information</purpose>
+</tocitem>
+<tocitem target="ref/geneont.getancestors.html">
+<name>getancestors</name>
+<purpose>Find terms that are ancestors of specified Gene Ontology
+(GO) term</purpose>
+</tocitem>
+<tocitem target="ref/geneont.getdescendants.html">
+<name>getdescendants</name>
+<purpose>Find terms that are descendants of specified Gene Ontology
+(GO) term</purpose>
+</tocitem>
+<tocitem target="ref/geneont.getmatrix.html">
+<name>getmatrix</name>
+<purpose>Convert geneont object into relationship matrix</purpose>
+</tocitem>
+<tocitem target="ref/geneont.getrelatives.html">
+<name>getrelatives</name>
+<purpose>Find terms that are relatives of specified Gene Ontology
+(GO) term</purpose>
+</tocitem>
+<tocitem target="ref/term-class.html">
+<name>term</name>
+<purpose>Data structure containing information about Gene Ontology
+(GO) term</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="network-analysis-and-visualization-1.html">Network Analysis and Visualization
+<tocitem target="ref/graphallshortestpaths.html">
+<name>graphallshortestpaths</name>
+<purpose>Find all shortest paths in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphconncomp.html">
+<name>graphconncomp</name>
+<purpose>Find strongly or weakly connected components in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphisdag.html">
+<name>graphisdag</name>
+<purpose>Test for cycles in directed graph</purpose>
+</tocitem>
+<tocitem target="ref/graphisomorphism.html">
+<name>graphisomorphism</name>
+<purpose>Find isomorphism between two graphs</purpose>
+</tocitem>
+<tocitem target="ref/graphisspantree.html">
+<name>graphisspantree</name>
+<purpose>Determine if tree is spanning tree</purpose>
+</tocitem>
+<tocitem target="ref/graphmaxflow.html">
+<name>graphmaxflow</name>
+<purpose>Calculate maximum flow in directed graph</purpose>
+</tocitem>
+<tocitem target="ref/graphminspantree.html">
+<name>graphminspantree</name>
+<purpose>Find minimal spanning tree in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphpred2path.html">
+<name>graphpred2path</name>
+<purpose>Convert predecessor indices to paths</purpose>
+</tocitem>
+<tocitem target="ref/graphshortestpath.html">
+<name>graphshortestpath</name>
+<purpose>Solve shortest path problem in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphtopoorder.html">
+<name>graphtopoorder</name>
+<purpose>Perform topological sort of directed acyclic graph</purpose>
+</tocitem>
+<tocitem target="ref/graphtraverse.html">
+<name>graphtraverse</name>
+<purpose>Traverse graph by following adjacent nodes</purpose>
+</tocitem>
+<tocitem target="ref/biograph.html">
+<name>biograph</name>
+<purpose>Create biograph object</purpose>
+</tocitem>
+<tocitem target="ref/graphallshortestpaths.html">
+<name>graphallshortestpaths</name>
+<purpose>Find all shortest paths in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphconncomp.html">
+<name>graphconncomp</name>
+<purpose>Find strongly or weakly connected components in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphisdag.html">
+<name>graphisdag</name>
+<purpose>Test for cycles in directed graph</purpose>
+</tocitem>
+<tocitem target="ref/graphisomorphism.html">
+<name>graphisomorphism</name>
+<purpose>Find isomorphism between two graphs</purpose>
+</tocitem>
+<tocitem target="ref/graphisspantree.html">
+<name>graphisspantree</name>
+<purpose>Determine if tree is spanning tree</purpose>
+</tocitem>
+<tocitem target="ref/graphmaxflow.html">
+<name>graphmaxflow</name>
+<purpose>Calculate maximum flow in directed graph</purpose>
+</tocitem>
+<tocitem target="ref/graphminspantree.html">
+<name>graphminspantree</name>
+<purpose>Find minimal spanning tree in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphpred2path.html">
+<name>graphpred2path</name>
+<purpose>Convert predecessor indices to paths</purpose>
+</tocitem>
+<tocitem target="ref/graphshortestpath.html">
+<name>graphshortestpath</name>
+<purpose>Solve shortest path problem in graph</purpose>
+</tocitem>
+<tocitem target="ref/graphtopoorder.html">
+<name>graphtopoorder</name>
+<purpose>Perform topological sort of directed acyclic graph</purpose>
+</tocitem>
+<tocitem target="ref/graphtraverse.html">
+<name>graphtraverse</name>
+<purpose>Traverse graph by following adjacent nodes</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.html">
+<name>HeatMap</name>
+<purpose>Object containing matrix and heatmap display properties</purpose>
+</tocitem>
+<tocitem target="ref/redbluecmap.html">
+<name>redbluecmap</name>
+<purpose>Create red and blue colormap</purpose>
+</tocitem>
+<tocitem target="ref/redgreencmap.html">
+<name>redgreencmap</name>
+<purpose>Create red and green colormap</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.html">
+<name>HeatMap object</name>
+<purpose>Object containing matrix and heatmap display properties</purpose>
+</tocitem>
+<tocitem target="ref/clustergram.html">
+<name>clustergram object</name>
+<purpose>Object containing hierarchical clustering analysis data</purpose>
+</tocitem>
+<tocitem target="ref/biographobject.html">
+<name>biograph object</name>
+<purpose>Data structure containing generic interconnected data
+used to implement directed graph</purpose>
+</tocitem>
+<tocitem target="ref/allshortestpathsbiograph.html">
+<name>allshortestpaths (biograph)</name>
+<purpose>Find all shortest paths in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/conncompbiograph.html">
+<name>conncomp (biograph)</name>
+<purpose>Find strongly or weakly connected components in biograph
+object</purpose>
+</tocitem>
+<tocitem target="ref/dolayoutbiograph.html">
+<name>dolayout (biograph)</name>
+<purpose>Calculate node positions and edge trajectories</purpose>
+</tocitem>
+<tocitem target="ref/getbiograph.html">
+<name>get (biograph)</name>
+<purpose>Retrieve information about biograph object</purpose>
+</tocitem>
+<tocitem target="ref/getancestorsbiograph.html">
+<name>getancestors (biograph)</name>
+<purpose>Find ancestors of a node in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/getdescendantsbiograph.html">
+<name>getdescendants (biograph)</name>
+<purpose>Find descendants of a node in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/getedgesbynodeidbiograph.html">
+<name>getedgesbynodeid (biograph)</name>
+<purpose>Get handles to edges in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/getmatrixbiograph.html">
+<name>getmatrix (biograph)</name>
+<purpose>Get connection matrix from biograph object</purpose>
+</tocitem>
+<tocitem target="ref/getweightmatrixbiograph.html">
+<name>getweightmatrix (biograph)</name>
+<purpose>Get connection matrix with weights from biograph object</purpose>
+</tocitem>
+<tocitem target="ref/getnodesbyidbiograph.html">
+<name>getnodesbyid (biograph)</name>
+<purpose>Get handles to nodes</purpose>
+</tocitem>
+<tocitem target="ref/getrelativesbiograph.html">
+<name>getrelatives (biograph)</name>
+<purpose>Find relatives of a node in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/isdagbiograph.html">
+<name>isdag (biograph)</name>
+<purpose>Test for cycles in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/isomorphismbiograph.html">
+<name>isomorphism (biograph)</name>
+<purpose>Find isomorphism between two biograph objects</purpose>
+</tocitem>
+<tocitem target="ref/isspantreebiograph.html">
+<name>isspantree (biograph)</name>
+<purpose>Determine if tree created from biograph object is spanning
+tree</purpose>
+</tocitem>
+<tocitem target="ref/maxflowbiograph.html">
+<name>maxflow (biograph)</name>
+<purpose>Calculate maximum flow in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/minspantreebiograph.html">
+<name>minspantree (biograph)</name>
+<purpose>Find minimal spanning tree in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/setbiograph.html">
+<name>set (biograph)</name>
+<purpose>Set property of biograph object</purpose>
+</tocitem>
+<tocitem target="ref/shortestpathbiograph.html">
+<name>shortestpath (biograph)</name>
+<purpose>Solve shortest path problem in biograph object</purpose>
+</tocitem>
+<tocitem target="ref/topoorderbiograph.html">
+<name>topoorder (biograph)</name>
+<purpose>Perform topological sort of directed acyclic graph extracted
+from biograph object</purpose>
+</tocitem>
+<tocitem target="ref/traversebiograph.html">
+<name>traverse (biograph)</name>
+<purpose>Traverse biograph object by following adjacent nodes</purpose>
+</tocitem>
+<tocitem target="ref/viewbiograph.html">
+<name>view (biograph)</name>
+<purpose>Draw figure from biograph object</purpose>
+</tocitem>
+<tocitem target="ref/heatmap.view.html">
+<name>view (HeatMap)</name>
+<purpose>Display heatmap or clustergram</purpose>
+</tocitem>
+<tocitem target="ref/viewphytree.html">
+<name>view (phytree)</name>
+<purpose>View phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/weightsphytree.html">
+<name>weights (phytree)</name>
+<purpose>Calculate weights for phylogenetic tree</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="sequence-analysis.html">Sequence Analysis
+<tocitem target="data-import-and-export.html">Data Import and Export
+<tocitem target="ref/fastainfo.html">
+<name>fastainfo</name>
+<purpose>Return information about FASTA file</purpose>
+</tocitem>
+<tocitem target="ref/fastaread.html">
+<name>fastaread</name>
+<purpose>Read data from FASTA file</purpose>
+</tocitem>
+<tocitem target="ref/fastawrite.html">
+<name>fastawrite</name>
+<purpose>Write to file using FASTA format</purpose>
+</tocitem>
+<tocitem target="ref/genbankread.html">
+<name>genbankread</name>
+<purpose>Read data from GenBank file</purpose>
+</tocitem>
+<tocitem target="ref/getgenbank.html">
+<name>getgenbank</name>
+<purpose>Retrieve sequence information from GenBank database</purpose>
+</tocitem>
+<tocitem target="ref/genpeptread.html">
+<name>genpeptread</name>
+<purpose>Read data from GenPept file</purpose>
+</tocitem>
+<tocitem target="ref/getgenpept.html">
+<name>getgenpept</name>
+<purpose>Retrieve sequence information from GenPept database</purpose>
+</tocitem>
+<tocitem target="ref/emblread.html">
+<name>emblread</name>
+<purpose>Read data from EMBL file</purpose>
+</tocitem>
+<tocitem target="ref/getembl.html">
+<name>getembl</name>
+<purpose>Retrieve sequence information from EMBL database</purpose>
+</tocitem>
+<tocitem target="ref/pdbread.html">
+<name>pdbread</name>
+<purpose>Read data from Protein Data Bank (PDB) file</purpose>
+</tocitem>
+<tocitem target="ref/pdbwrite.html">
+<name>pdbwrite</name>
+<purpose>Write to file using Protein Data Bank (PDB) format</purpose>
+</tocitem>
+<tocitem target="ref/getpdb.html">
+<name>getpdb</name>
+<purpose>Retrieve protein structure data from Protein Data Bank
+(PDB) database</purpose>
+</tocitem>
+<tocitem target="ref/fastqinfo.html">
+<name>fastqinfo</name>
+<purpose>Return information about FASTQ file</purpose>
+</tocitem>
+<tocitem target="ref/fastqread.html">
+<name>fastqread</name>
+<purpose>Read data from FASTQ file</purpose>
+</tocitem>
+<tocitem target="ref/fastqwrite.html">
+<name>fastqwrite</name>
+<purpose>Write to file using FASTQ format</purpose>
+</tocitem>
+<tocitem target="ref/blastread.html">
+<name>blastread</name>
+<purpose>Read data from NCBI BLAST report file</purpose>
+</tocitem>
+<tocitem target="ref/blastreadlocal.html">
+<name>blastreadlocal</name>
+<purpose>Read data from local BLAST report</purpose>
+</tocitem>
+<tocitem target="ref/blastformat.html">
+<name>blastformat</name>
+<purpose>Create local BLAST database</purpose>
+</tocitem>
+<tocitem target="ref/getblast.html">
+<name>getblast</name>
+<purpose>Retrieve BLAST report from NCBI website</purpose>
+</tocitem>
+<tocitem target="ref/multialignread.html">
+<name>multialignread</name>
+<purpose>Read multiple sequence alignment file</purpose>
+</tocitem>
+<tocitem target="ref/multialignwrite.html">
+<name>multialignwrite</name>
+<purpose>Write multiple alignment to file</purpose>
+</tocitem>
+<tocitem target="ref/pfamhmmread.html">
+<name>pfamhmmread</name>
+<purpose>Read data from PFAM HMM-formatted file</purpose>
+</tocitem>
+<tocitem target="ref/gethmmprof.html">
+<name>gethmmprof</name>
+<purpose>Retrieve hidden Markov model (HMM) profile from PFAM database</purpose>
+</tocitem>
+<tocitem target="ref/gethmmtree.html">
+<name>gethmmtree</name>
+<purpose>Retrieve phylogenetic tree data from PFAM database</purpose>
+</tocitem>
+<tocitem target="ref/gethmmalignment.html">
+<name>gethmmalignment</name>
+<purpose>Retrieve multiple sequence alignment associated with hidden
+Markov model (HMM) profile from PFAM database</purpose>
+</tocitem>
+<tocitem target="ref/phytreeread.html">
+<name>phytreeread</name>
+<purpose>Read phylogenetic tree file</purpose>
+</tocitem>
+<tocitem target="ref/phytreewrite.html">
+<name>phytreewrite</name>
+<purpose>Write phylogenetic tree object to Newick-formatted file</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="nucleotide-sequence-analysis.html">Nucleotide Sequence Analysis
+<tocitem target="ref/basecount.html">
+<name>basecount</name>
+<purpose>Count nucleotides in sequence</purpose>
+</tocitem>
+<tocitem target="ref/codonbias.html">
+<name>codonbias</name>
+<purpose>Calculate codon frequency for each amino acid coded for
+in nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/codoncount.html">
+<name>codoncount</name>
+<purpose>Count codons in nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/dimercount.html">
+<name>dimercount</name>
+<purpose>Count dimers in nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/ntdensity.html">
+<name>ntdensity</name>
+<purpose>Plot density of nucleotides along sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqwordcount.html">
+<name>seqwordcount</name>
+<purpose>Count number of occurrences of word in sequence</purpose>
+</tocitem>
+<tocitem target="ref/nt2aa.html">
+<name>nt2aa</name>
+<purpose>Convert nucleotide sequence to amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/aa2nt.html">
+<name>aa2nt</name>
+<purpose>Convert amino acid sequence to nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/nt2int.html">
+<name>nt2int</name>
+<purpose>Convert nucleotide sequence from letter to integer representation</purpose>
+</tocitem>
+<tocitem target="ref/int2nt.html">
+<name>int2nt</name>
+<purpose>Convert nucleotide sequence from integer to letter representation</purpose>
+</tocitem>
+<tocitem target="ref/dna2rna.html">
+<name>dna2rna</name>
+<purpose>Convert DNA sequence to RNA sequence</purpose>
+</tocitem>
+<tocitem target="ref/rna2dna.html">
+<name>rna2dna</name>
+<purpose>Convert RNA sequence to DNA sequence</purpose>
+</tocitem>
+<tocitem target="ref/revgeneticcode.html">
+<name>revgeneticcode</name>
+<purpose>Return reverse mapping (amino acid to nucleotide codon)
+for genetic code</purpose>
+</tocitem>
+<tocitem target="ref/seqcomplement.html">
+<name>seqcomplement</name>
+<purpose>Calculate complementary strand of nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqrcomplement.html">
+<name>seqrcomplement</name>
+<purpose>Calculate reverse complementary strand of nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqreverse.html">
+<name>seqreverse</name>
+<purpose>Calculate reverse strand of nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/baselookup.html">
+<name>baselookup</name>
+<purpose>Find nucleotide codes, integers, names, and complements</purpose>
+</tocitem>
+<tocitem target="ref/geneticcode.html">
+<name>geneticcode</name>
+<purpose>Return nucleotide codon to amino acid mapping for genetic
+code</purpose>
+</tocitem>
+<tocitem target="ref/oligoprop.html">
+<name>oligoprop</name>
+<purpose>Calculate sequence properties of DNA oligonucleotide</purpose>
+</tocitem>
+<tocitem target="ref/cpgisland.html">
+<name>cpgisland</name>
+<purpose>Locate CpG islands in DNA sequence</purpose>
+</tocitem>
+<tocitem target="ref/joinseq.html">
+<name>joinseq</name>
+<purpose>Join two sequences to produce shortest supersequence</purpose>
+</tocitem>
+<tocitem target="ref/palindromes.html">
+<name>palindromes</name>
+<purpose>Find palindromes in sequence</purpose>
+</tocitem>
+<tocitem target="ref/randseq.html">
+<name>randseq</name>
+<purpose>Generate random sequence from finite alphabet</purpose>
+</tocitem>
+<tocitem target="ref/seqmatch.html">
+<name>seqmatch</name>
+<purpose>Find matches for every character vector in library</purpose>
+</tocitem>
+<tocitem target="ref/seqviewer.html">
+<name>seqviewer</name>
+<purpose>Visualize and interactively explore biological sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqdisp.html">
+<name>seqdisp</name>
+<purpose>Format long sequence output for easy viewing</purpose>
+</tocitem>
+<tocitem target="ref/seqshoworfs.html">
+<name>seqshoworfs</name>
+<purpose>Display open reading frames in sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqshowwords.html">
+<name>seqshowwords</name>
+<purpose>Graphically display words in sequence</purpose>
+</tocitem>
+<tocitem target="ref/featureparse.html">
+<name>featureparse</name>
+<purpose>Parse features from GenBank, GenPept, or EMBL data</purpose>
+</tocitem>
+<tocitem target="ref/featureview.html">
+<name>featureview</name>
+<purpose>Draw linear or circular map of features from GenBank structure</purpose>
+</tocitem>
+<tocitem target="ref/seqconsensus.html">
+<name>seqconsensus</name>
+<purpose>Calculate consensus sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqdotplot.html">
+<name>seqdotplot</name>
+<purpose>Create dot plot of two sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqlogo.html">
+<name>seqlogo</name>
+<purpose>Display sequence logo for nucleotide or amino acid sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqprofile.html">
+<name>seqprofile</name>
+<purpose>Calculate sequence profile from set of multiply aligned
+sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqinsertgaps.html">
+<name>seqinsertgaps</name>
+<purpose>Insert gaps into nucleotide or amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/rebasecuts.html">
+<name>rebasecuts</name>
+<purpose>Find restriction enzymes that cut nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/restrict.html">
+<name>restrict</name>
+<purpose>Split nucleotide sequence at restriction site</purpose>
+</tocitem>
+<tocitem target="ref/seq2regexp.html">
+<name>seq2regexp</name>
+<purpose>Convert sequence with ambiguous characters to regular
+expression</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="protein-and-amino-acid-sequence-analysis.html">Protein and Amino Acid Sequence Analysis
+<tocitem target="ref/aacount.html">
+<name>aacount</name>
+<purpose>Count amino acids in sequence</purpose>
+</tocitem>
+<tocitem target="ref/codonbias.html">
+<name>codonbias</name>
+<purpose>Calculate codon frequency for each amino acid coded for
+in nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/codoncount.html">
+<name>codoncount</name>
+<purpose>Count codons in nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/nmercount.html">
+<name>nmercount</name>
+<purpose>Count n-mers in nucleotide or amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqwordcount.html">
+<name>seqwordcount</name>
+<purpose>Count number of occurrences of word in sequence</purpose>
+</tocitem>
+<tocitem target="ref/aa2nt.html">
+<name>aa2nt</name>
+<purpose>Convert amino acid sequence to nucleotide sequence</purpose>
+</tocitem>
+<tocitem target="ref/nt2aa.html">
+<name>nt2aa</name>
+<purpose>Convert nucleotide sequence to amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/aa2int.html">
+<name>aa2int</name>
+<purpose>Convert amino acid sequence from letter to integer representation</purpose>
+</tocitem>
+<tocitem target="ref/int2aa.html">
+<name>int2aa</name>
+<purpose>Convert amino acid sequence from integer to letter representation</purpose>
+</tocitem>
+<tocitem target="ref/revgeneticcode.html">
+<name>revgeneticcode</name>
+<purpose>Return reverse mapping (amino acid to nucleotide codon)
+for genetic code</purpose>
+</tocitem>
+<tocitem target="ref/aminolookup.html">
+<name>aminolookup</name>
+<purpose>Find amino acid codes, integers, abbreviations, names,
+and codons</purpose>
+</tocitem>
+<tocitem target="ref/geneticcode.html">
+<name>geneticcode</name>
+<purpose>Return nucleotide codon to amino acid mapping for genetic
+code</purpose>
+</tocitem>
+<tocitem target="ref/atomiccomp.html">
+<name>atomiccomp</name>
+<purpose>Calculate atomic composition of protein</purpose>
+</tocitem>
+<tocitem target="ref/isoelectric.html">
+<name>isoelectric</name>
+<purpose>Estimate isoelectric point for amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/isotopicdist.html">
+<name>isotopicdist</name>
+<purpose>Calculate high-resolution isotope mass distribution and
+density function</purpose>
+</tocitem>
+<tocitem target="ref/molweight.html">
+<name>molweight</name>
+<purpose>Calculate molecular weight of amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqviewer.html">
+<name>seqviewer</name>
+<purpose>Visualize and interactively explore biological sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqdisp.html">
+<name>seqdisp</name>
+<purpose>Format long sequence output for easy viewing</purpose>
+</tocitem>
+<tocitem target="ref/seqshoworfs.html">
+<name>seqshoworfs</name>
+<purpose>Display open reading frames in sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqshowwords.html">
+<name>seqshowwords</name>
+<purpose>Graphically display words in sequence</purpose>
+</tocitem>
+<tocitem target="ref/proteinplot.html">
+<name>proteinplot</name>
+<purpose>Open Protein Plot window to investigate properties of
+amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/proteinpropplot.html">
+<name>proteinpropplot</name>
+<purpose>Plot properties of amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/ramachandran.html">
+<name>ramachandran</name>
+<purpose>Draw Ramachandran plot for Protein Data Bank (PDB) data</purpose>
+</tocitem>
+<tocitem target="ref/seqconsensus.html">
+<name>seqconsensus</name>
+<purpose>Calculate consensus sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqdotplot.html">
+<name>seqdotplot</name>
+<purpose>Create dot plot of two sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqlogo.html">
+<name>seqlogo</name>
+<purpose>Display sequence logo for nucleotide or amino acid sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqprofile.html">
+<name>seqprofile</name>
+<purpose>Calculate sequence profile from set of multiply aligned
+sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqinsertgaps.html">
+<name>seqinsertgaps</name>
+<purpose>Insert gaps into nucleotide or amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/cleave.html">
+<name>cleave</name>
+<purpose>Cleave amino acid sequence with enzyme</purpose>
+</tocitem>
+<tocitem target="ref/cleavelookup.html">
+<name>cleavelookup</name>
+<purpose>Find cleavage rule for enzyme or compound</purpose>
+</tocitem>
+<tocitem target="ref/seq2regexp.html">
+<name>seq2regexp</name>
+<purpose>Convert sequence with ambiguous characters to regular
+expression</purpose>
+</tocitem>
+<tocitem target="ref/featureparse.html">
+<name>featureparse</name>
+<purpose>Parse features from GenBank, GenPept, or EMBL data</purpose>
+</tocitem>
+<tocitem target="ref/randseq.html">
+<name>randseq</name>
+<purpose>Generate random sequence from finite alphabet</purpose>
+</tocitem>
+<tocitem target="ref/seqmatch.html">
+<name>seqmatch</name>
+<purpose>Find matches for every character vector in library</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sequence-alignment.html">Sequence Alignment
+<tocitem target="ref/localalign.html">
+<name>localalign</name>
+<purpose>Return local optimal and suboptimal alignments between
+two sequences</purpose>
+</tocitem>
+<tocitem target="ref/nwalign.html">
+<name>nwalign</name>
+<purpose>Globally align two sequences using Needleman-Wunsch algorithm</purpose>
+</tocitem>
+<tocitem target="ref/swalign.html">
+<name>swalign</name>
+<purpose>Locally align two sequences using Smith-Waterman algorithm</purpose>
+</tocitem>
+<tocitem target="ref/seqdotplot.html">
+<name>seqdotplot</name>
+<purpose>Create dot plot of two sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqpdist.html">
+<name>seqpdist</name>
+<purpose>Calculate pairwise distance between sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqalignviewer.html">
+<name>seqalignviewer</name>
+<purpose>Visualize and edit multiple sequence alignment</purpose>
+</tocitem>
+<tocitem target="ref/multialign.html">
+<name>multialign</name>
+<purpose>Align multiple sequences using progressive method</purpose>
+</tocitem>
+<tocitem target="ref/profalign.html">
+<name>profalign</name>
+<purpose>Align two profiles using Needleman-Wunsch global alignment</purpose>
+</tocitem>
+<tocitem target="ref/seqconsensus.html">
+<name>seqconsensus</name>
+<purpose>Calculate consensus sequence</purpose>
+</tocitem>
+<tocitem target="ref/seqprofile.html">
+<name>seqprofile</name>
+<purpose>Calculate sequence profile from set of multiply aligned
+sequences</purpose>
+</tocitem>
+<tocitem target="ref/seqlogo.html">
+<name>seqlogo</name>
+<purpose>Display sequence logo for nucleotide or amino acid sequences</purpose>
+</tocitem>
+<tocitem target="ref/showalignment.html">
+<name>showalignment</name>
+<purpose>Display color-coded sequence alignment</purpose>
+</tocitem>
+<tocitem target="ref/hmmprofalign.html">
+<name>hmmprofalign</name>
+<purpose>Align query sequence to profile using hidden Markov model
+alignment</purpose>
+</tocitem>
+<tocitem target="ref/hmmprofestimate.html">
+<name>hmmprofestimate</name>
+<purpose>Estimate profile hidden Markov model (HMM) parameters
+using pseudocounts</purpose>
+</tocitem>
+<tocitem target="ref/hmmprofgenerate.html">
+<name>hmmprofgenerate</name>
+<purpose>Generate random sequence drawn from profile hidden Markov
+model (HMM)</purpose>
+</tocitem>
+<tocitem target="ref/hmmprofmerge.html">
+<name>hmmprofmerge</name>
+<purpose>Displays a set of HMM profile alignments</purpose>
+</tocitem>
+<tocitem target="ref/hmmprofstruct.html">
+<name>hmmprofstruct</name>
+<purpose>Create or edit hidden Markov model (HMM) profile structure</purpose>
+</tocitem>
+<tocitem target="ref/showhmmprof.html">
+<name>showhmmprof</name>
+<purpose>Plot hidden Markov model (HMM) profile</purpose>
+</tocitem>
+<tocitem target="ref/blastlocal.html">
+<name>blastlocal</name>
+<purpose>Perform search on local BLAST database to create BLAST
+report</purpose>
+</tocitem>
+<tocitem target="ref/blastncbi.html">
+<name>blastncbi</name>
+<purpose>Create remote NCBI BLAST report request ID or link to
+NCBI BLAST report</purpose>
+</tocitem>
+<tocitem target="ref/blosum.html">
+<name>blosum</name>
+<purpose>Return BLOSUM scoring matrix</purpose>
+</tocitem>
+<tocitem target="ref/dayhoff.html">
+<name>dayhoff</name>
+<purpose>Return Dayhoff scoring matrix</purpose>
+</tocitem>
+<tocitem target="ref/gonnet.html">
+<name>gonnet</name>
+<purpose>Return Gonnet scoring matrix</purpose>
+</tocitem>
+<tocitem target="ref/nuc44.html">
+<name>nuc44</name>
+<purpose>Return NUC44 scoring matrix for nucleotide sequences</purpose>
+</tocitem>
+<tocitem target="ref/pam.html">
+<name>pam</name>
+<purpose>Return Point Accepted Mutation (PAM) scoring matrix</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="phylogenetic-analysis.html">Phylogenetic Analysis
+<tocitem target="ref/seqlinkage.html">
+<name>seqlinkage</name>
+<purpose>Construct phylogenetic tree from pairwise distances</purpose>
+</tocitem>
+<tocitem target="ref/seqneighjoin.html">
+<name>seqneighjoin</name>
+<purpose>Construct phylogenetic tree using neighbor-joining method</purpose>
+</tocitem>
+<tocitem target="ref/seqpdist.html">
+<name>seqpdist</name>
+<purpose>Calculate pairwise distance between sequences</purpose>
+</tocitem>
+<tocitem target="ref/phytreeviewer.html">
+<name>phytreeviewer</name>
+<purpose>Visualize, edit, and explore phylogenetic tree data</purpose>
+</tocitem>
+<tocitem target="ref/dnds.html">
+<name>dnds</name>
+<purpose>Estimate synonymous and nonsynonymous substitution rates</purpose>
+</tocitem>
+<tocitem target="ref/dndsml.html">
+<name>dndsml</name>
+<purpose>Estimate synonymous and nonsynonymous substitution rates
+using maximum likelihood method</purpose>
+</tocitem>
+<tocitem target="ref/gethmmtree.html">
+<name>gethmmtree</name>
+<purpose>Retrieve phylogenetic tree data from PFAM database</purpose>
+</tocitem>
+<tocitem target="ref/seqinsertgaps.html">
+<name>seqinsertgaps</name>
+<purpose>Insert gaps into nucleotide or amino acid sequence</purpose>
+</tocitem>
+<tocitem target="ref/clusterphytree.html">
+<name>cluster (phytree)</name>
+<purpose>Validate clusters in phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/getphytree.html">
+<name>get (phytree)</name>
+<purpose>Retrieve information about phylogenetic tree object</purpose>
+</tocitem>
+<tocitem target="ref/getbynamephytree.html">
+<name>getbyname (phytree)</name>
+<purpose>Branches and leaves from phytree object</purpose>
+</tocitem>
+<tocitem target="ref/getcanonicalphytree.html">
+<name>getcanonical (phytree)</name>
+<purpose>Calculate canonical form of phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/getmatrixphytree.html">
+<name>getmatrix (phytree)</name>
+<purpose>Convert phytree object into relationship matrix</purpose>
+</tocitem>
+<tocitem target="ref/getnewickstrphytree.html">
+<name>getnewickstr (phytree)</name>
+<purpose>Create Newick-formatted character vector</purpose>
+</tocitem>
+<tocitem target="ref/pdistphytree.html">
+<name>pdist (phytree)</name>
+<purpose>Calculate pairwise patristic distances in phytree object</purpose>
+</tocitem>
+<tocitem target="ref/plotphytree.html">
+<name>plot (phytree)</name>
+<purpose>Draw phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/prunephytree.html">
+<name>prune (phytree)</name>
+<purpose>Remove branch nodes from phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/reorderphytree.html">
+<name>reorder (phytree)</name>
+<purpose>Reorder leaves of phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/rerootphytree.html">
+<name>reroot (phytree)</name>
+<purpose>Change root of phylogenetic tree</purpose>
+</tocitem>
+<tocitem target="ref/selectphytree.html">
+<name>select (phytree)</name>
+<purpose>Select tree branches and leaves in phytree object</purpose>
+</tocitem>
+<tocitem target="ref/subtreephytree.html">
+<name>subtree (phytree)</name>
+<purpose>Extract phylogenetic subtree</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="structural-analysis.html">Structural Analysis
+<tocitem target="rna-secondary-structure-analysis.html">RNA Secondary Structure Analysis
+<tocitem target="ref/rnaconvert.html">
+<name>rnaconvert</name>
+<purpose>Convert secondary structure of RNA sequence between bracket
+and matrix notations</purpose>
+</tocitem>
+<tocitem target="ref/rnafold.html">
+<name>rnafold</name>
+<purpose>Predict minimum free-energy secondary structure of RNA
+sequence</purpose>
+</tocitem>
+<tocitem target="ref/rnaplot.html">
+<name>rnaplot</name>
+<purpose>Draw secondary structure of RNA sequence</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="visualization-and-analysis-of-3-d-structures-of-biological-molecules.html">Analysis of 3-D Structures of Biological Molecules
+<tocitem target="ref/pdbtransform.html">
+<name>pdbtransform</name>
+<purpose>Apply linear transformation to 3-D structure of molecule</purpose>
+</tocitem>
+<tocitem target="ref/pdbsuperpose.html">
+<name>pdbsuperpose</name>
+<purpose>Superpose 3-D structures of two proteins</purpose>
+</tocitem>
+<tocitem target="ref/pdbread.html">
+<name>pdbread</name>
+<purpose>Read data from Protein Data Bank (PDB) file</purpose>
+</tocitem>
+<tocitem target="ref/pdbwrite.html">
+<name>pdbwrite</name>
+<purpose>Write to file using Protein Data Bank (PDB) format</purpose>
+</tocitem>
+<tocitem target="ref/molviewer.html">
+<name>molviewer</name>
+<purpose>Display and manipulate 3-D molecule structure</purpose>
+</tocitem>
+<tocitem target="ref/pdbdistplot.html">
+<name>pdbdistplot</name>
+<purpose>Visualize intermolecular distances in Protein Data Bank
+(PDB) file</purpose>
+</tocitem>
+<tocitem target="ref/ramachandran.html">
+<name>ramachandran</name>
+<purpose>Draw Ramachandran plot for Protein Data Bank (PDB) data</purpose>
+</tocitem>
+<tocitem target="ref/evalrasmolscript.html">
+<name>evalrasmolscript</name>
+<purpose>Send RasMol script commands to Molecule Viewer window</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="mass-spectrometry-and-bioanalytics.html">Mass Spectrometry and Bioanalytics
+<tocitem target="data-import.html">Data Import
+<tocitem target="ref/mzcdfinfo.html">
+<name>mzcdfinfo</name>
+<purpose>Return information about netCDF file containing mass spectrometry
+data</purpose>
+</tocitem>
+<tocitem target="ref/mzcdfread.html">
+<name>mzcdfread</name>
+<purpose>Read mass spectrometry data from netCDF file</purpose>
+</tocitem>
+<tocitem target="ref/mzcdf2peaks.html">
+<name>mzcdf2peaks</name>
+<purpose>Convert mzCDF structure to peak list</purpose>
+</tocitem>
+<tocitem target="ref/mzxmlinfo.html">
+<name>mzxmlinfo</name>
+<purpose>Return information about mzXML file</purpose>
+</tocitem>
+<tocitem target="ref/mzxmlread.html">
+<name>mzxmlread</name>
+<purpose>Read data from mzXML file</purpose>
+</tocitem>
+<tocitem target="ref/mzxml2peaks.html">
+<name>mzxml2peaks</name>
+<purpose>Convert mzXML structure to peak list</purpose>
+</tocitem>
+<tocitem target="ref/sffinfo.html">
+<name>sffinfo</name>
+<purpose>Return information about SFF file</purpose>
+</tocitem>
+<tocitem target="ref/sffread.html">
+<name>sffread</name>
+<purpose>Read data from SFF file</purpose>
+</tocitem>
+<tocitem target="ref/tgspcinfo.html">
+<name>tgspcinfo</name>
+<purpose>Return information about SPC file</purpose>
+</tocitem>
+<tocitem target="ref/tgspcread.html">
+<name>tgspcread</name>
+<purpose>Read data from SPC file</purpose>
+</tocitem>
+<tocitem target="ref/jcampread.html">
+<name>jcampread</name>
+<purpose>Read JCAMP-DX-formatted files</purpose>
+</tocitem>
+<tocitem target="ref/scfread.html">
+<name>scfread</name>
+<purpose>Read trace data from SCF file</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="preprocessing-2.html">Preprocessing
+<tocitem target="ref/msresample.html">
+<name>msresample</name>
+<purpose>Resample signal with peaks</purpose>
+</tocitem>
+<tocitem target="ref/msbackadj.html">
+<name>msbackadj</name>
+<purpose>Correct baseline of signal with peaks</purpose>
+</tocitem>
+<tocitem target="ref/msnorm.html">
+<name>msnorm</name>
+<purpose>Normalize set of signals with peaks</purpose>
+</tocitem>
+<tocitem target="ref/mslowess.html">
+<name>mslowess</name>
+<purpose>Smooth signal with peaks using nonparametric method</purpose>
+</tocitem>
+<tocitem target="ref/mssgolay.html">
+<name>mssgolay</name>
+<purpose>Smooth signal with peaks using least-squares polynomial</purpose>
+</tocitem>
+<tocitem target="ref/msppresample.html">
+<name>msppresample</name>
+<purpose>Resample signal with peaks while preserving peaks</purpose>
+</tocitem>
+<tocitem target="ref/msheatmap.html">
+<name>msheatmap</name>
+<purpose>Create pseudocolor image of set of mass spectra</purpose>
+</tocitem>
+<tocitem target="ref/msdotplot.html">
+<name>msdotplot</name>
+<purpose>Plot set of peak lists from LC/MS or GC/MS data set</purpose>
+</tocitem>
+<tocitem target="ref/msviewer.html">
+<name>msviewer</name>
+<purpose>Explore mass spectrum or set of mass spectra</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spectrum-and-signal-analysis.html">Spectrum and Signal Analysis
+<tocitem target="ref/mspeaks.html">
+<name>mspeaks</name>
+<purpose>Convert raw peak data to peak list (centroided data)</purpose>
+</tocitem>
+<tocitem target="ref/mspalign.html">
+<name>mspalign</name>
+<purpose>Align mass spectra from multiple peak lists from LC/MS
+or GC/MS data set</purpose>
+</tocitem>
+<tocitem target="ref/msalign.html">
+<name>msalign</name>
+<purpose>Align peaks in signal to reference peaks</purpose>
+</tocitem>
+<tocitem target="ref/samplealign.html">
+<name>samplealign</name>
+<purpose>Align two data sets containing sequential observations
+by introducing gaps</purpose>
+</tocitem>
+<tocitem target="ref/isotopicdist.html">
+<name>isotopicdist</name>
+<purpose>Calculate high-resolution isotope mass distribution and
+density function</purpose>
+</tocitem>
+<tocitem target="ref/msheatmap.html">
+<name>msheatmap</name>
+<purpose>Create pseudocolor image of set of mass spectra</purpose>
+</tocitem>
+<tocitem target="ref/msdotplot.html">
+<name>msdotplot</name>
+<purpose>Plot set of peak lists from LC/MS or GC/MS data set</purpose>
+</tocitem>
+<tocitem target="ref/msviewer.html">
+<name>msviewer</name>
+<purpose>Explore mass spectrum or set of mass spectra</purpose>
+</tocitem>
+<tocitem target="ref/traceplot.html">
+<name>traceplot</name>
+<purpose>Draw nucleotide trace plots</purpose>
+</tocitem>
+<tocitem target="ref/metafeatures.html">
+<name>metafeatures</name>
+<purpose>Attractor metagene algorithm for feature engineering using
+mutual information-based learning</purpose>
+</tocitem>
+<tocitem target="ref/rankfeatures.html">
+<name>rankfeatures</name>
+<purpose>Rank key features by class separability criteria</purpose>
+</tocitem>
+<tocitem target="ref/randfeatures.html">
+<name>randfeatures</name>
+<purpose>Generate randomized subset of features</purpose>
+</tocitem>
+<tocitem target="ref/classperf.html">
+<name>classperf</name>
+<purpose>Evaluate classifier performance</purpose>
+</tocitem>
+<tocitem target="ref/crossvalind.html">
+<name>crossvalind</name>
+<purpose>Generate cross-validation indices</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

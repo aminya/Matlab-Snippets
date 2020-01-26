@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="fuzzy-inference-system-modeling.html">Fuzzy Inference System Modeling
+<tocitem target="mamfis.html">
+<name>mamfis</name>
+<purpose>Mamdani fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="sugfis.html">
+<name>sugfis</name>
+<purpose>Sugeno fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="genfis.html">
+<name>genfis</name>
+<purpose>Generate fuzzy inference system object from data</purpose>
+</tocitem>
+<tocitem target="genfisoptions.html">
+<name>genfisOptions</name>
+<purpose>Option set for genfis command</purpose>
+</tocitem>
+<tocitem target="mamfistype2.html">
+<name>mamfistype2</name>
+<purpose>Interval type-2 Mamdani fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="sugfistype2.html">
+<name>sugfistype2</name>
+<purpose>Interval type-2 Sugeno fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="fistree.html">
+<name>fistree</name>
+<purpose>Network of connected fuzzy inference systems</purpose>
+</tocitem>
+<tocitem target="mamfis.converttosugeno.html">
+<name>convertToSugeno</name>
+<purpose>Convert Mamdani fuzzy inference system into Sugeno fuzzy inference
+      system</purpose>
+</tocitem>
+<tocitem target="mamfistype2.converttotype1.html">
+<name>convertToType1</name>
+<purpose>Convert type-2 fuzzy inference system into type-1 fuzzy inference
+      system</purpose>
+</tocitem>
+<tocitem target="mamfistype2.converttotype2.html">
+<name>convertToType2</name>
+<purpose>Convert type-1 fuzzy inference system into type-2 fuzzy inference
+      system</purpose>
+</tocitem>
+<tocitem target="mamfis.converttostruct.html">
+<name>convertToStruct</name>
+<purpose>Convert fuzzy inference system object into a structure</purpose>
+</tocitem>
+<tocitem target="convertfis.html">
+<name>convertfis</name>
+<purpose>Convert previous versions of fuzzy inference data in current format</purpose>
+</tocitem>
+<tocitem target="mamfis.addinput.html">
+<name>addInput</name>
+<purpose>Add input variable to fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="mamfis.addoutput.html">
+<name>addOutput</name>
+<purpose>Add output variable to fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="mamfis.removeinput.html">
+<name>removeInput</name>
+<purpose>Remove input variable from fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="mamfis.removeoutput.html">
+<name>removeOutput</name>
+<purpose>Remove output variable from fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="fisvar.html">
+<name>fisvar</name>
+<purpose>Fuzzy variable</purpose>
+</tocitem>
+<tocitem target="mfedit.html">
+<name>mfedit</name>
+<purpose>Open Membership Function Editor</purpose>
+</tocitem>
+<tocitem target="mamfis.addmf.html">
+<name>addMF</name>
+<purpose>Add membership function to fuzzy variable</purpose>
+</tocitem>
+<tocitem target="mamfis.removemf.html">
+<name>removeMF</name>
+<purpose>Remove membership function from fuzzy variable</purpose>
+</tocitem>
+<tocitem target="fismf.html">
+<name>fismf</name>
+<purpose>Fuzzy membership function</purpose>
+</tocitem>
+<tocitem target="fismftype2.html">
+<name>fismftype2</name>
+<purpose>Interval type-2 fuzzy membership function</purpose>
+</tocitem>
+<tocitem target="ruleedit.html">
+<name>ruleedit</name>
+<purpose>Open Rule Editor</purpose>
+</tocitem>
+<tocitem target="ruleview.html">
+<name>ruleview</name>
+<purpose>Open Rule Viewer</purpose>
+</tocitem>
+<tocitem target="mamfis.addrule.html">
+<name>addRule</name>
+<purpose>Add rule to fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="showrule.html">
+<name>showrule</name>
+<purpose>Display fuzzy inference system rules</purpose>
+</tocitem>
+<tocitem target="fisrule.html">
+<name>fisrule</name>
+<purpose>Fuzzy rule</purpose>
+</tocitem>
+<tocitem target="fisrule.update.html">
+<name>update</name>
+<purpose>Update fuzzy rule using fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="evalfis.html">
+<name>evalfis</name>
+<purpose>Evaluate fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="fuzzy.evalfis.evalfisoptions.html">
+<name>evalfisOptions</name>
+<purpose>Option set for evalfis function</purpose>
+</tocitem>
+<tocitem target="plotfis.html">
+<name>plotfis</name>
+<purpose>Display fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="plotmf.html">
+<name>plotmf</name>
+<purpose>Plot membership functions for input or output variable</purpose>
+</tocitem>
+<tocitem target="surfview.html">
+<name>surfview</name>
+<purpose>Open Surface Viewer</purpose>
+</tocitem>
+<tocitem target="gensurf.html">
+<name>gensurf</name>
+<purpose>Generate fuzzy inference system output surface</purpose>
+</tocitem>
+<tocitem target="gensurfoptions.html">
+<name>gensurfOptions</name>
+<purpose>Option set for gensurf function</purpose>
+</tocitem>
+<tocitem target="readfis.html">
+<name>readfis</name>
+<purpose>Load fuzzy inference system from file</purpose>
+</tocitem>
+<tocitem target="mamfis.writefis.html">
+<name>writeFIS</name>
+<purpose>Save fuzzy inference system to file</purpose>
+</tocitem>
+<tocitem target="evalmf.html">
+<name>evalmf</name>
+<purpose>Evaluate fuzzy membership function</purpose>
+</tocitem>
+<tocitem target="gaussmf.html">
+<name>gaussmf</name>
+<purpose>Gaussian membership function</purpose>
+</tocitem>
+<tocitem target="gbellmf.html">
+<name>gbellmf</name>
+<purpose>Generalized bell-shaped membership function</purpose>
+</tocitem>
+<tocitem target="trimf.html">
+<name>trimf</name>
+<purpose>Triangular membership function</purpose>
+</tocitem>
+<tocitem target="dsigmf.html">
+<name>dsigmf</name>
+<purpose>Difference between two sigmoidal membership functions</purpose>
+</tocitem>
+<tocitem target="gauss2mf.html">
+<name>gauss2mf</name>
+<purpose>Gaussian combination membership function</purpose>
+</tocitem>
+<tocitem target="pimf.html">
+<name>pimf</name>
+<purpose>Pi-shaped membership function</purpose>
+</tocitem>
+<tocitem target="psigmf.html">
+<name>psigmf</name>
+<purpose>Product of two sigmoidal membership functions</purpose>
+</tocitem>
+<tocitem target="sigmf.html">
+<name>sigmf</name>
+<purpose>Sigmoidal membership function</purpose>
+</tocitem>
+<tocitem target="smf.html">
+<name>smf</name>
+<purpose>S-shaped membership function</purpose>
+</tocitem>
+<tocitem target="trapmf.html">
+<name>trapmf</name>
+<purpose>Trapezoidal membership function</purpose>
+</tocitem>
+<tocitem target="zmf.html">
+<name>zmf</name>
+<purpose>Z-shaped membership function</purpose>
+</tocitem>
+<tocitem target="defuzz.html">
+<name>defuzz</name>
+<purpose>Defuzzify membership function</purpose>
+</tocitem>
+<tocitem target="probor.html">
+<name>probor</name>
+<purpose>Probabilistic OR</purpose>
+</tocitem>
+<tocitem target="fuzarith.html">
+<name>fuzarith</name>
+<purpose>Perform fuzzy arithmetic</purpose>
+</tocitem>
+<tocitem target="newfis.html">
+<name>newfis</name>
+<purpose>(To be removed) Create new fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="addvar.html">
+<name>addvar</name>
+<purpose>(To be removed) Add variable to fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="rmvar.html">
+<name>rmvar</name>
+<purpose>(To be removed) Remove variables from fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="rmmf.html">
+<name>rmmf</name>
+<purpose>(To be removed) Remove membership function from fuzzy inference
+            system</purpose>
+</tocitem>
+<tocitem target="mam2sug.html">
+<name>mam2sug</name>
+<purpose>(To be removed) Transform Mamdani fuzzy inference system into Sugeno fuzzy
+            inference system</purpose>
+</tocitem>
+<tocitem target="getfis.html">
+<name>getfis</name>
+<purpose>(To be removed) Get fuzzy system properties</purpose>
+</tocitem>
+<tocitem target="setfis.html">
+<name>setfis</name>
+<purpose>(To be removed) Set fuzzy system properties</purpose>
+</tocitem>
+<tocitem target="parsrule.html">
+<name>parsrule</name>
+<purpose>(To be removed) Parse fuzzy rules</purpose>
+</tocitem>
+<tocitem target="showfis.html">
+<name>showfis</name>
+<purpose>(To be removed) Display annotated Fuzzy Inference System</purpose>
+</tocitem>
+<tocitem target="mf2mf.html">
+<name>mf2mf</name>
+<purpose>(To be removed) Translate parameters between membership functions</purpose>
+</tocitem>
+<tocitem target="genfis1.html">
+<name>genfis1</name>
+<purpose>(To be removed) Generate Fuzzy Inference System structure from data using grid
+            partition</purpose>
+</tocitem>
+<tocitem target="genfis2.html">
+<name>genfis2</name>
+<purpose>(To be removed) Generate Fuzzy Inference System structure from data using
+            subtractive clustering</purpose>
+</tocitem>
+<tocitem target="genfis3.html">
+<name>genfis3</name>
+<purpose>(To be removed) Generate Fuzzy Inference System structure from data using FCM
+            clustering</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="fuzzy-inference-system-tuning.html">Fuzzy Inference System Tuning
+<tocitem target="tunefis.html">
+<name>tunefis</name>
+<purpose>Tune fuzzy inference system or tree of fuzzy inference systems</purpose>
+</tocitem>
+<tocitem target="tunefisoptions.html">
+<name>tunefisOptions</name>
+<purpose>Option set for tunefis function</purpose>
+</tocitem>
+<tocitem target="mamfis.gettunablesettings.html">
+<name>getTunableSettings</name>
+<purpose>Obtain tunable settings from fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="fuzzy.tuning.variablesettings.settunable.html">
+<name>setTunable</name>
+<purpose>Set specified parameter settings as tunable or nontunable</purpose>
+</tocitem>
+<tocitem target="mamfis.gettunablevalues.html">
+<name>getTunableValues</name>
+<purpose>Obtain values of tunable parameters from fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="mamfis.settunablevalues.html">
+<name>setTunableValues</name>
+<purpose>Specify tunable parameter values of a fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="anfis.html">
+<name>anfis</name>
+<purpose>Tune Sugeno-type fuzzy inference system using training
+data</purpose>
+</tocitem>
+<tocitem target="anfisoptions.html">
+<name>anfisOptions</name>
+<purpose>Option set for anfis command</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="data-clustering.html">Data Clustering
+<tocitem target="fcm.html">
+<name>fcm</name>
+<purpose>Fuzzy c-means clustering</purpose>
+</tocitem>
+<tocitem target="subclust.html">
+<name>subclust</name>
+<purpose>Find cluster centers using subtractive clustering</purpose>
+</tocitem>
+<tocitem target="findcluster.html">
+<name>findcluster</name>
+<purpose>Open clustering tool</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulation-and-deployment.html">Deployment
+<tocitem target="evalfis.html">
+<name>evalfis</name>
+<purpose>Evaluate fuzzy inference system</purpose>
+</tocitem>
+<tocitem target="fuzzy.evalfis.evalfisoptions.html">
+<name>evalfisOptions</name>
+<purpose>Option set for evalfis function</purpose>
+</tocitem>
+<tocitem target="getfiscodegenerationdata.html">
+<name>getFISCodeGenerationData</name>
+<purpose>Create homogeneous fuzzy inference system structure</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

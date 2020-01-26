@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="signal-generation-manipulation-and-analysis.html">Signal Generation, Manipulation, and Analysis
+<tocitem target="signal-operations.html">Signal Operations
+<tocitem target="ref/dsp.variablefractionaldelay.info.html">
+<name>info</name>
+<purpose>Characteristic information about valid delay range</purpose>
+</tocitem>
+<tocitem target="ref/dsp.farrowrateconverter.getpolynomialcoefficients.html">
+<name>getPolynomialCoefficients</name>
+<purpose>Get polynomial coefficients of farrow rate conversion filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.farrowrateconverter.getactualoutputrate.html">
+<name>getActualOutputRate</name>
+<purpose>Get actual output rate</purpose>
+</tocitem>
+<tocitem target="ref/dsp.farrowrateconverter.getratechangefactors.html">
+<name>getRateChangeFactors</name>
+<purpose>Get overall interpolation and decimation factors</purpose>
+</tocitem>
+<tocitem target="ref/dsp.samplerateconverter.cost.html">
+<name>cost</name>
+<purpose>Implementation cost of the sample rate converter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.samplerateconverter.getfilters.html">
+<name>getFilters</name>
+<purpose>Obtain single-stage filters</purpose>
+</tocitem>
+<tocitem target="ref/dsp.samplerateconverter.info.html">
+<name>info</name>
+<purpose>Display information about sample rate converter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.complexbandpassdecimator.visualizefilterstages.html">
+<name>visualizeFilterStages</name>
+<purpose>Visualize filter stages</purpose>
+</tocitem>
+<tocitem target="ref/dsplib.html">
+<name>dsplib</name>
+<purpose>Open top-level DSP System
+            Toolbox library</purpose>
+</tocitem>
+<tocitem target="ref/dspstartup.html">
+<name>dspstartup</name>
+<purpose>Configure Simulink environment for signal processing systems</purpose>
+</tocitem>
+<tocitem target="ref/dsp_links.html">
+<name>dsp_links</name>
+<purpose>Identify whether blocks in model are current, deprecated,
+or obsolete</purpose>
+</tocitem>
+<tocitem target="ref/liblinks.html">
+<name>liblinks</name>
+<purpose>Check model for blocks from specific DSP System
+            Toolbox libraries</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sources.html">Signal Generation
+<tocitem target="ref/dsp.signalsource.isdone.html">
+<name>isDone</name>
+<purpose>End-of-file status for signal reader object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.nco.infonco.html">
+<name>info</name>
+<purpose>Characteristic information about generated signal</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="signal-importexport.html">Signal Input and Output
+<tocitem target="ref/dsp.binaryfilereader.readheader.html">
+<name>readHeader</name>
+<purpose>Read file header</purpose>
+</tocitem>
+<tocitem target="ref/audiodevicewriter.getaudiodevices.html">
+<name>getAudioDevices</name>
+<purpose>List available audio devices</purpose>
+</tocitem>
+<tocitem target="ref/audiodevicewriter.info.html">
+<name>info</name>
+<purpose>Characteristic information about audio device writer</purpose>
+</tocitem>
+<tocitem target="ref/midicallback.html">
+<name>midicallback</name>
+<purpose>Call function handle when MIDI controls change value</purpose>
+</tocitem>
+<tocitem target="ref/functionmidicontrols.html">
+<name>midicontrols</name>
+<purpose>Open a group of MIDI controls for reading</purpose>
+</tocitem>
+<tocitem target="ref/midiid.html">
+<name>midiid</name>
+<purpose>Interactively identify MIDI control</purpose>
+</tocitem>
+<tocitem target="ref/midiread.html">
+<name>midiread</name>
+<purpose>Return most recent value of MIDI controls</purpose>
+</tocitem>
+<tocitem target="ref/midisync.html">
+<name>midisync</name>
+<purpose>Send values to MIDI controls to synchronize</purpose>
+</tocitem>
+<tocitem target="ref/dsp.audiofilereader.info.html">
+<name>dsp.AudioFileReader.info</name>
+<purpose>Information about specific audio file</purpose>
+</tocitem>
+<tocitem target="ref/dsp.audiofilereader.isdone.html">
+<name>dsp.AudioFileReader.isDone</name>
+<purpose>End-of-file status (logical)</purpose>
+</tocitem>
+<tocitem target="ref/dsp.audioplayer.step.html">
+<name>dsp.AudioPlayer.step</name>
+<purpose>Write audio to audio output device</purpose>
+</tocitem>
+<tocitem target="ref/dsp.audiorecorder.step.html">
+<name>dsp.AudioRecorder.step</name>
+<purpose>Record audio from recording device</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sinks.html">Scopes and Data Logging
+<tocitem target="ref/dsp.timescope.hide.html">
+<name>hide</name>
+<purpose>Hide scope window</purpose>
+</tocitem>
+<tocitem target="ref/dsp.timescope.show.html">
+<name>show</name>
+<purpose>Display scope window</purpose>
+</tocitem>
+<tocitem target="ref/dsp.timescope.isvisible.html">
+<name>isVisible</name>
+<purpose>Determine visibility of scope</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumanalyzer-system-object.html">
+<name>dsp.SpectrumAnalyzer</name>
+<purpose>Display frequency spectrum of time-domain signals</purpose>
+</tocitem>
+<tocitem target="ref/spbscopes.spectrumanalyzerconfiguration.html">
+<name>SpectrumAnalyzerConfiguration</name>
+<purpose>Configure Spectrum Analyzer block</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumanalyzer.isnewdataready.html">
+<name>isNewDataReady</name>
+<purpose>Check spectrum analyzer for new data</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumanalyzer.generatescript.html">
+<name>generateScript</name>
+<purpose>Generate MATLAB script to create scope with current settings</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumanalyzer.getspectrumdata.html">
+<name>getSpectrumData</name>
+<purpose>Save spectrum data shown in spectrum analyzer </purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumanalyzer.getspectralmaskstatus.html">
+<name>getSpectralMaskStatus</name>
+<purpose>Get test results of current spectral mask</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumanalyzer.getmeasurementsdata.html">
+<name>getMeasurementsData</name>
+<purpose>Get the current measurement data displayed on the spectrum analyzer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer-system-object.html">
+<name>dsp.LogicAnalyzer</name>
+<purpose>Visualize, measure, and analyze transitions and states over time</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.addcursor.html">
+<name>addCursor</name>
+<purpose>Add cursor to Logic Analyzer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.adddivider.html">
+<name>addDivider</name>
+<purpose>Add divider to Logic Analyzer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.addwave.html">
+<name>addWave</name>
+<purpose>Add wave to Logic Analyzer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.deletecursor.html">
+<name>deleteCursor</name>
+<purpose>Delete Logic Analyzer cursor</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.deletedisplaychannel.html">
+<name>deleteDisplayChannel</name>
+<purpose>Delete Logic Analyzer channel</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.getcursorinfo.html">
+<name>getCursorInfo</name>
+<purpose>Return settings for Logic Analyzer cursor</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.getcursortags.html">
+<name>getCursorTags</name>
+<purpose>Return all Logic Analyzer cursor tags</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.getdisplaychannelinfo.html">
+<name>getDisplayChannelInfo</name>
+<purpose>Return settings for Logic Analyzer display channel</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.getdisplaychanneltags.html">
+<name>getDisplayChannelTags</name>
+<purpose>Return all Logic Analyzer display channel tags</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.modifycursor.html">
+<name>modifyCursor</name>
+<purpose>Modify properties of Logic Analyzer cursor</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.modifydisplaychannel.html">
+<name>modifyDisplayChannel</name>
+<purpose>Modify properties of Logic Analyzer display channel</purpose>
+</tocitem>
+<tocitem target="ref/dsp.logicanalyzer.movedisplaychannel.html">
+<name>moveDisplayChannel</name>
+<purpose>Move position of Logic Analyzer display channel</purpose>
+</tocitem>
+<tocitem target="ref/dsp.timescope-system-object.html">
+<name>dsp.TimeScope</name>
+<purpose>Time domain signal display and measurement</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/spbscopes.scope.timescopeconfiguration.html">
+<name>TimeScopeConfiguration</name>
+<purpose>Control Scope block appearance and behavior</purpose>
+</tocitem>
+<tocitem target="ref/dsp.arrayplot-system-object.html">
+<name>dsp.ArrayPlot</name>
+<purpose>Display vectors or arrays</purpose>
+</tocitem>
+<tocitem target="ref/dsp.scopes.arrayplotconfiguration.html">
+<name>ArrayPlotConfiguration</name>
+<purpose>Control Array Plot block appearance and behavior from MATLAB</purpose>
+</tocitem>
+<tocitem target="ref/dsp.matrixviewer-system-object.html">
+<name>dsp.MatrixViewer</name>
+<purpose>Visualize matrix data</purpose>
+</tocitem>
+<tocitem target="ref/dsp.matrixviewer.setcursordatalabels.html">
+<name>setCursorDataLabels</name>
+<purpose>Customize data labels for cursor measurements</purpose>
+</tocitem>
+<tocitem target="ref/dsp.dynamicfiltervisualizer.html">
+<name>dsp.DynamicFilterVisualizer</name>
+<purpose>Display time-varying magnitude response of digital filters</purpose>
+</tocitem>
+<tocitem target="ref/dsp.dynamicfiltervisualizer.stepdynamicfiltervisualizer.html">
+<name>step</name>
+<purpose>Display time-varying magnitude response</purpose>
+</tocitem>
+<tocitem target="ref/dsp.signalsink-system-object.html">
+<name>dsp.SignalSink</name>
+<purpose>Log simulation data in buffer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.util.signalpath.html">
+<name>dsp.util.SignalPath</name>
+<purpose>Properties of paths to signals</purpose>
+</tocitem>
+<tocitem target="ref/dsp.util.getlogsarray.html">
+<name>dsp.util.getLogsArray</name>
+<purpose>Return logged signal as MATLAB array</purpose>
+</tocitem>
+<tocitem target="ref/dsp.util.getsignalpath.html">
+<name>dsp.util.getSignalPath</name>
+<purpose>Paths to logged signals</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="buffers-switches-and-counters.html">Buffers, Switches, and Counters
+<tocitem target="ref/rebuffer_delay.html">
+<name>rebuffer_delay</name>
+<purpose>Number of samples of delay introduced by buffering and
+unbuffering operations</purpose>
+</tocitem>
+<tocitem target="ref/dsp.asyncbuffer.info.html">
+<name>info</name>
+<purpose>Get cumulative overrun and underrun</purpose>
+</tocitem>
+<tocitem target="ref/dsp.asyncbuffer.read.html">
+<name>read</name>
+<purpose>Read data from buffer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.asyncbuffer.write.html">
+<name>write</name>
+<purpose>Write data to buffer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.asyncbuffer.peek.html">
+<name>peek</name>
+<purpose>Read data from buffer without changing number of unread samples</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="filter-design-and-analysis.html">Filter Design and Analysis
+<tocitem target="filter-design.html">Filter Design
+<tocitem target="ref/filterdesigner.html">
+<name>filterDesigner</name>
+<purpose>Open Filter Designer app</purpose>
+</tocitem>
+<tocitem target="ref/filterbuilder.html">
+<name>filterBuilder</name>
+<purpose>Interactive filter design</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.fvtool.html">
+<name>fvtool</name>
+<purpose>Visualize frequency response of DSP filters</purpose>
+</tocitem>
+<tocitem target="ref/design.html">
+<name>design</name>
+<purpose>Apply design method to filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/designmethods.html">
+<name>designmethods</name>
+<purpose>Methods available for designing filter from specification
+object</purpose>
+</tocitem>
+<tocitem target="ref/designoptions.html">
+<name>designoptions</name>
+<purpose>Show all options available for specified design</purpose>
+</tocitem>
+<tocitem target="ref/designopts.html">
+<name>designopts</name>
+<purpose>Valid input arguments and values for specification object
+and method</purpose>
+</tocitem>
+<tocitem target="ref/equiripple.html">
+<name>equiripple</name>
+<purpose>Equiripple single-rate FIR filter from specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.html">
+<name>fdesign</name>
+<purpose>Filter design specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.bandpass.html">
+<name>fdesign.bandpass</name>
+<purpose>Bandpass filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.bandstop.html">
+<name>fdesign.bandstop</name>
+<purpose>Bandstop filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.highpass.html">
+<name>fdesign.highpass</name>
+<purpose>Highpass filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.lowpass.html">
+<name>fdesign.lowpass</name>
+<purpose>Lowpass filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.decimator.html">
+<name>fdesign.decimator</name>
+<purpose>Decimator filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.interpolator.html">
+<name>fdesign.interpolator</name>
+<purpose>Interpolator filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.rsrc.html">
+<name>fdesign.rsrc</name>
+<purpose>Rational-factor sample-rate converter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.arbmag.html">
+<name>fdesign.arbmag</name>
+<purpose>Arbitrary response magnitude filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.arbmagnphase.html">
+<name>fdesign.arbmagnphase</name>
+<purpose>Arbitrary response magnitude and phase filter specification
+object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.audioweighting.html">
+<name>fdesign.audioweighting</name>
+<purpose>Audio weighting filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.ciccomp.html">
+<name>fdesign.ciccomp</name>
+<purpose>CIC compensator filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.comb.html">
+<name>fdesign.comb</name>
+<purpose>IIR comb filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.differentiator.html">
+<name>fdesign.differentiator</name>
+<purpose>Differentiator filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.fracdelay.html">
+<name>fdesign.fracdelay</name>
+<purpose>Fractional delay filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.halfband.html">
+<name>fdesign.halfband</name>
+<purpose>Halfband filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.hilbert.html">
+<name>fdesign.hilbert</name>
+<purpose>Hilbert filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.isinchp.html">
+<name>fdesign.isinchp</name>
+<purpose>Inverse sinc highpass filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.isinclp.html">
+<name>fdesign.isinclp</name>
+<purpose>Inverse sinc lowpass filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.notch.html">
+<name>fdesign.notch</name>
+<purpose>Notch filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.nyquist.html">
+<name>fdesign.nyquist</name>
+<purpose>Nyquist filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.octave.html">
+<name>fdesign.octave</name>
+<purpose>Octave filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.peak.html">
+<name>fdesign.peak</name>
+<purpose>Peak filter specification</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.polysrc.html">
+<name>fdesign.polysrc</name>
+<purpose>Construct polynomial sample-rate converter (POLYSRC) filter
+designer</purpose>
+</tocitem>
+<tocitem target="ref/freqsamp.html">
+<name>freqsamp</name>
+<purpose>Real or complex frequency-sampled FIR filter from specification
+object</purpose>
+</tocitem>
+<tocitem target="ref/help.html">
+<name>help</name>
+<purpose>Help for design method with filter specification</purpose>
+</tocitem>
+<tocitem target="ref/setspecs.html">
+<name>setspecs</name>
+<purpose>Specifications for filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/validstructures.html">
+<name>validstructures</name>
+<purpose>Structures for specification object with design method</purpose>
+</tocitem>
+<tocitem target="ref/designmultiratefir.html">
+<name>designMultirateFIR</name>
+<purpose>Multirate FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/designmultistagedecimator.html">
+<name>designMultistageDecimator</name>
+<purpose>Multistage decimator design</purpose>
+</tocitem>
+<tocitem target="ref/designmultistageinterpolator.html">
+<name>designMultistageInterpolator</name>
+<purpose>Multistage interpolator design</purpose>
+</tocitem>
+<tocitem target="ref/fircband.html">
+<name>fircband</name>
+<purpose>Constrained-band equiripple FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/firceqrip.html">
+<name>firceqrip</name>
+<purpose>Constrained equiripple FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/fireqint.html">
+<name>fireqint</name>
+<purpose>Equiripple FIR interpolators</purpose>
+</tocitem>
+<tocitem target="ref/firgr.html">
+<name>firgr</name>
+<purpose>Parks-McClellan FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/firhalfband.html">
+<name>firhalfband</name>
+<purpose>Halfband FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/firlpnorm.html">
+<name>firlpnorm</name>
+<purpose>Least P-norm optimal FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/firls.html">
+<name>firls</name>
+<purpose>Least-square linear-phase FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/firminphase.html">
+<name>firminphase</name>
+<purpose>Minimum-phase FIR spectral factor</purpose>
+</tocitem>
+<tocitem target="ref/firnyquist.html">
+<name>firnyquist</name>
+<purpose>Lowpass Nyquist (Lth-band) FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/firpr2chfb.html">
+<name>firpr2chfb</name>
+<purpose>Two-channel FIR filter bank for perfect reconstruction</purpose>
+</tocitem>
+<tocitem target="ref/ifir.html">
+<name>ifir</name>
+<purpose>Interpolated FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/normalizefreq.html">
+<name>normalizefreq</name>
+<purpose>Switch filter specification between normalized frequency
+and absolute frequency</purpose>
+</tocitem>
+<tocitem target="ref/ca2tf.html">
+<name>ca2tf</name>
+<purpose>Convert coupled allpass filter to transfer function form</purpose>
+</tocitem>
+<tocitem target="ref/cl2tf.html">
+<name>cl2tf</name>
+<purpose>Convert coupled allpass lattice to transfer function form</purpose>
+</tocitem>
+<tocitem target="ref/iircomb.html">
+<name>iircomb</name>
+<purpose>IIR comb notch or peak filter</purpose>
+</tocitem>
+<tocitem target="ref/iirgrpdelay.html">
+<name>iirgrpdelay</name>
+<purpose>Optimal IIR filter with prescribed group-delay</purpose>
+</tocitem>
+<tocitem target="ref/iirlpnorm.html">
+<name>iirlpnorm</name>
+<purpose>Least P-norm optimal IIR filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlpnormc.html">
+<name>iirlpnormc</name>
+<purpose>Constrained least Pth-norm optimal IIR filter</purpose>
+</tocitem>
+<tocitem target="ref/iirnotch.html">
+<name>iirnotch</name>
+<purpose>Second-order IIR notch filter</purpose>
+</tocitem>
+<tocitem target="ref/iirpeak.html">
+<name>iirpeak</name>
+<purpose>Second-order IIR peak or resonator filter</purpose>
+</tocitem>
+<tocitem target="ref/normalizefreq.html">
+<name>normalizefreq</name>
+<purpose>Switch filter specification between normalized frequency
+and absolute frequency</purpose>
+</tocitem>
+<tocitem target="ref/butter.html">
+<name>butter</name>
+<purpose>Butterworth IIR digital filter design</purpose>
+</tocitem>
+<tocitem target="ref/cheby1.html">
+<name>cheby1</name>
+<purpose>Chebyshev Type I filter using specification object</purpose>
+</tocitem>
+<tocitem target="ref/cheby2.html">
+<name>cheby2</name>
+<purpose>Chebyshev Type II filter using specification object</purpose>
+</tocitem>
+<tocitem target="ref/window.html">
+<name>window</name>
+<purpose>FIR filter using  windowed impulse response</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.arbgrpdelay.html">
+<name>fdesign.arbgrpdelay</name>
+<purpose>Arbitrary group delay filter specification object</purpose>
+</tocitem>
+<tocitem target="ref/maxflat.html">
+<name>maxflat</name>
+<purpose>Maxflat FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/ellip.html">
+<name>ellip</name>
+<purpose>Elliptic filter using specification object</purpose>
+</tocitem>
+<tocitem target="ref/fircls.html">
+<name>fircls</name>
+<purpose>FIR Constrained Least Squares filter</purpose>
+</tocitem>
+<tocitem target="ref/firpr2chfb.html">
+<name>firpr2chfb</name>
+<purpose>Two-channel FIR filter bank for perfect reconstruction</purpose>
+</tocitem>
+<tocitem target="ref/fdesign.parameq.html">
+<name>fdesign.parameq</name>
+<purpose>Parametric equalizer filter specification</purpose>
+</tocitem>
+<tocitem target="ref/iirparameq.html">
+<name>iirparameq</name>
+<purpose>IIR biquad digital parametric equalizer filter</purpose>
+</tocitem>
+<tocitem target="ref/kaiserwin.html">
+<name>kaiserwin</name>
+<purpose>Kaiser window filter from specification object</purpose>
+</tocitem>
+<tocitem target="ref/lagrange.html">
+<name>lagrange</name>
+<purpose>Fractional delay filter from fdesign.fracdelay specification
+object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="filter-analysis.html">Filter Analysis
+<tocitem target="ref/filterdesigner.html">
+<name>filterDesigner</name>
+<purpose>Open Filter Designer app</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.fvtool.html">
+<name>fvtool</name>
+<purpose>Visualize frequency response of DSP filters</purpose>
+</tocitem>
+<tocitem target="ref/freqrespest.html">
+<name>freqrespest</name>
+<purpose>Frequency response estimate via filtering</purpose>
+</tocitem>
+<tocitem target="ref/freqrespopts.html">
+<name>freqrespopts</name>
+<purpose>Options for filter frequency response analysis</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.freqz.html">
+<name>freqz</name>
+<purpose>Frequency response of filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.grpdelay.html">
+<name>grpdelay</name>
+<purpose>Group delay response of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.impz.html">
+<name>impz</name>
+<purpose>Impulse response of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/impzlength.html">
+<name>impzlength</name>
+<purpose>Impulse response length</purpose>
+</tocitem>
+<tocitem target="ref/dsp.ciccompensationdecimator.measure.html">
+<name>measure</name>
+<purpose>Measure frequency response characteristics of filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/noisepsd.html">
+<name>noisepsd</name>
+<purpose>Power spectral density of filter output due to roundoff
+noise</purpose>
+</tocitem>
+<tocitem target="ref/noisepsdopts.html">
+<name>noisepsdopts</name>
+<purpose>Options for running filter output noise PSD</purpose>
+</tocitem>
+<tocitem target="ref/phasedelay.html">
+<name>phasedelay</name>
+<purpose>Phase delay response of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.phasez.html">
+<name>phasez</name>
+<purpose>Unwrapped phase response for filter</purpose>
+</tocitem>
+<tocitem target="ref/stepz.html">
+<name>stepz</name>
+<purpose>Step response of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/zerophase.html">
+<name>zerophase</name>
+<purpose>Zero-phase response of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/zplane.html">
+<name>zplane</name>
+<purpose>Z-plane zero-pole plot for discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.coeffs.html">
+<name>coeffs</name>
+<purpose>Filter coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.cost.html">
+<name>cost</name>
+<purpose>Estimate cost for implementing filter System
+        objects</purpose>
+</tocitem>
+<tocitem target="ref/dsp.biquadfilter.cumsec.html">
+<name>cumsec</name>
+<purpose>Cumulative second-order section of BiquadFilter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/disp.html">
+<name>disp</name>
+<purpose>Filter properties and values</purpose>
+</tocitem>
+<tocitem target="ref/double.html">
+<name>double</name>
+<purpose>Cast fixed-point filter to use double-precision arithmetic</purpose>
+</tocitem>
+<tocitem target="ref/fftcoeffs.html">
+<name>fftcoeffs</name>
+<purpose>Frequency-domain coefficients</purpose>
+</tocitem>
+<tocitem target="ref/filtstates.cic.html">
+<name>filtstates.cic</name>
+<purpose>Store CIC filter states</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.info.html">
+<name>info</name>
+<purpose>Information about filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/norm.html">
+<name>norm</name>
+<purpose>P-norm of filter</purpose>
+</tocitem>
+<tocitem target="ref/nstates.html">
+<name>nstates</name>
+<purpose>Number of filter states</purpose>
+</tocitem>
+<tocitem target="ref/order.html">
+<name>order</name>
+<purpose>Order of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/reset.html">
+<name>reset</name>
+<purpose>Reset the internal states of a System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.biquadfilter.ss.html">
+<name>ss</name>
+<purpose>Convert discrete-time filter System
+        object to state-space representation</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.tf.html">
+<name>tf</name>
+<purpose>Convert discrete-time filter System
+        object to transfer function</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.zpk.html">
+<name>zpk</name>
+<purpose>Zero-pole-gain conversion of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/firtype.html">
+<name>firtype</name>
+<purpose>Type of linear phase FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/isallpass.html">
+<name>isallpass</name>
+<purpose>Determine whether filter is allpass</purpose>
+</tocitem>
+<tocitem target="ref/isfir.html">
+<name>isfir</name>
+<purpose>Determine whether filter System
+        object is FIR</purpose>
+</tocitem>
+<tocitem target="ref/islinphase.html">
+<name>islinphase</name>
+<purpose>Determine whether filter has linear phase</purpose>
+</tocitem>
+<tocitem target="ref/ismaxphase.html">
+<name>ismaxphase</name>
+<purpose>Determine whether filter is maximum phase</purpose>
+</tocitem>
+<tocitem target="ref/isminphase.html">
+<name>isminphase</name>
+<purpose>Determine whether filter is minimum phase</purpose>
+</tocitem>
+<tocitem target="ref/isreal.html">
+<name>isreal</name>
+<purpose>Determine whether filter uses real coefficients</purpose>
+</tocitem>
+<tocitem target="ref/issos.html">
+<name>issos</name>
+<purpose>Determine whether filter is SOS form</purpose>
+</tocitem>
+<tocitem target="ref/isstable.html">
+<name>isstable</name>
+<purpose>Determine whether filter is stable</purpose>
+</tocitem>
+<tocitem target="ref/dsp.biquadfilter.scalecheck.html">
+<name>scalecheck</name>
+<purpose>Check scaling of dsp.BiquadFilter
+            System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/block.html">
+<name>block</name>
+<purpose>Generate block from a digital filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.realizemdl.html">
+<name>realizemdl</name>
+<purpose>Simulink subsystem block for filter</purpose>
+</tocitem>
+<tocitem target="ref/allpass2wdf.html">
+<name>allpass2wdf</name>
+<purpose>Allpass to Wave Digital Filter coefficient transformation</purpose>
+</tocitem>
+<tocitem target="ref/normalizefreq.html">
+<name>normalizefreq</name>
+<purpose>Switch filter specification between normalized frequency
+and absolute frequency</purpose>
+</tocitem>
+<tocitem target="ref/wdf2allpass.html">
+<name>wdf2allpass</name>
+<purpose>Wave Digital Filter to allpass coefficient transformation</purpose>
+</tocitem>
+<tocitem target="ref/euclidfactors.html">
+<name>euclidfactors</name>
+<purpose>Euclid factors for multirate filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.info.html">
+<name>info</name>
+<purpose>Information about filter System
+        object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="frequency-transformations.html">Frequency Transformations
+<tocitem target="ref/firlp2hp.html">
+<name>firlp2hp</name>
+<purpose>Convert FIR lowpass filter to Type I FIR highpass filter</purpose>
+</tocitem>
+<tocitem target="ref/firlp2lp.html">
+<name>firlp2lp</name>
+<purpose>Convert FIR Type I lowpass to FIR Type 1 lowpass with
+inverse bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/iirbpc2bpc.html">
+<name>iirbpc2bpc</name>
+<purpose>Transform IIR complex bandpass filter to IIR complex bandpass
+filter with different characteristics</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2bp.html">
+<name>iirlp2bp</name>
+<purpose>Transform IIR lowpass filter to IIR bandpass filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2bpc.html">
+<name>iirlp2bpc</name>
+<purpose>IIR lowpass to complex bandpass transformation</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2bs.html">
+<name>iirlp2bs</name>
+<purpose>Transform IIR lowpass filter to IIR bandstop filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2bsc.html">
+<name>iirlp2bsc</name>
+<purpose>Transform IIR lowpass filter to IIR complex bandstop filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2hp.html">
+<name>iirlp2hp</name>
+<purpose>Transform lowpass IIR filter to highpass filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2lp.html">
+<name>iirlp2lp</name>
+<purpose>Transform lowpass IIR filter to different lowpass filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2mb.html">
+<name>iirlp2mb</name>
+<purpose>Transform IIR lowpass filter to IIR M-band filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2mbc.html">
+<name>iirlp2mbc</name>
+<purpose>Transform IIR lowpass filter to IIR complex M-band filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2xc.html">
+<name>iirlp2xc</name>
+<purpose>Transform IIR lowpass filter to IIR complex N-point filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlp2xn.html">
+<name>iirlp2xn</name>
+<purpose>Transform IIR lowpass filter to IIR real N-point filter</purpose>
+</tocitem>
+<tocitem target="ref/iirpowcomp.html">
+<name>iirpowcomp</name>
+<purpose>Power complementary IIR filter</purpose>
+</tocitem>
+<tocitem target="ref/allpassbpc2bpc.html">
+<name>allpassbpc2bpc</name>
+<purpose>Allpass filter for complex bandpass transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2bp.html">
+<name>allpasslp2bp</name>
+<purpose>Allpass filter for lowpass to bandpass transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2bpc.html">
+<name>allpasslp2bpc</name>
+<purpose>Allpass filter for lowpass to complex bandpass transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2bs.html">
+<name>allpasslp2bs</name>
+<purpose>Allpass filter for lowpass to bandstop transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2bsc.html">
+<name>allpasslp2bsc</name>
+<purpose>Allpass filter for lowpass to complex bandstop transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2hp.html">
+<name>allpasslp2hp</name>
+<purpose>Allpass filter for lowpass to highpass transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2lp.html">
+<name>allpasslp2lp</name>
+<purpose>Allpass filter for lowpass to lowpass transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2mb.html">
+<name>allpasslp2mb</name>
+<purpose>Allpass filter for lowpass to M-band transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2mbc.html">
+<name>allpasslp2mbc</name>
+<purpose>Allpass filter for lowpass to complex M-band transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2xc.html">
+<name>allpasslp2xc</name>
+<purpose>Allpass filter for lowpass to complex N-point transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpasslp2xn.html">
+<name>allpasslp2xn</name>
+<purpose>Allpass filter for lowpass to N-point transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpassrateup.html">
+<name>allpassrateup</name>
+<purpose>Allpass filter for integer upsample transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpassshift.html">
+<name>allpassshift</name>
+<purpose>Allpass filter for real shift transformation</purpose>
+</tocitem>
+<tocitem target="ref/allpassshiftc.html">
+<name>allpassshiftc</name>
+<purpose>Allpass filter for complex shift transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpkbpc2bpc.html">
+<name>zpkbpc2bpc</name>
+<purpose>Zero-pole-gain complex bandpass frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpkftransf.html">
+<name>zpkftransf</name>
+<purpose>Zero-pole-gain frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2bp.html">
+<name>zpklp2bp</name>
+<purpose>Zero-pole-gain lowpass to bandpass frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2bpc.html">
+<name>zpklp2bpc</name>
+<purpose>Zero-pole-gain lowpass to complex bandpass frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2bs.html">
+<name>zpklp2bs</name>
+<purpose>Zero-pole-gain lowpass to bandstop frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2bsc.html">
+<name>zpklp2bsc</name>
+<purpose>Zero-pole-gain lowpass to complex bandstop frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2hp.html">
+<name>zpklp2hp</name>
+<purpose>Zero-pole-gain lowpass to highpass frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2lp.html">
+<name>zpklp2lp</name>
+<purpose>Zero-pole-gain lowpass to lowpass frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2mb.html">
+<name>zpklp2mb</name>
+<purpose>Zero-pole-gain lowpass to M-band frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2mbc.html">
+<name>zpklp2mbc</name>
+<purpose>Zero-pole-gain lowpass to complex M-band frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2xc.html">
+<name>zpklp2xc</name>
+<purpose>Zero-pole-gain lowpass to complex N-point frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpklp2xn.html">
+<name>zpklp2xn</name>
+<purpose>Zero-pole-gain lowpass to N-point frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpkrateup.html">
+<name>zpkrateup</name>
+<purpose>Zero-pole-gain complex bandpass frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpkshift.html">
+<name>zpkshift</name>
+<purpose>Zero-pole-gain real shift frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/zpkshiftc.html">
+<name>zpkshiftc</name>
+<purpose>Zero-pole-gain complex shift frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/iirftransf.html">
+<name>iirftransf</name>
+<purpose>IIR frequency transformation of filter</purpose>
+</tocitem>
+<tocitem target="ref/iirlinphase.html">
+<name>iirlinphase</name>
+<purpose>Quasi-linear phase IIR filter from halfband filter specification</purpose>
+</tocitem>
+<tocitem target="ref/iirls.html">
+<name>iirls</name>
+<purpose>Least-squares IIR filter from specification object</purpose>
+</tocitem>
+<tocitem target="ref/iirrateup.html">
+<name>iirrateup</name>
+<purpose>Upsample IIR filter by integer factor</purpose>
+</tocitem>
+<tocitem target="ref/iirshift.html">
+<name>iirshift</name>
+<purpose>Shift frequency response of IIR filter</purpose>
+</tocitem>
+<tocitem target="ref/iirshiftc.html">
+<name>iirshiftc</name>
+<purpose>Shift frequency response of IIR complex filter</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="filter-implementation.html">Filter Implementation
+<tocitem target="single-rate-filters.html">Single-Rate Filters
+<tocitem target="ref/dfilt.html">
+<name>dfilt</name>
+<purpose>Discrete-time filter</purpose>
+</tocitem>
+<tocitem target="ref/coeread.html">
+<name>coeread</name>
+<purpose>Read Xilinx COE file</purpose>
+</tocitem>
+<tocitem target="ref/coewrite.html">
+<name>coewrite</name>
+<purpose>Write Xilinx COE file</purpose>
+</tocitem>
+<tocitem target="ref/dsp.biquadfilter.scaleopts.html">
+<name>scaleopts</name>
+<purpose>Create an options object for second-order section scaling</purpose>
+</tocitem>
+<tocitem target="ref/sos.html">
+<name>sos</name>
+<purpose>Convert quantized filter to second–order sections
+(SOS) form</purpose>
+</tocitem>
+<tocitem target="ref/ca2tf.html">
+<name>ca2tf</name>
+<purpose>Convert coupled allpass filter to transfer function form</purpose>
+</tocitem>
+<tocitem target="ref/cl2tf.html">
+<name>cl2tf</name>
+<purpose>Convert coupled allpass lattice to transfer function form</purpose>
+</tocitem>
+<tocitem target="ref/tf2ca.html">
+<name>tf2ca</name>
+<purpose>Transfer function to coupled allpass</purpose>
+</tocitem>
+<tocitem target="ref/tf2cl.html">
+<name>tf2cl</name>
+<purpose>Transfer function to coupled allpass lattice</purpose>
+</tocitem>
+<tocitem target="ref/constraincoeffwl.html">
+<name>constraincoeffwl</name>
+<purpose>Constrain coefficient wordlength</purpose>
+</tocitem>
+<tocitem target="ref/dsp.coupledallpassfilter.fvtool.html">
+<name>fvtool</name>
+<purpose>Visualize frequency response of coupled allpass filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.differentiator.getfilter.html">
+<name>getFilter</name>
+<purpose>Get underlying FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.coupledallpassfilter.getbranches.html">
+<name>getBranches</name>
+<purpose>Return internal allpass branches</purpose>
+</tocitem>
+<tocitem target="ref/dsp.notchpeakfilter.getbandwidth.html">
+<name>getBandwidth</name>
+<purpose>Get 3 dB bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/dsp.notchpeakfilter.getcenterfrequency.html">
+<name>getCenterFrequency</name>
+<purpose>Get center frequency</purpose>
+</tocitem>
+<tocitem target="ref/dsp.notchpeakfilter.getoctavebandwidth.html">
+<name>getOctaveBandwidth</name>
+<purpose>Bandwidth in number of octaves</purpose>
+</tocitem>
+<tocitem target="ref/dsp.notchpeakfilter.getqualityfactor.html">
+<name>getQualityFactor</name>
+<purpose>Get quality factor</purpose>
+</tocitem>
+<tocitem target="ref/dsp.notchpeakfilter.tfnotchpeakfilter.html">
+<name>tf</name>
+<purpose>Transfer function</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.getbandwidth.html">
+<name>dsp.ParametricEQFilter.getBandwidth</name>
+<purpose>Convert quality factor or bandwidth coefficient to bandwidth in Hz</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.getcenterfrequency.html">
+<name>dsp.ParametricEQFilter.getCenterFrequency</name>
+<purpose>Convert center frequency coefficient to frequency in Hz</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.getoctavebandwidth.html">
+<name>dsp.ParametricEQFilter.getOctaveBandwidth</name>
+<purpose>Measure bandwidth of parametric equalizer filter in octaves</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.getpeakgain.html">
+<name>dsp.ParametricEQFilter.getPeakGain</name>
+<purpose>Convert peak or notch gain from dB to absolute units</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.getpeakgaindb.html">
+<name>dsp.ParametricEQFilter.getPeakGaindB</name>
+<purpose>Convert peak or notch gain from absolute units to dB</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.getqualityfactor.html">
+<name>dsp.ParametricEQFilter.getQualityFactor</name>
+<purpose>Convert bandwidth to quality factor</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.reset.html">
+<name>dsp.ParametricEQFilter.reset</name>
+<purpose>Reset states of ParametricEQFilter object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.step.html">
+<name>dsp.ParametricEQFilter.step</name>
+<purpose>Filter input with ParametricEQFilter object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.parametriceqfilter.tf.html">
+<name>dsp.ParametricEQFilter.tf</name>
+<purpose>Compute transfer function</purpose>
+</tocitem>
+<tocitem target="ref/convert.html">
+<name>convert</name>
+<purpose>Convert filter structure of discrete-time filter</purpose>
+</tocitem>
+<tocitem target="ref/sysobj.html">
+<name>sysobj</name>
+<purpose>Create filter System
+        object from discrete-time filter</purpose>
+</tocitem>
+<tocitem target="ref/filter.html">
+<name>filter</name>
+<purpose>Filter data with filter object</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.delay.html">
+<name>dfilt.delay</name>
+<purpose>Delay filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.dffir.html">
+<name>dfilt.dffir</name>
+<purpose>Discrete-time, direct-form FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.dffirt.html">
+<name>dfilt.dffirt</name>
+<purpose>Discrete-time, direct-form FIR transposed filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.dfsymfir.html">
+<name>dfilt.dfsymfir</name>
+<purpose>Discrete-time, direct-form symmetric FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.dfasymfir.html">
+<name>dfilt.dfasymfir</name>
+<purpose>Discrete-time, direct-form antisymmetric FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.farrowlinearfd.html">
+<name>dfilt.farrowlinearfd</name>
+<purpose>Farrow Linear Fractional Delay filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.farrowfd.html">
+<name>dfilt.farrowfd</name>
+<purpose>Fractional Delay Farrow filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.fftfir.html">
+<name>dfilt.fftfir</name>
+<purpose>Discrete-time, overlap-add, FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.latticemamax.html">
+<name>dfilt.latticemamax</name>
+<purpose>Discrete-time, lattice, moving-average filter with maximum
+phase</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.latticemamin.html">
+<name>dfilt.latticemamin</name>
+<purpose>Discrete-time, lattice, moving-average filter with minimum
+phase</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.scalar.html">
+<name>dfilt.scalar</name>
+<purpose>Discrete-time, scalar filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.allpass.html">
+<name>dfilt.allpass</name>
+<purpose>Allpass filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.calattice.html">
+<name>dfilt.calattice</name>
+<purpose>Coupled-allpass, lattice filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.calatticepc.html">
+<name>dfilt.calatticepc</name>
+<purpose>Coupled-allpass, power-complementary lattice filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df1.html">
+<name>dfilt.df1</name>
+<purpose>Discrete-time, direct-form I filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df1sos.html">
+<name>dfilt.df1sos</name>
+<purpose>Discrete-time, SOS direct-form I filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df1t.html">
+<name>dfilt.df1t</name>
+<purpose>Discrete-time, direct-form I transposed filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df1tsos.html">
+<name>dfilt.df1tsos</name>
+<purpose>Discrete-time, SOS direct-form I transposed filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df2.html">
+<name>dfilt.df2</name>
+<purpose>Discrete-time, direct-form II filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df2sos.html">
+<name>dfilt.df2sos</name>
+<purpose>Discrete-time, SOS, direct-form II filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df2t.html">
+<name>dfilt.df2t</name>
+<purpose>Discrete-time, direct-form II transposed filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.df2tsos.html">
+<name>dfilt.df2tsos</name>
+<purpose>Discrete-time, SOS direct-form II transposed filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.latticeallpass.html">
+<name>dfilt.latticeallpass</name>
+<purpose>Discrete-time, lattice allpass filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.latticear.html">
+<name>dfilt.latticear</name>
+<purpose>Discrete-time, lattice, autoregressive filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.latticearma.html">
+<name>dfilt.latticearma</name>
+<purpose>Discrete-time, lattice, autoregressive, moving-average
+filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.wdfallpass.html">
+<name>dfilt.wdfallpass</name>
+<purpose>Wave digital allpass filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.cascade.html">
+<name>dfilt.cascade</name>
+<purpose>Cascade of discrete-time filters</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.parallel.html">
+<name>dfilt.parallel</name>
+<purpose>Discrete-time, parallel structure filter</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.cascadeallpass.html">
+<name>dfilt.cascadeallpass</name>
+<purpose>Cascade of allpass discrete-time filters</purpose>
+</tocitem>
+<tocitem target="ref/dfilt.cascadewdfallpass.html">
+<name>dfilt.cascadewdfallpass</name>
+<purpose>Cascade allpass WDF filters to construct allpass WDF</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multirate-and-multistage-filters.html">Multirate and Multistage Filters
+<tocitem target="ref/dsp.channelizer.coeffs.html">
+<name>coeffs</name>
+<purpose>Coefficients of prototype lowpass filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.tf.html">
+<name>tf</name>
+<purpose>Return transfer function of overall prototype lowpass filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.polyphase.html">
+<name>polyphase</name>
+<purpose>Return polyphase matrix</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.freqz.html">
+<name>freqz</name>
+<purpose>Frequency response of filters in channelizer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.fvtool.html">
+<name>fvtool</name>
+<purpose>Visualize the filters in the channelizer</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitaldownconverter.fvtool.html">
+<name>fvtool</name>
+<purpose>Visualize frequency response of digital down converter or digital up converter
+            filter cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitaldownconverter.getdecimationfactors.html">
+<name>getDecimationFactors</name>
+<purpose>Get decimation factors of each filter stage of a digital down
+            converter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitalupconverter.getinterpolationfactors.html">
+<name>getInterpolationFactors</name>
+<purpose>Get interpolation factors of each filter stage of digital upconverter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitaldownconverter.getfilterorders.html">
+<name>getFilterOrders</name>
+<purpose>Get orders of digital down converter or digital up converter filter
+            cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitaldownconverter.getfilters.html">
+<name>getFilters</name>
+<purpose>Get handles to digital down converter or digital up converter filter cascade
+            objects</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitaldownconverter.groupdelay.html">
+<name>groupDelay</name>
+<purpose>Group delay of digital down converter or digital up converter filter
+            cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.digitaldownconverter.visualizefilterstages.html">
+<name>visualizeFilterStages</name>
+<purpose>Display response of digital down converter or digital up converter filter
+            cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.bandedgefrequencies.html">
+<name>bandedgeFrequencies</name>
+<purpose>Compute the bandedge frequencies</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.centerfrequencies.html">
+<name>centerFrequencies</name>
+<purpose>Compute center frequencies</purpose>
+</tocitem>
+<tocitem target="ref/dsp.channelizer.getfilters.html">
+<name>getFilters</name>
+<purpose>Return matrix of channelizer FIR filters</purpose>
+</tocitem>
+<tocitem target="ref/maximizestopband.html">
+<name>maximizestopband</name>
+<purpose>Maximize stopband attenuation of fixed-point filter</purpose>
+</tocitem>
+<tocitem target="ref/minimizecoeffwl.html">
+<name>minimizecoeffwl</name>
+<purpose>Minimum wordlength fixed-point filter</purpose>
+</tocitem>
+<tocitem target="ref/multistage.html">
+<name>multistage</name>
+<purpose>Multistage filter from specification object</purpose>
+</tocitem>
+<tocitem target="ref/fcfwrite.html">
+<name>fcfwrite</name>
+<purpose>Write file containing filter coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.cicdecimator.gain.html">
+<name>gain</name>
+<purpose>CIC filter gain</purpose>
+</tocitem>
+<tocitem target="ref/dsp.cicdecimator.getfixedpointinfo.html">
+<name>getFixedPointInfo</name>
+<purpose>Get fixed-point word and fraction lengths</purpose>
+</tocitem>
+<tocitem target="ref/int.html">
+<name>int</name>
+<purpose>States from CIC filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.filtercascade.addstage.html">
+<name>addStage</name>
+<purpose>Add filter stage to cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.filtercascade.generatefilteringcode.html">
+<name>generateFilteringCode</name>
+<purpose>Generate MATLAB code for a filter cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.filtercascade.getnumstages.html">
+<name>getNumStages</name>
+<purpose>Get number of stages in filter cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.filtercascade.releasestages.html">
+<name>releaseStages</name>
+<purpose>Release locked state of all stages in cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.filtercascade.removestage.html">
+<name>removeStage</name>
+<purpose>Remove stage from filter cascade</purpose>
+</tocitem>
+<tocitem target="ref/dsp.farrowrateconverter.getpolynomialcoefficients.html">
+<name>getPolynomialCoefficients</name>
+<purpose>Get polynomial coefficients of farrow rate conversion filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.farrowrateconverter.getactualoutputrate.html">
+<name>getActualOutputRate</name>
+<purpose>Get actual output rate</purpose>
+</tocitem>
+<tocitem target="ref/dsp.farrowrateconverter.getratechangefactors.html">
+<name>getRateChangeFactors</name>
+<purpose>Get overall interpolation and decimation factors</purpose>
+</tocitem>
+<tocitem target="ref/dsp.complexbandpassdecimator.visualizefilterstages.html">
+<name>visualizeFilterStages</name>
+<purpose>Visualize filter stages</purpose>
+</tocitem>
+<tocitem target="ref/dsp.complexbandpassdecimator.cost.html">
+<name>cost</name>
+<purpose>Implementation cost of the complex bandpass decimator</purpose>
+</tocitem>
+<tocitem target="ref/dsp.complexbandpassdecimator.freqzmultiratemultistagefilter.html">
+<name>freqz</name>
+<purpose>Frequency response of the multirate multistage filter</purpose>
+</tocitem>
+<tocitem target="ref/cascade.html">
+<name>cascade</name>
+<purpose>Cascade of filter system objects</purpose>
+</tocitem>
+<tocitem target="ref/convert.html">
+<name>convert</name>
+<purpose>Convert filter structure of discrete-time filter</purpose>
+</tocitem>
+<tocitem target="ref/filter.html">
+<name>filter</name>
+<purpose>Filter data with filter object</purpose>
+</tocitem>
+<tocitem target="ref/dsp.ciccompensationdecimator.polyphase.html">
+<name>polyphase</name>
+<purpose>Polyphase decomposition of multirate filter</purpose>
+</tocitem>
+<tocitem target="ref/sysobj.html">
+<name>sysobj</name>
+<purpose>Create filter System
+        object from discrete-time filter</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="adaptive-filters.html">Adaptive Filters
+<tocitem target="ref/dsp.lmsfilter.maxstep.html">
+<name>maxstep</name>
+<purpose>Maximum step size for LMS adaptive filter convergence</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lmsfilter.msepred.html">
+<name>msepred</name>
+<purpose>Predicted mean squared error for LMS adaptive filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lmsfilter.msesim.html">
+<name>msesim</name>
+<purpose>Estimated mean squared error for adaptive filters</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="transforms-and-spectral-analysis.html">Transforms and Spectral Analysis
+<tocitem target="transforms.html">Transforms
+<tocitem target="ref/dsp.hdlfft.getlatency.html">
+<name>getLatency</name>
+<purpose>Latency of FFT or channelizer calculation</purpose>
+</tocitem>
+<tocitem target="ref/dsp.hdlfirfilter.getlatencyhdlfir.html">
+<name>getLatency</name>
+<purpose>Latency of FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.hdlfirfilter.getlatencycic.html">
+<name>getLatency</name>
+<purpose>Latency of CIC decimation filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.dct-system-object.html">
+<name>dsp.DCT</name>
+<purpose>(To be removed) Discrete cosine transform (DCT)</purpose>
+</tocitem>
+<tocitem target="ref/dsp.idct-system-object.html">
+<name>dsp.IDCT</name>
+<purpose>(To be removed) Inverse discrete cosine transform (IDCT)</purpose>
+</tocitem>
+<tocitem target="ref/dsp.dct.step.html">
+<name>dsp.DCT.step</name>
+<purpose>Discrete cosine transform (DCT) of input</purpose>
+</tocitem>
+<tocitem target="ref/dsp.idct.step.html">
+<name>dsp.IDCT.step</name>
+<purpose>Inverse discrete cosine transform (IDCT) of input</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linear-prediction.html">Linear Prediction
+<tocitem target="ref/dsp.cepstraltolpc-system-object.html">
+<name>dsp.CepstralToLPC</name>
+<purpose>(To be removed) Convert cepstral coefficients to linear prediction
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctoautocorrelation-system-object.html">
+<name>dsp.LPCToAutocorrelation</name>
+<purpose>(To be removed) Convert linear prediction coefficients to autocorrelation
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctocepstral-system-object.html">
+<name>dsp.LPCToCepstral</name>
+<purpose>(To be removed) Convert linear prediction coefficients to cepstral
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctolsf-system-object.html">
+<name>dsp.LPCToLSF</name>
+<purpose>(To be removed) Convert linear prediction coefficients to line spectral
+            frequencies</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctolsp-system-object.html">
+<name>dsp.LPCToLSP</name>
+<purpose>(To be removed) Convert linear prediction coefficients to line spectral
+            pairs</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctorc-system-object.html">
+<name>dsp.LPCToRC</name>
+<purpose>(To be removed) Convert linear prediction coefficients to reflection
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lsftolpc-system-object.html">
+<name>dsp.LSFToLPC</name>
+<purpose>(To be removed) Convert line spectral frequencies to linear prediction
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lsptolpc-system-object.html">
+<name>dsp.LSPToLPC</name>
+<purpose>(To be removed) Convert line spectral pairs to linear prediction
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.rctoautocorrelation-system-object.html">
+<name>dsp.RCToAutocorrelation</name>
+<purpose>(To be removed) Convert reflection coefficients to autocorrelation
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.rctolpc-system-object.html">
+<name>dsp.RCToLPC</name>
+<purpose>(To be removed) Convert reflection coefficients to linear prediction
+            coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.cepstraltolpc.step.html">
+<name>dsp.CepstralToLPC.step</name>
+<purpose>LPC coefficients from column of cepstral coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.levinsonsolver.step.html">
+<name>dsp.LevinsonSolver.step</name>
+<purpose>Reflection coefficients corresponding to columns of input</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctoautocorrelation.step.html">
+<name>dsp.LPCToAutocorrelation.step</name>
+<purpose>Autocorrelation coefficients from LPC coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctocepstral.step.html">
+<name>dsp.LPCToCepstral.step</name>
+<purpose>Cepstral coefficients from columns of input LPC coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctolsf.reset.html">
+<name>dsp.LPCToLSF.reset</name>
+<purpose>Reset values for overwriting invalid outputs to their
+initial values</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctolsf.step.html">
+<name>dsp.LPCToLSF.step</name>
+<purpose>Convert LPC  coefficients to line spectral frequencies</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctolsp.reset.html">
+<name>dsp.LPCToLSP.reset</name>
+<purpose>Reset values for overwriting invalid outputs to their
+initial values</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctolsp.step.html">
+<name>dsp.LPCToLSP.step</name>
+<purpose>Convert linear prediction coefficients to line spectral
+pairs</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lpctorc.step.html">
+<name>dsp.LPCToRC.step</name>
+<purpose>Convert columns of linear prediction coefficients to reflection
+coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lsftolpc.step.html">
+<name>dsp.LSFToLPC.step</name>
+<purpose>Convert input line spectral frequencies to linear prediction
+coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lsptolpc.step.html">
+<name>dsp.LSPToLPC.step</name>
+<purpose>Convert input line spectral pairs to linear prediction
+coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.rctoautocorrelation.step.html">
+<name>dsp.RCToAutocorrelation.step</name>
+<purpose>Convert columns of reflection coefficients to autocorrelation
+coefficients</purpose>
+</tocitem>
+<tocitem target="ref/dsp.rctolpc.step.html">
+<name>dsp.RCToLPC.step</name>
+<purpose>Convert columns of reflection coefficients to linear prediction
+coefficients</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spectral-analysis.html">Spectral Analysis
+<tocitem target="ref/dsp.burgarestimator-system-object.html">
+<name>dsp.BurgAREstimator</name>
+<purpose>(To be removed) Estimate of autoregressive (AR) model parameters using Burg
+            method</purpose>
+</tocitem>
+<tocitem target="ref/dsp.burgspectrumestimator-system-object.html">
+<name>dsp.BurgSpectrumEstimator</name>
+<purpose>(To be removed) Parametric spectral estimate using Burg method</purpose>
+</tocitem>
+<tocitem target="ref/dsp.burgarestimator.step.html">
+<name>dsp.BurgAREstimator.step</name>
+<purpose>Normalized estimate of AR model parameter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.burgspectrumestimator.step.html">
+<name>dsp.BurgSpectrumEstimator.step</name>
+<purpose>Estimate of power spectral density</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumestimator.getfrequencyvector.html">
+<name>getFrequencyVector</name>
+<purpose>Vector of frequencies at which estimation is done</purpose>
+</tocitem>
+<tocitem target="ref/dsp.spectrumestimator.getrbw.html">
+<name>getRBW</name>
+<purpose>Resolution bandwidth of spectrum</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="statistics-and-linear-algebra.html">Statistics and Linear Algebra
+<tocitem target="mathematics-and-statistics.html">Measurements and Statistics
+<tocitem target="ref/dsp.pulsemetrics.plot.html">
+<name>plot</name>
+<purpose>Plot pulse signal and metrics</purpose>
+</tocitem>
+<tocitem target="ref/dsp.statelevels.plot.html">
+<name>plot</name>
+<purpose>Plot signal, state levels, and histogram</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="matrix-operations.html">Array and Matrix Mathematics
+<tocitem target="ref/dsp.arrayvectoradder.step.html">
+<name>dsp.ArrayVectorAdder.step</name>
+<purpose>Add vector to N-D array</purpose>
+</tocitem>
+<tocitem target="ref/dsp.arrayvectordivider.step.html">
+<name>dsp.ArrayVectorDivider.step</name>
+<purpose>Divide array by vector</purpose>
+</tocitem>
+<tocitem target="ref/dsp.arrayvectormultiplier.step.html">
+<name>dsp.ArrayVectorMultiplier.step</name>
+<purpose>Multiply array by vector</purpose>
+</tocitem>
+<tocitem target="ref/dsp.arrayvectorsubtractor.step.html">
+<name>dsp.ArrayVectorSubtractor.step</name>
+<purpose>Subtract vector from array along specified dimension</purpose>
+</tocitem>
+<tocitem target="ref/dsp.normalizer-system-object.html">
+<name>dsp.Normalizer</name>
+<purpose>(To be removed) Vector normalization along specified dimension</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linear-algebra.html">Linear Algebra
+<tocitem target="ref/dsp.ldlfactor.step.html">
+<name>dsp.LDLFactor.step</name>
+<purpose>Decompose matrix into components</purpose>
+</tocitem>
+<tocitem target="ref/dsp.lufactor.step.html">
+<name>dsp.LUFactor.step</name>
+<purpose>Decompose matrix into lower and upper triangular matrices</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="fixed-point-design.html">Fixed-Point Design
+<tocitem target="fixed-point-filters.html">Fixed-Point Filters
+<tocitem target="ref/autoscale.html">
+<name>autoscale</name>
+<purpose>Automatic dynamic range scaling</purpose>
+</tocitem>
+<tocitem target="ref/denormalize.html">
+<name>denormalize</name>
+<purpose>Undo filter coefficient and gain changes caused by normalize</purpose>
+</tocitem>
+<tocitem target="ref/freqrespest.html">
+<name>freqrespest</name>
+<purpose>Frequency response estimate via filtering</purpose>
+</tocitem>
+<tocitem target="ref/freqrespopts.html">
+<name>freqrespopts</name>
+<purpose>Options for filter frequency response analysis</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.freqz.html">
+<name>freqz</name>
+<purpose>Frequency response of filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.allpassfilter.impz.html">
+<name>impz</name>
+<purpose>Impulse response of discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/isstable.html">
+<name>isstable</name>
+<purpose>Determine whether filter is stable</purpose>
+</tocitem>
+<tocitem target="ref/limitcycle.html">
+<name>limitcycle</name>
+<purpose>Response of  single-rate, fixed-point IIR filter</purpose>
+</tocitem>
+<tocitem target="ref/noisepsd.html">
+<name>noisepsd</name>
+<purpose>Power spectral density of filter output due to roundoff
+noise</purpose>
+</tocitem>
+<tocitem target="ref/noisepsdopts.html">
+<name>noisepsdopts</name>
+<purpose>Options for running filter output noise PSD</purpose>
+</tocitem>
+<tocitem target="ref/normalize.html">
+<name>normalize</name>
+<purpose>Normalize filter numerator or feed-forward coefficients</purpose>
+</tocitem>
+<tocitem target="ref/reffilter.html">
+<name>reffilter</name>
+<purpose>Reference filter for fixed-point or single-precision filter</purpose>
+</tocitem>
+<tocitem target="ref/reorder.html">
+<name>reorder</name>
+<purpose>Rearrange sections in SOS filter</purpose>
+</tocitem>
+<tocitem target="ref/dsp.biquadfilter.scale.html">
+<name>scale</name>
+<purpose>Scale second-order sections of dsp.BiquadFilter
+            System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/set2int.html">
+<name>set2int</name>
+<purpose>Configure filter for integer filtering</purpose>
+</tocitem>
+<tocitem target="ref/specifyall.html">
+<name>specifyall</name>
+<purpose>Fully specify fixed-point filter System
+        object settings</purpose>
+</tocitem>
+<tocitem target="ref/zplane.html">
+<name>zplane</name>
+<purpose>Z-plane zero-pole plot for discrete-time filter System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/qreport.html">
+<name>qreport</name>
+<purpose>Most recent fixed-point filtering operation report</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="c-code-generation-.html">C Code Generation
+<tocitem target="../coder/ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/showsignalblockdatatypetable.html">
+<name>showsignalblockdatatypetable</name>
+<purpose>Launch DSP System
+            Toolbox data type support table</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="hdl-code-generation.html">HDL Code Generation
+<tocitem target="ref/dsp.variablefractionaldelay.generatehdl.html">
+<name>generatehdl</name>
+<purpose>Generate HDL code for quantized DSP filter (requires Filter Design HDL Coder)</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-dsp-algorithm-acceleration.html">DSP Algorithm Acceleration
+<tocitem target="ref/dspunfold.html">
+<name>dspunfold</name>
+<purpose>Generates a multi-threaded MEX file from a MATLAB function</purpose>
+</tocitem>
+<tocitem target="../coder/ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

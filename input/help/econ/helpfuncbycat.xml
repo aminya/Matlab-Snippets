@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="data-preprocessing.html">Data Preprocessing
+<tocitem target="hpfilter.html">
+<name>hpfilter</name>
+<purpose>Hodrick-Prescott filter for trend and cyclical components</purpose>
+</tocitem>
+<tocitem target="price2ret.html">
+<name>price2ret</name>
+<purpose>Convert prices to returns</purpose>
+</tocitem>
+<tocitem target="ret2price.html">
+<name>ret2price</name>
+<purpose>Convert returns to prices</purpose>
+</tocitem>
+<tocitem target="recessionplot.html">
+<name>recessionplot</name>
+<purpose>Overlay recession bands on a time series plot</purpose>
+</tocitem>
+<tocitem target="lagop.isstable.html">
+<name>isStable</name>
+<purpose>Determine stability of lag operator polynomial</purpose>
+</tocitem>
+<tocitem target="lagop.reflect.html">
+<name>reflect</name>
+<purpose>Reflect lag operator polynomial coefficients around lag
+zero</purpose>
+</tocitem>
+<tocitem target="lagop.tocellarray.html">
+<name>toCellArray</name>
+<purpose>Convert lag operator polynomial object to cell array</purpose>
+</tocitem>
+<tocitem target="lagmatrix.html">
+<name>lagmatrix</name>
+<purpose>Create matrix of lagged time series</purpose>
+</tocitem>
+<tocitem target="lagop.filter.html">
+<name>LagOp.filter</name>
+<purpose>Apply lag operator polynomial to filter time series</purpose>
+</tocitem>
+<tocitem target="lagop.iseqlagop.html">
+<name>LagOp.isEqLagOp</name>
+<purpose>Determine if two LagOp objects are same
+mathematical polynomial</purpose>
+</tocitem>
+<tocitem target="lagop.isnonzero.html">
+<name>LagOp.isNonZero</name>
+<purpose>Find lags associated with nonzero coefficients of LagOp objects</purpose>
+</tocitem>
+<tocitem target="lagop.minus.html">
+<name>LagOp.minus</name>
+<purpose>Lag operator polynomial subtraction</purpose>
+</tocitem>
+<tocitem target="lagop.mldivide.html">
+<name>LagOp.mldivide</name>
+<purpose>Lag operator polynomial left division</purpose>
+</tocitem>
+<tocitem target="lagop.mrdivide.html">
+<name>LagOp.mrdivide</name>
+<purpose>Lag operator polynomial right division</purpose>
+</tocitem>
+<tocitem target="lagop.mtimes.html">
+<name>LagOp.mtimes</name>
+<purpose>Lag operator polynomial multiplication</purpose>
+</tocitem>
+<tocitem target="lagop.plus.html">
+<name>LagOp.plus</name>
+<purpose>Lag operator polynomial addition</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-selection.html">Model Selection
+<tocitem target="specification-testing-1.html">Specification Testing
+<tocitem target="adftest.html">
+<name>adftest</name>
+<purpose>Augmented Dickey-Fuller test</purpose>
+</tocitem>
+<tocitem target="kpsstest.html">
+<name>kpsstest</name>
+<purpose>KPSS test for stationarity</purpose>
+</tocitem>
+<tocitem target="lmctest.html">
+<name>lmctest</name>
+<purpose>Leybourne-McCabe stationarity test</purpose>
+</tocitem>
+<tocitem target="pptest.html">
+<name>pptest</name>
+<purpose>Phillips-Perron test for one unit root</purpose>
+</tocitem>
+<tocitem target="vratiotest.html">
+<name>vratiotest</name>
+<purpose>Variance ratio test for random walk</purpose>
+</tocitem>
+<tocitem target="i10test.html">
+<name>i10test</name>
+<purpose>Paired integration and stationarity tests</purpose>
+</tocitem>
+<tocitem target="autocorr.html">
+<name>autocorr</name>
+<purpose>Sample autocorrelation</purpose>
+</tocitem>
+<tocitem target="parcorr.html">
+<name>parcorr</name>
+<purpose>Sample partial autocorrelation</purpose>
+</tocitem>
+<tocitem target="crosscorr.html">
+<name>crosscorr</name>
+<purpose>Sample cross-correlation</purpose>
+</tocitem>
+<tocitem target="corrplot.html">
+<name>corrplot</name>
+<purpose>Plot variable correlations</purpose>
+</tocitem>
+<tocitem target="lbqtest.html">
+<name>lbqtest</name>
+<purpose>Ljung-Box Q-test for residual autocorrelation</purpose>
+</tocitem>
+<tocitem target="collintest.html">
+<name>collintest</name>
+<purpose>Belsley collinearity diagnostics</purpose>
+</tocitem>
+<tocitem target="gctest.html">
+<name>gctest</name>
+<purpose>Block-wise Granger causality and block exogeneity tests</purpose>
+</tocitem>
+<tocitem target="archtest.html">
+<name>archtest</name>
+<purpose>Engle test for residual heteroscedasticity</purpose>
+</tocitem>
+<tocitem target="chowtest.html">
+<name>chowtest</name>
+<purpose>Chow test for structural change</purpose>
+</tocitem>
+<tocitem target="cusumtest.html">
+<name>cusumtest</name>
+<purpose>Cusum test for structural change</purpose>
+</tocitem>
+<tocitem target="recreg.html">
+<name>recreg</name>
+<purpose>Recursive linear regression</purpose>
+</tocitem>
+<tocitem target="collintest.html">
+<name>collintest</name>
+<purpose>Belsley collinearity diagnostics</purpose>
+</tocitem>
+<tocitem target="egcitest.html">
+<name>egcitest</name>
+<purpose>Engle-Granger cointegration
+test</purpose>
+</tocitem>
+<tocitem target="jcitest.html">
+<name>jcitest</name>
+<purpose>Johansen cointegration
+test</purpose>
+</tocitem>
+<tocitem target="jcontest.html">
+<name>jcontest</name>
+<purpose> Johansen constraint
+test</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-diagnostics.html">Model Comparisons
+<tocitem target="aicbic.html">
+<name>aicbic</name>
+<purpose>Akaike or Bayesian information criteria</purpose>
+</tocitem>
+<tocitem target="lmtest.html">
+<name>lmtest</name>
+<purpose>Lagrange multiplier test of model specification</purpose>
+</tocitem>
+<tocitem target="lratiotest.html">
+<name>lratiotest</name>
+<purpose>Likelihood ratio test of model specification</purpose>
+</tocitem>
+<tocitem target="waldtest.html">
+<name>waldtest</name>
+<purpose>Wald test of model specification</purpose>
+</tocitem>
+<tocitem target="arma2ar.html">
+<name>arma2ar</name>
+<purpose>Convert ARMA model to AR model</purpose>
+</tocitem>
+<tocitem target="arma2ma.html">
+<name>arma2ma</name>
+<purpose>Convert ARMA model to MA model</purpose>
+</tocitem>
+<tocitem target="var2vec.html">
+<name>var2vec</name>
+<purpose>Convert VAR model to VEC model</purpose>
+</tocitem>
+<tocitem target="vec2var.html">
+<name>vec2var</name>
+<purpose>Convert VEC model to VAR model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="compare-arma-models.html">Residual Diagnostics
+<tocitem target="arima.infer.html">
+<name>infer</name>
+<purpose>Infer ARIMA or ARIMAX model residuals or conditional variances</purpose>
+</tocitem>
+<tocitem target="regarima.infer.html">
+<name>infer</name>
+<purpose>Infer innovations of regression models with ARIMA errors</purpose>
+</tocitem>
+<tocitem target="garch.infer.html">
+<name>infer</name>
+<purpose>Infer conditional variances of conditional variance models</purpose>
+</tocitem>
+<tocitem target="varm.infer.html">
+<name>infer</name>
+<purpose>Infer vector autoregression model (VAR) innovations</purpose>
+</tocitem>
+<tocitem target="vecm.infer.html">
+<name>infer</name>
+<purpose>Infer vector error-correction (VEC) model innovations</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="nonspherical-models.html">Nonspherical Models
+<tocitem target="autocorr.html">
+<name>autocorr</name>
+<purpose>Sample autocorrelation</purpose>
+</tocitem>
+<tocitem target="lbqtest.html">
+<name>lbqtest</name>
+<purpose>Ljung-Box Q-test for residual autocorrelation</purpose>
+</tocitem>
+<tocitem target="parcorr.html">
+<name>parcorr</name>
+<purpose>Sample partial autocorrelation</purpose>
+</tocitem>
+<tocitem target="archtest.html">
+<name>archtest</name>
+<purpose>Engle test for residual heteroscedasticity</purpose>
+</tocitem>
+<tocitem target="hac.html">
+<name>hac</name>
+<purpose>Heteroscedasticity and autocorrelation consistent covariance
+estimators</purpose>
+</tocitem>
+<tocitem target="fgls.html">
+<name>fgls</name>
+<purpose>Feasible generalized least squares</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="time-series-regression-models.html">Time Series Regression Models
+<tocitem target="regression-models-with-arima-errors-1.html">Autocorrelated and Heteroscedastic Disturbances
+<tocitem target="regarima-class.html">
+<name>regARIMA</name>
+<purpose>Create regression model with ARIMA time series errors</purpose>
+</tocitem>
+<tocitem target="regarima.arima.html">
+<name>arima</name>
+<purpose>Convert regression model with ARIMA errors to ARIMAX model</purpose>
+</tocitem>
+<tocitem target="hac.html">
+<name>hac</name>
+<purpose>Heteroscedasticity and autocorrelation consistent covariance
+estimators</purpose>
+</tocitem>
+<tocitem target="fgls.html">
+<name>fgls</name>
+<purpose>Feasible generalized least squares</purpose>
+</tocitem>
+<tocitem target="regarima.estimate.html">
+<name>estimate</name>
+<purpose>Estimate parameters of regression models with ARIMA errors</purpose>
+</tocitem>
+<tocitem target="regarima.infer.html">
+<name>infer</name>
+<purpose>Infer innovations of regression models with ARIMA errors</purpose>
+</tocitem>
+<tocitem target="regarima.summarize.html">
+<name>summarize</name>
+<purpose>Display estimation results of regression model with ARIMA errors </purpose>
+</tocitem>
+<tocitem target="regarima.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of regression model with ARIMA
+errors</purpose>
+</tocitem>
+<tocitem target="regarima.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances through regression model with ARIMA
+errors</purpose>
+</tocitem>
+<tocitem target="regarima.impulse.html">
+<name>impulse</name>
+<purpose>Impulse response of regression model with ARIMA errors</purpose>
+</tocitem>
+<tocitem target="regarima.forecast.html">
+<name>forecast</name>
+<purpose>Forecast responses of regression model with ARIMA errors</purpose>
+</tocitem>
+<tocitem target="regarima.print.html">
+<name>print</name>
+<purpose>(To be removed) Display estimation results for regression models with ARIMA
+            errors</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="bayesian-linear-regression-models.html">Bayesian Linear Regression Models
+<tocitem target="bayeslm.html">
+<name>bayeslm</name>
+<purpose>Create Bayesian linear regression model object</purpose>
+</tocitem>
+<tocitem target="conjugateblm.estimate.html">
+<name>estimate</name>
+<purpose>Fit parameters of Bayesian linear regression model to data</purpose>
+</tocitem>
+<tocitem target="conjugateblm.summarize.html">
+<name>summarize</name>
+<purpose>Distribution summary statistics of standard Bayesian linear regression
+      model</purpose>
+</tocitem>
+<tocitem target="conjugateblm.plot.html">
+<name>plot</name>
+<purpose>Visualize prior and posterior densities of Bayesian linear regression model
+            parameters</purpose>
+</tocitem>
+<tocitem target="lassoblm.estimate.html">
+<name>estimate</name>
+<purpose>Perform predictor variable selection for Bayesian linear regression
+      models</purpose>
+</tocitem>
+<tocitem target="lassoblm.summarize.html">
+<name>summarize</name>
+<purpose>Distribution summary statistics of Bayesian linear regression model for predictor
+      variable selection</purpose>
+</tocitem>
+<tocitem target="conjugateblm.plot.html">
+<name>plot</name>
+<purpose>Visualize prior and posterior densities of Bayesian linear regression model
+            parameters</purpose>
+</tocitem>
+<tocitem target="conjugateblm.simulate.html">
+<name>simulate</name>
+<purpose>Simulate regression coefficients and disturbance variance of Bayesian linear
+            regression model</purpose>
+</tocitem>
+<tocitem target="sampleroptions.html">
+<name>sampleroptions</name>
+<purpose>Create Markov chain Monte Carlo (MCMC) sampler options</purpose>
+</tocitem>
+<tocitem target="conjugateblm.forecast.html">
+<name>forecast</name>
+<purpose>Forecast responses of Bayesian linear regression model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="conditional-mean-models.html">Conditional Mean Models
+<tocitem target="arima.html">
+<name>arima</name>
+<purpose>Create univariate autoregressive integrated moving average (ARIMA) model</purpose>
+</tocitem>
+<tocitem target="lagop-class.html">
+<name>LagOp</name>
+<purpose>Create lag operator polynomial (LagOp) object</purpose>
+</tocitem>
+<tocitem target="arma2ar.html">
+<name>arma2ar</name>
+<purpose>Convert ARMA model to AR model</purpose>
+</tocitem>
+<tocitem target="arma2ma.html">
+<name>arma2ma</name>
+<purpose>Convert ARMA model to MA model</purpose>
+</tocitem>
+<tocitem target="arima.estimate.html">
+<name>estimate</name>
+<purpose>Estimate ARIMA or ARIMAX model parameters</purpose>
+</tocitem>
+<tocitem target="arima.infer.html">
+<name>infer</name>
+<purpose>Infer ARIMA or ARIMAX model residuals or conditional variances</purpose>
+</tocitem>
+<tocitem target="arima.summarize.html">
+<name>summarize</name>
+<purpose>Display ARIMA model estimation results</purpose>
+</tocitem>
+<tocitem target="arima.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of ARIMA or ARIMAX models</purpose>
+</tocitem>
+<tocitem target="arima.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances using ARIMA or ARIMAX model</purpose>
+</tocitem>
+<tocitem target="arima.impulse.html">
+<name>impulse</name>
+<purpose>Impulse response function</purpose>
+</tocitem>
+<tocitem target="armairf.html">
+<name>armairf</name>
+<purpose>Generate or plot ARMA model impulse responses</purpose>
+</tocitem>
+<tocitem target="arima.forecast.html">
+<name>forecast</name>
+<purpose>Forecast ARIMA or ARIMAX model responses or conditional variances</purpose>
+</tocitem>
+<tocitem target="arima.print.html">
+<name>print</name>
+<purpose>(To be removed) Display parameter estimation results for ARIMA or ARIMAX
+            models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="conditional-variance-models.html">Conditional Variance Models
+<tocitem target="garch-model.html">GARCH Model
+<tocitem target="garch.html">
+<name>garch</name>
+<purpose>GARCH conditional variance time series model</purpose>
+</tocitem>
+<tocitem target="garch.estimate.html">
+<name>estimate</name>
+<purpose>Fit conditional variance model to data</purpose>
+</tocitem>
+<tocitem target="garch.infer.html">
+<name>infer</name>
+<purpose>Infer conditional variances of conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.summarize.html">
+<name>summarize</name>
+<purpose>Display estimation results of conditional variance model</purpose>
+</tocitem>
+<tocitem target="garch.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances through conditional variance model</purpose>
+</tocitem>
+<tocitem target="garch.forecast.html">
+<name>forecast</name>
+<purpose>Forecast conditional variances from conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.print.html">
+<name>print</name>
+<purpose>(To be removed) Display parameter estimation results for conditional variance
+            models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="egarch-model.html">EGARCH Model
+<tocitem target="egarch.html">
+<name>egarch</name>
+<purpose>EGARCH conditional variance time series model</purpose>
+</tocitem>
+<tocitem target="garch.estimate.html">
+<name>estimate</name>
+<purpose>Fit conditional variance model to data</purpose>
+</tocitem>
+<tocitem target="garch.infer.html">
+<name>infer</name>
+<purpose>Infer conditional variances of conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.summarize.html">
+<name>summarize</name>
+<purpose>Display estimation results of conditional variance model</purpose>
+</tocitem>
+<tocitem target="garch.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances through conditional variance model</purpose>
+</tocitem>
+<tocitem target="garch.forecast.html">
+<name>forecast</name>
+<purpose>Forecast conditional variances from conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.print.html">
+<name>print</name>
+<purpose>(To be removed) Display parameter estimation results for conditional variance
+            models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gjr-model.html">GJR Model
+<tocitem target="gjr.html">
+<name>gjr</name>
+<purpose>GJR conditional variance time series model</purpose>
+</tocitem>
+<tocitem target="garch.estimate.html">
+<name>estimate</name>
+<purpose>Fit conditional variance model to data</purpose>
+</tocitem>
+<tocitem target="garch.infer.html">
+<name>infer</name>
+<purpose>Infer conditional variances of conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.summarize.html">
+<name>summarize</name>
+<purpose>Display estimation results of conditional variance model</purpose>
+</tocitem>
+<tocitem target="garch.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances through conditional variance model</purpose>
+</tocitem>
+<tocitem target="garch.forecast.html">
+<name>forecast</name>
+<purpose>Forecast conditional variances from conditional variance models</purpose>
+</tocitem>
+<tocitem target="garch.print.html">
+<name>print</name>
+<purpose>(To be removed) Display parameter estimation results for conditional variance
+            models</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="multivariate-models.html">Multivariate Models
+<tocitem target="cointegration-analysis.html">Cointegration Analysis
+<tocitem target="egcitest.html">
+<name>egcitest</name>
+<purpose>Engle-Granger cointegration
+test</purpose>
+</tocitem>
+<tocitem target="jcitest.html">
+<name>jcitest</name>
+<purpose>Johansen cointegration
+test</purpose>
+</tocitem>
+<tocitem target="jcontest.html">
+<name>jcontest</name>
+<purpose> Johansen constraint
+test</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="vector-autoregression-models.html">Vector Autoregression Models
+<tocitem target="varm.html">
+<name>varm</name>
+<purpose>Create vector autoregression (VAR) model</purpose>
+</tocitem>
+<tocitem target="varm.estimate.html">
+<name>estimate</name>
+<purpose>Fit vector autoregression (VAR) model to data</purpose>
+</tocitem>
+<tocitem target="varm.infer.html">
+<name>infer</name>
+<purpose>Infer vector autoregression model (VAR) innovations</purpose>
+</tocitem>
+<tocitem target="varm.summarize.html">
+<name>summarize</name>
+<purpose>Display estimation results of vector autoregression (VAR) model</purpose>
+</tocitem>
+<tocitem target="varm.gctest.html">
+<name>gctest</name>
+<purpose>Granger causality and block exogeneity tests for vector autoregression (VAR)
+      models</purpose>
+</tocitem>
+<tocitem target="varm.irf.html">
+<name>irf</name>
+<purpose>Generate vector autoregression (VAR) model impulse responses</purpose>
+</tocitem>
+<tocitem target="varm.fevd.html">
+<name>fevd</name>
+<purpose>Generate vector autoregression (VAR) model forecast error variance decomposition
+      (FEVD)</purpose>
+</tocitem>
+<tocitem target="gctest.html">
+<name>gctest</name>
+<purpose>Block-wise Granger causality and block exogeneity tests</purpose>
+</tocitem>
+<tocitem target="armairf.html">
+<name>armairf</name>
+<purpose>Generate or plot ARMA model impulse responses</purpose>
+</tocitem>
+<tocitem target="armafevd.html">
+<name>armafevd</name>
+<purpose>Generate or plot ARMA model forecast error variance decomposition
+      (FEVD)</purpose>
+</tocitem>
+<tocitem target="arma2ar.html">
+<name>arma2ar</name>
+<purpose>Convert ARMA model to AR model</purpose>
+</tocitem>
+<tocitem target="arma2ma.html">
+<name>arma2ma</name>
+<purpose>Convert ARMA model to MA model</purpose>
+</tocitem>
+<tocitem target="vec2var.html">
+<name>vec2var</name>
+<purpose>Convert VEC model to VAR model</purpose>
+</tocitem>
+<tocitem target="var2vec.html">
+<name>var2vec</name>
+<purpose>Convert VAR model to VEC model</purpose>
+</tocitem>
+<tocitem target="varm.vecm.html">
+<name>vecm</name>
+<purpose>Convert vector autoregression (VAR) model to vector error-correction (VEC)
+            model</purpose>
+</tocitem>
+<tocitem target="varm.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of vector autoregression (VAR) model</purpose>
+</tocitem>
+<tocitem target="varm.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances through vector autoregression (VAR) model</purpose>
+</tocitem>
+<tocitem target="varm.forecast.html">
+<name>forecast</name>
+<purpose>Forecast vector autoregression (VAR) model responses</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="vector-error-correction-models.html">Vector Error-Correction Models
+<tocitem target="vecm.html">
+<name>vecm</name>
+<purpose>Create vector error-correction (VEC) model</purpose>
+</tocitem>
+<tocitem target="vecm.estimate.html">
+<name>estimate</name>
+<purpose>Fit vector error-correction (VEC) model to data</purpose>
+</tocitem>
+<tocitem target="vecm.infer.html">
+<name>infer</name>
+<purpose>Infer vector error-correction (VEC) model innovations</purpose>
+</tocitem>
+<tocitem target="vecm.summarize.html">
+<name>summarize</name>
+<purpose>Display estimation results of vector error-correction (VEC) model</purpose>
+</tocitem>
+<tocitem target="arma2ar.html">
+<name>arma2ar</name>
+<purpose>Convert ARMA model to AR model</purpose>
+</tocitem>
+<tocitem target="arma2ma.html">
+<name>arma2ma</name>
+<purpose>Convert ARMA model to MA model</purpose>
+</tocitem>
+<tocitem target="vec2var.html">
+<name>vec2var</name>
+<purpose>Convert VEC model to VAR model</purpose>
+</tocitem>
+<tocitem target="var2vec.html">
+<name>var2vec</name>
+<purpose>Convert VAR model to VEC model</purpose>
+</tocitem>
+<tocitem target="vecm.varm.html">
+<name>varm</name>
+<purpose>Convert vector error-correction (VEC) model to vector autoregression (VAR)
+            model</purpose>
+</tocitem>
+<tocitem target="vecm.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of vector error-correction (VEC) model</purpose>
+</tocitem>
+<tocitem target="vecm.filter.html">
+<name>filter</name>
+<purpose>Filter disturbances through vector error-correction (VEC) model</purpose>
+</tocitem>
+<tocitem target="vecm.irf.html">
+<name>irf</name>
+<purpose>Generate vector error-correction (VEC) model impulse responses</purpose>
+</tocitem>
+<tocitem target="vecm.fevd.html">
+<name>fevd</name>
+<purpose>Generate vector error-correction (VEC) model forecast error variance decomposition
+      (FEVD)</purpose>
+</tocitem>
+<tocitem target="vecm.forecast.html">
+<name>forecast</name>
+<purpose>Forecast vector error-correction (VEC) model responses</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="markov-process-models.html">Markov Models
+<tocitem target="markov-chain-models.html">Markov Chain Model
+<tocitem target="dtmc.html">
+<name>dtmc</name>
+<purpose>Create discrete-time Markov chain</purpose>
+</tocitem>
+<tocitem target="mcmix.html">
+<name>mcmix</name>
+<purpose>Create random Markov chain with specified mixing structure</purpose>
+</tocitem>
+<tocitem target="dtmc.asymptotics.html">
+<name>asymptotics</name>
+<purpose>Determine Markov chain asymptotics</purpose>
+</tocitem>
+<tocitem target="dtmc.isergodic.html">
+<name>isergodic</name>
+<purpose>Check Markov chain for ergodicity</purpose>
+</tocitem>
+<tocitem target="dtmc.isreducible.html">
+<name>isreducible</name>
+<purpose>Check Markov chain for reducibility</purpose>
+</tocitem>
+<tocitem target="dtmc.classify.html">
+<name>classify</name>
+<purpose>Classify Markov chain states</purpose>
+</tocitem>
+<tocitem target="dtmc.lazy.html">
+<name>lazy</name>
+<purpose>Adjust Markov chain state inertia</purpose>
+</tocitem>
+<tocitem target="dtmc.subchain.html">
+<name>subchain</name>
+<purpose>Extract Markov subchain</purpose>
+</tocitem>
+<tocitem target="dtmc.hitprob.html">
+<name>hitprob</name>
+<purpose>Compute Markov chain hitting probabilities</purpose>
+</tocitem>
+<tocitem target="dtmc.hittime.html">
+<name>hittime</name>
+<purpose>Compute Markov chain hitting times</purpose>
+</tocitem>
+<tocitem target="dtmc.redistribute.html">
+<name>redistribute</name>
+<purpose>Compute Markov chain redistributions</purpose>
+</tocitem>
+<tocitem target="dtmc.simulate.html">
+<name>simulate</name>
+<purpose>Simulate Markov chain state walks</purpose>
+</tocitem>
+<tocitem target="dtmc.distplot.html">
+<name>distplot</name>
+<purpose>Plot Markov chain redistributions</purpose>
+</tocitem>
+<tocitem target="dtmc.eigplot.html">
+<name>eigplot</name>
+<purpose>Plot Markov chain eigenvalues</purpose>
+</tocitem>
+<tocitem target="dtmc.graphplot.html">
+<name>graphplot</name>
+<purpose>Plot Markov chain directed graph</purpose>
+</tocitem>
+<tocitem target="dtmc.simplot.html">
+<name>simplot</name>
+<purpose>Plot Markov chain simulations</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="markov-switching-dynamic-regression-models.html">Markov-Switching Dynamic Regression Model
+<tocitem target="msvar.html">
+<name>msVAR</name>
+<purpose>Create Markov-switching dynamic regression model</purpose>
+</tocitem>
+<tocitem target="dtmc.html">
+<name>dtmc</name>
+<purpose>Create discrete-time Markov chain</purpose>
+</tocitem>
+<tocitem target="arima.html">
+<name>arima</name>
+<purpose>Create univariate autoregressive integrated moving average (ARIMA) model</purpose>
+</tocitem>
+<tocitem target="varm.html">
+<name>varm</name>
+<purpose>Create vector autoregression (VAR) model</purpose>
+</tocitem>
+<tocitem target="msvar.estimate.html">
+<name>estimate</name>
+<purpose>Fit Markov-switching dynamic regression model to data</purpose>
+</tocitem>
+<tocitem target="msvar.filter.html">
+<name>filter</name>
+<purpose>Filtered inference of operative latent states in Markov-switching dynamic regression data</purpose>
+</tocitem>
+<tocitem target="msvar.smooth.html">
+<name>smooth</name>
+<purpose>Smoothed inference of operative latent states in Markov-switching dynamic regression data</purpose>
+</tocitem>
+<tocitem target="msvar.simulate.html">
+<name>simulate</name>
+<purpose>Simulate sample paths of Markov-switching dynamic regression model</purpose>
+</tocitem>
+<tocitem target="msvar.forecast.html">
+<name>forecast</name>
+<purpose>Forecast sample paths from Markov-switching dynamic regression model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="state-space-models.html">State-Space Models
+<tocitem target="standard-state-space-model.html">Standard State-Space Model
+<tocitem target="ssm-class.html">
+<name>ssm</name>
+<purpose>Create state-space model</purpose>
+</tocitem>
+<tocitem target="ssm.estimate.html">
+<name>estimate</name>
+<purpose>Maximum likelihood parameter estimation of state-space
+models</purpose>
+</tocitem>
+<tocitem target="ssm.refine.html">
+<name>refine</name>
+<purpose>Refine initial parameters to aid state-space model estimation</purpose>
+</tocitem>
+<tocitem target="ssm.disp.html">
+<name>disp</name>
+<purpose>Display summary information for state-space model</purpose>
+</tocitem>
+<tocitem target="ssm.filter.html">
+<name>filter</name>
+<purpose>Forward recursion of state-space models</purpose>
+</tocitem>
+<tocitem target="ssm.smooth.html">
+<name>smooth</name>
+<purpose>Backward recursion of state-space models</purpose>
+</tocitem>
+<tocitem target="ssm.simulate.html">
+<name>simulate</name>
+<purpose>Monte Carlo simulation of state-space models</purpose>
+</tocitem>
+<tocitem target="ssm.simsmooth.html">
+<name>simsmooth</name>
+<purpose>State-space model simulation smoother</purpose>
+</tocitem>
+<tocitem target="ssm.forecast.html">
+<name>forecast</name>
+<purpose>Forecast states and observations of state-space models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="diffuse-state-space-model-1.html">Diffuse State-Space Model
+<tocitem target="dssm-class.html">
+<name>dssm</name>
+<purpose>Create diffuse state-space model</purpose>
+</tocitem>
+<tocitem target="dssm.estimate.html">
+<name>estimate</name>
+<purpose>Maximum likelihood parameter estimation of diffuse state-space
+models </purpose>
+</tocitem>
+<tocitem target="dssm.refine.html">
+<name>refine</name>
+<purpose>Refine initial parameters to aid diffuse state-space model
+estimation</purpose>
+</tocitem>
+<tocitem target="dssm.disp.html">
+<name>disp</name>
+<purpose>Display summary information for diffuse state-space model</purpose>
+</tocitem>
+<tocitem target="dssm.filter.html">
+<name>filter</name>
+<purpose>Forward recursion of diffuse state-space models</purpose>
+</tocitem>
+<tocitem target="dssm.smooth.html">
+<name>smooth</name>
+<purpose>Backward recursion of diffuse state-space models</purpose>
+</tocitem>
+<tocitem target="dssm.forecast.html">
+<name>forecast</name>
+<purpose>Forecast states and observations of diffuse state-space
+models</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

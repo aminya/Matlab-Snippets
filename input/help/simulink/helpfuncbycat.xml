@@ -1,0 +1,3174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="simulink-environment.html">Simulink Environment Fundamentals
+<tocitem target="block-libraries.html">Block Libraries
+<tocitem target="model-wide-utilities.html">Model-Wide Utilities
+<tocitem target="slref/showblockdatatypetable.html">
+<name>showblockdatatypetable</name>
+<purpose>Display HTML page of Simulink block data type support</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="programmatic-modeling.html">Programmatic Model Editing
+<tocitem target="slref/simulink.html">
+<name>simulink</name>
+<purpose>Open Simulink Start Page</purpose>
+</tocitem>
+<tocitem target="slref/start_simulink.html">
+<name>start_simulink</name>
+<purpose>Start Simulink without opening any windows</purpose>
+</tocitem>
+<tocitem target="slref/sllibrarybrowser.html">
+<name>slLibraryBrowser</name>
+<purpose>Open Simulink Library Browser</purpose>
+</tocitem>
+<tocitem target="slref/open_system.html">
+<name>open_system</name>
+<purpose>Open model, library, subsystem, or block dialog box</purpose>
+</tocitem>
+<tocitem target="slref/load_system.html">
+<name>load_system</name>
+<purpose>Load Simulink model into memory</purpose>
+</tocitem>
+<tocitem target="slref/save_system.html">
+<name>save_system</name>
+<purpose>Save Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/close_system.html">
+<name>close_system</name>
+<purpose>Close Simulink system window or block dialog box</purpose>
+</tocitem>
+<tocitem target="slref/bdclose.html">
+<name>bdclose</name>
+<purpose>Close any or all Simulink system windows unconditionally</purpose>
+</tocitem>
+<tocitem target="slref/add_block.html">
+<name>add_block</name>
+<purpose>Add block to model</purpose>
+</tocitem>
+<tocitem target="slref/add_line.html">
+<name>add_line</name>
+<purpose>Add line to Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/delete_block.html">
+<name>delete_block</name>
+<purpose>Delete blocks from Simulink system</purpose>
+</tocitem>
+<tocitem target="slref/delete_line.html">
+<name>delete_line</name>
+<purpose>Delete line from Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/add_param.html">
+<name>add_param</name>
+<purpose>Add parameter to Simulink system</purpose>
+</tocitem>
+<tocitem target="slref/delete_param.html">
+<name>delete_param</name>
+<purpose>Delete system parameter added via add_param command</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.deletecontents.html">
+<name>Simulink.BlockDiagram.deleteContents</name>
+<purpose>Delete contents of block diagram</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.deletecontents.html">
+<name>Simulink.SubSystem.deleteContents</name>
+<purpose>Delete contents of subsystem</purpose>
+</tocitem>
+<tocitem target="slref/new_system.html">
+<name>new_system</name>
+<purpose>Create Simulink model or library in memory</purpose>
+</tocitem>
+<tocitem target="slref/simulink.createfromtemplate.html">
+<name>Simulink.createFromTemplate</name>
+<purpose>Create model or project from template</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.createsubsystem.html">
+<name>Simulink.BlockDiagram.createSubsystem</name>
+<purpose>Create subsystem containing specified
+set of blocks</purpose>
+</tocitem>
+<tocitem target="slref/docblock_cmd.html">
+<name>docblock</name>
+<purpose>Get or set editor invoked by Simulink DocBlock</purpose>
+</tocitem>
+<tocitem target="slref/gcs.html">
+<name>gcs</name>
+<purpose>Get path name of current system</purpose>
+</tocitem>
+<tocitem target="slref/getfullname.html">
+<name>getfullname</name>
+<purpose>Get pathname of block or line</purpose>
+</tocitem>
+<tocitem target="slref/gcb.html">
+<name>gcb</name>
+<purpose>Get path name of current block</purpose>
+</tocitem>
+<tocitem target="slref/gcbh.html">
+<name>gcbh</name>
+<purpose>Get handle of current block</purpose>
+</tocitem>
+<tocitem target="slref/gcbp.html">
+<name>gcbp</name>
+<purpose>Get Simulink.BlockPath object for current block</purpose>
+</tocitem>
+<tocitem target="slref/getsimulinkblockhandle.html">
+<name>getSimulinkBlockHandle</name>
+<purpose>Get block handle from block path</purpose>
+</tocitem>
+<tocitem target="slref/simulink.id.gethandle.html">
+<name>Simulink.ID.getHandle</name>
+<purpose>Get handle of block, annotation, or Stateflow object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.id.getsid.html">
+<name>Simulink.ID.getSID</name>
+<purpose>Get Simulink Identifier of block, annotation, or Stateflow object</purpose>
+</tocitem>
+<tocitem target="slref/get_param.html">
+<name>get_param</name>
+<purpose>Get parameter names and values</purpose>
+</tocitem>
+<tocitem target="slref/set_param.html">
+<name>set_param</name>
+<purpose>Set system and block parameter values</purpose>
+</tocitem>
+<tocitem target="slref/simulink.defaultmodeltemplate.html">
+<name>Simulink.defaultModelTemplate</name>
+<purpose>Set or get default model template</purpose>
+</tocitem>
+<tocitem target="slref/getcallbackannotation.html">
+<name>getCallbackAnnotation</name>
+<purpose>Get annotation executing callback</purpose>
+</tocitem>
+<tocitem target="slref/edittime.getdisplayissues.html">
+<name>edittime.getDisplayIssues</name>
+<purpose>Check whether model design warnings and errors is on</purpose>
+</tocitem>
+<tocitem target="slref/edittime.setdisplayissues.html">
+<name>edittime.setDisplayIssues</name>
+<purpose>Detect model design errors and warnings</purpose>
+</tocitem>
+<tocitem target="slref/hilite_system.html">
+<name>hilite_system</name>
+<purpose>Highlight block, signal line, port, or annotation</purpose>
+</tocitem>
+<tocitem target="slref/simulink.id.hilite.html">
+<name>Simulink.ID.hilite</name>
+<purpose>Highlight block, annotation, or Stateflow object</purpose>
+</tocitem>
+<tocitem target="slref/find_system.html">
+<name>find_system</name>
+<purpose>Find systems, blocks, lines, ports, and annotations</purpose>
+</tocitem>
+<tocitem target="slref/simulink.findtemplates.html">
+<name>Simulink.findTemplates</name>
+<purpose>Find model or project templates with specified properties</purpose>
+</tocitem>
+<tocitem target="slref/simulink.allblockdiagrams.html">
+<name>Simulink.allBlockDiagrams</name>
+<purpose>Find loaded Simulink models and libraries</purpose>
+</tocitem>
+<tocitem target="slref/simulink.findblocks.html">
+<name>Simulink.findBlocks</name>
+<purpose>Find blocks in Simulink models</purpose>
+</tocitem>
+<tocitem target="slref/simulink.findblocksoftype.html">
+<name>Simulink.findBlocksOfType</name>
+<purpose>Find specified type of block in Simulink models</purpose>
+</tocitem>
+<tocitem target="slref/replace_block.html">
+<name>replace_block</name>
+<purpose>Replace blocks in Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/bdroot.html">
+<name>bdroot</name>
+<purpose>Top-level model of current system</purpose>
+</tocitem>
+<tocitem target="slref/bdisloaded.html">
+<name>bdIsLoaded</name>
+<purpose>Whether block diagram is in memory </purpose>
+</tocitem>
+<tocitem target="slref/bdislibrary.html">
+<name>bdIsLibrary</name>
+<purpose>Whether block diagram is a library</purpose>
+</tocitem>
+<tocitem target="slref/bdisdirty.html">
+<name>bdIsDirty</name>
+<purpose>Whether block diagram has unsaved changes</purpose>
+</tocitem>
+<tocitem target="slref/slisfilechangedondisk.html">
+<name>slIsFileChangedOnDisk</name>
+<purpose>Determine whether model has changed since it was loaded</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.copycontentstoblockdiagram.html">
+<name>Simulink.SubSystem.copyContentsToBlockDiagram</name>
+<purpose>Copy contents of subsystem to empty block diagram</purpose>
+</tocitem>
+<tocitem target="slref/simulink.exporttotemplate.html">
+<name>Simulink.exportToTemplate</name>
+<purpose>Create template from model or project</purpose>
+</tocitem>
+<tocitem target="slref/simulink.exporttoversion.html">
+<name>Simulink.exportToVersion</name>
+<purpose>Export model or library for use in previous version of Simulink</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mdlinfo-class.html">
+<name>Simulink.MDLInfo</name>
+<purpose>Extract model file information without loading block diagram
+into memory</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mdlinfo.getdescription.html">
+<name>Simulink.MDLInfo.getDescription</name>
+<purpose>Extract model file description
+without loading block diagram into memory</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mdlinfo.getmetadata.html">
+<name>Simulink.MDLInfo.getMetadata</name>
+<purpose>Extract model file metadata
+without loading block diagram into memory</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.expandsubsystem.html">
+<name>Simulink.BlockDiagram.expandSubsystem</name>
+<purpose>Replace subsystem with subsystem contents</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.arrangesystem.html">
+<name>Simulink.BlockDiagram.arrangeSystem</name>
+<purpose>Improve layout of model or subsystem</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.routeline.html">
+<name>Simulink.BlockDiagram.routeLine</name>
+<purpose>Route existing lines of a model</purpose>
+</tocitem>
+<tocitem target="slref/slcharacterencoding.html">
+<name>slCharacterEncoding</name>
+<purpose>Change MATLAB character set encoding</purpose>
+</tocitem>
+<tocitem target="slref/frameedit.html">
+<name>frameedit</name>
+<purpose>Edit print frames for Simulink and Stateflow block
+diagrams</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/orient.html">
+<name>orient</name>
+<purpose>Paper orientation for printing or saving</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/print.html">
+<name>print</name>
+<purpose>Print figure or save to specific file format</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulink-environment-customization.html">Simulink Environment Customization
+<tocitem target="slref/slblocksearchdb.untrainmodel.html">
+<name>slblocksearchdb.untrainmodel</name>
+<purpose>Remove the effect of a model
+      from the suggestion engine</purpose>
+</tocitem>
+<tocitem target="slref/slblocksearchdb.trainfrommodel.html">
+<name>slblocksearchdb.trainfrommodel</name>
+<purpose>Train suggestion engine to improve quick insert results based on one
+      model</purpose>
+</tocitem>
+<tocitem target="slref/slblocksearchdb.trainfrommodelsindir.html">
+<name>slblocksearchdb.trainfrommodelsindir</name>
+<purpose>Train suggestion engine to improve quick insert results based on models in a
+      folder</purpose>
+</tocitem>
+<tocitem target="slref/slblocksearchdb.untrainmodelsindir.html">
+<name>slblocksearchdb.untrainmodelsindir</name>
+<purpose>Remove the effects of models from the suggestion engine</purpose>
+</tocitem>
+<tocitem target="slref/slblocksearchdb.untrainall.html">
+<name>slblocksearchdb.untrainall</name>
+<purpose>Remove the effects of all added models from the suggestion engine</purpose>
+</tocitem>
+<tocitem target="slref/hdllib.html">
+<name>hdllib</name>
+<purpose>Display blocks that are compatible with HDL code generation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-upgrades.html">Model Upgrades
+<tocitem target="slref/upgradeadvisor.html">
+<name>upgradeadvisor</name>
+<purpose>Open Upgrade Advisor</purpose>
+</tocitem>
+<tocitem target="slref/slupdate.html">
+<name>slupdate</name>
+<purpose>Replace blocks from previous releases with latest versions</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="modeling.html">Modeling
+<tocitem target="design-model-architecture.html">Design Model Architecture
+<tocitem target="subsystems.html">Subsystems
+<tocitem target="slref/simulink.blockdiagram.createsubsystem.html">
+<name>Simulink.BlockDiagram.createSubsystem</name>
+<purpose>Create subsystem containing specified
+set of blocks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.copycontentstosubsystem.html">
+<name>Simulink.BlockDiagram.copyContentsToSubsystem</name>
+<purpose>Copy contents of block diagram to empty subsystem</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.expandsubsystem.html">
+<name>Simulink.BlockDiagram.expandSubsystem</name>
+<purpose>Replace subsystem with subsystem contents</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.converttomodelreference.html">
+<name>Simulink.SubSystem.convertToModelReference</name>
+<purpose>Convert subsystem to model reference</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.copycontentstoblockdiagram.html">
+<name>Simulink.SubSystem.copyContentsToBlockDiagram</name>
+<purpose>Copy contents of subsystem to empty block diagram</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.deletecontents.html">
+<name>Simulink.SubSystem.deleteContents</name>
+<purpose>Delete contents of subsystem</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="libraries.html">Custom Libraries
+<tocitem target="slref/libinfo.html">
+<name>libinfo</name>
+<purpose>Get information about library blocks referenced by model</purpose>
+</tocitem>
+<tocitem target="slref/gcb.html">
+<name>gcb</name>
+<purpose>Get path name of current block</purpose>
+</tocitem>
+<tocitem target="slref/gcbh.html">
+<name>gcbh</name>
+<purpose>Get handle of current block</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-reference.html">Model References
+<tocitem target="slref/depview.html">
+<name>depview</name>
+<purpose>Display graph of model referencing dependencies with or without library
+            dependencies</purpose>
+</tocitem>
+<tocitem target="slref/find_mdlrefs.html">
+<name>find_mdlrefs</name>
+<purpose>Find Model blocks and referenced models at all levels or at top level only</purpose>
+</tocitem>
+<tocitem target="slref/simulink.filegencontrol.html">
+<name>Simulink.fileGenControl</name>
+<purpose>Specify root folders for files generated by diagram updates and model
+   builds</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.converttomodelreference.html">
+<name>Simulink.SubSystem.convertToModelReference</name>
+<purpose>Convert subsystem to model reference</purpose>
+</tocitem>
+<tocitem target="slref/slbuild.html">
+<name>slbuild</name>
+<purpose>Build standalone executable or model reference target for model</purpose>
+</tocitem>
+<tocitem target="slref/view_mdlrefs.html">
+<name>view_mdlrefs</name>
+<purpose>Display graph of model referencing dependencies without library
+      dependencies</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="composite-signals.html">Composite Signals
+<tocitem target="slref/simulink.blockdiagram.addbustovector.html">
+<name>Simulink.BlockDiagram.addBusToVector</name>
+<purpose>Convert virtual bus signals into vector signals by adding
+Bus to Vector blocks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.celltoobject.html">
+<name>Simulink.Bus.cellToObject</name>
+<purpose>Convert cell array containing bus information to bus objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.creatematlabstruct.html">
+<name>Simulink.Bus.createMATLABStruct</name>
+<purpose>Create MATLAB structures using same hierarchy and attributes as bus signals</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.createobject.html">
+<name>Simulink.Bus.createObject</name>
+<purpose>Create bus objects from blocks or MATLAB structures</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.objecttocell.html">
+<name>Simulink.Bus.objectToCell</name>
+<purpose>Use bus objects to create cell array containing bus information</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.save.html">
+<name>Simulink.Bus.save</name>
+<purpose>Save bus objects in MATLAB file</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="manage-design-data.html">Manage Design Data
+<tocitem target="slref/simulink.findvars.html">
+<name>Simulink.findVars</name>
+<purpose>Analyze relationship between variables and blocks in models</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.savevariablestoscript.html">
+<name>matlab.io.saveVariablesToScript</name>
+<purpose>Save workspace variables to MATLAB script</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.evalinglobal.html">
+<name>Simulink.data.evalinGlobal</name>
+<purpose>Evaluate MATLAB expression in context of Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.assigninglobal.html">
+<name>Simulink.data.assigninGlobal</name>
+<purpose>Modify variable values in context of Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.existsinglobal.html">
+<name>Simulink.data.existsInGlobal</name>
+<purpose>Check existence of variable in context of Simulink model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.create.html">
+<name>Simulink.data.dictionary.create</name>
+<purpose>Create new data dictionary and create Simulink.data.Dictionary object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.open.html">
+<name>Simulink.data.dictionary.open</name>
+<purpose>Open data dictionary for editing</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.getopendictionarypaths.html">
+<name>Simulink.data.dictionary.getOpenDictionaryPaths</name>
+<purpose>Return file names and paths of open data dictionaries</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.cleanupworkercache.html">
+<name>Simulink.data.dictionary.cleanupWorkerCache</name>
+<purpose>Restore defaults after parallel simulation with data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.setupworkercache.html">
+<name>Simulink.data.dictionary.setupWorkerCache</name>
+<purpose>Enable parallel simulation with data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.closeall.html">
+<name>Simulink.data.dictionary.closeAll</name>
+<purpose>Close all connections to all open data dictionaries</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.getvariable.html">
+<name>getVariable</name>
+<purpose>Return value of variable in the model workspace of a model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.getvariablepart.html">
+<name>getVariablePart</name>
+<purpose>Get value of variable property in model workspace</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.setvariablepart.html">
+<name>setVariablePart</name>
+<purpose>Set property of variable in model workspace</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.hasvariable.html">
+<name>hasVariable</name>
+<purpose>Determine whether variable exists in the model workspace of a model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.whos.html">
+<name>whos</name>
+<purpose>Return list of variables in the model workspace of a model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.savetosource.html">
+<name>saveToSource</name>
+<purpose>Save model workspace changes to the external data source of the model
+            workspace</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.save.html">
+<name>save</name>
+<purpose>Save contents of model workspace to a MAT-file</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.reload.html">
+<name>reload</name>
+<purpose>Reinitialize variables from the data source of a model workspace</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.evalin.html">
+<name>evalin</name>
+<purpose>Evaluate expression in the model workspace of a model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.clear.html">
+<name>clear</name>
+<purpose>Clear variables from the model workspace of a model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modelworkspace.assignin.html">
+<name>assignin</name>
+<purpose>Assign value to variable in the model workspace of a model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.savevars.html">
+<name>Simulink.saveVars</name>
+<purpose>Save workspace variables and their values in MATLAB code
+format</purpose>
+</tocitem>
+<tocitem target="slref/simulink.variableusage.intersect.html">
+<name>intersect</name>
+<purpose>Return intersection of two arrays of Simulink.VariableUsage
+            objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.variableusage.setdiff.html">
+<name>setdiff</name>
+<purpose>Return difference between two arrays of
+                Simulink.VariableUsage objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.variableusage.union.html">
+<name>union</name>
+<purpose>Return union of two arrays of Simulink.VariableUsage
+      objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.importfrombaseworkspace.html">
+<name>importFromBaseWorkspace</name>
+<purpose>Import base workspace variables to data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.savechanges.html">
+<name>saveChanges</name>
+<purpose>Save changes to data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.discardchanges.html">
+<name>discardChanges</name>
+<purpose>Discard changes to data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.removedatasource.html">
+<name>removeDataSource</name>
+<purpose>Remove reference data dictionary from parent data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.adddatasource.html">
+<name>addDataSource</name>
+<purpose>Add reference data dictionary to parent data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.show.html">
+<name>show</name>
+<purpose>Show data dictionary in Model Explorer</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.hide.html">
+<name>hide</name>
+<purpose>Remove data dictionary from Model Explorer</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.close.html">
+<name>close</name>
+<purpose>Close connection between data dictionary and Simulink.data.Dictionary object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.filepath.html">
+<name>filepath</name>
+<purpose>Full path and file name of data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.exist.html">
+<name>exist</name>
+<purpose>Check existence of data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.addentry.html">
+<name>addEntry</name>
+<purpose>Add new entry to data dictionary section</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.assignin.html">
+<name>assignin</name>
+<purpose>Assign value to data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.deleteentry.html">
+<name>deleteEntry</name>
+<purpose>Delete data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.evalin.html">
+<name>evalin</name>
+<purpose>Evaluate MATLAB expression in data dictionary section</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.exporttofile.html">
+<name>exportToFile</name>
+<purpose>Export data dictionary entries from section to MAT-file
+or MATLAB file</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.find.html">
+<name>find</name>
+<purpose> Search in data dictionary section</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.getentry.html">
+<name>getEntry</name>
+<purpose>Create Simulink.data.dictionary.Entry object
+to represent data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.section.importfromfile.html">
+<name>importFromFile</name>
+<purpose>Import variables from MAT-file or MATLAB file to data
+dictionary section</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.entry.deleteentry.html">
+<name>deleteEntry</name>
+<purpose>Delete data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.entry.discardchanges.html">
+<name>discardChanges</name>
+<purpose>Discard changes to data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.entry.find.html">
+<name>find</name>
+<purpose> Search in array of data dictionary entries</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.entry.getvalue.html">
+<name>getValue</name>
+<purpose>Return value of data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.entry.setvalue.html">
+<name>setValue</name>
+<purpose>Set value of data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.entry.showchanges.html">
+<name>showChanges</name>
+<purpose>Display changes made to data dictionary entry</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.getsection.html">
+<name>getSection</name>
+<purpose>Return Simulink.data.dictionary.Section object
+to represent data dictionary section</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.importenumtypes.html">
+<name>importEnumTypes</name>
+<purpose>Import enumerated type definitions to data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.listentry.html">
+<name>listEntry</name>
+<purpose>List data dictionary entries</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.enumtypedefinition.appendenumeral.html">
+<name>appendEnumeral</name>
+<purpose>Add enumeration member to enumerated data type definition
+in data dictionary</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.dictionary.enumtypedefinition.removeenumeral.html">
+<name>removeEnumeral</name>
+<purpose>Remove enumeration member from enumerated data type definition
+in data dictionary</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="design-models.html">Design Model Behavior
+<tocitem target="multicore-processor-targets.html">Multicore Processor Targets
+<tocitem target="slref/simulink.architecture.config.html">
+<name>Simulink.architecture.config</name>
+<purpose>Create or convert configuration for concurrent execution</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.add.html">
+<name>Simulink.architecture.add</name>
+<purpose>Add tasks or triggers to selected architecture of model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.delete.html">
+<name>Simulink.architecture.delete</name>
+<purpose>Delete triggers and tasks from selected architecture of
+model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.find_system.html">
+<name>Simulink.architecture.find_system</name>
+<purpose>Find objects under architecture object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.get_param.html">
+<name>Simulink.architecture.get_param</name>
+<purpose>Get configuration parameters of architecture objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.importandselect.html">
+<name>Simulink.architecture.importAndSelect</name>
+<purpose>Import and select target architecture for concurrent execution
+environment for model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.profile.html">
+<name>Simulink.architecture.profile</name>
+<purpose>Generate profile report for model configured for concurrent
+execution</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.register.html">
+<name>Simulink.architecture.register</name>
+<purpose>Add custom target architecture to concurrent execution
+target architecture selector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.architecture.set_param.html">
+<name>Simulink.architecture.set_param</name>
+<purpose>Set architecture object properties</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="configure-signals-states-and-parameters.html">Configure Signals, States, and Parameters
+<tocitem target="blocks.html">Blocks
+<tocitem target="slref/set_param.html">
+<name>set_param</name>
+<purpose>Set system and block parameter values</purpose>
+</tocitem>
+<tocitem target="slref/get_param.html">
+<name>get_param</name>
+<purpose>Get parameter names and values</purpose>
+</tocitem>
+<tocitem target="slref/slexpr.html">
+<name>slexpr</name>
+<purpose>Generate expression to use in value of parameter object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="signals.html">Signals
+<tocitem target="slref/disableimplicitsignalresolution.html">
+<name>disableimplicitsignalresolution</name>
+<purpose>Convert model to use only explicit signal resolution</purpose>
+</tocitem>
+<tocitem target="slref/signalbuilder_cmd.html">
+<name>signalbuilder</name>
+<purpose>(Not recommended) Create and access Signal Builder blocks</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="units.html">Units in Simulink
+<tocitem target="slref/showunitslist.html">
+<name>showunitslist</name>
+<purpose>Show built-in units, physical quantities, and unit systems supported by
+        Simulink</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sample-time.html">Sample Time
+<tocitem target="slref/simulink.blockdiagram.getsampletimes.html">
+<name>Simulink.BlockDiagram.getSampleTimes</name>
+<purpose>Return all sample times associated with model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.block.getsampletimes.html">
+<name>Simulink.Block.getSampleTimes</name>
+<purpose>Return sample time information for a block</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="data-types.html">Data Types
+<tocitem target="../matlab/ref/enumeration.html">
+<name>enumeration</name>
+<purpose>Class enumeration members and names</purpose>
+</tocitem>
+<tocitem target="slref/simulink.defineintenumtype.html">
+<name>Simulink.defineIntEnumType</name>
+<purpose>Define enumerated data type </purpose>
+</tocitem>
+<tocitem target="slref/simulink.findintenumtype.html">
+<name>Simulink.findIntEnumType</name>
+<purpose>Find enumeration classes defined by
+      Simulink.defineIntEnumType</purpose>
+</tocitem>
+<tocitem target="slref/simulink.clearintenumtype.html">
+<name>Simulink.clearIntEnumType</name>
+<purpose>Delete enumeration classes defined by
+        Simulink.defineIntEnumType</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.getenumtypeinfo.html">
+<name>Simulink.data.getEnumTypeInfo</name>
+<purpose>Get information about enumerated data type</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.issupportedenumclass.html">
+<name>Simulink.data.isSupportedEnumClass</name>
+<purpose>Determine whether an enumeration class is valid for Simulink</purpose>
+</tocitem>
+<tocitem target="slref/simulink.data.issupportedenumobject.html">
+<name>Simulink.data.isSupportedEnumObject</name>
+<purpose>Determine whether an enumeration object is valid for Simulink</purpose>
+</tocitem>
+<tocitem target="slref/fixdt.html">
+<name>fixdt</name>
+<purpose>Create Simulink.NumericType object
+describing fixed-point or floating-point data type</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_evenspace_cleanup.html">
+<name>fixpt_evenspace_cleanup</name>
+<purpose>Modify breakpoints of lookup table to have even spacing</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_interp1.html">
+<name>fixpt_interp1</name>
+<purpose>Implement 1-D lookup table</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_look1_func_approx.html">
+<name>fixpt_look1_func_approx</name>
+<purpose>Optimize fixed-point approximation of nonlinear function
+by interpolating lookup table data points</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_look1_func_plot.html">
+<name>fixpt_look1_func_plot</name>
+<purpose>Plot fixed-point approximation function for lookup table</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_set_all.html">
+<name>fixpt_set_all</name>
+<purpose>Set property for each fixed-point block in subsystem</purpose>
+</tocitem>
+<tocitem target="slref/fixptbestexp.html">
+<name>fixptbestexp</name>
+<purpose>Exponent
+that gives best precision for fixed-point representation of value</purpose>
+</tocitem>
+<tocitem target="slref/fixptbestprec.html">
+<name>fixptbestprec</name>
+<purpose>Determine maximum precision available for fixed-point
+representation of value</purpose>
+</tocitem>
+<tocitem target="slref/float.html">
+<name>float</name>
+<purpose>Create Simulink.NumericType object
+describing floating-point data type</purpose>
+</tocitem>
+<tocitem target="slref/fxptdlg.html">
+<name>fxptdlg</name>
+<purpose>Start Fixed-Point Tool</purpose>
+</tocitem>
+<tocitem target="slref/num2fixpt.html">
+<name>num2fixpt</name>
+<purpose>Convert number to nearest value representable by specified
+fixed-point data type</purpose>
+</tocitem>
+<tocitem target="slref/sfix.html">
+<name>sfix</name>
+<purpose>Create Simulink.NumericType object
+describing signed fixed-point data type</purpose>
+</tocitem>
+<tocitem target="slref/sfrac.html">
+<name>sfrac</name>
+<purpose>Create Simulink.NumericType object
+describing signed fractional data type</purpose>
+</tocitem>
+<tocitem target="slref/sint.html">
+<name>sint</name>
+<purpose>Create Simulink.NumericType object
+describing signed integer data type</purpose>
+</tocitem>
+<tocitem target="slref/simulink.importexternalctypes.html">
+<name>Simulink.importExternalCTypes</name>
+<purpose>Generate Simulink representations of custom data
+types defined by C or C++ code</purpose>
+</tocitem>
+<tocitem target="slref/tunablevars2parameterobjects.html">
+<name>tunablevars2parameterobjects</name>
+<purpose>Create Simulink parameter objects from tunable parameters</purpose>
+</tocitem>
+<tocitem target="slref/ufix.html">
+<name>ufix</name>
+<purpose>Create Simulink.NumericType object
+describing unsigned fixed-point data type</purpose>
+</tocitem>
+<tocitem target="slref/ufrac.html">
+<name>ufrac</name>
+<purpose>Create Simulink.NumericType object
+describing unsigned fractional data type</purpose>
+</tocitem>
+<tocitem target="slref/uint.html">
+<name>uint</name>
+<purpose>Create Simulink.NumericType object
+describing unsigned integer data type</purpose>
+</tocitem>
+<tocitem target="slref/stringtype.html">
+<name>stringtype</name>
+<purpose>Create string data type</purpose>
+</tocitem>
+<tocitem target="slref/showblockdatatypetable.html">
+<name>showblockdatatypetable</name>
+<purpose>Display HTML page of Simulink block data type support</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isboolean.html">
+<name>isboolean</name>
+<purpose>Determine whether numeric type represents the Boolean data type
+                boolean</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isdouble.html">
+<name>isdouble</name>
+<purpose>Determine whether numeric type represents the double-precision, floating-point
+            data type double</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isfixed.html">
+<name>isfixed</name>
+<purpose>Determine whether numeric type represents a fixed-point data type</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isfloat.html">
+<name>isfloat</name>
+<purpose>Determine whether numeric type represents a floating-point data
+            type</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isscalingbinarypoint.html">
+<name>isscalingbinarypoint</name>
+<purpose>Determine whether fixed-point numeric type has binary-point scaling</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isscalingslopebias.html">
+<name>isscalingslopebias</name>
+<purpose>Determine whether numeric type represents a fixed-point data type with
+            slope-and-bias scaling</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.isscalingunspecified.html">
+<name>isscalingunspecified</name>
+<purpose>Determine whether numeric type represents a data type with unspecified
+            scaling</purpose>
+</tocitem>
+<tocitem target="slref/simulink.numerictype.issingle.html">
+<name>issingle</name>
+<purpose>Determine whether numeric type represents the single-precision, floating-point
+            data type single</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="callback-functions.html">Model, Block, and Port Callbacks
+<tocitem target="slref/set_param.html">
+<name>set_param</name>
+<purpose>Set system and block parameter values</purpose>
+</tocitem>
+<tocitem target="slref/get_param.html">
+<name>get_param</name>
+<purpose>Get parameter names and values</purpose>
+</tocitem>
+<tocitem target="slref/getcallbackannotation.html">
+<name>getCallbackAnnotation</name>
+<purpose>Get annotation executing callback</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="configuration-sets.html">Configuration Reuse
+<tocitem target="slref/attachconfigset.html">
+<name>attachConfigSet</name>
+<purpose>Associate configuration set or configuration reference
+with model</purpose>
+</tocitem>
+<tocitem target="slref/attachconfigsetcopy.html">
+<name>attachConfigSetCopy</name>
+<purpose>Copy  configuration set or configuration reference and
+associate it with model</purpose>
+</tocitem>
+<tocitem target="slref/detachconfigset.html">
+<name>detachConfigSet</name>
+<purpose>Dissociate configuration set or configuration reference
+from model</purpose>
+</tocitem>
+<tocitem target="slref/getactiveconfigset.html">
+<name>getActiveConfigSet</name>
+<purpose>Get model's active configuration set or configuration
+reference</purpose>
+</tocitem>
+<tocitem target="slref/getconfigset.html">
+<name>getConfigSet</name>
+<purpose>Get one of model's configuration sets or configuration
+references</purpose>
+</tocitem>
+<tocitem target="slref/getconfigsets.html">
+<name>getConfigSets</name>
+<purpose>Get names of all of model's configuration sets or configuration
+references</purpose>
+</tocitem>
+<tocitem target="slref/setactiveconfigset.html">
+<name>setActiveConfigSet</name>
+<purpose>Specify model's active configuration set or configuration
+reference</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.loadactiveconfigset.html">
+<name>Simulink.BlockDiagram.loadActiveConfigSet</name>
+<purpose>Load, associate, and activate configuration set with model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.propagateconfigset.html">
+<name>Simulink.BlockDiagram.propagateConfigSet</name>
+<purpose>Propagate top model configuration reference to referenced
+models</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.restoreconfigset.html">
+<name>Simulink.BlockDiagram.restoreConfigSet</name>
+<purpose>Restore model configuration for converted models</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.saveactiveconfigset.html">
+<name>Simulink.BlockDiagram.saveActiveConfigSet</name>
+<purpose>Save active configuration set of model</purpose>
+</tocitem>
+<tocitem target="slref/set_param.html">
+<name>set_param</name>
+<purpose>Set system and block parameter values</purpose>
+</tocitem>
+<tocitem target="slref/get_param.html">
+<name>get_param</name>
+<purpose>Get parameter names and values</purpose>
+</tocitem>
+<tocitem target="slref/attachcomponent.html">
+<name>attachComponent</name>
+<purpose>Attach a component to a configuration set</purpose>
+</tocitem>
+<tocitem target="slref/copy.html">
+<name>copy</name>
+<purpose>Copy a configuration set</purpose>
+</tocitem>
+<tocitem target="slref/getcomponent.html">
+<name>getComponent</name>
+<purpose>Get a configuration set component</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="analyze-and-remodel-design.html">Analyze and Remodel Design
+<tocitem target="run-model-checks.html">Run Model Advisor Checks
+<tocitem target="slref/modeladvisor.html">
+<name>modeladvisor</name>
+<purpose>Open Model Advisor</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.closereport.html">
+<name>closeReport</name>
+<purpose> Close Model Advisor report</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.deselectcheck.html">
+<name>deselectCheck</name>
+<purpose> Clear Model Advisor check</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.deselectcheckall.html">
+<name>deselectCheckAll</name>
+<purpose> Clear Model Advisor checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.deselectcheckforgroup.html">
+<name>deselectCheckForGroup</name>
+<purpose> Clear Model Advisor checks for groups</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.deselectcheckfortask.html">
+<name>deselectCheckForTask</name>
+<purpose> Clear Model Advisor checks that belong to a specified task or set of
+      tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.deselecttask.html">
+<name>deselectTask</name>
+<purpose> Clear Model Advisor checks that belong to a specified task or set of
+      tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.deselecttaskall.html">
+<name>deselectTaskAll</name>
+<purpose> Clear all Model Advisor tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.displayreport.html">
+<name>displayReport</name>
+<purpose> Display report in Model Advisor window</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.exportreport.html">
+<name>exportReport</name>
+<purpose> Create copy of Model Advisor report</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.filterresultwithexclusion.html">
+<name>filterResultWithExclusion</name>
+<purpose> Filter excluded objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getbaselinemode.html">
+<name>getBaselineMode</name>
+<purpose> Determine whether Model Advisor is in baseline data generation mode</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getcheckall.html">
+<name>getCheckAll</name>
+<purpose> Get check IDs of all Model Advisor checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getcheckforgroup.html">
+<name>getCheckForGroup</name>
+<purpose> Get checks belonging to Model Advisor check group</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getcheckfortask.html">
+<name>getCheckForTask</name>
+<purpose> Get checks belonging to a task</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getcheckresult.html">
+<name>getCheckResult</name>
+<purpose> Get Model Advisor check results</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getcheckresultdata.html">
+<name>getCheckResultData</name>
+<purpose>Obtain Model Advisor check result data</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getcheckresultstatus.html">
+<name>getCheckResultStatus</name>
+<purpose>Obtain Model Advisor check result status </purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getgroupall.html">
+<name>getGroupAll</name>
+<purpose> Get all groups of checks that Model Advisor runs</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getinputparameters.html">
+<name>getInputParameters</name>
+<purpose> Get Model Advisor check input parameters</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getlistviewparameters.html">
+<name>getListViewParameters</name>
+<purpose> Get Model Advisor checklist parameters displayed in checklist view</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.simulink.modeladvisor.getmodeladvisor.html">
+<name>Simulink.ModelAdvisor.getModelAdvisor</name>
+<purpose> Get Model Advisor object for system or subsystem</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getselectedcheck.html">
+<name>getSelectedCheck</name>
+<purpose> Get currently selected Model Advisor checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getselectedsystem.html">
+<name>getSelectedSystem</name>
+<purpose> Get system that Model Advisor targets</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.getselectedtask.html">
+<name>getSelectedTask</name>
+<purpose> Get selected Model Advisor tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.gettaskall.html">
+<name>getTaskAll</name>
+<purpose> Get tasks run by Model Advisor</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.simulink.modeladvisor.openconfigui.html">
+<name>Simulink.ModelAdvisor.openConfigUI</name>
+<purpose> Starts Model Advisor Configuration Editor</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.simulink.modeladvisor.reportexists.html">
+<name>Simulink.ModelAdvisor.reportExists</name>
+<purpose> Determine whether Model Advisor report exists for model or subsystem</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.runcheck.html">
+<name>runCheck</name>
+<purpose> Run currently selected checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.runtask.html">
+<name>runTask</name>
+<purpose> Run currently selected tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.selectcheck.html">
+<name>selectCheck</name>
+<purpose> Select checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.selectcheckall.html">
+<name>selectCheckAll</name>
+<purpose> Select all checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.selectcheckforgroup.html">
+<name>selectCheckForGroup</name>
+<purpose> Select check group</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.selectcheckfortask.html">
+<name>selectCheckForTask</name>
+<purpose> Select checks for a specific task or tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.selecttask.html">
+<name>selectTask</name>
+<purpose> Select Model Advisor task</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.selecttaskall.html">
+<name>selectTaskAll</name>
+<purpose> Select all Model Advisor tasks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setactionenable.html">
+<name>setActionEnable</name>
+<purpose>Set status for check action</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setbaselinemode.html">
+<name>setBaselineMode</name>
+<purpose> Set Model Advisor baseline mode</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setcheckerrorseverity.html">
+<name>setCheckErrorSeverity</name>
+<purpose> Set severity of check failure</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setcheckresult.html">
+<name>setCheckResult</name>
+<purpose> Set result for currently running check</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setcheckresultdata.html">
+<name>setCheckResultData</name>
+<purpose> Set result data for currently running check</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setcheckresultstatus.html">
+<name>setCheckResultStatus</name>
+<purpose> Set status for currently running check</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setinputparameters.html">
+<name>setInputParameters</name>
+<purpose>Specify input parameters</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.setlistviewparameters.html">
+<name>setListViewParameters</name>
+<purpose> Specify list-view parameters for check</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.verifycheckran.html">
+<name>verifyCheckRan</name>
+<purpose> Verify that Model Advisor ran a set of checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.verifycheckresult.html">
+<name>verifyCheckResult</name>
+<purpose> Generate baseline Model Advisor check results file or compare current check results
+      to baseline check results</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.verifycheckresultstatus.html">
+<name>verifyCheckResultStatus</name>
+<purpose> Verify that a model passed or failed a set of checks</purpose>
+</tocitem>
+<tocitem target="slref/simulink.modeladvisor.verifyhtml.html">
+<name>verifyHTML</name>
+<purpose> Generate baseline Model Advisor report or compare current report to baseline
+      report</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="configure-diagnostics.html">Configure and View Diagnostics
+<tocitem target="slref/sldiagnostics.html">
+<name>sldiagnostics</name>
+<purpose>Display diagnostic information about Simulink system</purpose>
+</tocitem>
+<tocitem target="slref/simulink.restorediagnostic.html">
+<name>Simulink.restoreDiagnostic</name>
+<purpose>Restore diagnostic warnings to a specific block, subsystem,
+or model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.suppressdiagnostic.html">
+<name>Simulink.suppressDiagnostic</name>
+<purpose>Suppress a diagnostic from a specific block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.getsuppresseddiagnostics.html">
+<name>Simulink.getSuppressedDiagnostics</name>
+<purpose> Return Simulink.SuppressedDiagnostic objects
+associated with a block, subsystem, or model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.suppresseddiagnostic.restore.html">
+<name>Simulink.SuppressedDiagnostic.Restore</name>
+<purpose>Remove specified diagnostic suppressions</purpose>
+</tocitem>
+<tocitem target="slref/simulink.suppresseddiagnostic.suppress.html">
+<name>Simulink.SuppressedDiagnostic.suppress</name>
+<purpose>Suppress diagnostic specified by
+                Simulink.SuppressedDiagnostic object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="transform-models.html">Transform Models
+<tocitem target="discretization.html">Discretization
+<tocitem target="slref/slmdldiscui.html">
+<name>slmdldiscui</name>
+<purpose>Open Model Discretizer GUI</purpose>
+</tocitem>
+<tocitem target="slref/sldiscmdl.html">
+<name>sldiscmdl</name>
+<purpose>Discretize model that contains continuous blocks</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="trimming-and-linearization.html">Trimming and Linearization
+<tocitem target="slref/trim.html">
+<name>trim</name>
+<purpose>Find trim point of dynamic system</purpose>
+</tocitem>
+<tocitem target="slref/dlinmod.html">
+<name>dlinmod</name>
+<purpose>Extract discrete-time linear state-space model around
+ operating point</purpose>
+</tocitem>
+<tocitem target="slref/linmod.html">
+<name>linmod</name>
+<purpose>Extract continuous-time linear state-space model around
+ operating point</purpose>
+</tocitem>
+<tocitem target="slref/linmod2.html">
+<name>linmod2</name>
+<purpose>Extract continuous-time linear state-space model around
+operating point</purpose>
+</tocitem>
+<tocitem target="slref/linmodv5.html">
+<name>linmodv5</name>
+<purpose>Extract continuous-time linear state-space model around
+ operating point</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getinitialstate.html">
+<name>Simulink.BlockDiagram.getInitialState</name>
+<purpose>Return initial state data of block diagram</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="fixed-point.html">Fixed Point
+<tocitem target="slref/fxptdlg.html">
+<name>fxptdlg</name>
+<purpose>Start Fixed-Point Tool</purpose>
+</tocitem>
+<tocitem target="slref/fixdt.html">
+<name>fixdt</name>
+<purpose>Create Simulink.NumericType object
+describing fixed-point or floating-point data type</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_look1_func_approx.html">
+<name>fixpt_look1_func_approx</name>
+<purpose>Optimize fixed-point approximation of nonlinear function
+by interpolating lookup table data points</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_evenspace_cleanup.html">
+<name>fixpt_evenspace_cleanup</name>
+<purpose>Modify breakpoints of lookup table to have even spacing</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_interp1.html">
+<name>fixpt_interp1</name>
+<purpose>Implement 1-D lookup table</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_look1_func_plot.html">
+<name>fixpt_look1_func_plot</name>
+<purpose>Plot fixed-point approximation function for lookup table</purpose>
+</tocitem>
+<tocitem target="slref/fixpt_set_all.html">
+<name>fixpt_set_all</name>
+<purpose>Set property for each fixed-point block in subsystem</purpose>
+</tocitem>
+<tocitem target="slref/fixptbestexp.html">
+<name>fixptbestexp</name>
+<purpose>Exponent
+that gives best precision for fixed-point representation of value</purpose>
+</tocitem>
+<tocitem target="slref/fixptbestprec.html">
+<name>fixptbestprec</name>
+<purpose>Determine maximum precision available for fixed-point
+representation of value</purpose>
+</tocitem>
+<tocitem target="slref/float.html">
+<name>float</name>
+<purpose>Create Simulink.NumericType object
+describing floating-point data type</purpose>
+</tocitem>
+<tocitem target="slref/num2fixpt.html">
+<name>num2fixpt</name>
+<purpose>Convert number to nearest value representable by specified
+fixed-point data type</purpose>
+</tocitem>
+<tocitem target="slref/sfix.html">
+<name>sfix</name>
+<purpose>Create Simulink.NumericType object
+describing signed fixed-point data type</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="simulation.html">Simulation
+<tocitem target="prepare-model-inputs-and-outputs.html">Prepare Model Inputs and Outputs
+<tocitem target="import-data_import-data.html">Load Signal Data for Simulation
+<tocitem target="slref/getrootinportmap.html">
+<name>getRootInportMap</name>
+<purpose>Create custom object to map signals to root-level inports</purpose>
+</tocitem>
+<tocitem target="slref/converttosldataset.html">
+<name>convertToSlDataset</name>
+<purpose>Convert contents of MAT-file to Simulink.SimulationData.Dataset object</purpose>
+</tocitem>
+<tocitem target="slref/getslrootinportmap.html">
+<name>getSlRootInportMap</name>
+<purpose>Create custom object to map signals to root-level inports
+using Simulink mapping mode</purpose>
+</tocitem>
+<tocitem target="slref/createinputdataset.html">
+<name>createInputDataset</name>
+<purpose>Generate dataset object for root-level Inport or bus element ports in
+      model</purpose>
+</tocitem>
+<tocitem target="slref/signalbuilder_cmd.html">
+<name>signalbuilder</name>
+<purpose>(Not recommended) Create and access Signal Builder blocks</purpose>
+</tocitem>
+<tocitem target="slref/signalbuildertosignaleditor.html">
+<name>signalBuilderToSignalEditor</name>
+<purpose>Import signal data and properties from Signal Builder block to Signal Editor
+            block</purpose>
+</tocitem>
+<tocitem target="slref/getinputstring.html">
+<name>getInputString</name>
+<purpose>Create comma-separated list of variables to map</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getinitialstate.html">
+<name>Simulink.BlockDiagram.getInitialState</name>
+<purpose>Return initial state data of block diagram</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.creatematlabstruct.html">
+<name>Simulink.Bus.createMATLABStruct</name>
+<purpose>Create MATLAB structures using same hierarchy and attributes as bus signals</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.createstructoftimeseries.html">
+<name>Simulink.SimulationData.createStructOfTimeseries</name>
+<purpose>Create structure of timeseries data to load as simulation input
+      for bus</purpose>
+</tocitem>
+<tocitem target="slref/signaleditor.html">
+<name>signalEditor</name>
+<purpose>Start Signal Editor</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="save-runtime-data-from-simulation.html">Save Run-Time Data from Simulation
+<tocitem target="slref/simulink.modeldatalogs.converttodataset.html">
+<name>Simulink.ModelDataLogs.convertToDataset</name>
+<purpose>Convert logging data from Simulink.ModelDataLogs format
+to Simulink.SimulationData.Dataset format</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.signalloggingselector.html">
+<name>Simulink.SimulationData.signalLoggingSelector</name>
+<purpose>Open Signal Logging Selector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.updatedatasetformatlogging.html">
+<name>Simulink.SimulationData.updateDatasetFormatLogging</name>
+<purpose>Convert model and its referenced models to use Dataset format
+for signal logging</purpose>
+</tocitem>
+<tocitem target="slref/unpack.html">
+<name>unpack</name>
+<purpose>Extract signal logging objects from signal logs and write
+them into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.createstructoftimeseries.html">
+<name>Simulink.SimulationData.createStructOfTimeseries</name>
+<purpose>Create structure of timeseries data to load as simulation input
+      for bus</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.foreachtimeseries.html">
+<name>Simulink.SimulationData.forEachTimeseries</name>
+<purpose>Call function on each timeseries object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.unit.setname.html">
+<name>Simulink.SimulationData.Unit.setName</name>
+<purpose>Specify name of logging data units</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.datasetref.getdatasetvariablenames.html">
+<name>Simulink.SimulationData.DatasetRef.getDatasetVariableNames</name>
+<purpose>List names of Dataset variables in MAT-file</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.datasetref.getasdatastore.html">
+<name>Simulink.SimulationData.DatasetRef.getAsDatastore</name>
+<purpose>Get matlab.io.datastore.SimulationDatastore representation
+of element from referenced Dataset object</purpose>
+</tocitem>
+<tocitem target="slref/who.html">
+<name>who</name>
+<purpose>List names of top-level data logging objects in Simulink ModelDataLogs data
+log</purpose>
+</tocitem>
+<tocitem target="slref/whos.html">
+<name>whos</name>
+<purpose>List names and types of top-level data logging objects
+in Simulink ModelDataLogs data log</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.simulationdatastore.hasdata.html">
+<name>hasdata</name>
+<purpose>Determine if data is available to read</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.simulationdatastore.preview.html">
+<name>preview</name>
+<purpose>Return subset of data from datastore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.simulationdatastore.progress.html">
+<name>progress</name>
+<purpose>Return percentage of data that you have read from a datastore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.simulationdatastore.readall.html">
+<name>readall</name>
+<purpose>Read all data in datastore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.simulationdatastore.read.html">
+<name>read</name>
+<purpose>Read data in datastore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.simulationdatastore.reset.html">
+<name>reset</name>
+<purpose>Reset datastore to initial state</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.addelement.html">
+<name>addElement</name>
+<purpose>Add element to end of data set</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.concat.html">
+<name>concat</name>
+<purpose>Concatenate dataset to another dataset</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.get.html">
+<name>get</name>
+<purpose>Get element or collection of elements from dataset</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.getelementnames.html">
+<name>getElementNames</name>
+<purpose>Return names of all elements in dataset</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.find.html">
+<name>find</name>
+<purpose>Get element or collection of elements from dataset</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.numelements.html">
+<name>numElements</name>
+<purpose>Get number of elements in data set</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.plot.html">
+<name>plot</name>
+<purpose>Plot data in the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.setelement.html">
+<name>setElement</name>
+<purpose>Change element stored at specified index</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.dataset.exporttopreviousrelease.html">
+<name>Simulink.SimulationData.Dataset.exportToPreviousRelease</name>
+<purpose>Save a Dataset object to a MAT-file you can open in any
+      release</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.parameter.plot.html">
+<name>plot</name>
+<purpose>Plot simulation output data in the Simulation Data Inspector</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="configure-simulation.html">Configure Simulation Conditions
+<tocitem target="slref/opendialog.html">
+<name>openDialog</name>
+<purpose>Open configuration parameters dialog</purpose>
+</tocitem>
+<tocitem target="slref/closedialog.html">
+<name>closeDialog</name>
+<purpose>Close configuration parameters dialog</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getalgebraicloops.html">
+<name>Simulink.BlockDiagram.getAlgebraicLoops</name>
+<purpose>Show algebraic loops in a model</purpose>
+</tocitem>
+<tocitem target="slref/solverprofiler.profilemodel.html">
+<name>solverprofiler.profileModel</name>
+<purpose>Examine model for performance analysis</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="run-simulation.html">Run Simulations
+<tocitem target="import-data_mw_556f72fe-dd5d-4168-91c2-8f316569367b.html">Load Signal Data for Simulation
+<tocitem target="slref/getrootinportmap.html">
+<name>getRootInportMap</name>
+<purpose>Create custom object to map signals to root-level inports</purpose>
+</tocitem>
+<tocitem target="slref/converttosldataset.html">
+<name>convertToSlDataset</name>
+<purpose>Convert contents of MAT-file to Simulink.SimulationData.Dataset object</purpose>
+</tocitem>
+<tocitem target="slref/getslrootinportmap.html">
+<name>getSlRootInportMap</name>
+<purpose>Create custom object to map signals to root-level inports
+using Simulink mapping mode</purpose>
+</tocitem>
+<tocitem target="slref/createinputdataset.html">
+<name>createInputDataset</name>
+<purpose>Generate dataset object for root-level Inport or bus element ports in
+      model</purpose>
+</tocitem>
+<tocitem target="slref/signalbuilder_cmd.html">
+<name>signalbuilder</name>
+<purpose>(Not recommended) Create and access Signal Builder blocks</purpose>
+</tocitem>
+<tocitem target="slref/signalbuildertosignaleditor.html">
+<name>signalBuilderToSignalEditor</name>
+<purpose>Import signal data and properties from Signal Builder block to Signal Editor
+            block</purpose>
+</tocitem>
+<tocitem target="slref/getinputstring.html">
+<name>getInputString</name>
+<purpose>Create comma-separated list of variables to map</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getinitialstate.html">
+<name>Simulink.BlockDiagram.getInitialState</name>
+<purpose>Return initial state data of block diagram</purpose>
+</tocitem>
+<tocitem target="slref/simulink.bus.creatematlabstruct.html">
+<name>Simulink.Bus.createMATLABStruct</name>
+<purpose>Create MATLAB structures using same hierarchy and attributes as bus signals</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simulationdata.createstructoftimeseries.html">
+<name>Simulink.SimulationData.createStructOfTimeseries</name>
+<purpose>Create structure of timeseries data to load as simulation input
+      for bus</purpose>
+</tocitem>
+<tocitem target="slref/signaleditor.html">
+<name>signalEditor</name>
+<purpose>Start Signal Editor</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="run-individual-simulations.html">Run Individual Simulations
+<tocitem target="slref/sim.html">
+<name>sim</name>
+<purpose>Simulate dynamic system</purpose>
+</tocitem>
+<tocitem target="slref/parsim.html">
+<name>parsim</name>
+<purpose>Simulate dynamic system multiple times in parallel or serial</purpose>
+</tocitem>
+<tocitem target="slref/set_param.html">
+<name>set_param</name>
+<purpose>Set system and block parameter values</purpose>
+</tocitem>
+<tocitem target="slref/get_param.html">
+<name>get_param</name>
+<purpose>Get parameter names and values</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getinitialstate.html">
+<name>Simulink.BlockDiagram.getInitialState</name>
+<purpose>Return initial state data of block diagram</purpose>
+</tocitem>
+<tocitem target="slref/simplot.html">
+<name>simplot</name>
+<purpose> Redirects to the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.op.modeloperatingpoint.get.html">
+<name>get</name>
+<purpose> Access operating point of an individual Stateflow chart, MATLAB function, or S-function block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.op.modeloperatingpoint.set.html">
+<name>set</name>
+<purpose> Set operating point of an individual Stateflow chart, MATLAB function, or S-function block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simstate.modelsimstate.setblocksimstate.html">
+<name>setBlockSimState</name>
+<purpose> (Not recommended) Set SimState of individual Stateflow Chart,
+                MATLAB Function, or S-function block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.simstate.modelsimstate.getblocksimstate.html">
+<name>getBlockSimState</name>
+<purpose> (Not recommended) Access SimState of individual Stateflow Chart,
+                MATLAB Function, or S-function block</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="run-multiple-parallel-simulations.html">Run Multiple Simulations
+<tocitem target="slref/batchsim.html">
+<name>batchsim</name>
+<purpose>Offload simulations to run on a compute cluster</purpose>
+</tocitem>
+<tocitem target="slref/parsim.html">
+<name>parsim</name>
+<purpose>Simulate dynamic system multiple times in parallel or serial</purpose>
+</tocitem>
+<tocitem target="slref/applytomodel.html">
+<name>applyToModel</name>
+<purpose>Apply changes to the model specified through a SimulationInput object, in </purpose>
+</tocitem>
+<tocitem target="slref/setblockparameter.html">
+<name>setBlockParameter</name>
+<purpose>Set block parameters to be used for a specific
+simulation through SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/setmodelparameter.html">
+<name>setModelParameter</name>
+<purpose>Set model parameters to be used for a specific
+simulation through SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/setinitialstate.html">
+<name>setInitialState</name>
+<purpose>Set initial state to be used for a specific
+simulation through SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/setexternalinput.html">
+<name>setExternalInput</name>
+<purpose>Set external inputs for a simulation through SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/setvariable.html">
+<name>setVariable</name>
+<purpose>Set variables for a simulation through SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/validate.html">
+<name>validate</name>
+<purpose>Validate the contents of the SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/setpresimfcn.html">
+<name>setPreSimFcn</name>
+<purpose>Specify a MATLAB function to run before start of
+each simulation through SimulationInput object,
+in</purpose>
+</tocitem>
+<tocitem target="slref/setpostsimfcn.html">
+<name>setPostSimFcn</name>
+<purpose> Specify a MATLAB function to run after each simulation
+is complete through SimulationInput object, in</purpose>
+</tocitem>
+<tocitem target="slref/loadvariablesfrommatfile.html">
+<name>loadVariablesFromMATFile</name>
+<purpose>Load variables from MAT-file into a Simulink.SimulationInput
+      object, in
+    </purpose>
+</tocitem>
+<tocitem target="slref/getsimulationjobs.html">
+<name>getSimulationJobs</name>
+<purpose>Get all Simulink.Simulation.Job objects from
+      cluster</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="visualize-results.html">View and Analyze Simulation Results
+<tocitem target="inspect-and-analyze-simulation-results.html">Inspect and Analyze Simulation Results
+<tocitem target="slref/simulink.sdi.view.html">
+<name>Simulink.sdi.view</name>
+<purpose>Open the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.close.html">
+<name>Simulink.sdi.close</name>
+<purpose>Close the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.clearallsubplots.html">
+<name>Simulink.sdi.clearAllSubPlots</name>
+<purpose>Clear plotted signals from all subplots in the Simulation Data
+      Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.snapshot.html">
+<name>Simulink.sdi.snapshot</name>
+<purpose>Capture contents of Simulation Data Inspector plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.clearpreferences.html">
+<name>Simulink.sdi.clearPreferences</name>
+<purpose>Return Simulation Data Inspector preferences to default settings</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.enablepctsupport.html">
+<name>Simulink.sdi.enablePCTSupport</name>
+<purpose>Control how the Simulation Data Inspector works with the Parallel Computing
+            Toolbox</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.ispctsupportenabled.html">
+<name>Simulink.sdi.isPCTSupportEnabled</name>
+<purpose>Determine status and mode for Parallel Computing Toolbox support</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.sendworkerruntoclient.html">
+<name>Simulink.sdi.sendWorkerRunToClient</name>
+<purpose>Send run created on parallel workers to the Simulation Data
+            Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.cleanupworkerresources.html">
+<name>Simulink.sdi.cleanupWorkerResources</name>
+<purpose>Clean up worker repositories</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setsubplotlayout.html">
+<name>Simulink.sdi.setSubPlotLayout</name>
+<purpose>Set subplot layout in the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.settablegrouping.html">
+<name>Simulink.sdi.setTableGrouping</name>
+<purpose>Change signal grouping hierarchy in Inspect pane</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getmarkerson.html">
+<name>Simulink.sdi.getMarkersOn</name>
+<purpose>Determine if data markers are shown in the Simulation Data
+            Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setmarkerson.html">
+<name>Simulink.sdi.setMarkersOn</name>
+<purpose>Show or hide markers for plotted signals</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getgridon.html">
+<name>Simulink.sdi.getGridOn</name>
+<purpose>Determine grid configuration for time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setgridon.html">
+<name>Simulink.sdi.setGridOn</name>
+<purpose>Configure grid lines for time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getticksposition.html">
+<name>Simulink.sdi.getTicksPosition</name>
+<purpose>Get tick mark position setting for time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setticksposition.html">
+<name>Simulink.sdi.setTicksPosition</name>
+<purpose>Configure position for tick marks on time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getticklabelsdisplay.html">
+<name>Simulink.sdi.getTickLabelsDisplay</name>
+<purpose>Get tick mark label setting for time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setticklabelsdisplay.html">
+<name>Simulink.sdi.setTickLabelsDisplay</name>
+<purpose>Configure tick label visibility for time plot axes</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getborderon.html">
+<name>Simulink.sdi.getBorderOn</name>
+<purpose>Get border display setting for time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setborderon.html">
+<name>Simulink.sdi.setBorderOn</name>
+<purpose>Display or hide border on time plots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.compareruns.html">
+<name>Simulink.sdi.compareRuns</name>
+<purpose>Compare the data in two simulation runs</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.comparesignals.html">
+<name>Simulink.sdi.compareSignals</name>
+<purpose>Compare data from two signals</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getrun.html">
+<name>Simulink.sdi.getRun</name>
+<purpose>Get a Simulink.sdi.Run object to access data</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.copyrun.html">
+<name>Simulink.sdi.copyRun</name>
+<purpose>Copy a Simulation Data Inspector run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.deleterun.html">
+<name>Simulink.sdi.deleteRun</name>
+<purpose>Delete a run from the Simulation Data Inspector repository</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.createrun.html">
+<name>Simulink.sdi.createRun</name>
+<purpose>Create a run in the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getrunnamingrule.html">
+<name>Simulink.sdi.getRunNamingRule</name>
+<purpose>Get the Simulation Data Inspector rule for naming runs</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setrunnamingrule.html">
+<name>Simulink.sdi.setRunNamingRule</name>
+<purpose>Specify the Simulation Data Inspector run naming rule</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.resetrunnamingrule.html">
+<name>Simulink.sdi.resetRunNamingRule</name>
+<purpose>Revert the Simulation Data Inspector run naming rule to default</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getruncount.html">
+<name>Simulink.sdi.getRunCount</name>
+<purpose>Get number of runs in Simulation Data Inspector repository</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getrunidbyindex.html">
+<name>Simulink.sdi.getRunIDByIndex</name>
+<purpose>Use Simulation Data Inspector run index to get run ID</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getallrunids.html">
+<name>Simulink.sdi.getAllRunIDs</name>
+<purpose>Get all Simulation Data Inspector run identifiers</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.isvalidrunid.html">
+<name>Simulink.sdi.isValidRunID</name>
+<purpose>Determine whether a run ID is valid</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.copyrunviewsettings.html">
+<name>Simulink.sdi.copyRunViewSettings</name>
+<purpose>Copy line style and color for signals from one run to another</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.createrunoraddtostreamedrun.html">
+<name>Simulink.sdi.createRunOrAddToStreamedRun</name>
+<purpose>Create a single run for all simulation outputs</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getsignal.html">
+<name>Simulink.sdi.getSignal</name>
+<purpose>Get Simulink.sdi.Signal object for a signal</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.deletesignal.html">
+<name>Simulink.sdi.deleteSignal</name>
+<purpose>Delete a signal from the Simulation Data Inspector repository</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.addtorun.html">
+<name>Simulink.sdi.addToRun</name>
+<purpose>Add one or more signals to existing run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.marksignalforstreaming.html">
+<name>Simulink.sdi.markSignalForStreaming</name>
+<purpose>Turn logging on or off for a signal</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getarchiverunlimit.html">
+<name>Simulink.sdi.getArchiveRunLimit</name>
+<purpose>Determine configured run limit for Simulation Data Inspector archive</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setarchiverunlimit.html">
+<name>Simulink.sdi.setArchiveRunLimit</name>
+<purpose>Specify a limit for the number of runs stored in the Simulation Data Inspector
+      archive</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.getautoarchivemode.html">
+<name>Simulink.sdi.getAutoArchiveMode</name>
+<purpose>Determine if the Simulation Data Inspector is configured to automatically
+      archive</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setautoarchivemode.html">
+<name>Simulink.sdi.setAutoArchiveMode</name>
+<purpose>Specify whether the Simulation Data Inspector automatically archives simulation
+      runs</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.save.html">
+<name>Simulink.sdi.save</name>
+<purpose>Save Simulation Data Inspector session</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.load.html">
+<name>Simulink.sdi.load</name>
+<purpose>Load a Simulation Data Inspector session or view</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.clear.html">
+<name>Simulink.sdi.clear</name>
+<purpose>Clear all data from the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.exportrun.html">
+<name>Simulink.sdi.exportRun</name>
+<purpose>Export Simulation Data Inspector run data to the workspace or a
+            file</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.report.html">
+<name>Simulink.sdi.report</name>
+<purpose>Generate a Simulation Data Inspector report</purpose>
+</tocitem>
+<tocitem target="slref/loadintomemory.html">
+<name>loadIntoMemory</name>
+<purpose>Load logged data into memory</purpose>
+</tocitem>
+<tocitem target="slref/simplot.html">
+<name>simplot</name>
+<purpose> Redirects to the Simulation Data Inspector</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.setrunoverwrite.html">
+<name>Simulink.sdi.setRunOverwrite</name>
+<purpose>(Removed) Enable and disable run overwrite mode for a Simulation Data Inspector
+            run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.datasetref.compare.html">
+<name>compare</name>
+<purpose> Compare runs with DatasetRef objects</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.datasetref.getasdatastore.html">
+<name>getAsDatastore</name>
+<purpose>Retrieve element as sdidatastore object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.datasetref.getelement.html">
+<name>getElement</name>
+<purpose>Retrieve DatasetRef element by index</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.datasetref.getelementnames.html">
+<name>getElementNames</name>
+<purpose>Get character vectors of element names</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.datasetref.getsignal.html">
+<name>getSignal</name>
+<purpose> Return Signal object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.datasetref.plot.html">
+<name>plot</name>
+<purpose> Open the Simulation Data Inspector to view and compare data</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.diffrunresult.getresultbyindex.html">
+<name>getResultByIndex</name>
+<purpose>Return signal comparison result</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.add.html">
+<name>add</name>
+<purpose>Add signals to run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.create.html">
+<name>Simulink.sdi.Run.create</name>
+<purpose>Create a Simulink.sdi.Run object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.export.html">
+<name>export</name>
+<purpose>Export run to base workspace or a file</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.getdatasetref.html">
+<name>getDatasetRef</name>
+<purpose>Create a Simulink.sdi.DatasetRef object for a run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.getsignalbyindex.html">
+<name>getSignalByIndex</name>
+<purpose>Get Simulink.sdi.Signal object by index</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.getsignalidbyindex.html">
+<name>getSignalIDByIndex</name>
+<purpose>Return signal ID for signal at index</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.run.isvalidsignalid.html">
+<name>isValidSignalID</name>
+<purpose>Determine whether signal ID is valid within a run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.signal.export.html">
+<name>export</name>
+<purpose> Export signal object to MATLAB timeseries</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.signal.getastall.html">
+<name>getAsTall</name>
+<purpose> Return tall timetable with time and data values</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.signal.plotonsubplot.html">
+<name>plotOnSubPlot</name>
+<purpose> Plot signal on specified sub-plot</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.signal.convertunits.html">
+<name>Simulink.sdi.Signal.convertUnits</name>
+<purpose> Convert signal units</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.workerrun.getdataset.html">
+<name>getDataset</name>
+<purpose>Create Dataset of worker run data</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.workerrun.getdatasetref.html">
+<name>getDatasetRef</name>
+<purpose>Create DatasetRef for worker run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.workerrun.getlatest.html">
+<name>Simulink.sdi.WorkerRun.getLatest</name>
+<purpose>Create worker run for latest run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.workerrun.getlocalrun.html">
+<name>getLocalRun</name>
+<purpose>Create local run from worker run</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.customsnapshot.clearsignals.html">
+<name>clearSignals</name>
+<purpose> Clear signals plotted on subplots of a
+                Simulink.sdi.CustomSnapshot object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.customsnapshot.plotonsubplot.html">
+<name>plotOnSubPlot</name>
+<purpose> Plot signals on Simulink.sdi.CustomSnapshot object
+            subplots</purpose>
+</tocitem>
+<tocitem target="slref/simulink.sdi.customsnapshot.snapshot.html">
+<name>snapshot</name>
+<purpose> Create a custom snapshot</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.sdidatastore.hasdata.html">
+<name>matlab.io.datastore.sdidatastore.hasdata</name>
+<purpose> Determine if data is available to read</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.sdidatastore.preview.html">
+<name>matlab.io.datastore.sdidatastore.preview</name>
+<purpose> Return preview of data in sdidatstore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.sdidatastore.read.html">
+<name>matlab.io.datastore.sdidatastore.read</name>
+<purpose> Read a chunk of data from an sdidatastore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.sdidatastore.readall.html">
+<name>matlab.io.datastore.sdidatastore.readall</name>
+<purpose> Read all data from an sdidatastore</purpose>
+</tocitem>
+<tocitem target="slref/matlab.io.datastore.sdidatastore.reset.html">
+<name>matlab.io.datastore.sdidatastore.reset</name>
+<purpose> Reset the read position</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="test-and-debug-simulations.html">Test and Debug Simulations
+<tocitem target="debugging.html">Simulink Debugger
+<tocitem target="slref/sldebug.html">
+<name>sldebug</name>
+<purpose>Start simulation in debug mode</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="diagnostics.html">Diagnostics
+<tocitem target="slref/sldiagnostics.html">
+<name>sldiagnostics</name>
+<purpose>Display diagnostic information about Simulink system</purpose>
+</tocitem>
+<tocitem target="slref/simulink.restorediagnostic.html">
+<name>Simulink.restoreDiagnostic</name>
+<purpose>Restore diagnostic warnings to a specific block, subsystem,
+or model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.suppressdiagnostic.html">
+<name>Simulink.suppressDiagnostic</name>
+<purpose>Suppress a diagnostic from a specific block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.getsuppresseddiagnostics.html">
+<name>Simulink.getSuppressedDiagnostics</name>
+<purpose> Return Simulink.SuppressedDiagnostic objects
+associated with a block, subsystem, or model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getchecksum.html">
+<name>Simulink.BlockDiagram.getChecksum</name>
+<purpose>Return checksum of model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.getchecksum.html">
+<name>Simulink.SubSystem.getChecksum</name>
+<purpose>Return checksum of nonvirtual subsystem</purpose>
+</tocitem>
+<tocitem target="slref/simulink.getsuppresseddiagnostics.html">
+<name>Simulink.getSuppressedDiagnostics</name>
+<purpose> Return Simulink.SuppressedDiagnostic objects
+associated with a block, subsystem, or model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.suppressdiagnostic.html">
+<name>Simulink.suppressDiagnostic</name>
+<purpose>Suppress a diagnostic from a specific block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.restorediagnostic.html">
+<name>Simulink.restoreDiagnostic</name>
+<purpose>Restore diagnostic warnings to a specific block, subsystem,
+or model</purpose>
+</tocitem>
+<tocitem target="slref/modeladvisor.html">
+<name>modeladvisor</name>
+<purpose>Open Model Advisor</purpose>
+</tocitem>
+<tocitem target="slref/sldebug.html">
+<name>sldebug</name>
+<purpose>Start simulation in debug mode</purpose>
+</tocitem>
+<tocitem target="slref/addterms.html">
+<name>addterms</name>
+<purpose>Add terminators to unconnected ports in model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="performance_performance.html">Optimize Performance
+<tocitem target="automatic-performance-optimization.html">Automated Performance Optimization
+<tocitem target="slref/performanceadvisor.html">
+<name>performanceadvisor</name>
+<purpose>Open Performance Advisor</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="acceleration.html">Acceleration
+<tocitem target="slref/sim.html">
+<name>sim</name>
+<purpose>Simulate dynamic system</purpose>
+</tocitem>
+<tocitem target="slref/set_param.html">
+<name>set_param</name>
+<purpose>Set system and block parameter values</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.buildrapidacceleratortarget.html">
+<name>Simulink.BlockDiagram.buildRapidAcceleratorTarget</name>
+<purpose>Build Rapid Accelerator target for model and return run-time
+parameter set</purpose>
+</tocitem>
+<tocitem target="slref/simulink.blockdiagram.getchecksum.html">
+<name>Simulink.BlockDiagram.getChecksum</name>
+<purpose>Return checksum of model</purpose>
+</tocitem>
+<tocitem target="slref/simulink.subsystem.getchecksum.html">
+<name>Simulink.SubSystem.getChecksum</name>
+<purpose>Return checksum of nonvirtual subsystem</purpose>
+</tocitem>
+<tocitem target="slref/slbuild.html">
+<name>slbuild</name>
+<purpose>Build standalone executable or model reference target for model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="manual-performance-optimization.html">Manual Performance Optimization
+<tocitem target="slref/slprofreport.html">
+<name>slprofreport</name>
+<purpose>Regenerate profiler report from data, ProfileData,
+saved from previous run</purpose>
+</tocitem>
+<tocitem target="slref/sldiagnostics.html">
+<name>sldiagnostics</name>
+<purpose>Display diagnostic information about Simulink system</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="project-management.html">Project Management
+<tocitem target="simulink-project-setup.html">Project Setup
+<tocitem target="../matlab/ref/currentproject.html">
+<name>currentProject</name>
+<purpose>Get current project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/openproject.html">
+<name>openProject</name>
+<purpose>Load an existing project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.close.html">
+<name>close</name>
+<purpose>Close project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.export.html">
+<name>export</name>
+<purpose>Export project to archive</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.createproject.html">
+<name>matlab.project.createProject</name>
+<purpose>Create blank project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.deleteproject.html">
+<name>matlab.project.deleteProject</name>
+<purpose>Stop folder management and delete project definition files</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.loadproject.html">
+<name>matlab.project.loadProject</name>
+<purpose>Load project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.rootproject.html">
+<name>matlab.project.rootProject</name>
+<purpose>Get root project</purpose>
+</tocitem>
+<tocitem target="slref/simulink.createfromtemplate.html">
+<name>Simulink.createFromTemplate</name>
+<purpose>Create model or project from template</purpose>
+</tocitem>
+<tocitem target="slref/simulink.findtemplates.html">
+<name>Simulink.findTemplates</name>
+<purpose>Find model or project templates with specified properties</purpose>
+</tocitem>
+<tocitem target="slref/simulink.exporttotemplate.html">
+<name>Simulink.exportToTemplate</name>
+<purpose>Create template from model or project</purpose>
+</tocitem>
+<tocitem target="slref/simulinkproject.html">
+<name>simulinkproject</name>
+<purpose>(Not recommended) Open project and get project object</purpose>
+</tocitem>
+<tocitem target="slref/slproject.create.html">
+<name>slproject.create</name>
+<purpose>(Not recommended) Create blank project</purpose>
+</tocitem>
+<tocitem target="slref/slproject.getcurrentprojects.html">
+<name>slproject.getCurrentProjects</name>
+<purpose>(Not recommended) List all top-level projects</purpose>
+</tocitem>
+<tocitem target="slref/slproject.loadproject.html">
+<name>slproject.loadProject</name>
+<purpose>(Not recommended) Load project</purpose>
+</tocitem>
+<tocitem target="slref/close.html">
+<name>close</name>
+<purpose>(Not recommended) Close project</purpose>
+</tocitem>
+<tocitem target="slref/export.html">
+<name>export</name>
+<purpose>(Not recommended) Export project to zip</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addfile.html">
+<name>addFile</name>
+<purpose>Add file or folder to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addfolderincludingchildfiles.html">
+<name>addFolderIncludingChildFiles</name>
+<purpose>Add folder and child files to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addpath.html">
+<name>addPath</name>
+<purpose>Add folder to project path</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addreference.html">
+<name>addReference</name>
+<purpose>Add referenced project to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addshortcut.html">
+<name>addShortcut</name>
+<purpose>Add shortcut to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addshutdownfile.html">
+<name>addShutdownFile</name>
+<purpose>Add shutdown file to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addstartupfile.html">
+<name>addStartupFile</name>
+<purpose>Add startup file to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.findfile.html">
+<name>findFile</name>
+<purpose>Find project file by name</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.isloaded.html">
+<name>isLoaded</name>
+<purpose>Determine if project is loaded</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.reload.html">
+<name>reload</name>
+<purpose>Reload project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removefile.html">
+<name>removeFile</name>
+<purpose>Remove file from project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removepath.html">
+<name>removePath</name>
+<purpose>Remove folder from project path</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removereference.html">
+<name>removeReference</name>
+<purpose>Remove project reference</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removeshortcut.html">
+<name>removeShortcut</name>
+<purpose>Remove shortcut from project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removeshutdownfile.html">
+<name>removeShutdownFile</name>
+<purpose>Remove shutdown file from project shutdown list</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removestartupfile.html">
+<name>removeStartupFile</name>
+<purpose>Remove startup file from project startup list</purpose>
+</tocitem>
+<tocitem target="slref/addfile.html">
+<name>addFile</name>
+<purpose>(Not recommended) Add file to project</purpose>
+</tocitem>
+<tocitem target="slref/addfolderincludingchildfiles.html">
+<name>addFolderIncludingChildFiles</name>
+<purpose>(Not recommended) Add folder and child files to project</purpose>
+</tocitem>
+<tocitem target="slref/addpath.html">
+<name>addPath</name>
+<purpose>(Not recommended) Add folder to path of project</purpose>
+</tocitem>
+<tocitem target="slref/addreference.html">
+<name>addReference</name>
+<purpose>(Not recommended) Add referenced project to project</purpose>
+</tocitem>
+<tocitem target="slref/addshortcut.html">
+<name>addShortcut</name>
+<purpose>(Not recommended) Add shortcut to project</purpose>
+</tocitem>
+<tocitem target="slref/addshutdownfile.html">
+<name>addShutdownFile</name>
+<purpose>(Not recommended) Add shutdown file to project</purpose>
+</tocitem>
+<tocitem target="slref/addstartupfile.html">
+<name>addStartupFile</name>
+<purpose>(Not recommended) Add startup file to project</purpose>
+</tocitem>
+<tocitem target="slref/findfile.html">
+<name>findFile</name>
+<purpose>(Not recommended) Get project file by name</purpose>
+</tocitem>
+<tocitem target="slref/isloaded.html">
+<name>isLoaded</name>
+<purpose>(Not recommended) Determine if project is loaded</purpose>
+</tocitem>
+<tocitem target="slref/reload.html">
+<name>reload</name>
+<purpose>(Not recommended) Reload project</purpose>
+</tocitem>
+<tocitem target="slref/removefile.html">
+<name>removeFile</name>
+<purpose>(Not recommended) Remove file from project</purpose>
+</tocitem>
+<tocitem target="slref/removepath.html">
+<name>removePath</name>
+<purpose>(Not recommended) Remove folder from project path</purpose>
+</tocitem>
+<tocitem target="slref/removereference.html">
+<name>removeReference</name>
+<purpose>(Not recommended) Add folder to project path</purpose>
+</tocitem>
+<tocitem target="slref/removeshortcut.html">
+<name>removeShortcut</name>
+<purpose>(Not recommended) Remove shortcut from project</purpose>
+</tocitem>
+<tocitem target="slref/removeshutdownfile.html">
+<name>removeShutdownFile​</name>
+<purpose>(Not recommended) Remove shutdown file from project shutdown list</purpose>
+</tocitem>
+<tocitem target="slref/removestartupfile.html">
+<name>removeStartupFile</name>
+<purpose>(Not recommended) Remove startup file from project startup list</purpose>
+</tocitem>
+<tocitem target="slref/slproject.getcurrentproject.html">
+<name>slproject.getCurrentProject</name>
+<purpose>(To be removed) Manipulate current project at command line</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulink-project-file-management.html">Project File Management
+<tocitem target="../matlab/ref/currentproject.html">
+<name>currentProject</name>
+<purpose>Get current project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/openproject.html">
+<name>openProject</name>
+<purpose>Load an existing project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addfile.html">
+<name>addFile</name>
+<purpose>Add file or folder to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addfolderincludingchildfiles.html">
+<name>addFolderIncludingChildFiles</name>
+<purpose>Add folder and child files to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addlabel.html">
+<name>addLabel</name>
+<purpose>Attach label to project file</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addpath.html">
+<name>addPath</name>
+<purpose>Add folder to project path</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addreference.html">
+<name>addReference</name>
+<purpose>Add referenced project to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.addshortcut.html">
+<name>addShortcut</name>
+<purpose>Add shortcut to project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.close.html">
+<name>close</name>
+<purpose>Close project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.createcategory.html">
+<name>createCategory</name>
+<purpose>Create category of project labels</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.createlabel.html">
+<name>createLabel</name>
+<purpose>Create project label</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.export.html">
+<name>export</name>
+<purpose>Export project to archive</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.findcategory.html">
+<name>findCategory</name>
+<purpose>Find project category of labels</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.findfile.html">
+<name>findFile</name>
+<purpose>Find project file by name</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.findlabel.html">
+<name>findLabel</name>
+<purpose>Get project file label</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.isloaded.html">
+<name>isLoaded</name>
+<purpose>Determine if project is loaded</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.reload.html">
+<name>reload</name>
+<purpose>Reload project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removecategory.html">
+<name>removeCategory</name>
+<purpose>Remove project category of labels</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.removelabel.html">
+<name>removeLabel</name>
+<purpose>Remove label from project</purpose>
+</tocitem>
+<tocitem target="slref/simulinkproject.html">
+<name>simulinkproject</name>
+<purpose>(Not recommended) Open project and get project object</purpose>
+</tocitem>
+<tocitem target="slref/slproject.loadproject.html">
+<name>slproject.loadProject</name>
+<purpose>(Not recommended) Load project</purpose>
+</tocitem>
+<tocitem target="slref/slproject.getcurrentprojects.html">
+<name>slproject.getCurrentProjects</name>
+<purpose>(Not recommended) List all top-level projects</purpose>
+</tocitem>
+<tocitem target="slref/addfile.html">
+<name>addFile</name>
+<purpose>(Not recommended) Add file to project</purpose>
+</tocitem>
+<tocitem target="slref/addfolderincludingchildfiles.html">
+<name>addFolderIncludingChildFiles</name>
+<purpose>(Not recommended) Add folder and child files to project</purpose>
+</tocitem>
+<tocitem target="slref/addlabel.html">
+<name>addLabel</name>
+<purpose>(Not recommended) Attach label to project file</purpose>
+</tocitem>
+<tocitem target="slref/addpath.html">
+<name>addPath</name>
+<purpose>(Not recommended) Add folder to path of project</purpose>
+</tocitem>
+<tocitem target="slref/addreference.html">
+<name>addReference</name>
+<purpose>(Not recommended) Add referenced project to project</purpose>
+</tocitem>
+<tocitem target="slref/addshortcut.html">
+<name>addShortcut</name>
+<purpose>(Not recommended) Add shortcut to project</purpose>
+</tocitem>
+<tocitem target="slref/close.html">
+<name>close</name>
+<purpose>(Not recommended) Close project</purpose>
+</tocitem>
+<tocitem target="slref/createcategory.html">
+<name>createCategory</name>
+<purpose>(Not recommended) Create category of project labels</purpose>
+</tocitem>
+<tocitem target="slref/createlabel.html">
+<name>createLabel</name>
+<purpose>(Not recommended) Define project label</purpose>
+</tocitem>
+<tocitem target="slref/export.html">
+<name>export</name>
+<purpose>(Not recommended) Export project to zip</purpose>
+</tocitem>
+<tocitem target="slref/findcategory.html">
+<name>findCategory</name>
+<purpose>(Not recommended) Get project category of labels</purpose>
+</tocitem>
+<tocitem target="slref/findfile.html">
+<name>findFile</name>
+<purpose>(Not recommended) Get project file by name</purpose>
+</tocitem>
+<tocitem target="slref/findlabel.html">
+<name>findLabel</name>
+<purpose>(Not recommended) Get project file label</purpose>
+</tocitem>
+<tocitem target="slref/isloaded.html">
+<name>isLoaded</name>
+<purpose>(Not recommended) Determine if project is loaded</purpose>
+</tocitem>
+<tocitem target="slref/reload.html">
+<name>reload</name>
+<purpose>(Not recommended) Reload project</purpose>
+</tocitem>
+<tocitem target="slref/removecategory.html">
+<name>removeCategory</name>
+<purpose>(Not recommended) Remove project category of labels</purpose>
+</tocitem>
+<tocitem target="slref/removelabel.html">
+<name>removeLabel</name>
+<purpose>(Not recommended) Remove label from project</purpose>
+</tocitem>
+<tocitem target="slref/slproject.getcurrentproject.html">
+<name>slproject.getCurrentProject</name>
+<purpose>(To be removed) Manipulate current project at command line</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="dependency-analysis.html">Dependency Analysis
+<tocitem target="../matlab/ref/currentproject.html">
+<name>currentProject</name>
+<purpose>Get current project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/openproject.html">
+<name>openProject</name>
+<purpose>Load an existing project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.listrequiredfiles.html">
+<name>listRequiredFiles</name>
+<purpose>Get project file dependencies</purpose>
+</tocitem>
+<tocitem target="slref/dependencies.filedependencyanalysis.html">
+<name>dependencies.fileDependencyAnalysis</name>
+<purpose>Find model file dependencies</purpose>
+</tocitem>
+<tocitem target="slref/dependencies.toolboxdependencyanalysis.html">
+<name>dependencies.toolboxDependencyAnalysis</name>
+<purpose>Find toolbox dependencies</purpose>
+</tocitem>
+<tocitem target="slref/simulinkproject.html">
+<name>simulinkproject</name>
+<purpose>(Not recommended) Open project and get project object</purpose>
+</tocitem>
+<tocitem target="slref/listrequiredfiles.html">
+<name>listRequiredFiles</name>
+<purpose>(Not recommended) Get project file dependencies</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="source-control-in-simulink-project.html">Source Control in Projects
+<tocitem target="../matlab/ref/currentproject.html">
+<name>currentProject</name>
+<purpose>Get current project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/openproject.html">
+<name>openProject</name>
+<purpose>Load an existing project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.listmodifiedfiles.html">
+<name>listModifiedFiles</name>
+<purpose>List modified files in project</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.listrequiredfiles.html">
+<name>listRequiredFiles</name>
+<purpose>Get project file dependencies</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.project.project.refreshsourcecontrol.html">
+<name>refreshSourceControl</name>
+<purpose>Update source control status of project files</purpose>
+</tocitem>
+<tocitem target="slref/simulink.getfilechecksum.html">
+<name>Simulink.getFileChecksum</name>
+<purpose>Checksum of file</purpose>
+</tocitem>
+<tocitem target="slref/simulinkproject.html">
+<name>simulinkproject</name>
+<purpose>(Not recommended) Open project and get project object</purpose>
+</tocitem>
+<tocitem target="slref/listmodifiedfiles.html">
+<name>listModifiedFiles</name>
+<purpose>(Not recommended) List modified files in project</purpose>
+</tocitem>
+<tocitem target="slref/listrequiredfiles.html">
+<name>listRequiredFiles</name>
+<purpose>(Not recommended) Get project file dependencies</purpose>
+</tocitem>
+<tocitem target="slref/refreshsourcecontrol.html">
+<name>refreshSourceControl</name>
+<purpose>(Not recommended) Update source control status of project files</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-comparison.html">Model Comparison
+<tocitem target="../matlab/ref/visdiff.html">
+<name>visdiff</name>
+<purpose>Compare two files or folders</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="block-creation-1.html">Block Authoring and Simulation Integration
+<tocitem target="implement-new-algorithm.html">Extend Modeling Functionality with Custom Blocks
+<tocitem target="implement-matlab-code.html">Implement Algorithms Using MATLAB
+<tocitem target="matlab-function-block.html">Integrate Basic Algorithms Using MATLAB Function Block
+<tocitem target="matlab-algorithm-design-new.html">Programming for Code
+                            Generation
+<tocitem target="algorithm-design-basics.html">Algorithm Design Basics
+<tocitem target="slref/coder.allowpcode.html">
+<name>coder.allowpcode</name>
+<purpose>Control code generation from protected MATLAB files</purpose>
+</tocitem>
+<tocitem target="slref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="slref/coder.cinclude.html">
+<name>coder.cinclude</name>
+<purpose>Include header file in generated code</purpose>
+</tocitem>
+<tocitem target="slref/coder.cstructname.html">
+<name>coder.cstructname</name>
+<purpose>Name C structure type in generated code</purpose>
+</tocitem>
+<tocitem target="slref/coder.extrinsic.html">
+<name>coder.extrinsic</name>
+<purpose>Declare extrinsic functions</purpose>
+</tocitem>
+<tocitem target="slref/coder.inline.html">
+<name>coder.inline</name>
+<purpose>Control inlining in generated code</purpose>
+</tocitem>
+<tocitem target="slref/coder.load.html">
+<name>coder.load</name>
+<purpose>Load compile-time constants from MAT-file or ASCII file
+into caller workspace</purpose>
+</tocitem>
+<tocitem target="slref/coder.nullcopy.html">
+<name>coder.nullcopy</name>
+<purpose>Declare uninitialized variables in code generation</purpose>
+</tocitem>
+<tocitem target="slref/coder.opaque.html">
+<name>coder.opaque</name>
+<purpose>Declare variable in generated code</purpose>
+</tocitem>
+<tocitem target="slref/coder.ref.html">
+<name>coder.ref</name>
+<purpose>Indicate data to pass by reference</purpose>
+</tocitem>
+<tocitem target="slref/coder.screener.html">
+<name>coder.screener</name>
+<purpose>Determine if function is suitable for code generation </purpose>
+</tocitem>
+<tocitem target="slref/coder.rref.html">
+<name>coder.rref</name>
+<purpose>Indicate read-only data to pass by reference</purpose>
+</tocitem>
+<tocitem target="slref/coder.target.html">
+<name>coder.target</name>
+<purpose>Determine if code generation target is specified target</purpose>
+</tocitem>
+<tocitem target="slref/coder.unroll.html">
+<name>coder.unroll</name>
+<purpose>Unroll for-loop by making a copy of
+the loop body for each loop iteration</purpose>
+</tocitem>
+<tocitem target="slref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+<tocitem target="slref/coder.wref.html">
+<name>coder.wref</name>
+<purpose>Indicate write-only data to pass by reference</purpose>
+</tocitem>
+<tocitem target="slref/coder.updatebuildinfo.html">
+<name>coder.updateBuildInfo</name>
+<purpose>Update build information object RTW.BuildInfo</purpose>
+</tocitem>
+<tocitem target="slref/coder.externaldependency.getdescriptivename.html">
+<name>coder.ExternalDependency.getDescriptiveName</name>
+<purpose>Return descriptive name for external dependency</purpose>
+</tocitem>
+<tocitem target="slref/coder.externaldependency.issupportedcontext.html">
+<name>coder.ExternalDependency.isSupportedContext</name>
+<purpose>Determine if build context supports external dependency</purpose>
+</tocitem>
+<tocitem target="slref/coder.externaldependency.updatebuildinfo.html">
+<name>coder.ExternalDependency.updateBuildInfo</name>
+<purpose>Update build information</purpose>
+</tocitem>
+<tocitem target="slref/coder.buildconfig.gethardwareimplementation.html">
+<name>coder.BuildConfig.getHardwareImplementation</name>
+<purpose>Get handle of copy of hardware implementation object</purpose>
+</tocitem>
+<tocitem target="slref/coder.buildconfig.getstdlibinfo.html">
+<name>coder.BuildConfig.getStdLibInfo</name>
+<purpose>Get standard library information</purpose>
+</tocitem>
+<tocitem target="slref/coder.buildconfig.gettargetlang.html">
+<name>coder.BuildConfig.getTargetLang</name>
+<purpose>Get target code generation language</purpose>
+</tocitem>
+<tocitem target="slref/coder.buildconfig.gettoolchaininfo.html">
+<name>coder.BuildConfig.getToolchainInfo</name>
+<purpose>Returns handle of copy of toolchain information object</purpose>
+</tocitem>
+<tocitem target="slref/coder.buildconfig.iscodegentarget.html">
+<name>coder.BuildConfig.isCodeGenTarget</name>
+<purpose>Determine if build configuration represents specified
+target</purpose>
+</tocitem>
+<tocitem target="slref/coder.buildconfig.ismatlabhosttarget.html">
+<name>coder.BuildConfig.isMatlabHostTarget</name>
+<purpose>Determine if hardware implementation object target is MATLAB host
+computer</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="data-definition.html">Data Definition
+<tocitem target="array-layout.html">Array Layout
+<tocitem target="slref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="slref/coder.columnmajor.html">
+<name>coder.columnMajor</name>
+<purpose>Specify column-major array layout for a function or class</purpose>
+</tocitem>
+<tocitem target="slref/coder.rowmajor.html">
+<name>coder.rowMajor</name>
+<purpose>Specify row-major array layout for a function or class</purpose>
+</tocitem>
+<tocitem target="slref/coder.isrowmajor.html">
+<name>coder.isRowMajor</name>
+<purpose>Determine whether the current function or variable uses row-major
+            layout</purpose>
+</tocitem>
+<tocitem target="slref/coder.iscolumnmajor.html">
+<name>coder.isColumnMajor</name>
+<purpose>Determine whether the current function or variable uses column-major
+            layout</purpose>
+</tocitem>
+<tocitem target="slref/coder.rowmajor.html">
+<name>coder.rowMajor</name>
+<purpose>Specify row-major array layout for a function or class</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="variable-size-data.html">Variable-Size Data
+<tocitem target="slref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="structures.html">Structures
+<tocitem target="slref/coder.cstructname.html">
+<name>coder.cstructname</name>
+<purpose>Name C structure type in generated code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="cell-arrays.html">Cell Arrays
+<tocitem target="slref/coder.cstructname.html">
+<name>coder.cstructname</name>
+<purpose>Name C structure type in generated code</purpose>
+</tocitem>
+<tocitem target="slref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="function-definition.html">Function Definition
+<tocitem target="slref/coder.extrinsic.html">
+<name>coder.extrinsic</name>
+<purpose>Declare extrinsic functions</purpose>
+</tocitem>
+<tocitem target="slref/coder.ignoresize.html">
+<name>coder.ignoreSize</name>
+<purpose>Prevent code generator from creating function specializations for constant-size
+      expressions</purpose>
+</tocitem>
+<tocitem target="slref/coder.ignoreconst.html">
+<name>coder.ignoreConst</name>
+<purpose>Prevent use of constant value of expression for function
+specializations</purpose>
+</tocitem>
+<tocitem target="slref/coder.unroll.html">
+<name>coder.unroll</name>
+<purpose>Unroll for-loop by making a copy of
+the loop body for each loop iteration</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="performance_btjgc7g.html">Performance
+<tocitem target="slref/coder.inline.html">
+<name>coder.inline</name>
+<purpose>Control inlining in generated code</purpose>
+</tocitem>
+<tocitem target="slref/coder.unroll.html">
+<name>coder.unroll</name>
+<purpose>Unroll for-loop by making a copy of
+the loop body for each loop iteration</purpose>
+</tocitem>
+<tocitem target="slref/coder.const.html">
+<name>coder.const</name>
+<purpose>Fold expressions into constants in generated code</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="matlab-s-functions-1.html">Create and Configure MATLAB S-Functions
+<tocitem target="create-matlab-s-functions.html">Create MATLAB S-Functions
+<tocitem target="sfg/setsimstate.html">
+<name>SetSimState</name>
+<purpose>(Not recommended) Set the simulation state of the MATLAB S-function by restoring
+        the SimState.</purpose>
+</tocitem>
+<tocitem target="sfg/getsimstate.html">
+<name>GetSimState</name>
+<purpose>(Not recommended) Return the MATLAB S-function simulation state as a valid
+          MATLAB data structure, such as a matrix structure or a cell array.</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="define-new-system-objects.html">Integrate System Objects Using MATLAB System Block
+<tocitem target="define-system-object-for-simulink.html">Customize System Objects for Simulink
+<tocitem target="slref/matlab.system.mixin.customicon-class.html">
+<name>matlab.system.mixin.CustomIcon</name>
+<purpose>Custom icon mixin class</purpose>
+</tocitem>
+<tocitem target="slref/matlab.system.mixin.propagates-class.html">
+<name>matlab.system.mixin.Propagates</name>
+<purpose>Signal characteristics propagation mixin class</purpose>
+</tocitem>
+<tocitem target="slref/matlab.system.mixin.nondirect-class.html">
+<name>matlab.system.mixin.Nondirect</name>
+<purpose>Nondirect feedthrough mixin class</purpose>
+</tocitem>
+<tocitem target="slref/matlab.system.mixin.sampletime-class.html">
+<name>matlab.system.mixin.SampleTime</name>
+<purpose>Control sample time for System objects in Simulink</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="implement_algorithms_c-code.html">Implement Algorithms Using C/C++ Code
+<tocitem target="c-c-s-functions.html">Implement C/C++ S-Functions
+<tocitem target="configure-c-s-function-behavior.html">Configure C/C++ S-Function Features
+<tocitem target="sfg/ssgetinputportiscontinuousquantity.html">
+<name>ssGetInputPortIsContinuousQuantity</name>
+<purpose> Determine if input port expects co-simulation signals</purpose>
+</tocitem>
+<tocitem target="sfg/ssgetoutputportiscontinuousquantity.html">
+<name>ssGetOutputPortIsContinuousQuantity</name>
+<purpose> Determine if output port generates co-simulation signals</purpose>
+</tocitem>
+<tocitem target="sfg/sssetinputportiscontinuousquantity.html">
+<name>ssSetInputPortIsContinuousQuantity</name>
+<purpose> Declare that input port expects co-simulation signals</purpose>
+</tocitem>
+<tocitem target="sfg/sssetoutputportiscontinuousquantity.html">
+<name>ssSetOutputPortIsContinuousQuantity</name>
+<purpose>Declare that output port generates co-simulation signals</purpose>
+</tocitem>
+<tocitem target="sfg/mdlsetupruntimeresources.html">
+<name>mdlSetupRuntimeResources</name>
+<purpose>Perform any actions required once at the start of the
+simulation</purpose>
+</tocitem>
+<tocitem target="sfg/mdlcleanupruntimeresources.html">
+<name>mdlCleanupRuntimeResources</name>
+<purpose>Perform any actions required once at termination of the
+simulation</purpose>
+</tocitem>
+<tocitem target="sfg/mdlenable.html">
+<name>mdlEnable</name>
+<purpose>Respond to enabling of a enabled system containing this
+block</purpose>
+</tocitem>
+<tocitem target="sfg/mdldisable.html">
+<name>mdlDisable</name>
+<purpose>Respond to disabling of an enabled system containing this
+block</purpose>
+</tocitem>
+<tocitem target="sfg/mdlrtw.html">
+<name>mdlRTW</name>
+<purpose>Generate code generation data for a C MEX S-function</purpose>
+</tocitem>
+<tocitem target="sfg/mdlprojection.html">
+<name>mdlProjection</name>
+<purpose>Perturb the solver's solution of a system's states to
+better satisfy time-invariant solution relationships</purpose>
+</tocitem>
+<tocitem target="sfg/mdlsimstatuschange.html">
+<name>mdlSimStatusChange</name>
+<purpose>Respond to a pause or resumption of the simulation of
+the model that contains this C MEX S-function</purpose>
+</tocitem>
+<tocitem target="sfg/implementing-s-functions.html">
+<name>Implementing S-Functions</name>
+<purpose/>
+</tocitem>
+<tocitem target="sfg/s-function-compatibility.html">
+<name>S-Function Compatibility</name>
+<purpose/>
+</tocitem>
+<tocitem target="sfg/memory-allocation.html">
+<name>Memory Allocation</name>
+<purpose/>
+</tocitem>
+</tocitem>
+<tocitem target="debugging-and-analyzing-quality-of-S-functions.html">Debug and Analyze the Quality of S-Functions
+<tocitem target="slref/simulink.sfunction.analyzer.run.html">
+<name>Simulink.sfunction.Analyzer.run</name>
+<purpose>Perform checks on S-functions </purpose>
+</tocitem>
+<tocitem target="slref/simulink.sfunction.analyzer.generatereport.html">
+<name>Simulink.sfunction.Analyzer.generateReport</name>
+<purpose>Generate an HTML report of S-function checks </purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="legacy-code-integration.html">Implement Algorithms Using Legacy Code Tool
+<tocitem target="slref/legacy_code.html">
+<name>legacy_code</name>
+<purpose>Use Legacy Code Tool</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="co-sim_gateway.html">Integrate with Existing Simulation or Environment
+<tocitem target="co-simulation.html">Co-Simulation
+<tocitem target="sfg/sssetruntimethreadsafetycompliance.html">
+<name>ssSetRuntimeThreadSafetyCompliance</name>
+<purpose>Determine if the S-function can run multithreaded</purpose>
+</tocitem>
+<tocitem target="sfg/ssgetruntimethreadsafetycompliance.html">
+<name>ssGetRuntimeThreadSafetyCompliance</name>
+<purpose>Get the thread safety compliance setting</purpose>
+</tocitem>
+<tocitem target="slref/simulink.fmuexport.exportsimulinkprojecttofmu.html">
+<name>Simulink.fmuexport.ExportSimulinkProjectToFMU</name>
+<purpose>Export project as Functional Mockup Unit (FMU)</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="block-masks.html">Create Block Masks
+<tocitem target="slref/simulink.mask.addparameter.html">
+<name>Simulink.Mask.addParameter</name>
+<purpose>Add a parameter to a mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.copy.html">
+<name>Simulink.Mask.copy</name>
+<purpose>Copy a mask from one block to another</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.create.html">
+<name>Simulink.Mask.create</name>
+<purpose>Create a mask on a Simulink block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.delete.html">
+<name>Simulink.Mask.delete</name>
+<purpose>Unmask a block and delete the mask from memory</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.get.html">
+<name>Simulink.Mask.get</name>
+<purpose>Get a block mask as a mask object</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.adddialogcontrol.html">
+<name>Simulink.Mask.addDialogControl</name>
+<purpose>Add dialog control elements to mask dialog box</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getdialogcontrol.html">
+<name>Simulink.Mask.getDialogControl</name>
+<purpose>Search for a specific dialog control on the mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getowner.html">
+<name>Simulink.Mask.getOwner</name>
+<purpose>Determine the block that owns a mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getparameter.html">
+<name>Simulink.Mask.getParameter</name>
+<purpose>Get a mask parameter using its name</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getworkspacevariables.html">
+<name>Simulink.Mask.getWorkspaceVariables</name>
+<purpose>Get all the variables defined in the mask workspace for
+a masked block</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.numparameters.html">
+<name>Simulink.Mask.numParameters</name>
+<purpose>Determine the number of parameters in a mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removedialogcontrol.html">
+<name>Simulink.Mask.removeDialogControl</name>
+<purpose>Remove dialog control element from mask dialog box</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removeparameter.html">
+<name>Simulink.Mask.removeParameter</name>
+<purpose>Remove parameter from mask dialog box</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removeallparameters.html">
+<name>Simulink.Mask.removeAllParameters</name>
+<purpose>Remove all existing parameters from a mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.set.html">
+<name>Simulink.Mask.set</name>
+<purpose>Set the properties of an existing mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.addparameterconstraint.html">
+<name>Simulink.Mask.addParameterConstraint</name>
+<purpose>Add parameter constraint to a mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removeparameterconstraint.html">
+<name>Simulink.Mask.removeParameterConstraint</name>
+<purpose>Delete a mask parameter constraint</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removecrossparameterconstraint.html">
+<name>Simulink.Mask.removeCrossParameterConstraint</name>
+<purpose>Delete a cross-parameter constraint</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removeallparameterconstraints.html">
+<name>Simulink.Mask.removeAllParameterConstraints</name>
+<purpose>Delete all mask parameter constraints</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.removeallcrossparameterconstraints.html">
+<name>Simulink.Mask.removeAllCrossParameterConstraints</name>
+<purpose>Delete all cross-parameter constraints from a mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getparameterconstraint.html">
+<name>Simulink.Mask.getParameterConstraint</name>
+<purpose>Get mask parameter constraint properties</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getcrossparameterconstraint.html">
+<name>Simulink.Mask.getCrossParameterConstraint</name>
+<purpose>Get cross-parameter constraint</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.getassociatedparametersofconstraint.html">
+<name>Simulink.Mask.getAssociatedParametersOfConstraint</name>
+<purpose>Get mask parameters associated with a constraint</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.addcrossparameterconstraint.html">
+<name>Simulink.Mask.addCrossParameterConstraint</name>
+<purpose>Add cross-parameter constraint</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.constraints.addparameterconstraintrule.html">
+<name>Simulink.Mask.Constraints.addParameterConstraintRule</name>
+<purpose>Add rules to a parameter constraint</purpose>
+</tocitem>
+<tocitem target="slref/simulink.mask.constraints.removeparameterconstraintrule.html">
+<name>Simulink.Mask.Constraints.removeParameterConstraintRule</name>
+<purpose>Delete a mask parameter constraint rule</purpose>
+</tocitem>
+<tocitem target="slref/addcolumn.html">
+<name>Simulink.Mask.addColumn</name>
+<purpose>Add new column in the custom table</purpose>
+</tocitem>
+<tocitem target="slref/addrow.html">
+<name>Simulink.Mask.addRow</name>
+<purpose>Add a new row in the custom table</purpose>
+</tocitem>
+<tocitem target="slref/getchangedcells.html">
+<name>Simulink.Mask.getChangedCells</name>
+<purpose>Get all the changed cells of a custom table</purpose>
+</tocitem>
+<tocitem target="slref/getcolumn.html">
+<name>Simulink.Mask.getColumn</name>
+<purpose>Get the column properties </purpose>
+</tocitem>
+<tocitem target="slref/getselectedrows.html">
+<name>Simulink.Mask.getSelectedRows</name>
+<purpose>Get all the selected rows of a custom table</purpose>
+</tocitem>
+<tocitem target="slref/gettablecell.html">
+<name>Simulink.Mask.getTableCell</name>
+<purpose>Get the properties of a custom table cell</purpose>
+</tocitem>
+<tocitem target="slref/getvalue.html">
+<name>Simulink.Mask.getValue</name>
+<purpose>Get value of a table cell</purpose>
+</tocitem>
+<tocitem target="slref/insertcolumn.html">
+<name>Simulink.Mask.insertColumn</name>
+<purpose>Insert a column at a specific position in the custom table</purpose>
+</tocitem>
+<tocitem target="slref/insertrow.html">
+<name>Simulink.Mask.insertRow</name>
+<purpose>Insert a row at a specific position in a custom table</purpose>
+</tocitem>
+<tocitem target="slref/removecolumn.html">
+<name>Simulink.Mask.removeColumn</name>
+<purpose>Remove an existing column from a specific position in a custom table</purpose>
+</tocitem>
+<tocitem target="slref/removerow.html">
+<name>Simulink.Mask.removeRow</name>
+<purpose>Remove an existing row from a specific position in a custom table</purpose>
+</tocitem>
+<tocitem target="slref/swaprows.html">
+<name>Simulink.Mask.swapRows</name>
+<purpose>Swap two existing rows in a custom table</purpose>
+</tocitem>
+<tocitem target="slref/settablecell.html">
+<name>setTableCell</name>
+<purpose>Set the properties of a custom table cell</purpose>
+</tocitem>
+<tocitem target="slref/getnumberofcolumns.html">
+<name>getNumberOfColumns</name>
+<purpose>Get value of a table cell</purpose>
+</tocitem>
+<tocitem target="slref/getnumberofrows.html">
+<name>getNumberOfRows</name>
+<purpose>Get the number of rows available in a custom table</purpose>
+</tocitem>
+<tocitem target="slref/getselecteditems.html">
+<name>getSelectedItems</name>
+<purpose>Get the values of selected items from a listbox</purpose>
+</tocitem>
+<tocitem target="slref/setselecteditems.html">
+<name>setSelectedItems</name>
+<purpose>Set values for a listbox</purpose>
+</tocitem>
+<tocitem target="slref/simulink.maskparameter.set.html">
+<name>Simulink.MaskParameter.set</name>
+<purpose>Set properties of mask parameters</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.container-class.html">
+<name>Simulink.dialog.Container</name>
+<purpose>Create instances of a container dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.container.adddialogcontrol.html">
+<name>Simulink.dialog.Container.addDialogControl</name>
+<purpose>Add dialog control elements to mask dialog box</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.container.removedialogcontrol.html">
+<name>Simulink.dialog.Container.removeDialogControl</name>
+<purpose>Remove dialog control element from mask dialog box</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.container.getdialogcontrol.html">
+<name>Simulink.dialog.Container.getDialogControl</name>
+<purpose>Search for a specific dialog control on the mask</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.panel-class.html">
+<name>Simulink.dialog.Panel</name>
+<purpose>Create an instance of a panel dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.group-class.html">
+<name>Simulink.dialog.Group</name>
+<purpose>Create an instance of a group dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.tab-class.html">
+<name>Simulink.dialog.Tab</name>
+<purpose>Create an instance of a tab dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.tabcontainer-class.html">
+<name>Simulink.dialog.TabContainer</name>
+<purpose>Create an instance of a tab container dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.button-class.html">
+<name>Simulink.dialog.Button</name>
+<purpose>Create a button dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.hyperlink-class.html">
+<name>Simulink.dialog.Hyperlink</name>
+<purpose>Create a hyperlink dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.image-class.html">
+<name>Simulink.dialog.Image</name>
+<purpose>Create an image dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.text-class.html">
+<name>Simulink.dialog.Text</name>
+<purpose>Create a text dialog control</purpose>
+</tocitem>
+<tocitem target="slref/simulink.dialog.parameter.control-class.html">
+<name>Simulink.dialog.parameter.Control</name>
+<purpose>Create a parameter dialog control</purpose>
+</tocitem>
+<tocitem target="slref/disp_cmd.html">
+<name>disp</name>
+<purpose>Display text on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/dpoly.html">
+<name>dpoly</name>
+<purpose>Display transfer function on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/droots.html">
+<name>droots</name>
+<purpose>Display transfer function on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/fprintf.html">
+<name>fprintf</name>
+<purpose>   Display
+variable text centered on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/image.html">
+<name>image</name>
+<purpose>Display
+RGB image on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/patch.html">
+<name>patch</name>
+<purpose>    Draw color patch of specified shape on masked subsystem
+icon</purpose>
+</tocitem>
+<tocitem target="slref/plot.html">
+<name>plot</name>
+<purpose>Draw graph
+connecting series of points on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/port_label.html">
+<name>port_label</name>
+<purpose>Draw port
+label on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/text.html">
+<name>text</name>
+<purpose>Display
+text at specific location on masked subsystem icon</purpose>
+</tocitem>
+<tocitem target="slref/block_icon.html">
+<name>block_icon</name>
+<purpose>Promote a block icon image to the masked Subsystem</purpose>
+</tocitem>
+<tocitem target="slref/color.html">
+<name>color</name>
+<purpose>Change drawing color of subsequent
+mask icon drawing commands</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

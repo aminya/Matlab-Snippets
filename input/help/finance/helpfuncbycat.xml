@@ -1,0 +1,2398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="preprocess-financial.html">Data Preprocessing
+<tocitem target="../matlab/ref/now.html">
+<name>now</name>
+<purpose>Current date and time as serial date number</purpose>
+</tocitem>
+<tocitem target="today.html">
+<name>today</name>
+<purpose>Current date</purpose>
+</tocitem>
+<tocitem target="datefind.html">
+<name>datefind</name>
+<purpose>Indices of dates in matrix</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/datevec.html">
+<name>datevec</name>
+<purpose>Convert date and time to vector of components</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/datetime.html">
+<name>datetime</name>
+<purpose>Arrays that represent points in time</purpose>
+</tocitem>
+<tocitem target="day.html">
+<name>day</name>
+<purpose>Day of month</purpose>
+</tocitem>
+<tocitem target="eomdate.html">
+<name>eomdate</name>
+<purpose>Last date of month</purpose>
+</tocitem>
+<tocitem target="hour.html">
+<name>hour</name>
+<purpose>Hour of date or time</purpose>
+</tocitem>
+<tocitem target="lweekdate.html">
+<name>lweekdate</name>
+<purpose>Date of last occurrence of weekday in month</purpose>
+</tocitem>
+<tocitem target="second.html">
+<name>second</name>
+<purpose>Seconds of date or time</purpose>
+</tocitem>
+<tocitem target="minute.html">
+<name>minute</name>
+<purpose>Minute of date or time</purpose>
+</tocitem>
+<tocitem target="month.html">
+<name>month</name>
+<purpose>Month of date</purpose>
+</tocitem>
+<tocitem target="months.html">
+<name>months</name>
+<purpose>Number of whole months between dates</purpose>
+</tocitem>
+<tocitem target="nweekdate.html">
+<name>nweekdate</name>
+<purpose>Date of specific occurrence of weekday in month</purpose>
+</tocitem>
+<tocitem target="weeknum.html">
+<name>weeknum</name>
+<purpose>Week in year</purpose>
+</tocitem>
+<tocitem target="year.html">
+<name>year</name>
+<purpose>Year of date</purpose>
+</tocitem>
+<tocitem target="yeardays.html">
+<name>yeardays</name>
+<purpose>Number of days in year</purpose>
+</tocitem>
+<tocitem target="date2time.html">
+<name>date2time</name>
+<purpose>Time and frequency from dates</purpose>
+</tocitem>
+<tocitem target="datedisp.html">
+<name>datedisp</name>
+<purpose>Display date entries</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/datenum.html">
+<name>datenum</name>
+<purpose>Convert date and time to serial date number</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/datestr.html">
+<name>datestr</name>
+<purpose>Convert date and time to string format</purpose>
+</tocitem>
+<tocitem target="m2xdate.html">
+<name>m2xdate</name>
+<purpose>MATLAB date to Excel serial date number</purpose>
+</tocitem>
+<tocitem target="time2date.html">
+<name>time2date</name>
+<purpose>Dates from time and frequency</purpose>
+</tocitem>
+<tocitem target="uicalendar.html">
+<name>uicalendar</name>
+<purpose>Graphical calendar</purpose>
+</tocitem>
+<tocitem target="x2mdate.html">
+<name>x2mdate</name>
+<purpose>Excel serial date number to MATLAB serial date
+number or datetime format</purpose>
+</tocitem>
+<tocitem target="busdate.html">
+<name>busdate</name>
+<purpose>Next or previous business day</purpose>
+</tocitem>
+<tocitem target="busdays.html">
+<name>busdays</name>
+<purpose>Business days for given period</purpose>
+</tocitem>
+<tocitem target="datemnth.html">
+<name>datemnth</name>
+<purpose>Date of day in future or past month</purpose>
+</tocitem>
+<tocitem target="datewrkdy.html">
+<name>datewrkdy</name>
+<purpose>Date of future or past workday</purpose>
+</tocitem>
+<tocitem target="days252bus.html">
+<name>days252bus</name>
+<purpose>Number of business days between dates</purpose>
+</tocitem>
+<tocitem target="days360.html">
+<name>days360</name>
+<purpose>Days between dates based on 360-day year</purpose>
+</tocitem>
+<tocitem target="days360e.html">
+<name>days360e</name>
+<purpose>Days between dates based on 360-day year (European)</purpose>
+</tocitem>
+<tocitem target="days360isda.html">
+<name>days360isda</name>
+<purpose>Days between dates based on 360-day year (International
+Swap Dealer Association (ISDA) compliant)</purpose>
+</tocitem>
+<tocitem target="days360psa.html">
+<name>days360psa</name>
+<purpose>Days between dates based on 360-day year (Public Securities
+Association (PSA) compliant)</purpose>
+</tocitem>
+<tocitem target="days365.html">
+<name>days365</name>
+<purpose>Days between dates based on 365-day year</purpose>
+</tocitem>
+<tocitem target="daysact.html">
+<name>daysact</name>
+<purpose>Actual number of days between dates</purpose>
+</tocitem>
+<tocitem target="daysadd.html">
+<name>daysadd</name>
+<purpose>Date away from starting date for any day-count basis</purpose>
+</tocitem>
+<tocitem target="daysdif.html">
+<name>daysdif</name>
+<purpose>Days between dates for any for any day-count basis</purpose>
+</tocitem>
+<tocitem target="fbusdate.html">
+<name>fbusdate</name>
+<purpose>First business date of month</purpose>
+</tocitem>
+<tocitem target="isbusday.html">
+<name>isbusday</name>
+<purpose>True for dates that are business days</purpose>
+</tocitem>
+<tocitem target="lbusdate.html">
+<name>lbusdate</name>
+<purpose>Last business date of month</purpose>
+</tocitem>
+<tocitem target="quarter.html">
+<name>quarter</name>
+<purpose>Returns the quarter of given date</purpose>
+</tocitem>
+<tocitem target="thirdwednesday.html">
+<name>thirdwednesday</name>
+<purpose>Find third Wednesday of month</purpose>
+</tocitem>
+<tocitem target="wrkdydif.html">
+<name>wrkdydif</name>
+<purpose>Number of working days between dates </purpose>
+</tocitem>
+<tocitem target="yearfrac.html">
+<name>yearfrac</name>
+<purpose>Fraction of year between dates</purpose>
+</tocitem>
+<tocitem target="createholidays.html">
+<name>createholidays</name>
+<purpose>Create trading calendars </purpose>
+</tocitem>
+<tocitem target="holidays.html">
+<name>holidays</name>
+<purpose>Holidays and nontrading days</purpose>
+</tocitem>
+<tocitem target="nyseclosures.html">
+<name>nyseclosures</name>
+<purpose>New York Stock Exchange closures from 1885 to 2070</purpose>
+</tocitem>
+<tocitem target="accrfrac.html">
+<name>accrfrac</name>
+<purpose>Fraction of coupon period before settlement</purpose>
+</tocitem>
+<tocitem target="cpncount.html">
+<name>cpncount</name>
+<purpose>Coupon payments remaining until maturity</purpose>
+</tocitem>
+<tocitem target="cpndaten.html">
+<name>cpndaten</name>
+<purpose>Next coupon date for fixed-income security</purpose>
+</tocitem>
+<tocitem target="cpndatenq.html">
+<name>cpndatenq</name>
+<purpose>Next quasi-coupon date for fixed-income security</purpose>
+</tocitem>
+<tocitem target="cpndatepq.html">
+<name>cpndatepq</name>
+<purpose>Previous quasi-coupon date for fixed-income security</purpose>
+</tocitem>
+<tocitem target="cpndatep.html">
+<name>cpndatep</name>
+<purpose>Previous coupon date for fixed-income security</purpose>
+</tocitem>
+<tocitem target="cpndaysn.html">
+<name>cpndaysn</name>
+<purpose>Number of days to next coupon date</purpose>
+</tocitem>
+<tocitem target="cpndaysp.html">
+<name>cpndaysp</name>
+<purpose>Number of days since previous coupon date </purpose>
+</tocitem>
+<tocitem target="cpnpersz.html">
+<name>cpnpersz</name>
+<purpose>Number of days in coupon period</purpose>
+</tocitem>
+<tocitem target="cur2frac.html">
+<name>cur2frac</name>
+<purpose>Decimal currency values to fractional values</purpose>
+</tocitem>
+<tocitem target="cur2str.html">
+<name>cur2str</name>
+<purpose>Bank-formatted text</purpose>
+</tocitem>
+<tocitem target="dec2thirtytwo.html">
+<name>dec2thirtytwo</name>
+<purpose>Decimal to thirty-second quotation</purpose>
+</tocitem>
+<tocitem target="frac2cur.html">
+<name>frac2cur</name>
+<purpose>Fractional currency value to decimal value</purpose>
+</tocitem>
+<tocitem target="thirtytwo2dec.html">
+<name>thirtytwo2dec</name>
+<purpose>Thirty-second quotation to decimal</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="manage-financial-time-tables.html">Timetables in Finance
+<tocitem target="create-financial-time-tables.html">Create Timetables for Finance
+<tocitem target="../matlab/ref/timetable.html">
+<name>timetable</name>
+<purpose>Timetable array with time-stamped rows and variables of different
+            types</purpose>
+</tocitem>
+<tocitem target="fts2timetable.html">
+<name>fts2timetable</name>
+<purpose>Convert financial time series objects (fints) to timetable
+      object</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/table2timetable.html">
+<name>table2timetable</name>
+<purpose>Convert table to timetable</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/array2timetable.html">
+<name>array2timetable</name>
+<purpose>Convert homogeneous array to timetable</purpose>
+</tocitem>
+<tocitem target="fints.html">
+<name>fints</name>
+<purpose>Construct financial time series object</purpose>
+</tocitem>
+<tocitem target="ascii2fts.html">
+<name>ascii2fts</name>
+<purpose>Create financial time series object from ASCII file</purpose>
+</tocitem>
+<tocitem target="fts2ascii.html">
+<name>fts2ascii</name>
+<purpose>Write elements of time series data into ASCII file</purpose>
+</tocitem>
+<tocitem target="fts2mat.html">
+<name>fts2mat</name>
+<purpose>Convert to matrix</purpose>
+</tocitem>
+<tocitem target="diff.html">
+<name>diff</name>
+<purpose>Differencing</purpose>
+</tocitem>
+<tocitem target="fillts.html">
+<name>fillts</name>
+<purpose>Fill missing values in time series</purpose>
+</tocitem>
+<tocitem target="filter.html">
+<name>filter</name>
+<purpose>Linear filtering</purpose>
+</tocitem>
+<tocitem target="lagts.html">
+<name>lagts</name>
+<purpose>Lag time series object</purpose>
+</tocitem>
+<tocitem target="leadts.html">
+<name>leadts</name>
+<purpose>Lead time series object</purpose>
+</tocitem>
+<tocitem target="peravg.html">
+<name>peravg</name>
+<purpose>Periodic average of FINTS object</purpose>
+</tocitem>
+<tocitem target="resamplets.html">
+<name>resamplets</name>
+<purpose>Downsample data</purpose>
+</tocitem>
+<tocitem target="smoothts.html">
+<name>smoothts</name>
+<purpose>Smooth data</purpose>
+</tocitem>
+<tocitem target="tsmovavg.html">
+<name>tsmovavg</name>
+<purpose> Moving average</purpose>
+</tocitem>
+<tocitem target="convertto.html">
+<name>convertto</name>
+<purpose>Convert to specified frequency</purpose>
+</tocitem>
+<tocitem target="toannual.html">
+<name>toannual</name>
+<purpose>Convert to annual</purpose>
+</tocitem>
+<tocitem target="todaily.html">
+<name>todaily</name>
+<purpose>Convert to daily</purpose>
+</tocitem>
+<tocitem target="tomonthly.html">
+<name>tomonthly</name>
+<purpose>Convert to monthly</purpose>
+</tocitem>
+<tocitem target="toquarterly.html">
+<name>toquarterly</name>
+<purpose>Convert to quarterly</purpose>
+</tocitem>
+<tocitem target="tosemi.html">
+<name>tosemi</name>
+<purpose>Convert to semiannual</purpose>
+</tocitem>
+<tocitem target="toweekly.html">
+<name>toweekly</name>
+<purpose>Convert to weekly</purpose>
+</tocitem>
+<tocitem target="merge.html">
+<name>merge</name>
+<purpose>Merge multiple financial time series objects</purpose>
+</tocitem>
+<tocitem target="horzcat.html">
+<name>horzcat</name>
+<purpose>Concatenate financial time series objects horizontally</purpose>
+</tocitem>
+<tocitem target="vertcat.html">
+<name>vertcat</name>
+<purpose>Concatenate financial time series objects vertically</purpose>
+</tocitem>
+<tocitem target="cov.html">
+<name>cov</name>
+<purpose>Covariance matrix for financial times series object</purpose>
+</tocitem>
+<tocitem target="isempty.html">
+<name>isempty</name>
+<purpose> True for empty financial time series objects</purpose>
+</tocitem>
+<tocitem target="nancov.html">
+<name>nancov</name>
+<purpose>Covariance ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nanmax.html">
+<name>nanmax</name>
+<purpose>Maximum ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nanmean.html">
+<name>nanmean</name>
+<purpose>Mean ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nanmedian.html">
+<name>nanmedian</name>
+<purpose>Median ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nanmin.html">
+<name>nanmin</name>
+<purpose>Minimum ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nanstd.html">
+<name>nanstd</name>
+<purpose>Standard deviation ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nansum.html">
+<name>nansum</name>
+<purpose>Sum ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="nanvar.html">
+<name>nanvar</name>
+<purpose>Variance ignoring NaNs</purpose>
+</tocitem>
+<tocitem target="var.html">
+<name>var</name>
+<purpose>Variance</purpose>
+</tocitem>
+<tocitem target="cumsum.html">
+<name>cumsum</name>
+<purpose>Cumulative sum</purpose>
+</tocitem>
+<tocitem target="end.html">
+<name>end</name>
+<purpose>Last date entry</purpose>
+</tocitem>
+<tocitem target="length.html">
+<name>length</name>
+<purpose>Get number of dates (rows)</purpose>
+</tocitem>
+<tocitem target="minus.html">
+<name>minus</name>
+<purpose>Financial time series subtraction</purpose>
+</tocitem>
+<tocitem target="mrdivide.html">
+<name>mrdivide</name>
+<purpose>Financial time series matrix division</purpose>
+</tocitem>
+<tocitem target="mtimes.html">
+<name>mtimes</name>
+<purpose>Financial time series matrix multiplication</purpose>
+</tocitem>
+<tocitem target="plus.html">
+<name>plus</name>
+<purpose>Financial time series addition</purpose>
+</tocitem>
+<tocitem target="power.html">
+<name>power</name>
+<purpose>Financial time series power</purpose>
+</tocitem>
+<tocitem target="rdivide.html">
+<name>rdivide</name>
+<purpose>Financial time series division</purpose>
+</tocitem>
+<tocitem target="size.html">
+<name>size</name>
+<purpose>Number of dates and data series</purpose>
+</tocitem>
+<tocitem target="subsasgn.html">
+<name>subsasgn</name>
+<purpose>Content assignment </purpose>
+</tocitem>
+<tocitem target="subsref.html">
+<name>subsref</name>
+<purpose>Subscripted reference </purpose>
+</tocitem>
+<tocitem target="times.html">
+<name>times</name>
+<purpose>Financial time series multiplication</purpose>
+</tocitem>
+<tocitem target="uminus.html">
+<name>uminus</name>
+<purpose>Unary minus of financial time series object</purpose>
+</tocitem>
+<tocitem target="uplus.html">
+<name>uplus</name>
+<purpose>Unary plus of financial time series object</purpose>
+</tocitem>
+<tocitem target="exp.html">
+<name>exp</name>
+<purpose>Exponential values</purpose>
+</tocitem>
+<tocitem target="hist.html">
+<name>hist</name>
+<purpose>Histogram for financial times series object</purpose>
+</tocitem>
+<tocitem target="log.html">
+<name>log</name>
+<purpose>Natural logarithm for financial times series object</purpose>
+</tocitem>
+<tocitem target="log10.html">
+<name>log10</name>
+<purpose>Common logarithm for financial times series object</purpose>
+</tocitem>
+<tocitem target="log2.html">
+<name>log2</name>
+<purpose>Base 2 logarithm for financial times series object</purpose>
+</tocitem>
+<tocitem target="max.html">
+<name>max</name>
+<purpose>Maximum value</purpose>
+</tocitem>
+<tocitem target="mean.html">
+<name>mean</name>
+<purpose>Arithmetic average</purpose>
+</tocitem>
+<tocitem target="min.html">
+<name>min</name>
+<purpose>Minimum value</purpose>
+</tocitem>
+<tocitem target="std.html">
+<name>std</name>
+<purpose>Standard deviation</purpose>
+</tocitem>
+<tocitem target="chfield.html">
+<name>chfield</name>
+<purpose>Change data series name</purpose>
+</tocitem>
+<tocitem target="eqfts.html">
+<name>eq (fts)</name>
+<purpose>Multiple financial times series object equality</purpose>
+</tocitem>
+<tocitem target="extfield.html">
+<name>extfield</name>
+<purpose>Data series extraction</purpose>
+</tocitem>
+<tocitem target="fetch.html">
+<name>fetch</name>
+<purpose>Data from financial time series object</purpose>
+</tocitem>
+<tocitem target="fieldnames.html">
+<name>fieldnames</name>
+<purpose>Get names of fields</purpose>
+</tocitem>
+<tocitem target="freqnum.html">
+<name>freqnum</name>
+<purpose>Convert character vector frequency indicator to numeric frequency
+      indicator</purpose>
+</tocitem>
+<tocitem target="freqstr.html">
+<name>freqstr</name>
+<purpose>Convert numeric frequency indicator to character vector
+            representation</purpose>
+</tocitem>
+<tocitem target="ftsbound.html">
+<name>ftsbound</name>
+<purpose>Start and end dates</purpose>
+</tocitem>
+<tocitem target="ftsinfo.html">
+<name>ftsinfo</name>
+<purpose>Financial time series object information</purpose>
+</tocitem>
+<tocitem target="ftsuniq.html">
+<name>ftsuniq</name>
+<purpose>Determine uniqueness</purpose>
+</tocitem>
+<tocitem target="getfield.html">
+<name>getfield</name>
+<purpose>Content of specific field</purpose>
+</tocitem>
+<tocitem target="iscompatible.html">
+<name>iscompatible</name>
+<purpose>Structural equality</purpose>
+</tocitem>
+<tocitem target="isequal.html">
+<name>isequal</name>
+<purpose>Multiple object equality</purpose>
+</tocitem>
+<tocitem target="isfield.html">
+<name>isfield</name>
+<purpose>Check whether character vector is field name</purpose>
+</tocitem>
+<tocitem target="issorted.html">
+<name>issorted</name>
+<purpose>Check whether dates and times are monotonically increasing</purpose>
+</tocitem>
+<tocitem target="rmfield.html">
+<name>rmfield</name>
+<purpose>Remove data series</purpose>
+</tocitem>
+<tocitem target="setfield.html">
+<name>setfield</name>
+<purpose>Set content of specific field </purpose>
+</tocitem>
+<tocitem target="sortfts.html">
+<name>sortfts</name>
+<purpose>Sort financial time series</purpose>
+</tocitem>
+<tocitem target="corrcoef.html">
+<name>corrcoef</name>
+<purpose>Correlation coefficients</purpose>
+</tocitem>
+<tocitem target="ftstool.html">
+<name>ftstool</name>
+<purpose>Financial Time Series app</purpose>
+</tocitem>
+<tocitem target="ftsgui.html">
+<name>ftsgui</name>
+<purpose>Financial time series GUI</purpose>
+</tocitem>
+<tocitem target="chartfts.html">
+<name>chartfts</name>
+<purpose>Interactive display</purpose>
+</tocitem>
+<tocitem target="candlefts.html">
+<name>candle (fts)</name>
+<purpose>Time series candle plot</purpose>
+</tocitem>
+<tocitem target="highlowfts.html">
+<name>highlow (fts)</name>
+<purpose>Time series High-Low plot</purpose>
+</tocitem>
+<tocitem target="fpctkd.html">
+<name>fpctkd</name>
+<purpose>Fast stochastics</purpose>
+</tocitem>
+<tocitem target="spctkd.html">
+<name>spctkd</name>
+<purpose>Slow stochastics</purpose>
+</tocitem>
+<tocitem target="getnameidx.html">
+<name>getnameidx</name>
+<purpose>Find name in list</purpose>
+</tocitem>
+<tocitem target="barbarh.html">
+<name>bar, barh</name>
+<purpose>Bar chart</purpose>
+</tocitem>
+<tocitem target="bar3bar3h.html">
+<name>bar3, bar3h</name>
+<purpose>3-D bar chart</purpose>
+</tocitem>
+<tocitem target="bolling.html">
+<name>bolling</name>
+<purpose>Bollinger band chart</purpose>
+</tocitem>
+<tocitem target="plot.html">
+<name>plot</name>
+<purpose>Plot data series</purpose>
+</tocitem>
+<tocitem target="ret2tickfts.html">
+<name>ret2tick (fts)</name>
+<purpose>Convert return series to price series for time series object</purpose>
+</tocitem>
+<tocitem target="tick2retfts.html">
+<name>tick2ret (fts)</name>
+<purpose>Convert price series to return series for time series object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="common-operations-with-timetables-for-finance.html">Common Operations with Timetables for Finance
+<tocitem target="../matlab/ref/ismissing.html">
+<name>ismissing</name>
+<purpose>Find missing values</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rmmissing.html">
+<name>rmmissing</name>
+<purpose>Remove missing entries</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fillmissing.html">
+<name>fillmissing</name>
+<purpose>Fill missing values</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/double.sortrows.html">
+<name>sortrows</name>
+<purpose>Sort rows of matrix or table</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/timetable.retime.html">
+<name>retime</name>
+<purpose>Resample or aggregate data in timetable, and resolve duplicate or irregular
+            times</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/timetable.retime.html">
+<name>retime</name>
+<purpose>Resample or aggregate data in timetable, and resolve duplicate or irregular
+            times</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/timetable.synchronize.html">
+<name>synchronize</name>
+<purpose>Synchronize timetables to common time vector, and resample or aggregate data
+            from input timetables</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/horzcat.html">
+<name>horzcat</name>
+<purpose>Concatenate arrays horizontally</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/vertcat.html">
+<name>vertcat</name>
+<purpose>Concatenate arrays vertically</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/table.summary.html">
+<name>summary</name>
+<purpose>Print summary of table, timetable, or categorical array</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/timerange.html">
+<name>timerange</name>
+<purpose>Time range for timetable row subscripting</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/vartype.html">
+<name>vartype</name>
+<purpose>Subscript into table or timetable by variable type</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/withtol.html">
+<name>withtol</name>
+<purpose>Time tolerance for timetable row subscripting</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rowfun.html">
+<name>rowfun</name>
+<purpose>Apply function to table or timetable rows</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/splitapply.html">
+<name>splitapply</name>
+<purpose>Split data into groups and apply function</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/findgroups.html">
+<name>findgroups</name>
+<purpose>Find groups and return group numbers</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="chart-technical-indicators.html">Chart Technical Indicators
+<tocitem target="adosc.html">
+<name>adosc</name>
+<purpose>Accumulation/Distribution oscillator</purpose>
+</tocitem>
+<tocitem target="chiakosc.html">
+<name>chaikosc</name>
+<purpose>Chaikin oscillator</purpose>
+</tocitem>
+<tocitem target="macd.html">
+<name>macd</name>
+<purpose>Moving Average Convergence/Divergence (MACD)</purpose>
+</tocitem>
+<tocitem target="stochosc.html">
+<name>stochosc</name>
+<purpose>Stochastic oscillator</purpose>
+</tocitem>
+<tocitem target="tsaccel.html">
+<name>tsaccel</name>
+<purpose>Acceleration between times</purpose>
+</tocitem>
+<tocitem target="tsmom.html">
+<name>tsmom</name>
+<purpose>Momentum between times</purpose>
+</tocitem>
+<tocitem target="chaikvolat.html">
+<name>chaikvolat</name>
+<purpose>Chaikin volatility</purpose>
+</tocitem>
+<tocitem target="willpctr.html">
+<name>willpctr</name>
+<purpose>Williams %R </purpose>
+</tocitem>
+<tocitem target="negvolidx.html">
+<name>negvolidx</name>
+<purpose>Negative volume index</purpose>
+</tocitem>
+<tocitem target="posvolidx.html">
+<name>posvolidx</name>
+<purpose>Positive volume index</purpose>
+</tocitem>
+<tocitem target="rsindex.html">
+<name>rsindex</name>
+<purpose>Relative Strength Index (RSI)</purpose>
+</tocitem>
+<tocitem target="adline.html">
+<name>adline</name>
+<purpose>Accumulation/Distribution line</purpose>
+</tocitem>
+<tocitem target="bollinger.html">
+<name>bollinger</name>
+<purpose>Time series Bollinger band</purpose>
+</tocitem>
+<tocitem target="hhigh.html">
+<name>hhigh</name>
+<purpose>Highest high</purpose>
+</tocitem>
+<tocitem target="llow.html">
+<name>llow</name>
+<purpose>Lowest low</purpose>
+</tocitem>
+<tocitem target="medprice.html">
+<name>medprice</name>
+<purpose>Median price</purpose>
+</tocitem>
+<tocitem target="movavg.html">
+<name>movavg</name>
+<purpose>Moving average of a financial time series</purpose>
+</tocitem>
+<tocitem target="onbalvol.html">
+<name>onbalvol</name>
+<purpose>On-Balance Volume (OBV)</purpose>
+</tocitem>
+<tocitem target="prcroc.html">
+<name>prcroc</name>
+<purpose>Price rate of change </purpose>
+</tocitem>
+<tocitem target="pvtrend.html">
+<name>pvtrend</name>
+<purpose>Price and Volume Trend (PVT)</purpose>
+</tocitem>
+<tocitem target="typprice.html">
+<name>typprice</name>
+<purpose>Typical price</purpose>
+</tocitem>
+<tocitem target="volroc.html">
+<name>volroc</name>
+<purpose>Volume rate of change</purpose>
+</tocitem>
+<tocitem target="wclose.html">
+<name>wclose</name>
+<purpose>Weighted close</purpose>
+</tocitem>
+<tocitem target="willad.html">
+<name>willad</name>
+<purpose>Williams Accumulation/Distribution line</purpose>
+</tocitem>
+<tocitem target="ret2tick.html">
+<name>ret2tick</name>
+<purpose>Convert return series to price series</purpose>
+</tocitem>
+<tocitem target="tick2ret.html">
+<name>tick2ret</name>
+<purpose>Convert price series to return series</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="chart-financial-data-using-timetables-or-tables.html">Chart Financial Data
+<tocitem target="candle.html">
+<name>candle</name>
+<purpose>Candlestick chart</purpose>
+</tocitem>
+<tocitem target="highlow.html">
+<name>highlow</name>
+<purpose>High, low, open, close chart</purpose>
+</tocitem>
+<tocitem target="kagi.html">
+<name>kagi</name>
+<purpose>Kagi chart</purpose>
+</tocitem>
+<tocitem target="linebreak.html">
+<name>linebreak</name>
+<purpose>Line break chart</purpose>
+</tocitem>
+<tocitem target="movavg.html">
+<name>movavg</name>
+<purpose>Moving average of a financial time series</purpose>
+</tocitem>
+<tocitem target="pointfig.html">
+<name>pointfig</name>
+<purpose>Point and figure chart</purpose>
+</tocitem>
+<tocitem target="priceandvol.html">
+<name>priceandvol</name>
+<purpose>Price and Volume chart</purpose>
+</tocitem>
+<tocitem target="renko.html">
+<name>renko</name>
+<purpose>Renko</purpose>
+</tocitem>
+<tocitem target="volarea.html">
+<name>volarea</name>
+<purpose>Price and volume chart</purpose>
+</tocitem>
+<tocitem target="dateaxis.html">
+<name>dateaxis</name>
+<purpose>Convert serial-date axis labels to calendar-date  axis labels</purpose>
+</tocitem>
+<tocitem target="ret2tick.html">
+<name>ret2tick</name>
+<purpose>Convert return series to price series</purpose>
+</tocitem>
+<tocitem target="tick2ret.html">
+<name>tick2ret</name>
+<purpose>Convert price series to return series</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="analyze-financial-data.html">Financial Data Analytics
+<tocitem target="analyze-cash-flows.html">Cash Flows
+<tocitem target="annurate.html">
+<name>annurate</name>
+<purpose>Periodic interest rate of annuity</purpose>
+</tocitem>
+<tocitem target="annuterm.html">
+<name>annuterm</name>
+<purpose>Number of periods to obtain
+value</purpose>
+</tocitem>
+<tocitem target="payadv.html">
+<name>payadv</name>
+<purpose>Periodic
+payment given number of advance payments</purpose>
+</tocitem>
+<tocitem target="payodd.html">
+<name>payodd</name>
+<purpose>Payment of loan or annuity with odd first period</purpose>
+</tocitem>
+<tocitem target="payper.html">
+<name>payper</name>
+<purpose>Periodic payment of loan
+or annuity</purpose>
+</tocitem>
+<tocitem target="payuni.html">
+<name>payuni</name>
+<purpose>Uniform payment equal to varying cash flow</purpose>
+</tocitem>
+<tocitem target="amortize.html">
+<name>amortize</name>
+<purpose>Amortization schedule</purpose>
+</tocitem>
+<tocitem target="depfixdb.html">
+<name>depfixdb</name>
+<purpose>Fixed declining-balance
+depreciation schedule</purpose>
+</tocitem>
+<tocitem target="depgendb.html">
+<name>depgendb</name>
+<purpose>General
+declining-balance depreciation schedule</purpose>
+</tocitem>
+<tocitem target="deprdv.html">
+<name>deprdv</name>
+<purpose>Remaining depreciable value</purpose>
+</tocitem>
+<tocitem target="depsoyd.html">
+<name>depsoyd</name>
+<purpose>Sum of years' digits depreciation</purpose>
+</tocitem>
+<tocitem target="depstln.html">
+<name>depstln</name>
+<purpose>Straight-line depreciation schedule</purpose>
+</tocitem>
+<tocitem target="pvfix.html">
+<name>pvfix</name>
+<purpose>Present value with fixed periodic payments</purpose>
+</tocitem>
+<tocitem target="pvvar.html">
+<name>pvvar</name>
+<purpose>Present value of varying cash flow</purpose>
+</tocitem>
+<tocitem target="fvdisc.html">
+<name>fvdisc</name>
+<purpose>Future
+value of discounted security</purpose>
+</tocitem>
+<tocitem target="fvfix.html">
+<name>fvfix</name>
+<purpose>Future value with fixed periodic
+payments</purpose>
+</tocitem>
+<tocitem target="fvvar.html">
+<name>fvvar</name>
+<purpose>Future
+value of varying cash flow</purpose>
+</tocitem>
+<tocitem target="effrr.html">
+<name>effrr</name>
+<purpose>Effective rate of return</purpose>
+</tocitem>
+<tocitem target="elpm.html">
+<name>elpm</name>
+<purpose>Compute expected lower partial moments for normal asset
+returns</purpose>
+</tocitem>
+<tocitem target="irr.html">
+<name>irr</name>
+<purpose>Internal rate of return</purpose>
+</tocitem>
+<tocitem target="mirr.html">
+<name>mirr</name>
+<purpose>Modified
+internal rate of return</purpose>
+</tocitem>
+<tocitem target="nomrr.html">
+<name>nomrr</name>
+<purpose>Nominal rate of return</purpose>
+</tocitem>
+<tocitem target="taxedrr.html">
+<name>taxedrr</name>
+<purpose>After-tax rate of return</purpose>
+</tocitem>
+<tocitem target="xirr.html">
+<name>xirr</name>
+<purpose>Internal rate of return for nonperiodic cash flow</purpose>
+</tocitem>
+<tocitem target="cfconv.html">
+<name>cfconv</name>
+<purpose>Cash flow convexity</purpose>
+</tocitem>
+<tocitem target="cfdur.html">
+<name>cfdur</name>
+<purpose>Cash-flow duration and modified duration</purpose>
+</tocitem>
+<tocitem target="cfamounts.html">
+<name>cfamounts</name>
+<purpose>Cash flow and time mapping for bond portfolio</purpose>
+</tocitem>
+<tocitem target="cfport.html">
+<name>cfport</name>
+<purpose>Portfolio form of cash flow amounts</purpose>
+</tocitem>
+<tocitem target="cftimes.html">
+<name>cftimes</name>
+<purpose>Time factors corresponding to bond cash flow dates</purpose>
+</tocitem>
+<tocitem target="cfdates.html">
+<name>cfdates</name>
+<purpose>Cash flow dates
+for fixed-income security</purpose>
+</tocitem>
+<tocitem target="cfdatesq.html">
+<name>cfdatesq</name>
+<purpose>Quasi-coupon dates for fixed-income security</purpose>
+</tocitem>
+<tocitem target="cfprice.html">
+<name>cfprice</name>
+<purpose>Compute price for cash flow given yield to maturity</purpose>
+</tocitem>
+<tocitem target="cfplot.html">
+<name>cfplot</name>
+<purpose>Visualize cash flows of financial instruments</purpose>
+</tocitem>
+<tocitem target="cfspread.html">
+<name>cfspread</name>
+<purpose>Compute spread over yield curve for cash flow</purpose>
+</tocitem>
+<tocitem target="cfyield.html">
+<name>cfyield</name>
+<purpose>Compute yield to maturity for cash flow given price</purpose>
+</tocitem>
+<tocitem target="../fininst/cfbyzero.html">
+<name>cfbyzero</name>
+<purpose>Price cash flows from set of zero curves</purpose>
+</tocitem>
+<tocitem target="tmfactor.html">
+<name>tmfactor</name>
+<purpose>Time factors of arbitrary dates</purpose>
+</tocitem>
+<tocitem target="cur2frac.html">
+<name>cur2frac</name>
+<purpose>Decimal currency values to fractional values</purpose>
+</tocitem>
+<tocitem target="cur2str.html">
+<name>cur2str</name>
+<purpose>Bank-formatted text</purpose>
+</tocitem>
+<tocitem target="dec2thirtytwo.html">
+<name>dec2thirtytwo</name>
+<purpose>Decimal to thirty-second quotation</purpose>
+</tocitem>
+<tocitem target="frac2cur.html">
+<name>frac2cur</name>
+<purpose>Fractional currency value to decimal value</purpose>
+</tocitem>
+<tocitem target="thirtytwo2dec.html">
+<name>thirtytwo2dec</name>
+<purpose>Thirty-second quotation to decimal</purpose>
+</tocitem>
+<tocitem target="todecimal.html">
+<name>todecimal</name>
+<purpose>Fractional to decimal conversion</purpose>
+</tocitem>
+<tocitem target="toquoted.html">
+<name>toquoted</name>
+<purpose>Decimal to fractional conversion</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="investment-performance-metrics-1.html">Investment Performance Metrics
+<tocitem target="elpm.html">
+<name>elpm</name>
+<purpose>Compute expected lower partial moments for normal asset
+returns</purpose>
+</tocitem>
+<tocitem target="emaxdrawdown.html">
+<name>emaxdrawdown</name>
+<purpose>Compute expected maximum drawdown for Brownian motion</purpose>
+</tocitem>
+<tocitem target="inforatio.html">
+<name>inforatio</name>
+<purpose>Calculate information ratio for one or more assets</purpose>
+</tocitem>
+<tocitem target="lpm.html">
+<name>lpm</name>
+<purpose>Compute sample lower partial moments of data</purpose>
+</tocitem>
+<tocitem target="maxdrawdown.html">
+<name>maxdrawdown</name>
+<purpose>Compute maximum drawdown for one or more price series</purpose>
+</tocitem>
+<tocitem target="portalpha.html">
+<name>portalpha</name>
+<purpose>Compute risk-adjusted alphas and returns for one or more
+assets</purpose>
+</tocitem>
+<tocitem target="sharpe.html">
+<name>sharpe</name>
+<purpose>Compute Sharpe ratio for one or more assets</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multivariate-normal-regression-1.html">Multivariate Normal Regression
+<tocitem target="ecmnfish.html">
+<name>ecmnfish</name>
+<purpose>Fisher information matrix</purpose>
+</tocitem>
+<tocitem target="ecmmvnrfish.html">
+<name>ecmmvnrfish</name>
+<purpose>Fisher information matrix for multivariate normal regression
+model</purpose>
+</tocitem>
+<tocitem target="ecmnhess.html">
+<name>ecmnhess</name>
+<purpose>Hessian of negative log-likelihood function</purpose>
+</tocitem>
+<tocitem target="ecmninit.html">
+<name>ecmninit</name>
+<purpose>Initial mean and covariance</purpose>
+</tocitem>
+<tocitem target="ecmnobj.html">
+<name>ecmnobj</name>
+<purpose>Multivariate normal negative log-likelihood function</purpose>
+</tocitem>
+<tocitem target="ecmnmle.html">
+<name>ecmnmle</name>
+<purpose>Mean and covariance of incomplete multivariate normal
+data</purpose>
+</tocitem>
+<tocitem target="ecmnstd.html">
+<name>ecmnstd</name>
+<purpose>Standard errors for mean and covariance of incomplete
+data</purpose>
+</tocitem>
+<tocitem target="ecmmvnrstd.html">
+<name>ecmmvnrstd</name>
+<purpose>Evaluate standard errors for multivariate normal regression
+model</purpose>
+</tocitem>
+<tocitem target="mvnrmle.html">
+<name>mvnrmle</name>
+<purpose>Multivariate normal regression (ignore missing data)</purpose>
+</tocitem>
+<tocitem target="ecmmvnrobj.html">
+<name>ecmmvnrobj</name>
+<purpose>Log-likelihood function for multivariate normal regression
+with missing data</purpose>
+</tocitem>
+<tocitem target="ecmlsrmle.html">
+<name>ecmlsrmle</name>
+<purpose>Least-squares regression with missing data</purpose>
+</tocitem>
+<tocitem target="ecmlsrobj.html">
+<name>ecmlsrobj</name>
+<purpose>Log-likelihood function for least-squares regression with missing data</purpose>
+</tocitem>
+<tocitem target="ecmmvnrmle.html">
+<name>ecmmvnrmle</name>
+<purpose>Multivariate normal regression with missing data</purpose>
+</tocitem>
+<tocitem target="mvnrfish.html">
+<name>mvnrfish</name>
+<purpose>Fisher information matrix for multivariate normal or least-squares
+regression</purpose>
+</tocitem>
+<tocitem target="mvnrobj.html">
+<name>mvnrobj</name>
+<purpose>Log-likelihood function for multivariate normal regression
+without missing data</purpose>
+</tocitem>
+<tocitem target="mvnrstd.html">
+<name>mvnrstd</name>
+<purpose>Evaluate standard errors for multivariate normal regression
+model</purpose>
+</tocitem>
+<tocitem target="convert2sur.html">
+<name>convert2sur</name>
+<purpose>Convert multivariate normal regression model to seemingly
+unrelated regression (SUR) model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="data-transformation.html">Data Transformation
+<tocitem target="abs2active.html">
+<name>abs2active</name>
+<purpose>Convert constraints from absolute to active format</purpose>
+</tocitem>
+<tocitem target="active2abs.html">
+<name>active2abs</name>
+<purpose>Convert constraints from active to absolute format</purpose>
+</tocitem>
+<tocitem target="arith2geom.html">
+<name>arith2geom</name>
+<purpose>Arithmetic to geometric moments of asset returns</purpose>
+</tocitem>
+<tocitem target="boxcox.html">
+<name>boxcox</name>
+<purpose>Box-Cox transformation</purpose>
+</tocitem>
+<tocitem target="corr2cov.html">
+<name>corr2cov</name>
+<purpose>Convert standard deviation and correlation to covariance</purpose>
+</tocitem>
+<tocitem target="cov2corr.html">
+<name>cov2corr</name>
+<purpose>Convert covariance to standard deviation and correlation
+            coefficient</purpose>
+</tocitem>
+<tocitem target="../stats/nearcorr.html">
+<name>nearcorr</name>
+<purpose>Compute nearest correlation matrix by minimizing Frobenius distance</purpose>
+</tocitem>
+<tocitem target="geom2arith.html">
+<name>geom2arith</name>
+<purpose>Geometric to arithmetic moments of asset returns</purpose>
+</tocitem>
+<tocitem target="holdings2weights.html">
+<name>holdings2weights</name>
+<purpose>Portfolio holdings into weights</purpose>
+</tocitem>
+<tocitem target="ret2tick.html">
+<name>ret2tick</name>
+<purpose>Convert return series to price series</purpose>
+</tocitem>
+<tocitem target="tick2ret.html">
+<name>tick2ret</name>
+<purpose>Convert price series to return series</purpose>
+</tocitem>
+<tocitem target="dateaxis.html">
+<name>dateaxis</name>
+<purpose>Convert serial-date axis labels to calendar-date  axis labels</purpose>
+</tocitem>
+<tocitem target="weights2holdings.html">
+<name>weights2holdings</name>
+<purpose>Portfolio values and weights into holdings</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="life-studies.html">Life Tables
+<tocitem target="lifetableconv.html">
+<name>lifetableconv</name>
+<purpose>Convert life table series into life tables with forced
+termination</purpose>
+</tocitem>
+<tocitem target="lifetablefit.html">
+<name>lifetablefit</name>
+<purpose>Calibrate life table from survival data with parametric
+models</purpose>
+</tocitem>
+<tocitem target="lifetablegen.html">
+<name>lifetablegen</name>
+<purpose>Generate life table series from calibrated mortality model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="chart-financial-data.html">Chart Financial Data
+<tocitem target="candle.html">
+<name>candle</name>
+<purpose>Candlestick chart</purpose>
+</tocitem>
+<tocitem target="cfplot.html">
+<name>cfplot</name>
+<purpose>Visualize cash flows of financial instruments</purpose>
+</tocitem>
+<tocitem target="fanplot.html">
+<name>fanplot</name>
+<purpose>Plot combined historical and forecast data to visualize
+possible outcomes</purpose>
+</tocitem>
+<tocitem target="highlow.html">
+<name>highlow</name>
+<purpose>High, low, open, close chart</purpose>
+</tocitem>
+<tocitem target="kagi.html">
+<name>kagi</name>
+<purpose>Kagi chart</purpose>
+</tocitem>
+<tocitem target="linebreak.html">
+<name>linebreak</name>
+<purpose>Line break chart</purpose>
+</tocitem>
+<tocitem target="movavg.html">
+<name>movavg</name>
+<purpose>Moving average of a financial time series</purpose>
+</tocitem>
+<tocitem target="pointfig.html">
+<name>pointfig</name>
+<purpose>Point and figure chart</purpose>
+</tocitem>
+<tocitem target="priceandvol.html">
+<name>priceandvol</name>
+<purpose>Price and Volume chart</purpose>
+</tocitem>
+<tocitem target="renko.html">
+<name>renko</name>
+<purpose>Renko</purpose>
+</tocitem>
+<tocitem target="volarea.html">
+<name>volarea</name>
+<purpose>Price and volume chart</purpose>
+</tocitem>
+<tocitem target="dateaxis.html">
+<name>dateaxis</name>
+<purpose>Convert serial-date axis labels to calendar-date  axis labels</purpose>
+</tocitem>
+<tocitem target="ret2tick.html">
+<name>ret2tick</name>
+<purpose>Convert return series to price series</purpose>
+</tocitem>
+<tocitem target="tick2ret.html">
+<name>tick2ret</name>
+<purpose>Convert price series to return series</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="asset-allocation-and-portfolio-optimization.html">Portfolio Optimization and Asset Allocation
+<tocitem target="mean-variance-portfolio-optimization.html">Mean-Variance Portfolio Optimization
+<tocitem target="create-portfolio.html">Create Portfolio
+<tocitem target="portfolio.setassetlist.html">
+<name>setAssetList</name>
+<purpose>Set up list of identifiers for assets</purpose>
+</tocitem>
+<tocitem target="portfolio.setinitport.html">
+<name>setInitPort</name>
+<purpose>Set up initial or current portfolio</purpose>
+</tocitem>
+<tocitem target="portfolio.setdefaultconstraints.html">
+<name>setDefaultConstraints</name>
+<purpose>Set up portfolio constraints with nonnegative weights that sum to 1</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-estimate-mean-and-covariance-for-returns.html">Estimate Mean and Covariance for Returns
+<tocitem target="portfolio.getassetmoments.html">
+<name>getAssetMoments</name>
+<purpose>Obtain mean and covariance of asset returns from Portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setassetmoments.html">
+<name>setAssetMoments</name>
+<purpose> Set moments (mean and covariance) of asset returns for Portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateassetmoments.html">
+<name>estimateAssetMoments</name>
+<purpose>Estimate mean and covariance of asset returns from data</purpose>
+</tocitem>
+<tocitem target="portfolio.setcosts.html">
+<name>setCosts</name>
+<purpose>Set up proportional transaction costs</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-specify-portfolio-constraints.html">Specify Portfolio Constraints
+<tocitem target="portfolio.addequality.html">
+<name>addEquality</name>
+<purpose>Add linear equality constraints for portfolio weights to existing
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addgroupratio.html">
+<name>addGroupRatio</name>
+<purpose>Add group ratio constraints for portfolio weights to existing group ratio
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addgroups.html">
+<name>addGroups</name>
+<purpose>Add group constraints for portfolio weights to existing group
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addinequality.html">
+<name>addInequality</name>
+<purpose>Add linear inequality constraints for portfolio weights to existing
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.getbounds.html">
+<name>getBounds</name>
+<purpose>Obtain bounds for portfolio weights from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getbudget.html">
+<name>getBudget</name>
+<purpose>Obtain budget constraint bounds from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getcosts.html">
+<name>getCosts</name>
+<purpose>Obtain buy and sell transaction costs from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getequality.html">
+<name>getEquality</name>
+<purpose>Obtain equality constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getgroupratio.html">
+<name>getGroupRatio</name>
+<purpose>Obtain group ratio constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getgroups.html">
+<name>getGroups</name>
+<purpose>Obtain group constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getinequality.html">
+<name>getInequality</name>
+<purpose>Obtain inequality constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getonewayturnover.html">
+<name>getOneWayTurnover</name>
+<purpose>Obtain one-way turnover constraints from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setgroups.html">
+<name>setGroups</name>
+<purpose>Set up group constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setinequality.html">
+<name>setInequality</name>
+<purpose>Set up linear inequality constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setbounds.html">
+<name>setBounds</name>
+<purpose>Set up bounds for portfolio weights for a portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setbudget.html">
+<name>setBudget</name>
+<purpose>Set up budget constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.setcosts.html">
+<name>setCosts</name>
+<purpose>Set up proportional transaction costs</purpose>
+</tocitem>
+<tocitem target="portfolio.setdefaultconstraints.html">
+<name>setDefaultConstraints</name>
+<purpose>Set up portfolio constraints with nonnegative weights that sum to 1</purpose>
+</tocitem>
+<tocitem target="portfolio.setequality.html">
+<name>setEquality</name>
+<purpose>Set up linear equality constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setgroupratio.html">
+<name>setGroupRatio</name>
+<purpose>Set up group ratio constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setinitport.html">
+<name>setInitPort</name>
+<purpose>Set up initial or current portfolio</purpose>
+</tocitem>
+<tocitem target="portfolio.setonewayturnover.html">
+<name>setOneWayTurnover</name>
+<purpose>Set up one-way portfolio turnover constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.setturnover.html">
+<name>setTurnover</name>
+<purpose>Set up maximum portfolio turnover constraint</purpose>
+</tocitem>
+<tocitem target="portfolio.settrackingport.html">
+<name>setTrackingPort</name>
+<purpose>Set up benchmark portfolio for tracking error constraint</purpose>
+</tocitem>
+<tocitem target="portfolio.settrackingerror.html">
+<name>setTrackingError</name>
+<purpose>Set up maximum portfolio tracking error constraint</purpose>
+</tocitem>
+<tocitem target="portfolio.setminmaxnumassets.html">
+<name>setMinMaxNumAssets</name>
+<purpose>Set cardinality constraints on the number of assets invested in a portfolio
+            object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-validate-portfolio.html">Validate Portfolio
+<tocitem target="checkfeasibility.html">
+<name>checkFeasibility</name>
+<purpose>Check feasibility of input portfolios against portfolio
+object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatebounds.html">
+<name>estimateBounds</name>
+<purpose>Estimate global lower and upper bounds for set of portfolios</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-estimate-efficient-portfolios-and-frontiers.html">Estimate Efficient Portfolios and Frontiers
+<tocitem target="portfolio.estimatefrontier.html">
+<name>estimateFrontier</name>
+<purpose>Estimate specified number of optimal portfolios on the efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierbyreturn.html">
+<name>estimateFrontierByReturn</name>
+<purpose>Estimate optimal portfolios with targeted portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierbyrisk.html">
+<name>estimateFrontierByRisk</name>
+<purpose>Estimate optimal portfolios with targeted portfolio risks</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierlimits.html">
+<name>estimateFrontierLimits</name>
+<purpose>Estimate optimal portfolios at endpoints of efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.plotfrontier.html">
+<name>plotFrontier</name>
+<purpose>Plot efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatemaxsharperatio.html">
+<name>estimateMaxSharpeRatio</name>
+<purpose> Estimate efficient portfolio to maximize Sharpe ratio for Portfolio
+                        object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportsharperatio.html">
+<name>estimatePortSharpeRatio</name>
+<purpose>Estimate Sharpe ratio of given portfolio weights for Portfolio
+                        object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportmoments.html">
+<name>estimatePortMoments</name>
+<purpose> Estimate moments of portfolio returns for Portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportreturn.html">
+<name>estimatePortReturn</name>
+<purpose>Estimate mean of portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportrisk.html">
+<name>estimatePortRisk</name>
+<purpose>Estimate portfolio risk according to risk proxy associated with corresponding
+            object</purpose>
+</tocitem>
+<tocitem target="portfolio.setsolver.html">
+<name>setSolver</name>
+<purpose>Choose main solver and specify associated solver options for portfolio
+   optimization</purpose>
+</tocitem>
+<tocitem target="portfolio.setsolverminlp.html">
+<name>setSolverMINLP</name>
+<purpose>Choose mixed integer nonlinear programming (MINLP) solver for portfolio
+   optimization</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="conditional-value-at-risk-portfolio-optimization.html">Conditional Value-at-Risk Portfolio Optimization
+<tocitem target="create-portfolio-1.html">Create Portfolio
+<tocitem target="portfolio.setassetlist.html">
+<name>setAssetList</name>
+<purpose>Set up list of identifiers for assets</purpose>
+</tocitem>
+<tocitem target="portfolio.setinitport.html">
+<name>setInitPort</name>
+<purpose>Set up initial or current portfolio</purpose>
+</tocitem>
+<tocitem target="portfolio.setdefaultconstraints.html">
+<name>setDefaultConstraints</name>
+<purpose>Set up portfolio constraints with nonnegative weights that sum to 1</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.setprobabilitylevel.html">
+<name>setProbabilityLevel</name>
+<purpose>Set probability level for VaR and CVaR calculations</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-estimate-mean-and-covariance-for-returns-1.html">Asset Returns and Scenarios
+<tocitem target="portfoliocvar.getscenarios.html">
+<name>getScenarios</name>
+<purpose>Obtain scenarios from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.setscenarios.html">
+<name>setScenarios</name>
+<purpose>Set asset returns scenarios by direct matrix</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.estimatescenariomoments.html">
+<name>estimateScenarioMoments</name>
+<purpose>Estimate mean and covariance of asset return scenarios</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.simulatenormalscenariosbymoments.html">
+<name>simulateNormalScenariosByMoments</name>
+<purpose>Simulate multivariate normal asset return scenarios from mean and covariance of asset
+   returns</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.simulatenormalscenariosbydata.html">
+<name>simulateNormalScenariosByData</name>
+<purpose>Simulate multivariate normal asset return scenarios from data </purpose>
+</tocitem>
+<tocitem target="portfolio.setcosts.html">
+<name>setCosts</name>
+<purpose>Set up proportional transaction costs</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-specify-portfolio-constraints-1.html">Specify Portfolio Constraints
+<tocitem target="portfolio.addequality.html">
+<name>addEquality</name>
+<purpose>Add linear equality constraints for portfolio weights to existing
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addgroupratio.html">
+<name>addGroupRatio</name>
+<purpose>Add group ratio constraints for portfolio weights to existing group ratio
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addgroups.html">
+<name>addGroups</name>
+<purpose>Add group constraints for portfolio weights to existing group
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addinequality.html">
+<name>addInequality</name>
+<purpose>Add linear inequality constraints for portfolio weights to existing
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.getbounds.html">
+<name>getBounds</name>
+<purpose>Obtain bounds for portfolio weights from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getbudget.html">
+<name>getBudget</name>
+<purpose>Obtain budget constraint bounds from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getcosts.html">
+<name>getCosts</name>
+<purpose>Obtain buy and sell transaction costs from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getequality.html">
+<name>getEquality</name>
+<purpose>Obtain equality constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getgroupratio.html">
+<name>getGroupRatio</name>
+<purpose>Obtain group ratio constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getgroups.html">
+<name>getGroups</name>
+<purpose>Obtain group constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getinequality.html">
+<name>getInequality</name>
+<purpose>Obtain inequality constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getonewayturnover.html">
+<name>getOneWayTurnover</name>
+<purpose>Obtain one-way turnover constraints from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setgroups.html">
+<name>setGroups</name>
+<purpose>Set up group constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setinequality.html">
+<name>setInequality</name>
+<purpose>Set up linear inequality constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setbounds.html">
+<name>setBounds</name>
+<purpose>Set up bounds for portfolio weights for a portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setbudget.html">
+<name>setBudget</name>
+<purpose>Set up budget constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.setcosts.html">
+<name>setCosts</name>
+<purpose>Set up proportional transaction costs</purpose>
+</tocitem>
+<tocitem target="portfolio.setdefaultconstraints.html">
+<name>setDefaultConstraints</name>
+<purpose>Set up portfolio constraints with nonnegative weights that sum to 1</purpose>
+</tocitem>
+<tocitem target="portfolio.setequality.html">
+<name>setEquality</name>
+<purpose>Set up linear equality constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setgroupratio.html">
+<name>setGroupRatio</name>
+<purpose>Set up group ratio constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setinitport.html">
+<name>setInitPort</name>
+<purpose>Set up initial or current portfolio</purpose>
+</tocitem>
+<tocitem target="portfolio.setonewayturnover.html">
+<name>setOneWayTurnover</name>
+<purpose>Set up one-way portfolio turnover constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.setturnover.html">
+<name>setTurnover</name>
+<purpose>Set up maximum portfolio turnover constraint</purpose>
+</tocitem>
+<tocitem target="portfolio.setminmaxnumassets.html">
+<name>setMinMaxNumAssets</name>
+<purpose>Set cardinality constraints on the number of assets invested in a portfolio
+            object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-validate-portfolio-1.html">Validate Portfolio
+<tocitem target="checkfeasibility.html">
+<name>checkFeasibility</name>
+<purpose>Check feasibility of input portfolios against portfolio
+object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatebounds.html">
+<name>estimateBounds</name>
+<purpose>Estimate global lower and upper bounds for set of portfolios</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-estimate-efficient-portfolios-and-frontiers-1.html">Estimate Efficient Portfolios and Frontiers
+<tocitem target="portfolio.estimatefrontier.html">
+<name>estimateFrontier</name>
+<purpose>Estimate specified number of optimal portfolios on the efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierbyreturn.html">
+<name>estimateFrontierByReturn</name>
+<purpose>Estimate optimal portfolios with targeted portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierbyrisk.html">
+<name>estimateFrontierByRisk</name>
+<purpose>Estimate optimal portfolios with targeted portfolio risks</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierlimits.html">
+<name>estimateFrontierLimits</name>
+<purpose>Estimate optimal portfolios at endpoints of efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.plotfrontier.html">
+<name>plotFrontier</name>
+<purpose>Plot efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.estimateportvar.html">
+<name>estimatePortVaR</name>
+<purpose>Estimate value-at-risk for PortfolioCVaR object</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.estimateportstd.html">
+<name>estimatePortStd</name>
+<purpose>Estimate standard deviation of portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportreturn.html">
+<name>estimatePortReturn</name>
+<purpose>Estimate mean of portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportrisk.html">
+<name>estimatePortRisk</name>
+<purpose>Estimate portfolio risk according to risk proxy associated with corresponding
+            object</purpose>
+</tocitem>
+<tocitem target="portfolio.setsolver.html">
+<name>setSolver</name>
+<purpose>Choose main solver and specify associated solver options for portfolio
+   optimization</purpose>
+</tocitem>
+<tocitem target="portfolio.setsolverminlp.html">
+<name>setSolverMINLP</name>
+<purpose>Choose mixed integer nonlinear programming (MINLP) solver for portfolio
+   optimization</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="mean-absolute-deviation-portfolio-optimization.html">Mean-Absolute Deviation Portfolio Optimization
+<tocitem target="create-portfolio-3.html">Create Portfolio
+<tocitem target="portfolio.setassetlist.html">
+<name>setAssetList</name>
+<purpose>Set up list of identifiers for assets</purpose>
+</tocitem>
+<tocitem target="portfolio.setinitport.html">
+<name>setInitPort</name>
+<purpose>Set up initial or current portfolio</purpose>
+</tocitem>
+<tocitem target="portfolio.setdefaultconstraints.html">
+<name>setDefaultConstraints</name>
+<purpose>Set up portfolio constraints with nonnegative weights that sum to 1</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-asset-returns-and-scenarios-3.html">Asset Returns and Scenarios
+<tocitem target="portfoliocvar.getscenarios.html">
+<name>getScenarios</name>
+<purpose>Obtain scenarios from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.setscenarios.html">
+<name>setScenarios</name>
+<purpose>Set asset returns scenarios by direct matrix</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.estimatescenariomoments.html">
+<name>estimateScenarioMoments</name>
+<purpose>Estimate mean and covariance of asset return scenarios</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.simulatenormalscenariosbymoments.html">
+<name>simulateNormalScenariosByMoments</name>
+<purpose>Simulate multivariate normal asset return scenarios from mean and covariance of asset
+   returns</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.simulatenormalscenariosbydata.html">
+<name>simulateNormalScenariosByData</name>
+<purpose>Simulate multivariate normal asset return scenarios from data </purpose>
+</tocitem>
+<tocitem target="portfolio.setcosts.html">
+<name>setCosts</name>
+<purpose>Set up proportional transaction costs</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-specify-portfolio-constraints-3.html">Specify Portfolio Constraints
+<tocitem target="portfolio.addequality.html">
+<name>addEquality</name>
+<purpose>Add linear equality constraints for portfolio weights to existing
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addgroupratio.html">
+<name>addGroupRatio</name>
+<purpose>Add group ratio constraints for portfolio weights to existing group ratio
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addgroups.html">
+<name>addGroups</name>
+<purpose>Add group constraints for portfolio weights to existing group
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.addinequality.html">
+<name>addInequality</name>
+<purpose>Add linear inequality constraints for portfolio weights to existing
+            constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.getbounds.html">
+<name>getBounds</name>
+<purpose>Obtain bounds for portfolio weights from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getbudget.html">
+<name>getBudget</name>
+<purpose>Obtain budget constraint bounds from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getcosts.html">
+<name>getCosts</name>
+<purpose>Obtain buy and sell transaction costs from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getequality.html">
+<name>getEquality</name>
+<purpose>Obtain equality constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getgroupratio.html">
+<name>getGroupRatio</name>
+<purpose>Obtain group ratio constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getgroups.html">
+<name>getGroups</name>
+<purpose>Obtain group constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getinequality.html">
+<name>getInequality</name>
+<purpose>Obtain inequality constraint arrays from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.getonewayturnover.html">
+<name>getOneWayTurnover</name>
+<purpose>Obtain one-way turnover constraints from portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setgroups.html">
+<name>setGroups</name>
+<purpose>Set up group constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setinequality.html">
+<name>setInequality</name>
+<purpose>Set up linear inequality constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setbounds.html">
+<name>setBounds</name>
+<purpose>Set up bounds for portfolio weights for a portfolio object</purpose>
+</tocitem>
+<tocitem target="portfolio.setbudget.html">
+<name>setBudget</name>
+<purpose>Set up budget constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.setcosts.html">
+<name>setCosts</name>
+<purpose>Set up proportional transaction costs</purpose>
+</tocitem>
+<tocitem target="portfolio.setdefaultconstraints.html">
+<name>setDefaultConstraints</name>
+<purpose>Set up portfolio constraints with nonnegative weights that sum to 1</purpose>
+</tocitem>
+<tocitem target="portfolio.setequality.html">
+<name>setEquality</name>
+<purpose>Set up linear equality constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setgroupratio.html">
+<name>setGroupRatio</name>
+<purpose>Set up group ratio constraints for portfolio weights</purpose>
+</tocitem>
+<tocitem target="portfolio.setinitport.html">
+<name>setInitPort</name>
+<purpose>Set up initial or current portfolio</purpose>
+</tocitem>
+<tocitem target="portfolio.setonewayturnover.html">
+<name>setOneWayTurnover</name>
+<purpose>Set up one-way portfolio turnover constraints</purpose>
+</tocitem>
+<tocitem target="portfolio.setturnover.html">
+<name>setTurnover</name>
+<purpose>Set up maximum portfolio turnover constraint</purpose>
+</tocitem>
+<tocitem target="portfolio.setminmaxnumassets.html">
+<name>setMinMaxNumAssets</name>
+<purpose>Set cardinality constraints on the number of assets invested in a portfolio
+            object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-validate-portfolio-3.html">Validate Portfolio
+<tocitem target="checkfeasibility.html">
+<name>checkFeasibility</name>
+<purpose>Check feasibility of input portfolios against portfolio
+object</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatebounds.html">
+<name>estimateBounds</name>
+<purpose>Estimate global lower and upper bounds for set of portfolios</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="-estimate-efficient-portfolios-and-frontiers-3.html">Estimate Efficient Portfolios and Frontiers
+<tocitem target="portfolio.estimatefrontier.html">
+<name>estimateFrontier</name>
+<purpose>Estimate specified number of optimal portfolios on the efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierbyreturn.html">
+<name>estimateFrontierByReturn</name>
+<purpose>Estimate optimal portfolios with targeted portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierbyrisk.html">
+<name>estimateFrontierByRisk</name>
+<purpose>Estimate optimal portfolios with targeted portfolio risks</purpose>
+</tocitem>
+<tocitem target="portfolio.estimatefrontierlimits.html">
+<name>estimateFrontierLimits</name>
+<purpose>Estimate optimal portfolios at endpoints of efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfolio.plotfrontier.html">
+<name>plotFrontier</name>
+<purpose>Plot efficient frontier</purpose>
+</tocitem>
+<tocitem target="portfoliocvar.estimateportstd.html">
+<name>estimatePortStd</name>
+<purpose>Estimate standard deviation of portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportreturn.html">
+<name>estimatePortReturn</name>
+<purpose>Estimate mean of portfolio returns</purpose>
+</tocitem>
+<tocitem target="portfolio.estimateportrisk.html">
+<name>estimatePortRisk</name>
+<purpose>Estimate portfolio risk according to risk proxy associated with corresponding
+            object</purpose>
+</tocitem>
+<tocitem target="portfolio.setsolver.html">
+<name>setSolver</name>
+<purpose>Choose main solver and specify associated solver options for portfolio
+   optimization</purpose>
+</tocitem>
+<tocitem target="portfolio.setsolverminlp.html">
+<name>setSolverMINLP</name>
+<purpose>Choose mixed integer nonlinear programming (MINLP) solver for portfolio
+   optimization</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="portfolio-analysis.html">Portfolio Analysis
+<tocitem target="ewstats.html">
+<name>ewstats</name>
+<purpose>Expected return and covariance from return time series</purpose>
+</tocitem>
+<tocitem target="frontier.html">
+<name>frontier</name>
+<purpose>Rolling efficient frontier</purpose>
+</tocitem>
+<tocitem target="portalloc.html">
+<name>portalloc</name>
+<purpose>Optimal capital allocation to efficient frontier portfolios</purpose>
+</tocitem>
+<tocitem target="portror.html">
+<name>portror</name>
+<purpose>Portfolio expected rate of return</purpose>
+</tocitem>
+<tocitem target="selectreturn.html">
+<name>selectreturn</name>
+<purpose>Portfolio configurations from 3-D efficient frontier</purpose>
+</tocitem>
+<tocitem target="targetreturn.html">
+<name>targetreturn</name>
+<purpose>Portfolio weight accuracy</purpose>
+</tocitem>
+<tocitem target="portrand.html">
+<name>portrand</name>
+<purpose>Randomized portfolio risks, returns, and weights</purpose>
+</tocitem>
+<tocitem target="portopt.html">
+<name>portopt</name>
+<purpose>Portfolios on constrained efficient frontier</purpose>
+</tocitem>
+<tocitem target="portsim.html">
+<name>portsim</name>
+<purpose>Monte Carlo simulation of correlated asset returns</purpose>
+</tocitem>
+<tocitem target="portstats.html">
+<name>portstats</name>
+<purpose>Portfolio expected return and risk</purpose>
+</tocitem>
+<tocitem target="portvar.html">
+<name>portvar</name>
+<purpose>Variance for portfolio of assets</purpose>
+</tocitem>
+<tocitem target="portvrisk.html">
+<name>portvrisk</name>
+<purpose>Portfolio value at risk (VaR)</purpose>
+</tocitem>
+<tocitem target="periodicreturns.html">
+<name>periodicreturns</name>
+<purpose>Periodic total returns from total return prices</purpose>
+</tocitem>
+<tocitem target="totalreturnprice.html">
+<name>totalreturnprice</name>
+<purpose>Total return price time series</purpose>
+</tocitem>
+<tocitem target="pcalims.html">
+<name>pcalims</name>
+<purpose>Linear inequalities for individual asset allocation</purpose>
+</tocitem>
+<tocitem target="pcgcomp.html">
+<name>pcgcomp</name>
+<purpose>Linear inequalities for asset group comparison constraints</purpose>
+</tocitem>
+<tocitem target="pcglims.html">
+<name>pcglims</name>
+<purpose>Linear inequalities for asset group minimum and maximum
+allocation</purpose>
+</tocitem>
+<tocitem target="pcpval.html">
+<name>pcpval</name>
+<purpose>Linear inequalities for fixing total portfolio value</purpose>
+</tocitem>
+<tocitem target="portcons.html">
+<name>portcons</name>
+<purpose>Portfolio constraints</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="credit-risk.html">Credit Risk
+<tocitem target="transition-probabilities.html">Estimate Transition Probabilities
+<tocitem target="transprob.html">
+<name>transprob</name>
+<purpose>Estimate transition probabilities from credit ratings data</purpose>
+</tocitem>
+<tocitem target="transprobbytotals.html">
+<name>transprobbytotals</name>
+<purpose>Estimate transition probabilities using totals structure
+                input</purpose>
+</tocitem>
+<tocitem target="transprobgrouptotals.html">
+<name>transprobgrouptotals</name>
+<purpose>Aggregate credit ratings information into fewer rating
+                categories</purpose>
+</tocitem>
+<tocitem target="transprobprep.html">
+<name>transprobprep</name>
+<purpose>Preprocess credit ratings data to estimate transition
+                probabilities</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="credit-quality-thresholds.html">Determine Credit Quality Thresholds
+<tocitem target="transprobfromthresholds.html">
+<name>transprobfromthresholds</name>
+<purpose>Convert from credit quality thresholds to transition
+                probabilities</purpose>
+</tocitem>
+<tocitem target="transprobtothresholds.html">
+<name>transprobtothresholds</name>
+<purpose>Convert from transition probabilities to credit quality
+                thresholds</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="create-credit-scorecards.html">Create Credit Scorecards
+<tocitem target="creditscorecard.autobinning.html">
+<name>autobinning</name>
+<purpose>Perform automatic binning of given predictors</purpose>
+</tocitem>
+<tocitem target="creditscorecard.bininfo.html">
+<name>bininfo</name>
+<purpose>Return predictor’s bin information</purpose>
+</tocitem>
+<tocitem target="creditscorecard.predictorinfo.html">
+<name>predictorinfo</name>
+<purpose>Summary of credit scorecard predictor properties</purpose>
+</tocitem>
+<tocitem target="creditscorecard.modifybins.html">
+<name>modifybins</name>
+<purpose>Modify predictor’s bins</purpose>
+</tocitem>
+<tocitem target="creditscorecard.modifypredictor.html">
+<name>modifypredictor</name>
+<purpose>Set properties of credit scorecard predictors</purpose>
+</tocitem>
+<tocitem target="creditscorecard.bindata.html">
+<name>bindata</name>
+<purpose>Binned predictor variables</purpose>
+</tocitem>
+<tocitem target="creditscorecard.plotbins.html">
+<name>plotbins</name>
+<purpose>Plot histogram counts for predictor variables</purpose>
+</tocitem>
+<tocitem target="creditscorecard.fitmodel.html">
+<name>fitmodel</name>
+<purpose>Fit logistic regression model to Weight of Evidence (WOE) data </purpose>
+</tocitem>
+<tocitem target="creditscorecard.fitconstrainedmodel.html">
+<name>fitConstrainedModel</name>
+<purpose>Fit logistic regression model to Weight of Evidence (WOE) data subject to
+            constraints on model coefficients</purpose>
+</tocitem>
+<tocitem target="creditscorecard.setmodel.html">
+<name>setmodel</name>
+<purpose>Set model predictors and coefficients</purpose>
+</tocitem>
+<tocitem target="creditscorecard.displaypoints.html">
+<name>displaypoints</name>
+<purpose>Return points per predictor per bin</purpose>
+</tocitem>
+<tocitem target="creditscorecard.formatpoints.html">
+<name>formatpoints</name>
+<purpose>Format scorecard points and scaling</purpose>
+</tocitem>
+<tocitem target="creditscorecard.score.html">
+<name>score</name>
+<purpose>Compute credit scores for given data</purpose>
+</tocitem>
+<tocitem target="creditscorecard.probdefault.html">
+<name>probdefault</name>
+<purpose>Likelihood of default for given data set</purpose>
+</tocitem>
+<tocitem target="creditscorecard.validatemodel.html">
+<name>validatemodel</name>
+<purpose>Validate quality of credit scorecard model</purpose>
+</tocitem>
+<tocitem target="creditscorecard.compact.html">
+<name>compact</name>
+<purpose>Create compact credit scorecard</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="credit-default-swaps.html">Credit Default Swaps
+<tocitem target="cdsbootstrap.html">
+<name>cdsbootstrap</name>
+<purpose>Bootstrap default probability curve from credit default
+swap market quotes</purpose>
+</tocitem>
+<tocitem target="cdsprice.html">
+<name>cdsprice</name>
+<purpose>Determine price for credit default swap</purpose>
+</tocitem>
+<tocitem target="cdsspread.html">
+<name>cdsspread</name>
+<purpose>Determine spread of credit default swap</purpose>
+</tocitem>
+<tocitem target="cdsrpv01.html">
+<name>cdsrpv01</name>
+<purpose> Compute risky present value of a basis point for credit default
+            swap</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="bootstrap-default-probabilities-from-bonds.html">Bootstrap Default Probabilities from Bonds
+<tocitem target="bonddefaultbootstrap.html">
+<name>bondDefaultBootstrap</name>
+<purpose>Bootstrap default probability curve from bond prices</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="counterparty-credit-risk-.html">Counterparty Credit Risk
+<tocitem target="creditexposures.html">
+<name>creditexposures</name>
+<purpose>Compute credit exposures from contract values</purpose>
+</tocitem>
+<tocitem target="exposureprofiles.html">
+<name>exposureprofiles</name>
+<purpose>Compute exposure profiles from credit exposures</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="price-and-analyze-financial-instruments.html">Price and Analyze Financial Instruments
+<tocitem target="yield-curve-analysis.html">Analyze Yield Curves
+<tocitem target="disc2zero.html">
+<name>disc2zero</name>
+<purpose>Zero curve given discount curve</purpose>
+</tocitem>
+<tocitem target="fwd2zero.html">
+<name>fwd2zero</name>
+<purpose>Zero curve given forward curve</purpose>
+</tocitem>
+<tocitem target="prbyzero.html">
+<name>prbyzero</name>
+<purpose>Price bonds in portfolio by set of zero curves</purpose>
+</tocitem>
+<tocitem target="pyld2zero.html">
+<name>pyld2zero</name>
+<purpose>Zero curve given par yield curve</purpose>
+</tocitem>
+<tocitem target="zbtprice.html">
+<name>zbtprice</name>
+<purpose>Zero curve bootstrapping from coupon bond data given price</purpose>
+</tocitem>
+<tocitem target="zbtyield.html">
+<name>zbtyield</name>
+<purpose>Zero curve bootstrapping from coupon bond data given yield</purpose>
+</tocitem>
+<tocitem target="zero2disc.html">
+<name>zero2disc</name>
+<purpose>Discount curve given zero curve</purpose>
+</tocitem>
+<tocitem target="zero2fwd.html">
+<name>zero2fwd</name>
+<purpose>Forward curve given zero curve</purpose>
+</tocitem>
+<tocitem target="zero2pyld.html">
+<name>zero2pyld</name>
+<purpose>Par yield curve given zero curve</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="price-fixed-income-instruments.html">Price Fixed-Income Instruments
+<tocitem target="bndprice.html">
+<name>bndprice</name>
+<purpose>Price fixed-income security from yield to maturity</purpose>
+</tocitem>
+<tocitem target="bndspread.html">
+<name>bndspread</name>
+<purpose>Static spread over spot curve</purpose>
+</tocitem>
+<tocitem target="bndtotalreturn.html">
+<name>bndtotalreturn</name>
+<purpose>Total return of fixed-coupon bond</purpose>
+</tocitem>
+<tocitem target="floatmargin.html">
+<name>floatmargin</name>
+<purpose>Margin measures for floating-rate bond</purpose>
+</tocitem>
+<tocitem target="floatdiscmargin.html">
+<name>floatdiscmargin</name>
+<purpose>Discount margin for floating-rate bond</purpose>
+</tocitem>
+<tocitem target="prdisc.html">
+<name>prdisc</name>
+<purpose>Price of discounted security</purpose>
+</tocitem>
+<tocitem target="prmat.html">
+<name>prmat</name>
+<purpose>Price with interest at maturity</purpose>
+</tocitem>
+<tocitem target="prtbill.html">
+<name>prtbill</name>
+<purpose>Price of Treasury bill</purpose>
+</tocitem>
+<tocitem target="acrubond.html">
+<name>acrubond</name>
+<purpose>Accrued interest of security with periodic interest payments</purpose>
+</tocitem>
+<tocitem target="acrudisc.html">
+<name>acrudisc</name>
+<purpose>Accrued interest of discount security paying at maturity</purpose>
+</tocitem>
+<tocitem target="beytbill.html">
+<name>beytbill</name>
+<purpose>Bond equivalent yield for Treasury bill</purpose>
+</tocitem>
+<tocitem target="bndyield.html">
+<name>bndyield</name>
+<purpose>Yield to maturity for fixed-income security</purpose>
+</tocitem>
+<tocitem target="discrate.html">
+<name>discrate</name>
+<purpose>Bank discount rate of security</purpose>
+</tocitem>
+<tocitem target="tbl2bond.html">
+<name>tbl2bond</name>
+<purpose>Treasury bond parameters given Treasury bill parameters</purpose>
+</tocitem>
+<tocitem target="tr2bonds.html">
+<name>tr2bonds</name>
+<purpose>Term-structure parameters given Treasury bond parameters</purpose>
+</tocitem>
+<tocitem target="ylddisc.html">
+<name>ylddisc</name>
+<purpose>Yield of discounted security</purpose>
+</tocitem>
+<tocitem target="yldmat.html">
+<name>yldmat</name>
+<purpose>Yield with interest at maturity</purpose>
+</tocitem>
+<tocitem target="yldtbill.html">
+<name>yldtbill</name>
+<purpose>Yield of Treasury bill</purpose>
+</tocitem>
+<tocitem target="bndconvp.html">
+<name>bndconvp</name>
+<purpose>Bond convexity given price</purpose>
+</tocitem>
+<tocitem target="bndconvy.html">
+<name>bndconvy</name>
+<purpose>Bond convexity given yield</purpose>
+</tocitem>
+<tocitem target="bnddurp.html">
+<name>bnddurp</name>
+<purpose>Bond duration given price</purpose>
+</tocitem>
+<tocitem target="bnddury.html">
+<name>bnddury</name>
+<purpose>Bond duration given yield</purpose>
+</tocitem>
+<tocitem target="bndkrdur.html">
+<name>bndkrdur</name>
+<purpose>Bond key rate duration given zero curve</purpose>
+</tocitem>
+<tocitem target="cdai.html">
+<name>cdai</name>
+<purpose>Accrued interest on certificate of deposit</purpose>
+</tocitem>
+<tocitem target="cdprice.html">
+<name>cdprice</name>
+<purpose>Price of certificate of deposit</purpose>
+</tocitem>
+<tocitem target="cdyield.html">
+<name>cdyield</name>
+<purpose>Yield on certificate of deposit (CD)</purpose>
+</tocitem>
+<tocitem target="tbilldisc2yield.html">
+<name>tbilldisc2yield</name>
+<purpose>Convert Treasury bill discount to equivalent yield</purpose>
+</tocitem>
+<tocitem target="tbillprice.html">
+<name>tbillprice</name>
+<purpose>Price Treasury bill</purpose>
+</tocitem>
+<tocitem target="tbillrepo.html">
+<name>tbillrepo</name>
+<purpose>Break-even discount of repurchase agreement</purpose>
+</tocitem>
+<tocitem target="tbillval01.html">
+<name>tbillval01</name>
+<purpose>Value of one basis point</purpose>
+</tocitem>
+<tocitem target="tbillyield.html">
+<name>tbillyield</name>
+<purpose>Yield on Treasury bill</purpose>
+</tocitem>
+<tocitem target="tbillyield2disc.html">
+<name>tbillyield2disc</name>
+<purpose>Convert Treasury bill yield to equivalent discount</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="price-derivative-instruments.html">Price Derivative Instruments
+<tocitem target="binprice.html">
+<name>binprice</name>
+<purpose>Binomial put and call American option pricing using Cox-Ross-Rubinstein
+model</purpose>
+</tocitem>
+<tocitem target="blkimpv.html">
+<name>blkimpv</name>
+<purpose>Implied volatility for futures options from Black model </purpose>
+</tocitem>
+<tocitem target="blkprice.html">
+<name>blkprice</name>
+<purpose>Black model for pricing futures options</purpose>
+</tocitem>
+<tocitem target="blsdelta.html">
+<name>blsdelta</name>
+<purpose>Black-Scholes sensitivity to underlying price change</purpose>
+</tocitem>
+<tocitem target="blsgamma.html">
+<name>blsgamma</name>
+<purpose>Black-Scholes sensitivity to underlying delta change</purpose>
+</tocitem>
+<tocitem target="blsimpv.html">
+<name>blsimpv</name>
+<purpose>Black-Scholes implied volatility</purpose>
+</tocitem>
+<tocitem target="blslambda.html">
+<name>blslambda</name>
+<purpose>Black-Scholes elasticity</purpose>
+</tocitem>
+<tocitem target="blsprice.html">
+<name>blsprice</name>
+<purpose>Black-Scholes put and call option pricing</purpose>
+</tocitem>
+<tocitem target="blsrho.html">
+<name>blsrho</name>
+<purpose>Black-Scholes sensitivity to interest-rate change</purpose>
+</tocitem>
+<tocitem target="blstheta.html">
+<name>blstheta</name>
+<purpose>Black-Scholes sensitivity to time-until-maturity change</purpose>
+</tocitem>
+<tocitem target="blsvega.html">
+<name>blsvega</name>
+<purpose>Black-Scholes sensitivity to underlying price volatility</purpose>
+</tocitem>
+<tocitem target="opprofit.html">
+<name>opprofit</name>
+<purpose>Option profit</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="stochastic-differential-equation-sde-models.html">Stochastic Differential Equation (SDE) Models
+<tocitem target="simulation.html">Simulation
+<tocitem target="sde.simulate.html">
+<name>simulate</name>
+<purpose>Simulate multivariate stochastic differential equations (SDEs)</purpose>
+</tocitem>
+<tocitem target="sde.simbyeuler.html">
+<name>simByEuler</name>
+<purpose>Euler simulation of stochastic differential equations (SDEs)</purpose>
+</tocitem>
+<tocitem target="cir.simbytransition.html">
+<name>simByTransition</name>
+<purpose>Simulate Cox-Ingersoll-Ross sample paths with transition density</purpose>
+</tocitem>
+<tocitem target="gbm.simbysolution.html">
+<name>simBySolution</name>
+<purpose>Simulate approximate solution of diagonal-drift GBM processes</purpose>
+</tocitem>
+<tocitem target="hwv.simbysolution.html">
+<name>simBySolution</name>
+<purpose>Simulate approximate solution of diagonal-drift HWV processes</purpose>
+</tocitem>
+<tocitem target="sde.interpolate.html">
+<name>interpolate</name>
+<purpose>Brownian interpolation of stochastic differential equations</purpose>
+</tocitem>
+<tocitem target="ts2func.html">
+<name>ts2func</name>
+<purpose>Convert time series arrays to functions of time and state</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

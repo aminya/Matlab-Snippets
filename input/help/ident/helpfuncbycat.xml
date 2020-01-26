@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="data-preparation.html">Data Preparation
+<tocitem target="represent-data.html">Represent Data
+<tocitem target="ref/iddata.html">
+<name>iddata</name>
+<purpose>Input-output data and its properties for system identification in the time or
+      frequency domain</purpose>
+</tocitem>
+<tocitem target="ref/idfrd.html">
+<name>idfrd</name>
+<purpose>Frequency-response data or model</purpose>
+</tocitem>
+<tocitem target="ref/idinput.html">
+<name>idinput</name>
+<purpose>Generate input signals</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/size.html">
+<name>size</name>
+<purpose>Query output/input/array dimensions of input–output
+model and number of frequencies of FRD model</purpose>
+</tocitem>
+<tocitem target="ref/midprefs.html">
+<name>midprefs</name>
+<purpose>Specify location for file containing System Identification
+app startup information</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="select-data-for-estimation.html">Select Data for Estimation
+<tocitem target="ref/fselect.html">
+<name>fselect</name>
+<purpose>Select frequency points or range in FRD model</purpose>
+</tocitem>
+<tocitem target="ref/getexp.html">
+<name>getexp</name>
+<purpose>Specific experiments from multiple-experiment data set</purpose>
+</tocitem>
+<tocitem target="ref/mergeiddata.html">
+<name>merge (iddata)</name>
+<purpose>Merge data sets into iddata object</purpose>
+</tocitem>
+<tocitem target="ref/fcat.html">
+<name>fcat</name>
+<purpose>Concatenate FRD models along frequency dimension</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analyze-data.html">Analyze Data
+<tocitem target="ref/bode.html">
+<name>bode</name>
+<purpose>Bode plot of frequency response, or magnitude and phase
+data</purpose>
+</tocitem>
+<tocitem target="ref/bodemag.html">
+<name>bodemag</name>
+<purpose>Bode magnitude response of LTI models</purpose>
+</tocitem>
+<tocitem target="ref/iddataplot.html">
+<name>plot</name>
+<purpose>Plot input-output data</purpose>
+</tocitem>
+<tocitem target="ref/advice.html">
+<name>advice</name>
+<purpose>Analysis and recommendations for data or estimated linear
+models</purpose>
+</tocitem>
+<tocitem target="ref/delayest.html">
+<name>delayest</name>
+<purpose>Estimate time delay (dead time) from data</purpose>
+</tocitem>
+<tocitem target="ref/isreal.html">
+<name>isreal</name>
+<purpose>Determine whether model parameters or data values are
+real</purpose>
+</tocitem>
+<tocitem target="ref/realdata.html">
+<name>realdata</name>
+<purpose>Determine whether iddata is based on
+real-valued signals</purpose>
+</tocitem>
+<tocitem target="ref/feedback.html">
+<name>feedback</name>
+<purpose>Identify possible feedback data</purpose>
+</tocitem>
+<tocitem target="ref/pexcit.html">
+<name>pexcit</name>
+<purpose>Level of excitation of input signals</purpose>
+</tocitem>
+<tocitem target="ref/impulseest.html">
+<name>impulseest</name>
+<purpose>Nonparametric impulse response estimation</purpose>
+</tocitem>
+<tocitem target="ref/etfe.html">
+<name>etfe</name>
+<purpose>Estimate empirical transfer functions and periodograms</purpose>
+</tocitem>
+<tocitem target="ref/spa.html">
+<name>spa</name>
+<purpose>Estimate frequency response with fixed frequency resolution
+using spectral analysis</purpose>
+</tocitem>
+<tocitem target="ref/spafdr.html">
+<name>spafdr</name>
+<purpose>Estimate frequency response and spectrum using spectral analysis with
+            frequency-dependent resolution</purpose>
+</tocitem>
+<tocitem target="ref/iddataplotoptions.html">
+<name>iddataPlotOptions</name>
+<purpose>Option set for iddata/plot</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="preprocess-data.html">Preprocess Data
+<tocitem target="ref/detrend.html">
+<name>detrend</name>
+<purpose>Subtract offset or trend from time-domain signals contained in
+                iddata objects</purpose>
+</tocitem>
+<tocitem target="ref/retrend.html">
+<name>retrend</name>
+<purpose>Add offsets or trends to data signals</purpose>
+</tocitem>
+<tocitem target="ref/diff.html">
+<name>diff</name>
+<purpose>Difference signals in iddata objects</purpose>
+</tocitem>
+<tocitem target="ref/idfilt.html">
+<name>idfilt</name>
+<purpose>Filter data using user-defined passbands, general filters,
+or Butterworth filters</purpose>
+</tocitem>
+<tocitem target="ref/misdata.html">
+<name>misdata</name>
+<purpose>Reconstruct missing input and output data</purpose>
+</tocitem>
+<tocitem target="ref/nkshift.html">
+<name>nkshift</name>
+<purpose>Shift data sequences</purpose>
+</tocitem>
+<tocitem target="ref/idresamp.html">
+<name>idresamp</name>
+<purpose>Resample time-domain data by decimation or interpolation</purpose>
+</tocitem>
+<tocitem target="ref/resample.html">
+<name>resample</name>
+<purpose>Resample time-domain data by decimation or interpolation
+(requires Signal
+            Processing Toolbox software)</purpose>
+</tocitem>
+<tocitem target="ref/gettrend.html">
+<name>getTrend</name>
+<purpose>Data offset and trend information</purpose>
+</tocitem>
+<tocitem target="ref/chgfrequnit.html">
+<name>chgFreqUnit</name>
+<purpose>Change frequency units
+of frequency-response data model</purpose>
+</tocitem>
+<tocitem target="ref/fdel.html">
+<name>fdel</name>
+<purpose>Delete specified data from frequency response data (FRD)
+models</purpose>
+</tocitem>
+<tocitem target="ref/trendinfo.html">
+<name>TrendInfo</name>
+<purpose>Offset and linear trend slope values for detrending data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="transform-data.html">Transform Data
+<tocitem target="ref/fft.html">
+<name>fft</name>
+<purpose>Transform iddata object to frequency
+domain data</purpose>
+</tocitem>
+<tocitem target="ref/ifft.html">
+<name>ifft</name>
+<purpose>Transform iddata objects from frequency to time domain</purpose>
+</tocitem>
+<tocitem target="ref/etfe.html">
+<name>etfe</name>
+<purpose>Estimate empirical transfer functions and periodograms</purpose>
+</tocitem>
+<tocitem target="ref/spa.html">
+<name>spa</name>
+<purpose>Estimate frequency response with fixed frequency resolution
+using spectral analysis</purpose>
+</tocitem>
+<tocitem target="ref/spafdr.html">
+<name>spafdr</name>
+<purpose>Estimate frequency response and spectrum using spectral analysis with
+            frequency-dependent resolution</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="linear-model-identification.html">Linear Model Identification
+<tocitem target="process-models.html">Process Models
+<tocitem target="ref/procest.html">
+<name>procest</name>
+<purpose>Estimate process model using time or frequency data</purpose>
+</tocitem>
+<tocitem target="ref/idproc.html">
+<name>idproc</name>
+<purpose>Continuous-time process model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/idpar.html">
+<name>idpar</name>
+<purpose>Create parameter for initial states and input level estimation</purpose>
+</tocitem>
+<tocitem target="ref/delayest.html">
+<name>delayest</name>
+<purpose>Estimate time delay (dead time) from data</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricgetpar.html">
+<name>getpar</name>
+<purpose>Obtain attributes such as values and bounds of linear
+model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricsetpar.html">
+<name>setpar</name>
+<purpose>Set attributes such as values and bounds of linear model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/procestoptions.html">
+<name>procestOptions</name>
+<purpose>Options set for procest</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="input-output-polynomial-models.html">Input-Output Polynomial Models
+<tocitem target="ref/arx.html">
+<name>arx</name>
+<purpose>Estimate parameters of ARX, ARIX, AR, or ARI model</purpose>
+</tocitem>
+<tocitem target="ref/armax.html">
+<name>armax</name>
+<purpose>Estimate parameters of ARMAX model using time-domain data</purpose>
+</tocitem>
+<tocitem target="ref/bj.html">
+<name>bj</name>
+<purpose>Estimate Box-Jenkins polynomial model using time domain
+data</purpose>
+</tocitem>
+<tocitem target="ref/iv4.html">
+<name>iv4</name>
+<purpose>ARX model estimation using four-stage instrumental variable
+method</purpose>
+</tocitem>
+<tocitem target="ref/ivx.html">
+<name>ivx</name>
+<purpose>ARX model estimation using instrumental variable method
+with arbitrary instruments</purpose>
+</tocitem>
+<tocitem target="ref/oe.html">
+<name>oe</name>
+<purpose>Estimate Output-Error polynomial model using time or frequency
+domain data</purpose>
+</tocitem>
+<tocitem target="ref/polyest.html">
+<name>polyest</name>
+<purpose>Estimate polynomial model using time- or frequency-domain
+data</purpose>
+</tocitem>
+<tocitem target="ref/idpoly.html">
+<name>idpoly</name>
+<purpose>Polynomial model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/arxstruc.html">
+<name>arxstruc</name>
+<purpose>Compute loss functions for single-output ARX models</purpose>
+</tocitem>
+<tocitem target="ref/ivstruc.html">
+<name>ivstruc</name>
+<purpose>Compute loss functions for sets of ARX model structures
+using instrumental variable method</purpose>
+</tocitem>
+<tocitem target="ref/selstruc.html">
+<name>selstruc</name>
+<purpose>Select model order for single-output ARX models</purpose>
+</tocitem>
+<tocitem target="ref/struc.html">
+<name>struc</name>
+<purpose>Generate model-order combinations for single-output ARX
+model estimation</purpose>
+</tocitem>
+<tocitem target="ref/arxregul.html">
+<name>arxRegul</name>
+<purpose>Determine regularization constants for ARX model estimation</purpose>
+</tocitem>
+<tocitem target="ref/delayest.html">
+<name>delayest</name>
+<purpose>Estimate time delay (dead time) from data</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/polydata.html">
+<name>polydata</name>
+<purpose>Access polynomial coefficients
+and uncertainties of identified model</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricgetpar.html">
+<name>getpar</name>
+<purpose>Obtain attributes such as values and bounds of linear
+model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricsetpar.html">
+<name>setpar</name>
+<purpose>Set attributes such as values and bounds of linear model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/setpolyformat.html">
+<name>setPolyFormat</name>
+<purpose>Specify format for B and F polynomials
+of multi-input polynomial model</purpose>
+</tocitem>
+<tocitem target="ref/armaxoptions.html">
+<name>armaxOptions</name>
+<purpose>Option set for armax</purpose>
+</tocitem>
+<tocitem target="ref/arxoptions.html">
+<name>arxOptions</name>
+<purpose>Option set for arx</purpose>
+</tocitem>
+<tocitem target="ref/arxreguloptions.html">
+<name>arxRegulOptions</name>
+<purpose>Option set for arxRegul</purpose>
+</tocitem>
+<tocitem target="ref/bjoptions.html">
+<name>bjOptions</name>
+<purpose>Option set for bj</purpose>
+</tocitem>
+<tocitem target="ref/iv4options.html">
+<name>iv4Options</name>
+<purpose>Option set for iv4</purpose>
+</tocitem>
+<tocitem target="ref/oeoptions.html">
+<name>oeOptions</name>
+<purpose>Option set for oe</purpose>
+</tocitem>
+<tocitem target="ref/polyestoptions.html">
+<name>polyestOptions</name>
+<purpose>Option set for polyest</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="state-space-models.html">State-Space Models
+<tocitem target="ref/ssest.html">
+<name>ssest</name>
+<purpose>Estimate state-space model using time-domain or frequency-domain data</purpose>
+</tocitem>
+<tocitem target="ref/ssregest.html">
+<name>ssregest</name>
+<purpose>Estimate state-space model by reduction of regularized
+ARX model</purpose>
+</tocitem>
+<tocitem target="ref/n4sid.html">
+<name>n4sid</name>
+<purpose>Estimate state-space model using subspace method</purpose>
+</tocitem>
+<tocitem target="ref/idss.html">
+<name>idss</name>
+<purpose>State-space model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/delayest.html">
+<name>delayest</name>
+<purpose>Estimate time delay (dead time) from data</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricgetpar.html">
+<name>getpar</name>
+<purpose>Obtain attributes such as values and bounds of linear
+model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricsetpar.html">
+<name>setpar</name>
+<purpose>Set attributes such as values and bounds of linear model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/ssform.html">
+<name>ssform</name>
+<purpose>Quick configuration of
+state-space model structure</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/idpar.html">
+<name>idpar</name>
+<purpose>Create parameter for initial states and input level estimation</purpose>
+</tocitem>
+<tocitem target="ref/idssdata.html">
+<name>idssdata</name>
+<purpose>State-space data of identified system</purpose>
+</tocitem>
+<tocitem target="ref/findstates.html">
+<name>findstates</name>
+<purpose>Estimate initial states of model</purpose>
+</tocitem>
+<tocitem target="ref/ssestoptions.html">
+<name>ssestOptions</name>
+<purpose>Option set for ssest</purpose>
+</tocitem>
+<tocitem target="ref/ssregestoptions.html">
+<name>ssregestOptions</name>
+<purpose>Option set for ssregest</purpose>
+</tocitem>
+<tocitem target="ref/n4sidoptions.html">
+<name>n4sidOptions</name>
+<purpose>Option set for n4sid</purpose>
+</tocitem>
+<tocitem target="ref/findstatesoptions.html">
+<name>findstatesOptions</name>
+<purpose>Option set for findstates</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="transfer-function-models.html">Transfer Function Models
+<tocitem target="ref/tfest.html">
+<name>tfest</name>
+<purpose>Transfer function estimation</purpose>
+</tocitem>
+<tocitem target="ref/idtf.html">
+<name>idtf</name>
+<purpose>Transfer function model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/delayest.html">
+<name>delayest</name>
+<purpose>Estimate time delay (dead time) from data</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricgetpar.html">
+<name>getpar</name>
+<purpose>Obtain attributes such as values and bounds of linear
+model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricsetpar.html">
+<name>setpar</name>
+<purpose>Set attributes such as values and bounds of linear model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/tfdata.html">
+<name>tfdata</name>
+<purpose>Access
+transfer function data</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/tfestoptions.html">
+<name>tfestOptions</name>
+<purpose>Option set for tfest</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linear-grey-box-models.html">Linear Grey-Box Models
+<tocitem target="ref/greyest.html">
+<name>greyest</name>
+<purpose>Linear grey-box model estimation</purpose>
+</tocitem>
+<tocitem target="ref/idgrey.html">
+<name>idgrey</name>
+<purpose>Linear ODE (grey-box model) with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/findstates.html">
+<name>findstates</name>
+<purpose>Estimate initial states of model</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricgetpar.html">
+<name>getpar</name>
+<purpose>Obtain attributes such as values and bounds of linear
+model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idparametricsetpar.html">
+<name>setpar</name>
+<purpose>Set attributes such as values and bounds of linear model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/findstatesoptions.html">
+<name>findstatesOptions</name>
+<purpose>Option set for findstates</purpose>
+</tocitem>
+<tocitem target="ref/greyestoptions.html">
+<name>greyestOptions</name>
+<purpose>Option set for greyest</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="frequency-response-models.html">Frequency-Response Models
+<tocitem target="ref/etfe.html">
+<name>etfe</name>
+<purpose>Estimate empirical transfer functions and periodograms</purpose>
+</tocitem>
+<tocitem target="ref/spa.html">
+<name>spa</name>
+<purpose>Estimate frequency response with fixed frequency resolution
+using spectral analysis</purpose>
+</tocitem>
+<tocitem target="ref/spafdr.html">
+<name>spafdr</name>
+<purpose>Estimate frequency response and spectrum using spectral analysis with
+            frequency-dependent resolution</purpose>
+</tocitem>
+<tocitem target="ref/idfrd.html">
+<name>idfrd</name>
+<purpose>Frequency-response data or model</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/bode.html">
+<name>bode</name>
+<purpose>Bode plot of frequency response, or magnitude and phase
+data</purpose>
+</tocitem>
+<tocitem target="ref/bodemag.html">
+<name>bodemag</name>
+<purpose>Bode magnitude response of LTI models</purpose>
+</tocitem>
+<tocitem target="ref/freqresp.html">
+<name>freqresp</name>
+<purpose>Frequency response over grid</purpose>
+</tocitem>
+<tocitem target="ref/chgfrequnit.html">
+<name>chgFreqUnit</name>
+<purpose>Change frequency units
+of frequency-response data model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="correlation-models.html">Correlation Models
+<tocitem target="ref/cra.html">
+<name>cra</name>
+<purpose>Estimate impulse response using prewhitened-based correlation
+analysis</purpose>
+</tocitem>
+<tocitem target="ref/impulseest.html">
+<name>impulseest</name>
+<purpose>Nonparametric impulse response estimation</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/impulseestoptions.html">
+<name>impulseestOptions</name>
+<purpose>Options set for impulseest</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="nonlinear-model-identification.html">Nonlinear Model Identification
+<tocitem target="nonlinear-arx-models.html">Nonlinear ARX Models
+<tocitem target="ref/idnlarx.html">
+<name>idnlarx</name>
+<purpose>Nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/nlarx.html">
+<name>nlarx</name>
+<purpose>Estimate parameters of nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/nlarxoptions.html">
+<name>nlarxOptions</name>
+<purpose>Option set for nlarx</purpose>
+</tocitem>
+<tocitem target="ref/isnlarx.html">
+<name>isnlarx</name>
+<purpose>Detect nonlinearity in estimation data</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/polyreg.html">
+<name>polyreg</name>
+<purpose>Powers and products of standard regressors</purpose>
+</tocitem>
+<tocitem target="ref/customreg.html">
+<name>customreg</name>
+<purpose>Custom regressor for nonlinear ARX models</purpose>
+</tocitem>
+<tocitem target="ref/addreg.html">
+<name>addreg</name>
+<purpose>Add custom regressors to nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/getreg.html">
+<name>getreg</name>
+<purpose>Regressor expressions and numerical values in nonlinear
+ARX model</purpose>
+</tocitem>
+<tocitem target="ref/customnet.html">
+<name>customnet</name>
+<purpose>Custom nonlinearity estimator for nonlinear ARX and Hammerstein-Wiener
+models</purpose>
+</tocitem>
+<tocitem target="ref/linear.html">
+<name>linear</name>
+<purpose>Class representing linear nonlinearity estimator for nonlinear
+ARX models</purpose>
+</tocitem>
+<tocitem target="ref/neuralnet.html">
+<name>neuralnet</name>
+<purpose>Class representing neural network nonlinearity estimator
+for nonlinear ARX models</purpose>
+</tocitem>
+<tocitem target="ref/treepartition.html">
+<name>treepartition</name>
+<purpose>Class representing binary-tree nonlinearity estimator
+for nonlinear ARX models</purpose>
+</tocitem>
+<tocitem target="ref/wavenet.html">
+<name>wavenet</name>
+<purpose>Create a wavelet network nonlinearity estimator object</purpose>
+</tocitem>
+<tocitem target="ref/sigmoidnet.html">
+<name>sigmoidnet</name>
+<purpose>Class representing sigmoid network nonlinearity estimator
+for nonlinear ARX and Hammerstein-Wiener models</purpose>
+</tocitem>
+<tocitem target="ref/evaluate.html">
+<name>evaluate</name>
+<purpose>Value of nonlinearity estimator at given input</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+<tocitem target="ref/predict.html">
+<name>predict</name>
+<purpose>Predict K-step ahead model output</purpose>
+</tocitem>
+<tocitem target="ref/predictoptions.html">
+<name>predictOptions</name>
+<purpose>Option set for predict</purpose>
+</tocitem>
+<tocitem target="ref/compare.html">
+<name>compare</name>
+<purpose>Compare identified model output and measured output</purpose>
+</tocitem>
+<tocitem target="ref/compareoptions.html">
+<name>compareOptions</name>
+<purpose>Option set for compare</purpose>
+</tocitem>
+<tocitem target="ref/forecast.html">
+<name>forecast</name>
+<purpose>Forecast identified model output</purpose>
+</tocitem>
+<tocitem target="ref/forecastoptions.html">
+<name>forecastOptions</name>
+<purpose>Option set for forecast</purpose>
+</tocitem>
+<tocitem target="ref/idnlarxplot.html">
+<name>plot</name>
+<purpose>Plot nonlinearity of nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/evaluate.html">
+<name>evaluate</name>
+<purpose>Value of nonlinearity estimator at given input</purpose>
+</tocitem>
+<tocitem target="ref/getdelayinfo.html">
+<name>getDelayInfo</name>
+<purpose>Get input/output delay information for idnlarx model
+structure</purpose>
+</tocitem>
+<tocitem target="ref/idnlarxfindop.html">
+<name>findop</name>
+<purpose>Compute operating point for Nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/findopoptions.html">
+<name>findopOptions</name>
+<purpose>Option set for findop</purpose>
+</tocitem>
+<tocitem target="ref/idnlarxoperspec.html">
+<name>operspec</name>
+<purpose>Construct operating point specification object for idnlarx model</purpose>
+</tocitem>
+<tocitem target="ref/idnlarxlinearize.html">
+<name>linearize</name>
+<purpose>Linearize nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/linapp.html">
+<name>linapp</name>
+<purpose>Linear approximation of nonlinear ARX and Hammerstein-Wiener
+models for given input</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="hammerstein-wiener-models.html">Hammerstein-Wiener Models
+<tocitem target="ref/idnlhw.html">
+<name>idnlhw</name>
+<purpose>Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/nlhw.html">
+<name>nlhw</name>
+<purpose>Estimate Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/nlhwoptions.html">
+<name>nlhwOptions</name>
+<purpose>Option set for nlhw</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/customnet.html">
+<name>customnet</name>
+<purpose>Custom nonlinearity estimator for nonlinear ARX and Hammerstein-Wiener
+models</purpose>
+</tocitem>
+<tocitem target="ref/deadzone.html">
+<name>deadzone</name>
+<purpose>Create a dead-zone nonlinearity estimator object</purpose>
+</tocitem>
+<tocitem target="ref/poly1d.html">
+<name>poly1d</name>
+<purpose>Class representing single-variable polynomial nonlinear
+estimator for Hammerstein-Wiener models</purpose>
+</tocitem>
+<tocitem target="ref/pwlinear.html">
+<name>pwlinear</name>
+<purpose>Create a piecewise-linear nonlinearity estimator object</purpose>
+</tocitem>
+<tocitem target="ref/saturation.html">
+<name>saturation</name>
+<purpose>Create a saturation nonlinearity estimator object</purpose>
+</tocitem>
+<tocitem target="ref/sigmoidnet.html">
+<name>sigmoidnet</name>
+<purpose>Class representing sigmoid network nonlinearity estimator
+for nonlinear ARX and Hammerstein-Wiener models</purpose>
+</tocitem>
+<tocitem target="ref/unitgain.html">
+<name>unitgain</name>
+<purpose>Specify absence of nonlinearities for specific input or
+output channels in Hammerstein-Wiener models</purpose>
+</tocitem>
+<tocitem target="ref/wavenet.html">
+<name>wavenet</name>
+<purpose>Create a wavelet network nonlinearity estimator object</purpose>
+</tocitem>
+<tocitem target="ref/evaluate.html">
+<name>evaluate</name>
+<purpose>Value of nonlinearity estimator at given input</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+<tocitem target="ref/compare.html">
+<name>compare</name>
+<purpose>Compare identified model output and measured output</purpose>
+</tocitem>
+<tocitem target="ref/compareoptions.html">
+<name>compareOptions</name>
+<purpose>Option set for compare</purpose>
+</tocitem>
+<tocitem target="ref/idnlhwplot.html">
+<name>plot</name>
+<purpose>Plot input and output nonlinearity, and linear responses
+of Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/evaluate.html">
+<name>evaluate</name>
+<purpose>Value of nonlinearity estimator at given input</purpose>
+</tocitem>
+<tocitem target="ref/idnlhwfindop.html">
+<name>findop</name>
+<purpose>Compute operating point for Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/findopoptions.html">
+<name>findopOptions</name>
+<purpose>Option set for findop</purpose>
+</tocitem>
+<tocitem target="ref/idnlhwoperspec.html">
+<name>operspec</name>
+<purpose>Construct operating point specification object for idnlhw model</purpose>
+</tocitem>
+<tocitem target="ref/idnlhwlinearize.html">
+<name>linearize</name>
+<purpose>Linearize Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/linapp.html">
+<name>linapp</name>
+<purpose>Linear approximation of nonlinear ARX and Hammerstein-Wiener
+models for given input</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="nonlinear-grey-box-models.html">Nonlinear Grey-Box Models
+<tocitem target="ref/nlgreyest.html">
+<name>nlgreyest</name>
+<purpose>Estimate nonlinear grey-box model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idnlgrey.html">
+<name>idnlgrey</name>
+<purpose>Nonlinear grey-box model</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/findstates.html">
+<name>findstates</name>
+<purpose>Estimate initial states of model</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/getinit.html">
+<name>getinit</name>
+<purpose>Values of idnlgrey model initial
+states</purpose>
+</tocitem>
+<tocitem target="ref/setinit.html">
+<name>setinit</name>
+<purpose>Set initial states of idnlgrey model
+object</purpose>
+</tocitem>
+<tocitem target="ref/getpar.html">
+<name>getpar</name>
+<purpose>Parameter values and properties of idnlgrey model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/setpar.html">
+<name>setpar</name>
+<purpose>Set initial parameter values of idnlgrey model
+object</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/nlgreyestoptions.html">
+<name>nlgreyestOptions</name>
+<purpose>Option set for nlgreyest</purpose>
+</tocitem>
+<tocitem target="ref/findstatesoptions.html">
+<name>findstatesOptions</name>
+<purpose>Option set for findstates</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="grey-box-model-estimation.html">Grey-Box Model Estimation
+<tocitem target="ref/greyest.html">
+<name>greyest</name>
+<purpose>Linear grey-box model estimation</purpose>
+</tocitem>
+<tocitem target="ref/nlgreyest.html">
+<name>nlgreyest</name>
+<purpose>Estimate nonlinear grey-box model parameters</purpose>
+</tocitem>
+<tocitem target="ref/idgrey.html">
+<name>idgrey</name>
+<purpose>Linear ODE (grey-box model) with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/idnlgrey.html">
+<name>idnlgrey</name>
+<purpose>Nonlinear grey-box model</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/findstates.html">
+<name>findstates</name>
+<purpose>Estimate initial states of model</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/getinit.html">
+<name>getinit</name>
+<purpose>Values of idnlgrey model initial
+states</purpose>
+</tocitem>
+<tocitem target="ref/setinit.html">
+<name>setinit</name>
+<purpose>Set initial states of idnlgrey model
+object</purpose>
+</tocitem>
+<tocitem target="ref/getpar.html">
+<name>getpar</name>
+<purpose>Parameter values and properties of idnlgrey model
+parameters</purpose>
+</tocitem>
+<tocitem target="ref/setpar.html">
+<name>setpar</name>
+<purpose>Set initial parameter values of idnlgrey model
+object</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/greyestoptions.html">
+<name>greyestOptions</name>
+<purpose>Option set for greyest</purpose>
+</tocitem>
+<tocitem target="ref/nlgreyestoptions.html">
+<name>nlgreyestOptions</name>
+<purpose>Option set for nlgreyest</purpose>
+</tocitem>
+<tocitem target="ref/findstatesoptions.html">
+<name>findstatesOptions</name>
+<purpose>Option set for findstates</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-validation.html">Model Validation
+<tocitem target="compare-output-with-measured-data.html">Compare Output with Measured Data
+<tocitem target="ref/compare.html">
+<name>compare</name>
+<purpose>Compare identified model output and measured output</purpose>
+</tocitem>
+<tocitem target="ref/compareoptions.html">
+<name>compareOptions</name>
+<purpose>Option set for compare</purpose>
+</tocitem>
+<tocitem target="ref/goodnessoffit.html">
+<name>goodnessOfFit</name>
+<purpose>Goodness of fit between test and reference data</purpose>
+</tocitem>
+<tocitem target="../control/ref/predict_method_state_estimation.html">
+<name>predict</name>
+<purpose>Predict state and state estimation error covariance at next time step using extended or
+            unscented Kalman filter, or particle filter</purpose>
+</tocitem>
+<tocitem target="ref/predictoptions.html">
+<name>predictOptions</name>
+<purpose>Option set for predict</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+<tocitem target="ref/findstates.html">
+<name>findstates</name>
+<purpose>Estimate initial states of model</purpose>
+</tocitem>
+<tocitem target="ref/findstatesoptions.html">
+<name>findstatesOptions</name>
+<purpose>Option set for findstates</purpose>
+</tocitem>
+<tocitem target="ref/data2state.html">
+<name>data2state</name>
+<purpose>Map past data to states of state-space and nonlinear ARX
+models</purpose>
+</tocitem>
+<tocitem target="ref/idpar.html">
+<name>idpar</name>
+<purpose>Create parameter for initial states and input level estimation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="residual-analysis.html">Residual Analysis
+<tocitem target="ref/resid.html">
+<name>resid</name>
+<purpose>Compute and test residuals</purpose>
+</tocitem>
+<tocitem target="ref/pe.html">
+<name>pe</name>
+<purpose>Prediction error for identified model</purpose>
+</tocitem>
+<tocitem target="ref/fpe.html">
+<name>fpe</name>
+<purpose>Akaike’s Final Prediction Error for estimated model</purpose>
+</tocitem>
+<tocitem target="ref/aic.html">
+<name>aic</name>
+<purpose>Akaike’s Information Criterion for estimated model</purpose>
+</tocitem>
+<tocitem target="ref/residoptions.html">
+<name>residOptions</name>
+<purpose>Option set for resid</purpose>
+</tocitem>
+<tocitem target="ref/peoptions.html">
+<name>peOptions</name>
+<purpose>Option set for pe</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="uncertainty-analysis.html">Uncertainty Analysis
+<tocitem target="ref/present.html">
+<name>present</name>
+<purpose>Display model information, including estimated uncertainty</purpose>
+</tocitem>
+<tocitem target="ref/simsd.html">
+<name>simsd</name>
+<purpose>Simulate linear models with uncertainty using Monte Carlo
+method</purpose>
+</tocitem>
+<tocitem target="ref/freqresp.html">
+<name>freqresp</name>
+<purpose>Frequency response over grid</purpose>
+</tocitem>
+<tocitem target="ref/rsample.html">
+<name>rsample</name>
+<purpose>Random sampling of linear identified systems</purpose>
+</tocitem>
+<tocitem target="ref/showconfidence.html">
+<name>showConfidence</name>
+<purpose>Display confidence regions on response plots for identified
+models</purpose>
+</tocitem>
+<tocitem target="ref/getcov.html">
+<name>getcov</name>
+<purpose>Parameter covariance of identified model</purpose>
+</tocitem>
+<tocitem target="ref/setcov.html">
+<name>setcov</name>
+<purpose>Set parameter covariance data in identified model</purpose>
+</tocitem>
+<tocitem target="ref/translatecov.html">
+<name>translatecov</name>
+<purpose>Translate parameter covariance
+across model transformation operations</purpose>
+</tocitem>
+<tocitem target="ref/step.html">
+<name>step</name>
+<purpose>Step response plot of
+dynamic system; step response data</purpose>
+</tocitem>
+<tocitem target="ref/stepplot.html">
+<name>stepplot</name>
+<purpose>Plot step response and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/impulse.html">
+<name>impulse</name>
+<purpose>Impulse response plot
+of dynamic system; impulse response data</purpose>
+</tocitem>
+<tocitem target="ref/bode.html">
+<name>bode</name>
+<purpose>Bode plot of frequency response, or magnitude and phase
+data</purpose>
+</tocitem>
+<tocitem target="ref/bodemag.html">
+<name>bodemag</name>
+<purpose>Bode magnitude response of LTI models</purpose>
+</tocitem>
+<tocitem target="ref/nyquist.html">
+<name>nyquist</name>
+<purpose>Nyquist plot of frequency response</purpose>
+</tocitem>
+<tocitem target="ref/nyquistplot.html">
+<name>nyquistplot</name>
+<purpose>Nyquist plot with additional plot customization options</purpose>
+</tocitem>
+<tocitem target="ref/iopzmap.html">
+<name>iopzmap</name>
+<purpose>Plot pole-zero map for I/O pairs of model</purpose>
+</tocitem>
+<tocitem target="ref/iopzplot.html">
+<name>iopzplot</name>
+<purpose>Plot pole-zero map for I/O pairs and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/tfdata.html">
+<name>tfdata</name>
+<purpose>Access
+transfer function data</purpose>
+</tocitem>
+<tocitem target="ref/zpkdata.html">
+<name>zpkdata</name>
+<purpose>Access zero-pole-gain data</purpose>
+</tocitem>
+<tocitem target="ref/simsdoptions.html">
+<name>simsdOptions</name>
+<purpose>Option set for simsd</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="model-analysis.html">Model Analysis
+<tocitem target="continuous-and-discrete-time-conversions.html">Continuous- and Discrete-Time Conversions
+<tocitem target="ref/c2d.html">
+<name>c2d</name>
+<purpose>Convert model from continuous to discrete time</purpose>
+</tocitem>
+<tocitem target="ref/d2c.html">
+<name>d2c</name>
+<purpose>Convert model from discrete to continuous time</purpose>
+</tocitem>
+<tocitem target="ref/d2d.html">
+<name>d2d</name>
+<purpose>Resample discrete-time
+model</purpose>
+</tocitem>
+<tocitem target="ref/translatecov.html">
+<name>translatecov</name>
+<purpose>Translate parameter covariance
+across model transformation operations</purpose>
+</tocitem>
+<tocitem target="ref/c2doptions.html">
+<name>c2dOptions</name>
+<purpose>Create option set for continuous- to discrete-time conversions</purpose>
+</tocitem>
+<tocitem target="ref/d2coptions.html">
+<name>d2cOptions</name>
+<purpose>Create option set for discrete- to continuous-time conversions</purpose>
+</tocitem>
+<tocitem target="ref/d2doptions.html">
+<name>d2dOptions</name>
+<purpose>Create option set for discrete-time resampling</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-type-and-other-transformations.html">Model Type and Other Transformations
+<tocitem target="ref/idfrd.html">
+<name>idfrd</name>
+<purpose>Frequency-response data or model</purpose>
+</tocitem>
+<tocitem target="ref/idpoly.html">
+<name>idpoly</name>
+<purpose>Polynomial model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/idtf.html">
+<name>idtf</name>
+<purpose>Transfer function model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/idss.html">
+<name>idss</name>
+<purpose>State-space model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/canon.html">
+<name>canon</name>
+<purpose>Canonical state-space realization</purpose>
+</tocitem>
+<tocitem target="ref/balred.html">
+<name>balred</name>
+<purpose>Model order reduction</purpose>
+</tocitem>
+<tocitem target="ref/noisecnv.html">
+<name>noisecnv</name>
+<purpose>Transform identified linear model with noise channels
+to model with measured channels only</purpose>
+</tocitem>
+<tocitem target="ref/translatecov.html">
+<name>translatecov</name>
+<purpose>Translate parameter covariance
+across model transformation operations</purpose>
+</tocitem>
+<tocitem target="ref/merge.html">
+<name>merge</name>
+<purpose>Merge estimated models</purpose>
+</tocitem>
+<tocitem target="ref/append.html">
+<name>append</name>
+<purpose>Group models by appending their inputs and outputs</purpose>
+</tocitem>
+<tocitem target="ref/noise2meas.html">
+<name>noise2meas</name>
+<purpose>Noise component of model</purpose>
+</tocitem>
+<tocitem target="ref/absorbdelay.html">
+<name>absorbDelay</name>
+<purpose>Replace time delays by poles at z =
+0 or phase shift</purpose>
+</tocitem>
+<tocitem target="ref/chgtimeunit.html">
+<name>chgTimeUnit</name>
+<purpose>Change time units of
+dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/chgfrequnit.html">
+<name>chgFreqUnit</name>
+<purpose>Change frequency units
+of frequency-response data model</purpose>
+</tocitem>
+<tocitem target="ref/fdel.html">
+<name>fdel</name>
+<purpose>Delete specified data from frequency response data (FRD)
+models</purpose>
+</tocitem>
+<tocitem target="ref/stack.html">
+<name>stack</name>
+<purpose>Build model array by stacking models or model arrays along
+array dimensions</purpose>
+</tocitem>
+<tocitem target="ref/ss2ss.html">
+<name>ss2ss</name>
+<purpose>State coordinate
+transformation for state-space model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linearization-of-nonlinear-models.html">Linearization of Nonlinear Models
+<tocitem target="ref/linapp.html">
+<name>linapp</name>
+<purpose>Linear approximation of nonlinear ARX and Hammerstein-Wiener
+models for given input</purpose>
+</tocitem>
+<tocitem target="ref/idnlarxfindop.html">
+<name>idnlarx/findop</name>
+<purpose>Compute operating point for Nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/idnlarxlinearize.html">
+<name>idnlarx/linearize</name>
+<purpose>Linearize nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/idnlhwfindop.html">
+<name>idnlhw/findop</name>
+<purpose>Compute operating point for Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/idnlhwlinearize.html">
+<name>idnlhw/linearize</name>
+<purpose>Linearize Hammerstein-Wiener model</purpose>
+</tocitem>
+<tocitem target="ref/findopoptions.html">
+<name>findopOptions</name>
+<purpose>Option set for findop</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="data-extraction.html">Data Extraction
+<tocitem target="ref/polydata.html">
+<name>polydata</name>
+<purpose>Access polynomial coefficients
+and uncertainties of identified model</purpose>
+</tocitem>
+<tocitem target="ref/ssdata.html">
+<name>ssdata</name>
+<purpose>Access state-space model data</purpose>
+</tocitem>
+<tocitem target="ref/idssdata.html">
+<name>idssdata</name>
+<purpose>State-space data of identified system</purpose>
+</tocitem>
+<tocitem target="ref/tfdata.html">
+<name>tfdata</name>
+<purpose>Access
+transfer function data</purpose>
+</tocitem>
+<tocitem target="ref/zpkdata.html">
+<name>zpkdata</name>
+<purpose>Access zero-pole-gain data</purpose>
+</tocitem>
+<tocitem target="ref/frdata.html">
+<name>frdata</name>
+<purpose>Access data for frequency response data (FRD) object</purpose>
+</tocitem>
+<tocitem target="ref/freqresp.html">
+<name>freqresp</name>
+<purpose>Frequency response over grid</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/getcov.html">
+<name>getcov</name>
+<purpose>Parameter covariance of identified model</purpose>
+</tocitem>
+<tocitem target="ref/setcov.html">
+<name>setcov</name>
+<purpose>Set parameter covariance data in identified model</purpose>
+</tocitem>
+<tocitem target="ref/get.html">
+<name>get</name>
+<purpose>Access model
+property values</purpose>
+</tocitem>
+<tocitem target="ref/set.html">
+<name>set</name>
+<purpose>Set or modify
+model properties</purpose>
+</tocitem>
+<tocitem target="ref/nparams.html">
+<name>nparams</name>
+<purpose>Number of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/ndims.html">
+<name>ndims</name>
+<purpose>Query number of dimensions of dynamic system model or
+model array</purpose>
+</tocitem>
+<tocitem target="ref/order.html">
+<name>order</name>
+<purpose>Query model order</purpose>
+</tocitem>
+<tocitem target="ref/pole.html">
+<name>pole</name>
+<purpose>Poles of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/zero.html">
+<name>zero</name>
+<purpose>Zeros and gain of SISO dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/size.html">
+<name>size</name>
+<purpose>Query output/input/array dimensions of input–output
+model and number of frequencies of FRD model</purpose>
+</tocitem>
+<tocitem target="ref/damp.html">
+<name>damp</name>
+<purpose>Natural frequency and damping ratio</purpose>
+</tocitem>
+<tocitem target="ref/dcgain.html">
+<name>dcgain</name>
+<purpose>Low-frequency (DC) gain of LTI system</purpose>
+</tocitem>
+<tocitem target="ref/bandwidth.html">
+<name>bandwidth</name>
+<purpose>Frequency response bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/norm.html">
+<name>norm</name>
+<purpose>Norm of linear model</purpose>
+</tocitem>
+<tocitem target="ref/evalfr.html">
+<name>evalfr</name>
+<purpose>Evaluate frequency response at given frequency</purpose>
+</tocitem>
+<tocitem target="ref/isstable.html">
+<name>isstable</name>
+<purpose>Determine whether system is stable</purpose>
+</tocitem>
+<tocitem target="ref/strseq.html">
+<name>strseq</name>
+<purpose>Create sequence of indexed character vectors</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulation-and-prediction.html">Simulation and Prediction
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+<tocitem target="ref/simsd.html">
+<name>simsd</name>
+<purpose>Simulate linear models with uncertainty using Monte Carlo
+method</purpose>
+</tocitem>
+<tocitem target="ref/simsdoptions.html">
+<name>simsdOptions</name>
+<purpose>Option set for simsd</purpose>
+</tocitem>
+<tocitem target="ref/predict.html">
+<name>predict</name>
+<purpose>Predict K-step ahead model output</purpose>
+</tocitem>
+<tocitem target="ref/predictoptions.html">
+<name>predictOptions</name>
+<purpose>Option set for predict</purpose>
+</tocitem>
+<tocitem target="ref/forecast.html">
+<name>forecast</name>
+<purpose>Forecast identified model output</purpose>
+</tocitem>
+<tocitem target="ref/forecastoptions.html">
+<name>forecastOptions</name>
+<purpose>Option set for forecast</purpose>
+</tocitem>
+<tocitem target="ref/idinput.html">
+<name>idinput</name>
+<purpose>Generate input signals</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="response-visualization.html">Response Computation and Visualization
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/bode.html">
+<name>bode</name>
+<purpose>Bode plot of frequency response, or magnitude and phase
+data</purpose>
+</tocitem>
+<tocitem target="ref/bodeplot.html">
+<name>bodeplot</name>
+<purpose>Plot Bode frequency response with additional plot customization
+options</purpose>
+</tocitem>
+<tocitem target="ref/bodemag.html">
+<name>bodemag</name>
+<purpose>Bode magnitude response of LTI models</purpose>
+</tocitem>
+<tocitem target="ref/step.html">
+<name>step</name>
+<purpose>Step response plot of
+dynamic system; step response data</purpose>
+</tocitem>
+<tocitem target="ref/stepplot.html">
+<name>stepplot</name>
+<purpose>Plot step response and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/stepinfo.html">
+<name>stepinfo</name>
+<purpose>Rise time, settling time, and other step-response characteristics</purpose>
+</tocitem>
+<tocitem target="ref/nyquist.html">
+<name>nyquist</name>
+<purpose>Nyquist plot of frequency response</purpose>
+</tocitem>
+<tocitem target="ref/nyquistplot.html">
+<name>nyquistplot</name>
+<purpose>Nyquist plot with additional plot customization options</purpose>
+</tocitem>
+<tocitem target="ref/impulse.html">
+<name>impulse</name>
+<purpose>Impulse response plot
+of dynamic system; impulse response data</purpose>
+</tocitem>
+<tocitem target="ref/impulseplot.html">
+<name>impulseplot</name>
+<purpose>Plot impulse response and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/pzmap.html">
+<name>pzmap</name>
+<purpose>Pole-zero plot of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/pzplot.html">
+<name>pzplot</name>
+<purpose>Pole-zero plot of dynamic system model with plot customization
+            options</purpose>
+</tocitem>
+<tocitem target="ref/iopzmap.html">
+<name>iopzmap</name>
+<purpose>Plot pole-zero map for I/O pairs of model</purpose>
+</tocitem>
+<tocitem target="ref/iopzplot.html">
+<name>iopzplot</name>
+<purpose>Plot pole-zero map for I/O pairs and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/spectrum.html">
+<name>spectrum</name>
+<purpose>Output power spectrum of time series models</purpose>
+</tocitem>
+<tocitem target="ref/spectrumplot.html">
+<name>spectrumplot</name>
+<purpose>Plot disturbance spectrum
+of linear identified models</purpose>
+</tocitem>
+<tocitem target="ref/lsim.html">
+<name>lsim</name>
+<purpose>Simulate time response of dynamic system to arbitrary
+inputs</purpose>
+</tocitem>
+<tocitem target="ref/lsimplot.html">
+<name>lsimplot</name>
+<purpose>Simulate response of dynamic system to arbitrary inputs
+and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/lsiminfo.html">
+<name>lsiminfo</name>
+<purpose>Compute linear response characteristics</purpose>
+</tocitem>
+<tocitem target="ref/showconfidence.html">
+<name>showConfidence</name>
+<purpose>Display confidence regions on response plots for identified
+models</purpose>
+</tocitem>
+<tocitem target="ref/findstates.html">
+<name>findstates</name>
+<purpose>Estimate initial states of model</purpose>
+</tocitem>
+<tocitem target="ref/data2state.html">
+<name>data2state</name>
+<purpose>Map past data to states of state-space and nonlinear ARX
+models</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+<tocitem target="ref/stepdataoptions.html">
+<name>stepDataOptions</name>
+<purpose>Options set for step</purpose>
+</tocitem>
+<tocitem target="ref/bodeoptions.html">
+<name>bodeoptions</name>
+<purpose>Create list of Bode plot options</purpose>
+</tocitem>
+<tocitem target="ref/nyquistoptions.html">
+<name>nyquistoptions</name>
+<purpose>List of Nyquist plot
+options</purpose>
+</tocitem>
+<tocitem target="ref/timeoptions.html">
+<name>timeoptions</name>
+<purpose>Create list of time plot options</purpose>
+</tocitem>
+<tocitem target="ref/getoptions.html">
+<name>getoptions</name>
+<purpose>Return @PlotOptions handle or plot
+options property</purpose>
+</tocitem>
+<tocitem target="ref/setoptions.html">
+<name>setoptions</name>
+<purpose>Set plot options for response plot</purpose>
+</tocitem>
+<tocitem target="ref/pzoptions.html">
+<name>pzoptions</name>
+<purpose>Create list of pole/zero plot options</purpose>
+</tocitem>
+<tocitem target="ref/spectrumoptions.html">
+<name>spectrumoptions</name>
+<purpose>Option set for spectrumplot</purpose>
+</tocitem>
+<tocitem target="ref/identpref.html">
+<name>identpref</name>
+<purpose>Set System
+            Identification Toolbox preferences</purpose>
+</tocitem>
+<tocitem target="ref/findstatesoptions.html">
+<name>findstatesOptions</name>
+<purpose>Option set for findstates</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="time-series-model-identification.html">Time Series Analysis
+<tocitem target="ref/ar.html">
+<name>ar</name>
+<purpose>Estimate parameters of AR model or ARI model for scalar time series</purpose>
+</tocitem>
+<tocitem target="ref/armax.html">
+<name>armax</name>
+<purpose>Estimate parameters of ARMAX model using time-domain data</purpose>
+</tocitem>
+<tocitem target="ref/arx.html">
+<name>arx</name>
+<purpose>Estimate parameters of ARX, ARIX, AR, or ARI model</purpose>
+</tocitem>
+<tocitem target="ref/etfe.html">
+<name>etfe</name>
+<purpose>Estimate empirical transfer functions and periodograms</purpose>
+</tocitem>
+<tocitem target="ref/spa.html">
+<name>spa</name>
+<purpose>Estimate frequency response with fixed frequency resolution
+using spectral analysis</purpose>
+</tocitem>
+<tocitem target="ref/spafdr.html">
+<name>spafdr</name>
+<purpose>Estimate frequency response and spectrum using spectral analysis with
+            frequency-dependent resolution</purpose>
+</tocitem>
+<tocitem target="ref/ivar.html">
+<name>ivar</name>
+<purpose>AR model estimation using instrumental variable method</purpose>
+</tocitem>
+<tocitem target="ref/n4sid.html">
+<name>n4sid</name>
+<purpose>Estimate state-space model using subspace method</purpose>
+</tocitem>
+<tocitem target="ref/ssest.html">
+<name>ssest</name>
+<purpose>Estimate state-space model using time-domain or frequency-domain data</purpose>
+</tocitem>
+<tocitem target="ref/pem.html">
+<name>pem</name>
+<purpose>Prediction error estimate for linear and nonlinear model</purpose>
+</tocitem>
+<tocitem target="ref/nlarx.html">
+<name>nlarx</name>
+<purpose>Estimate parameters of nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/idpoly.html">
+<name>idpoly</name>
+<purpose>Polynomial model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/idss.html">
+<name>idss</name>
+<purpose>State-space model with identifiable parameters</purpose>
+</tocitem>
+<tocitem target="ref/idnlarx.html">
+<name>idnlarx</name>
+<purpose>Nonlinear ARX model</purpose>
+</tocitem>
+<tocitem target="ref/getpvec.html">
+<name>getpvec</name>
+<purpose>Model parameters and associated uncertainty data</purpose>
+</tocitem>
+<tocitem target="ref/setpvec.html">
+<name>setpvec</name>
+<purpose>Modify value of model parameters</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Set or randomize initial parameter values</purpose>
+</tocitem>
+<tocitem target="ref/noise2meas.html">
+<name>noise2meas</name>
+<purpose>Noise component of model</purpose>
+</tocitem>
+<tocitem target="ref/spectrum.html">
+<name>spectrum</name>
+<purpose>Output power spectrum of time series models</purpose>
+</tocitem>
+<tocitem target="ref/forecast.html">
+<name>forecast</name>
+<purpose>Forecast identified model output</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate response of identified model</purpose>
+</tocitem>
+<tocitem target="ref/aroptions.html">
+<name>arOptions</name>
+<purpose>Option set for ar</purpose>
+</tocitem>
+<tocitem target="ref/forecastoptions.html">
+<name>forecastOptions</name>
+<purpose>Option set for forecast</purpose>
+</tocitem>
+<tocitem target="ref/simoptions.html">
+<name>simOptions</name>
+<purpose>Option set for sim</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="online-estimation.html">Online Estimation
+<tocitem target="online-parameter-estimation.html">Online Parameter Estimation
+<tocitem target="ref/recursivear.html">
+<name>recursiveAR</name>
+<purpose>Create System
+        object for online parameter estimation
+of AR model</purpose>
+</tocitem>
+<tocitem target="ref/recursivearma.html">
+<name>recursiveARMA</name>
+<purpose>Create System
+        object for online parameter estimation
+of ARMA model</purpose>
+</tocitem>
+<tocitem target="ref/recursivearx.html">
+<name>recursiveARX</name>
+<purpose>Create System
+        object for online parameter estimation
+of ARX model</purpose>
+</tocitem>
+<tocitem target="ref/recursivearmax.html">
+<name>recursiveARMAX</name>
+<purpose>Create System
+        object for online parameter estimation
+of ARMAX model</purpose>
+</tocitem>
+<tocitem target="ref/recursivebj.html">
+<name>recursiveBJ</name>
+<purpose>Create System
+        object for online parameter estimation
+of Box-Jenkins polynomial model</purpose>
+</tocitem>
+<tocitem target="ref/recursiveoe.html">
+<name>recursiveOE</name>
+<purpose>Create System
+        object for online parameter estimation
+of Output-Error polynomial model</purpose>
+</tocitem>
+<tocitem target="ref/recursivels.html">
+<name>recursiveLS</name>
+<purpose>Create System
+        object for online parameter estimation
+using recursive least squares algorithm</purpose>
+</tocitem>
+<tocitem target="ref/step_method_recursive_estimation.html">
+<name>step</name>
+<purpose>Update model parameters and output online using recursive
+estimation algorithm</purpose>
+</tocitem>
+<tocitem target="ref/clone.html">
+<name>clone</name>
+<purpose>Copy online parameter estimation System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/reset.html">
+<name>reset</name>
+<purpose>Reset online parameter estimation System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/release.html">
+<name>release</name>
+<purpose>Unlock online parameter estimation System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/islocked.html">
+<name>isLocked</name>
+<purpose>Locked status of online parameter estimation System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/rpem.html">
+<name>rpem</name>
+<purpose>Estimate general input-output models using recursive prediction-error
+minimization method</purpose>
+</tocitem>
+<tocitem target="ref/rplr.html">
+<name>rplr</name>
+<purpose>Estimate general input-output models using recursive pseudolinear
+regression method</purpose>
+</tocitem>
+<tocitem target="ref/segment.html">
+<name>segment</name>
+<purpose>Segment data and estimate models for each segment</purpose>
+</tocitem>
+<tocitem target="ref/rarmax.html">
+<name>rarmax</name>
+<purpose>(To be removed) Estimate recursively parameters of ARMAX or ARMA
+            models</purpose>
+</tocitem>
+<tocitem target="ref/rarx.html">
+<name>rarx</name>
+<purpose>(To be removed) Estimate parameters of ARX or AR models recursively</purpose>
+</tocitem>
+<tocitem target="ref/rbj.html">
+<name>rbj</name>
+<purpose>(To be removed) Estimate recursively parameters of Box-Jenkins
+            models</purpose>
+</tocitem>
+<tocitem target="ref/roe.html">
+<name>roe</name>
+<purpose>(To be removed) Estimate recursively output-error models
+            (IIR-filters)</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="online-state-estimation.html">Online State Estimation
+<tocitem target="ref/extendedkalmanfilter.html">
+<name>extendedKalmanFilter</name>
+<purpose>Create extended Kalman filter object for online state
+estimation</purpose>
+</tocitem>
+<tocitem target="ref/unscentedkalmanfilter.html">
+<name>unscentedKalmanFilter</name>
+<purpose>Create unscented Kalman filter object for online state
+estimation</purpose>
+</tocitem>
+<tocitem target="ref/particlefilter.html">
+<name>particleFilter</name>
+<purpose>Particle filter object for online state estimation</purpose>
+</tocitem>
+<tocitem target="ref/correct.html">
+<name>correct</name>
+<purpose>Correct state and state estimation error covariance using extended or unscented Kalman
+            filter, or particle filter and measurements</purpose>
+</tocitem>
+<tocitem target="ref/residual.html">
+<name>residual</name>
+<purpose>Return measurement residual and residual covariance when using extended or
+            unscented Kalman filter</purpose>
+</tocitem>
+<tocitem target="ref/predict_method_state_estimation.html">
+<name>predict</name>
+<purpose>Predict state and state estimation error covariance at next time step using extended or
+            unscented Kalman filter, or particle filter</purpose>
+</tocitem>
+<tocitem target="ref/initialize.html">
+<name>initialize</name>
+<purpose>Initialize the state of the particle filter</purpose>
+</tocitem>
+<tocitem target="ref/clone_method_state_estimation.html">
+<name>clone</name>
+<purpose>Copy online state estimation object</purpose>
+</tocitem>
+<tocitem target="ref/getstateestimate.html">
+<name>getStateEstimate</name>
+<purpose>Extract best state estimate and covariance from particles</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

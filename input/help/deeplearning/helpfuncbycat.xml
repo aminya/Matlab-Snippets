@@ -1,0 +1,1981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="deep-learning-with-images.html">Deep Learning with Images
+<tocitem target="ref/trainingoptions.html">
+<name>trainingOptions</name>
+<purpose>Options for training deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainnetwork.html">
+<name>trainNetwork</name>
+<purpose>Train neural network for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/analyzenetwork.html">
+<name>analyzeNetwork</name>
+<purpose>Analyze deep learning network architecture</purpose>
+</tocitem>
+<tocitem target="ref/alexnet.html">
+<name>alexnet</name>
+<purpose>Pretrained AlexNet convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/vgg16.html">
+<name>vgg16</name>
+<purpose>Pretrained VGG-16 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/vgg19.html">
+<name>vgg19</name>
+<purpose>Pretrained VGG-19 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/squeezenet.html">
+<name>squeezenet</name>
+<purpose>Pretrained SqueezeNet convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/googlenet.html">
+<name>googlenet</name>
+<purpose>Pretrained GoogLeNet convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/inceptionv3.html">
+<name>inceptionv3</name>
+<purpose>Pretrained Inception-v3 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/densenet201.html">
+<name>densenet201</name>
+<purpose>Pretrained DenseNet-201 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/mobilenetv2.html">
+<name>mobilenetv2</name>
+<purpose>Pretrained MobileNet-v2 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/resnet18.html">
+<name>resnet18</name>
+<purpose>Pretrained ResNet-18 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/resnet50.html">
+<name>resnet50</name>
+<purpose>Pretrained ResNet-50 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/resnet101.html">
+<name>resnet101</name>
+<purpose>Pretrained ResNet-101 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/xception.html">
+<name>xception</name>
+<purpose>Pretrained Xception convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/inceptionresnetv2.html">
+<name>inceptionresnetv2</name>
+<purpose>Pretrained Inception-ResNet-v2 convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/nasnetlarge.html">
+<name>nasnetlarge</name>
+<purpose>Pretrained NASNet-Large convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/nasnetmobile.html">
+<name>nasnetmobile</name>
+<purpose>Pretrained NASNet-Mobile convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/shufflenet.html">
+<name>shufflenet</name>
+<purpose>Pretrained ShuffleNet convolutional neural network</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.imageinputlayer.html">
+<name>imageInputLayer</name>
+<purpose>Image input layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.image3dinputlayer.html">
+<name>image3dInputLayer</name>
+<purpose>3-D image input layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.convolution2dlayer.html">
+<name>convolution2dLayer</name>
+<purpose>2-D convolutional layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.convolution3dlayer.html">
+<name>convolution3dLayer</name>
+<purpose>3-D convolutional layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.groupedconvolution2dlayer.html">
+<name>groupedConvolution2dLayer</name>
+<purpose>2-D grouped convolutional layer</purpose>
+</tocitem>
+<tocitem target="ref/transposedconv2dlayer.html">
+<name>transposedConv2dLayer</name>
+<purpose>Transposed 2-D convolution layer</purpose>
+</tocitem>
+<tocitem target="ref/transposedconv3dlayer.html">
+<name>transposedConv3dLayer</name>
+<purpose>Transposed 3-D convolution layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.fullyconnectedlayer.html">
+<name>fullyConnectedLayer</name>
+<purpose>Fully connected layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.relulayer.html">
+<name>reluLayer</name>
+<purpose>Rectified Linear Unit (ReLU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.leakyrelulayer.html">
+<name>leakyReluLayer</name>
+<purpose>Leaky Rectified Linear Unit (ReLU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.clippedrelulayer.html">
+<name>clippedReluLayer</name>
+<purpose>Clipped Rectified Linear Unit (ReLU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.elulayer.html">
+<name>eluLayer</name>
+<purpose>Exponential linear unit (ELU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.tanhlayer.html">
+<name>tanhLayer</name>
+<purpose>Hyperbolic tangent (tanh) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.batchnormalizationlayer.html">
+<name>batchNormalizationLayer</name>
+<purpose>Batch normalization layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.crosschannelnormalizationlayer.html">
+<name>crossChannelNormalizationLayer</name>
+<purpose>  Channel-wise local response normalization layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.dropoutlayer.html">
+<name>dropoutLayer</name>
+<purpose>Dropout layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.crop2dlayer.html">
+<name>crop2dLayer</name>
+<purpose>2-D crop layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.crop3dlayer.html">
+<name>crop3dLayer</name>
+<purpose>3-D crop layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.averagepooling2dlayer.html">
+<name>averagePooling2dLayer</name>
+<purpose>Average pooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.averagepooling3dlayer.html">
+<name>averagePooling3dLayer</name>
+<purpose>3-D average pooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.globalaveragepooling2dlayer.html">
+<name>globalAveragePooling2dLayer</name>
+<purpose>Global average pooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.globalaveragepooling3dlayer.html">
+<name>globalAveragePooling3dLayer</name>
+<purpose>3-D global average pooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.maxpooling2dlayer.html">
+<name>maxPooling2dLayer</name>
+<purpose>Max pooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.maxpooling3dlayer.html">
+<name>maxPooling3dLayer</name>
+<purpose>3-D max pooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.maxunpooling2dlayer.html">
+<name>maxUnpooling2dLayer</name>
+<purpose>Max unpooling layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.additionlayer.html">
+<name>additionLayer</name>
+<purpose>Addition layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.concatenationlayer.html">
+<name>concatenationLayer</name>
+<purpose>Concatenation layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.depthconcatenationlayer.html">
+<name>depthConcatenationLayer</name>
+<purpose>Depth concatenation layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.softmaxlayer.html">
+<name>softmaxLayer</name>
+<purpose>Softmax layer</purpose>
+</tocitem>
+<tocitem target="ref/classificationlayer.html">
+<name>classificationLayer</name>
+<purpose>Classification output layer</purpose>
+</tocitem>
+<tocitem target="ref/regressionlayer.html">
+<name>regressionLayer</name>
+<purpose>Create a regression output layer</purpose>
+</tocitem>
+<tocitem target="ref/augmentedimagedatastore.html">
+<name>augmentedImageDatastore</name>
+<purpose>Transform batches to augment image data</purpose>
+</tocitem>
+<tocitem target="ref/imagedataaugmenter.html">
+<name>imageDataAugmenter</name>
+<purpose>Configure image data augmentation</purpose>
+</tocitem>
+<tocitem target="ref/imagedataaugmenter.augment.html">
+<name>augment</name>
+<purpose>Apply identical random transformations to multiple images</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layergraph.html">
+<name>layerGraph</name>
+<purpose>Graph of network layers for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/plot.html">
+<name>plot</name>
+<purpose>Plot neural network layer graph</purpose>
+</tocitem>
+<tocitem target="ref/addlayers.html">
+<name>addLayers</name>
+<purpose>Add layers to layer graph</purpose>
+</tocitem>
+<tocitem target="ref/removelayers.html">
+<name>removeLayers</name>
+<purpose>Remove layers from layer graph</purpose>
+</tocitem>
+<tocitem target="ref/replacelayer.html">
+<name>replaceLayer</name>
+<purpose>Replace layer in layer graph</purpose>
+</tocitem>
+<tocitem target="ref/connectlayers.html">
+<name>connectLayers</name>
+<purpose>Connect layers in layer graph</purpose>
+</tocitem>
+<tocitem target="ref/disconnectlayers.html">
+<name>disconnectLayers</name>
+<purpose>Disconnect layers in layer graph</purpose>
+</tocitem>
+<tocitem target="ref/dagnetwork.html">
+<name>DAGNetwork</name>
+<purpose>Directed acyclic graph (DAG) network for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/classify.html">
+<name>classify</name>
+<purpose>Classify data using a trained deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/activations.html">
+<name>activations</name>
+<purpose>Compute deep learning network layer activations</purpose>
+</tocitem>
+<tocitem target="ref/predict.html">
+<name>predict</name>
+<purpose>Predict responses using a trained deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/confusionchart.html">
+<name>confusionchart</name>
+<purpose>Create confusion matrix chart for classification problem</purpose>
+</tocitem>
+<tocitem target="ref/mlearnlib.graphics.chart.confusionmatrixchart-properties.html">
+<name>ConfusionMatrixChart Properties</name>
+<purpose>Confusion matrix chart appearance and behavior</purpose>
+</tocitem>
+<tocitem target="ref/mlearnlib.graphics.chart.confusionmatrixchart.sortclasses.html">
+<name>sortClasses</name>
+<purpose>Sort classes of confusion matrix chart</purpose>
+</tocitem>
+<tocitem target="ref/confusionmat.html">
+<name>confusionmat</name>
+<purpose>Compute confusion matrix for classification problem</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionssgdm.html">
+<name>TrainingOptionsSGDM</name>
+<purpose>Training options for stochastic gradient descent with momentum</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionsrmsprop.html">
+<name>TrainingOptionsRMSProp</name>
+<purpose>Training options for RMSProp optimizer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionsadam.html">
+<name>TrainingOptionsADAM</name>
+<purpose>Training options for Adam optimizer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.layer.html">
+<name>Layer</name>
+<purpose>Network layer for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/seriesnetwork.html">
+<name>SeriesNetwork</name>
+<purpose>Series network for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.classificationoutputlayer.html">
+<name>ClassificationOutputLayer</name>
+<purpose>Classification layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.regressionoutputlayer.html">
+<name>RegressionOutputLayer</name>
+<purpose>Regression output layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.transposedconvolution2dlayer.html">
+<name>TransposedConvolution2DLayer</name>
+<purpose>Transposed 2-D convolution layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.transposedconvolution3dlayer.html">
+<name>TransposedConvolution3dLayer</name>
+<purpose>Transposed 3-D convolution layer</purpose>
+</tocitem>
+<tocitem target="ref/augmentedimagesource.html">
+<name>augmentedImageSource</name>
+<purpose>(To be removed) Generate batches of augmented image data</purpose>
+</tocitem>
+<tocitem target="ref/augmentedimagedatastore.read.html">
+<name>read</name>
+<purpose>Read data from augmentedImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/augmentedimagedatastore.readbyindex.html">
+<name>readByIndex</name>
+<purpose>Read data specified by index from
+            augmentedImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/augmentedimagedatastore.shuffle.html">
+<name>shuffle</name>
+<purpose>Shuffle data in augmentedImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/augmentedimagedatastore.partitionbyindex.html">
+<name>partitionByIndex</name>
+<purpose>Partition augmentedImageDatastore according to
+            indices</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-with-time-series-sequences-and-text.html">Deep Learning with Time Series, Sequences, and Text
+<tocitem target="ref/trainingoptions.html">
+<name>trainingOptions</name>
+<purpose>Options for training deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainnetwork.html">
+<name>trainNetwork</name>
+<purpose>Train neural network for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/analyzenetwork.html">
+<name>analyzeNetwork</name>
+<purpose>Analyze deep learning network architecture</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.sequenceinputlayer.html">
+<name>sequenceInputLayer</name>
+<purpose>Sequence input layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.lstmlayer.html">
+<name>lstmLayer</name>
+<purpose>Long short-term memory (LSTM) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.bilstmlayer.html">
+<name>bilstmLayer</name>
+<purpose>Bidirectional long short-term memory (BiLSTM) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.sequencefoldinglayer.html">
+<name>sequenceFoldingLayer</name>
+<purpose>Sequence folding layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.sequenceunfoldinglayer.html">
+<name>sequenceUnfoldingLayer</name>
+<purpose>Sequence unfolding layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.flattenlayer.html">
+<name>flattenLayer</name>
+<purpose>Flatten layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.fullyconnectedlayer.html">
+<name>fullyConnectedLayer</name>
+<purpose>Fully connected layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.relulayer.html">
+<name>reluLayer</name>
+<purpose>Rectified Linear Unit (ReLU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.leakyrelulayer.html">
+<name>leakyReluLayer</name>
+<purpose>Leaky Rectified Linear Unit (ReLU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.clippedrelulayer.html">
+<name>clippedReluLayer</name>
+<purpose>Clipped Rectified Linear Unit (ReLU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.elulayer.html">
+<name>eluLayer</name>
+<purpose>Exponential linear unit (ELU) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.tanhlayer.html">
+<name>tanhLayer</name>
+<purpose>Hyperbolic tangent (tanh) layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.dropoutlayer.html">
+<name>dropoutLayer</name>
+<purpose>Dropout layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.softmaxlayer.html">
+<name>softmaxLayer</name>
+<purpose>Softmax layer</purpose>
+</tocitem>
+<tocitem target="ref/classificationlayer.html">
+<name>classificationLayer</name>
+<purpose>Classification output layer</purpose>
+</tocitem>
+<tocitem target="ref/regressionlayer.html">
+<name>regressionLayer</name>
+<purpose>Create a regression output layer</purpose>
+</tocitem>
+<tocitem target="ref/predict.html">
+<name>predict</name>
+<purpose>Predict responses using a trained deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/classify.html">
+<name>classify</name>
+<purpose>Classify data using a trained deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/predictandupdatestate.html">
+<name>predictAndUpdateState</name>
+<purpose>Predict responses using a trained recurrent neural network and update the
+            network state</purpose>
+</tocitem>
+<tocitem target="ref/classifyandupdatestate.html">
+<name>classifyAndUpdateState</name>
+<purpose>Classify data using a trained recurrent neural network and update the network
+            state</purpose>
+</tocitem>
+<tocitem target="ref/resetstate.html">
+<name>resetState</name>
+<purpose>Reset the state of a recurrent neural network</purpose>
+</tocitem>
+<tocitem target="ref/confusionchart.html">
+<name>confusionchart</name>
+<purpose>Create confusion matrix chart for classification problem</purpose>
+</tocitem>
+<tocitem target="ref/mlearnlib.graphics.chart.confusionmatrixchart-properties.html">
+<name>ConfusionMatrixChart Properties</name>
+<purpose>Confusion matrix chart appearance and behavior</purpose>
+</tocitem>
+<tocitem target="ref/mlearnlib.graphics.chart.confusionmatrixchart.sortclasses.html">
+<name>sortClasses</name>
+<purpose>Sort classes of confusion matrix chart</purpose>
+</tocitem>
+<tocitem target="ref/confusionmat.html">
+<name>confusionmat</name>
+<purpose>Compute confusion matrix for classification problem</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionssgdm.html">
+<name>TrainingOptionsSGDM</name>
+<purpose>Training options for stochastic gradient descent with momentum</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionsrmsprop.html">
+<name>TrainingOptionsRMSProp</name>
+<purpose>Training options for RMSProp optimizer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionsadam.html">
+<name>TrainingOptionsADAM</name>
+<purpose>Training options for Adam optimizer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.layer.html">
+<name>Layer</name>
+<purpose>Network layer for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/seriesnetwork.html">
+<name>SeriesNetwork</name>
+<purpose>Series network for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.classificationoutputlayer.html">
+<name>ClassificationOutputLayer</name>
+<purpose>Classification layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.regressionoutputlayer.html">
+<name>RegressionOutputLayer</name>
+<purpose>Regression output layer</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-tuning-and-visualization.html">Deep Learning Tuning and Visualization
+<tocitem target="ref/analyzenetwork.html">
+<name>analyzeNetwork</name>
+<purpose>Analyze deep learning network architecture</purpose>
+</tocitem>
+<tocitem target="ref/plot.html">
+<name>plot</name>
+<purpose>Plot neural network layer graph</purpose>
+</tocitem>
+<tocitem target="ref/trainingoptions.html">
+<name>trainingOptions</name>
+<purpose>Options for training deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainnetwork.html">
+<name>trainNetwork</name>
+<purpose>Train neural network for deep learning</purpose>
+</tocitem>
+<tocitem target="ref/activations.html">
+<name>activations</name>
+<purpose>Compute deep learning network layer activations</purpose>
+</tocitem>
+<tocitem target="ref/predict.html">
+<name>predict</name>
+<purpose>Predict responses using a trained deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/classify.html">
+<name>classify</name>
+<purpose>Classify data using a trained deep learning neural network</purpose>
+</tocitem>
+<tocitem target="ref/predictandupdatestate.html">
+<name>predictAndUpdateState</name>
+<purpose>Predict responses using a trained recurrent neural network and update the
+            network state</purpose>
+</tocitem>
+<tocitem target="ref/classifyandupdatestate.html">
+<name>classifyAndUpdateState</name>
+<purpose>Classify data using a trained recurrent neural network and update the network
+            state</purpose>
+</tocitem>
+<tocitem target="ref/resetstate.html">
+<name>resetState</name>
+<purpose>Reset the state of a recurrent neural network</purpose>
+</tocitem>
+<tocitem target="ref/deepdreamimage.html">
+<name>deepDreamImage</name>
+<purpose>Visualize network features using deep dream</purpose>
+</tocitem>
+<tocitem target="ref/occlusionsensitivity.html">
+<name>occlusionSensitivity</name>
+<purpose>Determine how input data affects output activations by occluding
+      input</purpose>
+</tocitem>
+<tocitem target="ref/confusionchart.html">
+<name>confusionchart</name>
+<purpose>Create confusion matrix chart for classification problem</purpose>
+</tocitem>
+<tocitem target="ref/mlearnlib.graphics.chart.confusionmatrixchart-properties.html">
+<name>ConfusionMatrixChart Properties</name>
+<purpose>Confusion matrix chart appearance and behavior</purpose>
+</tocitem>
+<tocitem target="ref/mlearnlib.graphics.chart.confusionmatrixchart.sortclasses.html">
+<name>sortClasses</name>
+<purpose>Sort classes of confusion matrix chart</purpose>
+</tocitem>
+<tocitem target="ref/confusionmat.html">
+<name>confusionmat</name>
+<purpose>Compute confusion matrix for classification problem</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionssgdm.html">
+<name>TrainingOptionsSGDM</name>
+<purpose>Training options for stochastic gradient descent with momentum</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionsrmsprop.html">
+<name>TrainingOptionsRMSProp</name>
+<purpose>Training options for RMSProp optimizer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.trainingoptionsadam.html">
+<name>TrainingOptionsADAM</name>
+<purpose>Training options for Adam optimizer</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-in-parallel-and-cloud.html">Deep Learning in Parallel and in the Cloud
+<tocitem target="ref/canusegpu.html">
+<name>canUseGPU</name>
+<purpose>Verify supported GPU is available for computation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-applications.html">Deep Learning Applications
+<tocitem target="computer-vision-using-deep-learning.html">Computer Vision Using Deep Learning
+<tocitem target="../vision/ref/pixellabeldatastore.html">
+<name>pixelLabelDatastore</name>
+<purpose>Datastore for pixel label data</purpose>
+</tocitem>
+<tocitem target="../vision/ref/pixellabelimagedatastore.html">
+<name>pixelLabelImageDatastore</name>
+<purpose>Datastore for semantic segmentation networks</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-processing-using-deep-learning.html">Image Processing Using Deep Learning
+<tocitem target="ref/augmentedimagedatastore.html">
+<name>augmentedImageDatastore</name>
+<purpose>Transform batches to augment image data</purpose>
+</tocitem>
+<tocitem target="../images/ref/randompatchextractiondatastore.html">
+<name>randomPatchExtractionDatastore</name>
+<purpose>Datastore for extracting random 2-D or 3-D random patches from images or pixel label
+      images</purpose>
+</tocitem>
+<tocitem target="../images/ref/bigimagedatastore.html">
+<name>bigimageDatastore</name>
+<purpose>Datastore to manage blocks of big image data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="audio-processing-using-deep-learning.html">Audio Processing Using Deep Learning
+<tocitem target="../audio/ref/audiodatastore.html">
+<name>audioDatastore</name>
+<purpose>Datastore for collection of audio files</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-import-export-and-customization.html">Deep Learning Import, Export, and Customization
+<tocitem target="ref/importkerasnetwork.html">
+<name>importKerasNetwork</name>
+<purpose>Import a pretrained Keras network and weights</purpose>
+</tocitem>
+<tocitem target="ref/importkeraslayers.html">
+<name>importKerasLayers</name>
+<purpose>Import layers from Keras network</purpose>
+</tocitem>
+<tocitem target="ref/importcaffenetwork.html">
+<name>importCaffeNetwork</name>
+<purpose>Import pretrained convolutional neural network models
+from Caffe</purpose>
+</tocitem>
+<tocitem target="ref/importcaffelayers.html">
+<name>importCaffeLayers</name>
+<purpose>Import convolutional neural network layers from Caffe</purpose>
+</tocitem>
+<tocitem target="ref/importonnxnetwork.html">
+<name>importONNXNetwork</name>
+<purpose>Import pretrained ONNX network</purpose>
+</tocitem>
+<tocitem target="ref/importonnxlayers.html">
+<name>importONNXLayers</name>
+<purpose>Import layers from ONNX network</purpose>
+</tocitem>
+<tocitem target="ref/exportonnxnetwork.html">
+<name>exportONNXNetwork</name>
+<purpose>Export network to ONNX model format</purpose>
+</tocitem>
+<tocitem target="ref/findplaceholderlayers.html">
+<name>findPlaceholderLayers</name>
+<purpose>Find placeholder layers in network architecture imported from Keras or
+                ONNX</purpose>
+</tocitem>
+<tocitem target="ref/replacelayer.html">
+<name>replaceLayer</name>
+<purpose>Replace layer in layer graph</purpose>
+</tocitem>
+<tocitem target="ref/assemblenetwork.html">
+<name>assembleNetwork</name>
+<purpose>Assemble deep learning network from pretrained layers</purpose>
+</tocitem>
+<tocitem target="ref/placeholderlayer.html">
+<name>PlaceholderLayer</name>
+<purpose>Layer replacing an unsupported Keras layer, ONNX layer, or unsupported functionality from
+                functionToLayerGraph</purpose>
+</tocitem>
+<tocitem target="ref/checklayer.html">
+<name>checkLayer</name>
+<purpose>Check validity of custom layer</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.layer.setlearnratefactor.html">
+<name>setLearnRateFactor</name>
+<purpose>Set learn rate factor of layer learnable parameter</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.layer.setl2factor.html">
+<name>setL2Factor</name>
+<purpose>Set L2 regularization factor of layer learnable parameter</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.layer.getlearnratefactor.html">
+<name>getLearnRateFactor</name>
+<purpose>Get learn rate factor of layer learnable parameter</purpose>
+</tocitem>
+<tocitem target="ref/nnet.cnn.layer.layer.getl2factor.html">
+<name>getL2Factor</name>
+<purpose>Get L2 regularization factor of layer learnable parameter</purpose>
+</tocitem>
+<tocitem target="ref/dlnetwork.html">
+<name>dlnetwork</name>
+<purpose>Deep learning network for custom training loops</purpose>
+</tocitem>
+<tocitem target="ref/dlnetwork.forward.html">
+<name>forward</name>
+<purpose>Compute deep learning network output for training</purpose>
+</tocitem>
+<tocitem target="ref/dlnetwork.predict.html">
+<name>predict</name>
+<purpose>Compute deep learning network output for inference</purpose>
+</tocitem>
+<tocitem target="ref/adamupdate.html">
+<name>adamupdate</name>
+<purpose>
+      Update parameters using adaptive moment estimation (Adam)
+    </purpose>
+</tocitem>
+<tocitem target="ref/rmspropupdate.html">
+<name>rmspropupdate</name>
+<purpose>
+      Update parameters using root mean squared propagation
+    (RMSProp)
+    </purpose>
+</tocitem>
+<tocitem target="ref/sgdmupdate.html">
+<name>sgdmupdate</name>
+<purpose>
+      Update parameters using stochastic gradient descent with
+    momentum (SGDM)
+    </purpose>
+</tocitem>
+<tocitem target="ref/dlupdate.html">
+<name>dlupdate</name>
+<purpose>
+      Update parameters using custom function
+    </purpose>
+</tocitem>
+<tocitem target="ref/dlarray.html">
+<name>dlarray</name>
+<purpose>Deep learning array for custom training loops</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.dlgradient.html">
+<name>dlgradient</name>
+<purpose>Compute gradients for custom training loops using automatic
+      differentiation</purpose>
+</tocitem>
+<tocitem target="ref/dlfeval.html">
+<name>dlfeval</name>
+<purpose>Evaluate deep learning model for custom training loops</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.dims.html">
+<name>dims</name>
+<purpose>Dimension labels of dlarray</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.finddim.html">
+<name>finddim</name>
+<purpose>Find dimensions with specified label</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.stripdims.html">
+<name>stripdims</name>
+<purpose>Remove dlarray labels</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.extractdata.html">
+<name>extractdata</name>
+<purpose>Extract data from dlarray</purpose>
+</tocitem>
+<tocitem target="ref/functiontolayergraph.html">
+<name>functionToLayerGraph</name>
+<purpose>Convert deep learning model function to a layer graph</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.dlconv.html">
+<name>dlconv</name>
+<purpose>Deep learning convolution</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.dltranspconv.html">
+<name>dltranspconv</name>
+<purpose>Deep learning transposed convolution</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.lstm.html">
+<name>lstm</name>
+<purpose>Long short-term memory</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.fullyconnect.html">
+<name>fullyconnect</name>
+<purpose>Sum all weighted input data and apply a bias</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.relu.html">
+<name>relu</name>
+<purpose>Apply rectified linear unit activation</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.leakyrelu.html">
+<name>leakyrelu</name>
+<purpose>Apply leaky rectified linear unit activation</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.batchnorm.html">
+<name>batchnorm</name>
+<purpose>Normalize each channel of input data</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.avgpool.html">
+<name>avgpool</name>
+<purpose>Pool data to average values over spatial dimensions</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.maxpool.html">
+<name>maxpool</name>
+<purpose>Pool data to maximum value</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.maxunpool.html">
+<name>maxunpool</name>
+<purpose>Unpool the output of a maximum pooling operation</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.softmax.html">
+<name>softmax</name>
+<purpose>Apply softmax activation to channel dimension</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.crossentropy.html">
+<name>crossentropy</name>
+<purpose>Categorical cross-entropy loss</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.sigmoid.html">
+<name>sigmoid</name>
+<purpose>Apply sigmoid activation</purpose>
+</tocitem>
+<tocitem target="ref/dlarray.mse.html">
+<name>mse</name>
+<purpose>Half mean squared error</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="function-approximation-clustering-and-control.html">Function Approximation, Clustering, and Control
+<tocitem target="function-approximation-and-clustering.html">Function Approximation and Clustering
+<tocitem target="function-approximation-and-nonlinear-regression.html">Function Approximation and Nonlinear Regression
+<tocitem target="ref/nnstart.html">
+<name>nnstart</name>
+<purpose>Neural network getting started GUI</purpose>
+</tocitem>
+<tocitem target="ref/view.html">
+<name>view</name>
+<purpose>View neural network</purpose>
+</tocitem>
+<tocitem target="ref/fitnet.html">
+<name>fitnet</name>
+<purpose>Function fitting neural network</purpose>
+</tocitem>
+<tocitem target="ref/feedforwardnet.html">
+<name>feedforwardnet</name>
+<purpose>Feedforward neural network</purpose>
+</tocitem>
+<tocitem target="ref/cascadeforwardnet.html">
+<name>cascadeforwardnet</name>
+<purpose>Cascade-forward neural network</purpose>
+</tocitem>
+<tocitem target="ref/train.html">
+<name>train</name>
+<purpose>Train shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainlm.html">
+<name>trainlm</name>
+<purpose>Levenberg-Marquardt backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainbr.html">
+<name>trainbr</name>
+<purpose>Bayesian regularization backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainscg.html">
+<name>trainscg</name>
+<purpose>Scaled conjugate gradient backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainrp.html">
+<name>trainrp</name>
+<purpose>Resilient backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/mse.html">
+<name>mse</name>
+<purpose>Mean squared normalized error performance function</purpose>
+</tocitem>
+<tocitem target="ref/regression.html">
+<name>regression</name>
+<purpose>Linear regression</purpose>
+</tocitem>
+<tocitem target="ref/ploterrhist.html">
+<name>ploterrhist</name>
+<purpose>Plot error histogram</purpose>
+</tocitem>
+<tocitem target="ref/plotfit.html">
+<name>plotfit</name>
+<purpose>Plot function fit</purpose>
+</tocitem>
+<tocitem target="ref/plotperform.html">
+<name>plotperform</name>
+<purpose>Plot network performance</purpose>
+</tocitem>
+<tocitem target="ref/plotregression.html">
+<name>plotregression</name>
+<purpose>Plot linear regression</purpose>
+</tocitem>
+<tocitem target="ref/plottrainstate.html">
+<name>plottrainstate</name>
+<purpose>Plot training state values</purpose>
+</tocitem>
+<tocitem target="ref/genfunction.html">
+<name>genFunction</name>
+<purpose>Generate MATLAB function for simulating shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/bttderiv.html">
+<name>bttderiv</name>
+<purpose>Backpropagation through time derivative function</purpose>
+</tocitem>
+<tocitem target="ref/cellmat.html">
+<name>cellmat</name>
+<purpose>Create cell array of matrices</purpose>
+</tocitem>
+<tocitem target="ref/concur.html">
+<name>concur</name>
+<purpose>Create concurrent bias vectors</purpose>
+</tocitem>
+<tocitem target="ref/defaultderiv.html">
+<name>defaultderiv</name>
+<purpose>Default derivative function</purpose>
+</tocitem>
+<tocitem target="ref/fpderiv.html">
+<name>fpderiv</name>
+<purpose>Forward propagation derivative function</purpose>
+</tocitem>
+<tocitem target="ref/gpu2nndata.html">
+<name>gpu2nndata</name>
+<purpose>Reformat neural data back from GPU</purpose>
+</tocitem>
+<tocitem target="ref/nctool.html">
+<name>nctool</name>
+<purpose>Neural network classification or clustering tool</purpose>
+</tocitem>
+<tocitem target="ref/nftool.html">
+<name>nftool</name>
+<purpose>Neural Net Fitting tool</purpose>
+</tocitem>
+<tocitem target="ref/nndata2gpu.html">
+<name>nndata2gpu</name>
+<purpose>Format neural data for efficient GPU training or simulation</purpose>
+</tocitem>
+<tocitem target="ref/nntool.html">
+<name>nntool</name>
+<purpose>Open Network/Data Manager </purpose>
+</tocitem>
+<tocitem target="ref/noloop.html">
+<name>noloop</name>
+<purpose>Remove neural network open- and closed-loop feedback</purpose>
+</tocitem>
+<tocitem target="ref/nprtool.html">
+<name>nprtool</name>
+<purpose>Neural Net Pattern Recognition tool</purpose>
+</tocitem>
+<tocitem target="ref/ntstool.html">
+<name>ntstool</name>
+<purpose>Neural network time series tool</purpose>
+</tocitem>
+<tocitem target="ref/num2deriv.html">
+<name>num2deriv</name>
+<purpose>Numeric two-point network derivative function</purpose>
+</tocitem>
+<tocitem target="ref/num5deriv.html">
+<name>num5deriv</name>
+<purpose>Numeric five-point stencil neural network derivative function</purpose>
+</tocitem>
+<tocitem target="ref/plotsom.html">
+<name>plotsom</name>
+<purpose>Plot self-organizing map</purpose>
+</tocitem>
+<tocitem target="ref/revert.html">
+<name>revert</name>
+<purpose>Change network weights and biases to previous initialization values</purpose>
+</tocitem>
+<tocitem target="ref/staticderiv.html">
+<name>staticderiv</name>
+<purpose>Static derivative function</purpose>
+</tocitem>
+<tocitem target="ref/trainbfgc.html">
+<name>trainbfgc</name>
+<purpose>BFGS quasi-Newton backpropagation for use with NN model reference adaptive
+    controller</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="pattern-recognition-and-classification.html">Pattern Recognition
+<tocitem target="ref/nnstart.html">
+<name>nnstart</name>
+<purpose>Neural network getting started GUI</purpose>
+</tocitem>
+<tocitem target="ref/view.html">
+<name>view</name>
+<purpose>View neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainautoencoder.html">
+<name>trainAutoencoder</name>
+<purpose>Train an autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/trainsoftmaxlayer.html">
+<name>trainSoftmaxLayer</name>
+<purpose>Train a softmax layer for classification</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.decode.html">
+<name>decode</name>
+<purpose>Decode encoded data</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.encode.html">
+<name>encode</name>
+<purpose>Encode input data</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.predict.html">
+<name>predict</name>
+<purpose>Reconstruct the inputs using trained autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.stack.html">
+<name>stack</name>
+<purpose>Stack encoders from several autoencoders together</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.network.html">
+<name>network</name>
+<purpose>Convert Autoencoder object into network object</purpose>
+</tocitem>
+<tocitem target="ref/patternnet.html">
+<name>patternnet</name>
+<purpose>Pattern recognition network</purpose>
+</tocitem>
+<tocitem target="ref/lvqnet.html">
+<name>lvqnet</name>
+<purpose>Learning vector quantization neural network</purpose>
+</tocitem>
+<tocitem target="ref/train.html">
+<name>train</name>
+<purpose>Train shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainlm.html">
+<name>trainlm</name>
+<purpose>Levenberg-Marquardt backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainbr.html">
+<name>trainbr</name>
+<purpose>Bayesian regularization backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainscg.html">
+<name>trainscg</name>
+<purpose>Scaled conjugate gradient backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainrp.html">
+<name>trainrp</name>
+<purpose>Resilient backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/mse.html">
+<name>mse</name>
+<purpose>Mean squared normalized error performance function</purpose>
+</tocitem>
+<tocitem target="ref/regression.html">
+<name>regression</name>
+<purpose>Linear regression</purpose>
+</tocitem>
+<tocitem target="ref/roc.html">
+<name>roc</name>
+<purpose>Receiver operating characteristic</purpose>
+</tocitem>
+<tocitem target="ref/plotconfusion.html">
+<name>plotconfusion</name>
+<purpose>Plot classification confusion matrix</purpose>
+</tocitem>
+<tocitem target="ref/ploterrhist.html">
+<name>ploterrhist</name>
+<purpose>Plot error histogram</purpose>
+</tocitem>
+<tocitem target="ref/plotperform.html">
+<name>plotperform</name>
+<purpose>Plot network performance</purpose>
+</tocitem>
+<tocitem target="ref/plotregression.html">
+<name>plotregression</name>
+<purpose>Plot linear regression</purpose>
+</tocitem>
+<tocitem target="ref/plotroc.html">
+<name>plotroc</name>
+<purpose>Plot receiver operating characteristic</purpose>
+</tocitem>
+<tocitem target="ref/plottrainstate.html">
+<name>plottrainstate</name>
+<purpose>Plot training state values</purpose>
+</tocitem>
+<tocitem target="ref/crossentropy.html">
+<name>crossentropy</name>
+<purpose>Neural network performance</purpose>
+</tocitem>
+<tocitem target="ref/genfunction.html">
+<name>genFunction</name>
+<purpose>Generate MATLAB function for simulating shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/confusion.html">
+<name>confusion</name>
+<purpose>Classification confusion matrix</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="clustering.html">Clustering
+<tocitem target="self-organizing-maps.html">Self-Organizing Maps
+<tocitem target="ref/nnstart.html">
+<name>nnstart</name>
+<purpose>Neural network getting started GUI</purpose>
+</tocitem>
+<tocitem target="ref/view.html">
+<name>view</name>
+<purpose>View neural network</purpose>
+</tocitem>
+<tocitem target="ref/selforgmap.html">
+<name>selforgmap</name>
+<purpose>Self-organizing map</purpose>
+</tocitem>
+<tocitem target="ref/train.html">
+<name>train</name>
+<purpose>Train shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/plotsomhits.html">
+<name>plotsomhits</name>
+<purpose>Plot self-organizing map sample hits</purpose>
+</tocitem>
+<tocitem target="ref/plotsomnc.html">
+<name>plotsomnc</name>
+<purpose>Plot self-organizing map neighbor connections</purpose>
+</tocitem>
+<tocitem target="ref/plotsomnd.html">
+<name>plotsomnd</name>
+<purpose>Plot self-organizing map neighbor distances</purpose>
+</tocitem>
+<tocitem target="ref/plotsomplanes.html">
+<name>plotsomplanes</name>
+<purpose>Plot self-organizing map weight planes</purpose>
+</tocitem>
+<tocitem target="ref/plotsompos.html">
+<name>plotsompos</name>
+<purpose>Plot self-organizing map weight positions</purpose>
+</tocitem>
+<tocitem target="ref/plotsomtop.html">
+<name>plotsomtop</name>
+<purpose>Plot self-organizing map topology</purpose>
+</tocitem>
+<tocitem target="ref/genfunction.html">
+<name>genFunction</name>
+<purpose>Generate MATLAB function for simulating shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/gridtop.html">
+<name>gridtop</name>
+<purpose>Grid layer topology function</purpose>
+</tocitem>
+<tocitem target="ref/hextop.html">
+<name>hextop</name>
+<purpose>Hexagonal layer topology function</purpose>
+</tocitem>
+<tocitem target="ref/learnsom.html">
+<name>learnsom</name>
+<purpose>Self-organizing map weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnsomb.html">
+<name>learnsomb</name>
+<purpose>Batch self-organizing map weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/randtop.html">
+<name>randtop</name>
+<purpose>Random layer topology function</purpose>
+</tocitem>
+<tocitem target="ref/tritop.html">
+<name>tritop</name>
+<purpose>Triangle layer topology function</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="competitive-layers.html">Competitive Layers
+<tocitem target="ref/competlayer.html">
+<name>competlayer</name>
+<purpose>Competitive layer</purpose>
+</tocitem>
+<tocitem target="ref/view.html">
+<name>view</name>
+<purpose>View neural network</purpose>
+</tocitem>
+<tocitem target="ref/train.html">
+<name>train</name>
+<purpose>Train shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/trainru.html">
+<name>trainru</name>
+<purpose>Unsupervised random order weight/bias training</purpose>
+</tocitem>
+<tocitem target="ref/learnk.html">
+<name>learnk</name>
+<purpose>Kohonen weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/learncon.html">
+<name>learncon</name>
+<purpose>Conscience bias learning function</purpose>
+</tocitem>
+<tocitem target="ref/genfunction.html">
+<name>genFunction</name>
+<purpose>Generate MATLAB function for simulating shallow neural network</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="autoencoders.html">Autoencoders
+<tocitem target="ref/trainautoencoder.html">
+<name>trainAutoencoder</name>
+<purpose>Train an autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/trainsoftmaxlayer.html">
+<name>trainSoftmaxLayer</name>
+<purpose>Train a softmax layer for classification</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.decode.html">
+<name>decode</name>
+<purpose>Decode encoded data</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.encode.html">
+<name>encode</name>
+<purpose>Encode input data</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.generatefunction.html">
+<name>generateFunction</name>
+<purpose>Generate a MATLAB function to run the autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.generatesimulink.html">
+<name>generateSimulink</name>
+<purpose>Generate a Simulink model for the autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.network.html">
+<name>network</name>
+<purpose>Convert Autoencoder object into network object</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.plotweights.html">
+<name>plotWeights</name>
+<purpose>Plot a visualization of the weights for the encoder of
+an autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.predict.html">
+<name>predict</name>
+<purpose>Reconstruct the inputs using trained autoencoder</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.stack.html">
+<name>stack</name>
+<purpose>Stack encoders from several autoencoders together</purpose>
+</tocitem>
+<tocitem target="ref/autoencoder.view.html">
+<name>view</name>
+<purpose>View autoencoder</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="define-neural-network-architectures.html">Define Shallow Neural Network Architectures
+<tocitem target="ref/network.html">
+<name>network</name>
+<purpose>Create custom shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/adapt.html">
+<name>adapt</name>
+<purpose>Adapt neural network to data as it is simulated</purpose>
+</tocitem>
+<tocitem target="ref/adaptwb.html">
+<name>adaptwb</name>
+<purpose>Adapt network with weight and bias learning rules</purpose>
+</tocitem>
+<tocitem target="ref/boxdist.html">
+<name>boxdist</name>
+<purpose>Distance between two position vectors</purpose>
+</tocitem>
+<tocitem target="ref/catelements.html">
+<name>catelements</name>
+<purpose>Concatenate neural network data elements</purpose>
+</tocitem>
+<tocitem target="ref/catsamples.html">
+<name>catsamples</name>
+<purpose>Concatenate neural network data samples</purpose>
+</tocitem>
+<tocitem target="ref/catsignals.html">
+<name>catsignals</name>
+<purpose>Concatenate neural network data signals</purpose>
+</tocitem>
+<tocitem target="ref/combvec.html">
+<name>combvec</name>
+<purpose>Create all combinations of vectors</purpose>
+</tocitem>
+<tocitem target="ref/compet.html">
+<name>compet</name>
+<purpose>Competitive transfer function</purpose>
+</tocitem>
+<tocitem target="ref/con2seq.html">
+<name>con2seq</name>
+<purpose>Convert concurrent vectors to sequential vectors</purpose>
+</tocitem>
+<tocitem target="ref/configure.html">
+<name>configure</name>
+<purpose>Configure network inputs and outputs to best match input and target
+    data</purpose>
+</tocitem>
+<tocitem target="ref/convwf.html">
+<name>convwf</name>
+<purpose>Convolution weight function</purpose>
+</tocitem>
+<tocitem target="ref/dist.html">
+<name>dist</name>
+<purpose>Euclidean distance weight function</purpose>
+</tocitem>
+<tocitem target="ref/divideblock.html">
+<name>divideblock</name>
+<purpose>Divide targets into three sets using blocks of indices</purpose>
+</tocitem>
+<tocitem target="ref/divideind.html">
+<name>divideind</name>
+<purpose>Divide targets into three sets using specified indices</purpose>
+</tocitem>
+<tocitem target="ref/divideint.html">
+<name>divideint</name>
+<purpose>Divide targets into three sets using interleaved indices</purpose>
+</tocitem>
+<tocitem target="ref/dividerand.html">
+<name>dividerand</name>
+<purpose>Divide targets into three sets using random indices</purpose>
+</tocitem>
+<tocitem target="ref/dividetrain.html">
+<name>dividetrain</name>
+<purpose>Assign all targets to training set</purpose>
+</tocitem>
+<tocitem target="ref/dotprod.html">
+<name>dotprod</name>
+<purpose>Dot product weight function</purpose>
+</tocitem>
+<tocitem target="ref/elliot2sig.html">
+<name>elliot2sig</name>
+<purpose>Elliot 2 symmetric sigmoid transfer function</purpose>
+</tocitem>
+<tocitem target="ref/elliotsig.html">
+<name>elliotsig</name>
+<purpose>Elliot symmetric sigmoid transfer function</purpose>
+</tocitem>
+<tocitem target="ref/elmannet.html">
+<name>elmannet</name>
+<purpose>Elman neural network</purpose>
+</tocitem>
+<tocitem target="ref/errsurf.html">
+<name>errsurf</name>
+<purpose>Error surface of single-input neuron</purpose>
+</tocitem>
+<tocitem target="ref/fixunknowns.html">
+<name>fixunknowns</name>
+<purpose>Process data by marking rows with unknown values</purpose>
+</tocitem>
+<tocitem target="ref/formwb.html">
+<name>formwb</name>
+<purpose>Form bias and weights into single vector</purpose>
+</tocitem>
+<tocitem target="ref/fromnndata.html">
+<name>fromnndata</name>
+<purpose>Convert data from standard neural network cell array form</purpose>
+</tocitem>
+<tocitem target="ref/gadd.html">
+<name>gadd</name>
+<purpose>Generalized addition</purpose>
+</tocitem>
+<tocitem target="ref/gdivide.html">
+<name>gdivide</name>
+<purpose>Generalized division</purpose>
+</tocitem>
+<tocitem target="ref/getelements.html">
+<name>getelements</name>
+<purpose>Get neural network data elements</purpose>
+</tocitem>
+<tocitem target="ref/getsamples.html">
+<name>getsamples</name>
+<purpose>Get neural network data samples</purpose>
+</tocitem>
+<tocitem target="ref/getsignals.html">
+<name>getsignals</name>
+<purpose>Get neural network data signals</purpose>
+</tocitem>
+<tocitem target="ref/getwb.html">
+<name>getwb</name>
+<purpose>Get network weight and bias values as single vector</purpose>
+</tocitem>
+<tocitem target="ref/gmultiply.html">
+<name>gmultiply</name>
+<purpose>Generalized multiplication</purpose>
+</tocitem>
+<tocitem target="ref/gnegate.html">
+<name>gnegate</name>
+<purpose>Generalized negation</purpose>
+</tocitem>
+<tocitem target="ref/gsqrt.html">
+<name>gsqrt</name>
+<purpose>Generalized square root</purpose>
+</tocitem>
+<tocitem target="ref/gsubtract.html">
+<name>gsubtract</name>
+<purpose>Generalized subtraction</purpose>
+</tocitem>
+<tocitem target="ref/hardlim.html">
+<name>hardlim</name>
+<purpose>Hard-limit transfer function</purpose>
+</tocitem>
+<tocitem target="ref/hardlims.html">
+<name>hardlims</name>
+<purpose>Symmetric hard-limit transfer function</purpose>
+</tocitem>
+<tocitem target="ref/ind2vec.html">
+<name>ind2vec</name>
+<purpose>Convert indices to vectors</purpose>
+</tocitem>
+<tocitem target="ref/init.html">
+<name>init</name>
+<purpose>Initialize neural network</purpose>
+</tocitem>
+<tocitem target="ref/initcon.html">
+<name>initcon</name>
+<purpose>Conscience bias initialization function</purpose>
+</tocitem>
+<tocitem target="ref/initlay.html">
+<name>initlay</name>
+<purpose>Layer-by-layer network initialization function</purpose>
+</tocitem>
+<tocitem target="ref/initlvq.html">
+<name>initlvq</name>
+<purpose>LVQ weight initialization function</purpose>
+</tocitem>
+<tocitem target="ref/initnw.html">
+<name>initnw</name>
+<purpose>Nguyen-Widrow layer initialization function</purpose>
+</tocitem>
+<tocitem target="ref/initwb.html">
+<name>initwb</name>
+<purpose>By weight and bias layer initialization function</purpose>
+</tocitem>
+<tocitem target="ref/initzero.html">
+<name>initzero</name>
+<purpose>Zero weight and bias initialization function</purpose>
+</tocitem>
+<tocitem target="ref/isconfigured.html">
+<name>isconfigured</name>
+<purpose>Indicate if network inputs and outputs are configured</purpose>
+</tocitem>
+<tocitem target="ref/learngd.html">
+<name>learngd</name>
+<purpose>Gradient descent weight and bias learning function</purpose>
+</tocitem>
+<tocitem target="ref/learngdm.html">
+<name>learngdm</name>
+<purpose>Gradient descent with momentum weight and bias learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnh.html">
+<name>learnh</name>
+<purpose>Hebb weight learning rule</purpose>
+</tocitem>
+<tocitem target="ref/learnhd.html">
+<name>learnhd</name>
+<purpose>Hebb with decay weight learning rule</purpose>
+</tocitem>
+<tocitem target="ref/learnis.html">
+<name>learnis</name>
+<purpose>Instar weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnlv1.html">
+<name>learnlv1</name>
+<purpose>LVQ1 weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnlv2.html">
+<name>learnlv2</name>
+<purpose>LVQ2.1 weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnos.html">
+<name>learnos</name>
+<purpose>Outstar weight learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnp.html">
+<name>learnp</name>
+<purpose>Perceptron weight and bias learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnpn.html">
+<name>learnpn</name>
+<purpose>Normalized perceptron weight and bias learning function</purpose>
+</tocitem>
+<tocitem target="ref/learnwh.html">
+<name>learnwh</name>
+<purpose>Widrow-Hoff weight/bias learning function</purpose>
+</tocitem>
+<tocitem target="ref/linearlayer.html">
+<name>linearlayer</name>
+<purpose>Linear layer</purpose>
+</tocitem>
+<tocitem target="ref/linkdist.html">
+<name>linkdist</name>
+<purpose>Link distance function</purpose>
+</tocitem>
+<tocitem target="ref/logsig.html">
+<name>logsig</name>
+<purpose>Log-sigmoid transfer function</purpose>
+</tocitem>
+<tocitem target="ref/lvqoutputs.html">
+<name>lvqoutputs</name>
+<purpose>LVQ outputs processing function</purpose>
+</tocitem>
+<tocitem target="ref/mae.html">
+<name>mae</name>
+<purpose>Mean absolute error performance function</purpose>
+</tocitem>
+<tocitem target="ref/mandist.html">
+<name>mandist</name>
+<purpose>Manhattan distance weight function</purpose>
+</tocitem>
+<tocitem target="ref/mapminmax.html">
+<name>mapminmax</name>
+<purpose>Process matrices by mapping row minimum and maximum values to [-1
+     1]</purpose>
+</tocitem>
+<tocitem target="ref/mapstd.html">
+<name>mapstd</name>
+<purpose>Process matrices by mapping each row’s means to 0 and deviations to 1</purpose>
+</tocitem>
+<tocitem target="ref/maxlinlr.html">
+<name>maxlinlr</name>
+<purpose>Maximum learning rate for linear layer</purpose>
+</tocitem>
+<tocitem target="ref/meanabs.html">
+<name>meanabs</name>
+<purpose>Mean of absolute elements of matrix or matrices</purpose>
+</tocitem>
+<tocitem target="ref/meansqr.html">
+<name>meansqr</name>
+<purpose>Mean of squared elements of matrix or matrices</purpose>
+</tocitem>
+<tocitem target="ref/midpoint.html">
+<name>midpoint</name>
+<purpose>Midpoint weight initialization function</purpose>
+</tocitem>
+<tocitem target="ref/minmax.html">
+<name>minmax</name>
+<purpose>Ranges of matrix rows</purpose>
+</tocitem>
+<tocitem target="ref/negdist.html">
+<name>negdist</name>
+<purpose>Negative distance weight function</purpose>
+</tocitem>
+<tocitem target="ref/netinv.html">
+<name>netinv</name>
+<purpose>Inverse transfer function</purpose>
+</tocitem>
+<tocitem target="ref/netprod.html">
+<name>netprod</name>
+<purpose>Product net input function</purpose>
+</tocitem>
+<tocitem target="ref/netsum.html">
+<name>netsum</name>
+<purpose>Sum net input function</purpose>
+</tocitem>
+<tocitem target="ref/network.html">
+<name>network</name>
+<purpose>Create custom shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/newgrnn.html">
+<name>newgrnn</name>
+<purpose>Design generalized regression neural network</purpose>
+</tocitem>
+<tocitem target="ref/newlind.html">
+<name>newlind</name>
+<purpose>Design linear layer</purpose>
+</tocitem>
+<tocitem target="ref/newpnn.html">
+<name>newpnn</name>
+<purpose>Design probabilistic neural network</purpose>
+</tocitem>
+<tocitem target="ref/newrb.html">
+<name>newrb</name>
+<purpose>Design radial basis network</purpose>
+</tocitem>
+<tocitem target="ref/newrbe.html">
+<name>newrbe</name>
+<purpose>Design exact radial basis network</purpose>
+</tocitem>
+<tocitem target="ref/nncell2mat.html">
+<name>nncell2mat</name>
+<purpose>Combine neural network cell data into matrix</purpose>
+</tocitem>
+<tocitem target="ref/nndata.html">
+<name>nndata</name>
+<purpose>Create neural network data</purpose>
+</tocitem>
+<tocitem target="ref/nnsize.html">
+<name>nnsize</name>
+<purpose>Number of neural data elements, samples, timesteps, and signals</purpose>
+</tocitem>
+<tocitem target="ref/nntraintool.html">
+<name>nntraintool</name>
+<purpose>Neural network training tool</purpose>
+</tocitem>
+<tocitem target="ref/normc.html">
+<name>normc</name>
+<purpose>Normalize columns of matrix</purpose>
+</tocitem>
+<tocitem target="ref/normprod.html">
+<name>normprod</name>
+<purpose>Normalized dot product weight function</purpose>
+</tocitem>
+<tocitem target="ref/normr.html">
+<name>normr</name>
+<purpose>Normalize rows of matrix</purpose>
+</tocitem>
+<tocitem target="ref/numelements.html">
+<name>numelements</name>
+<purpose>Number of elements in neural network data</purpose>
+</tocitem>
+<tocitem target="ref/numfinite.html">
+<name>numfinite</name>
+<purpose>Number of finite values in neural network data</purpose>
+</tocitem>
+<tocitem target="ref/numnan.html">
+<name>numnan</name>
+<purpose>Number of NaN values in neural network data</purpose>
+</tocitem>
+<tocitem target="ref/numsamples.html">
+<name>numsamples</name>
+<purpose>Number of samples in neural network data</purpose>
+</tocitem>
+<tocitem target="ref/numsignals.html">
+<name>numsignals</name>
+<purpose>Number of signals in neural network data</purpose>
+</tocitem>
+<tocitem target="ref/perceptron.html">
+<name>perceptron</name>
+<purpose>Perceptron</purpose>
+</tocitem>
+<tocitem target="ref/perform.html">
+<name>perform</name>
+<purpose>Calculate network performance</purpose>
+</tocitem>
+<tocitem target="ref/plotep.html">
+<name>plotep</name>
+<purpose>Plot weight-bias position on error surface</purpose>
+</tocitem>
+<tocitem target="ref/plotes.html">
+<name>plotes</name>
+<purpose>Plot error surface of single-input neuron</purpose>
+</tocitem>
+<tocitem target="ref/plotpc.html">
+<name>plotpc</name>
+<purpose>Plot classification line on perceptron vector plot</purpose>
+</tocitem>
+<tocitem target="ref/plotpv.html">
+<name>plotpv</name>
+<purpose>Plot perceptron input/target vectors</purpose>
+</tocitem>
+<tocitem target="ref/plotv.html">
+<name>plotv</name>
+<purpose>Plot vectors as lines from origin</purpose>
+</tocitem>
+<tocitem target="ref/plotvec.html">
+<name>plotvec</name>
+<purpose>Plot vectors with different colors</purpose>
+</tocitem>
+<tocitem target="ref/plotwb.html">
+<name>plotwb</name>
+<purpose>Plot Hinton diagram of weight and bias values</purpose>
+</tocitem>
+<tocitem target="ref/pnormc.html">
+<name>pnormc</name>
+<purpose>Pseudonormalize columns of matrix</purpose>
+</tocitem>
+<tocitem target="ref/poslin.html">
+<name>poslin</name>
+<purpose>Positive linear transfer function</purpose>
+</tocitem>
+<tocitem target="ref/processpca.html">
+<name>processpca</name>
+<purpose>Process columns of matrix with principal component analysis</purpose>
+</tocitem>
+<tocitem target="ref/purelin.html">
+<name>purelin</name>
+<purpose>Linear transfer function</purpose>
+</tocitem>
+<tocitem target="ref/quant.html">
+<name>quant</name>
+<purpose>Discretize values as multiples of quantity</purpose>
+</tocitem>
+<tocitem target="ref/radbas.html">
+<name>radbas</name>
+<purpose>Radial basis transfer function</purpose>
+</tocitem>
+<tocitem target="ref/radbasn.html">
+<name>radbasn</name>
+<purpose>Normalized radial basis transfer function</purpose>
+</tocitem>
+<tocitem target="ref/randnc.html">
+<name>randnc</name>
+<purpose>Normalized column weight initialization function</purpose>
+</tocitem>
+<tocitem target="ref/randnr.html">
+<name>randnr</name>
+<purpose>Normalized row weight initialization function</purpose>
+</tocitem>
+<tocitem target="ref/rands.html">
+<name>rands</name>
+<purpose>Symmetric random weight/bias initialization function</purpose>
+</tocitem>
+<tocitem target="ref/randsmall.html">
+<name>randsmall</name>
+<purpose>Small random weight/bias initialization function</purpose>
+</tocitem>
+<tocitem target="ref/removeconstantrows.html">
+<name>removeconstantrows</name>
+<purpose>Process matrices by removing rows with constant values</purpose>
+</tocitem>
+<tocitem target="ref/removerows.html">
+<name>removerows</name>
+<purpose>Process matrices by removing rows with specified indices</purpose>
+</tocitem>
+<tocitem target="ref/sae.html">
+<name>sae</name>
+<purpose>Sum absolute error performance function</purpose>
+</tocitem>
+<tocitem target="ref/satlin.html">
+<name>satlin</name>
+<purpose>Saturating linear transfer function</purpose>
+</tocitem>
+<tocitem target="ref/satlins.html">
+<name>satlins</name>
+<purpose>Symmetric saturating linear transfer function</purpose>
+</tocitem>
+<tocitem target="ref/scalprod.html">
+<name>scalprod</name>
+<purpose>Scalar product weight function</purpose>
+</tocitem>
+<tocitem target="ref/separatewb.html">
+<name>separatewb</name>
+<purpose>Separate biases and weight values from weight/bias vector</purpose>
+</tocitem>
+<tocitem target="ref/seq2con.html">
+<name>seq2con</name>
+<purpose>Convert sequential vectors to concurrent vectors</purpose>
+</tocitem>
+<tocitem target="ref/setelements.html">
+<name>setelements</name>
+<purpose>Set neural network data elements</purpose>
+</tocitem>
+<tocitem target="ref/setsamples.html">
+<name>setsamples</name>
+<purpose>Set neural network data samples</purpose>
+</tocitem>
+<tocitem target="ref/setsignals.html">
+<name>setsignals</name>
+<purpose>Set neural network data signals</purpose>
+</tocitem>
+<tocitem target="ref/setwb.html">
+<name>setwb</name>
+<purpose>Set all network weight and bias values with single vector</purpose>
+</tocitem>
+<tocitem target="ref/sim.html">
+<name>sim</name>
+<purpose>Simulate neural network</purpose>
+</tocitem>
+<tocitem target="ref/softmax.html">
+<name>softmax</name>
+<purpose>Soft max transfer function</purpose>
+</tocitem>
+<tocitem target="ref/srchbac.html">
+<name>srchbac</name>
+<purpose>1-D minimization using backtracking</purpose>
+</tocitem>
+<tocitem target="ref/srchbre.html">
+<name>srchbre</name>
+<purpose>1-D interval location using Brent’s method</purpose>
+</tocitem>
+<tocitem target="ref/srchcha.html">
+<name>srchcha</name>
+<purpose>1-D minimization using Charalambous' method</purpose>
+</tocitem>
+<tocitem target="ref/srchgol.html">
+<name>srchgol</name>
+<purpose>1-D minimization using golden section search</purpose>
+</tocitem>
+<tocitem target="ref/srchhyb.html">
+<name>srchhyb</name>
+<purpose>1-D minimization using a hybrid bisection-cubic search</purpose>
+</tocitem>
+<tocitem target="ref/sse.html">
+<name>sse</name>
+<purpose>Sum squared error performance function</purpose>
+</tocitem>
+<tocitem target="ref/sumabs.html">
+<name>sumabs</name>
+<purpose>Sum of absolute elements of matrix or matrices</purpose>
+</tocitem>
+<tocitem target="ref/sumsqr.html">
+<name>sumsqr</name>
+<purpose>Sum of squared elements of matrix or matrices</purpose>
+</tocitem>
+<tocitem target="ref/tansig.html">
+<name>tansig</name>
+<purpose>Hyperbolic tangent sigmoid transfer function</purpose>
+</tocitem>
+<tocitem target="ref/tonndata.html">
+<name>tonndata</name>
+<purpose>Convert data to standard neural network cell array form</purpose>
+</tocitem>
+<tocitem target="ref/trainb.html">
+<name>trainb</name>
+<purpose>Batch training with weight and bias learning rules</purpose>
+</tocitem>
+<tocitem target="ref/trainbfg.html">
+<name>trainbfg</name>
+<purpose>BFGS quasi-Newton backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainbu.html">
+<name>trainbu</name>
+<purpose>Batch unsupervised weight/bias training</purpose>
+</tocitem>
+<tocitem target="ref/trainc.html">
+<name>trainc</name>
+<purpose>Cyclical order weight/bias training</purpose>
+</tocitem>
+<tocitem target="ref/traincgb.html">
+<name>traincgb</name>
+<purpose>Conjugate gradient backpropagation with Powell-Beale restarts</purpose>
+</tocitem>
+<tocitem target="ref/traincgf.html">
+<name>traincgf</name>
+<purpose>Conjugate gradient backpropagation with Fletcher-Reeves updates</purpose>
+</tocitem>
+<tocitem target="ref/traincgp.html">
+<name>traincgp</name>
+<purpose>Conjugate gradient backpropagation with Polak-Ribiére updates</purpose>
+</tocitem>
+<tocitem target="ref/traingd.html">
+<name>traingd</name>
+<purpose>Gradient descent backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/traingda.html">
+<name>traingda</name>
+<purpose>Gradient descent with adaptive learning rate backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/traingdm.html">
+<name>traingdm</name>
+<purpose>Gradient descent with momentum backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/traingdx.html">
+<name>traingdx</name>
+<purpose>Gradient descent with momentum and adaptive learning rate
+    backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainoss.html">
+<name>trainoss</name>
+<purpose>One-step secant backpropagation</purpose>
+</tocitem>
+<tocitem target="ref/trainr.html">
+<name>trainr</name>
+<purpose>Random order incremental training with learning functions</purpose>
+</tocitem>
+<tocitem target="ref/trains.html">
+<name>trains</name>
+<purpose>Sequential order incremental training with learning functions</purpose>
+</tocitem>
+<tocitem target="ref/tribas.html">
+<name>tribas</name>
+<purpose>Triangular basis transfer function</purpose>
+</tocitem>
+<tocitem target="ref/unconfigure.html">
+<name>unconfigure</name>
+<purpose>Unconfigure network inputs and outputs</purpose>
+</tocitem>
+<tocitem target="ref/vec2ind.html">
+<name>vec2ind</name>
+<purpose>Convert vectors to indices</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="time-series-and-control-systems.html">Time Series and Control Systems
+<tocitem target="time-series-and-dynamic-systems.html">Time Series and Dynamic Systems
+<tocitem target="modeling-and-prediction-with-narx-and-time-delay-networks.html">Modeling and Prediction with NARX and Time-Delay Networks
+<tocitem target="ref/nnstart.html">
+<name>nnstart</name>
+<purpose>Neural network getting started GUI</purpose>
+</tocitem>
+<tocitem target="ref/view.html">
+<name>view</name>
+<purpose>View neural network</purpose>
+</tocitem>
+<tocitem target="ref/timedelaynet.html">
+<name>timedelaynet</name>
+<purpose>Time delay neural network</purpose>
+</tocitem>
+<tocitem target="ref/narxnet.html">
+<name>narxnet</name>
+<purpose>Nonlinear autoregressive neural network with external input</purpose>
+</tocitem>
+<tocitem target="ref/narnet.html">
+<name>narnet</name>
+<purpose>Nonlinear autoregressive neural network</purpose>
+</tocitem>
+<tocitem target="ref/layrecnet.html">
+<name>layrecnet</name>
+<purpose>Layer recurrent neural network</purpose>
+</tocitem>
+<tocitem target="ref/distdelaynet.html">
+<name>distdelaynet</name>
+<purpose>Distributed delay network</purpose>
+</tocitem>
+<tocitem target="ref/train.html">
+<name>train</name>
+<purpose>Train shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/gensim.html">
+<name>gensim</name>
+<purpose>Generate Simulink block for shallow neural network simulation</purpose>
+</tocitem>
+<tocitem target="ref/adddelay.html">
+<name>adddelay</name>
+<purpose>Add delay to neural network response</purpose>
+</tocitem>
+<tocitem target="ref/removedelay.html">
+<name>removedelay</name>
+<purpose>Remove delay to neural network’s response</purpose>
+</tocitem>
+<tocitem target="ref/closeloop.html">
+<name>closeloop</name>
+<purpose>Convert neural network open-loop feedback to closed loop</purpose>
+</tocitem>
+<tocitem target="ref/openloop.html">
+<name>openloop</name>
+<purpose>Convert neural network closed-loop feedback to open loop</purpose>
+</tocitem>
+<tocitem target="ref/ploterrhist.html">
+<name>ploterrhist</name>
+<purpose>Plot error histogram</purpose>
+</tocitem>
+<tocitem target="ref/plotinerrcorr.html">
+<name>plotinerrcorr</name>
+<purpose>Plot input to error time-series cross-correlation</purpose>
+</tocitem>
+<tocitem target="ref/plotregression.html">
+<name>plotregression</name>
+<purpose>Plot linear regression</purpose>
+</tocitem>
+<tocitem target="ref/plotresponse.html">
+<name>plotresponse</name>
+<purpose>Plot dynamic network time series response</purpose>
+</tocitem>
+<tocitem target="ref/ploterrcorr.html">
+<name>ploterrcorr</name>
+<purpose>Plot autocorrelation of error time series</purpose>
+</tocitem>
+<tocitem target="ref/genfunction.html">
+<name>genFunction</name>
+<purpose>Generate MATLAB function for simulating shallow neural network</purpose>
+</tocitem>
+<tocitem target="ref/cattimesteps.html">
+<name>cattimesteps</name>
+<purpose>Concatenate neural network data timesteps</purpose>
+</tocitem>
+<tocitem target="ref/extendts.html">
+<name>extendts</name>
+<purpose>Extend time series data to given number of timesteps</purpose>
+</tocitem>
+<tocitem target="ref/gettimesteps.html">
+<name>gettimesteps</name>
+<purpose>Get neural network data timesteps</purpose>
+</tocitem>
+<tocitem target="ref/nncorr.html">
+<name>nncorr</name>
+<purpose>Crross correlation between neural network time series</purpose>
+</tocitem>
+<tocitem target="ref/numtimesteps.html">
+<name>numtimesteps</name>
+<purpose>Number of time steps in neural network data</purpose>
+</tocitem>
+<tocitem target="ref/preparets.html">
+<name>preparets</name>
+<purpose>Prepare input and target time series data for network simulation or
+    training</purpose>
+</tocitem>
+<tocitem target="ref/settimesteps.html">
+<name>settimesteps</name>
+<purpose>Set neural network data timesteps</purpose>
+</tocitem>
+<tocitem target="ref/tapdelay.html">
+<name>tapdelay</name>
+<purpose>Shift neural network time series data for tap delay</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="creating-simulink-models.html">Creating Simulink Models
+<tocitem target="ref/gensim.html">
+<name>gensim</name>
+<purpose>Generate Simulink block for shallow neural network simulation</purpose>
+</tocitem>
+<tocitem target="ref/setsiminit.html">
+<name>setsiminit</name>
+<purpose>Set neural network Simulink block initial conditions</purpose>
+</tocitem>
+<tocitem target="ref/getsiminit.html">
+<name>getsiminit</name>
+<purpose>Get Simulink neural network block initial input and layer delays states</purpose>
+</tocitem>
+<tocitem target="ref/sim2nndata.html">
+<name>sim2nndata</name>
+<purpose>Convert Simulink time series to neural network data</purpose>
+</tocitem>
+<tocitem target="ref/nndata2sim.html">
+<name>nndata2sim</name>
+<purpose>Convert neural network data to Simulink time series</purpose>
+</tocitem>
+<tocitem target="ref/prune.html">
+<name>prune</name>
+<purpose>Delete neural inputs, layers, and outputs with sizes of zero</purpose>
+</tocitem>
+<tocitem target="ref/prunedata.html">
+<name>prunedata</name>
+<purpose>Prune data for consistency with pruned network</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

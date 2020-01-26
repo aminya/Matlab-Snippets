@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+  <tocitem target="functionlistbycat.html">Functions
+    <tocitem target="matlab_code.html">Package MATLAB Functions
+      <tocitem target="ml_code/librarycompiler.html">
+        <name>libraryCompiler</name>
+        <purpose>Build and package functions for use in external applications</purpose>
+      </tocitem>
+      <tocitem target="ml_code/productionservercompiler.html">
+        <name>productionServerCompiler</name>
+        <purpose>Test, build and package functions for use with MATLAB Production Server</purpose>
+      </tocitem>
+      <tocitem target="ml_code/mcc.html">
+        <name>mcc</name>
+        <purpose>Compile MATLAB functions for deployment</purpose>
+      </tocitem>
+      <tocitem target="ml_code/mbuild.html">
+        <name>mbuild</name>
+        <purpose>Compile and link source files against MATLAB generated shared libraries</purpose>
+      </tocitem>
+      <tocitem target="ml_code/deploytool.html">
+        <name>deploytool</name>
+        <purpose>Compile and package functions for external deployment</purpose>
+      </tocitem>
+      <tocitem target="ml_code/componentinfo.html">
+        <name>componentinfo</name>
+        <purpose>Query system registry about COM component created with MATLAB Compiler SDK
+        </purpose>
+      </tocitem>
+      <tocitem target="ml_code/isdeployed.html">
+        <name>isdeployed</name>
+        <purpose>Determine whether code is running in deployed or MATLAB mode
+        </purpose>
+      </tocitem>
+      <tocitem target="ml_code/ismcc.html">
+        <name>ismcc</name>
+        <purpose>Test if code is running during compilation process (using mcc)</purpose>
+      </tocitem>
+      <tocitem target="ml_code/ctfroot.html">
+        <name>ctfroot</name>
+        <purpose>Location of files related to deployed application</purpose>
+      </tocitem>
+      <tocitem target="ml_code/figtoimstream.html">
+        <name>figToImStream</name>
+        <purpose>Stream figure as byte array encoded in specified format</purpose>
+      </tocitem>
+      <tocitem target="ml_code/getmcruserdata.html">
+        <name>getmcruserdata</name>
+        <purpose>Retrieve MATLAB array value associated with a given key</purpose>
+      </tocitem>
+      <tocitem target="ml_code/setmcruserdata.html">
+        <name>setmcruserdata</name>
+        <purpose>Associate MATLAB data value with a key</purpose>
+      </tocitem>
+      <tocitem target="ml_code/function.html">
+        <name>%#function</name>
+        <purpose>Pragma to help MATLAB Compiler locate functions called through feval, eval, Handle Graphics callback, or objects loaded from MAT-files</purpose>
+      </tocitem>
+    </tocitem>
+    <tocitem target="C_shared_libraries.html">C Shared Library Integration
+      <tocitem target="ml_code/mbuild.html">
+        <name>mbuild</name>
+        <purpose>Compile and link source files against MATLAB generated shared libraries</purpose>
+      </tocitem>
+    </tocitem>
+    <tocitem target="cxx_shared-libraries.html">C++ Shared Library Integration
+      <tocitem target="cxx_mwArray_API_shared_library.html">C++ mwArray API Shared Library Integration
+        <tocitem target="ml_code/mbuild.html">
+          <name>mbuild</name>
+          <purpose>Compile and link source files against MATLAB generated shared libraries</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="cxx_MATLAB_Data_API_shared_library.html">C++ MATLAB Data API Shared Library Integration
+        <tocitem target="ml_code/mbuild.html">
+          <name>mbuild</name>
+          <purpose>Compile and link source files against MATLAB generated shared libraries</purpose>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+    <tocitem target="dotnet_assemblies.html">.NET Assembly Integration
+      <tocitem target="dotnet_assembly_integration_bs2556d-1.html">.NET Assembly Basics
+        <tocitem target="dotnet/enabletsutilsfromnetworkdrive.html">
+          <name>enableTSUtilsfromNetworkDrive</name>
+          <purpose>Sets the trust setting to load .NET assemblies from network drive</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="deployment_using_dotnet_native_types.html">Data Conversion Between .NET and MATLAB
+        <tocitem target="dotnet/ntswrap.html">
+          <name>ntswrap</name>
+          <purpose>Generates type-safe API</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="dotnet_assembly_integration_bvkm2yn.html">Package and Distribute .NET Applications
+        <tocitem target="ml_code/mcrinstaller.html">
+          <name>mcrinstaller</name>
+          <purpose>Display version and location information for MATLAB Runtime installer corresponding to current platform
+          </purpose>
+        </tocitem>
+        <tocitem target="ml_code/mcrversion.html">
+          <name>mcrversion</name>
+          <purpose>Determine version of installed MATLAB Runtime</purpose>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+    <tocitem target="python_packages.html">Python Package Integration
+      <tocitem target="python/mydeployedmodule.initialize.html">
+        <name>myDeployedModule.initialize</name>
+        <purpose>Initialize package and return a handle</purpose>
+      </tocitem>
+      <tocitem target="python/mydeployedmodule.initialize_runtime.html">
+        <name>myDeployedModule.initialize_runtime</name>
+        <purpose>Initialize MATLAB Runtime with a list of startup options</purpose>
+      </tocitem>
+      <tocitem target="python/mydeployedmodule.wait_for_figures_to_close.html">
+        <name>myDeployedModule.wait_for_figures_to_close</name>
+        <purpose>Wait for all graphical figures to close before continuing</purpose>
+      </tocitem>
+      <tocitem target="python/mydeployedmodule.terminate.html">
+        <name>myDeployedModule.terminate</name>
+        <purpose>Close a package</purpose>
+      </tocitem>
+      <tocitem target="python/mwpython.html">
+        <name>mwpython</name>
+        <purpose>Start a Python session using a MATLAB Compiler SDK Python package on Mac OS X</purpose>
+      </tocitem>
+    </tocitem>
+    <tocitem target="mps.html">Enterprise Deployment with MATLAB Production Server
+      <tocitem target="mps_dev_test/productionservercompiler.html">
+        <name>productionServerCompiler</name>
+        <purpose>Test, build and package functions for use with MATLAB Production Server</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.json.encode.html">
+        <name>mps.json.encode</name>
+        <purpose>Convert MATLAB data to JSON text using MATLAB Production Server JSON schema</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.json.decode.html">
+        <name>mps.json.decode</name>
+        <purpose>Convert a character vector or string in MATLAB Production Server JSON schema to MATLAB data</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.json.encoderequest.html">
+        <name>mps.json.encoderequest</name>
+        <purpose>Convert MATLAB data in a server request to JSON text using MATLAB Production Server JSON schema</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.json.decoderesponse.html">
+        <name>mps.json.decoderesponse</name>
+        <purpose>Convert JSON text from a server response to MATLAB data</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.cache.control.html">
+        <name>mps.cache.control</name>
+        <purpose>Create a persistence service controller object</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/start.html">
+        <name>start</name>
+        <purpose>Start a persistence service and attach it a to MATLAB session</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/stop.html">
+        <name>stop</name>
+        <purpose>Stop a persistence service and detach it from a MATLAB session</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/restart.html">
+        <name>restart</name>
+        <purpose>Restart a persistence service and attach it to a MATLAB session</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/attach.html">
+        <name>attach</name>
+        <purpose>Connect a MATLAB session to a persistence service that is already running</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/detach.html">
+        <name>detach</name>
+        <purpose>Disconnect MATLAB session from a persistence service that is already running</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/ping.html">
+        <name>ping</name>
+        <purpose>Test whether the persistence service is reachable</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/version.html">
+        <name>version</name>
+        <purpose>Version number for persistence provider</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.cache.connect.html">
+        <name>mps.cache.connect</name>
+        <purpose>Connect to cache, or create a cache if it doesn't exist</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/bytes.html">
+        <name>bytes</name>
+        <purpose>Return the number of bytes of storage used by value stored at each key</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/clear.html">
+        <name>clear</name>
+        <purpose>Remove all keys and values from cache</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/flush.html">
+        <name>flush</name>
+        <purpose>Write all locally modified keys to the persistence service</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/get.html">
+        <name>get</name>
+        <purpose>Fetch values of keys from cache</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/getp.html">
+        <name>getp</name>
+        <purpose>Get the value of a public cache property</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/iskey.html">
+        <name>isKey</name>
+        <purpose>Determine if the cache contains specified keys</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/keys.html">
+        <name>keys</name>
+        <purpose>Get all keys from cache</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/length.html">
+        <name>length</name>
+        <purpose>Number of key-value pairs in the data cache</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/purge.html">
+        <name>purge</name>
+        <purpose>Flush all local data to the persistence service</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/put.html">
+        <name>put</name>
+        <purpose>Write key-value pairs to cache</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/remove.html">
+        <name>remove</name>
+        <purpose>Remove keys from cache</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/retain.html">
+        <name>retain</name>
+        <purpose>Store remote keys from cache locally or return locally stored keys</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/mps.sync.mutex.html">
+        <name>mps.sync.mutex</name>
+        <purpose>Create a persistence service mutex</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/acquire.html">
+        <name>acquire</name>
+        <purpose>Acquire advisory lock on persistence service mutex</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/own.html">
+        <name>own</name>
+        <purpose>Check ownership of advisory lock on a persistence service mutex object</purpose>
+      </tocitem>
+      <tocitem target="mps_dev_test/release.html">
+        <name>release</name>
+        <purpose>Release advisory lock on persistence service mutex</purpose>
+      </tocitem>
+    </tocitem>
+    <tocitem target="package.html">Distribute Applications
+      <tocitem target="ml_code/mcrinstaller.html">
+        <name>mcrinstaller</name>
+        <purpose>Display version and location information for MATLAB Runtime installer corresponding to current platform
+        </purpose>
+      </tocitem>
+      <tocitem target="ml_code/mcrversion.html">
+        <name>mcrversion</name>
+        <purpose>Determine version of installed MATLAB Runtime</purpose>
+      </tocitem>
+    </tocitem>
+  </tocitem>
+</toc>

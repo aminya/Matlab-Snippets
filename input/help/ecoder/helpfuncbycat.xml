@@ -1,0 +1,2218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="c-c-code-generation-from-simulink-models.html">Code Generation from Simulink Models
+<tocitem target="modeling.html">Model Architecture and Design
+<tocitem target="create-code-definitions.html">Code Definitions
+<tocitem target="ref/coder.dictionary.create.html">
+<name>coder.dictionary.create</name>
+<purpose>Create Embedded Coder Dictionary and coder.Dictionary
+      object</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.open.html">
+<name>coder.dictionary.open</name>
+<purpose>Open Embedded Coder Dictionary object</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.copy.html">
+<name>coder.dictionary.copy</name>
+<purpose>Copy code generation definitions between models and data
+            dictionaries</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.move.html">
+<name>coder.dictionary.move</name>
+<purpose>Migrate code generation definitions between models and data
+            dictionaries</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.remove.html">
+<name>coder.dictionary.remove</name>
+<purpose>Remove Embedded Coder Dictionary from model or Simulink data dictionary</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.empty.html">
+<name>empty</name>
+<purpose>Determine whether Embedded Coder Dictionary is empty</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.getsection.html">
+<name>getSection</name>
+<purpose>Return coder.dictionary.Section object that represents Embedded
+      Coder Dictionary section</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.getsections.html">
+<name>getSections</name>
+<purpose> Return coder.dictionary.Section objects of an Embedded Coder
+      Dictionary</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.loadpackage.html">
+<name>loadPackage</name>
+<purpose>Load package of code definitions into Embedded Coder Dictionary </purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.refreshpackage.html">
+<name>refreshPackage</name>
+<purpose>Refresh package definitions in Embedded Coder Dictionary </purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.resettodefault.html">
+<name>resetToDefault</name>
+<purpose> Restore Embedded Coder Dictionary to default state</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.unloadpackage.html">
+<name>unloadPackage</name>
+<purpose> Unload package of code definitions from Embedded Coder Dictionary</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.valid.html">
+<name>valid</name>
+<purpose>Determine whether coder.Dictionary object represents a valid
+      Embedded Coder Dictionary</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.section.copyentry.html">
+<name>copyEntry</name>
+<purpose> Copy Embedded Coder Dictionary entry</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.section.addentry.html">
+<name>addEntry</name>
+<purpose>Add a new entry to Embedded Coder Dictionary section </purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.section.deleteentry.html">
+<name>deleteEntry</name>
+<purpose>Delete Embedded Coder Dictionary entry</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.section.exist.html">
+<name>exist</name>
+<purpose> Determine if code definition exists in Embedded Coder Dictionary
+      section</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.section.find.html">
+<name>find</name>
+<purpose>Search in Embedded Coder Dictionary section </purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.section.getentry.html">
+<name>getEntry</name>
+<purpose> Return coder.dictionary.Entry object that represents an Embedded
+      Coder Dictionary definition</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.entry.deleteentry.html">
+<name>deleteEntry</name>
+<purpose> Delete Embedded Coder Dictionary entry</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.entry.get.html">
+<name>get</name>
+<purpose> Get value of code definition property</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.entry.getavailableproperties.html">
+<name>getAvailableProperties</name>
+<purpose> Return properties for code definition</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.entry.set.html">
+<name>set</name>
+<purpose> Set value of code definition property</purpose>
+</tocitem>
+<tocitem target="ref/coder.dictionary.entry.valid.html">
+<name>valid</name>
+<purpose> Determine if coder.dictionary.Entry object represents a valid
+      code definition</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="component-based-modeling.html">Component-Based Modeling
+<tocitem target="referenced-models-1.html">Referenced Models
+<tocitem target="../simulink/slref/depview.html">
+<name>depview</name>
+<purpose>Display graph of model referencing dependencies with or without library
+            dependencies</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/find_mdlrefs.html">
+<name>find_mdlrefs</name>
+<purpose>Find Model blocks and referenced models at all levels or at top level only</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/view_mdlrefs.html">
+<name>view_mdlrefs</name>
+<purpose>Display graph of model referencing dependencies without library
+      dependencies</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/simulink.subsystem.converttomodelreference.html">
+<name>Simulink.SubSystem.convertToModelReference</name>
+<purpose>Convert subsystem to model reference</purpose>
+</tocitem>
+<tocitem target="../simulink/slref/slbuild.html">
+<name>slbuild</name>
+<purpose>Build standalone executable or model reference target for model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-protection.html">Model Protection
+<tocitem target="ref/simulink.modelreference.protect.html">
+<name>Simulink.ModelReference.protect</name>
+<purpose>Obscure referenced model contents to hide intellectual
+property</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.modifyprotectedmodel.html">
+<name>Simulink.ModelReference.modifyProtectedModel</name>
+<purpose>Modify existing protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordforcodegeneration.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForCodeGeneration</name>
+<purpose>Add or provide encryption password for code generation
+from protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordformodify.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForModify</name>
+<purpose>Add or provide password for modifying protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordforsimulation.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForSimulation</name>
+<purpose>Add or provide encryption password for simulation of protected
+model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.setpasswordforview.html">
+<name>Simulink.ModelReference.ProtectedModel.setPasswordForView</name>
+<purpose>Add or provide encryption password for read-only view
+of protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.clearpasswords.html">
+<name>Simulink.ModelReference.ProtectedModel.clearPasswords</name>
+<purpose>Clear cached passwords for protected models</purpose>
+</tocitem>
+<tocitem target="ref/simulink.modelreference.protectedmodel.clearpasswordsformodel.html">
+<name>Simulink.ModelReference.ProtectedModel.clearPasswordsForModel</name>
+<purpose>Clear cached passwords for a protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.addtarget.html">
+<name>Simulink.ProtectedModel.addTarget</name>
+<purpose>Add code generation support for current target to protected
+model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getcallbackinfo.html">
+<name>Simulink.ProtectedModel.getCallbackInfo</name>
+<purpose>Get Simulink.ProtectedModel.CallbackInfo object
+for use by callbacks</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getconfigset.html">
+<name>Simulink.ProtectedModel.getConfigSet</name>
+<purpose>Get configuration set for current protected model target
+or for specified target</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getcurrenttarget.html">
+<name>Simulink.ProtectedModel.getCurrentTarget</name>
+<purpose>Get current protected model target</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.getsupportedtargets.html">
+<name>Simulink.ProtectedModel.getSupportedTargets</name>
+<purpose>Get list of targets that protected model supports</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.open.html">
+<name>Simulink.ProtectedModel.open</name>
+<purpose>Open protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.removetarget.html">
+<name>Simulink.ProtectedModel.removeTarget</name>
+<purpose>Remove support for specified target from protected model</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.setcurrenttarget.html">
+<name>Simulink.ProtectedModel.setCurrentTarget</name>
+<purpose>Configure protected model to use specified target</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.callback.setoverridebuild.html">
+<name>Simulink.ProtectedModel.Callback.setOverrideBuild</name>
+<purpose>Specify option to override protected model build</purpose>
+</tocitem>
+<tocitem target="ref/simulink.protectedmodel.callbackinfo.getbuildinfoformodel.html">
+<name>Simulink.ProtectedModel.CallbackInfo.getBuildInfoForModel</name>
+<purpose>Get build information object for specified model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="block-authoring-and-customization.html">Block Authoring and Customization
+<tocitem target="block-authoring-with-tlc.html">Target Language Compiler
+<tocitem target="ref/tlc.html">
+<name>tlc</name>
+<purpose>Invoke Target Language Compiler to convert model description
+file to generated code</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="data-function-and-file-definition.html">Data, Function, and File Configuration
+<tocitem target="data-representation-and-access.html">Data Representation and Access
+<tocitem target="ref/coder.mapping.create.html">
+<name>coder.mapping.create</name>
+<purpose>Create C code mapping environment for model</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.allowedproperties.html">
+<name>coder.mapping.defaults.allowedProperties</name>
+<purpose>Return properties for model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.allowedvalues.html">
+<name>coder.mapping.defaults.allowedValues</name>
+<purpose>Return value of property for model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.datacategories.html">
+<name>coder.mapping.defaults.dataCategories</name>
+<purpose>Return default mapping categories for model data</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.get.html">
+<name>coder.mapping.defaults.get</name>
+<purpose>Return value of property for model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.set.html">
+<name>coder.mapping.defaults.set</name>
+<purpose>Set value for property of model default mapping category</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="data-exchange-interfaces.html">Data Exchange Interfaces
+<tocitem target="ref/coder.xcp.a2l.addcoderxcpinfo.html">
+<name>addCoderXCPInfo</name>
+<purpose>Create ASAP2 file with IF_DATA XCP block that describes the Simulink Coder XCP slave
+      configuration</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="function-and-class-interfaces.html">Function and Class Interfaces
+<tocitem target="ref/model_initialize.html">
+<name>model_initialize</name>
+<purpose>Initialization entry-point function in generated code
+for Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/model_step.html">
+<name>model_step</name>
+<purpose>Step routine entry point in generated code for Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/model_terminate.html">
+<name>model_terminate</name>
+<purpose>Termination entry point in generated code for Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.create.html">
+<name>coder.mapping.create</name>
+<purpose>Create C code mapping environment for model</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.allowedproperties.html">
+<name>coder.mapping.defaults.allowedProperties</name>
+<purpose>Return properties for model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.allowedvalues.html">
+<name>coder.mapping.defaults.allowedValues</name>
+<purpose>Return value of property for model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.datacategories.html">
+<name>coder.mapping.defaults.dataCategories</name>
+<purpose>Return default mapping categories for model data</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.functioncategories.html">
+<name>coder.mapping.defaults.functionCategories</name>
+<purpose>Return default mapping categories for model functions</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.get.html">
+<name>coder.mapping.defaults.get</name>
+<purpose>Return value of property for model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/coder.mapping.defaults.set.html">
+<name>coder.mapping.defaults.set</name>
+<purpose>Set value for property of model default mapping category</purpose>
+</tocitem>
+<tocitem target="ref/rtw.configsubsystembuild.html">
+<name>RTW.configSubsystemBuild</name>
+<purpose>Configure C function prototype or C++ class interface for right-click build of
+            specified subsystem</purpose>
+</tocitem>
+<tocitem target="ref/rtw.getfunctionspecification.html">
+<name>RTW.getFunctionSpecification</name>
+<purpose>Get handle to model-specific C prototype function control object</purpose>
+</tocitem>
+<tocitem target="ref/rtw.modelspecificcprototype.html">
+<name>RTW.ModelSpecificCPrototype</name>
+<purpose>Create model-specific C prototype object</purpose>
+</tocitem>
+<tocitem target="ref/rtw.configsubsystembuild.html">
+<name>RTW.configSubsystemBuild</name>
+<purpose>Configure C function prototype or C++ class interface for right-click build of
+            specified subsystem</purpose>
+</tocitem>
+<tocitem target="ref/rtw.getclassinterfacespecification.html">
+<name>RTW.getClassInterfaceSpecification</name>
+<purpose>Get handle to model-specific C++ class interface control object</purpose>
+</tocitem>
+<tocitem target="ref/rtw.modelcppargsclass.html">
+<name>RTW.ModelCPPArgsClass</name>
+<purpose>Create C++ class interface object for configuring model
+class with I/O arguments style step method</purpose>
+</tocitem>
+<tocitem target="ref/rtw.modelcppdefaultclass.html">
+<name>RTW.ModelCPPDefaultClass</name>
+<purpose>Create C++ class interface object for configuring model
+class with default model step method</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="code-generation-basics.html">Code Generation Basics
+<tocitem target="ref/crossreleaseimport.html">
+<name>crossReleaseImport</name>
+<purpose>Import generated model code from a previous release as
+SIL or PIL blocks</purpose>
+</tocitem>
+<tocitem target="ref/pil_block_replace.html">
+<name>pil_block_replace</name>
+<purpose>Replace block in model with block from another model</purpose>
+</tocitem>
+<tocitem target="ref/sharedcodematlabversions.html">
+<name>sharedCodeMATLABVersions</name>
+<purpose>Manage MATLAB versions for cross-release code integration</purpose>
+</tocitem>
+<tocitem target="ref/sharedcodeupdate.html">
+<name>sharedCodeUpdate</name>
+<purpose>Add new shared code source files to existing shared code
+folder</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="target-environment.html">Run-Time Environment Configuration
+<tocitem target="ref/target.add.html">
+<name>target.add</name>
+<purpose>Add target  feature object to MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.create.html">
+<name>target.create</name>
+<purpose>Create target feature object</purpose>
+</tocitem>
+<tocitem target="ref/target.export.html">
+<name>target.export</name>
+<purpose>Export target feature data</purpose>
+</tocitem>
+<tocitem target="ref/target.get.html">
+<name>target.get</name>
+<purpose>Retrieve target feature object from MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.remove.html">
+<name>target.remove</name>
+<purpose>Remove target feature object from MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.upgrade.html">
+<name>target.upgrade</name>
+<purpose>Upgrade existing definitions of hardware devices</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="report-generation-2.html">Report Generation
+<tocitem target="ref/rtwreport.html">
+<name>rtwreport</name>
+<purpose>Create generated code report for model with Simulink
+            Report Generator</purpose>
+</tocitem>
+<tocitem target="ref/coder.report.open.html">
+<name>coder.report.open</name>
+<purpose>Open existing HTML code generation report</purpose>
+</tocitem>
+<tocitem target="ref/coder.report.generate.html">
+<name>coder.report.generate</name>
+<purpose>Generate HTML code generation report</purpose>
+</tocitem>
+<tocitem target="ref/coder.report.close.html">
+<name>coder.report.close</name>
+<purpose>Close HTML code generation report</purpose>
+</tocitem>
+<tocitem target="ref/getcodedescriptor.html">
+<name>getCodeDescriptor</name>
+<purpose>Create coder.codedescriptor.CodeDescriptor object for
+            model</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getalldatainterfacetypes.html">
+<name>getAllDataInterfaceTypes</name>
+<purpose>Return data interface types</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getallfunctioninterfacetypes.html">
+<name>getAllFunctionInterfaceTypes</name>
+<purpose> Return function interface types</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getarraylayout.html">
+<name>getArrayLayout</name>
+<purpose> Return array layout of the generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getdatainterfaces.html">
+<name>getDataInterfaces</name>
+<purpose> Return information of the specified data interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getdatainterfacetypes.html">
+<name>getDataInterfaceTypes</name>
+<purpose>Return data interface types in the generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getfunctioninterfaces.html">
+<name>getFunctionInterfaces</name>
+<purpose>Return information of the specified function interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getfunctioninterfacetypes.html">
+<name>getFunctionInterfaceTypes</name>
+<purpose>Return function interface types in the generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getreferencedmodelcodedescriptor.html">
+<name>getReferencedModelCodeDescriptor</name>
+<purpose>Return coder.codedescriptor.CodeDescriptor object for the
+            specified referenced model</purpose>
+</tocitem>
+<tocitem target="ref/coder.codedescriptor.codedescriptor.getreferencedmodelnames.html">
+<name>getReferencedModelNames</name>
+<purpose>Return names of the referenced models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sharing-utility-code.html">Sharing Utility Code
+<tocitem target="ref/sharedcodeupdate.html">
+<name>sharedCodeUpdate</name>
+<purpose>Add new shared code source files to existing shared code
+folder</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="target-development.html">Target Development
+<tocitem target="ref/slconfiguigetval.html">
+<name>slConfigUIGetVal</name>
+<purpose>Return current value for custom target configuration option</purpose>
+</tocitem>
+<tocitem target="ref/slconfiguisetenabled.html">
+<name>slConfigUISetEnabled</name>
+<purpose>Enable or disable custom target configuration option</purpose>
+</tocitem>
+<tocitem target="ref/slconfiguisetval.html">
+<name>slConfigUISetVal</name>
+<purpose>Set value for custom target configuration option</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="deployment.html">Deployment
+<tocitem target="rapid-prototyping-and-production-deployment.html">Rapid-Prototyping and Production Deployment
+<tocitem target="ref/buildstandalonecoderassumptions.html">
+<name>buildStandaloneCoderAssumptions</name>
+<purpose>Create application to check code generator assumptions</purpose>
+</tocitem>
+<tocitem target="ref/rsimgetrtp.html">
+<name>rsimgetrtp</name>
+<purpose>Global model parameter structure</purpose>
+</tocitem>
+<tocitem target="ref/rsimsetrtpparam.html">
+<name>rsimsetrtpparam</name>
+<purpose>Set parameters of rtP model parameter
+structure</purpose>
+</tocitem>
+<tocitem target="ref/extmodebackgroundrun.html">
+<name>extmodeBackgroundRun</name>
+<purpose>Perform external mode background activity</purpose>
+</tocitem>
+<tocitem target="ref/extmodeevent.html">
+<name>extmodeEvent</name>
+<purpose>External mode event trigger</purpose>
+</tocitem>
+<tocitem target="ref/extmodegetfinalsimulationtime.html">
+<name>extmodeGetFinalSimulationTime</name>
+<purpose>Get final simulation time for external mode platform abstraction
+            layer</purpose>
+</tocitem>
+<tocitem target="ref/extmodeinit.html">
+<name>extmodeInit</name>
+<purpose>Initialize external mode target connectivity</purpose>
+</tocitem>
+<tocitem target="ref/extmodeparseargs.html">
+<name>extmodeParseArgs</name>
+<purpose>Extract values of configuration parameters supported by external mode
+            abstraction layer</purpose>
+</tocitem>
+<tocitem target="ref/extmodereset.html">
+<name>extmodeReset</name>
+<purpose>Reset external mode target connectivity</purpose>
+</tocitem>
+<tocitem target="ref/extmodesetfinalsimulationtime.html">
+<name>extmodeSetFinalSimulationTime</name>
+<purpose>Set final simulation time in external mode platform abstraction
+            layer</purpose>
+</tocitem>
+<tocitem target="ref/extmodesimulationcomplete.html">
+<name>extmodeSimulationComplete</name>
+<purpose>Check that external mode simulation is complete</purpose>
+</tocitem>
+<tocitem target="ref/extmodestoprequested.html">
+<name>extmodeStopRequested</name>
+<purpose>Check whether request to stop external mode simulation is received from
+            model</purpose>
+</tocitem>
+<tocitem target="ref/extmodewaitforhostrequest.html">
+<name>extmodeWaitForHostRequest</name>
+<purpose>Wait for request from development computer to start or stop external mode
+            simulation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="program-builds-and-debugging.html">Build Process
+<tocitem target="ref/packngo.html">
+<name>packNGo</name>
+<purpose>Package generated code in zip file for relocation</purpose>
+</tocitem>
+<tocitem target="ref/rtw_precompile_libs.html">
+<name>rtw_precompile_libs</name>
+<purpose>Rebuild precompiled libraries within model without building model</purpose>
+</tocitem>
+<tocitem target="ref/rtwbuild.html">
+<name>rtwbuild</name>
+<purpose>Build generated code from a model</purpose>
+</tocitem>
+<tocitem target="ref/rtwrebuild.html">
+<name>rtwrebuild</name>
+<purpose>Rebuild generated code from model</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildstatus.close.html">
+<name>coder.buildstatus.close</name>
+<purpose>Close build process status window</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildstatus.open.html">
+<name>coder.buildstatus.open</name>
+<purpose>Open build process status window</purpose>
+</tocitem>
+<tocitem target="ref/rtw.getbuilddir.html">
+<name>RTW.getBuildDir</name>
+<purpose>Get build folder information from model build information</purpose>
+</tocitem>
+<tocitem target="ref/simulink.filegencontrol.html">
+<name>Simulink.fileGenControl</name>
+<purpose>Specify root folders for files generated by diagram updates and model
+   builds</purpose>
+</tocitem>
+<tocitem target="ref/switchtarget.html">
+<name>switchTarget</name>
+<purpose>Select target for model configuration set</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="build-process-customization.html">Build Process Customization
+<tocitem target="ref/addcompileflags.html">
+<name>addCompileFlags</name>
+<purpose>Add compiler options to model build information</purpose>
+</tocitem>
+<tocitem target="ref/adddefines.html">
+<name>addDefines</name>
+<purpose>Add preprocessor macro definitions to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addincludefiles.html">
+<name>addIncludeFiles</name>
+<purpose>Add include files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addincludepaths.html">
+<name>addIncludePaths</name>
+<purpose>Add include paths to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addlinkflags.html">
+<name>addLinkFlags</name>
+<purpose>Add link options to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addlinkobjects.html">
+<name>addLinkObjects</name>
+<purpose>Add link objects to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addnonbuildfiles.html">
+<name>addNonBuildFiles</name>
+<purpose>Add nonbuild-related files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addsourcefiles.html">
+<name>addSourceFiles</name>
+<purpose>Add source files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addsourcepaths.html">
+<name>addSourcePaths</name>
+<purpose>Add source paths to model build information</purpose>
+</tocitem>
+<tocitem target="ref/addtmftokens.html">
+<name>addTMFTokens</name>
+<purpose>Add template makefile (TMF) tokens to model build
+                                 information</purpose>
+</tocitem>
+<tocitem target="ref/findbuildarg.html">
+<name>findBuildArg</name>
+<purpose>Find a specific build argument in model build information</purpose>
+</tocitem>
+<tocitem target="ref/findincludefiles.html">
+<name>findIncludeFiles</name>
+<purpose>Find and add include (header) files to model build information</purpose>
+</tocitem>
+<tocitem target="ref/getbuildargs.html">
+<name>getBuildArgs</name>
+<purpose>Get build arguments from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getcompileflags.html">
+<name>getCompileFlags</name>
+<purpose>Get compiler options from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getdefines.html">
+<name>getDefines</name>
+<purpose>Get preprocessor macro definitions from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getfullfilelist.html">
+<name>getFullFileList</name>
+<purpose>Get list of files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getincludefiles.html">
+<name>getIncludeFiles</name>
+<purpose>Get include files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getincludepaths.html">
+<name>getIncludePaths</name>
+<purpose>Get include paths from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getlinkflags.html">
+<name>getLinkFlags</name>
+<purpose>Get link options from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getnonbuildfiles.html">
+<name>getNonBuildFiles</name>
+<purpose>Get nonbuild-related files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getsourcefiles.html">
+<name>getSourceFiles</name>
+<purpose>Get source files from model build information</purpose>
+</tocitem>
+<tocitem target="ref/getsourcepaths.html">
+<name>getSourcePaths</name>
+<purpose>Get source paths from model build information</purpose>
+</tocitem>
+<tocitem target="ref/settargetprovidesmain.html">
+<name>setTargetProvidesMain</name>
+<purpose>Disable inclusion of code generator provided (generated or static)
+    main.c source file during model build</purpose>
+</tocitem>
+<tocitem target="ref/updatefilepathsandextensions.html">
+<name>updateFilePathsAndExtensions</name>
+<purpose>Update files in model build information with missing paths and file
+            extensions</purpose>
+</tocitem>
+<tocitem target="ref/updatefileseparator.html">
+<name>updateFileSeparator</name>
+<purpose>Update file separator character for file lists in model build
+            information</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="performance.html">Performance
+<tocitem target="code-execution-profiling.html">Code Execution Profiling
+<tocitem target="ref/annotate.html">
+<name>annotate</name>
+<purpose>Color profiled model components or open model with profiled
+components colored</purpose>
+</tocitem>
+<tocitem target="ref/display.html">
+<name>display</name>
+<purpose>Generate message that describes how to open code execution
+profiling report</purpose>
+</tocitem>
+<tocitem target="ref/executiontimeinticks.html">
+<name>ExecutionTimeInTicks</name>
+<purpose>Get execution times in timer ticks for profiled section
+of code</purpose>
+</tocitem>
+<tocitem target="ref/executiontimeinseconds.html">
+<name>ExecutionTimeInSeconds</name>
+<purpose>Get execution time in seconds for profiled section of
+code</purpose>
+</tocitem>
+<tocitem target="ref/name.html">
+<name>Name</name>
+<purpose>Get name of profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/number.html">
+<name>Number</name>
+<purpose>Get number that uniquely identifies profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/numcalls.html">
+<name>NumCalls</name>
+<purpose>Total number of calls to profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/sections.html">
+<name>Sections</name>
+<purpose>Get array of coder.profile.ExecutionTimeSection objects
+for profiled code sections</purpose>
+</tocitem>
+<tocitem target="ref/selftimeinticks.html">
+<name>SelfTimeInTicks</name>
+<purpose>Get number of timer ticks recorded for profiled code section,
+excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/time.html">
+<name>Time</name>
+<purpose>Get simulation time for code section</purpose>
+</tocitem>
+<tocitem target="ref/timeline.html">
+<name>timeline</name>
+<purpose>Display invocations of code sections over execution timeline</purpose>
+</tocitem>
+<tocitem target="ref/timertickspersecond.html">
+<name>TimerTicksPerSecond</name>
+<purpose>Get and set number of timer ticks per second</purpose>
+</tocitem>
+<tocitem target="ref/totalexecutiontimeinticks.html">
+<name>TotalExecutionTimeInTicks</name>
+<purpose>Get total number of timer ticks recorded for profiled
+code section</purpose>
+</tocitem>
+<tocitem target="ref/totalselftimeinticks.html">
+<name>TotalSelfTimeInTicks</name>
+<purpose>Get total number of timer ticks recorded for profiled
+code section, excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/totalturnaroundtimeinticks.html">
+<name>TotalTurnaroundTimeInTicks</name>
+<purpose>Get total number of timer ticks between start and finish
+of the profiled code section over the entire simulation.</purpose>
+</tocitem>
+<tocitem target="ref/turnaroundtimeinticks.html">
+<name>TurnaroundTimeInTicks</name>
+<purpose>Get number of timer ticks between start and finish of
+the profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/report.html">
+<name>report</name>
+<purpose>Open code execution profiling report and specify display
+of time measurements.</purpose>
+</tocitem>
+<tocitem target="ref/maximumexecutiontimecallnum.html">
+<name>MaximumExecutionTimeCallNum</name>
+<purpose>Get the call number at which maximum number of timer ticks
+occurred</purpose>
+</tocitem>
+<tocitem target="ref/maximumexecutiontimeinticks.html">
+<name>MaximumExecutionTimeInTicks</name>
+<purpose>Get maximum number of timer ticks for single invocation
+of profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/maximumselftimeinticks.html">
+<name>MaximumSelfTimeInTicks</name>
+<purpose>Get the maximum number of timer ticks recorded for profiled
+code section, excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/maximumturnaroundtimecallnum.html">
+<name>MaximumTurnaroundTimeCallNum</name>
+<purpose>Get call number of the maximum number of timer ticks between
+start and finish of a single invocation of profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/maximumturnaroundtimeinticks.html">
+<name>MaximumTurnaroundTimeInTicks</name>
+<purpose>Get maximum number of timer ticks between start and finish
+of a single invocation of profiled code section</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-replacement-customization-scec.html">Code Replacement Customization
+<tocitem target="library-development-sc.html">Library Development
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/registercfunctionentry.html">
+<name>registerCFunctionEntry</name>
+<purpose>Create function entry based on
+                                                  specified parameters and register in code
+                                                  replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercppfunctionentry.html">
+<name>registerCPPFunctionEntry</name>
+<purpose>Create C++ function entry based on specified parameters and register in code
+         replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercpromotablemacroentry.html">
+<name>registerCPromotableMacroEntry</name>
+<purpose>Create promotable code replacement macro entry based on specified parameters and
+         register in code replacement table (for abs function replacement
+         only)</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflblasentrygenerator.html">
+<name>RTW.TflBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a BLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcblasentrygenerator.html">
+<name>RTW.TflCBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a CBLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentry.html">
+<name>RTW.TflCFunctionEntry</name>
+<purpose>Create code replacement table entry for a function</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentryml.html">
+<name>RTW.TflCFunctionEntryML</name>
+<purpose>Base class for custom code replacement table function
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentry.html">
+<name>RTW.TflCOperationEntry</name>
+<purpose>Create code replacement table entry for an operator</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator.html">
+<name>RTW.TflCOperationEntryGenerator</name>
+<purpose>Create code replacement table entry for a fixed-point addition or subtraction
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator_netslope.html">
+<name>RTW.TflCOperationEntryGenerator_NetSlope</name>
+<purpose>Create code replacement table entry for a net slope fixed-point
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentryml.html">
+<name>RTW.TflCOperationEntryML</name>
+<purpose>Base class for custom code replacement table operator
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcsemaphoreentry.html">
+<name>RTW.TflCSemaphoreEntry</name>
+<purpose>Create code replacement table entry for a semaphore or mutex</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcfunctionentryparameters.html">
+<name>setTflCFunctionEntryParameters</name>
+<purpose>Set specified parameters for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/settflcsemaphoreentryparameters.html">
+<name>setTflCSemaphoreEntryParameters</name>
+<purpose>Set specified parameters for semaphore entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/adddworkarg.html">
+<name>addDWorkArg</name>
+<purpose>Add DWork argument for semaphore entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/gettfldworkfromstring.html">
+<name>getTflDWorkFromString</name>
+<purpose>Create code replacement DWork argument for semaphore entry based on specified name
+         and data type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/enablecpp.html">
+<name>enableCPP</name>
+<purpose>Enable C++ support for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercppfunctionentry.html">
+<name>registerCPPFunctionEntry</name>
+<purpose>Create C++ function entry based on specified parameters and register in code
+         replacement table</purpose>
+</tocitem>
+<tocitem target="ref/setnamespace.html">
+<name>setNameSpace</name>
+<purpose>Set namespace for C++ function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/addalgorithmproperty.html">
+<name>addAlgorithmProperty</name>
+<purpose>Add algorithm properties for code replacement
+                                                  table entry</purpose>
+</tocitem>
+<tocitem target="ref/getalgorithmparameters.html">
+<name>getAlgorithmParameters</name>
+<purpose>Examine algorithm parameter settings for lookup table
+function code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/setalgorithmparameters.html">
+<name>setAlgorithmParameters</name>
+<purpose>Set algorithm parameters for lookup table function code
+replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+<tocitem target="../coder/ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.dataalignment.html">
+<name>coder.dataAlignment</name>
+<purpose>Specify data alignment for global or entry-point/exported
+function input and output arguments</purpose>
+</tocitem>
+<tocitem target="ref/coder.replace.html">
+<name>coder.replace</name>
+<purpose>Replace current MATLAB function implementation with code replacement library function in generated
+      code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="function-replacement.html">Function Replacement
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/registercfunctionentry.html">
+<name>registerCFunctionEntry</name>
+<purpose>Create function entry based on
+                                                  specified parameters and register in code
+                                                  replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercppfunctionentry.html">
+<name>registerCPPFunctionEntry</name>
+<purpose>Create C++ function entry based on specified parameters and register in code
+         replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercpromotablemacroentry.html">
+<name>registerCPromotableMacroEntry</name>
+<purpose>Create promotable code replacement macro entry based on specified parameters and
+         register in code replacement table (for abs function replacement
+         only)</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentry.html">
+<name>RTW.TflCFunctionEntry</name>
+<purpose>Create code replacement table entry for a function</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentryml.html">
+<name>RTW.TflCFunctionEntryML</name>
+<purpose>Base class for custom code replacement table function
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcsemaphoreentry.html">
+<name>RTW.TflCSemaphoreEntry</name>
+<purpose>Create code replacement table entry for a semaphore or mutex</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcfunctionentryparameters.html">
+<name>setTflCFunctionEntryParameters</name>
+<purpose>Set specified parameters for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcsemaphoreentryparameters.html">
+<name>setTflCSemaphoreEntryParameters</name>
+<purpose>Set specified parameters for semaphore entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/adddworkarg.html">
+<name>addDWorkArg</name>
+<purpose>Add DWork argument for semaphore entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/gettfldworkfromstring.html">
+<name>getTflDWorkFromString</name>
+<purpose>Create code replacement DWork argument for semaphore entry based on specified name
+         and data type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/enablecpp.html">
+<name>enableCPP</name>
+<purpose>Enable C++ support for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/setnamespace.html">
+<name>setNameSpace</name>
+<purpose>Set namespace for C++ function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/addalgorithmproperty.html">
+<name>addAlgorithmProperty</name>
+<purpose>Add algorithm properties for code replacement
+                                                  table entry</purpose>
+</tocitem>
+<tocitem target="ref/getalgorithmparameters.html">
+<name>getAlgorithmParameters</name>
+<purpose>Examine algorithm parameter settings for lookup table
+function code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/setalgorithmparameters.html">
+<name>setAlgorithmParameters</name>
+<purpose>Set algorithm parameters for lookup table function code
+replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+<tocitem target="../coder/ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.replace.html">
+<name>coder.replace</name>
+<purpose>Replace current MATLAB function implementation with code replacement library function in generated
+      code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="operator-replacement-simulink.html">Operator Replacement
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflblasentrygenerator.html">
+<name>RTW.TflBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a BLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcblasentrygenerator.html">
+<name>RTW.TflCBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a CBLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentry.html">
+<name>RTW.TflCOperationEntry</name>
+<purpose>Create code replacement table entry for an operator</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator.html">
+<name>RTW.TflCOperationEntryGenerator</name>
+<purpose>Create code replacement table entry for a fixed-point addition or subtraction
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator_netslope.html">
+<name>RTW.TflCOperationEntryGenerator_NetSlope</name>
+<purpose>Create code replacement table entry for a net slope fixed-point
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentryml.html">
+<name>RTW.TflCOperationEntryML</name>
+<purpose>Base class for custom code replacement table operator
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="fixed-point-operator-replacement-simulink.html">Fixed-Point Operator Replacement
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflblasentrygenerator.html">
+<name>RTW.TflBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a BLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcblasentrygenerator.html">
+<name>RTW.TflCBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a CBLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentry.html">
+<name>RTW.TflCOperationEntry</name>
+<purpose>Create code replacement table entry for an operator</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator.html">
+<name>RTW.TflCOperationEntryGenerator</name>
+<purpose>Create code replacement table entry for a fixed-point addition or subtraction
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator_netslope.html">
+<name>RTW.TflCOperationEntryGenerator_NetSlope</name>
+<purpose>Create code replacement table entry for a net slope fixed-point
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentryml.html">
+<name>RTW.TflCOperationEntryML</name>
+<purpose>Base class for custom code replacement table operator
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="verification-2.html">Verification
+<tocitem target="numerical-equivalence-checking.html">Numerical Equivalence Testing
+<tocitem target="processor-in-the-loop.html">Processor-in-the-Loop Simulation
+<tocitem target="ref/rtiostreamclose.html">
+<name>rtIOStreamClose</name>
+<purpose>Shut down communications channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamopen.html">
+<name>rtIOStreamOpen</name>
+<purpose>Initialize communications channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamrecv.html">
+<name>rtIOStreamRecv</name>
+<purpose>Receive data through communication channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamsend.html">
+<name>rtIOStreamSend</name>
+<purpose>Send data through communication channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamtest.html">
+<name>rtiostreamtest</name>
+<purpose>Test custom rtiostream interface implementation</purpose>
+</tocitem>
+<tocitem target="ref/rtiostream_wrapper.html">
+<name>rtiostream_wrapper</name>
+<purpose>Test rtiostream shared library functions in MATLAB</purpose>
+</tocitem>
+<tocitem target="ref/piltest.html">
+<name>piltest</name>
+<purpose>Verify custom target connectivity configuration for Simulink PIL simulation</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="code-tracing.html">Code Tracing
+<tocitem target="ref/rtwtrace.html">
+<name>rtwtrace</name>
+<purpose>Trace a block to generated code in code generation report</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="c-c-code-generation-from-matlab-code.html">Code Generation from MATLAB Code
+<tocitem target="-code-appearance.html">Code Appearance
+<tocitem target="ref/coder.setupmisraconfig.html">
+<name>coder.setupMISRAConfig</name>
+<purpose>Configure parameters to improve generated code compliance with MISRA C and C++ guidelines</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="storage-classes.html">Global Variable Representation
+<tocitem target="ref/coder.storageclass.html">
+<name>coder.storageClass</name>
+<purpose>Assign storage class to global variable</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="verification-.html">Verification
+<tocitem target="ref/coder.hardware.html">
+<name>coder.hardware</name>
+<purpose>Create hardware board configuration object for C/C++ code generation from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamclose.html">
+<name>rtIOStreamClose</name>
+<purpose>Shut down communications channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamopen.html">
+<name>rtIOStreamOpen</name>
+<purpose>Initialize communications channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamrecv.html">
+<name>rtIOStreamRecv</name>
+<purpose>Receive data through communication channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamsend.html">
+<name>rtIOStreamSend</name>
+<purpose>Send data through communication channel</purpose>
+</tocitem>
+<tocitem target="ref/rtiostreamtest.html">
+<name>rtiostreamtest</name>
+<purpose>Test custom rtiostream interface implementation</purpose>
+</tocitem>
+<tocitem target="ref/rtiostream_wrapper.html">
+<name>rtiostream_wrapper</name>
+<purpose>Test rtiostream shared library functions in MATLAB</purpose>
+</tocitem>
+<tocitem target="ref/piltest_mc.html">
+<name>piltest</name>
+<purpose>Verify custom target connectivity configuration for MATLAB PIL execution</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="profiling.html">Performance
+<tocitem target="ref/executiontimeinseconds_mc.html">
+<name>ExecutionTimeInSeconds</name>
+<purpose>Get execution time in seconds for profiled section of
+code</purpose>
+</tocitem>
+<tocitem target="ref/executiontimeinticks_mc.html">
+<name>ExecutionTimeInTicks</name>
+<purpose>Get execution times in timer ticks for profiled section
+of code</purpose>
+</tocitem>
+<tocitem target="ref/getcoderexecutionprofile.html">
+<name>getCoderExecutionProfile</name>
+<purpose>Extract execution-time profile for code generated from MATLAB function</purpose>
+</tocitem>
+<tocitem target="ref/name_mc.html">
+<name>Name</name>
+<purpose>Get name of profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/number_mc.html">
+<name>Number</name>
+<purpose>Get number that uniquely identifies profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/numcalls_mc.html">
+<name>NumCalls</name>
+<purpose>Total number of calls to profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/report_mc.html">
+<name>report</name>
+<purpose>Open code execution profiling report and specify display
+of time measurements.</purpose>
+</tocitem>
+<tocitem target="ref/sections_mc.html">
+<name>Sections</name>
+<purpose>Get array of coder.profile.ExecutionTimeSection objects
+for profiled code sections</purpose>
+</tocitem>
+<tocitem target="ref/selftimeinticks_mc.html">
+<name>SelfTimeInTicks</name>
+<purpose>Get number of timer ticks recorded for profiled code section,
+excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/time_mc.html">
+<name>Time</name>
+<purpose>Time over which code section execution time measurements
+are made</purpose>
+</tocitem>
+<tocitem target="ref/timertickspersecond_mc.html">
+<name>TimerTicksPerSecond</name>
+<purpose>Get and set number of timer ticks per second</purpose>
+</tocitem>
+<tocitem target="ref/totalexecutiontimeinticks_mc.html">
+<name>TotalExecutionTimeInTicks</name>
+<purpose>Get total number of timer ticks recorded for profiled
+code section</purpose>
+</tocitem>
+<tocitem target="ref/totalselftimeinticks_mc.html">
+<name>TotalSelfTimeInTicks</name>
+<purpose>Get total number of timer ticks recorded for profiled
+code section, excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/totalturnaroundtimeinticks_mc.html">
+<name>TotalTurnaroundTimeInTicks</name>
+<purpose>Get total number of timer ticks between start and finish
+of the profiled code section over the entire execution.</purpose>
+</tocitem>
+<tocitem target="ref/turnaroundtimeinticks_mc.html">
+<name>TurnaroundTimeInTicks</name>
+<purpose>Get number of timer ticks between start and finish of
+the profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/maximumexecutiontimecallnum_mc.html">
+<name>MaximumExecutionTimeCallNum</name>
+<purpose>Get the call number at which maximum number of timer ticks
+occurred</purpose>
+</tocitem>
+<tocitem target="ref/maximumexecutiontimeinticks_mc.html">
+<name>MaximumExecutionTimeInTicks</name>
+<purpose>Get maximum number of timer ticks for single invocation
+of profiled code section</purpose>
+</tocitem>
+<tocitem target="ref/maximumselftimecallnum_mc.html">
+<name>MaximumSelfTimeCallNum</name>
+<purpose>Get the call number at which the maximum number of timer
+ticks occurred, excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/maximumselftimeinticks_mc.html">
+<name>MaximumSelfTimeInTicks</name>
+<purpose>Get the maximum number of timer ticks recorded for profiled
+code section, excluding time spent in child functions</purpose>
+</tocitem>
+<tocitem target="ref/maximumturnaroundtimecallnum_mc.html">
+<name>MaximumTurnaroundTimeCallNum</name>
+<purpose>Get call number for the code section invocation with the
+maximum number of timer ticks between the start and the finish</purpose>
+</tocitem>
+<tocitem target="ref/maximumturnaroundtimeinticks_mc.html">
+<name>MaximumTurnaroundTimeInTicks</name>
+<purpose>Get maximum number of timer ticks between start and finish
+of a single invocation of profiled code section</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-replacement-customization-mcec.html">Code Replacement Customization
+<tocitem target="library-development-matlab.html">Library Development
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/registercfunctionentry.html">
+<name>registerCFunctionEntry</name>
+<purpose>Create function entry based on
+                                                  specified parameters and register in code
+                                                  replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercppfunctionentry.html">
+<name>registerCPPFunctionEntry</name>
+<purpose>Create C++ function entry based on specified parameters and register in code
+         replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercpromotablemacroentry.html">
+<name>registerCPromotableMacroEntry</name>
+<purpose>Create promotable code replacement macro entry based on specified parameters and
+         register in code replacement table (for abs function replacement
+         only)</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflblasentrygenerator.html">
+<name>RTW.TflBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a BLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcblasentrygenerator.html">
+<name>RTW.TflCBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a CBLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentry.html">
+<name>RTW.TflCFunctionEntry</name>
+<purpose>Create code replacement table entry for a function</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentryml.html">
+<name>RTW.TflCFunctionEntryML</name>
+<purpose>Base class for custom code replacement table function
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentry.html">
+<name>RTW.TflCOperationEntry</name>
+<purpose>Create code replacement table entry for an operator</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator.html">
+<name>RTW.TflCOperationEntryGenerator</name>
+<purpose>Create code replacement table entry for a fixed-point addition or subtraction
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator_netslope.html">
+<name>RTW.TflCOperationEntryGenerator_NetSlope</name>
+<purpose>Create code replacement table entry for a net slope fixed-point
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentryml.html">
+<name>RTW.TflCOperationEntryML</name>
+<purpose>Base class for custom code replacement table operator
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcsemaphoreentry.html">
+<name>RTW.TflCSemaphoreEntry</name>
+<purpose>Create code replacement table entry for a semaphore or mutex</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcfunctionentryparameters.html">
+<name>setTflCFunctionEntryParameters</name>
+<purpose>Set specified parameters for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/settflcsemaphoreentryparameters.html">
+<name>setTflCSemaphoreEntryParameters</name>
+<purpose>Set specified parameters for semaphore entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/adddworkarg.html">
+<name>addDWorkArg</name>
+<purpose>Add DWork argument for semaphore entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/gettfldworkfromstring.html">
+<name>getTflDWorkFromString</name>
+<purpose>Create code replacement DWork argument for semaphore entry based on specified name
+         and data type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/enablecpp.html">
+<name>enableCPP</name>
+<purpose>Enable C++ support for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercppfunctionentry.html">
+<name>registerCPPFunctionEntry</name>
+<purpose>Create C++ function entry based on specified parameters and register in code
+         replacement table</purpose>
+</tocitem>
+<tocitem target="ref/setnamespace.html">
+<name>setNameSpace</name>
+<purpose>Set namespace for C++ function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+<tocitem target="../coder/ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.dataalignment.html">
+<name>coder.dataAlignment</name>
+<purpose>Specify data alignment for global or entry-point/exported
+function input and output arguments</purpose>
+</tocitem>
+<tocitem target="ref/coder.replace.html">
+<name>coder.replace</name>
+<purpose>Replace current MATLAB function implementation with code replacement library function in generated
+      code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="function-replacement-matlab.html">Function Replacement
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/registercfunctionentry.html">
+<name>registerCFunctionEntry</name>
+<purpose>Create function entry based on
+                                                  specified parameters and register in code
+                                                  replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercppfunctionentry.html">
+<name>registerCPPFunctionEntry</name>
+<purpose>Create C++ function entry based on specified parameters and register in code
+         replacement table</purpose>
+</tocitem>
+<tocitem target="ref/registercpromotablemacroentry.html">
+<name>registerCPromotableMacroEntry</name>
+<purpose>Create promotable code replacement macro entry based on specified parameters and
+         register in code replacement table (for abs function replacement
+         only)</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentry.html">
+<name>RTW.TflCFunctionEntry</name>
+<purpose>Create code replacement table entry for a function</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcfunctionentryml.html">
+<name>RTW.TflCFunctionEntryML</name>
+<purpose>Base class for custom code replacement table function
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcsemaphoreentry.html">
+<name>RTW.TflCSemaphoreEntry</name>
+<purpose>Create code replacement table entry for a semaphore or mutex</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcfunctionentryparameters.html">
+<name>setTflCFunctionEntryParameters</name>
+<purpose>Set specified parameters for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcsemaphoreentryparameters.html">
+<name>setTflCSemaphoreEntryParameters</name>
+<purpose>Set specified parameters for semaphore entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/adddworkarg.html">
+<name>addDWorkArg</name>
+<purpose>Add DWork argument for semaphore entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/gettfldworkfromstring.html">
+<name>getTflDWorkFromString</name>
+<purpose>Create code replacement DWork argument for semaphore entry based on specified name
+         and data type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/enablecpp.html">
+<name>enableCPP</name>
+<purpose>Enable C++ support for function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/setnamespace.html">
+<name>setNameSpace</name>
+<purpose>Set namespace for C++ function entry in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+<tocitem target="../coder/ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.replace.html">
+<name>coder.replace</name>
+<purpose>Replace current MATLAB function implementation with code replacement library function in generated
+      code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="operator-replacement-matlab.html">Operator Replacement
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflblasentrygenerator.html">
+<name>RTW.TflBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a BLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcblasentrygenerator.html">
+<name>RTW.TflCBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a CBLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentry.html">
+<name>RTW.TflCOperationEntry</name>
+<purpose>Create code replacement table entry for an operator</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator.html">
+<name>RTW.TflCOperationEntryGenerator</name>
+<purpose>Create code replacement table entry for a fixed-point addition or subtraction
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator_netslope.html">
+<name>RTW.TflCOperationEntryGenerator_NetSlope</name>
+<purpose>Create code replacement table entry for a net slope fixed-point
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentryml.html">
+<name>RTW.TflCOperationEntryML</name>
+<purpose>Base class for custom code replacement table operator
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="fixed-point-operator-replacement-matlab.html">Fixed-Point Operator Replacement
+<tocitem target="ref/addentry.html">
+<name>addEntry</name>
+<purpose>Add table entry to collection of table entries
+         registered in code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflblasentrygenerator.html">
+<name>RTW.TflBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a BLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcblasentrygenerator.html">
+<name>RTW.TflCBlasEntryGenerator</name>
+<purpose>Create code replacement table entry for a CBLAS operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentry.html">
+<name>RTW.TflCOperationEntry</name>
+<purpose>Create code replacement table entry for an operator</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator.html">
+<name>RTW.TflCOperationEntryGenerator</name>
+<purpose>Create code replacement table entry for a fixed-point addition or subtraction
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentrygenerator_netslope.html">
+<name>RTW.TflCOperationEntryGenerator_NetSlope</name>
+<purpose>Create code replacement table entry for a net slope fixed-point
+         operation</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tflcoperationentryml.html">
+<name>RTW.TflCOperationEntryML</name>
+<purpose>Base class for custom code replacement table operator
+entry</purpose>
+</tocitem>
+<tocitem target="ref/rtw.tfltable.html">
+<name>RTW.TflTable</name>
+<purpose>Create code replacement table</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addconceptualarg.html">
+<name>addConceptualArg</name>
+<purpose>Add conceptual argument to array of conceptual
+                                                  arguments for code replacement table
+                                                  entry</purpose>
+</tocitem>
+<tocitem target="ref/copyconceptualargstoimplementation.html">
+<name>copyConceptualArgsToImplementation</name>
+<purpose>Copy conceptual argument specifications to
+            implementation specifications of an entry for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandaddimplementationarg.html">
+<name>createAndAddImplementationArg</name>
+<purpose>Create implementation argument from specified properties and add to
+            implementation arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createandsetcimplementationreturn.html">
+<name>createAndSetCImplementationReturn</name>
+<purpose>Create implementation return argument from specified properties and add to
+            implementation for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/createcrlentry.html">
+<name>createCRLEntry</name>
+<purpose>Create code replacement table entry from conceptual and implementation argument
+            string specifications</purpose>
+</tocitem>
+<tocitem target="ref/createandaddconceptualarg.html">
+<name>createAndAddConceptualArg</name>
+<purpose>Create conceptual argument from specified properties and add to conceptual
+            arguments for code replacement table entry</purpose>
+</tocitem>
+<tocitem target="ref/gettflargfromstring.html">
+<name>getTflArgFromString</name>
+<purpose>Create code replacement argument based on specified name and built-in data
+         type</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalheaderfile.html">
+<name>addAdditionalHeaderFile</name>
+<purpose>Add header file to array of header files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalincludepath.html">
+<name>addAdditionalIncludePath</name>
+<purpose>Add include path to array of include paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobj.html">
+<name>addAdditionalLinkObj</name>
+<purpose>Add link object to array of link objects for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionallinkobjpath.html">
+<name>addAdditionalLinkObjPath</name>
+<purpose>Add link object path to array of link object paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcefile.html">
+<name>addAdditionalSourceFile</name>
+<purpose>Add source file to array of source files for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/addadditionalsourcepath.html">
+<name>addAdditionalSourcePath</name>
+<purpose>Add source path to array of source paths for code replacement table
+            entry</purpose>
+</tocitem>
+<tocitem target="ref/settflcoperationentryparameters.html">
+<name>setTflCOperationEntryParameters</name>
+<purpose>Set specified parameters for operator entry in code replacement
+            table</purpose>
+</tocitem>
+<tocitem target="ref/addcomplextypealignment.html">
+<name>addComplexTypeAlignment</name>
+<purpose>Specify alignment boundary of a complex type</purpose>
+</tocitem>
+<tocitem target="ref/setreservedidentifiers.html">
+<name>setReservedIdentifiers</name>
+<purpose>Register reserved identifiers to associate with code replacement
+         library</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="file-import-and-export.html">File Import and Export
+<tocitem target="data-sources.html">Data Sources
+<tocitem target="ref/grepfields.html">
+<name>grepfields</name>
+<purpose>Identify matching fields in fixed record length files</purpose>
+</tocitem>
+<tocitem target="ref/readmtx.html">
+<name>readmtx</name>
+<purpose>Read matrix stored in file</purpose>
+</tocitem>
+<tocitem target="ref/readfields.html">
+<name>readfields</name>
+<purpose>Read fields or records from fixed-format files</purpose>
+</tocitem>
+<tocitem target="ref/spcread.html">
+<name>spcread</name>
+<purpose>Read columns of data from ASCII text file</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="standard-file-formats.html">Standard File Formats
+<tocitem target="ref/arcgridread.html">
+<name>arcgridread</name>
+<purpose>Read gridded data set in ArcGrid ASCII or GridFloat format</purpose>
+</tocitem>
+<tocitem target="ref/sdtsdemread.html">
+<name>sdtsdemread</name>
+<purpose>Read data from SDTS raster/DEM data set</purpose>
+</tocitem>
+<tocitem target="ref/sdtsinfo.html">
+<name>sdtsinfo</name>
+<purpose>Information about SDTS data set</purpose>
+</tocitem>
+<tocitem target="ref/worldfileread.html">
+<name>worldfileread</name>
+<purpose>Read world file and return referencing object or matrix</purpose>
+</tocitem>
+<tocitem target="ref/worldfilewrite.html">
+<name>worldfilewrite</name>
+<purpose>Write world file from referencing object or matrix</purpose>
+</tocitem>
+<tocitem target="ref/getworldfilename.html">
+<name>getworldfilename</name>
+<purpose>Derive world file name from image file name</purpose>
+</tocitem>
+<tocitem target="ref/geotiff2mstruct.html">
+<name>geotiff2mstruct</name>
+<purpose>Convert GeoTIFF information to map projection structure</purpose>
+</tocitem>
+<tocitem target="ref/geotiffinfo.html">
+<name>geotiffinfo</name>
+<purpose>Information about GeoTIFF file</purpose>
+</tocitem>
+<tocitem target="ref/geotiffread.html">
+<name>geotiffread</name>
+<purpose>Read GeoTIFF file</purpose>
+</tocitem>
+<tocitem target="ref/geotiffwrite.html">
+<name>geotiffwrite</name>
+<purpose>Write GeoTIFF file</purpose>
+</tocitem>
+<tocitem target="ref/map.geotiff.rpccoefficienttag.double.html">
+<name>double</name>
+<purpose>Convert TIFF tag property values to row vector of doubles</purpose>
+</tocitem>
+<tocitem target="ref/kmlwrite.html">
+<name>kmlwrite</name>
+<purpose>Write geographic data to KML file</purpose>
+</tocitem>
+<tocitem target="ref/kmlwriteline.html">
+<name>kmlwriteline</name>
+<purpose>Write geographic line data to KML file</purpose>
+</tocitem>
+<tocitem target="ref/kmlwritepoint.html">
+<name>kmlwritepoint</name>
+<purpose> Write geographic point data to KML file</purpose>
+</tocitem>
+<tocitem target="ref/kmlwritepolygon.html">
+<name>kmlwritepolygon</name>
+<purpose>Write geographic polygon to KML file</purpose>
+</tocitem>
+<tocitem target="ref/gpxread.html">
+<name>gpxread</name>
+<purpose>Read GPX file</purpose>
+</tocitem>
+<tocitem target="ref/makeattribspec.html">
+<name>makeattribspec</name>
+<purpose>Attribute specification from geographic data structure</purpose>
+</tocitem>
+<tocitem target="ref/shapeinfo.html">
+<name>shapeinfo</name>
+<purpose>Information about shapefile</purpose>
+</tocitem>
+<tocitem target="ref/shaperead.html">
+<name>shaperead</name>
+<purpose>Read vector features and attributes from shapefile</purpose>
+</tocitem>
+<tocitem target="ref/shapewrite.html">
+<name>shapewrite</name>
+<purpose>Write geographic vector data structure to shapefile</purpose>
+</tocitem>
+<tocitem target="ref/makedbfspec.html">
+<name>makedbfspec</name>
+<purpose>DBF specification from geographic data structure</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/imread.html">
+<name>imread</name>
+<purpose>Read image from graphics file</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/imwrite.html">
+<name>imwrite</name>
+<purpose>Write image to graphics file</purpose>
+</tocitem>
+<tocitem target="ref/rpccoefficienttag.map.geotiff.rpccoefficienttag.html">
+<name>map.geotiff.RPCCoefficientTag</name>
+<purpose>Create a Rational Polynomial Coefficients Tag object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gridded-terrain-and-bathymetry-products.html">Gridded Terrain and Bathymetry Products
+<tocitem target="ref/demdataui.html">
+<name>demdataui</name>
+<purpose>UI for selecting digital elevation data</purpose>
+</tocitem>
+<tocitem target="ref/dted.html">
+<name>dted</name>
+<purpose>Read U.S. Department of Defense Digital Terrain Elevation
+Data (DTED)</purpose>
+</tocitem>
+<tocitem target="ref/dteds.html">
+<name>dteds</name>
+<purpose>DTED file names for latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/etopo.html">
+<name>etopo</name>
+<purpose>Read gridded global relief data (ETOPO products)</purpose>
+</tocitem>
+<tocitem target="ref/etopo5.html">
+<name>etopo5</name>
+<purpose>Read global 5-min digital terrain data</purpose>
+</tocitem>
+<tocitem target="ref/globedem.html">
+<name>globedem</name>
+<purpose>Read Global Land One-km Base Elevation (GLOBE) data</purpose>
+</tocitem>
+<tocitem target="ref/globedems.html">
+<name>globedems</name>
+<purpose>GLOBE data file names for latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/gtopo30.html">
+<name>gtopo30</name>
+<purpose>Read 30-arc-second global digital elevation data (GTOPO30)</purpose>
+</tocitem>
+<tocitem target="ref/gtopo30s.html">
+<name>gtopo30s</name>
+<purpose>GTOPO30 data file names for latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/satbath.html">
+<name>satbath</name>
+<purpose>Read 2-minute terrain/bathymetry from Smith and Sandwell</purpose>
+</tocitem>
+<tocitem target="ref/tbase.html">
+<name>tbase</name>
+<purpose>Read 5-minute global terrain elevations from TerrainBase</purpose>
+</tocitem>
+<tocitem target="ref/usgs24kdem.html">
+<name>usgs24kdem</name>
+<purpose>Read USGS 7.5 minute (30 meter or 10 meter) Digital Elevation
+Models</purpose>
+</tocitem>
+<tocitem target="ref/usgsdem.html">
+<name>usgsdem</name>
+<purpose>Read USGS 1-degree (3-arc-second) Digital Elevation Model</purpose>
+</tocitem>
+<tocitem target="ref/usgsdems.html">
+<name>usgsdems</name>
+<purpose>USGS 1-degree (3-arc-sec) DEM file names for latitude-longitude quadrangle</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="specific-vector-and-gridded-data-products.html">Specific Vector and Gridded Data Products
+<tocitem target="ref/avhrrgoode.html">
+<name>avhrrgoode</name>
+<purpose>Read AVHRR data product stored in Goode Projection</purpose>
+</tocitem>
+<tocitem target="ref/avhrrlambert.html">
+<name>avhrrlambert</name>
+<purpose>Read AVHRR data product stored in eqaazim projection</purpose>
+</tocitem>
+<tocitem target="ref/gshhs.html">
+<name>gshhs</name>
+<purpose>Read Global Self-Consistent Hierarchical High-Resolution
+Geography</purpose>
+</tocitem>
+<tocitem target="ref/vmap0data.html">
+<name>vmap0data</name>
+<purpose>Read selected data from Vector Map Level 0</purpose>
+</tocitem>
+<tocitem target="ref/vmap0read.html">
+<name>vmap0read</name>
+<purpose>Read Vector Map Level 0 file</purpose>
+</tocitem>
+<tocitem target="ref/vmap0rhead.html">
+<name>vmap0rhead</name>
+<purpose>Read Vector Map Level 0 file headers</purpose>
+</tocitem>
+<tocitem target="ref/vmap0ui.html">
+<name>vmap0ui</name>
+<purpose>UI for selecting data from Vector Map Level 0</purpose>
+</tocitem>
+<tocitem target="ref/dcwdata.html">
+<name>dcwdata</name>
+<purpose>Read selected DCW worldwide basemap data</purpose>
+</tocitem>
+<tocitem target="ref/dcwgaz.html">
+<name>dcwgaz</name>
+<purpose>Search DCW worldwide basemap gazette file</purpose>
+</tocitem>
+<tocitem target="ref/dcwread.html">
+<name>dcwread</name>
+<purpose>Read DCW worldwide basemap file</purpose>
+</tocitem>
+<tocitem target="ref/dcwrhead.html">
+<name>dcwrhead</name>
+<purpose>Read DCW worldwide basemap file headers</purpose>
+</tocitem>
+<tocitem target="ref/fipsname.html">
+<name>fipsname</name>
+<purpose>Read Federal Information Processing Standard (FIPS) name file used with TIGER
+            thinned boundary files</purpose>
+</tocitem>
+<tocitem target="ref/readfk5.html">
+<name>readfk5</name>
+<purpose>Read Fifth Fundamental Catalog of Stars</purpose>
+</tocitem>
+<tocitem target="ref/tgrline.html">
+<name>tgrline</name>
+<purpose>Read TIGER/Line data</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="web-maps.html">Web Maps
+<tocitem target="web-map-display.html">Web Map Display
+<tocitem target="ref/webmap.html">
+<name>webmap</name>
+<purpose> Open web map</purpose>
+</tocitem>
+<tocitem target="ref/wmclose.html">
+<name>wmclose</name>
+<purpose> Close web map</purpose>
+</tocitem>
+<tocitem target="ref/wmprint.html">
+<name>wmprint</name>
+<purpose> Print web map</purpose>
+</tocitem>
+<tocitem target="ref/wmmarker.html">
+<name>wmmarker</name>
+<purpose> Display geographic marker on web map</purpose>
+</tocitem>
+<tocitem target="ref/wmline.html">
+<name>wmline</name>
+<purpose> Display geographic line on web map </purpose>
+</tocitem>
+<tocitem target="ref/wmpolygon.html">
+<name>wmpolygon</name>
+<purpose>Display geographic polygon on web map </purpose>
+</tocitem>
+<tocitem target="ref/wmremove.html">
+<name>wmremove</name>
+<purpose> Remove overlay on web map</purpose>
+</tocitem>
+<tocitem target="ref/wmcenter.html">
+<name>wmcenter</name>
+<purpose>Set or obtain web map center point</purpose>
+</tocitem>
+<tocitem target="ref/wmzoom.html">
+<name>wmzoom</name>
+<purpose>Set or obtain zoom level of web map</purpose>
+</tocitem>
+<tocitem target="ref/wmlimits.html">
+<name>wmlimits</name>
+<purpose> Set or obtain web map limits</purpose>
+</tocitem>
+<tocitem target="ref/addcustombasemap.html">
+<name>addCustomBasemap</name>
+<purpose>Add custom basemap</purpose>
+</tocitem>
+<tocitem target="ref/removecustombasemap.html">
+<name>removeCustomBasemap</name>
+<purpose>Remove custom basemap</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="web-map-service.html">Web Map Service
+<tocitem target="ref/wmsfind.html">
+<name>wmsfind</name>
+<purpose>Search local database for Web map servers and layers</purpose>
+</tocitem>
+<tocitem target="ref/wmsinfo.html">
+<name>wmsinfo</name>
+<purpose>Information about WMS server from capabilities document</purpose>
+</tocitem>
+<tocitem target="ref/wmsread.html">
+<name>wmsread</name>
+<purpose>Retrieve WMS map from server</purpose>
+</tocitem>
+<tocitem target="ref/wmsupdate.html">
+<name>wmsupdate</name>
+<purpose>Synchronize WMSLayer object with server</purpose>
+</tocitem>
+<tocitem target="ref/wmsmaprequest.boundimagesize.html">
+<name>boundImageSize</name>
+<purpose> Bound size of raster map</purpose>
+</tocitem>
+<tocitem target="ref/wmscapabilities.disp_wms.html">
+<name>disp</name>
+<purpose> Display properties of WMS layers or capabilities</purpose>
+</tocitem>
+<tocitem target="ref/webmapserver.getcapabilities.html">
+<name>getCapabilities</name>
+<purpose> Get capabilities document from server</purpose>
+</tocitem>
+<tocitem target="ref/webmapserver.getmap.html">
+<name>getMap</name>
+<purpose>Get raster map from server</purpose>
+</tocitem>
+<tocitem target="ref/wmslayer.refine.html">
+<name>refine</name>
+<purpose>Refine search of WMS layers</purpose>
+</tocitem>
+<tocitem target="ref/wmslayer.refinelimits.html">
+<name>refineLimits</name>
+<purpose> Refine search of WMS layers based on geographic limits</purpose>
+</tocitem>
+<tocitem target="ref/wmslayer.servers.html">
+<name>servers</name>
+<purpose> Return URLs of unique WMS servers</purpose>
+</tocitem>
+<tocitem target="ref/wmslayer.servertitles.html">
+<name>serverTitles</name>
+<purpose> Return titles of unique WMS servers</purpose>
+</tocitem>
+<tocitem target="ref/webmapserver.updatelayers.html">
+<name>updateLayers</name>
+<purpose>Update layer properties</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="map-display.html">Map Display
+<tocitem target="map-axes.html">Map Axes
+<tocitem target="ref/axesm.html">
+<name>axesm</name>
+<purpose>Create map axes</purpose>
+</tocitem>
+<tocitem target="ref/usamap.html">
+<name>usamap</name>
+<purpose>Construct map axes for United States of America</purpose>
+</tocitem>
+<tocitem target="ref/worldmap.html">
+<name>worldmap</name>
+<purpose>Construct map axes for given region of world</purpose>
+</tocitem>
+<tocitem target="ref/previewmap.html">
+<name>previewmap</name>
+<purpose>View map at printed size</purpose>
+</tocitem>
+<tocitem target="ref/showaxes.html">
+<name>showaxes</name>
+<purpose>Toggle display of map coordinate axes</purpose>
+</tocitem>
+<tocitem target="ref/axesmui.html">
+<name>axesmui</name>
+<purpose>Define map axes and modify map projection and display
+properties</purpose>
+</tocitem>
+<tocitem target="ref/gcm.html">
+<name>gcm</name>
+<purpose>Current map projection structure</purpose>
+</tocitem>
+<tocitem target="ref/getm.html">
+<name>getm</name>
+<purpose>Map object properties</purpose>
+</tocitem>
+<tocitem target="ref/ismap.html">
+<name>ismap</name>
+<purpose>True for axes with map projection</purpose>
+</tocitem>
+<tocitem target="ref/paperscale.html">
+<name>paperscale</name>
+<purpose>Set figure properties for printing at specified map scale</purpose>
+</tocitem>
+<tocitem target="ref/setm.html">
+<name>setm</name>
+<purpose>Set properties of map axes and graphics objects</purpose>
+</tocitem>
+<tocitem target="ref/clma.html">
+<name>clma</name>
+<purpose>Clear current map axes</purpose>
+</tocitem>
+<tocitem target="ref/clmo.html">
+<name>clmo</name>
+<purpose>Clear specified graphics objects from map axes</purpose>
+</tocitem>
+<tocitem target="ref/handlem.html">
+<name>handlem</name>
+<purpose>Handles of displayed map objects</purpose>
+</tocitem>
+<tocitem target="ref/handlemui.html">
+<name>handlem-ui</name>
+<purpose>GUI for selecting mapped objects</purpose>
+</tocitem>
+<tocitem target="ref/hidem.html">
+<name>hidem</name>
+<purpose>Hide specified graphic objects on map axes</purpose>
+</tocitem>
+<tocitem target="ref/ismapped.html">
+<name>ismapped</name>
+<purpose>True, if object is projected on map axes</purpose>
+</tocitem>
+<tocitem target="ref/namem.html">
+<name>namem</name>
+<purpose>Names of graphics objects</purpose>
+</tocitem>
+<tocitem target="ref/showm.html">
+<name>showm</name>
+<purpose>Specify graphic objects to display on map axes</purpose>
+</tocitem>
+<tocitem target="ref/tagm.html">
+<name>tagm</name>
+<purpose>Set Tag property of map graphics
+object</purpose>
+</tocitem>
+<tocitem target="ref/clmoui.html">
+<name>clmo-ui</name>
+<purpose>GUI to clear mapped objects</purpose>
+</tocitem>
+<tocitem target="ref/hidemui.html">
+<name>hidem-ui</name>
+<purpose>Hide specified mapped objects</purpose>
+</tocitem>
+<tocitem target="ref/restack.html">
+<name>restack</name>
+<purpose>Restack objects within map axes</purpose>
+</tocitem>
+<tocitem target="ref/showmui.html">
+<name>showm-ui</name>
+<purpose>Show specified mapped objects</purpose>
+</tocitem>
+<tocitem target="ref/tagmui.html">
+<name>tagm-ui</name>
+<purpose>GUI to edit tag property of mapped object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="map-layout.html">Map Customization
+<tocitem target="ref/framem.html">
+<name>framem</name>
+<purpose>Toggle and control display of map frame</purpose>
+</tocitem>
+<tocitem target="ref/gridm.html">
+<name>gridm</name>
+<purpose>Toggle and control display of graticule lines</purpose>
+</tocitem>
+<tocitem target="ref/ingeoquad.html">
+<name>ingeoquad</name>
+<purpose>True for points inside or on lat-lon quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/tightmap.html">
+<name>tightmap</name>
+<purpose>Remove white space around map</purpose>
+</tocitem>
+<tocitem target="ref/angl2str.html">
+<name>angl2str</name>
+<purpose>Convert angles to character array</purpose>
+</tocitem>
+<tocitem target="ref/axesscale.html">
+<name>axesscale</name>
+<purpose>Resize axes for equivalent scale</purpose>
+</tocitem>
+<tocitem target="ref/mlabel.html">
+<name>mlabel</name>
+<purpose>Toggle and control display of meridian labels</purpose>
+</tocitem>
+<tocitem target="ref/mlabelzero22pi.html">
+<name>mlabelzero22pi</name>
+<purpose>Convert meridian labels to 0-360 degree range</purpose>
+</tocitem>
+<tocitem target="ref/northarrow.html">
+<name>northarrow</name>
+<purpose>Add graphic element pointing to geographic North Pole</purpose>
+</tocitem>
+<tocitem target="ref/plabel.html">
+<name>plabel</name>
+<purpose>Toggle and control display of parallel labels</purpose>
+</tocitem>
+<tocitem target="ref/rotatetext.html">
+<name>rotatetext</name>
+<purpose>Rotate text to projected graticule</purpose>
+</tocitem>
+<tocitem target="ref/scaleruler.html">
+<name>scaleruler</name>
+<purpose>Add or modify graphic scale on map axes</purpose>
+</tocitem>
+<tocitem target="ref/textm.html">
+<name>textm</name>
+<purpose>Project text annotation on map axes</purpose>
+</tocitem>
+<tocitem target="ref/trimcart.html">
+<name>trimcart</name>
+<purpose>Trim graphic objects to map frame</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="vector-and-raster-map-display.html">Vector and Raster Map Display
+<tocitem target="ref/geoshow.html">
+<name>geoshow</name>
+<purpose>Display map latitude and longitude data</purpose>
+</tocitem>
+<tocitem target="ref/grid2image.html">
+<name>grid2image</name>
+<purpose>Display regular data grid as image</purpose>
+</tocitem>
+<tocitem target="ref/fillm.html">
+<name>fillm</name>
+<purpose>Project filled 2-D patch objects on map axes</purpose>
+</tocitem>
+<tocitem target="ref/linem.html">
+<name>linem</name>
+<purpose>Project line object on map axes</purpose>
+</tocitem>
+<tocitem target="ref/makesymbolspec.html">
+<name>makesymbolspec</name>
+<purpose>Construct vector layer symbolization specification </purpose>
+</tocitem>
+<tocitem target="ref/mapshow.html">
+<name>mapshow</name>
+<purpose>Display map data without projection</purpose>
+</tocitem>
+<tocitem target="ref/displaym.html">
+<name>displaym</name>
+<purpose>Display geographic data from display structure</purpose>
+</tocitem>
+<tocitem target="ref/meshm.html">
+<name>meshm</name>
+<purpose>Project regular data grid on map axes</purpose>
+</tocitem>
+<tocitem target="ref/patchesm.html">
+<name>patchesm</name>
+<purpose>Project patches on map axes as individual objects</purpose>
+</tocitem>
+<tocitem target="ref/patchm.html">
+<name>patchm</name>
+<purpose>Project patch objects on map axes</purpose>
+</tocitem>
+<tocitem target="ref/pcolorm.html">
+<name>pcolorm</name>
+<purpose>Project regular data grid on map axes in z = 0 plane</purpose>
+</tocitem>
+<tocitem target="ref/plotm.html">
+<name>plotm</name>
+<purpose>Project 2-D lines and points on map axes</purpose>
+</tocitem>
+<tocitem target="ref/plot3m.html">
+<name>plot3m</name>
+<purpose>Project 3-D lines and points on map axes</purpose>
+</tocitem>
+<tocitem target="ref/fill3m.html">
+<name>fill3m</name>
+<purpose>Project filled 3-D patch objects on map axes</purpose>
+</tocitem>
+<tocitem target="ref/surfm.html">
+<name>surfm</name>
+<purpose>Project geolocated data grid on map axes</purpose>
+</tocitem>
+<tocitem target="ref/usamap.html">
+<name>usamap</name>
+<purpose>Construct map axes for United States of America</purpose>
+</tocitem>
+<tocitem target="ref/worldmap.html">
+<name>worldmap</name>
+<purpose>Construct map axes for given region of world</purpose>
+</tocitem>
+<tocitem target="ref/comet3m.html">
+<name>comet3m</name>
+<purpose>Project 3-D comet plot on map axes</purpose>
+</tocitem>
+<tocitem target="ref/cometm.html">
+<name>cometm</name>
+<purpose>Project 2-D comet plot on map axes</purpose>
+</tocitem>
+<tocitem target="ref/makemapped.html">
+<name>makemapped</name>
+<purpose>Convert ordinary graphics object to mapped object</purpose>
+</tocitem>
+<tocitem target="ref/project.html">
+<name>project</name>
+<purpose>Project displayed map graphics object</purpose>
+</tocitem>
+<tocitem target="ref/trimdata.html">
+<name>trimdata</name>
+<purpose>Trim map data exceeding projection limits</purpose>
+</tocitem>
+<tocitem target="ref/undoclip.html">
+<name>undoclip</name>
+<purpose>Remove object clips introduced by clipdata</purpose>
+</tocitem>
+<tocitem target="ref/undotrim.html">
+<name>undotrim</name>
+<purpose>Remove object trims introduced by trimdata</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="3-d-map-display.html">3-D Map Display
+<tocitem target="ref/camposm.html">
+<name>camposm</name>
+<purpose>Set camera position using geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/camtargm.html">
+<name>camtargm</name>
+<purpose>Set camera target using geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/camupm.html">
+<name>camupm</name>
+<purpose>Set camera up vector using geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/daspectm.html">
+<name>daspectm</name>
+<purpose>Control vertical exaggeration in map display</purpose>
+</tocitem>
+<tocitem target="ref/demcmap.html">
+<name>demcmap</name>
+<purpose>Colormaps appropriate to terrain elevation data</purpose>
+</tocitem>
+<tocitem target="ref/lightm.html">
+<name>lightm</name>
+<purpose>Project light objects on map axes</purpose>
+</tocitem>
+<tocitem target="ref/meshlsrm.html">
+<name>meshlsrm</name>
+<purpose>3-D lighted shaded relief of regular data grid</purpose>
+</tocitem>
+<tocitem target="ref/shaderel.html">
+<name>shaderel</name>
+<purpose>Construct cdata and colormap for shaded
+relief</purpose>
+</tocitem>
+<tocitem target="ref/surflm.html">
+<name>surflm</name>
+<purpose>3-D shaded surface with lighting on map axes</purpose>
+</tocitem>
+<tocitem target="ref/surflsrm.html">
+<name>surflsrm</name>
+<purpose>3-D lighted shaded relief of geolocated data grid</purpose>
+</tocitem>
+<tocitem target="ref/surfacem.html">
+<name>surfacem</name>
+<purpose>Project and add geolocated data grid to current map axes</purpose>
+</tocitem>
+<tocitem target="ref/zdatam.html">
+<name>zdatam</name>
+<purpose>Adjust z-plane of displayed map objects</purpose>
+</tocitem>
+<tocitem target="globe.html">
+<name>globe</name>
+<purpose>Frame for 3-D map display</purpose>
+</tocitem>
+<tocitem target="ref/lightmui.html">
+<name>lightmui</name>
+<purpose>Control position of lights on globe or 3-D map</purpose>
+</tocitem>
+<tocitem target="ref/zdatamui.html">
+<name>zdatam-ui</name>
+<purpose>GUI to adjust z-plane of mapped objects</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="thematic-maps-1.html">Thematic Maps
+<tocitem target="ref/clabelm.html">
+<name>clabelm</name>
+<purpose>Add contour labels to map contour display</purpose>
+</tocitem>
+<tocitem target="ref/clegendm.html">
+<name>clegendm</name>
+<purpose>Add legend labels to map contour display</purpose>
+</tocitem>
+<tocitem target="ref/contourcbar.html">
+<name>contourcbar</name>
+<purpose>Color bar for filled contour map display </purpose>
+</tocitem>
+<tocitem target="ref/contourcmap.html">
+<name>contourcmap</name>
+<purpose>Contour colormap and colorbar for current axes</purpose>
+</tocitem>
+<tocitem target="ref/contourm.html">
+<name>contourm</name>
+<purpose>Project 2-D contour plot of map data</purpose>
+</tocitem>
+<tocitem target="ref/contour3m.html">
+<name>contour3m</name>
+<purpose>Project 3-D contour plot of map data</purpose>
+</tocitem>
+<tocitem target="ref/contourfm.html">
+<name>contourfm</name>
+<purpose>Project filled 2-D contour plot of map data</purpose>
+</tocitem>
+<tocitem target="ref/lcolorbar.html">
+<name>lcolorbar</name>
+<purpose>Colorbar with text labels</purpose>
+</tocitem>
+<tocitem target="ref/polcmap.html">
+<name>polcmap</name>
+<purpose> Create colormap appropriate to political regions</purpose>
+</tocitem>
+<tocitem target="ref/ind2rgb8.html">
+<name>ind2rgb8</name>
+<purpose>Convert indexed image to uint8 RGB image</purpose>
+</tocitem>
+<tocitem target="ref/quiverm.html">
+<name>quiverm</name>
+<purpose>Project 2-D quiver plot on map axes</purpose>
+</tocitem>
+<tocitem target="ref/quiver3m.html">
+<name>quiver3m</name>
+<purpose>Project 3-D quiver plot on map axes</purpose>
+</tocitem>
+<tocitem target="ref/scatterm.html">
+<name>scatterm</name>
+<purpose>Project point markers with variable color and area</purpose>
+</tocitem>
+<tocitem target="ref/stem3m.html">
+<name>stem3m</name>
+<purpose>Project stem plot on map axes</purpose>
+</tocitem>
+<tocitem target="ref/symbolm.html">
+<name>symbolm</name>
+<purpose>Project point markers with variable size</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="map-interaction.html">Interact with Maps
+<tocitem target="ref/clrmenu.html">
+<name>clrmenu</name>
+<purpose>Add colormap menu to figure window</purpose>
+</tocitem>
+<tocitem target="ref/gcpmap.html">
+<name>gcpmap</name>
+<purpose>Current mouse point from map axes</purpose>
+</tocitem>
+<tocitem target="ref/gtextm.html">
+<name>gtextm</name>
+<purpose>Place text on map using mouse</purpose>
+</tocitem>
+<tocitem target="ref/inputm.html">
+<name>inputm</name>
+<purpose>Latitudes and longitudes of mouse-click locations</purpose>
+</tocitem>
+<tocitem target="ref/maptool.html">
+<name>maptool</name>
+<purpose>Add menu-activated tools to map figure</purpose>
+</tocitem>
+<tocitem target="ref/maptrim.html">
+<name>maptrim</name>
+<purpose>Interactively trim and convert map data from vector to
+raster format</purpose>
+</tocitem>
+<tocitem target="ref/mapview.html">
+<name>mapview</name>
+<purpose>Interactive map viewer</purpose>
+</tocitem>
+<tocitem target="ref/originui.html">
+<name>originui</name>
+<purpose>Interactively modify map origin</purpose>
+</tocitem>
+<tocitem target="ref/parallelui.html">
+<name>parallelui</name>
+<purpose>Interactively modify map parallels</purpose>
+</tocitem>
+<tocitem target="ref/colorm.html">
+<name>colorm</name>
+<purpose>Create index map colormaps</purpose>
+</tocitem>
+<tocitem target="ref/colorui.html">
+<name>colorui</name>
+<purpose>Interactively define RGB color</purpose>
+</tocitem>
+<tocitem target="ref/mlayers.html">
+<name>mlayers</name>
+<purpose>GUI to control plotting of display structure elements</purpose>
+</tocitem>
+<tocitem target="ref/mobjects.html">
+<name>mobjects</name>
+<purpose>Manipulate object sets displayed on map axes</purpose>
+</tocitem>
+<tocitem target="ref/panzoom.html">
+<name>panzoom</name>
+<purpose>Zoom settings on 2-D map</purpose>
+</tocitem>
+<tocitem target="ref/propertyeditors.html">
+<name>property editors</name>
+<purpose>GUIs to edit properties of mapped objects</purpose>
+</tocitem>
+<tocitem target="ref/qrydata.html">
+<name>qrydata</name>
+<purpose>GUI to interactively perform data queries</purpose>
+</tocitem>
+<tocitem target="ref/rootlayr.html">
+<name>rootlayr</name>
+<purpose>Construct cell array of workspace variables for mlayers
+      tool</purpose>
+</tocitem>
+<tocitem target="ref/uimaptbx.html">
+<name>uimaptbx</name>
+<purpose>Handle buttondown callbacks for mapped objects </purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="data-analysis-and-transformation.html">Data Analysis
+<tocitem target="vector-data.html">Vector Data
+<tocitem target="ref/closepolygonparts.html">
+<name>closePolygonParts</name>
+<purpose>Close all rings in multipart polygon</purpose>
+</tocitem>
+<tocitem target="ref/extractfield.html">
+<name>extractfield</name>
+<purpose>Field values from structure array</purpose>
+</tocitem>
+<tocitem target="ref/interpm.html">
+<name>interpm</name>
+<purpose>Densify latitude-longitude sampling in lines or polygons</purpose>
+</tocitem>
+<tocitem target="ref/intrplat.html">
+<name>intrplat</name>
+<purpose>Interpolate latitude at given longitude</purpose>
+</tocitem>
+<tocitem target="ref/intrplon.html">
+<name>intrplon</name>
+<purpose>Interpolate longitude at given latitude</purpose>
+</tocitem>
+<tocitem target="ref/isshapemultipart.html">
+<name>isShapeMultipart</name>
+<purpose>True if polygon or line has multiple parts</purpose>
+</tocitem>
+<tocitem target="ref/linecirc.html">
+<name>linecirc</name>
+<purpose>Intersections of circles and lines in Cartesian plane</purpose>
+</tocitem>
+<tocitem target="ref/circcirc.html">
+<name>circcirc</name>
+<purpose>Intersections of circles in Cartesian plane</purpose>
+</tocitem>
+<tocitem target="ref/maptriml.html">
+<name>maptriml</name>
+<purpose>Trim lines to latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/maptrimp.html">
+<name>maptrimp</name>
+<purpose>Trim polygons to latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/reducem.html">
+<name>reducem</name>
+<purpose>Reduce density of points in vector data</purpose>
+</tocitem>
+<tocitem target="ref/removeextrananseparators.html">
+<name>removeExtraNanSeparators</name>
+<purpose>Clean up NaN separators in polygons
+and lines</purpose>
+</tocitem>
+<tocitem target="ref/nanclip.html">
+<name>nanclip</name>
+<purpose>Clip vector data with NaNs at specified pen-down locations</purpose>
+</tocitem>
+<tocitem target="ref/bufferm.html">
+<name>bufferm</name>
+<purpose>Buffer zones for latitude-longitude polygons</purpose>
+</tocitem>
+<tocitem target="ref/flatearthpoly.html">
+<name>flatearthpoly</name>
+<purpose>Insert points along date line to pole</purpose>
+</tocitem>
+<tocitem target="ref/ispolycw.html">
+<name>ispolycw</name>
+<purpose>True if polygon vertices are in clockwise order</purpose>
+</tocitem>
+<tocitem target="ref/poly2ccw.html">
+<name>poly2ccw</name>
+<purpose>Convert polygon contour to counterclockwise vertex ordering</purpose>
+</tocitem>
+<tocitem target="ref/poly2cw.html">
+<name>poly2cw</name>
+<purpose>Convert polygon contour to clockwise vertex ordering</purpose>
+</tocitem>
+<tocitem target="ref/poly2fv.html">
+<name>poly2fv</name>
+<purpose>Convert polygonal region to patch faces and vertices</purpose>
+</tocitem>
+<tocitem target="ref/polybool.html">
+<name>polybool</name>
+<purpose>Set operations on polygonal regions</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/polyshape.html">
+<name>polyshape</name>
+<purpose>2-D polygons</purpose>
+</tocitem>
+<tocitem target="ref/polyxpoly.html">
+<name>polyxpoly</name>
+<purpose>Intersection points for lines or polygon edges</purpose>
+</tocitem>
+<tocitem target="ref/polyjoin.html">
+<name>polyjoin</name>
+<purpose>Convert line or polygon parts from cell arrays to vector
+form</purpose>
+</tocitem>
+<tocitem target="ref/polymerge.html">
+<name>polymerge</name>
+<purpose>Merge line segments with matching endpoints</purpose>
+</tocitem>
+<tocitem target="ref/polysplit.html">
+<name>polysplit</name>
+<purpose>Convert line or polygon parts from vector form to cell
+arrays</purpose>
+</tocitem>
+<tocitem target="ref/updategeostruct.html">
+<name>updategeostruct</name>
+<purpose>Convert line or patch display structure to geostruct</purpose>
+</tocitem>
+<tocitem target="ref/cart2grn.html">
+<name>cart2grn</name>
+<purpose>Transform projected coordinates to Greenwich system</purpose>
+</tocitem>
+<tocitem target="ref/grn2eqa.html">
+<name>grn2eqa</name>
+<purpose>Convert from Greenwich to equal area coordinates</purpose>
+</tocitem>
+<tocitem target="ref/eqa2grn.html">
+<name>eqa2grn</name>
+<purpose>Convert from equal area to Greenwich coordinates</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.append.html">
+<name>append</name>
+<purpose> Append features to geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.cat.html">
+<name>cat</name>
+<purpose>Concatenate geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/combntns.html">
+<name>combntns</name>
+<purpose>All possible combinations of set of values</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.disp.html">
+<name>disp</name>
+<purpose>Display geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/extractm.html">
+<name>extractm</name>
+<purpose>Coordinate data from line or patch display structure</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.fieldnames.html">
+<name>fieldnames</name>
+<purpose>Return dynamic property names of geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/hista.html">
+<name>hista</name>
+<purpose>Bin counts for geographic points using equal-area bins</purpose>
+</tocitem>
+<tocitem target="ref/histr.html">
+<name>histr</name>
+<purpose>Histogram for geographic points with equirectangular bins</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.isempty.html">
+<name>isempty</name>
+<purpose>Determine if geographic or planar vector is empty</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.isfield.html">
+<name>isfield</name>
+<purpose>Determine if dynamic property exists in geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.isprop.html">
+<name>isprop</name>
+<purpose>Determine if property exists in geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.length.html">
+<name>length</name>
+<purpose> Return number of elements in geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/meanm.html">
+<name>meanm</name>
+<purpose>Mean location of geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/polycut.html">
+<name>polycut</name>
+<purpose>Polygon branch cuts for holes</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.properties.html">
+<name>properties</name>
+<purpose>Return property names of geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.rmfield.html">
+<name>rmfield</name>
+<purpose>Remove dynamic property from geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.rmprop.html">
+<name>rmprop</name>
+<purpose>Remove property from geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.size.html">
+<name>size</name>
+<purpose>Return size of geographic or planar vector</purpose>
+</tocitem>
+<tocitem target="ref/stdist.html">
+<name>stdist</name>
+<purpose>Standard distance for geographic points</purpose>
+</tocitem>
+<tocitem target="ref/stdm.html">
+<name>stdm</name>
+<purpose>Standard deviation for geographic points</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.struct.html">
+<name>struct</name>
+<purpose> Convert geographic or planar vector to scalar structure</purpose>
+</tocitem>
+<tocitem target="ref/geopoint.vertcat.html">
+<name>vertcat</name>
+<purpose>Vertically concatenate geographic or planar vectors</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="raster-data.html">Raster Data
+<tocitem target="ref/georefcells.html">
+<name>georefcells</name>
+<purpose>Reference raster cells to geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/georefpostings.html">
+<name>georefpostings</name>
+<purpose>Reference raster postings to geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/refmattogeorasterreference.html">
+<name>refmatToGeoRasterReference</name>
+<purpose>Referencing matrix to geographic raster reference object</purpose>
+</tocitem>
+<tocitem target="ref/refvectogeorasterreference.html">
+<name>refvecToGeoRasterReference</name>
+<purpose>Referencing vector to geographic raster reference object</purpose>
+</tocitem>
+<tocitem target="ref/makerefmat.html">
+<name>makerefmat</name>
+<purpose>Construct affine spatial-referencing matrix</purpose>
+</tocitem>
+<tocitem target="ref/georesize.html">
+<name>georesize</name>
+<purpose>Resize geographic raster</purpose>
+</tocitem>
+<tocitem target="ref/geointerp.html">
+<name>geointerp</name>
+<purpose>Geographic raster interpolation</purpose>
+</tocitem>
+<tocitem target="ref/latlon2pix.html">
+<name>latlon2pix</name>
+<purpose>Convert latitude-longitude coordinates to pixel coordinates</purpose>
+</tocitem>
+<tocitem target="ref/pix2latlon.html">
+<name>pix2latlon</name>
+<purpose>Convert pixel coordinates to latitude-longitude coordinates</purpose>
+</tocitem>
+<tocitem target="ref/setpostn.html">
+<name>setpostn</name>
+<purpose>Convert latitude-longitude to data grid rows and columns</purpose>
+</tocitem>
+<tocitem target="ref/setltln.html">
+<name>setltln</name>
+<purpose>Convert data grid rows and columns to latitude-longitude</purpose>
+</tocitem>
+<tocitem target="ref/limitm.html">
+<name>limitm</name>
+<purpose>Determine latitude and longitude limits of regular data
+grid</purpose>
+</tocitem>
+<tocitem target="ref/filterm.html">
+<name>filterm</name>
+<purpose>Filter latitudes and longitudes based on underlying data
+grid</purpose>
+</tocitem>
+<tocitem target="ref/findm.html">
+<name>findm</name>
+<purpose>Latitudes and longitudes of nonzero data grid elements</purpose>
+</tocitem>
+<tocitem target="ref/geocontourxy.html">
+<name>geocontourxy</name>
+<purpose>Contour grid in local system with latitude-longitude results</purpose>
+</tocitem>
+<tocitem target="ref/geoloc2grid.html">
+<name>geoloc2grid</name>
+<purpose>Convert geolocated data array to regular data grid</purpose>
+</tocitem>
+<tocitem target="ref/ltln2val.html">
+<name>ltln2val</name>
+<purpose>Extract data grid values for specified locations</purpose>
+</tocitem>
+<tocitem target="ref/changem.html">
+<name>changem</name>
+<purpose>Substitute values in data array</purpose>
+</tocitem>
+<tocitem target="ref/imbedm.html">
+<name>imbedm</name>
+<purpose>Encode data points into regular data grid</purpose>
+</tocitem>
+<tocitem target="ref/encodem.html">
+<name>encodem</name>
+<purpose>Fill in regular data grid from seed values and locations</purpose>
+</tocitem>
+<tocitem target="ref/meshgrat.html">
+<name>meshgrat</name>
+<purpose>Construct map graticule for surface object display</purpose>
+</tocitem>
+<tocitem target="ref/geopeaks.html">
+<name>geopeaks</name>
+<purpose>Generate synthetic data set on sphere</purpose>
+</tocitem>
+<tocitem target="ref/maprefcells.html">
+<name>maprefcells</name>
+<purpose>Reference raster cells to map coordinates</purpose>
+</tocitem>
+<tocitem target="ref/maprefpostings.html">
+<name>maprefpostings</name>
+<purpose>Reference raster postings to map coordinates</purpose>
+</tocitem>
+<tocitem target="ref/refmattomaprasterreference.html">
+<name>refmatToMapRasterReference</name>
+<purpose>Referencing matrix to map raster reference object</purpose>
+</tocitem>
+<tocitem target="ref/mapresize.html">
+<name>mapresize</name>
+<purpose>Resize projected raster</purpose>
+</tocitem>
+<tocitem target="ref/mapinterp.html">
+<name>mapinterp</name>
+<purpose>Map raster interpolation</purpose>
+</tocitem>
+<tocitem target="ref/map2pix.html">
+<name>map2pix</name>
+<purpose>Convert map coordinates to pixel coordinates</purpose>
+</tocitem>
+<tocitem target="ref/pix2map.html">
+<name>pix2map</name>
+<purpose>Convert pixel coordinates to map coordinates</purpose>
+</tocitem>
+<tocitem target="ref/pixcenters.html">
+<name>pixcenters</name>
+<purpose>Compute pixel centers for georeferenced image or data
+grid</purpose>
+</tocitem>
+<tocitem target="ref/mapoutline.html">
+<name>mapoutline</name>
+<purpose>Compute outline of georeferenced image or data grid</purpose>
+</tocitem>
+<tocitem target="ref/mapbbox.html">
+<name>mapbbox</name>
+<purpose>Compute bounding box of georeferenced image or data grid</purpose>
+</tocitem>
+<tocitem target="ref/georasterref.html">
+<name>georasterref</name>
+<purpose>Construct geographic raster reference object</purpose>
+</tocitem>
+<tocitem target="ref/maprasterref.html">
+<name>maprasterref</name>
+<purpose>Construct map raster reference object</purpose>
+</tocitem>
+<tocitem target="ref/refmattoworldfilematrix.html">
+<name>refmatToWorldFileMatrix</name>
+<purpose>Convert referencing matrix to world file matrix</purpose>
+</tocitem>
+<tocitem target="ref/worldfilematrixtorefmat.html">
+<name>worldFileMatrixToRefmat</name>
+<purpose>Convert world file matrix to referencing matrix</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.contains.html">
+<name>contains</name>
+<purpose>Determine if geographic or map raster contains points</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.mapcellsreference.firstcornerx.html">
+<name>firstCornerX</name>
+<purpose>Return world x-coordinate of map raster index
+            (1,1)</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.mapcellsreference.firstcornery.html">
+<name>firstCornerY</name>
+<purpose>Return world y-coordinate of map raster index
+            (1,1)</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.geographictodiscrete.html">
+<name>geographicToDiscrete</name>
+<purpose> Transform geographic to discrete coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.geographictointrinsic.html">
+<name>geographicToIntrinsic</name>
+<purpose> Transform geographic to intrinsic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/getseeds.html">
+<name>getseeds</name>
+<purpose>Interactively assign seeds for data grid encoding</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.intrinsictogeographic.html">
+<name>intrinsicToGeographic</name>
+<purpose> Transform intrinsic to geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.mapcellsreference.intrinsictoworld.html">
+<name>intrinsicToWorld</name>
+<purpose> Transform intrinsic to planar world coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.intrinsicxtolongitude.html">
+<name>intrinsicXToLongitude</name>
+<purpose>Convert from intrinsic x to longitude
+            coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.intrinsicytolatitude.html">
+<name>intrinsicYToLatitude</name>
+<purpose>Convert from intrinsic y to latitude coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.latitudetointrinsicy.html">
+<name>latitudeToIntrinsicY</name>
+<purpose>Convert from latitude to intrinsic y coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.longitudetointrinsicx.html">
+<name>longitudeToIntrinsicX</name>
+<purpose>Convert from longitude to intrinsic x
+            coordinates</purpose>
+</tocitem>
+<tocitem target="ref/nanm.html">
+<name>nanm</name>
+<purpose>Construct regular data grid of NaNs</purpose>
+</tocitem>
+<tocitem target="ref/neworig.html">
+<name>neworig</name>
+<purpose>Orient regular data grid to oblique aspect</purpose>
+</tocitem>
+<tocitem target="ref/onem.html">
+<name>onem</name>
+<purpose>Construct regular data grid of 1s</purpose>
+</tocitem>
+<tocitem target="ref/refmat2vec.html">
+<name>refmat2vec</name>
+<purpose>Convert referencing matrix to referencing vector</purpose>
+</tocitem>
+<tocitem target="ref/refvec2mat.html">
+<name>refvec2mat</name>
+<purpose>Convert referencing vector to referencing matrix</purpose>
+</tocitem>
+<tocitem target="ref/resizem.html">
+<name>resizem</name>
+<purpose>Resize regular data grid</purpose>
+</tocitem>
+<tocitem target="ref/seedm.html">
+<name>seedm</name>
+<purpose>GUI to fill data grids with seeded values</purpose>
+</tocitem>
+<tocitem target="ref/sizem.html">
+<name>sizem</name>
+<purpose>Row and column dimensions needed for regular data grid</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.sizesmatch.html">
+<name>sizesMatch</name>
+<purpose>Determine if geographic or map raster object and image or raster are
+            size-compatible</purpose>
+</tocitem>
+<tocitem target="ref/spzerom.html">
+<name>spzerom</name>
+<purpose>Construct sparse regular data grid of 0s</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.geographiccellsreference.worldfilematrix.html">
+<name>worldFileMatrix</name>
+<purpose>Return world file parameters for transformation</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.mapcellsreference.worldtodiscrete.html">
+<name>worldToDiscrete</name>
+<purpose> Transform planar world to discrete coordinates</purpose>
+</tocitem>
+<tocitem target="ref/map.rasterref.mapcellsreference.worldtointrinsic.html">
+<name>worldToIntrinsic</name>
+<purpose>Transform planar world to intrinsic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/zerom.html">
+<name>zerom</name>
+<purpose>Construct regular data grid of 0s</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="conversion-between-vector-and-raster-data.html">Convert Between Vector and Raster Data
+<tocitem target="ref/mapprofile.html">
+<name>mapprofile</name>
+<purpose>Interpolate between waypoints on regular data grid</purpose>
+</tocitem>
+<tocitem target="ref/vec2mtx.html">
+<name>vec2mtx</name>
+<purpose>Convert latitude-longitude vectors to regular data grid</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="terrain-data-analysis.html">Terrain Data Analysis
+<tocitem target="ref/gradientm.html">
+<name>gradientm</name>
+<purpose>Calculate gradient, slope, and aspect of data grid</purpose>
+</tocitem>
+<tocitem target="ref/los2.html">
+<name>los2</name>
+<purpose>Line-of-sight visibility between two points in terrain</purpose>
+</tocitem>
+<tocitem target="ref/viewshed.html">
+<name>viewshed</name>
+<purpose>Areas visible from point on terrain elevation grid</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="coordinates-geodesy-and-projections.html">Geometric Geodesy
+<tocitem target="modeling-the-earth.html">Modeling the Earth
+<tocitem target="ref/wgs84ellipsoid.html">
+<name>wgs84Ellipsoid</name>
+<purpose>Reference ellipsoid for World Geodetic System 1984</purpose>
+</tocitem>
+<tocitem target="ref/egm96geoid.html">
+<name>egm96geoid</name>
+<purpose>Geoid height from Earth Gravitational Model 1996 (EGM96)</purpose>
+</tocitem>
+<tocitem target="ref/earthradius.html">
+<name>earthRadius</name>
+<purpose>Mean radius of planet Earth</purpose>
+</tocitem>
+<tocitem target="ref/rcurve.html">
+<name>rcurve</name>
+<purpose>Ellipsoidal radii of curvature</purpose>
+</tocitem>
+<tocitem target="ref/rsphere.html">
+<name>rsphere</name>
+<purpose>Radii of auxiliary spheres</purpose>
+</tocitem>
+<tocitem target="ref/geocentriclatitude.html">
+<name>geocentricLatitude</name>
+<purpose>Convert geodetic to geocentric latitude</purpose>
+</tocitem>
+<tocitem target="ref/parametriclatitude.html">
+<name>parametricLatitude</name>
+<purpose>Convert geodetic to parametric latitude</purpose>
+</tocitem>
+<tocitem target="ref/geodeticlatitudefromgeocentric.html">
+<name>geodeticLatitudeFromGeocentric</name>
+<purpose>Convert geocentric to geodetic latitude</purpose>
+</tocitem>
+<tocitem target="ref/geodeticlatitudefromparametric.html">
+<name>geodeticLatitudeFromParametric</name>
+<purpose>Convert parametric to geodetic latitude</purpose>
+</tocitem>
+<tocitem target="ref/axes2ecc.html">
+<name>axes2ecc</name>
+<purpose>Eccentricity of ellipse from axes lengths</purpose>
+</tocitem>
+<tocitem target="ref/majaxis.html">
+<name>majaxis</name>
+<purpose>Semimajor axis of ellipse</purpose>
+</tocitem>
+<tocitem target="ref/minaxis.html">
+<name>minaxis</name>
+<purpose>Semiminor axis of ellipse</purpose>
+</tocitem>
+<tocitem target="ref/ecc2flat.html">
+<name>ecc2flat</name>
+<purpose>Flattening of ellipse from eccentricity</purpose>
+</tocitem>
+<tocitem target="ref/flat2ecc.html">
+<name>flat2ecc</name>
+<purpose>Eccentricity of ellipse from flattening</purpose>
+</tocitem>
+<tocitem target="ref/ecc2n.html">
+<name>ecc2n</name>
+<purpose>Third flattening of ellipse from eccentricity</purpose>
+</tocitem>
+<tocitem target="ref/n2ecc.html">
+<name>n2ecc</name>
+<purpose>Eccentricity of ellipse from third flattening</purpose>
+</tocitem>
+<tocitem target="ref/almanac.html">
+<name>almanac</name>
+<purpose>Parameters for Earth, planets, Sun, and Moon</purpose>
+</tocitem>
+<tocitem target="ref/convertlat.html">
+<name>convertlat</name>
+<purpose>Convert between geodetic and auxiliary latitudes</purpose>
+</tocitem>
+<tocitem target="ref/map.geodesy.authaliclatitudeconverter.forward.html">
+<name>forward</name>
+<purpose> Convert geodetic latitude to authalic, conformal, isometric, or rectifying
+            latitude</purpose>
+</tocitem>
+<tocitem target="ref/geocentric2geodeticlat.html">
+<name>geocentric2geodeticLat</name>
+<purpose>Convert geocentric to geodetic latitude</purpose>
+</tocitem>
+<tocitem target="ref/geodetic2geocentriclat.html">
+<name>geodetic2geocentricLat</name>
+<purpose>Convert geodetic to geocentric latitude</purpose>
+</tocitem>
+<tocitem target="ref/map.geodesy.authaliclatitudeconverter.inverse.html">
+<name>inverse</name>
+<purpose> Convert authalic, conformal, isometric, or rectifying latitude to geodetic
+            latitude</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="3-d-coordinate-and-vector-transformations.html">3-D Coordinate and Vector Transformations
+<tocitem target="ref/aer2ecef.html">
+<name>aer2ecef</name>
+<purpose>Transform local spherical coordinates to geocentric Earth-centered
+            Earth-fixed</purpose>
+</tocitem>
+<tocitem target="ref/enu2ecef.html">
+<name>enu2ecef</name>
+<purpose>Transform local east-north-up coordinates to geocentric Earth-centered
+            Earth-fixed</purpose>
+</tocitem>
+<tocitem target="ref/geodetic2ecef.html">
+<name>geodetic2ecef</name>
+<purpose>Transform geodetic coordinates to geocentric Earth-centered Earth-fixed</purpose>
+</tocitem>
+<tocitem target="ref/ned2ecef.html">
+<name>ned2ecef</name>
+<purpose>Transform local north-east-down coordinates to geocentric Earth-centered
+                        Earth-fixed</purpose>
+</tocitem>
+<tocitem target="ref/ecefoffset.html">
+<name>ecefOffset</name>
+<purpose>Cartesian ECEF offset between geodetic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/aer2geodetic.html">
+<name>aer2geodetic</name>
+<purpose>Transform local spherical coordinates to geodetic</purpose>
+</tocitem>
+<tocitem target="ref/ecef2geodetic.html">
+<name>ecef2geodetic</name>
+<purpose>Transform geocentric Earth-centered Earth-fixed coordinates to geodetic</purpose>
+</tocitem>
+<tocitem target="ref/enu2geodetic.html">
+<name>enu2geodetic</name>
+<purpose>Transform local east-north-up coordinates to geodetic</purpose>
+</tocitem>
+<tocitem target="ref/ned2geodetic.html">
+<name>ned2geodetic</name>
+<purpose>Transform local north-east-down coordinates to geodetic</purpose>
+</tocitem>
+<tocitem target="ref/lookatspheroid.html">
+<name>lookAtSpheroid</name>
+<purpose>Line of sight intersection with oblate spheroid</purpose>
+</tocitem>
+<tocitem target="ref/aer2enu.html">
+<name>aer2enu</name>
+<purpose>Transform local spherical coordinates to local east-north-up</purpose>
+</tocitem>
+<tocitem target="ref/ecef2enu.html">
+<name>ecef2enu</name>
+<purpose>Transform geocentric Earth-centered Earth-fixed coordinates to local
+            east-north-up</purpose>
+</tocitem>
+<tocitem target="ref/geodetic2enu.html">
+<name>geodetic2enu</name>
+<purpose>Transform geodetic coordinates to local east-north-up</purpose>
+</tocitem>
+<tocitem target="ref/aer2ned.html">
+<name>aer2ned</name>
+<purpose>Transform local spherical coordinates to local north-east-down</purpose>
+</tocitem>
+<tocitem target="ref/ecef2ned.html">
+<name>ecef2ned</name>
+<purpose>Transform geocentric Earth-centered Earth-fixed coordinates to local
+            north-east-down</purpose>
+</tocitem>
+<tocitem target="ref/geodetic2ned.html">
+<name>geodetic2ned</name>
+<purpose>Transform geodetic coordinates to local north-east-down</purpose>
+</tocitem>
+<tocitem target="ref/ecef2aer.html">
+<name>ecef2aer</name>
+<purpose>Transform geocentric Earth-centered Earth-fixed coordinates to local
+            spherical</purpose>
+</tocitem>
+<tocitem target="ref/enu2aer.html">
+<name>enu2aer</name>
+<purpose>Transform local east-north-up coordinates to local spherical</purpose>
+</tocitem>
+<tocitem target="ref/geodetic2aer.html">
+<name>geodetic2aer</name>
+<purpose>Transform geodetic coordinates to local spherical</purpose>
+</tocitem>
+<tocitem target="ref/ned2aer.html">
+<name>ned2aer</name>
+<purpose>Transform local north-east-down coordinates to local spherical</purpose>
+</tocitem>
+<tocitem target="ref/ecef2enuv.html">
+<name>ecef2enuv</name>
+<purpose>Rotate geocentric Earth-centered Earth-fixed vector to local east-north-up</purpose>
+</tocitem>
+<tocitem target="ref/ecef2nedv.html">
+<name>ecef2nedv</name>
+<purpose>Rotate geocentric Earth-centered Earth-fixed vector to local
+            north-east-down</purpose>
+</tocitem>
+<tocitem target="ref/enu2ecefv.html">
+<name>enu2ecefv</name>
+<purpose>Rotate local east-north-up vector to geocentric Earth-centered Earth-fixed</purpose>
+</tocitem>
+<tocitem target="ref/ned2ecefv.html">
+<name>ned2ecefv</name>
+<purpose>Rotate local north-east-down vector to geocentric Earth-centered
+                        Earth-fixed</purpose>
+</tocitem>
+<tocitem target="ref/elevation.html">
+<name>elevation</name>
+<purpose>Local vertical elevation angle, range, and azimuth</purpose>
+</tocitem>
+<tocitem target="ref/lv2ecef.html">
+<name>lv2ecef</name>
+<purpose>Convert local vertical to geocentric (ECEF) coordinates</purpose>
+</tocitem>
+<tocitem target="ref/ecef2lv.html">
+<name>ecef2lv</name>
+<purpose>Convert geocentric (ECEF) to local vertical coordinates</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="lengths-and-angles.html">Lengths and Angles
+<tocitem target="../matlab/ref/deg2rad.html">
+<name>deg2rad</name>
+<purpose>Convert angle from degrees to radians</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rad2deg.html">
+<name>rad2deg</name>
+<purpose>Convert angle from radians to degrees</purpose>
+</tocitem>
+<tocitem target="ref/degrees2dm.html">
+<name>degrees2dm</name>
+<purpose> Convert degrees to degrees-minutes</purpose>
+</tocitem>
+<tocitem target="ref/degrees2dms.html">
+<name>degrees2dms</name>
+<purpose> Convert degrees to degrees-minutes-seconds</purpose>
+</tocitem>
+<tocitem target="ref/dm2degrees.html">
+<name>dm2degrees</name>
+<purpose> Convert degrees-minutes to degrees</purpose>
+</tocitem>
+<tocitem target="ref/dms2degrees.html">
+<name>dms2degrees</name>
+<purpose> Convert degrees-minutes-seconds to degrees</purpose>
+</tocitem>
+<tocitem target="ref/todegrees.html">
+<name>toDegrees</name>
+<purpose> Convert angles to degrees</purpose>
+</tocitem>
+<tocitem target="ref/toradians.html">
+<name>toRadians</name>
+<purpose> Convert angles to radians</purpose>
+</tocitem>
+<tocitem target="ref/fromdegrees.html">
+<name>fromDegrees</name>
+<purpose> Convert angles from degrees</purpose>
+</tocitem>
+<tocitem target="ref/fromradians.html">
+<name>fromRadians</name>
+<purpose> Convert angles from radians</purpose>
+</tocitem>
+<tocitem target="ref/wrapto180.html">
+<name>wrapTo180</name>
+<purpose>Wrap angle in degrees to [-180 180]</purpose>
+</tocitem>
+<tocitem target="ref/wrapto360.html">
+<name>wrapTo360</name>
+<purpose>Wrap angle in degrees to [0 360]</purpose>
+</tocitem>
+<tocitem target="ref/wraptopi.html">
+<name>wrapToPi</name>
+<purpose>Wrap angle in radians to [−pi pi] </purpose>
+</tocitem>
+<tocitem target="ref/wrapto2pi.html">
+<name>wrapTo2Pi</name>
+<purpose>Wrap angle in radians to [0 2*pi]</purpose>
+</tocitem>
+<tocitem target="ref/unwrapmultipart.html">
+<name>unwrapMultipart</name>
+<purpose>Unwrap vector of angles with NaN-delimited parts</purpose>
+</tocitem>
+<tocitem target="ref/km2nm.html">
+<name>km2nm</name>
+<purpose>Convert kilometers to nautical miles</purpose>
+</tocitem>
+<tocitem target="ref/km2sm.html">
+<name>km2sm</name>
+<purpose>Convert kilometers to statute miles</purpose>
+</tocitem>
+<tocitem target="ref/nm2km.html">
+<name>nm2km</name>
+<purpose>Convert nautical miles to kilometers</purpose>
+</tocitem>
+<tocitem target="ref/nm2sm.html">
+<name>nm2sm</name>
+<purpose>Convert nautical to statute miles</purpose>
+</tocitem>
+<tocitem target="ref/sm2km.html">
+<name>sm2km</name>
+<purpose>Convert statute miles to kilometers</purpose>
+</tocitem>
+<tocitem target="ref/sm2nm.html">
+<name>sm2nm</name>
+<purpose>Convert statute to nautical miles</purpose>
+</tocitem>
+<tocitem target="ref/deg2km.html">
+<name>deg2km</name>
+<purpose>Convert spherical distance from degrees to kilometers</purpose>
+</tocitem>
+<tocitem target="ref/deg2nm.html">
+<name>deg2nm</name>
+<purpose>Convert spherical distance from degrees to nautical miles</purpose>
+</tocitem>
+<tocitem target="ref/deg2sm.html">
+<name>deg2sm</name>
+<purpose>Convert spherical distance from degrees to statute miles</purpose>
+</tocitem>
+<tocitem target="ref/km2deg.html">
+<name>km2deg</name>
+<purpose>Convert spherical distance from kilometers to degrees</purpose>
+</tocitem>
+<tocitem target="ref/km2rad.html">
+<name>km2rad</name>
+<purpose>Convert spherical distance from kilometers to radians</purpose>
+</tocitem>
+<tocitem target="ref/nm2deg.html">
+<name>nm2deg</name>
+<purpose>Convert spherical distance from nautical miles to degrees</purpose>
+</tocitem>
+<tocitem target="ref/nm2rad.html">
+<name>nm2rad</name>
+<purpose>Convert spherical distance from nautical miles to radians</purpose>
+</tocitem>
+<tocitem target="ref/rad2km.html">
+<name>rad2km</name>
+<purpose>Convert spherical distance from radians to kilometers</purpose>
+</tocitem>
+<tocitem target="ref/rad2nm.html">
+<name>rad2nm</name>
+<purpose>Convert spherical distance from radians to nautical miles</purpose>
+</tocitem>
+<tocitem target="ref/rad2sm.html">
+<name>rad2sm</name>
+<purpose>Convert spherical distance from radians to statute miles</purpose>
+</tocitem>
+<tocitem target="ref/sm2deg.html">
+<name>sm2deg</name>
+<purpose>Convert spherical distance from statute miles to degrees</purpose>
+</tocitem>
+<tocitem target="ref/sm2rad.html">
+<name>sm2rad</name>
+<purpose>Convert spherical distance from statute miles to radians</purpose>
+</tocitem>
+<tocitem target="ref/str2angle.html">
+<name>str2angle</name>
+<purpose>Convert text to angles in degrees</purpose>
+</tocitem>
+<tocitem target="ref/map.geodesy.isdegree.html">
+<name>map.geodesy.isDegree</name>
+<purpose> True if input matches 'degree' and false if
+                'radian'</purpose>
+</tocitem>
+<tocitem target="ref/validatelengthunit.html">
+<name>validateLengthUnit</name>
+<purpose>Validate and standardize length unit</purpose>
+</tocitem>
+<tocitem target="ref/unitsratio.html">
+<name>unitsratio</name>
+<purpose>Unit conversion factors</purpose>
+</tocitem>
+<tocitem target="ref/angledim.html">
+<name>angledim</name>
+<purpose>Convert angles units</purpose>
+</tocitem>
+<tocitem target="ref/degtorad.html">
+<name>degtorad</name>
+<purpose>Convert angles from degrees to radians</purpose>
+</tocitem>
+<tocitem target="ref/dist2str.html">
+<name>dist2str</name>
+<purpose>Convert numeric distance values into text</purpose>
+</tocitem>
+<tocitem target="ref/distdim.html">
+<name>distdim</name>
+<purpose>Convert length units</purpose>
+</tocitem>
+<tocitem target="ref/eastof.html">
+<name>eastof</name>
+<purpose>Wrap longitudes to values east of specified meridian</purpose>
+</tocitem>
+<tocitem target="ref/epsm.html">
+<name>epsm</name>
+<purpose>Accuracy in angle units for certain map computations</purpose>
+</tocitem>
+<tocitem target="ref/npi2pi.html">
+<name>npi2pi</name>
+<purpose>Wrap longitudes to [-180 180] degree interval</purpose>
+</tocitem>
+<tocitem target="ref/radtodeg.html">
+<name>radtodeg</name>
+<purpose>Convert angles from radians to degrees</purpose>
+</tocitem>
+<tocitem target="ref/roundn.html">
+<name>roundn</name>
+<purpose>Round to multiple of 10n</purpose>
+</tocitem>
+<tocitem target="ref/smoothlong.html">
+<name>smoothlong</name>
+<purpose>Remove discontinuities in longitude data</purpose>
+</tocitem>
+<tocitem target="ref/unitstr.html">
+<name>unitstr</name>
+<purpose>Check spatiotemporal unit names and abbreviations</purpose>
+</tocitem>
+<tocitem target="ref/westof.html">
+<name>westof</name>
+<purpose>Wrap longitudes to values west of specified meridian</purpose>
+</tocitem>
+<tocitem target="ref/zero22pi.html">
+<name>zero22pi</name>
+<purpose>Wrap longitudes to [0 360] degree interval</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="great-circles-geodesics-and-rhumb-lines.html">Great Circles, Geodesics, and Rhumb Lines
+<tocitem target="ref/azimuth.html">
+<name>azimuth</name>
+<purpose>Azimuth between points on sphere or ellipsoid</purpose>
+</tocitem>
+<tocitem target="ref/departure.html">
+<name>departure</name>
+<purpose>Departure of longitudes at specified latitudes</purpose>
+</tocitem>
+<tocitem target="ref/distance.html">
+<name>distance</name>
+<purpose>Distance between points on sphere or ellipsoid</purpose>
+</tocitem>
+<tocitem target="ref/gc2sc.html">
+<name>gc2sc</name>
+<purpose>Center and radius of great circle</purpose>
+</tocitem>
+<tocitem target="ref/gcxgc.html">
+<name>gcxgc</name>
+<purpose>Intersection points for pairs of great circles</purpose>
+</tocitem>
+<tocitem target="ref/gcxsc.html">
+<name>gcxsc</name>
+<purpose>Intersection points for great and small circle pairs</purpose>
+</tocitem>
+<tocitem target="ref/meridianarc.html">
+<name>meridianarc</name>
+<purpose>Ellipsoidal distance along meridian</purpose>
+</tocitem>
+<tocitem target="ref/meridianfwd.html">
+<name>meridianfwd</name>
+<purpose>Reckon position along meridian</purpose>
+</tocitem>
+<tocitem target="ref/reckon.html">
+<name>reckon</name>
+<purpose>Point at specified azimuth, range on sphere or ellipsoid</purpose>
+</tocitem>
+<tocitem target="ref/rhxrh.html">
+<name>rhxrh</name>
+<purpose>Intersection points for pairs of rhumb lines</purpose>
+</tocitem>
+<tocitem target="ref/surfdist.html">
+<name>surfdist</name>
+<purpose>Interactive distance, azimuth, and reckoning calculations</purpose>
+</tocitem>
+<tocitem target="ref/track.html">
+<name>track</name>
+<purpose>Track segments to connect navigational waypoints</purpose>
+</tocitem>
+<tocitem target="ref/track1.html">
+<name>track1</name>
+<purpose>Geographic tracks from starting point, azimuth, and range</purpose>
+</tocitem>
+<tocitem target="ref/track2.html">
+<name>track2</name>
+<purpose>Geographic tracks from starting and ending points</purpose>
+</tocitem>
+<tocitem target="ref/trackg.html">
+<name>trackg</name>
+<purpose>Great circle or rhumb line defined via mouse input</purpose>
+</tocitem>
+<tocitem target="ref/trackui.html">
+<name>trackui</name>
+<purpose>GUI to display great circles and rhumb lines on map axes</purpose>
+</tocitem>
+<tocitem target="ref/crossfix.html">
+<name>crossfix</name>
+<purpose>Cross-fix positions from bearings and ranges</purpose>
+</tocitem>
+<tocitem target="ref/dreckon.html">
+<name>dreckon</name>
+<purpose>Dead reckoning positions for track</purpose>
+</tocitem>
+<tocitem target="ref/driftcorr.html">
+<name>driftcorr</name>
+<purpose>Heading to correct for wind or current drift</purpose>
+</tocitem>
+<tocitem target="ref/driftvel.html">
+<name>driftvel</name>
+<purpose>Wind or current from heading, course, and speeds</purpose>
+</tocitem>
+<tocitem target="ref/gcwaypts.html">
+<name>gcwaypts</name>
+<purpose>Equally spaced waypoints along great circle</purpose>
+</tocitem>
+<tocitem target="ref/legs.html">
+<name>legs</name>
+<purpose>Courses and distances between navigational waypoints</purpose>
+</tocitem>
+<tocitem target="ref/navfix.html">
+<name>navfix</name>
+<purpose>Mercator-based navigational fix</purpose>
+</tocitem>
+<tocitem target="ref/timezone.html">
+<name>timezone</name>
+<purpose>Time zone based on longitude</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="small-circles-ellipses-and-spherical-distance.html">Small Circles and Ellipses
+<tocitem target="ref/ellipse1.html">
+<name>ellipse1</name>
+<purpose>Geographic ellipse from center, semimajor axes, eccentricity,
+and azimuth</purpose>
+</tocitem>
+<tocitem target="ref/gcxsc.html">
+<name>gcxsc</name>
+<purpose>Intersection points for great and small circle pairs</purpose>
+</tocitem>
+<tocitem target="ref/scircle1.html">
+<name>scircle1</name>
+<purpose>Small circles from center, range, and azimuth</purpose>
+</tocitem>
+<tocitem target="ref/scircle2.html">
+<name>scircle2</name>
+<purpose>Small circles from center and perimeter</purpose>
+</tocitem>
+<tocitem target="ref/scircleg.html">
+<name>scircleg</name>
+<purpose>Small circle defined via mouse input</purpose>
+</tocitem>
+<tocitem target="ref/scirclui.html">
+<name>scirclui</name>
+<purpose>GUI to display small circles on map axes</purpose>
+</tocitem>
+<tocitem target="ref/scxsc.html">
+<name>scxsc</name>
+<purpose>Intersection points for pairs of small circles</purpose>
+</tocitem>
+<tocitem target="ref/sectorg.html">
+<name>sectorg</name>
+<purpose>Sector of small circle defined via mouse input</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="zones-lunes-quadrangles-and-other-areas.html">Zones, Lunes, Quadrangles, and Other Areas
+<tocitem target="ref/areaint.html">
+<name>areaint</name>
+<purpose>Surface area of polygon on sphere or ellipsoid</purpose>
+</tocitem>
+<tocitem target="ref/areamat.html">
+<name>areamat</name>
+<purpose>Surface area covered by nonzero values in binary data
+grid</purpose>
+</tocitem>
+<tocitem target="ref/areaquad.html">
+<name>areaquad</name>
+<purpose>Surface area of latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/bufgeoquad.html">
+<name>bufgeoquad</name>
+<purpose>Expand limits of geographic quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/geoquadline.html">
+<name>geoquadline</name>
+<purpose>Geographic quadrangle bounding multi-part line</purpose>
+</tocitem>
+<tocitem target="ref/geoquadpt.html">
+<name>geoquadpt</name>
+<purpose>Geographic quadrangle bounding scattered points</purpose>
+</tocitem>
+<tocitem target="ref/ingeoquad.html">
+<name>ingeoquad</name>
+<purpose>True for points inside or on lat-lon quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/intersectgeoquad.html">
+<name>intersectgeoquad</name>
+<purpose>Intersection of two latitude-longitude quadrangles</purpose>
+</tocitem>
+<tocitem target="ref/outlinegeoquad.html">
+<name>outlinegeoquad</name>
+<purpose>Polygon outlining geographic quadrangle</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="coordinate-reference-systems.html">Coordinate Reference Systems
+<tocitem target="projected-coordinate-reference-systems.html">Projected Coordinate Reference Systems
+<tocitem target="ref/defaultm.html">
+<name>defaultm</name>
+<purpose>Initialize or reset map projection structure</purpose>
+</tocitem>
+<tocitem target="ref/geotiff2mstruct.html">
+<name>geotiff2mstruct</name>
+<purpose>Convert GeoTIFF information to map projection structure</purpose>
+</tocitem>
+<tocitem target="ref/maplist.html">
+<name>maplist</name>
+<purpose>Available Mapping
+            Toolbox map projections</purpose>
+</tocitem>
+<tocitem target="ref/maps.html">
+<name>maps</name>
+<purpose>List available map projections and verify names</purpose>
+</tocitem>
+<tocitem target="ref/mfwdtran.html">
+<name>mfwdtran</name>
+<purpose>Project geographic features to map coordinates</purpose>
+</tocitem>
+<tocitem target="ref/minvtran.html">
+<name>minvtran</name>
+<purpose>Unproject features from map to geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/projlist.html">
+<name>projlist</name>
+<purpose>Map projections supported by projfwd and projinv</purpose>
+</tocitem>
+<tocitem target="ref/vfwdtran.html">
+<name>vfwdtran</name>
+<purpose>Direction angle in map plane from azimuth on ellipsoid</purpose>
+</tocitem>
+<tocitem target="ref/vinvtran.html">
+<name>vinvtran</name>
+<purpose>Azimuth on ellipsoid from direction angle in map plane</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="map-scales-and-distortions.html">Map Scales and Distortions
+<tocitem target="ref/clipdata.html">
+<name>clipdata</name>
+<purpose>Clip data at +/-pi in longitude, +/-pi in
+latitude</purpose>
+</tocitem>
+<tocitem target="ref/distortcalc.html">
+<name>distortcalc</name>
+<purpose>Distortion parameters for map projections</purpose>
+</tocitem>
+<tocitem target="ref/maptrims.html">
+<name>maptrims</name>
+<purpose>Trim regular data grid to latitude-longitude quadrangle</purpose>
+</tocitem>
+<tocitem target="ref/mdistort.html">
+<name>mdistort</name>
+<purpose>Display contours of constant map distortion</purpose>
+</tocitem>
+<tocitem target="ref/tissot.html">
+<name>tissot</name>
+<purpose>Project Tissot indicatrices on map axes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="universal-transverse-mercator-system.html">Universal Transverse Mercator System
+<tocitem target="ref/utmgeoid.html">
+<name>utmgeoid</name>
+<purpose>Select ellipsoids for given UTM zone</purpose>
+</tocitem>
+<tocitem target="ref/utmzone.html">
+<name>utmzone</name>
+<purpose>Select UTM zone given latitude and longitude</purpose>
+</tocitem>
+<tocitem target="ref/utmzoneui.html">
+<name>utmzoneui</name>
+<purpose>Choose or identify UTM zone by clicking map</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="geographic-coordinate-reference-systems.html">Geographic Coordinate Reference Systems
+<tocitem target="ref/mfwdtran.html">
+<name>mfwdtran</name>
+<purpose>Project geographic features to map coordinates</purpose>
+</tocitem>
+<tocitem target="ref/minvtran.html">
+<name>minvtran</name>
+<purpose>Unproject features from map to geographic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/projfwd.html">
+<name>projfwd</name>
+<purpose>Forward map projection using PROJ.4 map
+projection library</purpose>
+</tocitem>
+<tocitem target="ref/projinv.html">
+<name>projinv</name>
+<purpose>Inverse map projection using PROJ.4 map
+projection library</purpose>
+</tocitem>
+<tocitem target="ref/antipode.html">
+<name>antipode</name>
+<purpose>Point on opposite side of globe</purpose>
+</tocitem>
+<tocitem target="ref/newpole.html">
+<name>newpole</name>
+<purpose>Origin vector to place specific point at pole</purpose>
+</tocitem>
+<tocitem target="ref/org2pol.html">
+<name>org2pol</name>
+<purpose>Location of north pole in rotated map</purpose>
+</tocitem>
+<tocitem target="ref/putpole.html">
+<name>putpole</name>
+<purpose>Origin vector to place north pole at specified point</purpose>
+</tocitem>
+<tocitem target="ref/rotatem.html">
+<name>rotatem</name>
+<purpose>Transform vector map data to new origin and orientation</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="optimization-problem-setup.html">Optimization Problem Setup
+<tocitem target="choose-a-solver.html">Choose a Solver
+<tocitem target="ga.html">
+<name>ga</name>
+<purpose>Find minimum of function using genetic algorithm</purpose>
+</tocitem>
+<tocitem target="gamultiobj.html">
+<name>gamultiobj</name>
+<purpose>Find Pareto front of multiple fitness functions using
+genetic algorithm</purpose>
+</tocitem>
+<tocitem target="paretosearch.html">
+<name>paretosearch</name>
+<purpose>Find points in Pareto set</purpose>
+</tocitem>
+<tocitem target="particleswarm.html">
+<name>particleswarm</name>
+<purpose>Particle swarm optimization</purpose>
+</tocitem>
+<tocitem target="patternsearch.html">
+<name>patternsearch</name>
+<purpose>Find minimum of function using pattern search</purpose>
+</tocitem>
+<tocitem target="simulannealbnd.html">
+<name>simulannealbnd</name>
+<purpose>Find minimum of function using simulated annealing algorithm</purpose>
+</tocitem>
+<tocitem target="surrogateopt.html">
+<name>surrogateopt</name>
+<purpose>Surrogate optimization for global minimization of time-consuming objective
+            functions</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="pass-extra-parameters.html">Set Options
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optimtool.html">
+<name>optimtool</name>
+<purpose>Select solver and optimization options, run problems</purpose>
+</tocitem>
+<tocitem target="gaoptimget.html">
+<name>gaoptimget</name>
+<purpose>(Not recommended) Obtain values of genetic algorithm options
+        structure</purpose>
+</tocitem>
+<tocitem target="gaoptimset.html">
+<name>gaoptimset</name>
+<purpose>(Not recommended) Create genetic algorithm options structure</purpose>
+</tocitem>
+<tocitem target="psoptimget.html">
+<name>psoptimget</name>
+<purpose>(Not recommended) Obtain values of pattern search options structure</purpose>
+</tocitem>
+<tocitem target="psoptimset.html">
+<name>psoptimset</name>
+<purpose>(Not recommended) Create pattern search options structure</purpose>
+</tocitem>
+<tocitem target="saoptimget.html">
+<name>saoptimget</name>
+<purpose>(Not recommended) Values of simulated annealing options structure</purpose>
+</tocitem>
+<tocitem target="saoptimset.html">
+<name>saoptimset</name>
+<purpose>(Not recommended) Create simulated annealing options structure</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="global-or-multiple-starting-point-search.html">Global or Multiple Starting Point Search
+<tocitem target="createoptimproblem.html">
+<name>createOptimProblem</name>
+<purpose>Create optimization problem structure</purpose>
+</tocitem>
+<tocitem target="randomstartpointset.list.html">
+<name>list</name>
+<purpose>List start points</purpose>
+</tocitem>
+<tocitem target="globalsearch.run.html">
+<name>run</name>
+<purpose>Run multiple-start solver</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="direct-search.html">Direct Search
+<tocitem target="patternsearch.html">
+<name>patternsearch</name>
+<purpose>Find minimum of function using pattern search</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="genetic-algorithm.html">Genetic Algorithm
+<tocitem target="ga.html">
+<name>ga</name>
+<purpose>Find minimum of function using genetic algorithm</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="particle-swarm.html">Particle Swarm
+<tocitem target="particleswarm.html">
+<name>particleswarm</name>
+<purpose>Particle swarm optimization</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="surrogate-optimization.html">Surrogate Optimization
+<tocitem target="surrogateopt.html">
+<name>surrogateopt</name>
+<purpose>Surrogate optimization for global minimization of time-consuming objective
+            functions</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulated-annealing.html">Simulated Annealing
+<tocitem target="simulannealbnd.html">
+<name>simulannealbnd</name>
+<purpose>Find minimum of function using simulated annealing algorithm</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multiobjective-optimization.html">Multiobjective Optimization
+<tocitem target="gamultiobj.html">
+<name>gamultiobj</name>
+<purpose>Find Pareto front of multiple fitness functions using
+genetic algorithm</purpose>
+</tocitem>
+<tocitem target="paretosearch.html">
+<name>paretosearch</name>
+<purpose>Find points in Pareto set</purpose>
+</tocitem>
+<tocitem target="../optim/ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="../optim/ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

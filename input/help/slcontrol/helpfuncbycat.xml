@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="steady-state-operating-points.html">Operating Points
+<tocitem target="ug/operpoint.html">
+<name>operpoint</name>
+<purpose>Create operating point for Simulink model</purpose>
+</tocitem>
+<tocitem target="ug/findop.html">
+<name>findop</name>
+<purpose>Steady-state operating point from specifications (trimming)
+or simulation</purpose>
+</tocitem>
+<tocitem target="ug/findopoptions.html">
+<name>findopOptions</name>
+<purpose>Set options for finding operating points from specifications</purpose>
+</tocitem>
+<tocitem target="ug/operspec.html">
+<name>operspec</name>
+<purpose>Operating point specifications</purpose>
+</tocitem>
+<tocitem target="ug/initopspec.html">
+<name>initopspec</name>
+<purpose>Initialize operating point specification values</purpose>
+</tocitem>
+<tocitem target="ug/addoutputspec.html">
+<name>addoutputspec</name>
+<purpose>Add output specification to operating point specification</purpose>
+</tocitem>
+<tocitem target="ug/getstateindex.html">
+<name>getStateIndex</name>
+<purpose>Get index of a state element of an operating point specification
+or operating point</purpose>
+</tocitem>
+<tocitem target="ug/getinputindex.html">
+<name>getInputIndex</name>
+<purpose>Get index of an input element of an operating point specification
+or operating point</purpose>
+</tocitem>
+<tocitem target="ug/getoutputindex.html">
+<name>getOutputIndex</name>
+<purpose>Get index of an output element of an operating point specification</purpose>
+</tocitem>
+<tocitem target="ug/update.html">
+<name>update</name>
+<purpose>Update operating point object with structural changes
+in model</purpose>
+</tocitem>
+<tocitem target="ug/getinputstruct.html">
+<name>getinputstruct</name>
+<purpose>Input structure from operating point</purpose>
+</tocitem>
+<tocitem target="ug/getstatestruct.html">
+<name>getstatestruct</name>
+<purpose>State structure from operating point</purpose>
+</tocitem>
+<tocitem target="ug/fastrestartforlinearanalysis.html">
+<name>fastRestartForLinearAnalysis</name>
+<purpose>Fast restart for linear analysis</purpose>
+</tocitem>
+<tocitem target="ug/getxu.html">
+<name>getxu</name>
+<purpose>States and inputs from operating points</purpose>
+</tocitem>
+<tocitem target="ug/setxu.html">
+<name>setxu</name>
+<purpose>Set states and inputs in operating points</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linearization.html">Linearization
+<tocitem target="linearization-basics.html">Linearization Basics
+<tocitem target="ug/linearize.html">
+<name>linearize</name>
+<purpose>Linear approximation of Simulink model or subsystem</purpose>
+</tocitem>
+<tocitem target="ug/getlinio.html">
+<name>getlinio</name>
+<purpose>Obtain linear analysis points from Simulink model,
+Linear Analysis Plots block, or Model Verification block</purpose>
+</tocitem>
+<tocitem target="ug/linio.html">
+<name>linio</name>
+<purpose>Create linear analysis point for Simulink model,
+Linear Analysis Plots block, or Model Verification block</purpose>
+</tocitem>
+<tocitem target="ug/setlinio.html">
+<name>setlinio</name>
+<purpose>Save linear analysis points to Simulink model, Linear
+Analysis Plots block, or Model Verification block</purpose>
+</tocitem>
+<tocitem target="ug/linlft.html">
+<name>linlft</name>
+<purpose>Linearize model while removing contribution of specified
+blocks</purpose>
+</tocitem>
+<tocitem target="ug/linlftfold.html">
+<name>linlftfold</name>
+<purpose>Combine linearization results from specified blocks and
+model</purpose>
+</tocitem>
+<tocitem target="ug/linearizeoptions.html">
+<name>linearizeOptions</name>
+<purpose>Set linearization options</purpose>
+</tocitem>
+<tocitem target="ug/fastrestartforlinearanalysis.html">
+<name>fastRestartForLinearAnalysis</name>
+<purpose>Fast restart for linear analysis</purpose>
+</tocitem>
+<tocitem target="ug/operspec.copy.html">
+<name>copy</name>
+<purpose>Copy operating point or operating point specification</purpose>
+</tocitem>
+<tocitem target="ug/get.html">
+<name>get</name>
+<purpose>Properties of linearization I/Os and operating points</purpose>
+</tocitem>
+<tocitem target="ug/getlinplant.html">
+<name>getlinplant</name>
+<purpose>Compute open-loop plant model from Simulink diagram</purpose>
+</tocitem>
+<tocitem target="ug/set.html">
+<name>set</name>
+<purpose>Set properties of linearization I/Os and operating points</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="batch-linearization.html">Batch Linearization
+<tocitem target="ug/linearize.html">
+<name>linearize</name>
+<purpose>Linear approximation of Simulink model or subsystem</purpose>
+</tocitem>
+<tocitem target="ug/linearizeoptions.html">
+<name>linearizeOptions</name>
+<purpose>Set linearization options</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.html">
+<name>slLinearizer</name>
+<purpose>Interface for batch linearization of Simulink models</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getiotransfer.html">
+<name>getIOTransfer</name>
+<purpose>Transfer function for specified I/O set using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getlooptransfer.html">
+<name>getLoopTransfer</name>
+<purpose>Open-loop transfer function at specified point using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getsensitivity.html">
+<name>getSensitivity</name>
+<purpose>Sensitivity function at specified point using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getcompsensitivity.html">
+<name>getCompSensitivity</name>
+<purpose>Complementary sensitivity function at specified point
+using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.addpoint.html">
+<name>addPoint</name>
+<purpose>Add signal to list of analysis points for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removepoint.html">
+<name>removePoint</name>
+<purpose>Remove point from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removeallpoints.html">
+<name>removeAllPoints</name>
+<purpose>Remove all points from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getpoints.html">
+<name>getPoints</name>
+<purpose>Get list of analysis points for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.addopening.html">
+<name>addOpening</name>
+<purpose>Add signal to list of openings for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removeallpoints.html">
+<name>removeAllPoints</name>
+<purpose>Remove all points from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removeallopenings.html">
+<name>removeAllOpenings</name>
+<purpose>Remove all openings from list of permanent openings in
+                slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getopenings.html">
+<name>getOpenings</name>
+<purpose>Get list of openings for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/getoffsetsforlpv.html">
+<name>getOffsetsForLPV</name>
+<purpose>Extract LPV offsets from linearization results</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.refresh.html">
+<name>refresh</name>
+<purpose>Resynchronize slLinearizer or slTuner interface
+with current model state</purpose>
+</tocitem>
+<tocitem target="ug/fastrestartforlinearanalysis.html">
+<name>fastRestartForLinearAnalysis</name>
+<purpose>Fast restart for linear analysis</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="troubleshooting-linearization-results.html">Troubleshooting Linearization Results
+<tocitem target="ug/linearize.advisor.linearizationadvisor.advise.html">
+<name>advise</name>
+<purpose>Find blocks that are potentially problematic for linearization</purpose>
+</tocitem>
+<tocitem target="ug/linearize.advisor.linearizationadvisor.find.html">
+<name>find</name>
+<purpose>Find blocks in linearization results that match specific criteria</purpose>
+</tocitem>
+<tocitem target="ug/linearize.advisor.linearizationadvisor.highlight.html">
+<name>highlight</name>
+<purpose>Highlight linearization path in Simulink model</purpose>
+</tocitem>
+<tocitem target="ug/linearize.advisor.linearizationadvisor.getblockinfo.html">
+<name>getBlockInfo</name>
+<purpose>Obtain diagnostic information for block linearizations</purpose>
+</tocitem>
+<tocitem target="ug/linearize.advisor.linearizationadvisor.getblockpaths.html">
+<name>getBlockPaths</name>
+<purpose>Obtain list of blocks in LinearizationAdvisor
+            object</purpose>
+</tocitem>
+<tocitem target="ug/linqueryadvise.html">
+<name>linqueryAdvise</name>
+<purpose>Query object for finding blocks that are potentially problematic for
+            linearization</purpose>
+</tocitem>
+<tocitem target="ug/linqueryallblocks.html">
+<name>linqueryAllBlocks</name>
+<purpose>Query object for finding all linearized blocks</purpose>
+</tocitem>
+<tocitem target="ug/linquerycontributestolinearization.html">
+<name>linqueryContributesToLinearization</name>
+<purpose>Query object for finding blocks that contribute to the model linearization
+            result</purpose>
+</tocitem>
+<tocitem target="ug/linqueryhasdiagnostics.html">
+<name>linqueryHasDiagnostics</name>
+<purpose>Query object for finding blocks that have diagnostic messages regarding their
+            linearization</purpose>
+</tocitem>
+<tocitem target="ug/linqueryhasinputs.html">
+<name>linqueryHasInputs</name>
+<purpose>Query object for finding blocks with specified number of inputs</purpose>
+</tocitem>
+<tocitem target="ug/linqueryhasorder.html">
+<name>linqueryHasOrder</name>
+<purpose>Query object for finding blocks with specified number of states</purpose>
+</tocitem>
+<tocitem target="ug/linqueryhasoutputs.html">
+<name>linqueryHasOutputs</name>
+<purpose>Query object for finding blocks with specified number of outputs</purpose>
+</tocitem>
+<tocitem target="ug/linqueryhassampletime.html">
+<name>linqueryHasSampleTime</name>
+<purpose>Query object for finding blocks with specified sample time</purpose>
+</tocitem>
+<tocitem target="ug/linqueryhaszeroiopair.html">
+<name>linqueryHasZeroIOPair</name>
+<purpose>Query object for finding blocks with at least one input/output pair that
+            linearizes to zero</purpose>
+</tocitem>
+<tocitem target="ug/linqueryisblocksubstituted.html">
+<name>linqueryIsBlockSubstituted</name>
+<purpose>Query object for finding blocks that have custom block linearizations
+            specified</purpose>
+</tocitem>
+<tocitem target="ug/linqueryisblocktype.html">
+<name>linqueryIsBlockType</name>
+<purpose>Query object for finding blocks of the specified type</purpose>
+</tocitem>
+<tocitem target="ug/linqueryisexact.html">
+<name>linqueryIsExact</name>
+<purpose>Query object for finding blocks linearized using their defined exact
+            linearization</purpose>
+</tocitem>
+<tocitem target="ug/linqueryisnumericallyperturbed.html">
+<name>linqueryIsNumericallyPerturbed</name>
+<purpose>Query object for finding blocks linearized using numerical
+            perturbation</purpose>
+</tocitem>
+<tocitem target="ug/linqueryisonpath.html">
+<name>linqueryIsOnPath</name>
+<purpose>Query object for finding blocks that are on the linearization path</purpose>
+</tocitem>
+<tocitem target="ug/linqueryiszero.html">
+<name>linqueryIsZero</name>
+<purpose>Query object for finding blocks that linearize to zero</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="frequency-response-estimation.html">Frequency Response Estimation
+<tocitem target="offline-frequency-response-estimation.html">Offline Frequency Response Estimation
+<tocitem target="ug/frestimate.html">
+<name>frestimate</name>
+<purpose>Frequency response estimation of Simulink models</purpose>
+</tocitem>
+<tocitem target="ug/frestimateoptions.html">
+<name>frestimateOptions</name>
+<purpose>Options for frequency response estimation</purpose>
+</tocitem>
+<tocitem target="ug/frest.sinestream.html">
+<name>frest.Sinestream</name>
+<purpose>Input signal containing series of sine waves</purpose>
+</tocitem>
+<tocitem target="ug/frest.createfixedtssinestream.html">
+<name>frest.createFixedTsSinestream</name>
+<purpose>Sinestream input signal with fixed sample time</purpose>
+</tocitem>
+<tocitem target="ug/frest.chirp.html">
+<name>frest.Chirp</name>
+<purpose>Swept-frequency cosine input signal</purpose>
+</tocitem>
+<tocitem target="ug/frest.random.html">
+<name>frest.Random</name>
+<purpose>Random input signal</purpose>
+</tocitem>
+<tocitem target="ug/frest.createstep.html">
+<name>frest.createStep</name>
+<purpose>Create step input signal</purpose>
+</tocitem>
+<tocitem target="ug/frest.simcompare.html">
+<name>frest.simCompare</name>
+<purpose>Plot time-domain simulation of nonlinear and linear models</purpose>
+</tocitem>
+<tocitem target="ug/frest.simview.html">
+<name>frest.simView</name>
+<purpose>Plot frequency response model in time- and frequency-domain</purpose>
+</tocitem>
+<tocitem target="ug/getsimulationtime.html">
+<name>getSimulationTime</name>
+<purpose>Final time of simulation for frequency response estimation</purpose>
+</tocitem>
+<tocitem target="ug/frest.findsources.html">
+<name>frest.findSources</name>
+<purpose>Identify time-varying source blocks</purpose>
+</tocitem>
+<tocitem target="ug/frest.finddepend.html">
+<name>frest.findDepend</name>
+<purpose>List of model path dependencies</purpose>
+</tocitem>
+<tocitem target="ug/fselect.html">
+<name>fselect</name>
+<purpose>Extract sinestream signal at specified frequencies</purpose>
+</tocitem>
+<tocitem target="ug/generatetimeseries.html">
+<name>generateTimeseries</name>
+<purpose>Generate time-domain data for input signal</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="designing-compensators.html">Control System Design and Tuning
+<tocitem target="programmatic-tuning.html">Programmatic Tuning
+<tocitem target="setup-for-tuning-simulink-models.html">Model Setup
+<tocitem target="ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="ug/sltuneroptions.html">
+<name>slTunerOptions</name>
+<purpose>Set slTuner interface options</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.addblock.html">
+<name>addBlock</name>
+<purpose>Add block to list of tuned blocks for slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.addopening.html">
+<name>addOpening</name>
+<purpose>Add signal to list of openings for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.addpoint.html">
+<name>addPoint</name>
+<purpose>Add signal to list of analysis points for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.refresh.html">
+<name>refresh</name>
+<purpose>Resynchronize slLinearizer or slTuner interface
+with current model state</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removeallopenings.html">
+<name>removeAllOpenings</name>
+<purpose>Remove all openings from list of permanent openings in
+                slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removeallpoints.html">
+<name>removeAllPoints</name>
+<purpose>Remove all points from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.removeblock.html">
+<name>removeBlock</name>
+<purpose>Remove block from list of tuned blocks in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removeopening.html">
+<name>removeOpening</name>
+<purpose>Remove opening from list of permanent loop openings in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.removepoint.html">
+<name>removePoint</name>
+<purpose>Remove point from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.setblockparam.html">
+<name>setBlockParam</name>
+<purpose>Set parameterization of tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.setblockrateconversion.html">
+<name>setBlockRateConversion</name>
+<purpose>Set rate conversion settings for tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.setblockvalue.html">
+<name>setBlockValue</name>
+<purpose>Set value of tuned block parameterization in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.writeblockvalue.html">
+<name>writeBlockValue</name>
+<purpose>Update block values in Simulink model</purpose>
+</tocitem>
+<tocitem target="ug/writelookuptabledata.html">
+<name>writeLookupTableData</name>
+<purpose>Update portion of tuned lookup table</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.getblockparam.html">
+<name>getBlockParam</name>
+<purpose>Get parameterization of tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.getblockrateconversion.html">
+<name>getBlockRateConversion</name>
+<purpose>Get rate conversion settings for tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.getblockvalue.html">
+<name>getBlockValue</name>
+<purpose>Get current value of tuned block parameterization in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getopenings.html">
+<name>getOpenings</name>
+<purpose>Get list of openings for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getpoints.html">
+<name>getPoints</name>
+<purpose>Get list of analysis points for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.showtunable.html">
+<name>showTunable</name>
+<purpose>Show value of parameterizations of tunable blocks of slTuner interface</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="parameter-tuning-1.html">Tuning, Analysis, and Validation
+<tocitem target="ug/sltuner.systune.html">
+<name>systune</name>
+<purpose>Tune control system parameters in Simulink using slTuner interface</purpose>
+</tocitem>
+<tocitem target="../control/ref/systuneoptions.html">
+<name>systuneOptions</name>
+<purpose>Set options for systune</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getiotransfer.html">
+<name>getIOTransfer</name>
+<purpose>Transfer function for specified I/O set using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getlooptransfer.html">
+<name>getLoopTransfer</name>
+<purpose>Open-loop transfer function at specified point using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getsensitivity.html">
+<name>getSensitivity</name>
+<purpose>Sensitivity function at specified point using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sllinearizer.getcompsensitivity.html">
+<name>getCompSensitivity</name>
+<purpose>Complementary sensitivity function at specified point
+using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.writeblockvalue.html">
+<name>writeBlockValue</name>
+<purpose>Update block values in Simulink model</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.gettunedvalue.html">
+<name>getTunedValue</name>
+<purpose>Get current value of tuned variable in slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.settunedvalue.html">
+<name>setTunedValue</name>
+<purpose>Set current value of tuned variable in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../control/ref/viewgoal.html">
+<name>viewGoal</name>
+<purpose>View tuning goals; validate design against tuning goals</purpose>
+</tocitem>
+<tocitem target="../control/ref/evalgoal.html">
+<name>evalGoal</name>
+<purpose>Evaluate tuning goals for tuned control system</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="loop-shaping-design.html">Loop-Shaping Design
+<tocitem target="ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="ug/sltuneroptions.html">
+<name>slTunerOptions</name>
+<purpose>Set slTuner interface options</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.looptune.html">
+<name>looptune</name>
+<purpose>Tune MIMO feedback loops in Simulink using slTuner interface</purpose>
+</tocitem>
+<tocitem target="../control/ref/looptuneoptions.html">
+<name>looptuneOptions</name>
+<purpose>Set options for looptune</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.loopview.html">
+<name>loopview</name>
+<purpose>Graphically analyze results of control system tuning using slTuner interface</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.looptunesetup.html">
+<name>looptuneSetup</name>
+<purpose>Construct tuning setup for looptune to
+tuning setup for systune using slTuner interface</purpose>
+</tocitem>
+<tocitem target="../control/ref/viewgoal.html">
+<name>viewGoal</name>
+<purpose>View tuning goals; validate design against tuning goals</purpose>
+</tocitem>
+<tocitem target="../control/ref/evalgoal.html">
+<name>evalGoal</name>
+<purpose>Evaluate tuning goals for tuned control system</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="tuning-gain-scheduled-controllers.html">Gain Scheduling
+<tocitem target="../control/ref/tunablesurface.html">
+<name>tunableSurface</name>
+<purpose>Create tunable gain surface for gain scheduling</purpose>
+</tocitem>
+<tocitem target="../control/ref/polybasis.html">
+<name>polyBasis</name>
+<purpose>Polynomial basis functions for tunable gain surface</purpose>
+</tocitem>
+<tocitem target="../control/ref/fourierbasis.html">
+<name>fourierBasis</name>
+<purpose>Fourier basis functions for tunable gain surface</purpose>
+</tocitem>
+<tocitem target="../control/ref/ndbasis.html">
+<name>ndBasis</name>
+<purpose>Basis functions for tunable gain surface</purpose>
+</tocitem>
+<tocitem target="../control/ref/viewsurf.html">
+<name>viewSurf</name>
+<purpose>Visualize gain surface as a function of scheduling variables</purpose>
+</tocitem>
+<tocitem target="../control/ref/evalsurf.html">
+<name>evalSurf</name>
+<purpose>Evaluate gain surfaces at specific design points</purpose>
+</tocitem>
+<tocitem target="../control/ref/tunablesurface.getdata.html">
+<name>getData</name>
+<purpose>Get current values of tunable-surface coefficients</purpose>
+</tocitem>
+<tocitem target="../control/ref/tunablesurface.setdata.html">
+<name>setData</name>
+<purpose>Set values of tunable-surface coefficients</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="ug/sltuneroptions.html">
+<name>slTunerOptions</name>
+<purpose>Set slTuner interface options</purpose>
+</tocitem>
+<tocitem target="ug/sltuner.systune.html">
+<name>systune (slTuner)</name>
+<purpose>Tune control system parameters in Simulink using slTuner interface</purpose>
+</tocitem>
+<tocitem target="../control/ref/varyinggoal.html">
+<name>varyingGoal</name>
+<purpose>Variable tuning goal for gain-scheduled controllers</purpose>
+</tocitem>
+<tocitem target="../control/ref/getgoal.html">
+<name>getGoal</name>
+<purpose>Evaluate variable tuning goal at specified design point</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

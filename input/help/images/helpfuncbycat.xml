@@ -1,0 +1,2911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="getting-started-with-image-processing-toolbox.html">Getting Started with Image Processing
+            Toolbox
+<tocitem target="ref/iptdemos.html">
+<name>iptdemos</name>
+<purpose>Index of Image Processing
+            Toolbox examples</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="import-export-and-conversion.html">Import, Export, and Conversion
+<tocitem target="basic-import-and-export.html">Read and Write Image Data from Files
+<tocitem target="../matlab/ref/imread.html">
+<name>imread</name>
+<purpose>Read image from graphics file</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/imwrite.html">
+<name>imwrite</name>
+<purpose>Write image to graphics file</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/imfinfo.html">
+<name>imfinfo</name>
+<purpose>Information about graphics file</purpose>
+</tocitem>
+<tocitem target="ref/dicominfo.html">
+<name>dicominfo</name>
+<purpose>Read metadata from DICOM message</purpose>
+</tocitem>
+<tocitem target="ref/dicomread.html">
+<name>dicomread</name>
+<purpose>Read DICOM image</purpose>
+</tocitem>
+<tocitem target="ref/dicomwrite.html">
+<name>dicomwrite</name>
+<purpose>Write images as DICOM files</purpose>
+</tocitem>
+<tocitem target="ref/dicomreadvolume.html">
+<name>dicomreadVolume</name>
+<purpose>Construct 4-D volume from set of DICOM images</purpose>
+</tocitem>
+<tocitem target="ref/dicomcollection.html">
+<name>dicomCollection</name>
+<purpose>Gather details about related series of DICOM files</purpose>
+</tocitem>
+<tocitem target="ref/dicomanon.html">
+<name>dicomanon</name>
+<purpose>Anonymize DICOM file</purpose>
+</tocitem>
+<tocitem target="ref/dicomdict.html">
+<name>dicomdict</name>
+<purpose>Get or set active DICOM data dictionary</purpose>
+</tocitem>
+<tocitem target="ref/dicomdisp.html">
+<name>dicomdisp</name>
+<purpose> Display DICOM file structure</purpose>
+</tocitem>
+<tocitem target="ref/dicomlookup.html">
+<name>dicomlookup</name>
+<purpose>Find attribute in DICOM data dictionary</purpose>
+</tocitem>
+<tocitem target="ref/dicomuid.html">
+<name>dicomuid</name>
+<purpose>Generate DICOM globally unique identifier</purpose>
+</tocitem>
+<tocitem target="ref/images.dicom.decodeuid.html">
+<name>images.dicom.decodeUID</name>
+<purpose>Get information about DICOM unique identifier</purpose>
+</tocitem>
+<tocitem target="ref/images.dicom.parsedicomdir.html">
+<name>images.dicom.parseDICOMDIR</name>
+<purpose>Extract metadata from DICOMDIR file</purpose>
+</tocitem>
+<tocitem target="ref/niftiinfo.html">
+<name>niftiinfo</name>
+<purpose>Read metadata from NIfTI file</purpose>
+</tocitem>
+<tocitem target="ref/niftiwrite.html">
+<name>niftiwrite</name>
+<purpose>Write volume to file using NIfTI format</purpose>
+</tocitem>
+<tocitem target="ref/niftiread.html">
+<name>niftiread</name>
+<purpose>Read NIfTI image</purpose>
+</tocitem>
+<tocitem target="ref/analyze75info.html">
+<name>analyze75info</name>
+<purpose>Read metadata from header file of Analyze 7.5 data set</purpose>
+</tocitem>
+<tocitem target="ref/analyze75read.html">
+<name>analyze75read</name>
+<purpose>Read image data from image file of Analyze 7.5 data set</purpose>
+</tocitem>
+<tocitem target="ref/interfileinfo.html">
+<name>interfileinfo</name>
+<purpose>Read metadata from Interfile file</purpose>
+</tocitem>
+<tocitem target="ref/interfileread.html">
+<name>interfileread</name>
+<purpose>Read images in Interfile format</purpose>
+</tocitem>
+<tocitem target="ref/nitfinfo.html">
+<name>nitfinfo</name>
+<purpose>Read metadata from National Imagery Transmission Format (NITF) file</purpose>
+</tocitem>
+<tocitem target="ref/nitfread.html">
+<name>nitfread</name>
+<purpose>Read image from NITF file</purpose>
+</tocitem>
+<tocitem target="ref/isnitf.html">
+<name>isnitf</name>
+<purpose>Check if file is National Imagery Transmission Format (NITF) file</purpose>
+</tocitem>
+<tocitem target="ref/dpxinfo.html">
+<name>dpxinfo</name>
+<purpose>Read metadata from DPX file</purpose>
+</tocitem>
+<tocitem target="ref/dpxread.html">
+<name>dpxread</name>
+<purpose>Read DPX image</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="high-dynamic-range-images.html">High Dynamic Range Images
+<tocitem target="ref/hdrread.html">
+<name>hdrread</name>
+<purpose>Read high dynamic range (HDR) image</purpose>
+</tocitem>
+<tocitem target="ref/hdrwrite.html">
+<name>hdrwrite</name>
+<purpose>Write high dynamic range (HDR) image file</purpose>
+</tocitem>
+<tocitem target="ref/makehdr.html">
+<name>makehdr</name>
+<purpose>Create high dynamic range image</purpose>
+</tocitem>
+<tocitem target="ref/tonemap.html">
+<name>tonemap</name>
+<purpose>Render high dynamic range image for viewing</purpose>
+</tocitem>
+<tocitem target="ref/tonemapfarbman.html">
+<name>tonemapfarbman</name>
+<purpose>Convert HDR image to LDR using edge-preserving multiscale
+      decompositions</purpose>
+</tocitem>
+<tocitem target="ref/localtonemap.html">
+<name>localtonemap</name>
+<purpose>Render HDR image for viewing while enhancing local contrast</purpose>
+</tocitem>
+<tocitem target="ref/blendexposure.html">
+<name>blendexposure</name>
+<purpose>Create well-exposed image from images with different exposures</purpose>
+</tocitem>
+<tocitem target="ref/camresponse.html">
+<name>camresponse</name>
+<purpose>Estimate camera response function </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="large-image-files.html">Large Image Files
+<tocitem target="ref/bigimage.html">
+<name>bigimage</name>
+<purpose>Out-of-core processing of very large images</purpose>
+</tocitem>
+<tocitem target="ref/bigimagedatastore.html">
+<name>bigimageDatastore</name>
+<purpose>Datastore to manage blocks of big image data</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.apply.html">
+<name>apply</name>
+<purpose>Process blocks of big image</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.getblock.html">
+<name>getBlock</name>
+<purpose>Read block of big image</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.getfulllevel.html">
+<name>getFullLevel</name>
+<purpose>Get all data in one level of big image</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.getregion.html">
+<name>getRegion</name>
+<purpose>Read arbitrary region of big image</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.setblock.html">
+<name>setBlock</name>
+<purpose>Put data in specific block of big image</purpose>
+</tocitem>
+<tocitem target="ref/bigimageshow.html">
+<name>bigimageshow</name>
+<purpose>Display bigimage object</purpose>
+</tocitem>
+<tocitem target="ref/bigimageshow.showmask.html">
+<name>showmask</name>
+<purpose>Show mask overlay on bigimageshow</purpose>
+</tocitem>
+<tocitem target="ref/isrset.html">
+<name>isrset</name>
+<purpose>Check if file is valid R-Set file</purpose>
+</tocitem>
+<tocitem target="ref/openrset.html">
+<name>openrset</name>
+<purpose>Open R-Set file and display R-Set</purpose>
+</tocitem>
+<tocitem target="ref/rsetwrite.html">
+<name>rsetwrite</name>
+<purpose>Create R-Set file from image file</purpose>
+</tocitem>
+<tocitem target="ref/imtool.html">
+<name>imtool</name>
+<purpose>Open Image Viewer app</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.isequal.html">
+<name>isequal</name>
+<purpose>Compare two bigimages for equality</purpose>
+</tocitem>
+<tocitem target="ref/bigimage.write.html">
+<name>write</name>
+<purpose>Write bigimage content to new file</purpose>
+</tocitem>
+<tocitem target="ref/bigimagedatastore.partition.html">
+<name>partition</name>
+<purpose>Partition bigimageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/bigimagedatastore.read.html">
+<name>read</name>
+<purpose>Read data from bigimageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/bigimagedatastore.readrelative.html">
+<name>readRelative</name>
+<purpose>Read neighboring block from bigimageDatastore using relative
+      position</purpose>
+</tocitem>
+<tocitem target="ref/bigimageshow.hidemask.html">
+<name>hidemask</name>
+<purpose>Hide mask overlay</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-type-conversions.html">Image Type Conversion
+<tocitem target="ref/gray2ind.html">
+<name>gray2ind</name>
+<purpose>Convert grayscale or binary image to indexed image</purpose>
+</tocitem>
+<tocitem target="ref/ind2gray.html">
+<name>ind2gray</name>
+<purpose>Convert indexed image to grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/mat2gray.html">
+<name>mat2gray</name>
+<purpose>Convert matrix to grayscale image</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rgb2gray.html">
+<name>rgb2gray</name>
+<purpose>Convert RGB image or colormap to grayscale</purpose>
+</tocitem>
+<tocitem target="ref/rgb2lightness.html">
+<name>rgb2lightness</name>
+<purpose>Convert RGB color values to lightness values</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rgb2ind.html">
+<name>rgb2ind</name>
+<purpose>Convert RGB image to indexed image</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/ind2rgb.html">
+<name>ind2rgb</name>
+<purpose>Convert indexed image to RGB image</purpose>
+</tocitem>
+<tocitem target="ref/label2rgb.html">
+<name>label2rgb</name>
+<purpose>Convert label matrix into RGB image</purpose>
+</tocitem>
+<tocitem target="ref/demosaic.html">
+<name>demosaic</name>
+<purpose>Convert Bayer pattern encoded image to truecolor image</purpose>
+</tocitem>
+<tocitem target="ref/imsplit.html">
+<name>imsplit</name>
+<purpose>Split multichannel image into its individual channels</purpose>
+</tocitem>
+<tocitem target="ref/imbinarize.html">
+<name>imbinarize</name>
+<purpose>Binarize 2-D grayscale image or 3-D volume by thresholding</purpose>
+</tocitem>
+<tocitem target="ref/adaptthresh.html">
+<name>adaptthresh</name>
+<purpose>Adaptive image threshold using local first-order statistics</purpose>
+</tocitem>
+<tocitem target="ref/otsuthresh.html">
+<name>otsuthresh</name>
+<purpose>Global histogram threshold using Otsu's method</purpose>
+</tocitem>
+<tocitem target="ref/graythresh.html">
+<name>graythresh</name>
+<purpose>Global image threshold using Otsu's method</purpose>
+</tocitem>
+<tocitem target="ref/imquantize.html">
+<name>imquantize</name>
+<purpose>Quantize image using specified quantization levels and
+output values</purpose>
+</tocitem>
+<tocitem target="ref/multithresh.html">
+<name>multithresh</name>
+<purpose> Multilevel image thresholds using Otsu’s method</purpose>
+</tocitem>
+<tocitem target="ref/grayslice.html">
+<name>grayslice</name>
+<purpose>Convert grayscale image to indexed image using multilevel thresholding</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/im2double.html">
+<name>im2double</name>
+<purpose>Convert image to double precision</purpose>
+</tocitem>
+<tocitem target="ref/im2int16.html">
+<name>im2int16</name>
+<purpose>Convert image to 16-bit signed integers</purpose>
+</tocitem>
+<tocitem target="ref/im2java2d.html">
+<name>im2java2d</name>
+<purpose>Convert image to Java buffered image</purpose>
+</tocitem>
+<tocitem target="ref/im2single.html">
+<name>im2single</name>
+<purpose>Convert image to single precision</purpose>
+</tocitem>
+<tocitem target="ref/im2uint16.html">
+<name>im2uint16</name>
+<purpose>Convert image to 16-bit unsigned integers</purpose>
+</tocitem>
+<tocitem target="ref/im2uint8.html">
+<name>im2uint8</name>
+<purpose>Convert image to 8-bit unsigned integers</purpose>
+</tocitem>
+<tocitem target="ref/im2bw.html">
+<name>im2bw</name>
+<purpose>Convert image to binary image, based on threshold</purpose>
+</tocitem>
+<tocitem target="ref/getrangefromclass.html">
+<name>getrangefromclass</name>
+<purpose>Default display range of image based on its class</purpose>
+</tocitem>
+<tocitem target="ref/iptnum2ordinal.html">
+<name>iptnum2ordinal</name>
+<purpose>Convert positive integer to ordinal character vector</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-sequences-1.html">Image Sequences and Batch Processing
+<tocitem target="ref/implay.html">
+<name>implay</name>
+<purpose>Play movies, videos, or image sequences</purpose>
+</tocitem>
+<tocitem target="ref/montage.html">
+<name>montage</name>
+<purpose>Display multiple image frames as rectangular montage</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="color.html">Color
+<tocitem target="../matlab/ref/rgb2hsv.html">
+<name>rgb2hsv</name>
+<purpose>Convert RGB colors to HSV</purpose>
+</tocitem>
+<tocitem target="ref/rgb2lab.html">
+<name>rgb2lab</name>
+<purpose>Convert RGB to CIE 1976 L*a*b*</purpose>
+</tocitem>
+<tocitem target="ref/rgb2ntsc.html">
+<name>rgb2ntsc</name>
+<purpose>Convert RGB color values to NTSC color space</purpose>
+</tocitem>
+<tocitem target="ref/rgb2xyz.html">
+<name>rgb2xyz</name>
+<purpose>Convert RGB to CIE 1931 XYZ</purpose>
+</tocitem>
+<tocitem target="ref/rgb2ycbcr.html">
+<name>rgb2ycbcr</name>
+<purpose>Convert RGB color values to YCbCr color space</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/hsv2rgb.html">
+<name>hsv2rgb</name>
+<purpose>Convert HSV colors to RGB</purpose>
+</tocitem>
+<tocitem target="ref/lab2rgb.html">
+<name>lab2rgb</name>
+<purpose>Convert CIE 1976 L*a*b* to RGB</purpose>
+</tocitem>
+<tocitem target="ref/lab2xyz.html">
+<name>lab2xyz</name>
+<purpose>Convert CIE 1976 L*a*b* to CIE 1931 XYZ</purpose>
+</tocitem>
+<tocitem target="ref/ntsc2rgb.html">
+<name>ntsc2rgb</name>
+<purpose>Convert NTSC values to RGB color space</purpose>
+</tocitem>
+<tocitem target="ref/xyz2lab.html">
+<name>xyz2lab</name>
+<purpose>Convert CIE 1931 XYZ to CIE 1976 L*a*b*</purpose>
+</tocitem>
+<tocitem target="ref/xyz2rgb.html">
+<name>xyz2rgb</name>
+<purpose>Convert CIE 1931 XYZ to RGB</purpose>
+</tocitem>
+<tocitem target="ref/ycbcr2rgb.html">
+<name>ycbcr2rgb</name>
+<purpose>Convert YCbCr color values to RGB color space</purpose>
+</tocitem>
+<tocitem target="ref/colorcloud.html">
+<name>colorcloud</name>
+<purpose>Display 3-D color gamut as point cloud in specified color
+space</purpose>
+</tocitem>
+<tocitem target="ref/lab2double.html">
+<name>lab2double</name>
+<purpose>Convert L*a*b* color values to double</purpose>
+</tocitem>
+<tocitem target="ref/lab2uint16.html">
+<name>lab2uint16</name>
+<purpose>Convert L*a*b color values to uint16</purpose>
+</tocitem>
+<tocitem target="ref/lab2uint8.html">
+<name>lab2uint8</name>
+<purpose>Convert L*a*b color values to uint8</purpose>
+</tocitem>
+<tocitem target="ref/xyz2double.html">
+<name>xyz2double</name>
+<purpose>Convert XYZ color values to double</purpose>
+</tocitem>
+<tocitem target="ref/xyz2uint16.html">
+<name>xyz2uint16</name>
+<purpose>Convert XYZ color values to uint16</purpose>
+</tocitem>
+<tocitem target="ref/iccfind.html">
+<name>iccfind</name>
+<purpose>Find ICC profiles</purpose>
+</tocitem>
+<tocitem target="ref/iccread.html">
+<name>iccread</name>
+<purpose>Read ICC profile</purpose>
+</tocitem>
+<tocitem target="ref/iccroot.html">
+<name>iccroot</name>
+<purpose>Find system default ICC profile repository</purpose>
+</tocitem>
+<tocitem target="ref/iccwrite.html">
+<name>iccwrite</name>
+<purpose>Write ICC color profile data</purpose>
+</tocitem>
+<tocitem target="ref/isicc.html">
+<name>isicc</name>
+<purpose>Check for valid ICC profile data</purpose>
+</tocitem>
+<tocitem target="ref/makecform.html">
+<name>makecform</name>
+<purpose>Create color transformation structure</purpose>
+</tocitem>
+<tocitem target="ref/applycform.html">
+<name>applycform</name>
+<purpose>Apply device-independent color space transformation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/imapprox.html">
+<name>imapprox</name>
+<purpose>Approximate indexed image by reducing number of colors</purpose>
+</tocitem>
+<tocitem target="ref/chromadapt.html">
+<name>chromadapt</name>
+<purpose>Adjust color balance of RGB image with chromatic adaptation</purpose>
+</tocitem>
+<tocitem target="ref/colorangle.html">
+<name>colorangle</name>
+<purpose>Angle between two RGB vectors</purpose>
+</tocitem>
+<tocitem target="ref/illumgray.html">
+<name>illumgray</name>
+<purpose>Estimate illuminant using gray world algorithm</purpose>
+</tocitem>
+<tocitem target="ref/illumpca.html">
+<name>illumpca</name>
+<purpose>Estimate illuminant using principal component analysis (PCA)</purpose>
+</tocitem>
+<tocitem target="ref/illumwhite.html">
+<name>illumwhite</name>
+<purpose>Estimate illuminant using White Patch Retinex algorithm</purpose>
+</tocitem>
+<tocitem target="ref/lin2rgb.html">
+<name>lin2rgb</name>
+<purpose>Apply gamma correction to linear RGB values</purpose>
+</tocitem>
+<tocitem target="ref/rgb2lin.html">
+<name>rgb2lin</name>
+<purpose>Linearize gamma-corrected RGB values</purpose>
+</tocitem>
+<tocitem target="ref/whitepoint.html">
+<name>whitepoint</name>
+<purpose>XYZ color values of standard illuminants</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="synthetic-images.html">Synthetic Images
+<tocitem target="ref/checkerboard.html">
+<name>checkerboard</name>
+<purpose>Create checkerboard image</purpose>
+</tocitem>
+<tocitem target="ref/phantom.html">
+<name>phantom</name>
+<purpose>Create head phantom image</purpose>
+</tocitem>
+<tocitem target="ref/imnoise.html">
+<name>imnoise</name>
+<purpose>Add noise to image</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="display-and-exploration.html">Display and Exploration
+<tocitem target="basic-display-and-exploration.html">Basic Display
+<tocitem target="ref/imshow.html">
+<name>imshow</name>
+<purpose>Display image</purpose>
+</tocitem>
+<tocitem target="ref/imfuse.html">
+<name>imfuse</name>
+<purpose>Composite of two images</purpose>
+</tocitem>
+<tocitem target="ref/imshowpair.html">
+<name>imshowpair</name>
+<purpose>Compare differences between images</purpose>
+</tocitem>
+<tocitem target="ref/montage.html">
+<name>montage</name>
+<purpose>Display multiple image frames as rectangular montage</purpose>
+</tocitem>
+<tocitem target="ref/immovie.html">
+<name>immovie</name>
+<purpose>Make movie from multiframe image</purpose>
+</tocitem>
+<tocitem target="ref/implay.html">
+<name>implay</name>
+<purpose>Play movies, videos, or image sequences</purpose>
+</tocitem>
+<tocitem target="ref/warp.html">
+<name>warp</name>
+<purpose>Display image as texture-mapped surface</purpose>
+</tocitem>
+<tocitem target="ref/sliceviewer.html">
+<name>sliceViewer</name>
+<purpose>Browse image slices</purpose>
+</tocitem>
+<tocitem target="ref/orthosliceviewer.html">
+<name>orthosliceViewer</name>
+<purpose>Browse orthogonal slices in grayscale or RGB volume</purpose>
+</tocitem>
+<tocitem target="ref/volshow.html">
+<name>volshow</name>
+<purpose>Display volume</purpose>
+</tocitem>
+<tocitem target="ref/labelvolshow.html">
+<name>labelvolshow</name>
+<purpose>Display labeled volume</purpose>
+</tocitem>
+<tocitem target="ref/iptgetpref.html">
+<name>iptgetpref</name>
+<purpose>Get values of Image Processing
+            Toolbox preferences</purpose>
+</tocitem>
+<tocitem target="ref/iptprefs.html">
+<name>iptprefs</name>
+<purpose>Display Image Processing
+            Toolbox Preferences dialog box</purpose>
+</tocitem>
+<tocitem target="ref/iptsetpref.html">
+<name>iptsetpref</name>
+<purpose>Set Image Processing
+            Toolbox preferences or display
+valid values</purpose>
+</tocitem>
+<tocitem target="ref/subimage.html">
+<name>subimage</name>
+<purpose>Display multiple images in single figure</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="interactive-exploration-with-the-image-tool.html">Interactive Exploration with the Image Viewer App
+<tocitem target="ref/imtool.html">
+<name>imtool</name>
+<purpose>Open Image Viewer app</purpose>
+</tocitem>
+<tocitem target="ref/imageinfo.html">
+<name>imageinfo</name>
+<purpose>Image Information tool</purpose>
+</tocitem>
+<tocitem target="ref/imcontrast.html">
+<name>imcontrast</name>
+<purpose>Adjust Contrast tool</purpose>
+</tocitem>
+<tocitem target="ref/imdisplayrange.html">
+<name>imdisplayrange</name>
+<purpose>Display Range tool</purpose>
+</tocitem>
+<tocitem target="ref/imdistline.html">
+<name>imdistline</name>
+<purpose>Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/impixelinfo.html">
+<name>impixelinfo</name>
+<purpose>Pixel Information tool</purpose>
+</tocitem>
+<tocitem target="ref/impixelinfoval.html">
+<name>impixelinfoval</name>
+<purpose>Pixel Information tool without text label</purpose>
+</tocitem>
+<tocitem target="ref/impixelregion.html">
+<name>impixelregion</name>
+<purpose>Pixel Region tool</purpose>
+</tocitem>
+<tocitem target="ref/immagbox.html">
+<name>immagbox</name>
+<purpose>Magnification box for image displayed in scroll
+                                    panel</purpose>
+</tocitem>
+<tocitem target="ref/imoverview.html">
+<name>imoverview</name>
+<purpose>Overview tool for image displayed in scroll panel</purpose>
+</tocitem>
+<tocitem target="ref/iptgetpref.html">
+<name>iptgetpref</name>
+<purpose>Get values of Image Processing
+            Toolbox preferences</purpose>
+</tocitem>
+<tocitem target="ref/iptprefs.html">
+<name>iptprefs</name>
+<purpose>Display Image Processing
+            Toolbox Preferences dialog box</purpose>
+</tocitem>
+<tocitem target="ref/iptsetpref.html">
+<name>iptsetpref</name>
+<purpose>Set Image Processing
+            Toolbox preferences or display
+valid values</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="interactive-exploration-of-volumetric-data-with-the-volume-viewer-app.html">Interactive Exploration of Volumetric Data with the Volume
+Viewer App
+<tocitem target="ref/volshow.html">
+<name>volshow</name>
+<purpose>Display volume</purpose>
+</tocitem>
+<tocitem target="ref/labelvolshow.html">
+<name>labelvolshow</name>
+<purpose>Display labeled volume</purpose>
+</tocitem>
+<tocitem target="ref/iptgetpref.html">
+<name>iptgetpref</name>
+<purpose>Get values of Image Processing
+            Toolbox preferences</purpose>
+</tocitem>
+<tocitem target="ref/iptprefs.html">
+<name>iptprefs</name>
+<purpose>Display Image Processing
+            Toolbox Preferences dialog box</purpose>
+</tocitem>
+<tocitem target="ref/iptsetpref.html">
+<name>iptsetpref</name>
+<purpose>Set Image Processing
+            Toolbox preferences or display
+valid values</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="building-guis-with-modular-interactive-tools.html">Build Interactive Tools
+<tocitem target="ref/imageinfo.html">
+<name>imageinfo</name>
+<purpose>Image Information tool</purpose>
+</tocitem>
+<tocitem target="ref/imcolormaptool.html">
+<name>imcolormaptool</name>
+<purpose>Choose Colormap tool</purpose>
+</tocitem>
+<tocitem target="ref/imcontrast.html">
+<name>imcontrast</name>
+<purpose>Adjust Contrast tool</purpose>
+</tocitem>
+<tocitem target="ref/imcrop.html">
+<name>imcrop</name>
+<purpose>Crop image</purpose>
+</tocitem>
+<tocitem target="ref/imcrop3.html">
+<name>imcrop3</name>
+<purpose>Crop 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imdisplayrange.html">
+<name>imdisplayrange</name>
+<purpose>Display Range tool</purpose>
+</tocitem>
+<tocitem target="ref/imdistline.html">
+<name>imdistline</name>
+<purpose>Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/impixelinfo.html">
+<name>impixelinfo</name>
+<purpose>Pixel Information tool</purpose>
+</tocitem>
+<tocitem target="ref/impixelinfoval.html">
+<name>impixelinfoval</name>
+<purpose>Pixel Information tool without text label</purpose>
+</tocitem>
+<tocitem target="ref/impixelregion.html">
+<name>impixelregion</name>
+<purpose>Pixel Region tool</purpose>
+</tocitem>
+<tocitem target="ref/impixelregionpanel.html">
+<name>impixelregionpanel</name>
+<purpose>Pixel Region tool panel</purpose>
+</tocitem>
+<tocitem target="ref/immagbox.html">
+<name>immagbox</name>
+<purpose>Magnification box for image displayed in scroll
+                                    panel</purpose>
+</tocitem>
+<tocitem target="ref/imoverview.html">
+<name>imoverview</name>
+<purpose>Overview tool for image displayed in scroll panel</purpose>
+</tocitem>
+<tocitem target="ref/imoverviewpanel.html">
+<name>imoverviewpanel</name>
+<purpose>Overview tool panel for image displayed in scroll panel</purpose>
+</tocitem>
+<tocitem target="ref/imsave.html">
+<name>imsave</name>
+<purpose>Save Image Tool</purpose>
+</tocitem>
+<tocitem target="ref/imscrollpanel.html">
+<name>imscrollpanel</name>
+<purpose>Scroll panel for interactive image navigation</purpose>
+</tocitem>
+<tocitem target="ref/getimage.html">
+<name>getimage</name>
+<purpose>Image data from axes</purpose>
+</tocitem>
+<tocitem target="ref/getimagemodel.html">
+<name>getimagemodel</name>
+<purpose>Image model object from image object</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.html">
+<name>imagemodel</name>
+<purpose>Image Model object</purpose>
+</tocitem>
+<tocitem target="ref/axes2pix.html">
+<name>axes2pix</name>
+<purpose>Convert axes coordinates to pixel coordinates</purpose>
+</tocitem>
+<tocitem target="ref/imattributes.html">
+<name>imattributes</name>
+<purpose>Information about image attributes</purpose>
+</tocitem>
+<tocitem target="ref/imgca.html">
+<name>imgca</name>
+<purpose>Get current axes containing image</purpose>
+</tocitem>
+<tocitem target="ref/imgcf.html">
+<name>imgcf</name>
+<purpose>Get current figure containing image</purpose>
+</tocitem>
+<tocitem target="ref/imgetfile.html">
+<name>imgetfile</name>
+<purpose>Display Open Image dialog box</purpose>
+</tocitem>
+<tocitem target="ref/imputfile.html">
+<name>imputfile</name>
+<purpose>Display Save Image dialog box</purpose>
+</tocitem>
+<tocitem target="ref/imhandles.html">
+<name>imhandles</name>
+<purpose>Get all image objects</purpose>
+</tocitem>
+<tocitem target="ref/iptaddcallback.html">
+<name>iptaddcallback</name>
+<purpose>Add function handle to callback list</purpose>
+</tocitem>
+<tocitem target="ref/iptcheckmap.html">
+<name>iptcheckmap</name>
+<purpose>Check validity of colormap</purpose>
+</tocitem>
+<tocitem target="ref/iptcheckhandle.html">
+<name>iptcheckhandle</name>
+<purpose>Check validity of handle</purpose>
+</tocitem>
+<tocitem target="ref/iptgetapi.html">
+<name>iptgetapi</name>
+<purpose>Get Application Programmer Interface (API) for
+                                          handle</purpose>
+</tocitem>
+<tocitem target="ref/iptgetpointerbehavior.html">
+<name>iptGetPointerBehavior</name>
+<purpose>Retrieve pointer behavior from graphics object</purpose>
+</tocitem>
+<tocitem target="ref/ipticondir.html">
+<name>ipticondir</name>
+<purpose>Directories containing Image Processing
+            Toolbox and MATLAB icons</purpose>
+</tocitem>
+<tocitem target="ref/iptpointermanager.html">
+<name>iptPointerManager</name>
+<purpose>Create pointer manager in figure</purpose>
+</tocitem>
+<tocitem target="ref/iptremovecallback.html">
+<name>iptremovecallback</name>
+<purpose>Delete function handle from callback list</purpose>
+</tocitem>
+<tocitem target="ref/iptsetpointerbehavior.html">
+<name>iptSetPointerBehavior</name>
+<purpose>Store pointer behavior structure in graphics object</purpose>
+</tocitem>
+<tocitem target="ref/iptwindowalign.html">
+<name>iptwindowalign</name>
+<purpose>Align figure windows</purpose>
+</tocitem>
+<tocitem target="ref/makeconstraintorectfcn.html">
+<name>makeConstrainToRectFcn</name>
+<purpose>Create rectangularly bounded drag constraint function </purpose>
+</tocitem>
+<tocitem target="ref/truesize.html">
+<name>truesize</name>
+<purpose>Adjust display size of image</purpose>
+</tocitem>
+<tocitem target="ref/imellipse.html">
+<name>imellipse</name>
+<purpose>Create draggable ellipse</purpose>
+</tocitem>
+<tocitem target="ref/imfreehand.html">
+<name>imfreehand</name>
+<purpose>Create draggable freehand region</purpose>
+</tocitem>
+<tocitem target="ref/imline.html">
+<name>imline</name>
+<purpose>Create draggable, resizable line</purpose>
+</tocitem>
+<tocitem target="ref/impoint.html">
+<name>impoint</name>
+<purpose>Create draggable point</purpose>
+</tocitem>
+<tocitem target="ref/impoly.html">
+<name>impoly</name>
+<purpose>Create draggable, resizable polygon</purpose>
+</tocitem>
+<tocitem target="ref/imrect.html">
+<name>imrect</name>
+<purpose>Create draggable rectangle</purpose>
+</tocitem>
+<tocitem target="ref/imroi-class.html">
+<name>imroi</name>
+<purpose>Region-of-interest (ROI) base class</purpose>
+</tocitem>
+<tocitem target="ref/getline.html">
+<name>getline</name>
+<purpose>Select polyline with mouse</purpose>
+</tocitem>
+<tocitem target="ref/getpts.html">
+<name>getpts</name>
+<purpose>Specify points with mouse</purpose>
+</tocitem>
+<tocitem target="ref/getrect.html">
+<name>getrect</name>
+<purpose>Specify rectangle with mouse</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getclasstype.html">
+<name>getClassType</name>
+<purpose>Get class of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getdisplayrange.html">
+<name>getDisplayRange</name>
+<purpose>Get display range of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getimageheight.html">
+<name>getImageHeight</name>
+<purpose>Get height of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getimagetype.html">
+<name>getImageType</name>
+<purpose>Get type of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getimagewidth.html">
+<name>getImageWidth</name>
+<purpose>Get width of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getmaxintensity.html">
+<name>getMaxIntensity</name>
+<purpose>Get maximum value of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getminintensity.html">
+<name>getMinIntensity</name>
+<purpose>Get minimum value of image from image model</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getnumberformatfcn.html">
+<name>getNumberFormatFcn</name>
+<purpose>Get function handle that converts numeric value into character vector</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getpixelinfostring.html">
+<name>getPixelInfoString</name>
+<purpose>Get pixel value as character vector</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getpixelregionformatfcn.html">
+<name>getPixelRegionFormatFcn</name>
+<purpose>Get function handle that formats pixel value into character vector</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getpixelvalue.html">
+<name>getPixelValue</name>
+<purpose>Get pixel value as numeric array</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getdefaultpixelinfostring.html">
+<name>getDefaultPixelInfoString</name>
+<purpose>Get default pixel value as character vector</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getdefaultpixelregionstring.html">
+<name>getDefaultPixelRegionString</name>
+<purpose>Get type of information displayed in Pixel Region tool as character
+      vector</purpose>
+</tocitem>
+<tocitem target="ref/imagemodel.getscreenpixelrgbvalue.html">
+<name>getScreenPixelRGBValue</name>
+<purpose>Get screen value of specified pixel in image model</purpose>
+</tocitem>
+<tocitem target="ref/imroi.addnewpositioncallback.html">
+<name>addNewPositionCallback</name>
+<purpose>Add new-position callback to ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.createmask.html">
+<name>createMask</name>
+<purpose>Create mask within image </purpose>
+</tocitem>
+<tocitem target="ref/imdistline.getanglefromhorizontal.html">
+<name>getAngleFromHorizontal</name>
+<purpose>Return angle between Distance tool and horizontal axis</purpose>
+</tocitem>
+<tocitem target="ref/imroi.getcolor.html">
+<name>getColor</name>
+<purpose>Get color used to draw ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imdistline.getdistance.html">
+<name>getDistance</name>
+<purpose>Return distance between endpoints of Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/imdistline.getlabelhandle.html">
+<name>getLabelHandle</name>
+<purpose>Return handle to text label of Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/imdistline.getlabeltextformatter.html">
+<name>getLabelTextFormatter</name>
+<purpose>Return format of text label of Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/imdistline.getlabelvisible.html">
+<name>getLabelVisible</name>
+<purpose>Return visibility of text label of Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/imroi.getposition.html">
+<name>getPosition</name>
+<purpose>Return current position of ROI object</purpose>
+</tocitem>
+<tocitem target="ref/imroi.getpositionconstraintfcn.html">
+<name>getPositionConstraintFcn</name>
+<purpose>Return function handle to current position constraint function </purpose>
+</tocitem>
+<tocitem target="ref/imroi.getvertices.html">
+<name>getVertices</name>
+<purpose>Return vertices on perimeter of ellipse ROI object</purpose>
+</tocitem>
+<tocitem target="ref/imroi.removenewpositioncallback.html">
+<name>removeNewPositionCallback</name>
+<purpose>Remove new-position callback from ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.resume.html">
+<name>resume</name>
+<purpose>(Not recommended) Resume execution of MATLAB command line </purpose>
+</tocitem>
+<tocitem target="ref/imroi.setclosed.html">
+<name>setClosed</name>
+<purpose>Set closure behavior of ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.setcolor.html">
+<name>setColor</name>
+<purpose>Set color used to draw ROI object</purpose>
+</tocitem>
+<tocitem target="ref/imroi.setconstrainedposition.html">
+<name>setConstrainedPosition</name>
+<purpose>Set ROI object to new position </purpose>
+</tocitem>
+<tocitem target="ref/imrect.setfixedaspectratiomode.html">
+<name>setFixedAspectRatioMode</name>
+<purpose>Preserve aspect ratio when resizing ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imdistline.setlabeltextformatter.html">
+<name>setLabelTextFormatter</name>
+<purpose>Set format used to display text label of Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/imdistline.setlabelvisible.html">
+<name>setLabelVisible</name>
+<purpose>Set visibility of text label of Distance tool</purpose>
+</tocitem>
+<tocitem target="ref/imroi.setposition.html">
+<name>setPosition</name>
+<purpose>Move ROI object to new position </purpose>
+</tocitem>
+<tocitem target="ref/imroi.setpositionconstraintfcn.html">
+<name>setPositionConstraintFcn</name>
+<purpose>Set position constraint function of ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.setresizable.html">
+<name>setResizable</name>
+<purpose>Set resize behavior of ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.setstring.html">
+<name>setString</name>
+<purpose>Set text label for point ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.setverticesdraggable.html">
+<name>setVerticesDraggable</name>
+<purpose>Set vertex behavior of ROI object </purpose>
+</tocitem>
+<tocitem target="ref/imroi.wait.html">
+<name>wait</name>
+<purpose>(Not recommended) Block MATLAB command line until ROI creation is finished </purpose>
+</tocitem>
+<tocitem target="ref/iptcheckstrs.html">
+<name>iptcheckstrs</name>
+<purpose>Check validity of option</purpose>
+</tocitem>
+<tocitem target="ref/iptchecknargin.html">
+<name>iptchecknargin</name>
+<purpose>Check number of input arguments</purpose>
+</tocitem>
+<tocitem target="ref/iptcheckinput.html">
+<name>iptcheckinput</name>
+<purpose>Check validity of array</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="image-registration-and-geometric-transformation.html">Geometric Transformation and Image Registration
+<tocitem target="geometric-transformations.html">Common Geometric Transformations
+<tocitem target="ref/imcrop.html">
+<name>imcrop</name>
+<purpose>Crop image</purpose>
+</tocitem>
+<tocitem target="ref/imcrop3.html">
+<name>imcrop3</name>
+<purpose>Crop 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imresize.html">
+<name>imresize</name>
+<purpose>Resize image</purpose>
+</tocitem>
+<tocitem target="ref/imresize3.html">
+<name>imresize3</name>
+<purpose>Resize 3-D volumetric intensity image</purpose>
+</tocitem>
+<tocitem target="ref/imrotate.html">
+<name>imrotate</name>
+<purpose>Rotate image</purpose>
+</tocitem>
+<tocitem target="ref/imrotate3.html">
+<name>imrotate3</name>
+<purpose>Rotate 3-D volumetric grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/imtranslate.html">
+<name>imtranslate</name>
+<purpose>Translate image</purpose>
+</tocitem>
+<tocitem target="ref/impyramid.html">
+<name>impyramid</name>
+<purpose>Image pyramid reduction and expansion</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spatial-referencing.html">Generic Geometric Transformations
+<tocitem target="ref/imwarp.html">
+<name>imwarp</name>
+<purpose>Apply geometric transformation to image</purpose>
+</tocitem>
+<tocitem target="ref/affineoutputview.html">
+<name>affineOutputView</name>
+<purpose>Create output view for warping images</purpose>
+</tocitem>
+<tocitem target="ref/fitgeotrans.html">
+<name>fitgeotrans</name>
+<purpose>Fit geometric transformation to control point pairs</purpose>
+</tocitem>
+<tocitem target="ref/findbounds.html">
+<name>findbounds</name>
+<purpose>Find output bounds for spatial transformation</purpose>
+</tocitem>
+<tocitem target="ref/fliptform.html">
+<name>fliptform</name>
+<purpose>Flip input and output roles of spatial transformation
+structure</purpose>
+</tocitem>
+<tocitem target="ref/makeresampler.html">
+<name>makeresampler</name>
+<purpose>Create resampling structure</purpose>
+</tocitem>
+<tocitem target="ref/maketform.html">
+<name>maketform</name>
+<purpose>Create spatial transformation structure (TFORM)</purpose>
+</tocitem>
+<tocitem target="ref/tformarray.html">
+<name>tformarray</name>
+<purpose>Apply spatial transformation to N-D array</purpose>
+</tocitem>
+<tocitem target="ref/tformfwd.html">
+<name>tformfwd</name>
+<purpose>Apply forward spatial transformation</purpose>
+</tocitem>
+<tocitem target="ref/tforminv.html">
+<name>tforminv</name>
+<purpose>Apply inverse spatial transformation</purpose>
+</tocitem>
+<tocitem target="ref/imtransform.html">
+<name>imtransform</name>
+<purpose>Apply 2-D spatial transformation to image</purpose>
+</tocitem>
+<tocitem target="ref/images.geotrans.warper.warp.html">
+<name>warp</name>
+<purpose>Apply geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.invert.html">
+<name>invert</name>
+<purpose>Invert geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.isrigid.html">
+<name>isRigid</name>
+<purpose>Determine if transformation is rigid transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.issimilarity.html">
+<name>isSimilarity</name>
+<purpose>Determine if transformation is similarity transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.istranslation.html">
+<name>isTranslation</name>
+<purpose>Determine if transformation is pure translation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.outputlimits.html">
+<name>outputLimits</name>
+<purpose>Find output spatial limits given input spatial limits</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.transformpointsforward.html">
+<name>transformPointsForward</name>
+<purpose>Apply forward geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.transformpointsinverse.html">
+<name>transformPointsInverse</name>
+<purpose>Apply inverse geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/imref2d.contains.html">
+<name>contains</name>
+<purpose>Determine if image contains points in world coordinate system</purpose>
+</tocitem>
+<tocitem target="ref/imref2d.intrinsictoworld.html">
+<name>intrinsicToWorld</name>
+<purpose>Convert from intrinsic to world coordinates</purpose>
+</tocitem>
+<tocitem target="ref/imref2d.sizesmatch.html">
+<name>sizesMatch</name>
+<purpose>Determine if object and image are size-compatible</purpose>
+</tocitem>
+<tocitem target="ref/imref2d.worldtointrinsic.html">
+<name>worldToIntrinsic</name>
+<purpose>Convert from world to intrinsic coordinates</purpose>
+</tocitem>
+<tocitem target="ref/imref2d.worldtosubscript.html">
+<name>worldToSubscript</name>
+<purpose>Convert world coordinates to row and column subscripts</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-registration.html">Image Registration
+<tocitem target="ref/imregister.html">
+<name>imregister</name>
+<purpose>Intensity-based image registration</purpose>
+</tocitem>
+<tocitem target="ref/imregconfig.html">
+<name>imregconfig</name>
+<purpose>Configurations for intensity-based registration</purpose>
+</tocitem>
+<tocitem target="ref/imregtform.html">
+<name>imregtform</name>
+<purpose>  Estimate geometric transformation that aligns two 2-D
+or 3-D images</purpose>
+</tocitem>
+<tocitem target="ref/imregcorr.html">
+<name>imregcorr</name>
+<purpose>Estimate geometric transformation that aligns two 2-D images using phase
+            correlation</purpose>
+</tocitem>
+<tocitem target="ref/imregdemons.html">
+<name>imregdemons</name>
+<purpose>Estimate displacement field that aligns two 2-D or 3-D
+images</purpose>
+</tocitem>
+<tocitem target="ref/imregmtb.html">
+<name>imregmtb</name>
+<purpose>Register 2-D images using median threshold bitmaps</purpose>
+</tocitem>
+<tocitem target="ref/normxcorr2.html">
+<name>normxcorr2</name>
+<purpose>Normalized 2-D cross-correlation</purpose>
+</tocitem>
+<tocitem target="ref/registration.metric.mattesmutualinformation.html">
+<name>MattesMutualInformation</name>
+<purpose>Mattes mutual information metric configuration</purpose>
+</tocitem>
+<tocitem target="ref/registration.metric.meansquares.html">
+<name>MeanSquares</name>
+<purpose>Mean square error metric configuration</purpose>
+</tocitem>
+<tocitem target="ref/registration.optimizer.regularstepgradientdescent.html">
+<name>RegularStepGradientDescent</name>
+<purpose>Regular step gradient descent optimizer configuration</purpose>
+</tocitem>
+<tocitem target="ref/registration.optimizer.oneplusoneevolutionary.html">
+<name>OnePlusOneEvolutionary</name>
+<purpose>One-plus-one evolutionary optimizer configuration</purpose>
+</tocitem>
+<tocitem target="ref/cpselect.html">
+<name>cpselect</name>
+<purpose> Control Point Selection tool</purpose>
+</tocitem>
+<tocitem target="ref/fitgeotrans.html">
+<name>fitgeotrans</name>
+<purpose>Fit geometric transformation to control point pairs</purpose>
+</tocitem>
+<tocitem target="ref/cpcorr.html">
+<name>cpcorr</name>
+<purpose>Tune control point locations using cross-correlation</purpose>
+</tocitem>
+<tocitem target="ref/cpstruct2pairs.html">
+<name>cpstruct2pairs</name>
+<purpose>Extract valid control point pairs from cpstruct structure</purpose>
+</tocitem>
+<tocitem target="ref/imwarp.html">
+<name>imwarp</name>
+<purpose>Apply geometric transformation to image</purpose>
+</tocitem>
+<tocitem target="ref/cp2tform.html">
+<name>cp2tform</name>
+<purpose>Infer spatial transformation from control point pairs</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.invert.html">
+<name>invert</name>
+<purpose>Invert geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.isrigid.html">
+<name>isRigid</name>
+<purpose>Determine if transformation is rigid transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.issimilarity.html">
+<name>isSimilarity</name>
+<purpose>Determine if transformation is similarity transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.istranslation.html">
+<name>isTranslation</name>
+<purpose>Determine if transformation is pure translation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.outputlimits.html">
+<name>outputLimits</name>
+<purpose>Find output spatial limits given input spatial limits</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.transformpointsforward.html">
+<name>transformPointsForward</name>
+<purpose>Apply forward geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/affine2d.transformpointsinverse.html">
+<name>transformPointsInverse</name>
+<purpose>Apply inverse geometric transformation</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="image-enhancement-and-restoration.html">Image Filtering and Enhancement
+<tocitem target="linear-filtering.html">Image Filtering
+<tocitem target="ref/imfilter.html">
+<name>imfilter</name>
+<purpose>N-D filtering of multidimensional images</purpose>
+</tocitem>
+<tocitem target="ref/fspecial.html">
+<name>fspecial</name>
+<purpose>Create predefined 2-D filter</purpose>
+</tocitem>
+<tocitem target="ref/fspecial3.html">
+<name>fspecial3</name>
+<purpose>Create predefined 3-D filter</purpose>
+</tocitem>
+<tocitem target="ref/roifilt2.html">
+<name>roifilt2</name>
+<purpose>Filter region of interest (ROI) in image</purpose>
+</tocitem>
+<tocitem target="ref/nlfilter.html">
+<name>nlfilter</name>
+<purpose>General sliding-neighborhood operations</purpose>
+</tocitem>
+<tocitem target="ref/imgaussfilt.html">
+<name>imgaussfilt</name>
+<purpose>2-D Gaussian filtering of images</purpose>
+</tocitem>
+<tocitem target="ref/imgaussfilt3.html">
+<name>imgaussfilt3</name>
+<purpose>3-D Gaussian filtering of 3-D images</purpose>
+</tocitem>
+<tocitem target="ref/wiener2.html">
+<name>wiener2</name>
+<purpose>2-D adaptive noise-removal filtering</purpose>
+</tocitem>
+<tocitem target="ref/medfilt2.html">
+<name>medfilt2</name>
+<purpose>2-D median filtering</purpose>
+</tocitem>
+<tocitem target="ref/medfilt3.html">
+<name>medfilt3</name>
+<purpose>3-D median filtering</purpose>
+</tocitem>
+<tocitem target="ref/ordfilt2.html">
+<name>ordfilt2</name>
+<purpose>2-D order-statistic filtering</purpose>
+</tocitem>
+<tocitem target="ref/stdfilt.html">
+<name>stdfilt</name>
+<purpose>Local standard deviation of image</purpose>
+</tocitem>
+<tocitem target="ref/rangefilt.html">
+<name>rangefilt</name>
+<purpose>Local range of image</purpose>
+</tocitem>
+<tocitem target="ref/entropyfilt.html">
+<name>entropyfilt</name>
+<purpose>Local entropy of grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/imboxfilt.html">
+<name>imboxfilt</name>
+<purpose>2-D box filtering of images</purpose>
+</tocitem>
+<tocitem target="ref/imboxfilt3.html">
+<name>imboxfilt3</name>
+<purpose>3-D box filtering of 3-D images</purpose>
+</tocitem>
+<tocitem target="ref/fibermetric.html">
+<name>fibermetric</name>
+<purpose>Enhance elongated or tubular structures in image</purpose>
+</tocitem>
+<tocitem target="ref/maxhessiannorm.html">
+<name>maxhessiannorm</name>
+<purpose>Maximum of Frobenius norm of Hessian of matrix</purpose>
+</tocitem>
+<tocitem target="ref/convmtx2.html">
+<name>convmtx2</name>
+<purpose>2-D convolution matrix</purpose>
+</tocitem>
+<tocitem target="ref/padarray.html">
+<name>padarray</name>
+<purpose>Pad array</purpose>
+</tocitem>
+<tocitem target="ref/imbilatfilt.html">
+<name>imbilatfilt</name>
+<purpose>Bilateral filtering of images with Gaussian kernels</purpose>
+</tocitem>
+<tocitem target="ref/imdiffuseest.html">
+<name>imdiffuseest</name>
+<purpose>Estimate parameters for anisotropic diffusion filtering</purpose>
+</tocitem>
+<tocitem target="ref/imdiffusefilt.html">
+<name>imdiffusefilt</name>
+<purpose>Anisotropic diffusion filtering of images</purpose>
+</tocitem>
+<tocitem target="ref/imguidedfilter.html">
+<name>imguidedfilter</name>
+<purpose>Guided filtering of images</purpose>
+</tocitem>
+<tocitem target="ref/imnlmfilt.html">
+<name>imnlmfilt</name>
+<purpose>Non-local means filtering of image</purpose>
+</tocitem>
+<tocitem target="ref/burstinterpolant.html">
+<name>burstinterpolant</name>
+<purpose>Create high-resolution image from set of low-resolution burst mode
+      images</purpose>
+</tocitem>
+<tocitem target="ref/gabor.html">
+<name>gabor</name>
+<purpose>Create Gabor filter or Gabor filter bank</purpose>
+</tocitem>
+<tocitem target="ref/imgaborfilt.html">
+<name>imgaborfilt</name>
+<purpose> Apply Gabor filter or set of filters to 2-D image</purpose>
+</tocitem>
+<tocitem target="ref/bwareafilt.html">
+<name>bwareafilt</name>
+<purpose>Extract objects from binary image by size</purpose>
+</tocitem>
+<tocitem target="ref/bwpropfilt.html">
+<name>bwpropfilt</name>
+<purpose>Extract objects from binary image using properties</purpose>
+</tocitem>
+<tocitem target="ref/integralimage.html">
+<name>integralImage</name>
+<purpose>Calculate 2-D integral image</purpose>
+</tocitem>
+<tocitem target="ref/integralimage3.html">
+<name>integralImage3</name>
+<purpose>Calculate 3-D integral image</purpose>
+</tocitem>
+<tocitem target="ref/integralboxfilter.html">
+<name>integralBoxFilter</name>
+<purpose>2-D box filtering of integral images</purpose>
+</tocitem>
+<tocitem target="ref/integralboxfilter3.html">
+<name>integralBoxFilter3</name>
+<purpose>3-D box filtering of 3-D integral images</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/freqspace.html">
+<name>freqspace</name>
+<purpose>Frequency spacing for frequency response</purpose>
+</tocitem>
+<tocitem target="ref/freqz2.html">
+<name>freqz2</name>
+<purpose>2-D frequency response</purpose>
+</tocitem>
+<tocitem target="ref/fsamp2.html">
+<name>fsamp2</name>
+<purpose>2-D FIR filter using frequency sampling</purpose>
+</tocitem>
+<tocitem target="ref/ftrans2.html">
+<name>ftrans2</name>
+<purpose>2-D FIR filter using frequency transformation</purpose>
+</tocitem>
+<tocitem target="ref/fwind1.html">
+<name>fwind1</name>
+<purpose>2-D FIR filter using 1-D window method</purpose>
+</tocitem>
+<tocitem target="ref/fwind2.html">
+<name>fwind2</name>
+<purpose>2-D FIR filter using 2-D window method</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="contrast-adjustment.html">Contrast Adjustment
+<tocitem target="ref/imadjust.html">
+<name>imadjust</name>
+<purpose>Adjust image intensity values or colormap</purpose>
+</tocitem>
+<tocitem target="ref/imadjustn.html">
+<name>imadjustn</name>
+<purpose>Adjust intensity values in N-D volumetric image</purpose>
+</tocitem>
+<tocitem target="ref/imcontrast.html">
+<name>imcontrast</name>
+<purpose>Adjust Contrast tool</purpose>
+</tocitem>
+<tocitem target="ref/imsharpen.html">
+<name>imsharpen</name>
+<purpose>Sharpen image using unsharp masking</purpose>
+</tocitem>
+<tocitem target="ref/imflatfield.html">
+<name>imflatfield</name>
+<purpose>2-D image flat-field correction</purpose>
+</tocitem>
+<tocitem target="ref/imlocalbrighten.html">
+<name>imlocalbrighten</name>
+<purpose>Brighten low-light image</purpose>
+</tocitem>
+<tocitem target="ref/imreducehaze.html">
+<name>imreducehaze</name>
+<purpose>Reduce atmospheric haze</purpose>
+</tocitem>
+<tocitem target="ref/locallapfilt.html">
+<name>locallapfilt</name>
+<purpose>Fast local Laplacian filtering of images</purpose>
+</tocitem>
+<tocitem target="ref/localcontrast.html">
+<name>localcontrast</name>
+<purpose>Edge-aware local contrast manipulation of images</purpose>
+</tocitem>
+<tocitem target="ref/localtonemap.html">
+<name>localtonemap</name>
+<purpose>Render HDR image for viewing while enhancing local contrast</purpose>
+</tocitem>
+<tocitem target="ref/histeq.html">
+<name>histeq</name>
+<purpose>Enhance contrast using histogram equalization</purpose>
+</tocitem>
+<tocitem target="ref/adapthisteq.html">
+<name>adapthisteq</name>
+<purpose>Contrast-limited adaptive histogram equalization (CLAHE)</purpose>
+</tocitem>
+<tocitem target="ref/imhistmatch.html">
+<name>imhistmatch</name>
+<purpose>Adjust histogram of 2-D image to match histogram of reference
+image </purpose>
+</tocitem>
+<tocitem target="ref/imhistmatchn.html">
+<name>imhistmatchn</name>
+<purpose>Adjust histogram of N-D image to match histogram of reference
+image </purpose>
+</tocitem>
+<tocitem target="ref/decorrstretch.html">
+<name>decorrstretch</name>
+<purpose>Apply decorrelation stretch to multichannel image</purpose>
+</tocitem>
+<tocitem target="ref/stretchlim.html">
+<name>stretchlim</name>
+<purpose>Find limits to contrast stretch image</purpose>
+</tocitem>
+<tocitem target="ref/intlut.html">
+<name>intlut</name>
+<purpose>Convert integer values using lookup table</purpose>
+</tocitem>
+<tocitem target="ref/imnoise.html">
+<name>imnoise</name>
+<purpose>Add noise to image</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="morphological-filtering.html">Morphological Operations
+<tocitem target="ref/imerode.html">
+<name>imerode</name>
+<purpose>Erode image</purpose>
+</tocitem>
+<tocitem target="ref/imdilate.html">
+<name>imdilate</name>
+<purpose>Dilate image</purpose>
+</tocitem>
+<tocitem target="ref/imopen.html">
+<name>imopen</name>
+<purpose>Morphologically open image</purpose>
+</tocitem>
+<tocitem target="ref/imclose.html">
+<name>imclose</name>
+<purpose>Morphologically close image</purpose>
+</tocitem>
+<tocitem target="ref/imtophat.html">
+<name>imtophat</name>
+<purpose>Top-hat filtering</purpose>
+</tocitem>
+<tocitem target="ref/imbothat.html">
+<name>imbothat</name>
+<purpose>Bottom-hat filtering</purpose>
+</tocitem>
+<tocitem target="ref/imclearborder.html">
+<name>imclearborder</name>
+<purpose>Suppress light structures connected to image border</purpose>
+</tocitem>
+<tocitem target="ref/imfill.html">
+<name>imfill</name>
+<purpose>Fill image regions and holes</purpose>
+</tocitem>
+<tocitem target="ref/bwhitmiss.html">
+<name>bwhitmiss</name>
+<purpose>Binary hit-miss operation</purpose>
+</tocitem>
+<tocitem target="ref/bwmorph.html">
+<name>bwmorph</name>
+<purpose>Morphological operations on binary images</purpose>
+</tocitem>
+<tocitem target="ref/bwmorph3.html">
+<name>bwmorph3</name>
+<purpose>Morphological operations on binary volume</purpose>
+</tocitem>
+<tocitem target="ref/bwperim.html">
+<name>bwperim</name>
+<purpose>Find perimeter of objects in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwskel.html">
+<name>bwskel</name>
+<purpose>Reduce all objects to lines in 2-D binary image or 3-D binary
+            volume</purpose>
+</tocitem>
+<tocitem target="ref/bwulterode.html">
+<name>bwulterode</name>
+<purpose>Ultimate erosion</purpose>
+</tocitem>
+<tocitem target="ref/imreconstruct.html">
+<name>imreconstruct</name>
+<purpose>Morphological reconstruction</purpose>
+</tocitem>
+<tocitem target="ref/imregionalmax.html">
+<name>imregionalmax</name>
+<purpose>Regional maxima</purpose>
+</tocitem>
+<tocitem target="ref/imregionalmin.html">
+<name>imregionalmin</name>
+<purpose>Regional minima</purpose>
+</tocitem>
+<tocitem target="ref/imextendedmax.html">
+<name>imextendedmax</name>
+<purpose>Extended-maxima transform</purpose>
+</tocitem>
+<tocitem target="ref/imextendedmin.html">
+<name>imextendedmin</name>
+<purpose>Extended-minima transform</purpose>
+</tocitem>
+<tocitem target="ref/imhmax.html">
+<name>imhmax</name>
+<purpose>H-maxima transform</purpose>
+</tocitem>
+<tocitem target="ref/imhmin.html">
+<name>imhmin</name>
+<purpose>H-minima transform</purpose>
+</tocitem>
+<tocitem target="ref/imimposemin.html">
+<name>imimposemin</name>
+<purpose>Impose minima</purpose>
+</tocitem>
+<tocitem target="ref/strel.html">
+<name>strel</name>
+<purpose>Morphological structuring element</purpose>
+</tocitem>
+<tocitem target="ref/offsetstrel.html">
+<name>offsetstrel</name>
+<purpose>Morphological offset structuring element</purpose>
+</tocitem>
+<tocitem target="ref/conndef.html">
+<name>conndef</name>
+<purpose>Create connectivity array</purpose>
+</tocitem>
+<tocitem target="ref/iptcheckconn.html">
+<name>iptcheckconn</name>
+<purpose>Check validity of connectivity argument</purpose>
+</tocitem>
+<tocitem target="ref/applylut.html">
+<name>applylut</name>
+<purpose>Neighborhood operations on binary images using lookup tables</purpose>
+</tocitem>
+<tocitem target="ref/bwlookup.html">
+<name>bwlookup</name>
+<purpose> Nonlinear filtering using lookup tables</purpose>
+</tocitem>
+<tocitem target="ref/makelut.html">
+<name>makelut</name>
+<purpose>Create lookup table for use with bwlookup</purpose>
+</tocitem>
+<tocitem target="ref/bwpack.html">
+<name>bwpack</name>
+<purpose>Pack binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwunpack.html">
+<name>bwunpack</name>
+<purpose>Unpack binary image</purpose>
+</tocitem>
+<tocitem target="ref/decompose.html">
+<name>decompose</name>
+<purpose>Return sequence of decomposed structuring elements</purpose>
+</tocitem>
+<tocitem target="ref/reflect.html">
+<name>reflect</name>
+<purpose>Reflect structuring element</purpose>
+</tocitem>
+<tocitem target="ref/translate.html">
+<name>translate</name>
+<purpose>Translate structuring element</purpose>
+</tocitem>
+<tocitem target="ref/strel.isflat.html">
+<name>isflat</name>
+<purpose>True for flat structuring element</purpose>
+</tocitem>
+<tocitem target="ref/getnhood.html">
+<name>getnhood</name>
+<purpose>Get structuring element neighborhood</purpose>
+</tocitem>
+<tocitem target="ref/strel.getsequence.html">
+<name>getsequence</name>
+<purpose>Sequence of decomposed structuring elements</purpose>
+</tocitem>
+<tocitem target="ref/strel.getneighbors.html">
+<name>getneighbors</name>
+<purpose>Structuring element neighbor locations and heights</purpose>
+</tocitem>
+<tocitem target="ref/strel.getheight.html">
+<name>getheight</name>
+<purpose>Height of structuring element</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-restoration-deblurring.html">Deblurring
+<tocitem target="ref/deconvblind.html">
+<name>deconvblind</name>
+<purpose>Deblur image using blind deconvolution</purpose>
+</tocitem>
+<tocitem target="ref/deconvlucy.html">
+<name>deconvlucy</name>
+<purpose>Deblur image using Lucy-Richardson method</purpose>
+</tocitem>
+<tocitem target="ref/deconvreg.html">
+<name>deconvreg</name>
+<purpose>Deblur image using regularized filter</purpose>
+</tocitem>
+<tocitem target="ref/deconvwnr.html">
+<name>deconvwnr</name>
+<purpose>Deblur image using Wiener filter</purpose>
+</tocitem>
+<tocitem target="ref/edgetaper.html">
+<name>edgetaper</name>
+<purpose>Taper discontinuities along image edges</purpose>
+</tocitem>
+<tocitem target="ref/otf2psf.html">
+<name>otf2psf</name>
+<purpose>Convert optical transfer function to point-spread function</purpose>
+</tocitem>
+<tocitem target="ref/psf2otf.html">
+<name>psf2otf</name>
+<purpose>Convert point-spread function to optical transfer function</purpose>
+</tocitem>
+<tocitem target="ref/padarray.html">
+<name>padarray</name>
+<purpose>Pad array</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="roi-based-processing.html">ROI-Based Processing
+<tocitem target="ref/images.roi.assistedfreehand.html">
+<name>AssistedFreehand</name>
+<purpose>Assisted freehand region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.circle.html">
+<name>Circle</name>
+<purpose>Circular region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.crosshair.html">
+<name>Crosshair</name>
+<purpose>Crosshair region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.cuboid.html">
+<name>Cuboid</name>
+<purpose>Cuboidal region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.ellipse.html">
+<name>Ellipse</name>
+<purpose>Elliptical region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.freehand.html">
+<name>Freehand</name>
+<purpose>Freehand region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.line.html">
+<name>Line</name>
+<purpose>Line region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.point.html">
+<name>Point</name>
+<purpose>Point region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.polygon.html">
+<name>Polygon</name>
+<purpose>Polygonal region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.polyline.html">
+<name>Polyline</name>
+<purpose>Polyline region of interest</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.rectangle.html">
+<name>Rectangle</name>
+<purpose>Rectangular region of interest</purpose>
+</tocitem>
+<tocitem target="ref/draw.html">
+<name>draw</name>
+<purpose>Begin drawing ROI interactively</purpose>
+</tocitem>
+<tocitem target="ref/drawassisted.html">
+<name>drawassisted</name>
+<purpose>Create freehand ROI on image with assistance from image edges</purpose>
+</tocitem>
+<tocitem target="ref/drawcircle.html">
+<name>drawcircle</name>
+<purpose>Create customizable circular ROI </purpose>
+</tocitem>
+<tocitem target="ref/drawcrosshair.html">
+<name>drawcrosshair</name>
+<purpose>Create customizable crosshair ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawcuboid.html">
+<name>drawcuboid</name>
+<purpose>Create customizable cuboidal ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawellipse.html">
+<name>drawellipse</name>
+<purpose>Create customizable elliptical ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawfreehand.html">
+<name>drawfreehand</name>
+<purpose>Create customizable freehand ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawline.html">
+<name>drawline</name>
+<purpose>Create customizable linear ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawpoint.html">
+<name>drawpoint</name>
+<purpose>Create customizable point ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawpolygon.html">
+<name>drawpolygon</name>
+<purpose>Create customizable polygonal ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawpolyline.html">
+<name>drawpolyline</name>
+<purpose>Create customizable polyline ROI</purpose>
+</tocitem>
+<tocitem target="ref/drawrectangle.html">
+<name>drawrectangle</name>
+<purpose>Create customizable rectangular ROI</purpose>
+</tocitem>
+<tocitem target="ref/reduce.html">
+<name>reduce</name>
+<purpose>Reduce density of points in ROI</purpose>
+</tocitem>
+<tocitem target="ref/begindrawingfrompoint.html">
+<name>beginDrawingFromPoint</name>
+<purpose>Begin drawing ROI from specified point</purpose>
+</tocitem>
+<tocitem target="ref/inroi.html">
+<name>inROI</name>
+<purpose>Query if points are located in ROI</purpose>
+</tocitem>
+<tocitem target="ref/bringtofront.html">
+<name>bringToFront</name>
+<purpose>Bring ROI to front of Axes stacking order</purpose>
+</tocitem>
+<tocitem target="ref/wait.html">
+<name>wait</name>
+<purpose>Block MATLAB command line until ROI operation is finished </purpose>
+</tocitem>
+<tocitem target="ref/createmask.html">
+<name>createMask</name>
+<purpose>Create binary mask image from ROI</purpose>
+</tocitem>
+<tocitem target="ref/roipoly.html">
+<name>roipoly</name>
+<purpose>Specify polygonal region of interest (ROI)</purpose>
+</tocitem>
+<tocitem target="ref/poly2mask.html">
+<name>poly2mask</name>
+<purpose>Convert region of interest (ROI) polygon to region mask</purpose>
+</tocitem>
+<tocitem target="ref/regionfill.html">
+<name>regionfill</name>
+<purpose>Fill in specified regions in image using inward interpolation</purpose>
+</tocitem>
+<tocitem target="ref/inpaintcoherent.html">
+<name>inpaintCoherent</name>
+<purpose>Restore specific image regions using coherence transport based image
+      inpainting</purpose>
+</tocitem>
+<tocitem target="ref/inpaintexemplar.html">
+<name>inpaintExemplar</name>
+<purpose>Restore specific image regions using exemplar-based image inpainting</purpose>
+</tocitem>
+<tocitem target="ref/roicolor.html">
+<name>roicolor</name>
+<purpose>Select region of interest (ROI) based on color</purpose>
+</tocitem>
+<tocitem target="ref/roifilt2.html">
+<name>roifilt2</name>
+<purpose>Filter region of interest (ROI) in image</purpose>
+</tocitem>
+<tocitem target="ref/reducepoly.html">
+<name>reducepoly</name>
+<purpose>Reduce density of points in ROI</purpose>
+</tocitem>
+<tocitem target="ref/imellipse.html">
+<name>imellipse</name>
+<purpose>Create draggable ellipse</purpose>
+</tocitem>
+<tocitem target="ref/imfreehand.html">
+<name>imfreehand</name>
+<purpose>Create draggable freehand region</purpose>
+</tocitem>
+<tocitem target="ref/impoly.html">
+<name>impoly</name>
+<purpose>Create draggable, resizable polygon</purpose>
+</tocitem>
+<tocitem target="ref/imrect.html">
+<name>imrect</name>
+<purpose>Create draggable rectangle</purpose>
+</tocitem>
+<tocitem target="ref/imroi-class.html">
+<name>imroi</name>
+<purpose>Region-of-interest (ROI) base class</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.circlemovingeventdata-class.html">
+<name>images.roi.CircleMovingEventData</name>
+<purpose>Event data passed when the circle ROI is moving</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.ellipsemovingeventdata-class.html">
+<name>images.roi.EllipseMovingEventData</name>
+<purpose>Event data passed when the ellipse ROI is moving</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.rectanglemovingeventdata-class.html">
+<name>images.roi.RectangleMovingEventData</name>
+<purpose>Event data passed when the rectangle ROI is moving</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.roimovingeventdata-class.html">
+<name>images.roi.ROIMovingEventData</name>
+<purpose>Event data passed when ROI is moving</purpose>
+</tocitem>
+<tocitem target="ref/images.roi.roiclickedeventdata-class.html">
+<name>images.roi.ROIClickedEventData</name>
+<purpose>Event data passed when ROI is clicked</purpose>
+</tocitem>
+<tocitem target="ref/roifill.html">
+<name>roifill</name>
+<purpose>Fill in specified region of interest (ROI) polygon in grayscale
+            image</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="neighborhood-and-block-processing.html">Neighborhood and Block Processing
+<tocitem target="ref/blockproc.html">
+<name>blockproc</name>
+<purpose>Distinct block processing for image</purpose>
+</tocitem>
+<tocitem target="ref/bestblk.html">
+<name>bestblk</name>
+<purpose>Determine optimal block size for block processing</purpose>
+</tocitem>
+<tocitem target="ref/nlfilter.html">
+<name>nlfilter</name>
+<purpose>General sliding-neighborhood operations</purpose>
+</tocitem>
+<tocitem target="ref/col2im.html">
+<name>col2im</name>
+<purpose>Rearrange matrix columns into blocks</purpose>
+</tocitem>
+<tocitem target="ref/colfilt.html">
+<name>colfilt</name>
+<purpose>Columnwise neighborhood operations</purpose>
+</tocitem>
+<tocitem target="ref/im2col.html">
+<name>im2col</name>
+<purpose>Rearrange image blocks into columns</purpose>
+</tocitem>
+<tocitem target="ref/imageadapter.close.html">
+<name>ImageAdapter.close</name>
+<purpose>Close ImageAdapter object</purpose>
+</tocitem>
+<tocitem target="ref/imageadapter.readregion.html">
+<name>ImageAdapter.readRegion</name>
+<purpose>Read region of image</purpose>
+</tocitem>
+<tocitem target="ref/imageadapter.writeregion.html">
+<name>ImageAdapter.writeRegion</name>
+<purpose>Write block of data to region of image</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-arithmetic.html">Image Arithmetic
+<tocitem target="ref/imabsdiff.html">
+<name>imabsdiff</name>
+<purpose>Absolute difference of two images</purpose>
+</tocitem>
+<tocitem target="ref/imadd.html">
+<name>imadd</name>
+<purpose>Add two images or add constant to image</purpose>
+</tocitem>
+<tocitem target="ref/imapplymatrix.html">
+<name>imapplymatrix</name>
+<purpose>Linear combination of color channels</purpose>
+</tocitem>
+<tocitem target="ref/imcomplement.html">
+<name>imcomplement</name>
+<purpose>Complement image</purpose>
+</tocitem>
+<tocitem target="ref/imdivide.html">
+<name>imdivide</name>
+<purpose>Divide one image into another or divide image by constant</purpose>
+</tocitem>
+<tocitem target="ref/imlincomb.html">
+<name>imlincomb</name>
+<purpose>Linear combination of images</purpose>
+</tocitem>
+<tocitem target="ref/immultiply.html">
+<name>immultiply</name>
+<purpose>Multiply two images or multiply image by constant</purpose>
+</tocitem>
+<tocitem target="ref/imsubtract.html">
+<name>imsubtract</name>
+<purpose>Subtract one image from another or subtract constant from image</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="image-analysis.html">Image Segmentation and Analysis
+<tocitem target="image-segmentation.html">Image Segmentation
+<tocitem target="ref/activecontour.html">
+<name>activecontour</name>
+<purpose> Segment image into foreground and background using active contours
+            (snakes)</purpose>
+</tocitem>
+<tocitem target="ref/imsegfmm.html">
+<name>imsegfmm</name>
+<purpose>Binary image segmentation using Fast Marching Method</purpose>
+</tocitem>
+<tocitem target="ref/imseggeodesic.html">
+<name>imseggeodesic</name>
+<purpose>Segment image into two or three regions using geodesic distance-based color
+                        segmentation</purpose>
+</tocitem>
+<tocitem target="ref/imsegkmeans.html">
+<name>imsegkmeans</name>
+<purpose>K-means clustering based image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/imsegkmeans3.html">
+<name>imsegkmeans3</name>
+<purpose>K-means clustering based volume segmentation</purpose>
+</tocitem>
+<tocitem target="ref/watershed.html">
+<name>watershed</name>
+<purpose>Watershed transform</purpose>
+</tocitem>
+<tocitem target="ref/gradientweight.html">
+<name>gradientweight</name>
+<purpose>Calculate weights for image pixels based on image gradient</purpose>
+</tocitem>
+<tocitem target="ref/graydiffweight.html">
+<name>graydiffweight</name>
+<purpose>Calculate weights for image pixels based on grayscale
+intensity difference</purpose>
+</tocitem>
+<tocitem target="ref/grayconnected.html">
+<name>grayconnected</name>
+<purpose> Select contiguous image region with similar gray values</purpose>
+</tocitem>
+<tocitem target="ref/graythresh.html">
+<name>graythresh</name>
+<purpose>Global image threshold using Otsu's method</purpose>
+</tocitem>
+<tocitem target="ref/multithresh.html">
+<name>multithresh</name>
+<purpose> Multilevel image thresholds using Otsu’s method</purpose>
+</tocitem>
+<tocitem target="ref/otsuthresh.html">
+<name>otsuthresh</name>
+<purpose>Global histogram threshold using Otsu's method</purpose>
+</tocitem>
+<tocitem target="ref/adaptthresh.html">
+<name>adaptthresh</name>
+<purpose>Adaptive image threshold using local first-order statistics</purpose>
+</tocitem>
+<tocitem target="ref/boundarymask.html">
+<name>boundarymask</name>
+<purpose>Find region boundaries of segmentation</purpose>
+</tocitem>
+<tocitem target="ref/superpixels.html">
+<name>superpixels</name>
+<purpose>2-D superpixel oversegmentation of images</purpose>
+</tocitem>
+<tocitem target="ref/lazysnapping.html">
+<name>lazysnapping</name>
+<purpose>Segment image into foreground and background using graph-based
+segmentation</purpose>
+</tocitem>
+<tocitem target="ref/grabcut.html">
+<name>grabcut</name>
+<purpose>Segment image into foreground and background using iterative graph-based
+            segmentation</purpose>
+</tocitem>
+<tocitem target="ref/superpixels3.html">
+<name>superpixels3</name>
+<purpose>3-D superpixel oversegmentation of 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imoverlay.html">
+<name>imoverlay</name>
+<purpose>Burn binary mask into 2-D image</purpose>
+</tocitem>
+<tocitem target="ref/labeloverlay.html">
+<name>labeloverlay</name>
+<purpose>Overlay label matrix regions on 2-D image</purpose>
+</tocitem>
+<tocitem target="ref/label2idx.html">
+<name>label2idx</name>
+<purpose>Convert label matrix to cell array of linear indices</purpose>
+</tocitem>
+<tocitem target="ref/jaccard.html">
+<name>jaccard</name>
+<purpose>Jaccard similarity coefficient for image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/dice.html">
+<name>dice</name>
+<purpose>Sørensen-Dice similarity coefficient for image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/bfscore.html">
+<name>bfscore</name>
+<purpose>Contour matching score for image segmentation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="object-analysis.html">Object Analysis
+<tocitem target="ref/bwboundaries.html">
+<name>bwboundaries</name>
+<purpose>Trace region boundaries in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwtraceboundary.html">
+<name>bwtraceboundary</name>
+<purpose>Trace object in binary image</purpose>
+</tocitem>
+<tocitem target="ref/visboundaries.html">
+<name>visboundaries</name>
+<purpose>Plot region boundaries</purpose>
+</tocitem>
+<tocitem target="ref/imfindcircles.html">
+<name>imfindcircles</name>
+<purpose>Find circles using circular Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/viscircles.html">
+<name>viscircles</name>
+<purpose>Create circle</purpose>
+</tocitem>
+<tocitem target="ref/edge.html">
+<name>edge</name>
+<purpose>Find edges in intensity image</purpose>
+</tocitem>
+<tocitem target="ref/edge3.html">
+<name>edge3</name>
+<purpose>Find edges in 3-D intensity volume</purpose>
+</tocitem>
+<tocitem target="ref/imgradient.html">
+<name>imgradient</name>
+<purpose>Find gradient magnitude and direction of 2-D image</purpose>
+</tocitem>
+<tocitem target="ref/imgradientxy.html">
+<name>imgradientxy</name>
+<purpose>Find directional gradients of 2-D image</purpose>
+</tocitem>
+<tocitem target="ref/imgradient3.html">
+<name>imgradient3</name>
+<purpose>Find gradient magnitude and direction of 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imgradientxyz.html">
+<name>imgradientxyz</name>
+<purpose>Find directional gradients of 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/hough.html">
+<name>hough</name>
+<purpose>Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/houghlines.html">
+<name>houghlines</name>
+<purpose>Extract line segments based on Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/houghpeaks.html">
+<name>houghpeaks</name>
+<purpose>Identify peaks in Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/radon.html">
+<name>radon</name>
+<purpose>Radon transform</purpose>
+</tocitem>
+<tocitem target="ref/iradon.html">
+<name>iradon</name>
+<purpose>Inverse Radon transform</purpose>
+</tocitem>
+<tocitem target="ref/qtdecomp.html">
+<name>qtdecomp</name>
+<purpose>Quadtree decomposition</purpose>
+</tocitem>
+<tocitem target="ref/qtgetblk.html">
+<name>qtgetblk</name>
+<purpose>Block values in quadtree decomposition</purpose>
+</tocitem>
+<tocitem target="ref/qtsetblk.html">
+<name>qtsetblk</name>
+<purpose>Set block values in quadtree decomposition</purpose>
+</tocitem>
+<tocitem target="ref/corner.html">
+<name>corner</name>
+<purpose>Find corner points in image</purpose>
+</tocitem>
+<tocitem target="ref/cornermetric.html">
+<name>cornermetric</name>
+<purpose>(Not recommended) Create corner metric matrix from image</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="pixel-values-and-image-statistics.html">Region and Image Properties
+<tocitem target="ref/regionprops.html">
+<name>regionprops</name>
+<purpose>Measure properties of image regions</purpose>
+</tocitem>
+<tocitem target="ref/regionprops3.html">
+<name>regionprops3</name>
+<purpose>Measure properties of 3-D volumetric image regions</purpose>
+</tocitem>
+<tocitem target="ref/bwarea.html">
+<name>bwarea</name>
+<purpose>Area of objects in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwconvhull.html">
+<name>bwconvhull</name>
+<purpose>Generate convex hull image from binary image</purpose>
+</tocitem>
+<tocitem target="ref/bweuler.html">
+<name>bweuler</name>
+<purpose>Euler number of binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwferet.html">
+<name>bwferet</name>
+<purpose>Measure Feret properties</purpose>
+</tocitem>
+<tocitem target="ref/bwperim.html">
+<name>bwperim</name>
+<purpose>Find perimeter of objects in binary image</purpose>
+</tocitem>
+<tocitem target="ref/impixel.html">
+<name>impixel</name>
+<purpose>Pixel color values</purpose>
+</tocitem>
+<tocitem target="ref/improfile.html">
+<name>improfile</name>
+<purpose>Pixel-value cross-sections along line segments</purpose>
+</tocitem>
+<tocitem target="ref/imcontour.html">
+<name>imcontour</name>
+<purpose>Create contour plot of image data</purpose>
+</tocitem>
+<tocitem target="ref/bwdist.html">
+<name>bwdist</name>
+<purpose>Distance transform of binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwdistgeodesic.html">
+<name>bwdistgeodesic</name>
+<purpose>Geodesic distance transform of binary image</purpose>
+</tocitem>
+<tocitem target="ref/graydist.html">
+<name>graydist</name>
+<purpose>Gray-weighted distance transform of grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/imhist.html">
+<name>imhist</name>
+<purpose>Histogram of image data</purpose>
+</tocitem>
+<tocitem target="ref/mean2.html">
+<name>mean2</name>
+<purpose>Average or mean of matrix elements</purpose>
+</tocitem>
+<tocitem target="ref/std2.html">
+<name>std2</name>
+<purpose>Standard deviation of matrix elements</purpose>
+</tocitem>
+<tocitem target="ref/corr2.html">
+<name>corr2</name>
+<purpose>2-D correlation coefficient</purpose>
+</tocitem>
+<tocitem target="ref/bwconncomp.html">
+<name>bwconncomp</name>
+<purpose>Find connected components in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwareaopen.html">
+<name>bwareaopen</name>
+<purpose>Remove small objects from binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwareafilt.html">
+<name>bwareafilt</name>
+<purpose>Extract objects from binary image by size</purpose>
+</tocitem>
+<tocitem target="ref/bwpropfilt.html">
+<name>bwpropfilt</name>
+<purpose>Extract objects from binary image using properties</purpose>
+</tocitem>
+<tocitem target="ref/bwselect.html">
+<name>bwselect</name>
+<purpose>Select objects in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwselect3.html">
+<name>bwselect3</name>
+<purpose>Select objects in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwlabel.html">
+<name>bwlabel</name>
+<purpose>Label connected components in 2-D binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwlabeln.html">
+<name>bwlabeln</name>
+<purpose>Label connected components in binary image</purpose>
+</tocitem>
+<tocitem target="ref/labelmatrix.html">
+<name>labelmatrix</name>
+<purpose>Create label matrix from bwconncomp structure</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="texture-analysis-1.html">Texture Analysis
+<tocitem target="ref/entropy.html">
+<name>entropy</name>
+<purpose>Entropy of grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/entropyfilt.html">
+<name>entropyfilt</name>
+<purpose>Local entropy of grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/rangefilt.html">
+<name>rangefilt</name>
+<purpose>Local range of image</purpose>
+</tocitem>
+<tocitem target="ref/stdfilt.html">
+<name>stdfilt</name>
+<purpose>Local standard deviation of image</purpose>
+</tocitem>
+<tocitem target="ref/graycomatrix.html">
+<name>graycomatrix</name>
+<purpose>Create gray-level co-occurrence matrix from image</purpose>
+</tocitem>
+<tocitem target="ref/graycoprops.html">
+<name>graycoprops</name>
+<purpose>Properties of gray-level co-occurrence matrix</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-quality.html">Image Quality
+<tocitem target="ref/immse.html">
+<name>immse</name>
+<purpose> Mean-squared error </purpose>
+</tocitem>
+<tocitem target="ref/psnr.html">
+<name>psnr</name>
+<purpose>Peak Signal-to-Noise Ratio (PSNR) </purpose>
+</tocitem>
+<tocitem target="ref/ssim.html">
+<name>ssim</name>
+<purpose>Structural Similarity Index (SSIM) for measuring image
+quality </purpose>
+</tocitem>
+<tocitem target="ref/brisque.html">
+<name>brisque</name>
+<purpose>Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) no-reference image
+            quality score</purpose>
+</tocitem>
+<tocitem target="ref/fitbrisque.html">
+<name>fitbrisque</name>
+<purpose>Fit custom model for BRISQUE image quality score</purpose>
+</tocitem>
+<tocitem target="ref/brisquemodel.html">
+<name>brisqueModel</name>
+<purpose>Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE) model</purpose>
+</tocitem>
+<tocitem target="ref/niqe.html">
+<name>niqe</name>
+<purpose>Naturalness Image Quality Evaluator (NIQE) no-reference image quality
+            score</purpose>
+</tocitem>
+<tocitem target="ref/fitniqe.html">
+<name>fitniqe</name>
+<purpose>Fit custom model for NIQE image quality score</purpose>
+</tocitem>
+<tocitem target="ref/niqemodel.html">
+<name>niqeModel</name>
+<purpose>Naturalness Image Quality Evaluator (NIQE) model</purpose>
+</tocitem>
+<tocitem target="ref/piqe.html">
+<name>piqe</name>
+<purpose>Perception based Image Quality Evaluator (PIQE) no-reference image quality
+      score</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.html">
+<name>esfrChart</name>
+<purpose>Imatest® edge spatial frequency response (eSFR) test
+            chart</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.measuresharpness.html">
+<name>measureSharpness</name>
+<purpose>Measure spatial frequency response using Imatest®
+            eSFR chart</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.measurechromaticaberration.html">
+<name>measureChromaticAberration</name>
+<purpose>Measure chromatic aberration at slanted edges using
+                Imatest® eSFR chart</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.measurecolor.html">
+<name>measureColor</name>
+<purpose>Measure color reproduction using Imatest® eSFR
+            chart</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.measurenoise.html">
+<name>measureNoise</name>
+<purpose>Measure noise using Imatest® eSFR chart</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.measureilluminant.html">
+<name>measureIlluminant</name>
+<purpose>Measure scene illuminant using Imatest® eSFR
+            chart</purpose>
+</tocitem>
+<tocitem target="ref/esfrchart.displaychart.html">
+<name>displayChart</name>
+<purpose>Display Imatest® eSFR chart with overlaid regions of
+            interest</purpose>
+</tocitem>
+<tocitem target="ref/displaycolorpatch.html">
+<name>displayColorPatch</name>
+<purpose>Display visual color reproduction as color patches</purpose>
+</tocitem>
+<tocitem target="ref/plotsfr.html">
+<name>plotSFR</name>
+<purpose>Plot spatial frequency response of edge</purpose>
+</tocitem>
+<tocitem target="ref/plotchromaticity.html">
+<name>plotChromaticity</name>
+<purpose>Plot color reproduction on chromaticity diagram</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-transforms.html">Image Transforms
+<tocitem target="ref/hough.html">
+<name>hough</name>
+<purpose>Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/houghlines.html">
+<name>houghlines</name>
+<purpose>Extract line segments based on Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/houghpeaks.html">
+<name>houghpeaks</name>
+<purpose>Identify peaks in Hough transform</purpose>
+</tocitem>
+<tocitem target="ref/dct2.html">
+<name>dct2</name>
+<purpose>2-D discrete cosine transform</purpose>
+</tocitem>
+<tocitem target="ref/dctmtx.html">
+<name>dctmtx</name>
+<purpose>Discrete cosine transform matrix</purpose>
+</tocitem>
+<tocitem target="ref/fan2para.html">
+<name>fan2para</name>
+<purpose>Convert fan-beam projections to parallel-beam</purpose>
+</tocitem>
+<tocitem target="ref/fanbeam.html">
+<name>fanbeam</name>
+<purpose>Fan-beam transform</purpose>
+</tocitem>
+<tocitem target="ref/idct2.html">
+<name>idct2</name>
+<purpose>2-D inverse discrete cosine transform</purpose>
+</tocitem>
+<tocitem target="ref/ifanbeam.html">
+<name>ifanbeam</name>
+<purpose>Inverse fan-beam transform</purpose>
+</tocitem>
+<tocitem target="ref/iradon.html">
+<name>iradon</name>
+<purpose>Inverse Radon transform</purpose>
+</tocitem>
+<tocitem target="ref/para2fan.html">
+<name>para2fan</name>
+<purpose>Convert parallel-beam projections to fan-beam</purpose>
+</tocitem>
+<tocitem target="ref/radon.html">
+<name>radon</name>
+<purpose>Radon transform</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fft2.html">
+<name>fft2</name>
+<purpose>2-D fast Fourier transform</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fftshift.html">
+<name>fftshift</name>
+<purpose>Shift zero-frequency component to center of spectrum</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/ifft2.html">
+<name>ifft2</name>
+<purpose>2-D inverse fast Fourier transform</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/ifftshift.html">
+<name>ifftshift</name>
+<purpose>Inverse zero-frequency shift</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning.html">Deep Learning for Image Processing
+<tocitem target="../deeplearning/ref/augmentedimagedatastore.html">
+<name>augmentedImageDatastore</name>
+<purpose>Transform batches to augment image data</purpose>
+</tocitem>
+<tocitem target="ref/bigimagedatastore.html">
+<name>bigimageDatastore</name>
+<purpose>Datastore to manage blocks of big image data</purpose>
+</tocitem>
+<tocitem target="ref/denoisingimagedatastore.html">
+<name>denoisingImageDatastore</name>
+<purpose>Denoising image datastore</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.imagedatastore.html">
+<name>imageDatastore</name>
+<purpose>Datastore for image data</purpose>
+</tocitem>
+<tocitem target="ref/randompatchextractiondatastore.html">
+<name>randomPatchExtractionDatastore</name>
+<purpose>Datastore for extracting random 2-D or 3-D random patches from images or pixel label
+      images</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.transform.html">
+<name>transform</name>
+<purpose>Transform datastore</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.combine.html">
+<name>combine</name>
+<purpose>Combine data from multiple datastores</purpose>
+</tocitem>
+<tocitem target="ref/jittercolorhsv.html">
+<name>jitterColorHSV</name>
+<purpose>Randomly alter color of pixels</purpose>
+</tocitem>
+<tocitem target="ref/centercropwindow2d.html">
+<name>centerCropWindow2d</name>
+<purpose>Create rectangular center cropping window</purpose>
+</tocitem>
+<tocitem target="ref/centercropwindow3d.html">
+<name>centerCropWindow3d</name>
+<purpose>Create cuboidal center cropping window</purpose>
+</tocitem>
+<tocitem target="ref/randomcropwindow2d.html">
+<name>randomCropWindow2d</name>
+<purpose>Create randomized rectangular cropping window</purpose>
+</tocitem>
+<tocitem target="ref/randomcropwindow3d.html">
+<name>randomCropWindow3d</name>
+<purpose>Create randomized cuboidal cropping window</purpose>
+</tocitem>
+<tocitem target="ref/images.spatialref.rectangle.html">
+<name>Rectangle</name>
+<purpose>Spatial extents of 2-D rectangular region</purpose>
+</tocitem>
+<tocitem target="ref/images.spatialref.cuboid.html">
+<name>Cuboid</name>
+<purpose>Spatial extents of 3-D cuboidal region</purpose>
+</tocitem>
+<tocitem target="ref/randomaffine2d.html">
+<name>randomAffine2d</name>
+<purpose>Create randomized 2-D affine transformation</purpose>
+</tocitem>
+<tocitem target="ref/randomaffine3d.html">
+<name>randomAffine3d</name>
+<purpose>Create randomized 3-D affine transformation</purpose>
+</tocitem>
+<tocitem target="ref/affineoutputview.html">
+<name>affineOutputView</name>
+<purpose>Create output view for warping images</purpose>
+</tocitem>
+<tocitem target="ref/denoiseimage.html">
+<name>denoiseImage</name>
+<purpose>Denoise image using deep neural network</purpose>
+</tocitem>
+<tocitem target="ref/denoisingnetwork.html">
+<name>denoisingNetwork</name>
+<purpose>Get image denoising network</purpose>
+</tocitem>
+<tocitem target="ref/dncnnlayers.html">
+<name>dnCNNLayers</name>
+<purpose>Get denoising convolutional neural network layers</purpose>
+</tocitem>
+<tocitem target="ref/denoisingimagedatastore.partitionbyindex.html">
+<name>partitionByIndex</name>
+<purpose>Partition denoisingImageDatastore according to
+            indices</purpose>
+</tocitem>
+<tocitem target="ref/denoisingimagedatastore.read.html">
+<name>read</name>
+<purpose>Read data from denoisingImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/denoisingimagedatastore.readbyindex.html">
+<name>readByIndex</name>
+<purpose>Read data specified by index from
+            denoisingImageDatastore</purpose>
+</tocitem>
+<tocitem target="ref/randompatchextractiondatastore.partitionbyindex.html">
+<name>partitionByIndex</name>
+<purpose>Partition randomPatchExtractionDatastore according to
+      indices</purpose>
+</tocitem>
+<tocitem target="ref/randompatchextractiondatastore.read.html">
+<name>read</name>
+<purpose>Read data from randomPatchExtractionDatastore</purpose>
+</tocitem>
+<tocitem target="ref/randompatchextractiondatastore.readbyindex.html">
+<name>readByIndex</name>
+<purpose>Read data specified by index from
+      randomPatchExtractionDatastore</purpose>
+</tocitem>
+<tocitem target="ref/randompatchextractiondatastore.shuffle.html">
+<name>shuffle</name>
+<purpose>Shuffle data in datastore</purpose>
+</tocitem>
+<tocitem target="ref/denoisingimagesource.html">
+<name>denoisingImageSource</name>
+<purpose>(To be removed) Create denoising image datastore</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="3d-volumetric-image-processing.html">3-D Volumetric Image Processing
+<tocitem target="ref/volshow.html">
+<name>volshow</name>
+<purpose>Display volume</purpose>
+</tocitem>
+<tocitem target="ref/labelvolshow.html">
+<name>labelvolshow</name>
+<purpose>Display labeled volume</purpose>
+</tocitem>
+<tocitem target="ref/sliceviewer.html">
+<name>sliceViewer</name>
+<purpose>Browse image slices</purpose>
+</tocitem>
+<tocitem target="ref/orthosliceviewer.html">
+<name>orthosliceViewer</name>
+<purpose>Browse orthogonal slices in grayscale or RGB volume</purpose>
+</tocitem>
+<tocitem target="ref/adaptthresh.html">
+<name>adaptthresh</name>
+<purpose>Adaptive image threshold using local first-order statistics</purpose>
+</tocitem>
+<tocitem target="ref/imbinarize.html">
+<name>imbinarize</name>
+<purpose>Binarize 2-D grayscale image or 3-D volume by thresholding</purpose>
+</tocitem>
+<tocitem target="ref/dicomread.html">
+<name>dicomread</name>
+<purpose>Read DICOM image</purpose>
+</tocitem>
+<tocitem target="ref/dicomreadvolume.html">
+<name>dicomreadVolume</name>
+<purpose>Construct 4-D volume from set of DICOM images</purpose>
+</tocitem>
+<tocitem target="ref/niftiinfo.html">
+<name>niftiinfo</name>
+<purpose>Read metadata from NIfTI file</purpose>
+</tocitem>
+<tocitem target="ref/niftiwrite.html">
+<name>niftiwrite</name>
+<purpose>Write volume to file using NIfTI format</purpose>
+</tocitem>
+<tocitem target="ref/niftiread.html">
+<name>niftiread</name>
+<purpose>Read NIfTI image</purpose>
+</tocitem>
+<tocitem target="ref/imabsdiff.html">
+<name>imabsdiff</name>
+<purpose>Absolute difference of two images</purpose>
+</tocitem>
+<tocitem target="ref/imadd.html">
+<name>imadd</name>
+<purpose>Add two images or add constant to image</purpose>
+</tocitem>
+<tocitem target="ref/imdivide.html">
+<name>imdivide</name>
+<purpose>Divide one image into another or divide image by constant</purpose>
+</tocitem>
+<tocitem target="ref/immultiply.html">
+<name>immultiply</name>
+<purpose>Multiply two images or multiply image by constant</purpose>
+</tocitem>
+<tocitem target="ref/imsubtract.html">
+<name>imsubtract</name>
+<purpose>Subtract one image from another or subtract constant from image</purpose>
+</tocitem>
+<tocitem target="ref/affine3d.html">
+<name>affine3d</name>
+<purpose> 3-D affine geometric transformation</purpose>
+</tocitem>
+<tocitem target="ref/imcrop3.html">
+<name>imcrop3</name>
+<purpose>Crop 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imref3d.html">
+<name>imref3d</name>
+<purpose>Reference 3-D image to world coordinates</purpose>
+</tocitem>
+<tocitem target="ref/imregister.html">
+<name>imregister</name>
+<purpose>Intensity-based image registration</purpose>
+</tocitem>
+<tocitem target="ref/imregdemons.html">
+<name>imregdemons</name>
+<purpose>Estimate displacement field that aligns two 2-D or 3-D
+images</purpose>
+</tocitem>
+<tocitem target="ref/imresize3.html">
+<name>imresize3</name>
+<purpose>Resize 3-D volumetric intensity image</purpose>
+</tocitem>
+<tocitem target="ref/imrotate3.html">
+<name>imrotate3</name>
+<purpose>Rotate 3-D volumetric grayscale image</purpose>
+</tocitem>
+<tocitem target="ref/imwarp.html">
+<name>imwarp</name>
+<purpose>Apply geometric transformation to image</purpose>
+</tocitem>
+<tocitem target="ref/fibermetric.html">
+<name>fibermetric</name>
+<purpose>Enhance elongated or tubular structures in image</purpose>
+</tocitem>
+<tocitem target="ref/fspecial3.html">
+<name>fspecial3</name>
+<purpose>Create predefined 3-D filter</purpose>
+</tocitem>
+<tocitem target="ref/histeq.html">
+<name>histeq</name>
+<purpose>Enhance contrast using histogram equalization</purpose>
+</tocitem>
+<tocitem target="ref/imadjustn.html">
+<name>imadjustn</name>
+<purpose>Adjust intensity values in N-D volumetric image</purpose>
+</tocitem>
+<tocitem target="ref/imboxfilt3.html">
+<name>imboxfilt3</name>
+<purpose>3-D box filtering of 3-D images</purpose>
+</tocitem>
+<tocitem target="ref/imfilter.html">
+<name>imfilter</name>
+<purpose>N-D filtering of multidimensional images</purpose>
+</tocitem>
+<tocitem target="ref/imgaussfilt3.html">
+<name>imgaussfilt3</name>
+<purpose>3-D Gaussian filtering of 3-D images</purpose>
+</tocitem>
+<tocitem target="ref/imhistmatchn.html">
+<name>imhistmatchn</name>
+<purpose>Adjust histogram of N-D image to match histogram of reference
+image </purpose>
+</tocitem>
+<tocitem target="ref/imnoise.html">
+<name>imnoise</name>
+<purpose>Add noise to image</purpose>
+</tocitem>
+<tocitem target="ref/integralboxfilter3.html">
+<name>integralBoxFilter3</name>
+<purpose>3-D box filtering of 3-D integral images</purpose>
+</tocitem>
+<tocitem target="ref/integralimage3.html">
+<name>integralImage3</name>
+<purpose>Calculate 3-D integral image</purpose>
+</tocitem>
+<tocitem target="ref/medfilt3.html">
+<name>medfilt3</name>
+<purpose>3-D median filtering</purpose>
+</tocitem>
+<tocitem target="ref/bwareaopen.html">
+<name>bwareaopen</name>
+<purpose>Remove small objects from binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwconncomp.html">
+<name>bwconncomp</name>
+<purpose>Find connected components in binary image</purpose>
+</tocitem>
+<tocitem target="ref/bwmorph3.html">
+<name>bwmorph3</name>
+<purpose>Morphological operations on binary volume</purpose>
+</tocitem>
+<tocitem target="ref/bwskel.html">
+<name>bwskel</name>
+<purpose>Reduce all objects to lines in 2-D binary image or 3-D binary
+            volume</purpose>
+</tocitem>
+<tocitem target="ref/imbothat.html">
+<name>imbothat</name>
+<purpose>Bottom-hat filtering</purpose>
+</tocitem>
+<tocitem target="ref/imclose.html">
+<name>imclose</name>
+<purpose>Morphologically close image</purpose>
+</tocitem>
+<tocitem target="ref/imdilate.html">
+<name>imdilate</name>
+<purpose>Dilate image</purpose>
+</tocitem>
+<tocitem target="ref/imerode.html">
+<name>imerode</name>
+<purpose>Erode image</purpose>
+</tocitem>
+<tocitem target="ref/imopen.html">
+<name>imopen</name>
+<purpose>Morphologically open image</purpose>
+</tocitem>
+<tocitem target="ref/imreconstruct.html">
+<name>imreconstruct</name>
+<purpose>Morphological reconstruction</purpose>
+</tocitem>
+<tocitem target="ref/imregionalmax.html">
+<name>imregionalmax</name>
+<purpose>Regional maxima</purpose>
+</tocitem>
+<tocitem target="ref/imregionalmin.html">
+<name>imregionalmin</name>
+<purpose>Regional minima</purpose>
+</tocitem>
+<tocitem target="ref/imtophat.html">
+<name>imtophat</name>
+<purpose>Top-hat filtering</purpose>
+</tocitem>
+<tocitem target="ref/offsetstrel.html">
+<name>offsetstrel</name>
+<purpose>Morphological offset structuring element</purpose>
+</tocitem>
+<tocitem target="ref/strel.html">
+<name>strel</name>
+<purpose>Morphological structuring element</purpose>
+</tocitem>
+<tocitem target="ref/watershed.html">
+<name>watershed</name>
+<purpose>Watershed transform</purpose>
+</tocitem>
+<tocitem target="ref/activecontour.html">
+<name>activecontour</name>
+<purpose> Segment image into foreground and background using active contours
+            (snakes)</purpose>
+</tocitem>
+<tocitem target="ref/bfscore.html">
+<name>bfscore</name>
+<purpose>Contour matching score for image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/dice.html">
+<name>dice</name>
+<purpose>Sørensen-Dice similarity coefficient for image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/gradientweight.html">
+<name>gradientweight</name>
+<purpose>Calculate weights for image pixels based on image gradient</purpose>
+</tocitem>
+<tocitem target="ref/graydiffweight.html">
+<name>graydiffweight</name>
+<purpose>Calculate weights for image pixels based on grayscale
+intensity difference</purpose>
+</tocitem>
+<tocitem target="ref/imsegfmm.html">
+<name>imsegfmm</name>
+<purpose>Binary image segmentation using Fast Marching Method</purpose>
+</tocitem>
+<tocitem target="ref/imsegkmeans3.html">
+<name>imsegkmeans3</name>
+<purpose>K-means clustering based volume segmentation</purpose>
+</tocitem>
+<tocitem target="ref/jaccard.html">
+<name>jaccard</name>
+<purpose>Jaccard similarity coefficient for image segmentation</purpose>
+</tocitem>
+<tocitem target="ref/superpixels3.html">
+<name>superpixels3</name>
+<purpose>3-D superpixel oversegmentation of 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/bwselect3.html">
+<name>bwselect3</name>
+<purpose>Select objects in binary image</purpose>
+</tocitem>
+<tocitem target="ref/edge3.html">
+<name>edge3</name>
+<purpose>Find edges in 3-D intensity volume</purpose>
+</tocitem>
+<tocitem target="ref/imgradient3.html">
+<name>imgradient3</name>
+<purpose>Find gradient magnitude and direction of 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imgradientxyz.html">
+<name>imgradientxyz</name>
+<purpose>Find directional gradients of 3-D image</purpose>
+</tocitem>
+<tocitem target="ref/imhist.html">
+<name>imhist</name>
+<purpose>Histogram of image data</purpose>
+</tocitem>
+<tocitem target="ref/regionprops3.html">
+<name>regionprops3</name>
+<purpose>Measure properties of 3-D volumetric image regions</purpose>
+</tocitem>
+<tocitem target="ref/randompatchextractiondatastore.html">
+<name>randomPatchExtractionDatastore</name>
+<purpose>Datastore for extracting random 2-D or 3-D random patches from images or pixel label
+      images</purpose>
+</tocitem>
+<tocitem target="ref/centercropwindow3d.html">
+<name>centerCropWindow3d</name>
+<purpose>Create cuboidal center cropping window</purpose>
+</tocitem>
+<tocitem target="ref/randomcropwindow3d.html">
+<name>randomCropWindow3d</name>
+<purpose>Create randomized cuboidal cropping window</purpose>
+</tocitem>
+<tocitem target="ref/randomaffine3d.html">
+<name>randomAffine3d</name>
+<purpose>Create randomized 3-D affine transformation</purpose>
+</tocitem>
+<tocitem target="ref/affineoutputview.html">
+<name>affineOutputView</name>
+<purpose>Create output view for warping images</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="../matlab/ref/imread.html">
+<name>imread</name>
+<purpose>Read image from graphics file</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/hsv2rgb.html">
+<name>hsv2rgb</name>
+<purpose>Convert HSV colors to RGB</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rgb2hsv.html">
+<name>rgb2hsv</name>
+<purpose>Convert RGB colors to HSV</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/im2double.html">
+<name>im2double</name>
+<purpose>Convert image to double precision</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rgb2gray.html">
+<name>rgb2gray</name>
+<purpose>Convert RGB image or colormap to grayscale</purpose>
+</tocitem>
+<tocitem target="ref/getrangefromclass.html">
+<name>getrangefromclass</name>
+<purpose>Default display range of image based on its class</purpose>
+</tocitem>
+<tocitem target="ref/iptcheckmap.html">
+<name>iptcheckmap</name>
+<purpose>Check validity of colormap</purpose>
+</tocitem>
+<tocitem target="ref/getrangefromclass.html">
+<name>getrangefromclass</name>
+<purpose>Default display range of image based on its class</purpose>
+</tocitem>
+<tocitem target="ref/superpixels3.html">
+<name>superpixels3</name>
+<purpose>3-D superpixel oversegmentation of 3-D image</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gpu-computing.html">GPU Computing
+<tocitem target="../matlab/ref/im2double.html">
+<name>im2double</name>
+<purpose>Convert image to double precision</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/rgb2gray.html">
+<name>rgb2gray</name>
+<purpose>Convert RGB image or colormap to grayscale</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

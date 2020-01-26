@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="multibody-modeling.html">Multibody Modeling
+<tocitem target="rigid-bodies-1.html">Bodies
+<tocitem target="ref/smnew.html">
+<name>smnew</name>
+<purpose>Open Simscape
+            Multibody model template and block library</purpose>
+</tocitem>
+<tocitem target="ref/sm_lib.html">
+<name>sm_lib</name>
+<purpose>Open the Simscape
+            Multibody block library</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="simulation-and-analysis.html">Simulation and Analysis
+<tocitem target="ref/smwritevideo.html">
+<name>smwritevideo</name>
+<purpose>Configure and create multibody animation videos</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.html">
+<name>KinematicsSolver</name>
+<purpose>Solve forward and inverse kinematics problems for a multibody model</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.setvariableunit.html">
+<name>setVariableUnit</name>
+<purpose>Change physical unit of kinematic variable</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.framevariables.html">
+<name>frameVariables</name>
+<purpose>List all kinematic variables associated with frame pairs</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.initialguessvariables.html">
+<name>initialGuessVariables</name>
+<purpose>List all kinematic variables assigned as initial guesses</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.jointvariables.html">
+<name>jointVariables</name>
+<purpose>List all kinematic variables associated with joints</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.outputvariables.html">
+<name>outputVariables</name>
+<purpose>List all kinematic variables assigned as outputs</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.targetvariables.html">
+<name>targetVariables</name>
+<purpose>List kinematic variables assigned as targets</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.addframevariables.html">
+<name>addFrameVariables</name>
+<purpose>Create kinematic variables from select frame pair in
+        KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.addinitialguessvariables.html">
+<name>addInitialGuessVariables</name>
+<purpose>Assign kinematic variables from the KinematicsSolver object as guesses</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.addoutputvariables.html">
+<name>addOutputVariables</name>
+<purpose>Assign kinematic variables from the KinematicsSolver object as outputs</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.addtargetvariables.html">
+<name>addTargetVariables</name>
+<purpose>Assign kinematic variables from the KinematicsSolver object as targets</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.clearframevariables.html">
+<name>clearFrameVariables</name>
+<purpose>Drop all frame variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.clearinitialguessvariables.html">
+<name>clearInitialGuessVariables</name>
+<purpose>Drop all guess variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.clearoutputvariables.html">
+<name>clearOutputVariables</name>
+<purpose>Drop all output variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.cleartargetvariables.html">
+<name>clearTargetVariables</name>
+<purpose>Drop all target variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.removeframevariables.html">
+<name>removeFrameVariables</name>
+<purpose>Drop select frame variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.removeinitialguessvariables.html">
+<name>removeInitialGuessVariables</name>
+<purpose>Drop select guess variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.removeoutputvariables.html">
+<name>removeOutputVariables</name>
+<purpose>Drop select output variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.removetargetvariables.html">
+<name>removeTargetVariables</name>
+<purpose>Drop select target variables from the KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.solve.html">
+<name>solve</name>
+<purpose>Run kinematic analysis for KinematicsSolver object</purpose>
+</tocitem>
+<tocitem target="ref/simscape.multibody.kinematicssolver.generatecode.html">
+<name>generateCode</name>
+<purpose>Generate C code to run kinematic analysis on KinematicsSolver object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="cad-import.html">Model Import
+<tocitem target="ref/smexportonshape.html">
+<name>smexportonshape</name>
+<purpose>Export a CAD assembly model from Onshape cloud software</purpose>
+</tocitem>
+<tocitem target="ref/smimport.html">
+<name>smimport</name>
+<purpose>Import a CAD, URDF, or Robotics System Toolbox model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

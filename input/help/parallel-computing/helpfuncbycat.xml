@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="parallel-computing-fundamentals.html">Parallel Computing Fundamentals
+<tocitem target="parfor.html">
+<name>parfor</name>
+<purpose>Execute for-loop iterations in parallel on workers</purpose>
+</tocitem>
+<tocitem target="parallel.pool.parfeval.html">
+<name>parfeval</name>
+<purpose>Execute function asynchronously on parallel pool worker</purpose>
+</tocitem>
+<tocitem target="gpuarray.html">
+<name>gpuArray</name>
+<purpose>Array stored on GPU</purpose>
+</tocitem>
+<tocitem target="distributed.html">
+<name>distributed</name>
+<purpose>Access elements of distributed arrays from client</purpose>
+</tocitem>
+<tocitem target="batch.html">
+<name>batch</name>
+<purpose>Run MATLAB script or function on worker</purpose>
+</tocitem>
+<tocitem target="parpool.html">
+<name>parpool</name>
+<purpose>Create parallel pool on cluster</purpose>
+</tocitem>
+<tocitem target="ticbytes.html">
+<name>ticBytes</name>
+<purpose>Start counting bytes transferred within parallel pool</purpose>
+</tocitem>
+<tocitem target="tocbytes.html">
+<name>tocBytes</name>
+<purpose>Read how many bytes have been transferred since calling ticBytes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="parallel-for-loops-parfor.html">Parallel for-Loops (parfor)
+<tocitem target="parfor.html">
+<name>parfor</name>
+<purpose>Execute for-loop iterations in parallel on workers</purpose>
+</tocitem>
+<tocitem target="parforoptions.html">
+<name>parforOptions</name>
+<purpose>Options for parfor, such as partitioning iterations</purpose>
+</tocitem>
+<tocitem target="parpool.html">
+<name>parpool</name>
+<purpose>Create parallel pool on cluster</purpose>
+</tocitem>
+<tocitem target="parallel.pool.parfeval.html">
+<name>parfeval</name>
+<purpose>Execute function asynchronously on parallel pool worker</purpose>
+</tocitem>
+<tocitem target="ticbytes.html">
+<name>ticBytes</name>
+<purpose>Start counting bytes transferred within parallel pool</purpose>
+</tocitem>
+<tocitem target="tocbytes.html">
+<name>tocBytes</name>
+<purpose>Read how many bytes have been transferred since calling ticBytes</purpose>
+</tocitem>
+<tocitem target="parallel.pool.dataqueue.send.html">
+<name>send</name>
+<purpose>Send data from worker to client using a data queue</purpose>
+</tocitem>
+<tocitem target="parallel.pool.dataqueue.aftereach.html">
+<name>afterEach</name>
+<purpose>Define a function to call when new data is received on a DataQueue</purpose>
+</tocitem>
+<tocitem target="parallel.pool.html">
+<name>parallel.Pool</name>
+<purpose>Access parallel pool</purpose>
+</tocitem>
+<tocitem target="parallel.pool.dataqueue.html">
+<name>parallel.pool.DataQueue</name>
+<purpose>Class that enables sending and listening for data between client and
+                workers</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="asynchronous-parallel-programming.html">Asynchronous Parallel Programming
+<tocitem target="parallel.pool.parfeval.html">
+<name>parfeval</name>
+<purpose>Execute function asynchronously on parallel pool worker</purpose>
+</tocitem>
+<tocitem target="parfevalonall.html">
+<name>parfevalOnAll</name>
+<purpose>Execute function asynchronously on all workers in parallel pool</purpose>
+</tocitem>
+<tocitem target="ticbytes.html">
+<name>ticBytes</name>
+<purpose>Start counting bytes transferred within parallel pool</purpose>
+</tocitem>
+<tocitem target="tocbytes.html">
+<name>tocBytes</name>
+<purpose>Read how many bytes have been transferred since calling ticBytes</purpose>
+</tocitem>
+<tocitem target="parallel.pool.dataqueue.send.html">
+<name>send</name>
+<purpose>Send data from worker to client using a data queue</purpose>
+</tocitem>
+<tocitem target="poll.html">
+<name>poll</name>
+<purpose> Retrieve data sent from a worker</purpose>
+</tocitem>
+<tocitem target="parallel.pool.dataqueue.aftereach.html">
+<name>afterEach</name>
+<purpose>Define a function to call when new data is received on a DataQueue</purpose>
+</tocitem>
+<tocitem target="parallel.future.aftereach.html">
+<name>afterEach</name>
+<purpose>Specify a function to invoke after each parallel.Future completes</purpose>
+</tocitem>
+<tocitem target="parallel.future.afterall.html">
+<name>afterAll</name>
+<purpose>Specify a function to invoke after all parallel.Futures complete</purpose>
+</tocitem>
+<tocitem target="parallel.future.fetchoutputs.html">
+<name>fetchOutputs</name>
+<purpose>Retrieve all output arguments from Future</purpose>
+</tocitem>
+<tocitem target="parallel.future.fetchnext.html">
+<name>fetchNext</name>
+<purpose>Retrieve next available unread FevalFuture outputs</purpose>
+</tocitem>
+<tocitem target="parallel.future.cancel.html">
+<name>cancel</name>
+<purpose>Cancel queued or running future</purpose>
+</tocitem>
+<tocitem target="parallel.future.isequal.html">
+<name>isequal</name>
+<purpose>True if futures have same ID</purpose>
+</tocitem>
+<tocitem target="parallel.future.wait.html">
+<name>wait</name>
+<purpose>Wait for futures to complete</purpose>
+</tocitem>
+<tocitem target="parallel.future.html">
+<name>parallel.Future</name>
+<purpose>Request function execution on parallel pool workers or MATLAB client</purpose>
+</tocitem>
+<tocitem target="parallel.pool.html">
+<name>parallel.Pool</name>
+<purpose>Access parallel pool</purpose>
+</tocitem>
+<tocitem target="parallel.pool.dataqueue.html">
+<name>parallel.pool.DataQueue</name>
+<purpose>Class that enables sending and listening for data between client and
+                workers</purpose>
+</tocitem>
+<tocitem target="parallel.pool.pollabledataqueue.html">
+<name>parallel.pool.PollableDataQueue</name>
+<purpose> Class that enables sending and polling for data between client and
+                workers</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="big-data-processing.html">Big Data Processing
+<tocitem target="distributed-arrays.html">Distributed Arrays
+<tocitem target="distributed.distributed.html">
+<name>distributed</name>
+<purpose>Create distributed array from data in the client workspace or a
+                datastore</purpose>
+</tocitem>
+<tocitem target="gather.html">
+<name>gather</name>
+<purpose>Transfer distributed array or gpuArray to local workspace</purpose>
+</tocitem>
+<tocitem target="spmd.html">
+<name>spmd</name>
+<purpose>Execute code in parallel on workers of parallel pool</purpose>
+</tocitem>
+<tocitem target="composite.composite.html">
+<name>Composite</name>
+<purpose>Create Composite object</purpose>
+</tocitem>
+<tocitem target="parallel.pool.constant.html">
+<name>parallel.pool.Constant</name>
+<purpose>Build parallel.pool.Constant from data or function handle</purpose>
+</tocitem>
+<tocitem target="codistributed.codistributed.html">
+<name>codistributed</name>
+<purpose>Create codistributed array from replicated local data</purpose>
+</tocitem>
+<tocitem target="parpool.html">
+<name>parpool</name>
+<purpose>Create parallel pool on cluster</purpose>
+</tocitem>
+<tocitem target="parallel.pool.delete.html">
+<name>delete (Pool)</name>
+<purpose>Shut down parallel pool</purpose>
+</tocitem>
+<tocitem target="redistribute.html">
+<name>redistribute</name>
+<purpose>Redistribute codistributed array with another distribution
+                scheme</purpose>
+</tocitem>
+<tocitem target="codistributed.codistributed.build.html">
+<name>codistributed.build</name>
+<purpose>Create codistributed array from distributed data</purpose>
+</tocitem>
+<tocitem target="for.html">
+<name>for</name>
+<purpose>for-loop over distributed range</purpose>
+</tocitem>
+<tocitem target="getlocalpart.html">
+<name>getLocalPart</name>
+<purpose>Local portion of codistributed array</purpose>
+</tocitem>
+<tocitem target="globalindices.html">
+<name>globalIndices</name>
+<purpose>Global indices for local part of codistributed array</purpose>
+</tocitem>
+<tocitem target="gop.html">
+<name>gop</name>
+<purpose>Global operation across all workers</purpose>
+</tocitem>
+<tocitem target="write.html">
+<name>write</name>
+<purpose>Write distributed data to an output location</purpose>
+</tocitem>
+<tocitem target="distributed.eye.html">
+<name>eye</name>
+<purpose>Identity matrix</purpose>
+</tocitem>
+<tocitem target="distributed.false.html">
+<name>false</name>
+<purpose>Array of logical 0 (false)</purpose>
+</tocitem>
+<tocitem target="distributed.inf.html">
+<name>Inf</name>
+<purpose>Array of infinity</purpose>
+</tocitem>
+<tocitem target="distributed.nan.html">
+<name>NaN</name>
+<purpose>Array of Not-a-Numbers</purpose>
+</tocitem>
+<tocitem target="distributed.ones.html">
+<name>ones</name>
+<purpose>Array of ones</purpose>
+</tocitem>
+<tocitem target="distributed.rand.html">
+<name>rand</name>
+<purpose>Array of rand values</purpose>
+</tocitem>
+<tocitem target="distributed.randn.html">
+<name>randn</name>
+<purpose>Array of randn values</purpose>
+</tocitem>
+<tocitem target="true.html">
+<name>true</name>
+<purpose>Array of logical 1 (true)</purpose>
+</tocitem>
+<tocitem target="distributed.zeros.html">
+<name>zeros</name>
+<purpose>Array of zeros</purpose>
+</tocitem>
+<tocitem target="classunderlying.html">
+<name>classUnderlying</name>
+<purpose>Class of elements within gpuArray or distributed array</purpose>
+</tocitem>
+<tocitem target="codistributed.cell.html">
+<name>codistributed.cell</name>
+<purpose>Create codistributed cell array</purpose>
+</tocitem>
+<tocitem target="codistributed.colon.html">
+<name>codistributed.colon</name>
+<purpose>Distributed colon operation</purpose>
+</tocitem>
+<tocitem target="codistributed.spalloc.html">
+<name>codistributed.spalloc</name>
+<purpose>Allocate space for sparse codistributed matrix</purpose>
+</tocitem>
+<tocitem target="codistributed.speye.html">
+<name>codistributed.speye</name>
+<purpose>Create codistributed sparse identity matrix</purpose>
+</tocitem>
+<tocitem target="codistributed.sprand.html">
+<name>codistributed.sprand</name>
+<purpose>Create codistributed sparse array of uniformly distributed pseudo-random
+                values</purpose>
+</tocitem>
+<tocitem target="codistributed.sprandn.html">
+<name>codistributed.sprandn</name>
+<purpose>Create codistributed sparse array of uniformly distributed pseudo-random
+                values</purpose>
+</tocitem>
+<tocitem target="codistributor.html">
+<name>codistributor</name>
+<purpose>Create codistributor object for codistributed arrays</purpose>
+</tocitem>
+<tocitem target="codistributor1d.codistributor1d.html">
+<name>codistributor1d</name>
+<purpose>Create 1-D codistributor object for codistributed arrays</purpose>
+</tocitem>
+<tocitem target="codistributor1d.defaultpartition.html">
+<name>codistributor1d.defaultPartition</name>
+<purpose>Default partition for codistributed array</purpose>
+</tocitem>
+<tocitem target="codistributor2dbc.codistributor2dbc.html">
+<name>codistributor2dbc</name>
+<purpose>Create 2-D block-cyclic codistributor object for codistributed
+                arrays</purpose>
+</tocitem>
+<tocitem target="codistributor2dbc.defaultlabgrid.html">
+<name>codistributor2dbc.defaultLabGrid</name>
+<purpose>Default computational grid for 2-D block-cyclic distributed
+                arrays</purpose>
+</tocitem>
+<tocitem target="distributed.cell.html">
+<name>distributed.cell</name>
+<purpose>Create distributed cell array</purpose>
+</tocitem>
+<tocitem target="distributed.spalloc.html">
+<name>distributed.spalloc</name>
+<purpose>Allocate space for sparse distributed matrix</purpose>
+</tocitem>
+<tocitem target="distributed.speye.html">
+<name>distributed.speye</name>
+<purpose>Create distributed sparse identity matrix</purpose>
+</tocitem>
+<tocitem target="distributed.sprand.html">
+<name>distributed.sprand</name>
+<purpose>Create distributed sparse array of uniformly distributed pseudo-random
+                values</purpose>
+</tocitem>
+<tocitem target="distributed.sprandn.html">
+<name>distributed.sprandn</name>
+<purpose>Create distributed sparse array of normally distributed pseudo-random
+                values</purpose>
+</tocitem>
+<tocitem target="dload.html">
+<name>dload</name>
+<purpose>Load distributed arrays and Composite objects from disk</purpose>
+</tocitem>
+<tocitem target="dsave.html">
+<name>dsave</name>
+<purpose>Save workspace distributed arrays and Composite objects to disk</purpose>
+</tocitem>
+<tocitem target="exist.html">
+<name>exist</name>
+<purpose>Check whether Composite is defined on workers</purpose>
+</tocitem>
+<tocitem target="getcodistributor.html">
+<name>getCodistributor</name>
+<purpose>Codistributor object for existing codistributed array</purpose>
+</tocitem>
+<tocitem target="help.html">
+<name>help</name>
+<purpose>Help for toolbox functions in Command Window</purpose>
+</tocitem>
+<tocitem target="isaunderlying.html">
+<name>isaUnderlying</name>
+<purpose>True if distributed array's underlying elements are of specified
+                class</purpose>
+</tocitem>
+<tocitem target="iscodistributed.html">
+<name>iscodistributed</name>
+<purpose>True for codistributed array</purpose>
+</tocitem>
+<tocitem target="iscomplete.html">
+<name>isComplete</name>
+<purpose>True if codistributor object is complete</purpose>
+</tocitem>
+<tocitem target="isdistributed.html">
+<name>isdistributed</name>
+<purpose>True for distributed array</purpose>
+</tocitem>
+<tocitem target="isreplicated.html">
+<name>isreplicated</name>
+<purpose>True for replicated array</purpose>
+</tocitem>
+<tocitem target="distributed.length.html">
+<name>length</name>
+<purpose>Length of object array</purpose>
+</tocitem>
+<tocitem target="distributed.randi.html">
+<name>randi</name>
+<purpose>Array of random integers</purpose>
+</tocitem>
+<tocitem target="sparse.html">
+<name>sparse</name>
+<purpose>Create sparse distributed or codistributed matrix</purpose>
+</tocitem>
+<tocitem target="subsasgn.html">
+<name>subsasgn</name>
+<purpose>Subscripted assignment for Composite</purpose>
+</tocitem>
+<tocitem target="subsref.html">
+<name>subsref</name>
+<purpose>Subscripted reference for Composite</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="tall-arrays-and-mapreduce.html">Tall Arrays and mapreduce
+<tocitem target="../matlab/ref/tall.tall.html">
+<name>tall</name>
+<purpose>Create tall array</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/datastore.html">
+<name>datastore</name>
+<purpose>Create datastore for large collections of data</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/mapreduce.html">
+<name>mapreduce</name>
+<purpose>Programming technique for analyzing data sets that do
+not fit in memory</purpose>
+</tocitem>
+<tocitem target="mapreducer.html">
+<name>mapreducer</name>
+<purpose>Define parallel execution environment for mapreduce and tall
+                arrays</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.imagedatastore.partition.html">
+<name>partition</name>
+<purpose>Partition a datastore</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/matlab.io.datastore.imagedatastore.numpartitions.html">
+<name>numpartitions</name>
+<purpose>Number of datastore partitions</purpose>
+</tocitem>
+<tocitem target="parpool.html">
+<name>parpool</name>
+<purpose>Create parallel pool on cluster</purpose>
+</tocitem>
+<tocitem target="gcp.html">
+<name>gcp</name>
+<purpose>Get current parallel pool</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.hadoop_function.html">
+<name>parallel.cluster.Hadoop</name>
+<purpose>Create Hadoop cluster object</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="batch-processing.html">Batch Processing
+<tocitem target="simple-batch-processing.html">Simple Batch Processing
+<tocitem target="batch.html">
+<name>batch</name>
+<purpose>Run MATLAB script or function on worker</purpose>
+</tocitem>
+<tocitem target="parallel.job.diary.html">
+<name>diary</name>
+<purpose>Display or save Command Window text of batch job</purpose>
+</tocitem>
+<tocitem target="parallel.job.load.html">
+<name>load</name>
+<purpose>Load workspace variables from batch job</purpose>
+</tocitem>
+<tocitem target="parallel.job.wait.html">
+<name>wait</name>
+<purpose>Wait for job to change state</purpose>
+</tocitem>
+<tocitem target="parallel.job.delete.html">
+<name>delete</name>
+<purpose>Remove job or task object from cluster and memory</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="detailed-job-and-task-control.html">Detailed Job and Task Control
+<tocitem target="job-and-task-creation.html">Job and Task Creation
+<tocitem target="parcluster.html">
+<name>parcluster</name>
+<purpose>Create cluster object</purpose>
+</tocitem>
+<tocitem target="batch.html">
+<name>batch</name>
+<purpose>Run MATLAB script or function on worker</purpose>
+</tocitem>
+<tocitem target="createjob.html">
+<name>createJob</name>
+<purpose>Create independent job on cluster</purpose>
+</tocitem>
+<tocitem target="createcommunicatingjob.html">
+<name>createCommunicatingJob</name>
+<purpose>Create communicating job on cluster</purpose>
+</tocitem>
+<tocitem target="recreate.html">
+<name>recreate</name>
+<purpose>Create new job from existing job</purpose>
+</tocitem>
+<tocitem target="createtask.html">
+<name>createTask</name>
+<purpose>Create new task in job</purpose>
+</tocitem>
+<tocitem target="parallel.defaultclusterprofile.html">
+<name>parallel.defaultClusterProfile</name>
+<purpose>Examine or set default cluster profile</purpose>
+</tocitem>
+<tocitem target="parallel.importprofile.html">
+<name>parallel.importProfile</name>
+<purpose>Import cluster profiles from file</purpose>
+</tocitem>
+<tocitem target="poolstartup.html">
+<name>poolStartup</name>
+<purpose>File for user-defined options to run on each worker when parallel pool
+                starts</purpose>
+</tocitem>
+<tocitem target="jobstartup.html">
+<name>jobStartup</name>
+<purpose>File for user-defined options to run when job starts</purpose>
+</tocitem>
+<tocitem target="taskstartup.html">
+<name>taskStartup</name>
+<purpose>User-defined options to run on worker when task starts</purpose>
+</tocitem>
+<tocitem target="taskfinish.html">
+<name>taskFinish</name>
+<purpose>User-defined options to run on worker when task finishes</purpose>
+</tocitem>
+<tocitem target="pctconfig.html">
+<name>pctconfig</name>
+<purpose>Configure settings for Parallel
+            Computing Toolbox client session</purpose>
+</tocitem>
+<tocitem target="mpilibconf.html">
+<name>mpiLibConf</name>
+<purpose>Location of MPI implementation</purpose>
+</tocitem>
+<tocitem target="mpisettings.html">
+<name>mpiSettings</name>
+<purpose>Configure options for MPI communication</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Remove objects from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="getjobfolder.html">
+<name>getJobFolder</name>
+<purpose>Folder on client where jobs are stored</purpose>
+</tocitem>
+<tocitem target="getjobfolderoncluster.html">
+<name>getJobFolderOnCluster</name>
+<purpose>Folder on cluster where jobs are stored</purpose>
+</tocitem>
+<tocitem target="getloglocation.html">
+<name>getLogLocation</name>
+<purpose>Log location for job or task</purpose>
+</tocitem>
+<tocitem target="listautoattachedfiles.html">
+<name>listAutoAttachedFiles</name>
+<purpose>List of files automatically attached to job, task, or parallel
+                pool</purpose>
+</tocitem>
+<tocitem target="methods.html">
+<name>methods</name>
+<purpose>List functions of object class</purpose>
+</tocitem>
+<tocitem target="parallel.clusterprofiles.html">
+<name>parallel.clusterProfiles</name>
+<purpose> Names of all available cluster profiles</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="job-submission-and-results.html">Job Submission and Results
+<tocitem target="batch.html">
+<name>batch</name>
+<purpose>Run MATLAB script or function on worker</purpose>
+</tocitem>
+<tocitem target="submit.html">
+<name>submit</name>
+<purpose>Queue job in scheduler</purpose>
+</tocitem>
+<tocitem target="parallel.job.cjsindependentjob.gettaskschedulerids.html">
+<name>getTaskSchedulerIDs</name>
+<purpose>Scheduler IDs of tasks in job</purpose>
+</tocitem>
+<tocitem target="parallel.job.wait.html">
+<name>wait</name>
+<purpose>Wait for job to change state</purpose>
+</tocitem>
+<tocitem target="parallel.job.fetchoutputs.html">
+<name>fetchOutputs</name>
+<purpose>Retrieve output arguments from all tasks in job</purpose>
+</tocitem>
+<tocitem target="parallel.job.diary.html">
+<name>diary</name>
+<purpose>Display or save Command Window text of batch job</purpose>
+</tocitem>
+<tocitem target="parallel.job.load.html">
+<name>load</name>
+<purpose>Load workspace variables from batch job</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="queue-management-and-job-information.html">Queue Management and Job Information
+<tocitem target="pause.html">
+<name>pause</name>
+<purpose>Pause MATLAB Job Scheduler queue</purpose>
+</tocitem>
+<tocitem target="resume.html">
+<name>resume</name>
+<purpose>Resume processing queue in MATLAB Job Scheduler</purpose>
+</tocitem>
+<tocitem target="parallel.task.cancel.html">
+<name>cancel</name>
+<purpose>Cancel job or task</purpose>
+</tocitem>
+<tocitem target="parallel.job.delete.html">
+<name>delete</name>
+<purpose>Remove job or task object from cluster and memory</purpose>
+</tocitem>
+<tocitem target="promote.html">
+<name>promote</name>
+<purpose>Promote job in MATLAB Job Scheduler cluster queue</purpose>
+</tocitem>
+<tocitem target="demote.html">
+<name>demote</name>
+<purpose>Demote job in cluster queue</purpose>
+</tocitem>
+<tocitem target="changepassword.html">
+<name>changePassword</name>
+<purpose>Prompt user to change MATLAB Job Scheduler password</purpose>
+</tocitem>
+<tocitem target="logout.html">
+<name>logout</name>
+<purpose>Log out of MATLAB Job Scheduler cluster</purpose>
+</tocitem>
+<tocitem target="findjob.html">
+<name>findJob</name>
+<purpose>Find job objects stored in cluster</purpose>
+</tocitem>
+<tocitem target="findtask.html">
+<name>findTask</name>
+<purpose>Task objects belonging to job object</purpose>
+</tocitem>
+<tocitem target="parallel.job.cjsindependentjob.gettaskschedulerids.html">
+<name>getTaskSchedulerIDs</name>
+<purpose>Scheduler IDs of tasks in job</purpose>
+</tocitem>
+<tocitem target="getdebuglog.html">
+<name>getDebugLog</name>
+<purpose>Read output messages from job run in CJS cluster</purpose>
+</tocitem>
+<tocitem target="getjobclusterdata.html">
+<name>getJobClusterData</name>
+<purpose>Get specific user data for job on generic cluster</purpose>
+</tocitem>
+<tocitem target="setjobclusterdata.html">
+<name>setJobClusterData</name>
+<purpose>Set specific user data for job on generic cluster</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="task-control-and-worker-communication.html">Task Control and Worker Communication
+<tocitem target="addattachedfiles.html">
+<name>addAttachedFiles</name>
+<purpose>Attach files or folders to parallel pool</purpose>
+</tocitem>
+<tocitem target="labindex.html">
+<name>labindex</name>
+<purpose>Index of this worker</purpose>
+</tocitem>
+<tocitem target="numlabs.html">
+<name>numlabs</name>
+<purpose>Total number of workers operating in parallel on current job</purpose>
+</tocitem>
+<tocitem target="gcat.html">
+<name>gcat</name>
+<purpose>Global concatenation</purpose>
+</tocitem>
+<tocitem target="gop.html">
+<name>gop</name>
+<purpose>Global operation across all workers</purpose>
+</tocitem>
+<tocitem target="gplus.html">
+<name>gplus</name>
+<purpose>Global addition</purpose>
+</tocitem>
+<tocitem target="labbarrier.html">
+<name>labBarrier</name>
+<purpose>Block execution until all workers reach this call</purpose>
+</tocitem>
+<tocitem target="labbroadcast.html">
+<name>labBroadcast</name>
+<purpose>Send data to all workers or receive data sent to all workers</purpose>
+</tocitem>
+<tocitem target="labprobe.html">
+<name>labProbe</name>
+<purpose>Test to see if messages are ready to be received from other
+                worker</purpose>
+</tocitem>
+<tocitem target="labreceive.html">
+<name>labReceive</name>
+<purpose>Receive data from another worker</purpose>
+</tocitem>
+<tocitem target="labsend.html">
+<name>labSend</name>
+<purpose>Send data to another worker</purpose>
+</tocitem>
+<tocitem target="labsendreceive.html">
+<name>labSendReceive</name>
+<purpose>Simultaneously send data to and receive data from another
+                worker</purpose>
+</tocitem>
+<tocitem target="getcurrentjob.html">
+<name>getCurrentJob</name>
+<purpose>Job object whose task is currently being evaluated</purpose>
+</tocitem>
+<tocitem target="getcurrentcluster.html">
+<name>getCurrentCluster</name>
+<purpose>Cluster object that submitted current task</purpose>
+</tocitem>
+<tocitem target="getcurrenttask.html">
+<name>getCurrentTask</name>
+<purpose>Task object currently being evaluated in this worker session</purpose>
+</tocitem>
+<tocitem target="getcurrentworker.html">
+<name>getCurrentWorker</name>
+<purpose>Worker object currently running this session</purpose>
+</tocitem>
+<tocitem target="getattachedfilesfolder.html">
+<name>getAttachedFilesFolder</name>
+<purpose>Folder into which AttachedFiles are written</purpose>
+</tocitem>
+<tocitem target="updateattachedfiles.html">
+<name>updateAttachedFiles</name>
+<purpose>Update attached files or folders on parallel pool</purpose>
+</tocitem>
+<tocitem target="pload.html">
+<name>pload</name>
+<purpose>(To be removed) Load file into parallel session</purpose>
+</tocitem>
+<tocitem target="psave.html">
+<name>psave</name>
+<purpose>(To be removed) Save data from communicating job session</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="gpu-computing.html">GPU Computing
+<tocitem target="gpu-computing-in-matlab.html">GPU Computing in MATLAB
+<tocitem target="gpuarray.html">
+<name>gpuArray</name>
+<purpose>Array stored on GPU</purpose>
+</tocitem>
+<tocitem target="gather.html">
+<name>gather</name>
+<purpose>Transfer distributed array or gpuArray to local workspace</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.gpudevice.html">
+<name>gpuDevice</name>
+<purpose>Query or select a GPU device</purpose>
+</tocitem>
+<tocitem target="gpudevicemanager_object.html">
+<name>GPUDeviceManager</name>
+<purpose>Manager for GPU Devices </purpose>
+</tocitem>
+<tocitem target="parallel.gpu.gpudevice.gpudevicecount.html">
+<name>gpuDeviceCount</name>
+<purpose>Number of GPU devices present</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.gpudevice.reset.html">
+<name>reset</name>
+<purpose>Reset GPU device and clear its memory</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.gpudevice.wait_gpudevice.html">
+<name>wait (GPUDevice)</name>
+<purpose>Wait for GPU calculation to complete</purpose>
+</tocitem>
+<tocitem target="classunderlying.html">
+<name>classUnderlying</name>
+<purpose>Class of elements within gpuArray or distributed array</purpose>
+</tocitem>
+<tocitem target="gputimeit.html">
+<name>gputimeit</name>
+<purpose>Time required to run function on GPU</purpose>
+</tocitem>
+<tocitem target="existsongpu.html">
+<name>existsOnGPU</name>
+<purpose>Determine if gpuArray or CUDAKernel is available on GPU</purpose>
+</tocitem>
+<tocitem target="gpuarray.arrayfun.html">
+<name>arrayfun</name>
+<purpose>Apply function to each element of array on GPU</purpose>
+</tocitem>
+<tocitem target="pagefun.html">
+<name>pagefun</name>
+<purpose>Apply function to each page of array on GPU</purpose>
+</tocitem>
+<tocitem target="gpurng.html">
+<name>gpurng</name>
+<purpose>Control random number generation for GPU calculations</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.randstream.html">
+<name>parallel.gpu.RandStream</name>
+<purpose>Random number stream on a GPU</purpose>
+</tocitem>
+<tocitem target="gpuarray.bsxfun.html">
+<name>bsxfun</name>
+<purpose>Binary singleton expansion function for gpuArray</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.randstream.parallel.gpu.randstream.create.html">
+<name>parallel.gpu.RandStream.create</name>
+<purpose>Create independent random number streams on a GPU</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.randstream.parallel.gpu.randstream.list.html">
+<name>parallel.gpu.RandStream.list</name>
+<purpose>Random number generator algorithms on the GPU</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.randstream.parallel.gpu.randstream.getglobalstream.html">
+<name>parallel.gpu.RandStream.getGlobalStream</name>
+<purpose>Current global GPU random number stream</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.randstream.parallel.gpu.randstream.setglobalstream.html">
+<name>parallel.gpu.RandStream.setGlobalStream</name>
+<purpose>Set GPU global random number stream</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gpu-cuda-and-mex-programming.html">GPU CUDA and MEX Programming
+<tocitem target="mexcuda.html">
+<name>mexcuda</name>
+<purpose>Compile MEX-function for GPU computation</purpose>
+</tocitem>
+<tocitem target="parallel.gpu.cudakernel.html">
+<name>parallel.gpu.CUDAKernel</name>
+<purpose>Create GPU CUDA kernel object from PTX and CU code</purpose>
+</tocitem>
+<tocitem target="feval.html">
+<name>feval</name>
+<purpose>Evaluate kernel on GPU</purpose>
+</tocitem>
+<tocitem target="setconstantmemory.html">
+<name>setConstantMemory</name>
+<purpose>Set some constant memory on GPU</purpose>
+</tocitem>
+<tocitem target="mxgpucopyfrommxarray.html">
+<name>mxGPUCopyFromMxArray</name>
+<purpose>Copy mxArray to mxGPUArray</purpose>
+</tocitem>
+<tocitem target="mxgpucopygpuarray.html">
+<name>mxGPUCopyGPUArray</name>
+<purpose>Duplicate (deep copy) mxGPUArray object</purpose>
+</tocitem>
+<tocitem target="mxgpucopyimag.html">
+<name>mxGPUCopyImag</name>
+<purpose> Copy imaginary part of mxGPUArray</purpose>
+</tocitem>
+<tocitem target="mxgpucopyreal.html">
+<name>mxGPUCopyReal</name>
+<purpose> Copy real part of mxGPUArray</purpose>
+</tocitem>
+<tocitem target="mxgpucreatecomplexgpuarray.html">
+<name>mxGPUCreateComplexGPUArray</name>
+<purpose>Create complex GPU array from two real gpuArrays</purpose>
+</tocitem>
+<tocitem target="mxgpucreatefrommxarray.html">
+<name>mxGPUCreateFromMxArray</name>
+<purpose>Create read-only mxGPUArray object from input mxArray</purpose>
+</tocitem>
+<tocitem target="mxgpucreategpuarray.html">
+<name>mxGPUCreateGPUArray</name>
+<purpose>Create mxGPUArray object, allocating memory on GPU</purpose>
+</tocitem>
+<tocitem target="mxgpucreatemxarrayoncpu.html">
+<name>mxGPUCreateMxArrayOnCPU</name>
+<purpose>Create mxArray for returning CPU data to MATLAB with data from
+                GPU</purpose>
+</tocitem>
+<tocitem target="mxgpucreatemxarrayongpu.html">
+<name>mxGPUCreateMxArrayOnGPU</name>
+<purpose>Create mxArray for returning GPU data to MATLAB</purpose>
+</tocitem>
+<tocitem target="mxgpudestroygpuarray.html">
+<name>mxGPUDestroyGPUArray</name>
+<purpose>Delete mxGPUArray object</purpose>
+</tocitem>
+<tocitem target="mxgpugetclassid.html">
+<name>mxGPUGetClassID</name>
+<purpose>mxClassID associated with data on GPU</purpose>
+</tocitem>
+<tocitem target="mxgpugetcomplexity.html">
+<name>mxGPUGetComplexity</name>
+<purpose>Complexity of data on GPU</purpose>
+</tocitem>
+<tocitem target="mxgpugetdata.html">
+<name>mxGPUGetData</name>
+<purpose>Raw pointer to underlying data</purpose>
+</tocitem>
+<tocitem target="mxgpugetdatareadonly.html">
+<name>mxGPUGetDataReadOnly</name>
+<purpose>Read-only raw pointer to underlying data</purpose>
+</tocitem>
+<tocitem target="mxgpugetdimensions.html">
+<name>mxGPUGetDimensions</name>
+<purpose>mxGPUArray dimensions</purpose>
+</tocitem>
+<tocitem target="mxgpugetnumberofdimensions.html">
+<name>mxGPUGetNumberOfDimensions</name>
+<purpose>Size of dimension array for mxGPUArray</purpose>
+</tocitem>
+<tocitem target="mxgpugetnumberofelements.html">
+<name>mxGPUGetNumberOfElements</name>
+<purpose>Number of elements on GPU for array</purpose>
+</tocitem>
+<tocitem target="mxgpuissame.html">
+<name>mxGPUIsSame</name>
+<purpose>Determine if two mxGPUArrays refer to same GPU data</purpose>
+</tocitem>
+<tocitem target="mxgpuissparse.html">
+<name>mxGPUIsSparse</name>
+<purpose>Determine if mxGPUArray contains sparse GPU data</purpose>
+</tocitem>
+<tocitem target="mxgpuisvalidgpudata.html">
+<name>mxGPUIsValidGPUData</name>
+<purpose>Determine if mxArray is pointer to valid GPU data</purpose>
+</tocitem>
+<tocitem target="mxgpusetdimensions.html">
+<name>mxGPUSetDimensions</name>
+<purpose>Modify number of dimensions and size of each dimension</purpose>
+</tocitem>
+<tocitem target="mxisgpuarray.html">
+<name>mxIsGPUArray</name>
+<purpose>Determine if mxArray contains GPU data</purpose>
+</tocitem>
+<tocitem target="mxinitgpu.html">
+<name>mxInitGPU</name>
+<purpose>Initialize MATLAB GPU library on currently selected device</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="clusters-and-clouds.html">Clusters and Clouds
+<tocitem target="parcluster.html">
+<name>parcluster</name>
+<purpose>Create cluster object</purpose>
+</tocitem>
+<tocitem target="parpool.html">
+<name>parpool</name>
+<purpose>Create parallel pool on cluster</purpose>
+</tocitem>
+<tocitem target="gcp.html">
+<name>gcp</name>
+<purpose>Get current parallel pool</purpose>
+</tocitem>
+<tocitem target="shutdown.html">
+<name>shutdown</name>
+<purpose> Shut down cloud cluster</purpose>
+</tocitem>
+<tocitem target="start.html">
+<name>start</name>
+<purpose>Start cloud cluster</purpose>
+</tocitem>
+<tocitem target="waitcluster.html">
+<name>wait (cluster)</name>
+<purpose>Wait for cloud cluster to change state</purpose>
+</tocitem>
+<tocitem target="parallel.defaultclusterprofile.html">
+<name>parallel.defaultClusterProfile</name>
+<purpose>Examine or set default cluster profile</purpose>
+</tocitem>
+<tocitem target="parallel.exportprofile.html">
+<name>parallel.exportProfile</name>
+<purpose>Export one or more profiles to file</purpose>
+</tocitem>
+<tocitem target="parallel.importprofile.html">
+<name>parallel.importProfile</name>
+<purpose>Import cluster profiles from file</purpose>
+</tocitem>
+<tocitem target="saveprofile.html">
+<name>saveProfile</name>
+<purpose>Save modified cluster properties to its current profile</purpose>
+</tocitem>
+<tocitem target="saveasprofile.html">
+<name>saveAsProfile</name>
+<purpose>Save cluster properties to specified profile</purpose>
+</tocitem>
+<tocitem target="pctconfig.html">
+<name>pctconfig</name>
+<purpose>Configure settings for Parallel
+            Computing Toolbox client session</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.isequal.html">
+<name>isequal</name>
+<purpose>True if clusters have same property values</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.deletebatchjob.html">
+<name>parallel.cluster.generic.awsbatch.deleteBatchJob</name>
+<purpose>Terminate job in AWS Batch</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.deletejobfilesfroms3.html">
+<name>parallel.cluster.generic.awsbatch.deleteJobFilesFromS3</name>
+<purpose>Delete job files from Amazon S3</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.downloadjobfilesfroms3.html">
+<name>parallel.cluster.generic.awsbatch.downloadJobFilesFromS3</name>
+<purpose>Download job output files from Amazon S3</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.downloadjoblogfiles.html">
+<name>parallel.cluster.generic.awsbatch.downloadJobLogFiles</name>
+<purpose>Download AWS Batch job log files</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.getbatchjobinfo.html">
+<name>parallel.cluster.generic.awsbatch.getBatchJobInfo</name>
+<purpose>Get AWS Batch job information</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.submitbatchjob.html">
+<name>parallel.cluster.generic.awsbatch.submitBatchJob</name>
+<purpose>Submit job to AWS Batch</purpose>
+</tocitem>
+<tocitem target="parallel.cluster.generic.awsbatch.uploadjobfilestos3.html">
+<name>parallel.cluster.generic.awsbatch.uploadJobFilesToS3</name>
+<purpose>Upload job input files to Amazon S3</purpose>
+</tocitem>
+<tocitem target="pctrundeployedcleanup.html">
+<name>pctRunDeployedCleanup</name>
+<purpose>Clean up after deployed parallel applications</purpose>
+</tocitem>
+<tocitem target="remoteclusteraccess.html">
+<name>RemoteClusterAccess</name>
+<purpose>Connect to schedulers when client utilities are not available
+locally</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="performance-profiling.html">Performance Profiling
+<tocitem target="parallel-profiler-and-code-improvement.html">Parallel Profiler and Code Improvement
+<tocitem target="mpiprofile.html">
+<name>mpiprofile</name>
+<purpose>Profile parallel communication and execution times</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="interactive-parallel-development-pmode.html">Interactive Parallel Development (pmode)
+<tocitem target="pmode.html">
+<name>pmode</name>
+<purpose>(To be removed) Interactive Parallel Command Window</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

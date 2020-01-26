@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="represent-uncertain-systems.html">Uncertain System Representation
+<tocitem target="uncertain-models.html">Uncertain Models
+<tocitem target="ref/uss.html">
+<name>uss</name>
+<purpose>Uncertain state-space model</purpose>
+</tocitem>
+<tocitem target="ref/ureal.html">
+<name>ureal</name>
+<purpose>Create uncertain real parameter</purpose>
+</tocitem>
+<tocitem target="ref/umat.html">
+<name>umat</name>
+<purpose>Create uncertain matrix</purpose>
+</tocitem>
+<tocitem target="ref/ucomplex.html">
+<name>ucomplex</name>
+<purpose>Create uncertain complex parameter</purpose>
+</tocitem>
+<tocitem target="ref/ucomplexm.html">
+<name>ucomplexm</name>
+<purpose>Create uncertain complex matrix</purpose>
+</tocitem>
+<tocitem target="ref/ultidyn.html">
+<name>ultidyn</name>
+<purpose>Create uncertain linear time-invariant object</purpose>
+</tocitem>
+<tocitem target="ref/ufrd.html">
+<name>ufrd</name>
+<purpose>Uncertain frequency response data model</purpose>
+</tocitem>
+<tocitem target="ref/randatom.html">
+<name>randatom</name>
+<purpose>Generate random uncertain atom objects</purpose>
+</tocitem>
+<tocitem target="ref/randumat.html">
+<name>randumat</name>
+<purpose>Generate random uncertain umat objects</purpose>
+</tocitem>
+<tocitem target="ref/randuss.html">
+<name>randuss</name>
+<purpose>Generate stable, random uss objects</purpose>
+</tocitem>
+<tocitem target="ref/getnominal.html">
+<name>getNominal</name>
+<purpose>Nominal value of uncertain model</purpose>
+</tocitem>
+<tocitem target="ref/actual2normalized.html">
+<name>actual2normalized</name>
+<purpose>Transform actual values to normalized values</purpose>
+</tocitem>
+<tocitem target="ref/normalized2actual.html">
+<name>normalized2actual</name>
+<purpose>Convert value for atom in normalized coordinates to corresponding actual value</purpose>
+</tocitem>
+<tocitem target="ref/getlimits.html">
+<name>getLimits</name>
+<purpose>Validity range for uncertain real (ureal)
+            parameters</purpose>
+</tocitem>
+<tocitem target="ref/simplify.html">
+<name>simplify</name>
+<purpose>Simplify representation of uncertain object</purpose>
+</tocitem>
+<tocitem target="ref/isuncertain.html">
+<name>isuncertain</name>
+<purpose>Check whether argument is uncertain class type</purpose>
+</tocitem>
+<tocitem target="ref/lftdata.html">
+<name>lftdata</name>
+<purpose>Decompose uncertain objects into fixed certain and normalized
+uncertain parts</purpose>
+</tocitem>
+<tocitem target="ref/ltiarray2uss.html">
+<name>ltiarray2uss</name>
+<purpose>Compute uncertain system bounding given LTI
+                                                  ss array</purpose>
+</tocitem>
+<tocitem target="ref/ucover.html">
+<name>ucover</name>
+<purpose>Fit an uncertain model to set of LTI responses</purpose>
+</tocitem>
+<tocitem target="ref/udyn.html">
+<name>udyn</name>
+<purpose>Create unstructured uncertain dynamic system object</purpose>
+</tocitem>
+<tocitem target="ref/diag.html">
+<name>diag</name>
+<purpose>Diagonalize vector of uncertain matrices and systems</purpose>
+</tocitem>
+<tocitem target="ref/uplot.html">
+<name>uplot</name>
+<purpose>Plot multiple frequency response objects and doubles on same graph</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="uncertainty-in-simulink-models-.html">Uncertain Models in Simulink
+<tocitem target="ref/ulinearize.html">
+<name>ulinearize</name>
+<purpose>Linearize Simulink model with Uncertain State Space block</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="analyze-uncertain-systems.html">Uncertain System Analysis
+<tocitem target="worst-case-analysis.html">Robustness and Worst-Case Analysis
+<tocitem target="ref/diskmargin.html">
+<name>diskmargin</name>
+<purpose>Disk-based stability margins of feedback loops</purpose>
+</tocitem>
+<tocitem target="ref/dmplot.html">
+<name>dmplot</name>
+<purpose>Interpret disk gain and phase margins</purpose>
+</tocitem>
+<tocitem target="ref/lti.gapmetric.html">
+<name>gapmetric</name>
+<purpose>Gap metric and Vinnicombe (nu-gap) metric for distance between two
+      systems</purpose>
+</tocitem>
+<tocitem target="ref/lncf.html">
+<name>lncf</name>
+<purpose>Left normalized coprime factorization</purpose>
+</tocitem>
+<tocitem target="ref/rncf.html">
+<name>rncf</name>
+<purpose>Right normalized coprime factorization</purpose>
+</tocitem>
+<tocitem target="ref/ncfmargin.html">
+<name>ncfmargin</name>
+<purpose>Calculate normalized coprime stability margin of plant-controller feedback
+      loop</purpose>
+</tocitem>
+<tocitem target="ref/loopsens.html">
+<name>loopsens</name>
+<purpose>Sensitivity functions of plant-controller feedback loop</purpose>
+</tocitem>
+<tocitem target="ref/sdhinfnorm.html">
+<name>sdhinfnorm</name>
+<purpose>Compute L2 norm of continuous-time system in feedback with discrete-time system</purpose>
+</tocitem>
+<tocitem target="ref/sdlsim.html">
+<name>sdlsim</name>
+<purpose>Time response of sampled-data feedback system</purpose>
+</tocitem>
+<tocitem target="ref/robstab.html">
+<name>robstab</name>
+<purpose>Robust stability of uncertain system</purpose>
+</tocitem>
+<tocitem target="ref/robgain.html">
+<name>robgain</name>
+<purpose>Robust performance of uncertain system</purpose>
+</tocitem>
+<tocitem target="ref/roboptions.html">
+<name>robOptions</name>
+<purpose>Option set for robustness analysis</purpose>
+</tocitem>
+<tocitem target="ref/wcdiskmargin.html">
+<name>wcdiskmargin</name>
+<purpose>Worst-case disk-based stability margins of uncertain feedback loops</purpose>
+</tocitem>
+<tocitem target="ref/wcgain.html">
+<name>wcgain</name>
+<purpose>Worst-case gain of uncertain system</purpose>
+</tocitem>
+<tocitem target="ref/wcsigma.html">
+<name>wcsigma</name>
+<purpose>Plot worst-case gain of uncertain system</purpose>
+</tocitem>
+<tocitem target="ref/wcnorm.html">
+<name>wcnorm</name>
+<purpose>Worst-case norm of uncertain matrix</purpose>
+</tocitem>
+<tocitem target="ref/wcoptions.html">
+<name>wcOptions</name>
+<purpose>Option set for worst-case analysis</purpose>
+</tocitem>
+<tocitem target="ref/mussv.html">
+<name>mussv</name>
+<purpose>Compute bounds on structured singular value (µ)</purpose>
+</tocitem>
+<tocitem target="ref/mussvextract.html">
+<name>mussvextract</name>
+<purpose>Extract muinfo structure returned by mussv</purpose>
+</tocitem>
+<tocitem target="ref/robustperf.html">
+<name>robustperf</name>
+<purpose>(Not recommended) Robust performance margin of uncertain multivariable
+      system</purpose>
+</tocitem>
+<tocitem target="ref/robuststab.html">
+<name>robuststab</name>
+<purpose>(Not recommended) Calculate robust stability margins of uncertain multivariable
+      system</purpose>
+</tocitem>
+<tocitem target="ref/wcgainplot.html">
+<name>wcgainplot</name>
+<purpose> (Not recommended) Graphical worst-case gain analysis</purpose>
+</tocitem>
+<tocitem target="ref/robustperfoptions.html">
+<name>robustperfOptions</name>
+<purpose>(Not recommended) Option set for robustperf</purpose>
+</tocitem>
+<tocitem target="ref/robuststaboptions.html">
+<name>robuststabOptions</name>
+<purpose>(Not recommended) Option set for robuststab</purpose>
+</tocitem>
+<tocitem target="ref/wcmarginoptions.html">
+<name>wcmarginOptions</name>
+<purpose>(Not recommended) Option set for
+                        wcmargin</purpose>
+</tocitem>
+<tocitem target="ref/popov.html">
+<name>popov</name>
+<purpose>Perform Popov robust stability test</purpose>
+</tocitem>
+<tocitem target="ref/loopmargin.html">
+<name>loopmargin</name>
+<purpose>(Not recommended) Stability margin analysis of LTI and Simulink feedback loops</purpose>
+</tocitem>
+<tocitem target="ref/wcmargin.html">
+<name>wcmargin</name>
+<purpose>(Not recommended) Worst-case disk stability margins of uncertain feedback
+      loops</purpose>
+</tocitem>
+<tocitem target="ref/wcgainoptions.html">
+<name>wcgainOptions</name>
+<purpose>(Not recommended) Option set for wcsens</purpose>
+</tocitem>
+<tocitem target="ref/wcsens.html">
+<name>wcsens</name>
+<purpose>(Not recommended) Calculate worst-case sensitivity and complementary sensitivity
+      functions of plant-controller feedback loop</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="monte-carlo-analysis.html">Monte Carlo Analysis
+<tocitem target="ref/ussusample.html">
+<name>usample (LTI models)</name>
+<purpose>Generate random samples of uncertain or generalized model</purpose>
+</tocitem>
+<tocitem target="ref/usample.html">
+<name>usample (Simulink)</name>
+<purpose>Generate random samples of uncertain variables in a Simulink model</purpose>
+</tocitem>
+<tocitem target="../control/ref/rsampleblock.html">
+<name>rsampleBlock</name>
+<purpose>Randomly sample Control Design blocks in generalized model</purpose>
+</tocitem>
+<tocitem target="ref/usubs.html">
+<name>usubs</name>
+<purpose>Substitute given values for uncertain elements of uncertain
+objects</purpose>
+</tocitem>
+<tocitem target="ref/gridureal.html">
+<name>gridureal</name>
+<purpose>Grid ureal parameters uniformly over their range</purpose>
+</tocitem>
+<tocitem target="ref/complexify.html">
+<name>complexify</name>
+<purpose>Replace ureal atoms by summations of ureal and ucomplex (or ultidyn) atoms</purpose>
+</tocitem>
+<tocitem target="ref/icomplexify.html">
+<name>icomplexify</name>
+<purpose>Helper function for complexify</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="uncertainty-analysis-with-simulink-models.html">Uncertainty Analysis with Simulink Models
+<tocitem target="ref/ufind.html">
+<name>ufind</name>
+<purpose>Find uncertain variables in Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/ulinearize.html">
+<name>ulinearize</name>
+<purpose>Linearize Simulink model with Uncertain State Space block</purpose>
+</tocitem>
+<tocitem target="ref/usample.html">
+<name>usample</name>
+<purpose>Generate random samples of uncertain variables in a Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/diskmargin.html">
+<name>diskmargin</name>
+<purpose>Disk-based stability margins of feedback loops</purpose>
+</tocitem>
+<tocitem target="ref/usimfill.html">
+<name>usimfill</name>
+<purpose>(Not recommended) Helper function for USS System blocks to set "User-defined
+            Uncertainty" field or state of "Uncertainty value" menu</purpose>
+</tocitem>
+<tocitem target="ref/usiminfo.html">
+<name>usiminfo</name>
+<purpose>(Not recommended) Find USS System blocks within specified Simulink model and check for consistency</purpose>
+</tocitem>
+<tocitem target="ref/usimsamp.html">
+<name>usimsamp</name>
+<purpose>(Not recommended) Generate random instance of all uncertain atoms present in all USS
+      System blocks of Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/loopmargin.html">
+<name>loopmargin</name>
+<purpose>(Not recommended) Stability margin analysis of LTI and Simulink feedback loops</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="robust-controllers.html">Robust Controllers
+<tocitem target="controller-synthesis.html">H-Infinity Synthesis
+<tocitem target="ref/hinfstruct.html">
+<name>hinfstruct</name>
+<purpose>H∞ tuning
+of fixed-structure controllers</purpose>
+</tocitem>
+<tocitem target="ref/hinfstructoptions.html">
+<name>hinfstructOptions</name>
+<purpose>Set options for hinfstruct</purpose>
+</tocitem>
+<tocitem target="ref/hinfsyn.html">
+<name>hinfsyn</name>
+<purpose>Compute H-infinity optimal controller</purpose>
+</tocitem>
+<tocitem target="ref/hinfsynoptions.html">
+<name>hinfsynOptions</name>
+<purpose>Option set for hinfsyn and
+      mixsyn</purpose>
+</tocitem>
+<tocitem target="ref/hinffc.html">
+<name>hinffc</name>
+<purpose>Full-control H-infinity synthesis</purpose>
+</tocitem>
+<tocitem target="ref/hinffi.html">
+<name>hinffi</name>
+<purpose>Full-information H-infinity synthesis</purpose>
+</tocitem>
+<tocitem target="ref/h2syn.html">
+<name>h2syn</name>
+<purpose>Compute H2 optimal controller</purpose>
+</tocitem>
+<tocitem target="ref/h2synoptions.html">
+<name>h2synOptions</name>
+<purpose>Option set for h2syn</purpose>
+</tocitem>
+<tocitem target="ref/sdhinfsyn.html">
+<name>sdhinfsyn</name>
+<purpose>Compute H∞ controller for sampled-data system</purpose>
+</tocitem>
+<tocitem target="ref/h2hinfsyn.html">
+<name>h2hinfsyn</name>
+<purpose>Mixed H2/H∞ synthesis
+with regional pole placement constraints</purpose>
+</tocitem>
+<tocitem target="ref/hinfnorm.html">
+<name>hinfnorm</name>
+<purpose>H∞ norm of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/makeweight.html">
+<name>makeweight</name>
+<purpose>Weighting function with monotonic gain profile</purpose>
+</tocitem>
+<tocitem target="ref/mkfilter.html">
+<name>mkfilter</name>
+<purpose>Generate Bessel, Butterworth, Chebyshev, or RC filter</purpose>
+</tocitem>
+<tocitem target="ref/lti.augw.html">
+<name>augw</name>
+<purpose>Plant augmentation for weighted mixed-sensitivity
+        H∞ and
+        H2 loop-shaping design</purpose>
+</tocitem>
+<tocitem target="ref/ltrsyn.html">
+<name>ltrsyn</name>
+<purpose>LQG loop transfer-function recovery (LTR) control synthesis </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="mu-synthesis.html">Mu Synthesis
+<tocitem target="ref/uss.musyn.html">
+<name>musyn</name>
+<purpose>Robust controller design using mu synthesis</purpose>
+</tocitem>
+<tocitem target="ref/musynoptions.html">
+<name>musynOptions</name>
+<purpose>Options for musyn</purpose>
+</tocitem>
+<tocitem target="ref/uss.musynperf.html">
+<name>musynperf</name>
+<purpose>Robust H∞ performance optimized
+            by musyn</purpose>
+</tocitem>
+<tocitem target="ref/dksyn.html">
+<name>dksyn</name>
+<purpose>Robust controller design for discrete-time plants using µ-synthesis</purpose>
+</tocitem>
+<tocitem target="ref/dksynoptions.html">
+<name>dksynOptions</name>
+<purpose>Set options for dksyn</purpose>
+</tocitem>
+<tocitem target="ref/dksynperf.html">
+<name>dksynperf</name>
+<purpose>Robust H∞ performance
+optimized by dksyn</purpose>
+</tocitem>
+<tocitem target="ref/cmsclsyn.html">
+<name>cmsclsyn</name>
+<purpose>Approximately solve constant-matrix, upper bound µ-synthesis problem</purpose>
+</tocitem>
+<tocitem target="ref/fitfrd.html">
+<name>fitfrd</name>
+<purpose>Fit frequency response data with state-space model</purpose>
+</tocitem>
+<tocitem target="ref/fitmagfrd.html">
+<name>fitmagfrd</name>
+<purpose>Fit frequency response magnitude data with minimum-phase state-space model using log-Chebyshev magnitude design</purpose>
+</tocitem>
+<tocitem target="ref/genphase.html">
+<name>genphase</name>
+<purpose>Fit single-input/single-output magnitude data with real, rational, minimum-phase transfer function</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="loop-shaping-synthesis.html">Loop-Shaping Synthesis
+<tocitem target="ref/ncfsyn.html">
+<name>ncfsyn</name>
+<purpose>Loop shaping design using Glover-McFarlane method</purpose>
+</tocitem>
+<tocitem target="ref/lti.mixsyn.html">
+<name>mixsyn</name>
+<purpose>Mixed-sensitivity H∞ synthesis
+      method for robust control loop-shaping design</purpose>
+</tocitem>
+<tocitem target="ref/loopsyn.html">
+<name>loopsyn</name>
+<purpose>H∞ optimal controller synthesis for LTI plant</purpose>
+</tocitem>
+<tocitem target="ref/makeweight.html">
+<name>makeweight</name>
+<purpose>Weighting function with monotonic gain profile</purpose>
+</tocitem>
+<tocitem target="ref/mkfilter.html">
+<name>mkfilter</name>
+<purpose>Generate Bessel, Butterworth, Chebyshev, or RC filter</purpose>
+</tocitem>
+<tocitem target="ref/lti.augw.html">
+<name>augw</name>
+<purpose>Plant augmentation for weighted mixed-sensitivity
+        H∞ and
+        H2 loop-shaping design</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="robust-tuning.html">Robust Controller Tuning
+<tocitem target="ref/ureal.html">
+<name>ureal</name>
+<purpose>Create uncertain real parameter</purpose>
+</tocitem>
+<tocitem target="../control/ref/genss.systune.html">
+<name>systune</name>
+<purpose>Tune fixed-structure control systems modeled in MATLAB</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.systune.html">
+<name>systune (slTuner)</name>
+<purpose>Tune control system parameters in Simulink using slTuner interface</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="simplify-models.html">Model and Controller Simplification
+<tocitem target="ref/reduce.html">
+<name>reduce</name>
+<purpose>Simplified access to Hankel singular
+value based model reduction functions</purpose>
+</tocitem>
+<tocitem target="ref/balancmr.html">
+<name>balancmr</name>
+<purpose>Balanced model truncation via square root method</purpose>
+</tocitem>
+<tocitem target="ref/bstmr.html">
+<name>bstmr</name>
+<purpose>Balanced stochastic model truncation (BST) via Schur method</purpose>
+</tocitem>
+<tocitem target="ref/hankelmr.html">
+<name>hankelmr</name>
+<purpose>Hankel minimum degree approximation (MDA) without balancing</purpose>
+</tocitem>
+<tocitem target="ref/hankelsv.html">
+<name>hankelsv</name>
+<purpose>Compute Hankel singular values for stable/unstable or continuous/discrete system</purpose>
+</tocitem>
+<tocitem target="ref/modreal.html">
+<name>modreal</name>
+<purpose>Modal form realization and projection</purpose>
+</tocitem>
+<tocitem target="ref/ncfmr.html">
+<name>ncfmr</name>
+<purpose>Balanced model truncation for normalized coprime factors</purpose>
+</tocitem>
+<tocitem target="ref/schurmr.html">
+<name>schurmr</name>
+<purpose>Balanced model truncation via Schur method</purpose>
+</tocitem>
+<tocitem target="ref/dcgainmr.html">
+<name>dcgainmr</name>
+<purpose>Reduced order model</purpose>
+</tocitem>
+<tocitem target="ref/slowfast.html">
+<name>slowfast</name>
+<purpose>Slow and fast modes decomposition</purpose>
+</tocitem>
+<tocitem target="ref/imp2ss.html">
+<name>imp2ss</name>
+<purpose>System
+realization via Hankel singular value decomposition</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linear-matrix-inequalities.html">Linear Matrix Inequalities
+<tocitem target="lmis.html">LMI Solvers
+<tocitem target="ref/getlmis.html">
+<name>getlmis</name>
+<purpose>Internal description of LMI system</purpose>
+</tocitem>
+<tocitem target="ref/lmiedit.html">
+<name>lmiedit</name>
+<purpose>Specify or display systems of LMIs as MATLAB expressions</purpose>
+</tocitem>
+<tocitem target="ref/lmiterm.html">
+<name>lmiterm</name>
+<purpose>Specify term content of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/lmivar.html">
+<name>lmivar</name>
+<purpose>Specify matrix variables in LMI problem</purpose>
+</tocitem>
+<tocitem target="ref/newlmi.html">
+<name>newlmi</name>
+<purpose>Attach identifying tag to LMIs</purpose>
+</tocitem>
+<tocitem target="ref/setlmis.html">
+<name>setlmis</name>
+<purpose>Initialize description of LMI system</purpose>
+</tocitem>
+<tocitem target="ref/dellmi.html">
+<name>dellmi</name>
+<purpose>Remove LMI from system of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/delmvar.html">
+<name>delmvar</name>
+<purpose>Remove one matrix variable from LMI problem</purpose>
+</tocitem>
+<tocitem target="ref/setmvar.html">
+<name>setmvar</name>
+<purpose>Instantiate matrix variable and evaluate all LMI terms involving this matrix variable</purpose>
+</tocitem>
+<tocitem target="ref/dec2mat.html">
+<name>dec2mat</name>
+<purpose>Given values of decision variables, derive corresponding values of matrix variables</purpose>
+</tocitem>
+<tocitem target="ref/decinfo.html">
+<name>decinfo</name>
+<purpose>Describe how entries of matrix variable X relate to decision variables</purpose>
+</tocitem>
+<tocitem target="ref/decnbr.html">
+<name>decnbr</name>
+<purpose>Total number of decision variables in system of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/lmiinfo.html">
+<name>lmiinfo</name>
+<purpose>Information about variables and term content of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/lminbr.html">
+<name>lminbr</name>
+<purpose>Return number of LMIs in LMI system</purpose>
+</tocitem>
+<tocitem target="ref/mat2dec.html">
+<name>mat2dec</name>
+<purpose>Extract vector of decision variables from matrix variable values</purpose>
+</tocitem>
+<tocitem target="ref/matnbr.html">
+<name>matnbr</name>
+<purpose>Number of matrix variables in system of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/defcx.html">
+<name>defcx</name>
+<purpose>Help specify cTx objectives for mincx solver</purpose>
+</tocitem>
+<tocitem target="ref/feasp.html">
+<name>feasp</name>
+<purpose>Compute solution to given system of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/gevp.html">
+<name>gevp</name>
+<purpose>Generalized eigenvalue minimization under LMI constraints</purpose>
+</tocitem>
+<tocitem target="ref/mincx.html">
+<name>mincx</name>
+<purpose>Minimize linear objective under LMI constraints</purpose>
+</tocitem>
+<tocitem target="ref/evallmi.html">
+<name>evallmi</name>
+<purpose>Given particular instance of decision variables, evaluate all variable terms in system of LMIs</purpose>
+</tocitem>
+<tocitem target="ref/showlmi.html">
+<name>showlmi</name>
+<purpose>Return left and right sides of LMI after evaluation of all variable terms</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="parameter-dependent-systems.html">Parameter-Dependent Systems
+<tocitem target="ref/aff2pol.html">
+<name>aff2pol</name>
+<purpose>Convert affine parameter-dependent models to polytopic models</purpose>
+</tocitem>
+<tocitem target="ref/decay.html">
+<name>decay</name>
+<purpose>Quadratic decay rate of polytopic or affine P-systems</purpose>
+</tocitem>
+<tocitem target="ref/ispsys.html">
+<name>ispsys</name>
+<purpose>True for parameter-dependent systems</purpose>
+</tocitem>
+<tocitem target="ref/pdlstab.html">
+<name>pdlstab</name>
+<purpose>Assess robust stability of polytopic or parameter-dependent system</purpose>
+</tocitem>
+<tocitem target="ref/pdsimul.html">
+<name>pdsimul</name>
+<purpose>Time response of parameter-dependent system along given parameter trajectory</purpose>
+</tocitem>
+<tocitem target="ref/polydec.html">
+<name>polydec</name>
+<purpose>Compute polytopic coordinates with respect to box corners</purpose>
+</tocitem>
+<tocitem target="ref/psinfo.html">
+<name>psinfo</name>
+<purpose>Inquire about polytopic or parameter-dependent systems created with psys</purpose>
+</tocitem>
+<tocitem target="ref/psys.html">
+<name>psys</name>
+<purpose>Specify polytopic or parameter-dependent linear systems</purpose>
+</tocitem>
+<tocitem target="ref/pvec.html">
+<name>pvec</name>
+<purpose>Specify range and rate of variation of uncertain or time-varying parameters</purpose>
+</tocitem>
+<tocitem target="ref/pvinfo.html">
+<name>pvinfo</name>
+<purpose>Describe parameter vector specified with pvec</purpose>
+</tocitem>
+<tocitem target="ref/quadperf.html">
+<name>quadperf</name>
+<purpose>Compute quadratic H∞ performance of polytopic or parameter-dependent system</purpose>
+</tocitem>
+<tocitem target="ref/quadstab.html">
+<name>quadstab</name>
+<purpose>Quadratic stability of polytopic or affine parameter-dependent systems</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gain-scheduling.html">LMI Controller Synthesis
+<tocitem target="ref/hinfgs.html">
+<name>hinfgs</name>
+<purpose>Synthesis of gain-scheduled H∞ controllers</purpose>
+</tocitem>
+<tocitem target="ref/hinfsyn.html">
+<name>hinfsyn</name>
+<purpose>Compute H-infinity optimal controller</purpose>
+</tocitem>
+<tocitem target="ref/h2hinfsyn.html">
+<name>h2hinfsyn</name>
+<purpose>Mixed H2/H∞ synthesis
+with regional pole placement constraints</purpose>
+</tocitem>
+<tocitem target="ref/msfsyn.html">
+<name>msfsyn</name>
+<purpose>Multi-model/multi-objective state-feedback synthesis</purpose>
+</tocitem>
+<tocitem target="ref/lmireg.html">
+<name>lmireg</name>
+<purpose>Specify LMI regions for pole placement</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

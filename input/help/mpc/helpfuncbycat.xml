@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="plant-specification.html">Plant Specification
+<tocitem target="ref/setmpcsignals.html">
+<name>setmpcsignals</name>
+<purpose>Set signal types in MPC plant model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getname.html">
+<name>getname</name>
+<purpose>Retrieve I/O signal names in MPC prediction model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setname.html">
+<name>setname</name>
+<purpose>Set I/O signal names in MPC prediction model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="controller-design.html">MPC Design
+<tocitem target="controller-creation.html">Controller Creation
+<tocitem target="ref/mpc.html">
+<name>mpc</name>
+<purpose>Model predictive controller</purpose>
+</tocitem>
+<tocitem target="ref/mpcprops.html">
+<name>mpcprops</name>
+<purpose>Provide help on MPC controller properties</purpose>
+</tocitem>
+<tocitem target="ref/gpc2mpc.html">
+<name>gpc2mpc</name>
+<purpose>Generate MPC controller using generalized predictive controller (GPC)
+      settings</purpose>
+</tocitem>
+<tocitem target="ref/mpcverbosity.html">
+<name>mpcverbosity</name>
+<purpose>Change toolbox verbosity level</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="refinement.html">Refinement
+<tocitem target="ref/mpc.get.html">
+<name>get</name>
+<purpose>MPC property values</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getname.html">
+<name>getname</name>
+<purpose>Retrieve I/O signal names in MPC prediction model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.set.html">
+<name>set</name>
+<purpose>Set or modify MPC object properties</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setname.html">
+<name>setname</name>
+<purpose>Set I/O signal names in MPC prediction model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getconstraint.html">
+<name>getconstraint</name>
+<purpose>Obtain mixed input/output constraints from model predictive controller</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setconstraint.html">
+<name>setconstraint</name>
+<purpose>Set mixed input/output constraints for model predictive controller</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setterminal.html">
+<name>setterminal</name>
+<purpose>Terminal weights and constraints</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getestimator.html">
+<name>getEstimator</name>
+<purpose>Obtain Kalman gains and model for estimator design</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setestimator.html">
+<name>setEstimator</name>
+<purpose>Modify a model predictive controller’s state estimator</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getindist.html">
+<name>getindist</name>
+<purpose>Retrieve unmeasured input disturbance model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getoutdist.html">
+<name>getoutdist</name>
+<purpose>Retrieve unmeasured output disturbance model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setindist.html">
+<name>setindist</name>
+<purpose>Modify unmeasured input disturbance model</purpose>
+</tocitem>
+<tocitem target="ref/mpc.setoutdist.html">
+<name>setoutdist</name>
+<purpose>Modify unmeasured output disturbance model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analysis.html">Analysis
+<tocitem target="ref/mpc.review.html">
+<name>review</name>
+<purpose>Examine MPC controller for design errors and stability problems at run
+      time</purpose>
+</tocitem>
+<tocitem target="ref/mpc.compare.html">
+<name>compare</name>
+<purpose>Compare two MPC objects</purpose>
+</tocitem>
+<tocitem target="ref/mpc.cloffset.html">
+<name>cloffset</name>
+<purpose>Compute MPC closed-loop DC gain from output disturbances
+                                                to measured outputs assuming constraints are
+                                                inactive at steady state</purpose>
+</tocitem>
+<tocitem target="ref/mpc.sensitivity.html">
+<name>sensitivity</name>
+<purpose>Compute
+effect of controller tuning weights on performance</purpose>
+</tocitem>
+<tocitem target="ref/mpc.size.html">
+<name>size</name>
+<purpose>Size and order of MPC Controller</purpose>
+</tocitem>
+<tocitem target="ref/mpc.trim.html">
+<name>trim</name>
+<purpose>Compute steady-state value of MPC controller state for
+given inputs and outputs</purpose>
+</tocitem>
+<tocitem target="ref/d2d.html">
+<name>d2d</name>
+<purpose>Change MPC controller sample</purpose>
+</tocitem>
+<tocitem target="ref/mpc.ss.html">
+<name>ss</name>
+<purpose>Convert unconstrained MPC controller to state-space linear
+system</purpose>
+</tocitem>
+<tocitem target="ref/mpc.tf.html">
+<name>tf</name>
+<purpose>Convert unconstrained MPC controller to linear transfer
+function</purpose>
+</tocitem>
+<tocitem target="ref/mpc.zpk.html">
+<name>zpk</name>
+<purpose>Convert unconstrained MPC controller to zero/pole/gain
+form</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="simulation.html">Simulation
+<tocitem target="ref/mpc.mpcmove.html">
+<name>mpcmove</name>
+<purpose>Compute optimal control action</purpose>
+</tocitem>
+<tocitem target="ref/mpcmoveopt.html">
+<name>mpcmoveopt</name>
+<purpose>Option set for mpcmove function</purpose>
+</tocitem>
+<tocitem target="ref/mpcstate.html">
+<name>mpcstate</name>
+<purpose>MPC controller state</purpose>
+</tocitem>
+<tocitem target="ref/mpc.sim.html">
+<name>sim</name>
+<purpose>Simulate closed-loop/open-loop response to arbitrary reference and disturbance
+            signals for implicit or explicit MPC</purpose>
+</tocitem>
+<tocitem target="ref/mpcsimopt.html">
+<name>mpcsimopt</name>
+<purpose>MPC simulation options</purpose>
+</tocitem>
+<tocitem target="ref/mpc.plot.html">
+<name>plot</name>
+<purpose>Plot responses generated by MPC simulations</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="adaptive-mpc-design.html">Adaptive MPC Design
+<tocitem target="ref/mpc.mpcmoveadaptive.html">
+<name>mpcmoveAdaptive</name>
+<purpose>Compute optimal control with prediction model updating</purpose>
+</tocitem>
+<tocitem target="ref/mpcmoveopt.html">
+<name>mpcmoveopt</name>
+<purpose>Option set for mpcmove function</purpose>
+</tocitem>
+<tocitem target="ref/mpcstate.html">
+<name>mpcstate</name>
+<purpose>MPC controller state</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="explicit-mpc-design.html">Explicit MPC Design
+<tocitem target="ref/mpc.generateexplicitmpc.html">
+<name>generateExplicitMPC</name>
+<purpose>Convert implicit MPC controller to explicit MPC controller</purpose>
+</tocitem>
+<tocitem target="ref/mpc.generateexplicitrange.html">
+<name>generateExplicitRange</name>
+<purpose>Bounds on explicit MPC control law parameters</purpose>
+</tocitem>
+<tocitem target="ref/mpc.generateexplicitoptions.html">
+<name>generateExplicitOptions</name>
+<purpose>Optimization options for explicit MPC generation</purpose>
+</tocitem>
+<tocitem target="ref/explicitmpc.simplify.html">
+<name>simplify</name>
+<purpose>Reduce explicit MPC controller complexity and memory requirements</purpose>
+</tocitem>
+<tocitem target="ref/explicitmpc.plotsection.html">
+<name>plotSection</name>
+<purpose>Visualize explicit MPC control law as 2-D sectional plot</purpose>
+</tocitem>
+<tocitem target="ref/explicitmpc.generateplotparameters.html">
+<name>generatePlotParameters</name>
+<purpose>Parameters for plotSection</purpose>
+</tocitem>
+<tocitem target="ref/explicitmpc.mpcmoveexplicit.html">
+<name>mpcmoveExplicit</name>
+<purpose>Compute optimal control using explicit MPC</purpose>
+</tocitem>
+<tocitem target="ref/mpcmoveopt.html">
+<name>mpcmoveopt</name>
+<purpose>Option set for mpcmove function</purpose>
+</tocitem>
+<tocitem target="ref/mpcstate.html">
+<name>mpcstate</name>
+<purpose>MPC controller state</purpose>
+</tocitem>
+<tocitem target="ref/mpc.sim.html">
+<name>sim</name>
+<purpose>Simulate closed-loop/open-loop response to arbitrary reference and disturbance
+            signals for implicit or explicit MPC</purpose>
+</tocitem>
+<tocitem target="ref/mpcsimopt.html">
+<name>mpcsimopt</name>
+<purpose>MPC simulation options</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="gain-scheduling-mpc-design.html">Gain-Scheduled MPC Design
+<tocitem target="ref/mpcmovemultiple.html">
+<name>mpcmoveMultiple</name>
+<purpose>Compute gain-scheduling MPC control action at a single time instant</purpose>
+</tocitem>
+<tocitem target="ref/mpcmoveopt.html">
+<name>mpcmoveopt</name>
+<purpose>Option set for mpcmove function</purpose>
+</tocitem>
+<tocitem target="ref/mpcstate.html">
+<name>mpcstate</name>
+<purpose>MPC controller state</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="nonlinear-mpc-design.html">Nonlinear MPC Design
+<tocitem target="ref/nlmpc.html">
+<name>nlmpc</name>
+<purpose>Nonlinear model predictive controller</purpose>
+</tocitem>
+<tocitem target="ref/nlmpc.nlmpcmove.html">
+<name>nlmpcmove</name>
+<purpose>Compute optimal control action for nonlinear MPC controller</purpose>
+</tocitem>
+<tocitem target="ref/nlmpcmoveopt.html">
+<name>nlmpcmoveopt</name>
+<purpose>Option set for nlmpcmove function</purpose>
+</tocitem>
+<tocitem target="ref/nlmpc.validatefcns.html">
+<name>validateFcns</name>
+<purpose>Examine prediction model and custom functions of nlmpc object for
+      potential problems</purpose>
+</tocitem>
+<tocitem target="ref/nlmpc.converttompc.html">
+<name>convertToMPC</name>
+<purpose>Convert nlmpc object into one or more mpc
+      objects</purpose>
+</tocitem>
+<tocitem target="ref/nlmpc.createparameterbus.html">
+<name>createParameterBus</name>
+<purpose>Create Simulink bus object and configure Bus Creator block for passing model parameters to
+      Nonlinear MPC Controller block</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="ref/mpc.review.html">
+<name>review</name>
+<purpose>Examine MPC controller for design errors and stability problems at run
+      time</purpose>
+</tocitem>
+<tocitem target="ref/mpcmovecodegeneration.html">
+<name>mpcmoveCodeGeneration</name>
+<purpose>Compute optimal control moves with code generation support</purpose>
+</tocitem>
+<tocitem target="ref/mpc.getcodegenerationdata.html">
+<name>getCodeGenerationData</name>
+<purpose>Create data structures for mpcmoveCodeGeneration</purpose>
+</tocitem>
+<tocitem target="ref/mpcqpsolver.html">
+<name>mpcqpsolver</name>
+<purpose>Solve a quadratic programming problem using the KWIK algorithm</purpose>
+</tocitem>
+<tocitem target="ref/mpcqpsolveroptions.html">
+<name>mpcqpsolverOptions</name>
+<purpose>Create default option set for mpcqpsolver</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

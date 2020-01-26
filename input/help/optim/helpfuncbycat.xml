@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="problem-based-approach.html">Problem-Based Optimization Setup
+<tocitem target="ug/eqnproblem.html">
+<name>eqnproblem</name>
+<purpose>Create equation problem</purpose>
+</tocitem>
+<tocitem target="ug/optimproblem.html">
+<name>optimproblem</name>
+<purpose>Create optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.show.html">
+<name>show</name>
+<purpose>Display optimization object</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.showbounds.html">
+<name>showbounds</name>
+<purpose>Display variable bounds</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.write.html">
+<name>write</name>
+<purpose>Save optimization object description</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.writebounds.html">
+<name>writebounds</name>
+<purpose>Save description of variable bounds</purpose>
+</tocitem>
+<tocitem target="ug/fcn2optimexpr.html">
+<name>fcn2optimexpr</name>
+<purpose>Convert function to optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optimconstr.html">
+<name>optimconstr</name>
+<purpose>Create empty optimization constraint array</purpose>
+</tocitem>
+<tocitem target="ug/optimeq.html">
+<name>optimeq</name>
+<purpose>Create empty optimization equality array</purpose>
+</tocitem>
+<tocitem target="ug/optimineq.html">
+<name>optimineq</name>
+<purpose>Create empty optimization inequality array</purpose>
+</tocitem>
+<tocitem target="ug/optimexpr.html">
+<name>optimexpr</name>
+<purpose>Create empty optimization expression array</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.show.html">
+<name>show</name>
+<purpose>Display optimization object</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.write.html">
+<name>write</name>
+<purpose>Save optimization object description</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.findindex.html">
+<name>findindex</name>
+<purpose>Find numeric index equivalents of named index variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.prob2struct.html">
+<name>prob2struct</name>
+<purpose>Convert optimization problem or equation problem to solver form</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.varindex.html">
+<name>varindex</name>
+<purpose>Map problem variables to solver-based variable index</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.mapsolution.html">
+<name>mapSolution</name>
+<purpose>Create optimization solution structure from solver outputs</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.showconstr.html">
+<name>showconstr</name>
+<purpose>Display optimization constraint</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationexpression.showexpr.html">
+<name>showexpr</name>
+<purpose>Display optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.showproblem.html">
+<name>showproblem</name>
+<purpose>Display optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.showvar.html">
+<name>showvar</name>
+<purpose>Display optimization variable</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.writeconstr.html">
+<name>writeconstr</name>
+<purpose>Save optimization constraint description</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationexpression.writeexpr.html">
+<name>writeexpr</name>
+<purpose>Save optimization expression description</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.writeproblem.html">
+<name>writeproblem</name>
+<purpose>Save optimization problem description</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.writevar.html">
+<name>writevar</name>
+<purpose>Save optimization variable description</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="optimization-problem-setup-solver-based.html">Solver-Based Optimization Problem Setup
+<tocitem target="choose-a-solver.html">Choose a Solver
+<tocitem target="ug/optimtool.html">
+<name>optimtool</name>
+<purpose>Select solver and optimization options, run problems</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="set-options.html">Set Options
+<tocitem target="ug/optim.problemdef.optimizationproblem.optimoptions.html">
+<name>optimoptions</name>
+<purpose>Create optimization options</purpose>
+</tocitem>
+<tocitem target="ug/optimset.html">
+<name>optimset</name>
+<purpose>Create or edit optimization options structure</purpose>
+</tocitem>
+<tocitem target="ug/optimtool.html">
+<name>optimtool</name>
+<purpose>Select solver and optimization options, run problems</purpose>
+</tocitem>
+<tocitem target="ug/resetoptions.html">
+<name>resetoptions</name>
+<purpose>Reset options</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="nonlinear-programming.html">Nonlinear Optimization
+<tocitem target="problem-based-nonlinear-optimization.html">Problem-Based Nonlinear Optimization
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/fcn2optimexpr.html">
+<name>fcn2optimexpr</name>
+<purpose>Convert function to optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optimproblem.html">
+<name>optimproblem</name>
+<purpose>Create optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.prob2struct.html">
+<name>prob2struct</name>
+<purpose>Convert optimization problem or equation problem to solver form</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="solver-based-nonlinear-optimization.html">Solver-Based Nonlinear Optimization
+<tocitem target="ug/fminbnd.html">
+<name>fminbnd</name>
+<purpose>Find minimum of single-variable function on fixed interval</purpose>
+</tocitem>
+<tocitem target="ug/fmincon.html">
+<name>fmincon</name>
+<purpose>Find minimum of constrained nonlinear multivariable function</purpose>
+</tocitem>
+<tocitem target="ug/fminsearch.html">
+<name>fminsearch</name>
+<purpose>Find minimum of unconstrained multivariable function using
+derivative-free method</purpose>
+</tocitem>
+<tocitem target="ug/fminunc.html">
+<name>fminunc</name>
+<purpose>Find minimum of unconstrained multivariable function</purpose>
+</tocitem>
+<tocitem target="ug/fseminf.html">
+<name>fseminf</name>
+<purpose>Find minimum of semi-infinitely constrained multivariable nonlinear
+                function</purpose>
+</tocitem>
+<tocitem target="ug/optimget.html">
+<name>optimget</name>
+<purpose>Optimization options values</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multiobjective-optimization.html">Multiobjective Optimization
+<tocitem target="ug/fgoalattain.html">
+<name>fgoalattain</name>
+<purpose>Solve multiobjective goal attainment problems</purpose>
+</tocitem>
+<tocitem target="ug/fminimax.html">
+<name>fminimax</name>
+<purpose>Solve minimax constraint problem</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="linear-programming-and-mixed-integer-linear-programming.html">Linear Programming and Mixed-Integer Linear Programming
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.findindex.html">
+<name>findindex</name>
+<purpose>Find numeric index equivalents of named index variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optimproblem.html">
+<name>optimproblem</name>
+<purpose>Create optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.prob2struct.html">
+<name>prob2struct</name>
+<purpose>Convert optimization problem or equation problem to solver form</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+<tocitem target="ug/intlinprog.html">
+<name>intlinprog</name>
+<purpose>Mixed-integer linear programming (MILP)</purpose>
+</tocitem>
+<tocitem target="ug/linprog.html">
+<name>linprog</name>
+<purpose>Solve linear programming problems</purpose>
+</tocitem>
+<tocitem target="ug/mpsread.html">
+<name>mpsread</name>
+<purpose>Read MPS file for LP and MILP optimization data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="quadratic-programming.html">Quadratic Programming
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optimproblem.html">
+<name>optimproblem</name>
+<purpose>Create optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+<tocitem target="ug/quadprog.html">
+<name>quadprog</name>
+<purpose>Quadratic programming</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="least-squares.html">Least Squares
+<tocitem target="linear-least-squares.html">Linear Least Squares
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optimproblem.html">
+<name>optimproblem</name>
+<purpose>Create optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+<tocitem target="ug/lsqlin.html">
+<name>lsqlin</name>
+<purpose>Solve constrained linear least-squares problems</purpose>
+</tocitem>
+<tocitem target="ug/lsqnonneg.html">
+<name>lsqnonneg</name>
+<purpose>Solve nonnegative linear least-squares problem</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/mldivide.html">
+<name>mldivide, \</name>
+<purpose>Solve systems of linear equations Ax = B for x</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="nonlinear-least-squares-curve-fitting.html">Nonlinear Least Squares (Curve Fitting)
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optimproblem.html">
+<name>optimproblem</name>
+<purpose>Create optimization problem</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+<tocitem target="ug/lsqcurvefit.html">
+<name>lsqcurvefit</name>
+<purpose>Solve nonlinear curve-fitting (data-fitting) problems
+in least-squares sense</purpose>
+</tocitem>
+<tocitem target="ug/lsqnonlin.html">
+<name>lsqnonlin</name>
+<purpose>Solve nonlinear least-squares (nonlinear data-fitting)
+problems</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="systems-of-nonlinear-equations.html">Systems of Nonlinear Equations
+<tocitem target="ug/eqnproblem.html">
+<name>eqnproblem</name>
+<purpose>Create equation problem</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationexpression.evaluate.html">
+<name>evaluate</name>
+<purpose>Evaluate optimization expression</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationconstraint.infeasibility.html">
+<name>infeasibility</name>
+<purpose>Constraint violation at a point</purpose>
+</tocitem>
+<tocitem target="ug/optimeq.html">
+<name>optimeq</name>
+<purpose>Create empty optimization equality array</purpose>
+</tocitem>
+<tocitem target="ug/optimvar.html">
+<name>optimvar</name>
+<purpose>Create optimization variables</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationvariable.show.html">
+<name>show</name>
+<purpose>Display optimization object</purpose>
+</tocitem>
+<tocitem target="ug/optim.problemdef.optimizationproblem.solve.html">
+<name>solve</name>
+<purpose>Solve optimization problem or equation problem</purpose>
+</tocitem>
+<tocitem target="ug/fsolve.html">
+<name>fsolve</name>
+<purpose>Solve system of nonlinear equations</purpose>
+</tocitem>
+<tocitem target="ug/fzero.html">
+<name>fzero</name>
+<purpose>Root of nonlinear function</purpose>
+</tocitem>
+<tocitem target="ug/lsqlin.html">
+<name>lsqlin</name>
+<purpose>Solve constrained linear least-squares problems</purpose>
+</tocitem>
+<tocitem target="ug/lsqnonlin.html">
+<name>lsqnonlin</name>
+<purpose>Solve nonlinear least-squares (nonlinear data-fitting)
+problems</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

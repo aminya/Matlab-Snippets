@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="dynamic-system-models.html">Dynamic System Models
+<tocitem target="linear-system-modeling.html">Linear System Representation
+<tocitem target="fixed-coefficient-models.html">Basic Models
+<tocitem target="ref/tf.html">
+<name>tf</name>
+<purpose>Transfer function model</purpose>
+</tocitem>
+<tocitem target="ref/zpk.html">
+<name>zpk</name>
+<purpose>Create zero-pole-gain model; convert to zero-pole-gain
+model</purpose>
+</tocitem>
+<tocitem target="ref/ss.html">
+<name>ss</name>
+<purpose>Create state-space model, convert to state-space model</purpose>
+</tocitem>
+<tocitem target="ref/frd.html">
+<name>frd</name>
+<purpose>Create frequency-response data model, convert to frequency-response
+data model</purpose>
+</tocitem>
+<tocitem target="ref/filt.html">
+<name>filt</name>
+<purpose>Specify discrete transfer functions in DSP format</purpose>
+</tocitem>
+<tocitem target="ref/dss.html">
+<name>dss</name>
+<purpose>Create descriptor state-space models</purpose>
+</tocitem>
+<tocitem target="ref/pid.html">
+<name>pid</name>
+<purpose>Create PID controller in parallel form, convert to parallel-form
+PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pidstd.html">
+<name>pidstd</name>
+<purpose> Create a PID controller
+in standard form, convert to standard-form PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pid2.html">
+<name>pid2</name>
+<purpose>Create 2-DOF PID controller in parallel form, convert
+to parallel-form 2-DOF PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pidstd2.html">
+<name>pidstd2</name>
+<purpose> Create 2-DOF PID controller
+in standard form, convert to standard-form 2-DOF PID controller</purpose>
+</tocitem>
+<tocitem target="ref/rss.html">
+<name>rss</name>
+<purpose>Generate random continuous
+test model</purpose>
+</tocitem>
+<tocitem target="ref/drss.html">
+<name>drss</name>
+<purpose>Generate random discrete test model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="tunable-coefficient-models.html">Tunable Models
+<tocitem target="ref/tunablegain.html">
+<name>tunableGain</name>
+<purpose>Tunable static gain block</purpose>
+</tocitem>
+<tocitem target="ref/tunablepid.html">
+<name>tunablePID</name>
+<purpose>Tunable PID controller</purpose>
+</tocitem>
+<tocitem target="ref/tunablepid2.html">
+<name>tunablePID2</name>
+<purpose>Tunable two-degree-of-freedom PID controller</purpose>
+</tocitem>
+<tocitem target="ref/tunabless.html">
+<name>tunableSS</name>
+<purpose>Tunable fixed-order state-space model</purpose>
+</tocitem>
+<tocitem target="ref/tunabletf.html">
+<name>tunableTF</name>
+<purpose>Tunable transfer function with fixed number of poles and
+zeros</purpose>
+</tocitem>
+<tocitem target="ref/realp.html">
+<name>realp</name>
+<purpose>Real tunable parameter</purpose>
+</tocitem>
+<tocitem target="ref/analysispoint.html">
+<name>AnalysisPoint</name>
+<purpose>Points of interest for linear analysis</purpose>
+</tocitem>
+<tocitem target="ref/genss.html">
+<name>genss</name>
+<purpose>Generalized state-space model</purpose>
+</tocitem>
+<tocitem target="ref/genfrd.html">
+<name>genfrd</name>
+<purpose>Generalized frequency
+response data (FRD) model</purpose>
+</tocitem>
+<tocitem target="ref/genmat.html">
+<name>genmat</name>
+<purpose>Generalized matrix with
+tunable parameters</purpose>
+</tocitem>
+<tocitem target="ref/genss.getlooptransfer.html">
+<name>getLoopTransfer</name>
+<purpose>Open-loop transfer function of control system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getiotransfer.html">
+<name>getIOTransfer</name>
+<purpose>Closed-loop transfer function from generalized model of
+control system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getsensitivity.html">
+<name>getSensitivity</name>
+<purpose>Sensitivity function from generalized model of control system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getcompsensitivity.html">
+<name>getCompSensitivity</name>
+<purpose>Complementary sensitivity function from generalized model of control
+            system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getpoints.html">
+<name>getPoints</name>
+<purpose>Get list of analysis points in generalized model of control
+system</purpose>
+</tocitem>
+<tocitem target="ref/replaceblock.html">
+<name>replaceBlock</name>
+<purpose>Replace or update Control
+Design Blocks in Generalized LTI model</purpose>
+</tocitem>
+<tocitem target="ref/sampleblock.html">
+<name>sampleBlock</name>
+<purpose>Sample Control Design blocks in generalized model</purpose>
+</tocitem>
+<tocitem target="ref/rsampleblock.html">
+<name>rsampleBlock</name>
+<purpose>Randomly sample Control Design blocks in generalized model</purpose>
+</tocitem>
+<tocitem target="ref/getvalue.html">
+<name>getValue</name>
+<purpose>Current value of Generalized
+Model</purpose>
+</tocitem>
+<tocitem target="ref/setvalue.html">
+<name>setValue</name>
+<purpose>Modify current value
+of Control Design Block</purpose>
+</tocitem>
+<tocitem target="ref/genss.getblockvalue.html">
+<name>getBlockValue</name>
+<purpose>Current value of Control Design Block in Generalized Model</purpose>
+</tocitem>
+<tocitem target="ref/genss.setblockvalue.html">
+<name>setBlockValue</name>
+<purpose>Modify value of Control Design Block in Generalized Model</purpose>
+</tocitem>
+<tocitem target="ref/showblockvalue.html">
+<name>showBlockValue</name>
+<purpose>Display current value
+of Control Design Blocks in Generalized Model</purpose>
+</tocitem>
+<tocitem target="ref/genss.showtunable.html">
+<name>showTunable</name>
+<purpose>Display current value of tunable Control Design Blocks
+in Generalized Model</purpose>
+</tocitem>
+<tocitem target="ref/nblocks.html">
+<name>nblocks</name>
+<purpose>Number of blocks in Generalized
+matrix or Generalized LTI model</purpose>
+</tocitem>
+<tocitem target="ref/getlftmodel.html">
+<name>getLFTModel</name>
+<purpose>Decompose generalized
+LTI model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="models-with-time-delays.html">Models with Time Delays
+<tocitem target="ref/pade.html">
+<name>pade</name>
+<purpose>Padé approximation of model with time delays</purpose>
+</tocitem>
+<tocitem target="ref/absorbdelay.html">
+<name>absorbDelay</name>
+<purpose>Replace time delays by poles at z =
+0 or phase shift</purpose>
+</tocitem>
+<tocitem target="ref/thiran.html">
+<name>thiran</name>
+<purpose>Generate fractional delay filter based on Thiran approximation</purpose>
+</tocitem>
+<tocitem target="ref/hasdelay.html">
+<name>hasdelay</name>
+<purpose>True for linear model with time delays</purpose>
+</tocitem>
+<tocitem target="ref/hasinternaldelay.html">
+<name>hasInternalDelay</name>
+<purpose>Determine if model has internal delays</purpose>
+</tocitem>
+<tocitem target="ref/totaldelay.html">
+<name>totaldelay</name>
+<purpose>Total combined I/O delays for LTI model</purpose>
+</tocitem>
+<tocitem target="ref/delayss.html">
+<name>delayss</name>
+<purpose>Create state-space models with delayed inputs, outputs,
+and states</purpose>
+</tocitem>
+<tocitem target="ref/setdelaymodel.html">
+<name>setDelayModel</name>
+<purpose>Construct state-space model with internal delays</purpose>
+</tocitem>
+<tocitem target="ref/getdelaymodel.html">
+<name>getDelayModel</name>
+<purpose>State-space representation of internal delays</purpose>
+</tocitem>
+<tocitem target="ref/delay2z.html">
+<name>delay2z</name>
+<purpose>Replace delays of discrete-time TF, SS, or ZPK models by poles at
+                z=0, or replace delays of FRD models by phase shift</purpose>
+</tocitem>
+<tocitem target="ref/lti.exp.html">
+<name>exp</name>
+<purpose>Create pure continuous-time delays</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-data-manipulation.html">Model Attributes
+<tocitem target="ref/get.html">
+<name>get</name>
+<purpose>Access model
+property values</purpose>
+</tocitem>
+<tocitem target="ref/set.html">
+<name>set</name>
+<purpose>Set or modify
+model properties</purpose>
+</tocitem>
+<tocitem target="ref/tfdata.html">
+<name>tfdata</name>
+<purpose>Access
+transfer function data</purpose>
+</tocitem>
+<tocitem target="ref/zpkdata.html">
+<name>zpkdata</name>
+<purpose>Access zero-pole-gain data</purpose>
+</tocitem>
+<tocitem target="ref/ssdata.html">
+<name>ssdata</name>
+<purpose>Access state-space model data</purpose>
+</tocitem>
+<tocitem target="ref/frdata.html">
+<name>frdata</name>
+<purpose>Access data for frequency response data (FRD) object</purpose>
+</tocitem>
+<tocitem target="ref/piddata.html">
+<name>piddata</name>
+<purpose>Access coefficients of parallel-form PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pidstddata.html">
+<name>pidstddata</name>
+<purpose>Access coefficients of standard-form PID controller</purpose>
+</tocitem>
+<tocitem target="ref/piddata2.html">
+<name>piddata2</name>
+<purpose>Access coefficients of parallel-form 2-DOF PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pidstddata2.html">
+<name>pidstddata2</name>
+<purpose>Access coefficients of standard-form 2-DOF PID controller</purpose>
+</tocitem>
+<tocitem target="ref/dssdata.html">
+<name>dssdata</name>
+<purpose>Extract descriptor state-space data</purpose>
+</tocitem>
+<tocitem target="ref/chgfrequnit.html">
+<name>chgFreqUnit</name>
+<purpose>Change frequency units
+of frequency-response data model</purpose>
+</tocitem>
+<tocitem target="ref/chgtimeunit.html">
+<name>chgTimeUnit</name>
+<purpose>Change time units of
+dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/isct.html">
+<name>isct</name>
+<purpose>Determine if dynamic system model is in continuous time</purpose>
+</tocitem>
+<tocitem target="ref/isdt.html">
+<name>isdt</name>
+<purpose>Determine if dynamic system model is in discrete time</purpose>
+</tocitem>
+<tocitem target="ref/isempty.html">
+<name>isempty</name>
+<purpose>Determine whether dynamic system model is empty</purpose>
+</tocitem>
+<tocitem target="ref/isfinite.html">
+<name>isfinite</name>
+<purpose>Determine if model has finite coefficients</purpose>
+</tocitem>
+<tocitem target="ref/isparametric.html">
+<name>isParametric</name>
+<purpose>Determine if model has
+tunable parameters</purpose>
+</tocitem>
+<tocitem target="ref/isproper.html">
+<name>isproper</name>
+<purpose>Determine if dynamic system model is proper</purpose>
+</tocitem>
+<tocitem target="ref/isreal.html">
+<name>isreal</name>
+<purpose>Determine if model has real-valued coefficients</purpose>
+</tocitem>
+<tocitem target="ref/issiso.html">
+<name>issiso</name>
+<purpose>Determine if dynamic system model is single-input/single-output
+(SISO)</purpose>
+</tocitem>
+<tocitem target="ref/isstable.html">
+<name>isstable</name>
+<purpose>Determine whether system is stable</purpose>
+</tocitem>
+<tocitem target="ref/isstatic.html">
+<name>isstatic</name>
+<purpose>Determine if model is static or dynamic</purpose>
+</tocitem>
+<tocitem target="ref/order.html">
+<name>order</name>
+<purpose>Query model order</purpose>
+</tocitem>
+<tocitem target="ref/ndims.html">
+<name>ndims</name>
+<purpose>Query number of dimensions of dynamic system model or
+model array</purpose>
+</tocitem>
+<tocitem target="ref/size.html">
+<name>size</name>
+<purpose>Query output/input/array dimensions of input–output
+model and number of frequencies of FRD model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-arrays.html">Model Arrays
+<tocitem target="ref/stack.html">
+<name>stack</name>
+<purpose>Build model array by stacking models or model arrays along
+array dimensions</purpose>
+</tocitem>
+<tocitem target="ref/nmodels.html">
+<name>nmodels</name>
+<purpose>Number of models in model array</purpose>
+</tocitem>
+<tocitem target="ref/permute.html">
+<name>permute</name>
+<purpose>Rearrange array dimensions in model arrays</purpose>
+</tocitem>
+<tocitem target="ref/reshape.html">
+<name>reshape</name>
+<purpose>Change shape of model array</purpose>
+</tocitem>
+<tocitem target="ref/repsys.html">
+<name>repsys</name>
+<purpose>Replicate and tile models</purpose>
+</tocitem>
+<tocitem target="ref/voidmodel.html">
+<name>voidModel</name>
+<purpose>Mark missing or irrelevant models in model array</purpose>
+</tocitem>
+<tocitem target="ref/sampleblock.html">
+<name>sampleBlock</name>
+<purpose>Sample Control Design blocks in generalized model</purpose>
+</tocitem>
+<tocitem target="ref/rsampleblock.html">
+<name>rsampleBlock</name>
+<purpose>Randomly sample Control Design blocks in generalized model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="model-interconnection.html">Model Interconnection
+<tocitem target="ref/feedback.html">
+<name>feedback</name>
+<purpose>Feedback connection of multiple models</purpose>
+</tocitem>
+<tocitem target="ref/connect.html">
+<name>connect</name>
+<purpose>Block diagram interconnections of dynamic systems</purpose>
+</tocitem>
+<tocitem target="ref/sumblk.html">
+<name>sumblk</name>
+<purpose>Summing junction for name-based interconnections</purpose>
+</tocitem>
+<tocitem target="ref/series.html">
+<name>series</name>
+<purpose>Series connection of two models</purpose>
+</tocitem>
+<tocitem target="ref/parallel.html">
+<name>parallel</name>
+<purpose>Parallel connection of two models</purpose>
+</tocitem>
+<tocitem target="ref/append.html">
+<name>append</name>
+<purpose>Group models by appending their inputs and outputs</purpose>
+</tocitem>
+<tocitem target="ref/blkdiag.html">
+<name>blkdiag</name>
+<purpose>Block-diagonal concatenation of models</purpose>
+</tocitem>
+<tocitem target="ref/imp2exp.html">
+<name>imp2exp</name>
+<purpose>Convert implicit linear relationship to explicit input-output relation</purpose>
+</tocitem>
+<tocitem target="ref/inv.html">
+<name>inv</name>
+<purpose>Invert models</purpose>
+</tocitem>
+<tocitem target="ref/inputoutputmodel.ctranspose.html">
+<name>ctranspose</name>
+<purpose>Conjugate dynamic system model</purpose>
+</tocitem>
+<tocitem target="ref/lft.html">
+<name>lft</name>
+<purpose>Generalized feedback interconnection of two models (Redheffer
+star product)</purpose>
+</tocitem>
+<tocitem target="ref/connectoptions.html">
+<name>connectOptions</name>
+<purpose>Options for the connect command</purpose>
+</tocitem>
+<tocitem target="ref/abs.html">
+<name>abs</name>
+<purpose>Entrywise magnitude of frequency response</purpose>
+</tocitem>
+<tocitem target="ref/fcat.html">
+<name>fcat</name>
+<purpose>Concatenate FRD models along frequency dimension</purpose>
+</tocitem>
+<tocitem target="ref/fdel.html">
+<name>fdel</name>
+<purpose>Delete specified data from frequency response data (FRD)
+models</purpose>
+</tocitem>
+<tocitem target="ref/fselect.html">
+<name>fselect</name>
+<purpose>Select frequency points or range in FRD model</purpose>
+</tocitem>
+<tocitem target="ref/interp.html">
+<name>interp</name>
+<purpose>Interpolate FRD model</purpose>
+</tocitem>
+<tocitem target="ref/conj.html">
+<name>conj</name>
+<purpose>Form model with complex conjugate coefficients</purpose>
+</tocitem>
+<tocitem target="ref/strseq.html">
+<name>strseq</name>
+<purpose>Create sequence of indexed character vectors</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="model-transformation.html">Model Transformation
+<tocitem target="model-type-conversion.html">Model Type Conversion
+<tocitem target="ref/tf.html">
+<name>tf</name>
+<purpose>Transfer function model</purpose>
+</tocitem>
+<tocitem target="ref/zpk.html">
+<name>zpk</name>
+<purpose>Create zero-pole-gain model; convert to zero-pole-gain
+model</purpose>
+</tocitem>
+<tocitem target="ref/ss.html">
+<name>ss</name>
+<purpose>Create state-space model, convert to state-space model</purpose>
+</tocitem>
+<tocitem target="ref/frd.html">
+<name>frd</name>
+<purpose>Create frequency-response data model, convert to frequency-response
+data model</purpose>
+</tocitem>
+<tocitem target="ref/pid.html">
+<name>pid</name>
+<purpose>Create PID controller in parallel form, convert to parallel-form
+PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pidstd.html">
+<name>pidstd</name>
+<purpose> Create a PID controller
+in standard form, convert to standard-form PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pid2.html">
+<name>pid2</name>
+<purpose>Create 2-DOF PID controller in parallel form, convert
+to parallel-form 2-DOF PID controller</purpose>
+</tocitem>
+<tocitem target="ref/pidstd2.html">
+<name>pidstd2</name>
+<purpose> Create 2-DOF PID controller
+in standard form, convert to standard-form 2-DOF PID controller</purpose>
+</tocitem>
+<tocitem target="ref/make1dof.html">
+<name>make1DOF</name>
+<purpose>Convert 2-DOF PID controller to 1-DOF controller</purpose>
+</tocitem>
+<tocitem target="ref/make2dof.html">
+<name>make2DOF</name>
+<purpose>Convert 1-DOF PID controller to 2-DOF controller</purpose>
+</tocitem>
+<tocitem target="ref/getcomponents.html">
+<name>getComponents</name>
+<purpose>Extract SISO control components from a 2-DOF PID controller</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="continuous-and-discrete-time-conversion.html">Continuous-Discrete Conversion
+<tocitem target="ref/c2d.html">
+<name>c2d</name>
+<purpose>Convert model from continuous to discrete time</purpose>
+</tocitem>
+<tocitem target="ref/d2c.html">
+<name>d2c</name>
+<purpose>Convert model from discrete to continuous time</purpose>
+</tocitem>
+<tocitem target="ref/d2d.html">
+<name>d2d</name>
+<purpose>Resample discrete-time
+model</purpose>
+</tocitem>
+<tocitem target="ref/upsample.html">
+<name>upsample</name>
+<purpose>Upsample discrete-time models</purpose>
+</tocitem>
+<tocitem target="ref/c2doptions.html">
+<name>c2dOptions</name>
+<purpose>Create option set for continuous- to discrete-time conversions</purpose>
+</tocitem>
+<tocitem target="ref/d2coptions.html">
+<name>d2cOptions</name>
+<purpose>Create option set for discrete- to continuous-time conversions</purpose>
+</tocitem>
+<tocitem target="ref/d2doptions.html">
+<name>d2dOptions</name>
+<purpose>Create option set for discrete-time resampling</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="state-coordinate-transformation.html">State-Coordinate Transformation
+<tocitem target="ref/balreal.html">
+<name>balreal</name>
+<purpose>Gramian-based input/output balancing of state-space realizations</purpose>
+</tocitem>
+<tocitem target="ref/canon.html">
+<name>canon</name>
+<purpose>Canonical state-space realization</purpose>
+</tocitem>
+<tocitem target="ref/prescale.html">
+<name>prescale</name>
+<purpose>Optimal scaling of state-space models</purpose>
+</tocitem>
+<tocitem target="ref/ss2ss.html">
+<name>ss2ss</name>
+<purpose>State coordinate
+transformation for state-space model</purpose>
+</tocitem>
+<tocitem target="ref/xperm.html">
+<name>xperm</name>
+<purpose> Reorder states in state-space models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="modal-analysis.html">Modal Decomposition
+<tocitem target="ref/modsep.html">
+<name>modsep</name>
+<purpose>Region-based modal decomposition</purpose>
+</tocitem>
+<tocitem target="ref/stabsep.html">
+<name>stabsep</name>
+<purpose>Stable-unstable decomposition</purpose>
+</tocitem>
+<tocitem target="ref/stabsepoptions.html">
+<name>stabsepOptions</name>
+<purpose>Options for stable-unstable decomposition</purpose>
+</tocitem>
+<tocitem target="ref/freqsep.html">
+<name>freqsep</name>
+<purpose>Slow-fast decomposition</purpose>
+</tocitem>
+<tocitem target="ref/freqsepoptions.html">
+<name>freqsepOptions</name>
+<purpose>Options for slow-fast decomposition</purpose>
+</tocitem>
+<tocitem target="ref/spectralfact.html">
+<name>spectralfact</name>
+<purpose>Spectral factorization of linear systems</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="model-simplification-1.html">Model Reduction
+<tocitem target="ref/balred.html">
+<name>balred</name>
+<purpose>Model order reduction</purpose>
+</tocitem>
+<tocitem target="ref/balredoptions.html">
+<name>balredOptions</name>
+<purpose>Create option set for model order reduction</purpose>
+</tocitem>
+<tocitem target="ref/balreal.html">
+<name>balreal</name>
+<purpose>Gramian-based input/output balancing of state-space realizations</purpose>
+</tocitem>
+<tocitem target="ref/hsvd.html">
+<name>hsvd</name>
+<purpose>Hankel singular values of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/hsvplot.html">
+<name>hsvplot</name>
+<purpose>Plot Hankel singular values and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/hsvdoptions.html">
+<name>hsvdOptions</name>
+<purpose>Create option set for computing Hankel singular values
+and input/output balancing</purpose>
+</tocitem>
+<tocitem target="ref/minreal.html">
+<name>minreal</name>
+<purpose>Minimal realization or pole-zero cancellation</purpose>
+</tocitem>
+<tocitem target="ref/sminreal.html">
+<name>sminreal</name>
+<purpose>Structural pole/zero cancellations</purpose>
+</tocitem>
+<tocitem target="ref/modred.html">
+<name>modred</name>
+<purpose>Eliminate states from state-space models</purpose>
+</tocitem>
+<tocitem target="ref/freqsep.html">
+<name>freqsep</name>
+<purpose>Slow-fast decomposition</purpose>
+</tocitem>
+<tocitem target="ref/freqsepoptions.html">
+<name>freqsepOptions</name>
+<purpose>Options for slow-fast decomposition</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="linear-analysis.html">Linear Analysis
+<tocitem target="response-plots-and-data.html">Time and Frequency Domain Analysis
+<tocitem target="ref/step.html">
+<name>step</name>
+<purpose>Step response plot of
+dynamic system; step response data</purpose>
+</tocitem>
+<tocitem target="ref/stepinfo.html">
+<name>stepinfo</name>
+<purpose>Rise time, settling time, and other step-response characteristics</purpose>
+</tocitem>
+<tocitem target="ref/impulse.html">
+<name>impulse</name>
+<purpose>Impulse response plot
+of dynamic system; impulse response data</purpose>
+</tocitem>
+<tocitem target="ref/initial.html">
+<name>initial</name>
+<purpose>Initial condition response of state-space model</purpose>
+</tocitem>
+<tocitem target="ref/lsim.html">
+<name>lsim</name>
+<purpose>Simulate time response of dynamic system to arbitrary
+inputs</purpose>
+</tocitem>
+<tocitem target="ref/lsiminfo.html">
+<name>lsiminfo</name>
+<purpose>Compute linear response characteristics</purpose>
+</tocitem>
+<tocitem target="ref/gensig.html">
+<name>gensig</name>
+<purpose>Generate test input signals for lsim</purpose>
+</tocitem>
+<tocitem target="ref/covar.html">
+<name>covar</name>
+<purpose>Output and state covariance of system driven
+by white noise</purpose>
+</tocitem>
+<tocitem target="ref/stepdataoptions.html">
+<name>stepDataOptions</name>
+<purpose>Options set for step</purpose>
+</tocitem>
+<tocitem target="ref/bode.html">
+<name>bode</name>
+<purpose>Bode plot of frequency response, or magnitude and phase
+data</purpose>
+</tocitem>
+<tocitem target="ref/bodemag.html">
+<name>bodemag</name>
+<purpose>Bode magnitude response of LTI models</purpose>
+</tocitem>
+<tocitem target="ref/nyquist.html">
+<name>nyquist</name>
+<purpose>Nyquist plot of frequency response</purpose>
+</tocitem>
+<tocitem target="ref/nichols.html">
+<name>nichols</name>
+<purpose>Nichols chart of frequency response</purpose>
+</tocitem>
+<tocitem target="ref/ngrid.html">
+<name>ngrid</name>
+<purpose>Superimpose Nichols chart on Nichols plot</purpose>
+</tocitem>
+<tocitem target="ref/sigma.html">
+<name>sigma</name>
+<purpose>Singular values plot of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/freqresp.html">
+<name>freqresp</name>
+<purpose>Frequency response over grid</purpose>
+</tocitem>
+<tocitem target="ref/evalfr.html">
+<name>evalfr</name>
+<purpose>Evaluate frequency response at given frequency</purpose>
+</tocitem>
+<tocitem target="ref/dcgain.html">
+<name>dcgain</name>
+<purpose>Low-frequency (DC) gain of LTI system</purpose>
+</tocitem>
+<tocitem target="ref/bandwidth.html">
+<name>bandwidth</name>
+<purpose>Frequency response bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/getpeakgain.html">
+<name>getPeakGain</name>
+<purpose>Peak gain of dynamic system frequency response</purpose>
+</tocitem>
+<tocitem target="ref/getgaincrossover.html">
+<name>getGainCrossover</name>
+<purpose>Crossover frequencies for specified gain</purpose>
+</tocitem>
+<tocitem target="ref/fnorm.html">
+<name>fnorm</name>
+<purpose>Pointwise peak gain of FRD model</purpose>
+</tocitem>
+<tocitem target="ref/norm.html">
+<name>norm</name>
+<purpose>Norm of linear model</purpose>
+</tocitem>
+<tocitem target="ref/db2mag.html">
+<name>db2mag</name>
+<purpose>Convert
+decibels (dB) to magnitude</purpose>
+</tocitem>
+<tocitem target="ref/mag2db.html">
+<name>mag2db</name>
+<purpose>Convert
+magnitude to decibels (dB)</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="stability-margins.html">Stability Analysis
+<tocitem target="ref/pole.html">
+<name>pole</name>
+<purpose>Poles of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/zero.html">
+<name>zero</name>
+<purpose>Zeros and gain of SISO dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/damp.html">
+<name>damp</name>
+<purpose>Natural frequency and damping ratio</purpose>
+</tocitem>
+<tocitem target="ref/dsort.html">
+<name>dsort</name>
+<purpose>Sort discrete-time poles by magnitude</purpose>
+</tocitem>
+<tocitem target="ref/esort.html">
+<name>esort</name>
+<purpose>Sort continuous-time poles by real part</purpose>
+</tocitem>
+<tocitem target="ref/tzero.html">
+<name>tzero</name>
+<purpose>Invariant zeros of linear system</purpose>
+</tocitem>
+<tocitem target="ref/pzmap.html">
+<name>pzmap</name>
+<purpose>Pole-zero plot of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/iopzmap.html">
+<name>iopzmap</name>
+<purpose>Plot pole-zero map for I/O pairs of model</purpose>
+</tocitem>
+<tocitem target="ref/allmargin.html">
+<name>allmargin</name>
+<purpose>Gain margin, phase margin, delay margin, and crossover frequencies</purpose>
+</tocitem>
+<tocitem target="ref/margin.html">
+<name>margin</name>
+<purpose>Gain margin, phase margin, and crossover frequencies</purpose>
+</tocitem>
+<tocitem target="ref/sgrid.html">
+<name>sgrid</name>
+<purpose>Generate s-plane grid of constant damping factors and natural
+      frequencies</purpose>
+</tocitem>
+<tocitem target="ref/zgrid.html">
+<name>zgrid</name>
+<purpose>Generate z-plane grid of constant damping factors and natural
+      frequencies</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="sensitivity-analysis.html">Sensitivity Analysis
+<tocitem target="ref/sampleblock.html">
+<name>sampleBlock</name>
+<purpose>Sample Control Design blocks in generalized model</purpose>
+</tocitem>
+<tocitem target="ref/rsampleblock.html">
+<name>rsampleBlock</name>
+<purpose>Randomly sample Control Design blocks in generalized model</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="passivity-and-sector-bounds.html">Passivity and Sector Bounds
+<tocitem target="ref/ispassive.html">
+<name>isPassive</name>
+<purpose>Check passivity of linear systems</purpose>
+</tocitem>
+<tocitem target="ref/getpassiveindex.html">
+<name>getPassiveIndex</name>
+<purpose>Compute passivity index of linear system</purpose>
+</tocitem>
+<tocitem target="ref/passiveplot.html">
+<name>passiveplot</name>
+<purpose>Compute or plot passivity index as function of frequency</purpose>
+</tocitem>
+<tocitem target="ref/getsectorindex.html">
+<name>getSectorIndex</name>
+<purpose>Compute conic-sector index of linear system</purpose>
+</tocitem>
+<tocitem target="ref/getsectorcrossover.html">
+<name>getSectorCrossover</name>
+<purpose>Crossover frequencies for sector bound</purpose>
+</tocitem>
+<tocitem target="ref/sectorplot.html">
+<name>sectorplot</name>
+<purpose>Compute or plot sector index as function of frequency</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analysis-plot-customization.html">Plot Customization
+<tocitem target="ref/impulseplot.html">
+<name>impulseplot</name>
+<purpose>Plot impulse response and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/initialplot.html">
+<name>initialplot</name>
+<purpose>Plot initial condition response and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/lsimplot.html">
+<name>lsimplot</name>
+<purpose>Simulate response of dynamic system to arbitrary inputs
+and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/stepplot.html">
+<name>stepplot</name>
+<purpose>Plot step response and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/bodeplot.html">
+<name>bodeplot</name>
+<purpose>Plot Bode frequency response with additional plot customization
+options</purpose>
+</tocitem>
+<tocitem target="ref/nicholsplot.html">
+<name>nicholsplot</name>
+<purpose>Plot Nichols frequency responses and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/nyquistplot.html">
+<name>nyquistplot</name>
+<purpose>Nyquist plot with additional plot customization options</purpose>
+</tocitem>
+<tocitem target="ref/sigmaplot.html">
+<name>sigmaplot</name>
+<purpose>Plot singular values of frequency response and return
+plot handle</purpose>
+</tocitem>
+<tocitem target="ref/pzplot.html">
+<name>pzplot</name>
+<purpose>Pole-zero plot of dynamic system model with plot customization
+            options</purpose>
+</tocitem>
+<tocitem target="ref/iopzplot.html">
+<name>iopzplot</name>
+<purpose>Plot pole-zero map for I/O pairs and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/bodeoptions.html">
+<name>bodeoptions</name>
+<purpose>Create list of Bode plot options</purpose>
+</tocitem>
+<tocitem target="ref/hsvoptions.html">
+<name>hsvoptions</name>
+<purpose>Plot options for hsvplot</purpose>
+</tocitem>
+<tocitem target="ref/nicholsoptions.html">
+<name>nicholsoptions</name>
+<purpose>Create list of Nichols plot options</purpose>
+</tocitem>
+<tocitem target="ref/nyquistoptions.html">
+<name>nyquistoptions</name>
+<purpose>List of Nyquist plot
+options</purpose>
+</tocitem>
+<tocitem target="ref/pzoptions.html">
+<name>pzoptions</name>
+<purpose>Create list of pole/zero plot options</purpose>
+</tocitem>
+<tocitem target="ref/sigmaoptions.html">
+<name>sigmaoptions</name>
+<purpose>Create list of singular-value plot options</purpose>
+</tocitem>
+<tocitem target="ref/timeoptions.html">
+<name>timeoptions</name>
+<purpose>Create list of time plot options</purpose>
+</tocitem>
+<tocitem target="ref/setoptions.html">
+<name>setoptions</name>
+<purpose>Set plot options for response plot</purpose>
+</tocitem>
+<tocitem target="ref/getoptions.html">
+<name>getoptions</name>
+<purpose>Return @PlotOptions handle or plot
+options property</purpose>
+</tocitem>
+<tocitem target="ref/ctrlpref.html">
+<name>ctrlpref</name>
+<purpose>Set Control System
+            Toolbox preferences</purpose>
+</tocitem>
+<tocitem target="ref/updatesystem.html">
+<name>updateSystem</name>
+<purpose>Update dynamic system data in a response plot</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="control-design.html">Control System Design and Tuning
+<tocitem target="pid-controller-design.html">PID Controller Tuning
+<tocitem target="ref/pidtune.html">
+<name>pidtune</name>
+<purpose>PID tuning algorithm for linear plant model</purpose>
+</tocitem>
+<tocitem target="ref/pidtuneoptions.html">
+<name>pidtuneOptions</name>
+<purpose>Define options for pidtune command</purpose>
+</tocitem>
+<tocitem target="ref/pid.getpidloopresponse.html">
+<name>getPIDLoopResponse</name>
+<purpose>Closed-loop and open-loop responses of systems with PID controllers</purpose>
+</tocitem>
+<tocitem target="ref/pidtuner.html">
+<name>pidTuner</name>
+<purpose>Open PID Tuner for PID tuning</purpose>
+</tocitem>
+<tocitem target="ref/pidtool.html">
+<name>pidtool</name>
+<purpose>Open PID Tuner for PID tuning</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="single-input-single-output-control-design.html">Classical Control Design
+<tocitem target="ref/rlocus.html">
+<name>rlocus</name>
+<purpose> Root locus plot
+of dynamic system</purpose>
+</tocitem>
+<tocitem target="ref/rlocusplot.html">
+<name>rlocusplot</name>
+<purpose>Plot root locus and return plot handle</purpose>
+</tocitem>
+<tocitem target="ref/sisoinit.html">
+<name>sisoinit</name>
+<purpose>Configure Control System Designer at startup</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="state-space-control-design.html">State-Space Control Design and Estimation
+<tocitem target="state-space-control-design-1.html">State-Space Control Design
+<tocitem target="ref/lqr.html">
+<name>lqr</name>
+<purpose>Linear-Quadratic Regulator (LQR) design</purpose>
+</tocitem>
+<tocitem target="ref/lqry.html">
+<name>lqry</name>
+<purpose>Form linear-quadratic (LQ) state-feedback regulator with
+output weighting</purpose>
+</tocitem>
+<tocitem target="ref/lqi.html">
+<name>lqi</name>
+<purpose>Linear-Quadratic-Integral control</purpose>
+</tocitem>
+<tocitem target="ref/dlqr.html">
+<name>dlqr</name>
+<purpose>Linear-quadratic (LQ) state-feedback regulator for discrete-time
+state-space system</purpose>
+</tocitem>
+<tocitem target="ref/lqrd.html">
+<name>lqrd</name>
+<purpose>Design discrete linear-quadratic (LQ) regulator for continuous
+plant</purpose>
+</tocitem>
+<tocitem target="ref/lqg.html">
+<name>lqg</name>
+<purpose>Linear-Quadratic-Gaussian (LQG) design</purpose>
+</tocitem>
+<tocitem target="ref/lqgreg.html">
+<name>lqgreg</name>
+<purpose>Form linear-quadratic-Gaussian
+(LQG) regulator</purpose>
+</tocitem>
+<tocitem target="ref/lqgtrack.html">
+<name>lqgtrack</name>
+<purpose>Form Linear-Quadratic-Gaussian (LQG) servo controller</purpose>
+</tocitem>
+<tocitem target="ref/augstate.html">
+<name>augstate</name>
+<purpose>Append state vector to output vector</purpose>
+</tocitem>
+<tocitem target="ref/norm.html">
+<name>norm</name>
+<purpose>Norm of linear model</purpose>
+</tocitem>
+<tocitem target="ref/estim.html">
+<name>estim</name>
+<purpose>Form state estimator given estimator gain</purpose>
+</tocitem>
+<tocitem target="ref/place.html">
+<name>place</name>
+<purpose>Pole placement design</purpose>
+</tocitem>
+<tocitem target="ref/reg.html">
+<name>reg</name>
+<purpose>Form
+regulator given state-feedback and estimator gains</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="state-estimation.html">State Estimation
+<tocitem target="ref/kalman.html">
+<name>kalman</name>
+<purpose>Kalman
+filter design, Kalman estimator</purpose>
+</tocitem>
+<tocitem target="ref/kalmd.html">
+<name>kalmd</name>
+<purpose>Design discrete
+Kalman estimator for continuous plant</purpose>
+</tocitem>
+<tocitem target="ref/estim.html">
+<name>estim</name>
+<purpose>Form state estimator given estimator gain</purpose>
+</tocitem>
+<tocitem target="ref/extendedkalmanfilter.html">
+<name>extendedKalmanFilter</name>
+<purpose>Create extended Kalman filter object for online state
+estimation</purpose>
+</tocitem>
+<tocitem target="ref/unscentedkalmanfilter.html">
+<name>unscentedKalmanFilter</name>
+<purpose>Create unscented Kalman filter object for online state
+estimation</purpose>
+</tocitem>
+<tocitem target="ref/particlefilter.html">
+<name>particleFilter</name>
+<purpose>Particle filter object for online state estimation</purpose>
+</tocitem>
+<tocitem target="ref/correct.html">
+<name>correct</name>
+<purpose>Correct state and state estimation error covariance using extended or unscented Kalman
+            filter, or particle filter and measurements</purpose>
+</tocitem>
+<tocitem target="ref/predict_method_state_estimation.html">
+<name>predict</name>
+<purpose>Predict state and state estimation error covariance at next time step using extended or
+            unscented Kalman filter, or particle filter</purpose>
+</tocitem>
+<tocitem target="ref/residual.html">
+<name>residual</name>
+<purpose>Return measurement residual and residual covariance when using extended or
+            unscented Kalman filter</purpose>
+</tocitem>
+<tocitem target="ref/initialize.html">
+<name>initialize</name>
+<purpose>Initialize the state of the particle filter</purpose>
+</tocitem>
+<tocitem target="ref/clone_method_state_estimation.html">
+<name>clone</name>
+<purpose>Copy online state estimation object</purpose>
+</tocitem>
+<tocitem target="ref/getstateestimate.html">
+<name>getStateEstimate</name>
+<purpose>Extract best state estimate and covariance from particles</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="control-system-tuning.html">Multiloop, Multiobjective Tuning
+<tocitem target="programmatic-control-system-tuning.html">Programmatic Tuning
+<tocitem target="simulink-model-setup.html">Setup for Tuning Simulink Models
+<tocitem target="../slcontrol/ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuneroptions.html">
+<name>slTunerOptions</name>
+<purpose>Set slTuner interface options</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.addblock.html">
+<name>addBlock</name>
+<purpose>Add block to list of tuned blocks for slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.addopening.html">
+<name>addOpening</name>
+<purpose>Add signal to list of openings for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.addpoint.html">
+<name>addPoint</name>
+<purpose>Add signal to list of analysis points for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.refresh.html">
+<name>refresh</name>
+<purpose>Resynchronize slLinearizer or slTuner interface
+with current model state</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.removeallopenings.html">
+<name>removeAllOpenings</name>
+<purpose>Remove all openings from list of permanent openings in
+                slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.removeallpoints.html">
+<name>removeAllPoints</name>
+<purpose>Remove all points from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.removeblock.html">
+<name>removeBlock</name>
+<purpose>Remove block from list of tuned blocks in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.removeopening.html">
+<name>removeOpening</name>
+<purpose>Remove opening from list of permanent loop openings in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.removepoint.html">
+<name>removePoint</name>
+<purpose>Remove point from list of analysis points in slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.setblockparam.html">
+<name>setBlockParam</name>
+<purpose>Set parameterization of tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.setblockrateconversion.html">
+<name>setBlockRateConversion</name>
+<purpose>Set rate conversion settings for tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.setblockvalue.html">
+<name>setBlockValue</name>
+<purpose>Set value of tuned block parameterization in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.writeblockvalue.html">
+<name>writeBlockValue</name>
+<purpose>Update block values in Simulink model</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/writelookuptabledata.html">
+<name>writeLookupTableData</name>
+<purpose>Update portion of tuned lookup table</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.getblockparam.html">
+<name>getBlockParam</name>
+<purpose>Get parameterization of tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.getblockrateconversion.html">
+<name>getBlockRateConversion</name>
+<purpose>Get rate conversion settings for tuned block in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.getblockvalue.html">
+<name>getBlockValue</name>
+<purpose>Get current value of tuned block parameterization in slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.getopenings.html">
+<name>getOpenings</name>
+<purpose>Get list of openings for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.getpoints.html">
+<name>getPoints</name>
+<purpose>Get list of analysis points for slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.showtunable.html">
+<name>showTunable</name>
+<purpose>Show value of parameterizations of tunable blocks of slTuner interface</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="matlab-model-setup.html">Setup for Tuning MATLAB Models
+<tocitem target="ref/tf.html">
+<name>tf</name>
+<purpose>Transfer function model</purpose>
+</tocitem>
+<tocitem target="ref/zpk.html">
+<name>zpk</name>
+<purpose>Create zero-pole-gain model; convert to zero-pole-gain
+model</purpose>
+</tocitem>
+<tocitem target="ref/ss.html">
+<name>ss</name>
+<purpose>Create state-space model, convert to state-space model</purpose>
+</tocitem>
+<tocitem target="ref/tunablegain.html">
+<name>tunableGain</name>
+<purpose>Tunable static gain block</purpose>
+</tocitem>
+<tocitem target="ref/tunabletf.html">
+<name>tunableTF</name>
+<purpose>Tunable transfer function with fixed number of poles and
+zeros</purpose>
+</tocitem>
+<tocitem target="ref/tunablepid.html">
+<name>tunablePID</name>
+<purpose>Tunable PID controller</purpose>
+</tocitem>
+<tocitem target="ref/tunablepid2.html">
+<name>tunablePID2</name>
+<purpose>Tunable two-degree-of-freedom PID controller</purpose>
+</tocitem>
+<tocitem target="ref/tunabless.html">
+<name>tunableSS</name>
+<purpose>Tunable fixed-order state-space model</purpose>
+</tocitem>
+<tocitem target="ref/realp.html">
+<name>realp</name>
+<purpose>Real tunable parameter</purpose>
+</tocitem>
+<tocitem target="ref/analysispoint.html">
+<name>AnalysisPoint</name>
+<purpose>Points of interest for linear analysis</purpose>
+</tocitem>
+<tocitem target="ref/connect.html">
+<name>connect</name>
+<purpose>Block diagram interconnections of dynamic systems</purpose>
+</tocitem>
+<tocitem target="ref/feedback.html">
+<name>feedback</name>
+<purpose>Feedback connection of multiple models</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="tuning-1.html">Tuning, Analysis, and Validation
+<tocitem target="../slcontrol/ug/sltuner.systune.html">
+<name>systune (slTuner)</name>
+<purpose>Tune control system parameters in Simulink using slTuner interface</purpose>
+</tocitem>
+<tocitem target="ref/systuneoptions.html">
+<name>systuneOptions</name>
+<purpose>Set options for systune</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.getiotransfer.html">
+<name>getIOTransfer (slTuner)</name>
+<purpose>Transfer function for specified I/O set using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.getlooptransfer.html">
+<name>getLoopTransfer (slTuner)</name>
+<purpose>Open-loop transfer function at specified point using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.getsensitivity.html">
+<name>getSensitivity (slTuner)</name>
+<purpose>Sensitivity function at specified point using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sllinearizer.getcompsensitivity.html">
+<name>getCompSensitivity (slTuner)</name>
+<purpose>Complementary sensitivity function at specified point
+using slLinearizer or slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.writeblockvalue.html">
+<name>writeBlockValue</name>
+<purpose>Update block values in Simulink model</purpose>
+</tocitem>
+<tocitem target="ref/genss.systune.html">
+<name>systune</name>
+<purpose>Tune fixed-structure control systems modeled in MATLAB</purpose>
+</tocitem>
+<tocitem target="ref/systuneoptions.html">
+<name>systuneOptions</name>
+<purpose>Set options for systune</purpose>
+</tocitem>
+<tocitem target="ref/genss.getiotransfer.html">
+<name>getIOTransfer</name>
+<purpose>Closed-loop transfer function from generalized model of
+control system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getlooptransfer.html">
+<name>getLoopTransfer</name>
+<purpose>Open-loop transfer function of control system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getsensitivity.html">
+<name>getSensitivity</name>
+<purpose>Sensitivity function from generalized model of control system</purpose>
+</tocitem>
+<tocitem target="ref/genss.getcompsensitivity.html">
+<name>getCompSensitivity</name>
+<purpose>Complementary sensitivity function from generalized model of control
+            system</purpose>
+</tocitem>
+<tocitem target="ref/viewgoal.html">
+<name>viewGoal</name>
+<purpose>View tuning goals; validate design against tuning goals</purpose>
+</tocitem>
+<tocitem target="ref/evalgoal.html">
+<name>evalGoal</name>
+<purpose>Evaluate tuning goals for tuned control system</purpose>
+</tocitem>
+<tocitem target="ref/viewspec.html">
+<name>viewSpec</name>
+<purpose>(Not recommended) View tuning goals; validate design against tuning
+            goals</purpose>
+</tocitem>
+<tocitem target="ref/evalspec.html">
+<name>evalSpec</name>
+<purpose>(Not recommended) Evaluate tuning goals for tuned control system</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="basic-tuning.html">Loop-Shaping Design
+<tocitem target="../slcontrol/ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.looptune.html">
+<name>looptune</name>
+<purpose>Tune MIMO feedback loops in Simulink using slTuner interface</purpose>
+</tocitem>
+<tocitem target="ref/looptuneoptions.html">
+<name>looptuneOptions</name>
+<purpose>Set options for looptune</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.loopview.html">
+<name>loopview</name>
+<purpose>Graphically analyze results of control system tuning using slTuner interface</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.looptunesetup.html">
+<name>looptuneSetup</name>
+<purpose>Construct tuning setup for looptune to
+tuning setup for systune using slTuner interface</purpose>
+</tocitem>
+<tocitem target="ref/genss.looptune.html">
+<name>looptune</name>
+<purpose>Tune fixed-structure feedback loops</purpose>
+</tocitem>
+<tocitem target="ref/looptuneoptions.html">
+<name>looptuneOptions</name>
+<purpose>Set options for looptune</purpose>
+</tocitem>
+<tocitem target="ref/genss.loopview.html">
+<name>loopview</name>
+<purpose> Graphically analyze MIMO feedback loops</purpose>
+</tocitem>
+<tocitem target="ref/genss.looptunesetup.html">
+<name>looptuneSetup</name>
+<purpose>Convert tuning setup for looptune to
+tuning setup for systune</purpose>
+</tocitem>
+<tocitem target="ref/viewgoal.html">
+<name>viewGoal</name>
+<purpose>View tuning goals; validate design against tuning goals</purpose>
+</tocitem>
+<tocitem target="ref/evalgoal.html">
+<name>evalGoal</name>
+<purpose>Evaluate tuning goals for tuned control system</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="gain-scheduled-controller-tuning.html">Gain Scheduling
+<tocitem target="ref/tunablesurface.html">
+<name>tunableSurface</name>
+<purpose>Create tunable gain surface for gain scheduling</purpose>
+</tocitem>
+<tocitem target="ref/polybasis.html">
+<name>polyBasis</name>
+<purpose>Polynomial basis functions for tunable gain surface</purpose>
+</tocitem>
+<tocitem target="ref/fourierbasis.html">
+<name>fourierBasis</name>
+<purpose>Fourier basis functions for tunable gain surface</purpose>
+</tocitem>
+<tocitem target="ref/ndbasis.html">
+<name>ndBasis</name>
+<purpose>Basis functions for tunable gain surface</purpose>
+</tocitem>
+<tocitem target="ref/viewsurf.html">
+<name>viewSurf</name>
+<purpose>Visualize gain surface as a function of scheduling variables</purpose>
+</tocitem>
+<tocitem target="ref/evalsurf.html">
+<name>evalSurf</name>
+<purpose>Evaluate gain surfaces at specific design points</purpose>
+</tocitem>
+<tocitem target="ref/tunablesurface.getdata.html">
+<name>getData</name>
+<purpose>Get current values of tunable-surface coefficients</purpose>
+</tocitem>
+<tocitem target="ref/tunablesurface.setdata.html">
+<name>setData</name>
+<purpose>Set values of tunable-surface coefficients</purpose>
+</tocitem>
+<tocitem target="ref/tunablesurface.codegen.html">
+<name>codegen</name>
+<purpose>Generate MATLAB code for tunable gain surfaces</purpose>
+</tocitem>
+<tocitem target="ref/genss.systune.html">
+<name>systune</name>
+<purpose>Tune fixed-structure control systems modeled in MATLAB</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.html">
+<name>slTuner</name>
+<purpose>Interface for control system tuning of Simulink models</purpose>
+</tocitem>
+<tocitem target="../slcontrol/ug/sltuner.systune.html">
+<name>systune (slTuner)</name>
+<purpose>Tune control system parameters in Simulink using slTuner interface</purpose>
+</tocitem>
+<tocitem target="ref/voidmodel.html">
+<name>voidModel</name>
+<purpose>Mark missing or irrelevant models in model array</purpose>
+</tocitem>
+<tocitem target="ref/varyinggoal.html">
+<name>varyingGoal</name>
+<purpose>Variable tuning goal for gain-scheduled controllers</purpose>
+</tocitem>
+<tocitem target="ref/getgoal.html">
+<name>getGoal</name>
+<purpose>Evaluate variable tuning goal at specified design point</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="linear-algebra-for-control-design.html">Matrix Computations
+<tocitem target="ref/lyap.html">
+<name>lyap</name>
+<purpose>Continuous Lyapunov equation solution</purpose>
+</tocitem>
+<tocitem target="ref/lyapchol.html">
+<name>lyapchol</name>
+<purpose>Square-root solver for continuous-time Lyapunov equation</purpose>
+</tocitem>
+<tocitem target="ref/dlyap.html">
+<name>dlyap</name>
+<purpose>Solve discrete-time Lyapunov equations</purpose>
+</tocitem>
+<tocitem target="ref/dlyapchol.html">
+<name>dlyapchol</name>
+<purpose>Square-root solver for discrete-time Lyapunov equations</purpose>
+</tocitem>
+<tocitem target="ref/icare.html">
+<name>icare</name>
+<purpose>Implicit solver for continuous-time algebraic Riccati equations</purpose>
+</tocitem>
+<tocitem target="ref/idare.html">
+<name>idare</name>
+<purpose>Implicit solver for discrete-time algebraic Riccati equations</purpose>
+</tocitem>
+<tocitem target="ref/care.html">
+<name>care</name>
+<purpose>(Not recommended) Continuous-time algebraic Riccati equation solution</purpose>
+</tocitem>
+<tocitem target="ref/dare.html">
+<name>dare</name>
+<purpose>(Not recommended) Solve discrete-time algebraic Riccati equations (DAREs)</purpose>
+</tocitem>
+<tocitem target="ref/gcare.html">
+<name>gcare</name>
+<purpose>(Not recommended) Generalized solver for continuous-time algebraic Riccati
+            equation</purpose>
+</tocitem>
+<tocitem target="ref/gdare.html">
+<name>gdare</name>
+<purpose>(Not recommended) Generalized solver for discrete-time algebraic Riccati
+            equation</purpose>
+</tocitem>
+<tocitem target="ref/ctrb.html">
+<name>ctrb</name>
+<purpose>Controllability matrix</purpose>
+</tocitem>
+<tocitem target="ref/obsv.html">
+<name>obsv</name>
+<purpose>Observability matrix</purpose>
+</tocitem>
+<tocitem target="ref/ctrbf.html">
+<name>ctrbf</name>
+<purpose>Compute controllability staircase
+form</purpose>
+</tocitem>
+<tocitem target="ref/obsvf.html">
+<name>obsvf</name>
+<purpose>Compute observability staircase
+form</purpose>
+</tocitem>
+<tocitem target="ref/gram.html">
+<name>gram</name>
+<purpose>Controllability and observability Gramians</purpose>
+</tocitem>
+<tocitem target="ref/gramoptions.html">
+<name>gramOptions</name>
+<purpose>Options for the gram command</purpose>
+</tocitem>
+<tocitem target="ref/bdschur.html">
+<name>bdschur</name>
+<purpose>Block-diagonal Schur factorization</purpose>
+</tocitem>
+<tocitem target="ref/norm.html">
+<name>norm</name>
+<purpose>Norm of linear model</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

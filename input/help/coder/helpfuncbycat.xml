@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="matlab-algorithm-design.html">MATLAB Programming for Code Generation
+<tocitem target="data-definition.html">Data Definition
+<tocitem target="array-layout.html">Array Layout
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.columnmajor.html">
+<name>coder.columnMajor</name>
+<purpose>Specify column-major array layout for a function or class</purpose>
+</tocitem>
+<tocitem target="ref/coder.iscolumnmajor.html">
+<name>coder.isColumnMajor</name>
+<purpose>Determine whether the current function or variable uses column-major
+            layout</purpose>
+</tocitem>
+<tocitem target="ref/coder.isrowmajor.html">
+<name>coder.isRowMajor</name>
+<purpose>Determine whether the current function or variable uses row-major
+            layout</purpose>
+</tocitem>
+<tocitem target="ref/coder.rowmajor.html">
+<name>coder.rowMajor</name>
+<purpose>Specify row-major array layout for a function or class</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="variable-size-data.html">Variable-Size Data
+<tocitem target="ref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="structures.html">Structures
+<tocitem target="ref/coder.cstructname.html">
+<name>coder.cstructname</name>
+<purpose>Name C structure type in generated code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="cell-arrays.html">Cell Arrays
+<tocitem target="ref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+<tocitem target="ref/coder.cstructname.html">
+<name>coder.cstructname</name>
+<purpose>Name C structure type in generated code</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="function-definition.html">Function Definition
+<tocitem target="ref/coder.extrinsic.html">
+<name>coder.extrinsic</name>
+<purpose>Declare extrinsic functions</purpose>
+</tocitem>
+<tocitem target="ref/coder.ignoreconst.html">
+<name>coder.ignoreConst</name>
+<purpose>Prevent use of constant value of expression for function
+specializations</purpose>
+</tocitem>
+<tocitem target="ref/coder.ignoresize.html">
+<name>coder.ignoreSize</name>
+<purpose>Prevent code generator from creating function specializations for constant-size
+      expressions</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="generating-code.html">Generating Code
+<tocitem target="ref/coder.html">
+<name>coder</name>
+<purpose>Open MATLAB
+            Coder app</purpose>
+</tocitem>
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/coder.target.html">
+<name>coder.target</name>
+<purpose>Determine if code generation target is specified target</purpose>
+</tocitem>
+<tocitem target="ref/coder.allowpcode.html">
+<name>coder.allowpcode</name>
+<purpose>Control code generation from protected MATLAB files</purpose>
+</tocitem>
+<tocitem target="ref/coder.config.html">
+<name>coder.config</name>
+<purpose>Create MATLAB
+            Coder code generation configuration objects</purpose>
+</tocitem>
+<tocitem target="ref/coder.extrinsic.html">
+<name>coder.extrinsic</name>
+<purpose>Declare extrinsic functions</purpose>
+</tocitem>
+<tocitem target="ref/coder.load.html">
+<name>coder.load</name>
+<purpose>Load compile-time constants from MAT-file or ASCII file
+into caller workspace</purpose>
+</tocitem>
+<tocitem target="ref/coder.nullcopy.html">
+<name>coder.nullcopy</name>
+<purpose>Declare uninitialized variables in code generation</purpose>
+</tocitem>
+<tocitem target="ref/coder.newtype.html">
+<name>coder.newtype</name>
+<purpose>Create a coder.Type object</purpose>
+</tocitem>
+<tocitem target="ref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+<tocitem target="ref/coder.typeof.html">
+<name>coder.typeof</name>
+<purpose>Create coder.Type object to represent the type
+            of an entry-point function input</purpose>
+</tocitem>
+<tocitem target="ref/coder.resize.html">
+<name>coder.resize</name>
+<purpose>Resize coder.Type object</purpose>
+</tocitem>
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.cinclude.html">
+<name>coder.cinclude</name>
+<purpose>Include header file in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.cstructname.html">
+<name>coder.cstructname</name>
+<purpose>Name C structure type in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.opaque.html">
+<name>coder.opaque</name>
+<purpose>Declare variable in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.ref.html">
+<name>coder.ref</name>
+<purpose>Indicate data to pass by reference</purpose>
+</tocitem>
+<tocitem target="ref/coder.rref.html">
+<name>coder.rref</name>
+<purpose>Indicate read-only data to pass by reference</purpose>
+</tocitem>
+<tocitem target="ref/coder.wref.html">
+<name>coder.wref</name>
+<purpose>Indicate write-only data to pass by reference</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="matlab-code-analysis.html">MATLAB Code Analysis
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/coder.runtest.html">
+<name>coder.runTest</name>
+<purpose>Run test replacing calls to MATLAB functions with
+calls to MEX functions</purpose>
+</tocitem>
+<tocitem target="ref/coder.screener.html">
+<name>coder.screener</name>
+<purpose>Determine if function is suitable for code generation </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="input-specification.html">Input Specification
+<tocitem target="ref/coder.getargtypes.html">
+<name>coder.getArgTypes</name>
+<purpose>Determine types of function input arguments by executing test file</purpose>
+</tocitem>
+<tocitem target="ref/coder.newtype.html">
+<name>coder.newtype</name>
+<purpose>Create a coder.Type object</purpose>
+</tocitem>
+<tocitem target="ref/coder.resize.html">
+<name>coder.resize</name>
+<purpose>Resize coder.Type object</purpose>
+</tocitem>
+<tocitem target="ref/coder.typeof.html">
+<name>coder.typeof</name>
+<purpose>Create coder.Type object to represent the type
+            of an entry-point function input</purpose>
+</tocitem>
+<tocitem target="ref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+<tocitem target="ref/coder.celltype.isheterogeneous.html">
+<name>coder.CellType.isHeterogeneous</name>
+<purpose>Determine whether cell array type represents a heterogeneous
+cell array</purpose>
+</tocitem>
+<tocitem target="ref/coder.celltype.ishomogeneous.html">
+<name>coder.CellType.isHomogeneous</name>
+<purpose>Determine whether cell array type represents a homogeneous
+cell array</purpose>
+</tocitem>
+<tocitem target="ref/coder.celltype.makeheterogeneous.html">
+<name>coder.CellType.makeHeterogeneous</name>
+<purpose>Make a heterogeneous copy of a cell array type</purpose>
+</tocitem>
+<tocitem target="ref/coder.celltype.makehomogeneous.html">
+<name>coder.CellType.makeHomogeneous</name>
+<purpose>Create a homogeneous copy of a cell array type</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="custom-c-c-code-integration.html">External Code Integration
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.ref.html">
+<name>coder.ref</name>
+<purpose>Indicate data to pass by reference</purpose>
+</tocitem>
+<tocitem target="ref/coder.rref.html">
+<name>coder.rref</name>
+<purpose>Indicate read-only data to pass by reference</purpose>
+</tocitem>
+<tocitem target="ref/coder.wref.html">
+<name>coder.wref</name>
+<purpose>Indicate write-only data to pass by reference</purpose>
+</tocitem>
+<tocitem target="ref/coder.cinclude.html">
+<name>coder.cinclude</name>
+<purpose>Include header file in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.opaque.html">
+<name>coder.opaque</name>
+<purpose>Declare variable in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.updatebuildinfo.html">
+<name>coder.updateBuildInfo</name>
+<purpose>Update build information object RTW.BuildInfo</purpose>
+</tocitem>
+<tocitem target="ref/coder.externaldependency.getdescriptivename.html">
+<name>coder.ExternalDependency.getDescriptiveName</name>
+<purpose>Return descriptive name for external dependency</purpose>
+</tocitem>
+<tocitem target="ref/coder.externaldependency.issupportedcontext.html">
+<name>coder.ExternalDependency.isSupportedContext</name>
+<purpose>Determine if build context supports external dependency</purpose>
+</tocitem>
+<tocitem target="ref/coder.externaldependency.updatebuildinfo.html">
+<name>coder.ExternalDependency.updateBuildInfo</name>
+<purpose>Update build information</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildconfig.gethardwareimplementation.html">
+<name>coder.BuildConfig.getHardwareImplementation</name>
+<purpose>Get handle of copy of hardware implementation object</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildconfig.getstdlibinfo.html">
+<name>coder.BuildConfig.getStdLibInfo</name>
+<purpose>Get standard library information</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildconfig.gettargetlang.html">
+<name>coder.BuildConfig.getTargetLang</name>
+<purpose>Get target code generation language</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildconfig.gettoolchaininfo.html">
+<name>coder.BuildConfig.getToolchainInfo</name>
+<purpose>Returns handle of copy of toolchain information object</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildconfig.iscodegentarget.html">
+<name>coder.BuildConfig.isCodeGenTarget</name>
+<purpose>Determine if build configuration represents specified
+target</purpose>
+</tocitem>
+<tocitem target="ref/coder.buildconfig.ismatlabhosttarget.html">
+<name>coder.BuildConfig.isMatlabHostTarget</name>
+<purpose>Determine if hardware implementation object target is MATLAB host
+computer</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="build-configuration.html">Build Configuration
+<tocitem target="ref/coder.config.html">
+<name>coder.config</name>
+<purpose>Create MATLAB
+            Coder code generation configuration objects</purpose>
+</tocitem>
+<tocitem target="ref/coder.updatebuildinfo.html">
+<name>coder.updateBuildInfo</name>
+<purpose>Update build information object RTW.BuildInfo</purpose>
+</tocitem>
+<tocitem target="ref/target.add.html">
+<name>target.add</name>
+<purpose>Add target  feature object to MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.create.html">
+<name>target.create</name>
+<purpose>Create target feature object</purpose>
+</tocitem>
+<tocitem target="ref/target.export.html">
+<name>target.export</name>
+<purpose>Export target feature data</purpose>
+</tocitem>
+<tocitem target="ref/target.get.html">
+<name>target.get</name>
+<purpose>Retrieve target feature object from MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.remove.html">
+<name>target.remove</name>
+<purpose>Remove target feature object from MATLAB memory</purpose>
+</tocitem>
+<tocitem target="ref/target.upgrade.html">
+<name>target.upgrade</name>
+<purpose>Upgrade existing definitions of hardware devices</purpose>
+</tocitem>
+<tocitem target="ref/target.object.validate.html">
+<name>validate</name>
+<purpose>Validate data integrity of target feature object </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-verification.html">Code Verification
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/coder.config.html">
+<name>coder.config</name>
+<purpose>Create MATLAB
+            Coder code generation configuration objects</purpose>
+</tocitem>
+<tocitem target="ref/coder.runtest.html">
+<name>coder.runTest</name>
+<purpose>Run test replacing calls to MATLAB functions with
+calls to MEX functions</purpose>
+</tocitem>
+<tocitem target="ref/coder.function.getlinecolumn.html">
+<name>getLineColumn</name>
+<purpose>Find locations of beginning and end of MATLAB code involved in code generation</purpose>
+</tocitem>
+<tocitem target="ref/coder.ignoreconst.html">
+<name>coder.ignoreConst</name>
+<purpose>Prevent use of constant value of expression for function
+specializations</purpose>
+</tocitem>
+<tocitem target="ref/coder.ignoresize.html">
+<name>coder.ignoreSize</name>
+<purpose>Prevent code generator from creating function specializations for constant-size
+      expressions</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="deployment.html">Deployment
+<tocitem target="deployment-basics.html">Deployment Basics
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.cinclude.html">
+<name>coder.cinclude</name>
+<purpose>Include header file in generated code</purpose>
+</tocitem>
+<tocitem target="ref/packngo.html">
+<name>packNGo</name>
+<purpose>Package generated code in zip file for relocation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="source-code-and-binary-deployment.html">Source Code and Binary Deployment
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.cinclude.html">
+<name>coder.cinclude</name>
+<purpose>Include header file in generated code</purpose>
+</tocitem>
+<tocitem target="ref/packngo.html">
+<name>packNGo</name>
+<purpose>Package generated code in zip file for relocation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="custom-toolchain-registration.html">Custom Toolchain Registration
+<tocitem target="ref/coder.make.buildconfiguration.addoption.html">
+<name>coder.make.BuildConfiguration.addOption</name>
+<purpose>Add new option</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildconfiguration.getoption.html">
+<name>coder.make.BuildConfiguration.getOption</name>
+<purpose>Get value of option</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildconfiguration.info.html">
+<name>coder.make.BuildConfiguration.info</name>
+<purpose>Get information about build configuration</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildconfiguration.isoption.html">
+<name>coder.make.BuildConfiguration.isOption</name>
+<purpose>Determine if option exists</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildconfiguration.keys.html">
+<name>coder.make.BuildConfiguration.keys</name>
+<purpose>Get all option names</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildconfiguration.setoption.html">
+<name>coder.make.BuildConfiguration.setOption</name>
+<purpose>Set value of option</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildconfiguration.values.html">
+<name>coder.make.BuildConfiguration.values</name>
+<purpose>Get all option values</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.builditem.getmacro.html">
+<name>coder.make.BuildItem.getMacro</name>
+<purpose>Get macro name of build item</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.builditem.getvalue.html">
+<name>coder.make.BuildItem.getValue</name>
+<purpose>Get value of build item</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.builditem.setmacro.html">
+<name>coder.make.BuildItem.setMacro</name>
+<purpose>Set macro name of build item</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.builditem.setvalue.html">
+<name>coder.make.BuildItem.setValue</name>
+<purpose>Set value of build item</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.adddirective.html">
+<name>coder.make.BuildTool.addDirective</name>
+<purpose>Add directive to Directives</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.addfileextension.html">
+<name>coder.make.BuildTool.addFileExtension</name>
+<purpose>Add new file extension entry to FileExtensions</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.getcommand.html">
+<name>coder.make.BuildTool.getCommand</name>
+<purpose>Get build tool command</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.getdirective.html">
+<name>coder.make.BuildTool.getDirective</name>
+<purpose>Get value of named directive from Directives</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.getfileextension.html">
+<name>coder.make.BuildTool.getFileExtension</name>
+<purpose>Get file extension for named file type in FileExtensions</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.getname.html">
+<name>coder.make.BuildTool.getName</name>
+<purpose>Get build tool name</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.getpath.html">
+<name>coder.make.BuildTool.getPath</name>
+<purpose>Get path and macro of build tool in Path</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.info.html">
+<name>coder.make.BuildTool.info</name>
+<purpose>Display build tool properties and values</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setcommandpattern.html">
+<name>coder.make.BuildTool.setCommandPattern</name>
+<purpose>Set pattern of commands for build tools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setcommand.html">
+<name>coder.make.BuildTool.setCommand</name>
+<purpose>Set build tool command</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setcompileroptionmap.html">
+<name>coder.make.BuildTool.setCompilerOptionMap</name>
+<purpose>Set C/C++ language standard and compiler options for selected
+build tool (compiler)</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setdirective.html">
+<name>coder.make.BuildTool.setDirective</name>
+<purpose>Set value of directive in Directives</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setfileextension.html">
+<name>coder.make.BuildTool.setFileExtension</name>
+<purpose>Set file extension for named file type in FileExtensions</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setname.html">
+<name>coder.make.BuildTool.setName</name>
+<purpose>Set build tool name</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.setpath.html">
+<name>coder.make.BuildTool.setPath</name>
+<purpose>Set path and macro of build tool in Path</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.buildtool.validate.html">
+<name>coder.make.BuildTool.validate</name>
+<purpose>Validate build tool properties</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.getdefaulttoolchain.html">
+<name>coder.make.getDefaultToolchain</name>
+<purpose>Get DefaultToolchain name from
+      registry</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.gettoolchaininfofromregistry.html">
+<name>coder.make.getToolchainInfoFromRegistry</name>
+<purpose>Get copy of selected ToolchainInfo object from
+      registry</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addattribute.html">
+<name>coder.make.ToolchainInfo.addAttribute</name>
+<purpose>Add custom attribute to Attributes</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addbuildconfiguration.html">
+<name>coder.make.ToolchainInfo.addBuildConfiguration</name>
+<purpose>Add build configuration</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addbuildtool.html">
+<name>coder.make.ToolchainInfo.addBuildTool</name>
+<purpose>Add BuildTool object to BuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addintrinsicmacros.html">
+<name>coder.make.ToolchainInfo.addIntrinsicMacros</name>
+<purpose>Add intrinsic macro to Macros</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addmacro.html">
+<name>coder.make.ToolchainInfo.addMacro</name>
+<purpose>Add macro to Macros</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addpostbuildtool.html">
+<name>coder.make.ToolchainInfo.addPostbuildTool</name>
+<purpose>Add postbuild tool to PostbuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addpostdownloadtool.html">
+<name>coder.make.ToolchainInfo.addPostDownloadTool</name>
+<purpose>Add post-download tool to PostDownloadTool</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addpostexecutetool.html">
+<name>coder.make.ToolchainInfo.addPostExecuteTool</name>
+<purpose>Add post-execute tool to PostbuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.addprebuildtool.html">
+<name>coder.make.ToolchainInfo.addPrebuildTool</name>
+<purpose>Add prebuild tool to PrebuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.cleanup.html">
+<name>coder.make.ToolchainInfo.cleanup</name>
+<purpose>Run cleanup commands</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getattribute.html">
+<name>coder.make.ToolchainInfo.getAttribute</name>
+<purpose>Get value of attribute</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getattributes.html">
+<name>coder.make.ToolchainInfo.getAttributes</name>
+<purpose>Get list of attribute names</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getbuildconfiguration.html">
+<name>coder.make.ToolchainInfo.getBuildConfiguration</name>
+<purpose>Get handle for build configuration object</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getbuildtool.html">
+<name>coder.make.ToolchainInfo.getBuildTool</name>
+<purpose>Get BuildTool object</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getmacro.html">
+<name>coder.make.ToolchainInfo.getMacro</name>
+<purpose>Get value of macro</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getpostbuildtool.html">
+<name>coder.make.ToolchainInfo.getPostbuildTool</name>
+<purpose>Get postbuild BuildTool object</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getprebuildtool.html">
+<name>coder.make.ToolchainInfo.getPrebuildTool</name>
+<purpose>Get prebuild BuildTool object</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.getsupportedlanguages.html">
+<name>coder.make.ToolchainInfo.getSupportedLanguages</name>
+<purpose>Get list of supported languages</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.isattribute.html">
+<name>coder.make.ToolchainInfo.isAttribute</name>
+<purpose>Determine if attribute exists</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removeattribute.html">
+<name>coder.make.ToolchainInfo.removeAttribute</name>
+<purpose>Remove attribute</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removebuildconfiguration.html">
+<name>coder.make.ToolchainInfo.removeBuildConfiguration</name>
+<purpose>Remove build configuration</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removebuildtool.html">
+<name>coder.make.ToolchainInfo.removeBuildTool</name>
+<purpose>Remove BuildTool object from BuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removeintrinsicmacros.html">
+<name>coder.make.ToolchainInfo.removeIntrinsicMacros</name>
+<purpose>Remove intrinsic macro</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removemacro.html">
+<name>coder.make.ToolchainInfo.removeMacro</name>
+<purpose>Remove macro from Macros</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removepostbuildtool.html">
+<name>coder.make.ToolchainInfo.removePostbuildTool</name>
+<purpose>Remove postbuild build tool</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.removeprebuildtool.html">
+<name>coder.make.ToolchainInfo.removePrebuildTool</name>
+<purpose>Remove prebuild build tool</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setbuildconfiguration.html">
+<name>coder.make.ToolchainInfo.setBuildConfiguration</name>
+<purpose>Set value of specified build configuration</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setbuildconfigurationoption.html">
+<name>coder.make.ToolchainInfo.setBuildConfigurationOption</name>
+<purpose>Sets value of build tool options for build configuration</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setbuilderapplication.html">
+<name>coder.make.ToolchainInfo.setBuilderApplication</name>
+<purpose>Update builder application to work on specific platform</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setbuildtool.html">
+<name>coder.make.ToolchainInfo.setBuildTool</name>
+<purpose>Assign BuildTool object to named build
+tool in BuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setmacro.html">
+<name>coder.make.ToolchainInfo.setMacro</name>
+<purpose>Set value of macro</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setpostbuildtool.html">
+<name>coder.make.ToolchainInfo.setPostbuildTool</name>
+<purpose>Assign BuildTool object to PostbuildTool tool
+in PostbuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setprebuildtool.html">
+<name>coder.make.ToolchainInfo.setPrebuildTool</name>
+<purpose>Assign BuildTool object to named PrebuildTool in PrebuildTools</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.setup.html">
+<name>coder.make.ToolchainInfo.setup</name>
+<purpose>Invoke toolchain setup commands specified by MATLABSetup
+and ShellSetup</purpose>
+</tocitem>
+<tocitem target="ref/coder.make.toolchaininfo.validate.html">
+<name>coder.make.ToolchainInfo.validate</name>
+<purpose>Validate toolchain</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="performance.html">Performance
+<tocitem target="code-generation-time.html">Code Generation Time
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="optimize-speed-of-generated-code.html">Execution Speed
+<tocitem target="ref/parfor.html">
+<name>parfor</name>
+<purpose>Parallel for-loop</purpose>
+</tocitem>
+<tocitem target="ref/coder.varsize.html">
+<name>coder.varsize</name>
+<purpose>Declare variable-size data</purpose>
+</tocitem>
+<tocitem target="ref/coder.const.html">
+<name>coder.const</name>
+<purpose>Fold expressions into constants in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.inline.html">
+<name>coder.inline</name>
+<purpose>Control inlining in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.unroll.html">
+<name>coder.unroll</name>
+<purpose>Unroll for-loop by making a copy of
+the loop body for each loop iteration</purpose>
+</tocitem>
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+<tocitem target="ref/coder.lapackcallback.getheaderfilename.html">
+<name>coder.LAPACKCallback.getHeaderFilename</name>
+<purpose>Return file name of LAPACKE header file</purpose>
+</tocitem>
+<tocitem target="ref/coder.lapackcallback.updatebuildinfo.html">
+<name>coder.LAPACKCallback.updateBuildInfo</name>
+<purpose>Update build information for linking to a specific LAPACK
+library</purpose>
+</tocitem>
+<tocitem target="ref/coder.blascallback.updatebuildinfo.html">
+<name>coder.BLASCallback.updateBuildInfo</name>
+<purpose> Update build information for linking to a specific BLAS library</purpose>
+</tocitem>
+<tocitem target="ref/coder.blascallback.getheaderfilename.html">
+<name>coder.BLASCallback.getHeaderFilename</name>
+<purpose> Return the file name of CBLAS header file</purpose>
+</tocitem>
+<tocitem target="ref/coder.blascallback.getblasinttypename.html">
+<name>coder.BLASCallback.getBLASIntTypeName</name>
+<purpose> Return name of integer data type used by CBLAS interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.blascallback.getblasdoublecomplextypename.html">
+<name>coder.BLASCallback.getBLASDoubleComplexTypeName</name>
+<purpose> Return name of double-precision complex data type used by CBLAS
+      interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.blascallback.getblassinglecomplextypename.html">
+<name>coder.BLASCallback.getBLASSingleComplexTypeName</name>
+<purpose> Return name of single-precision complex data type used by CBLAS
+      interface</purpose>
+</tocitem>
+<tocitem target="ref/coder.blascallback.useenumnameratherthantypedef.html">
+<name>coder.BLASCallback.getEnumNameRatherThanTypedef</name>
+<purpose> Specify whether types for enumerations in a BLAS library include the
+        enum keyword</purpose>
+</tocitem>
+<tocitem target="ref/coder.fftw.standalonefftw3interface.getnumthreads.html">
+<name>coder.fftw.StandaloneFFTW3Interface.getNumThreads</name>
+<purpose> Return number of threads to use for FFTW library calls</purpose>
+</tocitem>
+<tocitem target="ref/coder.fftw.standalonefftw3interface.getplanmethod.html">
+<name>coder.fftw.StandaloneFFTW3Interface.getPlanMethod</name>
+<purpose>Return FFTW planning method </purpose>
+</tocitem>
+<tocitem target="ref/coder.fftw.standalonefftw3interface.updatebuildinfo.html">
+<name>coder.fftw.StandaloneFFTW3Interface.updateBuildInfo</name>
+<purpose> Update the build information for linking to a specific FFTW
+            library</purpose>
+</tocitem>
+<tocitem target="ref/coder.fftw.standalonefftw3interface.lock.html">
+<name>coder.fftw.StandaloneFFTW3Interface.lock</name>
+<purpose> Lock access to FFTW planning</purpose>
+</tocitem>
+<tocitem target="ref/coder.fftw.standalonefftw3interface.unlock.html">
+<name>coder.fftw.StandaloneFFTW3Interface.unlock</name>
+<purpose> Unlock access to FFTW planning</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="optimize-size-of-generated-code.html">Memory Usage
+<tocitem target="ref/coder.inline.html">
+<name>coder.inline</name>
+<purpose>Control inlining in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.const.html">
+<name>coder.const</name>
+<purpose>Fold expressions into constants in generated code</purpose>
+</tocitem>
+<tocitem target="ref/coder.ceval.html">
+<name>coder.ceval</name>
+<purpose>Call external C/C++ function</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="matlab-algorithm-acceleration.html">MATLAB Algorithm Acceleration
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="numeric-type-conversion.html">Numeric Conversion
+<tocitem target="fixed-point-conversion.html">Fixed-Point Conversion
+<tocitem target="ref/coder.html">
+<name>coder</name>
+<purpose>Open MATLAB
+            Coder app</purpose>
+</tocitem>
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/coder.config.html">
+<name>coder.config</name>
+<purpose>Create MATLAB
+            Coder code generation configuration objects</purpose>
+</tocitem>
+<tocitem target="ref/coder.approximation.html">
+<name>coder.approximation</name>
+<purpose>Create function replacement configuration object</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.addapproximation.html">
+<name>coder.FixptConfig.addApproximation</name>
+<purpose>Replace floating-point function with lookup table during
+fixed-point conversion</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.adddesignrangespecification.html">
+<name>coder.FixptConfig.addDesignRangeSpecification</name>
+<purpose>Add design range specification
+to parameter</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.addfunctionreplacement.html">
+<name>coder.FixptConfig.addFunctionReplacement</name>
+<purpose>Replace floating-point
+function with fixed-point function during fixed-point conversion</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.cleardesignrangespecifications.html">
+<name>coder.FixptConfig.clearDesignRangeSpecifications</name>
+<purpose>Clear all design range
+specifications</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.getdesignrangespecification.html">
+<name>coder.FixptConfig.getDesignRangeSpecification</name>
+<purpose>Get design range specifications
+for parameter</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.hasdesignrangespecification.html">
+<name>coder.FixptConfig.hasDesignRangeSpecification</name>
+<purpose>Determine whether parameter
+has design range</purpose>
+</tocitem>
+<tocitem target="ref/coder.fixptconfig.removedesignrangespecification.html">
+<name>coder.FixptConfig.removeDesignRangeSpecification</name>
+<purpose>Remove design range specification from parameter</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="single-precision-conversion.html">Single-Precision Conversion
+<tocitem target="ref/coder.html">
+<name>coder</name>
+<purpose>Open MATLAB
+            Coder app</purpose>
+</tocitem>
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/coder.config.html">
+<name>coder.config</name>
+<purpose>Create MATLAB
+            Coder code generation configuration objects</purpose>
+</tocitem>
+<tocitem target="ref/coder.singleconfig.addfunctionreplacement.html">
+<name>coder.SingleConfig.addFunctionReplacement</name>
+<purpose>Replace double-precision function with single-precision
+function during single-precision conversion</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="deep-learning-with-matlab-coder.html">Deep Learning with MATLAB
+            Coder
+<tocitem target="ref/codegen.html">
+<name>codegen</name>
+<purpose>Generate C/C++ code from
+        MATLAB code</purpose>
+</tocitem>
+<tocitem target="ref/cnncodegen.html">
+<name>cnncodegen</name>
+<purpose>Generate code and build static library for Series or DAG Network</purpose>
+</tocitem>
+<tocitem target="ref/coder.loaddeeplearningnetwork.html">
+<name>coder.loadDeepLearningNetwork</name>
+<purpose>Load deep learning network model</purpose>
+</tocitem>
+<tocitem target="ref/coder.deeplearningconfig.html">
+<name>coder.DeepLearningConfig</name>
+<purpose>Create deep learning code generation configuration objects</purpose>
+</tocitem>
+<tocitem target="ref/coder.armneonconfig.html">
+<name>coder.ARMNEONConfig</name>
+<purpose>Parameters to configure deep learning code generation with the ARM Compute Library</purpose>
+</tocitem>
+<tocitem target="ref/coder.mkldnnconfig.html">
+<name>coder.MklDNNConfig</name>
+<purpose>Parameters to configure deep learning code generation with the Intel Math Kernel Library for Deep Neural Networks</purpose>
+</tocitem>
+<tocitem target="ref/coder.getdeeplearninglayers.html">
+<name>coder.getDeepLearningLayers</name>
+<purpose>Get convolutional neural network layers supported for code generation for a specific
+      deep learning library</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="chart-programming.html">Chart Programming
+<tocitem target="programmatic-interface.html">Stateflow Programmatic Interface
+<tocitem target="ref/sfgco.html">
+<name>sfgco</name>
+<purpose>Recently selected objects in chart</purpose>
+</tocitem>
+<tocitem target="ref/sfclipboard.html">
+<name>sfclipboard</name>
+<purpose>Stateflow clipboard object</purpose>
+</tocitem>
+<tocitem target="ref/sfclose.html">
+<name>sfclose</name>
+<purpose>Close chart</purpose>
+</tocitem>
+<tocitem target="ref/sfnew.html">
+<name>sfnew</name>
+<purpose>Create Simulink model that contains an empty Stateflow block</purpose>
+</tocitem>
+<tocitem target="ref/sfopen.html">
+<name>sfopen</name>
+<purpose>Open existing model</purpose>
+</tocitem>
+<tocitem target="ref/sfprint.html">
+<name>sfprint</name>
+<purpose>Print graphical view of charts</purpose>
+</tocitem>
+<tocitem target="ref/sfroot.html">
+<name>sfroot</name>
+<purpose>Root object</purpose>
+</tocitem>
+<tocitem target="ref/sfsave.html">
+<name>sfsave</name>
+<purpose>Save chart in current folder</purpose>
+</tocitem>
+<tocitem target="ref/sfhelp.html">
+<name>sfhelp</name>
+<purpose>Open Stateflow online help</purpose>
+</tocitem>
+<tocitem target="ref/sflib.html">
+<name>sflib</name>
+<purpose>Open Stateflow library window</purpose>
+</tocitem>
+<tocitem target="ref/stateflow.html">
+<name>stateflow</name>
+<purpose>Open Stateflow library window and create Simulink model that contains an empty chart</purpose>
+</tocitem>
+<tocitem target="ref/sfdebugger.html">
+<name>sfdebugger</name>
+<purpose>Open Stateflow Debugger</purpose>
+</tocitem>
+<tocitem target="ref/sfexplr.html">
+<name>sfexplr</name>
+<purpose>Open Model Explorer</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="execution-in-matlab.html">Execution in MATLAB
+<tocitem target="ref/stateflow.exportasclass.html">
+<name>Stateflow.exportAsClass</name>
+<purpose>Export MATLAB class for standalone chart</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

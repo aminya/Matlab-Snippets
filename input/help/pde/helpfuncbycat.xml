@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="geometry-and-mesh.html">Geometry and Mesh
+<tocitem target="ug/pde.pdemodel.importgeometry.html">
+<name>importGeometry</name>
+<purpose>Import 2-D or 3-D geometry from STL data</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.geometryfrommesh.html">
+<name>geometryFromMesh</name>
+<purpose>Create 2-D or 3-D geometry from mesh</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.geometryfromedges.html">
+<name>geometryFromEdges</name>
+<purpose>Create 2-D geometry from decomposed geometry matrix</purpose>
+</tocitem>
+<tocitem target="ug/decsg.html">
+<name>decsg</name>
+<purpose>Decompose constructive solid 2-D geometry into minimal regions</purpose>
+</tocitem>
+<tocitem target="ug/multicuboid.html">
+<name>multicuboid</name>
+<purpose>Create geometry formed by several cubic cells</purpose>
+</tocitem>
+<tocitem target="ug/multicylinder.html">
+<name>multicylinder</name>
+<purpose>Create geometry formed by several cylindrical cells</purpose>
+</tocitem>
+<tocitem target="ug/multisphere.html">
+<name>multisphere</name>
+<purpose>Create geometry formed by several spherical cells</purpose>
+</tocitem>
+<tocitem target="ug/pdegplot.html">
+<name>pdegplot</name>
+<purpose>Plot PDE geometry</purpose>
+</tocitem>
+<tocitem target="ug/addvertex.html">
+<name>addVertex</name>
+<purpose>Add a vertex on a geometry boundary</purpose>
+</tocitem>
+<tocitem target="ug/csgchk.html">
+<name>csgchk</name>
+<purpose>Check validity of Geometry Description matrix</purpose>
+</tocitem>
+<tocitem target="ug/csgdel.html">
+<name>csgdel</name>
+<purpose>Delete borders between minimal regions</purpose>
+</tocitem>
+<tocitem target="ug/pdearcl.html">
+<name>pdearcl</name>
+<purpose>Interpolation between parametric representation and arc
+length</purpose>
+</tocitem>
+<tocitem target="ug/wgeom.html">
+<name>wgeom</name>
+<purpose>Write geometry specification function</purpose>
+</tocitem>
+<tocitem target="ug/pdecirc.html">
+<name>pdecirc</name>
+<purpose>Draw circle in PDE Modeler app</purpose>
+</tocitem>
+<tocitem target="ug/pdeellip.html">
+<name>pdeellip</name>
+<purpose>Draw ellipse in PDE Modeler app</purpose>
+</tocitem>
+<tocitem target="ug/pdepoly.html">
+<name>pdepoly</name>
+<purpose>Draw polygon in PDE Modeler app</purpose>
+</tocitem>
+<tocitem target="ug/pderect.html">
+<name>pderect</name>
+<purpose>Draw rectangle in PDE Modeler app</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.generatemesh.html">
+<name>generateMesh</name>
+<purpose>Create triangular or tetrahedral mesh</purpose>
+</tocitem>
+<tocitem target="ug/pde.femesh.meshquality.html">
+<name>meshQuality</name>
+<purpose>Evaluate shape quality of mesh elements</purpose>
+</tocitem>
+<tocitem target="ug/pde.femesh.findelements.html">
+<name>findElements</name>
+<purpose>Find mesh elements in specified region</purpose>
+</tocitem>
+<tocitem target="ug/pde.femesh.findnodes.html">
+<name>findNodes</name>
+<purpose>Find mesh nodes in specified region</purpose>
+</tocitem>
+<tocitem target="ug/pde.femesh.area.html">
+<name>area</name>
+<purpose>Area of 2-D mesh elements</purpose>
+</tocitem>
+<tocitem target="ug/pde.femesh.volume.html">
+<name>volume</name>
+<purpose>Volume of 3-D mesh elements</purpose>
+</tocitem>
+<tocitem target="ug/pdemesh.html">
+<name>pdemesh</name>
+<purpose>Plot PDE mesh</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot.html">
+<name>pdeplot</name>
+<purpose>Plot solution or mesh for 2-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot3d.html">
+<name>pdeplot3D</name>
+<purpose>Plot solution or surface mesh for 3-D problem</purpose>
+</tocitem>
+<tocitem target="ug/adaptmesh.html">
+<name>adaptmesh</name>
+<purpose>Adaptive 2-D mesh generation and PDE solution</purpose>
+</tocitem>
+<tocitem target="ug/initmesh.html">
+<name>initmesh</name>
+<purpose>Create initial 2-D mesh</purpose>
+</tocitem>
+<tocitem target="ug/pde.femesh.meshtopet.html">
+<name>meshToPet</name>
+<purpose>[p,e,t] representation of FEMesh
+            data</purpose>
+</tocitem>
+<tocitem target="ug/jigglemesh.html">
+<name>jigglemesh</name>
+<purpose>(Not recommended) Jiggle internal points of triangular mesh</purpose>
+</tocitem>
+<tocitem target="ug/refinemesh.html">
+<name>refinemesh</name>
+<purpose>Refine triangular mesh</purpose>
+</tocitem>
+<tocitem target="ug/pdeent.html">
+<name>pdeent</name>
+<purpose>Indices of triangles neighboring given set of triangles</purpose>
+</tocitem>
+<tocitem target="ug/pdesdp.html">
+<name>pdesde</name>
+<purpose>Indices of points/edges/triangles in set of subdomains</purpose>
+</tocitem>
+<tocitem target="ug/pdeadgsc.html">
+<name>pdeadgsc</name>
+<purpose>(Not recommended) Select triangles using relative tolerance
+            criterion</purpose>
+</tocitem>
+<tocitem target="ug/pdeadworst.html">
+<name>pdeadworst</name>
+<purpose>(Not recommended) Select triangles relative to worst value</purpose>
+</tocitem>
+<tocitem target="ug/poimesh.html">
+<name>poimesh</name>
+<purpose>(Not recommended) Make regular mesh on rectangular geometry</purpose>
+</tocitem>
+<tocitem target="ug/pdesdp.html">
+<name>pdesdp</name>
+<purpose>Indices of points/edges/triangles in set of subdomains</purpose>
+</tocitem>
+<tocitem target="ug/pdesdp.html">
+<name>pdesdt</name>
+<purpose>Indices of points/edges/triangles in set of subdomains</purpose>
+</tocitem>
+<tocitem target="ug/pdetrg.html">
+<name>pdetrg</name>
+<purpose>(Not recommended) Triangle geometry data</purpose>
+</tocitem>
+<tocitem target="ug/pdetriq.html">
+<name>pdetriq</name>
+<purpose>(Not recommended) Triangle quality measure</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="structural-mechanics-equations.html">Structural Mechanics
+<tocitem target="ug/createpde.html">
+<name>createpde</name>
+<purpose>Create model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.structuralproperties.html">
+<name>structuralProperties</name>
+<purpose>Assign structural properties of material for structural model</purpose>
+</tocitem>
+<tocitem target="ug/structuraldamping.html">
+<name>structuralDamping</name>
+<purpose>Specify damping parameters for transient or frequency response structural
+            model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.structuralbodyload.html">
+<name>structuralBodyLoad</name>
+<purpose>Specify body load for structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.structuralboundaryload.html">
+<name>structuralBoundaryLoad</name>
+<purpose>Specify boundary loads for structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.structuralbc.html">
+<name>structuralBC</name>
+<purpose> Specify boundary conditions for structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.structuralic.html">
+<name>structuralIC</name>
+<purpose>Set initial conditions for a transient structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.structuralseinterface.html">
+<name>structuralSEInterface</name>
+<purpose>Specify structural superelement interface for component mode synthesis</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmodel.solve.html">
+<name>solve</name>
+<purpose>Solve heat transfer or structural analysis problem</purpose>
+</tocitem>
+<tocitem target="ug/assemblefematrices.html">
+<name>assembleFEMatrices</name>
+<purpose>Assemble finite element matrices</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmodel.reduce.html">
+<name>reduce</name>
+<purpose>Reduce structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.reducedstructuralmodel.reconstructsolution.html">
+<name>reconstructSolution</name>
+<purpose>Recover full-model transient solution from reduced-order model results</purpose>
+</tocitem>
+<tocitem target="ug/pde.transientstructuralresults.evaluatestress.html">
+<name>evaluateStress</name>
+<purpose>Evaluate stress for dynamic structural analysis problem</purpose>
+</tocitem>
+<tocitem target="ug/pde.transientstructuralresults.evaluatestrain.html">
+<name>evaluateStrain</name>
+<purpose>Evaluate strain for dynamic structural analysis problem</purpose>
+</tocitem>
+<tocitem target="ug/pde.transientstructuralresults.evaluatevonmisesstress.html">
+<name>evaluateVonMisesStress</name>
+<purpose>Evaluate von Mises stress for dynamic structural analysis problem</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.evaluatereaction.html">
+<name>evaluateReaction</name>
+<purpose>Evaluate reaction forces on boundary</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.evaluateprincipalstress.html">
+<name>evaluatePrincipalStress</name>
+<purpose>Evaluate principal stress at nodal locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.evaluateprincipalstrain.html">
+<name>evaluatePrincipalStrain</name>
+<purpose>Evaluate principal strain at nodal locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.interpolatedisplacement.html">
+<name>interpolateDisplacement</name>
+<purpose>Interpolate displacement at arbitrary spatial locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.transientstructuralresults.interpolatevelocity.html">
+<name>interpolateVelocity</name>
+<purpose>Interpolate velocity at arbitrary spatial locations for all time or frequency
+            steps for dynamic structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.transientstructuralresults.interpolateacceleration.html">
+<name>interpolateAcceleration</name>
+<purpose>Interpolate acceleration at arbitrary spatial locations for all time or
+            frequency steps for dynamic structural model</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.interpolatestress.html">
+<name>interpolateStress</name>
+<purpose>Interpolate stress at arbitrary spatial locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.interpolatestrain.html">
+<name>interpolateStrain</name>
+<purpose>Interpolate strain at arbitrary spatial locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.staticstructuralresults.interpolatevonmisesstress.html">
+<name>interpolateVonMisesStress</name>
+<purpose>Interpolate von Mises stress at arbitrary spatial locations</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot.html">
+<name>pdeplot</name>
+<purpose>Plot solution or mesh for 2-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot3d.html">
+<name>pdeplot3D</name>
+<purpose>Plot solution or surface mesh for 3-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdegplot.html">
+<name>pdegplot</name>
+<purpose>Plot PDE geometry</purpose>
+</tocitem>
+<tocitem target="ug/pdemesh.html">
+<name>pdemesh</name>
+<purpose>Plot PDE mesh</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralmaterialassignmentrecords.findstructuralproperties.html">
+<name>findStructuralProperties</name>
+<purpose>Find structural material properties assigned to geometric region</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuraldampingassignmentrecords.findstructuraldamping.html">
+<name>findStructuralDamping</name>
+<purpose>Find damping model assigned to structural dynamics model</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralbcrecords.findstructuralbc.html">
+<name>findStructuralBC</name>
+<purpose>Find structural boundary conditions and boundary loads assigned to geometric
+            region</purpose>
+</tocitem>
+<tocitem target="ug/pde.structuralicrecords.findstructuralic.html">
+<name>findStructuralIC</name>
+<purpose>Find initial displacement and velocity assigned to geometric region</purpose>
+</tocitem>
+<tocitem target="ug/pde.bodyloadassignmentrecords.findbodyload.html">
+<name>findBodyLoad</name>
+<purpose>Find body load assigned to geometric region</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="heat-transfer-and-diffusion-equations.html">Heat Transfer
+<tocitem target="ug/createpde.html">
+<name>createpde</name>
+<purpose>Create model</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmodel.thermalproperties.html">
+<name>thermalProperties</name>
+<purpose>Assign thermal properties of a material for a thermal model</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmodel.internalheatsource.html">
+<name>internalHeatSource</name>
+<purpose>Specify internal heat source for a thermal model</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmodel.thermalbc.html">
+<name>thermalBC</name>
+<purpose>Specify boundary conditions for a thermal model</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmodel.thermalic.html">
+<name>thermalIC</name>
+<purpose>Set initial conditions or initial guess for a thermal model</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmodel.solve.html">
+<name>solve</name>
+<purpose>Solve heat transfer or structural analysis problem</purpose>
+</tocitem>
+<tocitem target="ug/assemblefematrices.html">
+<name>assembleFEMatrices</name>
+<purpose>Assemble finite element matrices</purpose>
+</tocitem>
+<tocitem target="ug/pde.steadystatethermalresults.interpolatetemperature.html">
+<name>interpolateTemperature</name>
+<purpose>Interpolate temperature in a thermal result at arbitrary spatial
+            locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.steadystatethermalresults.evaluatetemperaturegradient.html">
+<name>evaluateTemperatureGradient</name>
+<purpose>Evaluate temperature gradient of a thermal solution at arbitrary spatial
+            locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.steadystatethermalresults.evaluateheatflux.html">
+<name>evaluateHeatFlux</name>
+<purpose>Evaluate heat flux of a thermal solution at nodal or arbitrary spatial
+            locations</purpose>
+</tocitem>
+<tocitem target="ug/pde.steadystatethermalresults.evaluateheatrate.html">
+<name>evaluateHeatRate</name>
+<purpose>Evaluate integrated heat flow rate normal to specified boundary</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot.html">
+<name>pdeplot</name>
+<purpose>Plot solution or mesh for 2-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot3d.html">
+<name>pdeplot3D</name>
+<purpose>Plot solution or surface mesh for 3-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdegplot.html">
+<name>pdegplot</name>
+<purpose>Plot PDE geometry</purpose>
+</tocitem>
+<tocitem target="ug/pdemesh.html">
+<name>pdemesh</name>
+<purpose>Plot PDE mesh</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalmaterialassignment.findthermalproperties.html">
+<name>findThermalProperties</name>
+<purpose>Find thermal material properties assigned to a geometric region</purpose>
+</tocitem>
+<tocitem target="ug/pde.heatsourceassignmentrecords.findheatsource.html">
+<name>findHeatSource</name>
+<purpose>Find heat source assigned to a geometric region</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalbcrecords.findthermalbc.html">
+<name>findThermalBC</name>
+<purpose>Find thermal boundary conditions assigned to a geometric region</purpose>
+</tocitem>
+<tocitem target="ug/pde.thermalicrecords.findthermalic.html">
+<name>findThermalIC</name>
+<purpose>Find thermal initial conditions assigned to a geometric region</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="pde-problem-setup.html">General PDEs
+<tocitem target="ug/createpde.html">
+<name>createpde</name>
+<purpose>Create model</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.applyboundarycondition.html">
+<name>applyBoundaryCondition</name>
+<purpose>Add boundary condition to PDEModel container</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.specifycoefficients.html">
+<name>specifyCoefficients</name>
+<purpose>Specify coefficients in a PDE model</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.setinitialconditions.html">
+<name>setInitialConditions</name>
+<purpose>Give initial conditions or initial solution</purpose>
+</tocitem>
+<tocitem target="ug/assemblefematrices.html">
+<name>assembleFEMatrices</name>
+<purpose>Assemble finite element matrices</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.solvepde.html">
+<name>solvepde</name>
+<purpose>Solve PDE specified in a PDEModel</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdemodel.solvepdeeig.html">
+<name>solvepdeeig</name>
+<purpose>Solve PDE eigenvalue problem specified in a PDEModel</purpose>
+</tocitem>
+<tocitem target="ug/pde.stationaryresults.evaluategradient.html">
+<name>evaluateGradient</name>
+<purpose>Evaluate gradients of PDE solutions at arbitrary points</purpose>
+</tocitem>
+<tocitem target="ug/pde.stationaryresults.evaluatecgradient.html">
+<name>evaluateCGradient</name>
+<purpose>Evaluate flux of PDE solution</purpose>
+</tocitem>
+<tocitem target="ug/pde.stationaryresults.interpolatesolution.html">
+<name>interpolateSolution</name>
+<purpose>Interpolate PDE solution to arbitrary points</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot.html">
+<name>pdeplot</name>
+<purpose>Plot solution or mesh for 2-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdeplot3d.html">
+<name>pdeplot3D</name>
+<purpose>Plot solution or surface mesh for 3-D problem</purpose>
+</tocitem>
+<tocitem target="ug/pdegplot.html">
+<name>pdegplot</name>
+<purpose>Plot PDE geometry</purpose>
+</tocitem>
+<tocitem target="ug/pdemesh.html">
+<name>pdemesh</name>
+<purpose>Plot PDE mesh</purpose>
+</tocitem>
+<tocitem target="ug/pde.boundaryconditionrecords.findboundaryconditions.html">
+<name>findBoundaryConditions</name>
+<purpose>Find boundary condition assignment for a geometric region</purpose>
+</tocitem>
+<tocitem target="ug/pde.coefficientassignmentrecords.findcoefficients.html">
+<name>findCoefficients</name>
+<purpose>Locate active PDE coefficients</purpose>
+</tocitem>
+<tocitem target="ug/pde.initialconditionsrecords.findinitialconditions.html">
+<name>findInitialConditions</name>
+<purpose>Locate active initial conditions</purpose>
+</tocitem>
+<tocitem target="ug/createpderesults.html">
+<name>createPDEResults</name>
+<purpose>Create solution object</purpose>
+</tocitem>
+<tocitem target="ug/pde.pdeinterpolant.evaluate.html">
+<name>evaluate</name>
+<purpose>Interpolate data to selected locations</purpose>
+</tocitem>
+<tocitem target="ug/pdecont.html">
+<name>pdecont</name>
+<purpose>Shorthand command for contour plot</purpose>
+</tocitem>
+<tocitem target="ug/pdesurf.html">
+<name>pdesurf</name>
+<purpose>Shorthand command for surface plot</purpose>
+</tocitem>
+<tocitem target="ug/pdeinterpolant.html">
+<name>pdeInterpolant</name>
+<purpose>Interpolant for nodal data to selected locations</purpose>
+</tocitem>
+<tocitem target="ug/wbound.html">
+<name>wbound</name>
+<purpose>(Not recommended) Write boundary condition specification file</purpose>
+</tocitem>
+<tocitem target="ug/dst.html">
+<name>dst</name>
+<purpose>(Not recommended) Discrete sine transform</purpose>
+</tocitem>
+<tocitem target="ug/dst.html">
+<name>idst</name>
+<purpose>(Not recommended) Discrete sine transform</purpose>
+</tocitem>
+<tocitem target="ug/assempde.html">
+<name>assempde</name>
+<purpose>(Not recommended) Assemble finite element matrices and solve elliptic
+            PDE</purpose>
+</tocitem>
+<tocitem target="ug/assema.html">
+<name>assema</name>
+<purpose>(Not recommended) Assemble area integral contributions</purpose>
+</tocitem>
+<tocitem target="ug/assemb.html">
+<name>assemb</name>
+<purpose>(Not recommended) Assemble boundary condition contributions</purpose>
+</tocitem>
+<tocitem target="ug/hyperbolic.html">
+<name>hyperbolic</name>
+<purpose>(Not recommended) Solve hyperbolic PDE problem</purpose>
+</tocitem>
+<tocitem target="ug/parabolic.html">
+<name>parabolic</name>
+<purpose>(Not recommended) Solve parabolic PDE problem</purpose>
+</tocitem>
+<tocitem target="ug/pdeeig.html">
+<name>pdeeig</name>
+<purpose>(Not recommended) Solve eigenvalue PDE problem</purpose>
+</tocitem>
+<tocitem target="ug/pdejmps.html">
+<name>pdejmps</name>
+<purpose>(Not recommended) Error estimates for adaptation</purpose>
+</tocitem>
+<tocitem target="ug/pdenonlin.html">
+<name>pdenonlin</name>
+<purpose>(Not recommended) Solve nonlinear elliptic PDE
+                                    problem</purpose>
+</tocitem>
+<tocitem target="ug/poiasma.html">
+<name>poiasma</name>
+<purpose>(Not recommended) Boundary point matrix contributions for fast
+                                    solvers of Poisson's equation</purpose>
+</tocitem>
+<tocitem target="ug/poicalc.html">
+<name>poicalc</name>
+<purpose>Fast solver for Poisson's equation on rectangular grid</purpose>
+</tocitem>
+<tocitem target="ug/poiindex.html">
+<name>poiindex</name>
+<purpose>(Not recommended) Indices of points in canonical ordering for
+                                    rectangular grid</purpose>
+</tocitem>
+<tocitem target="ug/poisolv.html">
+<name>poisolv</name>
+<purpose>(Not recommended) Fast solution of Poisson's equation on rectangular
+            grid</purpose>
+</tocitem>
+<tocitem target="ug/sptarn.html">
+<name>sptarn</name>
+<purpose>(Not recommended) Solve generalized sparse eigenvalue problem</purpose>
+</tocitem>
+<tocitem target="ug/pdeintrp.html">
+<name>pdeintrp</name>
+<purpose>(Not recommended) Interpolate from node data to triangle midpoint
+            data</purpose>
+</tocitem>
+<tocitem target="ug/pdesmech.html">
+<name>pdesmech</name>
+<purpose>(Not recommended) Calculate structural mechanics tensor functions</purpose>
+</tocitem>
+<tocitem target="ug/pdeprtni.html">
+<name>pdeprtni</name>
+<purpose>(Not recommended) Interpolate from triangle midpoint data to node
+            data</purpose>
+</tocitem>
+<tocitem target="ug/tri2grid.html">
+<name>tri2grid</name>
+<purpose>(Not recommended) Interpolate from PDE triangular mesh to rectangular
+            grid</purpose>
+</tocitem>
+<tocitem target="ug/pdecgrad.html">
+<name>pdecgrad</name>
+<purpose>(Not recommended) Flux of PDE solution</purpose>
+</tocitem>
+<tocitem target="ug/pdegrad.html">
+<name>pdegrad</name>
+<purpose>(Not recommended) Gradient of PDE solution</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

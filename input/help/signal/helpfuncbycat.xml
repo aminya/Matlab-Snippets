@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="signal-generation-and-preprocessing.html">Signal Generation and Preprocessing
+<tocitem target="smoothing-and-denoising.html">Smoothing and Denoising
+<tocitem target="../matlab/ref/detrend.html">
+<name>detrend</name>
+<purpose>Remove polynomial trend</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/filloutliers.html">
+<name>filloutliers</name>
+<purpose>Detect and replace outliers in data</purpose>
+</tocitem>
+<tocitem target="ref/hampel.html">
+<name>hampel</name>
+<purpose>Outlier removal using Hampel identifier</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/isoutlier.html">
+<name>isoutlier</name>
+<purpose>Find outliers in data</purpose>
+</tocitem>
+<tocitem target="ref/medfilt1.html">
+<name>medfilt1</name>
+<purpose>1-D median filtering</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/movmad.html">
+<name>movmad</name>
+<purpose>Moving median absolute deviation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/movmedian.html">
+<name>movmedian</name>
+<purpose>Moving median</purpose>
+</tocitem>
+<tocitem target="ref/sgolay.html">
+<name>sgolay</name>
+<purpose>Savitzky-Golay filter design</purpose>
+</tocitem>
+<tocitem target="ref/sgolayfilt.html">
+<name>sgolayfilt</name>
+<purpose>Savitzky-Golay filtering</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/smoothdata.html">
+<name>smoothdata</name>
+<purpose>Smooth noisy data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="resampling.html">Resampling
+<tocitem target="ref/decimate.html">
+<name>decimate</name>
+<purpose>Decimation — decrease sample rate by integer factor</purpose>
+</tocitem>
+<tocitem target="ref/downsample.html">
+<name>downsample</name>
+<purpose>Decrease sample rate by integer factor</purpose>
+</tocitem>
+<tocitem target="ref/fillgaps.html">
+<name>fillgaps</name>
+<purpose>Fill gaps using autoregressive modeling</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fillmissing.html">
+<name>fillmissing</name>
+<purpose>Fill missing values</purpose>
+</tocitem>
+<tocitem target="ref/interp.html">
+<name>interp</name>
+<purpose>Interpolation — increase sample rate by integer factor</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/interp1.html">
+<name>interp1</name>
+<purpose>1-D data interpolation (table lookup)</purpose>
+</tocitem>
+<tocitem target="ref/intfilt.html">
+<name>intfilt</name>
+<purpose>Interpolation FIR filter design</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/pchip.html">
+<name>pchip</name>
+<purpose>Piecewise Cubic Hermite Interpolating Polynomial (PCHIP)</purpose>
+</tocitem>
+<tocitem target="ref/resample.html">
+<name>resample</name>
+<purpose>Resample uniform or nonuniform data to new fixed rate</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/spline.html">
+<name>spline</name>
+<purpose>Cubic spline data interpolation</purpose>
+</tocitem>
+<tocitem target="ref/upfirdn.html">
+<name>upfirdn</name>
+<purpose>Upsample, apply FIR filter, and downsample</purpose>
+</tocitem>
+<tocitem target="ref/upsample.html">
+<name>upsample</name>
+<purpose>Increase sample rate by integer factor </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="waveform-generation.html">Waveform Generation
+<tocitem target="ref/chirp.html">
+<name>chirp</name>
+<purpose>Swept-frequency cosine</purpose>
+</tocitem>
+<tocitem target="ref/diric.html">
+<name>diric</name>
+<purpose>Dirichlet or periodic sinc function</purpose>
+</tocitem>
+<tocitem target="ref/gauspuls.html">
+<name>gauspuls</name>
+<purpose>Gaussian-modulated sinusoidal RF pulse</purpose>
+</tocitem>
+<tocitem target="ref/gmonopuls.html">
+<name>gmonopuls</name>
+<purpose>Gaussian monopulse</purpose>
+</tocitem>
+<tocitem target="ref/pulstran.html">
+<name>pulstran</name>
+<purpose>Pulse train</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/randn.html">
+<name>randn</name>
+<purpose>Normally distributed random numbers</purpose>
+</tocitem>
+<tocitem target="ref/rectpuls.html">
+<name>rectpuls</name>
+<purpose>Sampled aperiodic rectangle</purpose>
+</tocitem>
+<tocitem target="ref/sawtooth.html">
+<name>sawtooth</name>
+<purpose>Sawtooth or triangle wave</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/sin.html">
+<name>sin</name>
+<purpose>Sine of argument in radians</purpose>
+</tocitem>
+<tocitem target="ref/sinc.html">
+<name>sinc</name>
+<purpose>Sinc function</purpose>
+</tocitem>
+<tocitem target="ref/square.html">
+<name>square</name>
+<purpose>Square wave</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/stem.html">
+<name>stem</name>
+<purpose>Plot discrete sequence data</purpose>
+</tocitem>
+<tocitem target="ref/tripuls.html">
+<name>tripuls</name>
+<purpose>Sampled aperiodic triangle</purpose>
+</tocitem>
+<tocitem target="ref/vco.html">
+<name>vco</name>
+<purpose>Voltage controlled oscillator</purpose>
+</tocitem>
+<tocitem target="ref/buffer.html">
+<name>buffer</name>
+<purpose>Buffer signal vector into matrix of data frames</purpose>
+</tocitem>
+<tocitem target="ref/demod.html">
+<name>demod</name>
+<purpose>Demodulation for communications simulation</purpose>
+</tocitem>
+<tocitem target="ref/modulate.html">
+<name>modulate</name>
+<purpose>Modulation for communications simulation</purpose>
+</tocitem>
+<tocitem target="ref/seqperiod.html">
+<name>seqperiod</name>
+<purpose>Compute period of sequence</purpose>
+</tocitem>
+<tocitem target="ref/shiftdata.html">
+<name>shiftdata</name>
+<purpose>Shift data to operate on specified dimension</purpose>
+</tocitem>
+<tocitem target="ref/unshiftdata.html">
+<name>unshiftdata</name>
+<purpose>Inverse of shiftdata</purpose>
+</tocitem>
+<tocitem target="ref/strips.html">
+<name>strips</name>
+<purpose>Strip plot</purpose>
+</tocitem>
+<tocitem target="ref/udecode.html">
+<name>udecode</name>
+<purpose>Decode 2n-level quantized integer
+inputs to floating-point outputs</purpose>
+</tocitem>
+<tocitem target="ref/uencode.html">
+<name>uencode</name>
+<purpose>Quantize and encode floating-point inputs to integer outputs</purpose>
+</tocitem>
+<tocitem target="ref/marcumq.html">
+<name>marcumq</name>
+<purpose>Generalized Marcum Q function</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="measurements-and-feature-extraction.html">Measurements and Feature Extraction
+<tocitem target="descriptive-statistics.html">Descriptive Statistics
+<tocitem target="../matlab/ref/cummax.html">
+<name>cummax</name>
+<purpose>Cumulative maximum</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/cummin.html">
+<name>cummin</name>
+<purpose>Cumulative minimum</purpose>
+</tocitem>
+<tocitem target="ref/envelope.html">
+<name>envelope</name>
+<purpose>Signal envelope</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/max.html">
+<name>max</name>
+<purpose>Maximum elements of an array</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/mean.html">
+<name>mean</name>
+<purpose>Average or mean value of array</purpose>
+</tocitem>
+<tocitem target="ref/meanfreq.html">
+<name>meanfreq</name>
+<purpose>Mean frequency</purpose>
+</tocitem>
+<tocitem target="ref/medfreq.html">
+<name>medfreq</name>
+<purpose>Median frequency</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/median.html">
+<name>median</name>
+<purpose>Median value of array</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/min.html">
+<name>min</name>
+<purpose>Minimum elements of an array</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/movmad.html">
+<name>movmad</name>
+<purpose>Moving median absolute deviation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/movmedian.html">
+<name>movmedian</name>
+<purpose>Moving median</purpose>
+</tocitem>
+<tocitem target="ref/peak2peak.html">
+<name>peak2peak</name>
+<purpose>Maximum-to-minimum difference</purpose>
+</tocitem>
+<tocitem target="ref/peak2rms.html">
+<name>peak2rms</name>
+<purpose>Peak-magnitude-to-RMS ratio</purpose>
+</tocitem>
+<tocitem target="ref/rms.html">
+<name>rms</name>
+<purpose>Root-mean-square level</purpose>
+</tocitem>
+<tocitem target="ref/rssq.html">
+<name>rssq</name>
+<purpose> Root-sum-of-squares level</purpose>
+</tocitem>
+<tocitem target="ref/seqperiod.html">
+<name>seqperiod</name>
+<purpose>Compute period of sequence</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/std.html">
+<name>std</name>
+<purpose>Standard deviation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/var.html">
+<name>var</name>
+<purpose>Variance</purpose>
+</tocitem>
+<tocitem target="ref/alignsignals.html">
+<name>alignsignals</name>
+<purpose>Align two signals by delaying earliest signal</purpose>
+</tocitem>
+<tocitem target="ref/cusum.html">
+<name>cusum</name>
+<purpose>Detect small changes in mean using cumulative sum</purpose>
+</tocitem>
+<tocitem target="ref/dtw.html">
+<name>dtw</name>
+<purpose>Distance between signals using dynamic time warping</purpose>
+</tocitem>
+<tocitem target="ref/edr.html">
+<name>edr</name>
+<purpose>Edit distance on real signals</purpose>
+</tocitem>
+<tocitem target="ref/findchangepts.html">
+<name>findchangepts</name>
+<purpose>Find abrupt changes in signal</purpose>
+</tocitem>
+<tocitem target="ref/finddelay.html">
+<name>finddelay</name>
+<purpose>Estimate delay(s) between signals</purpose>
+</tocitem>
+<tocitem target="ref/findpeaks.html">
+<name>findpeaks</name>
+<purpose>Find local maxima</purpose>
+</tocitem>
+<tocitem target="ref/findsignal.html">
+<name>findsignal</name>
+<purpose>Find signal location using similarity search</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.html">
+<name>labeledSignalSet</name>
+<purpose>Create labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/signallabeldefinition.html">
+<name>signalLabelDefinition</name>
+<purpose>Create signal label definition</purpose>
+</tocitem>
+<tocitem target="ref/signallabeldefinition.labeldefinitionshierarchy.html">
+<name>labelDefinitionsHierarchy</name>
+<purpose>Get hierarchical list of label and sublabel names</purpose>
+</tocitem>
+<tocitem target="ref/signallabeldefinition.labeldefinitionssummary.html">
+<name>labelDefinitionsSummary</name>
+<purpose>Get summary table of signal label definitions</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.addlabeldefinitions.html">
+<name>addLabelDefinitions</name>
+<purpose>Add label definitions to labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.addmembers.html">
+<name>addMembers</name>
+<purpose>Add members to labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.concatenate.html">
+<name>concatenate</name>
+<purpose>Concatenate two or more labeled signal sets</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.editlabeldefinition.html">
+<name>editLabelDefinition</name>
+<purpose>Edit label definition properties</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabeldefinitions.html">
+<name>getLabelDefinitions</name>
+<purpose>Get label definitions in labeled signal set </purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabeledsignal.html">
+<name>getLabeledSignal</name>
+<purpose>Get labeled signals from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabelnames.html">
+<name>getLabelNames</name>
+<purpose>Get label names in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabelvalues.html">
+<name>getLabelValues</name>
+<purpose>Get label values from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getmembernames.html">
+<name>getMemberNames</name>
+<purpose>Get member names in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getsignal.html">
+<name>getSignal</name>
+<purpose>Get signals from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.head.html">
+<name>head</name>
+<purpose>Get top rows of labels table</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removelabeldefinition.html">
+<name>removeLabelDefinition</name>
+<purpose>Remove label definition from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removemembers.html">
+<name>removeMembers</name>
+<purpose>Remove members from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removepointvalue.html">
+<name>removePointValue</name>
+<purpose>Remove row from point label</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removeregionvalue.html">
+<name>removeRegionValue</name>
+<purpose>Remove row from ROI label</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.resetlabelvalues.html">
+<name>resetLabelValues</name>
+<purpose>Reset labels to default values</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.setlabelvalue.html">
+<name>setLabelValue</name>
+<purpose>Set label value in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.setmembernames.html">
+<name>setMemberNames</name>
+<purpose>Set member names in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.subset.html">
+<name>subset</name>
+<purpose>Get new labeled signal set with subset of members</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="pulse-and-transition-metrics.html">Pulse and Transition Metrics
+<tocitem target="ref/dutycycle.html">
+<name>dutycycle</name>
+<purpose> Duty cycle of pulse waveform</purpose>
+</tocitem>
+<tocitem target="ref/midcross.html">
+<name>midcross</name>
+<purpose>Mid-reference level crossing for bilevel waveform</purpose>
+</tocitem>
+<tocitem target="ref/pulseperiod.html">
+<name>pulseperiod</name>
+<purpose>Period of bilevel pulse</purpose>
+</tocitem>
+<tocitem target="ref/pulsesep.html">
+<name>pulsesep</name>
+<purpose>Separation between bilevel waveform pulses</purpose>
+</tocitem>
+<tocitem target="ref/pulsewidth.html">
+<name>pulsewidth</name>
+<purpose>Bilevel waveform pulse width</purpose>
+</tocitem>
+<tocitem target="ref/statelevels.html">
+<name>statelevels</name>
+<purpose> State-level estimation for bilevel waveform with histogram
+method</purpose>
+</tocitem>
+<tocitem target="ref/falltime.html">
+<name>falltime</name>
+<purpose> Fall time of negative-going bilevel waveform transitions</purpose>
+</tocitem>
+<tocitem target="ref/overshoot.html">
+<name>overshoot</name>
+<purpose> Overshoot metrics of bilevel waveform transitions</purpose>
+</tocitem>
+<tocitem target="ref/risetime.html">
+<name>risetime</name>
+<purpose> Rise time of positive-going bilevel waveform transitions</purpose>
+</tocitem>
+<tocitem target="ref/settlingtime.html">
+<name>settlingtime</name>
+<purpose>Settling time for bilevel waveform</purpose>
+</tocitem>
+<tocitem target="ref/slewrate.html">
+<name>slewrate</name>
+<purpose>Slew rate of bilevel waveform</purpose>
+</tocitem>
+<tocitem target="ref/undershoot.html">
+<name>undershoot</name>
+<purpose> Undershoot metrics of bilevel waveform transitions</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spectral-measurements-1.html">Spectral Measurements
+<tocitem target="ref/bandpower.html">
+<name>bandpower</name>
+<purpose>Band power</purpose>
+</tocitem>
+<tocitem target="ref/enbw.html">
+<name>enbw</name>
+<purpose>Equivalent noise bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/instfreq.html">
+<name>instfreq</name>
+<purpose>Estimate instantaneous frequency</purpose>
+</tocitem>
+<tocitem target="ref/meanfreq.html">
+<name>meanfreq</name>
+<purpose>Mean frequency</purpose>
+</tocitem>
+<tocitem target="ref/medfreq.html">
+<name>medfreq</name>
+<purpose>Median frequency</purpose>
+</tocitem>
+<tocitem target="ref/obw.html">
+<name>obw</name>
+<purpose>Occupied bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/pentropy.html">
+<name>pentropy</name>
+<purpose>Spectral entropy of signal</purpose>
+</tocitem>
+<tocitem target="ref/pkurtosis.html">
+<name>pkurtosis</name>
+<purpose>Spectral kurtosis from signal or spectrogram</purpose>
+</tocitem>
+<tocitem target="ref/powerbw.html">
+<name>powerbw</name>
+<purpose>Power bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/sfdr.html">
+<name>sfdr</name>
+<purpose>Spurious free dynamic range</purpose>
+</tocitem>
+<tocitem target="ref/sinad.html">
+<name>sinad</name>
+<purpose>Signal to noise and distortion ratio</purpose>
+</tocitem>
+<tocitem target="ref/snr.html">
+<name>snr</name>
+<purpose>Signal-to-noise ratio</purpose>
+</tocitem>
+<tocitem target="ref/thd.html">
+<name>thd</name>
+<purpose>Total harmonic distortion</purpose>
+</tocitem>
+<tocitem target="ref/toi.html">
+<name>toi</name>
+<purpose>Third-order intercept point</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="correlation-and-convolution.html">Correlation and Convolution
+<tocitem target="../matlab/ref/corrcoef.html">
+<name>corrcoef</name>
+<purpose>Correlation coefficients</purpose>
+</tocitem>
+<tocitem target="ref/corrmtx.html">
+<name>corrmtx</name>
+<purpose>Data matrix for autocorrelation matrix estimation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/xcorr.html">
+<name>xcorr</name>
+<purpose>Cross-correlation</purpose>
+</tocitem>
+<tocitem target="ref/xcorr2.html">
+<name>xcorr2</name>
+<purpose>2-D cross-correlation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/xcov.html">
+<name>xcov</name>
+<purpose>Cross-covariance</purpose>
+</tocitem>
+<tocitem target="ref/cconv.html">
+<name>cconv</name>
+<purpose>Modulo-n circular convolution</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/conv.html">
+<name>conv</name>
+<purpose>Convolution and polynomial multiplication</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/conv2.html">
+<name>conv2</name>
+<purpose>2-D convolution</purpose>
+</tocitem>
+<tocitem target="ref/convmtx.html">
+<name>convmtx</name>
+<purpose>Convolution matrix</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/cov.html">
+<name>cov</name>
+<purpose>Covariance</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/deconv.html">
+<name>deconv</name>
+<purpose>Deconvolution and polynomial division</purpose>
+</tocitem>
+<tocitem target="ref/alignsignals.html">
+<name>alignsignals</name>
+<purpose>Align two signals by delaying earliest signal</purpose>
+</tocitem>
+<tocitem target="ref/dtw.html">
+<name>dtw</name>
+<purpose>Distance between signals using dynamic time warping</purpose>
+</tocitem>
+<tocitem target="ref/edr.html">
+<name>edr</name>
+<purpose>Edit distance on real signals</purpose>
+</tocitem>
+<tocitem target="ref/finddelay.html">
+<name>finddelay</name>
+<purpose>Estimate delay(s) between signals</purpose>
+</tocitem>
+<tocitem target="ref/findsignal.html">
+<name>findsignal</name>
+<purpose>Find signal location using similarity search</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="digital-and-analog-filters.html">Digital and Analog Filters
+<tocitem target="filter-design.html">Digital Filter Design
+<tocitem target="ref/butter.html">
+<name>butter</name>
+<purpose>Butterworth filter design</purpose>
+</tocitem>
+<tocitem target="ref/buttord.html">
+<name>buttord</name>
+<purpose>Butterworth filter order and cutoff frequency</purpose>
+</tocitem>
+<tocitem target="ref/cheby1.html">
+<name>cheby1</name>
+<purpose>Chebyshev Type I filter design</purpose>
+</tocitem>
+<tocitem target="ref/cheb1ord.html">
+<name>cheb1ord</name>
+<purpose>Chebyshev Type I filter order</purpose>
+</tocitem>
+<tocitem target="ref/cheby2.html">
+<name>cheby2</name>
+<purpose>Chebyshev Type II filter design</purpose>
+</tocitem>
+<tocitem target="ref/cheb2ord.html">
+<name>cheb2ord</name>
+<purpose>Chebyshev Type II filter order</purpose>
+</tocitem>
+<tocitem target="ref/designfilt.html">
+<name>designfilt</name>
+<purpose>Design digital filters</purpose>
+</tocitem>
+<tocitem target="ref/ellip.html">
+<name>ellip</name>
+<purpose>Elliptic filter design</purpose>
+</tocitem>
+<tocitem target="ref/ellipord.html">
+<name>ellipord</name>
+<purpose>Minimum order for elliptic filters</purpose>
+</tocitem>
+<tocitem target="ref/polyscale.html">
+<name>polyscale</name>
+<purpose>Scale roots of polynomial</purpose>
+</tocitem>
+<tocitem target="ref/polystab.html">
+<name>polystab</name>
+<purpose>Stabilize polynomial</purpose>
+</tocitem>
+<tocitem target="ref/yulewalk.html">
+<name>yulewalk</name>
+<purpose>Recursive digital filter design</purpose>
+</tocitem>
+<tocitem target="ref/cfirpm.html">
+<name>cfirpm</name>
+<purpose>Complex and nonlinear-phase equiripple FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/designfilt.html">
+<name>designfilt</name>
+<purpose>Design digital filters</purpose>
+</tocitem>
+<tocitem target="ref/fir1.html">
+<name>fir1</name>
+<purpose>Window-based FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/fir2.html">
+<name>fir2</name>
+<purpose>Frequency sampling-based FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/fircls.html">
+<name>fircls</name>
+<purpose>Constrained-least-squares FIR multiband filter design</purpose>
+</tocitem>
+<tocitem target="ref/fircls1.html">
+<name>fircls1</name>
+<purpose>Constrained-least-squares linear-phase FIR lowpass and
+highpass filter design</purpose>
+</tocitem>
+<tocitem target="ref/firls.html">
+<name>firls</name>
+<purpose>Least-squares linear-phase FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/firpm.html">
+<name>firpm</name>
+<purpose>Parks-McClellan optimal FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/firpmord.html">
+<name>firpmord</name>
+<purpose>Parks-McClellan optimal FIR filter order estimation</purpose>
+</tocitem>
+<tocitem target="ref/gaussdesign.html">
+<name>gaussdesign</name>
+<purpose>Gaussian FIR pulse-shaping filter design</purpose>
+</tocitem>
+<tocitem target="ref/intfilt.html">
+<name>intfilt</name>
+<purpose>Interpolation FIR filter design</purpose>
+</tocitem>
+<tocitem target="ref/kaiserord.html">
+<name>kaiserord</name>
+<purpose>Kaiser window FIR filter design estimation parameters</purpose>
+</tocitem>
+<tocitem target="ref/maxflat.html">
+<name>maxflat</name>
+<purpose>Generalized digital Butterworth filter design</purpose>
+</tocitem>
+<tocitem target="ref/rcosdesign.html">
+<name>rcosdesign</name>
+<purpose>Raised cosine FIR pulse-shaping filter design</purpose>
+</tocitem>
+<tocitem target="ref/sgolay.html">
+<name>sgolay</name>
+<purpose>Savitzky-Golay filter design</purpose>
+</tocitem>
+<tocitem target="ref/digitalfilter.html">
+<name>digitalFilter</name>
+<purpose>Digital filter</purpose>
+</tocitem>
+<tocitem target="ref/double.html">
+<name>double</name>
+<purpose>Cast coefficients of digital filter to double precision</purpose>
+</tocitem>
+<tocitem target="ref/dspfwiz.html">
+<name>dspfwiz</name>
+<purpose>Create Simulink filter block using Realize Model
+panel</purpose>
+</tocitem>
+<tocitem target="ref/filt2block.html">
+<name>filt2block</name>
+<purpose>Generate Simulink filter block</purpose>
+</tocitem>
+<tocitem target="ref/info.html">
+<name>info</name>
+<purpose>Information about digital filter</purpose>
+</tocitem>
+<tocitem target="ref/isdouble.html">
+<name>isdouble</name>
+<purpose>Determine if digital filter coefficients are double precision</purpose>
+</tocitem>
+<tocitem target="ref/issingle.html">
+<name>issingle</name>
+<purpose>Determine if digital filter coefficients are single precision</purpose>
+</tocitem>
+<tocitem target="ref/single.html">
+<name>single</name>
+<purpose>Cast coefficients of digital filter to single precision</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="digital-filter-analysis.html">Digital Filter Analysis
+<tocitem target="../matlab/ref/abs.html">
+<name>abs</name>
+<purpose>Absolute value and complex magnitude</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/angle.html">
+<name>angle</name>
+<purpose>Phase angle</purpose>
+</tocitem>
+<tocitem target="ref/freqz.html">
+<name>freqz</name>
+<purpose>Frequency response of digital filter</purpose>
+</tocitem>
+<tocitem target="ref/grpdelay.html">
+<name>grpdelay</name>
+<purpose>Average filter delay (group delay)</purpose>
+</tocitem>
+<tocitem target="ref/phasedelay.html">
+<name>phasedelay</name>
+<purpose>Phase delay of digital filter</purpose>
+</tocitem>
+<tocitem target="ref/phasez.html">
+<name>phasez</name>
+<purpose>Phase response of digital filter</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/unwrap.html">
+<name>unwrap</name>
+<purpose>Shift phase angles</purpose>
+</tocitem>
+<tocitem target="ref/zerophase.html">
+<name>zerophase</name>
+<purpose>Zero-phase response of digital filter</purpose>
+</tocitem>
+<tocitem target="ref/zplane.html">
+<name>zplane</name>
+<purpose>Zero-pole plot for discrete-time systems</purpose>
+</tocitem>
+<tocitem target="ref/impz.html">
+<name>impz</name>
+<purpose>Impulse response of digital filter</purpose>
+</tocitem>
+<tocitem target="ref/impzlength.html">
+<name>impzlength</name>
+<purpose>Impulse response length</purpose>
+</tocitem>
+<tocitem target="ref/stepz.html">
+<name>stepz</name>
+<purpose>Step response of digital filter</purpose>
+</tocitem>
+<tocitem target="ref/filtord.html">
+<name>filtord</name>
+<purpose>Filter order</purpose>
+</tocitem>
+<tocitem target="ref/filternorm.html">
+<name>filternorm</name>
+<purpose> 2-norm or infinity-norm of digital filter</purpose>
+</tocitem>
+<tocitem target="ref/firtype.html">
+<name>firtype</name>
+<purpose>Type of linear phase FIR filter</purpose>
+</tocitem>
+<tocitem target="ref/isallpass.html">
+<name>isallpass</name>
+<purpose>Determine whether filter is allpass</purpose>
+</tocitem>
+<tocitem target="ref/isfir.html">
+<name>isfir</name>
+<purpose>Determine if digital filter has finite impulse response</purpose>
+</tocitem>
+<tocitem target="ref/islinphase.html">
+<name>islinphase</name>
+<purpose>Determine whether filter has linear phase</purpose>
+</tocitem>
+<tocitem target="ref/ismaxphase.html">
+<name>ismaxphase</name>
+<purpose>Determine whether filter is maximum phase</purpose>
+</tocitem>
+<tocitem target="ref/isminphase.html">
+<name>isminphase</name>
+<purpose>Determine whether filter is minimum phase</purpose>
+</tocitem>
+<tocitem target="ref/isstable.html">
+<name>isstable</name>
+<purpose>Determine whether filter is stable</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="digital-filtering.html">Digital Filtering
+<tocitem target="ref/bandpass.html">
+<name>bandpass</name>
+<purpose>Bandpass-filter signals</purpose>
+</tocitem>
+<tocitem target="ref/bandstop.html">
+<name>bandstop</name>
+<purpose>Bandstop-filter
+            signals</purpose>
+</tocitem>
+<tocitem target="ref/highpass.html">
+<name>highpass</name>
+<purpose>Highpass-filter signals</purpose>
+</tocitem>
+<tocitem target="ref/lowpass.html">
+<name>lowpass</name>
+<purpose>Lowpass-filter signals</purpose>
+</tocitem>
+<tocitem target="ref/fftfilt.html">
+<name>fftfilt</name>
+<purpose>FFT-based FIR filtering using overlap-add method</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/filter.html">
+<name>filter</name>
+<purpose>1-D digital filter</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/filter2.html">
+<name>filter2</name>
+<purpose>2-D digital filter</purpose>
+</tocitem>
+<tocitem target="ref/filtfilt.html">
+<name>filtfilt</name>
+<purpose>Zero-phase digital filtering</purpose>
+</tocitem>
+<tocitem target="ref/filtic.html">
+<name>filtic</name>
+<purpose>Initial conditions for transposed direct-form II filter
+implementation</purpose>
+</tocitem>
+<tocitem target="ref/hampel.html">
+<name>hampel</name>
+<purpose>Outlier removal using Hampel identifier</purpose>
+</tocitem>
+<tocitem target="ref/latcfilt.html">
+<name>latcfilt</name>
+<purpose>Lattice and lattice-ladder filter implementation</purpose>
+</tocitem>
+<tocitem target="ref/medfilt1.html">
+<name>medfilt1</name>
+<purpose>1-D median filtering</purpose>
+</tocitem>
+<tocitem target="ref/residuez.html">
+<name>residuez</name>
+<purpose>Z-transform partial-fraction expansion</purpose>
+</tocitem>
+<tocitem target="ref/sgolayfilt.html">
+<name>sgolayfilt</name>
+<purpose>Savitzky-Golay filtering</purpose>
+</tocitem>
+<tocitem target="ref/sosfilt.html">
+<name>sosfilt</name>
+<purpose>Second-order (biquadratic) IIR digital filtering</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/conv.html">
+<name>conv</name>
+<purpose>Convolution and polynomial multiplication</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/conv2.html">
+<name>conv2</name>
+<purpose>2-D convolution</purpose>
+</tocitem>
+<tocitem target="ref/convmtx.html">
+<name>convmtx</name>
+<purpose>Convolution matrix</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/deconv.html">
+<name>deconv</name>
+<purpose>Deconvolution and polynomial division</purpose>
+</tocitem>
+<tocitem target="ref/cell2sos.html">
+<name>cell2sos</name>
+<purpose>Convert second-order sections cell array to matrix</purpose>
+</tocitem>
+<tocitem target="ref/eqtflength.html">
+<name>eqtflength</name>
+<purpose>Equalize lengths of transfer function's numerator and denominator</purpose>
+</tocitem>
+<tocitem target="ref/latc2tf.html">
+<name>latc2tf</name>
+<purpose>Convert lattice filter parameters to transfer function
+form</purpose>
+</tocitem>
+<tocitem target="ref/sos2cell.html">
+<name>sos2cell</name>
+<purpose>Convert second-order sections matrix to cell array</purpose>
+</tocitem>
+<tocitem target="ref/sos2ss.html">
+<name>sos2ss</name>
+<purpose>Convert digital filter second-order section parameters
+to state-space form</purpose>
+</tocitem>
+<tocitem target="ref/sos2tf.html">
+<name>sos2tf</name>
+<purpose>Convert digital filter second-order section data to transfer
+function form</purpose>
+</tocitem>
+<tocitem target="ref/sos2zp.html">
+<name>sos2zp</name>
+<purpose>Convert digital filter second-order section parameters
+to zero-pole-gain form</purpose>
+</tocitem>
+<tocitem target="ref/ss.html">
+<name>ss</name>
+<purpose>Convert digital filter to state-space representation</purpose>
+</tocitem>
+<tocitem target="ref/ss2sos.html">
+<name>ss2sos</name>
+<purpose>Convert digital filter state-space parameters to second-order
+sections form</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/ss2tf.html">
+<name>ss2tf</name>
+<purpose>Convert state-space representation to transfer function</purpose>
+</tocitem>
+<tocitem target="ref/ss2zp.html">
+<name>ss2zp</name>
+<purpose>Convert state-space filter parameters to zero-pole-gain form</purpose>
+</tocitem>
+<tocitem target="ref/tf.html">
+<name>tf</name>
+<purpose>Convert digital filter to transfer function</purpose>
+</tocitem>
+<tocitem target="ref/tf2latc.html">
+<name>tf2latc</name>
+<purpose>Convert transfer function filter parameters to lattice
+filter form</purpose>
+</tocitem>
+<tocitem target="ref/tf2sos.html">
+<name>tf2sos</name>
+<purpose>Convert digital filter transfer function data to second-order
+sections form</purpose>
+</tocitem>
+<tocitem target="ref/tf2ss.html">
+<name>tf2ss</name>
+<purpose>Convert transfer function filter parameters to state-space form</purpose>
+</tocitem>
+<tocitem target="ref/tf2zp.html">
+<name>tf2zp</name>
+<purpose>Convert transfer function filter parameters to zero-pole-gain form</purpose>
+</tocitem>
+<tocitem target="ref/tf2zpk.html">
+<name>tf2zpk</name>
+<purpose>Convert transfer function filter parameters to zero-pole-gain form</purpose>
+</tocitem>
+<tocitem target="ref/zp2sos.html">
+<name>zp2sos</name>
+<purpose>Convert zero-pole-gain filter parameters to second-order
+sections form</purpose>
+</tocitem>
+<tocitem target="ref/zp2ss.html">
+<name>zp2ss</name>
+<purpose>Convert zero-pole-gain filter parameters to state-space
+form</purpose>
+</tocitem>
+<tocitem target="ref/zp2tf.html">
+<name>zp2tf</name>
+<purpose>Convert zero-pole-gain filter parameters to transfer function form</purpose>
+</tocitem>
+<tocitem target="ref/zpk.html">
+<name>zpk</name>
+<purpose>Convert digital filter to zero-pole-gain representation</purpose>
+</tocitem>
+<tocitem target="ref/dspfwiz.html">
+<name>dspfwiz</name>
+<purpose>Create Simulink filter block using Realize Model
+panel</purpose>
+</tocitem>
+<tocitem target="ref/filt2block.html">
+<name>filt2block</name>
+<purpose>Generate Simulink filter block</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multirate-signal-processing.html">Multirate Signal Processing
+<tocitem target="ref/decimate.html">
+<name>decimate</name>
+<purpose>Decimation — decrease sample rate by integer factor</purpose>
+</tocitem>
+<tocitem target="ref/downsample.html">
+<name>downsample</name>
+<purpose>Decrease sample rate by integer factor</purpose>
+</tocitem>
+<tocitem target="ref/fillgaps.html">
+<name>fillgaps</name>
+<purpose>Fill gaps using autoregressive modeling</purpose>
+</tocitem>
+<tocitem target="ref/interp.html">
+<name>interp</name>
+<purpose>Interpolation — increase sample rate by integer factor</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/interp1.html">
+<name>interp1</name>
+<purpose>1-D data interpolation (table lookup)</purpose>
+</tocitem>
+<tocitem target="ref/intfilt.html">
+<name>intfilt</name>
+<purpose>Interpolation FIR filter design</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/pchip.html">
+<name>pchip</name>
+<purpose>Piecewise Cubic Hermite Interpolating Polynomial (PCHIP)</purpose>
+</tocitem>
+<tocitem target="ref/resample.html">
+<name>resample</name>
+<purpose>Resample uniform or nonuniform data to new fixed rate</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/spline.html">
+<name>spline</name>
+<purpose>Cubic spline data interpolation</purpose>
+</tocitem>
+<tocitem target="ref/upfirdn.html">
+<name>upfirdn</name>
+<purpose>Upsample, apply FIR filter, and downsample</purpose>
+</tocitem>
+<tocitem target="ref/upsample.html">
+<name>upsample</name>
+<purpose>Increase sample rate by integer factor </purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analog-filters.html">Analog Filters
+<tocitem target="ref/besself.html">
+<name>besself</name>
+<purpose>Bessel analog filter design</purpose>
+</tocitem>
+<tocitem target="ref/butter.html">
+<name>butter</name>
+<purpose>Butterworth filter design</purpose>
+</tocitem>
+<tocitem target="ref/cheby1.html">
+<name>cheby1</name>
+<purpose>Chebyshev Type I filter design</purpose>
+</tocitem>
+<tocitem target="ref/cheby2.html">
+<name>cheby2</name>
+<purpose>Chebyshev Type II filter design</purpose>
+</tocitem>
+<tocitem target="ref/ellip.html">
+<name>ellip</name>
+<purpose>Elliptic filter design</purpose>
+</tocitem>
+<tocitem target="ref/freqs.html">
+<name>freqs</name>
+<purpose>Frequency response of analog filters</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/freqspace.html">
+<name>freqspace</name>
+<purpose>Frequency spacing for frequency response</purpose>
+</tocitem>
+<tocitem target="ref/besselap.html">
+<name>besselap</name>
+<purpose> Bessel analog lowpass filter prototype</purpose>
+</tocitem>
+<tocitem target="ref/bilinear.html">
+<name>bilinear</name>
+<purpose>Bilinear transformation method for analog-to-digital filter conversion</purpose>
+</tocitem>
+<tocitem target="ref/buttap.html">
+<name>buttap</name>
+<purpose>Butterworth filter prototype</purpose>
+</tocitem>
+<tocitem target="ref/cheb1ap.html">
+<name>cheb1ap</name>
+<purpose>Chebyshev Type I analog lowpass filter prototype</purpose>
+</tocitem>
+<tocitem target="ref/cheb2ap.html">
+<name>cheb2ap</name>
+<purpose>Chebyshev Type II analog lowpass filter prototype</purpose>
+</tocitem>
+<tocitem target="ref/ellipap.html">
+<name>ellipap</name>
+<purpose>Elliptic analog lowpass filter prototype</purpose>
+</tocitem>
+<tocitem target="ref/impinvar.html">
+<name>impinvar</name>
+<purpose>Impulse invariance method for analog-to-digital filter
+conversion</purpose>
+</tocitem>
+<tocitem target="ref/lp2bp.html">
+<name>lp2bp</name>
+<purpose>Transform lowpass analog filters to bandpass</purpose>
+</tocitem>
+<tocitem target="ref/lp2bs.html">
+<name>lp2bs</name>
+<purpose>Transform lowpass analog filters to bandstop</purpose>
+</tocitem>
+<tocitem target="ref/lp2hp.html">
+<name>lp2hp</name>
+<purpose>Transform lowpass analog filters to highpass</purpose>
+</tocitem>
+<tocitem target="ref/lp2lp.html">
+<name>lp2lp</name>
+<purpose>Change cutoff frequency for lowpass analog filter</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="transforms.html">Transforms
+<tocitem target="../matlab/ref/abs.html">
+<name>abs</name>
+<purpose>Absolute value and complex magnitude</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/angle.html">
+<name>angle</name>
+<purpose>Phase angle</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fft.html">
+<name>fft</name>
+<purpose>Fast Fourier transform</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/ifft.html">
+<name>ifft</name>
+<purpose>Inverse fast Fourier transform</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fftshift.html">
+<name>fftshift</name>
+<purpose>Shift zero-frequency component to center of spectrum</purpose>
+</tocitem>
+<tocitem target="ref/dftmtx.html">
+<name>dftmtx</name>
+<purpose>Discrete Fourier transform matrix</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/fft2.html">
+<name>fft2</name>
+<purpose>2-D fast Fourier transform</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/ifft2.html">
+<name>ifft2</name>
+<purpose>2-D inverse fast Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/instfreq.html">
+<name>instfreq</name>
+<purpose>Estimate instantaneous frequency</purpose>
+</tocitem>
+<tocitem target="ref/czt.html">
+<name>czt</name>
+<purpose>Chirp Z-transform</purpose>
+</tocitem>
+<tocitem target="ref/goertzel.html">
+<name>goertzel</name>
+<purpose>Discrete Fourier transform with second-order Goertzel
+algorithm</purpose>
+</tocitem>
+<tocitem target="ref/dct.html">
+<name>dct</name>
+<purpose>Discrete cosine transform</purpose>
+</tocitem>
+<tocitem target="ref/idct.html">
+<name>idct</name>
+<purpose>Inverse discrete cosine transform</purpose>
+</tocitem>
+<tocitem target="ref/envelope.html">
+<name>envelope</name>
+<purpose>Signal envelope</purpose>
+</tocitem>
+<tocitem target="ref/fwht.html">
+<name>fwht</name>
+<purpose>Fast Walsh-Hadamard transform</purpose>
+</tocitem>
+<tocitem target="ref/ifwht.html">
+<name>ifwht</name>
+<purpose>Inverse Fast Walsh-Hadamard transform</purpose>
+</tocitem>
+<tocitem target="ref/hilbert.html">
+<name>hilbert</name>
+<purpose>Discrete-time analytic signal using Hilbert transform</purpose>
+</tocitem>
+<tocitem target="ref/emd.html">
+<name>emd</name>
+<purpose>Empirical mode decomposition</purpose>
+</tocitem>
+<tocitem target="ref/fsst.html">
+<name>fsst</name>
+<purpose>Fourier synchrosqueezed transform</purpose>
+</tocitem>
+<tocitem target="ref/ifsst.html">
+<name>ifsst</name>
+<purpose>Inverse Fourier synchrosqueezed transform</purpose>
+</tocitem>
+<tocitem target="ref/hht.html">
+<name>hht</name>
+<purpose>Hilbert-Huang transform</purpose>
+</tocitem>
+<tocitem target="ref/kurtogram.html">
+<name>kurtogram</name>
+<purpose>Visualize spectral kurtosis</purpose>
+</tocitem>
+<tocitem target="ref/pspectrum.html">
+<name>pspectrum</name>
+<purpose>Analyze signals in the frequency and time-frequency domains</purpose>
+</tocitem>
+<tocitem target="ref/spectrogram.html">
+<name>spectrogram</name>
+<purpose>Spectrogram using short-time Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/xspectrogram.html">
+<name>xspectrogram</name>
+<purpose>Cross-spectrogram using short-time Fourier transforms</purpose>
+</tocitem>
+<tocitem target="ref/stft.html">
+<name>stft</name>
+<purpose>Short-time Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/istft.html">
+<name>istft</name>
+<purpose>Inverse short-time Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/wvd.html">
+<name>wvd</name>
+<purpose>Wigner-Ville distribution and smoothed pseudo Wigner-Ville distribution</purpose>
+</tocitem>
+<tocitem target="ref/xwvd.html">
+<name>xwvd</name>
+<purpose>Cross Wigner-Ville distribution and cross smoothed pseudo Wigner-Ville
+      distribution</purpose>
+</tocitem>
+<tocitem target="ref/cceps.html">
+<name>cceps</name>
+<purpose>Complex cepstral analysis</purpose>
+</tocitem>
+<tocitem target="ref/icceps.html">
+<name>icceps</name>
+<purpose>Inverse complex cepstrum</purpose>
+</tocitem>
+<tocitem target="ref/rceps.html">
+<name>rceps</name>
+<purpose>Real cepstrum and minimum phase reconstruction</purpose>
+</tocitem>
+<tocitem target="ref/bitrevorder.html">
+<name>bitrevorder</name>
+<purpose>Permute data into bit-reversed order</purpose>
+</tocitem>
+<tocitem target="ref/digitrevorder.html">
+<name>digitrevorder</name>
+<purpose>Permute input into digit-reversed order</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spectral-analysis.html">Spectral Analysis
+<tocitem target="nonparametric-spectral-estimation.html">Spectral Estimation
+<tocitem target="ref/cpsd.html">
+<name>cpsd</name>
+<purpose>Cross power spectral density</purpose>
+</tocitem>
+<tocitem target="ref/findpeaks.html">
+<name>findpeaks</name>
+<purpose>Find local maxima</purpose>
+</tocitem>
+<tocitem target="ref/mscohere.html">
+<name>mscohere</name>
+<purpose>Magnitude-squared coherence</purpose>
+</tocitem>
+<tocitem target="ref/pentropy.html">
+<name>pentropy</name>
+<purpose>Spectral entropy of signal</purpose>
+</tocitem>
+<tocitem target="ref/periodogram.html">
+<name>periodogram</name>
+<purpose>Periodogram power spectral density estimate</purpose>
+</tocitem>
+<tocitem target="ref/plomb.html">
+<name>plomb</name>
+<purpose>Lomb-Scargle periodogram</purpose>
+</tocitem>
+<tocitem target="ref/pmtm.html">
+<name>pmtm</name>
+<purpose>Multitaper power spectral density estimate</purpose>
+</tocitem>
+<tocitem target="ref/poctave.html">
+<name>poctave</name>
+<purpose>Generate octave spectrum</purpose>
+</tocitem>
+<tocitem target="ref/pspectrum.html">
+<name>pspectrum</name>
+<purpose>Analyze signals in the frequency and time-frequency domains</purpose>
+</tocitem>
+<tocitem target="ref/pwelch.html">
+<name>pwelch</name>
+<purpose>Welch’s power spectral density estimate</purpose>
+</tocitem>
+<tocitem target="ref/tfestimate.html">
+<name>tfestimate</name>
+<purpose>Transfer function estimate</purpose>
+</tocitem>
+<tocitem target="ref/db.html">
+<name>db</name>
+<purpose>Convert energy or power measurements to decibels</purpose>
+</tocitem>
+<tocitem target="ref/db2mag.html">
+<name>db2mag</name>
+<purpose>Convert decibels to magnitude</purpose>
+</tocitem>
+<tocitem target="ref/db2pow.html">
+<name>db2pow</name>
+<purpose>Convert decibels to power</purpose>
+</tocitem>
+<tocitem target="ref/mag2db.html">
+<name>mag2db</name>
+<purpose>Convert magnitude to decibels</purpose>
+</tocitem>
+<tocitem target="ref/pow2db.html">
+<name>pow2db</name>
+<purpose>Convert power to decibels</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="parametric-spectral-estimation.html">Parametric Spectral Estimation
+<tocitem target="ref/findpeaks.html">
+<name>findpeaks</name>
+<purpose>Find local maxima</purpose>
+</tocitem>
+<tocitem target="ref/pburg.html">
+<name>pburg</name>
+<purpose>Autoregressive power spectral density estimate —
+Burg’s method</purpose>
+</tocitem>
+<tocitem target="ref/pcov.html">
+<name>pcov</name>
+<purpose>Autoregressive power spectral density estimate —
+covariance method</purpose>
+</tocitem>
+<tocitem target="ref/pmcov.html">
+<name>pmcov</name>
+<purpose>Autoregressive power spectral density estimate —
+modified covariance method</purpose>
+</tocitem>
+<tocitem target="ref/pyulear.html">
+<name>pyulear</name>
+<purpose>Autoregressive power spectral density estimate —
+Yule-Walker method</purpose>
+</tocitem>
+<tocitem target="ref/db.html">
+<name>db</name>
+<purpose>Convert energy or power measurements to decibels</purpose>
+</tocitem>
+<tocitem target="ref/db2mag.html">
+<name>db2mag</name>
+<purpose>Convert decibels to magnitude</purpose>
+</tocitem>
+<tocitem target="ref/db2pow.html">
+<name>db2pow</name>
+<purpose>Convert decibels to power</purpose>
+</tocitem>
+<tocitem target="ref/mag2db.html">
+<name>mag2db</name>
+<purpose>Convert magnitude to decibels</purpose>
+</tocitem>
+<tocitem target="ref/pow2db.html">
+<name>pow2db</name>
+<purpose>Convert power to decibels</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="subspace-methods.html">Subspace Methods
+<tocitem target="ref/peig.html">
+<name>peig</name>
+<purpose>Pseudospectrum using eigenvector method</purpose>
+</tocitem>
+<tocitem target="ref/pmusic.html">
+<name>pmusic</name>
+<purpose>Pseudospectrum using MUSIC algorithm</purpose>
+</tocitem>
+<tocitem target="ref/rooteig.html">
+<name>rooteig</name>
+<purpose>Frequency and power content using eigenvector method</purpose>
+</tocitem>
+<tocitem target="ref/rootmusic.html">
+<name>rootmusic</name>
+<purpose>Root MUSIC algorithm</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="windows.html">Windows
+<tocitem target="ref/barthannwin.html">
+<name>barthannwin</name>
+<purpose>Modified Bartlett-Hann window</purpose>
+</tocitem>
+<tocitem target="ref/bartlett.html">
+<name>bartlett</name>
+<purpose>Bartlett window</purpose>
+</tocitem>
+<tocitem target="ref/blackman.html">
+<name>blackman</name>
+<purpose>Blackman window</purpose>
+</tocitem>
+<tocitem target="ref/blackmanharris.html">
+<name>blackmanharris</name>
+<purpose>Minimum four-term Blackman-Harris window</purpose>
+</tocitem>
+<tocitem target="ref/bohmanwin.html">
+<name>bohmanwin</name>
+<purpose>Bohman window</purpose>
+</tocitem>
+<tocitem target="ref/chebwin.html">
+<name>chebwin</name>
+<purpose>Chebyshev window</purpose>
+</tocitem>
+<tocitem target="ref/enbw.html">
+<name>enbw</name>
+<purpose>Equivalent noise bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/flattopwin.html">
+<name>flattopwin</name>
+<purpose>Flat top weighted window</purpose>
+</tocitem>
+<tocitem target="ref/gausswin.html">
+<name>gausswin</name>
+<purpose>Gaussian window</purpose>
+</tocitem>
+<tocitem target="ref/hamming.html">
+<name>hamming</name>
+<purpose>Hamming window</purpose>
+</tocitem>
+<tocitem target="ref/hann.html">
+<name>hann</name>
+<purpose>Hann (Hanning) window</purpose>
+</tocitem>
+<tocitem target="ref/kaiser.html">
+<name>kaiser</name>
+<purpose>Kaiser window</purpose>
+</tocitem>
+<tocitem target="ref/nuttallwin.html">
+<name>nuttallwin</name>
+<purpose>Nuttall-defined minimum 4-term Blackman-Harris window </purpose>
+</tocitem>
+<tocitem target="ref/parzenwin.html">
+<name>parzenwin</name>
+<purpose>Parzen (de la Vallée Poussin) window</purpose>
+</tocitem>
+<tocitem target="ref/rectwin.html">
+<name>rectwin</name>
+<purpose>Rectangular window</purpose>
+</tocitem>
+<tocitem target="ref/taylorwin.html">
+<name>taylorwin</name>
+<purpose>Taylor window</purpose>
+</tocitem>
+<tocitem target="ref/triang.html">
+<name>triang</name>
+<purpose>Triangular window</purpose>
+</tocitem>
+<tocitem target="ref/tukeywin.html">
+<name>tukeywin</name>
+<purpose>Tukey (tapered cosine) window</purpose>
+</tocitem>
+<tocitem target="ref/wvtool.html">
+<name>wvtool</name>
+<purpose>Open Window Visualization Tool </purpose>
+</tocitem>
+<tocitem target="ref/dpss.html">
+<name>dpss</name>
+<purpose>Discrete prolate spheroidal (Slepian) sequences</purpose>
+</tocitem>
+<tocitem target="ref/dpssclear.html">
+<name>dpssclear</name>
+<purpose>Remove discrete prolate spheroidal sequences from database</purpose>
+</tocitem>
+<tocitem target="ref/dpssdir.html">
+<name>dpssdir</name>
+<purpose>Discrete prolate spheroidal sequences database directory</purpose>
+</tocitem>
+<tocitem target="ref/dpssload.html">
+<name>dpssload</name>
+<purpose>Load discrete prolate spheroidal sequences from database</purpose>
+</tocitem>
+<tocitem target="ref/dpsssave.html">
+<name>dpsssave</name>
+<purpose>Discrete prolate spheroidal or Slepian sequence database</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="spectral-measurements.html">Spectral Measurements
+<tocitem target="ref/bandpower.html">
+<name>bandpower</name>
+<purpose>Band power</purpose>
+</tocitem>
+<tocitem target="ref/enbw.html">
+<name>enbw</name>
+<purpose>Equivalent noise bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/instfreq.html">
+<name>instfreq</name>
+<purpose>Estimate instantaneous frequency</purpose>
+</tocitem>
+<tocitem target="ref/meanfreq.html">
+<name>meanfreq</name>
+<purpose>Mean frequency</purpose>
+</tocitem>
+<tocitem target="ref/medfreq.html">
+<name>medfreq</name>
+<purpose>Median frequency</purpose>
+</tocitem>
+<tocitem target="ref/obw.html">
+<name>obw</name>
+<purpose>Occupied bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/pentropy.html">
+<name>pentropy</name>
+<purpose>Spectral entropy of signal</purpose>
+</tocitem>
+<tocitem target="ref/pkurtosis.html">
+<name>pkurtosis</name>
+<purpose>Spectral kurtosis from signal or spectrogram</purpose>
+</tocitem>
+<tocitem target="ref/powerbw.html">
+<name>powerbw</name>
+<purpose>Power bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/sfdr.html">
+<name>sfdr</name>
+<purpose>Spurious free dynamic range</purpose>
+</tocitem>
+<tocitem target="ref/sinad.html">
+<name>sinad</name>
+<purpose>Signal to noise and distortion ratio</purpose>
+</tocitem>
+<tocitem target="ref/snr.html">
+<name>snr</name>
+<purpose>Signal-to-noise ratio</purpose>
+</tocitem>
+<tocitem target="ref/thd.html">
+<name>thd</name>
+<purpose>Total harmonic distortion</purpose>
+</tocitem>
+<tocitem target="ref/toi.html">
+<name>toi</name>
+<purpose>Third-order intercept point</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="time-frequency-analysis.html">Time-Frequency Analysis
+<tocitem target="ref/emd.html">
+<name>emd</name>
+<purpose>Empirical mode decomposition</purpose>
+</tocitem>
+<tocitem target="ref/fsst.html">
+<name>fsst</name>
+<purpose>Fourier synchrosqueezed transform</purpose>
+</tocitem>
+<tocitem target="ref/ifsst.html">
+<name>ifsst</name>
+<purpose>Inverse Fourier synchrosqueezed transform</purpose>
+</tocitem>
+<tocitem target="ref/hht.html">
+<name>hht</name>
+<purpose>Hilbert-Huang transform</purpose>
+</tocitem>
+<tocitem target="ref/instfreq.html">
+<name>instfreq</name>
+<purpose>Estimate instantaneous frequency</purpose>
+</tocitem>
+<tocitem target="ref/kurtogram.html">
+<name>kurtogram</name>
+<purpose>Visualize spectral kurtosis</purpose>
+</tocitem>
+<tocitem target="ref/pkurtosis.html">
+<name>pkurtosis</name>
+<purpose>Spectral kurtosis from signal or spectrogram</purpose>
+</tocitem>
+<tocitem target="ref/pentropy.html">
+<name>pentropy</name>
+<purpose>Spectral entropy of signal</purpose>
+</tocitem>
+<tocitem target="ref/pspectrum.html">
+<name>pspectrum</name>
+<purpose>Analyze signals in the frequency and time-frequency domains</purpose>
+</tocitem>
+<tocitem target="ref/spectrogram.html">
+<name>spectrogram</name>
+<purpose>Spectrogram using short-time Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/xspectrogram.html">
+<name>xspectrogram</name>
+<purpose>Cross-spectrogram using short-time Fourier transforms</purpose>
+</tocitem>
+<tocitem target="ref/stft.html">
+<name>stft</name>
+<purpose>Short-time Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/iscola.html">
+<name>iscola</name>
+<purpose>Determine whether window-overlap combination is COLA compliant</purpose>
+</tocitem>
+<tocitem target="ref/istft.html">
+<name>istft</name>
+<purpose>Inverse short-time Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/tfridge.html">
+<name>tfridge</name>
+<purpose>Time-frequency ridges</purpose>
+</tocitem>
+<tocitem target="ref/wvd.html">
+<name>wvd</name>
+<purpose>Wigner-Ville distribution and smoothed pseudo Wigner-Ville distribution</purpose>
+</tocitem>
+<tocitem target="ref/xwvd.html">
+<name>xwvd</name>
+<purpose>Cross Wigner-Ville distribution and cross smoothed pseudo Wigner-Ville
+      distribution</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="signal-modeling.html">Signal Modeling
+<tocitem target="autoregressive-and-moving-average-models.html">Parametric Modeling
+<tocitem target="ref/arburg.html">
+<name>arburg</name>
+<purpose>Autoregressive all-pole model parameters — Burg’s
+method</purpose>
+</tocitem>
+<tocitem target="ref/arcov.html">
+<name>arcov</name>
+<purpose>Autoregressive all-pole model parameters — covariance
+method</purpose>
+</tocitem>
+<tocitem target="ref/armcov.html">
+<name>armcov</name>
+<purpose>Autoregressive all-pole model parameters — modified
+covariance method</purpose>
+</tocitem>
+<tocitem target="ref/aryule.html">
+<name>aryule</name>
+<purpose>Autoregressive all-pole model parameters — Yule-Walker
+method</purpose>
+</tocitem>
+<tocitem target="ref/invfreqs.html">
+<name>invfreqs</name>
+<purpose>Identify continuous-time filter parameters from frequency
+response data</purpose>
+</tocitem>
+<tocitem target="ref/invfreqz.html">
+<name>invfreqz</name>
+<purpose>Identify discrete-time filter parameters from frequency
+response data</purpose>
+</tocitem>
+<tocitem target="ref/prony.html">
+<name>prony</name>
+<purpose> Prony method for filter design</purpose>
+</tocitem>
+<tocitem target="ref/stmcb.html">
+<name>stmcb</name>
+<purpose>Compute linear model using Steiglitz-McBride iteration</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linear-predictive-coding.html">Linear Predictive Coding
+<tocitem target="ref/corrmtx.html">
+<name>corrmtx</name>
+<purpose>Data matrix for autocorrelation matrix estimation</purpose>
+</tocitem>
+<tocitem target="ref/levinson.html">
+<name>levinson</name>
+<purpose>Levinson-Durbin recursion</purpose>
+</tocitem>
+<tocitem target="ref/lpc.html">
+<name>lpc</name>
+<purpose>Linear prediction filter coefficients</purpose>
+</tocitem>
+<tocitem target="ref/rlevinson.html">
+<name>rlevinson</name>
+<purpose>Reverse Levinson-Durbin recursion</purpose>
+</tocitem>
+<tocitem target="ref/schurrc.html">
+<name>schurrc</name>
+<purpose>Compute reflection coefficients from autocorrelation sequence</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/xcorr.html">
+<name>xcorr</name>
+<purpose>Cross-correlation</purpose>
+</tocitem>
+<tocitem target="../matlab/ref/xcov.html">
+<name>xcov</name>
+<purpose>Cross-covariance</purpose>
+</tocitem>
+<tocitem target="ref/ac2poly.html">
+<name>ac2poly</name>
+<purpose>Convert autocorrelation sequence to prediction polynomial</purpose>
+</tocitem>
+<tocitem target="ref/ac2rc.html">
+<name>ac2rc</name>
+<purpose>Convert autocorrelation sequence to reflection coefficients</purpose>
+</tocitem>
+<tocitem target="ref/is2rc.html">
+<name>is2rc</name>
+<purpose>Convert inverse sine parameters to reflection coefficients</purpose>
+</tocitem>
+<tocitem target="ref/lar2rc.html">
+<name>lar2rc</name>
+<purpose>Convert log area ratio parameters to reflection coefficients</purpose>
+</tocitem>
+<tocitem target="ref/lsf2poly.html">
+<name>lsf2poly</name>
+<purpose>Convert line spectral frequencies to prediction filter coefficients</purpose>
+</tocitem>
+<tocitem target="ref/poly2ac.html">
+<name>poly2ac</name>
+<purpose>Convert prediction filter polynomial to autocorrelation sequence</purpose>
+</tocitem>
+<tocitem target="ref/poly2lsf.html">
+<name>poly2lsf</name>
+<purpose>Convert prediction filter coefficients to line spectral frequencies</purpose>
+</tocitem>
+<tocitem target="ref/poly2rc.html">
+<name>poly2rc</name>
+<purpose>Convert prediction filter polynomial to reflection coefficients</purpose>
+</tocitem>
+<tocitem target="ref/rc2ac.html">
+<name>rc2ac</name>
+<purpose>Convert reflection coefficients to autocorrelation sequence</purpose>
+</tocitem>
+<tocitem target="ref/rc2is.html">
+<name>rc2is</name>
+<purpose>Convert reflection coefficients to inverse sine parameters</purpose>
+</tocitem>
+<tocitem target="ref/rc2lar.html">
+<name>rc2lar</name>
+<purpose>Convert reflection coefficients to log area ratio parameters</purpose>
+</tocitem>
+<tocitem target="ref/rc2poly.html">
+<name>rc2poly</name>
+<purpose>Convert reflection coefficients to prediction filter polynomial</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="vibration-analysis.html">Vibration Analysis
+<tocitem target="ref/envspectrum.html">
+<name>envspectrum</name>
+<purpose>Envelope spectrum for machinery diagnosis</purpose>
+</tocitem>
+<tocitem target="ref/orderspectrum.html">
+<name>orderspectrum</name>
+<purpose>Average spectrum versus order for vibration signal</purpose>
+</tocitem>
+<tocitem target="ref/ordertrack.html">
+<name>ordertrack</name>
+<purpose>Track and extract order magnitudes from vibration signal</purpose>
+</tocitem>
+<tocitem target="ref/orderwaveform.html">
+<name>orderwaveform</name>
+<purpose>Extract time-domain order waveforms from vibration signal</purpose>
+</tocitem>
+<tocitem target="ref/rpmfreqmap.html">
+<name>rpmfreqmap</name>
+<purpose>Frequency-RPM map for order analysis</purpose>
+</tocitem>
+<tocitem target="ref/rpmordermap.html">
+<name>rpmordermap</name>
+<purpose>Order-RPM map for order analysis</purpose>
+</tocitem>
+<tocitem target="ref/rpmtrack.html">
+<name>rpmtrack</name>
+<purpose>Track and extract RPM profile from vibration signal</purpose>
+</tocitem>
+<tocitem target="ref/tachorpm.html">
+<name>tachorpm</name>
+<purpose>Extract RPM signal from tachometer pulses</purpose>
+</tocitem>
+<tocitem target="ref/tsa.html">
+<name>tsa</name>
+<purpose>Time-synchronous signal average</purpose>
+</tocitem>
+<tocitem target="ref/modalfit.html">
+<name>modalfit</name>
+<purpose>Modal parameters from frequency-response functions</purpose>
+</tocitem>
+<tocitem target="ref/modalfrf.html">
+<name>modalfrf</name>
+<purpose>Frequency-response functions for modal analysis</purpose>
+</tocitem>
+<tocitem target="ref/modalsd.html">
+<name>modalsd</name>
+<purpose>Generate stabilization diagram for modal analysis</purpose>
+</tocitem>
+<tocitem target="ref/rainflow.html">
+<name>rainflow</name>
+<purpose>Rainflow counts for fatigue analysis</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="machine-and-deep-learning-for-signals.html">Machine and Deep Learning for Signals
+<tocitem target="ref/labeledsignalset.html">
+<name>labeledSignalSet</name>
+<purpose>Create labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/signallabeldefinition.html">
+<name>signalLabelDefinition</name>
+<purpose>Create signal label definition</purpose>
+</tocitem>
+<tocitem target="ref/findchangepts.html">
+<name>findchangepts</name>
+<purpose>Find abrupt changes in signal</purpose>
+</tocitem>
+<tocitem target="ref/findpeaks.html">
+<name>findpeaks</name>
+<purpose>Find local maxima</purpose>
+</tocitem>
+<tocitem target="ref/findsignal.html">
+<name>findsignal</name>
+<purpose>Find signal location using similarity search</purpose>
+</tocitem>
+<tocitem target="ref/fsst.html">
+<name>fsst</name>
+<purpose>Fourier synchrosqueezed transform</purpose>
+</tocitem>
+<tocitem target="ref/instfreq.html">
+<name>instfreq</name>
+<purpose>Estimate instantaneous frequency</purpose>
+</tocitem>
+<tocitem target="ref/pentropy.html">
+<name>pentropy</name>
+<purpose>Spectral entropy of signal</purpose>
+</tocitem>
+<tocitem target="ref/periodogram.html">
+<name>periodogram</name>
+<purpose>Periodogram power spectral density estimate</purpose>
+</tocitem>
+<tocitem target="ref/pkurtosis.html">
+<name>pkurtosis</name>
+<purpose>Spectral kurtosis from signal or spectrogram</purpose>
+</tocitem>
+<tocitem target="ref/powerbw.html">
+<name>powerbw</name>
+<purpose>Power bandwidth</purpose>
+</tocitem>
+<tocitem target="ref/pspectrum.html">
+<name>pspectrum</name>
+<purpose>Analyze signals in the frequency and time-frequency domains</purpose>
+</tocitem>
+<tocitem target="ref/pwelch.html">
+<name>pwelch</name>
+<purpose>Welch’s power spectral density estimate</purpose>
+</tocitem>
+<tocitem target="ref/signallabeldefinition.labeldefinitionshierarchy.html">
+<name>labelDefinitionsHierarchy</name>
+<purpose>Get hierarchical list of label and sublabel names</purpose>
+</tocitem>
+<tocitem target="ref/signallabeldefinition.labeldefinitionssummary.html">
+<name>labelDefinitionsSummary</name>
+<purpose>Get summary table of signal label definitions</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.addlabeldefinitions.html">
+<name>addLabelDefinitions</name>
+<purpose>Add label definitions to labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.addmembers.html">
+<name>addMembers</name>
+<purpose>Add members to labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.concatenate.html">
+<name>concatenate</name>
+<purpose>Concatenate two or more labeled signal sets</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.editlabeldefinition.html">
+<name>editLabelDefinition</name>
+<purpose>Edit label definition properties</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabeldefinitions.html">
+<name>getLabelDefinitions</name>
+<purpose>Get label definitions in labeled signal set </purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabeledsignal.html">
+<name>getLabeledSignal</name>
+<purpose>Get labeled signals from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabelnames.html">
+<name>getLabelNames</name>
+<purpose>Get label names in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getlabelvalues.html">
+<name>getLabelValues</name>
+<purpose>Get label values from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getmembernames.html">
+<name>getMemberNames</name>
+<purpose>Get member names in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.getsignal.html">
+<name>getSignal</name>
+<purpose>Get signals from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.head.html">
+<name>head</name>
+<purpose>Get top rows of labels table</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removelabeldefinition.html">
+<name>removeLabelDefinition</name>
+<purpose>Remove label definition from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removemembers.html">
+<name>removeMembers</name>
+<purpose>Remove members from labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removepointvalue.html">
+<name>removePointValue</name>
+<purpose>Remove row from point label</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.removeregionvalue.html">
+<name>removeRegionValue</name>
+<purpose>Remove row from ROI label</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.resetlabelvalues.html">
+<name>resetLabelValues</name>
+<purpose>Reset labels to default values</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.setlabelvalue.html">
+<name>setLabelValue</name>
+<purpose>Set label value in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.setmembernames.html">
+<name>setMemberNames</name>
+<purpose>Set member names in labeled signal set</purpose>
+</tocitem>
+<tocitem target="ref/labeledsignalset.subset.html">
+<name>subset</name>
+<purpose>Get new labeled signal set with subset of members</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

@@ -1,0 +1,2265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="getting-started-with-communications-toolbox.html">Getting Started with Communications Toolbox
+<tocitem target="ref/comm_links.html">
+<name>comm_links</name>
+<purpose>Library link information for Communications
+            Toolbox blocks</purpose>
+</tocitem>
+<tocitem target="ref/commlib.html">
+<name>commlib</name>
+<purpose>Open main Communications Toolbox block library</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="phy-subcomponents.html">PHY Subcomponents
+<tocitem target="sources-and-sinks.html">Sources and Sinks
+<tocitem target="../matlab/ref/randi.html">
+<name>randi</name>
+<purpose>Uniformly distributed pseudorandom integers</purpose>
+</tocitem>
+<tocitem target="ref/randerr.html">
+<name>randerr</name>
+<purpose>Generate bit error patterns</purpose>
+</tocitem>
+<tocitem target="ref/randsrc.html">
+<name>randsrc</name>
+<purpose>Generate random matrix using prescribed
+            alphabet</purpose>
+</tocitem>
+<tocitem target="ref/commsrc.combinedjitter.html">
+<name>commsrc.combinedjitter</name>
+<purpose>Construct combined
+jitter generator object</purpose>
+</tocitem>
+<tocitem target="ref/commsrc.pattern.html">
+<name>commsrc.pattern</name>
+<purpose>Construct pattern generator
+object</purpose>
+</tocitem>
+<tocitem target="ref/commsrc.pn.html">
+<name>commsrc.pn</name>
+<purpose>Create PN sequence generator object</purpose>
+</tocitem>
+<tocitem target="ref/zadoffchuseq.html">
+<name>zadoffChuSeq</name>
+<purpose>Generate root Zadoff-Chu sequence</purpose>
+</tocitem>
+<tocitem target="ref/mask2shift.html">
+<name>mask2shift</name>
+<purpose>Convert mask vector to shift for shift register configuration</purpose>
+</tocitem>
+<tocitem target="ref/shift2mask.html">
+<name>shift2mask</name>
+<purpose>Convert shift to mask vector
+for shift register configuration</purpose>
+</tocitem>
+<tocitem target="ref/wgn.html">
+<name>wgn</name>
+<purpose>Generate white Gaussian noise samples</purpose>
+</tocitem>
+<tocitem target="ref/biterr.html">
+<name>biterr</name>
+<purpose>Number of bit errors and bit error rate (BER)</purpose>
+</tocitem>
+<tocitem target="ref/eyediagram.html">
+<name>eyediagram</name>
+<purpose>Generate eye diagram</purpose>
+</tocitem>
+<tocitem target="ref/scatterplot.html">
+<name>scatterplot</name>
+<purpose>Generate scatter plot</purpose>
+</tocitem>
+<tocitem target="ref/symerr.html">
+<name>symerr</name>
+<purpose>Compute number of symbol errors and
+symbol error rate</purpose>
+</tocitem>
+<tocitem target="ref/comm.basebandfilereader.info.html">
+<name>comm.BasebandFileReader.info</name>
+<purpose>Characteristic information about baseband file reader</purpose>
+</tocitem>
+<tocitem target="ref/comm.basebandfilewriter.info.html">
+<name>comm.BasebandFileWriter.info</name>
+<purpose>Characteristic information about baseband file writer</purpose>
+</tocitem>
+<tocitem target="ref/comm.basebandfilewriter.reset.html">
+<name>comm.BasebandFileWriter.reset</name>
+<purpose>Reset states of baseband file writer object</purpose>
+</tocitem>
+<tocitem target="ref/comm.basebandfilewriter.step.html">
+<name>comm.BasebandFileWriter.step</name>
+<purpose>Write baseband signal to file</purpose>
+</tocitem>
+<tocitem target="ref/comm.constellationdiagram.hide.html">
+<name>comm.ConstellationDiagram.hide</name>
+<purpose>Hide scope window</purpose>
+</tocitem>
+<tocitem target="ref/comm.constellationdiagram.show.html">
+<name>comm.ConstellationDiagram.show</name>
+<purpose>Show scope window</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.hide.html">
+<name>comm.EyeDiagram.hide</name>
+<purpose>Hide scope window</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.horizontalbathtub.html">
+<name>comm.EyeDiagram.horizontalBathtub</name>
+<purpose>Horizontal bathtub curve</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.jitterhistogram.html">
+<name>comm.EyeDiagram.jitterHistogram</name>
+<purpose>Jitter histogram</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.measurements.html">
+<name>comm.EyeDiagram.measurements</name>
+<purpose>Measure eye diagram parameters</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.noisehistogram.html">
+<name>comm.EyeDiagram.noiseHistogram</name>
+<purpose>Noise histogram</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.reset.html">
+<name>comm.EyeDiagram.reset</name>
+<purpose>Reset states of eye diagram object</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.show.html">
+<name>comm.EyeDiagram.show</name>
+<purpose>Make scope window visible</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.step.html">
+<name>comm.EyeDiagram.step</name>
+<purpose>Plot eye diagram of input signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.eyediagram.verticalbathtub.html">
+<name>comm.EyeDiagram.verticalBathtub</name>
+<purpose>Vertical bathtub curve</purpose>
+</tocitem>
+<tocitem target="ref/comm.goldsequence.reset.html">
+<name>comm.GoldSequence.reset</name>
+<purpose>Reset states of Gold sequence generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.goldsequence.step.html">
+<name>comm.GoldSequence.step</name>
+<purpose>Generate a Gold sequence</purpose>
+</tocitem>
+<tocitem target="ref/comm.hadamardcode.reset.html">
+<name>comm.HadamardCode.reset</name>
+<purpose>Reset states of Hadamard code generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.hadamardcode.step.html">
+<name>comm.HadamardCode.step</name>
+<purpose>Generate Hadamard code</purpose>
+</tocitem>
+<tocitem target="ref/comm.kasamisequence.reset.html">
+<name>comm.KasamiSequence.reset</name>
+<purpose>Reset states of Kasami sequence generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.kasamisequence.step.html">
+<name>comm.KasamiSequence.step</name>
+<purpose>Generate a Kasami sequence</purpose>
+</tocitem>
+<tocitem target="ref/comm.ovsfcode.reset.html">
+<name>comm.OVSFCode.reset</name>
+<purpose>Reset states of OVSF code generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ovsfcode.step.html">
+<name>comm.OVSFCode.step</name>
+<purpose>Generate OVSF code</purpose>
+</tocitem>
+<tocitem target="ref/comm.pnsequence.reset.html">
+<name>comm.PNSequence.reset</name>
+<purpose>Reset states of PN sequence generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.pnsequence.step.html">
+<name>comm.PNSequence.step</name>
+<purpose>Generate a pseudo-noise (PN) sequence</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.callletterstopicode.html">
+<name>comm.RBDSWaveformGenerator.callLettersToPICode</name>
+<purpose>Convert North-American call letters to binary PI code</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.registeroda.html">
+<name>comm.RBDSWaveformGenerator.registerODA</name>
+<purpose>Register a custom encoding implementation for an ODA</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.reset.html">
+<name>comm.RBDSWaveformGenerator.reset</name>
+<purpose>Reset states of RBDS waveform generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.step.html">
+<name>comm.RBDSWaveformGenerator.step</name>
+<purpose>Generate RDS/RBDS waveform</purpose>
+</tocitem>
+<tocitem target="ref/comm.walshcode.reset.html">
+<name>comm.WalshCode.reset</name>
+<purpose>Reset states of Walsh code generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.walshcode.step.html">
+<name>comm.WalshCode.step</name>
+<purpose>Generate Walsh code from orthogonal set of codes</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="source-coding.html">Source Coding
+<tocitem target="ref/arithdeco.html">
+<name>arithdeco</name>
+<purpose>Decode binary code using arithmetic
+decoding</purpose>
+</tocitem>
+<tocitem target="ref/arithenco.html">
+<name>arithenco</name>
+<purpose>Encode sequence of symbols using
+arithmetic coding</purpose>
+</tocitem>
+<tocitem target="ref/compand.html">
+<name>compand</name>
+<purpose>Source code mu-law or A-law compressor
+or expander</purpose>
+</tocitem>
+<tocitem target="ref/dpcmdeco.html">
+<name>dpcmdeco</name>
+<purpose>Decode using differential pulse
+code modulation</purpose>
+</tocitem>
+<tocitem target="ref/dpcmenco.html">
+<name>dpcmenco</name>
+<purpose>Encode using differential pulse
+code modulation</purpose>
+</tocitem>
+<tocitem target="ref/dpcmopt.html">
+<name>dpcmopt</name>
+<purpose>Optimize differential pulse code
+modulation parameters</purpose>
+</tocitem>
+<tocitem target="ref/huffmandeco.html">
+<name>huffmandeco</name>
+<purpose>Huffman decoder</purpose>
+</tocitem>
+<tocitem target="ref/huffmandict.html">
+<name>huffmandict</name>
+<purpose>Generate Huffman code dictionary for source with known
+probability model</purpose>
+</tocitem>
+<tocitem target="ref/huffmanenco.html">
+<name>huffmanenco</name>
+<purpose>Huffman encoder</purpose>
+</tocitem>
+<tocitem target="ref/lloyds.html">
+<name>lloyds</name>
+<purpose>Optimize quantization parameters using Lloyd algorithm</purpose>
+</tocitem>
+<tocitem target="ref/quantiz.html">
+<name>quantiz</name>
+<purpose>Produce quantization index and quantized
+output value</purpose>
+</tocitem>
+<tocitem target="ref/comm.differentialdecoder.reset.html">
+<name>comm.DifferentialDecoder.reset</name>
+<purpose>Reset states of differential decoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.differentialdecoder.step.html">
+<name>comm.DifferentialDecoder.step</name>
+<purpose>Decode binary signal using differential decoding</purpose>
+</tocitem>
+<tocitem target="ref/comm.differentialencoder.reset.html">
+<name>comm.DifferentialEncoder.reset</name>
+<purpose>Reset states of differential encoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.differentialencoder.step.html">
+<name>comm.DifferentialEncoder.step</name>
+<purpose>Encode binary signal using differential coding</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="error-detection-and-correction.html">Error Detection and Correction
+<tocitem target="block-coding.html">Block Coding
+<tocitem target="ref/cyclgen.html">
+<name>cyclgen</name>
+<purpose>Produce parity-check and generator
+matrices for cyclic code</purpose>
+</tocitem>
+<tocitem target="ref/cyclpoly.html">
+<name>cyclpoly</name>
+<purpose>Produce generator polynomials for
+cyclic code</purpose>
+</tocitem>
+<tocitem target="ref/decode.html">
+<name>decode</name>
+<purpose>Block decoder</purpose>
+</tocitem>
+<tocitem target="ref/encode.html">
+<name>encode</name>
+<purpose>Block encoder</purpose>
+</tocitem>
+<tocitem target="ref/gfweight.html">
+<name>gfweight</name>
+<purpose>Calculate minimum distance of linear
+block code</purpose>
+</tocitem>
+<tocitem target="ref/gen2par.html">
+<name>gen2par</name>
+<purpose>Convert between parity-check and
+generator matrices</purpose>
+</tocitem>
+<tocitem target="ref/hammgen.html">
+<name>hammgen</name>
+<purpose>Produce parity-check and generator matrices for Hamming
+code</purpose>
+</tocitem>
+<tocitem target="ref/syndtable.html">
+<name>syndtable</name>
+<purpose>Produce syndrome decoding table</purpose>
+</tocitem>
+<tocitem target="ref/bchenc.html">
+<name>bchenc</name>
+<purpose>BCH encoder</purpose>
+</tocitem>
+<tocitem target="ref/bchdec.html">
+<name>bchdec</name>
+<purpose>BCH decoder</purpose>
+</tocitem>
+<tocitem target="ref/bchgenpoly.html">
+<name>bchgenpoly</name>
+<purpose>Generator polynomial of BCH code</purpose>
+</tocitem>
+<tocitem target="ref/bchnumerr.html">
+<name>bchnumerr</name>
+<purpose>Number of correctable errors for BCH code</purpose>
+</tocitem>
+<tocitem target="ref/rsenc.html">
+<name>rsenc</name>
+<purpose>Reed-Solomon encoder</purpose>
+</tocitem>
+<tocitem target="ref/rsdec.html">
+<name>rsdec</name>
+<purpose>Reed-Solomon decoder</purpose>
+</tocitem>
+<tocitem target="ref/rsgenpoly.html">
+<name>rsgenpoly</name>
+<purpose>Generator polynomial of Reed-Solomon code</purpose>
+</tocitem>
+<tocitem target="ref/rsgenpolycoeffs.html">
+<name>rsgenpolycoeffs</name>
+<purpose>Generator polynomial coefficients
+of Reed-Solomon code</purpose>
+</tocitem>
+<tocitem target="ref/dvbs2ldpc.html">
+<name>dvbs2ldpc</name>
+<purpose>Low-density parity-check codes
+from DVB-S.2 standard</purpose>
+</tocitem>
+<tocitem target="ref/tpcenc.html">
+<name>tpcenc</name>
+<purpose>Turbo product code (TPC) encoder</purpose>
+</tocitem>
+<tocitem target="ref/tpcdec.html">
+<name>tpcdec</name>
+<purpose>Turbo product code (TPC) decoder</purpose>
+</tocitem>
+<tocitem target="ref/comm.bchdecoder.step.html">
+<name>comm.BCHDecoder.step</name>
+<purpose>Decode data using a BCH decoder</purpose>
+</tocitem>
+<tocitem target="ref/comm.bchencoder.step.html">
+<name>comm.BCHEncoder.step</name>
+<purpose>Encode data using a BCH encoder</purpose>
+</tocitem>
+<tocitem target="ref/comm.rsdecoder.step.html">
+<name>comm.RSDecoder.step</name>
+<purpose>Decode data using a Reed-Solomon decoder</purpose>
+</tocitem>
+<tocitem target="ref/comm.rsencoder.step.html">
+<name>comm.RSEncoder.step</name>
+<purpose>Encode data using a Reed-Solomon encoder</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="convolutional-coding.html">Convolutional Coding
+<tocitem target="ref/convenc.html">
+<name>convenc</name>
+<purpose>Convolutionally encode binary data</purpose>
+</tocitem>
+<tocitem target="ref/distspec.html">
+<name>distspec</name>
+<purpose>Compute distance spectrum of convolutional
+code</purpose>
+</tocitem>
+<tocitem target="ref/iscatastrophic.html">
+<name>iscatastrophic</name>
+<purpose>True for trellis corresponding to catastrophic convolutional
+code</purpose>
+</tocitem>
+<tocitem target="ref/istrellis.html">
+<name>istrellis</name>
+<purpose>True for valid trellis structure</purpose>
+</tocitem>
+<tocitem target="ref/oct2dec.html">
+<name>oct2dec</name>
+<purpose>Convert octal to decimal numbers</purpose>
+</tocitem>
+<tocitem target="ref/poly2trellis.html">
+<name>poly2trellis</name>
+<purpose>Convert convolutional code polynomials to trellis description</purpose>
+</tocitem>
+<tocitem target="ref/vitdec.html">
+<name>vitdec</name>
+<purpose>Convolutionally decode binary data
+using Viterbi algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.appdecoder.reset.html">
+<name>comm.APPDecoder.reset</name>
+<purpose>Reset states of APP decoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.appdecoder.step.html">
+<name>comm.APPDecoder.step</name>
+<purpose>Decode convolutional code using the a posteriori probability
+method</purpose>
+</tocitem>
+<tocitem target="ref/comm.convolutionalencoder.reset.html">
+<name>comm.ConvolutionalEncoder.reset</name>
+<purpose>Reset states of the convolutional encoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.convolutionalencoder.step.html">
+<name>comm.ConvolutionalEncoder.step</name>
+<purpose>Convolutionally encode binary data</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.convolutionalencoder.reset.html">
+<name>comm.gpu.ConvolutionalEncoder.reset</name>
+<purpose>Reset states of the convolutional encoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.convolutionalencoder.step.html">
+<name>comm.gpu.ConvolutionalEncoder.step</name>
+<purpose>Convolutionally encode binary data</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.turbodecoder.reset.html">
+<name>comm.gpu.TurboDecoder.reset</name>
+<purpose>Reset states of the turbo decoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.turbodecoder.step.html">
+<name>comm.gpu.TurboDecoder.step</name>
+<purpose>Decode input signal using parallel concatenated decoding
+scheme</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.viterbidecoder.info.html">
+<name>comm.gpu.ViterbiDecoder.info</name>
+<purpose>Display information about GPU-based Viterbi Decoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.viterbidecoder.reset.html">
+<name>comm.gpu.ViterbiDecoder.reset</name>
+<purpose>Reset states of the GPU-based Viterbi Decoder modulator
+object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.viterbidecoder.step.html">
+<name>comm.gpu.ViterbiDecoder.step</name>
+<purpose>Decode convolutionally encoded data using Viterbi algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.turbodecoder.step.html">
+<name>comm.TurboDecoder.step</name>
+<purpose>Decode input signal using parallel concatenated decoding
+scheme</purpose>
+</tocitem>
+<tocitem target="ref/comm.turboencoder.step.html">
+<name>comm.TurboEncoder.step</name>
+<purpose>Encode input signal using parallel concatenated coding
+scheme</purpose>
+</tocitem>
+<tocitem target="ref/comm.viterbidecoder.reset.html">
+<name>comm.ViterbiDecoder.reset</name>
+<purpose>Reset states of the Viterbi decoder object</purpose>
+</tocitem>
+<tocitem target="ref/comm.viterbidecoder.step.html">
+<name>comm.ViterbiDecoder.step</name>
+<purpose>Decode convolutionally encoded data using Viterbi algorithm</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="galois-fields.html">Galois Fields
+<tocitem target="ref/convmtx.html">
+<name>convmtx</name>
+<purpose>Convolution matrix of Galois field
+               vector</purpose>
+</tocitem>
+<tocitem target="ref/cosets.html">
+<name>cosets</name>
+<purpose>Produce cyclotomic cosets for Galois
+               field</purpose>
+</tocitem>
+<tocitem target="ref/dftmtx.html">
+<name>dftmtx</name>
+<purpose>Discrete Fourier transform matrix in Galois
+            field</purpose>
+</tocitem>
+<tocitem target="ref/fft.html">
+<name>fft</name>
+<purpose>Discrete Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/filtergf.html">
+<name>filter (gf)</name>
+<purpose>1-D digital filter over Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gf.html">
+<name>gf</name>
+<purpose>Create Galois field array</purpose>
+</tocitem>
+<tocitem target="ref/gftable.html">
+<name>gftable</name>
+<purpose>Generate file to accelerate Galois field
+            computations</purpose>
+</tocitem>
+<tocitem target="ref/ifft.html">
+<name>ifft</name>
+<purpose>Inverse discrete Fourier transform</purpose>
+</tocitem>
+<tocitem target="ref/isprimitive.html">
+<name>isprimitive</name>
+<purpose>True for primitive polynomial for Galois field</purpose>
+</tocitem>
+<tocitem target="ref/log.html">
+<name>log</name>
+<purpose>Logarithm in Galois field</purpose>
+</tocitem>
+<tocitem target="ref/minpol.html">
+<name>minpol</name>
+<purpose>Find minimal polynomial of Galois field element</purpose>
+</tocitem>
+<tocitem target="ref/mldivide.html">
+<name>mldivide</name>
+<purpose>Matrix left division \ of Galois arrays</purpose>
+</tocitem>
+<tocitem target="ref/primpoly.html">
+<name>primpoly</name>
+<purpose>Find primitive polynomials for Galois
+            field</purpose>
+</tocitem>
+<tocitem target="ref/gfadd.html">
+<name>gfadd</name>
+<purpose>Add polynomials over Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfconv.html">
+<name>gfconv</name>
+<purpose>Multiply polynomials over Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfcosets.html">
+<name>gfcosets</name>
+<purpose>Produce cyclotomic cosets for Galois
+field</purpose>
+</tocitem>
+<tocitem target="ref/gfdeconv.html">
+<name>gfdeconv</name>
+<purpose>Divide polynomials over Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfdiv.html">
+<name>gfdiv</name>
+<purpose>Divide elements of Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gffilter.html">
+<name>gffilter</name>
+<purpose>Filter data using polynomials over prime Galois
+   field</purpose>
+</tocitem>
+<tocitem target="ref/gflineq.html">
+<name>gflineq</name>
+<purpose>Find particular solution of Ax = b over
+prime Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfminpol.html">
+<name>gfminpol</name>
+<purpose>Find minimal polynomial of Galois
+field element</purpose>
+</tocitem>
+<tocitem target="ref/gfmul.html">
+<name>gfmul</name>
+<purpose>Multiply elements of Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfpretty.html">
+<name>gfpretty</name>
+<purpose>Polynomial in traditional format</purpose>
+</tocitem>
+<tocitem target="ref/gfprimck.html">
+<name>gfprimck</name>
+<purpose>Check whether polynomial over Galois
+field is primitive</purpose>
+</tocitem>
+<tocitem target="ref/gfprimdf.html">
+<name>gfprimdf</name>
+<purpose>Provide default primitive polynomials
+for Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfprimfd.html">
+<name>gfprimfd</name>
+<purpose>Find primitive polynomials for
+Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfrank.html">
+<name>gfrank</name>
+<purpose>Compute rank of matrix over Galois
+field</purpose>
+</tocitem>
+<tocitem target="ref/gfrepcov.html">
+<name>gfrepcov</name>
+<purpose>Convert one binary polynomial representation
+to another</purpose>
+</tocitem>
+<tocitem target="ref/gfroots.html">
+<name>gfroots</name>
+<purpose>Find roots of polynomial over prime
+Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gfsub.html">
+<name>gfsub</name>
+<purpose>Subtract polynomials over Galois field</purpose>
+</tocitem>
+<tocitem target="ref/gftrunc.html">
+<name>gftrunc</name>
+<purpose>Minimize length of polynomial representation</purpose>
+</tocitem>
+<tocitem target="ref/gftuple.html">
+<name>gftuple</name>
+<purpose>Simplify or convert Galois field
+element formatting</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="signal-operations.html">Signal Operations
+<tocitem target="ref/bi2de.html">
+<name>bi2de</name>
+<purpose>Convert binary vectors to decimal
+numbers</purpose>
+</tocitem>
+<tocitem target="ref/de2bi.html">
+<name>de2bi</name>
+<purpose>Convert decimal numbers to binary
+vectors</purpose>
+</tocitem>
+<tocitem target="ref/hex2poly.html">
+<name>hex2poly</name>
+<purpose>Convert hexadecimal character vector to binary coefficients</purpose>
+</tocitem>
+<tocitem target="ref/oct2poly.html">
+<name>oct2poly</name>
+<purpose>Convert octal number to binary coefficients</purpose>
+</tocitem>
+<tocitem target="../signal/ref/alignsignals.html">
+<name>alignsignals</name>
+<purpose>Align two signals by delaying earliest signal</purpose>
+</tocitem>
+<tocitem target="../signal/ref/finddelay.html">
+<name>finddelay</name>
+<purpose>Estimate delay(s) between signals</purpose>
+</tocitem>
+<tocitem target="ref/bin2gray.html">
+<name>bin2gray</name>
+<purpose>Convert positive integers into corresponding
+            Gray-encoded integers</purpose>
+</tocitem>
+<tocitem target="ref/gray2bin.html">
+<name>gray2bin</name>
+<purpose>Convert Gray-encoded positive integers to
+            corresponding Gray-decoded integers</purpose>
+</tocitem>
+<tocitem target="ref/vec2mat.html">
+<name>vec2mat</name>
+<purpose>Convert vector to matrix</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="interleaving.html">Interleaving
+<tocitem target="ref/algintrlv.html">
+<name>algintrlv</name>
+<purpose>Reorder symbols using algebraically
+derived permutation table</purpose>
+</tocitem>
+<tocitem target="ref/algdeintrlv.html">
+<name>algdeintrlv</name>
+<purpose>Restore ordering of symbols
+using algebraically derived permutation table</purpose>
+</tocitem>
+<tocitem target="ref/convintrlv.html">
+<name>convintrlv</name>
+<purpose>Permute symbols using shift registers</purpose>
+</tocitem>
+<tocitem target="ref/convdeintrlv.html">
+<name>convdeintrlv</name>
+<purpose>Restore ordering of symbols
+using shift registers</purpose>
+</tocitem>
+<tocitem target="ref/intrlv.html">
+<name>intrlv</name>
+<purpose>Reorder sequence of symbols</purpose>
+</tocitem>
+<tocitem target="ref/deintrlv.html">
+<name>deintrlv</name>
+<purpose>Restore ordering of symbols</purpose>
+</tocitem>
+<tocitem target="ref/helintrlv.html">
+<name>helintrlv</name>
+<purpose>Permute symbols using helical array</purpose>
+</tocitem>
+<tocitem target="ref/heldeintrlv.html">
+<name>heldeintrlv</name>
+<purpose>Restore ordering of symbols permuted using helintrlv</purpose>
+</tocitem>
+<tocitem target="ref/helscanintrlv.html">
+<name>helscanintrlv</name>
+<purpose>Reorder symbols in helical pattern</purpose>
+</tocitem>
+<tocitem target="ref/helscandeintrlv.html">
+<name>helscandeintrlv</name>
+<purpose>Restore ordering of symbols in helical pattern</purpose>
+</tocitem>
+<tocitem target="ref/matintrlv.html">
+<name>matintrlv</name>
+<purpose>Reorder symbols by filling matrix by rows and emptying
+it by columns</purpose>
+</tocitem>
+<tocitem target="ref/matdeintrlv.html">
+<name>matdeintrlv</name>
+<purpose>Restore ordering of symbols by filling matrix by columns
+and emptying it by rows</purpose>
+</tocitem>
+<tocitem target="ref/muxintrlv.html">
+<name>muxintrlv</name>
+<purpose>Permute symbols using shift registers with specified delays</purpose>
+</tocitem>
+<tocitem target="ref/muxdeintrlv.html">
+<name>muxdeintrlv</name>
+<purpose>Restore ordering of symbols using specified shift registers</purpose>
+</tocitem>
+<tocitem target="ref/randintrlv.html">
+<name>randintrlv</name>
+<purpose>Reorder symbols using random
+permutation</purpose>
+</tocitem>
+<tocitem target="ref/randdeintrlv.html">
+<name>randdeintrlv</name>
+<purpose>Restore ordering of symbols
+using random permutation</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.blockdeinterleaver.step.html">
+<name>comm.gpu.BlockDeinterleaver.step</name>
+<purpose>Deinterleave input sequence</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.blockinterleaver.step.html">
+<name>comm.gpu.BlockInterleaver.step</name>
+<purpose>Permute input symbols using a permutation vector</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.convolutionalinterleaver.reset.html">
+<name>comm.gpu.ConvolutionalInterleaver.reset</name>
+<purpose>Reset states of the convolutional interleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.convolutionalinterleaver.step.html">
+<name>comm.gpu.ConvolutionalInterleaver.step</name>
+<purpose>Permute input symbols using shift registers</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.convolutionaldeinterleaver.step.html">
+<name>comm.gpu.ConvolutionalDeinterleaver.step</name>
+<purpose>Permute input symbols using shift registers</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.convolutionaldeinterleaver.reset.html">
+<name>comm.gpu.ConvolutionalDeinterleaver.reset</name>
+<purpose>Reset states of the convolutional deinterleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.convolutionaldeinterleaver.reset.html">
+<name>comm.ConvolutionalDeinterleaver.reset</name>
+<purpose>Reset states of the convolutional deinterleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.convolutionaldeinterleaver.step.html">
+<name>comm.ConvolutionalDeinterleaver.step</name>
+<purpose>Restore ordering of symbols using shift registers</purpose>
+</tocitem>
+<tocitem target="ref/comm.convolutionalinterleaver.reset.html">
+<name>comm.ConvolutionalInterleaver.reset</name>
+<purpose>Reset states of the convolutional interleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.convolutionalinterleaver.step.html">
+<name>comm.ConvolutionalInterleaver.step</name>
+<purpose>Permute input symbols using shift registers</purpose>
+</tocitem>
+<tocitem target="ref/comm.helicaldeinterleaver.reset.html">
+<name>comm.HelicalDeinterleaver.reset</name>
+<purpose>Reset states of the helical deinterleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.helicaldeinterleaver.step.html">
+<name>comm.HelicalDeinterleaver.step</name>
+<purpose>Restore ordering of symbols using a helical array</purpose>
+</tocitem>
+<tocitem target="ref/comm.helicalinterleaver.reset.html">
+<name>comm.HelicalInterleaver.reset</name>
+<purpose>Reset states of the helical interleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.helicalinterleaver.step.html">
+<name>comm.HelicalInterleaver.step</name>
+<purpose>Permute input symbols using a helical array</purpose>
+</tocitem>
+<tocitem target="ref/comm.multiplexeddeinterleaver.reset.html">
+<name>comm.MultiplexedDeinterleaver.reset</name>
+<purpose>Reset states of the multiplexed deinterleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.multiplexeddeinterleaver.step.html">
+<name>comm.MultiplexedDeinterleaver.step</name>
+<purpose>Deinterleave input symbols using a set of shift registers
+with specified delays</purpose>
+</tocitem>
+<tocitem target="ref/comm.multiplexedinterleaver.reset.html">
+<name>comm.MultiplexedInterleaver.reset</name>
+<purpose>Reset states of the multiplexed interleaver object</purpose>
+</tocitem>
+<tocitem target="ref/comm.multiplexedinterleaver.step.html">
+<name>comm.MultiplexedInterleaver.step</name>
+<purpose>Permute input symbols using a set of shift registers with
+specified delays</purpose>
+</tocitem>
+<tocitem target="ref/comm.algebraicinterleaver.step.html">
+<name>comm.AlgebraicInterleaver.step</name>
+<purpose>(To be removed) Permute input symbols using an algebraically derived permutation
+            vector</purpose>
+</tocitem>
+<tocitem target="ref/comm.algebraicdeinterleaver.step.html">
+<name>comm.AlgebraicDeinterleaver.step</name>
+<purpose>(To be removed) Deinterleave input symbols using algebraically derived
+            permutation vector</purpose>
+</tocitem>
+<tocitem target="ref/comm.blockinterleaver.step.html">
+<name>comm.BlockInterleaver.step</name>
+<purpose>(To be removed) Permute input symbols using a permutation vector</purpose>
+</tocitem>
+<tocitem target="ref/comm.blockdeinterleaver.step.html">
+<name>comm.BlockDeinterleaver.step</name>
+<purpose>(To be removed) Deinterleave input symbols using permutation vector</purpose>
+</tocitem>
+<tocitem target="ref/comm.matrixhelicalscaninterleaver.step.html">
+<name>comm.MatrixHelicalScanInterleaver.step</name>
+<purpose>(To be removed) Permute input symbols by selecting matrix elements along
+            diagonals</purpose>
+</tocitem>
+<tocitem target="ref/comm.matrixhelicalscandeinterleaver.step.html">
+<name>comm.MatrixHelicalScanDeinterleaver.step</name>
+<purpose>(To be removed) Deinterleave input symbols by filling a matrix along
+            diagonals</purpose>
+</tocitem>
+<tocitem target="ref/comm.matrixinterleaver.step.html">
+<name>comm.MatrixInterleaver.step</name>
+<purpose>(To be removed) Permute input symbols using permutation matrix</purpose>
+</tocitem>
+<tocitem target="ref/comm.matrixdeinterleaver.step.html">
+<name>comm.MatrixDeinterleaver.step</name>
+<purpose>(To be removed) Deinterleave input symbols using permutation matrix</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="modulation.html">Modulation
+<tocitem target="digital-baseband-modulation.html">Digital Baseband Modulation
+<tocitem target="ref/genqammod.html">
+<name>genqammod</name>
+<purpose>General quadrature amplitude modulation</purpose>
+</tocitem>
+<tocitem target="ref/genqamdemod.html">
+<name>genqamdemod</name>
+<purpose>General quadrature amplitude
+demodulation</purpose>
+</tocitem>
+<tocitem target="ref/pammod.html">
+<name>pammod</name>
+<purpose>Pulse amplitude modulation</purpose>
+</tocitem>
+<tocitem target="ref/pamdemod.html">
+<name>pamdemod</name>
+<purpose>Pulse amplitude demodulation</purpose>
+</tocitem>
+<tocitem target="ref/qammod.html">
+<name>qammod</name>
+<purpose>Quadrature amplitude modulation</purpose>
+</tocitem>
+<tocitem target="ref/qamdemod.html">
+<name>qamdemod</name>
+<purpose>Quadrature amplitude demodulation</purpose>
+</tocitem>
+<tocitem target="ref/apskmod.html">
+<name>apskmod</name>
+<purpose>Amplitude phase shift keying (APSK) modulation</purpose>
+</tocitem>
+<tocitem target="ref/apskdemod.html">
+<name>apskdemod</name>
+<purpose>Amplitude phase shift keying (APSK) demodulation</purpose>
+</tocitem>
+<tocitem target="ref/dvbsapskmod.html">
+<name>dvbsapskmod</name>
+<purpose>DVB-S2/S2X/SH standard-specific amplitude phase shift keying (APSK)
+            modulation</purpose>
+</tocitem>
+<tocitem target="ref/dvbsapskdemod.html">
+<name>dvbsapskdemod</name>
+<purpose>DVB-S2/S2X/SH standard-specific amplitude phase shift keying (APSK)
+            demodulation</purpose>
+</tocitem>
+<tocitem target="ref/mil188qammod.html">
+<name>mil188qammod</name>
+<purpose>MIL-STD-188-110 B/C standard-specific quadrature amplitude modulation
+            (QAM)</purpose>
+</tocitem>
+<tocitem target="ref/mil188qamdemod.html">
+<name>mil188qamdemod</name>
+<purpose>MIL-STD-188-110 B/C standard-specific quadrature amplitude
+            demodulation</purpose>
+</tocitem>
+<tocitem target="ref/mskmod.html">
+<name>mskmod</name>
+<purpose>Minimum shift keying modulation</purpose>
+</tocitem>
+<tocitem target="ref/mskdemod.html">
+<name>mskdemod</name>
+<purpose>Minimum shift keying demodulation</purpose>
+</tocitem>
+<tocitem target="ref/fskmod.html">
+<name>fskmod</name>
+<purpose>Frequency shift keying modulation</purpose>
+</tocitem>
+<tocitem target="ref/fskdemod.html">
+<name>fskdemod</name>
+<purpose>Frequency shift keying demodulation</purpose>
+</tocitem>
+<tocitem target="ref/ofdmmod.html">
+<name>ofdmmod</name>
+<purpose>Modulate frequency-domain signal using orthogonal frequency division
+            multiplexing (OFDM)</purpose>
+</tocitem>
+<tocitem target="ref/ofdmdemod.html">
+<name>ofdmdemod</name>
+<purpose>Demodulate time-domain signal using orthogonal frequency division multiplexing
+            (OFDM)</purpose>
+</tocitem>
+<tocitem target="ref/dpskmod.html">
+<name>dpskmod</name>
+<purpose>Differential phase shift keying modulation</purpose>
+</tocitem>
+<tocitem target="ref/dpskdemod.html">
+<name>dpskdemod</name>
+<purpose>Differential phase shift keying demodulation</purpose>
+</tocitem>
+<tocitem target="ref/modnorm.html">
+<name>modnorm</name>
+<purpose>Scaling factor for normalizing modulation output</purpose>
+</tocitem>
+<tocitem target="ref/pskmod.html">
+<name>pskmod</name>
+<purpose>Phase shift keying modulation</purpose>
+</tocitem>
+<tocitem target="ref/pskdemod.html">
+<name>pskdemod</name>
+<purpose>Phase shift keying demodulation</purpose>
+</tocitem>
+<tocitem target="ref/comm.bpskdemodulator.constellation.html">
+<name>comm.BPSKDemodulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.bpskdemodulator.step.html">
+<name>comm.BPSKDemodulator.step</name>
+<purpose>Demodulate using BPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.bpskmodulator.constellation.html">
+<name>comm.BPSKModulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.bpskmodulator.step.html">
+<name>comm.BPSKModulator.step</name>
+<purpose>Modulate using BPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.dbpskdemodulator.reset.html">
+<name>comm.DBPSKDemodulator.reset</name>
+<purpose>Reset states of DBPSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.dbpskdemodulator.step.html">
+<name>comm.DBPSKDemodulator.step</name>
+<purpose>Demodulate using DBPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.dbpskmodulator.reset.html">
+<name>comm.DBPSKModulator.reset</name>
+<purpose>Reset states of DBPSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.dbpskmodulator.step.html">
+<name>comm.DBPSKModulator.step</name>
+<purpose>Modulate using DBPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.generalqamdemodulator.step.html">
+<name>comm.GeneralQAMDemodulator.step</name>
+<purpose>Demodulate using arbitrary QAM constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.generalqammodulator.step.html">
+<name>comm.GeneralQAMModulator.step</name>
+<purpose>Modulate using arbitrary QAM constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.generalqamtcmdemodulator.reset.html">
+<name>comm.GeneralQAMTCMDemodulator.reset</name>
+<purpose>Reset states of the general QAM TCM demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.generalqamtcmdemodulator.step.html">
+<name>comm.GeneralQAMTCMDemodulator.step</name>
+<purpose>Demodulate convolutionally encoded data mapped to arbitrary
+QAM constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.generalqamtcmmodulator.reset.html">
+<name>comm.GeneralQAMTCMModulator.reset</name>
+<purpose>Reset states of the general QAM TCM modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.generalqamtcmmodulator.step.html">
+<name>comm.GeneralQAMTCMModulator.step</name>
+<purpose>Convolutionally encode binary data and map using arbitrary
+QAM constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqamtcmmodulator.step.html">
+<name>comm.RectangularQAMTCMModulator.step</name>
+<purpose>Convolutionally encode binary data and map using rectangular
+QAM constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqamtcmmodulator.reset.html">
+<name>comm.RectangularQAMTCMModulator.reset</name>
+<purpose>Reset states of the rectangular QAM TCM modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqamtcmdemodulator.step.html">
+<name>comm.RectangularQAMTCMDemodulator.step</name>
+<purpose>Demodulate convolutionally encoded data mapped to rectangular
+QAM constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqamtcmdemodulator.reset.html">
+<name>comm.RectangularQAMTCMDemodulator.reset</name>
+<purpose>Reset states of the rectangular QAM TCM demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpfskdemodulator.reset.html">
+<name>comm.CPFSKDemodulator.reset</name>
+<purpose>Reset states of CPFSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpfskdemodulator.step.html">
+<name>comm.CPFSKDemodulator.step</name>
+<purpose>Demodulate using CPFSK method and Viterbi algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpfskmodulator.reset.html">
+<name>comm.CPFSKModulator.reset</name>
+<purpose>Reset states of CPFSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpfskmodulator.step.html">
+<name>comm.CPFSKModulator.step</name>
+<purpose>Modulate using CPFSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmcarrierphasesynchronizer.reset.html">
+<name>comm.CPMCarrierPhaseSynchronizer.reset</name>
+<purpose>Reset states of the CPM carrier phase synchronizer object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmcarrierphasesynchronizer.step.html">
+<name>comm.CPMCarrierPhaseSynchronizer.step</name>
+<purpose>Recover carrier phase of baseband CPM signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmdemodulator.reset.html">
+<name>comm.CPMDemodulator.reset</name>
+<purpose>Reset states of CPM demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmdemodulator.step.html">
+<name>comm.CPMDemodulator.step</name>
+<purpose>Demodulate using CPM method and Viterbi algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmmodulator.reset.html">
+<name>comm.CPMModulator.reset</name>
+<purpose>Reset states of CPM modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmmodulator.step.html">
+<name>comm.CPMModulator.step</name>
+<purpose>Modulate using CPM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.gmskdemodulator.reset.html">
+<name>comm.GMSKDemodulator.reset</name>
+<purpose>Reset states of the GMSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gmskdemodulator.step.html">
+<name>comm.GMSKDemodulator.step</name>
+<purpose>Demodulate using GMSK method and the Viterbi algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.gmskmodulator.reset.html">
+<name>comm.GMSKModulator.reset</name>
+<purpose>Reset states of the GMSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gmskmodulator.step.html">
+<name>comm.GMSKModulator.step</name>
+<purpose>Modulate using GMSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.mskdemodulator.reset.html">
+<name>comm.MSKDemodulator.reset</name>
+<purpose>Reset states of the MSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.mskdemodulator.step.html">
+<name>comm.MSKDemodulator.step</name>
+<purpose>Demodulate using MSK method and the Viterbi algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.mskmodulator.reset.html">
+<name>comm.MSKModulator.reset</name>
+<purpose>Reset states of the MSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.mskmodulator.step.html">
+<name>comm.MSKModulator.step</name>
+<purpose>Modulate using MSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.fskdemodulator.reset.html">
+<name>comm.FSKDemodulator.reset</name>
+<purpose>Reset states of M-FSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.fskdemodulator.step.html">
+<name>comm.FSKDemodulator.step</name>
+<purpose>Demodulate using M-ary FSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.fskmodulator.reset.html">
+<name>comm.FSKModulator.reset</name>
+<purpose>Reset states of M-FSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.fskmodulator.step.html">
+<name>comm.FSKModulator.step</name>
+<purpose>Modulate using M-ary FSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmmodulator.info.html">
+<name>comm.OFDMModulator.info</name>
+<purpose>Provide dimensioning information for the OFDM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmmodulator.reset.html">
+<name>comm.OFDMModulator.reset</name>
+<purpose>Reset states of the OFDMModulator System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmmodulator.showresourcemapping.html">
+<name>comm.OFDMModulator.showResourceMapping</name>
+<purpose>Show the subcarrier mapping of the OFDM symbols created
+by the OFDM modulator System
+        object.</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmmodulator.step.html">
+<name>comm.OFDMModulator.step</name>
+<purpose>Modulate using OFDM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmdemodulator.info.html">
+<name>comm.OFDMDemodulator.info</name>
+<purpose>Provide dimensioning information for the OFDM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmdemodulator.reset.html">
+<name>comm.OFDMDemodulator.reset</name>
+<purpose>Reset states of the OFDMDemodulator System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmdemodulator.showresourcemapping.html">
+<name>comm.OFDMDemodulator.showResourceMapping</name>
+<purpose>Show the subcarrier mapping of the OFDM symbols created
+by the OFDM demodulator System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ofdmdemodulator.step.html">
+<name>comm.OFDMDemodulator.step</name>
+<purpose>Demodulate using OFDM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.dpskdemodulator.reset.html">
+<name>comm.DPSKDemodulator.reset</name>
+<purpose>Reset states of M-DPSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.dpskdemodulator.step.html">
+<name>comm.DPSKDemodulator.step</name>
+<purpose>Demodulate using M-ary DPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.dpskmodulator.reset.html">
+<name>comm.DPSKModulator.reset</name>
+<purpose>Reset states of M-DPSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.dpskmodulator.step.html">
+<name>comm.DPSKModulator.step</name>
+<purpose>Modulate using M-ary DPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.dqpskdemodulator.reset.html">
+<name>comm.DQPSKDemodulator.reset</name>
+<purpose>Reset states of DQPSK demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.dqpskdemodulator.step.html">
+<name>comm.DQPSKDemodulator.step</name>
+<purpose>Demodulate using DQPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.dqpskmodulator.reset.html">
+<name>comm.DQPSKModulator.reset</name>
+<purpose>Reset states of DQPSK modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.dqpskmodulator.step.html">
+<name>comm.DQPSKModulator.step</name>
+<purpose>Modulate using DQPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.pskdemodulator.constellation.html">
+<name>comm.gpu.PSKDemodulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.pskdemodulator.step.html">
+<name>comm.gpu.PSKDemodulator.step</name>
+<purpose>Demodulate using M-ary PSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.pskmodulator.constellation.html">
+<name>comm.gpu.PSKModulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.pskmodulator.step.html">
+<name>comm.gpu.PSKModulator.step</name>
+<purpose>Modulate using M-ary PSK method with GPU</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskdemodulator.step.html">
+<name>comm.PSKDemodulator.step</name>
+<purpose>Demodulate using M-ary PSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskmodulator.constellation.html">
+<name>comm.PSKModulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskdemodulator.constellation.html">
+<name>comm.PSKDemodulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.psktcmdemodulator.reset.html">
+<name>comm.PSKTCMDemodulator.reset</name>
+<purpose>Reset states of the PSK TCM demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.psktcmdemodulator.step.html">
+<name>comm.PSKTCMDemodulator.step</name>
+<purpose>Demodulate convolutionally encoded data mapped to M-ary
+PSK constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.psktcmmodulator.reset.html">
+<name>comm.PSKTCMModulator.reset</name>
+<purpose>Reset states of the PSK TCM modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.psktcmmodulator.step.html">
+<name>comm.PSKTCMModulator.step</name>
+<purpose>Convolutionally encode binary data and map using M-ary
+PSK constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskmodulator.step.html">
+<name>comm.PSKModulator.step</name>
+<purpose>Modulate using M-ary PSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.qpskdemodulator.constellation.html">
+<name>comm.QPSKDemodulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.qpskdemodulator.step.html">
+<name>comm.QPSKDemodulator.step</name>
+<purpose>Demodulate using QPSK method</purpose>
+</tocitem>
+<tocitem target="ref/comm.qpskmodulator.constellation.html">
+<name>comm.QPSKModulator.constellation</name>
+<purpose>Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.qpskmodulator.step.html">
+<name>comm.QPSKModulator.step</name>
+<purpose>Modulate using QPSK method</purpose>
+</tocitem>
+<tocitem target="ref/oqpskmod.html">
+<name>oqpskmod</name>
+<purpose>(Removed) Offset quadrature phase shift keying modulation</purpose>
+</tocitem>
+<tocitem target="ref/oqpskdemod.html">
+<name>oqpskdemod</name>
+<purpose>(Removed) Offset quadrature phase shift keying demodulation</purpose>
+</tocitem>
+<tocitem target="ref/comm.pamdemodulator.constellation.html">
+<name>comm.PAMDemodulator.constellation</name>
+<purpose>(Not recommended) Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.pamdemodulator.step.html">
+<name>comm.PAMDemodulator.step</name>
+<purpose>(Not recommended) Demodulate using M-ary PAM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.pammodulator.constellation.html">
+<name>comm.PAMModulator.constellation</name>
+<purpose>(Not recommended) Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.pammodulator.step.html">
+<name>comm.PAMModulator.step</name>
+<purpose>(Not recommended) Modulate using M-ary PAM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqammodulator.step.html">
+<name>comm.RectangularQAMModulator.step</name>
+<purpose>(To be removed) Modulate using rectangular QAM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqammodulator.constellation.html">
+<name>comm.RectangularQAMModulator.constellation</name>
+<purpose>(To be removed) Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqamdemodulator.step.html">
+<name>comm.RectangularQAMDemodulator.step</name>
+<purpose>(To be removed) Demodulate using rectangular QAM method</purpose>
+</tocitem>
+<tocitem target="ref/comm.rectangularqamdemodulator.constellation.html">
+<name>comm.RectangularQAMDemodulator.constellation</name>
+<purpose>(To be removed) Calculate or plot ideal signal constellation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analog-baseband-modulation.html">Analog Baseband Modulation
+<tocitem target="ref/comm.fmbroadcastdemodulator.info.html">
+<name>comm.FMBroadcastDemodulator.info</name>
+<purpose>Filter information about FM broadcast demodulator</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmbroadcastdemodulator.reset.html">
+<name>comm.FMBroadcastDemodulator.reset</name>
+<purpose>Reset states of the FM broadcast demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmbroadcastdemodulator.step.html">
+<name>comm.FMBroadcastDemodulator.step</name>
+<purpose>Apply FM broadcast demodulation</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmbroadcastmodulator.info.html">
+<name>comm.FMBroadcastModulator.info</name>
+<purpose>Filter information about FM broadcast modulator</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmbroadcastmodulator.reset.html">
+<name>comm.FMBroadcastModulator.reset</name>
+<purpose>Reset states of the FM broadcast modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmbroadcastmodulator.step.html">
+<name>comm.FMBroadcastModulator.step</name>
+<purpose>Apply FM broadcast modulation</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmdemodulator.reset.html">
+<name>comm.FMDemodulator.reset</name>
+<purpose>Reset states of the FM demodulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmdemodulator.step.html">
+<name>comm.FMDemodulator.step</name>
+<purpose>Applies FM baseband demodulation</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmmodulator.reset.html">
+<name>comm.FMModulator.reset</name>
+<purpose>Reset states of the FM modulator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.fmmodulator.step.html">
+<name>comm.FMModulator.step</name>
+<purpose>Applies FM baseband modulation</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="analog-passband-modulation.html">Analog Passband Modulation
+<tocitem target="ref/ammod.html">
+<name>ammod</name>
+<purpose>Amplitude modulation</purpose>
+</tocitem>
+<tocitem target="ref/amdemod.html">
+<name>amdemod</name>
+<purpose>Amplitude demodulation</purpose>
+</tocitem>
+<tocitem target="ref/fmmod.html">
+<name>fmmod</name>
+<purpose>Frequency modulation</purpose>
+</tocitem>
+<tocitem target="ref/fmdemod.html">
+<name>fmdemod</name>
+<purpose>Frequency demodulation</purpose>
+</tocitem>
+<tocitem target="ref/pmmod.html">
+<name>pmmod</name>
+<purpose>Phase modulation</purpose>
+</tocitem>
+<tocitem target="ref/pmdemod.html">
+<name>pmdemod</name>
+<purpose>Phase demodulation</purpose>
+</tocitem>
+<tocitem target="ref/ssbmod.html">
+<name>ssbmod</name>
+<purpose>Single sideband amplitude modulation</purpose>
+</tocitem>
+<tocitem target="ref/ssbdemod.html">
+<name>ssbdemod</name>
+<purpose>Single sideband amplitude demodulation</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="filtering.html">Filtering
+<tocitem target="../signal/ref/gaussdesign.html">
+<name>gaussdesign</name>
+<purpose>Gaussian FIR pulse-shaping filter design</purpose>
+</tocitem>
+<tocitem target="ref/intdump.html">
+<name>intdump</name>
+<purpose>Integrate and dump</purpose>
+</tocitem>
+<tocitem target="../signal/ref/rcosdesign.html">
+<name>rcosdesign</name>
+<purpose>Raised cosine FIR pulse-shaping filter design</purpose>
+</tocitem>
+<tocitem target="ref/rectpulse.html">
+<name>rectpulse</name>
+<purpose>Rectangular pulse shaping</purpose>
+</tocitem>
+<tocitem target="ref/comm.integrateanddumpfilter.step.html">
+<name>comm.IntegrateAndDumpFilter.step</name>
+<purpose>Integrate discrete-time signal with periodic resets</purpose>
+</tocitem>
+<tocitem target="ref/comm.raisedcosinereceivefilter.coeffs.html">
+<name>comm.RaisedCosineReceiveFilter.coeffs</name>
+<purpose>Returns coefficients for filters</purpose>
+</tocitem>
+<tocitem target="ref/comm.raisedcosinereceivefilter.reset.html">
+<name>comm.RaisedCosineReceiveFilter.reset</name>
+<purpose>Reset internal states of System object</purpose>
+</tocitem>
+<tocitem target="ref/comm.raisedcosinereceivefilter.step.html">
+<name>comm.RaisedCosineReceiveFilter.step</name>
+<purpose>Output decimated values of input signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.raisedcosinetransmitfilter.coeffs.html">
+<name>comm.RaisedCosineTransmitFilter.coeffs</name>
+<purpose>Returns coefficients for filters</purpose>
+</tocitem>
+<tocitem target="ref/comm.raisedcosinetransmitfilter.reset.html">
+<name>comm.RaisedCosineTransmitFilter.reset</name>
+<purpose>Reset internal states of System object</purpose>
+</tocitem>
+<tocitem target="ref/comm.raisedcosinetransmitfilter.step.html">
+<name>comm.RaisedCosineTransmitFilter.step</name>
+<purpose>Output interpolated values of input signal</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="equalization.html">Equalization
+<tocitem target="ref/mlseeq.html">
+<name>mlseeq</name>
+<purpose>Equalize linearly modulated signal using MLSE</purpose>
+</tocitem>
+<tocitem target="ref/comm.mlseequalizer.reset.html">
+<name>comm.MLSEEqualizer.reset</name>
+<purpose>Reset states of MLSEE object</purpose>
+</tocitem>
+<tocitem target="ref/comm.mlseequalizer.step.html">
+<name>comm.MLSEEqualizer.step</name>
+<purpose>Equalize using maximum likelihood sequence estimation</purpose>
+</tocitem>
+<tocitem target="ref/comm.linearequalizer.info.html">
+<name>info</name>
+<purpose>Characteristic information about the equalizer object</purpose>
+</tocitem>
+<tocitem target="ref/comm.linearequalizer.maxstep.html">
+<name>maxstep</name>
+<purpose>Maximum step size for LMS equalizer convergence</purpose>
+</tocitem>
+<tocitem target="ref/comm.linearequalizer.mmseweights.html">
+<name>mmseweights</name>
+<purpose>Linear equalizer MMSE tap weights </purpose>
+</tocitem>
+<tocitem target="ref/cma.html">
+<name>cma</name>
+<purpose>(To be removed) Construct constant modulus algorithm (CMA)
+            object</purpose>
+</tocitem>
+<tocitem target="ref/dfe.html">
+<name>dfe</name>
+<purpose>(To be removed) Construct decision-feedback equalizer
+            object</purpose>
+</tocitem>
+<tocitem target="ref/equalize.html">
+<name>equalize</name>
+<purpose>(To be removed) Equalize signal using equalizer object</purpose>
+</tocitem>
+<tocitem target="ref/lineareq.html">
+<name>lineareq</name>
+<purpose>(To be removed) Construct linear equalizer object</purpose>
+</tocitem>
+<tocitem target="ref/lms.html">
+<name>lms</name>
+<purpose>(To be removed) Construct least mean square (LMS) adaptive algorithm
+            object</purpose>
+</tocitem>
+<tocitem target="ref/normlms.html">
+<name>normlms</name>
+<purpose>(To be removed) Construct normalized least mean square (LMS) adaptive algorithm
+            object</purpose>
+</tocitem>
+<tocitem target="ref/resetequalizer.html">
+<name>reset (equalizer)</name>
+<purpose>Reset equalizer object</purpose>
+</tocitem>
+<tocitem target="ref/rls.html">
+<name>rls</name>
+<purpose>(To be removed) Construct recursive least squares (RLS) adaptive algorithm
+            object</purpose>
+</tocitem>
+<tocitem target="ref/signlms.html">
+<name>signlms</name>
+<purpose>(To be removed) Construct signed least mean square (LMS) adaptive algorithm
+            object</purpose>
+</tocitem>
+<tocitem target="ref/varlms.html">
+<name>varlms</name>
+<purpose>(To be removed) Construct variable-step-size least mean square (LMS) adaptive
+            algorithm object</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="synchronization-and-receiver-design.html">Synchronization and Receiver Design
+<tocitem target="ref/iqcoef2imbal.html">
+<name>iqcoef2imbal</name>
+<purpose>Convert compensator coefficient to amplitude and phase
+imbalance</purpose>
+</tocitem>
+<tocitem target="ref/iqimbal2coef.html">
+<name>iqimbal2coef</name>
+<purpose>Convert I/Q imbalance to compensator coefficient</purpose>
+</tocitem>
+<tocitem target="ref/comm.agc.reset.html">
+<name>comm.AGC.reset</name>
+<purpose>Reset internal states of automatic gain controller</purpose>
+</tocitem>
+<tocitem target="ref/comm.agc.step.html">
+<name>comm.AGC.step</name>
+<purpose>Apply adaptive gain to input signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.iqimbalancecompensator.step.html">
+<name>comm.IQImbalanceCompensator.step</name>
+<purpose>Compensate I/Q Imbalance</purpose>
+</tocitem>
+<tocitem target="ref/comm.iqimbalancecompensator.reset.html">
+<name>comm.IQImbalanceCompensator.reset</name>
+<purpose>Reset states of the IQImbalanceCompensator System
+        object</purpose>
+</tocitem>
+<tocitem target="ref/comm.carriersynchronizer.info.html">
+<name>info</name>
+<purpose>Characteristic information about carrier synchronizer</purpose>
+</tocitem>
+<tocitem target="ref/comm.preambledetector.reset.html">
+<name>comm.PreambleDetector.reset</name>
+<purpose>Reset states of preamble detector object</purpose>
+</tocitem>
+<tocitem target="ref/comm.preambledetector.step.html">
+<name>comm.PreambleDetector.step</name>
+<purpose>Detect preamble in data</purpose>
+</tocitem>
+<tocitem target="ref/comm.coarsefrequencycompensator.info.html">
+<name>comm.CoarseFrequencyCompensator.info</name>
+<purpose>Characteristic information about coarse frequency compensator</purpose>
+</tocitem>
+<tocitem target="ref/comm.coarsefrequencycompensator.reset.html">
+<name>comm.CoarseFrequencyCompensator.reset</name>
+<purpose>Reset states of the CoarseFrequencyCompensator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.coarsefrequencycompensator.step.html">
+<name>comm.CoarseFrequencyCompensator.step</name>
+<purpose>Compensate for frequency offset</purpose>
+</tocitem>
+<tocitem target="ref/comm.discretetimevco.reset.html">
+<name>comm.DiscreteTimeVCO.reset</name>
+<purpose>Reset states of discrete-time VCO object</purpose>
+</tocitem>
+<tocitem target="ref/comm.discretetimevco.step.html">
+<name>comm.DiscreteTimeVCO.step</name>
+<purpose>Generate variable frequency sinusoid</purpose>
+</tocitem>
+<tocitem target="ref/comm.gmsktimingsynchronizer.reset.html">
+<name>comm.GMSKTimingSynchronizer.reset</name>
+<purpose>Reset states of GMSK timing phase synchronizer object</purpose>
+</tocitem>
+<tocitem target="ref/comm.gmsktimingsynchronizer.step.html">
+<name>comm.GMSKTimingSynchronizer.step</name>
+<purpose>Recover symbol timing phase using fourth-order nonlinearity
+method</purpose>
+</tocitem>
+<tocitem target="ref/comm.msktimingsynchronizer.reset.html">
+<name>comm.MSKTimingSynchronizer.reset</name>
+<purpose>Reset states of MSK timing phase synchronizer object</purpose>
+</tocitem>
+<tocitem target="ref/comm.msktimingsynchronizer.step.html">
+<name>comm.MSKTimingSynchronizer.step</name>
+<purpose>Recover symbol timing phase using fourth-order nonlinearity
+method</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskcoarsefrequencyestimator-system-object.html">
+<name>comm.PSKCoarseFrequencyEstimator</name>
+<purpose>(To be removed)
+   Estimate frequency offset for PSK signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskcoarsefrequencyestimator.reset.html">
+<name>comm.PSKCoarseFrequencyEstimator.reset</name>
+<purpose>(To be removed) Reset states of the PSKCoarseFrequencyEstimator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.pskcoarsefrequencyestimator.step.html">
+<name>comm.PSKCoarseFrequencyEstimator.step</name>
+<purpose>(To be removed) Estimate frequency offset for PSK signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.qamcoarsefrequencyestimator-system-object.html">
+<name>comm.QAMCoarseFrequencyEstimator</name>
+<purpose>(To be removed)
+   Estimate frequency offset for QAM signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.qamcoarsefrequencyestimator.reset.html">
+<name>comm.QAMCoarseFrequencyEstimator.reset</name>
+<purpose>(To be removed) Reset states of the QAMCoarseFrequencyEstimator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.qamcoarsefrequencyestimator.step.html">
+<name>comm.QAMCoarseFrequencyEstimator.step</name>
+<purpose>(To be removed) Estimate frequency offset for QAM signal</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="multiple-input-multiple-output-mimo.html">Multiple-Input Multiple-Output (MIMO)
+<tocitem target="ref/comm.mimochannel.info.html">
+<name>comm.MIMOChannel.info</name>
+<purpose>Characteristic information about the fading channel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ostbccombiner.step.html">
+<name>comm.OSTBCCombiner.step</name>
+<purpose>Combine inputs using orthogonal space-time block code</purpose>
+</tocitem>
+<tocitem target="ref/comm.ostbcencoder.step.html">
+<name>comm.OSTBCEncoder.step</name>
+<purpose>Encode input using orthogonal space-time block code</purpose>
+</tocitem>
+<tocitem target="ref/comm.spheredecoder.step.html">
+<name>comm.SphereDecoder.step</name>
+<purpose>Decode received symbols using sphere decoding algorithm</purpose>
+</tocitem>
+<tocitem target="ref/comm.ltemimochannel-system-object.html">
+<name>comm.LTEMIMOChannel</name>
+<purpose> (To be removed) Filter input
+            signal through LTE MIMO multipath fading channel</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="rf-modeling.html">RF Component Modeling
+<tocitem target="rf-impairments.html">RF Impairments and Corrections
+<tocitem target="ref/fspl.html">
+<name>fspl</name>
+<purpose>Free space path loss</purpose>
+</tocitem>
+<tocitem target="ref/iqimbal.html">
+<name>iqimbal</name>
+<purpose>Apply I/Q imbalance to input signal</purpose>
+</tocitem>
+<tocitem target="ref/iqcoef2imbal.html">
+<name>iqcoef2imbal</name>
+<purpose>Convert compensator coefficient to amplitude and phase
+imbalance</purpose>
+</tocitem>
+<tocitem target="ref/iqimbal2coef.html">
+<name>iqimbal2coef</name>
+<purpose>Convert I/Q imbalance to compensator coefficient</purpose>
+</tocitem>
+<tocitem target="ref/plotphasenoisefilter.html">
+<name>plotPhaseNoiseFilter</name>
+<purpose>Plot response of phase noise filter block</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="rf-propagation-and-channel-models.html">RF Propagation and Channel Models
+<tocitem target="rf-propagation.html">RF Propagation
+<tocitem target="ref/addcustombasemap.html">
+<name>addCustomBasemap</name>
+<purpose>Add custom basemap</purpose>
+</tocitem>
+<tocitem target="ref/addcustomterrain.html">
+<name>addCustomTerrain</name>
+<purpose>Add custom terrain data</purpose>
+</tocitem>
+<tocitem target="ref/removecustombasemap.html">
+<name>removeCustomBasemap</name>
+<purpose>Remove custom basemap</purpose>
+</tocitem>
+<tocitem target="ref/removecustomterrain.html">
+<name>removeCustomTerrain</name>
+<purpose>Remove custom terrain data</purpose>
+</tocitem>
+<tocitem target="ref/rfprop.show.html">
+<name>show</name>
+<purpose>Show site location on map</purpose>
+</tocitem>
+<tocitem target="ref/hide.html">
+<name>hide</name>
+<purpose>Hide site location on map</purpose>
+</tocitem>
+<tocitem target="ref/distance.html">
+<name>distance</name>
+<purpose>Distance between sites</purpose>
+</tocitem>
+<tocitem target="ref/angle.html">
+<name>angle</name>
+<purpose>Angle between sites</purpose>
+</tocitem>
+<tocitem target="ref/elevation.html">
+<name>elevation</name>
+<purpose>Elevation of site</purpose>
+</tocitem>
+<tocitem target="ref/location.html">
+<name>location</name>
+<purpose>Location coordinates at a given distance and angle from site</purpose>
+</tocitem>
+<tocitem target="ref/coverage.html">
+<name>coverage</name>
+<purpose>Display coverage map</purpose>
+</tocitem>
+<tocitem target="ref/rfprop.pattern.html">
+<name>pattern</name>
+<purpose>Plot antenna radiation pattern on map</purpose>
+</tocitem>
+<tocitem target="ref/sinr.html">
+<name>sinr</name>
+<purpose>Display signal-to-interference-plus-noise ratio (SINR) map</purpose>
+</tocitem>
+<tocitem target="ref/link.html">
+<name>link</name>
+<purpose>Display communication link on map</purpose>
+</tocitem>
+<tocitem target="ref/sigstrength.html">
+<name>sigstrength</name>
+<purpose>Signal strength due to transmitter</purpose>
+</tocitem>
+<tocitem target="ref/raytrace.html">
+<name>raytrace</name>
+<purpose>Plot propagation paths between sites</purpose>
+</tocitem>
+<tocitem target="ref/los.html">
+<name>los</name>
+<purpose>Plot or compute the line-of-sight (LOS)  visibility between sites on a
+            map</purpose>
+</tocitem>
+<tocitem target="ref/propagationmodel.html">
+<name>propagationModel</name>
+<purpose>Create RF propagation model</purpose>
+</tocitem>
+<tocitem target="ref/rainpl.html">
+<name>rainpl</name>
+<purpose>RF signal attenuation due to rainfall</purpose>
+</tocitem>
+<tocitem target="ref/gaspl.html">
+<name>gaspl</name>
+<purpose>RF signal attenuation due to atmospheric gases</purpose>
+</tocitem>
+<tocitem target="ref/fogpl.html">
+<name>fogpl</name>
+<purpose>RF signal attenuation due to fog and clouds</purpose>
+</tocitem>
+<tocitem target="ref/fspl.html">
+<name>fspl</name>
+<purpose>Free space path loss</purpose>
+</tocitem>
+<tocitem target="ref/range.html">
+<name>range</name>
+<purpose>Range of radio wave propagation</purpose>
+</tocitem>
+<tocitem target="ref/pathloss.html">
+<name>pathloss</name>
+<purpose>Path loss of radio wave propagation</purpose>
+</tocitem>
+<tocitem target="ref/clearmap.html">
+<name>clearMap</name>
+<purpose>Clear map visualizations</purpose>
+</tocitem>
+<tocitem target="ref/close.html">
+<name>close</name>
+<purpose>Close map viewer window</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="channel-models.html">Channel Models
+<tocitem target="ref/awgn.html">
+<name>awgn</name>
+<purpose>Add white Gaussian noise to signal</purpose>
+</tocitem>
+<tocitem target="ref/bsc.html">
+<name>bsc</name>
+<purpose>Binary symmetric channel</purpose>
+</tocitem>
+<tocitem target="ref/stdchan.html">
+<name>stdchan</name>
+<purpose>Construct channel System
+        object from set of standardized channel models</purpose>
+</tocitem>
+<tocitem target="ref/fogpl.html">
+<name>fogpl</name>
+<purpose>RF signal attenuation due to fog and clouds</purpose>
+</tocitem>
+<tocitem target="ref/fspl.html">
+<name>fspl</name>
+<purpose>Free space path loss</purpose>
+</tocitem>
+<tocitem target="ref/gaspl.html">
+<name>gaspl</name>
+<purpose>RF signal attenuation due to atmospheric gases</purpose>
+</tocitem>
+<tocitem target="ref/rainpl.html">
+<name>rainpl</name>
+<purpose>RF signal attenuation due to rainfall</purpose>
+</tocitem>
+<tocitem target="ref/winner2.antennaarray.html">
+<name>winner2.AntennaArray</name>
+<purpose>Create antenna array</purpose>
+</tocitem>
+<tocitem target="ref/winner2.dipole.html">
+<name>winner2.dipole</name>
+<purpose>Calculate field pattern of half-wavelength dipole</purpose>
+</tocitem>
+<tocitem target="ref/winner2.layoutparset.html">
+<name>winner2.layoutparset</name>
+<purpose>WINNER II layout parameter configuration</purpose>
+</tocitem>
+<tocitem target="ref/winner2.wim.html">
+<name>winner2.wim</name>
+<purpose>Generate channel coefficients using WINNER II channel
+model</purpose>
+</tocitem>
+<tocitem target="ref/winner2.wimparset.html">
+<name>winner2.wimparset</name>
+<purpose>WINNER II model parameter configuration</purpose>
+</tocitem>
+<tocitem target="ref/doppler.html">
+<name>doppler</name>
+<purpose>Construct Doppler spectrum structure</purpose>
+</tocitem>
+<tocitem target="ref/rangeangle.html">
+<name>rangeangle</name>
+<purpose>Range and angle calculation</purpose>
+</tocitem>
+<tocitem target="ref/comm.gpu.awgnchannel.step.html">
+<name>comm.gpu.AWGNChannel.step</name>
+<purpose>Add white Gaussian noise to input signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.rayleighchannel.info.html">
+<name>comm.RayleighChannel.info</name>
+<purpose>Display information about the RayleighChannel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.rayleighchannel.reset.html">
+<name>comm.RayleighChannel.reset</name>
+<purpose>Reset states of the RayleighChannel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.rayleighchannel.step.html">
+<name>comm.RayleighChannel.step</name>
+<purpose>Filter input signal through multipath Rayleigh fading
+channel</purpose>
+</tocitem>
+<tocitem target="ref/comm.ricianchannel.info.html">
+<name>comm.RicianChannel.info</name>
+<purpose>Characteristic information about Rician Channel</purpose>
+</tocitem>
+<tocitem target="ref/comm.ricianchannel.reset.html">
+<name>comm.RicianChannel.reset</name>
+<purpose>Reset states of the RicianChannel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ricianchannel.step.html">
+<name>comm.RicianChannel.step</name>
+<purpose>Filter input signal through multipath Rician fading channel</purpose>
+</tocitem>
+<tocitem target="ref/comm.mimochannel.info.html">
+<name>comm.MIMOChannel.info</name>
+<purpose>Characteristic information about the fading channel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ltemimochannel.reset.html">
+<name>comm.LTEMIMOChannel.reset</name>
+<purpose>(To be removed) Reset states of the LTEMIMOChannel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ltemimochannel.step.html">
+<name>comm.LTEMIMOChannel.step</name>
+<purpose>(To be removed) Filter input signal through LTE MIMO multipath fading
+            channel</purpose>
+</tocitem>
+<tocitem target="ref/comm.winner2channel.info.html">
+<name>comm.WINNER2Channel.info</name>
+<purpose>Display information about WINNER2Channel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.winner2channel.reset.html">
+<name>comm.WINNER2Channel.reset</name>
+<purpose>Reset states of WINNER2Channel object</purpose>
+</tocitem>
+<tocitem target="ref/comm.winner2channel.step.html">
+<name>comm.WINNER2Channel.step</name>
+<purpose>Filter input signal through WINNER II fading channel</purpose>
+</tocitem>
+<tocitem target="ref/comm.thermalnoise.step.html">
+<name>comm.ThermalNoise.step</name>
+<purpose>Add receiver thermal noise</purpose>
+</tocitem>
+<tocitem target="ref/comm.phasenoise.visualize.html">
+<name>comm.PhaseNoise.visualize</name>
+<purpose>Visualize spectrum mask of phase noise</purpose>
+</tocitem>
+<tocitem target="ref/comm.phasefrequencyoffset.step.html">
+<name>comm.PhaseFrequencyOffset.step</name>
+<purpose>Apply phase and frequency offsets to input signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.memorylessnonlinearity.step.html">
+<name>comm.MemorylessNonlinearity.step</name>
+<purpose>Apply memoryless nonlinearity to input signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.binarysymmetricchannel.step.html">
+<name>comm.BinarySymmetricChannel.step</name>
+<purpose>(To be removed) Introduce binary errors</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmcarrierphasesynchronizer.reset.html">
+<name>comm.CPMCarrierPhaseSynchronizer.reset</name>
+<purpose>Reset states of the CPM carrier phase synchronizer object</purpose>
+</tocitem>
+<tocitem target="ref/comm.cpmcarrierphasesynchronizer.step.html">
+<name>comm.CPMCarrierPhaseSynchronizer.step</name>
+<purpose>Recover carrier phase of baseband CPM signal</purpose>
+</tocitem>
+<tocitem target="ref/comm.bittointeger.step.html">
+<name>comm.BitToInteger.step</name>
+<purpose>(To be removed) Convert vector of bits to vector of integers</purpose>
+</tocitem>
+<tocitem target="ref/comm.integertobit.step.html">
+<name>comm.IntegerToBit.step</name>
+<purpose>(To be removed) Convert vector of integers to vector of bits</purpose>
+</tocitem>
+<tocitem target="ref/testconsole.results.html">
+<name>testconsole.Results</name>
+<purpose>(To be removed) Gets results from test console simulations</purpose>
+</tocitem>
+<tocitem target="ref/doppler.ajakes.html">
+<name>doppler.ajakes</name>
+<purpose>(To be removed) Construct asymmetrical Doppler
+            spectrum object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.bell.html">
+<name>doppler.bell</name>
+<purpose>(To be removed) Construct bell-shaped Doppler spectrum object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.bigaussian.html">
+<name>doppler.bigaussian</name>
+<purpose>(To be removed) Construct bi-Gaussian
+			Doppler spectrum object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.flat.html">
+<name>doppler.flat</name>
+<purpose>(To be removed) Construct flat Doppler spectrum
+      object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.gaussian.html">
+<name>doppler.gaussian</name>
+<purpose>(To be removed) Construct Gaussian Doppler
+            spectrum object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.jakes.html">
+<name>doppler.jakes</name>
+<purpose>(To be removed) Construct Jakes Doppler spectrum
+            object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.rjakes.html">
+<name>doppler.rjakes</name>
+<purpose>(To be removed) Construct restricted Jakes
+            Doppler spectrum object</purpose>
+</tocitem>
+<tocitem target="ref/doppler.rounded.html">
+<name>doppler.rounded</name>
+<purpose>(To be removed) Construct rounded Doppler spectrum
+   object</purpose>
+</tocitem>
+<tocitem target="ref/legacychannelsim.html">
+<name>legacychannelsim</name>
+<purpose>(To be removed) Toggles random number generation mode for channel
+            objects</purpose>
+</tocitem>
+<tocitem target="ref/rayleighchan.html">
+<name>rayleighchan</name>
+<purpose>(To be removed) Construct Rayleigh fading channel
+      object</purpose>
+</tocitem>
+<tocitem target="ref/ricianchan.html">
+<name>ricianchan</name>
+<purpose>(To be removed) Construct Rician fading channel
+            object</purpose>
+</tocitem>
+<tocitem target="ref/filter.html">
+<name>filter</name>
+<purpose>(To be removed) Filter signal with channel
+      object</purpose>
+</tocitem>
+<tocitem target="ref/reset.html">
+<name>reset</name>
+<purpose>(To be removed) Reset channel object</purpose>
+</tocitem>
+<tocitem target="ref/plotchannel.html">
+<name>plot (channel)</name>
+<purpose>(To be removed) Plot channel characteristics with
+            channel visualization tool</purpose>
+</tocitem>
+<tocitem target="ref/hank2sys.html">
+<name>hank2sys</name>
+<purpose>Convert Hankel matrix to linear system model</purpose>
+</tocitem>
+<tocitem target="ref/hilbiir.html">
+<name>hilbiir</name>
+<purpose>Design Hilbert transform IIR filter</purpose>
+</tocitem>
+<tocitem target="ref/randseed.html">
+<name>randseed</name>
+<purpose>(To be removed) Generate prime numbers for use as
+            random number seeds</purpose>
+</tocitem>
+<tocitem target="ref/crc.detector.html">
+<name>crc.detector</name>
+<purpose>Construct CRC detector object</purpose>
+</tocitem>
+<tocitem target="ref/crc.generator.html">
+<name>crc.generator</name>
+<purpose>Construct CRC generator object</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="measurements-visualization-and-analysis.html">Measurements, Visualization, and Analysis
+<tocitem target="ref/biterr.html">
+<name>biterr</name>
+<purpose>Number of bit errors and bit error rate (BER)</purpose>
+</tocitem>
+<tocitem target="ref/symerr.html">
+<name>symerr</name>
+<purpose>Compute number of symbol errors and
+symbol error rate</purpose>
+</tocitem>
+<tocitem target="ref/berawgn.html">
+<name>berawgn</name>
+<purpose>Bit error rate (BER) for uncoded
+AWGN channels</purpose>
+</tocitem>
+<tocitem target="ref/bercoding.html">
+<name>bercoding</name>
+<purpose>Bit error rate (BER) for coded
+AWGN channels</purpose>
+</tocitem>
+<tocitem target="ref/berconfint.html">
+<name>berconfint</name>
+<purpose>Bit error rate (BER) and confidence
+interval of Monte Carlo simulation</purpose>
+</tocitem>
+<tocitem target="ref/berfading.html">
+<name>berfading</name>
+<purpose>Bit error rate (BER) for Rayleigh
+and Rician fading channels</purpose>
+</tocitem>
+<tocitem target="ref/berfit.html">
+<name>berfit</name>
+<purpose>Fit curve to nonsmooth empirical bit error rate (BER)
+      data</purpose>
+</tocitem>
+<tocitem target="ref/bersync.html">
+<name>bersync</name>
+<purpose>Bit error rate (BER) for imperfect
+synchronization</purpose>
+</tocitem>
+<tocitem target="ref/semianalytic.html">
+<name>semianalytic</name>
+<purpose>Calculate bit error rate (BER)
+using semianalytic technique</purpose>
+</tocitem>
+<tocitem target="ref/scatterplot.html">
+<name>scatterplot</name>
+<purpose>Generate scatter plot</purpose>
+</tocitem>
+<tocitem target="ref/eyediagram.html">
+<name>eyediagram</name>
+<purpose>Generate eye diagram</purpose>
+</tocitem>
+<tocitem target="ref/plotphasenoisefilter.html">
+<name>plotPhaseNoiseFilter</name>
+<purpose>Plot response of phase noise filter block</purpose>
+</tocitem>
+<tocitem target="ref/marcumq.html">
+<name>marcumq</name>
+<purpose>Generalized Marcum Q function</purpose>
+</tocitem>
+<tocitem target="ref/noisebw.html">
+<name>noisebw</name>
+<purpose>Equivalent noise bandwidth of filter</purpose>
+</tocitem>
+<tocitem target="ref/qfunc.html">
+<name>qfunc</name>
+<purpose>Q function</purpose>
+</tocitem>
+<tocitem target="ref/qfuncinv.html">
+<name>qfuncinv</name>
+<purpose>Inverse Q function</purpose>
+</tocitem>
+<tocitem target="ref/showcommblockdatatypetable.html">
+<name>showcommblockdatatypetable</name>
+<purpose>Communications Toolbox block characteristics</purpose>
+</tocitem>
+<tocitem target="ref/bertool.html">
+<name>bertool</name>
+<purpose>Open bit error rate analysis GUI
+(BERTool)</purpose>
+</tocitem>
+<tocitem target="ref/comm.acpr.reset.html">
+<name>comm.ACPR.reset</name>
+<purpose>Reset states of ACPR measurement object</purpose>
+</tocitem>
+<tocitem target="ref/comm.acpr.step.html">
+<name>comm.ACPR.step</name>
+<purpose>Adjacent Channel Power Ratio measurements</purpose>
+</tocitem>
+<tocitem target="ref/comm.ccdf.getpercentilerelativepower.html">
+<name>comm.CCDF.getPercentileRelativePower</name>
+<purpose>Get relative power value for a given probability</purpose>
+</tocitem>
+<tocitem target="ref/comm.ccdf.getprobability.html">
+<name>comm.CCDF.getProbability</name>
+<purpose>Get the probability for a given relative power value</purpose>
+</tocitem>
+<tocitem target="ref/comm.ccdf.plot.html">
+<name>comm.CCDF.plot</name>
+<purpose>Plot CCDF curves</purpose>
+</tocitem>
+<tocitem target="ref/comm.ccdf.reset.html">
+<name>comm.CCDF.reset</name>
+<purpose>Reset states of CCDF measurement object</purpose>
+</tocitem>
+<tocitem target="ref/comm.ccdf.step.html">
+<name>comm.CCDF.step</name>
+<purpose>Measure complementary cumulative distribution function</purpose>
+</tocitem>
+<tocitem target="ref/comm.errorrate.reset.html">
+<name>comm.ErrorRate.reset</name>
+<purpose>Reset states of error rate calculator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.errorrate.step.html">
+<name>comm.ErrorRate.step</name>
+<purpose>Compute bit or symbol error rate of input data</purpose>
+</tocitem>
+<tocitem target="ref/comm.evm.reset.html">
+<name>comm.EVM.reset</name>
+<purpose>Reset states of EVM measurement object</purpose>
+</tocitem>
+<tocitem target="ref/comm.evm.step.html">
+<name>comm.EVM.step</name>
+<purpose>Measure error vector magnitude</purpose>
+</tocitem>
+<tocitem target="ref/comm.mer.reset.html">
+<name>comm.MER.reset</name>
+<purpose>Reset states of MER measurement object</purpose>
+</tocitem>
+<tocitem target="ref/comm.mer.step.html">
+<name>comm.MER.step</name>
+<purpose>Measure modulation error ratio</purpose>
+</tocitem>
+<tocitem target="ref/comm.constellationdiagram.isvisible.html">
+<name>isVisible</name>
+<purpose>Determine visibility of scope window</purpose>
+</tocitem>
+<tocitem target="ref/commscope.html">
+<name>commscope</name>
+<purpose>(To be removed) Package of communications scope
+            classes</purpose>
+</tocitem>
+<tocitem target="ref/commscope.eyediagram.html">
+<name>commscope.eyediagram</name>
+<purpose>(To be removed) Eye diagram analysis</purpose>
+</tocitem>
+<tocitem target="ref/eyescope.html">
+<name>EyeScope</name>
+<purpose>(To be removed) Launch eye diagram scope for eye diagram object H</purpose>
+</tocitem>
+<tocitem target="ref/commtest.errorrate.html">
+<name>commtest.ErrorRate</name>
+<purpose>(To be removed) Create error rate test console</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="standards-compliant-waveform-generation.html">Standards-Compliant Systems
+<tocitem target="bluetooth.html">Bluetooth
+<tocitem target="phy-modeling.html">PHY Modeling
+<tocitem target="ref/blewaveformgenerator.html">
+<name>bleWaveformGenerator</name>
+<purpose>Waveform generator for BLE PHY</purpose>
+</tocitem>
+<tocitem target="ref/bleidealreceiver.html">
+<name>bleIdealReceiver</name>
+<purpose>Ideal receiver for BLE PHY waveform</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="protocol-modeling.html">Protocol Modeling
+<tocitem target="ref/bleattpdu.html">
+<name>bleATTPDU</name>
+<purpose>Generate BLE ATT PDU</purpose>
+</tocitem>
+<tocitem target="ref/bleattpdudecode.html">
+<name>bleATTPDUDecode</name>
+<purpose>Decode BLE ATT PDU</purpose>
+</tocitem>
+<tocitem target="ref/blelldatachannelpdu.html">
+<name>bleLLDataChannelPDU</name>
+<purpose>Generate BLE LL data channel PDU</purpose>
+</tocitem>
+<tocitem target="ref/blelldatachannelpdudecode.html">
+<name>bleLLDataChannelPDUDecode</name>
+<purpose>Decode BLE LL data channel PDU</purpose>
+</tocitem>
+<tocitem target="ref/blelladvertisingchannelpdu.html">
+<name>bleLLAdvertisingChannelPDU</name>
+<purpose>Generate BLE LL advertising channel PDU</purpose>
+</tocitem>
+<tocitem target="ref/blelladvertisingchannelpdudecode.html">
+<name>bleLLAdvertisingChannelPDUDecode</name>
+<purpose>Decode BLE LL advertising channel PDU</purpose>
+</tocitem>
+<tocitem target="ref/blegapdatablock.html">
+<name>bleGAPDataBlock</name>
+<purpose>Generate BLE GAP data block</purpose>
+</tocitem>
+<tocitem target="ref/blegapdatablockdecode.html">
+<name>bleGAPDataBlockDecode</name>
+<purpose>Decode BLE GAP data block</purpose>
+</tocitem>
+<tocitem target="ref/blel2capframe.html">
+<name>bleL2CAPFrame</name>
+<purpose>Generate BLE L2CAP frame</purpose>
+</tocitem>
+<tocitem target="ref/blel2capframedecode.html">
+<name>bleL2CAPFrameDecode</name>
+<purpose>Decode BLE L2CAP frame</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="3G-standards-based-links.html">3GPP
+<tocitem target="ref/cdma2000forwardreferencechannels.html">
+<name>cdma2000ForwardReferenceChannels</name>
+<purpose>Define cdma2000 forward reference channel</purpose>
+</tocitem>
+<tocitem target="ref/cdma2000forwardwaveformgenerator.html">
+<name>cdma2000ForwardWaveformGenerator</name>
+<purpose>Generate cdma2000 forward link waveform</purpose>
+</tocitem>
+<tocitem target="ref/cdma2000reversereferencechannels.html">
+<name>cdma2000ReverseReferenceChannels</name>
+<purpose>Define cdma2000 reverse reference channel</purpose>
+</tocitem>
+<tocitem target="ref/cdma2000reversewaveformgenerator.html">
+<name>cdma2000ReverseWaveformGenerator</name>
+<purpose>Generate cdma2000 reverse link waveform</purpose>
+</tocitem>
+<tocitem target="ref/evdoforwardreferencechannels.html">
+<name>evdoForwardReferenceChannels</name>
+<purpose>Define 1xEV-DO forward reference channel</purpose>
+</tocitem>
+<tocitem target="ref/evdoforwardwaveformgenerator.html">
+<name>evdoForwardWaveformGenerator</name>
+<purpose>Generate 1xEV-DO forward link waveform</purpose>
+</tocitem>
+<tocitem target="ref/evdoreversereferencechannels.html">
+<name>evdoReverseReferenceChannels</name>
+<purpose>Define 1xEV-DO reverse reference channel</purpose>
+</tocitem>
+<tocitem target="ref/evdoreversewaveformgenerator.html">
+<name>evdoReverseWaveformGenerator</name>
+<purpose>Generate 1xEV-DO reverse link waveform</purpose>
+</tocitem>
+<tocitem target="ref/gsmchecktimemask.html">
+<name>gsmCheckTimeMask</name>
+<purpose>Inspect GSM burst against time mask</purpose>
+</tocitem>
+<tocitem target="ref/gsmframe.html">
+<name>gsmFrame</name>
+<purpose>Create GSM waveform</purpose>
+</tocitem>
+<tocitem target="ref/gsminfo.html">
+<name>gsmInfo</name>
+<purpose>View GSM waveform information</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="fm.html">FM
+<tocitem target="ref/comm.rbdswaveformgenerator.callletterstopicode.html">
+<name>comm.RBDSWaveformGenerator.callLettersToPICode</name>
+<purpose>Convert North-American call letters to binary PI code</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.registeroda.html">
+<name>comm.RBDSWaveformGenerator.registerODA</name>
+<purpose>Register a custom encoding implementation for an ODA</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.reset.html">
+<name>comm.RBDSWaveformGenerator.reset</name>
+<purpose>Reset states of RBDS waveform generator object</purpose>
+</tocitem>
+<tocitem target="ref/comm.rbdswaveformgenerator.step.html">
+<name>comm.RBDSWaveformGenerator.step</name>
+<purpose>Generate RDS/RBDS waveform</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+  <tocitem target="functionlistbycat.html">Functions
+    <tocitem target="time-frequency-analysis.html">Time-Frequency Analysis
+      <tocitem target="continuous-wavelet-transforms.html">Continuous Wavelet Transforms
+        <tocitem target="ref/cwt.html">
+          <name>cwt</name>
+          <purpose>Continuous 1-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/icwt.html">
+          <name>icwt</name>
+          <purpose>Inverse continuous 1-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.html">
+          <name>cwtfilterbank</name>
+          <purpose>Continuous wavelet transform filter bank</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfreqbounds.html">
+          <name>cwtfreqbounds</name>
+          <purpose>CWT maximum and minimum frequency or period</purpose>
+        </tocitem>
+        <tocitem target="ref/wcoherence.html">
+          <name>wcoherence</name>
+          <purpose>Wavelet coherence and cross-spectrum</purpose>
+        </tocitem>
+        <tocitem target="ref/wsst.html">
+          <name>wsst</name>
+          <purpose>Wavelet synchrosqueezed transform</purpose>
+        </tocitem>
+        <tocitem target="ref/iwsst.html">
+          <name>iwsst</name>
+          <purpose>Inverse wavelet synchrosqueezed transform</purpose>
+        </tocitem>
+        <tocitem target="ref/wsstridge.html">
+          <name>wsstridge</name>
+          <purpose>Time-frequency ridges from wavelet synchrosqueezing</purpose>
+        </tocitem>
+        <tocitem target="ref/wtmm.html">
+          <name>wtmm</name>
+          <purpose>Wavelet transform modulus maxima</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtft2.html">
+          <name>cwtft2</name>
+          <purpose>2-D continuous wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtftinfo2.html">
+          <name>cwtftinfo2</name>
+          <purpose>Supported 2-D CWT wavelets and Fourier transforms</purpose>
+        </tocitem>
+        <tocitem target="ref/bswfun.html">
+          <name>bswfun</name>
+          <purpose>Biorthogonal scaling and wavelet functions</purpose>
+        </tocitem>
+        <tocitem target="ref/centfrq.html">
+          <name>centfrq</name>
+          <purpose>Wavelet center frequency</purpose>
+        </tocitem>
+        <tocitem target="ref/cgauwavf.html">
+          <name>cgauwavf</name>
+          <purpose>Complex Gaussian wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/cmorwavf.html">
+          <name>cmorwavf</name>
+          <purpose>Complex Morlet wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/fbspwavf.html">
+          <name>fbspwavf</name>
+          <purpose>Complex frequency B-spline wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/gauswavf.html">
+          <name>gauswavf</name>
+          <purpose>Gaussian wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/intwave.html">
+          <name>intwave</name>
+          <purpose>Integrate wavelet function psi (ψ)</purpose>
+        </tocitem>
+        <tocitem target="ref/mexihat.html">
+          <name>mexihat</name>
+          <purpose>Mexican hat (Ricker) wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/meyer.html">
+          <name>meyer</name>
+          <purpose>Meyer wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/meyeraux.html">
+          <name>meyeraux</name>
+          <purpose>Meyer wavelet auxiliary function</purpose>
+        </tocitem>
+        <tocitem target="ref/morlet.html">
+          <name>morlet</name>
+          <purpose>Morlet wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/pat2cwav.html">
+          <name>pat2cwav</name>
+          <purpose>Build wavelet from pattern</purpose>
+        </tocitem>
+        <tocitem target="ref/scal2frq.html">
+          <name>scal2frq</name>
+          <purpose>Scale to frequency</purpose>
+        </tocitem>
+        <tocitem target="ref/shanwavf.html">
+          <name>shanwavf</name>
+          <purpose>Complex Shannon wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/wavefun.html">
+          <name>wavefun</name>
+          <purpose>Wavelet and scaling functions</purpose>
+        </tocitem>
+        <tocitem target="ref/wavefun2.html">
+          <name>wavefun2</name>
+          <purpose>Wavelet and scaling functions 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wavsupport.html">
+          <name>wavsupport</name>
+          <purpose>Wavelet support</purpose>
+        </tocitem>
+        <tocitem target="ref/wavemngr.html">
+          <name>wavemngr</name>
+          <purpose>Wavelet manager</purpose>
+        </tocitem>
+        <tocitem target="ref/waveletfamilies.html">
+          <name>waveletfamilies</name>
+          <purpose>Wavelet families and family members</purpose>
+        </tocitem>
+        <tocitem target="ref/waveinfo.html">
+          <name>waveinfo</name>
+          <purpose>Wavelets information</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.wt.html">
+          <name>wt</name>
+          <purpose>Continuous wavelet transform with filter bank</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.freqz.html">
+          <name>freqz</name>
+          <purpose>CWT filter bank frequency responses</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.wavelets.html">
+          <name>wavelets</name>
+          <purpose>CWT filter bank time-domain wavelets</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.scales.html">
+          <name>scales</name>
+          <purpose>CWT filter bank scales</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.waveletsupport.html">
+          <name>waveletsupport</name>
+          <purpose>CWT filter bank time supports</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.qfactor.html">
+          <name>qfactor</name>
+          <purpose>CWT filter bank quality factor</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.powerbw.html">
+          <name>powerbw</name>
+          <purpose>CWT filter bank 3 dB bandwidths</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.centerfrequencies.html">
+          <name>centerFrequencies</name>
+          <purpose>CWT filter bank bandpass center frequencies</purpose>
+        </tocitem>
+        <tocitem target="ref/cwtfilterbank.centerperiods.html">
+          <name>centerPeriods</name>
+          <purpose>CWT filter bank bandpass center periods</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="constant-q-and-data-adaptive-transforms.html">Constant-Q, Data-Adaptive, and Quadratic Time-Frequency Transforms
+        <tocitem target="ref/cqt.html">
+          <name>cqt</name>
+          <purpose>Constant-Q nonstationary Gabor transform</purpose>
+        </tocitem>
+        <tocitem target="ref/icqt.html">
+          <name>icqt</name>
+          <purpose>Inverse constant-Q transform using nonstationary Gabor frames</purpose>
+        </tocitem>
+        <tocitem target="ref/emd.html">
+          <name>emd</name>
+          <purpose>Empirical mode decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/hht.html">
+          <name>hht</name>
+          <purpose>Hilbert-Huang transform</purpose>
+        </tocitem>
+        <tocitem target="ref/wvd.html">
+          <name>wvd</name>
+          <purpose>Wigner-Ville distribution and smoothed pseudo Wigner-Ville distribution</purpose>
+        </tocitem>
+        <tocitem target="ref/xwvd.html">
+          <name>xwvd</name>
+          <purpose>Cross Wigner-Ville distribution and cross smoothed pseudo Wigner-Ville distribution</purpose>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+    <tocitem target="discrete-multiresolution-analysis.html">Discrete Multiresolution Analysis
+      <tocitem target="signal-analysis.html">Signal Analysis
+        <tocitem target="ref/wavedec.html">
+          <name>wavedec</name>
+          <purpose>1-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/waverec.html">
+          <name>waverec</name>
+          <purpose>1-D wavelet reconstruction</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.html">
+          <name>dwtfilterbank</name>
+          <purpose>Discrete wavelet transform filter bank</purpose>
+        </tocitem>
+        <tocitem target="ref/appcoef.html">
+          <name>appcoef</name>
+          <purpose>1-D approximation coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/detcoef.html">
+          <name>detcoef</name>
+          <purpose>1-D detail coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/haart.html">
+          <name>haart</name>
+          <purpose>Haar 1-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/ihaart.html">
+          <name>ihaart</name>
+          <purpose>Inverse 1-D Haar wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/mlpt.html">
+          <name>mlpt</name>
+          <purpose>Multiscale local 1-D polynomial transform</purpose>
+        </tocitem>
+        <tocitem target="ref/imlpt.html">
+          <name>imlpt</name>
+          <purpose>Inverse multiscale local 1-D polynomial transform</purpose>
+        </tocitem>
+        <tocitem target="ref/mlptrecon.html">
+          <name>mlptrecon</name>
+          <purpose>Reconstruct signal using inverse multiscale local 1-D polynomial transform</purpose>
+        </tocitem>
+        <tocitem target="ref/wrcoef.html">
+          <name>wrcoef</name>
+          <purpose>Reconstruct single branch from 1-D wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wpdec.html">
+          <name>wpdec</name>
+          <purpose>Wavelet packet decomposition 1-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wprec.html">
+          <name>wprec</name>
+          <purpose>Wavelet packet reconstruction 1-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wpcoef.html">
+          <name>wpcoef</name>
+          <purpose>Wavelet packet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wprcoef.html">
+          <name>wprcoef</name>
+          <purpose>Reconstruct wavelet packet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/besttree.html">
+          <name>besttree</name>
+          <purpose>Best tree wavelet packet analysis</purpose>
+        </tocitem>
+        <tocitem target="ref/wpspectrum.html">
+          <name>wpspectrum</name>
+          <purpose>Wavelet packet spectrum</purpose>
+        </tocitem>
+        <tocitem target="ref/otnodes.html">
+          <name>otnodes</name>
+          <purpose>Order terminal nodes of binary wavelet packet tree</purpose>
+        </tocitem>
+        <tocitem target="ref/depo2ind.html">
+          <name>depo2ind</name>
+          <purpose>Node depth-position to node index</purpose>
+        </tocitem>
+        <tocitem target="ref/ind2depo.html">
+          <name>ind2depo</name>
+          <purpose>Node index to node depth-position</purpose>
+        </tocitem>
+        <tocitem target="ref/modwt.html">
+          <name>modwt</name>
+          <purpose>Maximal overlap discrete wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/imodwt.html">
+          <name>imodwt</name>
+          <purpose>Inverse maximal overlap discrete wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/modwtmra.html">
+          <name>modwtmra</name>
+          <purpose>Multiresolution analysis based on MODWT</purpose>
+        </tocitem>
+        <tocitem target="ref/modwtcorr.html">
+          <name>modwtcorr</name>
+          <purpose>Multiscale correlation using the maximal overlap discrete wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/modwtvar.html">
+          <name>modwtvar</name>
+          <purpose>Multiscale variance of maximal overlap discrete wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/modwtxcorr.html">
+          <name>modwtxcorr</name>
+          <purpose>Wavelet cross-correlation sequence estimates using the maximal overlap discrete wavelet transform (MODWT)</purpose>
+        </tocitem>
+        <tocitem target="ref/swt.html">
+          <name>swt</name>
+          <purpose>Discrete stationary wavelet transform 1-D</purpose>
+        </tocitem>
+        <tocitem target="ref/iswt.html">
+          <name>iswt</name>
+          <purpose>Inverse discrete stationary wavelet transform 1-D</purpose>
+        </tocitem>
+        <tocitem target="ref/modwpt.html">
+          <name>modwpt</name>
+          <purpose>Maximal overlap discrete wavelet packet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/imodwpt.html">
+          <name>imodwpt</name>
+          <purpose>Inverse maximal overlap discrete wavelet packet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/modwptdetails.html">
+          <name>modwptdetails</name>
+          <purpose>Maximal overlap discrete wavelet packet transform details</purpose>
+        </tocitem>
+        <tocitem target="ref/dddtree.html">
+          <name>dddtree</name>
+          <purpose>Dual-tree and double-density 1-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/dddtreecfs.html">
+          <name>dddtreecfs</name>
+          <purpose>Extract dual-tree/double-density wavelet coefficients or projections</purpose>
+        </tocitem>
+        <tocitem target="ref/dtfilters.html">
+          <name>dtfilters</name>
+          <purpose>Analysis and synthesis filters for oversampled wavelet filter banks</purpose>
+        </tocitem>
+        <tocitem target="ref/idddtree.html">
+          <name>idddtree</name>
+          <purpose>Inverse dual-tree and double-density 1-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/plotdt.html">
+          <name>plotdt</name>
+          <purpose>Plot dual-tree or double-density wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtleader.html">
+          <name>dwtleader</name>
+          <purpose>Multifractal 1-D wavelet leader estimates</purpose>
+        </tocitem>
+        <tocitem target="ref/wfbm.html">
+          <name>wfbm</name>
+          <purpose>Fractional Brownian motion synthesis</purpose>
+        </tocitem>
+        <tocitem target="ref/wfbmesti.html">
+          <name>wfbmesti</name>
+          <purpose>Parameter estimation of fractional Brownian motion</purpose>
+        </tocitem>
+        <tocitem target="ref/wenergy.html">
+          <name>wenergy</name>
+          <purpose>Energy for 1-D wavelet or wavelet packet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/wmaxlev.html">
+          <name>wmaxlev</name>
+          <purpose>Maximum wavelet decomposition level</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtmode.html">
+          <name>dwtmode</name>
+          <purpose>Discrete wavelet transform extension mode</purpose>
+        </tocitem>
+        <tocitem target="ref/wvarchg.html">
+          <name>wvarchg</name>
+          <purpose>Find variance change points</purpose>
+        </tocitem>
+        <tocitem target="ref/measerr.html">
+          <name>measerr</name>
+          <purpose>Quality metrics of signal or image approximation</purpose>
+        </tocitem>
+        <tocitem target="ref/wavemngr.html">
+          <name>wavemngr</name>
+          <purpose>Wavelet manager</purpose>
+        </tocitem>
+        <tocitem target="ref/dyaddown.html">
+          <name>dyaddown</name>
+          <purpose>Dyadic downsampling</purpose>
+        </tocitem>
+        <tocitem target="ref/dyadup.html">
+          <name>dyadup</name>
+          <purpose>Dyadic upsampling</purpose>
+        </tocitem>
+        <tocitem target="ref/tnodes.html">
+          <name>tnodes</name>
+          <purpose>Determine terminal nodes</purpose>
+        </tocitem>
+        <tocitem target="ref/treedpth.html">
+          <name>treedpth</name>
+          <purpose>Tree depth</purpose>
+        </tocitem>
+        <tocitem target="ref/wpviewcf.html">
+          <name>wpviewcf</name>
+          <purpose>Plot wavelet packets colored coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.html">
+          <name>labeledSignalSet</name>
+          <purpose>Create labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/signallabeldefinition.html">
+          <name>signalLabelDefinition</name>
+          <purpose>Create signal label definition</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtmode.html">
+          <name>dwtmode</name>
+          <purpose>Discrete wavelet transform extension mode</purpose>
+        </tocitem>
+        <tocitem target="ref/allnodes.html">
+          <name>allnodes</name>
+          <purpose>Tree nodes</purpose>
+        </tocitem>
+        <tocitem target="ref/get.html">
+          <name>get</name>
+          <purpose>WPTREE contents</purpose>
+        </tocitem>
+        <tocitem target="ref/isnode.html">
+          <name>isnode</name>
+          <purpose>Existing node test</purpose>
+        </tocitem>
+        <tocitem target="ref/istnode.html">
+          <name>istnode</name>
+          <purpose>Terminal nodes indices test</purpose>
+        </tocitem>
+        <tocitem target="ref/entrupd.html">
+          <name>entrupd</name>
+          <purpose>Entropy update (wavelet packet)</purpose>
+        </tocitem>
+        <tocitem target="ref/nodeasc.html">
+          <name>nodeasc</name>
+          <purpose>Node ascendants</purpose>
+        </tocitem>
+        <tocitem target="ref/nodedesc.html">
+          <name>nodedesc</name>
+          <purpose>Node descendants</purpose>
+        </tocitem>
+        <tocitem target="ref/nodejoin.html">
+          <name>nodejoin</name>
+          <purpose>Recompose node</purpose>
+        </tocitem>
+        <tocitem target="ref/nodepar.html">
+          <name>nodepar</name>
+          <purpose>Node parent</purpose>
+        </tocitem>
+        <tocitem target="ref/nodesplt.html">
+          <name>nodesplt</name>
+          <purpose>Split (decompose) node</purpose>
+        </tocitem>
+        <tocitem target="ref/wpsplt.html">
+          <name>wpsplt</name>
+          <purpose>Split (decompose) wavelet packet</purpose>
+        </tocitem>
+        <tocitem target="ref/wpjoin.html">
+          <name>wpjoin</name>
+          <purpose>Recompose wavelet packet</purpose>
+        </tocitem>
+        <tocitem target="ref/wpfun.html">
+          <name>wpfun</name>
+          <purpose>Wavelet packet functions</purpose>
+        </tocitem>
+        <tocitem target="ref/bestlevt.html">
+          <name>bestlevt</name>
+          <purpose>Best level tree wavelet packet analysis</purpose>
+        </tocitem>
+        <tocitem target="ref/plot.html">
+          <name>plot</name>
+          <purpose>Plot tree GUI</purpose>
+        </tocitem>
+        <tocitem target="ref/upcoef.html">
+          <name>upcoef</name>
+          <purpose>Direct reconstruction from 1-D wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/upwlev.html">
+          <name>upwlev</name>
+          <purpose>Single-level reconstruction of 1-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/dwt.html">
+          <name>dwt</name>
+          <purpose>Single-level 1-D discrete wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/idwt.html">
+          <name>idwt</name>
+          <purpose>Single-level inverse discrete 1-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/cfs2wpt.html">
+          <name>cfs2wpt</name>
+          <purpose>Wavelet packet tree construction from coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wptree.html">
+          <name>wptree</name>
+          <purpose>WPTREE constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/wp2wtree.html">
+          <name>wp2wtree</name>
+          <purpose>Extract wavelet tree from wavelet packet tree</purpose>
+        </tocitem>
+        <tocitem target="ref/wpcutree.html">
+          <name>wpcutree</name>
+          <purpose>Cut wavelet packet tree</purpose>
+        </tocitem>
+        <tocitem target="ref/dtree.html">
+          <name>dtree</name>
+          <purpose>DTREE constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/ntree.html">
+          <name>ntree</name>
+          <purpose>NTREE constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/treeord.html">
+          <name>treeord</name>
+          <purpose>Tree order</purpose>
+        </tocitem>
+        <tocitem target="ref/write.html">
+          <name>write</name>
+          <purpose>Write values in WPTREE fields</purpose>
+        </tocitem>
+        <tocitem target="ref/read.html">
+          <name>read</name>
+          <purpose>Read values of WPTREE</purpose>
+        </tocitem>
+        <tocitem target="ref/set.html">
+          <name>set</name>
+          <purpose>WPTREE field contents</purpose>
+        </tocitem>
+        <tocitem target="ref/disp.html">
+          <name>disp</name>
+          <purpose>WPTREE information</purpose>
+        </tocitem>
+        <tocitem target="ref/drawtree.html">
+          <name>drawtree</name>
+          <purpose>Draw wavelet packet decomposition tree (GUI)</purpose>
+        </tocitem>
+        <tocitem target="ref/leaves.html">
+          <name>leaves</name>
+          <purpose>Determine terminal nodes</purpose>
+        </tocitem>
+        <tocitem target="ref/noleaves.html">
+          <name>noleaves</name>
+          <purpose>Determine nonterminal nodes</purpose>
+        </tocitem>
+        <tocitem target="ref/readtree.html">
+          <name>readtree</name>
+          <purpose>Read wavelet packet decomposition tree from figure</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.dwtpassbands.html">
+          <name>dwtpassbands</name>
+          <purpose>DWT filter bank passbands</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.filters.html">
+          <name>filters</name>
+          <purpose>DWT filter bank filters</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.framebounds.html">
+          <name>framebounds</name>
+          <purpose>DWT filter bank frame bounds</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.freqz.html">
+          <name>freqz</name>
+          <purpose>DWT filter bank frequency responses</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.isbiorthogonal.html">
+          <name>isBiorthogonal</name>
+          <purpose>Determine if DWT filter bank is biorthogonal</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.isorthogonal.html">
+          <name>isOrthogonal</name>
+          <purpose>Determine if DWT filter bank is orthogonal</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.powerbw.html">
+          <name>powerbw</name>
+          <purpose>DWT filter bank power bandwidth</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.qfactor.html">
+          <name>qfactor</name>
+          <purpose>DWT filter bank quality factor</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.scalingfunctions.html">
+          <name>scalingfunctions</name>
+          <purpose>DWT filter bank time-domain scaling functions</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.wavelets.html">
+          <name>wavelets</name>
+          <purpose>DWT filter bank time-domain wavelets</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtfilterbank.waveletsupport.html">
+          <name>waveletsupport</name>
+          <purpose>DWT filter bank time supports</purpose>
+        </tocitem>
+        <tocitem target="ref/signallabeldefinition.labeldefinitionshierarchy.html">
+          <name>labelDefinitionsHierarchy</name>
+          <purpose>Get hierarchical list of label and sublabel names</purpose>
+        </tocitem>
+        <tocitem target="ref/signallabeldefinition.labeldefinitionssummary.html">
+          <name>labelDefinitionsSummary</name>
+          <purpose>Get summary table of signal label definitions</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.addlabeldefinitions.html">
+          <name>addLabelDefinitions</name>
+          <purpose>Add label definitions to labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.addmembers.html">
+          <name>addMembers</name>
+          <purpose>Add members to labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.concatenate.html">
+          <name>concatenate</name>
+          <purpose>Concatenate two or more labeled signal sets</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.editlabeldefinition.html">
+          <name>editLabelDefinition</name>
+          <purpose>Edit label definition properties</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.getlabeldefinitions.html">
+          <name>getLabelDefinitions</name>
+          <purpose>Get label definitions in labeled signal set
+          </purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.getlabeledsignal.html">
+          <name>getLabeledSignal</name>
+          <purpose>Get labeled signals from labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.getlabelnames.html">
+          <name>getLabelNames</name>
+          <purpose>Get label names in labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.getlabelvalues.html">
+          <name>getLabelValues</name>
+          <purpose>Get label values from labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.getmembernames.html">
+          <name>getMemberNames</name>
+          <purpose>Get member names in labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.getsignal.html">
+          <name>getSignal</name>
+          <purpose>Get signals from labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.head.html">
+          <name>head</name>
+          <purpose>Get top rows of labels table</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.removelabeldefinition.html">
+          <name>removeLabelDefinition</name>
+          <purpose>Remove label definition from labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.removemembers.html">
+          <name>removeMembers</name>
+          <purpose>Remove members from labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.removepointvalue.html">
+          <name>removePointValue</name>
+          <purpose>Remove row from point label</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.removeregionvalue.html">
+          <name>removeRegionValue</name>
+          <purpose>Remove row from ROI label</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.resetlabelvalues.html">
+          <name>resetLabelValues</name>
+          <purpose>Reset labels to default values</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.setlabelvalue.html">
+          <name>setLabelValue</name>
+          <purpose>Set label value in labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.setmembernames.html">
+          <name>setMemberNames</name>
+          <purpose>Set member names in labeled signal set</purpose>
+        </tocitem>
+        <tocitem target="ref/labeledsignalset.subset.html">
+          <name>subset</name>
+          <purpose>Get new labeled signal set with subset of members</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="image-analysis.html">Image Analysis
+        <tocitem target="ref/wavedec2.html">
+          <name>wavedec2</name>
+          <purpose>2-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/waverec2.html">
+          <name>waverec2</name>
+          <purpose>2-D wavelet reconstruction</purpose>
+        </tocitem>
+        <tocitem target="ref/appcoef2.html">
+          <name>appcoef2</name>
+          <purpose>2-D approximation coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/detcoef2.html">
+          <name>detcoef2</name>
+          <purpose>2-D detail coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/haart2.html">
+          <name>haart2</name>
+          <purpose>2-D Haar wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/ihaart2.html">
+          <name>ihaart2</name>
+          <purpose>Inverse 2-D Haar wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/wrcoef2.html">
+          <name>wrcoef2</name>
+          <purpose>Reconstruct single branch from 2-D wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wpdec2.html">
+          <name>wpdec2</name>
+          <purpose>Wavelet packet decomposition 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wprec2.html">
+          <name>wprec2</name>
+          <purpose>Wavelet packet reconstruction 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wpcoef.html">
+          <name>wpcoef</name>
+          <purpose>Wavelet packet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wprcoef.html">
+          <name>wprcoef</name>
+          <purpose>Reconstruct wavelet packet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/besttree.html">
+          <name>besttree</name>
+          <purpose>Best tree wavelet packet analysis</purpose>
+        </tocitem>
+        <tocitem target="ref/depo2ind.html">
+          <name>depo2ind</name>
+          <purpose>Node depth-position to node index</purpose>
+        </tocitem>
+        <tocitem target="ref/ind2depo.html">
+          <name>ind2depo</name>
+          <purpose>Node index to node depth-position</purpose>
+        </tocitem>
+        <tocitem target="ref/swt2.html">
+          <name>swt2</name>
+          <purpose>Discrete stationary wavelet transform 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/iswt2.html">
+          <name>iswt2</name>
+          <purpose>Inverse discrete stationary wavelet transform 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/dddtree2.html">
+          <name>dddtree2</name>
+          <purpose>Dual-tree and double-density 2-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/idddtree2.html">
+          <name>idddtree2</name>
+          <purpose>Inverse dual-tree and double-density 2-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/dtfilters.html">
+          <name>dtfilters</name>
+          <purpose>Analysis and synthesis filters for oversampled wavelet filter banks</purpose>
+        </tocitem>
+        <tocitem target="ref/dddtreecfs.html">
+          <name>dddtreecfs</name>
+          <purpose>Extract dual-tree/double-density wavelet coefficients or projections</purpose>
+        </tocitem>
+        <tocitem target="ref/plotdt.html">
+          <name>plotdt</name>
+          <purpose>Plot dual-tree or double-density wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/shearletsystem.html">
+          <name>shearletSystem</name>
+          <purpose>Cone-adapted bandlimited shearlet system</purpose>
+        </tocitem>
+        <tocitem target="ref/shearletsystem.sheart2.html">
+          <name>sheart2</name>
+          <purpose>Shearlet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/shearletsystem.isheart2.html">
+          <name>isheart2</name>
+          <purpose>Inverse shearlet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/wfusimg.html">
+          <name>wfusimg</name>
+          <purpose>Fusion of two images</purpose>
+        </tocitem>
+        <tocitem target="ref/wfusmat.html">
+          <name>wfusmat</name>
+          <purpose>Fusion of two matrices or arrays</purpose>
+        </tocitem>
+        <tocitem target="ref/wentropy.html">
+          <name>wentropy</name>
+          <purpose>Entropy (wavelet packet)</purpose>
+        </tocitem>
+        <tocitem target="ref/wenergy2.html">
+          <name>wenergy2</name>
+          <purpose>Energy for 2-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtmode.html">
+          <name>dwtmode</name>
+          <purpose>Discrete wavelet transform extension mode</purpose>
+        </tocitem>
+        <tocitem target="ref/wavemngr.html">
+          <name>wavemngr</name>
+          <purpose>Wavelet manager</purpose>
+        </tocitem>
+        <tocitem target="ref/dyaddown.html">
+          <name>dyaddown</name>
+          <purpose>Dyadic downsampling</purpose>
+        </tocitem>
+        <tocitem target="ref/dyadup.html">
+          <name>dyadup</name>
+          <purpose>Dyadic upsampling</purpose>
+        </tocitem>
+        <tocitem target="ref/wcodemat.html">
+          <name>wcodemat</name>
+          <purpose>Extended pseudocolor matrix scaling</purpose>
+        </tocitem>
+        <tocitem target="ref/shearletsystem.framebounds.html">
+          <name>framebounds</name>
+          <purpose>Shearlet system frame bounds</purpose>
+        </tocitem>
+        <tocitem target="ref/shearletsystem.filterbank.html">
+          <name>filterbank</name>
+          <purpose>Shearlet system filters</purpose>
+        </tocitem>
+        <tocitem target="ref/shearletsystem.numshears.html">
+          <name>numshears</name>
+          <purpose>Number of shearlets</purpose>
+        </tocitem>
+        <tocitem target="ref/wkeep.html">
+          <name>wkeep</name>
+          <purpose>Keep part of vector or matrix</purpose>
+        </tocitem>
+        <tocitem target="ref/allnodes.html">
+          <name>allnodes</name>
+          <purpose>Tree nodes</purpose>
+        </tocitem>
+        <tocitem target="ref/get.html">
+          <name>get</name>
+          <purpose>WPTREE contents</purpose>
+        </tocitem>
+        <tocitem target="ref/isnode.html">
+          <name>isnode</name>
+          <purpose>Existing node test</purpose>
+        </tocitem>
+        <tocitem target="ref/istnode.html">
+          <name>istnode</name>
+          <purpose>Terminal nodes indices test</purpose>
+        </tocitem>
+        <tocitem target="ref/nodejoin.html">
+          <name>nodejoin</name>
+          <purpose>Recompose node</purpose>
+        </tocitem>
+        <tocitem target="ref/nodesplt.html">
+          <name>nodesplt</name>
+          <purpose>Split (decompose) node</purpose>
+        </tocitem>
+        <tocitem target="ref/ntnode.html">
+          <name>ntnode</name>
+          <purpose>Number of terminal nodes</purpose>
+        </tocitem>
+        <tocitem target="ref/upcoef2.html">
+          <name>upcoef2</name>
+          <purpose>Direct reconstruction from 2-D wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/upwlev2.html">
+          <name>upwlev2</name>
+          <purpose>Single-level reconstruction of 2-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/wpfun.html">
+          <name>wpfun</name>
+          <purpose>Wavelet packet functions</purpose>
+        </tocitem>
+        <tocitem target="ref/bestlevt.html">
+          <name>bestlevt</name>
+          <purpose>Best level tree wavelet packet analysis</purpose>
+        </tocitem>
+        <tocitem target="ref/dwt2.html">
+          <name>dwt2</name>
+          <purpose>Single-level discrete 2-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/idwt2.html">
+          <name>idwt2</name>
+          <purpose>Single-level inverse discrete 2-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/cfs2wpt.html">
+          <name>cfs2wpt</name>
+          <purpose>Wavelet packet tree construction from coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wp2wtree.html">
+          <name>wp2wtree</name>
+          <purpose>Extract wavelet tree from wavelet packet tree</purpose>
+        </tocitem>
+        <tocitem target="ref/wpcutree.html">
+          <name>wpcutree</name>
+          <purpose>Cut wavelet packet tree</purpose>
+        </tocitem>
+        <tocitem target="ref/dtree.html">
+          <name>dtree</name>
+          <purpose>DTREE constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/ntree.html">
+          <name>ntree</name>
+          <purpose>NTREE constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/wptree.html">
+          <name>wptree</name>
+          <purpose>WPTREE constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/treeord.html">
+          <name>treeord</name>
+          <purpose>Tree order</purpose>
+        </tocitem>
+        <tocitem target="ref/entrupd.html">
+          <name>entrupd</name>
+          <purpose>Entropy update (wavelet packet)</purpose>
+        </tocitem>
+        <tocitem target="ref/wentropy.html">
+          <name>wentropy</name>
+          <purpose>Entropy (wavelet packet)</purpose>
+        </tocitem>
+        <tocitem target="ref/write.html">
+          <name>write</name>
+          <purpose>Write values in WPTREE fields</purpose>
+        </tocitem>
+        <tocitem target="ref/read.html">
+          <name>read</name>
+          <purpose>Read values of WPTREE</purpose>
+        </tocitem>
+        <tocitem target="ref/set.html">
+          <name>set</name>
+          <purpose>WPTREE field contents</purpose>
+        </tocitem>
+        <tocitem target="ref/disp.html">
+          <name>disp</name>
+          <purpose>WPTREE information</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="3-d-analysis.html">3-D Analysis
+        <tocitem target="ref/wavedec3.html">
+          <name>wavedec3</name>
+          <purpose>3-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/waverec3.html">
+          <name>waverec3</name>
+          <purpose>3-D wavelet reconstruction</purpose>
+        </tocitem>
+        <tocitem target="ref/dualtree3.html">
+          <name>dualtree3</name>
+          <purpose>3-D dual-tree complex wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/idualtree3.html">
+          <name>idualtree3</name>
+          <purpose>3-D dual-tree complex wavelet reconstruction</purpose>
+        </tocitem>
+        <tocitem target="ref/dwtmode.html">
+          <name>dwtmode</name>
+          <purpose>Discrete wavelet transform extension mode</purpose>
+        </tocitem>
+        <tocitem target="ref/wavemngr.html">
+          <name>wavemngr</name>
+          <purpose>Wavelet manager</purpose>
+        </tocitem>
+        <tocitem target="ref/idwt3.html">
+          <name>idwt3</name>
+          <purpose>Single-level inverse discrete 3-D wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/dwt3.html">
+          <name>dwt3</name>
+          <purpose>Single-level discrete 3-D wavelet transform</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="multisignal-analysis.html">Multisignal Analysis
+        <tocitem target="ref/mdwtdec.html">
+          <name>mdwtdec</name>
+          <purpose>Multisignal 1-D wavelet decomposition</purpose>
+        </tocitem>
+        <tocitem target="ref/mdwtrec.html">
+          <name>mdwtrec</name>
+          <purpose>Multisignal 1-D wavelet reconstruction</purpose>
+        </tocitem>
+        <tocitem target="ref/mdwtcluster.html">
+          <name>mdwtcluster</name>
+          <purpose>Multisignals 1-D clustering</purpose>
+        </tocitem>
+        <tocitem target="ref/mswcmp.html">
+          <name>mswcmp</name>
+          <purpose>Multisignal 1-D compression using wavelets</purpose>
+        </tocitem>
+        <tocitem target="ref/mswcmpscr.html">
+          <name>mswcmpscr</name>
+          <purpose>Multisignal 1-D wavelet compression scores</purpose>
+        </tocitem>
+        <tocitem target="ref/mswcmptp.html">
+          <name>mswcmptp</name>
+          <purpose>Multisignal 1-D compression thresholds and performances</purpose>
+        </tocitem>
+        <tocitem target="ref/mswden.html">
+          <name>mswden</name>
+          <purpose>Multisignal 1-D denoising using wavelets</purpose>
+        </tocitem>
+        <tocitem target="ref/mswthresh.html">
+          <name>mswthresh</name>
+          <purpose>Perform multisignal 1-D thresholding</purpose>
+        </tocitem>
+        <tocitem target="ref/wdecenergy.html">
+          <name>wdecenergy</name>
+          <purpose>Multisignal 1-D decomposition energy distribution</purpose>
+        </tocitem>
+        <tocitem target="ref/wmspca.html">
+          <name>wmspca</name>
+          <purpose>Multiscale Principal Component Analysis</purpose>
+        </tocitem>
+        <tocitem target="ref/chgwdeccfs.html">
+          <name>chgwdeccfs</name>
+          <purpose>Change multisignal 1-D decomposition coefficients</purpose>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+    <tocitem target="denoising-and-compression.html">Denoising and Compression
+      <tocitem target="denoising.html">Denoising
+        <tocitem target="ref/wdenoise.html">
+          <name>wdenoise</name>
+          <purpose>Wavelet signal denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/wdenoise2.html">
+          <name>wdenoise2</name>
+          <purpose>Wavelet image denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/cmddenoise.html">
+          <name>cmddenoise</name>
+          <purpose>Interval-dependent denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/ddencmp.html">
+          <name>ddencmp</name>
+          <purpose>Default values for denoising or compression</purpose>
+        </tocitem>
+        <tocitem target="ref/measerr.html">
+          <name>measerr</name>
+          <purpose>Quality metrics of signal or image approximation</purpose>
+        </tocitem>
+        <tocitem target="ref/mlptdenoise.html">
+          <name>mlptdenoise</name>
+          <purpose>Denoise signal using multiscale local 1-D polynomial transform</purpose>
+        </tocitem>
+        <tocitem target="ref/thselect.html">
+          <name>thselect</name>
+          <purpose>Threshold selection for denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/wdencmp.html">
+          <name>wdencmp</name>
+          <purpose>Denoising or compression</purpose>
+        </tocitem>
+        <tocitem target="ref/wnoise.html">
+          <name>wnoise</name>
+          <purpose>Noisy wavelet test data</purpose>
+        </tocitem>
+        <tocitem target="ref/wnoisest.html">
+          <name>wnoisest</name>
+          <purpose>Estimate noise of 1-D wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wpdencmp.html">
+          <name>wpdencmp</name>
+          <purpose>Denoising or compression using wavelet packets</purpose>
+        </tocitem>
+        <tocitem target="ref/wvarchg.html">
+          <name>wvarchg</name>
+          <purpose>Find variance change points</purpose>
+        </tocitem>
+        <tocitem target="ref/wpthcoef.html">
+          <name>wpthcoef</name>
+          <purpose>Wavelet packet coefficients thresholding</purpose>
+        </tocitem>
+        <tocitem target="ref/wthcoef.html">
+          <name>wthcoef</name>
+          <purpose>1-D wavelet coefficient thresholding</purpose>
+        </tocitem>
+        <tocitem target="ref/wthcoef2.html">
+          <name>wthcoef2</name>
+          <purpose>Wavelet coefficient thresholding 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wthresh.html">
+          <name>wthresh</name>
+          <purpose>Soft or hard thresholding</purpose>
+        </tocitem>
+        <tocitem target="ref/wmulden.html">
+          <name>wmulden</name>
+          <purpose>Wavelet multivariate denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/wpbmpen.html">
+          <name>wpbmpen</name>
+          <purpose>Penalized threshold for wavelet packet denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/wthrmngr.html">
+          <name>wthrmngr</name>
+          <purpose>Threshold settings manager</purpose>
+        </tocitem>
+        <tocitem target="ref/wden.html">
+          <name>wden</name>
+          <purpose>Automatic 1-D denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/wbmpen.html">
+          <name>wbmpen</name>
+          <purpose>Penalized threshold for wavelet 1-D or 2-D denoising</purpose>
+        </tocitem>
+        <tocitem target="ref/wdcbm.html">
+          <name>wdcbm</name>
+          <purpose>Thresholds for wavelet 1-D using Birgé-Massart strategy</purpose>
+        </tocitem>
+        <tocitem target="ref/wdcbm2.html">
+          <name>wdcbm2</name>
+          <purpose>Thresholds for wavelet 2-D using Birgé-Massart strategy</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="compression.html">Compression
+        <tocitem target="ref/wcompress.html">
+          <name>wcompress</name>
+          <purpose>True compression of images using wavelets</purpose>
+        </tocitem>
+        <tocitem target="ref/wdencmp.html">
+          <name>wdencmp</name>
+          <purpose>Denoising or compression</purpose>
+        </tocitem>
+        <tocitem target="ref/wpdencmp.html">
+          <name>wpdencmp</name>
+          <purpose>Denoising or compression using wavelet packets</purpose>
+        </tocitem>
+        <tocitem target="ref/measerr.html">
+          <name>measerr</name>
+          <purpose>Quality metrics of signal or image approximation</purpose>
+        </tocitem>
+        <tocitem target="ref/wmpalg.html">
+          <name>wmpalg</name>
+          <purpose>Matching pursuit</purpose>
+        </tocitem>
+        <tocitem target="ref/wmpdictionary.html">
+          <name>wmpdictionary</name>
+          <purpose>Dictionary for matching pursuit</purpose>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+    <tocitem target="machine-learning-and-deep-learning.html">Machine Learning and Deep Learning
+      <tocitem target="ref/waveletscattering.html">
+        <name>waveletScattering</name>
+        <purpose>Wavelet time scattering</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.html">
+        <name>waveletScattering2</name>
+        <purpose>Wavelet image scattering</purpose>
+      </tocitem>
+      <tocitem target="ref/cwt.html">
+        <name>cwt</name>
+        <purpose>Continuous 1-D wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.scatteringtransform.html">
+        <name>scatteringTransform</name>
+        <purpose>Wavelet 1-D scattering transform</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.featurematrix.html">
+        <name>featureMatrix</name>
+        <purpose>Scattering feature matrix</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.log.html">
+        <name>log</name>
+        <purpose>Natural logarithm of scattering transform</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.filterbank.html">
+        <name>filterbank</name>
+        <purpose>Wavelet time scattering filter banks</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.littlewoodpaleysum.html">
+        <name>littlewoodPaleySum</name>
+        <purpose>Littlewood-Paley sum</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.scattergram.html">
+        <name>scattergram</name>
+        <purpose>Visualize scattering or scalogram coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.centerfrequencies.html">
+        <name>centerFrequencies</name>
+        <purpose>Wavelet scattering bandpass center frequencies</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.numorders.html">
+        <name>numorders</name>
+        <purpose>Number of scattering orders</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.numfilterbanks.html">
+        <name>numfilterbanks</name>
+        <purpose>Number of scattering filter banks</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering.numcoefficients.html">
+        <name>numCoefficients</name>
+        <purpose>Number of wavelet scattering coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.scatteringtransform.html">
+        <name>scatteringTransform</name>
+        <purpose>Wavelet 2-D scattering transform</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.featurematrix.html">
+        <name>featureMatrix</name>
+        <purpose>Image scattering feature matrix</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.log.html">
+        <name>log</name>
+        <purpose>Natural logarithm of 2-D scattering transform</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.filterbank.html">
+        <name>filterbank</name>
+        <purpose>Wavelet and scaling filters</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.littlewoodpaleysum.html">
+        <name>littlewoodPaleySum</name>
+        <purpose>Littlewood-Paley sum</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.coefficientsize.html">
+        <name>coefficientSize</name>
+        <purpose>Size of image scattering coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/waveletscattering2.paths.html">
+        <name>paths</name>
+        <purpose>Scattering paths</purpose>
+      </tocitem>
+    </tocitem>
+    <tocitem target="wavelets-and-filter-banks.html">Filter Banks
+      <tocitem target="orthogonal-and-biorthogonal-filter-banks.html">Orthogonal and Biorthogonal Filter Banks
+        <tocitem target="ref/dwtfilterbank.html">
+          <name>dwtfilterbank</name>
+          <purpose>Discrete wavelet transform filter bank</purpose>
+        </tocitem>
+        <tocitem target="ref/biorwavf.html">
+          <name>biorwavf</name>
+          <purpose>Biorthogonal spline wavelet filter</purpose>
+        </tocitem>
+        <tocitem target="ref/biorfilt.html">
+          <name>biorfilt</name>
+          <purpose>Biorthogonal wavelet filter set</purpose>
+        </tocitem>
+        <tocitem target="ref/coifwavf.html">
+          <name>coifwavf</name>
+          <purpose>Coiflet wavelet filter</purpose>
+        </tocitem>
+        <tocitem target="ref/dtfilters.html">
+          <name>dtfilters</name>
+          <purpose>Analysis and synthesis filters for oversampled wavelet filter banks</purpose>
+        </tocitem>
+        <tocitem target="ref/dbaux.html">
+          <name>dbaux</name>
+          <purpose>Daubechies wavelet filter computation</purpose>
+        </tocitem>
+        <tocitem target="ref/dbwavf.html">
+          <name>dbwavf</name>
+          <purpose>Daubechies wavelet filter</purpose>
+        </tocitem>
+        <tocitem target="ref/fejerkorovkin.html">
+          <name>fejerkorovkin</name>
+          <purpose>Fejér-Korovkin wavelet filters</purpose>
+        </tocitem>
+        <tocitem target="ref/orthfilt.html">
+          <name>orthfilt</name>
+          <purpose>Orthogonal wavelet filter set</purpose>
+        </tocitem>
+        <tocitem target="ref/rbiowavf.html">
+          <name>rbiowavf</name>
+          <purpose>Reverse biorthogonal spline wavelet filters</purpose>
+        </tocitem>
+        <tocitem target="ref/qmf.html">
+          <name>qmf</name>
+          <purpose>Scaling and Wavelet Filter</purpose>
+        </tocitem>
+        <tocitem target="ref/symaux.html">
+          <name>symaux</name>
+          <purpose>Symlet wavelet filter computation</purpose>
+        </tocitem>
+        <tocitem target="ref/symwavf.html">
+          <name>symwavf</name>
+          <purpose>Symlet wavelet filter</purpose>
+        </tocitem>
+        <tocitem target="ref/wavefun.html">
+          <name>wavefun</name>
+          <purpose>Wavelet and scaling functions</purpose>
+        </tocitem>
+        <tocitem target="ref/wavefun2.html">
+          <name>wavefun2</name>
+          <purpose>Wavelet and scaling functions 2-D</purpose>
+        </tocitem>
+        <tocitem target="ref/wfilters.html">
+          <name>wfilters</name>
+          <purpose>Wavelet filters</purpose>
+        </tocitem>
+        <tocitem target="ref/wavemngr.html">
+          <name>wavemngr</name>
+          <purpose>Wavelet manager</purpose>
+        </tocitem>
+        <tocitem target="ref/waveinfo.html">
+          <name>waveinfo</name>
+          <purpose>Wavelets information</purpose>
+        </tocitem>
+        <tocitem target="ref/wavenames.html">
+          <name>wavenames</name>
+          <purpose>Wavelet names for LWT</purpose>
+        </tocitem>
+        <tocitem target="ref/waveletfamilies.html">
+          <name>waveletfamilies</name>
+          <purpose>Wavelet families and family members</purpose>
+        </tocitem>
+        <tocitem target="ref/wrev.html">
+          <name>wrev</name>
+          <purpose>Flip vector</purpose>
+        </tocitem>
+      </tocitem>
+      <tocitem target="lifting.html">Lifting
+        <tocitem target="ref/addlift.html">
+          <name>addlift</name>
+          <purpose>Add lifting steps to lifting scheme</purpose>
+        </tocitem>
+        <tocitem target="ref/displs.html">
+          <name>displs</name>
+          <purpose>Display lifting scheme</purpose>
+        </tocitem>
+        <tocitem target="ref/filt2ls.html">
+          <name>filt2ls</name>
+          <purpose>Transform quadruplet of filters to lifting scheme</purpose>
+        </tocitem>
+        <tocitem target="ref/laurmat.html">
+          <name>laurmat</name>
+          <purpose>Laurent matrices constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/laurpoly.html">
+          <name>laurpoly</name>
+          <purpose>Laurent polynomials constructor</purpose>
+        </tocitem>
+        <tocitem target="ref/liftfilt.html">
+          <name>liftfilt</name>
+          <purpose>Apply elementary lifting steps on quadruplet of filters</purpose>
+        </tocitem>
+        <tocitem target="ref/liftwave.html">
+          <name>liftwave</name>
+          <purpose>Lifting schemes</purpose>
+        </tocitem>
+        <tocitem target="ref/lsinfo.html">
+          <name>lsinfo</name>
+          <purpose>Lifting schemes information</purpose>
+        </tocitem>
+        <tocitem target="ref/ls2filt.html">
+          <name>ls2filt</name>
+          <purpose>Transform lifting scheme to quadruplet of filters</purpose>
+        </tocitem>
+        <tocitem target="ref/lwt.html">
+          <name>lwt</name>
+          <purpose>1-D lifting wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/lwt2.html">
+          <name>lwt2</name>
+          <purpose>2-D lifting wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/ilwt.html">
+          <name>ilwt</name>
+          <purpose>Inverse 1-D lifting wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/ilwt2.html">
+          <name>ilwt2</name>
+          <purpose>Inverse 2-D lifting wavelet transform</purpose>
+        </tocitem>
+        <tocitem target="ref/lwtcoef.html">
+          <name>lwtcoef</name>
+          <purpose>Extract or reconstruct 1-D LWT wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/lwtcoef2.html">
+          <name>lwtcoef2</name>
+          <purpose>Extract or reconstruct 2-D LWT wavelet coefficients</purpose>
+        </tocitem>
+        <tocitem target="ref/wave2lp.html">
+          <name>wave2lp</name>
+          <purpose>Laurent polynomials associated with wavelet</purpose>
+        </tocitem>
+        <tocitem target="ref/mlptdenoise.html">
+          <name>mlptdenoise</name>
+          <purpose>Denoise signal using multiscale local 1-D polynomial transform</purpose>
+        </tocitem>
+        <tocitem target="ref/wavenames.html">
+          <name>wavenames</name>
+          <purpose>Wavelet names for LWT</purpose>
+        </tocitem>
+        <tocitem target="ref/wavemngr.html">
+          <name>wavemngr</name>
+          <purpose>Wavelet manager</purpose>
+        </tocitem>
+        <tocitem target="ref/waveletfamilies.html">
+          <name>waveletfamilies</name>
+          <purpose>Wavelet families and family members</purpose>
+        </tocitem>
+        <tocitem target="ref/waveinfo.html">
+          <name>waveinfo</name>
+          <purpose>Wavelets information</purpose>
+        </tocitem>
+      </tocitem>
+    </tocitem>
+    <tocitem target="code-generation.html">Code Generation
+      <tocitem target="ref/emd.html">
+        <name>emd</name>
+        <purpose>Empirical mode decomposition</purpose>
+      </tocitem>
+      <tocitem target="ref/cwtfilterbank.html">
+        <name>cwtfilterbank</name>
+        <purpose>Continuous wavelet transform filter bank</purpose>
+      </tocitem>
+      <tocitem target="ref/cwtfreqbounds.html">
+        <name>cwtfreqbounds</name>
+        <purpose>CWT maximum and minimum frequency or period</purpose>
+      </tocitem>
+      <tocitem target="ref/cwtfilterbank.wt.html">
+        <name>wt</name>
+        <purpose>Continuous wavelet transform with filter bank</purpose>
+      </tocitem>
+      <tocitem target="ref/appcoef.html">
+        <name>appcoef</name>
+        <purpose>1-D approximation coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/detcoef.html">
+        <name>detcoef</name>
+        <purpose>1-D detail coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/dwt.html">
+        <name>dwt</name>
+        <purpose>Single-level 1-D discrete wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/idwt.html">
+        <name>idwt</name>
+        <purpose>Single-level inverse discrete 1-D wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/dyadup.html">
+        <name>dyadup</name>
+        <purpose>Dyadic upsampling</purpose>
+      </tocitem>
+      <tocitem target="ref/modwt.html">
+        <name>modwt</name>
+        <purpose>Maximal overlap discrete wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/imodwt.html">
+        <name>imodwt</name>
+        <purpose>Inverse maximal overlap discrete wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/modwtmra.html">
+        <name>modwtmra</name>
+        <purpose>Multiresolution analysis based on MODWT</purpose>
+      </tocitem>
+      <tocitem target="ref/modwpt.html">
+        <name>modwpt</name>
+        <purpose>Maximal overlap discrete wavelet packet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/imodwpt.html">
+        <name>imodwpt</name>
+        <purpose>Inverse maximal overlap discrete wavelet packet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/modwptdetails.html">
+        <name>modwptdetails</name>
+        <purpose>Maximal overlap discrete wavelet packet transform details</purpose>
+      </tocitem>
+      <tocitem target="ref/wavedec.html">
+        <name>wavedec</name>
+        <purpose>1-D wavelet decomposition</purpose>
+      </tocitem>
+      <tocitem target="ref/waverec.html">
+        <name>waverec</name>
+        <purpose>1-D wavelet reconstruction</purpose>
+      </tocitem>
+      <tocitem target="ref/wextend.html">
+        <name>wextend</name>
+        <purpose>Extend vector or matrix</purpose>
+      </tocitem>
+      <tocitem target="ref/appcoef2.html">
+        <name>appcoef2</name>
+        <purpose>2-D approximation coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/detcoef2.html">
+        <name>detcoef2</name>
+        <purpose>2-D detail coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/dwt2.html">
+        <name>dwt2</name>
+        <purpose>Single-level discrete 2-D wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/idwt2.html">
+        <name>idwt2</name>
+        <purpose>Single-level inverse discrete 2-D wavelet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/shearletsystem.html">
+        <name>shearletSystem</name>
+        <purpose>Cone-adapted bandlimited shearlet system</purpose>
+      </tocitem>
+      <tocitem target="ref/shearletsystem.sheart2.html">
+        <name>sheart2</name>
+        <purpose>Shearlet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/shearletsystem.isheart2.html">
+        <name>isheart2</name>
+        <purpose>Inverse shearlet transform</purpose>
+      </tocitem>
+      <tocitem target="ref/wavedec2.html">
+        <name>wavedec2</name>
+        <purpose>2-D wavelet decomposition</purpose>
+      </tocitem>
+      <tocitem target="ref/waverec2.html">
+        <name>waverec2</name>
+        <purpose>2-D wavelet reconstruction</purpose>
+      </tocitem>
+      <tocitem target="ref/wextend.html">
+        <name>wextend</name>
+        <purpose>Extend vector or matrix</purpose>
+      </tocitem>
+      <tocitem target="ref/ddencmp.html">
+        <name>ddencmp</name>
+        <purpose>Default values for denoising or compression</purpose>
+      </tocitem>
+      <tocitem target="ref/wden.html">
+        <name>wden</name>
+        <purpose>Automatic 1-D denoising</purpose>
+      </tocitem>
+      <tocitem target="ref/wdencmp.html">
+        <name>wdencmp</name>
+        <purpose>Denoising or compression</purpose>
+      </tocitem>
+      <tocitem target="ref/wthcoef.html">
+        <name>wthcoef</name>
+        <purpose>1-D wavelet coefficient thresholding</purpose>
+      </tocitem>
+      <tocitem target="ref/wthcoef2.html">
+        <name>wthcoef2</name>
+        <purpose>Wavelet coefficient thresholding 2-D</purpose>
+      </tocitem>
+      <tocitem target="ref/thselect.html">
+        <name>thselect</name>
+        <purpose>Threshold selection for denoising</purpose>
+      </tocitem>
+      <tocitem target="ref/wthresh.html">
+        <name>wthresh</name>
+        <purpose>Soft or hard thresholding</purpose>
+      </tocitem>
+      <tocitem target="ref/wnoisest.html">
+        <name>wnoisest</name>
+        <purpose>Estimate noise of 1-D wavelet coefficients</purpose>
+      </tocitem>
+      <tocitem target="ref/qmf.html">
+        <name>qmf</name>
+        <purpose>Scaling and Wavelet Filter</purpose>
+      </tocitem>
+    </tocitem>
+  </tocitem>
+</toc>

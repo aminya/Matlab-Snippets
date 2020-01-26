@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="symbolic-computations-in-matlab.html">Symbolic Computations in MATLAB
+<tocitem target="symbolic-variables-expressions-and-functions.html">Symbolic Variables, Expressions, Functions, and Preferences
+<tocitem target="sym.html">
+<name>sym</name>
+<purpose>Create symbolic variables, expressions, functions, matrices</purpose>
+</tocitem>
+<tocitem target="syms.html">
+<name>syms</name>
+<purpose>Create symbolic variables and functions</purpose>
+</tocitem>
+<tocitem target="symfun.html">
+<name>symfun</name>
+<purpose>Create symbolic functions</purpose>
+</tocitem>
+<tocitem target="str2sym.html">
+<name>str2sym</name>
+<purpose>Evaluate string representing symbolic expression</purpose>
+</tocitem>
+<tocitem target="fold.html">
+<name>fold</name>
+<purpose>Combine (fold) vector using function</purpose>
+</tocitem>
+<tocitem target="piecewise.html">
+<name>piecewise</name>
+<purpose>Conditionally defined expression or function</purpose>
+</tocitem>
+<tocitem target="symvar.html">
+<name>symvar</name>
+<purpose>Find symbolic variables in symbolic input</purpose>
+</tocitem>
+<tocitem target="argnames.html">
+<name>argnames</name>
+<purpose>Input variables of symbolic function</purpose>
+</tocitem>
+<tocitem target="formula.html">
+<name>formula</name>
+<purpose>Return body of symbolic function</purpose>
+</tocitem>
+<tocitem target="has.html">
+<name>has</name>
+<purpose>Check if expression contains particular subexpression</purpose>
+</tocitem>
+<tocitem target="children.html">
+<name>children</name>
+<purpose>Subexpressions or terms of symbolic expression</purpose>
+</tocitem>
+<tocitem target="sym.symtype.html">
+<name>symType</name>
+<purpose>Determine type of symbolic object</purpose>
+</tocitem>
+<tocitem target="sym.symfuntype.html">
+<name>symFunType</name>
+<purpose>Determine functional type of symbolic object</purpose>
+</tocitem>
+<tocitem target="sym.issymtype.html">
+<name>isSymType</name>
+<purpose>Determine whether symbolic object is specific type</purpose>
+</tocitem>
+<tocitem target="sym.hassymtype.html">
+<name>hasSymType</name>
+<purpose>Determine whether symbolic object contains specific type</purpose>
+</tocitem>
+<tocitem target="sym.findsymtype.html">
+<name>findSymType</name>
+<purpose>Find symbolic subobjects of specific type</purpose>
+</tocitem>
+<tocitem target="sym.mapsymtype.html">
+<name>mapSymType</name>
+<purpose>Apply function to symbolic subobjects of specific type</purpose>
+</tocitem>
+<tocitem target="isfinite.html">
+<name>isfinite</name>
+<purpose>Check whether symbolic array elements are finite</purpose>
+</tocitem>
+<tocitem target="isinf.html">
+<name>isinf</name>
+<purpose>Check whether symbolic array elements are infinite</purpose>
+</tocitem>
+<tocitem target="isnan.html">
+<name>isnan</name>
+<purpose>Check whether symbolic array elements are NaNs</purpose>
+</tocitem>
+<tocitem target="sympref.html">
+<name>sympref</name>
+<purpose>Set symbolic preferences</purpose>
+</tocitem>
+<tocitem target="sym.pretty.html">
+<name>pretty</name>
+<purpose>Prettyprint symbolic expressions</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="operators.html">Operators and Elementary Operations
+<tocitem target="minus.html">
+<name>minus</name>
+<purpose>Symbolic subtraction</purpose>
+</tocitem>
+<tocitem target="plus.html">
+<name>plus</name>
+<purpose>Symbolic addition</purpose>
+</tocitem>
+<tocitem target="times.html">
+<name>times</name>
+<purpose>Symbolic array multiplication</purpose>
+</tocitem>
+<tocitem target="ldivide.html">
+<name>ldivide</name>
+<purpose>Symbolic array left division</purpose>
+</tocitem>
+<tocitem target="rdivide.html">
+<name>rdivide</name>
+<purpose>Symbolic array right division</purpose>
+</tocitem>
+<tocitem target="power.html">
+<name>power</name>
+<purpose>Symbolic array power</purpose>
+</tocitem>
+<tocitem target="nthroot.html">
+<name>nthroot</name>
+<purpose>Nth root of symbolic numbers</purpose>
+</tocitem>
+<tocitem target="mtimes.html">
+<name>mtimes</name>
+<purpose>Symbolic matrix multiplication</purpose>
+</tocitem>
+<tocitem target="mldivide.html">
+<name>mldivide</name>
+<purpose>Symbolic matrix left division</purpose>
+</tocitem>
+<tocitem target="mrdivide.html">
+<name>mrdivide</name>
+<purpose>Symbolic matrix right division</purpose>
+</tocitem>
+<tocitem target="mpower.html">
+<name>mpower</name>
+<purpose>Symbolic matrix power</purpose>
+</tocitem>
+<tocitem target="transpose.html">
+<name>transpose</name>
+<purpose>Symbolic matrix transpose</purpose>
+</tocitem>
+<tocitem target="ctranspose.html">
+<name>ctranspose</name>
+<purpose>Symbolic matrix complex conjugate transpose</purpose>
+</tocitem>
+<tocitem target="eq.html">
+<name>eq</name>
+<purpose>Define symbolic equation</purpose>
+</tocitem>
+<tocitem target="ge.html">
+<name>ge</name>
+<purpose>Define greater than or equal to condition</purpose>
+</tocitem>
+<tocitem target="gt.html">
+<name>gt</name>
+<purpose>Define greater than relation</purpose>
+</tocitem>
+<tocitem target="le.html">
+<name>le</name>
+<purpose>Define less than or equal to condition</purpose>
+</tocitem>
+<tocitem target="lt.html">
+<name>lt</name>
+<purpose>Define less than relation</purpose>
+</tocitem>
+<tocitem target="ne.html">
+<name>ne</name>
+<purpose>Define inequality</purpose>
+</tocitem>
+<tocitem target="has.html">
+<name>has</name>
+<purpose>Check if expression contains particular subexpression</purpose>
+</tocitem>
+<tocitem target="in.html">
+<name>in</name>
+<purpose>Numeric type of symbolic input</purpose>
+</tocitem>
+<tocitem target="isequal.html">
+<name>isequal</name>
+<purpose>Test equality of symbolic inputs</purpose>
+</tocitem>
+<tocitem target="isequaln.html">
+<name>isequaln</name>
+<purpose>Test symbolic objects for equality, treating NaN values
+as equal</purpose>
+</tocitem>
+<tocitem target="piecewise.html">
+<name>piecewise</name>
+<purpose>Conditionally defined expression or function</purpose>
+</tocitem>
+<tocitem target="and.html">
+<name>and</name>
+<purpose>Logical AND for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="not.html">
+<name>not</name>
+<purpose>Logical NOT for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="or.html">
+<name>or</name>
+<purpose>Logical OR for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="xor.html">
+<name>xor</name>
+<purpose>Logical XOR for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="all.html">
+<name>all</name>
+<purpose>Test whether all equations and inequalities represented as elements of symbolic
+      array are valid</purpose>
+</tocitem>
+<tocitem target="any.html">
+<name>any</name>
+<purpose>Test whether at least one of equations and inequalities represented as elements of
+      symbolic array is valid</purpose>
+</tocitem>
+<tocitem target="has.html">
+<name>has</name>
+<purpose>Check if expression contains particular subexpression</purpose>
+</tocitem>
+<tocitem target="in.html">
+<name>in</name>
+<purpose>Numeric type of symbolic input</purpose>
+</tocitem>
+<tocitem target="isequaln.html">
+<name>isequaln</name>
+<purpose>Test symbolic objects for equality, treating NaN values
+as equal</purpose>
+</tocitem>
+<tocitem target="isfinite.html">
+<name>isfinite</name>
+<purpose>Check whether symbolic array elements are finite</purpose>
+</tocitem>
+<tocitem target="isinf.html">
+<name>isinf</name>
+<purpose>Check whether symbolic array elements are infinite</purpose>
+</tocitem>
+<tocitem target="isnan.html">
+<name>isnan</name>
+<purpose>Check whether symbolic array elements are NaNs</purpose>
+</tocitem>
+<tocitem target="logical.html">
+<name>logical</name>
+<purpose>Check validity of equation or inequality</purpose>
+</tocitem>
+<tocitem target="mod.html">
+<name>mod</name>
+<purpose>Symbolic modulus after division</purpose>
+</tocitem>
+<tocitem target="quorem.html">
+<name>quorem</name>
+<purpose>Quotient and remainder</purpose>
+</tocitem>
+<tocitem target="conj.html">
+<name>conj</name>
+<purpose>Complex conjugate of symbolic input</purpose>
+</tocitem>
+<tocitem target="imag.html">
+<name>imag</name>
+<purpose>Imaginary part of complex number</purpose>
+</tocitem>
+<tocitem target="real.html">
+<name>real</name>
+<purpose>Real part of complex number</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="conversion.html">Conversion Between Symbolic and Numeric
+<tocitem target="cell2sym.html">
+<name>cell2sym</name>
+<purpose>Convert cell array to symbolic array</purpose>
+</tocitem>
+<tocitem target="double.html">
+<name>double</name>
+<purpose>Convert symbolic values to MATLAB double precision</purpose>
+</tocitem>
+<tocitem target="poly2sym.html">
+<name>poly2sym</name>
+<purpose>Create symbolic polynomial from vector of coefficients</purpose>
+</tocitem>
+<tocitem target="sym.html">
+<name>sym</name>
+<purpose>Create symbolic variables, expressions, functions, matrices</purpose>
+</tocitem>
+<tocitem target="sym2cell.html">
+<name>sym2cell</name>
+<purpose>Convert symbolic array to cell array</purpose>
+</tocitem>
+<tocitem target="sym2poly.html">
+<name>sym2poly</name>
+<purpose>Extract vector of all numeric coefficients, including
+zeros, from symbolic polynomial</purpose>
+</tocitem>
+<tocitem target="symfun.html">
+<name>symfun</name>
+<purpose>Create symbolic functions</purpose>
+</tocitem>
+<tocitem target="vpa.html">
+<name>vpa</name>
+<purpose>Variable-precision arithmetic (arbitrary-precision arithmetic)</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="units-of-measurement.html">Units of Measurement
+<tocitem target="checkunits.html">
+<name>checkUnits</name>
+<purpose>Check for compatible dimensions and consistent units</purpose>
+</tocitem>
+<tocitem target="findunits.html">
+<name>findUnits</name>
+<purpose>Find units in input</purpose>
+</tocitem>
+<tocitem target="isunit.html">
+<name>isUnit</name>
+<purpose>Determine if input is a symbolic unit</purpose>
+</tocitem>
+<tocitem target="mixedunits.html">
+<name>mixedUnits</name>
+<purpose>Split unit into sum of units</purpose>
+</tocitem>
+<tocitem target="newunit.html">
+<name>newUnit</name>
+<purpose>Define new unit</purpose>
+</tocitem>
+<tocitem target="removeunit.html">
+<name>removeUnit</name>
+<purpose>Remove unit</purpose>
+</tocitem>
+<tocitem target="rewrite.html">
+<name>rewrite</name>
+<purpose>Rewrite expression in terms of another function</purpose>
+</tocitem>
+<tocitem target="separateunits.html">
+<name>separateUnits</name>
+<purpose>Separate units from expression</purpose>
+</tocitem>
+<tocitem target="simplify.html">
+<name>simplify</name>
+<purpose>Algebraic simplification</purpose>
+</tocitem>
+<tocitem target="str2symunit.html">
+<name>str2symunit</name>
+<purpose>Convert character vector or string to unit</purpose>
+</tocitem>
+<tocitem target="symunit.html">
+<name>symunit</name>
+<purpose>Units of measurement</purpose>
+</tocitem>
+<tocitem target="symunit2str.html">
+<name>symunit2str</name>
+<purpose>Convert unit to character vector</purpose>
+</tocitem>
+<tocitem target="unitconversionfactor.html">
+<name>unitConversionFactor</name>
+<purpose>Conversion factor between units</purpose>
+</tocitem>
+<tocitem target="unitconvert.html">
+<name>unitConvert</name>
+<purpose>Convert units to other units of measurement</purpose>
+</tocitem>
+<tocitem target="unitinfo.html">
+<name>unitInfo</name>
+<purpose>Information on units of measurement</purpose>
+</tocitem>
+<tocitem target="baseunits.html">
+<name>baseUnits</name>
+<purpose>Base units of unit system</purpose>
+</tocitem>
+<tocitem target="derivedunits.html">
+<name>derivedUnits</name>
+<purpose>Derived units of unit system</purpose>
+</tocitem>
+<tocitem target="newunitsystem.html">
+<name>newUnitSystem</name>
+<purpose>Define unit system</purpose>
+</tocitem>
+<tocitem target="removeunitsystem.html">
+<name>removeUnitSystem</name>
+<purpose>Remove unit system</purpose>
+</tocitem>
+<tocitem target="unitsystems.html">
+<name>unitSystems</name>
+<purpose>List available unit systems</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="mathematics.html">Mathematics
+<tocitem target="equation-solving.html">Equation Solving
+<tocitem target="equationstomatrix.html">
+<name>equationsToMatrix</name>
+<purpose>Convert linear equations to matrix form</purpose>
+</tocitem>
+<tocitem target="eliminate.html">
+<name>eliminate</name>
+<purpose>Eliminate variables from rational equations</purpose>
+</tocitem>
+<tocitem target="finverse.html">
+<name>finverse</name>
+<purpose>Functional inverse</purpose>
+</tocitem>
+<tocitem target="linsolve.html">
+<name>linsolve</name>
+<purpose>Solve linear equations in matrix form</purpose>
+</tocitem>
+<tocitem target="poles.html">
+<name>poles</name>
+<purpose>Poles of expression or function</purpose>
+</tocitem>
+<tocitem target="solve.html">
+<name>solve</name>
+<purpose>Equations and systems solver</purpose>
+</tocitem>
+<tocitem target="vpasolve.html">
+<name>vpasolve</name>
+<purpose>Solve equations numerically</purpose>
+</tocitem>
+<tocitem target="dsolve.html">
+<name>dsolve</name>
+<purpose>Solve system of differential equations</purpose>
+</tocitem>
+<tocitem target="massmatrixform.html">
+<name>massMatrixForm</name>
+<purpose>Extract mass matrix and right side of semilinear system
+of differential algebraic equations</purpose>
+</tocitem>
+<tocitem target="odefunction.html">
+<name>odeFunction</name>
+<purpose>Convert symbolic expressions to function handle for ODE
+solvers</purpose>
+</tocitem>
+<tocitem target="odetovectorfield.html">
+<name>odeToVectorField</name>
+<purpose>Reduce order of differential equations to first-order</purpose>
+</tocitem>
+<tocitem target="daefunction.html">
+<name>daeFunction</name>
+<purpose>Convert system of differential algebraic equations to MATLAB function handle suitable for ode15i</purpose>
+</tocitem>
+<tocitem target="decic.html">
+<name>decic</name>
+<purpose>Find consistent initial conditions for first-order implicit
+ODE system with algebraic constraints</purpose>
+</tocitem>
+<tocitem target="finddecoupledblocks.html">
+<name>findDecoupledBlocks</name>
+<purpose>Search for decoupled blocks in systems of equations</purpose>
+</tocitem>
+<tocitem target="incidencematrix.html">
+<name>incidenceMatrix</name>
+<purpose>Find incidence matrix of system of equations</purpose>
+</tocitem>
+<tocitem target="islowindexdae.html">
+<name>isLowIndexDAE</name>
+<purpose>Check if differential index of system of equations is
+lower than 2</purpose>
+</tocitem>
+<tocitem target="massmatrixform.html">
+<name>massMatrixForm</name>
+<purpose>Extract mass matrix and right side of semilinear system
+of differential algebraic equations</purpose>
+</tocitem>
+<tocitem target="odefunction.html">
+<name>odeFunction</name>
+<purpose>Convert symbolic expressions to function handle for ODE
+solvers</purpose>
+</tocitem>
+<tocitem target="reducedaeindex.html">
+<name>reduceDAEIndex</name>
+<purpose>Convert system of first-order differential algebraic equations
+to equivalent system of differential index 1</purpose>
+</tocitem>
+<tocitem target="reducedaetoode.html">
+<name>reduceDAEToODE</name>
+<purpose>Convert system of first-order semilinear differential
+algebraic equations to equivalent system of differential index 0</purpose>
+</tocitem>
+<tocitem target="reducedifferentialorder.html">
+<name>reduceDifferentialOrder</name>
+<purpose>Reduce system of higher-order differential equations to
+equivalent system of first-order differential equations</purpose>
+</tocitem>
+<tocitem target="reduceredundancies.html">
+<name>reduceRedundancies</name>
+<purpose>Simplify system of first-order differential algebraic
+equations by eliminating redundant equations and variables</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="formula-manipulation-and-simplification.html">Formula Manipulation and Simplification
+<tocitem target="simplify.html">
+<name>simplify</name>
+<purpose>Algebraic simplification</purpose>
+</tocitem>
+<tocitem target="simplifyfraction.html">
+<name>simplifyFraction</name>
+<purpose>Simplify symbolic rational expressions</purpose>
+</tocitem>
+<tocitem target="subexpr.html">
+<name>subexpr</name>
+<purpose>Rewrite symbolic expression in terms of common subexpressions</purpose>
+</tocitem>
+<tocitem target="coeffs.html">
+<name>coeffs</name>
+<purpose>Coefficients of polynomial</purpose>
+</tocitem>
+<tocitem target="expand.html">
+<name>expand</name>
+<purpose>Expand expressions and simplify inputs of functions by using identities</purpose>
+</tocitem>
+<tocitem target="horner.html">
+<name>horner</name>
+<purpose>Horner nested polynomial representation</purpose>
+</tocitem>
+<tocitem target="numden.html">
+<name>numden</name>
+<purpose>Extract numerator and denominator</purpose>
+</tocitem>
+<tocitem target="partfrac.html">
+<name>partfrac</name>
+<purpose>Partial fraction decomposition</purpose>
+</tocitem>
+<tocitem target="children.html">
+<name>children</name>
+<purpose>Subexpressions or terms of symbolic expression</purpose>
+</tocitem>
+<tocitem target="collect.html">
+<name>collect</name>
+<purpose>Collect coefficients</purpose>
+</tocitem>
+<tocitem target="combine.html">
+<name>combine</name>
+<purpose>Combine terms of identical algebraic structure</purpose>
+</tocitem>
+<tocitem target="compose.html">
+<name>compose</name>
+<purpose>Functional composition</purpose>
+</tocitem>
+<tocitem target="displayformula.html">
+<name>displayFormula</name>
+<purpose>Display symbolic formula from string</purpose>
+</tocitem>
+<tocitem target="divisors.html">
+<name>divisors</name>
+<purpose>Divisors of integer or expression</purpose>
+</tocitem>
+<tocitem target="factor.html">
+<name>factor</name>
+<purpose>Factorization</purpose>
+</tocitem>
+<tocitem target="isolate.html">
+<name>isolate</name>
+<purpose>Isolate variable or expression in equation</purpose>
+</tocitem>
+<tocitem target="lhs.html">
+<name>lhs</name>
+<purpose>Left side (LHS) of equation</purpose>
+</tocitem>
+<tocitem target="rewrite.html">
+<name>rewrite</name>
+<purpose>Rewrite expression in terms of another function</purpose>
+</tocitem>
+<tocitem target="rhs.html">
+<name>rhs</name>
+<purpose>Right side (RHS) of equation</purpose>
+</tocitem>
+<tocitem target="subexpr.html">
+<name>subexpr</name>
+<purpose>Rewrite symbolic expression in terms of common subexpressions</purpose>
+</tocitem>
+<tocitem target="subs.html">
+<name>subs</name>
+<purpose>Symbolic substitution</purpose>
+</tocitem>
+<tocitem target="sym.pretty.html">
+<name>pretty</name>
+<purpose>Prettyprint symbolic expressions</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="calculus.html">Calculus
+<tocitem target="limit.html">
+<name>limit</name>
+<purpose>Limit of symbolic expression</purpose>
+</tocitem>
+<tocitem target="diff.html">
+<name>diff</name>
+<purpose>Differentiate symbolic expression or function</purpose>
+</tocitem>
+<tocitem target="functionalderivative.html">
+<name>functionalDerivative</name>
+<purpose>Functional derivative</purpose>
+</tocitem>
+<tocitem target="int.html">
+<name>int</name>
+<purpose>Definite and indefinite integrals</purpose>
+</tocitem>
+<tocitem target="vpaintegral.html">
+<name>vpaintegral</name>
+<purpose>Numerical integration using variable precision</purpose>
+</tocitem>
+<tocitem target="changeintegrationvariable.html">
+<name>changeIntegrationVariable</name>
+<purpose>Integration by substitution</purpose>
+</tocitem>
+<tocitem target="integratebyparts.html">
+<name>integrateByParts</name>
+<purpose>Integration by parts</purpose>
+</tocitem>
+<tocitem target="release.html">
+<name>release</name>
+<purpose>Evaluate integrals</purpose>
+</tocitem>
+<tocitem target="curl.html">
+<name>curl</name>
+<purpose>Curl of vector field</purpose>
+</tocitem>
+<tocitem target="divergence.html">
+<name>divergence</name>
+<purpose>Divergence of vector field</purpose>
+</tocitem>
+<tocitem target="gradient.html">
+<name>gradient</name>
+<purpose>Gradient vector of scalar function</purpose>
+</tocitem>
+<tocitem target="hessian.html">
+<name>hessian</name>
+<purpose>Hessian matrix of scalar function</purpose>
+</tocitem>
+<tocitem target="jacobian.html">
+<name>jacobian</name>
+<purpose>Jacobian matrix</purpose>
+</tocitem>
+<tocitem target="laplacian.html">
+<name>laplacian</name>
+<purpose>Laplacian of scalar function</purpose>
+</tocitem>
+<tocitem target="potential.html">
+<name>potential</name>
+<purpose>Potential of vector field</purpose>
+</tocitem>
+<tocitem target="vectorpotential.html">
+<name>vectorPotential</name>
+<purpose>Vector potential of vector field</purpose>
+</tocitem>
+<tocitem target="pade.html">
+<name>pade</name>
+<purpose>Pade approximant</purpose>
+</tocitem>
+<tocitem target="rsums.html">
+<name>rsums</name>
+<purpose>Interactive evaluation of Riemann sums</purpose>
+</tocitem>
+<tocitem target="series.html">
+<name>series</name>
+<purpose>Puiseux series</purpose>
+</tocitem>
+<tocitem target="sym.taylor.html">
+<name>taylor</name>
+<purpose>Taylor series</purpose>
+</tocitem>
+<tocitem target="cumprod.html">
+<name>cumprod</name>
+<purpose>Symbolic cumulative product</purpose>
+</tocitem>
+<tocitem target="cumsum.html">
+<name>cumsum</name>
+<purpose>Symbolic cumulative sum</purpose>
+</tocitem>
+<tocitem target="symprod.html">
+<name>symprod</name>
+<purpose>Product of series</purpose>
+</tocitem>
+<tocitem target="symsum.html">
+<name>symsum</name>
+<purpose>Sum of series</purpose>
+</tocitem>
+<tocitem target="fourier.html">
+<name>fourier</name>
+<purpose>Fourier transform</purpose>
+</tocitem>
+<tocitem target="ifourier.html">
+<name>ifourier</name>
+<purpose>Inverse Fourier transform</purpose>
+</tocitem>
+<tocitem target="htrans.html">
+<name>htrans</name>
+<purpose>Hilbert transform</purpose>
+</tocitem>
+<tocitem target="ihtrans.html">
+<name>ihtrans</name>
+<purpose>Inverse Hilbert transform</purpose>
+</tocitem>
+<tocitem target="laplace.html">
+<name>laplace</name>
+<purpose>Laplace transform</purpose>
+</tocitem>
+<tocitem target="ilaplace.html">
+<name>ilaplace</name>
+<purpose>Inverse Laplace transform</purpose>
+</tocitem>
+<tocitem target="ztrans.html">
+<name>ztrans</name>
+<purpose>Z-transform</purpose>
+</tocitem>
+<tocitem target="iztrans.html">
+<name>iztrans</name>
+<purpose>Inverse Z-transform</purpose>
+</tocitem>
+<tocitem target="sympref.html">
+<name>sympref</name>
+<purpose>Set symbolic preferences</purpose>
+</tocitem>
+<tocitem target="funtool.html">
+<name>funtool</name>
+<purpose>Function calculator</purpose>
+</tocitem>
+<tocitem target="rsums.html">
+<name>rsums</name>
+<purpose>Interactive evaluation of Riemann sums</purpose>
+</tocitem>
+<tocitem target="taylortool.html">
+<name>taylortool</name>
+<purpose>Taylor series calculator</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="linear-algebra.html">Linear Algebra
+<tocitem target="cat.html">
+<name>cat</name>
+<purpose>Concatenate symbolic arrays along specified dimension</purpose>
+</tocitem>
+<tocitem target="colon.html">
+<name>colon</name>
+<purpose>Create symbolic vectors, array subscripting, and for-loop
+iterators</purpose>
+</tocitem>
+<tocitem target="horzcat.html">
+<name>horzcat</name>
+<purpose>Concatenate symbolic arrays horizontally</purpose>
+</tocitem>
+<tocitem target="sort.html">
+<name>sort</name>
+<purpose>Sort elements of symbolic vectors or matrices</purpose>
+</tocitem>
+<tocitem target="vertcat.html">
+<name>vertcat</name>
+<purpose>Concatenate symbolic arrays vertically</purpose>
+</tocitem>
+<tocitem target="diag.html">
+<name>diag</name>
+<purpose>Create diagonal matrix or get diagonals from symbolic matrices</purpose>
+</tocitem>
+<tocitem target="reshape.html">
+<name>reshape</name>
+<purpose>Reshape symbolic array</purpose>
+</tocitem>
+<tocitem target="tril.html">
+<name>tril</name>
+<purpose>Return lower triangular part of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="triu.html">
+<name>triu</name>
+<purpose>Return upper triangular part of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="adjoint.html">
+<name>adjoint</name>
+<purpose>Classical adjoint (adjugate) of square matrix</purpose>
+</tocitem>
+<tocitem target="cond.html">
+<name>cond</name>
+<purpose>Condition number of matrix</purpose>
+</tocitem>
+<tocitem target="sym.det.html">
+<name>det</name>
+<purpose>Determinant of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="equationstomatrix.html">
+<name>equationsToMatrix</name>
+<purpose>Convert linear equations to matrix form</purpose>
+</tocitem>
+<tocitem target="inv.html">
+<name>inv</name>
+<purpose>Inverse of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="linsolve.html">
+<name>linsolve</name>
+<purpose>Solve linear equations in matrix form</purpose>
+</tocitem>
+<tocitem target="norm.html">
+<name>norm</name>
+<purpose>Norm of matrix or vector</purpose>
+</tocitem>
+<tocitem target="pinv.html">
+<name>pinv</name>
+<purpose>Moore-Penrose inverse (pseudoinverse) of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="rank.html">
+<name>rank</name>
+<purpose>Find rank of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="rref.html">
+<name>rref</name>
+<purpose>Reduced row echelon form of matrix (Gauss-Jordan elimination)</purpose>
+</tocitem>
+<tocitem target="colspace.html">
+<name>colspace</name>
+<purpose>Basis for column space of matrix</purpose>
+</tocitem>
+<tocitem target="null.html">
+<name>null</name>
+<purpose>Form basis for null space of matrix</purpose>
+</tocitem>
+<tocitem target="orth.html">
+<name>orth</name>
+<purpose>Orthonormal basis for range of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="chol.html">
+<name>chol</name>
+<purpose>Cholesky factorization</purpose>
+</tocitem>
+<tocitem target="lu.html">
+<name>lu</name>
+<purpose>LU factorization</purpose>
+</tocitem>
+<tocitem target="qr.html">
+<name>qr</name>
+<purpose>QR factorization</purpose>
+</tocitem>
+<tocitem target="svd.html">
+<name>svd</name>
+<purpose>Singular value decomposition of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="charpoly.html">
+<name>charpoly</name>
+<purpose>Characteristic polynomial of matrix</purpose>
+</tocitem>
+<tocitem target="eig.html">
+<name>eig</name>
+<purpose>Eigenvalues and eigenvectors of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="sym.jordan.html">
+<name>jordan</name>
+<purpose>Jordan normal form (Jordan canonical form)</purpose>
+</tocitem>
+<tocitem target="curl.html">
+<name>curl</name>
+<purpose>Curl of vector field</purpose>
+</tocitem>
+<tocitem target="divergence.html">
+<name>divergence</name>
+<purpose>Divergence of vector field</purpose>
+</tocitem>
+<tocitem target="gradient.html">
+<name>gradient</name>
+<purpose>Gradient vector of scalar function</purpose>
+</tocitem>
+<tocitem target="hessian.html">
+<name>hessian</name>
+<purpose>Hessian matrix of scalar function</purpose>
+</tocitem>
+<tocitem target="jacobian.html">
+<name>jacobian</name>
+<purpose>Jacobian matrix</purpose>
+</tocitem>
+<tocitem target="laplacian.html">
+<name>laplacian</name>
+<purpose>Laplacian of scalar function</purpose>
+</tocitem>
+<tocitem target="potential.html">
+<name>potential</name>
+<purpose>Potential of vector field</purpose>
+</tocitem>
+<tocitem target="vectorpotential.html">
+<name>vectorPotential</name>
+<purpose>Vector potential of vector field</purpose>
+</tocitem>
+<tocitem target="hermiteform.html">
+<name>hermiteForm</name>
+<purpose>Hermite form of matrix</purpose>
+</tocitem>
+<tocitem target="sym.jordan.html">
+<name>jordan</name>
+<purpose>Jordan normal form (Jordan canonical form)</purpose>
+</tocitem>
+<tocitem target="smithform.html">
+<name>smithForm</name>
+<purpose>Smith form of matrix</purpose>
+</tocitem>
+<tocitem target="bernsteinmatrix.html">
+<name>bernsteinMatrix</name>
+<purpose>Bernstein matrix</purpose>
+</tocitem>
+<tocitem target="toeplitz.html">
+<name>toeplitz</name>
+<purpose>Symbolic Toeplitz matrix</purpose>
+</tocitem>
+<tocitem target="expm.html">
+<name>expm</name>
+<purpose>Matrix exponential</purpose>
+</tocitem>
+<tocitem target="funm.html">
+<name>funm</name>
+<purpose>General matrix function</purpose>
+</tocitem>
+<tocitem target="logm.html">
+<name>logm</name>
+<purpose>Matrix logarithm</purpose>
+</tocitem>
+<tocitem target="sqrtm.html">
+<name>sqrtm</name>
+<purpose>Matrix square root</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="assumptions-1.html">Assumptions
+<tocitem target="assume.html">
+<name>assume</name>
+<purpose>Set assumption on symbolic object</purpose>
+</tocitem>
+<tocitem target="assumealso.html">
+<name>assumeAlso</name>
+<purpose>Add assumption on symbolic object</purpose>
+</tocitem>
+<tocitem target="assumptions.html">
+<name>assumptions</name>
+<purpose>Show assumptions affecting symbolic variable, expression,
+or function</purpose>
+</tocitem>
+<tocitem target="in.html">
+<name>in</name>
+<purpose>Numeric type of symbolic input</purpose>
+</tocitem>
+<tocitem target="piecewise.html">
+<name>piecewise</name>
+<purpose>Conditionally defined expression or function</purpose>
+</tocitem>
+<tocitem target="isalways.html">
+<name>isAlways</name>
+<purpose>Check whether equation or inequality holds for all values
+of its variables</purpose>
+</tocitem>
+<tocitem target="logical.html">
+<name>logical</name>
+<purpose>Check validity of equation or inequality</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="polynomials.html">Polynomials
+<tocitem target="coeffs.html">
+<name>coeffs</name>
+<purpose>Coefficients of polynomial</purpose>
+</tocitem>
+<tocitem target="gbasis.html">
+<name>gbasis</name>
+<purpose>Reduced Groebner basis</purpose>
+</tocitem>
+<tocitem target="poly2sym.html">
+<name>poly2sym</name>
+<purpose>Create symbolic polynomial from vector of coefficients</purpose>
+</tocitem>
+<tocitem target="polynomialdegree.html">
+<name>polynomialDegree</name>
+<purpose>Degree of polynomial</purpose>
+</tocitem>
+<tocitem target="polynomialreduce.html">
+<name>polynomialReduce</name>
+<purpose>Reduce polynomials by division</purpose>
+</tocitem>
+<tocitem target="resultant.html">
+<name>resultant</name>
+<purpose>Resultant of two polynomials</purpose>
+</tocitem>
+<tocitem target="sym.root.html">
+<name>root</name>
+<purpose>Represent roots of polynomial</purpose>
+</tocitem>
+<tocitem target="sym2poly.html">
+<name>sym2poly</name>
+<purpose>Extract vector of all numeric coefficients, including
+zeros, from symbolic polynomial</purpose>
+</tocitem>
+<tocitem target="charpoly.html">
+<name>charpoly</name>
+<purpose>Characteristic polynomial of matrix</purpose>
+</tocitem>
+<tocitem target="minpoly.html">
+<name>minpoly</name>
+<purpose>Minimal polynomial of matrix</purpose>
+</tocitem>
+<tocitem target="bernstein.html">
+<name>bernstein</name>
+<purpose>Bernstein polynomials</purpose>
+</tocitem>
+<tocitem target="chebyshevt.html">
+<name>chebyshevT</name>
+<purpose>Chebyshev polynomials of the first kind</purpose>
+</tocitem>
+<tocitem target="chebyshevu.html">
+<name>chebyshevU</name>
+<purpose>Chebyshev polynomials of the second kind</purpose>
+</tocitem>
+<tocitem target="gegenbauerc.html">
+<name>gegenbauerC</name>
+<purpose>Gegenbauer polynomials</purpose>
+</tocitem>
+<tocitem target="hermiteh.html">
+<name>hermiteH</name>
+<purpose>Hermite polynomials</purpose>
+</tocitem>
+<tocitem target="jacobip.html">
+<name>jacobiP</name>
+<purpose>Jacobi polynomials</purpose>
+</tocitem>
+<tocitem target="laguerrel.html">
+<name>laguerreL</name>
+<purpose>Generalized Laguerre Function and Laguerre Polynomials</purpose>
+</tocitem>
+<tocitem target="legendrep.html">
+<name>legendreP</name>
+<purpose>Legendre polynomials</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="mathematical-functions.html">Mathematical Functions
+<tocitem target="catalan.html">
+<name>catalan</name>
+<purpose>Catalan constant</purpose>
+</tocitem>
+<tocitem target="eulergamma.html">
+<name>eulergamma</name>
+<purpose>Euler-Mascheroni constant</purpose>
+</tocitem>
+<tocitem target="log.html">
+<name>log</name>
+<purpose>Natural logarithm of entries of symbolic matrix</purpose>
+</tocitem>
+<tocitem target="log10.html">
+<name>log10</name>
+<purpose>Log base 10 of symbolic input</purpose>
+</tocitem>
+<tocitem target="log2.html">
+<name>log2</name>
+<purpose>Log base 2 of symbolic input</purpose>
+</tocitem>
+<tocitem target="dilog.html">
+<name>dilog</name>
+<purpose>Dilogarithm function</purpose>
+</tocitem>
+<tocitem target="sym.hurwitzzeta.html">
+<name>hurwitzZeta</name>
+<purpose>Hurwitz zeta function</purpose>
+</tocitem>
+<tocitem target="sym.polylog.html">
+<name>polylog</name>
+<purpose>Polylogarithm</purpose>
+</tocitem>
+<tocitem target="psi.html">
+<name>psi</name>
+<purpose>Digamma function</purpose>
+</tocitem>
+<tocitem target="sym.zeta.html">
+<name>zeta</name>
+<purpose>Riemann zeta function</purpose>
+</tocitem>
+<tocitem target="sin.html">
+<name>sin</name>
+<purpose>Symbolic sine function</purpose>
+</tocitem>
+<tocitem target="sinc.html">
+<name>sinc</name>
+<purpose>Normalized sinc function</purpose>
+</tocitem>
+<tocitem target="cos.html">
+<name>cos</name>
+<purpose>Symbolic cosine function</purpose>
+</tocitem>
+<tocitem target="tan.html">
+<name>tan</name>
+<purpose>Symbolic tangent function</purpose>
+</tocitem>
+<tocitem target="cot.html">
+<name>cot</name>
+<purpose>Symbolic cotangent function</purpose>
+</tocitem>
+<tocitem target="sec.html">
+<name>sec</name>
+<purpose>Symbolic secant function</purpose>
+</tocitem>
+<tocitem target="csc.html">
+<name>csc</name>
+<purpose>Symbolic cosecant function</purpose>
+</tocitem>
+<tocitem target="asin.html">
+<name>asin</name>
+<purpose>Symbolic inverse sine function</purpose>
+</tocitem>
+<tocitem target="acos.html">
+<name>acos</name>
+<purpose>Symbolic inverse cosine function</purpose>
+</tocitem>
+<tocitem target="atan.html">
+<name>atan</name>
+<purpose>Symbolic inverse tangent function</purpose>
+</tocitem>
+<tocitem target="acot.html">
+<name>acot</name>
+<purpose>Symbolic inverse cotangent function</purpose>
+</tocitem>
+<tocitem target="asec.html">
+<name>asec</name>
+<purpose>Symbolic inverse secant function</purpose>
+</tocitem>
+<tocitem target="acsc.html">
+<name>acsc</name>
+<purpose>Symbolic inverse cosecant function</purpose>
+</tocitem>
+<tocitem target="sinh.html">
+<name>sinh</name>
+<purpose>Symbolic hyperbolic sine function</purpose>
+</tocitem>
+<tocitem target="cosh.html">
+<name>cosh</name>
+<purpose>Symbolic hyperbolic cosine function</purpose>
+</tocitem>
+<tocitem target="tanh.html">
+<name>tanh</name>
+<purpose>Symbolic hyperbolic tangent function</purpose>
+</tocitem>
+<tocitem target="coth.html">
+<name>coth</name>
+<purpose>Symbolic hyperbolic cotangent function</purpose>
+</tocitem>
+<tocitem target="sech.html">
+<name>sech</name>
+<purpose>Symbolic hyperbolic secant function</purpose>
+</tocitem>
+<tocitem target="csch.html">
+<name>csch</name>
+<purpose>Symbolic hyperbolic cosecant function</purpose>
+</tocitem>
+<tocitem target="asinh.html">
+<name>asinh</name>
+<purpose>Symbolic inverse hyperbolic sine function</purpose>
+</tocitem>
+<tocitem target="acosh.html">
+<name>acosh</name>
+<purpose>Symbolic inverse hyperbolic cosine function</purpose>
+</tocitem>
+<tocitem target="atanh.html">
+<name>atanh</name>
+<purpose>Symbolic inverse hyperbolic tangent function</purpose>
+</tocitem>
+<tocitem target="acoth.html">
+<name>acoth</name>
+<purpose>Symbolic inverse hyperbolic cotangent function</purpose>
+</tocitem>
+<tocitem target="asech.html">
+<name>asech</name>
+<purpose>Symbolic inverse hyperbolic secant function</purpose>
+</tocitem>
+<tocitem target="acsch.html">
+<name>acsch</name>
+<purpose>Symbolic inverse hyperbolic cosecant function</purpose>
+</tocitem>
+<tocitem target="abs.html">
+<name>abs</name>
+<purpose>Symbolic absolute value (complex modulus or magnitude)</purpose>
+</tocitem>
+<tocitem target="angle.html">
+<name>angle</name>
+<purpose>Symbolic polar angle</purpose>
+</tocitem>
+<tocitem target="atan2.html">
+<name>atan2</name>
+<purpose>Symbolic four-quadrant inverse tangent</purpose>
+</tocitem>
+<tocitem target="imag.html">
+<name>imag</name>
+<purpose>Imaginary part of complex number</purpose>
+</tocitem>
+<tocitem target="real.html">
+<name>real</name>
+<purpose>Real part of complex number</purpose>
+</tocitem>
+<tocitem target="sign.html">
+<name>sign</name>
+<purpose>Sign of real or complex value</purpose>
+</tocitem>
+<tocitem target="signim.html">
+<name>signIm</name>
+<purpose>Sign of the imaginary part of complex number</purpose>
+</tocitem>
+<tocitem target="beta.html">
+<name>beta</name>
+<purpose>Beta function</purpose>
+</tocitem>
+<tocitem target="sym.factorial.html">
+<name>factorial</name>
+<purpose>Factorial of symbolic input</purpose>
+</tocitem>
+<tocitem target="gamma.html">
+<name>gamma</name>
+<purpose>Gamma function</purpose>
+</tocitem>
+<tocitem target="gammaln.html">
+<name>gammaln</name>
+<purpose>Logarithmic gamma function</purpose>
+</tocitem>
+<tocitem target="igamma.html">
+<name>igamma</name>
+<purpose>Incomplete gamma function</purpose>
+</tocitem>
+<tocitem target="nchoosek.html">
+<name>nchoosek</name>
+<purpose>Binomial coefficient</purpose>
+</tocitem>
+<tocitem target="pochhammer.html">
+<name>pochhammer</name>
+<purpose>Pochhammer symbol</purpose>
+</tocitem>
+<tocitem target="dawson.html">
+<name>dawson</name>
+<purpose>Dawson integral</purpose>
+</tocitem>
+<tocitem target="erf.html">
+<name>erf</name>
+<purpose>Error function</purpose>
+</tocitem>
+<tocitem target="erfc.html">
+<name>erfc</name>
+<purpose>Complementary error function</purpose>
+</tocitem>
+<tocitem target="erfcinv.html">
+<name>erfcinv</name>
+<purpose>Inverse complementary error function</purpose>
+</tocitem>
+<tocitem target="erfi.html">
+<name>erfi</name>
+<purpose>Imaginary error function</purpose>
+</tocitem>
+<tocitem target="erfinv.html">
+<name>erfinv</name>
+<purpose>Inverse error function</purpose>
+</tocitem>
+<tocitem target="fresnelc.html">
+<name>fresnelc</name>
+<purpose>Fresnel cosine integral function</purpose>
+</tocitem>
+<tocitem target="fresnels.html">
+<name>fresnels</name>
+<purpose>Fresnel sine integral function</purpose>
+</tocitem>
+<tocitem target="coshint.html">
+<name>coshint</name>
+<purpose>Hyperbolic cosine integral function</purpose>
+</tocitem>
+<tocitem target="cosint.html">
+<name>cosint</name>
+<purpose>Cosine integral function</purpose>
+</tocitem>
+<tocitem target="ei.html">
+<name>ei</name>
+<purpose>One-argument exponential integral function</purpose>
+</tocitem>
+<tocitem target="expint.html">
+<name>expint</name>
+<purpose>Exponential integral function</purpose>
+</tocitem>
+<tocitem target="eulergamma.html">
+<name>eulergamma</name>
+<purpose>Euler-Mascheroni constant</purpose>
+</tocitem>
+<tocitem target="sym.logint.html">
+<name>logint</name>
+<purpose>Logarithmic integral function</purpose>
+</tocitem>
+<tocitem target="sinhint.html">
+<name>sinhint</name>
+<purpose>Hyperbolic sine integral function</purpose>
+</tocitem>
+<tocitem target="sinint.html">
+<name>sinint</name>
+<purpose>Sine integral function</purpose>
+</tocitem>
+<tocitem target="ssinint.html">
+<name>ssinint</name>
+<purpose>Shifted sine integral function</purpose>
+</tocitem>
+<tocitem target="ellipke.html">
+<name>ellipke</name>
+<purpose>Complete elliptic integrals of the first and second kinds</purpose>
+</tocitem>
+<tocitem target="ellipticce.html">
+<name>ellipticCE</name>
+<purpose>Complementary complete elliptic integral of the second
+kind</purpose>
+</tocitem>
+<tocitem target="ellipticck.html">
+<name>ellipticCK</name>
+<purpose>Complementary complete elliptic integral of the first
+kind</purpose>
+</tocitem>
+<tocitem target="ellipticcpi.html">
+<name>ellipticCPi</name>
+<purpose>Complementary complete elliptic integral of the third
+kind</purpose>
+</tocitem>
+<tocitem target="elliptice.html">
+<name>ellipticE</name>
+<purpose>Complete and incomplete elliptic integrals of the second
+kind</purpose>
+</tocitem>
+<tocitem target="ellipticf.html">
+<name>ellipticF</name>
+<purpose>Incomplete elliptic integral of the first kind</purpose>
+</tocitem>
+<tocitem target="elliptick.html">
+<name>ellipticK</name>
+<purpose>Complete elliptic integral of the first kind</purpose>
+</tocitem>
+<tocitem target="ellipticnome.html">
+<name>ellipticNome</name>
+<purpose>Elliptic nome function</purpose>
+</tocitem>
+<tocitem target="ellipticpi.html">
+<name>ellipticPi</name>
+<purpose>Complete and incomplete elliptic integrals of the third
+kind</purpose>
+</tocitem>
+<tocitem target="jacobiam.html">
+<name>jacobiAM</name>
+<purpose>Jacobi amplitude function</purpose>
+</tocitem>
+<tocitem target="jacobicd.html">
+<name>jacobiCD</name>
+<purpose>Jacobi CD elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobicn.html">
+<name>jacobiCN</name>
+<purpose>Jacobi CN elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobics.html">
+<name>jacobiCS</name>
+<purpose>Jacobi CS elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobidc.html">
+<name>jacobiDC</name>
+<purpose>Jacobi DC elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobidn.html">
+<name>jacobiDN</name>
+<purpose>Jacobi DN elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobids.html">
+<name>jacobiDS</name>
+<purpose>Jacobi DS elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobinc.html">
+<name>jacobiNC</name>
+<purpose>Jacobi NC elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobind.html">
+<name>jacobiND</name>
+<purpose>Jacobi ND elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobins.html">
+<name>jacobiNS</name>
+<purpose>Jacobi NS elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobisc.html">
+<name>jacobiSC</name>
+<purpose>Jacobi SC elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobisd.html">
+<name>jacobiSD</name>
+<purpose>Jacobi SD elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobisn.html">
+<name>jacobiSN</name>
+<purpose>Jacobi SN elliptic function</purpose>
+</tocitem>
+<tocitem target="jacobizeta.html">
+<name>jacobiZeta</name>
+<purpose>Jacobi zeta function</purpose>
+</tocitem>
+<tocitem target="dirac.html">
+<name>dirac</name>
+<purpose>Dirac delta function</purpose>
+</tocitem>
+<tocitem target="heaviside.html">
+<name>heaviside</name>
+<purpose>Heaviside step function</purpose>
+</tocitem>
+<tocitem target="kroneckerdelta.html">
+<name>kroneckerDelta</name>
+<purpose>Kronecker delta function</purpose>
+</tocitem>
+<tocitem target="rectangularpulse.html">
+<name>rectangularPulse</name>
+<purpose>Rectangular pulse function</purpose>
+</tocitem>
+<tocitem target="triangularpulse.html">
+<name>triangularPulse</name>
+<purpose>Triangular pulse function</purpose>
+</tocitem>
+<tocitem target="airy.html">
+<name>airy</name>
+<purpose>Airy function</purpose>
+</tocitem>
+<tocitem target="besselh.html">
+<name>besselh</name>
+<purpose> Bessel function of third kind (Hankel function) for symbolic
+      expressions</purpose>
+</tocitem>
+<tocitem target="besseli.html">
+<name>besseli</name>
+<purpose>Modified Bessel function of the first kind for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="besselj.html">
+<name>besselj</name>
+<purpose>Bessel function of the first kind for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="besselk.html">
+<name>besselk</name>
+<purpose>Modified Bessel function of the second kind for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="bessely.html">
+<name>bessely</name>
+<purpose>Bessel function of the second kind for symbolic expressions</purpose>
+</tocitem>
+<tocitem target="hypergeom.html">
+<name>hypergeom</name>
+<purpose>Hypergeometric function</purpose>
+</tocitem>
+<tocitem target="kummeru.html">
+<name>kummerU</name>
+<purpose>Confluent hypergeometric Kummer U function</purpose>
+</tocitem>
+<tocitem target="meijerg.html">
+<name>meijerG</name>
+<purpose>Meijer G-function</purpose>
+</tocitem>
+<tocitem target="whittakerm.html">
+<name>whittakerM</name>
+<purpose>Whittaker M function</purpose>
+</tocitem>
+<tocitem target="whittakerw.html">
+<name>whittakerW</name>
+<purpose>Whittaker W function</purpose>
+</tocitem>
+<tocitem target="lambertw.html">
+<name>lambertw</name>
+<purpose>Lambert W function</purpose>
+</tocitem>
+<tocitem target="wrightomega.html">
+<name>wrightOmega</name>
+<purpose>Wright omega function</purpose>
+</tocitem>
+<tocitem target="mfun.html">
+<name>mfun</name>
+<purpose>Numeric evaluation of special mathematical function</purpose>
+</tocitem>
+<tocitem target="mfunlist.html">
+<name>mfunlist</name>
+<purpose>List special functions for use with mfun</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="numbers-and-precision.html">Numbers and Precision
+<tocitem target="digits.html">
+<name>digits</name>
+<purpose>Change variable precision used</purpose>
+</tocitem>
+<tocitem target="double.html">
+<name>double</name>
+<purpose>Convert symbolic values to MATLAB double precision</purpose>
+</tocitem>
+<tocitem target="vpa.html">
+<name>vpa</name>
+<purpose>Variable-precision arithmetic (arbitrary-precision arithmetic)</purpose>
+</tocitem>
+<tocitem target="imag.html">
+<name>imag</name>
+<purpose>Imaginary part of complex number</purpose>
+</tocitem>
+<tocitem target="real.html">
+<name>real</name>
+<purpose>Real part of complex number</purpose>
+</tocitem>
+<tocitem target="sym.dec2bin.html">
+<name>dec2bin</name>
+<purpose>Convert decimal number to character vector representing binary number</purpose>
+</tocitem>
+<tocitem target="sym.dec2hex.html">
+<name>dec2hex</name>
+<purpose>Convert decimal number to character vector representing hexadecimal
+      number</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="number-theory-1.html">Number Theory
+<tocitem target="divisors.html">
+<name>divisors</name>
+<purpose>Divisors of integer or expression</purpose>
+</tocitem>
+<tocitem target="gcd.html">
+<name>gcd</name>
+<purpose>GCD of numbers and polynomials</purpose>
+</tocitem>
+<tocitem target="factorintegerpower.html">
+<name>factorIntegerPower</name>
+<purpose>Perfect power factoring</purpose>
+</tocitem>
+<tocitem target="lcm.html">
+<name>lcm</name>
+<purpose>Least common multiple</purpose>
+</tocitem>
+<tocitem target="mod.html">
+<name>mod</name>
+<purpose>Symbolic modulus after division</purpose>
+</tocitem>
+<tocitem target="powermod.html">
+<name>powermod</name>
+<purpose>Modular exponentiation</purpose>
+</tocitem>
+<tocitem target="quorem.html">
+<name>quorem</name>
+<purpose>Quotient and remainder</purpose>
+</tocitem>
+<tocitem target="rem.html">
+<name>rem</name>
+<purpose>Remainder after division</purpose>
+</tocitem>
+<tocitem target="sym.bernoulli.html">
+<name>bernoulli</name>
+<purpose>Bernoulli numbers and polynomials</purpose>
+</tocitem>
+<tocitem target="euler.html">
+<name>euler</name>
+<purpose>Euler numbers and polynomials</purpose>
+</tocitem>
+<tocitem target="fibonacci.html">
+<name>fibonacci</name>
+<purpose>Fibonacci numbers</purpose>
+</tocitem>
+<tocitem target="harmonic.html">
+<name>harmonic</name>
+<purpose>Harmonic function (harmonic number)</purpose>
+</tocitem>
+<tocitem target="nextprime.html">
+<name>nextprime</name>
+<purpose>Next prime number</purpose>
+</tocitem>
+<tocitem target="nthprime.html">
+<name>nthprime</name>
+<purpose>nth prime number</purpose>
+</tocitem>
+<tocitem target="prevprime.html">
+<name>prevprime</name>
+<purpose>Previous prime number</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+<tocitem target="graphics.html">Graphics
+<tocitem target="fanimator.html">
+<name>fanimator</name>
+<purpose>Create stop-motion animation object</purpose>
+</tocitem>
+<tocitem target="playanimation.html">
+<name>playAnimation</name>
+<purpose>Play animation objects in a MATLAB figure window</purpose>
+</tocitem>
+<tocitem target="rewindanimation.html">
+<name>rewindAnimation</name>
+<purpose>Rewind previously played animation objects</purpose>
+</tocitem>
+<tocitem target="writeanimation.html">
+<name>writeAnimation</name>
+<purpose>Save animation as video file</purpose>
+</tocitem>
+<tocitem target="animationtoframe.html">
+<name>animationToFrame</name>
+<purpose>Return structure of frames from animation objects</purpose>
+</tocitem>
+<tocitem target="fcontour.html">
+<name>fcontour</name>
+<purpose>Plot contours</purpose>
+</tocitem>
+<tocitem target="fimplicit.html">
+<name>fimplicit</name>
+<purpose>Plot implicit symbolic equation or function</purpose>
+</tocitem>
+<tocitem target="fimplicit3.html">
+<name>fimplicit3</name>
+<purpose>Plot 3-D implicit equation or function</purpose>
+</tocitem>
+<tocitem target="fmesh.html">
+<name>fmesh</name>
+<purpose>Plot 3-D mesh</purpose>
+</tocitem>
+<tocitem target="fplot.html">
+<name>fplot</name>
+<purpose>Plot symbolic expression or function</purpose>
+</tocitem>
+<tocitem target="fplot3.html">
+<name>fplot3</name>
+<purpose>Plot 3-D parametric curve</purpose>
+</tocitem>
+<tocitem target="fsurf.html">
+<name>fsurf</name>
+<purpose>Plot 3-D surface</purpose>
+</tocitem>
+<tocitem target="ezpolar.html">
+<name>ezpolar</name>
+<purpose>Polar coordinate plotter</purpose>
+</tocitem>
+<tocitem target="ezcontour.html">
+<name>ezcontour</name>
+<purpose>Contour plotter</purpose>
+</tocitem>
+<tocitem target="ezcontourf.html">
+<name>ezcontourf</name>
+<purpose>Filled contour plotter</purpose>
+</tocitem>
+<tocitem target="ezmesh.html">
+<name>ezmesh</name>
+<purpose>3-D mesh plotter</purpose>
+</tocitem>
+<tocitem target="ezmeshc.html">
+<name>ezmeshc</name>
+<purpose>Combined mesh and contour plotter</purpose>
+</tocitem>
+<tocitem target="ezplot.html">
+<name>ezplot</name>
+<purpose>Plot symbolic expression, equation, or function</purpose>
+</tocitem>
+<tocitem target="ezplot3.html">
+<name>ezplot3</name>
+<purpose>3-D parametric curve plotter</purpose>
+</tocitem>
+<tocitem target="ezsurf.html">
+<name>ezsurf</name>
+<purpose>Plot 3-D surface</purpose>
+</tocitem>
+<tocitem target="ezsurfc.html">
+<name>ezsurfc</name>
+<purpose>Combined surface and contour plotter</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="code-generation.html">Code Generation
+<tocitem target="matlabfunction.html">
+<name>matlabFunction</name>
+<purpose>Convert symbolic expression to function handle or file</purpose>
+</tocitem>
+<tocitem target="matlabfunctionblock.html">
+<name>matlabFunctionBlock</name>
+<purpose>Convert symbolic expression to MATLAB function block</purpose>
+</tocitem>
+<tocitem target="simscapeequation.html">
+<name>simscapeEquation</name>
+<purpose>Convert symbolic expressions to Simscape language equations</purpose>
+</tocitem>
+<tocitem target="symreadsscparameters.html">
+<name>symReadSSCParameters</name>
+<purpose>Load parameters from Simscape component</purpose>
+</tocitem>
+<tocitem target="symreadsscvariables.html">
+<name>symReadSSCVariables</name>
+<purpose>Load variables from Simscape component</purpose>
+</tocitem>
+<tocitem target="symwritessc.html">
+<name>symWriteSSC</name>
+<purpose>Create new Simscape component</purpose>
+</tocitem>
+<tocitem target="ccode.html">
+<name>ccode</name>
+<purpose>C code representation of symbolic expression</purpose>
+</tocitem>
+<tocitem target="fortran.html">
+<name>fortran</name>
+<purpose>Fortran representation of symbolic expression</purpose>
+</tocitem>
+<tocitem target="sym.latex.html">
+<name>latex</name>
+<purpose>LaTeX form of symbolic expression</purpose>
+</tocitem>
+<tocitem target="sym.mathml.html">
+<name>mathml</name>
+<purpose>Generate MathML from symbolic expression</purpose>
+</tocitem>
+<tocitem target="texlabel.html">
+<name>texlabel</name>
+<purpose>TeX representation of symbolic expression</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="matlab-and-mupad-integration.html">MATLAB and MuPAD Integration
+<tocitem target="opening-mupad-files-and-interfaces-from-matlab.html">MuPAD Files and Interfaces
+<tocitem target="allmupadnotebooks.html">
+<name>allMuPADNotebooks</name>
+<purpose>All open notebooks</purpose>
+</tocitem>
+<tocitem target="close.html">
+<name>close</name>
+<purpose>Close MuPAD notebook</purpose>
+</tocitem>
+<tocitem target="evaluatemupadnotebook.html">
+<name>evaluateMuPADNotebook</name>
+<purpose>Evaluate MuPAD notebook</purpose>
+</tocitem>
+<tocitem target="mupad.html">
+<name>mupad</name>
+<purpose>Start MuPAD notebook</purpose>
+</tocitem>
+<tocitem target="mupadnotebooktitle.html">
+<name>mupadNotebookTitle</name>
+<purpose>Window title of MuPAD notebook</purpose>
+</tocitem>
+<tocitem target="mupadwelcome.html">
+<name>mupadwelcome</name>
+<purpose>Start MuPAD interfaces</purpose>
+</tocitem>
+<tocitem target="openmn.html">
+<name>openmn</name>
+<purpose>Open MuPAD notebook</purpose>
+</tocitem>
+<tocitem target="openmu.html">
+<name>openmu</name>
+<purpose>Open MuPAD program file</purpose>
+</tocitem>
+<tocitem target="openxvc.html">
+<name>openxvc</name>
+<purpose>Open MuPAD uncompressed graphics file (XVC)</purpose>
+</tocitem>
+<tocitem target="openxvz.html">
+<name>openxvz</name>
+<purpose>Open MuPAD compressed graphics file (XVZ)</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="variables-and-expressions-exchange-between-matlab-and-mupad.html">Variables and Expressions Exchange
+<tocitem target="getvar.html">
+<name>getVar</name>
+<purpose>Get variable from MuPAD notebook</purpose>
+</tocitem>
+<tocitem target="setvar.html">
+<name>setVar</name>
+<purpose>Assign variable in MuPAD notebook</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="mupad-to-matlab-code-conversion.html">MuPAD to MATLAB Code Conversion
+<tocitem target="reset.html">
+<name>reset</name>
+<purpose>(Not recommended) Close MuPAD engine</purpose>
+</tocitem>
+<tocitem target="symengine.html">
+<name>symengine</name>
+<purpose>(Not recommended) Return symbolic engine</purpose>
+</tocitem>
+<tocitem target="mupad-engines-and-matlab-workspace.html">
+<name>MuPAD Engines and MATLAB Workspace</name>
+<purpose/>
+</tocitem>
+<tocitem target="convertmupadnotebook.html">
+<name>convertMuPADNotebook</name>
+<purpose>Convert MuPAD notebook to MATLAB live script</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

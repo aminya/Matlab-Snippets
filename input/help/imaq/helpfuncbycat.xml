@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="device-connection.html">Device Connection
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Clear image acquisition object from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove image acquisition object from memory</purpose>
+</tocitem>
+<tocitem target="disp.html">
+<name>disp</name>
+<purpose>Display method for image acquisition objects</purpose>
+</tocitem>
+<tocitem target="imaqfind.html">
+<name>imaqfind</name>
+<purpose>Find image acquisition objects</purpose>
+</tocitem>
+<tocitem target="imaqhwinfo.html">
+<name>imaqhwinfo</name>
+<purpose>Information about available image acquisition hardware</purpose>
+</tocitem>
+<tocitem target="imaqreset.html">
+<name>imaqreset</name>
+<purpose>Disconnect and delete all image acquisition objects</purpose>
+</tocitem>
+<tocitem target="imaqtool.html">
+<name>imaqtool</name>
+<purpose>Launch Image Acquisition Tool</purpose>
+</tocitem>
+<tocitem target="start.html">
+<name>start</name>
+<purpose>Obtain exclusive use of image acquisition device</purpose>
+</tocitem>
+<tocitem target="stop.html">
+<name>stop</name>
+<purpose>Stop video input object</purpose>
+</tocitem>
+<tocitem target="videoinput.html">
+<name>videoinput</name>
+<purpose>Create video input object</purpose>
+</tocitem>
+<tocitem target="imaq.videodevice.html">
+<name>imaq.VideoDevice</name>
+<purpose>Acquire one frame at a time from video device</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-preview-and-device-configuration.html">Image Preview and Device Configuration
+<tocitem target="closepreview.html">
+<name>closepreview</name>
+<purpose>Close Video Preview window</purpose>
+</tocitem>
+<tocitem target="get.html">
+<name>get</name>
+<purpose>Return image acquisition object properties</purpose>
+</tocitem>
+<tocitem target="getselectedsource.html">
+<name>getselectedsource</name>
+<purpose>Return currently selected video source object</purpose>
+</tocitem>
+<tocitem target="imaqhelp.html">
+<name>imaqhelp</name>
+<purpose>Image acquisition object function and property help</purpose>
+</tocitem>
+<tocitem target="imaqtool.html">
+<name>imaqtool</name>
+<purpose>Launch Image Acquisition Tool</purpose>
+</tocitem>
+<tocitem target="preview.html">
+<name>preview</name>
+<purpose>Preview of live video data</purpose>
+</tocitem>
+<tocitem target="propinfo.html">
+<name>propinfo</name>
+<purpose>Property characteristics for image acquisition objects</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display image acquisition object properties</purpose>
+</tocitem>
+<tocitem target="stoppreview.html">
+<name>stoppreview</name>
+<purpose>Stop previewing video data</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="image-data-acquisition.html">Image Data Acquisition
+<tocitem target="acquisition-using-gige-vision-hardware.html">Acquisition Using GigE Vision Hardware
+<tocitem target="gigecamlist.html">
+<name>gigecamlist</name>
+<purpose>List of GigE Vision cameras connected to your system</purpose>
+</tocitem>
+<tocitem target="gigecam.html">
+<name>gigecam</name>
+<purpose>Create gigecam object to acquire images
+from GigE Vision cameras</purpose>
+</tocitem>
+<tocitem target="commands.html">
+<name>commands</name>
+<purpose>List of commands available for GigE Vision camera</purpose>
+</tocitem>
+<tocitem target="executecommand.html">
+<name>executeCommand</name>
+<purpose>Execute command on GigE Vision camera</purpose>
+</tocitem>
+<tocitem target="snapshot.html">
+<name>snapshot</name>
+<purpose>Acquire single image frame from GigE Vision camera</purpose>
+</tocitem>
+<tocitem target="preview.html">
+<name>preview</name>
+<purpose>Preview of live video data</purpose>
+</tocitem>
+<tocitem target="closepreview.html">
+<name>closepreview</name>
+<purpose>Close Video Preview window</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="acquisition-using-matrox-hardware.html">Acquisition Using Matrox Hardware
+<tocitem target="matroxlist.html">
+<name>matroxlist</name>
+<purpose>List of Matrox frame grabbers connected to your system</purpose>
+</tocitem>
+<tocitem target="matroxcam.html">
+<name>matroxcam</name>
+<purpose>Create matroxcam object to acquire
+images from Matrox frame grabbers</purpose>
+</tocitem>
+<tocitem target="matrox.snapshot.html">
+<name>snapshot</name>
+<purpose>Acquire single image frame from Matrox frame grabber</purpose>
+</tocitem>
+<tocitem target="preview.html">
+<name>preview</name>
+<purpose>Preview of live video data</purpose>
+</tocitem>
+<tocitem target="closepreview.html">
+<name>closepreview</name>
+<purpose>Close Video Preview window</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="acquisition-using-any-hardware.html">Acquisition Using Any Hardware
+<tocitem target="imaqtool.html">
+<name>imaqtool</name>
+<purpose>Launch Image Acquisition Tool</purpose>
+</tocitem>
+<tocitem target="videoinput.html">
+<name>videoinput</name>
+<purpose>Create video input object</purpose>
+</tocitem>
+<tocitem target="imaq.videodevice.html">
+<name>imaq.VideoDevice</name>
+<purpose>Acquire one frame at a time from video device</purpose>
+</tocitem>
+<tocitem target="getdata.html">
+<name>getdata</name>
+<purpose>Acquired image frames to MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="peekdata.html">
+<name>peekdata</name>
+<purpose>Most recently acquired image data</purpose>
+</tocitem>
+<tocitem target="getsnapshot.html">
+<name>getsnapshot</name>
+<purpose>Immediately return single image frame</purpose>
+</tocitem>
+<tocitem target="set.html">
+<name>set</name>
+<purpose>Configure or display image acquisition object properties</purpose>
+</tocitem>
+<tocitem target="start.html">
+<name>start</name>
+<purpose>Obtain exclusive use of image acquisition device</purpose>
+</tocitem>
+<tocitem target="islogging.html">
+<name>islogging</name>
+<purpose>Determine whether video input object is logging</purpose>
+</tocitem>
+<tocitem target="isrunning.html">
+<name>isrunning</name>
+<purpose>Determine whether video input object is running</purpose>
+</tocitem>
+<tocitem target="isvalid.html">
+<name>isvalid</name>
+<purpose>Determine whether image acquisition object is associated
+with image acquisition device</purpose>
+</tocitem>
+<tocitem target="wait.html">
+<name>wait</name>
+<purpose>Wait until image acquisition object stops running or logging</purpose>
+</tocitem>
+<tocitem target="stop.html">
+<name>stop</name>
+<purpose>Stop video input object</purpose>
+</tocitem>
+<tocitem target="clear.html">
+<name>clear</name>
+<purpose>Clear image acquisition object from MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="delete.html">
+<name>delete</name>
+<purpose>Remove image acquisition object from memory</purpose>
+</tocitem>
+<tocitem target="flushdata.html">
+<name>flushdata</name>
+<purpose>Remove data from memory buffer used to store acquired
+image frames</purpose>
+</tocitem>
+<tocitem target="obj2mfile.html">
+<name>obj2mfile</name>
+<purpose>Convert video input objects to MATLAB code</purpose>
+</tocitem>
+<tocitem target="imaqmontage.html">
+<name>imaqmontage</name>
+<purpose>Sequence of image frames as montage</purpose>
+</tocitem>
+<tocitem target="load.html">
+<name>load</name>
+<purpose>Load image acquisition object into MATLAB workspace</purpose>
+</tocitem>
+<tocitem target="save.html">
+<name>save</name>
+<purpose>Save image acquisition objects to MAT-file</purpose>
+</tocitem>
+<tocitem target="trigger.html">
+<name>trigger</name>
+<purpose>Initiate data logging</purpose>
+</tocitem>
+<tocitem target="triggerconfig.html">
+<name>triggerconfig</name>
+<purpose>Configure video input object trigger properties</purpose>
+</tocitem>
+<tocitem target="triggerinfo.html">
+<name>triggerinfo</name>
+<purpose>Provide information about available trigger configurations</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="acquisition-using-the-image-acquisition-tool.html">Acquisition Using the Image Acquisition Tool
+<tocitem target="imaqtool.html">
+<name>imaqtool</name>
+<purpose>Launch Image Acquisition Tool</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>
