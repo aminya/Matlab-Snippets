@@ -129,7 +129,7 @@ function matlab2atom(data)
 
         """
         catch
-            println("tuple/repeating arguments not supported yet")
+            println("arguments not supported yet")
         end
     end
 
@@ -243,7 +243,7 @@ function run_matlab2atom()
     "toolbox/matlab/external/interfaces/cpp/resources/functionSignatures.json",
     "toolbox/matlab/elmat/resources/functionSignatures.json",
     "toolbox/matlab/elfun/resources/functionSignatures.json",
-    "toolbox/matlab/dataui/resources/functionSignatures.json",
+    # "toolbox/matlab/dataui/resources/functionSignatures.json",
     "toolbox/matlab/datatypes/resources/functionSignatures.json",
     "toolbox/matlab/datatypes/categorical/resources/functionSignatures.json",
     "toolbox/matlab/datatypes/calendarDuration/resources/functionSignatures.json",
@@ -272,7 +272,7 @@ function run_matlab2atom()
     "toolbox/images/images/resources/functionSignatures.json",
     "toolbox/images/deep/resources/functionSignatures.json",
     "toolbox/images/colorspaces/resources/functionSignatures.json",
-    "toolbox/ident/idguis/resources/functionSignatures.json",
+    # "toolbox/ident/idguis/resources/functionSignatures.json",
     "toolbox/globaloptim/globaloptim/resources/functionSignatures.json",
     "toolbox/geoweb/geoweb/resources/functionSignatures.json",
     "toolbox/fixpoint/resources/functionSignatures.json",
@@ -284,7 +284,7 @@ function run_matlab2atom()
     "toolbox/dsp/dsp/resources/functionSignatures.json",
     "toolbox/dsp/dsp/compiled/resources/functionSignatures.json",
     "toolbox/daq/daq/resources/functionSignatures.json",
-    "toolbox/control/ctrlguis/resources/functionSignatures.json",
+    # "toolbox/control/ctrlguis/resources/functionSignatures.json",
     "toolbox/compiler/resources/functionSignatures.json",
     "toolbox/compiler/java/resources/functionSignatures.json",
     "toolbox/comm/comm/resources/functionSignatures.json",
