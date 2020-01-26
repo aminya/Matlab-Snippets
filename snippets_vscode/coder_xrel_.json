@@ -1,0 +1,8 @@
+{
+  "sharedCodeUpdate [coder]": {
+    "prefix": "sharedCodeUpdate",
+    "body": "sharedCodeUpdate(${1:sourceFolder}, ${2:destinationFolder}, 'ExistingCodeSubfolder', ${3:value})",
+    "description": "sharedCodeUpdate [coder]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/coder/ref/sharedcodeupdate.html"
+  }
+}

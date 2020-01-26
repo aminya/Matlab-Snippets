@@ -1,0 +1,254 @@
+{
+  "delete [matlab]": {
+    "prefix": "delete",
+    "body": "delete(${1:filename})",
+    "description": "delete [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/delete.html"
+  },
+  "mkdir [matlab]": {
+    "prefix": "mkdir",
+    "body": "[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})",
+    "description": "mkdir [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mkdir.html"
+  },
+  "javaaddpath [matlab]": {
+    "prefix": "javaaddpath",
+    "body": "javaaddpath(${1:dpath}, ${2:'-end'})",
+    "description": "javaaddpath [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/javaaddpath.html"
+  },
+  "whos [matlab]": {
+    "prefix": "whos",
+    "body": "whos(${1:var}, ${2:'global'})",
+    "description": "whos [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/whos.html"
+  },
+  "fileattrib [matlab]": {
+    "prefix": "fileattrib",
+    "body": "[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})",
+    "description": "fileattrib [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/fileattrib.html"
+  },
+  "recycle [matlab]": {
+    "prefix": "recycle",
+    "body": "recycle(${1:optional_state})",
+    "description": "recycle [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/recycle.html"
+  },
+  "import [matlab]": {
+    "prefix": "import",
+    "body": "import(${1:optional_PackageName})",
+    "description": "import [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/import.html"
+  },
+  "dos [matlab]": {
+    "prefix": "dos",
+    "body": "[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})",
+    "description": "dos [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dos.html"
+  },
+  "beep [matlab]": {
+    "prefix": "beep",
+    "body": "${1:state} = beep(${1:flag})",
+    "description": "beep [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/beep.html"
+  },
+  "mex [matlab]": {
+    "prefix": "mex",
+    "body": "mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})",
+    "description": "mex [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mex.html"
+  },
+  "setenv [matlab]": {
+    "prefix": "setenv",
+    "body": "setenv(${1:name}, ${2:value})",
+    "description": "setenv [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setenv.html"
+  },
+  "mex.getCompilerConfigurations [matlab]": {
+    "prefix": "mex.getCompilerConfigurations",
+    "body": "${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})",
+    "description": "mex.getCompilerConfigurations [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mex.getCompilerConfigurations.html"
+  },
+  "echo [matlab]": {
+    "prefix": "echo",
+    "body": "echo(${1:mode}, ${2:'all'})",
+    "description": "echo [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/echo.html"
+  },
+  "cd [matlab]": {
+    "prefix": "cd",
+    "body": "${1:oldFolder} = cd(${1:optional_newFolder})",
+    "description": "cd [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cd.html"
+  },
+  "system [matlab]": {
+    "prefix": "system",
+    "body": "[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})",
+    "description": "system [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/system.html"
+  },
+  "rehash [matlab]": {
+    "prefix": "rehash",
+    "body": "rehash(${1:optional_what})",
+    "description": "rehash [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/rehash.html"
+  },
+  "format [matlab]": {
+    "prefix": "format",
+    "body": "format(${1:optional_style})",
+    "description": "format [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/format.html"
+  },
+  "clearvars [matlab]": {
+    "prefix": "clearvars",
+    "body": "clearvars(${1:optional_'-global'}, ${2:optional_variables})",
+    "description": "clearvars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clearvars.html"
+  },
+  "save [matlab]": {
+    "prefix": "save",
+    "body": "save(${1:filename}, ${2:optional_variables})",
+    "description": "save [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/save.html"
+  },
+  "inmem [matlab]": {
+    "prefix": "inmem",
+    "body": "inmem(${1:optional_'-completenames'})",
+    "description": "inmem [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/inmem.html"
+  },
+  "addpath [matlab]": {
+    "prefix": "addpath",
+    "body": "${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})",
+    "description": "addpath [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/addpath.html"
+  },
+  "open [matlab]": {
+    "prefix": "open",
+    "body": "${1:output} = open(${1:name})",
+    "description": "open [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/open.html"
+  },
+  "movefile [matlab]": {
+    "prefix": "movefile",
+    "body": "[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})",
+    "description": "movefile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movefile.html"
+  },
+  "isfolder [matlab]": {
+    "prefix": "isfolder",
+    "body": "${1:TF} = isfolder(${1:path})",
+    "description": "isfolder [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isfolder.html"
+  },
+  "unix [matlab]": {
+    "prefix": "unix",
+    "body": "[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})",
+    "description": "unix [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unix.html"
+  },
+  "rmdir [matlab]": {
+    "prefix": "rmdir",
+    "body": "[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})",
+    "description": "rmdir [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/rmdir.html"
+  },
+  "pcode [matlab]": {
+    "prefix": "pcode",
+    "body": "pcode(${1:filename}, ${2:'-inplace'})",
+    "description": "pcode [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/pcode.html"
+  },
+  "diary [matlab]": {
+    "prefix": "diary",
+    "body": "diary(${1:mode})",
+    "description": "diary [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/diary.html"
+  },
+  "rmpath [matlab]": {
+    "prefix": "rmpath",
+    "body": "rmpath(${1:folderName})",
+    "description": "rmpath [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/rmpath.html"
+  },
+  "ls [matlab]": {
+    "prefix": "ls",
+    "body": "${1:list} = ls(${1:optional_flags}, ${2:optional_filename})",
+    "description": "ls [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ls.html"
+  },
+  "isfile [matlab]": {
+    "prefix": "isfile",
+    "body": "${1:TF} = isfile(${1:path})",
+    "description": "isfile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isfile.html"
+  },
+  "dir [matlab]": {
+    "prefix": "dir",
+    "body": "${1:listing} = dir(${1:optional_filename})",
+    "description": "dir [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dir.html"
+  },
+  "which [matlab]": {
+    "prefix": "which",
+    "body": "which(${1:fun1}, ${2:'in'}, ${3:fun2})",
+    "description": "which [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/which.html"
+  },
+  "who [matlab]": {
+    "prefix": "who",
+    "body": "who(${1:var}, ${2:'global'})",
+    "description": "who [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/who.html"
+  },
+  "copyfile [matlab]": {
+    "prefix": "copyfile",
+    "body": "[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})",
+    "description": "copyfile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/copyfile.html"
+  },
+  "getenv [matlab]": {
+    "prefix": "getenv",
+    "body": "${1:value} = getenv(${1:name})",
+    "description": "getenv [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/getenv.html"
+  },
+  "memory [matlab]": {
+    "prefix": "memory",
+    "body": "[${1:USERVIEW}, ${2:SYSTEMVIEW}] = memory",
+    "description": "memory [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/memory.html"
+  },
+  "what [matlab]": {
+    "prefix": "what",
+    "body": "what(${1:optional_folderName})",
+    "description": "what [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/what.html"
+  },
+  "clear [matlab]": {
+    "prefix": "clear",
+    "body": "clear(${1:optional_ItemType})",
+    "description": "clear [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/mps_dev_test/clear.html"
+  },
+  "javarmpath [matlab]": {
+    "prefix": "javarmpath",
+    "body": "javarmpath(${1:dpath})",
+    "description": "javarmpath [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/javarmpath.html"
+  },
+  "load [matlab]": {
+    "prefix": "load",
+    "body": "${1:S} = load(${1:filename}, ${2:'-ascii'})",
+    "description": "load [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/load.html"
+  },
+  "type [matlab]": {
+    "prefix": "type",
+    "body": "type(${1:filename})",
+    "description": "type [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/cfit.type.html"
+  }
+}

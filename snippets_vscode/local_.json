@@ -1,0 +1,8 @@
+{
+  "userpath [local]": {
+    "prefix": "userpath",
+    "body": "userpath(${1:optional_path})",
+    "description": "userpath [local]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/local/ref/userpath.html"
+  }
+}

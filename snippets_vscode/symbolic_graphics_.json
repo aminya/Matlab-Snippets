@@ -1,0 +1,32 @@
+{
+  "rewindAnimation [symbolic]": {
+    "prefix": "rewindAnimation",
+    "body": "rewindAnimation(${1:fig})",
+    "description": "rewindAnimation [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/rewindanimation.html"
+  },
+  "fanimator [symbolic]": {
+    "prefix": "fanimator",
+    "body": "${1:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})",
+    "description": "fanimator [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/fanimator.html"
+  },
+  "playAnimation [symbolic]": {
+    "prefix": "playAnimation",
+    "body": "playAnimation(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value}, 'SpeedFactor', ${5:value})",
+    "description": "playAnimation [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/playanimation.html"
+  },
+  "writeAnimation [symbolic]": {
+    "prefix": "writeAnimation",
+    "body": "writeAnimation(${1:fig}, ${2:filename}, 'AnimationRange', ${3:value}, 'Backwards', ${4:value}, 'FrameRate', ${5:value})",
+    "description": "writeAnimation [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/writeanimation.html"
+  },
+  "animationToFrame [symbolic]": {
+    "prefix": "animationToFrame",
+    "body": "${1:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})",
+    "description": "animationToFrame [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/animationtoframe.html"
+  }
+}

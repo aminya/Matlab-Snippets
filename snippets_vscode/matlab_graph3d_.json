@@ -1,0 +1,44 @@
+{
+  "lighting [matlab]": {
+    "prefix": "lighting",
+    "body": "lighting(${1:optional_ax}, ${2:style})",
+    "description": "lighting [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/lighting.html"
+  },
+  "material [matlab]": {
+    "prefix": "material",
+    "body": "material(${1:optional_ax}, ${2:properties})",
+    "description": "material [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/material.html"
+  },
+  "shading [matlab]": {
+    "prefix": "shading",
+    "body": "shading(${1:optional_ax}, ${2:style})",
+    "description": "shading [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/shading.html"
+  },
+  "zlabel [matlab]": {
+    "prefix": "zlabel",
+    "body": "${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})",
+    "description": "zlabel [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/zlabel.html"
+  },
+  "caxis [matlab]": {
+    "prefix": "caxis",
+    "body": "${1:limits} = caxis(${1:optional_ax})",
+    "description": "caxis [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/caxis.html"
+  },
+  "surf [matlab]": {
+    "prefix": "surf",
+    "body": "${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})",
+    "description": "surf [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/surf.html"
+  },
+  "colormap [matlab]": {
+    "prefix": "colormap",
+    "body": "${1:cmap} = colormap(${1:optional_ax}, ${2:map})",
+    "description": "colormap [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/colormap.html"
+  }
+}

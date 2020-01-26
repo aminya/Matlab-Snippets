@@ -1,0 +1,14 @@
+{
+  "batch [parallel]": {
+    "prefix": "batch",
+    "body": "${1:j} = batch(${1:aScript}, 'AdditionalPaths', ${2:value}, 'AttachedFiles', ${3:value}, 'AutoAddClientPath', ${4:value}, 'AutoAttachFiles', ${5:value}, 'CaptureDiary', ${6:value}, 'CurrentFolder', ${7:value}, 'EnvironmentVariables', ${8:value}, 'Pool', ${9:value}, 'Profile', ${10:value}, 'Workspace', ${11:value})",
+    "description": "batch [parallel]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/parallel/batch.html"
+  },
+  "pctconfig [parallel]": {
+    "prefix": "pctconfig",
+    "body": "${1:config} = pctconfig('hostname', ${1:value}, 'portrange', ${2:value})",
+    "description": "pctconfig [parallel]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/parallel/pctconfig.html"
+  }
+}

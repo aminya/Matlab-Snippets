@@ -1,0 +1,20 @@
+{
+  "docroot [matlab]": {
+    "prefix": "docroot",
+    "body": "docroot(${1:newRoot})",
+    "description": "docroot [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/docroot.html"
+  },
+  "doc [matlab]": {
+    "prefix": "doc",
+    "body": "doc(${1:optional_filename})",
+    "description": "doc [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/doc.html"
+  },
+  "help [matlab]": {
+    "prefix": "help",
+    "body": "help(${1:optional_filename})",
+    "description": "help [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/help.html"
+  }
+}

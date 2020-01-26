@@ -1,0 +1,14 @@
+{
+  "codeCompatibilityReport [matlab]": {
+    "prefix": "codeCompatibilityReport",
+    "body": "codeCompatibilityReport(${1:optional_names}, 'IncludeSubfolders', ${2:value})",
+    "description": "codeCompatibilityReport [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/codecompatibilityreport.html"
+  },
+  "analyzeCodeCompatibility [matlab]": {
+    "prefix": "analyzeCodeCompatibility",
+    "body": "analyzeCodeCompatibility(${1:optional_names}, 'IncludeSubfolders', ${2:value})",
+    "description": "analyzeCodeCompatibility [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/codecompatibilityanalysis.analyzecodecompatibility.html"
+  }
+}

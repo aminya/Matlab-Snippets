@@ -1,0 +1,290 @@
+{
+  "pde.StructuralModel.structuralBC [pde]": {
+    "prefix": "pde.StructuralModel.structuralBC",
+    "body": "${1:bcs} = pde.StructuralModel.structuralBC(${1:pdem}, 'Face', ${2:value}, 'Constraint', ${3:value}, 'Radius', ${4:value}, 'Reference', ${5:value})",
+    "description": "pde.StructuralModel.structuralBC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralBC.html"
+  },
+  "pde.FEMesh.meshQuality [pde]": {
+    "prefix": "pde.FEMesh.meshQuality",
+    "body": "${1:n} = pde.FEMesh.meshQuality(${1:msh}, ${2:optional_Metric})",
+    "description": "pde.FEMesh.meshQuality [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.FEMesh.meshQuality.html"
+  },
+  "assembleFEMatrices [pde]": {
+    "prefix": "assembleFEMatrices",
+    "body": "${1:femat} = assembleFEMatrices(${1:pdem}, ${2:bcmethod})",
+    "description": "assembleFEMatrices [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/assemblefematrices.html"
+  },
+  "pde.StructuralModel.solve [pde]": {
+    "prefix": "pde.StructuralModel.solve",
+    "body": "${1:bcs} = pde.StructuralModel.solve(${1:pdem}, ${2:TLIST}, 'ModalResults', ${3:value})",
+    "description": "pde.StructuralModel.solve [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.solve.html"
+  },
+  "pde.BodyLoadAssignmentRecords.findBodyLoad [pde]": {
+    "prefix": "pde.BodyLoadAssignmentRecords.findBodyLoad",
+    "body": "${1:bl} = pde.BodyLoadAssignmentRecords.findBodyLoad(${1:pdem}, 'Face', ${2:value})",
+    "description": "pde.BodyLoadAssignmentRecords.findBodyLoad [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.BodyLoadAssignmentRecords.findBodyLoad.html"
+  },
+  "pde.BoundaryConditionRecords.findBoundaryConditions [pde]": {
+    "prefix": "pde.BoundaryConditionRecords.findBoundaryConditions",
+    "body": "${1:coeff} = pde.BoundaryConditionRecords.findBoundaryConditions(${1:pdem}, 'Face', ${2:value})",
+    "description": "pde.BoundaryConditionRecords.findBoundaryConditions [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.BoundaryConditionRecords.findBoundaryConditions.html"
+  },
+  "pde.CoefficientAssignmentRecords.findCoefficients [pde]": {
+    "prefix": "pde.CoefficientAssignmentRecords.findCoefficients",
+    "body": "${1:coeff} = pde.CoefficientAssignmentRecords.findCoefficients(${1:pdem}, 'Cell', ${2:value})",
+    "description": "pde.CoefficientAssignmentRecords.findCoefficients [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.CoefficientAssignmentRecords.findCoefficients.html"
+  },
+  "pde.StructuralModel.structuralBodyLoad [pde]": {
+    "prefix": "pde.StructuralModel.structuralBodyLoad",
+    "body": "${1:mtl} = pde.StructuralModel.structuralBodyLoad(${1:pdem}, 'GravitationalAcceleration', ${2:value}, 'Temperature', ${3:value}, 'TimeStep', ${4:value})",
+    "description": "pde.StructuralModel.structuralBodyLoad [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralBodyLoad.html"
+  },
+  "pde.StructuralModel.structuralSEInterface [pde]": {
+    "prefix": "pde.StructuralModel.structuralSEInterface",
+    "body": "${1:bcs} = pde.StructuralModel.structuralSEInterface(${1:pdem}, 'Vertex', ${2:value})",
+    "description": "pde.StructuralModel.structuralSEInterface [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralSEInterface.html"
+  },
+  "multicylinder [pde]": {
+    "prefix": "multicylinder",
+    "body": "${1:resultsObj} = multicylinder(${1:radiiVec}, ${2:heightVec}, 'Zoffset', ${3:value}, 'Void', ${4:value})",
+    "description": "multicylinder [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/multicylinder.html"
+  },
+  "pde.EquationModel.generateMesh [pde]": {
+    "prefix": "pde.EquationModel.generateMesh",
+    "body": "${1:msh} = pde.EquationModel.generateMesh(${1:pdem}, 'Hmax', ${2:value}, 'Hmin', ${3:value}, 'Hgrad', ${4:value}, 'GeometricOrder', ${5:value})",
+    "description": "pde.EquationModel.generateMesh [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.EquationModel.generateMesh.html"
+  },
+  "pde.EquationModel.geometryFromMesh [pde]": {
+    "prefix": "pde.EquationModel.geometryFromMesh",
+    "body": "[${1:g}, ${2:msh}] = pde.EquationModel.geometryFromMesh(${1:pdem}, ${2:Nodes}, ${3:Elements}, ${4:optional_ElementIdToRegionId})",
+    "description": "pde.EquationModel.geometryFromMesh [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.EquationModel.geometryFromMesh.html"
+  },
+  "multisphere [pde]": {
+    "prefix": "multisphere",
+    "body": "${1:resultsObj} = multisphere(${1:radiiVec}, 'Void', ${2:value})",
+    "description": "multisphere [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/multisphere.html"
+  },
+  "pde.ThermalModel.thermalBC [pde]": {
+    "prefix": "pde.ThermalModel.thermalBC",
+    "body": "${1:bct} = pde.ThermalModel.thermalBC(${1:pdem}, 'Face', ${2:value}, 'Temperature', ${3:value}, 'HeatFlux', ${4:value}, 'ConvectionCoefficient', ${5:value}, 'Emissivity', ${6:value}, 'AmbientTemperature', ${7:value}, 'Vectorized', ${8:value})",
+    "description": "pde.ThermalModel.thermalBC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.ThermalModel.thermalBC.html"
+  },
+  "pde.ThermalModel.thermalProperties [pde]": {
+    "prefix": "pde.ThermalModel.thermalProperties",
+    "body": "${1:mtl} = pde.ThermalModel.thermalProperties(${1:pdem}, 'Cell', ${2:value}, 'ThermalConductivity', ${3:value}, 'MassDensity', ${4:value}, 'SpecificHeat', ${5:value})",
+    "description": "pde.ThermalModel.thermalProperties [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.ThermalModel.thermalProperties.html"
+  },
+  "pde.TransientStructuralResults.evaluateReaction [pde]": {
+    "prefix": "pde.TransientStructuralResults.evaluateReaction",
+    "body": "${1:reaction} = pde.TransientStructuralResults.evaluateReaction(${1:sres}, 'Face', ${2:value})",
+    "description": "pde.TransientStructuralResults.evaluateReaction [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.TransientStructuralResults.evaluateReaction.html"
+  },
+  "pde.StructuralModel.reduce [pde]": {
+    "prefix": "pde.StructuralModel.reduce",
+    "body": "${1:bcs} = pde.StructuralModel.reduce(${1:pdem}, 'FrequencyRange', ${2:value})",
+    "description": "pde.StructuralModel.reduce [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.reduce.html"
+  },
+  "pde.InitialConditionsRecords.findInitialConditions [pde]": {
+    "prefix": "pde.InitialConditionsRecords.findInitialConditions",
+    "body": "${1:ic} = pde.InitialConditionsRecords.findInitialConditions(${1:pdem}, 'Vertex', ${2:value})",
+    "description": "pde.InitialConditionsRecords.findInitialConditions [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.InitialConditionsRecords.findInitialConditions.html"
+  },
+  "pde.StaticStructuralResults.evaluateReaction [pde]": {
+    "prefix": "pde.StaticStructuralResults.evaluateReaction",
+    "body": "${1:reaction} = pde.StaticStructuralResults.evaluateReaction(${1:sres}, 'Face', ${2:value})",
+    "description": "pde.StaticStructuralResults.evaluateReaction [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StaticStructuralResults.evaluateReaction.html"
+  },
+  "pde.StructuralModel.structuralBoundaryLoad [pde]": {
+    "prefix": "pde.StructuralModel.structuralBoundaryLoad",
+    "body": "${1:bcs} = pde.StructuralModel.structuralBoundaryLoad(${1:pdem}, 'Face', ${2:value}, 'SurfaceTraction', ${3:value}, 'Pressure', ${4:value}, 'TranslationalStiffness', ${5:value}, 'StartTime', ${6:value}, 'EndTime', ${7:value}, 'RiseTime', ${8:value}, 'FallTime', ${9:value}, 'Frequency', ${10:value}, 'Phase', ${11:value}, 'Vectorized', ${12:value})",
+    "description": "pde.StructuralModel.structuralBoundaryLoad [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralBoundaryLoad.html"
+  },
+  "pde.FEMesh.findElements [pde]": {
+    "prefix": "pde.FEMesh.findElements",
+    "body": "${1:n} = pde.FEMesh.findElements(${1:msh}, ${2:SearchMethod}, ${3:NodeID})",
+    "description": "pde.FEMesh.findElements [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.FEMesh.findElements.html"
+  },
+  "pde.FEMesh.volume [pde]": {
+    "prefix": "pde.FEMesh.volume",
+    "body": "[${1:v}, ${2:ve}] = pde.FEMesh.volume(${1:msh}, ${2:optional_e})",
+    "description": "pde.FEMesh.volume [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.FEMesh.volume.html"
+  },
+  "pde.ThermalBCRecords.findThermalBC [pde]": {
+    "prefix": "pde.ThermalBCRecords.findThermalBC",
+    "body": "${1:bct} = pde.ThermalBCRecords.findThermalBC(${1:pdem}, 'Face', ${2:value})",
+    "description": "pde.ThermalBCRecords.findThermalBC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.ThermalBCRecords.findThermalBC.html"
+  },
+  "pde.ThermalModel.thermalIC [pde]": {
+    "prefix": "pde.ThermalModel.thermalIC",
+    "body": "${1:ict} = pde.ThermalModel.thermalIC(${1:pdem}, ${2:T0val}, 'Cell', ${3:value})",
+    "description": "pde.ThermalModel.thermalIC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.ThermalModel.thermalIC.html"
+  },
+  "pde.PDEModel.setInitialConditions [pde]": {
+    "prefix": "pde.PDEModel.setInitialConditions",
+    "body": "${1:ic} = pde.PDEModel.setInitialConditions(${1:pdem}, ${2:u0}, ${3:optional_du0}, 'Cell', ${4:value})",
+    "description": "pde.PDEModel.setInitialConditions [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.PDEModel.setInitialConditions.html"
+  },
+  "pde.StructuralModel.structuralDamping [pde]": {
+    "prefix": "pde.StructuralModel.structuralDamping",
+    "body": "${1:sdm} = pde.StructuralModel.structuralDamping(${1:spdem}, ${2:bctype}, 'Alpha', ${3:value}, 'Beta', ${4:value})",
+    "description": "pde.StructuralModel.structuralDamping [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralDamping.html"
+  },
+  "pde.EquationModel.importGeometry [pde]": {
+    "prefix": "pde.EquationModel.importGeometry",
+    "body": "${1:g} = pde.EquationModel.importGeometry(${1:pdem}, ${2:FILENAME})",
+    "description": "pde.EquationModel.importGeometry [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.EquationModel.importGeometry.html"
+  },
+  "pde.FEMesh.findNodes [pde]": {
+    "prefix": "pde.FEMesh.findNodes",
+    "body": "${1:n} = pde.FEMesh.findNodes(${1:msh}, ${2:SearchMethod}, ${3:Point})",
+    "description": "pde.FEMesh.findNodes [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.FEMesh.findNodes.html"
+  },
+  "pde.StructuralModel.structuralIC [pde]": {
+    "prefix": "pde.StructuralModel.structuralIC",
+    "body": "${1:bcs} = pde.StructuralModel.structuralIC(${1:pdem}, 'Vertex', ${2:value}, 'Edge', ${3:value}, 'Face', ${4:value}, 'Cell', ${5:value}, 'Displacement', ${6:value}, 'Velocity', ${7:value})",
+    "description": "pde.StructuralModel.structuralIC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralIC.html"
+  },
+  "multicuboid [pde]": {
+    "prefix": "multicuboid",
+    "body": "${1:resultsObj} = multicuboid(${1:widthVec}, ${2:depthVec}, ${3:heightVec}, 'Zoffset', ${4:value}, 'Void', ${5:value})",
+    "description": "multicuboid [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/multicuboid.html"
+  },
+  "pdemesh [pde]": {
+    "prefix": "pdemesh",
+    "body": "${1:plotFig} = pdemesh(${1:Nodes}, ${2:Elements}, 'ElementLabels', ${3:value}, 'FaceAlpha', ${4:value}, 'NodeLabels', ${5:value}, 'EdgeColor', ${6:value}, 'FaceColor', ${7:value})",
+    "description": "pdemesh [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/pdemesh.html"
+  },
+  "pdeplot3D [pde]": {
+    "prefix": "pdeplot3D",
+    "body": "${1:plotFig} = pdeplot3D(${1:Nodes}, ${2:Elements}, 'ColorMapData', ${3:value}, 'Mesh', ${4:value}, 'NodeLabels', ${5:value}, 'ElementLabels', ${6:value}, 'FaceAlpha', ${7:value}, 'Deformation', ${8:value}, 'DeformationScaleFactor', ${9:value})",
+    "description": "pdeplot3D [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/pdeplot3d.html"
+  },
+  "pdeplot [pde]": {
+    "prefix": "pdeplot",
+    "body": "${1:plotFig} = pdeplot(${1:Nodes}, ${2:Elements}, 'XYData', ${3:value}, 'XYStyle', ${4:value}, 'Contour', ${5:value}, 'ZData', ${6:value}, 'ZStyle', ${7:value}, 'FlowData', ${8:value}, 'FlowStyle', ${9:value}, 'ColorMap', ${10:value}, 'XYGrid', ${11:value}, 'Mesh', ${12:value}, 'ColorBar', ${13:value}, 'Title', ${14:value}, 'Levels', ${15:value}, 'NodeLabels', ${16:value}, 'ElementLabels', ${17:value}, 'FaceAlpha', ${18:value}, 'Deformation', ${19:value}, 'DeformationScaleFactor', ${20:value})",
+    "description": "pdeplot [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/pdeplot.html"
+  },
+  "pde.EquationModel.geometryFromEdges [pde]": {
+    "prefix": "pde.EquationModel.geometryFromEdges",
+    "body": "${1:g} = pde.EquationModel.geometryFromEdges(${1:pdem}, ${2:decsg})",
+    "description": "pde.EquationModel.geometryFromEdges [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.EquationModel.geometryFromEdges.html"
+  },
+  "pde.StructuralMaterialAssignmentRecords.findStructuralProperties [pde]": {
+    "prefix": "pde.StructuralMaterialAssignmentRecords.findStructuralProperties",
+    "body": "${1:mtl} = pde.StructuralMaterialAssignmentRecords.findStructuralProperties(${1:pdem}, 'Face', ${2:value})",
+    "description": "pde.StructuralMaterialAssignmentRecords.findStructuralProperties [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralMaterialAssignmentRecords.findStructuralProperties.html"
+  },
+  "createpde [pde]": {
+    "prefix": "createpde",
+    "body": "${1:pdem} = createpde(${1:pdeID}, ${2:AnalysisAttribute1})",
+    "description": "createpde [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/createpde.html"
+  },
+  "pde.PDEModel.applyBoundaryCondition [pde]": {
+    "prefix": "pde.PDEModel.applyBoundaryCondition",
+    "body": "${1:bc} = pde.PDEModel.applyBoundaryCondition(${1:pdem}, ${2:bctype}, 'Face', ${3:value}, 'h', ${4:value}, 'r', ${5:value}, 'u', ${6:value}, 'g', ${7:value}, 'q', ${8:value}, 'EquationIndex', ${9:value}, 'Vectorized', ${10:value})",
+    "description": "pde.PDEModel.applyBoundaryCondition [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.PDEModel.applyBoundaryCondition.html"
+  },
+  "createPDEResults [pde]": {
+    "prefix": "createPDEResults",
+    "body": "${1:resultsObj} = createPDEResults(${1:pdem}, ${2:solOREigVec}, ${3:timeOREigVal}, ${4:optional_resType})",
+    "description": "createPDEResults [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/createpderesults.html"
+  },
+  "pde.ThermalModel.internalHeatSource [pde]": {
+    "prefix": "pde.ThermalModel.internalHeatSource",
+    "body": "${1:ihs} = pde.ThermalModel.internalHeatSource(${1:pdem}, ${2:Qval}, 'Cell', ${3:value})",
+    "description": "pde.ThermalModel.internalHeatSource [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.ThermalModel.internalHeatSource.html"
+  },
+  "pde.FEMesh.area [pde]": {
+    "prefix": "pde.FEMesh.area",
+    "body": "[${1:a}, ${2:ae}] = pde.FEMesh.area(${1:msh}, ${2:optional_e})",
+    "description": "pde.FEMesh.area [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.FEMesh.area.html"
+  },
+  "pde.ThermalICRecords.findThermalIC [pde]": {
+    "prefix": "pde.ThermalICRecords.findThermalIC",
+    "body": "${1:ict} = pde.ThermalICRecords.findThermalIC(${1:icrecord}, 'Cell', ${2:value})",
+    "description": "pde.ThermalICRecords.findThermalIC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.ThermalICRecords.findThermalIC.html"
+  },
+  "pdegplot [pde]": {
+    "prefix": "pdegplot",
+    "body": "${1:plotFig} = pdegplot(${1:pdem}, 'CellLabels', ${2:value}, 'EdgeLabels', ${3:value}, 'FaceAlpha', ${4:value}, 'FaceLabels', ${5:value}, 'SubdomainLabels', ${6:value}, 'VertexLabels', ${7:value})",
+    "description": "pdegplot [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/ug/pdegplot.html"
+  },
+  "pde.MaterialAssignmentRecords.findThermalProperties [pde]": {
+    "prefix": "pde.MaterialAssignmentRecords.findThermalProperties",
+    "body": "${1:mtl} = pde.MaterialAssignmentRecords.findThermalProperties(${1:pdem}, 'Cell', ${2:value})",
+    "description": "pde.MaterialAssignmentRecords.findThermalProperties [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.MaterialAssignmentRecords.findThermalProperties.html"
+  },
+  "pde.HeatSourceAssignmentRecords.findHeatSource [pde]": {
+    "prefix": "pde.HeatSourceAssignmentRecords.findHeatSource",
+    "body": "${1:ihs} = pde.HeatSourceAssignmentRecords.findHeatSource(${1:pdem}, 'Cell', ${2:value})",
+    "description": "pde.HeatSourceAssignmentRecords.findHeatSource [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.HeatSourceAssignmentRecords.findHeatSource.html"
+  },
+  "pde.PDEModel.specifyCoefficients [pde]": {
+    "prefix": "pde.PDEModel.specifyCoefficients",
+    "body": "${1:coeff} = pde.PDEModel.specifyCoefficients(${1:pdem}, 'Cell', ${2:value}, 'm', ${3:value}, 'd', ${4:value}, 'c', ${5:value}, 'a', ${6:value}, 'f', ${7:value})",
+    "description": "pde.PDEModel.specifyCoefficients [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.PDEModel.specifyCoefficients.html"
+  },
+  "pde.StructuralModel.structuralProperties [pde]": {
+    "prefix": "pde.StructuralModel.structuralProperties",
+    "body": "${1:mtl} = pde.StructuralModel.structuralProperties(${1:pdem}, 'Face', ${2:value}, 'YoungsModulus', ${3:value}, 'PoissonsRatio', ${4:value}, 'CTE', ${5:value})",
+    "description": "pde.StructuralModel.structuralProperties [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralModel.structuralProperties.html"
+  },
+  "pde.DiscreteGeometry.addVertex [pde]": {
+    "prefix": "pde.DiscreteGeometry.addVertex",
+    "body": "${1:vtx} = pde.DiscreteGeometry.addVertex(${1:g}, ${2:CreationMethod}, ${3:Coordinates})",
+    "description": "pde.DiscreteGeometry.addVertex [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.DiscreteGeometry.addVertex.html"
+  },
+  "pde.StructuralBCRecords.findStructuralBC [pde]": {
+    "prefix": "pde.StructuralBCRecords.findStructuralBC",
+    "body": "${1:sc} = pde.StructuralBCRecords.findStructuralBC(${1:pdem}, 'Face', ${2:value})",
+    "description": "pde.StructuralBCRecords.findStructuralBC [pde]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/pde/pde.StructuralBCRecords.findStructuralBC.html"
+  }
+}

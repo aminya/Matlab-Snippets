@@ -1,0 +1,14 @@
+{
+  "parquetDatastore [matlab]": {
+    "prefix": "parquetDatastore",
+    "body": "${1:pds} = parquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})",
+    "description": "parquetDatastore [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.io.datastore.parquetdatastore.html"
+  },
+  "matlab.io.datastore.ParquetDatastore [matlab]": {
+    "prefix": "matlab.io.datastore.ParquetDatastore",
+    "body": "${1:pds} = matlab.io.datastore.ParquetDatastore(${1:location}, 'IncludeSubfolders', ${2:value}, 'FileExtensions', ${3:value}, 'AlternateFileSystemRoots', ${4:value}, 'VariableNames', ${5:value}, 'SelectedVariableNames', ${6:value}, 'ReadSize', ${7:value}, 'OutputType', ${8:value}, 'PreserveVariableNames', ${9:value})",
+    "description": "matlab.io.datastore.ParquetDatastore [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.io.datastore.ParquetDatastore.html"
+  }
+}

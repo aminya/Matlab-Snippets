@@ -1,0 +1,8 @@
+{
+  "help [matlab]": {
+    "prefix": "help",
+    "body": "help(${1:optional_filename})",
+    "description": "help [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/help.html"
+  }
+}

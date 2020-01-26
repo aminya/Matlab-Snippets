@@ -1,0 +1,506 @@
+{
+  "strings [matlab]": {
+    "prefix": "strings",
+    "body": "${1:str} = strings(${1:optional_n})",
+    "description": "strings [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strings.html"
+  },
+  "int2str [matlab]": {
+    "prefix": "int2str",
+    "body": "${1:str} = int2str(${1:N})",
+    "description": "int2str [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/int2str.html"
+  },
+  "string.splitlines [matlab]": {
+    "prefix": "string.splitlines",
+    "body": "${1:newStr} = string.splitlines(${1:str})",
+    "description": "string.splitlines [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.splitlines.html"
+  },
+  "regexprep [matlab]": {
+    "prefix": "regexprep",
+    "body": "${1:newStr} = regexprep(${1:str}, ${2:expression}, ${3:replace}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing})",
+    "description": "regexprep [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/regexprep.html"
+  },
+  "sprintf [matlab]": {
+    "prefix": "sprintf",
+    "body": "[${1:str}, ${2:errmsg}] = sprintf(${1:formatSpec}, ${2:A})",
+    "description": "sprintf [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/sprintf.html"
+  },
+  "string.pad [matlab]": {
+    "prefix": "string.pad",
+    "body": "${1:tf} = string.pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})",
+    "description": "string.pad [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.pad.html"
+  },
+  "native2unicode [matlab]": {
+    "prefix": "native2unicode",
+    "body": "${1:unicodestr} = native2unicode(${1:bytes}, ${2:optional_encoding})",
+    "description": "native2unicode [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/native2unicode.html"
+  },
+  "extractBefore [matlab]": {
+    "prefix": "extractBefore",
+    "body": "${1:newStr} = extractBefore(${1:str}, ${2:matchStr})",
+    "description": "extractBefore [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/extractbefore.html"
+  },
+  "string.insertAfter [matlab]": {
+    "prefix": "string.insertAfter",
+    "body": "${1:newStr} = string.insertAfter(${1:str}, ${2:startStr}, ${3:newText})",
+    "description": "string.insertAfter [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.insertAfter.html"
+  },
+  "split [matlab]": {
+    "prefix": "split",
+    "body": "[${1:newStr}, ${2:matches}] = split(${1:str}, ${2:delimiter}, ${3:dim})",
+    "description": "split [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.split.html"
+  },
+  "endsWith [matlab]": {
+    "prefix": "endsWith",
+    "body": "${1:tf} = endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "endsWith [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/endswith.html"
+  },
+  "strfind [matlab]": {
+    "prefix": "strfind",
+    "body": "${1:k} = strfind(${1:text}, ${2:pattern}, 'ForceCellOutput', ${3:value})",
+    "description": "strfind [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strfind.html"
+  },
+  "strncmpi [matlab]": {
+    "prefix": "strncmpi",
+    "body": "${1:tf} = strncmpi(${1:C}, ${2:C}, ${3:n})",
+    "description": "strncmpi [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strncmpi.html"
+  },
+  "strsplit [matlab]": {
+    "prefix": "strsplit",
+    "body": "[${1:C}, ${2:matches}] = strsplit(${1:str}, ${2:delimiter}, 'CollapseDelimiters', ${3:value}, 'DelimiterType', ${4:value})",
+    "description": "strsplit [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strsplit.html"
+  },
+  "insertBefore [matlab]": {
+    "prefix": "insertBefore",
+    "body": "${1:newStr} = insertBefore(${1:str}, ${2:endStr}, ${3:newText})",
+    "description": "insertBefore [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/insertbefore.html"
+  },
+  "string.replace [matlab]": {
+    "prefix": "string.replace",
+    "body": "${1:newStr} = string.replace(${1:str}, ${2:old}, ${3:new})",
+    "description": "string.replace [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.replace.html"
+  },
+  "strjoin [matlab]": {
+    "prefix": "strjoin",
+    "body": "${1:str} = strjoin(${1:C}, ${2:optional_delimiter})",
+    "description": "strjoin [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strjoin.html"
+  },
+  "pad [matlab]": {
+    "prefix": "pad",
+    "body": "${1:tf} = pad(${1:str}, ${2:optional_width}, ${3:side}, ${4:padCharacter})",
+    "description": "pad [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/pad.html"
+  },
+  "contains [matlab]": {
+    "prefix": "contains",
+    "body": "${1:tf} = contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "contains [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/imref2d.contains.html"
+  },
+  "regexpi [matlab]": {
+    "prefix": "regexpi",
+    "body": "[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexpi(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})",
+    "description": "regexpi [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/regexpi.html"
+  },
+  "deblank [matlab]": {
+    "prefix": "deblank",
+    "body": "${1:newTxt} = deblank(${1:txt})",
+    "description": "deblank [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/deblank.html"
+  },
+  "strncmp [matlab]": {
+    "prefix": "strncmp",
+    "body": "${1:tf} = strncmp(${1:C}, ${2:C}, ${3:n})",
+    "description": "strncmp [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strncmp.html"
+  },
+  "extractAfter [matlab]": {
+    "prefix": "extractAfter",
+    "body": "${1:newStr} = extractAfter(${1:str}, ${2:matchStr})",
+    "description": "extractAfter [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/extractafter.html"
+  },
+  "reverse [matlab]": {
+    "prefix": "reverse",
+    "body": "${1:newStr} = reverse(${1:str})",
+    "description": "reverse [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/reverse.html"
+  },
+  "str2double [matlab]": {
+    "prefix": "str2double",
+    "body": "${1:X} = str2double(${1:str})",
+    "description": "str2double [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/str2double.html"
+  },
+  "strcmp [matlab]": {
+    "prefix": "strcmp",
+    "body": "${1:tf} = strcmp(${1:s1}, ${2:s2})",
+    "description": "strcmp [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strcmp.html"
+  },
+  "splitlines [matlab]": {
+    "prefix": "splitlines",
+    "body": "${1:newStr} = splitlines(${1:str})",
+    "description": "splitlines [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/splitlines.html"
+  },
+  "mat2str [matlab]": {
+    "prefix": "mat2str",
+    "body": "${1:str} = mat2str(${1:A}, ${2:optional_n}, ${3:optional_'class'})",
+    "description": "mat2str [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mat2str.html"
+  },
+  "strtrim [matlab]": {
+    "prefix": "strtrim",
+    "body": "${1:newTxt} = strtrim(${1:txt})",
+    "description": "strtrim [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strtrim.html"
+  },
+  "isstring [matlab]": {
+    "prefix": "isstring",
+    "body": "${1:tf} = isstring(${1:A})",
+    "description": "isstring [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isstring.html"
+  },
+  "string.replaceBetween [matlab]": {
+    "prefix": "string.replaceBetween",
+    "body": "${1:out} = string.replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})",
+    "description": "string.replaceBetween [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.replaceBetween.html"
+  },
+  "count [matlab]": {
+    "prefix": "count",
+    "body": "${1:count} = count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "count [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/count.html"
+  },
+  "bin2dec [matlab]": {
+    "prefix": "bin2dec",
+    "body": "${1:d} = bin2dec(${1:binarystr})",
+    "description": "bin2dec [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bin2dec.html"
+  },
+  "strip [matlab]": {
+    "prefix": "strip",
+    "body": "${1:tf} = strip(${1:str}, ${2:side}, ${3:padCharacter})",
+    "description": "strip [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strip.html"
+  },
+  "isstrprop [matlab]": {
+    "prefix": "isstrprop",
+    "body": "${1:out} = isstrprop(${1:text}, ${2:category}, 'ForceCellOutput', ${3:value})",
+    "description": "isstrprop [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isstrprop.html"
+  },
+  "string.eraseBetween [matlab]": {
+    "prefix": "string.eraseBetween",
+    "body": "${1:count} = string.eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})",
+    "description": "string.eraseBetween [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.eraseBetween.html"
+  },
+  "string.extractBefore [matlab]": {
+    "prefix": "string.extractBefore",
+    "body": "${1:newStr} = string.extractBefore(${1:str}, ${2:matchStr})",
+    "description": "string.extractBefore [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.extractBefore.html"
+  },
+  "strtok [matlab]": {
+    "prefix": "strtok",
+    "body": "[${1:token}, ${2:remain}] = strtok(${1:str}, ${2:delimiter})",
+    "description": "strtok [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strtok.html"
+  },
+  "base2dec [matlab]": {
+    "prefix": "base2dec",
+    "body": "${1:d} = base2dec(${1:strn}, ${2:base})",
+    "description": "base2dec [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/base2dec.html"
+  },
+  "char [matlab]": {
+    "prefix": "char",
+    "body": "${1:c} = char(${1:A})",
+    "description": "char [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/char.html"
+  },
+  "strcat [matlab]": {
+    "prefix": "strcat",
+    "body": "${1:s} = strcat(${1:s})",
+    "description": "strcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strcat.html"
+  },
+  "string.endsWith [matlab]": {
+    "prefix": "string.endsWith",
+    "body": "${1:tf} = string.endsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "string.endsWith [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.endsWith.html"
+  },
+  "string.matches [matlab]": {
+    "prefix": "string.matches",
+    "body": "${1:tf} = string.matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "string.matches [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.matches.html"
+  },
+  "strjust [matlab]": {
+    "prefix": "strjust",
+    "body": "${1:T} = strjust(${1:S}, ${2:optional_justification})",
+    "description": "strjust [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strjust.html"
+  },
+  "extractBetween [matlab]": {
+    "prefix": "extractBetween",
+    "body": "${1:out} = extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})",
+    "description": "extractBetween [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/extractbetween.html"
+  },
+  "replaceBetween [matlab]": {
+    "prefix": "replaceBetween",
+    "body": "${1:out} = replaceBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, ${4:replaceStr}, 'Boundaries', ${5:value})",
+    "description": "replaceBetween [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/replacebetween.html"
+  },
+  "string.contains [matlab]": {
+    "prefix": "string.contains",
+    "body": "${1:tf} = string.contains(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "string.contains [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.contains.html"
+  },
+  "regexp [matlab]": {
+    "prefix": "regexp",
+    "body": "[${1:out1}, ${2:out2}, ${3:out3}, ${4:out4}, ${5:out5}, ${6:out6}, ${7:out7}] = regexp(${1:str}, ${2:expression}, ${3:outkeys}, ${4:optMatch}, ${5:optWarnings}, ${6:optCase}, ${7:optEmptyMatch}, ${8:optDotAll}, ${9:optStringAnchors}, ${10:optSpacing}, ${11:optForceCell})",
+    "description": "regexp [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/regexp.html"
+  },
+  "upper [matlab]": {
+    "prefix": "upper",
+    "body": "${1:newTxt} = upper(${1:txt})",
+    "description": "upper [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/upper.html"
+  },
+  "regexptranslate [matlab]": {
+    "prefix": "regexptranslate",
+    "body": "${1:s2} = regexptranslate(${1:type}, ${2:s1})",
+    "description": "regexptranslate [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/regexptranslate.html"
+  },
+  "compose [matlab]": {
+    "prefix": "compose",
+    "body": "${1:str} = compose(${1:txt})",
+    "description": "compose [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/compose.html"
+  },
+  "lower [matlab]": {
+    "prefix": "lower",
+    "body": "${1:newTxt} = lower(${1:txt})",
+    "description": "lower [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/lower.html"
+  },
+  "string.insertBefore [matlab]": {
+    "prefix": "string.insertBefore",
+    "body": "${1:newStr} = string.insertBefore(${1:str}, ${2:endStr}, ${3:newText})",
+    "description": "string.insertBefore [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.insertBefore.html"
+  },
+  "string.strip [matlab]": {
+    "prefix": "string.strip",
+    "body": "${1:tf} = string.strip(${1:str}, ${2:side}, ${3:padCharacter})",
+    "description": "string.strip [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.strip.html"
+  },
+  "cellstr [matlab]": {
+    "prefix": "cellstr",
+    "body": "${1:c} = cellstr(${1:S})",
+    "description": "cellstr [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cellstr.html"
+  },
+  "isspace [matlab]": {
+    "prefix": "isspace",
+    "body": "${1:tf} = isspace(${1:str})",
+    "description": "isspace [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isspace.html"
+  },
+  "blanks [matlab]": {
+    "prefix": "blanks",
+    "body": "${1:c} = blanks(${1:n})",
+    "description": "blanks [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/blanks.html"
+  },
+  "isletter [matlab]": {
+    "prefix": "isletter",
+    "body": "${1:tf} = isletter(${1:str})",
+    "description": "isletter [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isletter.html"
+  },
+  "hex2num [matlab]": {
+    "prefix": "hex2num",
+    "body": "${1:n} = hex2num(${1:S})",
+    "description": "hex2num [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/hex2num.html"
+  },
+  "num2hex [matlab]": {
+    "prefix": "num2hex",
+    "body": "${1:c} = num2hex(${1:X})",
+    "description": "num2hex [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/num2hex.html"
+  },
+  "str2num [matlab]": {
+    "prefix": "str2num",
+    "body": "[${1:x}, ${2:status}] = str2num(${1:str})",
+    "description": "str2num [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/str2num.html"
+  },
+  "num2str [matlab]": {
+    "prefix": "num2str",
+    "body": "${1:s} = num2str(${1:A}, ${2:formatSpec})",
+    "description": "num2str [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/num2str.html"
+  },
+  "string.upper [matlab]": {
+    "prefix": "string.upper",
+    "body": "${1:newTxt} = string.upper(${1:txt})",
+    "description": "string.upper [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.upper.html"
+  },
+  "string.join [matlab]": {
+    "prefix": "string.join",
+    "body": "${1:newStr} = string.join(${1:str}, ${2:optional_delimiter}, ${3:optional_dim})",
+    "description": "string.join [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.join.html"
+  },
+  "ischar [matlab]": {
+    "prefix": "ischar",
+    "body": "${1:tf} = ischar(${1:A})",
+    "description": "ischar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ischar.html"
+  },
+  "startsWith [matlab]": {
+    "prefix": "startsWith",
+    "body": "${1:tf} = startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "startsWith [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/startswith.html"
+  },
+  "insertAfter [matlab]": {
+    "prefix": "insertAfter",
+    "body": "${1:newStr} = insertAfter(${1:str}, ${2:startStr}, ${3:newText})",
+    "description": "insertAfter [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/insertafter.html"
+  },
+  "iscellstr [matlab]": {
+    "prefix": "iscellstr",
+    "body": "${1:tf} = iscellstr(${1:A})",
+    "description": "iscellstr [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/iscellstr.html"
+  },
+  "string.split [matlab]": {
+    "prefix": "string.split",
+    "body": "[${1:newStr}, ${2:matches}] = string.split(${1:str}, ${2:delimiter}, ${3:dim})",
+    "description": "string.split [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.split.html"
+  },
+  "string.startsWith [matlab]": {
+    "prefix": "string.startsWith",
+    "body": "${1:tf} = string.startsWith(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "string.startsWith [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.startsWith.html"
+  },
+  "unicode2native [matlab]": {
+    "prefix": "unicode2native",
+    "body": "${1:bytes} = unicode2native(${1:unicodestr}, ${2:optional_encoding})",
+    "description": "unicode2native [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unicode2native.html"
+  },
+  "strcmpi [matlab]": {
+    "prefix": "strcmpi",
+    "body": "${1:tf} = strcmpi(${1:C}, ${2:C})",
+    "description": "strcmpi [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strcmpi.html"
+  },
+  "sscanf [matlab]": {
+    "prefix": "sscanf",
+    "body": "[${1:A}, ${2:count}, ${3:errmsg}, ${4:nextindex}] = sscanf(${1:str}, ${2:format}, ${3:optional_sizeA})",
+    "description": "sscanf [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/sscanf.html"
+  },
+  "strrep [matlab]": {
+    "prefix": "strrep",
+    "body": "${1:modifiedStr} = strrep(${1:origStr}, ${2:oldSubstr}, ${3:newSubstr})",
+    "description": "strrep [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strrep.html"
+  },
+  "strlength [matlab]": {
+    "prefix": "strlength",
+    "body": "${1:L} = strlength(${1:str})",
+    "description": "strlength [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/strlength.html"
+  },
+  "eraseBetween [matlab]": {
+    "prefix": "eraseBetween",
+    "body": "${1:count} = eraseBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})",
+    "description": "eraseBetween [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/erasebetween.html"
+  },
+  "string.count [matlab]": {
+    "prefix": "string.count",
+    "body": "${1:count} = string.count(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "string.count [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.count.html"
+  },
+  "matches [matlab]": {
+    "prefix": "matches",
+    "body": "${1:tf} = matches(${1:str}, ${2:pattern}, 'IgnoreCase', ${3:value})",
+    "description": "matches [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matches.html"
+  },
+  "string.reverse [matlab]": {
+    "prefix": "string.reverse",
+    "body": "${1:newStr} = string.reverse(${1:str})",
+    "description": "string.reverse [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.reverse.html"
+  },
+  "newline [matlab]": {
+    "prefix": "newline",
+    "body": "${1:c} = newline()",
+    "description": "newline [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/newline.html"
+  },
+  "hex2dec [matlab]": {
+    "prefix": "hex2dec",
+    "body": "${1:d} = hex2dec(${1:hex_value})",
+    "description": "hex2dec [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/hex2dec.html"
+  },
+  "string.extractAfter [matlab]": {
+    "prefix": "string.extractAfter",
+    "body": "${1:newStr} = string.extractAfter(${1:str}, ${2:matchStr})",
+    "description": "string.extractAfter [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.extractAfter.html"
+  },
+  "string.extractBetween [matlab]": {
+    "prefix": "string.extractBetween",
+    "body": "${1:out} = string.extractBetween(${1:str}, ${2:startPosition}, ${3:endPosition}, 'Boundaries', ${4:value})",
+    "description": "string.extractBetween [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.extractBetween.html"
+  },
+  "string.lower [matlab]": {
+    "prefix": "string.lower",
+    "body": "${1:newTxt} = string.lower(${1:txt})",
+    "description": "string.lower [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.lower.html"
+  }
+}

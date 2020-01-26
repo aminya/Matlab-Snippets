@@ -1,0 +1,8 @@
+{
+  "sscnewfile [physmod]": {
+    "prefix": "sscnewfile",
+    "body": "sscnewfile(${1:name}, ${2:template})",
+    "description": "sscnewfile [physmod]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/physmod/ref/sscnewfile.html"
+  }
+}

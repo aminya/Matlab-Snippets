@@ -1,0 +1,8 @@
+{
+  "buildStandaloneCoderAssumptions [coder]": {
+    "prefix": "buildStandaloneCoderAssumptions",
+    "body": "buildStandaloneCoderAssumptions(${1:buildFolder})",
+    "description": "buildStandaloneCoderAssumptions [coder]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/coder/ref/buildstandalonecoderassumptions.html"
+  }
+}

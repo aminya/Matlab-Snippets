@@ -1,0 +1,8 @@
+{
+  "weboptions [matlab]": {
+    "prefix": "weboptions",
+    "body": "weboptions(${1:name})",
+    "description": "weboptions [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/weboptions.html"
+  }
+}

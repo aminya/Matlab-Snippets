@@ -1,0 +1,14 @@
+{
+  "rica [stats]": {
+    "prefix": "rica",
+    "body": "rica(${1:X}, ${2:q}, 'IterationLimit', ${3:value}, 'VerbosityLevel', ${4:value}, 'Lambda', ${5:value}, 'Standardize', ${6:value}, 'ContrastFcn', ${7:value}, 'InitialTransformWeights', ${8:value}, 'NonGaussianityIndicator', ${9:value}, 'GradientTolerance', ${10:value}, 'StepTolerance', ${11:value})",
+    "description": "rica [stats]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/stats/rica.html"
+  },
+  "sparsefilt [stats]": {
+    "prefix": "sparsefilt",
+    "body": "sparsefilt(${1:X}, ${2:q}, 'IterationLimit', ${3:value}, 'VerbosityLevel', ${4:value}, 'Lambda', ${5:value}, 'Standardize', ${6:value}, 'InitialTransformWeights', ${7:value}, 'GradientTolerance', ${8:value}, 'StepTolerance', ${9:value})",
+    "description": "sparsefilt [stats]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/stats/sparsefilt.html"
+  }
+}

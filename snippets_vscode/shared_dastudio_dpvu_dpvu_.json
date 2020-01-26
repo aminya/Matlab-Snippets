@@ -1,0 +1,8 @@
+{
+  "depview [shared]": {
+    "prefix": "depview",
+    "body": "depview(${1:optional_models}, 'FileDependenciesIncludingLibraries', ${2:value}, 'FileDependenciesExcludingLibraries', ${3:value}, 'ModelReferenceInstance', ${4:value})",
+    "description": "depview [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/../simulink/slref/depview.html"
+  }
+}

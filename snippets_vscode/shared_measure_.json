@@ -1,0 +1,20 @@
+{
+  "dsp.StateLevels [shared]": {
+    "prefix": "dsp.StateLevels",
+    "body": "dsp.StateLevels(${1:arg})",
+    "description": "dsp.StateLevels [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/dsp.StateLevels.html"
+  },
+  "dsp.TransitionMetrics [shared]": {
+    "prefix": "dsp.TransitionMetrics",
+    "body": "dsp.TransitionMetrics(${1:arg})",
+    "description": "dsp.TransitionMetrics [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/dsp.TransitionMetrics.html"
+  },
+  "dsp.PulseMetrics [shared]": {
+    "prefix": "dsp.PulseMetrics",
+    "body": "dsp.PulseMetrics(${1:arg})",
+    "description": "dsp.PulseMetrics [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/dsp.PulseMetrics.html"
+  }
+}

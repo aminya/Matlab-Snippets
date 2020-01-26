@@ -1,0 +1,134 @@
+{
+  "getselectedsource [imaq]": {
+    "prefix": "getselectedsource",
+    "body": "${1:out} = getselectedsource(${1:obj})",
+    "description": "getselectedsource [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/getselectedsource.html"
+  },
+  "triggerinfo [imaq]": {
+    "prefix": "triggerinfo",
+    "body": "${1:out} = triggerinfo(${1:obj}, ${2:optional_type})",
+    "description": "triggerinfo [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/triggerinfo.html"
+  },
+  "getsnapshot [imaq]": {
+    "prefix": "getsnapshot",
+    "body": "getsnapshot(${1:obj})",
+    "description": "getsnapshot [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/getsnapshot.html"
+  },
+  "imaqmex [imaq]": {
+    "prefix": "imaqmex",
+    "body": "imaqmex(${1:feature}, ${2:featureNames}, ${3:optional_value})",
+    "description": "imaqmex [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/imaqmex.html"
+  },
+  "flushdata [imaq]": {
+    "prefix": "flushdata",
+    "body": "flushdata(${1:obj}, ${2:optional_mode})",
+    "description": "flushdata [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/flushdata.html"
+  },
+  "commands [imaq]": {
+    "prefix": "commands",
+    "body": "${1:out} = commands(${1:gigeCamera})",
+    "description": "commands [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/commands.html"
+  },
+  "imaqhelp [imaq]": {
+    "prefix": "imaqhelp",
+    "body": "${1:out} = imaqhelp(${1:optional_obj}, ${2:optional_name})",
+    "description": "imaqhelp [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/imaqhelp.html"
+  },
+  "propinfo [imaq]": {
+    "prefix": "propinfo",
+    "body": "${1:out} = propinfo(${1:obj}, ${2:optional_propName})",
+    "description": "propinfo [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/propinfo.html"
+  },
+  "snapshot [imaq]": {
+    "prefix": "snapshot",
+    "body": "snapshot(${1:optional_camera})",
+    "description": "snapshot [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/matrox.snapshot.html"
+  },
+  "trigger [imaq]": {
+    "prefix": "trigger",
+    "body": "trigger(${1:obj})",
+    "description": "trigger [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/trigger.html"
+  },
+  "videoinput [imaq]": {
+    "prefix": "videoinput",
+    "body": "${1:obj} = videoinput(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'Disklogger', ${5:value}, 'FramesAcquiredFcnCount', ${6:value}, 'FrameGrabInterval', ${7:value}, 'FramesPerTrigger', ${8:value}, 'LoggingMode', ${9:value}, 'Name', ${10:value}, 'ReturnedColorSpace', ${11:value}, 'ROIPosition', ${12:value}, 'SelectedSourceName', ${13:value}, 'Tag', ${14:value}, 'Timeout', ${15:value}, 'TimerPeriod', ${16:value}, 'TriggerFrameDelay', ${17:value}, 'TriggerRepeat', ${18:value})",
+    "description": "videoinput [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/videoinput.html"
+  },
+  "getdata [imaq]": {
+    "prefix": "getdata",
+    "body": "getdata(${1:obj}, ${2:frames}, ${3:type}, ${4:optional_format})",
+    "description": "getdata [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/getdata.html"
+  },
+  "imaqtool [imaq]": {
+    "prefix": "imaqtool",
+    "body": "imaqtool(${1:optional_file})",
+    "description": "imaqtool [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/imaqtool.html"
+  },
+  "closepreview [imaq]": {
+    "prefix": "closepreview",
+    "body": "closepreview(${1:obj})",
+    "description": "closepreview [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/closepreview.html"
+  },
+  "islogging [imaq]": {
+    "prefix": "islogging",
+    "body": "${1:out} = islogging(${1:obj})",
+    "description": "islogging [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/islogging.html"
+  },
+  "peekdata [imaq]": {
+    "prefix": "peekdata",
+    "body": "peekdata(${1:obj}, ${2:frames})",
+    "description": "peekdata [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/peekdata.html"
+  },
+  "isrunning [imaq]": {
+    "prefix": "isrunning",
+    "body": "${1:out} = isrunning(${1:obj})",
+    "description": "isrunning [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/isrunning.html"
+  },
+  "stoppreview [imaq]": {
+    "prefix": "stoppreview",
+    "body": "stoppreview(${1:obj})",
+    "description": "stoppreview [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/stoppreview.html"
+  },
+  "triggerconfig [imaq]": {
+    "prefix": "triggerconfig",
+    "body": "${1:out} = triggerconfig(${1:obj}, ${2:optional_type}, ${3:optional_condition})",
+    "description": "triggerconfig [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/triggerconfig.html"
+  },
+  "imaqhwinfo [imaq]": {
+    "prefix": "imaqhwinfo",
+    "body": "${1:out} = imaqhwinfo(${1:optional_obj}, ${2:optional_field})",
+    "description": "imaqhwinfo [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/imaqhwinfo.html"
+  },
+  "wait [imaq]": {
+    "prefix": "wait",
+    "body": "wait(${1:obj}, ${2:optional_waittime}, ${3:optional_state})",
+    "description": "wait [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/ref/wait_session.html"
+  },
+  "preview [imaq]": {
+    "prefix": "preview",
+    "body": "${1:out} = preview(${1:obj}, ${2:optional_himage})",
+    "description": "preview [imaq]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/imaq/preview.html"
+  }
+}

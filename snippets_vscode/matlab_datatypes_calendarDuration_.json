@@ -1,0 +1,314 @@
+{
+  "calmonths [matlab]": {
+    "prefix": "calmonths",
+    "body": "${1:M} = calmonths(${1:X})",
+    "description": "calmonths [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.calmonths.html"
+  },
+  "ismatrix [matlab]": {
+    "prefix": "ismatrix",
+    "body": "${1:TF} = ismatrix(${1:V})",
+    "description": "ismatrix [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ismatrix.html"
+  },
+  "length [matlab]": {
+    "prefix": "length",
+    "body": "${1:L} = length(${1:X})",
+    "description": "length [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/mps_dev_test/length.html"
+  },
+  "movmedian [matlab]": {
+    "prefix": "movmedian",
+    "body": "${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movmedian [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movmedian.html"
+  },
+  "calendarDuration [matlab]": {
+    "prefix": "calendarDuration",
+    "body": "${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})",
+    "description": "calendarDuration [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.html"
+  },
+  "split [matlab]": {
+    "prefix": "split",
+    "body": "${1:C} = split(${1:t}, ${2:units})",
+    "description": "split [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.split.html"
+  },
+  "issortedrows [matlab]": {
+    "prefix": "issortedrows",
+    "body": "${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})",
+    "description": "issortedrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/issortedrows.html"
+  },
+  "calquarters [matlab]": {
+    "prefix": "calquarters",
+    "body": "${1:Q} = calquarters(${1:X})",
+    "description": "calquarters [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.calquarters.html"
+  },
+  "time [matlab]": {
+    "prefix": "time",
+    "body": "${1:t} = time(${1:d})",
+    "description": "time [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.time.html"
+  },
+  "isdst [matlab]": {
+    "prefix": "isdst",
+    "body": "${1:tf} = isdst(${1:t})",
+    "description": "isdst [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/datetime.isdst.html"
+  },
+  "isinf [matlab]": {
+    "prefix": "isinf",
+    "body": "${1:TF} = isinf(${1:A})",
+    "description": "isinf [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isinf.html"
+  },
+  "datenum [matlab]": {
+    "prefix": "datenum",
+    "body": "${1:DateNumber} = datenum(${1:t})",
+    "description": "datenum [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/datenum.html"
+  },
+  "plus [matlab]": {
+    "prefix": "plus",
+    "body": "${1:C} = plus(${1:A}, ${2:B})",
+    "description": "plus [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/plus.html"
+  },
+  "movprod [matlab]": {
+    "prefix": "movprod",
+    "body": "${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movprod [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movprod.html"
+  },
+  "char [matlab]": {
+    "prefix": "char",
+    "body": "${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})",
+    "description": "char [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/char.html"
+  },
+  "cat [matlab]": {
+    "prefix": "cat",
+    "body": "${1:C} = cat(${1:dim}, ${2:A}, ${3:B})",
+    "description": "cat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geopoint.cat.html"
+  },
+  "movmean [matlab]": {
+    "prefix": "movmean",
+    "body": "${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movmean [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movmean.html"
+  },
+  "caldays [matlab]": {
+    "prefix": "caldays",
+    "body": "${1:D} = caldays(${1:X})",
+    "description": "caldays [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.caldays.html"
+  },
+  "ctranspose [matlab]": {
+    "prefix": "ctranspose",
+    "body": "${1:B} = ctranspose(${1:A})",
+    "description": "ctranspose [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/inputoutputmodel.ctranspose.html"
+  },
+  "vertcat [matlab]": {
+    "prefix": "vertcat",
+    "body": "${1:C} = vertcat(${1:A})",
+    "description": "vertcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html"
+  },
+  "calyears [matlab]": {
+    "prefix": "calyears",
+    "body": "${1:Y} = calyears(${1:X})",
+    "description": "calyears [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.calyears.html"
+  },
+  "times [matlab]": {
+    "prefix": "times",
+    "body": "${1:C} = times(${1:A}, ${2:B})",
+    "description": "times [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/times.html"
+  },
+  "isrow [matlab]": {
+    "prefix": "isrow",
+    "body": "${1:TF} = isrow(${1:V})",
+    "description": "isrow [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isrow.html"
+  },
+  "movstd [matlab]": {
+    "prefix": "movstd",
+    "body": "${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})",
+    "description": "movstd [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movstd.html"
+  },
+  "isempty [matlab]": {
+    "prefix": "isempty",
+    "body": "${1:TF} = isempty(${1:A})",
+    "description": "isempty [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html"
+  },
+  "cellstr [matlab]": {
+    "prefix": "cellstr",
+    "body": "${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})",
+    "description": "cellstr [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cellstr.html"
+  },
+  "isvector [matlab]": {
+    "prefix": "isvector",
+    "body": "${1:TF} = isvector(${1:A})",
+    "description": "isvector [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isvector.html"
+  },
+  "calweeks [matlab]": {
+    "prefix": "calweeks",
+    "body": "${1:W} = calweeks(${1:X})",
+    "description": "calweeks [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/calendarduration.calweeks.html"
+  },
+  "minus [matlab]": {
+    "prefix": "minus",
+    "body": "${1:C} = minus(${1:A}, ${2:B})",
+    "description": "minus [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/minus.html"
+  },
+  "isfinite [matlab]": {
+    "prefix": "isfinite",
+    "body": "${1:TF} = isfinite(${1:A})",
+    "description": "isfinite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isfinite.html"
+  },
+  "horzcat [matlab]": {
+    "prefix": "horzcat",
+    "body": "${1:C} = horzcat(${1:A})",
+    "description": "horzcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html"
+  },
+  "isscalar [matlab]": {
+    "prefix": "isscalar",
+    "body": "${1:TF} = isscalar(${1:A})",
+    "description": "isscalar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isscalar.html"
+  },
+  "ndims [matlab]": {
+    "prefix": "ndims",
+    "body": "${1:N} = ndims(${1:X})",
+    "description": "ndims [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ndims.html"
+  },
+  "movmax [matlab]": {
+    "prefix": "movmax",
+    "body": "${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movmax [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movmax.html"
+  },
+  "uminus [matlab]": {
+    "prefix": "uminus",
+    "body": "${1:C} = uminus(${1:A})",
+    "description": "uminus [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/uminus.html"
+  },
+  "string [matlab]": {
+    "prefix": "string",
+    "body": "${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})",
+    "description": "string [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.html"
+  },
+  "isequaln [matlab]": {
+    "prefix": "isequaln",
+    "body": "${1:tf} = isequaln(${1:A}, ${2:B})",
+    "description": "isequaln [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isequaln.html"
+  },
+  "transpose [matlab]": {
+    "prefix": "transpose",
+    "body": "${1:B} = transpose(${1:A})",
+    "description": "transpose [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/transpose.html"
+  },
+  "numel [matlab]": {
+    "prefix": "numel",
+    "body": "${1:n} = numel(${1:A})",
+    "description": "numel [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/numel.html"
+  },
+  "movsum [matlab]": {
+    "prefix": "movsum",
+    "body": "${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movsum [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movsum.html"
+  },
+  "mtimes [matlab]": {
+    "prefix": "mtimes",
+    "body": "${1:C} = mtimes(${1:A}, ${2:B})",
+    "description": "mtimes [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/mtimes.html"
+  },
+  "iscalendarduration [matlab]": {
+    "prefix": "iscalendarduration",
+    "body": "${1:tf} = iscalendarduration(${1:d})",
+    "description": "iscalendarduration [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/iscalendarduration.html"
+  },
+  "movmad [matlab]": {
+    "prefix": "movmad",
+    "body": "${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movmad [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movmad.html"
+  },
+  "hms [matlab]": {
+    "prefix": "hms",
+    "body": "[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})",
+    "description": "hms [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/datetime.hms.html"
+  },
+  "iscolumn [matlab]": {
+    "prefix": "iscolumn",
+    "body": "${1:TF} = iscolumn(${1:V})",
+    "description": "iscolumn [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/iscolumn.html"
+  },
+  "movmin [matlab]": {
+    "prefix": "movmin",
+    "body": "${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})",
+    "description": "movmin [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movmin.html"
+  },
+  "isequal [matlab]": {
+    "prefix": "isequal",
+    "body": "${1:tf} = isequal(${1:A}, ${2:B})",
+    "description": "isequal [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/isequal.html"
+  },
+  "movvar [matlab]": {
+    "prefix": "movvar",
+    "body": "${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})",
+    "description": "movvar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movvar.html"
+  },
+  "issorted [matlab]": {
+    "prefix": "issorted",
+    "body": "${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})",
+    "description": "issorted [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/issorted.html"
+  },
+  "size [matlab]": {
+    "prefix": "size",
+    "body": "${1:szdim} = size(${1:A}, ${2:dim})",
+    "description": "size [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.size.html"
+  },
+  "reshape [matlab]": {
+    "prefix": "reshape",
+    "body": "${1:B} = reshape(${1:A}, ${2:sz})",
+    "description": "reshape [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/reshape.html"
+  },
+  "permute [matlab]": {
+    "prefix": "permute",
+    "body": "${1:B} = permute(${1:A}, ${2:order})",
+    "description": "permute [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/permute.html"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "clibgen.ConstructorDefinition.validate [matlab]": {
+    "prefix": "clibgen.ConstructorDefinition.validate",
+    "body": "clibgen.ConstructorDefinition.validate(${1:ConstructorDefinition})",
+    "description": "clibgen.ConstructorDefinition.validate [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.ConstructorDefinition.validate.html"
+  },
+  "clibgen.LibraryDefinition.addProperty [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.addProperty",
+    "body": "${1:PropertyDefinition} = clibgen.LibraryDefinition.addProperty(${1:ClassDefinition}, ${2:CPPName}, ${3:MATLABType}, 'Description', ${4:value})",
+    "description": "clibgen.LibraryDefinition.addProperty [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.addProperty.html"
+  },
+  "clibgen.buildInterface [matlab]": {
+    "prefix": "clibgen.buildInterface",
+    "body": "clibgen.buildInterface(${1:HeaderFiles}, 'Verbose', ${2:value}, 'Libraries', ${3:value}, 'IncludePath', ${4:value}, 'OutputFolder', ${5:value}, 'PackageName', ${6:value}, 'TreatObjectPointerAsScalar', ${7:value}, 'TreatConstCharPointerAsCString', ${8:value}, 'DefinedMacros', ${9:value}, 'UndefinedMacros', ${10:value})",
+    "description": "clibgen.buildInterface [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.buildinterface.html"
+  },
+  "clibgen.LibraryDefinition.addMethod [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.addMethod",
+    "body": "${1:MethodDefinition} = clibgen.LibraryDefinition.addMethod(${1:ClassDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})",
+    "description": "clibgen.LibraryDefinition.addMethod [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.addMethod.html"
+  },
+  "clibgen.generateLibraryDefinition [matlab]": {
+    "prefix": "clibgen.generateLibraryDefinition",
+    "body": "clibgen.generateLibraryDefinition(${1:HeaderFiles}, 'Verbose', ${2:value}, 'Libraries', ${3:value}, 'IncludePath', ${4:value}, 'OutputFolder', ${5:value}, 'PackageName', ${6:value}, 'TreatObjectPointerAsScalar', ${7:value}, 'TreatConstCharPointerAsCString', ${8:value}, 'DefinedMacros', ${9:value}, 'UndefinedMacros', ${10:value})",
+    "description": "clibgen.generateLibraryDefinition [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.generatelibrarydefinition.html"
+  },
+  "clibgen.ConstructorDefinition.defineArgument [matlab]": {
+    "prefix": "clibgen.ConstructorDefinition.defineArgument",
+    "body": "clibgen.ConstructorDefinition.defineArgument(${1:ConstructorDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})",
+    "description": "clibgen.ConstructorDefinition.defineArgument [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.ConstructorDefinition.defineArgument.html"
+  },
+  "clibgen.LibraryDefinition.build [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.build",
+    "body": "clibgen.LibraryDefinition.build(${1:LibraryDefinition})",
+    "description": "clibgen.LibraryDefinition.build [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.build.html"
+  },
+  "clibgen.LibraryDefinition.addFunction [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.addFunction",
+    "body": "${1:FunctionDefinition} = clibgen.LibraryDefinition.addFunction(${1:LibraryDefinition}, ${2:CPPSignature}, 'MATLABName', ${3:value}, 'Description', ${4:value})",
+    "description": "clibgen.LibraryDefinition.addFunction [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.addFunction.html"
+  },
+  "clibgen.LibraryDefinition [matlab]": {
+    "prefix": "clibgen.LibraryDefinition",
+    "body": "${1:LibraryDefinition} = clibgen.LibraryDefinition(${1:DataFile})",
+    "description": "clibgen.LibraryDefinition [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.html"
+  },
+  "clibgen.LibraryDefinition.addConstructor [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.addConstructor",
+    "body": "${1:ConstructorDefinition} = clibgen.LibraryDefinition.addConstructor(${1:ClassDefinition}, ${2:CPPName}, 'Description', ${3:value})",
+    "description": "clibgen.LibraryDefinition.addConstructor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.addConstructor.html"
+  },
+  "clibgen.MethodDefinition.defineArgument [matlab]": {
+    "prefix": "clibgen.MethodDefinition.defineArgument",
+    "body": "clibgen.MethodDefinition.defineArgument(${1:MethodDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})",
+    "description": "clibgen.MethodDefinition.defineArgument [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.MethodDefinition.defineArgument.html"
+  },
+  "clibgen.MethodDefinition.validate [matlab]": {
+    "prefix": "clibgen.MethodDefinition.validate",
+    "body": "clibgen.MethodDefinition.validate(${1:MethodDefinition})",
+    "description": "clibgen.MethodDefinition.validate [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.MethodDefinition.validate.html"
+  },
+  "clibgen.FunctionDefinition.defineOutput [matlab]": {
+    "prefix": "clibgen.FunctionDefinition.defineOutput",
+    "body": "clibgen.FunctionDefinition.defineOutput(${1:FunctionDefinition}, ${2:MATLABName}, ${3:MATLABType}, ${4:Shape})",
+    "description": "clibgen.FunctionDefinition.defineOutput [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.FunctionDefinition.defineOutput.html"
+  },
+  "clibgen.LibraryDefinition.addEnumeration [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.addEnumeration",
+    "body": "${1:EnumDefinition} = clibgen.LibraryDefinition.addEnumeration(${1:LibraryDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Enumerants}, 'MATLABName', ${5:value}, 'Description', ${6:value})",
+    "description": "clibgen.LibraryDefinition.addEnumeration [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.addEnumeration.html"
+  },
+  "clibgen.FunctionDefinition.defineArgument [matlab]": {
+    "prefix": "clibgen.FunctionDefinition.defineArgument",
+    "body": "clibgen.FunctionDefinition.defineArgument(${1:FunctionDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})",
+    "description": "clibgen.FunctionDefinition.defineArgument [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.FunctionDefinition.defineArgument.html"
+  },
+  "clibgen.LibraryDefinition.validate [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.validate",
+    "body": "clibgen.LibraryDefinition.validate(${1:LibraryDefinition})",
+    "description": "clibgen.LibraryDefinition.validate [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.validate.html"
+  },
+  "clibgen.FunctionDefinition.validate [matlab]": {
+    "prefix": "clibgen.FunctionDefinition.validate",
+    "body": "clibgen.FunctionDefinition.validate(${1:FunctionDefinition})",
+    "description": "clibgen.FunctionDefinition.validate [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.FunctionDefinition.validate.html"
+  },
+  "clibgen.MethodDefinition.defineOutput [matlab]": {
+    "prefix": "clibgen.MethodDefinition.defineOutput",
+    "body": "clibgen.MethodDefinition.defineOutput(${1:MethodDefinition}, ${2:MATLABName}, ${3:MATLABType}, ${4:Shape})",
+    "description": "clibgen.MethodDefinition.defineOutput [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.MethodDefinition.defineOutput.html"
+  },
+  "clibgen.LibraryDefinition.addClass [matlab]": {
+    "prefix": "clibgen.LibraryDefinition.addClass",
+    "body": "${1:ClassDefinition} = clibgen.LibraryDefinition.addClass(${1:LibraryDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})",
+    "description": "clibgen.LibraryDefinition.addClass [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clibgen.LibraryDefinition.addClass.html"
+  }
+}

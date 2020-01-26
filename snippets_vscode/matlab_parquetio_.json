@@ -1,0 +1,20 @@
+{
+  "parquetread [matlab]": {
+    "prefix": "parquetread",
+    "body": "${1:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})",
+    "description": "parquetread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/parquetread.html"
+  },
+  "parquetwrite [matlab]": {
+    "prefix": "parquetwrite",
+    "body": "parquetwrite(${1:filename}, ${2:T}, 'VariableCompression', ${3:value})",
+    "description": "parquetwrite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/parquetwrite.html"
+  },
+  "parquetinfo [matlab]": {
+    "prefix": "parquetinfo",
+    "body": "${1:P} = parquetinfo(${1:filename})",
+    "description": "parquetinfo [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.io.parquet.parquetinfo.html"
+  }
+}

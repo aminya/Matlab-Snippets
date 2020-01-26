@@ -1,0 +1,134 @@
+{
+  "bitget [matlab]": {
+    "prefix": "bitget",
+    "body": "bitget(${1:A}, ${2:bit}, ${3:assumedtype})",
+    "description": "bitget [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitget.html"
+  },
+  "setxor [matlab]": {
+    "prefix": "setxor",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})",
+    "description": "setxor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setxor.html"
+  },
+  "ismember [matlab]": {
+    "prefix": "ismember",
+    "body": "[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})",
+    "description": "ismember [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ismember.html"
+  },
+  "any [matlab]": {
+    "prefix": "any",
+    "body": "any(${1:A}, ${2:optional_dim})",
+    "description": "any [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/any.html"
+  },
+  "vertcat [matlab]": {
+    "prefix": "vertcat",
+    "body": "${1:C} = vertcat(${1:A})",
+    "description": "vertcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html"
+  },
+  "bitset [matlab]": {
+    "prefix": "bitset",
+    "body": "bitset(${1:A}, ${2:bit}, ${3:optional_V}, ${4:assumedtype})",
+    "description": "bitset [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitset.html"
+  },
+  "subsref [matlab]": {
+    "prefix": "subsref",
+    "body": "${1:B} = subsref(${1:A}, ${2:S})",
+    "description": "subsref [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/subsref.html"
+  },
+  "bitand [matlab]": {
+    "prefix": "bitand",
+    "body": "bitand(${1:A}, ${2:B}, ${3:assumedtype})",
+    "description": "bitand [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitand.html"
+  },
+  "intersect [matlab]": {
+    "prefix": "intersect",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})",
+    "description": "intersect [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html"
+  },
+  "idivide [matlab]": {
+    "prefix": "idivide",
+    "body": "idivide(${1:A}, ${2:B}, ${3:opt})",
+    "description": "idivide [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/idivide.html"
+  },
+  "bitor [matlab]": {
+    "prefix": "bitor",
+    "body": "bitor(${1:A}, ${2:B}, ${3:assumedtype})",
+    "description": "bitor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitor.html"
+  },
+  "setdiff [matlab]": {
+    "prefix": "setdiff",
+    "body": "[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})",
+    "description": "setdiff [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setdiff.html"
+  },
+  "subsasgn [matlab]": {
+    "prefix": "subsasgn",
+    "body": "${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})",
+    "description": "subsasgn [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/subsasgn.html"
+  },
+  "unique [matlab]": {
+    "prefix": "unique",
+    "body": "[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})",
+    "description": "unique [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unique.html"
+  },
+  "bitcmp [matlab]": {
+    "prefix": "bitcmp",
+    "body": "bitcmp(${1:A}, ${2:assumedtype})",
+    "description": "bitcmp [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitcmp.html"
+  },
+  "ismembertol [matlab]": {
+    "prefix": "ismembertol",
+    "body": "[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})",
+    "description": "ismembertol [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ismembertol.html"
+  },
+  "union [matlab]": {
+    "prefix": "union",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})",
+    "description": "union [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/polyshape.union.html"
+  },
+  "bitxor [matlab]": {
+    "prefix": "bitxor",
+    "body": "bitxor(${1:A}, ${2:B}, ${3:assumedtype})",
+    "description": "bitxor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitxor.html"
+  },
+  "all [matlab]": {
+    "prefix": "all",
+    "body": "all(${1:A}, ${2:optional_dim})",
+    "description": "all [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/all.html"
+  },
+  "bitshift [matlab]": {
+    "prefix": "bitshift",
+    "body": "bitshift(${1:A}, ${2:k}, ${3:assumedtype})",
+    "description": "bitshift [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bitshift.html"
+  },
+  "uniquetol [matlab]": {
+    "prefix": "uniquetol",
+    "body": "[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})",
+    "description": "uniquetol [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uniquetol.html"
+  },
+  "horzcat [matlab]": {
+    "prefix": "horzcat",
+    "body": "${1:C} = horzcat(${1:A})",
+    "description": "horzcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html"
+  }
+}

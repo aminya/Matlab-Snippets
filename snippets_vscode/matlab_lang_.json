@@ -1,0 +1,140 @@
+{
+  "MException.throwAsCaller [matlab]": {
+    "prefix": "MException.throwAsCaller",
+    "body": "MException.throwAsCaller(${1:exception})",
+    "description": "MException.throwAsCaller [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/MException.throwAsCaller.html"
+  },
+  "MException.rethrow [matlab]": {
+    "prefix": "MException.rethrow",
+    "body": "MException.rethrow(${1:exception})",
+    "description": "MException.rethrow [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/MException.rethrow.html"
+  },
+  "MException.throw [matlab]": {
+    "prefix": "MException.throw",
+    "body": "MException.throw(${1:exception})",
+    "description": "MException.throw [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/MException.throw.html"
+  },
+  "validateattributes [matlab]": {
+    "prefix": "validateattributes",
+    "body": "validateattributes(${1:A}, ${2:classes}, ${3:attributes})",
+    "description": "validateattributes [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/validateattributes.html"
+  },
+  "MException.addCause [matlab]": {
+    "prefix": "MException.addCause",
+    "body": "${1:baseException} = MException.addCause(${1:baseException}, ${2:causeException})",
+    "description": "MException.addCause [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/MException.addCause.html"
+  },
+  "disp [matlab]": {
+    "prefix": "disp",
+    "body": "disp(${1:X})",
+    "description": "disp [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/disp.html"
+  },
+  "assignin [matlab]": {
+    "prefix": "assignin",
+    "body": "assignin(${1:workspace}, ${2:var})",
+    "description": "assignin [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/assignin.html"
+  },
+  "display [matlab]": {
+    "prefix": "display",
+    "body": "display(${1:X})",
+    "description": "display [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/display.html"
+  },
+  "warning [matlab]": {
+    "prefix": "warning",
+    "body": "${1:warnStruct} = warning()",
+    "description": "warning [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/warning.html"
+  },
+  "MException.getReport [matlab]": {
+    "prefix": "MException.getReport",
+    "body": "${1:msgText} = MException.getReport(${1:exception}, ${2:type}, ${3:'hyperlinks'}, ${4:hlink})",
+    "description": "MException.getReport [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/MException.getReport.html"
+  },
+  "mfilename [matlab]": {
+    "prefix": "mfilename",
+    "body": "${1:M} = mfilename(${1:'arg'})",
+    "description": "mfilename [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mfilename.html"
+  },
+  "matlab.lang.correction.ReplaceIdentifierCorrection [matlab]": {
+    "prefix": "matlab.lang.correction.ReplaceIdentifierCorrection",
+    "body": "${1:RIC} = matlab.lang.correction.ReplaceIdentifierCorrection(${1:identifier}, ${2:replacement})",
+    "description": "matlab.lang.correction.ReplaceIdentifierCorrection [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.replaceidentifiercorrection-class.html"
+  },
+  "MException [matlab]": {
+    "prefix": "MException",
+    "body": "${1:ME} = MException(${1:message})",
+    "description": "MException [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mexception.html"
+  },
+  "error [matlab]": {
+    "prefix": "error",
+    "body": "error(${1:msg}, ${2:optional_A})",
+    "description": "error [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/error.html"
+  },
+  "matlab.lang.correction.Correction.error [matlab]": {
+    "prefix": "matlab.lang.correction.Correction.error",
+    "body": "matlab.lang.correction.Correction.error(${1:correction}, ${2:msg}, ${3:optional_A})",
+    "description": "matlab.lang.correction.Correction.error [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.Correction.error.html"
+  },
+  "evalin [matlab]": {
+    "prefix": "evalin",
+    "body": "evalin(${1:workspace})",
+    "description": "evalin [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/evalin.html"
+  },
+  "matlab.lang.correction.AppendArgumentsCorrection [matlab]": {
+    "prefix": "matlab.lang.correction.AppendArgumentsCorrection",
+    "body": "${1:AAC} = matlab.lang.correction.AppendArgumentsCorrection(${1:arguments})",
+    "description": "matlab.lang.correction.AppendArgumentsCorrection [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.appendargumentscorrection-class.html"
+  },
+  "MException.last [matlab]": {
+    "prefix": "MException.last",
+    "body": "MException.last(${1:optional_reset})",
+    "description": "MException.last [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mexception.mexception.last.html"
+  },
+  "message [matlab]": {
+    "prefix": "message",
+    "body": "message(${1:msgid}, ${2:optional_params})",
+    "description": "message [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/message.html"
+  },
+  "run [matlab]": {
+    "prefix": "run",
+    "body": "run(${1:scriptname})",
+    "description": "run [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bowtie2inspectoptions.run.html"
+  },
+  "exist [matlab]": {
+    "prefix": "exist",
+    "body": "exist(${1:name}, ${2:optional_kind})",
+    "description": "exist [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/coder.dictionary.section.exist.html"
+  },
+  "matlab.lang.correction.ConvertToFunctionNotationCorrection [matlab]": {
+    "prefix": "matlab.lang.correction.ConvertToFunctionNotationCorrection",
+    "body": "${1:CFNC} = matlab.lang.correction.ConvertToFunctionNotationCorrection(${1:method})",
+    "description": "matlab.lang.correction.ConvertToFunctionNotationCorrection [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.lang.correction.converttofunctionnotationcorrection-class.html"
+  },
+  "MException.addCorrection [matlab]": {
+    "prefix": "MException.addCorrection",
+    "body": "${1:baseException} = MException.addCorrection(${1:baseException}, ${2:correction})",
+    "description": "MException.addCorrection [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/MException.addCorrection.html"
+  }
+}

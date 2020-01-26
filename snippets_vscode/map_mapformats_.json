@@ -1,0 +1,218 @@
+{
+  "etopo [map]": {
+    "prefix": "etopo",
+    "body": "[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})",
+    "description": "etopo [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/etopo.html"
+  },
+  "makedbfspec [map]": {
+    "prefix": "makedbfspec",
+    "body": "${1:dbfspec} = makedbfspec(${1:S})",
+    "description": "makedbfspec [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/makedbfspec.html"
+  },
+  "globedems [map]": {
+    "prefix": "globedems",
+    "body": "${1:tileNames} = globedems(${1:lat}, ${2:lon})",
+    "description": "globedems [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/globedems.html"
+  },
+  "tbase [map]": {
+    "prefix": "tbase",
+    "body": "[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})",
+    "description": "tbase [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/tbase.html"
+  },
+  "kmlwritepolygon [map]": {
+    "prefix": "kmlwritepolygon",
+    "body": "kmlwritepolygon(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value}, 'Extrude', ${12:value}, 'CutPolygons', ${13:value}, 'PolygonCutMeridian', ${14:value}, 'AltitudeMode', ${15:value}, 'LookAt', ${16:value}, 'Camera', ${17:value})",
+    "description": "kmlwritepolygon [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/kmlwritepolygon.html"
+  },
+  "shapewrite [map]": {
+    "prefix": "shapewrite",
+    "body": "shapewrite(${1:S}, ${2:filename}, 'DbfSpec', ${3:value})",
+    "description": "shapewrite [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/shapewrite.html"
+  },
+  "usgsdems [map]": {
+    "prefix": "usgsdems",
+    "body": "[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})",
+    "description": "usgsdems [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/usgsdems.html"
+  },
+  "gtopo30s [map]": {
+    "prefix": "gtopo30s",
+    "body": "${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})",
+    "description": "gtopo30s [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/gtopo30s.html"
+  },
+  "usgsdem [map]": {
+    "prefix": "usgsdem",
+    "body": "[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})",
+    "description": "usgsdem [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/usgsdem.html"
+  },
+  "avhrrgoode [map]": {
+    "prefix": "avhrrgoode",
+    "body": "[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})",
+    "description": "avhrrgoode [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/avhrrgoode.html"
+  },
+  "gshhs [map]": {
+    "prefix": "gshhs",
+    "body": "${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})",
+    "description": "gshhs [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/gshhs.html"
+  },
+  "vmap0rhead [map]": {
+    "prefix": "vmap0rhead",
+    "body": "${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})",
+    "description": "vmap0rhead [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/vmap0rhead.html"
+  },
+  "geotiffread [map]": {
+    "prefix": "geotiffread",
+    "body": "[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})",
+    "description": "geotiffread [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/geotiffread.html"
+  },
+  "usgs24kdem [map]": {
+    "prefix": "usgs24kdem",
+    "body": "[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})",
+    "description": "usgs24kdem [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/usgs24kdem.html"
+  },
+  "vmap0read [map]": {
+    "prefix": "vmap0read",
+    "body": "[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})",
+    "description": "vmap0read [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/vmap0read.html"
+  },
+  "kmlwritepoint [map]": {
+    "prefix": "kmlwritepoint",
+    "body": "kmlwritepoint(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value}, 'AltitudeMode', ${11:value}, 'LookAt', ${12:value}, 'Camera', ${13:value})",
+    "description": "kmlwritepoint [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/kmlwritepoint.html"
+  },
+  "dted [map]": {
+    "prefix": "dted",
+    "body": "[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})",
+    "description": "dted [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/dted.html"
+  },
+  "dteds [map]": {
+    "prefix": "dteds",
+    "body": "${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})",
+    "description": "dteds [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/dteds.html"
+  },
+  "satbath [map]": {
+    "prefix": "satbath",
+    "body": "[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})",
+    "description": "satbath [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/satbath.html"
+  },
+  "geotiffinfo [map]": {
+    "prefix": "geotiffinfo",
+    "body": "${1:info} = geotiffinfo(${1:filename})",
+    "description": "geotiffinfo [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/geotiffinfo.html"
+  },
+  "vmap0data [map]": {
+    "prefix": "vmap0data",
+    "body": "${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})",
+    "description": "vmap0data [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/vmap0data.html"
+  },
+  "globedem [map]": {
+    "prefix": "globedem",
+    "body": "[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})",
+    "description": "globedem [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/globedem.html"
+  },
+  "sdtsinfo [map]": {
+    "prefix": "sdtsinfo",
+    "body": "${1:info} = sdtsinfo(${1:filename})",
+    "description": "sdtsinfo [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/sdtsinfo.html"
+  },
+  "shaperead [map]": {
+    "prefix": "shaperead",
+    "body": "[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})",
+    "description": "shaperead [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/shaperead.html"
+  },
+  "avhrrlambert [map]": {
+    "prefix": "avhrrlambert",
+    "body": "[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})",
+    "description": "avhrrlambert [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/avhrrlambert.html"
+  },
+  "kmlwrite [map]": {
+    "prefix": "kmlwrite",
+    "body": "kmlwrite(${1:filename}, ${2:address}, 'Name', ${3:value}, 'Description', ${4:value}, 'Icon', ${5:value}, 'IconScale', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'FaceColor', ${10:value}, 'FaceAlpha', ${11:value}, 'EdgeColor', ${12:value}, 'EdgeAlpha', ${13:value}, 'Extrude', ${14:value}, 'CutPolygons', ${15:value}, 'PolygonCutMeridian', ${16:value}, 'AltitudeMode', ${17:value}, 'LookAt', ${18:value}, 'Camera', ${19:value})",
+    "description": "kmlwrite [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/kmlwrite.html"
+  },
+  "worldfileread [map]": {
+    "prefix": "worldfileread",
+    "body": "${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})",
+    "description": "worldfileread [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/worldfileread.html"
+  },
+  "getworldfilename [map]": {
+    "prefix": "getworldfilename",
+    "body": "${1:worldfilename} = getworldfilename(${1:imagefilename})",
+    "description": "getworldfilename [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/getworldfilename.html"
+  },
+  "worldfilewrite [map]": {
+    "prefix": "worldfilewrite",
+    "body": "worldfilewrite(${1:R}, ${2:worldFileName})",
+    "description": "worldfilewrite [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/worldfilewrite.html"
+  },
+  "makeattribspec [map]": {
+    "prefix": "makeattribspec",
+    "body": "${1:attribspec} = makeattribspec(${1:S})",
+    "description": "makeattribspec [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/makeattribspec.html"
+  },
+  "gtopo30 [map]": {
+    "prefix": "gtopo30",
+    "body": "[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})",
+    "description": "gtopo30 [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/gtopo30.html"
+  },
+  "shapeinfo [map]": {
+    "prefix": "shapeinfo",
+    "body": "${1:info} = shapeinfo(${1:filename})",
+    "description": "shapeinfo [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/shapeinfo.html"
+  },
+  "sdtsdemread [map]": {
+    "prefix": "sdtsdemread",
+    "body": "[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})",
+    "description": "sdtsdemread [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/sdtsdemread.html"
+  },
+  "kmlwriteline [map]": {
+    "prefix": "kmlwriteline",
+    "body": "kmlwriteline(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'AltitudeMode', ${10:value}, 'LookAt', ${11:value}, 'Camera', ${12:value})",
+    "description": "kmlwriteline [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/kmlwriteline.html"
+  },
+  "geotiffwrite [map]": {
+    "prefix": "geotiffwrite",
+    "body": "geotiffwrite(${1:filename}, ${2:X}, ${3:cmap}, ${4:R}, 'CoordRefSysCode', ${5:value}, 'GeoKeyDirectoryTag', ${6:value}, 'RPCCoefficientTag', ${7:value}, 'TiffType', ${8:value}, 'TiffTags', ${9:value})",
+    "description": "geotiffwrite [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/geotiffwrite.html"
+  },
+  "arcgridread [map]": {
+    "prefix": "arcgridread",
+    "body": "[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})",
+    "description": "arcgridread [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/arcgridread.html"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "target.get [targetdefinition]": {
+    "prefix": "target.get",
+    "body": "${1:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})",
+    "description": "target.get [targetdefinition]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/targetdefinition/ref/target.get.html"
+  },
+  "target.add [targetdefinition]": {
+    "prefix": "target.add",
+    "body": "target.add(${1:targetObjectInstances}, 'UserInstall', ${2:value})",
+    "description": "target.add [targetdefinition]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/targetdefinition/ref/target.add.html"
+  },
+  "target.export [targetdefinition]": {
+    "prefix": "target.export",
+    "body": "target.export(${1:targetObjectInstances}, 'FileName', ${2:value}, 'Overwrite', ${3:value})",
+    "description": "target.export [targetdefinition]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/targetdefinition/ref/target.export.html"
+  },
+  "target.create [targetdefinition]": {
+    "prefix": "target.create",
+    "body": "${1:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})",
+    "description": "target.create [targetdefinition]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/targetdefinition/ref/target.create.html"
+  },
+  "target.upgrade [targetdefinition]": {
+    "prefix": "target.upgrade",
+    "body": "target.upgrade(${1:upgrader}, 'ExportToMATLABFunction', ${2:value}, 'ExportFileName', ${3:value}, 'Overwrite', ${4:value})",
+    "description": "target.upgrade [targetdefinition]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/targetdefinition/ref/target.upgrade.html"
+  }
+}

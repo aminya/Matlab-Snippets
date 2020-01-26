@@ -1,0 +1,8 @@
+{
+  "edit [matlab]": {
+    "prefix": "edit",
+    "body": "edit(${1:optional_file})",
+    "description": "edit [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/edit.html"
+  }
+}

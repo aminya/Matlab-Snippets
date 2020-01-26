@@ -1,0 +1,68 @@
+{
+  "rem [matlab]": {
+    "prefix": "rem",
+    "body": "${1:r} = rem(${1:a}, ${2:b})",
+    "description": "rem [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/rem.html"
+  },
+  "ceil [matlab]": {
+    "prefix": "ceil",
+    "body": "${1:Y} = ceil(${1:X})",
+    "description": "ceil [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ceil.html"
+  },
+  "fix [matlab]": {
+    "prefix": "fix",
+    "body": "${1:Y} = fix(${1:X})",
+    "description": "fix [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/fix.html"
+  },
+  "real [matlab]": {
+    "prefix": "real",
+    "body": "${1:X} = real(${1:Z})",
+    "description": "real [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/real.html"
+  },
+  "mod [matlab]": {
+    "prefix": "mod",
+    "body": "${1:b} = mod(${1:a}, ${2:m})",
+    "description": "mod [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mod.html"
+  },
+  "round [matlab]": {
+    "prefix": "round",
+    "body": "${1:Y} = round(${1:X}, ${2:N}, ${3:type})",
+    "description": "round [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/round.html"
+  },
+  "conj [matlab]": {
+    "prefix": "conj",
+    "body": "${1:ZC} = conj(${1:Z})",
+    "description": "conj [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/conj.html"
+  },
+  "abs [matlab]": {
+    "prefix": "abs",
+    "body": "${1:Y} = abs(${1:X})",
+    "description": "abs [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/abs.html"
+  },
+  "floor [matlab]": {
+    "prefix": "floor",
+    "body": "${1:Y} = floor(${1:X})",
+    "description": "floor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/floor.html"
+  },
+  "sign [matlab]": {
+    "prefix": "sign",
+    "body": "${1:y} = sign(${1:x})",
+    "description": "sign [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/sign.html"
+  },
+  "imag [matlab]": {
+    "prefix": "imag",
+    "body": "${1:Y} = imag(${1:Z})",
+    "description": "imag [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/imag.html"
+  }
+}

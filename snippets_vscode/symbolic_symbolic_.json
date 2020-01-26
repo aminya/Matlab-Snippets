@@ -1,0 +1,326 @@
+{
+  "symunit [symbolic]": {
+    "prefix": "symunit",
+    "body": "${1:unit} = symunit(${1:optional_unit})",
+    "description": "symunit [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/symunit.html"
+  },
+  "symReadSSCVariables [symbolic]": {
+    "prefix": "symReadSSCVariables",
+    "body": "[${1:names}, ${2:values}, ${3:units}] = symReadSSCVariables(${1:componentName}, 'ReturnFunctions', ${2:value})",
+    "description": "symReadSSCVariables [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/symreadsscvariables.html"
+  },
+  "simplify [symbolic]": {
+    "prefix": "simplify",
+    "body": "${1:expr} = simplify(${1:S}, 'Criterion', ${2:value}, 'IgnoreAnalyticConstraints', ${3:value}, 'Seconds', ${4:value}, 'Steps', ${5:value}, 'All', ${6:value})",
+    "description": "simplify [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/polyshape.simplify.html"
+  },
+  "sympref [symbolic]": {
+    "prefix": "sympref",
+    "body": "sympref('FloatingPointOutput', ${1:value})",
+    "description": "sympref [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sympref.html"
+  },
+  "isSymType [symbolic]": {
+    "prefix": "isSymType",
+    "body": "${1:result} = isSymType(${1:ex}, ${2:t})",
+    "description": "isSymType [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.issymtype.html"
+  },
+  "acosh [symbolic]": {
+    "prefix": "acosh",
+    "body": "${1:Y} = acosh(${1:X})",
+    "description": "acosh [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/acosh.html"
+  },
+  "solve [symbolic]": {
+    "prefix": "solve",
+    "body": "[${1:y1}, ${2:y2}] = solve(${1:eqn}, ${2:var}, 'ReturnConditions', ${3:value}, 'IgnoreAnalyticConstraints', ${4:value}, 'IgnoreProperties', ${5:value}, 'MaxDegree', ${6:value}, 'PrincipalValue', ${7:value}, 'Real', ${8:value})",
+    "description": "solve [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ug/optim.problemdef.optimizationproblem.solve.html"
+  },
+  "symWriteSSC [symbolic]": {
+    "prefix": "symWriteSSC",
+    "body": "[${1:names}, ${2:values}, ${3:units}] = symWriteSSC(${1:newComponentName}, ${2:templateComponentName}, ${3:eqns}, 'H1Header', ${4:value}, 'HelpText', ${5:value})",
+    "description": "symWriteSSC [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/symwritessc.html"
+  },
+  "jacobiCN [symbolic]": {
+    "prefix": "jacobiCN",
+    "body": "${1:result} = jacobiCN(${1:u}, ${2:m})",
+    "description": "jacobiCN [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobicn.html"
+  },
+  "allMuPADNoteBooks [symbolic]": {
+    "prefix": "allMuPADNoteBooks",
+    "body": "${1:L} = allMuPADNoteBooks()",
+    "description": "allMuPADNoteBooks [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/allMuPADNoteBooks.html"
+  },
+  "jacobiZeta [symbolic]": {
+    "prefix": "jacobiZeta",
+    "body": "${1:result} = jacobiZeta(${1:u}, ${2:m})",
+    "description": "jacobiZeta [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobizeta.html"
+  },
+  "odeToVectorField [symbolic]": {
+    "prefix": "odeToVectorField",
+    "body": "[${1:V}, ${2:Y}] = odeToVectorField(${1:eqn})",
+    "description": "odeToVectorField [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/odetovectorfield.html"
+  },
+  "dsolve [symbolic]": {
+    "prefix": "dsolve",
+    "body": "${1:S} = dsolve(${1:eqns}, ${2:optional_conds}, 'IgnoreAnalyticConstraints', ${3:value}, 'MaxDegree', ${4:value})",
+    "description": "dsolve [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/dsolve.html"
+  },
+  "symReadSSCParameters [symbolic]": {
+    "prefix": "symReadSSCParameters",
+    "body": "[${1:names}, ${2:values}, ${3:units}] = symReadSSCParameters(${1:componentName})",
+    "description": "symReadSSCParameters [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/symreadsscparameters.html"
+  },
+  "symType [symbolic]": {
+    "prefix": "symType",
+    "body": "${1:t} = symType(${1:ex})",
+    "description": "symType [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.symtype.html"
+  },
+  "jacobiDS [symbolic]": {
+    "prefix": "jacobiDS",
+    "body": "${1:result} = jacobiDS(${1:u}, ${2:m})",
+    "description": "jacobiDS [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobids.html"
+  },
+  "factor [symbolic]": {
+    "prefix": "factor",
+    "body": "${1:expr} = factor(${1:S}, ${2:optional_Vars}, 'FactorMode', ${3:value})",
+    "description": "factor [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/factor.html"
+  },
+  "digits [symbolic]": {
+    "prefix": "digits",
+    "body": "${1:d1} = digits(${1:optional_d})",
+    "description": "digits [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/digits.html"
+  },
+  "ifourier [symbolic]": {
+    "prefix": "ifourier",
+    "body": "${1:result} = ifourier(${1:F}, ${2:w}, ${3:optional_x})",
+    "description": "ifourier [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ifourier.html"
+  },
+  "simplifyFraction [symbolic]": {
+    "prefix": "simplifyFraction",
+    "body": "${1:expr} = simplifyFraction(${1:expr}, 'Expand', ${2:value})",
+    "description": "simplifyFraction [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/simplifyfraction.html"
+  },
+  "jacobiCS [symbolic]": {
+    "prefix": "jacobiCS",
+    "body": "${1:result} = jacobiCS(${1:u}, ${2:m})",
+    "description": "jacobiCS [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobics.html"
+  },
+  "jacobiSN [symbolic]": {
+    "prefix": "jacobiSN",
+    "body": "${1:result} = jacobiSN(${1:u}, ${2:m})",
+    "description": "jacobiSN [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobisn.html"
+  },
+  "jacobiDC [symbolic]": {
+    "prefix": "jacobiDC",
+    "body": "${1:result} = jacobiDC(${1:u}, ${2:m})",
+    "description": "jacobiDC [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobidc.html"
+  },
+  "chol [symbolic]": {
+    "prefix": "chol",
+    "body": "[${1:R}, ${2:p}, ${3:s}] = chol(${1:A}, ${2:optional_flag})",
+    "description": "chol [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/chol.html"
+  },
+  "harmonic [symbolic]": {
+    "prefix": "harmonic",
+    "body": "${1:result} = harmonic(${1:x})",
+    "description": "harmonic [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/harmonic.html"
+  },
+  "symFunType [symbolic]": {
+    "prefix": "symFunType",
+    "body": "${1:t} = symFunType(${1:ex})",
+    "description": "symFunType [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.symfuntype.html"
+  },
+  "unitInfo [symbolic]": {
+    "prefix": "unitInfo",
+    "body": "${1:unitsOrDimensions} = unitInfo(${1:optional_unit})",
+    "description": "unitInfo [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/unitinfo.html"
+  },
+  "jacobiAM [symbolic]": {
+    "prefix": "jacobiAM",
+    "body": "${1:result} = jacobiAM(${1:u}, ${2:m})",
+    "description": "jacobiAM [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobiam.html"
+  },
+  "findSymType [symbolic]": {
+    "prefix": "findSymType",
+    "body": "${1:result} = findSymType(${1:ex}, ${2:t})",
+    "description": "findSymType [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.findsymtype.html"
+  },
+  "jacobiNC [symbolic]": {
+    "prefix": "jacobiNC",
+    "body": "${1:result} = jacobiNC(${1:u}, ${2:m})",
+    "description": "jacobiNC [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobinc.html"
+  },
+  "hasSymType [symbolic]": {
+    "prefix": "hasSymType",
+    "body": "${1:result} = hasSymType(${1:ex}, ${2:t})",
+    "description": "hasSymType [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.hassymtype.html"
+  },
+  "bernstein [symbolic]": {
+    "prefix": "bernstein",
+    "body": "${1:b} = bernstein(${1:g}, ${2:var}, ${3:n}, ${4:t})",
+    "description": "bernstein [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/bernstein.html"
+  },
+  "jacobiNS [symbolic]": {
+    "prefix": "jacobiNS",
+    "body": "${1:result} = jacobiNS(${1:u}, ${2:m})",
+    "description": "jacobiNS [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobins.html"
+  },
+  "mathml [symbolic]": {
+    "prefix": "mathml",
+    "body": "${1:code} = mathml(${1:expr}, 'DisplayInline', ${2:value}, 'Tooltips', ${3:value})",
+    "description": "mathml [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.mathml.html"
+  },
+  "catalan [symbolic]": {
+    "prefix": "catalan",
+    "body": "${1:catalan} = catalan()",
+    "description": "catalan [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/catalan.html"
+  },
+  "eulergamma [symbolic]": {
+    "prefix": "eulergamma",
+    "body": "${1:eulergamma} = eulergamma()",
+    "description": "eulergamma [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/eulergamma.html"
+  },
+  "rewrite [symbolic]": {
+    "prefix": "rewrite",
+    "body": "${1:expr} = rewrite(${1:expr}, ${2:target})",
+    "description": "rewrite [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/rewrite.html"
+  },
+  "unitConvert [symbolic]": {
+    "prefix": "unitConvert",
+    "body": "${1:expr} = unitConvert(${1:expr}, ${2:target})",
+    "description": "unitConvert [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/unitconvert.html"
+  },
+  "jacobiND [symbolic]": {
+    "prefix": "jacobiND",
+    "body": "${1:result} = jacobiND(${1:u}, ${2:m})",
+    "description": "jacobiND [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobind.html"
+  },
+  "assumptions [symbolic]": {
+    "prefix": "assumptions",
+    "body": "${1:result} = assumptions()",
+    "description": "assumptions [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/assumptions.html"
+  },
+  "cell2sym [symbolic]": {
+    "prefix": "cell2sym",
+    "body": "${1:S} = cell2sym(${1:C}, ${2:optional_flag})",
+    "description": "cell2sym [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/cell2sym.html"
+  },
+  "convertMuPADNotebook [symbolic]": {
+    "prefix": "convertMuPADNotebook",
+    "body": "convertMuPADNotebook(${1:MuPADfile}, ${2:MATLABLiveScript})",
+    "description": "convertMuPADNotebook [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/convertmupadnotebook.html"
+  },
+  "expand [symbolic]": {
+    "prefix": "expand",
+    "body": "${1:expr} = expand(${1:S}, 'ArithmeticOnly', ${2:value}, 'IgnoreAnalyticConstraints', ${3:value})",
+    "description": "expand [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/matlab.ui.container.tree.expand.html"
+  },
+  "heaviside [symbolic]": {
+    "prefix": "heaviside",
+    "body": "${1:result} = heaviside(${1:n})",
+    "description": "heaviside [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/heaviside.html"
+  },
+  "bernsteinMatrix [symbolic]": {
+    "prefix": "bernsteinMatrix",
+    "body": "${1:B} = bernsteinMatrix(${1:n}, ${2:t})",
+    "description": "bernsteinMatrix [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/bernsteinmatrix.html"
+  },
+  "decic [symbolic]": {
+    "prefix": "decic",
+    "body": "[${1:y}, ${2:yp0}] = decic(${1:eqs}, ${2:vars}, ${3:constr}, ${4:t0}, ${5:y0_est}, ${6:fixedVars}, ${7:yp0_est}, ${8:optional_options})",
+    "description": "decic [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/decic.html"
+  },
+  "mapSymType [symbolic]": {
+    "prefix": "mapSymType",
+    "body": "${1:result} = mapSymType(${1:ex}, ${2:t}, ${3:fun})",
+    "description": "mapSymType [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/sym.mapsymtype.html"
+  },
+  "jacobiSD [symbolic]": {
+    "prefix": "jacobiSD",
+    "body": "${1:result} = jacobiSD(${1:u}, ${2:m})",
+    "description": "jacobiSD [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobisd.html"
+  },
+  "isAlways [symbolic]": {
+    "prefix": "isAlways",
+    "body": "${1:expr} = isAlways(${1:cond}, 'Unknown', ${2:value})",
+    "description": "isAlways [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/isalways.html"
+  },
+  "partfrac [symbolic]": {
+    "prefix": "partfrac",
+    "body": "${1:expr} = partfrac(${1:expr}, ${2:optional_expr}, 'FactorMode', ${3:value})",
+    "description": "partfrac [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/partfrac.html"
+  },
+  "unitConversionFactor [symbolic]": {
+    "prefix": "unitConversionFactor",
+    "body": "${1:C} = unitConversionFactor(${1:unit1}, ${2:unit2}, 'Force', ${3:value})",
+    "description": "unitConversionFactor [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/unitconversionfactor.html"
+  },
+  "combine [symbolic]": {
+    "prefix": "combine",
+    "body": "${1:expr} = combine(${1:S}, ${2:optional_T}, 'IgnoreAnalyticConstraints', ${3:value})",
+    "description": "combine [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/ref/bioma.data.miame.combine.html"
+  },
+  "jacobiSC [symbolic]": {
+    "prefix": "jacobiSC",
+    "body": "${1:result} = jacobiSC(${1:u}, ${2:m})",
+    "description": "jacobiSC [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobisc.html"
+  },
+  "jacobiDN [symbolic]": {
+    "prefix": "jacobiDN",
+    "body": "${1:result} = jacobiDN(${1:u}, ${2:m})",
+    "description": "jacobiDN [symbolic]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/symbolic/jacobidn.html"
+  }
+}

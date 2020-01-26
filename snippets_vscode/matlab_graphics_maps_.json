@@ -1,0 +1,44 @@
+{
+  "geoscatter [matlab]": {
+    "prefix": "geoscatter",
+    "body": "${1:S} = geoscatter(${1:optional_gx}, ${2:lat}, ${3:lon}, ${4:optional_A}, ${5:optional_C}, ${6:'filled'}, ${7:M}, 'LatitudeData', ${8:value}, 'LongitudeData', ${9:value}, 'LatitudeDataSource', ${10:value}, 'LongitudeDataSource', ${11:value}, ${12:options})",
+    "description": "geoscatter [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geoscatter.html"
+  },
+  "geolimits [matlab]": {
+    "prefix": "geolimits",
+    "body": "[${1:latlim}, ${2:lonlim}] = geolimits(${1:optional_gx}, ${2:optional_mode})",
+    "description": "geolimits [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geolimits.html"
+  },
+  "geodensityplot [matlab]": {
+    "prefix": "geodensityplot",
+    "body": "${1:dp} = geodensityplot(${1:optional_gx}, ${2:lat}, ${3:lon}, ${4:optional_weights}, 'LatitudeData', ${5:value}, 'LongitudeData', ${6:value}, 'LatitudeDataSource', ${7:value}, 'LongitudeDataSource', ${8:value}, 'FaceAlpha', ${9:value}, ${10:options})",
+    "description": "geodensityplot [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geodensityplot.html"
+  },
+  "geotickformat [matlab]": {
+    "prefix": "geotickformat",
+    "body": "${1:tickLabelFormat} = geotickformat(${1:optional_gx}, ${2:fmt})",
+    "description": "geotickformat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geotickformat.html"
+  },
+  "geoaxes [matlab]": {
+    "prefix": "geoaxes",
+    "body": "${1:gx} = geoaxes(${1:optional_parent}, 'Basemap', ${2:value}, 'TickLabelFormat', ${3:value}, ${4:options})",
+    "description": "geoaxes [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geoaxes.html"
+  },
+  "geobasemap [matlab]": {
+    "prefix": "geobasemap",
+    "body": "${1:basemap} = geobasemap(${1:optional_gx}, ${2:basemap})",
+    "description": "geobasemap [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geobasemap.html"
+  },
+  "geobubble [matlab]": {
+    "prefix": "geobubble",
+    "body": "${1:gb} = geobubble(${1:optional_parent}, ${2:lat}, ${3:lon}, ${4:optional_sizedata}, ${5:optional_colordata}, 'LatitudeData', ${6:value}, 'LongitudeData', ${7:value}, 'SizeData', ${8:value}, 'ColorData', ${9:value}, 'MapCenter', ${10:value}, 'ZoomLevel', ${11:value}, 'MapLayout', ${12:value}, 'GridVisible', ${13:value}, 'ScalebarVisible', ${14:value}, 'Basemap', ${15:value}, 'SizeLimits', ${16:value}, 'BubbleWidthRange', ${17:value}, 'BubbleColorList', ${18:value}, 'Title', ${19:value}, 'LegendVisible', ${20:value}, 'SizeLegendTitle', ${21:value}, 'ColorLegendTitle', ${22:value}, 'Parent', ${23:value}, 'Visible', ${24:value}, 'FontName', ${25:value}, 'FontSize', ${26:value}, 'HandleVisibility', ${27:value}, 'Units', ${28:value}, 'OuterPosition', ${29:value})",
+    "description": "geobubble [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geobubble.html"
+  }
+}

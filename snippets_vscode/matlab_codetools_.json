@@ -1,0 +1,80 @@
+{
+  "dbstop [matlab]": {
+    "prefix": "dbstop",
+    "body": "dbstop(${1:s})",
+    "description": "dbstop [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbstop.html"
+  },
+  "publish [matlab]": {
+    "prefix": "publish",
+    "body": "${1:my_doc} = publish(${1:file}, ${2:optional_format})",
+    "description": "publish [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/publish.html"
+  },
+  "dbclear [matlab]": {
+    "prefix": "dbclear",
+    "body": "dbclear(${1:optional_'all'})",
+    "description": "dbclear [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbclear.html"
+  },
+  "dbquit [matlab]": {
+    "prefix": "dbquit",
+    "body": "dbquit(${1:optional_'all'})",
+    "description": "dbquit [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbquit.html"
+  },
+  "edit [matlab]": {
+    "prefix": "edit",
+    "body": "edit(${1:optional_file})",
+    "description": "edit [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/edit.html"
+  },
+  "checkcode [matlab]": {
+    "prefix": "checkcode",
+    "body": "checkcode(${1:filename}, ${2:action})",
+    "description": "checkcode [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/checkcode.html"
+  },
+  "dbtype [matlab]": {
+    "prefix": "dbtype",
+    "body": "dbtype(${1:filespec}, ${2:optional_range})",
+    "description": "dbtype [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbtype.html"
+  },
+  "uiimport [matlab]": {
+    "prefix": "uiimport",
+    "body": "uiimport(${1:filename}, ${2:optional_varargin})",
+    "description": "uiimport [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uiimport.html"
+  },
+  "validateFunctionSignaturesJSON [matlab]": {
+    "prefix": "validateFunctionSignaturesJSON",
+    "body": "validateFunctionSignaturesJSON(${1:optional_filename})",
+    "description": "validateFunctionSignaturesJSON [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/validatefunctionsignaturesjson.html"
+  },
+  "dbstep [matlab]": {
+    "prefix": "dbstep",
+    "body": "dbstep(${1:optional_inout})",
+    "description": "dbstep [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbstep.html"
+  },
+  "profile [matlab]": {
+    "prefix": "profile",
+    "body": "profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})",
+    "description": "profile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/profile.html"
+  },
+  "dbstatus [matlab]": {
+    "prefix": "dbstatus",
+    "body": "${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})",
+    "description": "dbstatus [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbstatus.html"
+  },
+  "dbstack [matlab]": {
+    "prefix": "dbstack",
+    "body": "[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})",
+    "description": "dbstack [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dbstack.html"
+  }
+}

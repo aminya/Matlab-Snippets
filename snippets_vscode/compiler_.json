@@ -1,0 +1,14 @@
+{
+  "mbuild [compiler]": {
+    "prefix": "mbuild",
+    "body": "mbuild(${1:args})",
+    "description": "mbuild [compiler]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/compiler/ml_code/mbuild.html"
+  },
+  "mcc [compiler]": {
+    "prefix": "mcc",
+    "body": "mcc(${1:args})",
+    "description": "mcc [compiler]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/compiler/hadoop/mcc.html"
+  }
+}

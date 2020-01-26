@@ -1,0 +1,8 @@
+{
+  "sheetnames [shared]": {
+    "prefix": "sheetnames",
+    "body": "${1:sn} = sheetnames(${1:filename})",
+    "description": "sheetnames [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/ref/matlab.io.datastore.spreadsheetdatastore.sheetnames.html"
+  }
+}

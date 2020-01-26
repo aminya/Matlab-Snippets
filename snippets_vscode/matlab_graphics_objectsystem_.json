@@ -1,0 +1,8 @@
+{
+  "openfig [matlab]": {
+    "prefix": "openfig",
+    "body": "openfig(${1:filename}, ${2:optional_copies}, ${3:optional_visibility})",
+    "description": "openfig [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/openfig.html"
+  }
+}

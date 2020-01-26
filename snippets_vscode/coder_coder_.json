@@ -1,0 +1,14 @@
+{
+  "coder.config [coder]": {
+    "prefix": "coder.config",
+    "body": "coder.config(${1:build_type}, 'ecoder', ${2:value})",
+    "description": "coder.config [coder]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/coder/ref/coder.config.html"
+  },
+  "coder.OutputType [coder]": {
+    "prefix": "coder.OutputType",
+    "body": "coder.OutputType(${1:name})",
+    "description": "coder.OutputType [coder]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/coder/coder.OutputType.html"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Simulink.SimulationInput.setVariable [simulink]": {
+    "prefix": "Simulink.SimulationInput.setVariable",
+    "body": "Simulink.SimulationInput.setVariable(${1:obj}, ${2:name}, ${3:value}, 'Workspace', ${4:value})",
+    "description": "Simulink.SimulationInput.setVariable [simulink]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/simulink/Simulink.SimulationInput.setVariable.html"
+  },
+  "Simulink.SimulationInput.applyToModel [simulink]": {
+    "prefix": "Simulink.SimulationInput.applyToModel",
+    "body": "Simulink.SimulationInput.applyToModel(${1:Object}, 'EnableConfigSetRefUpdate', ${2:value})",
+    "description": "Simulink.SimulationInput.applyToModel [simulink]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/simulink/Simulink.SimulationInput.applyToModel.html"
+  },
+  "Simulink.SimulationInput [simulink]": {
+    "prefix": "Simulink.SimulationInput",
+    "body": "Simulink.SimulationInput(${1:model})",
+    "description": "Simulink.SimulationInput [simulink]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/simulink/Simulink.SimulationInput.html"
+  }
+}

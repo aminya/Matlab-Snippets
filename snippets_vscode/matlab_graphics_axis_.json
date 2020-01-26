@@ -1,0 +1,20 @@
+{
+  "yyaxis [matlab]": {
+    "prefix": "yyaxis",
+    "body": "yyaxis(${1:optional_ax}, ${2:optional_side})",
+    "description": "yyaxis [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/yyaxis.html"
+  },
+  "axes [matlab]": {
+    "prefix": "axes",
+    "body": "${1:h} = axes(${1:optional_parent}, ${2:properties})",
+    "description": "axes [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/axes.html"
+  },
+  "hold [matlab]": {
+    "prefix": "hold",
+    "body": "hold(${1:optional_ax}, ${2:optional_action})",
+    "description": "hold [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/hold.html"
+  }
+}

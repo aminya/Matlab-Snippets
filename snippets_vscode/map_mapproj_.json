@@ -1,0 +1,86 @@
+{
+  "minvtran [map]": {
+    "prefix": "minvtran",
+    "body": "[${1:lat}, ${2:lon}, ${3:alt}] = minvtran(${1:optional_mstruct}, ${2:x}, ${3:y}, ${4:optional_z})",
+    "description": "minvtran [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/minvtran.html"
+  },
+  "geotiff2mstruct [map]": {
+    "prefix": "geotiff2mstruct",
+    "body": "${1:mstruct} = geotiff2mstruct(${1:proj})",
+    "description": "geotiff2mstruct [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/geotiff2mstruct.html"
+  },
+  "vinvtran [map]": {
+    "prefix": "vinvtran",
+    "body": "[${1:az}, ${2:len}] = vinvtran(${1:optional_mstruct}, ${2:x}, ${3:y}, ${4:optional_th})",
+    "description": "vinvtran [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/vinvtran.html"
+  },
+  "projfwd [map]": {
+    "prefix": "projfwd",
+    "body": "[${1:x}, ${2:y}] = projfwd(${1:proj}, ${2:lat}, ${3:lon})",
+    "description": "projfwd [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/projfwd.html"
+  },
+  "utmgeoid [map]": {
+    "prefix": "utmgeoid",
+    "body": "[${1:ellipsoid}, ${2:ellipsoidstr}] = utmgeoid(${1:optional_zone})",
+    "description": "utmgeoid [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/utmgeoid.html"
+  },
+  "maptrimp [map]": {
+    "prefix": "maptrimp",
+    "body": "[${1:latTrimmed}, ${2:lonTrimmed}] = maptrimp(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})",
+    "description": "maptrimp [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/maptrimp.html"
+  },
+  "vfwdtran [map]": {
+    "prefix": "vfwdtran",
+    "body": "[${1:th}, ${2:len}] = vfwdtran(${1:optional_mstruct}, ${2:lat}, ${3:lon}, ${4:az})",
+    "description": "vfwdtran [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/vfwdtran.html"
+  },
+  "projinv [map]": {
+    "prefix": "projinv",
+    "body": "[${1:lat}, ${2:lon}] = projinv(${1:proj}, ${2:x}, ${3:y})",
+    "description": "projinv [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/projinv.html"
+  },
+  "distortcalc [map]": {
+    "prefix": "distortcalc",
+    "body": "[${1:areascale}, ${2:angdef}, ${3:maxscale}, ${4:minscale}, ${5:merscale}, ${6:parscale}] = distortcalc(${1:optional_mstruct}, ${2:lat}, ${3:long})",
+    "description": "distortcalc [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/distortcalc.html"
+  },
+  "maptriml [map]": {
+    "prefix": "maptriml",
+    "body": "[${1:lat}, ${2:lon}] = maptriml(${1:lat0}, ${2:lon0}, ${3:latlim}, ${4:lonlim})",
+    "description": "maptriml [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/maptriml.html"
+  },
+  "maps [map]": {
+    "prefix": "maps",
+    "body": "${1:strmat} = maps(${1:str})",
+    "description": "maps [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/maps.html"
+  },
+  "utmzone [map]": {
+    "prefix": "utmzone",
+    "body": "${1:zone} = utmzone(${1:lat}, ${2:long})",
+    "description": "utmzone [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/utmzone.html"
+  },
+  "projlist [map]": {
+    "prefix": "projlist",
+    "body": "${1:S} = projlist(${1:optional_listmode})",
+    "description": "projlist [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/projlist.html"
+  },
+  "mfwdtran [map]": {
+    "prefix": "mfwdtran",
+    "body": "[${1:x}, ${2:y}, ${3:z}] = mfwdtran(${1:optional_mstruct}, ${2:lat}, ${3:lon}, ${4:optional_alt})",
+    "description": "mfwdtran [map]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/map/ref/mfwdtran.html"
+  }
+}

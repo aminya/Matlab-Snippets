@@ -1,0 +1,416 @@
+{
+  "uint16 [matlab]": {
+    "prefix": "uint16",
+    "body": "${1:y} = uint16(${1:x})",
+    "description": "uint16 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uint16.html"
+  },
+  "ge [matlab]": {
+    "prefix": "ge",
+    "body": "${1:tf} = ge(${1:A}, ${2:B})",
+    "description": "ge [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/qrandstream.ge.html"
+  },
+  "uint8 [matlab]": {
+    "prefix": "uint8",
+    "body": "${1:y} = uint8(${1:x})",
+    "description": "uint8 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uint8.html"
+  },
+  "ismatrix [matlab]": {
+    "prefix": "ismatrix",
+    "body": "${1:TF} = ismatrix(${1:V})",
+    "description": "ismatrix [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ismatrix.html"
+  },
+  "length [matlab]": {
+    "prefix": "length",
+    "body": "${1:L} = length(${1:X})",
+    "description": "length [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/mps_dev_test/length.html"
+  },
+  "maxk [matlab]": {
+    "prefix": "maxk",
+    "body": "[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})",
+    "description": "maxk [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/maxk.html"
+  },
+  "countcats [matlab]": {
+    "prefix": "countcats",
+    "body": "${1:B} = countcats(${1:A}, ${2:dim})",
+    "description": "countcats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.countcats.html"
+  },
+  "uint32 [matlab]": {
+    "prefix": "uint32",
+    "body": "${1:y} = uint32(${1:x})",
+    "description": "uint32 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uint32.html"
+  },
+  "union [matlab]": {
+    "prefix": "union",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})",
+    "description": "union [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/polyshape.union.html"
+  },
+  "issortedrows [matlab]": {
+    "prefix": "issortedrows",
+    "body": "${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})",
+    "description": "issortedrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/issortedrows.html"
+  },
+  "iscategorical [matlab]": {
+    "prefix": "iscategorical",
+    "body": "${1:tf} = iscategorical(${1:A})",
+    "description": "iscategorical [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/iscategorical.html"
+  },
+  "reordercats [matlab]": {
+    "prefix": "reordercats",
+    "body": "${1:B} = reordercats(${1:A}, ${2:neworder})",
+    "description": "reordercats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.reordercats.html"
+  },
+  "setxor [matlab]": {
+    "prefix": "setxor",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})",
+    "description": "setxor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setxor.html"
+  },
+  "setcats [matlab]": {
+    "prefix": "setcats",
+    "body": "${1:B} = setcats(${1:A}, ${2:newcats})",
+    "description": "setcats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.setcats.html"
+  },
+  "uint64 [matlab]": {
+    "prefix": "uint64",
+    "body": "${1:y} = uint64(${1:x})",
+    "description": "uint64 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uint64.html"
+  },
+  "eq [matlab]": {
+    "prefix": "eq",
+    "body": "${1:tf} = eq(${1:A}, ${2:B})",
+    "description": "eq [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/eq.html"
+  },
+  "intersect [matlab]": {
+    "prefix": "intersect",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})",
+    "description": "intersect [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html"
+  },
+  "int16 [matlab]": {
+    "prefix": "int16",
+    "body": "${1:y} = int16(${1:x})",
+    "description": "int16 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/int16.html"
+  },
+  "max [matlab]": {
+    "prefix": "max",
+    "body": "${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})",
+    "description": "max [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/max.html"
+  },
+  "addcats [matlab]": {
+    "prefix": "addcats",
+    "body": "${1:B} = addcats(${1:A}, ${2:newcats}, 'Before', ${3:value}, 'After', ${4:value})",
+    "description": "addcats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.addcats.html"
+  },
+  "char [matlab]": {
+    "prefix": "char",
+    "body": "${1:S} = char(${1:A})",
+    "description": "char [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/char.html"
+  },
+  "cat [matlab]": {
+    "prefix": "cat",
+    "body": "${1:C} = cat(${1:dim}, ${2:A}, ${3:B})",
+    "description": "cat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geopoint.cat.html"
+  },
+  "sort [matlab]": {
+    "prefix": "sort",
+    "body": "[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})",
+    "description": "sort [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/sort.html"
+  },
+  "sortrows [matlab]": {
+    "prefix": "sortrows",
+    "body": "[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})",
+    "description": "sortrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/double.sortrows.html"
+  },
+  "categories [matlab]": {
+    "prefix": "categories",
+    "body": "${1:C} = categories(${1:A})",
+    "description": "categories [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.categories.html"
+  },
+  "topkrows [matlab]": {
+    "prefix": "topkrows",
+    "body": "[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})",
+    "description": "topkrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/topkrows.html"
+  },
+  "removecats [matlab]": {
+    "prefix": "removecats",
+    "body": "${1:B} = removecats(${1:A}, ${2:oldcats})",
+    "description": "removecats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.removecats.html"
+  },
+  "ismember [matlab]": {
+    "prefix": "ismember",
+    "body": "[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})",
+    "description": "ismember [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ismember.html"
+  },
+  "ctranspose [matlab]": {
+    "prefix": "ctranspose",
+    "body": "${1:B} = ctranspose(${1:A})",
+    "description": "ctranspose [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/inputoutputmodel.ctranspose.html"
+  },
+  "mode [matlab]": {
+    "prefix": "mode",
+    "body": "[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})",
+    "description": "mode [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mode.html"
+  },
+  "vertcat [matlab]": {
+    "prefix": "vertcat",
+    "body": "${1:C} = vertcat(${1:A})",
+    "description": "vertcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html"
+  },
+  "times [matlab]": {
+    "prefix": "times",
+    "body": "${1:C} = times(${1:A}, ${2:B})",
+    "description": "times [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/times.html"
+  },
+  "isprotected [matlab]": {
+    "prefix": "isprotected",
+    "body": "${1:tf} = isprotected(${1:A})",
+    "description": "isprotected [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.isprotected.html"
+  },
+  "isrow [matlab]": {
+    "prefix": "isrow",
+    "body": "${1:TF} = isrow(${1:V})",
+    "description": "isrow [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isrow.html"
+  },
+  "int64 [matlab]": {
+    "prefix": "int64",
+    "body": "${1:y} = int64(${1:x})",
+    "description": "int64 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/int64.html"
+  },
+  "isempty [matlab]": {
+    "prefix": "isempty",
+    "body": "${1:TF} = isempty(${1:A})",
+    "description": "isempty [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html"
+  },
+  "setdiff [matlab]": {
+    "prefix": "setdiff",
+    "body": "[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})",
+    "description": "setdiff [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setdiff.html"
+  },
+  "histcounts [matlab]": {
+    "prefix": "histcounts",
+    "body": "[${1:N}, ${2:categories}] = histcounts(${1:C}, ${2:Categories}, 'Normalization', ${3:value})",
+    "description": "histcounts [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/histcounts.html"
+  },
+  "cellstr [matlab]": {
+    "prefix": "cellstr",
+    "body": "${1:C} = cellstr(${1:S})",
+    "description": "cellstr [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cellstr.html"
+  },
+  "unique [matlab]": {
+    "prefix": "unique",
+    "body": "[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})",
+    "description": "unique [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unique.html"
+  },
+  "isvector [matlab]": {
+    "prefix": "isvector",
+    "body": "${1:TF} = isvector(${1:A})",
+    "description": "isvector [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isvector.html"
+  },
+  "single [matlab]": {
+    "prefix": "single",
+    "body": "${1:y} = single(${1:x})",
+    "description": "single [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/single.html"
+  },
+  "le [matlab]": {
+    "prefix": "le",
+    "body": "${1:tf} = le(${1:A}, ${2:B})",
+    "description": "le [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/qrandstream.le.html"
+  },
+  "median [matlab]": {
+    "prefix": "median",
+    "body": "${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})",
+    "description": "median [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/median.html"
+  },
+  "horzcat [matlab]": {
+    "prefix": "horzcat",
+    "body": "${1:C} = horzcat(${1:A})",
+    "description": "horzcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html"
+  },
+  "isscalar [matlab]": {
+    "prefix": "isscalar",
+    "body": "${1:TF} = isscalar(${1:A})",
+    "description": "isscalar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isscalar.html"
+  },
+  "mergecats [matlab]": {
+    "prefix": "mergecats",
+    "body": "${1:B} = mergecats(${1:A}, ${2:oldcats}, ${3:newcats})",
+    "description": "mergecats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.mergecats.html"
+  },
+  "string [matlab]": {
+    "prefix": "string",
+    "body": "${1:str} = string(${1:A})",
+    "description": "string [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/string.html"
+  },
+  "isequaln [matlab]": {
+    "prefix": "isequaln",
+    "body": "${1:tf} = isequaln(${1:A}, ${2:B})",
+    "description": "isequaln [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/isequaln.html"
+  },
+  "transpose [matlab]": {
+    "prefix": "transpose",
+    "body": "${1:B} = transpose(${1:A})",
+    "description": "transpose [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/transpose.html"
+  },
+  "numel [matlab]": {
+    "prefix": "numel",
+    "body": "${1:n} = numel(${1:A})",
+    "description": "numel [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/numel.html"
+  },
+  "lt [matlab]": {
+    "prefix": "lt",
+    "body": "${1:tf} = lt(${1:A}, ${2:B})",
+    "description": "lt [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/qrandstream.lt.html"
+  },
+  "int8 [matlab]": {
+    "prefix": "int8",
+    "body": "${1:y} = int8(${1:x})",
+    "description": "int8 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/int8.html"
+  },
+  "min [matlab]": {
+    "prefix": "min",
+    "body": "${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})",
+    "description": "min [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/min.html"
+  },
+  "mink [matlab]": {
+    "prefix": "mink",
+    "body": "[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})",
+    "description": "mink [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mink.html"
+  },
+  "int32 [matlab]": {
+    "prefix": "int32",
+    "body": "${1:y} = int32(${1:x})",
+    "description": "int32 [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/int32.html"
+  },
+  "isordinal [matlab]": {
+    "prefix": "isordinal",
+    "body": "${1:tf} = isordinal(${1:A})",
+    "description": "isordinal [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.isordinal.html"
+  },
+  "iscolumn [matlab]": {
+    "prefix": "iscolumn",
+    "body": "${1:TF} = iscolumn(${1:V})",
+    "description": "iscolumn [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/iscolumn.html"
+  },
+  "summary [matlab]": {
+    "prefix": "summary",
+    "body": "summary(${1:A}, ${2:dim})",
+    "description": "summary [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/table.summary.html"
+  },
+  "iscategory [matlab]": {
+    "prefix": "iscategory",
+    "body": "${1:tf} = iscategory(${1:A}, ${2:catnames})",
+    "description": "iscategory [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.iscategory.html"
+  },
+  "isequal [matlab]": {
+    "prefix": "isequal",
+    "body": "${1:tf} = isequal(${1:A}, ${2:B})",
+    "description": "isequal [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/isequal.html"
+  },
+  "issorted [matlab]": {
+    "prefix": "issorted",
+    "body": "${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})",
+    "description": "issorted [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/issorted.html"
+  },
+  "categorical [matlab]": {
+    "prefix": "categorical",
+    "body": "${1:C} = categorical(${1:A}, ${2:valueset}, ${3:catnames}, 'Protected', ${4:value}, 'Ordinal', ${5:value})",
+    "description": "categorical [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.html"
+  },
+  "gt [matlab]": {
+    "prefix": "gt",
+    "body": "${1:tf} = gt(${1:A}, ${2:B})",
+    "description": "gt [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/qrandstream.gt.html"
+  },
+  "ne [matlab]": {
+    "prefix": "ne",
+    "body": "${1:tf} = ne(${1:A}, ${2:B})",
+    "description": "ne [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/qrandstream.ne.html"
+  },
+  "double [matlab]": {
+    "prefix": "double",
+    "body": "${1:y} = double(${1:x})",
+    "description": "double [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/double.html"
+  },
+  "isundefined [matlab]": {
+    "prefix": "isundefined",
+    "body": "${1:tf} = isundefined(${1:A})",
+    "description": "isundefined [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.isundefined.html"
+  },
+  "permute [matlab]": {
+    "prefix": "permute",
+    "body": "${1:B} = permute(${1:A}, ${2:order})",
+    "description": "permute [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/permute.html"
+  },
+  "renamecats [matlab]": {
+    "prefix": "renamecats",
+    "body": "${1:B} = renamecats(${1:A}, ${2:oldnames}, ${3:newnames})",
+    "description": "renamecats [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/categorical.renamecats.html"
+  }
+}

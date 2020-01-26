@@ -1,0 +1,212 @@
+{
+  "drawline [images]": {
+    "prefix": "drawline",
+    "body": "${1:h} = drawline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "drawline [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawline.html"
+  },
+  "drawpoint [images]": {
+    "prefix": "drawpoint",
+    "body": "${1:h} = drawpoint(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "drawpoint [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawpoint.html"
+  },
+  "images.roi.Freehand [images]": {
+    "prefix": "images.roi.Freehand",
+    "body": "${1:h} = images.roi.Freehand(${1:optional_AX}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Multiclick', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})",
+    "description": "images.roi.Freehand [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Freehand.html"
+  },
+  "images.roi.AssistedFreehand [images]": {
+    "prefix": "images.roi.AssistedFreehand",
+    "body": "${1:h} = images.roi.AssistedFreehand(${1:optional_hImage}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'Image', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})",
+    "description": "images.roi.AssistedFreehand [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.AssistedFreehand.html"
+  },
+  "montage [images]": {
+    "prefix": "montage",
+    "body": "${1:h} = montage(${1:I}, ${2:optional_MAP}, 'Size', ${3:value}, 'Parent', ${4:value}, 'Indices', ${5:value}, 'ThumbnailSize', ${6:value}, 'BorderSize', ${7:value}, 'BackgroundColor', ${8:value}, 'DisplayRange', ${9:value})",
+    "description": "montage [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/montage.html"
+  },
+  "images.roi.Polygon [images]": {
+    "prefix": "images.roi.Polygon",
+    "body": "${1:h} = images.roi.Polygon(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'FaceAlpha', ${5:value}, 'FaceSelectable', ${6:value}, 'HandleVisibility', ${7:value}, 'InteractionsAllowed', ${8:value}, 'Label', ${9:value}, 'LabelVisible', ${10:value}, 'LineWidth', ${11:value}, 'Parent', ${12:value}, 'Position', ${13:value}, 'Selected', ${14:value}, 'SelectedColor', ${15:value}, 'StripeColor', ${16:value}, 'Tag', ${17:value}, 'UIContextMenu', ${18:value}, 'UserData', ${19:value}, 'Visible', ${20:value})",
+    "description": "images.roi.Polygon [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Polygon.html"
+  },
+  "drawrectangle [images]": {
+    "prefix": "drawrectangle",
+    "body": "${1:h} = drawrectangle(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'FixedAspectRatio', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'Selected', ${18:value}, 'SelectedColor', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})",
+    "description": "drawrectangle [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawrectangle.html"
+  },
+  "images.roi.Polyline [images]": {
+    "prefix": "images.roi.Polyline",
+    "body": "${1:h} = images.roi.Polyline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "images.roi.Polyline [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Polyline.html"
+  },
+  "reducepoly [images]": {
+    "prefix": "reducepoly",
+    "body": "${1:posreduced} = reducepoly(${1:pos}, ${2:optional_epsilon})",
+    "description": "reducepoly [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/reducepoly.html"
+  },
+  "imageBrowser [images]": {
+    "prefix": "imageBrowser",
+    "body": "imageBrowser(${1:optional_folder})",
+    "description": "imageBrowser [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/imageBrowser.html"
+  },
+  "dicomBrowser [images]": {
+    "prefix": "dicomBrowser",
+    "body": "dicomBrowser(${1:optional_source})",
+    "description": "dicomBrowser [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/dicomBrowser.html"
+  },
+  "drawpolyline [images]": {
+    "prefix": "drawpolyline",
+    "body": "${1:h} = drawpolyline(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "drawpolyline [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawpolyline.html"
+  },
+  "drawassisted [images]": {
+    "prefix": "drawassisted",
+    "body": "${1:h} = drawassisted(${1:optional_hImage}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'Image', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})",
+    "description": "drawassisted [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawassisted.html"
+  },
+  "drawcuboid [images]": {
+    "prefix": "drawcuboid",
+    "body": "${1:h} = drawcuboid(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'EdgeAlpha', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceAlphaOnHover', ${7:value}, 'FaceColorOnHover', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'ScrollWheelDuringDraw', ${18:value}, 'Selected', ${19:value}, 'SelectedColor', ${20:value}, 'StripeColor', ${21:value}, 'Tag', ${22:value}, 'UIContextMenu', ${23:value}, 'UserData', ${24:value}, 'Visible', ${25:value})",
+    "description": "drawcuboid [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawcuboid.html"
+  },
+  "images.roi.Circle [images]": {
+    "prefix": "images.roi.Circle",
+    "body": "${1:h} = images.roi.Circle(${1:optional_AX}, 'Center', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Parent', ${13:value}, 'Radius', ${14:value}, 'Selected', ${15:value}, 'SelectedColor', ${16:value}, 'StripeColor', ${17:value}, 'Tag', ${18:value}, 'UIContextMenu', ${19:value}, 'UserData', ${20:value}, 'Visible', ${21:value})",
+    "description": "images.roi.Circle [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Circle.html"
+  },
+  "labelvolshow [images]": {
+    "prefix": "labelvolshow",
+    "body": "${1:h} = labelvolshow(${1:L}, ${2:optional_V}, ${3:optional_CONFIG}, 'Parent', ${4:value}, 'BackgroundColor', ${5:value}, 'CameraPosition', ${6:value}, 'CameraUpVector', ${7:value}, 'CameraTarget', ${8:value}, 'ShowIntensityVolume', ${9:value}, 'LabelColor', ${10:value}, 'LabelOpacity', ${11:value}, 'LabelVisibility', ${12:value}, 'VolumeOpacity', ${13:value}, 'VolumeThreshold', ${14:value}, 'ScaleFactors', ${15:value}, 'InteractionsEnabled', ${16:value})",
+    "description": "labelvolshow [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/labelvolshow.html"
+  },
+  "bigimageshow.showmask [images]": {
+    "prefix": "bigimageshow.showmask",
+    "body": "bigimageshow.showmask(${1:h}, ${2:mask}, 'BlockSize', ${3:value}, 'InclusionThreshold', ${4:value}, 'Alpha', ${5:value})",
+    "description": "bigimageshow.showmask [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/bigimageshow.showmask.html"
+  },
+  "bigimageshow [images]": {
+    "prefix": "bigimageshow",
+    "body": "bigimageshow(${1:I}, ${2:HAX}, 'Parent', ${3:value}, 'CData', ${4:value}, 'CDataMapping', ${5:value}, 'AlphaData', ${6:value}, 'AlphaDataMapping', ${7:value}, 'ResolutionLevel', ${8:value}, 'ResolutionLevelMode', ${9:value}, 'GridVisible', ${10:value}, 'GridLevel', ${11:value}, 'GridLevelMode', ${12:value}, 'GridColor', ${13:value}, 'GridAlpha', ${14:value}, 'GridLineWidth', ${15:value}, 'GridLineStyle', ${16:value}, 'Interpolation', ${17:value}, 'Visible', ${18:value})",
+    "description": "bigimageshow [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/bigimageshow.html"
+  },
+  "colorcloud [images]": {
+    "prefix": "colorcloud",
+    "body": "${1:hPanel} = colorcloud(${1:RGB}, ${2:optional_colorspace}, 'BackgroundColor', ${3:value}, 'OrientationAxesColor', ${4:value}, 'Parent', ${5:value}, 'WireFrameColor', ${6:value})",
+    "description": "colorcloud [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/colorcloud.html"
+  },
+  "volumeViewer [images]": {
+    "prefix": "volumeViewer",
+    "body": "volumeViewer(${1:V}, ${2:optional_L}, 'VolumeType', ${3:value}, 'ScaleFactors', ${4:value})",
+    "description": "volumeViewer [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/volumeViewer.html"
+  },
+  "drawpolygon [images]": {
+    "prefix": "drawpolygon",
+    "body": "${1:h} = drawpolygon(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'FaceAlpha', ${5:value}, 'FaceSelectable', ${6:value}, 'HandleVisibility', ${7:value}, 'InteractionsAllowed', ${8:value}, 'Label', ${9:value}, 'LabelVisible', ${10:value}, 'LineWidth', ${11:value}, 'Parent', ${12:value}, 'Position', ${13:value}, 'Selected', ${14:value}, 'SelectedColor', ${15:value}, 'StripeColor', ${16:value}, 'Tag', ${17:value}, 'UIContextMenu', ${18:value}, 'UserData', ${19:value}, 'Visible', ${20:value})",
+    "description": "drawpolygon [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawpolygon.html"
+  },
+  "bigimageshow.hidemask [images]": {
+    "prefix": "bigimageshow.hidemask",
+    "body": "bigimageshow.hidemask(${1:h})",
+    "description": "bigimageshow.hidemask [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/bigimageshow.hidemask.html"
+  },
+  "drawcircle [images]": {
+    "prefix": "drawcircle",
+    "body": "${1:h} = drawcircle(${1:optional_AX}, 'Center', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Parent', ${13:value}, 'Radius', ${14:value}, 'Selected', ${15:value}, 'SelectedColor', ${16:value}, 'StripeColor', ${17:value}, 'Tag', ${18:value}, 'UIContextMenu', ${19:value}, 'UserData', ${20:value}, 'Visible', ${21:value})",
+    "description": "drawcircle [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawcircle.html"
+  },
+  "sliceViewer [images]": {
+    "prefix": "sliceViewer",
+    "body": "${1:h} = sliceViewer(${1:S}, 'Parent', ${2:value}, 'Colormap', ${3:value}, 'SliceNumber', ${4:value}, 'DisplayRange', ${5:value}, 'ScaleFactors', ${6:value}, 'SliceDirection', ${7:value}, 'DisplayRangeInteraction', ${8:value})",
+    "description": "sliceViewer [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/sliceviewer.html"
+  },
+  "images.roi.Cuboid [images]": {
+    "prefix": "images.roi.Cuboid",
+    "body": "${1:h} = images.roi.Cuboid(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'EdgeAlpha', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceAlphaOnHover', ${7:value}, 'FaceColorOnHover', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'ScrollWheelDuringDraw', ${18:value}, 'Selected', ${19:value}, 'SelectedColor', ${20:value}, 'StripeColor', ${21:value}, 'Tag', ${22:value}, 'UIContextMenu', ${23:value}, 'UserData', ${24:value}, 'Visible', ${25:value})",
+    "description": "images.roi.Cuboid [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Cuboid.html"
+  },
+  "images.roi.Line [images]": {
+    "prefix": "images.roi.Line",
+    "body": "${1:h} = images.roi.Line(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "images.roi.Line [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Line.html"
+  },
+  "orthosliceViewer [images]": {
+    "prefix": "orthosliceViewer",
+    "body": "${1:h} = orthosliceViewer(${1:S}, 'Parent', ${2:value}, 'Colormap', ${3:value}, 'SliceNumbers', ${4:value}, 'DisplayRange', ${5:value}, 'ScaleFactors', ${6:value}, 'CrosshairLineWidth', ${7:value}, 'CrosshairColor', ${8:value}, 'CrosshairStripeColor', ${9:value}, 'CrosshairEnable', ${10:value}, 'DisplayRangeInteraction', ${11:value})",
+    "description": "orthosliceViewer [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/orthosliceviewer.html"
+  },
+  "images.roi.Point [images]": {
+    "prefix": "images.roi.Point",
+    "body": "${1:h} = images.roi.Point(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "images.roi.Point [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Point.html"
+  },
+  "images.roi.Rectangle [images]": {
+    "prefix": "images.roi.Rectangle",
+    "body": "${1:h} = images.roi.Rectangle(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'FixedAspectRatio', ${8:value}, 'HandleVisibility', ${9:value}, 'InteractionsAllowed', ${10:value}, 'Label', ${11:value}, 'LabelVisible', ${12:value}, 'LineWidth', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Rotatable', ${16:value}, 'RotationAngle', ${17:value}, 'Selected', ${18:value}, 'SelectedColor', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})",
+    "description": "images.roi.Rectangle [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Rectangle.html"
+  },
+  "drawcrosshair [images]": {
+    "prefix": "drawcrosshair",
+    "body": "${1:h} = drawcrosshair(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "drawcrosshair [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawcrosshair.html"
+  },
+  "volshow [images]": {
+    "prefix": "volshow",
+    "body": "${1:h} = volshow(${1:V}, ${2:optional_CONFIG}, 'Parent', ${3:value}, 'Colormap', ${4:value}, 'Alphamap', ${5:value}, 'BackgroundColor', ${6:value}, 'CameraPosition', ${7:value}, 'CameraUpVector', ${8:value}, 'CameraTarget', ${9:value}, 'Renderer', ${10:value}, 'IsosurfaceColor', ${11:value}, 'Isovalue', ${12:value}, 'Lighting', ${13:value}, 'ScaleFactors', ${14:value}, 'InteractionsEnabled', ${15:value})",
+    "description": "volshow [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/volshow.html"
+  },
+  "drawellipse [images]": {
+    "prefix": "drawellipse",
+    "body": "${1:h} = drawellipse(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Center', ${3:value}, 'Color', ${4:value}, 'Deletable', ${5:value}, 'DrawingArea', ${6:value}, 'FaceAlpha', ${7:value}, 'FaceSelectable', ${8:value}, 'FixedAspectRatio', ${9:value}, 'HandleVisibility', ${10:value}, 'InteractionsAllowed', ${11:value}, 'Label', ${12:value}, 'LabelVisible', ${13:value}, 'LineWidth', ${14:value}, 'Parent', ${15:value}, 'RotationAngle', ${16:value}, 'Selected', ${17:value}, 'SelectedColor', ${18:value}, 'SemiAxes', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})",
+    "description": "drawellipse [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawellipse.html"
+  },
+  "drawfreehand [images]": {
+    "prefix": "drawfreehand",
+    "body": "${1:h} = drawfreehand(${1:optional_AX}, 'Closed', ${2:value}, 'Color', ${3:value}, 'Deletable', ${4:value}, 'DrawingArea', ${5:value}, 'FaceAlpha', ${6:value}, 'FaceSelectable', ${7:value}, 'HandleVisibility', ${8:value}, 'InteractionsAllowed', ${9:value}, 'Label', ${10:value}, 'LabelVisible', ${11:value}, 'LineWidth', ${12:value}, 'Multiclick', ${13:value}, 'Parent', ${14:value}, 'Position', ${15:value}, 'Selected', ${16:value}, 'SelectedColor', ${17:value}, 'Smoothing', ${18:value}, 'StripeColor', ${19:value}, 'Tag', ${20:value}, 'UIContextMenu', ${21:value}, 'UserData', ${22:value}, 'Visible', ${23:value}, 'Waypoints', ${24:value})",
+    "description": "drawfreehand [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/drawfreehand.html"
+  },
+  "images.roi.Ellipse [images]": {
+    "prefix": "images.roi.Ellipse",
+    "body": "${1:h} = images.roi.Ellipse(${1:optional_AX}, 'AspectRatio', ${2:value}, 'Center', ${3:value}, 'Color', ${4:value}, 'Deletable', ${5:value}, 'DrawingArea', ${6:value}, 'FaceAlpha', ${7:value}, 'FaceSelectable', ${8:value}, 'FixedAspectRatio', ${9:value}, 'HandleVisibility', ${10:value}, 'InteractionsAllowed', ${11:value}, 'Label', ${12:value}, 'LabelVisible', ${13:value}, 'LineWidth', ${14:value}, 'Parent', ${15:value}, 'RotationAngle', ${16:value}, 'Selected', ${17:value}, 'SelectedColor', ${18:value}, 'SemiAxes', ${19:value}, 'StripeColor', ${20:value}, 'Tag', ${21:value}, 'UIContextMenu', ${22:value}, 'UserData', ${23:value}, 'Visible', ${24:value})",
+    "description": "images.roi.Ellipse [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Ellipse.html"
+  },
+  "images.roi.Crosshair [images]": {
+    "prefix": "images.roi.Crosshair",
+    "body": "${1:h} = images.roi.Crosshair(${1:optional_AX}, 'Color', ${2:value}, 'Deletable', ${3:value}, 'DrawingArea', ${4:value}, 'HandleVisibility', ${5:value}, 'InteractionsAllowed', ${6:value}, 'Label', ${7:value}, 'LabelVisible', ${8:value}, 'LineWidth', ${9:value}, 'Parent', ${10:value}, 'Position', ${11:value}, 'Selected', ${12:value}, 'SelectedColor', ${13:value}, 'StripeColor', ${14:value}, 'Tag', ${15:value}, 'UIContextMenu', ${16:value}, 'UserData', ${17:value}, 'Visible', ${18:value})",
+    "description": "images.roi.Crosshair [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.roi.Crosshair.html"
+  }
+}

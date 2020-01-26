@@ -1,0 +1,8 @@
+{
+  "uistyle [matlab]": {
+    "prefix": "uistyle",
+    "body": "uistyle(${1:properties})",
+    "description": "uistyle [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uistyle.html"
+  }
+}

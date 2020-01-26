@@ -1,0 +1,1544 @@
+{
+  "settlingtime [signal]": {
+    "prefix": "settlingtime",
+    "body": "[${1:S}, ${2:SLEV}, ${3:SINST}] = settlingtime(${1:X}, ${2:T}, ${3:D}, 'MidPercentReferenceLevel', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})",
+    "description": "settlingtime [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/settlingtime.html"
+  },
+  "rssq [signal]": {
+    "prefix": "rssq",
+    "body": "${1:Y} = rssq(${1:X}, ${2:optional_DIM})",
+    "description": "rssq [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rssq.html"
+  },
+  "bilinear [signal]": {
+    "prefix": "bilinear",
+    "body": "[${1:Ad}, ${2:Bd}, ${3:Cd}, ${4:Dd}] = bilinear(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:fs}, ${6:optional_fp})",
+    "description": "bilinear [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/bilinear.html"
+  },
+  "residuez [signal]": {
+    "prefix": "residuez",
+    "body": "[${1:b}, ${2:a}] = residuez(${1:r}, ${2:p}, ${3:k})",
+    "description": "residuez [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/residuez.html"
+  },
+  "sgolay [signal]": {
+    "prefix": "sgolay",
+    "body": "[${1:b}, ${2:g}] = sgolay(${1:order}, ${2:framelen}, ${3:optional_weights})",
+    "description": "sgolay [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sgolay.html"
+  },
+  "modalfrf [signal]": {
+    "prefix": "modalfrf",
+    "body": "[${1:frf}, ${2:f}] = modalfrf(${1:sys}, ${2:f}, 'Sensor', ${3:value})",
+    "description": "modalfrf [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/modalfrf.html"
+  },
+  "db2mag [signal]": {
+    "prefix": "db2mag",
+    "body": "${1:y} = db2mag(${1:ydb})",
+    "description": "db2mag [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/db2mag.html"
+  },
+  "meanfreq [signal]": {
+    "prefix": "meanfreq",
+    "body": "[${1:freq}, ${2:power}] = meanfreq(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_freqrange})",
+    "description": "meanfreq [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/meanfreq.html"
+  },
+  "rcosdesign [signal]": {
+    "prefix": "rcosdesign",
+    "body": "${1:b} = rcosdesign(${1:beta}, ${2:span}, ${3:sps}, ${4:optional_shape})",
+    "description": "rcosdesign [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/../signal/ref/rcosdesign.html"
+  },
+  "bandstop [signal]": {
+    "prefix": "bandstop",
+    "body": "[${1:y}, ${2:d}] = bandstop(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})",
+    "description": "bandstop [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/bandstop.html"
+  },
+  "cheby2 [signal]": {
+    "prefix": "cheby2",
+    "body": "[${1:A}, ${2:B}, ${3:C}, ${4:D}] = cheby2(${1:n}, ${2:Rs}, ${3:Ws}, ${4:ftype}, ${5:optional_'s'})",
+    "description": "cheby2 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cheby2.html"
+  },
+  "yulewalk [signal]": {
+    "prefix": "yulewalk",
+    "body": "[${1:b}, ${2:a}] = yulewalk(${1:n}, ${2:f}, ${3:m})",
+    "description": "yulewalk [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/yulewalk.html"
+  },
+  "gmonopuls [signal]": {
+    "prefix": "gmonopuls",
+    "body": "${1:tc} = gmonopuls(${1:'cutoff'}, ${2:fc})",
+    "description": "gmonopuls [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/gmonopuls.html"
+  },
+  "nuttallwin [signal]": {
+    "prefix": "nuttallwin",
+    "body": "${1:w} = nuttallwin(${1:N}, ${2:optional_SFLAG})",
+    "description": "nuttallwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/nuttallwin.html"
+  },
+  "hamming [signal]": {
+    "prefix": "hamming",
+    "body": "${1:w} = hamming(${1:L}, ${2:optional_sflag})",
+    "description": "hamming [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/hamming.html"
+  },
+  "cceps [signal]": {
+    "prefix": "cceps",
+    "body": "[${1:xhat}, ${2:nd}, ${3:xhat1}] = cceps(${1:x}, ${2:optional_n})",
+    "description": "cceps [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cceps.html"
+  },
+  "dtw [signal]": {
+    "prefix": "dtw",
+    "body": "[${1:dist}, ${2:ix}, ${3:iy}] = dtw(${1:x}, ${2:y}, ${3:optional_maxsamp}, ${4:optional_metric})",
+    "description": "dtw [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dtw.html"
+  },
+  "cpsd [signal]": {
+    "prefix": "cpsd",
+    "body": "[${1:pxy}, ${2:f}] = cpsd(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange})",
+    "description": "cpsd [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cpsd.html"
+  },
+  "rainflow [signal]": {
+    "prefix": "rainflow",
+    "body": "[${1:c}, ${2:rm}, ${3:rmr}, ${4:rmm}, ${5:idx}] = rainflow(${1:xt}, ${2:optional_'ext'})",
+    "description": "rainflow [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rainflow.html"
+  },
+  "rc2lar [signal]": {
+    "prefix": "rc2lar",
+    "body": "${1:g} = rc2lar(${1:k})",
+    "description": "rc2lar [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rc2lar.html"
+  },
+  "ifsst [signal]": {
+    "prefix": "ifsst",
+    "body": "${1:x} = ifsst(${1:s}, ${2:window}, ${3:iridge}, ${4:'NumFrequencyBins'}, ${5:nbins})",
+    "description": "ifsst [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ifsst.html"
+  },
+  "enbw [signal]": {
+    "prefix": "enbw",
+    "body": "${1:bw} = enbw(${1:window}, ${2:optional_fs})",
+    "description": "enbw [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/enbw.html"
+  },
+  "eqtflength [signal]": {
+    "prefix": "eqtflength",
+    "body": "[${1:b}, ${2:a}, ${3:n}, ${4:m}] = eqtflength(${1:num}, ${2:den})",
+    "description": "eqtflength [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/eqtflength.html"
+  },
+  "statelevels [signal]": {
+    "prefix": "statelevels",
+    "body": "[${1:LEVELS}, ${2:HISTOGRAM}, ${3:BINLEVELS}] = statelevels(${1:X}, ${2:NBINS}, ${3:optional_METHOD})",
+    "description": "statelevels [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/statelevels.html"
+  },
+  "peak2rms [signal]": {
+    "prefix": "peak2rms",
+    "body": "${1:Y} = peak2rms(${1:X}, ${2:optional_DIM})",
+    "description": "peak2rms [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/peak2rms.html"
+  },
+  "filternorm [signal]": {
+    "prefix": "filternorm",
+    "body": "${1:L} = filternorm(${1:b}, ${2:a}, ${3:2}, ${4:optional_tol})",
+    "description": "filternorm [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/filternorm.html"
+  },
+  "lar2rc [signal]": {
+    "prefix": "lar2rc",
+    "body": "${1:k} = lar2rc(${1:g})",
+    "description": "lar2rc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lar2rc.html"
+  },
+  "udecode [signal]": {
+    "prefix": "udecode",
+    "body": "${1:y} = udecode(${1:u}, ${2:n}, ${3:v}, ${4:optional_'SaturateMode'})",
+    "description": "udecode [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/udecode.html"
+  },
+  "convmtx [signal]": {
+    "prefix": "convmtx",
+    "body": "${1:A} = convmtx(${1:h}, ${2:n})",
+    "description": "convmtx [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/convmtx.html"
+  },
+  "orderspectrum [signal]": {
+    "prefix": "orderspectrum",
+    "body": "[${1:spec}, ${2:order}] = orderspectrum(${1:map}, ${2:order})",
+    "description": "orderspectrum [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/orderspectrum.html"
+  },
+  "ss2sos [signal]": {
+    "prefix": "ss2sos",
+    "body": "[${1:sos}, ${2:g}] = ss2sos(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:iu}, ${6:'order'}, ${7:optional_'scale'})",
+    "description": "ss2sos [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ss2sos.html"
+  },
+  "dct [signal]": {
+    "prefix": "dct",
+    "body": "${1:y} = dct(${1:x}, ${2:n}, ${3:dim}, ${4:optional_'Type'}, ${5:optional_dcttype})",
+    "description": "dct [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dct.html"
+  },
+  "filtord [signal]": {
+    "prefix": "filtord",
+    "body": "${1:n} = filtord(${1:d})",
+    "description": "filtord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/filtord.html"
+  },
+  "zp2sos [signal]": {
+    "prefix": "zp2sos",
+    "body": "[${1:sos}, ${2:g}] = zp2sos(${1:z}, ${2:p}, ${3:k}, ${4:'order'}, ${5:'scale'}, ${6:optional_zeroflag})",
+    "description": "zp2sos [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/zp2sos.html"
+  },
+  "poly2rc [signal]": {
+    "prefix": "poly2rc",
+    "body": "[${1:k}, ${2:r0}] = poly2rc(${1:a}, ${2:optional_efinal})",
+    "description": "poly2rc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/poly2rc.html"
+  },
+  "lowpass [signal]": {
+    "prefix": "lowpass",
+    "body": "[${1:y}, ${2:d}] = lowpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})",
+    "description": "lowpass [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lowpass.html"
+  },
+  "poctave [signal]": {
+    "prefix": "poctave",
+    "body": "[${1:p}, ${2:cf}] = poctave(${1:pxx}, ${2:fs}, ${3:f}, ${4:'psd'}, 'BandsPerOctave', ${5:value}, 'FilterOrder', ${6:value}, 'FrequencyLimits', ${7:value}, 'Weighting', ${8:value})",
+    "description": "poctave [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/poctave.html"
+  },
+  "fir2 [signal]": {
+    "prefix": "fir2",
+    "body": "${1:b} = fir2(${1:n}, ${2:f}, ${3:m}, ${4:npt}, ${5:lap}, ${6:optional_window})",
+    "description": "fir2 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fir2.html"
+  },
+  "parzenwin [signal]": {
+    "prefix": "parzenwin",
+    "body": "${1:w} = parzenwin(${1:L})",
+    "description": "parzenwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/parzenwin.html"
+  },
+  "rectpuls [signal]": {
+    "prefix": "rectpuls",
+    "body": "${1:y} = rectpuls(${1:t}, ${2:optional_w})",
+    "description": "rectpuls [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rectpuls.html"
+  },
+  "rc2is [signal]": {
+    "prefix": "rc2is",
+    "body": "${1:isin} = rc2is(${1:k})",
+    "description": "rc2is [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rc2is.html"
+  },
+  "tachorpm [signal]": {
+    "prefix": "tachorpm",
+    "body": "[${1:rpm}, ${2:t}, ${3:tp}] = tachorpm(${1:x}, ${2:fs}, 'PulsesPerRev', ${3:value}, 'StateLevels', ${4:value}, 'OutputFs', ${5:value}, 'FitType', ${6:value}, 'FitPoints', ${7:value})",
+    "description": "tachorpm [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tachorpm.html"
+  },
+  "single [signal]": {
+    "prefix": "single",
+    "body": "${1:f2} = single(${1:f1})",
+    "description": "single [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/single.html"
+  },
+  "pmtm [signal]": {
+    "prefix": "pmtm",
+    "body": "[${1:pxx}, ${2:w}, ${3:pxxc}] = pmtm(${1:x}, ${2:dpss_params}, ${3:optional_method}, ${4:'DropLastTaper'}, ${5:optional_dropflag}, ${6:optional_freqrange}, ${7:'ConfidenceLevel'}, ${8:optional_probability})",
+    "description": "pmtm [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pmtm.html"
+  },
+  "tsa [signal]": {
+    "prefix": "tsa",
+    "body": "[${1:ta}, ${2:t}, ${3:p}, ${4:rpm}] = tsa(${1:xt}, ${2:tp}, 'Method', ${3:value}, 'NumRotations', ${4:value}, 'PulsesPerRotation', ${5:value}, 'ResampleFactor', ${6:value})",
+    "description": "tsa [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tsa.html"
+  },
+  "risetime [signal]": {
+    "prefix": "risetime",
+    "body": "[${1:R}, ${2:LT}, ${3:UT}, ${4:LL}, ${5:UL}] = risetime(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})",
+    "description": "risetime [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/risetime.html"
+  },
+  "ac2rc [signal]": {
+    "prefix": "ac2rc",
+    "body": "[${1:k}, ${2:r0}] = ac2rc(${1:r})",
+    "description": "ac2rc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ac2rc.html"
+  },
+  "bandpower [signal]": {
+    "prefix": "bandpower",
+    "body": "${1:p} = bandpower(${1:pxx}, ${2:f}, ${3:optional_freqrange}, ${4:'psd'})",
+    "description": "bandpower [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/bandpower.html"
+  },
+  "shiftdata [signal]": {
+    "prefix": "shiftdata",
+    "body": "[${1:x}, ${2:perm}, ${3:nshifts}] = shiftdata(${1:x}, ${2:dim})",
+    "description": "shiftdata [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/shiftdata.html"
+  },
+  "sos2ss [signal]": {
+    "prefix": "sos2ss",
+    "body": "[${1:A}, ${2:B}, ${3:C}, ${4:D}] = sos2ss(${1:sos}, ${2:optional_g})",
+    "description": "sos2ss [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sos2ss.html"
+  },
+  "isstable [signal]": {
+    "prefix": "isstable",
+    "body": "${1:flag} = isstable(${1:d})",
+    "description": "isstable [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/isstable.html"
+  },
+  "prony [signal]": {
+    "prefix": "prony",
+    "body": "[${1:Num}, ${2:Den}] = prony(${1:impulse_resp}, ${2:num_ord}, ${3:denom_ord})",
+    "description": "prony [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/prony.html"
+  },
+  "strips [signal]": {
+    "prefix": "strips",
+    "body": "strips(${1:x}, ${2:sd}, ${3:fs}, ${4:scale})",
+    "description": "strips [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/strips.html"
+  },
+  "gaussdesign [signal]": {
+    "prefix": "gaussdesign",
+    "body": "${1:h} = gaussdesign(${1:bt}, ${2:span}, ${3:sps})",
+    "description": "gaussdesign [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/../signal/ref/gaussdesign.html"
+  },
+  "thd [signal]": {
+    "prefix": "thd",
+    "body": "[${1:r}, ${2:harmpow}, ${3:harmfreq}] = thd(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_n}, ${5:'power'}, ${6:optional_'aliased'})",
+    "description": "thd [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/thd.html"
+  },
+  "phasedelay [signal]": {
+    "prefix": "phasedelay",
+    "body": "${1:phi} = phasedelay(${1:d}, ${2:optional_f}, ${3:optional_fs})",
+    "description": "phasedelay [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/phasedelay.html"
+  },
+  "poly2lsf [signal]": {
+    "prefix": "poly2lsf",
+    "body": "${1:lsf} = poly2lsf(${1:a})",
+    "description": "poly2lsf [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/poly2lsf.html"
+  },
+  "aryule [signal]": {
+    "prefix": "aryule",
+    "body": "[${1:a}, ${2:e}, ${3:rc}] = aryule(${1:x}, ${2:p})",
+    "description": "aryule [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/aryule.html"
+  },
+  "icceps [signal]": {
+    "prefix": "icceps",
+    "body": "${1:x} = icceps(${1:xhat}, ${2:optional_nd})",
+    "description": "icceps [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/icceps.html"
+  },
+  "marcumq [signal]": {
+    "prefix": "marcumq",
+    "body": "${1:Q} = marcumq(${1:a}, ${2:b}, ${3:optional_m})",
+    "description": "marcumq [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/marcumq.html"
+  },
+  "polystab [signal]": {
+    "prefix": "polystab",
+    "body": "${1:b} = polystab(${1:a})",
+    "description": "polystab [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/polystab.html"
+  },
+  "medfreq [signal]": {
+    "prefix": "medfreq",
+    "body": "[${1:freq}, ${2:power}] = medfreq(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_freqrange})",
+    "description": "medfreq [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/medfreq.html"
+  },
+  "stepz [signal]": {
+    "prefix": "stepz",
+    "body": "[${1:h}, ${2:t}] = stepz(${1:d}, ${2:n}, ${3:optional_fs})",
+    "description": "stepz [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/stepz.html"
+  },
+  "pburg [signal]": {
+    "prefix": "pburg",
+    "body": "[${1:pxx}, ${2:f}, ${3:pxxc}] = pburg(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})",
+    "description": "pburg [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pburg.html"
+  },
+  "fircls1 [signal]": {
+    "prefix": "fircls1",
+    "body": "${1:b} = fircls1(${1:n}, ${2:wo}, ${3:dp}, ${4:ds}, ${5:wp}, ${6:ws}, ${7:k}, ${8:optional_'high'}, ${9:optional_'design_flag'})",
+    "description": "fircls1 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fircls1.html"
+  },
+  "mscohere [signal]": {
+    "prefix": "mscohere",
+    "body": "[${1:cxy}, ${2:f}] = mscohere(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange})",
+    "description": "mscohere [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/mscohere.html"
+  },
+  "sawtooth [signal]": {
+    "prefix": "sawtooth",
+    "body": "${1:x} = sawtooth(${1:t}, ${2:optional_xmax})",
+    "description": "sawtooth [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sawtooth.html"
+  },
+  "hampel [signal]": {
+    "prefix": "hampel",
+    "body": "[${1:y}, ${2:j}, ${3:xmedian}, ${4:xsigma}] = hampel(${1:x}, ${2:k}, ${3:optional_nsigma})",
+    "description": "hampel [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/hampel.html"
+  },
+  "db2pow [signal]": {
+    "prefix": "db2pow",
+    "body": "${1:y} = db2pow(${1:ydb})",
+    "description": "db2pow [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/db2pow.html"
+  },
+  "alignsignals [signal]": {
+    "prefix": "alignsignals",
+    "body": "[${1:Xa}, ${2:Ya}, ${3:D}] = alignsignals(${1:X}, ${2:Y}, ${3:maxlag}, ${4:optional_'truncate'})",
+    "description": "alignsignals [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/../signal/ref/alignsignals.html"
+  },
+  "fftfilt [signal]": {
+    "prefix": "fftfilt",
+    "body": "${1:y} = fftfilt(${1:gpuArrayb}, ${2:gpuArrayX}, ${3:optional_n})",
+    "description": "fftfilt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fftfilt.html"
+  },
+  "findchangepts [signal]": {
+    "prefix": "findchangepts",
+    "body": "[${1:ipt}, ${2:residual}] = findchangepts(${1:x}, 'MaxNumChanges', ${2:value}, 'Statistic', ${3:value}, 'MinDistance', ${4:value}, 'MinThreshold', ${5:value})",
+    "description": "findchangepts [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/findchangepts.html"
+  },
+  "besselap [signal]": {
+    "prefix": "besselap",
+    "body": "[${1:z}, ${2:p}, ${3:k}] = besselap(${1:n})",
+    "description": "besselap [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/besselap.html"
+  },
+  "overshoot [signal]": {
+    "prefix": "overshoot",
+    "body": "[${1:OS}, ${2:OSLEV}, ${3:OSINST}] = overshoot(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'Region', ${4:value}, 'SeekFactor', ${5:value}, 'StateLevels', ${6:value}, 'Tolerance', ${7:value})",
+    "description": "overshoot [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/overshoot.html"
+  },
+  "square [signal]": {
+    "prefix": "square",
+    "body": "${1:x} = square(${1:t}, ${2:optional_duty})",
+    "description": "square [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/square.html"
+  },
+  "pyulear [signal]": {
+    "prefix": "pyulear",
+    "body": "[${1:pxx}, ${2:f}, ${3:pxxc}] = pyulear(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})",
+    "description": "pyulear [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pyulear.html"
+  },
+  "triang [signal]": {
+    "prefix": "triang",
+    "body": "${1:w} = triang(${1:L})",
+    "description": "triang [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/triang.html"
+  },
+  "hann [signal]": {
+    "prefix": "hann",
+    "body": "${1:w} = hann(${1:L}, ${2:optional_sflag})",
+    "description": "hann [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/hann.html"
+  },
+  "kurtogram [signal]": {
+    "prefix": "kurtogram",
+    "body": "[${1:kgram}, ${2:f}, ${3:w}, ${4:fc}, ${5:wc}, ${6:bw}] = kurtogram(${1:xt}, ${2:optional_level})",
+    "description": "kurtogram [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/kurtogram.html"
+  },
+  "falltime [signal]": {
+    "prefix": "falltime",
+    "body": "[${1:F}, ${2:LT}, ${3:UT}, ${4:LL}, ${5:UL}] = falltime(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})",
+    "description": "falltime [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/falltime.html"
+  },
+  "findsignal [signal]": {
+    "prefix": "findsignal",
+    "body": "[${1:istart}, ${2:istop}, ${3:dist}] = findsignal(${1:data}, ${2:signal}, 'Normalization', ${3:value}, 'NormalizationLength', ${4:value}, 'MaxDistance', ${5:value}, 'MaxNumSegments', ${6:value}, 'TimeAlignment', ${7:value}, 'EDRTolerance', ${8:value}, 'Metric', ${9:value}, 'Annotate', ${10:value})",
+    "description": "findsignal [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/findsignal.html"
+  },
+  "upfirdn [signal]": {
+    "prefix": "upfirdn",
+    "body": "${1:yout} = upfirdn(${1:xin}, ${2:h}, ${3:p}, ${4:optional_q})",
+    "description": "upfirdn [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/upfirdn.html"
+  },
+  "fillgaps [signal]": {
+    "prefix": "fillgaps",
+    "body": "${1:y} = fillgaps(${1:x}, ${2:maxlen}, ${3:optional_order})",
+    "description": "fillgaps [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fillgaps.html"
+  },
+  "freqz [signal]": {
+    "prefix": "freqz",
+    "body": "${1:h} = freqz(${1:d}, ${2:f}, ${3:fs})",
+    "description": "freqz [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dsp.allpassfilter.freqz.html"
+  },
+  "fsst [signal]": {
+    "prefix": "fsst",
+    "body": "[${1:s}, ${2:f}, ${3:t}] = fsst(${1:x}, ${2:ts}, ${3:optional_window}, ${4:optional_freqloc})",
+    "description": "fsst [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fsst.html"
+  },
+  "gausswin [signal]": {
+    "prefix": "gausswin",
+    "body": "${1:w} = gausswin(${1:N}, ${2:optional_Alpha})",
+    "description": "gausswin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/gausswin.html"
+  },
+  "fir1 [signal]": {
+    "prefix": "fir1",
+    "body": "${1:b} = fir1(${1:n}, ${2:Wn}, ${3:optional_ftype}, ${4:optional_window}, ${5:optional_scaleopt})",
+    "description": "fir1 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fir1.html"
+  },
+  "pspectrum [signal]": {
+    "prefix": "pspectrum",
+    "body": "[${1:p}, ${2:f}, ${3:pwr}] = pspectrum(${1:x}, ${2:optional_t}, ${3:optional_type}, 'FrequencyLimits', ${4:value}, 'FrequencyResolution', ${5:value}, 'Leakage', ${6:value}, 'MinThreshold', ${7:value}, 'NumPowerBins', ${8:value}, 'OverlapPercent', ${9:value}, 'Reassign', ${10:value}, 'TimeResolution', ${11:value})",
+    "description": "pspectrum [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pspectrum.html"
+  },
+  "butter [signal]": {
+    "prefix": "butter",
+    "body": "[${1:A}, ${2:B}, ${3:C}, ${4:D}] = butter(${1:n}, ${2:Wn}, ${3:ftype}, ${4:optional_'s'})",
+    "description": "butter [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/butter.html"
+  },
+  "dpssdir [signal]": {
+    "prefix": "dpssdir",
+    "body": "${1:index} = dpssdir(${1:nw}, ${2:'nw'})",
+    "description": "dpssdir [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dpssdir.html"
+  },
+  "tf2latc [signal]": {
+    "prefix": "tf2latc",
+    "body": "${1:k} = tf2latc(${1:b}, ${2:'phase'})",
+    "description": "tf2latc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tf2latc.html"
+  },
+  "blackmanharris [signal]": {
+    "prefix": "blackmanharris",
+    "body": "${1:w} = blackmanharris(${1:N}, ${2:optional_SFLAG})",
+    "description": "blackmanharris [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/blackmanharris.html"
+  },
+  "flattopwin [signal]": {
+    "prefix": "flattopwin",
+    "body": "${1:w} = flattopwin(${1:L}, ${2:optional_sflag})",
+    "description": "flattopwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/flattopwin.html"
+  },
+  "isdouble [signal]": {
+    "prefix": "isdouble",
+    "body": "${1:flag} = isdouble(${1:d})",
+    "description": "isdouble [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/isdouble.html"
+  },
+  "pulseperiod [signal]": {
+    "prefix": "pulseperiod",
+    "body": "[${1:P}, ${2:INITCROSS}, ${3:FINALCROSS}, ${4:NEXTCROSS}, ${5:MIDLEV}] = pulseperiod(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})",
+    "description": "pulseperiod [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pulseperiod.html"
+  },
+  "decimate [signal]": {
+    "prefix": "decimate",
+    "body": "${1:y} = decimate(${1:x}, ${2:r}, ${3:n}, ${4:optional_'fir'})",
+    "description": "decimate [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/decimate.html"
+  },
+  "chebwin [signal]": {
+    "prefix": "chebwin",
+    "body": "${1:w} = chebwin(${1:L}, ${2:optional_r})",
+    "description": "chebwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/chebwin.html"
+  },
+  "ellipord [signal]": {
+    "prefix": "ellipord",
+    "body": "[${1:n}, ${2:Wp}] = ellipord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})",
+    "description": "ellipord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ellipord.html"
+  },
+  "buffer [signal]": {
+    "prefix": "buffer",
+    "body": "[${1:y}, ${2:z}, ${3:opt}] = buffer(${1:x}, ${2:n}, ${3:p}, ${4:optional_opt})",
+    "description": "buffer [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/buffer.html"
+  },
+  "tukeywin [signal]": {
+    "prefix": "tukeywin",
+    "body": "${1:w} = tukeywin(${1:L}, ${2:optional_r})",
+    "description": "tukeywin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tukeywin.html"
+  },
+  "ismaxphase [signal]": {
+    "prefix": "ismaxphase",
+    "body": "${1:flag} = ismaxphase(${1:d}, ${2:optional_tol})",
+    "description": "ismaxphase [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ismaxphase.html"
+  },
+  "rectwin [signal]": {
+    "prefix": "rectwin",
+    "body": "${1:w} = rectwin(${1:L})",
+    "description": "rectwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rectwin.html"
+  },
+  "envelope [signal]": {
+    "prefix": "envelope",
+    "body": "[${1:yupper}, ${2:ylower}] = envelope(${1:x}, ${2:np}, ${3:'peak'})",
+    "description": "envelope [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/envelope.html"
+  },
+  "impz [signal]": {
+    "prefix": "impz",
+    "body": "[${1:h}, ${2:t}] = impz(${1:d}, ${2:n}, ${3:optional_fs})",
+    "description": "impz [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dsp.allpassfilter.impz.html"
+  },
+  "sos2zp [signal]": {
+    "prefix": "sos2zp",
+    "body": "[${1:z}, ${2:p}, ${3:k}] = sos2zp(${1:sos}, ${2:optional_g})",
+    "description": "sos2zp [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sos2zp.html"
+  },
+  "rpmtrack [signal]": {
+    "prefix": "rpmtrack",
+    "body": "[${1:rpm}, ${2:tout}] = rpmtrack(${1:xt}, ${2:order}, ${3:p}, 'Method', ${4:value}, 'FrequencyResolution', ${5:value}, 'PowerPenalty', ${6:value}, 'FrequencyPenalty', ${7:value}, 'StartTime', ${8:value}, 'EndTime', ${9:value})",
+    "description": "rpmtrack [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rpmtrack.html"
+  },
+  "cheb2ap [signal]": {
+    "prefix": "cheb2ap",
+    "body": "[${1:z}, ${2:p}, ${3:k}] = cheb2ap(${1:n}, ${2:Rs})",
+    "description": "cheb2ap [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cheb2ap.html"
+  },
+  "sinc [signal]": {
+    "prefix": "sinc",
+    "body": "${1:y} = sinc(${1:x})",
+    "description": "sinc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sinc.html"
+  },
+  "cheb2ord [signal]": {
+    "prefix": "cheb2ord",
+    "body": "[${1:n}, ${2:Ws}] = cheb2ord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})",
+    "description": "cheb2ord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cheb2ord.html"
+  },
+  "filtfilt [signal]": {
+    "prefix": "filtfilt",
+    "body": "${1:y} = filtfilt(${1:d}, ${2:x})",
+    "description": "filtfilt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/filtfilt.html"
+  },
+  "rooteig [signal]": {
+    "prefix": "rooteig",
+    "body": "[${1:f}, ${2:pow}] = rooteig(${1:x}, ${2:p}, ${3:optional_fs}, ${4:optional_'corr'})",
+    "description": "rooteig [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rooteig.html"
+  },
+  "islinphase [signal]": {
+    "prefix": "islinphase",
+    "body": "${1:flag} = islinphase(${1:d}, ${2:optional_tol})",
+    "description": "islinphase [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/islinphase.html"
+  },
+  "peak2peak [signal]": {
+    "prefix": "peak2peak",
+    "body": "${1:Y} = peak2peak(${1:X}, ${2:optional_DIM})",
+    "description": "peak2peak [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/peak2peak.html"
+  },
+  "rceps [signal]": {
+    "prefix": "rceps",
+    "body": "[${1:y}, ${2:ym}] = rceps(${1:x})",
+    "description": "rceps [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rceps.html"
+  },
+  "besself [signal]": {
+    "prefix": "besself",
+    "body": "[${1:A}, ${2:B}, ${3:C}, ${4:D}] = besself(${1:n}, ${2:Wo}, ${3:optional_ftype})",
+    "description": "besself [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/besself.html"
+  },
+  "rms [signal]": {
+    "prefix": "rms",
+    "body": "${1:y} = rms(${1:x}, ${2:optional_dim})",
+    "description": "rms [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rms.html"
+  },
+  "powerbw [signal]": {
+    "prefix": "powerbw",
+    "body": "[${1:bw}, ${2:flo}, ${3:fhi}, ${4:power}] = powerbw(${1:sxx}, ${2:f}, ${3:rbw}, ${4:freqrange}, ${5:optional_r})",
+    "description": "powerbw [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/powerbw.html"
+  },
+  "highpass [signal]": {
+    "prefix": "highpass",
+    "body": "[${1:y}, ${2:d}] = highpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})",
+    "description": "highpass [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/highpass.html"
+  },
+  "tfestimate [signal]": {
+    "prefix": "tfestimate",
+    "body": "[${1:txy}, ${2:f}] = tfestimate(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_'mimo'}, ${8:optional_freqrange}, ${9:'Estimator'}, ${10:est})",
+    "description": "tfestimate [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tfestimate.html"
+  },
+  "dpss [signal]": {
+    "prefix": "dpss",
+    "body": "[${1:dps_seq}, ${2:lambda}] = dpss(${1:seq_length}, ${2:time_halfbandwidth}, ${3:'interp_method'}, ${4:optional_Ni}, ${5:optional_'trace'})",
+    "description": "dpss [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dpss.html"
+  },
+  "filt2block [signal]": {
+    "prefix": "filt2block",
+    "body": "filt2block(${1:d}, ${2:optional_'subsystem'}, ${3:'FilterStructure'}, ${4:optional_structure}, 'Destination', ${5:value}, 'BlockName', ${6:value}, 'OverwriteBlock', ${7:value}, 'MapCoefficientsToPorts', ${8:value}, 'CoefficientNames', ${9:value}, 'FrameBasedProcessing', ${10:value}, 'OptimizeZeros', ${11:value}, 'OptimizeOnes', ${12:value}, 'OptimizeNegativeOnes', ${13:value}, 'OptimizeDelayChains', ${14:value})",
+    "description": "filt2block [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/filt2block.html"
+  },
+  "freqs [signal]": {
+    "prefix": "freqs",
+    "body": "[${1:h}, ${2:w}] = freqs(${1:b}, ${2:a}, ${3:n})",
+    "description": "freqs [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/freqs.html"
+  },
+  "gauspuls [signal]": {
+    "prefix": "gauspuls",
+    "body": "${1:tc} = gauspuls(${1:'cutoff'}, ${2:fc}, ${3:bw}, ${4:bwr}, ${5:optional_tpe})",
+    "description": "gauspuls [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/gauspuls.html"
+  },
+  "rpmfreqmap [signal]": {
+    "prefix": "rpmfreqmap",
+    "body": "[${1:map}, ${2:freq}, ${3:rpm}, ${4:time}, ${5:res}] = rpmfreqmap(${1:x}, ${2:fs}, ${3:rpm}, ${4:res}, 'Amplitude', ${5:value}, 'OverlapPercent', ${6:value}, 'Scale', ${7:value}, 'Window', ${8:value})",
+    "description": "rpmfreqmap [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rpmfreqmap.html"
+  },
+  "pcov [signal]": {
+    "prefix": "pcov",
+    "body": "[${1:pxx}, ${2:f}, ${3:pxxc}] = pcov(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})",
+    "description": "pcov [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pcov.html"
+  },
+  "cfirpm [signal]": {
+    "prefix": "cfirpm",
+    "body": "[${1:b}, ${2:delta}, ${3:opt}] = cfirpm(${1:n}, ${2:f}, ${3:a}, ${4:optional_w}, ${5:optional_'sym'}, ${6:optional_'skip_stage2'}, ${7:optional_'debug'}, ${8:optional_{lgrid}})",
+    "description": "cfirpm [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cfirpm.html"
+  },
+  "dpsssave [signal]": {
+    "prefix": "dpsssave",
+    "body": "${1:status} = dpsssave(${1:time_halfbandwidth}, ${2:dps_seq}, ${3:lambda})",
+    "description": "dpsssave [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dpsssave.html"
+  },
+  "rpmordermap [signal]": {
+    "prefix": "rpmordermap",
+    "body": "[${1:map}, ${2:order}, ${3:rpm}, ${4:time}, ${5:res}] = rpmordermap(${1:x}, ${2:fs}, ${3:rpm}, ${4:res}, 'Amplitude', ${5:value}, 'OverlapPercent', ${6:value}, 'Scale', ${7:value}, 'Window', ${8:value})",
+    "description": "rpmordermap [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rpmordermap.html"
+  },
+  "modulate [signal]": {
+    "prefix": "modulate",
+    "body": "[${1:y}, ${2:t}] = modulate(${1:x}, ${2:fc}, ${3:fs}, ${4:'method'}, ${5:optional_opt})",
+    "description": "modulate [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/modulate.html"
+  },
+  "lpc [signal]": {
+    "prefix": "lpc",
+    "body": "[${1:a}, ${2:g}] = lpc(${1:x}, ${2:p})",
+    "description": "lpc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lpc.html"
+  },
+  "pmusic [signal]": {
+    "prefix": "pmusic",
+    "body": "[${1:S}, ${2:f}, ${3:v}, ${4:e}] = pmusic(${1:x}, ${2:p}, ${3:nfft}, ${4:fs}, ${5:nwin}, ${6:noverlap}, ${7:optional_'corr'}, ${8:optional_freqrange})",
+    "description": "pmusic [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pmusic.html"
+  },
+  "pwelch [signal]": {
+    "prefix": "pwelch",
+    "body": "[${1:pxx}, ${2:f}, ${3:pxxc}] = pwelch(${1:x}, ${2:window}, ${3:noverlap}, ${4:f}, ${5:fs}, ${6:optional_freqrange}, ${7:optional_spectrumtype}, ${8:optional_trace}, ${9:'ConfidenceLevel'}, ${10:optional_probability})",
+    "description": "pwelch [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pwelch.html"
+  },
+  "impzlength [signal]": {
+    "prefix": "impzlength",
+    "body": "${1:len} = impzlength(${1:d}, ${2:optional_tol})",
+    "description": "impzlength [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/impzlength.html"
+  },
+  "diric [signal]": {
+    "prefix": "diric",
+    "body": "${1:y} = diric(${1:x}, ${2:n})",
+    "description": "diric [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/diric.html"
+  },
+  "lp2bp [signal]": {
+    "prefix": "lp2bp",
+    "body": "[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2bp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo}, ${6:Bw})",
+    "description": "lp2bp [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lp2bp.html"
+  },
+  "bitrevorder [signal]": {
+    "prefix": "bitrevorder",
+    "body": "[${1:y}, ${2:i}] = bitrevorder(${1:x})",
+    "description": "bitrevorder [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/bitrevorder.html"
+  },
+  "snr [signal]": {
+    "prefix": "snr",
+    "body": "[${1:r}, ${2:noisepow}] = snr(${1:sxx}, ${2:f}, ${3:rbw}, ${4:optional_n}, ${5:'power'}, ${6:optional_'aliased'})",
+    "description": "snr [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/snr.html"
+  },
+  "sgolayfilt [signal]": {
+    "prefix": "sgolayfilt",
+    "body": "${1:y} = sgolayfilt(${1:x}, ${2:order}, ${3:framelen}, ${4:weights}, ${5:optional_dim})",
+    "description": "sgolayfilt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sgolayfilt.html"
+  },
+  "dutycycle [signal]": {
+    "prefix": "dutycycle",
+    "body": "${1:D} = dutycycle(${1:TAU}, ${2:PRF})",
+    "description": "dutycycle [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dutycycle.html"
+  },
+  "edr [signal]": {
+    "prefix": "edr",
+    "body": "[${1:dist}, ${2:ix}, ${3:iy}] = edr(${1:x}, ${2:y}, ${3:tol}, ${4:optional_maxsamp}, ${5:optional_metric})",
+    "description": "edr [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/edr.html"
+  },
+  "arcov [signal]": {
+    "prefix": "arcov",
+    "body": "[${1:a}, ${2:e}] = arcov(${1:x}, ${2:p})",
+    "description": "arcov [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/arcov.html"
+  },
+  "obw [signal]": {
+    "prefix": "obw",
+    "body": "[${1:bw}, ${2:flo}, ${3:fhi}, ${4:power}] = obw(${1:sxx}, ${2:f}, ${3:rbw}, ${4:freqrange}, ${5:optional_p})",
+    "description": "obw [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/obw.html"
+  },
+  "ac2poly [signal]": {
+    "prefix": "ac2poly",
+    "body": "[${1:a}, ${2:efinal}] = ac2poly(${1:r})",
+    "description": "ac2poly [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ac2poly.html"
+  },
+  "firpm [signal]": {
+    "prefix": "firpm",
+    "body": "${1:b} = firpm(${1:n}, ${2:f}, ${3:@fresp}, ${4:w}, ${5:optional_'ftype'})",
+    "description": "firpm [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/firpm.html"
+  },
+  "instfreq [signal]": {
+    "prefix": "instfreq",
+    "body": "[${1:ifq}, ${2:t}] = instfreq(${1:tfd}, ${2:fd}, ${3:td}, 'FrequencyLimits', ${4:value}, 'Method', ${5:value})",
+    "description": "instfreq [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/instfreq.html"
+  },
+  "cheb1ap [signal]": {
+    "prefix": "cheb1ap",
+    "body": "[${1:z}, ${2:p}, ${3:k}] = cheb1ap(${1:n}, ${2:Rp})",
+    "description": "cheb1ap [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cheb1ap.html"
+  },
+  "cusum [signal]": {
+    "prefix": "cusum",
+    "body": "[${1:iupper}, ${2:ilower}, ${3:uppersum}, ${4:lowersum}] = cusum(${1:x}, ${2:climit}, ${3:mshift}, ${4:tmean}, ${5:tdev}, ${6:optional_'all'})",
+    "description": "cusum [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cusum.html"
+  },
+  "lsf2poly [signal]": {
+    "prefix": "lsf2poly",
+    "body": "${1:a} = lsf2poly(${1:lsf})",
+    "description": "lsf2poly [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lsf2poly.html"
+  },
+  "latcfilt [signal]": {
+    "prefix": "latcfilt",
+    "body": "[${1:f}, ${2:g}, ${3:zf}] = latcfilt(${1:k}, ${2:1}, ${3:x}, ${4:'ic'}, ${5:zi}, ${6:optional_dim})",
+    "description": "latcfilt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/latcfilt.html"
+  },
+  "orderwaveform [signal]": {
+    "prefix": "orderwaveform",
+    "body": "${1:xrec} = orderwaveform(${1:x}, ${2:fs}, ${3:rpm}, ${4:orderlist}, ${5:optional_rpmrefidx}, 'FilterOrder', ${6:value}, 'Bandwidth', ${7:value}, 'Decouple', ${8:value}, 'SegmentLength', ${9:value})",
+    "description": "orderwaveform [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/orderwaveform.html"
+  },
+  "latc2tf [signal]": {
+    "prefix": "latc2tf",
+    "body": "[${1:num}, ${2:den}] = latc2tf(${1:k}, ${2:'firoption'})",
+    "description": "latc2tf [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/latc2tf.html"
+  },
+  "upsample [signal]": {
+    "prefix": "upsample",
+    "body": "${1:y} = upsample(${1:x}, ${2:n}, ${3:optional_phase})",
+    "description": "upsample [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/upsample.html"
+  },
+  "levinson [signal]": {
+    "prefix": "levinson",
+    "body": "[${1:a}, ${2:e}, ${3:k}] = levinson(${1:r}, ${2:n})",
+    "description": "levinson [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/levinson.html"
+  },
+  "pulsesep [signal]": {
+    "prefix": "pulsesep",
+    "body": "[${1:S}, ${2:INITCROSS}, ${3:FINALCROSS}, ${4:NEXTCROSS}, ${5:MIDLEV}] = pulsesep(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})",
+    "description": "pulsesep [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pulsesep.html"
+  },
+  "buttap [signal]": {
+    "prefix": "buttap",
+    "body": "[${1:z}, ${2:p}, ${3:k}] = buttap(${1:n})",
+    "description": "buttap [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/buttap.html"
+  },
+  "barthannwin [signal]": {
+    "prefix": "barthannwin",
+    "body": "${1:w} = barthannwin(${1:L})",
+    "description": "barthannwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/barthannwin.html"
+  },
+  "zplane [signal]": {
+    "prefix": "zplane",
+    "body": "[${1:vz}, ${2:vp}, ${3:vk}] = zplane(${1:d})",
+    "description": "zplane [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/zplane.html"
+  },
+  "isallpass [signal]": {
+    "prefix": "isallpass",
+    "body": "${1:flag} = isallpass(${1:d}, ${2:optional_tol})",
+    "description": "isallpass [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/isallpass.html"
+  },
+  "midcross [signal]": {
+    "prefix": "midcross",
+    "body": "[${1:C}, ${2:MIDLEV}] = midcross(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})",
+    "description": "midcross [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/midcross.html"
+  },
+  "bandpass [signal]": {
+    "prefix": "bandpass",
+    "body": "[${1:y}, ${2:d}] = bandpass(${1:xt}, ${2:fpass}, 'ImpulseResponse', ${3:value}, 'Steepness', ${4:value}, 'StopbandAttenuation', ${5:value})",
+    "description": "bandpass [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/bandpass.html"
+  },
+  "downsample [signal]": {
+    "prefix": "downsample",
+    "body": "${1:y} = downsample(${1:x}, ${2:n}, ${3:optional_phase})",
+    "description": "downsample [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/downsample.html"
+  },
+  "interp [signal]": {
+    "prefix": "interp",
+    "body": "[${1:y}, ${2:b}] = interp(${1:x}, ${2:r}, ${3:n}, ${4:optional_alpha})",
+    "description": "interp [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/interp.html"
+  },
+  "pkurtosis [signal]": {
+    "prefix": "pkurtosis",
+    "body": "[${1:sk}, ${2:f}, ${3:thresh}] = pkurtosis(${1:s}, ${2:sampx}, ${3:f}, ${4:window}, ${5:'ConfidenceLevel'}, ${6:p})",
+    "description": "pkurtosis [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pkurtosis.html"
+  },
+  "firpmord [signal]": {
+    "prefix": "firpmord",
+    "body": "${1:c} = firpmord(${1:f}, ${2:a}, ${3:dev}, ${4:fs}, ${5:'cell'})",
+    "description": "firpmord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/firpmord.html"
+  },
+  "phasez [signal]": {
+    "prefix": "phasez",
+    "body": "${1:phi} = phasez(${1:d}, ${2:optional_f}, ${3:optional_fs})",
+    "description": "phasez [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dsp.allpassfilter.phasez.html"
+  },
+  "resample [signal]": {
+    "prefix": "resample",
+    "body": "[${1:y}, ${2:ty}, ${3:b}] = resample(${1:x}, ${2:tx}, ${3:fs}, ${4:optional_p}, ${5:q}, ${6:optional_method})",
+    "description": "resample [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/resample.html"
+  },
+  "rc2poly [signal]": {
+    "prefix": "rc2poly",
+    "body": "[${1:a}, ${2:efinal}] = rc2poly(${1:k}, ${2:optional_r0})",
+    "description": "rc2poly [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rc2poly.html"
+  },
+  "sosfilt [signal]": {
+    "prefix": "sosfilt",
+    "body": "${1:y} = sosfilt(${1:sos}, ${2:x}, ${3:optional_dim})",
+    "description": "sosfilt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sosfilt.html"
+  },
+  "schurrc [signal]": {
+    "prefix": "schurrc",
+    "body": "[${1:k}, ${2:e}] = schurrc(${1:r})",
+    "description": "schurrc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/schurrc.html"
+  },
+  "unshiftdata [signal]": {
+    "prefix": "unshiftdata",
+    "body": "${1:y} = unshiftdata(${1:x}, ${2:perm}, ${3:nshifts})",
+    "description": "unshiftdata [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/unshiftdata.html"
+  },
+  "mag2db [signal]": {
+    "prefix": "mag2db",
+    "body": "${1:ydb} = mag2db(${1:y})",
+    "description": "mag2db [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/mag2db.html"
+  },
+  "modalfit [signal]": {
+    "prefix": "modalfit",
+    "body": "[${1:fn}, ${2:dr}, ${3:ms}, ${4:ofrf}] = modalfit(${1:sys}, ${2:f}, ${3:mnum}, 'Feedthrough', ${4:value}, 'FitMethod', ${5:value}, 'FreqRange', ${6:value}, 'PhysFreq', ${7:value}, 'DriveIndex', ${8:value})",
+    "description": "modalfit [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/modalfit.html"
+  },
+  "rc2ac [signal]": {
+    "prefix": "rc2ac",
+    "body": "${1:r} = rc2ac(${1:k}, ${2:r0})",
+    "description": "rc2ac [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rc2ac.html"
+  },
+  "toi [signal]": {
+    "prefix": "toi",
+    "body": "[${1:oip3}, ${2:fundpow}, ${3:fundfreq}, ${4:imodpow}, ${5:imodfreq}] = toi(${1:sxx}, ${2:f}, ${3:rbw}, ${4:'power'})",
+    "description": "toi [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/toi.html"
+  },
+  "db [signal]": {
+    "prefix": "db",
+    "body": "${1:dboutput} = db(${1:x}, ${2:optional_SignalType}, ${3:optional_R})",
+    "description": "db [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/db.html"
+  },
+  "idct [signal]": {
+    "prefix": "idct",
+    "body": "${1:x} = idct(${1:y}, ${2:optional_n}, ${3:optional_dim}, ${4:'Type'}, ${5:dcttype})",
+    "description": "idct [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/idct.html"
+  },
+  "bohmanwin [signal]": {
+    "prefix": "bohmanwin",
+    "body": "${1:w} = bohmanwin(${1:L})",
+    "description": "bohmanwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/bohmanwin.html"
+  },
+  "pow2db [signal]": {
+    "prefix": "pow2db",
+    "body": "${1:ydb} = pow2db(${1:y})",
+    "description": "pow2db [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pow2db.html"
+  },
+  "kaiser [signal]": {
+    "prefix": "kaiser",
+    "body": "${1:w} = kaiser(${1:L}, ${2:optional_beta})",
+    "description": "kaiser [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/kaiser.html"
+  },
+  "isminphase [signal]": {
+    "prefix": "isminphase",
+    "body": "${1:flag} = isminphase(${1:d}, ${2:optional_tol})",
+    "description": "isminphase [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/isminphase.html"
+  },
+  "vco [signal]": {
+    "prefix": "vco",
+    "body": "${1:c} = vco(${1:x}, ${2:[Fmin Fmax]}, ${3:fs})",
+    "description": "vco [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/vco.html"
+  },
+  "invfreqs [signal]": {
+    "prefix": "invfreqs",
+    "body": "[${1:b}, ${2:a}] = invfreqs(${1:h}, ${2:w}, ${3:'complex'}, ${4:n}, ${5:m}, ${6:wt}, ${7:iter}, ${8:tol}, ${9:optional_'trace'})",
+    "description": "invfreqs [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/invfreqs.html"
+  },
+  "tripuls [signal]": {
+    "prefix": "tripuls",
+    "body": "${1:y} = tripuls(${1:T}, ${2:optional_w}, ${3:optional_s})",
+    "description": "tripuls [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tripuls.html"
+  },
+  "ordertrack [signal]": {
+    "prefix": "ordertrack",
+    "body": "[${1:mag}, ${2:rpm}, ${3:time}] = ordertrack(${1:map}, ${2:order}, ${3:rpm}, ${4:orderlist})",
+    "description": "ordertrack [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ordertrack.html"
+  },
+  "tf2sos [signal]": {
+    "prefix": "tf2sos",
+    "body": "[${1:sos}, ${2:g}] = tf2sos(${1:b}, ${2:a}, ${3:'order'}, ${4:optional_'scale'})",
+    "description": "tf2sos [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tf2sos.html"
+  },
+  "xspectrogram [signal]": {
+    "prefix": "xspectrogram",
+    "body": "[${1:s}, ${2:f}, ${3:t}, ${4:c}] = xspectrogram(${1:x}, ${2:y}, ${3:window}, ${4:noverlap}, ${5:f}, ${6:fs}, ${7:optional_freqrange}, ${8:optional_spectrumtype}, ${9:'MinThreshold'}, ${10:thresh}, ${11:optional_freqloc}, 'OutputTimeDimension', ${12:value})",
+    "description": "xspectrogram [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/xspectrogram.html"
+  },
+  "issingle [signal]": {
+    "prefix": "issingle",
+    "body": "${1:flag} = issingle(${1:d})",
+    "description": "issingle [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/issingle.html"
+  },
+  "rootmusic [signal]": {
+    "prefix": "rootmusic",
+    "body": "[${1:f}, ${2:pow}] = rootmusic(${1:x}, ${2:p}, ${3:optional_fs}, ${4:optional_'corr'})",
+    "description": "rootmusic [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rootmusic.html"
+  },
+  "cell2sos [signal]": {
+    "prefix": "cell2sos",
+    "body": "${1:m} = cell2sos(${1:c})",
+    "description": "cell2sos [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cell2sos.html"
+  },
+  "armcov [signal]": {
+    "prefix": "armcov",
+    "body": "[${1:a}, ${2:e}] = armcov(${1:x}, ${2:p})",
+    "description": "armcov [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/armcov.html"
+  },
+  "lp2lp [signal]": {
+    "prefix": "lp2lp",
+    "body": "[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2lp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo})",
+    "description": "lp2lp [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lp2lp.html"
+  },
+  "fwht [signal]": {
+    "prefix": "fwht",
+    "body": "${1:y} = fwht(${1:x}, ${2:n}, ${3:optional_ordering})",
+    "description": "fwht [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fwht.html"
+  },
+  "tfridge [signal]": {
+    "prefix": "tfridge",
+    "body": "[${1:fridge}, ${2:iridge}, ${3:lridge}] = tfridge(${1:tfm}, ${2:f}, ${3:penalty}, ${4:'NumRidges'}, ${5:nr}, ${6:'NumFrequencyBins'}, ${7:nbins})",
+    "description": "tfridge [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tfridge.html"
+  },
+  "zerophase [signal]": {
+    "prefix": "zerophase",
+    "body": "[${1:Hr}, ${2:f}] = zerophase(${1:d}, ${2:f}, ${3:optional_fs})",
+    "description": "zerophase [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/zerophase.html"
+  },
+  "taylorwin [signal]": {
+    "prefix": "taylorwin",
+    "body": "${1:w} = taylorwin(${1:n}, ${2:nbar}, ${3:optional_sll})",
+    "description": "taylorwin [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/taylorwin.html"
+  },
+  "invfreqz [signal]": {
+    "prefix": "invfreqz",
+    "body": "[${1:b}, ${2:a}] = invfreqz(${1:h}, ${2:w}, ${3:'complex'}, ${4:n}, ${5:m}, ${6:wt}, ${7:iter}, ${8:tol}, ${9:optional_'trace'})",
+    "description": "invfreqz [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/invfreqz.html"
+  },
+  "double [signal]": {
+    "prefix": "double",
+    "body": "${1:f2} = double(${1:f1})",
+    "description": "double [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/double.html"
+  },
+  "sinad [signal]": {
+    "prefix": "sinad",
+    "body": "[${1:r}, ${2:totdistpow}] = sinad(${1:sxx}, ${2:f}, ${3:rbw}, ${4:'power'})",
+    "description": "sinad [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sinad.html"
+  },
+  "tf2zpk [signal]": {
+    "prefix": "tf2zpk",
+    "body": "[${1:z}, ${2:p}, ${3:k}] = tf2zpk(${1:b}, ${2:a})",
+    "description": "tf2zpk [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/tf2zpk.html"
+  },
+  "fircls [signal]": {
+    "prefix": "fircls",
+    "body": "${1:b} = fircls(${1:n}, ${2:f}, ${3:amp}, ${4:up}, ${5:lo}, ${6:optional_'design_flag'})",
+    "description": "fircls [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/fircls.html"
+  },
+  "goertzel [signal]": {
+    "prefix": "goertzel",
+    "body": "${1:dft_data} = goertzel(${1:data}, ${2:freq_indices}, ${3:optional_dim})",
+    "description": "goertzel [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/goertzel.html"
+  },
+  "seqperiod [signal]": {
+    "prefix": "seqperiod",
+    "body": "[${1:p}, ${2:num}] = seqperiod(${1:x})",
+    "description": "seqperiod [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/seqperiod.html"
+  },
+  "czt [signal]": {
+    "prefix": "czt",
+    "body": "${1:y} = czt(${1:x}, ${2:m}, ${3:w}, ${4:a})",
+    "description": "czt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/czt.html"
+  },
+  "cconv [signal]": {
+    "prefix": "cconv",
+    "body": "${1:c} = cconv(${1:gpuArrayA}, ${2:gpuArrayB}, ${3:n})",
+    "description": "cconv [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cconv.html"
+  },
+  "info [signal]": {
+    "prefix": "info",
+    "body": "${1:s} = info(${1:d})",
+    "description": "info [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/comm.carriersynchronizer.info.html"
+  },
+  "iscola [signal]": {
+    "prefix": "iscola",
+    "body": "[${1:tf}, ${2:m}, ${3:maxDeviation}] = iscola(${1:window}, ${2:noverlap}, ${3:optional_method})",
+    "description": "iscola [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/iscola.html"
+  },
+  "blackman [signal]": {
+    "prefix": "blackman",
+    "body": "${1:w} = blackman(${1:N}, ${2:optional_SFLAG})",
+    "description": "blackman [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/blackman.html"
+  },
+  "uencode [signal]": {
+    "prefix": "uencode",
+    "body": "${1:y} = uencode(${1:u}, ${2:n}, ${3:v}, ${4:optional_'SignFlag'})",
+    "description": "uencode [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/uencode.html"
+  },
+  "firtype [signal]": {
+    "prefix": "firtype",
+    "body": "${1:t} = firtype(${1:d})",
+    "description": "firtype [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/firtype.html"
+  },
+  "stmcb [signal]": {
+    "prefix": "stmcb",
+    "body": "[${1:b}, ${2:a}] = stmcb(${1:y}, ${2:x}, ${3:nb}, ${4:na}, ${5:niter}, ${6:optional_ai})",
+    "description": "stmcb [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/stmcb.html"
+  },
+  "cheb1ord [signal]": {
+    "prefix": "cheb1ord",
+    "body": "[${1:n}, ${2:Wp}] = cheb1ord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})",
+    "description": "cheb1ord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cheb1ord.html"
+  },
+  "dpssload [signal]": {
+    "prefix": "dpssload",
+    "body": "[${1:e}, ${2:v}] = dpssload(${1:n}, ${2:nw})",
+    "description": "dpssload [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dpssload.html"
+  },
+  "cheby1 [signal]": {
+    "prefix": "cheby1",
+    "body": "[${1:A}, ${2:B}, ${3:C}, ${4:D}] = cheby1(${1:n}, ${2:Rp}, ${3:Wp}, ${4:ftype}, ${5:optional_'s'})",
+    "description": "cheby1 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/cheby1.html"
+  },
+  "istft [signal]": {
+    "prefix": "istft",
+    "body": "[${1:X}, ${2:T}] = istft(${1:S}, ${2:optional_Ts}, 'Window', ${3:value}, 'OverlapLength', ${4:value}, 'FFTLength', ${5:value}, 'Method', ${6:value}, 'ConjugateSymmetric', ${7:value}, 'Centered', ${8:value}, 'InputTimeDimension', ${9:value})",
+    "description": "istft [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/istft.html"
+  },
+  "firls [signal]": {
+    "prefix": "firls",
+    "body": "${1:b} = firls(${1:n}, ${2:f}, ${3:a}, ${4:optional_'ftype'})",
+    "description": "firls [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/firls.html"
+  },
+  "poly2ac [signal]": {
+    "prefix": "poly2ac",
+    "body": "${1:r} = poly2ac(${1:a}, ${2:efinal})",
+    "description": "poly2ac [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/poly2ac.html"
+  },
+  "corrmtx [signal]": {
+    "prefix": "corrmtx",
+    "body": "[${1:X}, ${2:R}] = corrmtx(${1:x}, ${2:m}, ${3:optional_method})",
+    "description": "corrmtx [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/corrmtx.html"
+  },
+  "periodogram [signal]": {
+    "prefix": "periodogram",
+    "body": "[${1:rpxx}, ${2:f}, ${3:pxx}, ${4:fc}] = periodogram(${1:x}, ${2:window}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:optional_spectrumtype}, ${7:optional_'reassigned'})",
+    "description": "periodogram [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/periodogram.html"
+  },
+  "kaiserord [signal]": {
+    "prefix": "kaiserord",
+    "body": "${1:c} = kaiserord(${1:f}, ${2:a}, ${3:dev}, ${4:fs}, ${5:'cell'})",
+    "description": "kaiserord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/kaiserord.html"
+  },
+  "buttord [signal]": {
+    "prefix": "buttord",
+    "body": "[${1:n}, ${2:Wn}] = buttord(${1:Wp}, ${2:Ws}, ${3:Rp}, ${4:Rs}, ${5:optional_'s'})",
+    "description": "buttord [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/buttord.html"
+  },
+  "dftmtx [signal]": {
+    "prefix": "dftmtx",
+    "body": "${1:A} = dftmtx(${1:n})",
+    "description": "dftmtx [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dftmtx.html"
+  },
+  "lp2bs [signal]": {
+    "prefix": "lp2bs",
+    "body": "[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2bs(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo}, ${6:Bw})",
+    "description": "lp2bs [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lp2bs.html"
+  },
+  "envspectrum [signal]": {
+    "prefix": "envspectrum",
+    "body": "[${1:es}, ${2:f}, ${3:env}, ${4:t}] = envspectrum(${1:xt}, 'Method', ${2:value}, 'Band', ${3:value}, 'FilterOrder', ${4:value})",
+    "description": "envspectrum [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/envspectrum.html"
+  },
+  "modalsd [signal]": {
+    "prefix": "modalsd",
+    "body": "${1:fn} = modalsd(${1:frf}, ${2:f}, ${3:fs}, 'FitMethod', ${4:value}, 'FreqRange', ${5:value}, 'MaxModes', ${6:value}, 'SCriteria', ${7:value})",
+    "description": "modalsd [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/modalsd.html"
+  },
+  "stft [signal]": {
+    "prefix": "stft",
+    "body": "[${1:S}, ${2:F}, ${3:T}] = stft(${1:X}, ${2:optional_Ts}, 'Window', ${3:value}, 'OverlapLength', ${4:value}, 'FFTLength', ${5:value}, 'Centered', ${6:value}, 'OutputTimeDimension', ${7:value})",
+    "description": "stft [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/stft.html"
+  },
+  "filtic [signal]": {
+    "prefix": "filtic",
+    "body": "${1:z} = filtic(${1:b}, ${2:a}, ${3:y}, ${4:optional_x})",
+    "description": "filtic [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/filtic.html"
+  },
+  "sos2tf [signal]": {
+    "prefix": "sos2tf",
+    "body": "[${1:b}, ${2:a}] = sos2tf(${1:sos}, ${2:optional_g})",
+    "description": "sos2tf [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sos2tf.html"
+  },
+  "demod [signal]": {
+    "prefix": "demod",
+    "body": "${1:x} = demod(${1:y}, ${2:fc}, ${3:fs}, ${4:'pwm'}, ${5:'centered'})",
+    "description": "demod [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/demod.html"
+  },
+  "rlevinson [signal]": {
+    "prefix": "rlevinson",
+    "body": "[${1:r}, ${2:u}, ${3:k}, ${4:e}] = rlevinson(${1:a}, ${2:efinal})",
+    "description": "rlevinson [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/rlevinson.html"
+  },
+  "xcov [signal]": {
+    "prefix": "xcov",
+    "body": "[${1:c}, ${2:lags}] = xcov(${1:x}, ${2:optional_y}, ${3:optional_maxlag}, ${4:optional_scaleopt})",
+    "description": "xcov [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/xcov.html"
+  },
+  "undershoot [signal]": {
+    "prefix": "undershoot",
+    "body": "[${1:OS}, ${2:OSLEV}, ${3:OSINST}] = undershoot(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'Region', ${4:value}, 'SeekFactor', ${5:value}, 'StateLevels', ${6:value}, 'Tolerance', ${7:value})",
+    "description": "undershoot [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/undershoot.html"
+  },
+  "sos2cell [signal]": {
+    "prefix": "sos2cell",
+    "body": "${1:c} = sos2cell(${1:m}, ${2:optional_g})",
+    "description": "sos2cell [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sos2cell.html"
+  },
+  "maxflat [signal]": {
+    "prefix": "maxflat",
+    "body": "${1:b} = maxflat(${1:n}, ${2:'sym'}, ${3:Wn}, ${4:optional_'design_flag'})",
+    "description": "maxflat [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/maxflat.html"
+  },
+  "digitrevorder [signal]": {
+    "prefix": "digitrevorder",
+    "body": "[${1:y}, ${2:i}] = digitrevorder(${1:x}, ${2:r})",
+    "description": "digitrevorder [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/digitrevorder.html"
+  },
+  "polyscale [signal]": {
+    "prefix": "polyscale",
+    "body": "${1:b} = polyscale(${1:a}, ${2:alpha})",
+    "description": "polyscale [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/polyscale.html"
+  },
+  "finddelay [signal]": {
+    "prefix": "finddelay",
+    "body": "${1:D} = finddelay(${1:X}, ${2:Y}, ${3:optional_maxlag})",
+    "description": "finddelay [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/../signal/ref/finddelay.html"
+  },
+  "dpssclear [signal]": {
+    "prefix": "dpssclear",
+    "body": "dpssclear(${1:n}, ${2:nw})",
+    "description": "dpssclear [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dpssclear.html"
+  },
+  "impinvar [signal]": {
+    "prefix": "impinvar",
+    "body": "[${1:bz}, ${2:az}] = impinvar(${1:b}, ${2:a}, ${3:fs}, ${4:optional_tol})",
+    "description": "impinvar [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/impinvar.html"
+  },
+  "pulstran [signal]": {
+    "prefix": "pulstran",
+    "body": "${1:y} = pulstran(${1:t}, ${2:d}, ${3:p}, ${4:optional_fs})",
+    "description": "pulstran [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pulstran.html"
+  },
+  "ifwht [signal]": {
+    "prefix": "ifwht",
+    "body": "${1:y} = ifwht(${1:x}, ${2:n}, ${3:optional_ordering})",
+    "description": "ifwht [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ifwht.html"
+  },
+  "is2rc [signal]": {
+    "prefix": "is2rc",
+    "body": "${1:k} = is2rc(${1:isin})",
+    "description": "is2rc [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/is2rc.html"
+  },
+  "slewrate [signal]": {
+    "prefix": "slewrate",
+    "body": "[${1:S}, ${2:LT}, ${3:UT}, ${4:LL}, ${5:UL}] = slewrate(${1:X}, ${2:optional_T}, 'PercentReferenceLevels', ${3:value}, 'StateLevels', ${4:value}, 'Tolerance', ${5:value})",
+    "description": "slewrate [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/slewrate.html"
+  },
+  "pentropy [signal]": {
+    "prefix": "pentropy",
+    "body": "[${1:se}, ${2:t}] = pentropy(${1:p}, ${2:fp}, ${3:tp}, 'Instantaneous', ${4:value}, 'Scaled', ${5:value}, 'FrequencyLimits', ${6:value}, 'TimeLimits', ${7:value})",
+    "description": "pentropy [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pentropy.html"
+  },
+  "sfdr [signal]": {
+    "prefix": "sfdr",
+    "body": "[${1:r}, ${2:spurpow}, ${3:spurfreq}] = sfdr(${1:sxx}, ${2:f}, ${3:optional_msd}, ${4:'power'})",
+    "description": "sfdr [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/sfdr.html"
+  },
+  "plomb [signal]": {
+    "prefix": "plomb",
+    "body": "[${1:pxx}, ${2:fvec}] = plomb(${1:x}, ${2:fs}, ${3:fvec}, ${4:optional_spectrumtype})",
+    "description": "plomb [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/plomb.html"
+  },
+  "findpeaks [signal]": {
+    "prefix": "findpeaks",
+    "body": "[${1:pks}, ${2:locs}, ${3:w}, ${4:p}] = findpeaks(${1:data}, ${2:Fs}, 'NPeaks', ${3:value}, 'SortStr', ${4:value}, 'MinPeakHeight', ${5:value}, 'MinPeakProminence', ${6:value}, 'Threshold', ${7:value}, 'MinPeakDistance', ${8:value}, 'WidthReference', ${9:value}, 'MinPeakWidth', ${10:value}, 'MaxPeakWidth', ${11:value}, 'Annotate', ${12:value})",
+    "description": "findpeaks [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/findpeaks.html"
+  },
+  "medfilt1 [signal]": {
+    "prefix": "medfilt1",
+    "body": "${1:y} = medfilt1(${1:x}, ${2:optional_n}, ${3:optional_nanflag}, ${4:optional_padding})",
+    "description": "medfilt1 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/medfilt1.html"
+  },
+  "ellip [signal]": {
+    "prefix": "ellip",
+    "body": "[${1:A}, ${2:B}, ${3:C}, ${4:D}] = ellip(${1:n}, ${2:Rp}, ${3:Rs}, ${4:Wp}, ${5:ftype}, ${6:optional_'s'})",
+    "description": "ellip [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/ellip.html"
+  },
+  "lp2hp [signal]": {
+    "prefix": "lp2hp",
+    "body": "[${1:At}, ${2:Bt}, ${3:Ct}, ${4:Dt}] = lp2hp(${1:A}, ${2:B}, ${3:C}, ${4:D}, ${5:Wo})",
+    "description": "lp2hp [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/lp2hp.html"
+  },
+  "pulsewidth [signal]": {
+    "prefix": "pulsewidth",
+    "body": "[${1:W}, ${2:INITCROSS}, ${3:FINALCROSS}, ${4:MIDLEV}] = pulsewidth(${1:X}, ${2:optional_T}, 'MidPercentReferenceLevel', ${3:value}, 'Polarity', ${4:value}, 'StateLevels', ${5:value}, 'Tolerance', ${6:value})",
+    "description": "pulsewidth [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pulsewidth.html"
+  },
+  "peig [signal]": {
+    "prefix": "peig",
+    "body": "[${1:S}, ${2:f}, ${3:v}, ${4:e}] = peig(${1:x}, ${2:p}, ${3:nfft}, ${4:fs}, ${5:nwin}, ${6:noverlap}, ${7:optional_'corr'}, ${8:optional_freqrange})",
+    "description": "peig [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/peig.html"
+  },
+  "grpdelay [signal]": {
+    "prefix": "grpdelay",
+    "body": "${1:gd} = grpdelay(${1:d}, ${2:f}, ${3:optional_fs})",
+    "description": "grpdelay [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/dsp.allpassfilter.grpdelay.html"
+  },
+  "pmcov [signal]": {
+    "prefix": "pmcov",
+    "body": "[${1:pxx}, ${2:f}, ${3:pxxc}] = pmcov(${1:x}, ${2:order}, ${3:f}, ${4:fs}, ${5:optional_freqrange}, ${6:'ConfidenceLevel'}, ${7:optional_probability})",
+    "description": "pmcov [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/pmcov.html"
+  },
+  "spectrogram [signal]": {
+    "prefix": "spectrogram",
+    "body": "[${1:s}, ${2:f}, ${3:t}, ${4:ps}, ${5:fc}, ${6:tc}] = spectrogram(${1:x}, ${2:window}, ${3:noverlap}, ${4:f}, ${5:fs}, ${6:'reassigned'}, ${7:optional_freqrange}, ${8:optional_spectrumtype}, ${9:'MinThreshold'}, ${10:thresh}, ${11:optional_freqloc}, 'OutputTimeDimension', ${12:value})",
+    "description": "spectrogram [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/spectrogram.html"
+  },
+  "xcorr2 [signal]": {
+    "prefix": "xcorr2",
+    "body": "${1:c} = xcorr2(${1:a}, ${2:optional_b})",
+    "description": "xcorr2 [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/xcorr2.html"
+  },
+  "arburg [signal]": {
+    "prefix": "arburg",
+    "body": "[${1:a}, ${2:e}, ${3:rc}] = arburg(${1:x}, ${2:p})",
+    "description": "arburg [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/arburg.html"
+  },
+  "intfilt [signal]": {
+    "prefix": "intfilt",
+    "body": "${1:b} = intfilt(${1:l}, ${2:n}, ${3:'Lagrange'})",
+    "description": "intfilt [signal]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/signal/ref/intfilt.html"
+  }
+}

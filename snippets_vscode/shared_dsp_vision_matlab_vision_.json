@@ -1,0 +1,8 @@
+{
+  "dsp.DCT [shared]": {
+    "prefix": "dsp.DCT",
+    "body": "dsp.DCT(${1:arg})",
+    "description": "dsp.DCT [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/ref/dsp.dct-system-object.html"
+  }
+}

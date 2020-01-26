@@ -1,0 +1,8 @@
+{
+  "appdesigner [matlab]": {
+    "prefix": "appdesigner",
+    "body": "appdesigner(${1:filename})",
+    "description": "appdesigner [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/appdesigner.html"
+  }
+}

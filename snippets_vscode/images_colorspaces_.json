@@ -1,0 +1,44 @@
+{
+  "rgb2lin [images]": {
+    "prefix": "rgb2lin",
+    "body": "${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})",
+    "description": "rgb2lin [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/rgb2lin.html"
+  },
+  "colorangle [images]": {
+    "prefix": "colorangle",
+    "body": "${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})",
+    "description": "colorangle [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/colorangle.html"
+  },
+  "lin2rgb [images]": {
+    "prefix": "lin2rgb",
+    "body": "${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})",
+    "description": "lin2rgb [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/lin2rgb.html"
+  },
+  "chromadapt [images]": {
+    "prefix": "chromadapt",
+    "body": "${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})",
+    "description": "chromadapt [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/chromadapt.html"
+  },
+  "illumpca [images]": {
+    "prefix": "illumpca",
+    "body": "${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})",
+    "description": "illumpca [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/illumpca.html"
+  },
+  "illumgray [images]": {
+    "prefix": "illumgray",
+    "body": "${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})",
+    "description": "illumgray [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/illumgray.html"
+  },
+  "illumwhite [images]": {
+    "prefix": "illumwhite",
+    "body": "${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})",
+    "description": "illumwhite [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/illumwhite.html"
+  }
+}

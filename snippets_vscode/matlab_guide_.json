@@ -1,0 +1,8 @@
+{
+  "guide [matlab]": {
+    "prefix": "guide",
+    "body": "guide(${1:HandleList})",
+    "description": "guide [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/guide.html"
+  }
+}

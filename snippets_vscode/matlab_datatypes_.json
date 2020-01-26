@@ -1,0 +1,500 @@
+{
+  "mat2cell [matlab]": {
+    "prefix": "mat2cell",
+    "body": "${1:C} = mat2cell(${1:A}, ${2:rowDist})",
+    "description": "mat2cell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/mat2cell.html"
+  },
+  "table2cell [matlab]": {
+    "prefix": "table2cell",
+    "body": "${1:C} = table2cell(${1:T})",
+    "description": "table2cell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table2cell.html"
+  },
+  "addprop [matlab]": {
+    "prefix": "addprop",
+    "body": "${1:T} = addprop(${1:T}, ${2:pname}, ${3:pname})",
+    "description": "addprop [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/addprop.html"
+  },
+  "rows2vars [matlab]": {
+    "prefix": "rows2vars",
+    "body": "${1:T2} = rows2vars(${1:T1}, 'VariableNamesSource', ${2:value}, 'DataVariables', ${3:value})",
+    "description": "rows2vars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/rows2vars.html"
+  },
+  "istable [matlab]": {
+    "prefix": "istable",
+    "body": "${1:tf} = istable(${1:A})",
+    "description": "istable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/istable.html"
+  },
+  "rowfun [matlab]": {
+    "prefix": "rowfun",
+    "body": "${1:B} = rowfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'SeparateInputs', ${6:value}, 'ExtractCellContents', ${7:value}, 'OutputVariableNames', ${8:value}, 'NumOutputs', ${9:value}, 'ErrorHandler', ${10:value})",
+    "description": "rowfun [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/rowfun.html"
+  },
+  "array2table [matlab]": {
+    "prefix": "array2table",
+    "body": "${1:T} = array2table(${1:A}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})",
+    "description": "array2table [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/array2table.html"
+  },
+  "head [matlab]": {
+    "prefix": "head",
+    "body": "${1:B} = head(${1:A}, ${2:k})",
+    "description": "head [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/head.html"
+  },
+  "retime [matlab]": {
+    "prefix": "retime",
+    "body": "${1:TT2} = retime(${1:TT1}, ${2:newTimeStep})",
+    "description": "retime [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/timetable.retime.html"
+  },
+  "union [matlab]": {
+    "prefix": "union",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:setOrder})",
+    "description": "union [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/polyshape.union.html"
+  },
+  "struct2table [matlab]": {
+    "prefix": "struct2table",
+    "body": "${1:T} = struct2table(${1:s}, 'RowNames', ${2:value}, 'AsArray', ${3:value})",
+    "description": "struct2table [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/struct2table.html"
+  },
+  "issortedrows [matlab]": {
+    "prefix": "issortedrows",
+    "body": "${1:TF} = issortedrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})",
+    "description": "issortedrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/issortedrows.html"
+  },
+  "orderfields [matlab]": {
+    "prefix": "orderfields",
+    "body": "[${1:s}, ${2:perm}] = orderfields(${1:s1 }, ${2:perm})",
+    "description": "orderfields [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/orderfields.html"
+  },
+  "double._parenReference [matlab]": {
+    "prefix": "double._parenReference",
+    "body": "double._parenReference(${1:d}, ${2:index})",
+    "description": "double._parenReference [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/double._parenReference.html"
+  },
+  "outerjoin [matlab]": {
+    "prefix": "outerjoin",
+    "body": "[${1:T}, ${2:ileft}, ${3:iright}] = outerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'MergeKeys', ${6:value}, 'Type', ${7:value})",
+    "description": "outerjoin [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/outerjoin.html"
+  },
+  "cell [matlab]": {
+    "prefix": "cell",
+    "body": "${1:D} = cell(${1:obj})",
+    "description": "cell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cell.html"
+  },
+  "tail [matlab]": {
+    "prefix": "tail",
+    "body": "${1:B} = tail(${1:A}, ${2:k})",
+    "description": "tail [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/tail.html"
+  },
+  "mergevars [matlab]": {
+    "prefix": "mergevars",
+    "body": "${1:T} = mergevars(${1:T}, ${2:vars}, 'NewVariableName', ${3:value}, 'MergeAsTable', ${4:value})",
+    "description": "mergevars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.mergevars.html"
+  },
+  "setxor [matlab]": {
+    "prefix": "setxor",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:setOrder})",
+    "description": "setxor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setxor.html"
+  },
+  "tabular._parenAssign [matlab]": {
+    "prefix": "tabular._parenAssign",
+    "body": "tabular._parenAssign(${1:T}, ${2:rows}, ${3:vars})",
+    "description": "tabular._parenAssign [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/tabular._parenAssign.html"
+  },
+  "lag [matlab]": {
+    "prefix": "lag",
+    "body": "${1:TT2} = lag(${1:TT1}, ${2:dt})",
+    "description": "lag [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timetable.lag.html"
+  },
+  "namedargs2cell [matlab]": {
+    "prefix": "namedargs2cell",
+    "body": "${1:c} = namedargs2cell(${1:s})",
+    "description": "namedargs2cell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/namedargs2cell.html"
+  },
+  "inner2outer [matlab]": {
+    "prefix": "inner2outer",
+    "body": "${1:T1} = inner2outer(${1:T})",
+    "description": "inner2outer [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.inner2outer.html"
+  },
+  "timerange [matlab]": {
+    "prefix": "timerange",
+    "body": "${1:S} = timerange(${1:timePeriod}, ${2:unitOfTime})",
+    "description": "timerange [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/timerange.html"
+  },
+  "height [matlab]": {
+    "prefix": "height",
+    "body": "${1:H} = height(${1:T})",
+    "description": "height [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/height.html"
+  },
+  "timetable [matlab]": {
+    "prefix": "timetable",
+    "body": "${1:TT} = timetable(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, ${5:'RowTimes'}, ${6:rowTimes}, 'VariableNames', ${7:value})",
+    "description": "timetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/timetable.html"
+  },
+  "intersect [matlab]": {
+    "prefix": "intersect",
+    "body": "[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:setOrder})",
+    "description": "intersect [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html"
+  },
+  "saveobj [matlab]": {
+    "prefix": "saveobj",
+    "body": "${1:b} = saveobj(${1:a})",
+    "description": "saveobj [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/saveobj.html"
+  },
+  "istimetable [matlab]": {
+    "prefix": "istimetable",
+    "body": "${1:tf} = istimetable(${1:A})",
+    "description": "istimetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/istimetable.html"
+  },
+  "cell2table [matlab]": {
+    "prefix": "cell2table",
+    "body": "${1:T} = cell2table(${1:C}, 'RowNames', ${2:value}, 'VariableNames', ${3:value})",
+    "description": "cell2table [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cell2table.html"
+  },
+  "movevars [matlab]": {
+    "prefix": "movevars",
+    "body": "${1:T} = movevars(${1:T}, ${2:vars}, 'Before', ${3:value})",
+    "description": "movevars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.movevars.html"
+  },
+  "isregular [matlab]": {
+    "prefix": "isregular",
+    "body": "[${1:TF}, ${2:dt}] = isregular(${1:TT}, ${2:unit})",
+    "description": "isregular [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timetable.isregular.html"
+  },
+  "width [matlab]": {
+    "prefix": "width",
+    "body": "${1:W} = width(${1:T})",
+    "description": "width [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/width.html"
+  },
+  "join [matlab]": {
+    "prefix": "join",
+    "body": "[${1:T}, ${2:iright}] = join(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value}, 'KeepOneCopy', ${6:value})",
+    "description": "join [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.join.html"
+  },
+  "cat [matlab]": {
+    "prefix": "cat",
+    "body": "${1:C} = cat(${1:dim}, ${2:A}, ${3:B})",
+    "description": "cat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geopoint.cat.html"
+  },
+  "double._parenAssign [matlab]": {
+    "prefix": "double._parenAssign",
+    "body": "double._parenAssign(${1:d}, ${2:index})",
+    "description": "double._parenAssign [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/double._parenAssign.html"
+  },
+  "isfield [matlab]": {
+    "prefix": "isfield",
+    "body": "${1:tf} = isfield(${1:S}, ${2:C})",
+    "description": "isfield [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/isfield.html"
+  },
+  "table2struct [matlab]": {
+    "prefix": "table2struct",
+    "body": "${1:S} = table2struct(${1:T}, 'ToScalar', ${2:value})",
+    "description": "table2struct [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table2struct.html"
+  },
+  "table2timetable [matlab]": {
+    "prefix": "table2timetable",
+    "body": "${1:TT} = table2timetable(${1:T}, 'RowTimes', ${2:value})",
+    "description": "table2timetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/table2timetable.html"
+  },
+  "sortrows [matlab]": {
+    "prefix": "sortrows",
+    "body": "[${1:tblB}, ${2:index}] = sortrows(${1:tblA}, ${2:vars}, ${3:direction}, 'MissingPlacement', ${4:value}, 'ComparisonMethod', ${5:value})",
+    "description": "sortrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/double.sortrows.html"
+  },
+  "vartype [matlab]": {
+    "prefix": "vartype",
+    "body": "${1:S} = vartype(${1:type})",
+    "description": "vartype [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/vartype.html"
+  },
+  "topkrows [matlab]": {
+    "prefix": "topkrows",
+    "body": "[${1:tblB}, ${2:index}] = topkrows(${1:tblA}, ${2:k}, ${3:vars}, ${4:direction}, 'ComparisonMethod', ${5:value})",
+    "description": "topkrows [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/topkrows.html"
+  },
+  "struct2cell [matlab]": {
+    "prefix": "struct2cell",
+    "body": "${1:c} = struct2cell(${1:s})",
+    "description": "struct2cell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/struct2cell.html"
+  },
+  "cell2struct [matlab]": {
+    "prefix": "cell2struct",
+    "body": "${1:structArray} = cell2struct(${1:cellArray}, ${2:fields}, ${3:dim})",
+    "description": "cell2struct [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cell2struct.html"
+  },
+  "ismember [matlab]": {
+    "prefix": "ismember",
+    "body": "[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B})",
+    "description": "ismember [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ismember.html"
+  },
+  "vertcat [matlab]": {
+    "prefix": "vertcat",
+    "body": "${1:C} = vertcat(${1:A})",
+    "description": "vertcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html"
+  },
+  "withtol [matlab]": {
+    "prefix": "withtol",
+    "body": "${1:S} = withtol(${1:rowTimes}, ${2:tol})",
+    "description": "withtol [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/withtol.html"
+  },
+  "varfun [matlab]": {
+    "prefix": "varfun",
+    "body": "${1:B} = varfun(${1:func}, ${2:A}, 'OutputFormat', ${3:value}, 'InputVariables', ${4:value}, 'GroupingVariables', ${5:value}, 'ErrorHandler', ${6:value})",
+    "description": "varfun [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/varfun.html"
+  },
+  "array2timetable [matlab]": {
+    "prefix": "array2timetable",
+    "body": "${1:TT} = array2timetable(${1:X}, 'RowTimes', ${2:value}, 'VariableNames', ${3:value})",
+    "description": "array2timetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/array2timetable.html"
+  },
+  "tabular._curlyBraceReference [matlab]": {
+    "prefix": "tabular._curlyBraceReference",
+    "body": "tabular._curlyBraceReference(${1:T}, ${2:rows}, ${3:vars})",
+    "description": "tabular._curlyBraceReference [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/tabular._curlyBraceReference.html"
+  },
+  "convertvars [matlab]": {
+    "prefix": "convertvars",
+    "body": "${1:T} = convertvars(${1:T}, ${2:vars}, ${3:type})",
+    "description": "convertvars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/convertvars.html"
+  },
+  "arrayfun [matlab]": {
+    "prefix": "arrayfun",
+    "body": "${1:B} = arrayfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})",
+    "description": "arrayfun [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/arrayfun.html"
+  },
+  "num2cell [matlab]": {
+    "prefix": "num2cell",
+    "body": "${1:C} = num2cell(${1:A}, ${2:dim})",
+    "description": "num2cell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/num2cell.html"
+  },
+  "isempty [matlab]": {
+    "prefix": "isempty",
+    "body": "${1:TF} = isempty(${1:A})",
+    "description": "isempty [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bioma.data.metadata.isempty.html"
+  },
+  "setdiff [matlab]": {
+    "prefix": "setdiff",
+    "body": "[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:setOrder})",
+    "description": "setdiff [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setdiff.html"
+  },
+  "table [matlab]": {
+    "prefix": "table",
+    "body": "${1:T} = table(${1:'Size'}, ${2:sz}, ${3:'VariableTypes'}, ${4:varTypes}, 'RowNames', ${5:value}, 'VariableNames', ${6:value})",
+    "description": "table [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.html"
+  },
+  "rmprop [matlab]": {
+    "prefix": "rmprop",
+    "body": "${1:T} = rmprop(${1:T}, ${2:pname})",
+    "description": "rmprop [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/geopoint.rmprop.html"
+  },
+  "setfield [matlab]": {
+    "prefix": "setfield",
+    "body": "${1:s} = setfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}}, ${5:value})",
+    "description": "setfield [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/setfield.html"
+  },
+  "unique [matlab]": {
+    "prefix": "unique",
+    "body": "[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:setOrder})",
+    "description": "unique [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unique.html"
+  },
+  "unstack [matlab]": {
+    "prefix": "unstack",
+    "body": "[${1:U}, ${2:is}] = unstack(${1:S}, ${2:vars}, ${3:ivar}, 'GroupingVariables', ${4:value}, 'ConstantVariables', ${5:value}, 'NewDataVariableNames', ${6:value}, 'AggregationFunction', ${7:value})",
+    "description": "unstack [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unstack.html"
+  },
+  "horzcat [matlab]": {
+    "prefix": "horzcat",
+    "body": "${1:C} = horzcat(${1:A})",
+    "description": "horzcat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html"
+  },
+  "addvars [matlab]": {
+    "prefix": "addvars",
+    "body": "${1:T} = addvars(${1:T}, ${2:var}, 'Before', ${3:value}, 'NewVariableNames', ${4:value})",
+    "description": "addvars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.addvars.html"
+  },
+  "ndims [matlab]": {
+    "prefix": "ndims",
+    "body": "${1:N} = ndims(${1:A})",
+    "description": "ndims [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ndims.html"
+  },
+  "cellplot [matlab]": {
+    "prefix": "cellplot",
+    "body": "${1:handles} = cellplot(${1:c}, ${2:legend})",
+    "description": "cellplot [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cellplot.html"
+  },
+  "numel [matlab]": {
+    "prefix": "numel",
+    "body": "${1:n} = numel(${1:A})",
+    "description": "numel [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/numel.html"
+  },
+  "timetable2table [matlab]": {
+    "prefix": "timetable2table",
+    "body": "${1:TT} = timetable2table(${1:T}, 'ConvertRowTimes', ${2:value})",
+    "description": "timetable2table [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timetable2table.html"
+  },
+  "getfield [matlab]": {
+    "prefix": "getfield",
+    "body": "${1:value} = getfield(${1:s}, ${2:{sIndx1,...,sIndxM}}, ${3:field}, ${4:{fIndx1,...,fIndxN}})",
+    "description": "getfield [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/getfield.html"
+  },
+  "stack [matlab]": {
+    "prefix": "stack",
+    "body": "[${1:S}, ${2:iu}] = stack(${1:U}, ${2:vars}, 'ConstantVariables', ${3:value}, 'NewDataVariableName', ${4:value}, 'IndexVariableName', ${5:value})",
+    "description": "stack [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/stack.html"
+  },
+  "rmfield [matlab]": {
+    "prefix": "rmfield",
+    "body": "${1:s} = rmfield(${1:s}, ${2:field})",
+    "description": "rmfield [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/rmfield.html"
+  },
+  "removevars [matlab]": {
+    "prefix": "removevars",
+    "body": "${1:T} = removevars(${1:T}, ${2:vars})",
+    "description": "removevars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.removevars.html"
+  },
+  "splitvars [matlab]": {
+    "prefix": "splitvars",
+    "body": "${1:T} = splitvars(${1:T}, ${2:vars}, 'NewVariableNames', ${3:value})",
+    "description": "splitvars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table.splitvars.html"
+  },
+  "summary [matlab]": {
+    "prefix": "summary",
+    "body": "${1:s} = summary(${1:T})",
+    "description": "summary [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/table.summary.html"
+  },
+  "table2array [matlab]": {
+    "prefix": "table2array",
+    "body": "${1:A} = table2array(${1:T})",
+    "description": "table2array [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/table2array.html"
+  },
+  "synchronize [matlab]": {
+    "prefix": "synchronize",
+    "body": "${1:TT2} = synchronize(${1:TT1})",
+    "description": "synchronize [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/../matlab/ref/timetable.synchronize.html"
+  },
+  "structfun [matlab]": {
+    "prefix": "structfun",
+    "body": "${1:B} = structfun(${1:func}, ${2:A}, 'UniformOutput', ${3:value}, 'ErrorHandler', ${4:value})",
+    "description": "structfun [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/structfun.html"
+  },
+  "tabular._curlyBraceAssign [matlab]": {
+    "prefix": "tabular._curlyBraceAssign",
+    "body": "tabular._curlyBraceAssign(${1:T}, ${2:rows}, ${3:vars})",
+    "description": "tabular._curlyBraceAssign [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/tabular._curlyBraceAssign.html"
+  },
+  "issorted [matlab]": {
+    "prefix": "issorted",
+    "body": "${1:TF} = issorted(${1:TT})",
+    "description": "issorted [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/issorted.html"
+  },
+  "loadobj [matlab]": {
+    "prefix": "loadobj",
+    "body": "${1:b} = loadobj(${1:a})",
+    "description": "loadobj [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/loadobj.html"
+  },
+  "innerjoin [matlab]": {
+    "prefix": "innerjoin",
+    "body": "[${1:T}, ${2:ileft}, ${3:iright}] = innerjoin(${1:Tleft}, ${2:Tright}, 'Keys', ${3:value}, 'LeftVariables', ${4:value}, 'RightVariables', ${5:value})",
+    "description": "innerjoin [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/innerjoin.html"
+  },
+  "cell2mat [matlab]": {
+    "prefix": "cell2mat",
+    "body": "${1:A} = cell2mat(${1:C})",
+    "description": "cell2mat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cell2mat.html"
+  },
+  "cellfun [matlab]": {
+    "prefix": "cellfun",
+    "body": "${1:A} = cellfun(${1:func}, ${2:C})",
+    "description": "cellfun [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cellfun.html"
+  },
+  "tabular._parenReference [matlab]": {
+    "prefix": "tabular._parenReference",
+    "body": "tabular._parenReference(${1:T}, ${2:rows}, ${3:vars})",
+    "description": "tabular._parenReference [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/tabular._parenReference.html"
+  },
+  "double [matlab]": {
+    "prefix": "double",
+    "body": "${1:y} = double(${1:x})",
+    "description": "double [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/double.html"
+  }
+}

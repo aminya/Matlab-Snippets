@@ -1,0 +1,26 @@
+{
+  "mat2dataset [shared]": {
+    "prefix": "mat2dataset",
+    "body": "mat2dataset(${1:X}, 'VarNames', ${2:value}, 'ObsNames', ${3:value}, 'NumCols', ${4:value})",
+    "description": "mat2dataset [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/mat2dataset.html"
+  },
+  "cell2dataset [shared]": {
+    "prefix": "cell2dataset",
+    "body": "cell2dataset(${1:C}, 'ReadVarNames', ${2:value}, 'VarNames', ${3:value}, 'ReadObsNames', ${4:value}, 'ObsNames', ${5:value}, 'NumCols', ${6:value})",
+    "description": "cell2dataset [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/cell2dataset.html"
+  },
+  "struct2dataset [shared]": {
+    "prefix": "struct2dataset",
+    "body": "struct2dataset(${1:S}, 'ReadObsNames', ${2:value}, 'ObsNames', ${3:value}, 'AsScalar', ${4:value})",
+    "description": "struct2dataset [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/struct2dataset.html"
+  },
+  "makedist [shared]": {
+    "prefix": "makedist",
+    "body": "makedist(${1:distname}, 'a', ${2:value}, 'b', ${3:value})",
+    "description": "makedist [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/makedist.html"
+  }
+}

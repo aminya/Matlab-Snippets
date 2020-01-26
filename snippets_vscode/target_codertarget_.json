@@ -1,0 +1,14 @@
+{
+  "coder.hardware [target]": {
+    "prefix": "coder.hardware",
+    "body": "coder.hardware(${1:name})",
+    "description": "coder.hardware [target]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/target/ref/coder.hardware.html"
+  },
+  "targetHardware [target]": {
+    "prefix": "targetHardware",
+    "body": "${1:obj} = targetHardware(${1:hardwareName})",
+    "description": "targetHardware [target]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/target/targetHardware.html"
+  }
+}

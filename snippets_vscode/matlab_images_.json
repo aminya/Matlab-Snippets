@@ -1,0 +1,14 @@
+{
+  "imresize [matlab]": {
+    "prefix": "imresize",
+    "body": "${1:B} = imresize(${1:A}, ${2:Scale}, 'Method', ${3:value}, 'Colormap', ${4:value}, 'Dither', ${5:value}, 'AntiAliasing', ${6:value}, 'OutputSize', ${7:value})",
+    "description": "imresize [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/imresize.html"
+  },
+  "imtile [matlab]": {
+    "prefix": "imtile",
+    "body": "${1:out} = imtile(${1:I}, ${2:optional_MAP}, 'GridSize', ${3:value}, 'Frames', ${4:value}, 'ThumbnailSize', ${5:value}, 'BorderSize', ${6:value}, 'BackgroundColor', ${7:value})",
+    "description": "imtile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/imtile.html"
+  }
+}

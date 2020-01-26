@@ -1,0 +1,8 @@
+{
+  "deploytool [compiler]": {
+    "prefix": "deploytool",
+    "body": "deploytool(${1:filename}, ${2:optional_varargin})",
+    "description": "deploytool [compiler]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/compiler/hadoop/deploytool.html"
+  }
+}

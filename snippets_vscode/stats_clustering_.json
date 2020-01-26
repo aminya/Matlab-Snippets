@@ -1,0 +1,8 @@
+{
+  "evalclusters [stats]": {
+    "prefix": "evalclusters",
+    "body": "evalclusters(${1:x}, ${2:clust}, ${3:criterion}, 'KList', ${4:value}, 'Distance', ${5:value}, 'ClusterPriors', ${6:value})",
+    "description": "evalclusters [stats]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/stats/evalclusters.html"
+  }
+}

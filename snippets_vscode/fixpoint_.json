@@ -1,0 +1,56 @@
+{
+  "FunctionApproximation.LUTSolution.totalmemoryusage [fixpoint]": {
+    "prefix": "FunctionApproximation.LUTSolution.totalmemoryusage",
+    "body": "FunctionApproximation.LUTSolution.totalmemoryusage(${1:Object}, ${2:Unit})",
+    "description": "FunctionApproximation.LUTSolution.totalmemoryusage [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.LUTSolution.totalmemoryusage.html"
+  },
+  "FunctionApproximation.internal.MemoryValue [fixpoint]": {
+    "prefix": "FunctionApproximation.internal.MemoryValue",
+    "body": "FunctionApproximation.internal.MemoryValue(${1:Value}, 'Unit', ${2:value})",
+    "description": "FunctionApproximation.internal.MemoryValue [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.internal.MemoryValue.html"
+  },
+  "fxpOptimizationOptions.addTolerance [fixpoint]": {
+    "prefix": "fxpOptimizationOptions.addTolerance",
+    "body": "fxpOptimizationOptions.addTolerance(${1:fxpOptimizationOptions}, ${2:BlockPath}, ${3:PortIndex}, ${4:ToleranceType}, ${5:ToleranceValue})",
+    "description": "fxpOptimizationOptions.addTolerance [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/fxpOptimizationOptions.addTolerance.html"
+  },
+  "FunctionApproximation.internal.database.LUTDBUnit [fixpoint]": {
+    "prefix": "FunctionApproximation.internal.database.LUTDBUnit",
+    "body": "FunctionApproximation.internal.database.LUTDBUnit('GridSize', ${1:value}, 'ConstraintAt', ${2:value}, 'ConstraintValue', ${3:value}, 'ConstraintValueMustBeLessThan', ${4:value}, 'ConstraintMet', ${5:value}, 'ObjectiveValue', ${6:value}, 'BreakpointSpecification', ${7:value}, 'Grid', ${8:value})",
+    "description": "FunctionApproximation.internal.database.LUTDBUnit [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.internal.database.LUTDBUnit.html"
+  },
+  "FunctionApproximation.internal.ApproximateLUTSolution.totalmemoryusage [fixpoint]": {
+    "prefix": "FunctionApproximation.internal.ApproximateLUTSolution.totalmemoryusage",
+    "body": "FunctionApproximation.internal.ApproximateLUTSolution.totalmemoryusage(${1:Object}, ${2:Unit})",
+    "description": "FunctionApproximation.internal.ApproximateLUTSolution.totalmemoryusage [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.internal.ApproximateLUTSolution.totalmemoryusage.html"
+  },
+  "FunctionApproximation.Options [fixpoint]": {
+    "prefix": "FunctionApproximation.Options",
+    "body": "FunctionApproximation.Options('Interpolation', ${1:value}, 'WordLengths', ${2:value}, 'BreakpointSpecification', ${3:value}, 'AbsTol', ${4:value}, 'RelTol', ${5:value}, 'AllowUpdateDiagram', ${6:value}, 'Display', ${7:value}, 'SaturateToOutputType', ${8:value}, 'MaxTime', ${9:value}, 'MaxMemoryUsage', ${10:value}, 'OnCurveTableValues', ${11:value}, 'AUTOSARCompliant', ${12:value}, 'MemoryUnits', ${13:value})",
+    "description": "FunctionApproximation.Options [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.Options.html"
+  },
+  "FunctionApproximation.Problem [fixpoint]": {
+    "prefix": "FunctionApproximation.Problem",
+    "body": "FunctionApproximation.Problem(${1:FunctionToApproximate}, 'InputTypes', ${2:value}, 'InputLowerBounds', ${3:value}, 'InputUpperBounds', ${4:value}, 'OutputType', ${5:value}, 'Options', ${6:value})",
+    "description": "FunctionApproximation.Problem [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.Problem.html"
+  },
+  "FunctionApproximation.LUTSolution.totalMemoryUsage [fixpoint]": {
+    "prefix": "FunctionApproximation.LUTSolution.totalMemoryUsage",
+    "body": "FunctionApproximation.LUTSolution.totalMemoryUsage(${1:Object}, ${2:Unit})",
+    "description": "FunctionApproximation.LUTSolution.totalMemoryUsage [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/FunctionApproximation.LUTSolution.totalMemoryUsage.html"
+  },
+  "fxpOptimizationOptions [fixpoint]": {
+    "prefix": "fxpOptimizationOptions",
+    "body": "fxpOptimizationOptions('MaxIterations', ${1:value}, 'MaxTime', ${2:value}, 'Patience', ${3:value}, 'UseParallel', ${4:value}, 'AllowableWordLengths', ${5:value}, 'Verbosity', ${6:value})",
+    "description": "fxpOptimizationOptions [fixpoint]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/fixpoint/fxpOptimizationOptions.html"
+  }
+}

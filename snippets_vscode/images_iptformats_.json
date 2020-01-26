@@ -1,0 +1,104 @@
+{
+  "dicomCollection [images]": {
+    "prefix": "dicomCollection",
+    "body": "${1:collection} = dicomCollection(${1:source}, 'IncludeSubfolders', ${2:value})",
+    "description": "dicomCollection [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/dicomcollection.html"
+  },
+  "camresponse [images]": {
+    "prefix": "camresponse",
+    "body": "${1:crf} = camresponse(${1:filenames}, 'ExposureTimes', ${2:value})",
+    "description": "camresponse [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/camresponse.html"
+  },
+  "tonemap [images]": {
+    "prefix": "tonemap",
+    "body": "${1:RGB} = tonemap(${1:HDR}, 'AdjustLightness', ${2:value}, 'AdjustSaturation', ${3:value}, 'NumberOfTiles', ${4:value})",
+    "description": "tonemap [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/tonemap.html"
+  },
+  "makehdr [images]": {
+    "prefix": "makehdr",
+    "body": "${1:HDR} = makehdr(${1:files}, 'BaseFile', ${2:value}, 'MinimumLimit', ${3:value}, 'MaximumLimit', ${4:value})",
+    "description": "makehdr [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/makehdr.html"
+  },
+  "images.internal.dicom.DICOMFile [images]": {
+    "prefix": "images.internal.dicom.DICOMFile",
+    "body": "${1:obj} = images.internal.dicom.DICOMFile(${1:filename})",
+    "description": "images.internal.dicom.DICOMFile [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/images.internal.dicom.DICOMFile.html"
+  },
+  "dicomreadVolume [images]": {
+    "prefix": "dicomreadVolume",
+    "body": "[${1:V}, ${2:spatial}, ${3:dim}] = dicomreadVolume(${1:source}, ${2:RowName}, 'MakeIsotropic', ${3:value})",
+    "description": "dicomreadVolume [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/dicomreadvolume.html"
+  },
+  "bigimage [images]": {
+    "prefix": "bigimage",
+    "body": "${1:obj} = bigimage(${1:source}, 'ClassNames', ${2:value}, 'PixelLabelIDs', ${3:value}, 'BlockSize', ${4:value}, 'SpatialReferencing', ${5:value}, 'UnloadedValue', ${6:value})",
+    "description": "bigimage [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/bigimage.html"
+  },
+  "nitfread [images]": {
+    "prefix": "nitfread",
+    "body": "${1:x} = nitfread(${1:filename}, ${2:optional_idx}, 'PixelRegion', ${3:value})",
+    "description": "nitfread [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/nitfread.html"
+  },
+  "images.dicom.parseDICOMDIR [images]": {
+    "prefix": "images.dicom.parseDICOMDIR",
+    "body": "${1:details} = images.dicom.parseDICOMDIR(${1:filename})",
+    "description": "images.dicom.parseDICOMDIR [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/images.dicom.parsedicomdir.html"
+  },
+  "bigimageDatastore [images]": {
+    "prefix": "bigimageDatastore",
+    "body": "${1:obj} = bigimageDatastore(${1:BIGIMAGES}, ${2:LEVELS}, 'ReadSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOffsets', ${5:value}, 'Masks', ${6:value}, 'InclusionThreshold', ${7:value}, 'IncompleteBlocks', ${8:value})",
+    "description": "bigimageDatastore [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/../images/ref/bigimagedatastore.html"
+  },
+  "niftiwrite [images]": {
+    "prefix": "niftiwrite",
+    "body": "${1:status} = niftiwrite(${1:V}, ${2:filename}, ${3:optional_info}, 'Combined', ${4:value}, 'Compressed', ${5:value}, 'Endian', ${6:value}, 'Version', ${7:value})",
+    "description": "niftiwrite [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/niftiwrite.html"
+  },
+  "niftiread [images]": {
+    "prefix": "niftiread",
+    "body": "${1:V} = niftiread(${1:hdrfilename}, ${2:imgfilename})",
+    "description": "niftiread [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/niftiread.html"
+  },
+  "nitfinfo [images]": {
+    "prefix": "nitfinfo",
+    "body": "${1:metadata} = nitfinfo(${1:filename})",
+    "description": "nitfinfo [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/nitfinfo.html"
+  },
+  "niftiinfo [images]": {
+    "prefix": "niftiinfo",
+    "body": "${1:info} = niftiinfo(${1:filename})",
+    "description": "niftiinfo [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/niftiinfo.html"
+  },
+  "images.dicom.decodeUID [images]": {
+    "prefix": "images.dicom.decodeUID",
+    "body": "${1:details} = images.dicom.decodeUID(${1:UID})",
+    "description": "images.dicom.decodeUID [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/ref/images.dicom.decodeuid.html"
+  },
+  "bigimage.write [images]": {
+    "prefix": "bigimage.write",
+    "body": "bigimage.write(${1:IMG}, ${2:OUT})",
+    "description": "bigimage.write [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/bigimage.write.html"
+  },
+  "bigimage.apply [images]": {
+    "prefix": "bigimage.apply",
+    "body": "bigimage.apply(${1:IMG}, ${2:LEVEL}, ${3:FCN}, ${4:optional_EXTRAIMAGES}, 'BlockSize', ${5:value}, 'UseParallel', ${6:value}, 'BorderSize', ${7:value}, 'DisplayWaitbar', ${8:value}, 'OutputFolder', ${9:value}, 'PadMethod', ${10:value}, 'Mask', ${11:value}, 'InclusionThreshold', ${12:value}, 'ExtraImageLevels', ${13:value})",
+    "description": "bigimage.apply [images]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/images/bigimage.apply.html"
+  }
+}

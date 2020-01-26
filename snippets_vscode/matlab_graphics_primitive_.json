@@ -1,0 +1,26 @@
+{
+  "rectangle [matlab]": {
+    "prefix": "rectangle",
+    "body": "${1:h} = rectangle(${1:optional_ax}, ${2:opts})",
+    "description": "rectangle [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/rectangle.html"
+  },
+  "makehgtform [matlab]": {
+    "prefix": "makehgtform",
+    "body": "makehgtform(${1:optional_transform})",
+    "description": "makehgtform [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/makehgtform.html"
+  },
+  "surface [matlab]": {
+    "prefix": "surface",
+    "body": "${1:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})",
+    "description": "surface [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/surface.html"
+  },
+  "text [matlab]": {
+    "prefix": "text",
+    "body": "${1:h} = text(${1:optional_ax}, ${2:opts})",
+    "description": "text [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/text.html"
+  }
+}

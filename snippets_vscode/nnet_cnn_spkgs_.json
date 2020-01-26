@@ -1,0 +1,50 @@
+{
+  "importCaffeLayers [nnet]": {
+    "prefix": "importCaffeLayers",
+    "body": "importCaffeLayers(${1:protofile}, 'InputSize', ${2:value})",
+    "description": "importCaffeLayers [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/importcaffelayers.html"
+  },
+  "exportONNXNetwork [nnet]": {
+    "prefix": "exportONNXNetwork",
+    "body": "exportONNXNetwork(${1:net}, ${2:filename}, 'NetworkName', ${3:value}, 'OpsetVersion', ${4:value})",
+    "description": "exportONNXNetwork [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/exportonnxnetwork.html"
+  },
+  "importONNXNetwork [nnet]": {
+    "prefix": "importONNXNetwork",
+    "body": "importONNXNetwork(${1:modelfile}, 'OutputLayerType', ${2:value}, 'Classes', ${3:value})",
+    "description": "importONNXNetwork [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/importonnxnetwork.html"
+  },
+  "importKerasNetwork [nnet]": {
+    "prefix": "importKerasNetwork",
+    "body": "importKerasNetwork(${1:modelfile}, 'WeightFile', ${2:value}, 'OutputLayerType', ${3:value}, 'ImageInputSize', ${4:value}, 'Classes', ${5:value})",
+    "description": "importKerasNetwork [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/importkerasnetwork.html"
+  },
+  "importONNXLayers [nnet]": {
+    "prefix": "importONNXLayers",
+    "body": "importONNXLayers(${1:modelfile}, 'ImportWeights', ${2:value}, 'OutputLayerType', ${3:value})",
+    "description": "importONNXLayers [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/importonnxlayers.html"
+  },
+  "alexnet [nnet]": {
+    "prefix": "alexnet",
+    "body": "alexnet()",
+    "description": "alexnet [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/alexnet.html"
+  },
+  "importKerasLayers [nnet]": {
+    "prefix": "importKerasLayers",
+    "body": "importKerasLayers(${1:modelfile}, 'OutputLayerType', ${2:value}, 'ImageInputSize', ${3:value}, 'ImportWeights', ${4:value}, 'WeightFile', ${5:value})",
+    "description": "importKerasLayers [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/importkeraslayers.html"
+  },
+  "importCaffeNetwork [nnet]": {
+    "prefix": "importCaffeNetwork",
+    "body": "importCaffeNetwork(${1:protofile}, ${2:datafile}, 'InputSize', ${3:value}, 'AverageImage', ${4:value}, 'Classes', ${5:value})",
+    "description": "importCaffeNetwork [nnet]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/nnet/ref/importcaffenetwork.html"
+  }
+}

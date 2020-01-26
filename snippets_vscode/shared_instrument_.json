@@ -1,0 +1,104 @@
+{
+  "delete [shared]": {
+    "prefix": "delete",
+    "body": "delete(${1:obj})",
+    "description": "delete [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/delete.html"
+  },
+  "fclose [shared]": {
+    "prefix": "fclose",
+    "body": "fclose(${1:obj})",
+    "description": "fclose [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/fclose.html"
+  },
+  "disp [shared]": {
+    "prefix": "disp",
+    "body": "disp(${1:obj})",
+    "description": "disp [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/ref/disp.html"
+  },
+  "binblockread [shared]": {
+    "prefix": "binblockread",
+    "body": "[${1:A}, ${2:count}, ${3:msg}] = binblockread(${1:obj}, ${2:optional_precision})",
+    "description": "binblockread [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/binblockread.html"
+  },
+  "flushoutput [shared]": {
+    "prefix": "flushoutput",
+    "body": "flushoutput(${1:obj})",
+    "description": "flushoutput [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/flushoutput.html"
+  },
+  "readasync [shared]": {
+    "prefix": "readasync",
+    "body": "readasync(${1:obj}, ${2:optional_size})",
+    "description": "readasync [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/readasync.html"
+  },
+  "flushinput [shared]": {
+    "prefix": "flushinput",
+    "body": "flushinput(${1:obj})",
+    "description": "flushinput [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/flushinput.html"
+  },
+  "binblockwrite [shared]": {
+    "prefix": "binblockwrite",
+    "body": "binblockwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_header}, ${5:optional_headerformat})",
+    "description": "binblockwrite [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/binblockwrite.html"
+  },
+  "fgets [shared]": {
+    "prefix": "fgets",
+    "body": "[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})",
+    "description": "fgets [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/fgets.html"
+  },
+  "instrfindall [shared]": {
+    "prefix": "instrfindall",
+    "body": "${1:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})",
+    "description": "instrfindall [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/instrfindall.html"
+  },
+  "fgetl [shared]": {
+    "prefix": "fgetl",
+    "body": "[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})",
+    "description": "fgetl [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/fgetl.html"
+  },
+  "instrcallback [shared]": {
+    "prefix": "instrcallback",
+    "body": "instrcallback(${1:obj}, ${2:event})",
+    "description": "instrcallback [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/instrcallback.html"
+  },
+  "scanstr [shared]": {
+    "prefix": "scanstr",
+    "body": "[${1:A}, ${2:count}, ${3:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})",
+    "description": "scanstr [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/scanstr.html"
+  },
+  "fopen [shared]": {
+    "prefix": "fopen",
+    "body": "fopen(${1:obj})",
+    "description": "fopen [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/fopen.html"
+  },
+  "record [shared]": {
+    "prefix": "record",
+    "body": "record(${1:obj}, ${2:optional_switch})",
+    "description": "record [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/record.html"
+  },
+  "fprintf [shared]": {
+    "prefix": "fprintf",
+    "body": "fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})",
+    "description": "fprintf [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/fprintf.html"
+  },
+  "stopasync [shared]": {
+    "prefix": "stopasync",
+    "body": "stopasync(${1:obj})",
+    "description": "stopasync [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/stopasync.html"
+  }
+}

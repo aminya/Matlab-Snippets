@@ -1,0 +1,8 @@
+{
+  "crossReleaseImport [coder]": {
+    "prefix": "crossReleaseImport",
+    "body": "${1:blockHandle} = crossReleaseImport(${1:buildFolder}, ${2:configset}, 'SimulationMode', ${3:value}, 'DataDictionary', ${4:value}, 'ConfigParams', ${5:value}, 'SFunctionName', ${6:value}, 'OriginalPaths', ${7:value}, 'ReplacementPaths', ${8:value})",
+    "description": "crossReleaseImport [coder]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/coder/ref/crossreleaseimport.html"
+  }
+}

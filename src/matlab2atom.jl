@@ -201,7 +201,7 @@ function run_matlab2atom()
                       "/"=>"_",
                      ),
                      init = file)
-        file = "snippets/"*file[1:end-4]*"cson"
+        file = "snippets_atom/"*file[1:end-4]*"cson"
 
         Base.write(file,atom)
     end

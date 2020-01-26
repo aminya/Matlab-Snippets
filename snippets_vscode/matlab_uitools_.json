@@ -1,0 +1,206 @@
+{
+  "uitab [matlab]": {
+    "prefix": "uitab",
+    "body": "uitab(${1:optional_parent}, ${2:opts})",
+    "description": "uitab [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uitab.html"
+  },
+  "clipboard [matlab]": {
+    "prefix": "clipboard",
+    "body": "clipboard(${1:action}, ${2:optional_data})",
+    "description": "clipboard [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/clipboard.html"
+  },
+  "uisetpref [matlab]": {
+    "prefix": "uisetpref",
+    "body": "uisetpref(${1:clearall})",
+    "description": "uisetpref [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uisetpref.html"
+  },
+  "msgbox [matlab]": {
+    "prefix": "msgbox",
+    "body": "msgbox(${1:message}, ${2:title}, ${3:icon}, ${4:icondata}, ${5:iconcmap}, ${6:optional_createmode})",
+    "description": "msgbox [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/msgbox.html"
+  },
+  "dialog [matlab]": {
+    "prefix": "dialog",
+    "body": "dialog(${1:opts})",
+    "description": "dialog [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dialog.html"
+  },
+  "movegui [matlab]": {
+    "prefix": "movegui",
+    "body": "movegui(${1:optional_h}, ${2:optional_position})",
+    "description": "movegui [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/movegui.html"
+  },
+  "uigetpref [matlab]": {
+    "prefix": "uigetpref",
+    "body": "uigetpref(${1:group}, ${2:pref}, ${3:quest}, ${4:btns}, 'CheckboxState', ${5:value}, 'CheckboxString', ${6:value}, 'HelpString', ${7:value}, 'HelpFcn', ${8:value}, 'ExtraOptions', ${9:value}, 'DefaultButton', ${10:value})",
+    "description": "uigetpref [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uigetpref.html"
+  },
+  "uitabgroup [matlab]": {
+    "prefix": "uitabgroup",
+    "body": "uitabgroup(${1:optional_parent}, ${2:opts})",
+    "description": "uitabgroup [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uitabgroup.html"
+  },
+  "errordlg [matlab]": {
+    "prefix": "errordlg",
+    "body": "errordlg(${1:msg}, ${2:title}, ${3:optional_opts})",
+    "description": "errordlg [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/errordlg.html"
+  },
+  "uistack [matlab]": {
+    "prefix": "uistack",
+    "body": "uistack(${1:h}, ${2:stackopt}, ${3:optional_step})",
+    "description": "uistack [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uistack.html"
+  },
+  "uitoggletool [matlab]": {
+    "prefix": "uitoggletool",
+    "body": "uitoggletool(${1:optional_parent}, ${2:opts})",
+    "description": "uitoggletool [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uitoggletool.html"
+  },
+  "uigetfile [matlab]": {
+    "prefix": "uigetfile",
+    "body": "uigetfile(${1:optional_filter}, ${2:optional_title}, ${3:optional_defname}, 'MultiSelect', ${4:value})",
+    "description": "uigetfile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uigetfile.html"
+  },
+  "waitbar [matlab]": {
+    "prefix": "waitbar",
+    "body": "waitbar(${1:x}, ${2:msg}, 'CreateCancelBtn', ${3:value}, ${4:opts})",
+    "description": "waitbar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/waitbar.html"
+  },
+  "uibuttongroup [matlab]": {
+    "prefix": "uibuttongroup",
+    "body": "uibuttongroup(${1:optional_parent}, ${2:opts})",
+    "description": "uibuttongroup [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uibuttongroup.html"
+  },
+  "uiputfile [matlab]": {
+    "prefix": "uiputfile",
+    "body": "uiputfile(${1:filter}, ${2:title}, ${3:optional_defname})",
+    "description": "uiputfile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uiputfile.html"
+  },
+  "uitable [matlab]": {
+    "prefix": "uitable",
+    "body": "uitable(${1:optional_parent}, ${2:opts})",
+    "description": "uitable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uitable.html"
+  },
+  "align [matlab]": {
+    "prefix": "align",
+    "body": "align(${1:HandleList_CurPosition}, ${2:HorizontalAlignment}, ${3:VerticalAlignment})",
+    "description": "align [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/align.html"
+  },
+  "setpixelposition [matlab]": {
+    "prefix": "setpixelposition",
+    "body": "setpixelposition(${1:handle}, ${2:position}, ${3:optional_recursive})",
+    "description": "setpixelposition [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/setpixelposition.html"
+  },
+  "uigetdir [matlab]": {
+    "prefix": "uigetdir",
+    "body": "uigetdir(${1:path}, ${2:optional_title})",
+    "description": "uigetdir [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uigetdir.html"
+  },
+  "uiresume [matlab]": {
+    "prefix": "uiresume",
+    "body": "uiresume(${1:h})",
+    "description": "uiresume [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uiresume.html"
+  },
+  "btngroup [matlab]": {
+    "prefix": "btngroup",
+    "body": "btngroup(${1:optional_fighandle}, 'GroupID', ${2:value}, 'ButtonID', ${3:value}, 'IconFunctions', ${4:value}, 'Cdata', ${5:value}, 'PressType', ${6:value}, 'Exclusive', ${7:value}, 'Callbacks', ${8:value}, 'ButtonDownFcn', ${9:value}, 'GroupSize', ${10:value}, 'InitialState', ${11:value}, 'Units', ${12:value}, 'Position', ${13:value}, 'BevelWidth', ${14:value}, 'ButtonColor', ${15:value}, 'ButtonDark', ${16:value}, 'BevelLight', ${17:value}, 'BevelDark', ${18:value}, 'Orientation', ${19:value})",
+    "description": "btngroup [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/btngroup.html"
+  },
+  "uipushtool [matlab]": {
+    "prefix": "uipushtool",
+    "body": "uipushtool(${1:optional_parent}, ${2:opts})",
+    "description": "uipushtool [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uipushtool.html"
+  },
+  "uipanel [matlab]": {
+    "prefix": "uipanel",
+    "body": "uipanel(${1:optional_parent}, ${2:opts})",
+    "description": "uipanel [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uipanel.html"
+  },
+  "uisetcolor [matlab]": {
+    "prefix": "uisetcolor",
+    "body": "uisetcolor(${1:obj}, ${2:optional_title})",
+    "description": "uisetcolor [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uisetcolor.html"
+  },
+  "warndlg [matlab]": {
+    "prefix": "warndlg",
+    "body": "warndlg(${1:msg}, ${2:title}, ${3:optional_opts})",
+    "description": "warndlg [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/warndlg.html"
+  },
+  "btnicon [matlab]": {
+    "prefix": "btnicon",
+    "body": "btnicon(${1:option})",
+    "description": "btnicon [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/btnicon.html"
+  },
+  "getpixelposition [matlab]": {
+    "prefix": "getpixelposition",
+    "body": "getpixelposition(${1:handle}, ${2:optional_recursive})",
+    "description": "getpixelposition [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/getpixelposition.html"
+  },
+  "uisetfont [matlab]": {
+    "prefix": "uisetfont",
+    "body": "uisetfont(${1:optional_opts}, ${2:optional_title})",
+    "description": "uisetfont [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uisetfont.html"
+  },
+  "uitoolbar [matlab]": {
+    "prefix": "uitoolbar",
+    "body": "uitoolbar(${1:optional_parent}, ${2:opts})",
+    "description": "uitoolbar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uitoolbar.html"
+  },
+  "listdlg [matlab]": {
+    "prefix": "listdlg",
+    "body": "listdlg('ListString', ${1:value}, 'SelectionMode', ${2:value}, 'ListSize', ${3:value}, 'InitialValue', ${4:value}, 'Name', ${5:value}, 'PromptString', ${6:value}, 'OKString', ${7:value}, 'CancelString', ${8:value})",
+    "description": "listdlg [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/listdlg.html"
+  },
+  "uiwait [matlab]": {
+    "prefix": "uiwait",
+    "body": "uiwait(${1:h}, ${2:optional_timeout})",
+    "description": "uiwait [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uiwait.html"
+  },
+  "uisave [matlab]": {
+    "prefix": "uisave",
+    "body": "uisave(${1:vars}, ${2:optional_file})",
+    "description": "uisave [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uisave.html"
+  },
+  "uiopen [matlab]": {
+    "prefix": "uiopen",
+    "body": "uiopen(${1:file}, ${2:optional_tf})",
+    "description": "uiopen [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/uiopen.html"
+  },
+  "inputdlg [matlab]": {
+    "prefix": "inputdlg",
+    "body": "inputdlg(${1:prompt}, ${2:title}, ${3:dims}, ${4:definput}, ${5:optional_opts})",
+    "description": "inputdlg [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/inputdlg.html"
+  }
+}

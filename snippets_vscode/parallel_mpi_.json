@@ -1,0 +1,8 @@
+{
+  "mpiSettings [parallel]": {
+    "prefix": "mpiSettings",
+    "body": "mpiSettings('MessageLoggingDestination', ${1:value})",
+    "description": "mpiSettings [parallel]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/parallel/mpisettings.html"
+  }
+}

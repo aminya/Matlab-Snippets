@@ -1,0 +1,290 @@
+{
+  "xmlread [matlab]": {
+    "prefix": "xmlread",
+    "body": "xmlread(${1:filename}, ${2:optional_varargin}, 'AllowDoctype', ${3:value})",
+    "description": "xmlread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/xmlread.html"
+  },
+  "matfile [matlab]": {
+    "prefix": "matfile",
+    "body": "${1:m} = matfile(${1:filename}, 'Writable', ${2:value})",
+    "description": "matfile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/matlab.io.matfile.html"
+  },
+  "xslt [matlab]": {
+    "prefix": "xslt",
+    "body": "${1:result} = xslt(${1:source}, ${2:style}, ${3:dest}, ${4:optional_'-web'})",
+    "description": "xslt [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/xslt.html"
+  },
+  "writematrix [matlab]": {
+    "prefix": "writematrix",
+    "body": "writematrix(${1:M}, ${2:filename}, 'FileType', ${3:value}, 'DateLocale', ${4:value}, 'Encoding', ${5:value}, 'Delimiter', ${6:value}, 'QuoteStrings', ${7:value})",
+    "description": "writematrix [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/writematrix.html"
+  },
+  "timerfind [matlab]": {
+    "prefix": "timerfind",
+    "body": "${1:out} = timerfind(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})",
+    "description": "timerfind [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timer.timerfind.html"
+  },
+  "writecell [matlab]": {
+    "prefix": "writecell",
+    "body": "writecell(${1:C}, ${2:filename}, 'FileType', ${3:value}, 'DateLocale', ${4:value}, 'Encoding', ${5:value}, 'Delimiter', ${6:value}, 'QuoteStrings', ${7:value})",
+    "description": "writecell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/writecell.html"
+  },
+  "textscan [matlab]": {
+    "prefix": "textscan",
+    "body": "[${1:C}, ${2:position}] = textscan(${1:source}, ${2:formatSpec}, ${3:optional_N}, 'CollectOutput', ${4:value}, 'CommentStyle', ${5:value}, 'DateLocale', ${6:value}, 'Delimiter', ${7:value}, 'EmptyValue', ${8:value}, 'EndOfLine', ${9:value}, 'ExpChars', ${10:value}, 'HeaderLines', ${11:value}, 'MultipleDelimsAsOne', ${12:value}, 'ReturnOnError', ${13:value}, 'TreatAsEmpty', ${14:value}, 'Whitespace', ${15:value}, 'TextType', ${16:value})",
+    "description": "textscan [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/textscan.html"
+  },
+  "tar [matlab]": {
+    "prefix": "tar",
+    "body": "tar(${1:tarfilename}, ${2:filenames}, ${3:optional_rootfolder})",
+    "description": "tar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/tar.html"
+  },
+  "timer [matlab]": {
+    "prefix": "timer",
+    "body": "${1:t} = timer('BusyMode', ${1:value}, 'ErrorFcn', ${2:value}, 'ExecutionMode', ${3:value}, 'Name', ${4:value}, 'ObjectVisibility', ${5:value}, 'Period', ${6:value}, 'StartDelay', ${7:value}, 'StartFcn', ${8:value}, 'StopFcn', ${9:value}, 'Tag', ${10:value}, 'TasksToExecute', ${11:value}, 'TimerFcn', ${12:value}, 'UserData', ${13:value})",
+    "description": "timer [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timer-class.html"
+  },
+  "zip [matlab]": {
+    "prefix": "zip",
+    "body": "zip(${1:zipfile}, ${2:files}, ${3:optional_rootfolder})",
+    "description": "zip [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/zip.html"
+  },
+  "fileread [matlab]": {
+    "prefix": "fileread",
+    "body": "${1:text} = fileread(${1:filename})",
+    "description": "fileread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/fileread.html"
+  },
+  "feof [matlab]": {
+    "prefix": "feof",
+    "body": "${1:status} = feof(${1:fileID})",
+    "description": "feof [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/feof.html"
+  },
+  "fseek [matlab]": {
+    "prefix": "fseek",
+    "body": "${1:status} = fseek(${1:fileID}, ${2:offset}, ${3:origin})",
+    "description": "fseek [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/fseek.html"
+  },
+  "writetable [matlab]": {
+    "prefix": "writetable",
+    "body": "writetable(${1:T}, ${2:filename}, 'FileType', ${3:value}, 'WriteVariableNames', ${4:value}, 'WriteRowNames', ${5:value}, 'DateLocale', ${6:value}, 'Delimiter', ${7:value}, 'QuoteStrings', ${8:value}, 'Encoding', ${9:value})",
+    "description": "writetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/writetable.html"
+  },
+  "xmlwrite [matlab]": {
+    "prefix": "xmlwrite",
+    "body": "${1:chr} = xmlwrite(${1:DOMnode})",
+    "description": "xmlwrite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/xmlwrite.html"
+  },
+  "xlsread [matlab]": {
+    "prefix": "xlsread",
+    "body": "[${1:num}, ${2:txt}, ${3:raw}, ${4:custom}] = xlsread(${1:filename}, ${2:-1})",
+    "description": "xlsread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/xlsread.html"
+  },
+  "fgetl [matlab]": {
+    "prefix": "fgetl",
+    "body": "${1:tline} = fgetl(${1:fileID})",
+    "description": "fgetl [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fgetl.html"
+  },
+  "fwrite [matlab]": {
+    "prefix": "fwrite",
+    "body": "${1:count} = fwrite(${1:fileID}, ${2:A}, ${3:precision}, ${4:skip}, ${5:machinefmt})",
+    "description": "fwrite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fwrite.html"
+  },
+  "writetimetable [matlab]": {
+    "prefix": "writetimetable",
+    "body": "writetimetable(${1:TT}, ${2:filename}, 'FileType', ${3:value}, 'DateLocale', ${4:value}, 'Encoding', ${5:value}, 'Delimiter', ${6:value}, 'QuoteStrings', ${7:value}, 'WriteVariableNames', ${8:value})",
+    "description": "writetimetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/writetimetable.html"
+  },
+  "readmatrix [matlab]": {
+    "prefix": "readmatrix",
+    "body": "${1:A} = readmatrix(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})",
+    "description": "readmatrix [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/readmatrix.html"
+  },
+  "dlmwrite [matlab]": {
+    "prefix": "dlmwrite",
+    "body": "dlmwrite(${1:filename}, ${2:N}, ${3:optional_'-append'}, 'delimiter', ${4:value}, 'roffset', ${5:value}, 'coffset', ${6:value}, 'precision', ${7:value}, 'newline', ${8:value})",
+    "description": "dlmwrite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dlmwrite.html"
+  },
+  "importdata [matlab]": {
+    "prefix": "importdata",
+    "body": "[${1:A}, ${2:delimiterOut}, ${3:headerlinesOut}] = importdata(${1:filename}, ${2:delimiterIn}, ${3:optional_headerlinesIn})",
+    "description": "importdata [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/importdata.html"
+  },
+  "startat [matlab]": {
+    "prefix": "startat",
+    "body": "startat(${1:t}, ${2:firingTime})",
+    "description": "startat [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timer.startat.html"
+  },
+  "readtable [matlab]": {
+    "prefix": "readtable",
+    "body": "${1:T} = readtable(${1:filename}, ${2:opts}, 'ReadVariableNames', ${3:value}, 'ReadRowNames', ${4:value}, 'Sheet', ${5:value}, 'UseExcel', ${6:value})",
+    "description": "readtable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/readtable.html"
+  },
+  "readvars [matlab]": {
+    "prefix": "readvars",
+    "body": "${1:A} = readvars(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})",
+    "description": "readvars [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/readvars.html"
+  },
+  "fullfile [matlab]": {
+    "prefix": "fullfile",
+    "body": "${1:f} = fullfile(${1:filepart})",
+    "description": "fullfile [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/fullfile.html"
+  },
+  "ftell [matlab]": {
+    "prefix": "ftell",
+    "body": "${1:position} = ftell(${1:fileID})",
+    "description": "ftell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ftell.html"
+  },
+  "gzip [matlab]": {
+    "prefix": "gzip",
+    "body": "gzip(${1:files}, ${2:optional_outputdir})",
+    "description": "gzip [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/gzip.html"
+  },
+  "frewind [matlab]": {
+    "prefix": "frewind",
+    "body": "frewind(${1:fileID})",
+    "description": "frewind [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/frewind.html"
+  },
+  "ferror [matlab]": {
+    "prefix": "ferror",
+    "body": "[${1:message}, ${2:errnum}] = ferror(${1:fileID}, ${2:optional_'clear'})",
+    "description": "ferror [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ferror.html"
+  },
+  "fgets [matlab]": {
+    "prefix": "fgets",
+    "body": "${1:tline} = fgets(${1:fileID}, ${2:optional_nchar})",
+    "description": "fgets [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fgets.html"
+  },
+  "unzip [matlab]": {
+    "prefix": "unzip",
+    "body": "unzip(${1:zipfilename}, ${2:optional_outputdir})",
+    "description": "unzip [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/unzip.html"
+  },
+  "readcell [matlab]": {
+    "prefix": "readcell",
+    "body": "${1:A} = readcell(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value})",
+    "description": "readcell [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/readcell.html"
+  },
+  "csvread [matlab]": {
+    "prefix": "csvread",
+    "body": "csvread(${1:filename}, ${2:R1}, ${3:C1}, ${4:optional_range})",
+    "description": "csvread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/csvread.html"
+  },
+  "xlswrite [matlab]": {
+    "prefix": "xlswrite",
+    "body": "[${1:status}, ${2:message}] = xlswrite(${1:filename}, ${2:A}, ${3:optional_sheet}, ${4:optional_xlRange})",
+    "description": "xlswrite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/xlswrite.html"
+  },
+  "timerfindall [matlab]": {
+    "prefix": "timerfindall",
+    "body": "${1:out} = timerfindall(${1:optional_t}, ${2:optional_S}, 'BusyMode', ${3:value}, 'ErrorFcn', ${4:value}, 'ExecutionMode', ${5:value}, 'Name', ${6:value}, 'ObjectVisibility', ${7:value}, 'Period', ${8:value}, 'StartDelay', ${9:value}, 'StartFcn', ${10:value}, 'StopFcn', ${11:value}, 'Tag', ${12:value}, 'TasksToExecute', ${13:value}, 'TimerFcn', ${14:value}, 'UserData', ${15:value})",
+    "description": "timerfindall [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/timer.timerfindall.html"
+  },
+  "ftp.ftp [matlab]": {
+    "prefix": "ftp.ftp",
+    "body": "ftp.ftp(${1:host}, ${2:username}, ${3:password}, 'LocalDataConnectionMethod', ${4:value})",
+    "description": "ftp.ftp [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ftp.ftp.html"
+  },
+  "xlsfinfo [matlab]": {
+    "prefix": "xlsfinfo",
+    "body": "[${1:status}, ${2:sheets}, ${3:xlFormat}] = xlsfinfo(${1:filename})",
+    "description": "xlsfinfo [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/xlsfinfo.html"
+  },
+  "gunzip [matlab]": {
+    "prefix": "gunzip",
+    "body": "gunzip(${1:files}, ${2:optional_outputdir})",
+    "description": "gunzip [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/gunzip.html"
+  },
+  "fclose [matlab]": {
+    "prefix": "fclose",
+    "body": "${1:status} = fclose(${1:'all'})",
+    "description": "fclose [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fclose.html"
+  },
+  "readtimetable [matlab]": {
+    "prefix": "readtimetable",
+    "body": "${1:A} = readtimetable(${1:filename}, ${2:opts}, 'Sheet', ${3:value}, 'UseExcel', ${4:value}, 'ReadVariableNames', ${5:value}, 'RowTimes', ${6:value}, 'SampleRate', ${7:value}, 'StartTime', ${8:value}, 'TimeStep', ${9:value})",
+    "description": "readtimetable [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/readtimetable.html"
+  },
+  "csvwrite [matlab]": {
+    "prefix": "csvwrite",
+    "body": "csvwrite(${1:filename}, ${2:M}, ${3:row}, ${4:col})",
+    "description": "csvwrite [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/csvwrite.html"
+  },
+  "dlmread [matlab]": {
+    "prefix": "dlmread",
+    "body": "dlmread(${1:filename}, ${2:optional_varargin})",
+    "description": "dlmread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/dlmread.html"
+  },
+  "fscanf [matlab]": {
+    "prefix": "fscanf",
+    "body": "[${1:A}, ${2:count}] = fscanf(${1:fileID}, ${2:formatSpec}, ${3:optional_sizeA})",
+    "description": "fscanf [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fscanf.html"
+  },
+  "fopen [matlab]": {
+    "prefix": "fopen",
+    "body": "${1:fIDs} = fopen(${1:'all'})",
+    "description": "fopen [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fopen.html"
+  },
+  "untar [matlab]": {
+    "prefix": "untar",
+    "body": "untar(${1:tarfilename}, ${2:optional_outputdir})",
+    "description": "untar [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/untar.html"
+  },
+  "fprintf [matlab]": {
+    "prefix": "fprintf",
+    "body": "${1:nbytes} = fprintf(${1:optional_fileID}, ${2:formatSpec}, ${3:A})",
+    "description": "fprintf [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fprintf.html"
+  },
+  "fread [matlab]": {
+    "prefix": "fread",
+    "body": "[${1:A}, ${2:count}] = fread(${1:fileID}, ${2:sizeA}, ${3:precision}, ${4:skip}, ${5:machinefmt})",
+    "description": "fread [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/fread.html"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "eig [matlab]": {
+    "prefix": "eig",
+    "body": "${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})",
+    "description": "eig [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/eig.html"
+  },
+  "issymmetric [matlab]": {
+    "prefix": "issymmetric",
+    "body": "${1:tf} = issymmetric(${1:A}, ${2:optional_skew})",
+    "description": "issymmetric [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/issymmetric.html"
+  },
+  "qz [matlab]": {
+    "prefix": "qz",
+    "body": "[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})",
+    "description": "qz [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/qz.html"
+  },
+  "lsqminnorm [matlab]": {
+    "prefix": "lsqminnorm",
+    "body": "lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})",
+    "description": "lsqminnorm [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/lsqminnorm.html"
+  },
+  "chol [matlab]": {
+    "prefix": "chol",
+    "body": "[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})",
+    "description": "chol [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/chol.html"
+  },
+  "ishermitian [matlab]": {
+    "prefix": "ishermitian",
+    "body": "${1:tf} = ishermitian(${1:A}, ${2:optional_skew})",
+    "description": "ishermitian [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ishermitian.html"
+  },
+  "bandwidth [matlab]": {
+    "prefix": "bandwidth",
+    "body": "[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})",
+    "description": "bandwidth [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/bandwidth.html"
+  },
+  "gsvd [matlab]": {
+    "prefix": "gsvd",
+    "body": "${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})",
+    "description": "gsvd [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/gsvd.html"
+  },
+  "lu [matlab]": {
+    "prefix": "lu",
+    "body": "[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})",
+    "description": "lu [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/lu.html"
+  },
+  "cond [matlab]": {
+    "prefix": "cond",
+    "body": "${1:cond} = cond(${1:A}, ${2:optional_type})",
+    "description": "cond [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cond.html"
+  },
+  "qr [matlab]": {
+    "prefix": "qr",
+    "body": "[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})",
+    "description": "qr [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/qr.html"
+  },
+  "schur [matlab]": {
+    "prefix": "schur",
+    "body": "${1:T} = schur(${1:A}, ${2:optional_complexity})",
+    "description": "schur [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/schur.html"
+  },
+  "qrdelete [matlab]": {
+    "prefix": "qrdelete",
+    "body": "[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})",
+    "description": "qrdelete [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/qrdelete.html"
+  },
+  "balance [matlab]": {
+    "prefix": "balance",
+    "body": "[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})",
+    "description": "balance [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/balance.html"
+  },
+  "svd [matlab]": {
+    "prefix": "svd",
+    "body": "${1:s} = svd(${1:X}, ${2:optional_shape})",
+    "description": "svd [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/double.svd.html"
+  },
+  "ldl [matlab]": {
+    "prefix": "ldl",
+    "body": "[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})",
+    "description": "ldl [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ldl.html"
+  },
+  "cholupdate [matlab]": {
+    "prefix": "cholupdate",
+    "body": "[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})",
+    "description": "cholupdate [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/cholupdate.html"
+  },
+  "norm [matlab]": {
+    "prefix": "norm",
+    "body": "${1:norm} = norm(${1:A}, ${2:optional_type})",
+    "description": "norm [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/norm.html"
+  },
+  "ordqz [matlab]": {
+    "prefix": "ordqz",
+    "body": "[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})",
+    "description": "ordqz [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ordqz.html"
+  },
+  "ordschur [matlab]": {
+    "prefix": "ordschur",
+    "body": "[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})",
+    "description": "ordschur [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/ordschur.html"
+  },
+  "qrinsert [matlab]": {
+    "prefix": "qrinsert",
+    "body": "[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})",
+    "description": "qrinsert [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/qrinsert.html"
+  },
+  "lscov [matlab]": {
+    "prefix": "lscov",
+    "body": "[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})",
+    "description": "lscov [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/lscov.html"
+  },
+  "decomposition [matlab]": {
+    "prefix": "decomposition",
+    "body": "decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})",
+    "description": "decomposition [matlab]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/matlab/ref/decomposition.html"
+  }
+}

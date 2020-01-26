@@ -1,0 +1,8 @@
+{
+  "canDatabase [shared]": {
+    "prefix": "canDatabase",
+    "body": "${1:obj} = canDatabase(${1:File})",
+    "description": "canDatabase [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/canDatabase.html"
+  }
+}

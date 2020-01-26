@@ -1,0 +1,20 @@
+{
+  "matlabshared.asyncio.buffer.DataSink [shared]": {
+    "prefix": "matlabshared.asyncio.buffer.DataSink",
+    "body": "${1:dataSink} = matlabshared.asyncio.buffer.DataSink",
+    "description": "matlabshared.asyncio.buffer.DataSink [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/matlabshared.asyncio.buffer.DataSink.html"
+  },
+  "matlabshared.asyncio.buffer.DataPump [shared]": {
+    "prefix": "matlabshared.asyncio.buffer.DataPump",
+    "body": "${1:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})",
+    "description": "matlabshared.asyncio.buffer.DataPump [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/matlabshared.asyncio.buffer.DataPump.html"
+  },
+  "matlabshared.asyncio.buffer.Buffer [shared]": {
+    "prefix": "matlabshared.asyncio.buffer.Buffer",
+    "body": "${1:buffer} = matlabshared.asyncio.buffer.Buffer(${1:bufferSize})",
+    "description": "matlabshared.asyncio.buffer.Buffer [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/matlabshared.asyncio.buffer.Buffer.html"
+  }
+}

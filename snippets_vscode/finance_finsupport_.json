@@ -1,0 +1,8 @@
+{
+  "date2time [finance]": {
+    "prefix": "date2time",
+    "body": "[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})",
+    "description": "date2time [finance]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/finance/date2time.html"
+  }
+}

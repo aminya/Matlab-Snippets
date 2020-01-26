@@ -1,0 +1,1400 @@
+{
+  "segmentGroundFromLidarData [vision]": {
+    "prefix": "segmentGroundFromLidarData",
+    "body": "segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})",
+    "description": "segmentGroundFromLidarData [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/segmentgroundfromlidardata.html"
+  },
+  "boxLabelDatastore.readall [vision]": {
+    "prefix": "boxLabelDatastore.readall",
+    "body": "${1:data} = boxLabelDatastore.readall(${1:blds})",
+    "description": "boxLabelDatastore.readall [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.readall.html"
+  },
+  "pixelLabelDatastore.readimage [vision]": {
+    "prefix": "pixelLabelDatastore.readimage",
+    "body": "pixelLabelDatastore.readimage(${1:pxds}, ${2:k})",
+    "description": "pixelLabelDatastore.readimage [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/pixelLabelDatastore.readimage.html"
+  },
+  "regionProposalLayer [vision]": {
+    "prefix": "regionProposalLayer",
+    "body": "regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})",
+    "description": "regionProposalLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.regionproposallayer.html"
+  },
+  "pcregistericp [vision]": {
+    "prefix": "pcregistericp",
+    "body": "pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})",
+    "description": "pcregistericp [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcregistericp.html"
+  },
+  "semanticseg [vision]": {
+    "prefix": "semanticseg",
+    "body": "semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})",
+    "description": "semanticseg [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/semanticseg.html"
+  },
+  "SURFPoints [vision]": {
+    "prefix": "SURFPoints",
+    "body": "SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})",
+    "description": "SURFPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/surfpoints.html"
+  },
+  "cameraPoseToExtrinsics [vision]": {
+    "prefix": "cameraPoseToExtrinsics",
+    "body": "cameraPoseToExtrinsics(${1:orientation}, ${2:location})",
+    "description": "cameraPoseToExtrinsics [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/cameraposetoextrinsics.html"
+  },
+  "unet3dLayers [vision]": {
+    "prefix": "unet3dLayers",
+    "body": "unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})",
+    "description": "unet3dLayers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/unet3dlayers.html"
+  },
+  "pcfitplane [vision]": {
+    "prefix": "pcfitplane",
+    "body": "pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})",
+    "description": "pcfitplane [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcfitplane.html"
+  },
+  "labelDefinitionCreator.addSublabel [vision]": {
+    "prefix": "labelDefinitionCreator.addSublabel",
+    "body": "labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})",
+    "description": "labelDefinitionCreator.addSublabel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/labelDefinitionCreator.addSublabel.html"
+  },
+  "estimateCameraMatrix [vision]": {
+    "prefix": "estimateCameraMatrix",
+    "body": "estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})",
+    "description": "estimateCameraMatrix [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimatecameramatrix.html"
+  },
+  "cornerPoints [vision]": {
+    "prefix": "cornerPoints",
+    "body": "cornerPoints(${1:location}, 'Metric', ${2:value})",
+    "description": "cornerPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/cornerpoints.html"
+  },
+  "opticalFlowFarneback.estimateFlow [vision]": {
+    "prefix": "opticalFlowFarneback.estimateFlow",
+    "body": "opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})",
+    "description": "opticalFlowFarneback.estimateFlow [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/opticalFlowFarneback.estimateFlow.html"
+  },
+  "stereoCameraCalibrator [vision]": {
+    "prefix": "stereoCameraCalibrator",
+    "body": "stereoCameraCalibrator(${1:sessionFile})",
+    "description": "stereoCameraCalibrator [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/stereoCameraCalibrator.html"
+  },
+  "trainRCNNObjectDetector [vision]": {
+    "prefix": "trainRCNNObjectDetector",
+    "body": "trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})",
+    "description": "trainRCNNObjectDetector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/trainrcnnobjectdetector.html"
+  },
+  "vision.AlphaBlender.step [vision]": {
+    "prefix": "vision.AlphaBlender.step",
+    "body": "vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})",
+    "description": "vision.AlphaBlender.step [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/vision.AlphaBlender.step.html"
+  },
+  "dicePixelClassificationLayer [vision]": {
+    "prefix": "dicePixelClassificationLayer",
+    "body": "dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})",
+    "description": "dicePixelClassificationLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.dicepixelclassificationlayer.html"
+  },
+  "fastRCNNObjectDetector.detect [vision]": {
+    "prefix": "fastRCNNObjectDetector.detect",
+    "body": "fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})",
+    "description": "fastRCNNObjectDetector.detect [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/fastRCNNObjectDetector.detect.html"
+  },
+  "indexImages [vision]": {
+    "prefix": "indexImages",
+    "body": "indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})",
+    "description": "indexImages [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/indeximages.html"
+  },
+  "ransac [vision]": {
+    "prefix": "ransac",
+    "body": "ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})",
+    "description": "ransac [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/ransac.html"
+  },
+  "pixelLabelDatastore.partition [vision]": {
+    "prefix": "pixelLabelDatastore.partition",
+    "body": "pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})",
+    "description": "pixelLabelDatastore.partition [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/pixelLabelDatastore.partition.html"
+  },
+  "planeModel.plot [vision]": {
+    "prefix": "planeModel.plot",
+    "body": "planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})",
+    "description": "planeModel.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/planemodel.plot.html"
+  },
+  "BRISKPoints.selectStrongest [vision]": {
+    "prefix": "BRISKPoints.selectStrongest",
+    "body": "BRISKPoints.selectStrongest(${1:points}, ${2:N})",
+    "description": "BRISKPoints.selectStrongest [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/BRISKPoints.selectStrongest.html"
+  },
+  "detectMinEigenFeatures [vision]": {
+    "prefix": "detectMinEigenFeatures",
+    "body": "detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})",
+    "description": "detectMinEigenFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectmineigenfeatures.html"
+  },
+  "ocr [vision]": {
+    "prefix": "ocr",
+    "body": "ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})",
+    "description": "ocr [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/ocr.html"
+  },
+  "estimateEssentialMatrix [vision]": {
+    "prefix": "estimateEssentialMatrix",
+    "body": "estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})",
+    "description": "estimateEssentialMatrix [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimateessentialmatrix.html"
+  },
+  "rectifyStereoImages [vision]": {
+    "prefix": "rectifyStereoImages",
+    "body": "rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})",
+    "description": "rectifyStereoImages [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/rectifystereoimages.html"
+  },
+  "fisheyeParameters [vision]": {
+    "prefix": "fisheyeParameters",
+    "body": "fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})",
+    "description": "fisheyeParameters [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/fisheyeparameters.html"
+  },
+  "disparityBM [vision]": {
+    "prefix": "disparityBM",
+    "body": "disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})",
+    "description": "disparityBM [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/disparitybm.html"
+  },
+  "opticalFlow.plot [vision]": {
+    "prefix": "opticalFlow.plot",
+    "body": "opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})",
+    "description": "opticalFlow.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/opticalFlow.plot.html"
+  },
+  "cameraCalibrator [vision]": {
+    "prefix": "cameraCalibrator",
+    "body": "cameraCalibrator(${1:sessionFile})",
+    "description": "cameraCalibrator [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cameraCalibrator.html"
+  },
+  "pcfitcylinder [vision]": {
+    "prefix": "pcfitcylinder",
+    "body": "pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})",
+    "description": "pcfitcylinder [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcfitcylinder.html"
+  },
+  "unetLayers [vision]": {
+    "prefix": "unetLayers",
+    "body": "unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})",
+    "description": "unetLayers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/unetlayers.html"
+  },
+  "bboxOverlapRatio [vision]": {
+    "prefix": "bboxOverlapRatio",
+    "body": "bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})",
+    "description": "bboxOverlapRatio [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bboxoverlapratio.html"
+  },
+  "yolov2ObjectDetector.detect [vision]": {
+    "prefix": "yolov2ObjectDetector.detect",
+    "body": "yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})",
+    "description": "yolov2ObjectDetector.detect [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/yolov2ObjectDetector.detect.html"
+  },
+  "detectCheckerboardPoints [vision]": {
+    "prefix": "detectCheckerboardPoints",
+    "body": "detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})",
+    "description": "detectCheckerboardPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectcheckerboardpoints.html"
+  },
+  "fasterRCNNLayers [vision]": {
+    "prefix": "fasterRCNNLayers",
+    "body": "fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})",
+    "description": "fasterRCNNLayers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/fasterrcnnlayers.html"
+  },
+  "evaluateImageRetrieval [vision]": {
+    "prefix": "evaluateImageRetrieval",
+    "body": "evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})",
+    "description": "evaluateImageRetrieval [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/evaluateimageretrieval.html"
+  },
+  "fitPolynomialRANSAC [vision]": {
+    "prefix": "fitPolynomialRANSAC",
+    "body": "fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})",
+    "description": "fitPolynomialRANSAC [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/fitpolynomialransac.html"
+  },
+  "showExtrinsics [vision]": {
+    "prefix": "showExtrinsics",
+    "body": "showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})",
+    "description": "showExtrinsics [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/showextrinsics.html"
+  },
+  "cornerPoints.plot [vision]": {
+    "prefix": "cornerPoints.plot",
+    "body": "cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})",
+    "description": "cornerPoints.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cornerPoints.plot.html"
+  },
+  "trainCascadeObjectDetector [vision]": {
+    "prefix": "trainCascadeObjectDetector",
+    "body": "trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})",
+    "description": "trainCascadeObjectDetector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/traincascadeobjectdetector.html"
+  },
+  "triangulateMultiview [vision]": {
+    "prefix": "triangulateMultiview",
+    "body": "triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})",
+    "description": "triangulateMultiview [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/triangulatemultiview.html"
+  },
+  "undistortFisheyeImage [vision]": {
+    "prefix": "undistortFisheyeImage",
+    "body": "undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})",
+    "description": "undistortFisheyeImage [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/undistortfisheyeimage.html"
+  },
+  "fisheyeIntrinsics.worldToImage [vision]": {
+    "prefix": "fisheyeIntrinsics.worldToImage",
+    "body": "fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})",
+    "description": "fisheyeIntrinsics.worldToImage [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/fisheyeIntrinsics.worldToImage.html"
+  },
+  "extrinsics [vision]": {
+    "prefix": "extrinsics",
+    "body": "extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})",
+    "description": "extrinsics [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/extrinsics.html"
+  },
+  "viewSet.addView [vision]": {
+    "prefix": "viewSet.addView",
+    "body": "viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})",
+    "description": "viewSet.addView [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.addView.html"
+  },
+  "pcdownsample [vision]": {
+    "prefix": "pcdownsample",
+    "body": "pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})",
+    "description": "pcdownsample [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcdownsample.html"
+  },
+  "cameraParameters.toStruct [vision]": {
+    "prefix": "cameraParameters.toStruct",
+    "body": "cameraParameters.toStruct(${1:cameraParams})",
+    "description": "cameraParameters.toStruct [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cameraParameters.toStruct.html"
+  },
+  "BRISKPoints.selectUniform [vision]": {
+    "prefix": "BRISKPoints.selectUniform",
+    "body": "BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})",
+    "description": "BRISKPoints.selectUniform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/BRISKPoints.selectUniform.html"
+  },
+  "undistortPoints [vision]": {
+    "prefix": "undistortPoints",
+    "body": "undistortPoints(${1:points}, ${2:cameraParams})",
+    "description": "undistortPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/undistortpoints.html"
+  },
+  "segnetLayers [vision]": {
+    "prefix": "segnetLayers",
+    "body": "segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})",
+    "description": "segnetLayers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/segnetlayers.html"
+  },
+  "evaluateDetectionMissRate [vision]": {
+    "prefix": "evaluateDetectionMissRate",
+    "body": "evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})",
+    "description": "evaluateDetectionMissRate [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/evaluatedetectionmissrate.html"
+  },
+  "generateCheckerboardPoints [vision]": {
+    "prefix": "generateCheckerboardPoints",
+    "body": "generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})",
+    "description": "generateCheckerboardPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/generatecheckerboardpoints.html"
+  },
+  "pcshow [vision]": {
+    "prefix": "pcshow",
+    "body": "pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})",
+    "description": "pcshow [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcshow.html"
+  },
+  "cylinderModel [vision]": {
+    "prefix": "cylinderModel",
+    "body": "cylinderModel(${1:Parameters})",
+    "description": "cylinderModel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/cylindermodel-class.html"
+  },
+  "insertShape [vision]": {
+    "prefix": "insertShape",
+    "body": "insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})",
+    "description": "insertShape [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/insertshape.html"
+  },
+  "labelDefinitionCreator.addAttribute [vision]": {
+    "prefix": "labelDefinitionCreator.addAttribute",
+    "body": "labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})",
+    "description": "labelDefinitionCreator.addAttribute [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/labelDefinitionCreator.addAttribute.html"
+  },
+  "boxLabelDatastore.countEachLabel [vision]": {
+    "prefix": "boxLabelDatastore.countEachLabel",
+    "body": "${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})",
+    "description": "boxLabelDatastore.countEachLabel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.countEachLabel.html"
+  },
+  "planeModel [vision]": {
+    "prefix": "planeModel",
+    "body": "planeModel(${1:Parameters})",
+    "description": "planeModel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/planemodel.html"
+  },
+  "integralKernel [vision]": {
+    "prefix": "integralKernel",
+    "body": "integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})",
+    "description": "integralKernel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/integralkernel-class.html"
+  },
+  "pcfitsphere [vision]": {
+    "prefix": "pcfitsphere",
+    "body": "pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})",
+    "description": "pcfitsphere [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcfitsphere.html"
+  },
+  "pcregistercpd [vision]": {
+    "prefix": "pcregistercpd",
+    "body": "pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})",
+    "description": "pcregistercpd [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcregistercpd.html"
+  },
+  "bboxresize [vision]": {
+    "prefix": "bboxresize",
+    "body": "bboxresize(${1:bboxA}, ${2:scale})",
+    "description": "bboxresize [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bboxresize.html"
+  },
+  "insertObjectAnnotation [vision]": {
+    "prefix": "insertObjectAnnotation",
+    "body": "insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})",
+    "description": "insertObjectAnnotation [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/insertobjectannotation.html"
+  },
+  "ORBPoints [vision]": {
+    "prefix": "ORBPoints",
+    "body": "ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})",
+    "description": "ORBPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/orbpoints.html"
+  },
+  "segmentLidarData [vision]": {
+    "prefix": "segmentLidarData",
+    "body": "segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})",
+    "description": "segmentLidarData [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/segmentlidardata.html"
+  },
+  "detectBRISKFeatures [vision]": {
+    "prefix": "detectBRISKFeatures",
+    "body": "detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})",
+    "description": "detectBRISKFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectbriskfeatures.html"
+  },
+  "pctransform [vision]": {
+    "prefix": "pctransform",
+    "body": "pctransform(${1:ptCloudIn}, ${2:tform})",
+    "description": "pctransform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pctransform.html"
+  },
+  "insertText [vision]": {
+    "prefix": "insertText",
+    "body": "insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})",
+    "description": "insertText [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/inserttext.html"
+  },
+  "detectSURFFeatures [vision]": {
+    "prefix": "detectSURFFeatures",
+    "body": "detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})",
+    "description": "detectSURFFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectsurffeatures.html"
+  },
+  "viewSet.addConnection [vision]": {
+    "prefix": "viewSet.addConnection",
+    "body": "viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})",
+    "description": "viewSet.addConnection [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.addConnection.html"
+  },
+  "roiInputLayer [vision]": {
+    "prefix": "roiInputLayer",
+    "body": "roiInputLayer('Name', ${1:value})",
+    "description": "roiInputLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.roiinputlayer.html"
+  },
+  "trainACFObjectDetector [vision]": {
+    "prefix": "trainACFObjectDetector",
+    "body": "trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})",
+    "description": "trainACFObjectDetector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/trainacfobjectdetector.html"
+  },
+  "bboxPrecisionRecall [vision]": {
+    "prefix": "bboxPrecisionRecall",
+    "body": "bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})",
+    "description": "bboxPrecisionRecall [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bboxprecisionrecall.html"
+  },
+  "configureKalmanFilter [vision]": {
+    "prefix": "configureKalmanFilter",
+    "body": "configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})",
+    "description": "configureKalmanFilter [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/configurekalmanfilter.html"
+  },
+  "pixelLabelDatastore [vision]": {
+    "prefix": "pixelLabelDatastore",
+    "body": "pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})",
+    "description": "pixelLabelDatastore [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/../vision/ref/pixellabeldatastore.html"
+  },
+  "vision.AlphaBlender [vision]": {
+    "prefix": "vision.AlphaBlender",
+    "body": "vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})",
+    "description": "vision.AlphaBlender [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/vision.AlphaBlender.html"
+  },
+  "assignDetectionsToTracks [vision]": {
+    "prefix": "assignDetectionsToTracks",
+    "body": "assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})",
+    "description": "assignDetectionsToTracks [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/assigndetectionstotracks.html"
+  },
+  "rotationVectorToMatrix [vision]": {
+    "prefix": "rotationVectorToMatrix",
+    "body": "rotationVectorToMatrix(${1:rotationVector})",
+    "description": "rotationVectorToMatrix [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/rotationvectortomatrix.html"
+  },
+  "pcmerge [vision]": {
+    "prefix": "pcmerge",
+    "body": "pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})",
+    "description": "pcmerge [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcmerge.html"
+  },
+  "selectStrongestBboxMulticlass [vision]": {
+    "prefix": "selectStrongestBboxMulticlass",
+    "body": "selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})",
+    "description": "selectStrongestBboxMulticlass [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/selectstrongestbboxmulticlass.html"
+  },
+  "evaluateDetectionPrecision [vision]": {
+    "prefix": "evaluateDetectionPrecision",
+    "body": "evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})",
+    "description": "evaluateDetectionPrecision [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/evaluatedetectionprecision.html"
+  },
+  "labelDefinitionCreator.addLabel [vision]": {
+    "prefix": "labelDefinitionCreator.addLabel",
+    "body": "labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})",
+    "description": "labelDefinitionCreator.addLabel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/labelDefinitionCreator.addLabel.html"
+  },
+  "cornerPoints.selectUniform [vision]": {
+    "prefix": "cornerPoints.selectUniform",
+    "body": "cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})",
+    "description": "cornerPoints.selectUniform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cornerPoints.selectUniform.html"
+  },
+  "stereoAnaglyph [vision]": {
+    "prefix": "stereoAnaglyph",
+    "body": "stereoAnaglyph(${1:I1}, ${2:I2})",
+    "description": "stereoAnaglyph [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/stereoanaglyph.html"
+  },
+  "fisheyeIntrinsics.pointsToWorld [vision]": {
+    "prefix": "fisheyeIntrinsics.pointsToWorld",
+    "body": "fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})",
+    "description": "fisheyeIntrinsics.pointsToWorld [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/fisheyeIntrinsics.pointsToWorld.html"
+  },
+  "pcshowpair [vision]": {
+    "prefix": "pcshowpair",
+    "body": "pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})",
+    "description": "pcshowpair [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcshowpair.html"
+  },
+  "rcnnBoxRegressionLayer [vision]": {
+    "prefix": "rcnnBoxRegressionLayer",
+    "body": "rcnnBoxRegressionLayer('Name', ${1:value})",
+    "description": "rcnnBoxRegressionLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.rcnnboxregressionlayer.html"
+  },
+  "detectMSERFeatures [vision]": {
+    "prefix": "detectMSERFeatures",
+    "body": "detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})",
+    "description": "detectMSERFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectmserfeatures.html"
+  },
+  "pcwrite [vision]": {
+    "prefix": "pcwrite",
+    "body": "pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})",
+    "description": "pcwrite [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcwrite.html"
+  },
+  "sphereModel [vision]": {
+    "prefix": "sphereModel",
+    "body": "sphereModel(${1:Parameters})",
+    "description": "sphereModel [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/spheremodel-class.html"
+  },
+  "cornerPoints.selectStrongest [vision]": {
+    "prefix": "cornerPoints.selectStrongest",
+    "body": "cornerPoints.selectStrongest(${1:points}, ${2:N})",
+    "description": "cornerPoints.selectStrongest [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cornerPoints.selectStrongest.html"
+  },
+  "fasterRCNNObjectDetector.detect [vision]": {
+    "prefix": "fasterRCNNObjectDetector.detect",
+    "body": "fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})",
+    "description": "fasterRCNNObjectDetector.detect [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/fasterRCNNObjectDetector.detect.html"
+  },
+  "trainFasterRCNNObjectDetector [vision]": {
+    "prefix": "trainFasterRCNNObjectDetector",
+    "body": "trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})",
+    "description": "trainFasterRCNNObjectDetector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/trainfasterrcnnobjectdetector.html"
+  },
+  "pcread [vision]": {
+    "prefix": "pcread",
+    "body": "pcread(${1:filename})",
+    "description": "pcread [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcread.html"
+  },
+  "rcnnObjectDetector.detect [vision]": {
+    "prefix": "rcnnObjectDetector.detect",
+    "body": "rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})",
+    "description": "rcnnObjectDetector.detect [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/rcnnObjectDetector.detect.html"
+  },
+  "groundTruth [vision]": {
+    "prefix": "groundTruth",
+    "body": "groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})",
+    "description": "groundTruth [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/groundtruth.html"
+  },
+  "BRISKPoints [vision]": {
+    "prefix": "BRISKPoints",
+    "body": "BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})",
+    "description": "BRISKPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/briskpoints.html"
+  },
+  "selectStrongestBbox [vision]": {
+    "prefix": "selectStrongestBbox",
+    "body": "selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})",
+    "description": "selectStrongestBbox [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/selectstrongestbbox.html"
+  },
+  "stereoParameters.toStruct [vision]": {
+    "prefix": "stereoParameters.toStruct",
+    "body": "stereoParameters.toStruct(${1:cameraParams})",
+    "description": "stereoParameters.toStruct [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/stereoParameters.toStruct.html"
+  },
+  "pixelLabelImageDatastore [vision]": {
+    "prefix": "pixelLabelImageDatastore",
+    "body": "pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})",
+    "description": "pixelLabelImageDatastore [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/../vision/ref/pixellabelimagedatastore.html"
+  },
+  "cameraParameters.worldToImage [vision]": {
+    "prefix": "cameraParameters.worldToImage",
+    "body": "cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})",
+    "description": "cameraParameters.worldToImage [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cameraParameters.worldToImage.html"
+  },
+  "pcnormals [vision]": {
+    "prefix": "pcnormals",
+    "body": "pcnormals(${1:ptCloud}, ${2:optional_k})",
+    "description": "pcnormals [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcnormals.html"
+  },
+  "showReprojectionErrors [vision]": {
+    "prefix": "showReprojectionErrors",
+    "body": "showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})",
+    "description": "showReprojectionErrors [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/showreprojectionerrors.html"
+  },
+  "KAZEPoints.selectUniform [vision]": {
+    "prefix": "KAZEPoints.selectUniform",
+    "body": "KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})",
+    "description": "KAZEPoints.selectUniform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/KAZEPoints.selectUniform.html"
+  },
+  "pointTrack [vision]": {
+    "prefix": "pointTrack",
+    "body": "pointTrack(${1:viewIDs}, ${2:points})",
+    "description": "pointTrack [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pointtrack-class.html"
+  },
+  "estimateStereoBaseline [vision]": {
+    "prefix": "estimateStereoBaseline",
+    "body": "estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})",
+    "description": "estimateStereoBaseline [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimatestereobaseline.html"
+  },
+  "SURFPoints.selectStrongest [vision]": {
+    "prefix": "SURFPoints.selectStrongest",
+    "body": "SURFPoints.selectStrongest(${1:points}, ${2:N})",
+    "description": "SURFPoints.selectStrongest [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/SURFPoints.selectStrongest.html"
+  },
+  "pixelLabelImageDatastore.readByIndex [vision]": {
+    "prefix": "pixelLabelImageDatastore.readByIndex",
+    "body": "pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})",
+    "description": "pixelLabelImageDatastore.readByIndex [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/pixelLabelImageDatastore.readByIndex.html"
+  },
+  "ocrText.locateText [vision]": {
+    "prefix": "ocrText.locateText",
+    "body": "ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})",
+    "description": "ocrText.locateText [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ocrText.locateText.html"
+  },
+  "estimateGeometricTransform [vision]": {
+    "prefix": "estimateGeometricTransform",
+    "body": "estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})",
+    "description": "estimateGeometricTransform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimategeometrictransform.html"
+  },
+  "ORBPoints.plot [vision]": {
+    "prefix": "ORBPoints.plot",
+    "body": "ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})",
+    "description": "ORBPoints.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ORBPoints.plot.html"
+  },
+  "bbox2points [vision]": {
+    "prefix": "bbox2points",
+    "body": "bbox2points(${1:rectangle})",
+    "description": "bbox2points [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bbox2points.html"
+  },
+  "opticalFlowHS [vision]": {
+    "prefix": "opticalFlowHS",
+    "body": "opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})",
+    "description": "opticalFlowHS [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/opticalflowhs.html"
+  },
+  "stereoCalibrationErrors.displayErrors [vision]": {
+    "prefix": "stereoCalibrationErrors.displayErrors",
+    "body": "stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})",
+    "description": "stereoCalibrationErrors.displayErrors [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/stereoCalibrationErrors.displayErrors.html"
+  },
+  "yolov2TransformLayer [vision]": {
+    "prefix": "yolov2TransformLayer",
+    "body": "yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})",
+    "description": "yolov2TransformLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.yolov2transformlayer.html"
+  },
+  "viewSet.hasConnection [vision]": {
+    "prefix": "viewSet.hasConnection",
+    "body": "viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})",
+    "description": "viewSet.hasConnection [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.hasConnection.html"
+  },
+  "pixelLabelDatastore.numpartitions [vision]": {
+    "prefix": "pixelLabelDatastore.numpartitions",
+    "body": "pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})",
+    "description": "pixelLabelDatastore.numpartitions [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/pixelLabelDatastore.numpartitions.html"
+  },
+  "objectDetectorTrainingData [vision]": {
+    "prefix": "objectDetectorTrainingData",
+    "body": "objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})",
+    "description": "objectDetectorTrainingData [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/objectdetectortrainingdata.html"
+  },
+  "boxLabelDatastore.read [vision]": {
+    "prefix": "boxLabelDatastore.read",
+    "body": "[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})",
+    "description": "boxLabelDatastore.read [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.read.html"
+  },
+  "opticalFlowLK.estimateFlow [vision]": {
+    "prefix": "opticalFlowLK.estimateFlow",
+    "body": "opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})",
+    "description": "opticalFlowLK.estimateFlow [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/opticalFlowLK.estimateFlow.html"
+  },
+  "SURFPoints.plot [vision]": {
+    "prefix": "SURFPoints.plot",
+    "body": "SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})",
+    "description": "SURFPoints.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/SURFPoints.plot.html"
+  },
+  "pixelLabelImageDatastore.partitionByIndex [vision]": {
+    "prefix": "pixelLabelImageDatastore.partitionByIndex",
+    "body": "pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})",
+    "description": "pixelLabelImageDatastore.partitionByIndex [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/pixelLabelImageDatastore.partitionByIndex.html"
+  },
+  "opticalFlowHS.estimateFlow [vision]": {
+    "prefix": "opticalFlowHS.estimateFlow",
+    "body": "opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})",
+    "description": "opticalFlowHS.estimateFlow [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/opticalFlowHS.estimateFlow.html"
+  },
+  "undistortImage [vision]": {
+    "prefix": "undistortImage",
+    "body": "undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})",
+    "description": "undistortImage [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/undistortimage.html"
+  },
+  "boxLabelDatastore [vision]": {
+    "prefix": "boxLabelDatastore",
+    "body": "${1:blds} = boxLabelDatastore(${1:TBL})",
+    "description": "boxLabelDatastore [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/boxlabeldatastore.html"
+  },
+  "rpnSoftmaxLayer [vision]": {
+    "prefix": "rpnSoftmaxLayer",
+    "body": "rpnSoftmaxLayer('Name', ${1:value})",
+    "description": "rpnSoftmaxLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.rpnsoftmaxlayer.html"
+  },
+  "viewSet.deleteConnection [vision]": {
+    "prefix": "viewSet.deleteConnection",
+    "body": "viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})",
+    "description": "viewSet.deleteConnection [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.deleteConnection.html"
+  },
+  "boxLabelDatastore.numpartitions [vision]": {
+    "prefix": "boxLabelDatastore.numpartitions",
+    "body": "${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})",
+    "description": "boxLabelDatastore.numpartitions [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.numpartitions.html"
+  },
+  "pcregisterndt [vision]": {
+    "prefix": "pcregisterndt",
+    "body": "pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})",
+    "description": "pcregisterndt [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcregisterndt.html"
+  },
+  "deeplabv3plusLayers [vision]": {
+    "prefix": "deeplabv3plusLayers",
+    "body": "deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})",
+    "description": "deeplabv3plusLayers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/deeplabv3pluslayers.html"
+  },
+  "estimateFundamentalMatrix [vision]": {
+    "prefix": "estimateFundamentalMatrix",
+    "body": "estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})",
+    "description": "estimateFundamentalMatrix [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimatefundamentalmatrix.html"
+  },
+  "KAZEPoints.plot [vision]": {
+    "prefix": "KAZEPoints.plot",
+    "body": "KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})",
+    "description": "KAZEPoints.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/KAZEPoints.plot.html"
+  },
+  "invertedImageIndex.removeImages [vision]": {
+    "prefix": "invertedImageIndex.removeImages",
+    "body": "invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})",
+    "description": "invertedImageIndex.removeImages [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/invertedImageIndex.removeImages.html"
+  },
+  "KAZEPoints.selectStrongest [vision]": {
+    "prefix": "KAZEPoints.selectStrongest",
+    "body": "KAZEPoints.selectStrongest(${1:points}, ${2:N})",
+    "description": "KAZEPoints.selectStrongest [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/KAZEPoints.selectStrongest.html"
+  },
+  "bboxwarp [vision]": {
+    "prefix": "bboxwarp",
+    "body": "bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})",
+    "description": "bboxwarp [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bboxwarp.html"
+  },
+  "estimateUncalibratedRectification [vision]": {
+    "prefix": "estimateUncalibratedRectification",
+    "body": "estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})",
+    "description": "estimateUncalibratedRectification [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimateuncalibratedrectification.html"
+  },
+  "extrinsicsToCameraPose [vision]": {
+    "prefix": "extrinsicsToCameraPose",
+    "body": "extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})",
+    "description": "extrinsicsToCameraPose [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/extrinsicstocamerapose.html"
+  },
+  "cameraIntrinsics [vision]": {
+    "prefix": "cameraIntrinsics",
+    "body": "cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})",
+    "description": "cameraIntrinsics [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/cameraintrinsics.html"
+  },
+  "invertedImageIndex [vision]": {
+    "prefix": "invertedImageIndex",
+    "body": "invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})",
+    "description": "invertedImageIndex [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/invertedimageindex-class.html"
+  },
+  "showMatchedFeatures [vision]": {
+    "prefix": "showMatchedFeatures",
+    "body": "showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})",
+    "description": "showMatchedFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/showmatchedfeatures.html"
+  },
+  "binaryFeatures [vision]": {
+    "prefix": "binaryFeatures",
+    "body": "binaryFeatures(${1:featureVectors})",
+    "description": "binaryFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/binaryfeatures.html"
+  },
+  "detectFASTFeatures [vision]": {
+    "prefix": "detectFASTFeatures",
+    "body": "detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})",
+    "description": "detectFASTFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectfastfeatures.html"
+  },
+  "opticalFlowLK [vision]": {
+    "prefix": "opticalFlowLK",
+    "body": "opticalFlowLK('NoiseThreshold', ${1:value})",
+    "description": "opticalFlowLK [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/opticalflowlk.html"
+  },
+  "detectHarrisFeatures [vision]": {
+    "prefix": "detectHarrisFeatures",
+    "body": "detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})",
+    "description": "detectHarrisFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectharrisfeatures.html"
+  },
+  "detectORBFeatures [vision]": {
+    "prefix": "detectORBFeatures",
+    "body": "detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})",
+    "description": "detectORBFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectorbfeatures.html"
+  },
+  "ORBPoints.selectUniform [vision]": {
+    "prefix": "ORBPoints.selectUniform",
+    "body": "ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})",
+    "description": "ORBPoints.selectUniform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ORBPoints.selectUniform.html"
+  },
+  "pcfromkinect [vision]": {
+    "prefix": "pcfromkinect",
+    "body": "pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})",
+    "description": "pcfromkinect [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcfromkinect.html"
+  },
+  "lineToBorderPoints [vision]": {
+    "prefix": "lineToBorderPoints",
+    "body": "lineToBorderPoints(${1:lines}, ${2:imagesize})",
+    "description": "lineToBorderPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/linetoborderpoints.html"
+  },
+  "pixelLabelTrainingData [vision]": {
+    "prefix": "pixelLabelTrainingData",
+    "body": "pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})",
+    "description": "pixelLabelTrainingData [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pixellabeltrainingdata.html"
+  },
+  "estimateWorldCameraPose [vision]": {
+    "prefix": "estimateWorldCameraPose",
+    "body": "estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})",
+    "description": "estimateWorldCameraPose [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimateworldcamerapose.html"
+  },
+  "cameraCalibrationErrors.displayErrors [vision]": {
+    "prefix": "cameraCalibrationErrors.displayErrors",
+    "body": "cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})",
+    "description": "cameraCalibrationErrors.displayErrors [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cameraCalibrationErrors.displayErrors.html"
+  },
+  "relativeCameraPose [vision]": {
+    "prefix": "relativeCameraPose",
+    "body": "relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})",
+    "description": "relativeCameraPose [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/relativecamerapose.html"
+  },
+  "boxLabelDatastore.partition [vision]": {
+    "prefix": "boxLabelDatastore.partition",
+    "body": "${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})",
+    "description": "boxLabelDatastore.partition [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.partition.html"
+  },
+  "opticalFlowLKDoG.estimateFlow [vision]": {
+    "prefix": "opticalFlowLKDoG.estimateFlow",
+    "body": "opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})",
+    "description": "opticalFlowLKDoG.estimateFlow [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/opticalFlowLKDoG.estimateFlow.html"
+  },
+  "pcsegdist [vision]": {
+    "prefix": "pcsegdist",
+    "body": "pcsegdist(${1:ptCloud}, ${2:minDistance})",
+    "description": "pcsegdist [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcsegdist.html"
+  },
+  "SURFPoints.selectUniform [vision]": {
+    "prefix": "SURFPoints.selectUniform",
+    "body": "SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})",
+    "description": "SURFPoints.selectUniform [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/SURFPoints.selectUniform.html"
+  },
+  "opticalFlowFarneback [vision]": {
+    "prefix": "opticalFlowFarneback",
+    "body": "opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})",
+    "description": "opticalFlowFarneback [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/opticalflowfarneback.html"
+  },
+  "cameraParameters.pointsToWorld [vision]": {
+    "prefix": "cameraParameters.pointsToWorld",
+    "body": "cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})",
+    "description": "cameraParameters.pointsToWorld [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cameraParameters.pointsToWorld.html"
+  },
+  "bagOfFeatures [vision]": {
+    "prefix": "bagOfFeatures",
+    "body": "bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})",
+    "description": "bagOfFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bagoffeatures.html"
+  },
+  "fisheyeCalibrationErrors.displayErrors [vision]": {
+    "prefix": "fisheyeCalibrationErrors.displayErrors",
+    "body": "fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})",
+    "description": "fisheyeCalibrationErrors.displayErrors [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/fisheyeCalibrationErrors.displayErrors.html"
+  },
+  "viewSet.updateView [vision]": {
+    "prefix": "viewSet.updateView",
+    "body": "viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})",
+    "description": "viewSet.updateView [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.updateView.html"
+  },
+  "trainImageCategoryClassifier [vision]": {
+    "prefix": "trainImageCategoryClassifier",
+    "body": "trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})",
+    "description": "trainImageCategoryClassifier [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/trainimagecategoryclassifier.html"
+  },
+  "triangulate [vision]": {
+    "prefix": "triangulate",
+    "body": "triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})",
+    "description": "triangulate [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/triangulate.html"
+  },
+  "plotCamera [vision]": {
+    "prefix": "plotCamera",
+    "body": "plotCamera(${1:optional_cameraTable})",
+    "description": "plotCamera [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/plotcamera.html"
+  },
+  "ORBPoints.selectStrongest [vision]": {
+    "prefix": "ORBPoints.selectStrongest",
+    "body": "ORBPoints.selectStrongest(${1:points}, ${2:N})",
+    "description": "ORBPoints.selectStrongest [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ORBPoints.selectStrongest.html"
+  },
+  "evaluateSemanticSegmentation [vision]": {
+    "prefix": "evaluateSemanticSegmentation",
+    "body": "${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})",
+    "description": "evaluateSemanticSegmentation [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/evaluatesemanticsegmentation.html"
+  },
+  "opticalFlowLKDoG [vision]": {
+    "prefix": "opticalFlowLKDoG",
+    "body": "opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})",
+    "description": "opticalFlowLKDoG [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/opticalflowlkdog.html"
+  },
+  "viewSet.findTracks [vision]": {
+    "prefix": "viewSet.findTracks",
+    "body": "viewSet.findTracks(${1:vSet}, ${2:viewIds})",
+    "description": "viewSet.findTracks [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.findTracks.html"
+  },
+  "MSERRegions.plot [vision]": {
+    "prefix": "MSERRegions.plot",
+    "body": "MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})",
+    "description": "MSERRegions.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/MSERRegions.plot.html"
+  },
+  "pixelClassificationLayer [vision]": {
+    "prefix": "pixelClassificationLayer",
+    "body": "pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})",
+    "description": "pixelClassificationLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.pixelclassificationlayer.html"
+  },
+  "roiMaxPooling2dLayer [vision]": {
+    "prefix": "roiMaxPooling2dLayer",
+    "body": "roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})",
+    "description": "roiMaxPooling2dLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.roimaxpooling2dlayer.html"
+  },
+  "pcdenoise [vision]": {
+    "prefix": "pcdenoise",
+    "body": "pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})",
+    "description": "pcdenoise [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/pcdenoise.html"
+  },
+  "extractFeatures [vision]": {
+    "prefix": "extractFeatures",
+    "body": "extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})",
+    "description": "extractFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/extractfeatures.html"
+  },
+  "groundTruthDataSource [vision]": {
+    "prefix": "groundTruthDataSource",
+    "body": "groundTruthDataSource(${1:videoFileName})",
+    "description": "groundTruthDataSource [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/groundtruthdatasource.html"
+  },
+  "velodyneFileReader.hasFrame [vision]": {
+    "prefix": "velodyneFileReader.hasFrame",
+    "body": "velodyneFileReader.hasFrame(${1:veloReader})",
+    "description": "velodyneFileReader.hasFrame [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/velodyneFileReader.hasFrame.html"
+  },
+  "bundleAdjustment [vision]": {
+    "prefix": "bundleAdjustment",
+    "body": "bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})",
+    "description": "bundleAdjustment [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bundleadjustment.html"
+  },
+  "rotationMatrixToVector [vision]": {
+    "prefix": "rotationMatrixToVector",
+    "body": "rotationMatrixToVector(${1:rotationMatrix})",
+    "description": "rotationMatrixToVector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/rotationmatrixtovector.html"
+  },
+  "estimateAnchorBoxes [vision]": {
+    "prefix": "estimateAnchorBoxes",
+    "body": "estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})",
+    "description": "estimateAnchorBoxes [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimateanchorboxes.html"
+  },
+  "retrieveImages [vision]": {
+    "prefix": "retrieveImages",
+    "body": "retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})",
+    "description": "retrieveImages [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/retrieveimages.html"
+  },
+  "KAZEPoints [vision]": {
+    "prefix": "KAZEPoints",
+    "body": "KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})",
+    "description": "KAZEPoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/kazepoints.html"
+  },
+  "disparitySGM [vision]": {
+    "prefix": "disparitySGM",
+    "body": "disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})",
+    "description": "disparitySGM [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/disparitysgm.html"
+  },
+  "invertedImageIndex.addImages [vision]": {
+    "prefix": "invertedImageIndex.addImages",
+    "body": "invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})",
+    "description": "invertedImageIndex.addImages [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/invertedImageIndex.addImages.html"
+  },
+  "estimateCameraParameters [vision]": {
+    "prefix": "estimateCameraParameters",
+    "body": "estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})",
+    "description": "estimateCameraParameters [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimatecameraparameters.html"
+  },
+  "trainYOLOv2ObjectDetector [vision]": {
+    "prefix": "trainYOLOv2ObjectDetector",
+    "body": "trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})",
+    "description": "trainYOLOv2ObjectDetector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/trainyolov2objectdetector.html"
+  },
+  "boxLabelDatastore.reset [vision]": {
+    "prefix": "boxLabelDatastore.reset",
+    "body": "boxLabelDatastore.reset(${1:blds})",
+    "description": "boxLabelDatastore.reset [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.reset.html"
+  },
+  "isfilterseparable [vision]": {
+    "prefix": "isfilterseparable",
+    "body": "isfilterseparable(${1:H})",
+    "description": "isfilterseparable [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/isfilterseparable.html"
+  },
+  "rcnnObjectDetector.classifyRegions [vision]": {
+    "prefix": "rcnnObjectDetector.classifyRegions",
+    "body": "rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})",
+    "description": "rcnnObjectDetector.classifyRegions [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/rcnnObjectDetector.classifyRegions.html"
+  },
+  "rpnClassificationLayer [vision]": {
+    "prefix": "rpnClassificationLayer",
+    "body": "rpnClassificationLayer('Name', ${1:value})",
+    "description": "rpnClassificationLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.rpnclassificationlayer.html"
+  },
+  "yolov2Layers [vision]": {
+    "prefix": "yolov2Layers",
+    "body": "yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})",
+    "description": "yolov2Layers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/yolov2layers.html"
+  },
+  "videoLabeler [vision]": {
+    "prefix": "videoLabeler",
+    "body": "videoLabeler(${1:optional_videoFileName})",
+    "description": "videoLabeler [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/videoLabeler.html"
+  },
+  "fastRCNNObjectDetector.classifyRegions [vision]": {
+    "prefix": "fastRCNNObjectDetector.classifyRegions",
+    "body": "fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})",
+    "description": "fastRCNNObjectDetector.classifyRegions [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/fastRCNNObjectDetector.classifyRegions.html"
+  },
+  "velodyneFileReader.readFrame [vision]": {
+    "prefix": "velodyneFileReader.readFrame",
+    "body": "velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})",
+    "description": "velodyneFileReader.readFrame [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/velodyneFileReader.readFrame.html"
+  },
+  "viewSet.deleteView [vision]": {
+    "prefix": "viewSet.deleteView",
+    "body": "viewSet.deleteView(${1:vSet}, ${2:viewId})",
+    "description": "viewSet.deleteView [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.deleteView.html"
+  },
+  "fcnLayers [vision]": {
+    "prefix": "fcnLayers",
+    "body": "fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})",
+    "description": "fcnLayers [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/fcnlayers.html"
+  },
+  "undistortFisheyePoints [vision]": {
+    "prefix": "undistortFisheyePoints",
+    "body": "undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})",
+    "description": "undistortFisheyePoints [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/undistortfisheyepoints.html"
+  },
+  "trainFastRCNNObjectDetector [vision]": {
+    "prefix": "trainFastRCNNObjectDetector",
+    "body": "trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})",
+    "description": "trainFastRCNNObjectDetector [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/trainfastrcnnobjectdetector.html"
+  },
+  "integralFilter [vision]": {
+    "prefix": "integralFilter",
+    "body": "integralFilter(${1:intI}, ${2:H})",
+    "description": "integralFilter [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/integralfilter.html"
+  },
+  "estimateFisheyeParameters [vision]": {
+    "prefix": "estimateFisheyeParameters",
+    "body": "estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})",
+    "description": "estimateFisheyeParameters [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/estimatefisheyeparameters.html"
+  },
+  "bboxcrop [vision]": {
+    "prefix": "bboxcrop",
+    "body": "bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})",
+    "description": "bboxcrop [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/bboxcrop.html"
+  },
+  "sphereModel.plot [vision]": {
+    "prefix": "sphereModel.plot",
+    "body": "sphereModel.plot(${1:model}, 'Parent', ${2:value})",
+    "description": "sphereModel.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/sphereModel.plot.html"
+  },
+  "imageCategoryClassifier.evaluate [vision]": {
+    "prefix": "imageCategoryClassifier.evaluate",
+    "body": "imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})",
+    "description": "imageCategoryClassifier.evaluate [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/imageCategoryClassifier.evaluate.html"
+  },
+  "peopleDetectorACF [vision]": {
+    "prefix": "peopleDetectorACF",
+    "body": "peopleDetectorACF(${1:optional_name})",
+    "description": "peopleDetectorACF [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/peopledetectoracf.html"
+  },
+  "cameraParameters [vision]": {
+    "prefix": "cameraParameters",
+    "body": "cameraParameters(${1:paramStruct})",
+    "description": "cameraParameters [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/cameraparameters.html"
+  },
+  "cameraMatrix [vision]": {
+    "prefix": "cameraMatrix",
+    "body": "cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})",
+    "description": "cameraMatrix [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/cameramatrix.html"
+  },
+  "labelDefinitionCreator [vision]": {
+    "prefix": "labelDefinitionCreator",
+    "body": "labelDefinitionCreator(${1:optional_ldc})",
+    "description": "labelDefinitionCreator [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/labeldefinitioncreator.html"
+  },
+  "viewSet.hasView [vision]": {
+    "prefix": "viewSet.hasView",
+    "body": "viewSet.hasView(${1:vSet}, ${2:viewId})",
+    "description": "viewSet.hasView [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.hasView.html"
+  },
+  "viewSet.updateConnection [vision]": {
+    "prefix": "viewSet.updateConnection",
+    "body": "viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})",
+    "description": "viewSet.updateConnection [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/viewset.updateconnection.html"
+  },
+  "epipolarLine [vision]": {
+    "prefix": "epipolarLine",
+    "body": "epipolarLine(${1:F}, ${2:points})",
+    "description": "epipolarLine [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/epipolarline.html"
+  },
+  "viewSet.poses [vision]": {
+    "prefix": "viewSet.poses",
+    "body": "viewSet.poses(${1:vSet}, ${2:optional_viewIds})",
+    "description": "viewSet.poses [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/viewSet.poses.html"
+  },
+  "imageLabeler [vision]": {
+    "prefix": "imageLabeler",
+    "body": "imageLabeler(${1:optional_imageFolder})",
+    "description": "imageLabeler [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/imageLabeler.html"
+  },
+  "BRISKPoints.plot [vision]": {
+    "prefix": "BRISKPoints.plot",
+    "body": "BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})",
+    "description": "BRISKPoints.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/BRISKPoints.plot.html"
+  },
+  "ocrTrainer [vision]": {
+    "prefix": "ocrTrainer",
+    "body": "ocrTrainer(${1:optional_sessionFile})",
+    "description": "ocrTrainer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ocrTrainer.html"
+  },
+  "MSERRegions [vision]": {
+    "prefix": "MSERRegions",
+    "body": "MSERRegions(${1:pixellist})",
+    "description": "MSERRegions [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/mserregions.html"
+  },
+  "reconstructScene [vision]": {
+    "prefix": "reconstructScene",
+    "body": "reconstructScene(${1:disparityMap}, ${2:stereoParams})",
+    "description": "reconstructScene [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/reconstructscene.html"
+  },
+  "detectKAZEFeatures [vision]": {
+    "prefix": "detectKAZEFeatures",
+    "body": "detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})",
+    "description": "detectKAZEFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/detectkazefeatures.html"
+  },
+  "extractHOGFeatures [vision]": {
+    "prefix": "extractHOGFeatures",
+    "body": "extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})",
+    "description": "extractHOGFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/extracthogfeatures.html"
+  },
+  "extractLBPFeatures [vision]": {
+    "prefix": "extractLBPFeatures",
+    "body": "extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})",
+    "description": "extractLBPFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/extractlbpfeatures.html"
+  },
+  "fisheyeIntrinsics [vision]": {
+    "prefix": "fisheyeIntrinsics",
+    "body": "fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})",
+    "description": "fisheyeIntrinsics [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/fisheyeintrinsics.html"
+  },
+  "isEpipoleInImage [vision]": {
+    "prefix": "isEpipoleInImage",
+    "body": "isEpipoleInImage(${1:F}, ${2:imagesize})",
+    "description": "isEpipoleInImage [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/isepipoleinimage.html"
+  },
+  "yolov2ReorgLayer [vision]": {
+    "prefix": "yolov2ReorgLayer",
+    "body": "yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})",
+    "description": "yolov2ReorgLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.yolov2reorglayer.html"
+  },
+  "imageCategoryClassifier.predict [vision]": {
+    "prefix": "imageCategoryClassifier.predict",
+    "body": "imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})",
+    "description": "imageCategoryClassifier.predict [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/imageCategoryClassifier.predict.html"
+  },
+  "matchFeatures [vision]": {
+    "prefix": "matchFeatures",
+    "body": "matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})",
+    "description": "matchFeatures [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/matchfeatures.html"
+  },
+  "acfObjectDetector.detect [vision]": {
+    "prefix": "acfObjectDetector.detect",
+    "body": "acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})",
+    "description": "acfObjectDetector.detect [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/acfObjectDetector.detect.html"
+  },
+  "yolov2OutputLayer [vision]": {
+    "prefix": "yolov2OutputLayer",
+    "body": "yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})",
+    "description": "yolov2OutputLayer [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/nnet.cnn.layer.yolov2outputlayer.html"
+  },
+  "insertMarker [vision]": {
+    "prefix": "insertMarker",
+    "body": "insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})",
+    "description": "insertMarker [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/insertmarker.html"
+  },
+  "velodyneFileReader [vision]": {
+    "prefix": "velodyneFileReader",
+    "body": "velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})",
+    "description": "velodyneFileReader [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/velodynefilereader.html"
+  },
+  "boxLabelDatastore.hasdata [vision]": {
+    "prefix": "boxLabelDatastore.hasdata",
+    "body": "${1:TF} = boxLabelDatastore.hasdata(${1:blds})",
+    "description": "boxLabelDatastore.hasdata [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/boxLabelDatastore.hasdata.html"
+  },
+  "stereoParameters [vision]": {
+    "prefix": "stereoParameters",
+    "body": "stereoParameters(${1:paramStruct})",
+    "description": "stereoParameters [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/stereoparameters.html"
+  },
+  "cylinderModel.plot [vision]": {
+    "prefix": "cylinderModel.plot",
+    "body": "cylinderModel.plot(${1:model}, 'Parent', ${2:value})",
+    "description": "cylinderModel.plot [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/cylinderModel.plot.html"
+  },
+  "opticalFlow [vision]": {
+    "prefix": "opticalFlow",
+    "body": "opticalFlow(${1:Vx}, ${2:Vy})",
+    "description": "opticalFlow [vision]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/vision/ref/opticalflowobject.html"
+  }
+}

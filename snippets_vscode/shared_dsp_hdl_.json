@@ -1,0 +1,8 @@
+{
+  "dsp.LogicAnalyzer [shared]": {
+    "prefix": "dsp.LogicAnalyzer",
+    "body": "dsp.LogicAnalyzer(${1:NumInputPorts}, ${2:SampleTime}, ${3:varargin})",
+    "description": "dsp.LogicAnalyzer [shared]",
+    "descriptionMoreURL": "https://www.mathworks.com/help/shared/ref/dsp.logicanalyzer-system-object.html"
+  }
+}
