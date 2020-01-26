@@ -63,3 +63,12 @@
         '''
         descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.move.html'
 
+
+    "simscape.op.OperatingPoint.relativePath [physmod]":
+        prefix: "simscape.op.OperatingPoint.relativePath"
+        body: '''${1:f} = simscape.op.OperatingPoint.relativePath'''
+        description: '''[physmod] 
+        f = simscape.op.OperatingPoint.relativePath
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/simscape.op.OperatingPoint.relativePath.html'
+

@@ -1,6 +1,15 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
+    "matlabshared.asyncio.buffer.DataSink [shared]":
+        prefix: "matlabshared.asyncio.buffer.DataSink"
+        body: '''${1:dataSink} = matlabshared.asyncio.buffer.DataSink'''
+        description: '''[shared] 
+        dataSink = matlabshared.asyncio.buffer.DataSink
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.asyncio.buffer.DataSink.html'
+
+
     "matlabshared.asyncio.buffer.DataPump [shared]":
         prefix: "matlabshared.asyncio.buffer.DataPump"
         body: '''${1:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})'''

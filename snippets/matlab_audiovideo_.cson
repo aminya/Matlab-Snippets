@@ -1,6 +1,15 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
 '.source.matlab, source.m':
 
+    "VideoWriter.getProfiles [matlab]":
+        prefix: "VideoWriter.getProfiles"
+        body: '''${1:profiles} = VideoWriter.getProfiles'''
+        description: '''[matlab] 
+        profiles = VideoWriter.getProfiles
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoWriter.getProfiles.html'
+
+
     "aviinfo [matlab]":
         prefix: "aviinfo"
         body: '''${1:fileinfo} = aviinfo(${1:filename})'''
@@ -269,6 +278,15 @@
         ID = audiodevinfo(IO, name, Fs, nChannels)
         '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/audiodevinfo.html'
+
+
+    "VideoReader.getFileFormats [matlab]":
+        prefix: "VideoReader.getFileFormats"
+        body: '''${1:formats} = VideoReader.getFileFormats'''
+        description: '''[matlab] 
+        formats = VideoReader.getFileFormats
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/VideoReader.getFileFormats.html'
 
 
     "audiorecorder.pause [matlab]":

@@ -10,6 +10,15 @@
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/figure.html'
 
 
+    "gca [matlab]":
+        prefix: "gca"
+        body: '''${1:ax} = gca'''
+        description: '''[matlab] Current axes or chart
+        ax = gca
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gca.html'
+
+
     "tiledlayout [matlab]":
         prefix: "tiledlayout"
         body: '''${1:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
@@ -62,4 +71,13 @@
         status = close(optional_option)
         '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/close.html'
+
+
+    "gcf [matlab]":
+        prefix: "gcf"
+        body: '''${1:ax} = gcf'''
+        description: '''[matlab] Current figure handle
+        ax = gcf
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gcf.html'
 

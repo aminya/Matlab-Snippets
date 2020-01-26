@@ -325,6 +325,15 @@
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/getenv.html'
 
 
+    "memory [matlab]":
+        prefix: "memory"
+        body: '''[${1:USERVIEW}, ${2:SYSTEMVIEW}] = memory'''
+        description: '''[matlab] Display memory information
+        [USERVIEW, SYSTEMVIEW] = memory
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/memory.html'
+
+
     "what [matlab]":
         prefix: "what"
         body: '''what(${1:optional_folderName})'''

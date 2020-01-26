@@ -10,6 +10,15 @@
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfhx.html'
 
 
+    "Tiff.close [matlab]":
+        prefix: "Tiff.close"
+        body: '''Tiff.close'''
+        description: '''[matlab] Close Tiff object
+        Tiff.close
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/tiff.close.html'
+
+
     "Tiff.writeDirectory [matlab]":
         prefix: "Tiff.writeDirectory"
         body: '''Tiff.writeDirectory(${1:tiffobj})'''
@@ -234,6 +243,15 @@ from NetCDF data source
         hdfgd()
         '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfgd.html'
+
+
+    "hdfml [matlab]":
+        prefix: "hdfml"
+        body: '''hdfml'''
+        description: '''[matlab] Utilities for working with MATLAB HDF gateway functions
+        hdfml
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfml.html'
 
 
     "fitswrite [matlab]":

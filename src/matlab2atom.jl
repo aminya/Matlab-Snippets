@@ -103,6 +103,9 @@ function matlab2atom(data, group)
                 strIn = "$fun()"
                 strInProto = "$fun()"
             end
+        else
+            strIn = "$fun"
+            strInProto = "$fun"
         end
 
         if haskey(val, "outputs")

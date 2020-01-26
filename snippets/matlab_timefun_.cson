@@ -595,6 +595,15 @@
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movstd.html'
 
 
+    "clock [matlab]":
+        prefix: "clock"
+        body: '''${1:c} = clock'''
+        description: '''[matlab] Current date and time as date vector
+        c = clock
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/clock.html'
+
+
     "isempty [matlab]":
         prefix: "isempty"
         body: '''${1:TF} = isempty(${1:A})'''
