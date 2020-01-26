@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "date2time":
-    prefix: "date2time"
-    body: '''[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
-    description: '''[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
+        prefix: "date2time"
+        body: '''[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
+        description: '''[${1:TFactors}, ${2:F}] = date2time(${1:settle}, ${2:maturity}, ${3:compounding}, ${4:basis}, ${5:endMonthRule})'''
 

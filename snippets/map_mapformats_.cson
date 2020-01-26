@@ -1,218 +1,218 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "etopo":
-    prefix: "etopo"
-    body: '''[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
-    description: '''[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        prefix: "etopo"
+        body: '''[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        description: '''[${1:Z}, ${2:refvec}] = etopo(${1:optional_filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
 
 
     "makedbfspec":
-    prefix: "makedbfspec"
-    body: '''${1:dbfspec} = makedbfspec(${1:S})'''
-    description: '''${1:dbfspec} = makedbfspec(${1:S})'''
+        prefix: "makedbfspec"
+        body: '''${1:dbfspec} = makedbfspec(${1:S})'''
+        description: '''${1:dbfspec} = makedbfspec(${1:S})'''
 
 
     "globedems":
-    prefix: "globedems"
-    body: '''${1:tileNames} = globedems(${1:lat}, ${2:lon})'''
-    description: '''${1:tileNames} = globedems(${1:lat}, ${2:lon})'''
+        prefix: "globedems"
+        body: '''${1:tileNames} = globedems(${1:lat}, ${2:lon})'''
+        description: '''${1:tileNames} = globedems(${1:lat}, ${2:lon})'''
 
 
     "tbase":
-    prefix: "tbase"
-    body: '''[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
-    description: '''[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+        prefix: "tbase"
+        body: '''[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+        description: '''[${1:Z}, ${2:refvec}] = tbase(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
 
 
     "kmlwritepolygon":
-    prefix: "kmlwritepolygon"
-    body: '''kmlwritepolygon(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value}, 'Extrude', ${12:value}, 'CutPolygons', ${13:value}, 'PolygonCutMeridian', ${14:value}, 'AltitudeMode', ${15:value}, 'LookAt', ${16:value}, 'Camera', ${17:value})'''
-    description: '''kmlwritepolygon(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value}, 'Extrude', ${12:value}, 'CutPolygons', ${13:value}, 'PolygonCutMeridian', ${14:value}, 'AltitudeMode', ${15:value}, 'LookAt', ${16:value}, 'Camera', ${17:value})'''
+        prefix: "kmlwritepolygon"
+        body: '''kmlwritepolygon(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value}, 'Extrude', ${12:value}, 'CutPolygons', ${13:value}, 'PolygonCutMeridian', ${14:value}, 'AltitudeMode', ${15:value}, 'LookAt', ${16:value}, 'Camera', ${17:value})'''
+        description: '''kmlwritepolygon(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'LineWidth', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'EdgeColor', ${10:value}, 'EdgeAlpha', ${11:value}, 'Extrude', ${12:value}, 'CutPolygons', ${13:value}, 'PolygonCutMeridian', ${14:value}, 'AltitudeMode', ${15:value}, 'LookAt', ${16:value}, 'Camera', ${17:value})'''
 
 
     "shapewrite":
-    prefix: "shapewrite"
-    body: '''shapewrite(${1:S}, ${2:filename}, 'DbfSpec', ${3:value})'''
-    description: '''shapewrite(${1:S}, ${2:filename}, 'DbfSpec', ${3:value})'''
+        prefix: "shapewrite"
+        body: '''shapewrite(${1:S}, ${2:filename}, 'DbfSpec', ${3:value})'''
+        description: '''shapewrite(${1:S}, ${2:filename}, 'DbfSpec', ${3:value})'''
 
 
     "usgsdems":
-    prefix: "usgsdems"
-    body: '''[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
-    description: '''[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
+        prefix: "usgsdems"
+        body: '''[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
+        description: '''[${1:fname}, ${2:qname}] = usgsdems(${1:latlim}, ${2:lonlim})'''
 
 
     "gtopo30s":
-    prefix: "gtopo30s"
-    body: '''${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
-    description: '''${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
+        prefix: "gtopo30s"
+        body: '''${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
+        description: '''${1:tileNames} = gtopo30s(${1:lat}, ${2:lon})'''
 
 
     "usgsdem":
-    prefix: "usgsdem"
-    body: '''[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
-    description: '''[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
+        prefix: "usgsdem"
+        body: '''[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
+        description: '''[${1:Z}, ${2:refvec}] = usgsdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim})'''
 
 
     "avhrrgoode":
-    prefix: "avhrrgoode"
-    body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
-    description: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
+        prefix: "avhrrgoode"
+        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
+        description: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrgoode(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:nrows}, ${8:ncols}, ${9:resolution}, ${10:precision})'''
 
 
     "gshhs":
-    prefix: "gshhs"
-    body: '''${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
-    description: '''${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
+        prefix: "gshhs"
+        body: '''${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
+        description: '''${1:indexfilename} = gshhs(${1:filename}, ${2:'createindex'})'''
 
 
     "vmap0rhead":
-    prefix: "vmap0rhead"
-    body: '''${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
-    description: '''${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
+        prefix: "vmap0rhead"
+        body: '''${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
+        description: '''${1:str} = vmap0rhead(${1:file}, ${2:filename}, ${3:optional_fid})'''
 
 
     "geotiffread":
-    prefix: "geotiffread"
-    body: '''[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
-    description: '''[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
+        prefix: "geotiffread"
+        body: '''[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
+        description: '''[${1:A}, ${2:R}] = geotiffread(${1:filename}, ${2:optional_idx})'''
 
 
     "usgs24kdem":
-    prefix: "usgs24kdem"
-    body: '''[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
-    description: '''[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
+        prefix: "usgs24kdem"
+        body: '''[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
+        description: '''[${1:lat}, ${2:lon}, ${3:Z}, ${4:header}, ${5:profile}] = usgs24kdem(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:lonlim}, ${5:optional_gsize})'''
 
 
     "vmap0read":
-    prefix: "vmap0read"
-    body: '''[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
-    description: '''[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
+        prefix: "vmap0read"
+        body: '''[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
+        description: '''[${1:struc}, ${2:field}, ${3:varlen}, ${4:description}, ${5:narrativefield}] = vmap0read(${1:file}, ${2:filename}, ${3:recordIDs}, ${4:field}, ${5:varlen})'''
 
 
     "kmlwritepoint":
-    prefix: "kmlwritepoint"
-    body: '''kmlwritepoint(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value}, 'AltitudeMode', ${11:value}, 'LookAt', ${12:value}, 'Camera', ${13:value})'''
-    description: '''kmlwritepoint(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value}, 'AltitudeMode', ${11:value}, 'LookAt', ${12:value}, 'Camera', ${13:value})'''
+        prefix: "kmlwritepoint"
+        body: '''kmlwritepoint(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value}, 'AltitudeMode', ${11:value}, 'LookAt', ${12:value}, 'Camera', ${13:value})'''
+        description: '''kmlwritepoint(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Icon', ${7:value}, 'IconScale', ${8:value}, 'Color', ${9:value}, 'Alpha', ${10:value}, 'AltitudeMode', ${11:value}, 'LookAt', ${12:value}, 'Camera', ${13:value})'''
 
 
     "dted":
-    prefix: "dted"
-    body: '''[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
-    description: '''[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        prefix: "dted"
+        body: '''[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
+        description: '''[${1:Z}, ${2:refvec}, ${3:UHL}, ${4:DSI}, ${5:ACC}] = dted(${1:filename}, ${2:samplefactor}, ${3:latlim}, ${4:optional_lonlim})'''
 
 
     "dteds":
-    prefix: "dteds"
-    body: '''${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
-    description: '''${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
+        prefix: "dteds"
+        body: '''${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
+        description: '''${1:fname} = dteds(${1:latlim}, ${2:lonlim}, ${3:optional_level})'''
 
 
     "satbath":
-    prefix: "satbath"
-    body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
-    description: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
+        prefix: "satbath"
+        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
+        description: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = satbath(${1:samplefactor}, ${2:latlim}, ${3:lonlim}, ${4:optional_gsize})'''
 
 
     "geotiffinfo":
-    prefix: "geotiffinfo"
-    body: '''${1:info} = geotiffinfo(${1:filename})'''
-    description: '''${1:info} = geotiffinfo(${1:filename})'''
+        prefix: "geotiffinfo"
+        body: '''${1:info} = geotiffinfo(${1:filename})'''
+        description: '''${1:info} = geotiffinfo(${1:filename})'''
 
 
     "vmap0data":
-    prefix: "vmap0data"
-    body: '''${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
-    description: '''${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
+        prefix: "vmap0data"
+        body: '''${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
+        description: '''${1:S} = vmap0data(${1:optional_devicename}, ${2:library}, ${3:latlim}, ${4:lonlim}, ${5:theme}, ${6:topolevel})'''
 
 
     "globedem":
-    prefix: "globedem"
-    body: '''[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
-    description: '''[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
+        prefix: "globedem"
+        body: '''[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
+        description: '''[${1:Z}, ${2:refvec}] = globedem(${1:filename}, ${2:scalefactor}, ${3:latlim}, ${4:lonlim})'''
 
 
     "sdtsinfo":
-    prefix: "sdtsinfo"
-    body: '''${1:info} = sdtsinfo(${1:filename})'''
-    description: '''${1:info} = sdtsinfo(${1:filename})'''
+        prefix: "sdtsinfo"
+        body: '''${1:info} = sdtsinfo(${1:filename})'''
+        description: '''${1:info} = sdtsinfo(${1:filename})'''
 
 
     "shaperead":
-    prefix: "shaperead"
-    body: '''[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
-    description: '''[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
+        prefix: "shaperead"
+        body: '''[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
+        description: '''[${1:S}, ${2:A}] = shaperead(${1:filename}, 'RecordNumbers', ${2:value}, 'BoundingBox', ${3:value}, 'Attributes', ${4:value}, 'Selector', ${5:value}, 'UseGeoCoords', ${6:value})'''
 
 
     "avhrrlambert":
-    prefix: "avhrrlambert"
-    body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
-    description: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
+        prefix: "avhrrlambert"
+        body: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
+        description: '''[${1:latgrat}, ${2:longrat}, ${3:z}] = avhrrlambert(${1:region}, ${2:filename}, ${3:scalefactor}, ${4:latlim}, ${5:lonlim}, ${6:gsize}, ${7:precision})'''
 
 
     "kmlwrite":
-    prefix: "kmlwrite"
-    body: '''kmlwrite(${1:filename}, ${2:address}, 'Name', ${3:value}, 'Description', ${4:value}, 'Icon', ${5:value}, 'IconScale', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'FaceColor', ${10:value}, 'FaceAlpha', ${11:value}, 'EdgeColor', ${12:value}, 'EdgeAlpha', ${13:value}, 'Extrude', ${14:value}, 'CutPolygons', ${15:value}, 'PolygonCutMeridian', ${16:value}, 'AltitudeMode', ${17:value}, 'LookAt', ${18:value}, 'Camera', ${19:value})'''
-    description: '''kmlwrite(${1:filename}, ${2:address}, 'Name', ${3:value}, 'Description', ${4:value}, 'Icon', ${5:value}, 'IconScale', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'FaceColor', ${10:value}, 'FaceAlpha', ${11:value}, 'EdgeColor', ${12:value}, 'EdgeAlpha', ${13:value}, 'Extrude', ${14:value}, 'CutPolygons', ${15:value}, 'PolygonCutMeridian', ${16:value}, 'AltitudeMode', ${17:value}, 'LookAt', ${18:value}, 'Camera', ${19:value})'''
+        prefix: "kmlwrite"
+        body: '''kmlwrite(${1:filename}, ${2:address}, 'Name', ${3:value}, 'Description', ${4:value}, 'Icon', ${5:value}, 'IconScale', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'FaceColor', ${10:value}, 'FaceAlpha', ${11:value}, 'EdgeColor', ${12:value}, 'EdgeAlpha', ${13:value}, 'Extrude', ${14:value}, 'CutPolygons', ${15:value}, 'PolygonCutMeridian', ${16:value}, 'AltitudeMode', ${17:value}, 'LookAt', ${18:value}, 'Camera', ${19:value})'''
+        description: '''kmlwrite(${1:filename}, ${2:address}, 'Name', ${3:value}, 'Description', ${4:value}, 'Icon', ${5:value}, 'IconScale', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'FaceColor', ${10:value}, 'FaceAlpha', ${11:value}, 'EdgeColor', ${12:value}, 'EdgeAlpha', ${13:value}, 'Extrude', ${14:value}, 'CutPolygons', ${15:value}, 'PolygonCutMeridian', ${16:value}, 'AltitudeMode', ${17:value}, 'LookAt', ${18:value}, 'Camera', ${19:value})'''
 
 
     "worldfileread":
-    prefix: "worldfileread"
-    body: '''${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
-    description: '''${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
+        prefix: "worldfileread"
+        body: '''${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
+        description: '''${1:R} = worldfileread(${1:worldFileName}, ${2:coordinateSystemType}, ${3:rasterSize})'''
 
 
     "getworldfilename":
-    prefix: "getworldfilename"
-    body: '''${1:worldfilename} = getworldfilename(${1:imagefilename})'''
-    description: '''${1:worldfilename} = getworldfilename(${1:imagefilename})'''
+        prefix: "getworldfilename"
+        body: '''${1:worldfilename} = getworldfilename(${1:imagefilename})'''
+        description: '''${1:worldfilename} = getworldfilename(${1:imagefilename})'''
 
 
     "worldfilewrite":
-    prefix: "worldfilewrite"
-    body: '''worldfilewrite(${1:R}, ${2:worldFileName})'''
-    description: '''worldfilewrite(${1:R}, ${2:worldFileName})'''
+        prefix: "worldfilewrite"
+        body: '''worldfilewrite(${1:R}, ${2:worldFileName})'''
+        description: '''worldfilewrite(${1:R}, ${2:worldFileName})'''
 
 
     "makeattribspec":
-    prefix: "makeattribspec"
-    body: '''${1:attribspec} = makeattribspec(${1:S})'''
-    description: '''${1:attribspec} = makeattribspec(${1:S})'''
+        prefix: "makeattribspec"
+        body: '''${1:attribspec} = makeattribspec(${1:S})'''
+        description: '''${1:attribspec} = makeattribspec(${1:S})'''
 
 
     "gtopo30":
-    prefix: "gtopo30"
-    body: '''[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
-    description: '''[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
+        prefix: "gtopo30"
+        body: '''[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
+        description: '''[${1:Z}, ${2:refvec}] = gtopo30(${1:optional_foldername}, ${2:tilename}, ${3:samplefactor}, ${4:latlim}, ${5:lonlim})'''
 
 
     "shapeinfo":
-    prefix: "shapeinfo"
-    body: '''${1:info} = shapeinfo(${1:filename})'''
-    description: '''${1:info} = shapeinfo(${1:filename})'''
+        prefix: "shapeinfo"
+        body: '''${1:info} = shapeinfo(${1:filename})'''
+        description: '''${1:info} = shapeinfo(${1:filename})'''
 
 
     "sdtsdemread":
-    prefix: "sdtsdemread"
-    body: '''[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})'''
-    description: '''[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})'''
+        prefix: "sdtsdemread"
+        body: '''[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})'''
+        description: '''[${1:Z}, ${2:R}] = sdtsdemread(${1:filename})'''
 
 
     "kmlwriteline":
-    prefix: "kmlwriteline"
-    body: '''kmlwriteline(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'AltitudeMode', ${10:value}, 'LookAt', ${11:value}, 'Camera', ${12:value})'''
-    description: '''kmlwriteline(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'AltitudeMode', ${10:value}, 'LookAt', ${11:value}, 'Camera', ${12:value})'''
+        prefix: "kmlwriteline"
+        body: '''kmlwriteline(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'AltitudeMode', ${10:value}, 'LookAt', ${11:value}, 'Camera', ${12:value})'''
+        description: '''kmlwriteline(${1:filename}, ${2:latitude}, ${3:longitude}, ${4:optional_altitude}, 'Name', ${5:value}, 'Description', ${6:value}, 'Color', ${7:value}, 'Alpha', ${8:value}, 'LineWidth', ${9:value}, 'AltitudeMode', ${10:value}, 'LookAt', ${11:value}, 'Camera', ${12:value})'''
 
 
     "geotiffwrite":
-    prefix: "geotiffwrite"
-    body: '''geotiffwrite(${1:filename}, ${2:X}, ${3:cmap}, ${4:R}, 'CoordRefSysCode', ${5:value}, 'GeoKeyDirectoryTag', ${6:value}, 'RPCCoefficientTag', ${7:value}, 'TiffType', ${8:value}, 'TiffTags', ${9:value})'''
-    description: '''geotiffwrite(${1:filename}, ${2:X}, ${3:cmap}, ${4:R}, 'CoordRefSysCode', ${5:value}, 'GeoKeyDirectoryTag', ${6:value}, 'RPCCoefficientTag', ${7:value}, 'TiffType', ${8:value}, 'TiffTags', ${9:value})'''
+        prefix: "geotiffwrite"
+        body: '''geotiffwrite(${1:filename}, ${2:X}, ${3:cmap}, ${4:R}, 'CoordRefSysCode', ${5:value}, 'GeoKeyDirectoryTag', ${6:value}, 'RPCCoefficientTag', ${7:value}, 'TiffType', ${8:value}, 'TiffTags', ${9:value})'''
+        description: '''geotiffwrite(${1:filename}, ${2:X}, ${3:cmap}, ${4:R}, 'CoordRefSysCode', ${5:value}, 'GeoKeyDirectoryTag', ${6:value}, 'RPCCoefficientTag', ${7:value}, 'TiffType', ${8:value}, 'TiffTags', ${9:value})'''
 
 
     "arcgridread":
-    prefix: "arcgridread"
-    body: '''[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
-    description: '''[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
+        prefix: "arcgridread"
+        body: '''[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
+        description: '''[${1:Z}, ${2:R}] = arcgridread(${1:filename}, ${2:optional_coordinateSystemType})'''
 

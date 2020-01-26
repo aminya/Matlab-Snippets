@@ -1,44 +1,44 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "busdate":
-    prefix: "busdate"
-    body: '''${1:Busday} = busdate(${1:date}, ${2:dirFlag}, ${3:Holidays}, ${4:Weekend})'''
-    description: '''${1:Busday} = busdate(${1:date}, ${2:dirFlag}, ${3:Holidays}, ${4:Weekend})'''
+        prefix: "busdate"
+        body: '''${1:Busday} = busdate(${1:date}, ${2:dirFlag}, ${3:Holidays}, ${4:Weekend})'''
+        description: '''${1:Busday} = busdate(${1:date}, ${2:dirFlag}, ${3:Holidays}, ${4:Weekend})'''
 
 
     "datemnth":
-    prefix: "datemnth"
-    body: '''${1:targetDate} = datemnth(${1:startDate}, ${2:numberMonths}, ${3:dayFlag}, ${4:basis}, ${5:endMonthRule})'''
-    description: '''${1:targetDate} = datemnth(${1:startDate}, ${2:numberMonths}, ${3:dayFlag}, ${4:basis}, ${5:endMonthRule})'''
+        prefix: "datemnth"
+        body: '''${1:targetDate} = datemnth(${1:startDate}, ${2:numberMonths}, ${3:dayFlag}, ${4:basis}, ${5:endMonthRule})'''
+        description: '''${1:targetDate} = datemnth(${1:startDate}, ${2:numberMonths}, ${3:dayFlag}, ${4:basis}, ${5:endMonthRule})'''
 
 
     "weeknum":
-    prefix: "weeknum"
-    body: '''${1:result} = weeknum(${1:date}, ${2:beginday}, ${3:european})'''
-    description: '''${1:result} = weeknum(${1:date}, ${2:beginday}, ${3:european})'''
+        prefix: "weeknum"
+        body: '''${1:result} = weeknum(${1:date}, ${2:beginday}, ${3:european})'''
+        description: '''${1:result} = weeknum(${1:date}, ${2:beginday}, ${3:european})'''
 
 
     "cfamounts":
-    prefix: "cfamounts"
-    body: '''[${1:cflowAmounts}, ${2:cflowDates}, ${3:tFactors}, ${4:cflowFlags}, ${5:cfPrincipal}] = cfamounts(${1:couponRate}, ${2:settle}, ${3:maturity}, 'Period', ${4:value}, 'Basis', ${5:value}, 'EndMonthRule', ${6:value}, 'IssueDate', ${7:value}, 'FirstCouponDate', ${8:value}, 'LastCouponDate', ${9:value}, 'StartDate', ${10:value}, 'Face', ${11:value}, 'AdjustCashFlowsBasis', ${12:value}, 'BusinessDayConvention', ${13:value}, 'CompoundingFrequency', ${14:value}, 'DiscountBasis', ${15:value}, 'Holidays', ${16:value}, 'PrincipalType', ${17:value})'''
-    description: '''[${1:cflowAmounts}, ${2:cflowDates}, ${3:tFactors}, ${4:cflowFlags}, ${5:cfPrincipal}] = cfamounts(${1:couponRate}, ${2:settle}, ${3:maturity}, 'Period', ${4:value}, 'Basis', ${5:value}, 'EndMonthRule', ${6:value}, 'IssueDate', ${7:value}, 'FirstCouponDate', ${8:value}, 'LastCouponDate', ${9:value}, 'StartDate', ${10:value}, 'Face', ${11:value}, 'AdjustCashFlowsBasis', ${12:value}, 'BusinessDayConvention', ${13:value}, 'CompoundingFrequency', ${14:value}, 'DiscountBasis', ${15:value}, 'Holidays', ${16:value}, 'PrincipalType', ${17:value})'''
+        prefix: "cfamounts"
+        body: '''[${1:cflowAmounts}, ${2:cflowDates}, ${3:tFactors}, ${4:cflowFlags}, ${5:cfPrincipal}] = cfamounts(${1:couponRate}, ${2:settle}, ${3:maturity}, 'Period', ${4:value}, 'Basis', ${5:value}, 'EndMonthRule', ${6:value}, 'IssueDate', ${7:value}, 'FirstCouponDate', ${8:value}, 'LastCouponDate', ${9:value}, 'StartDate', ${10:value}, 'Face', ${11:value}, 'AdjustCashFlowsBasis', ${12:value}, 'BusinessDayConvention', ${13:value}, 'CompoundingFrequency', ${14:value}, 'DiscountBasis', ${15:value}, 'Holidays', ${16:value}, 'PrincipalType', ${17:value})'''
+        description: '''[${1:cflowAmounts}, ${2:cflowDates}, ${3:tFactors}, ${4:cflowFlags}, ${5:cfPrincipal}] = cfamounts(${1:couponRate}, ${2:settle}, ${3:maturity}, 'Period', ${4:value}, 'Basis', ${5:value}, 'EndMonthRule', ${6:value}, 'IssueDate', ${7:value}, 'FirstCouponDate', ${8:value}, 'LastCouponDate', ${9:value}, 'StartDate', ${10:value}, 'Face', ${11:value}, 'AdjustCashFlowsBasis', ${12:value}, 'BusinessDayConvention', ${13:value}, 'CompoundingFrequency', ${14:value}, 'DiscountBasis', ${15:value}, 'Holidays', ${16:value}, 'PrincipalType', ${17:value})'''
 
 
     "cfdates":
-    prefix: "cfdates"
-    body: '''${1:cflowDates} = cfdates(${1:settle}, ${2:maturity}, ${3:period}, ${4:basis}, ${5:endMonthRule}, ${6:issueDate}, ${7:firstCouponDate}, ${8:lastCouponDate}, ${9:startDate})'''
-    description: '''${1:cflowDates} = cfdates(${1:settle}, ${2:maturity}, ${3:period}, ${4:basis}, ${5:endMonthRule}, ${6:issueDate}, ${7:firstCouponDate}, ${8:lastCouponDate}, ${9:startDate})'''
+        prefix: "cfdates"
+        body: '''${1:cflowDates} = cfdates(${1:settle}, ${2:maturity}, ${3:period}, ${4:basis}, ${5:endMonthRule}, ${6:issueDate}, ${7:firstCouponDate}, ${8:lastCouponDate}, ${9:startDate})'''
+        description: '''${1:cflowDates} = cfdates(${1:settle}, ${2:maturity}, ${3:period}, ${4:basis}, ${5:endMonthRule}, ${6:issueDate}, ${7:firstCouponDate}, ${8:lastCouponDate}, ${9:startDate})'''
 
 
     "daysadd":
-    prefix: "daysadd"
-    body: '''${1:newDate} = daysadd(${1:startDate}, ${2:numDays}, ${3:basis})'''
-    description: '''${1:newDate} = daysadd(${1:startDate}, ${2:numDays}, ${3:basis})'''
+        prefix: "daysadd"
+        body: '''${1:newDate} = daysadd(${1:startDate}, ${2:numDays}, ${3:basis})'''
+        description: '''${1:newDate} = daysadd(${1:startDate}, ${2:numDays}, ${3:basis})'''
 
 
     "yearfrac":
-    prefix: "yearfrac"
-    body: '''${1:YearFraction} = yearfrac(${1:startDate}, ${2:endDate}, ${3:optional_Basis})'''
-    description: '''${1:YearFraction} = yearfrac(${1:startDate}, ${2:endDate}, ${3:optional_Basis})'''
+        prefix: "yearfrac"
+        body: '''${1:YearFraction} = yearfrac(${1:startDate}, ${2:endDate}, ${3:optional_Basis})'''
+        description: '''${1:YearFraction} = yearfrac(${1:startDate}, ${2:endDate}, ${3:optional_Basis})'''
 

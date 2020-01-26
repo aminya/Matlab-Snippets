@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "occlusionSensitivity":
-    prefix: "occlusionSensitivity"
-    body: '''${1:map} = occlusionSensitivity(${1:net}, ${2:X}, ${3:layerName}, ${4:channel}, 'MaskSize', ${5:value}, 'Stride', ${6:value}, 'MaskValue', ${7:value}, 'OutputUpsampling', ${8:value}, 'MaskClipping', ${9:value}, 'ExecutionEnvironment', ${10:value}, 'MiniBatchSize', ${11:value})'''
-    description: '''${1:map} = occlusionSensitivity(${1:net}, ${2:X}, ${3:layerName}, ${4:channel}, 'MaskSize', ${5:value}, 'Stride', ${6:value}, 'MaskValue', ${7:value}, 'OutputUpsampling', ${8:value}, 'MaskClipping', ${9:value}, 'ExecutionEnvironment', ${10:value}, 'MiniBatchSize', ${11:value})'''
+        prefix: "occlusionSensitivity"
+        body: '''${1:map} = occlusionSensitivity(${1:net}, ${2:X}, ${3:layerName}, ${4:channel}, 'MaskSize', ${5:value}, 'Stride', ${6:value}, 'MaskValue', ${7:value}, 'OutputUpsampling', ${8:value}, 'MaskClipping', ${9:value}, 'ExecutionEnvironment', ${10:value}, 'MiniBatchSize', ${11:value})'''
+        description: '''${1:map} = occlusionSensitivity(${1:net}, ${2:X}, ${3:layerName}, ${4:channel}, 'MaskSize', ${5:value}, 'Stride', ${6:value}, 'MaskValue', ${7:value}, 'OutputUpsampling', ${8:value}, 'MaskClipping', ${9:value}, 'ExecutionEnvironment', ${10:value}, 'MiniBatchSize', ${11:value})'''
 

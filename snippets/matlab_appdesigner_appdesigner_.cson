@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "appdesigner":
-    prefix: "appdesigner"
-    body: '''appdesigner(${1:filename})'''
-    description: '''appdesigner(${1:filename})'''
+        prefix: "appdesigner"
+        body: '''appdesigner(${1:filename})'''
+        description: '''appdesigner(${1:filename})'''
 

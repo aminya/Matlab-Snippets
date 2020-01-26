@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "winopen":
-    prefix: "winopen"
-    body: '''winopen(${1:filename}, ${2:optional_varargin})'''
-    description: '''winopen(${1:filename}, ${2:optional_varargin})'''
+        prefix: "winopen"
+        body: '''winopen(${1:filename}, ${2:optional_varargin})'''
+        description: '''winopen(${1:filename}, ${2:optional_varargin})'''
 

@@ -1,152 +1,152 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "dlupdate":
-    prefix: "dlupdate"
-    body: '''dlupdate(${1:fun}, ${2:dlnet})'''
-    description: '''dlupdate(${1:fun}, ${2:dlnet})'''
+        prefix: "dlupdate"
+        body: '''dlupdate(${1:fun}, ${2:dlnet})'''
+        description: '''dlupdate(${1:fun}, ${2:dlnet})'''
 
 
     "dlarray.min":
-    prefix: "dlarray.min"
-    body: '''dlarray.min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
-    description: '''dlarray.min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        prefix: "dlarray.min"
+        body: '''dlarray.min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        description: '''dlarray.min(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
 
 
     "dlarray.mse":
-    prefix: "dlarray.mse"
-    body: '''dlarray.mse(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
-    description: '''dlarray.mse(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
+        prefix: "dlarray.mse"
+        body: '''dlarray.mse(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
+        description: '''dlarray.mse(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
 
 
     "dlarray.dltranspconv":
-    prefix: "dlarray.dltranspconv"
-    body: '''dlarray.dltranspconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Cropping', ${7:value})'''
-    description: '''dlarray.dltranspconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Cropping', ${7:value})'''
+        prefix: "dlarray.dltranspconv"
+        body: '''dlarray.dltranspconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Cropping', ${7:value})'''
+        description: '''dlarray.dltranspconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Cropping', ${7:value})'''
 
 
     "dlarray.softmax":
-    prefix: "dlarray.softmax"
-    body: '''dlarray.softmax(${1:dlX}, 'DataFormat', ${2:value})'''
-    description: '''dlarray.softmax(${1:dlX}, 'DataFormat', ${2:value})'''
+        prefix: "dlarray.softmax"
+        body: '''dlarray.softmax(${1:dlX}, 'DataFormat', ${2:value})'''
+        description: '''dlarray.softmax(${1:dlX}, 'DataFormat', ${2:value})'''
 
 
     "dlarray.finddim":
-    prefix: "dlarray.finddim"
-    body: '''dlarray.finddim(${1:x}, ${2:nanflag})'''
-    description: '''dlarray.finddim(${1:x}, ${2:nanflag})'''
+        prefix: "dlarray.finddim"
+        body: '''dlarray.finddim(${1:x}, ${2:nanflag})'''
+        description: '''dlarray.finddim(${1:x}, ${2:nanflag})'''
 
 
     "sgdmupdate":
-    prefix: "sgdmupdate"
-    body: '''sgdmupdate(${1:params}, ${2:grad}, ${3:vel}, ${4:learnRate}, ${5:momentum})'''
-    description: '''sgdmupdate(${1:params}, ${2:grad}, ${3:vel}, ${4:learnRate}, ${5:momentum})'''
+        prefix: "sgdmupdate"
+        body: '''sgdmupdate(${1:params}, ${2:grad}, ${3:vel}, ${4:learnRate}, ${5:momentum})'''
+        description: '''sgdmupdate(${1:params}, ${2:grad}, ${3:vel}, ${4:learnRate}, ${5:momentum})'''
 
 
     "dlarray.max":
-    prefix: "dlarray.max"
-    body: '''dlarray.max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
-    description: '''dlarray.max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        prefix: "dlarray.max"
+        body: '''dlarray.max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
+        description: '''dlarray.max(${1:A}, ${2:[]}, ${3:optional_dim}, ${4:nanflag}, ${5:indexflag})'''
 
 
     "dlarray.maxpool":
-    prefix: "dlarray.maxpool"
-    body: '''dlarray.maxpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
-    description: '''dlarray.maxpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
+        prefix: "dlarray.maxpool"
+        body: '''dlarray.maxpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
+        description: '''dlarray.maxpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
 
 
     "dlarray.leakyrelu":
-    prefix: "dlarray.leakyrelu"
-    body: '''dlarray.leakyrelu(${1:dlX}, ${2:optional_scaleFactor})'''
-    description: '''dlarray.leakyrelu(${1:dlX}, ${2:optional_scaleFactor})'''
+        prefix: "dlarray.leakyrelu"
+        body: '''dlarray.leakyrelu(${1:dlX}, ${2:optional_scaleFactor})'''
+        description: '''dlarray.leakyrelu(${1:dlX}, ${2:optional_scaleFactor})'''
 
 
     "dlarray.avgpool":
-    prefix: "dlarray.avgpool"
-    body: '''dlarray.avgpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
-    description: '''dlarray.avgpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
+        prefix: "dlarray.avgpool"
+        body: '''dlarray.avgpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
+        description: '''dlarray.avgpool(${1:dlX}, ${2:poolsize}, 'DataFormat', ${3:value}, 'Padding', ${4:value}, 'Stride', ${5:value})'''
 
 
     "dlarray.lstm":
-    prefix: "dlarray.lstm"
-    body: '''dlarray.lstm(${1:dlX}, ${2:H0}, ${3:C0}, ${4:weights}, ${5:recurrentWeights}, ${6:bias}, 'DataFormat', ${7:value})'''
-    description: '''dlarray.lstm(${1:dlX}, ${2:H0}, ${3:C0}, ${4:weights}, ${5:recurrentWeights}, ${6:bias}, 'DataFormat', ${7:value})'''
+        prefix: "dlarray.lstm"
+        body: '''dlarray.lstm(${1:dlX}, ${2:H0}, ${3:C0}, ${4:weights}, ${5:recurrentWeights}, ${6:bias}, 'DataFormat', ${7:value})'''
+        description: '''dlarray.lstm(${1:dlX}, ${2:H0}, ${3:C0}, ${4:weights}, ${5:recurrentWeights}, ${6:bias}, 'DataFormat', ${7:value})'''
 
 
     "dlarray.fullyconnect":
-    prefix: "dlarray.fullyconnect"
-    body: '''dlarray.fullyconnect(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value})'''
-    description: '''dlarray.fullyconnect(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value})'''
+        prefix: "dlarray.fullyconnect"
+        body: '''dlarray.fullyconnect(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value})'''
+        description: '''dlarray.fullyconnect(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value})'''
 
 
     "dlarray.sum":
-    prefix: "dlarray.sum"
-    body: '''dlarray.sum(${1:A}, ${2:optional_dim}, ${3:outtype})'''
-    description: '''dlarray.sum(${1:A}, ${2:optional_dim}, ${3:outtype})'''
+        prefix: "dlarray.sum"
+        body: '''dlarray.sum(${1:A}, ${2:optional_dim}, ${3:outtype})'''
+        description: '''dlarray.sum(${1:A}, ${2:optional_dim}, ${3:outtype})'''
 
 
     "dlarray.batchnorm":
-    prefix: "dlarray.batchnorm"
-    body: '''dlarray.batchnorm(${1:dlX}, ${2:offset}, ${3:scaleFactor}, ${4:optional_mu}, ${5:optional_sigma}, 'DataFormat', ${6:value}, 'MeanDecay', ${7:value}, 'VarianceDecay', ${8:value}, 'Epsilon', ${9:value})'''
-    description: '''dlarray.batchnorm(${1:dlX}, ${2:offset}, ${3:scaleFactor}, ${4:optional_mu}, ${5:optional_sigma}, 'DataFormat', ${6:value}, 'MeanDecay', ${7:value}, 'VarianceDecay', ${8:value}, 'Epsilon', ${9:value})'''
+        prefix: "dlarray.batchnorm"
+        body: '''dlarray.batchnorm(${1:dlX}, ${2:offset}, ${3:scaleFactor}, ${4:optional_mu}, ${5:optional_sigma}, 'DataFormat', ${6:value}, 'MeanDecay', ${7:value}, 'VarianceDecay', ${8:value}, 'Epsilon', ${9:value})'''
+        description: '''dlarray.batchnorm(${1:dlX}, ${2:offset}, ${3:scaleFactor}, ${4:optional_mu}, ${5:optional_sigma}, 'DataFormat', ${6:value}, 'MeanDecay', ${7:value}, 'VarianceDecay', ${8:value}, 'Epsilon', ${9:value})'''
 
 
     "dlarray.dlgradient":
-    prefix: "dlarray.dlgradient"
-    body: '''dlarray.dlgradient(${1:y}, ${2:x}, 'RetainData', ${3:value})'''
-    description: '''dlarray.dlgradient(${1:y}, ${2:x}, 'RetainData', ${3:value})'''
+        prefix: "dlarray.dlgradient"
+        body: '''dlarray.dlgradient(${1:y}, ${2:x}, 'RetainData', ${3:value})'''
+        description: '''dlarray.dlgradient(${1:y}, ${2:x}, 'RetainData', ${3:value})'''
 
 
     "dlarray.prod":
-    prefix: "dlarray.prod"
-    body: '''dlarray.prod(${1:A}, ${2:optional_dim}, ${3:type})'''
-    description: '''dlarray.prod(${1:A}, ${2:optional_dim}, ${3:type})'''
+        prefix: "dlarray.prod"
+        body: '''dlarray.prod(${1:A}, ${2:optional_dim}, ${3:type})'''
+        description: '''dlarray.prod(${1:A}, ${2:optional_dim}, ${3:type})'''
 
 
     "dlarray.sigmoid":
-    prefix: "dlarray.sigmoid"
-    body: '''dlarray.sigmoid(${1:dlX})'''
-    description: '''dlarray.sigmoid(${1:dlX})'''
+        prefix: "dlarray.sigmoid"
+        body: '''dlarray.sigmoid(${1:dlX})'''
+        description: '''dlarray.sigmoid(${1:dlX})'''
 
 
     "dlarray.crossentropy":
-    prefix: "dlarray.crossentropy"
-    body: '''dlarray.crossentropy(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
-    description: '''dlarray.crossentropy(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
+        prefix: "dlarray.crossentropy"
+        body: '''dlarray.crossentropy(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
+        description: '''dlarray.crossentropy(${1:dlX}, ${2:targets}, 'DataFormat', ${3:value})'''
 
 
     "dlarray.dlconv":
-    prefix: "dlarray.dlconv"
-    body: '''dlarray.dlconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Padding', ${7:value})'''
-    description: '''dlarray.dlconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Padding', ${7:value})'''
+        prefix: "dlarray.dlconv"
+        body: '''dlarray.dlconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Padding', ${7:value})'''
+        description: '''dlarray.dlconv(${1:dlX}, ${2:weights}, ${3:bias}, 'DataFormat', ${4:value}, 'Stride', ${5:value}, 'DilationFactor', ${6:value}, 'Padding', ${7:value})'''
 
 
     "dlarray.maxunpool":
-    prefix: "dlarray.maxunpool"
-    body: '''dlarray.maxunpool(${1:dlX}, ${2:indx}, ${3:outputSize}, 'DataFormat', ${4:value})'''
-    description: '''dlarray.maxunpool(${1:dlX}, ${2:indx}, ${3:outputSize}, 'DataFormat', ${4:value})'''
+        prefix: "dlarray.maxunpool"
+        body: '''dlarray.maxunpool(${1:dlX}, ${2:indx}, ${3:outputSize}, 'DataFormat', ${4:value})'''
+        description: '''dlarray.maxunpool(${1:dlX}, ${2:indx}, ${3:outputSize}, 'DataFormat', ${4:value})'''
 
 
     "dlarray.relu":
-    prefix: "dlarray.relu"
-    body: '''dlarray.relu(${1:dlX})'''
-    description: '''dlarray.relu(${1:dlX})'''
+        prefix: "dlarray.relu"
+        body: '''dlarray.relu(${1:dlX})'''
+        description: '''dlarray.relu(${1:dlX})'''
 
 
     "rmspropupdate":
-    prefix: "rmspropupdate"
-    body: '''rmspropupdate(${1:params}, ${2:grad}, ${3:averageSqGrad}, ${4:learnRate}, ${5:sqGradDecay}, ${6:epsilon})'''
-    description: '''rmspropupdate(${1:params}, ${2:grad}, ${3:averageSqGrad}, ${4:learnRate}, ${5:sqGradDecay}, ${6:epsilon})'''
+        prefix: "rmspropupdate"
+        body: '''rmspropupdate(${1:params}, ${2:grad}, ${3:averageSqGrad}, ${4:learnRate}, ${5:sqGradDecay}, ${6:epsilon})'''
+        description: '''rmspropupdate(${1:params}, ${2:grad}, ${3:averageSqGrad}, ${4:learnRate}, ${5:sqGradDecay}, ${6:epsilon})'''
 
 
     "adamupdate":
-    prefix: "adamupdate"
-    body: '''adamupdate(${1:params}, ${2:grad}, ${3:averageGrad}, ${4:averageSqGrad}, ${5:iteration}, ${6:learnRate}, ${7:gradDecay}, ${8:sqGradDecay}, ${9:epsilon})'''
-    description: '''adamupdate(${1:params}, ${2:grad}, ${3:averageGrad}, ${4:averageSqGrad}, ${5:iteration}, ${6:learnRate}, ${7:gradDecay}, ${8:sqGradDecay}, ${9:epsilon})'''
+        prefix: "adamupdate"
+        body: '''adamupdate(${1:params}, ${2:grad}, ${3:averageGrad}, ${4:averageSqGrad}, ${5:iteration}, ${6:learnRate}, ${7:gradDecay}, ${8:sqGradDecay}, ${9:epsilon})'''
+        description: '''adamupdate(${1:params}, ${2:grad}, ${3:averageGrad}, ${4:averageSqGrad}, ${5:iteration}, ${6:learnRate}, ${7:gradDecay}, ${8:sqGradDecay}, ${9:epsilon})'''
 
 
     "dlarray.mean":
-    prefix: "dlarray.mean"
-    body: '''dlarray.mean(${1:A}, ${2:optional_dim}, ${3:outtype})'''
-    description: '''dlarray.mean(${1:A}, ${2:optional_dim}, ${3:outtype})'''
+        prefix: "dlarray.mean"
+        body: '''dlarray.mean(${1:A}, ${2:optional_dim}, ${3:outtype})'''
+        description: '''dlarray.mean(${1:A}, ${2:optional_dim}, ${3:outtype})'''
 

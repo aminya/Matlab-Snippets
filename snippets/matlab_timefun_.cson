@@ -1,734 +1,734 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "posixtime":
-    prefix: "posixtime"
-    body: '''${1:p} = posixtime(${1:t})'''
-    description: '''${1:p} = posixtime(${1:t})'''
+        prefix: "posixtime"
+        body: '''${1:p} = posixtime(${1:t})'''
+        description: '''${1:p} = posixtime(${1:t})'''
 
 
     "calmonths":
-    prefix: "calmonths"
-    body: '''${1:M} = calmonths(${1:X})'''
-    description: '''${1:M} = calmonths(${1:X})'''
+        prefix: "calmonths"
+        body: '''${1:M} = calmonths(${1:X})'''
+        description: '''${1:M} = calmonths(${1:X})'''
 
 
     "rem":
-    prefix: "rem"
-    body: '''${1:r} = rem(${1:a}, ${2:b})'''
-    description: '''${1:r} = rem(${1:a}, ${2:b})'''
+        prefix: "rem"
+        body: '''${1:r} = rem(${1:a}, ${2:b})'''
+        description: '''${1:r} = rem(${1:a}, ${2:b})'''
 
 
     "linspace":
-    prefix: "linspace"
-    body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:n})'''
-    description: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:n})'''
+        prefix: "linspace"
+        body: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:n})'''
+        description: '''${1:y} = linspace(${1:x1}, ${2:x2}, ${3:n})'''
 
 
     "datestr":
-    prefix: "datestr"
-    body: '''${1:DateString} = datestr(${1:t}, ${2:formatOut}, ${3:local})'''
-    description: '''${1:DateString} = datestr(${1:t}, ${2:formatOut}, ${3:local})'''
+        prefix: "datestr"
+        body: '''${1:DateString} = datestr(${1:t}, ${2:formatOut}, ${3:local})'''
+        description: '''${1:DateString} = datestr(${1:t}, ${2:formatOut}, ${3:local})'''
 
 
     "ismatrix":
-    prefix: "ismatrix"
-    body: '''${1:TF} = ismatrix(${1:V})'''
-    description: '''${1:TF} = ismatrix(${1:V})'''
+        prefix: "ismatrix"
+        body: '''${1:TF} = ismatrix(${1:V})'''
+        description: '''${1:TF} = ismatrix(${1:V})'''
 
 
     "maxk":
-    prefix: "maxk"
-    body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
-    description: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
+        prefix: "maxk"
+        body: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
+        description: '''[${1:B}, ${2:I}] = maxk(${1:A}, ${2:k}, ${3:dim})'''
 
 
     "movmedian":
-    prefix: "movmedian"
-    body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movmedian"
+        body: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movmedian(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "length":
-    prefix: "length"
-    body: '''${1:L} = length(${1:X})'''
-    description: '''${1:L} = length(${1:X})'''
+        prefix: "length"
+        body: '''${1:L} = length(${1:X})'''
+        description: '''${1:L} = length(${1:X})'''
 
 
     "days":
-    prefix: "days"
-    body: '''${1:D} = days(${1:X})'''
-    description: '''${1:D} = days(${1:X})'''
+        prefix: "days"
+        body: '''${1:D} = days(${1:X})'''
+        description: '''${1:D} = days(${1:X})'''
 
 
     "mean":
-    prefix: "mean"
-    body: '''${1:M} = mean(${1:T}, ${2:dim}, ${3:nanflag})'''
-    description: '''${1:M} = mean(${1:T}, ${2:dim}, ${3:nanflag})'''
+        prefix: "mean"
+        body: '''${1:M} = mean(${1:T}, ${2:dim}, ${3:nanflag})'''
+        description: '''${1:M} = mean(${1:T}, ${2:dim}, ${3:nanflag})'''
 
 
     "minute":
-    prefix: "minute"
-    body: '''${1:m} = minute(${1:t})'''
-    description: '''${1:m} = minute(${1:t})'''
+        prefix: "minute"
+        body: '''${1:m} = minute(${1:t})'''
+        description: '''${1:m} = minute(${1:t})'''
 
 
     "round":
-    prefix: "round"
-    body: '''${1:Y} = round(${1:t}, ${2:unit})'''
-    description: '''${1:Y} = round(${1:t}, ${2:unit})'''
+        prefix: "round"
+        body: '''${1:Y} = round(${1:t}, ${2:unit})'''
+        description: '''${1:Y} = round(${1:t}, ${2:unit})'''
 
 
     "calendarDuration":
-    prefix: "calendarDuration"
-    body: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
-    description: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
+        prefix: "calendarDuration"
+        body: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
+        description: '''${1:D} = calendarDuration(${1:YMD}, 'Format', ${2:value})'''
 
 
     "day":
-    prefix: "day"
-    body: '''${1:d} = day(${1:t}, ${2:dayType})'''
-    description: '''${1:d} = day(${1:t}, ${2:dayType})'''
+        prefix: "day"
+        body: '''${1:d} = day(${1:t}, ${2:dayType})'''
+        description: '''${1:d} = day(${1:t}, ${2:dayType})'''
 
 
     "split":
-    prefix: "split"
-    body: '''${1:C} = split(${1:t}, ${2:units})'''
-    description: '''${1:C} = split(${1:t}, ${2:units})'''
+        prefix: "split"
+        body: '''${1:C} = split(${1:t}, ${2:units})'''
+        description: '''${1:C} = split(${1:t}, ${2:units})'''
 
 
     "ymd":
-    prefix: "ymd"
-    body: '''[${1:y}, ${2:m}, ${3:d}] = ymd(${1:t})'''
-    description: '''[${1:y}, ${2:m}, ${3:d}] = ymd(${1:t})'''
+        prefix: "ymd"
+        body: '''[${1:y}, ${2:m}, ${3:d}] = ymd(${1:t})'''
+        description: '''[${1:y}, ${2:m}, ${3:d}] = ymd(${1:t})'''
 
 
     "juliandate":
-    prefix: "juliandate"
-    body: '''${1:d} = juliandate(${1:t}, ${2:dateType})'''
-    description: '''${1:d} = juliandate(${1:t}, ${2:dateType})'''
+        prefix: "juliandate"
+        body: '''${1:d} = juliandate(${1:t}, ${2:dateType})'''
+        description: '''${1:d} = juliandate(${1:t}, ${2:dateType})'''
 
 
     "union":
-    prefix: "union"
-    body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-    description: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        prefix: "union"
+        body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
 
 
     "cumsum":
-    prefix: "cumsum"
-    body: '''${1:B} = cumsum(${1:A}, ${2:dim}, ${3:direction})'''
-    description: '''${1:B} = cumsum(${1:A}, ${2:dim}, ${3:direction})'''
+        prefix: "cumsum"
+        body: '''${1:B} = cumsum(${1:A}, ${2:dim}, ${3:direction})'''
+        description: '''${1:B} = cumsum(${1:A}, ${2:dim}, ${3:direction})'''
 
 
     "caldiff":
-    prefix: "caldiff"
-    body: '''${1:dt} = caldiff(${1:t}, ${2:components}, ${3:dim})'''
-    description: '''${1:dt} = caldiff(${1:t}, ${2:components}, ${3:dim})'''
+        prefix: "caldiff"
+        body: '''${1:dt} = caldiff(${1:t}, ${2:components}, ${3:dim})'''
+        description: '''${1:dt} = caldiff(${1:t}, ${2:components}, ${3:dim})'''
 
 
     "timeofday":
-    prefix: "timeofday"
-    body: '''${1:d} = timeofday(${1:t})'''
-    description: '''${1:d} = timeofday(${1:t})'''
+        prefix: "timeofday"
+        body: '''${1:d} = timeofday(${1:t})'''
+        description: '''${1:d} = timeofday(${1:t})'''
 
 
     "month":
-    prefix: "month"
-    body: '''${1:d} = month(${1:t}, ${2:monthType})'''
-    description: '''${1:d} = month(${1:t}, ${2:monthType})'''
+        prefix: "month"
+        body: '''${1:d} = month(${1:t}, ${2:monthType})'''
+        description: '''${1:d} = month(${1:t}, ${2:monthType})'''
 
 
     "floor":
-    prefix: "floor"
-    body: '''${1:Y} = floor(${1:t}, ${2:unit})'''
-    description: '''${1:Y} = floor(${1:t}, ${2:unit})'''
+        prefix: "floor"
+        body: '''${1:Y} = floor(${1:t}, ${2:unit})'''
+        description: '''${1:Y} = floor(${1:t}, ${2:unit})'''
 
 
     "issortedrows":
-    prefix: "issortedrows"
-    body: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-    description: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        prefix: "issortedrows"
+        body: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''${1:TF} = issortedrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
 
 
     "quarter":
-    prefix: "quarter"
-    body: '''${1:q} = quarter(${1:t})'''
-    description: '''${1:q} = quarter(${1:t})'''
+        prefix: "quarter"
+        body: '''${1:q} = quarter(${1:t})'''
+        description: '''${1:q} = quarter(${1:t})'''
 
 
     "calquarters":
-    prefix: "calquarters"
-    body: '''${1:Q} = calquarters(${1:X})'''
-    description: '''${1:Q} = calquarters(${1:X})'''
+        prefix: "calquarters"
+        body: '''${1:Q} = calquarters(${1:X})'''
+        description: '''${1:Q} = calquarters(${1:X})'''
 
 
     "cummax":
-    prefix: "cummax"
-    body: '''${1:M} = cummax(${1:A}, ${2:dim}, ${3:direction})'''
-    description: '''${1:M} = cummax(${1:A}, ${2:dim}, ${3:direction})'''
+        prefix: "cummax"
+        body: '''${1:M} = cummax(${1:A}, ${2:dim}, ${3:direction})'''
+        description: '''${1:M} = cummax(${1:A}, ${2:dim}, ${3:direction})'''
 
 
     "tzoffset":
-    prefix: "tzoffset"
-    body: '''[${1:dt}, ${2:dst}] = tzoffset(${1:t})'''
-    description: '''[${1:dt}, ${2:dst}] = tzoffset(${1:t})'''
+        prefix: "tzoffset"
+        body: '''[${1:dt}, ${2:dst}] = tzoffset(${1:t})'''
+        description: '''[${1:dt}, ${2:dst}] = tzoffset(${1:t})'''
 
 
     "sum":
-    prefix: "sum"
-    body: '''${1:S} = sum(${1:A}, ${2:dim}, ${3:nanflag})'''
-    description: '''${1:S} = sum(${1:A}, ${2:dim}, ${3:nanflag})'''
+        prefix: "sum"
+        body: '''${1:S} = sum(${1:A}, ${2:dim}, ${3:nanflag})'''
+        description: '''${1:S} = sum(${1:A}, ${2:dim}, ${3:nanflag})'''
 
 
     "setxor":
-    prefix: "setxor"
-    body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-    description: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        prefix: "setxor"
+        body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
 
 
     "time":
-    prefix: "time"
-    body: '''${1:t} = time(${1:d})'''
-    description: '''${1:t} = time(${1:d})'''
+        prefix: "time"
+        body: '''${1:t} = time(${1:d})'''
+        description: '''${1:t} = time(${1:d})'''
 
 
     "isnan":
-    prefix: "isnan"
-    body: '''${1:TF} = isnan(${1:A})'''
-    description: '''${1:TF} = isnan(${1:A})'''
+        prefix: "isnan"
+        body: '''${1:TF} = isnan(${1:A})'''
+        description: '''${1:TF} = isnan(${1:A})'''
 
 
     "isdst":
-    prefix: "isdst"
-    body: '''${1:tf} = isdst(${1:t})'''
-    description: '''${1:tf} = isdst(${1:t})'''
+        prefix: "isdst"
+        body: '''${1:tf} = isdst(${1:t})'''
+        description: '''${1:tf} = isdst(${1:t})'''
 
 
     "discretize":
-    prefix: "discretize"
-    body: '''[${1:Y}, ${2:E}] = discretize(${1:X}, ${2:N}, ${3:values}, ${4:'categorical'}, 'IncludedEdge', ${5:value})'''
-    description: '''[${1:Y}, ${2:E}] = discretize(${1:X}, ${2:N}, ${3:values}, ${4:'categorical'}, 'IncludedEdge', ${5:value})'''
+        prefix: "discretize"
+        body: '''[${1:Y}, ${2:E}] = discretize(${1:X}, ${2:N}, ${3:values}, ${4:'categorical'}, 'IncludedEdge', ${5:value})'''
+        description: '''[${1:Y}, ${2:E}] = discretize(${1:X}, ${2:N}, ${3:values}, ${4:'categorical'}, 'IncludedEdge', ${5:value})'''
 
 
     "isinf":
-    prefix: "isinf"
-    body: '''${1:TF} = isinf(${1:A})'''
-    description: '''${1:TF} = isinf(${1:A})'''
+        prefix: "isinf"
+        body: '''${1:TF} = isinf(${1:A})'''
+        description: '''${1:TF} = isinf(${1:A})'''
 
 
     "mod":
-    prefix: "mod"
-    body: '''${1:b} = mod(${1:a}, ${2:m})'''
-    description: '''${1:b} = mod(${1:a}, ${2:m})'''
+        prefix: "mod"
+        body: '''${1:b} = mod(${1:a}, ${2:m})'''
+        description: '''${1:b} = mod(${1:a}, ${2:m})'''
 
 
     "datenum":
-    prefix: "datenum"
-    body: '''${1:DateNumber} = datenum(${1:t})'''
-    description: '''${1:DateNumber} = datenum(${1:t})'''
+        prefix: "datenum"
+        body: '''${1:DateNumber} = datenum(${1:t})'''
+        description: '''${1:DateNumber} = datenum(${1:t})'''
 
 
     "intersect":
-    prefix: "intersect"
-    body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-    description: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        prefix: "intersect"
+        body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
 
 
     "isweekend":
-    prefix: "isweekend"
-    body: '''${1:tf} = isweekend(${1:t})'''
-    description: '''${1:tf} = isweekend(${1:t})'''
+        prefix: "isweekend"
+        body: '''${1:tf} = isweekend(${1:t})'''
+        description: '''${1:tf} = isweekend(${1:t})'''
 
 
     "max":
-    prefix: "max"
-    body: '''${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
-    description: '''${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
+        prefix: "max"
+        body: '''${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
+        description: '''${1:C} = max(${1:A}, ${2:B}, ${3:nanflag})'''
 
 
     "year":
-    prefix: "year"
-    body: '''${1:y} = year(${1:t}, ${2:yearType})'''
-    description: '''${1:y} = year(${1:t}, ${2:yearType})'''
+        prefix: "year"
+        body: '''${1:y} = year(${1:t}, ${2:yearType})'''
+        description: '''${1:y} = year(${1:t}, ${2:yearType})'''
 
 
     "dateshift":
-    prefix: "dateshift"
-    body: '''${1:t2} = dateshift(${1:t}, ${2:'start'}, ${3:unit}, ${4:rule})'''
-    description: '''${1:t2} = dateshift(${1:t}, ${2:'start'}, ${3:unit}, ${4:rule})'''
+        prefix: "dateshift"
+        body: '''${1:t2} = dateshift(${1:t}, ${2:'start'}, ${3:unit}, ${4:rule})'''
+        description: '''${1:t2} = dateshift(${1:t}, ${2:'start'}, ${3:unit}, ${4:rule})'''
 
 
     "hours":
-    prefix: "hours"
-    body: '''${1:H} = hours(${1:X})'''
-    description: '''${1:H} = hours(${1:X})'''
+        prefix: "hours"
+        body: '''${1:H} = hours(${1:X})'''
+        description: '''${1:H} = hours(${1:X})'''
 
 
     "plus":
-    prefix: "plus"
-    body: '''${1:C} = plus(${1:A}, ${2:B})'''
-    description: '''${1:C} = plus(${1:A}, ${2:B})'''
+        prefix: "plus"
+        body: '''${1:C} = plus(${1:A}, ${2:B})'''
+        description: '''${1:C} = plus(${1:A}, ${2:B})'''
 
 
     "movprod":
-    prefix: "movprod"
-    body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movprod"
+        body: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movprod(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "char":
-    prefix: "char"
-    body: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
-    description: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
+        prefix: "char"
+        body: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''${1:S} = char(${1:D}, ${2:fmt}, ${3:locale})'''
 
 
     "cat":
-    prefix: "cat"
-    body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
-    description: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        prefix: "cat"
+        body: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
+        description: '''${1:C} = cat(${1:dim}, ${2:A}, ${3:B})'''
 
 
     "sort":
-    prefix: "sort"
-    body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-    description: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        prefix: "sort"
+        body: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[${1:B}, ${2:I}] = sort(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
 
 
     "movmean":
-    prefix: "movmean"
-    body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movmean"
+        body: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movmean(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "sortrows":
-    prefix: "sortrows"
-    body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-    description: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        prefix: "sortrows"
+        body: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''[${1:B}, ${2:Index}] = sortrows(${1:A}, ${2:column}, ${3:direction}, 'MissingPlacement', ${4:value})'''
 
 
     "interp1":
-    prefix: "interp1"
-    body: '''${1:vq} = interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
-    description: '''${1:vq} = interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
+        prefix: "interp1"
+        body: '''${1:vq} = interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
+        description: '''${1:vq} = interp1(${1:x}, ${2:v}, ${3:xq}, ${4:method}, ${5:extrapolation})'''
 
 
     "topkrows":
-    prefix: "topkrows"
-    body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
-    description: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
+        prefix: "topkrows"
+        body: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
+        description: '''[${1:B}, ${2:Index}] = topkrows(${1:A}, ${2:k}, ${3:column}, ${4:direction})'''
 
 
     "ismember":
-    prefix: "ismember"
-    body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
-    description: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
+        prefix: "ismember"
+        body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
+        description: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:'rows'})'''
 
 
     "caldays":
-    prefix: "caldays"
-    body: '''${1:D} = caldays(${1:X})'''
-    description: '''${1:D} = caldays(${1:X})'''
+        prefix: "caldays"
+        body: '''${1:D} = caldays(${1:X})'''
+        description: '''${1:D} = caldays(${1:X})'''
 
 
     "ctranspose":
-    prefix: "ctranspose"
-    body: '''${1:B} = ctranspose(${1:A})'''
-    description: '''${1:B} = ctranspose(${1:A})'''
+        prefix: "ctranspose"
+        body: '''${1:B} = ctranspose(${1:A})'''
+        description: '''${1:B} = ctranspose(${1:A})'''
 
 
     "mode":
-    prefix: "mode"
-    body: '''[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})'''
-    description: '''[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})'''
+        prefix: "mode"
+        body: '''[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})'''
+        description: '''[${1:M}, ${2:F}, ${3:C}] = mode(${1:A}, ${2:dim})'''
 
 
     "vertcat":
-    prefix: "vertcat"
-    body: '''${1:C} = vertcat(${1:A})'''
-    description: '''${1:C} = vertcat(${1:A})'''
+        prefix: "vertcat"
+        body: '''${1:C} = vertcat(${1:A})'''
+        description: '''${1:C} = vertcat(${1:A})'''
 
 
     "calyears":
-    prefix: "calyears"
-    body: '''${1:Y} = calyears(${1:X})'''
-    description: '''${1:Y} = calyears(${1:X})'''
+        prefix: "calyears"
+        body: '''${1:Y} = calyears(${1:X})'''
+        description: '''${1:Y} = calyears(${1:X})'''
 
 
     "addtodate":
-    prefix: "addtodate"
-    body: '''${1:R} = addtodate(${1:D}, ${2:Q}, ${3:F})'''
-    description: '''${1:R} = addtodate(${1:D}, ${2:Q}, ${3:F})'''
+        prefix: "addtodate"
+        body: '''${1:R} = addtodate(${1:D}, ${2:Q}, ${3:F})'''
+        description: '''${1:R} = addtodate(${1:D}, ${2:Q}, ${3:F})'''
 
 
     "ceil":
-    prefix: "ceil"
-    body: '''${1:Y} = ceil(${1:t}, ${2:unit})'''
-    description: '''${1:Y} = ceil(${1:t}, ${2:unit})'''
+        prefix: "ceil"
+        body: '''${1:Y} = ceil(${1:t}, ${2:unit})'''
+        description: '''${1:Y} = ceil(${1:t}, ${2:unit})'''
 
 
     "times":
-    prefix: "times"
-    body: '''${1:C} = times(${1:A}, ${2:B})'''
-    description: '''${1:C} = times(${1:A}, ${2:B})'''
+        prefix: "times"
+        body: '''${1:C} = times(${1:A}, ${2:B})'''
+        description: '''${1:C} = times(${1:A}, ${2:B})'''
 
 
     "cummin":
-    prefix: "cummin"
-    body: '''${1:M} = cummin(${1:A}, ${2:dim}, ${3:direction})'''
-    description: '''${1:M} = cummin(${1:A}, ${2:dim}, ${3:direction})'''
+        prefix: "cummin"
+        body: '''${1:M} = cummin(${1:A}, ${2:dim}, ${3:direction})'''
+        description: '''${1:M} = cummin(${1:A}, ${2:dim}, ${3:direction})'''
 
 
     "minutes":
-    prefix: "minutes"
-    body: '''${1:M} = minutes(${1:X})'''
-    description: '''${1:M} = minutes(${1:X})'''
+        prefix: "minutes"
+        body: '''${1:M} = minutes(${1:X})'''
+        description: '''${1:M} = minutes(${1:X})'''
 
 
     "setdiff":
-    prefix: "setdiff"
-    body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
-    description: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        prefix: "setdiff"
+        body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
+        description: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:'rows'}, ${4:setOrder})'''
 
 
     "movstd":
-    prefix: "movstd"
-    body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-    description: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        prefix: "movstd"
+        body: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''${1:M} = movstd(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
 
 
     "isempty":
-    prefix: "isempty"
-    body: '''${1:TF} = isempty(${1:A})'''
-    description: '''${1:TF} = isempty(${1:A})'''
+        prefix: "isempty"
+        body: '''${1:TF} = isempty(${1:A})'''
+        description: '''${1:TF} = isempty(${1:A})'''
 
 
     "isrow":
-    prefix: "isrow"
-    body: '''${1:TF} = isrow(${1:V})'''
-    description: '''${1:TF} = isrow(${1:V})'''
+        prefix: "isrow"
+        body: '''${1:TF} = isrow(${1:V})'''
+        description: '''${1:TF} = isrow(${1:V})'''
 
 
     "abs":
-    prefix: "abs"
-    body: '''${1:Y} = abs(${1:X})'''
-    description: '''${1:Y} = abs(${1:X})'''
+        prefix: "abs"
+        body: '''${1:Y} = abs(${1:X})'''
+        description: '''${1:Y} = abs(${1:X})'''
 
 
     "std":
-    prefix: "std"
-    body: '''${1:S} = std(${1:A}, ${2:w}, ${3:dim}, ${4:nanflag})'''
-    description: '''${1:S} = std(${1:A}, ${2:w}, ${3:dim}, ${4:nanflag})'''
+        prefix: "std"
+        body: '''${1:S} = std(${1:A}, ${2:w}, ${3:dim}, ${4:nanflag})'''
+        description: '''${1:S} = std(${1:A}, ${2:w}, ${3:dim}, ${4:nanflag})'''
 
 
     "datetime":
-    prefix: "datetime"
-    body: '''${1:t} = datetime(${1:X}, ${2:ConvertFrom}, ${3:dateType}, 'Epoch', ${4:value}, 'TicksPerSecond', ${5:value}, 'TimeZone', ${6:value}, 'Format', ${7:value})'''
-    description: '''${1:t} = datetime(${1:X}, ${2:ConvertFrom}, ${3:dateType}, 'Epoch', ${4:value}, 'TicksPerSecond', ${5:value}, 'TimeZone', ${6:value}, 'Format', ${7:value})'''
+        prefix: "datetime"
+        body: '''${1:t} = datetime(${1:X}, ${2:ConvertFrom}, ${3:dateType}, 'Epoch', ${4:value}, 'TicksPerSecond', ${5:value}, 'TimeZone', ${6:value}, 'Format', ${7:value})'''
+        description: '''${1:t} = datetime(${1:X}, ${2:ConvertFrom}, ${3:dateType}, 'Epoch', ${4:value}, 'TicksPerSecond', ${5:value}, 'TimeZone', ${6:value}, 'Format', ${7:value})'''
 
 
     "calendar":
-    prefix: "calendar"
-    body: '''${1:c} = calendar(${1:d})'''
-    description: '''${1:c} = calendar(${1:d})'''
+        prefix: "calendar"
+        body: '''${1:c} = calendar(${1:d})'''
+        description: '''${1:c} = calendar(${1:d})'''
 
 
     "weekday":
-    prefix: "weekday"
-    body: '''[${1:DayNumber}, ${2:DayName}] = weekday(${1:D}, ${2:DayForm}, ${3:language})'''
-    description: '''[${1:DayNumber}, ${2:DayName}] = weekday(${1:D}, ${2:DayForm}, ${3:language})'''
+        prefix: "weekday"
+        body: '''[${1:DayNumber}, ${2:DayName}] = weekday(${1:D}, ${2:DayForm}, ${3:language})'''
+        description: '''[${1:DayNumber}, ${2:DayName}] = weekday(${1:D}, ${2:DayForm}, ${3:language})'''
 
 
     "histcounts":
-    prefix: "histcounts"
-    body: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:edges}, 'BinLimits', ${3:value}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Normalization', ${6:value})'''
-    description: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:edges}, 'BinLimits', ${3:value}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Normalization', ${6:value})'''
+        prefix: "histcounts"
+        body: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:edges}, 'BinLimits', ${3:value}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Normalization', ${6:value})'''
+        description: '''[${1:N}, ${2:edges}, ${3:bin}] = histcounts(${1:X}, ${2:edges}, 'BinLimits', ${3:value}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Normalization', ${6:value})'''
 
 
     "NaT":
-    prefix: "NaT"
-    body: '''${1:t} = NaT(${1:n}, 'Format', ${2:value}, 'TimeZone', ${3:value})'''
-    description: '''${1:t} = NaT(${1:n}, 'Format', ${2:value}, 'TimeZone', ${3:value})'''
+        prefix: "NaT"
+        body: '''${1:t} = NaT(${1:n}, 'Format', ${2:value}, 'TimeZone', ${3:value})'''
+        description: '''${1:t} = NaT(${1:n}, 'Format', ${2:value}, 'TimeZone', ${3:value})'''
 
 
     "unique":
-    prefix: "unique"
-    body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
-    description: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
+        prefix: "unique"
+        body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
+        description: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:'rows'}, ${3:setOrder})'''
 
 
     "cellstr":
-    prefix: "cellstr"
-    body: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
-    description: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
+        prefix: "cellstr"
+        body: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''${1:S} = cellstr(${1:D}, ${2:fmt}, ${3:locale})'''
 
 
     "yyyymmdd":
-    prefix: "yyyymmdd"
-    body: '''${1:pd} = yyyymmdd(${1:t})'''
-    description: '''${1:pd} = yyyymmdd(${1:t})'''
+        prefix: "yyyymmdd"
+        body: '''${1:pd} = yyyymmdd(${1:t})'''
+        description: '''${1:pd} = yyyymmdd(${1:t})'''
 
 
     "years":
-    prefix: "years"
-    body: '''${1:Y} = years(${1:X})'''
-    description: '''${1:Y} = years(${1:X})'''
+        prefix: "years"
+        body: '''${1:Y} = years(${1:X})'''
+        description: '''${1:Y} = years(${1:X})'''
 
 
     "isvector":
-    prefix: "isvector"
-    body: '''${1:TF} = isvector(${1:A})'''
-    description: '''${1:TF} = isvector(${1:A})'''
+        prefix: "isvector"
+        body: '''${1:TF} = isvector(${1:A})'''
+        description: '''${1:TF} = isvector(${1:A})'''
 
 
     "seconds":
-    prefix: "seconds"
-    body: '''${1:S} = seconds(${1:X})'''
-    description: '''${1:S} = seconds(${1:X})'''
+        prefix: "seconds"
+        body: '''${1:S} = seconds(${1:X})'''
+        description: '''${1:S} = seconds(${1:X})'''
 
 
     "calweeks":
-    prefix: "calweeks"
-    body: '''${1:W} = calweeks(${1:X})'''
-    description: '''${1:W} = calweeks(${1:X})'''
+        prefix: "calweeks"
+        body: '''${1:W} = calweeks(${1:X})'''
+        description: '''${1:W} = calweeks(${1:X})'''
 
 
     "median":
-    prefix: "median"
-    body: '''${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
-    description: '''${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
+        prefix: "median"
+        body: '''${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
+        description: '''${1:M} = median(${1:A}, ${2:dim}, ${3:nanflag})'''
 
 
     "minus":
-    prefix: "minus"
-    body: '''${1:C} = minus(${1:A}, ${2:B})'''
-    description: '''${1:C} = minus(${1:A}, ${2:B})'''
+        prefix: "minus"
+        body: '''${1:C} = minus(${1:A}, ${2:B})'''
+        description: '''${1:C} = minus(${1:A}, ${2:B})'''
 
 
     "isfinite":
-    prefix: "isfinite"
-    body: '''${1:TF} = isfinite(${1:A})'''
-    description: '''${1:TF} = isfinite(${1:A})'''
+        prefix: "isfinite"
+        body: '''${1:TF} = isfinite(${1:A})'''
+        description: '''${1:TF} = isfinite(${1:A})'''
 
 
     "horzcat":
-    prefix: "horzcat"
-    body: '''${1:C} = horzcat(${1:A})'''
-    description: '''${1:C} = horzcat(${1:A})'''
+        prefix: "horzcat"
+        body: '''${1:C} = horzcat(${1:A})'''
+        description: '''${1:C} = horzcat(${1:A})'''
 
 
     "isnat":
-    prefix: "isnat"
-    body: '''${1:tf} = isnat(${1:A})'''
-    description: '''${1:tf} = isnat(${1:A})'''
+        prefix: "isnat"
+        body: '''${1:tf} = isnat(${1:A})'''
+        description: '''${1:tf} = isnat(${1:A})'''
 
 
     "hour":
-    prefix: "hour"
-    body: '''${1:h} = hour(${1:t})'''
-    description: '''${1:h} = hour(${1:t})'''
+        prefix: "hour"
+        body: '''${1:h} = hour(${1:t})'''
+        description: '''${1:h} = hour(${1:t})'''
 
 
     "isscalar":
-    prefix: "isscalar"
-    body: '''${1:TF} = isscalar(${1:A})'''
-    description: '''${1:TF} = isscalar(${1:A})'''
+        prefix: "isscalar"
+        body: '''${1:TF} = isscalar(${1:A})'''
+        description: '''${1:TF} = isscalar(${1:A})'''
 
 
     "isduration":
-    prefix: "isduration"
-    body: '''${1:tf} = isduration(${1:t})'''
-    description: '''${1:tf} = isduration(${1:t})'''
+        prefix: "isduration"
+        body: '''${1:tf} = isduration(${1:t})'''
+        description: '''${1:tf} = isduration(${1:t})'''
 
 
     "movmax":
-    prefix: "movmax"
-    body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movmax"
+        body: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movmax(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "ndims":
-    prefix: "ndims"
-    body: '''${1:N} = ndims(${1:X})'''
-    description: '''${1:N} = ndims(${1:X})'''
+        prefix: "ndims"
+        body: '''${1:N} = ndims(${1:X})'''
+        description: '''${1:N} = ndims(${1:X})'''
 
 
     "uminus":
-    prefix: "uminus"
-    body: '''${1:C} = uminus(${1:A})'''
-    description: '''${1:C} = uminus(${1:A})'''
+        prefix: "uminus"
+        body: '''${1:C} = uminus(${1:A})'''
+        description: '''${1:C} = uminus(${1:A})'''
 
 
     "string":
-    prefix: "string"
-    body: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
-    description: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
+        prefix: "string"
+        body: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
+        description: '''${1:str} = string(${1:D}, ${2:fmt}, ${3:locale})'''
 
 
     "convertTo":
-    prefix: "convertTo"
-    body: '''${1:t} = convertTo(${1:t}, ${2:dateType}, 'Epoch', ${3:value}, 'TicksPerSecond', ${4:value})'''
-    description: '''${1:t} = convertTo(${1:t}, ${2:dateType}, 'Epoch', ${3:value}, 'TicksPerSecond', ${4:value})'''
+        prefix: "convertTo"
+        body: '''${1:t} = convertTo(${1:t}, ${2:dateType}, 'Epoch', ${3:value}, 'TicksPerSecond', ${4:value})'''
+        description: '''${1:t} = convertTo(${1:t}, ${2:dateType}, 'Epoch', ${3:value}, 'TicksPerSecond', ${4:value})'''
 
 
     "isequaln":
-    prefix: "isequaln"
-    body: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
-    description: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
+        prefix: "isequaln"
+        body: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
+        description: '''${1:tf} = isequaln(${1:A}, ${2:B})'''
 
 
     "transpose":
-    prefix: "transpose"
-    body: '''${1:B} = transpose(${1:A})'''
-    description: '''${1:B} = transpose(${1:A})'''
+        prefix: "transpose"
+        body: '''${1:B} = transpose(${1:A})'''
+        description: '''${1:B} = transpose(${1:A})'''
 
 
     "numel":
-    prefix: "numel"
-    body: '''${1:n} = numel(${1:A})'''
-    description: '''${1:n} = numel(${1:A})'''
+        prefix: "numel"
+        body: '''${1:n} = numel(${1:A})'''
+        description: '''${1:n} = numel(${1:A})'''
 
 
     "week":
-    prefix: "week"
-    body: '''${1:w} = week(${1:t}, ${2:weekType})'''
-    description: '''${1:w} = week(${1:t}, ${2:weekType})'''
+        prefix: "week"
+        body: '''${1:w} = week(${1:t}, ${2:weekType})'''
+        description: '''${1:w} = week(${1:t}, ${2:weekType})'''
 
 
     "movsum":
-    prefix: "movsum"
-    body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movsum"
+        body: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movsum(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "diff":
-    prefix: "diff"
-    body: '''${1:Y} = diff(${1:X}, ${2:n}, ${3:dim})'''
-    description: '''${1:Y} = diff(${1:X}, ${2:n}, ${3:dim})'''
+        prefix: "diff"
+        body: '''${1:Y} = diff(${1:X}, ${2:n}, ${3:dim})'''
+        description: '''${1:Y} = diff(${1:X}, ${2:n}, ${3:dim})'''
 
 
     "timezones":
-    prefix: "timezones"
-    body: '''${1:T} = timezones(${1:area})'''
-    description: '''${1:T} = timezones(${1:area})'''
+        prefix: "timezones"
+        body: '''${1:T} = timezones(${1:area})'''
+        description: '''${1:T} = timezones(${1:area})'''
 
 
     "duration":
-    prefix: "duration"
-    body: '''${1:D} = duration(${1:X}, 'Format', ${2:value}, 'InputFormat', ${3:value})'''
-    description: '''${1:D} = duration(${1:X}, 'Format', ${2:value}, 'InputFormat', ${3:value})'''
+        prefix: "duration"
+        body: '''${1:D} = duration(${1:X}, 'Format', ${2:value}, 'InputFormat', ${3:value})'''
+        description: '''${1:D} = duration(${1:X}, 'Format', ${2:value}, 'InputFormat', ${3:value})'''
 
 
     "mtimes":
-    prefix: "mtimes"
-    body: '''${1:C} = mtimes(${1:A}, ${2:B})'''
-    description: '''${1:C} = mtimes(${1:A}, ${2:B})'''
+        prefix: "mtimes"
+        body: '''${1:C} = mtimes(${1:A}, ${2:B})'''
+        description: '''${1:C} = mtimes(${1:A}, ${2:B})'''
 
 
     "min":
-    prefix: "min"
-    body: '''${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
-    description: '''${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
+        prefix: "min"
+        body: '''${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
+        description: '''${1:C} = min(${1:A}, ${2:B}, ${3:nanflag})'''
 
 
     "mink":
-    prefix: "mink"
-    body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
-    description: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
+        prefix: "mink"
+        body: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
+        description: '''[${1:B}, ${2:I}] = mink(${1:A}, ${2:k}, ${3:dim})'''
 
 
     "ldivide":
-    prefix: "ldivide"
-    body: '''${1:x} = ldivide(${1:B}, ${2:A})'''
-    description: '''${1:x} = ldivide(${1:B}, ${2:A})'''
+        prefix: "ldivide"
+        body: '''${1:x} = ldivide(${1:B}, ${2:A})'''
+        description: '''${1:x} = ldivide(${1:B}, ${2:A})'''
 
 
     "iscalendarduration":
-    prefix: "iscalendarduration"
-    body: '''${1:tf} = iscalendarduration(${1:d})'''
-    description: '''${1:tf} = iscalendarduration(${1:d})'''
+        prefix: "iscalendarduration"
+        body: '''${1:tf} = iscalendarduration(${1:d})'''
+        description: '''${1:tf} = iscalendarduration(${1:d})'''
 
 
     "exceltime":
-    prefix: "exceltime"
-    body: '''${1:d} = exceltime(${1:t}, ${2:dateType})'''
-    description: '''${1:d} = exceltime(${1:t}, ${2:dateType})'''
+        prefix: "exceltime"
+        body: '''${1:d} = exceltime(${1:t}, ${2:dateType})'''
+        description: '''${1:d} = exceltime(${1:t}, ${2:dateType})'''
 
 
     "movmad":
-    prefix: "movmad"
-    body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movmad"
+        body: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movmad(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "hms":
-    prefix: "hms"
-    body: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
-    description: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
+        prefix: "hms"
+        body: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
+        description: '''[${1:h}, ${2:m}, ${3:s}] = hms(${1:t})'''
 
 
     "iscolumn":
-    prefix: "iscolumn"
-    body: '''${1:TF} = iscolumn(${1:V})'''
-    description: '''${1:TF} = iscolumn(${1:V})'''
+        prefix: "iscolumn"
+        body: '''${1:TF} = iscolumn(${1:V})'''
+        description: '''${1:TF} = iscolumn(${1:V})'''
 
 
     "second":
-    prefix: "second"
-    body: '''${1:s} = second(${1:t}, ${2:secondType})'''
-    description: '''${1:s} = second(${1:t}, ${2:secondType})'''
+        prefix: "second"
+        body: '''${1:s} = second(${1:t}, ${2:secondType})'''
+        description: '''${1:s} = second(${1:t}, ${2:secondType})'''
 
 
     "isdatetime":
-    prefix: "isdatetime"
-    body: '''${1:tf} = isdatetime(${1:t})'''
-    description: '''${1:tf} = isdatetime(${1:t})'''
+        prefix: "isdatetime"
+        body: '''${1:tf} = isdatetime(${1:t})'''
+        description: '''${1:tf} = isdatetime(${1:t})'''
 
 
     "movmin":
-    prefix: "movmin"
-    body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
-    description: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        prefix: "movmin"
+        body: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
+        description: '''${1:M} = movmin(${1:A}, ${2:k}, ${3:dim}, ${4:nanflag}, 'Endpoints', ${5:value}, 'SamplePoints', ${6:value})'''
 
 
     "isequal":
-    prefix: "isequal"
-    body: '''${1:tf} = isequal(${1:A}, ${2:B})'''
-    description: '''${1:tf} = isequal(${1:A}, ${2:B})'''
+        prefix: "isequal"
+        body: '''${1:tf} = isequal(${1:A}, ${2:B})'''
+        description: '''${1:tf} = isequal(${1:A}, ${2:B})'''
 
 
     "movvar":
-    prefix: "movvar"
-    body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
-    description: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        prefix: "movvar"
+        body: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
+        description: '''${1:M} = movvar(${1:A}, ${2:k}, ${3:w}, ${4:dim}, ${5:nanflag}, 'Endpoints', ${6:value}, 'SamplePoints', ${7:value})'''
 
 
     "issorted":
-    prefix: "issorted"
-    body: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
-    description: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        prefix: "issorted"
+        body: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
+        description: '''${1:TF} = issorted(${1:A}, ${2:dim}, ${3:direction}, 'MissingPlacement', ${4:value})'''
 
 
     "milliseconds":
-    prefix: "milliseconds"
-    body: '''${1:MS} = milliseconds(${1:X})'''
-    description: '''${1:MS} = milliseconds(${1:X})'''
+        prefix: "milliseconds"
+        body: '''${1:MS} = milliseconds(${1:X})'''
+        description: '''${1:MS} = milliseconds(${1:X})'''
 
 
     "reshape":
-    prefix: "reshape"
-    body: '''${1:B} = reshape(${1:A}, ${2:sz})'''
-    description: '''${1:B} = reshape(${1:A}, ${2:sz})'''
+        prefix: "reshape"
+        body: '''${1:B} = reshape(${1:A}, ${2:sz})'''
+        description: '''${1:B} = reshape(${1:A}, ${2:sz})'''
 
 
     "permute":
-    prefix: "permute"
-    body: '''${1:B} = permute(${1:A}, ${2:order})'''
-    description: '''${1:B} = permute(${1:A}, ${2:order})'''
+        prefix: "permute"
+        body: '''${1:B} = permute(${1:A}, ${2:order})'''
+        description: '''${1:B} = permute(${1:A}, ${2:order})'''
 
 
     "between":
-    prefix: "between"
-    body: '''${1:dt} = between(${1:t1}, ${2:t2}, ${3:components})'''
-    description: '''${1:dt} = between(${1:t1}, ${2:t2}, ${3:components})'''
+        prefix: "between"
+        body: '''${1:dt} = between(${1:t1}, ${2:t2}, ${3:components})'''
+        description: '''${1:dt} = between(${1:t1}, ${2:t2}, ${3:components})'''
 

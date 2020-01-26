@@ -1,68 +1,68 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "rem":
-    prefix: "rem"
-    body: '''${1:r} = rem(${1:a}, ${2:b})'''
-    description: '''${1:r} = rem(${1:a}, ${2:b})'''
+        prefix: "rem"
+        body: '''${1:r} = rem(${1:a}, ${2:b})'''
+        description: '''${1:r} = rem(${1:a}, ${2:b})'''
 
 
     "ceil":
-    prefix: "ceil"
-    body: '''${1:Y} = ceil(${1:X})'''
-    description: '''${1:Y} = ceil(${1:X})'''
+        prefix: "ceil"
+        body: '''${1:Y} = ceil(${1:X})'''
+        description: '''${1:Y} = ceil(${1:X})'''
 
 
     "fix":
-    prefix: "fix"
-    body: '''${1:Y} = fix(${1:X})'''
-    description: '''${1:Y} = fix(${1:X})'''
+        prefix: "fix"
+        body: '''${1:Y} = fix(${1:X})'''
+        description: '''${1:Y} = fix(${1:X})'''
 
 
     "real":
-    prefix: "real"
-    body: '''${1:X} = real(${1:Z})'''
-    description: '''${1:X} = real(${1:Z})'''
+        prefix: "real"
+        body: '''${1:X} = real(${1:Z})'''
+        description: '''${1:X} = real(${1:Z})'''
 
 
     "mod":
-    prefix: "mod"
-    body: '''${1:b} = mod(${1:a}, ${2:m})'''
-    description: '''${1:b} = mod(${1:a}, ${2:m})'''
+        prefix: "mod"
+        body: '''${1:b} = mod(${1:a}, ${2:m})'''
+        description: '''${1:b} = mod(${1:a}, ${2:m})'''
 
 
     "round":
-    prefix: "round"
-    body: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
-    description: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
+        prefix: "round"
+        body: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
+        description: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
 
 
     "conj":
-    prefix: "conj"
-    body: '''${1:ZC} = conj(${1:Z})'''
-    description: '''${1:ZC} = conj(${1:Z})'''
+        prefix: "conj"
+        body: '''${1:ZC} = conj(${1:Z})'''
+        description: '''${1:ZC} = conj(${1:Z})'''
 
 
     "abs":
-    prefix: "abs"
-    body: '''${1:Y} = abs(${1:X})'''
-    description: '''${1:Y} = abs(${1:X})'''
+        prefix: "abs"
+        body: '''${1:Y} = abs(${1:X})'''
+        description: '''${1:Y} = abs(${1:X})'''
 
 
     "floor":
-    prefix: "floor"
-    body: '''${1:Y} = floor(${1:X})'''
-    description: '''${1:Y} = floor(${1:X})'''
+        prefix: "floor"
+        body: '''${1:Y} = floor(${1:X})'''
+        description: '''${1:Y} = floor(${1:X})'''
 
 
     "sign":
-    prefix: "sign"
-    body: '''${1:y} = sign(${1:x})'''
-    description: '''${1:y} = sign(${1:x})'''
+        prefix: "sign"
+        body: '''${1:y} = sign(${1:x})'''
+        description: '''${1:y} = sign(${1:x})'''
 
 
     "imag":
-    prefix: "imag"
-    body: '''${1:Y} = imag(${1:Z})'''
-    description: '''${1:Y} = imag(${1:Z})'''
+        prefix: "imag"
+        body: '''${1:Y} = imag(${1:Z})'''
+        description: '''${1:Y} = imag(${1:Z})'''
 

@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "edit":
-    prefix: "edit"
-    body: '''edit(${1:optional_file})'''
-    description: '''edit(${1:optional_file})'''
+        prefix: "edit"
+        body: '''edit(${1:optional_file})'''
+        description: '''edit(${1:optional_file})'''
 

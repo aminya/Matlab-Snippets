@@ -1,20 +1,20 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "comparisons.Comparison.publish":
-    prefix: "comparisons.Comparison.publish"
-    body: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
-    description: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
+        prefix: "comparisons.Comparison.publish"
+        body: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
+        description: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
 
 
     "comparisons.Comparison.filter":
-    prefix: "comparisons.Comparison.filter"
-    body: '''comparisons.Comparison.filter(${1:comparison}, ${2:filterDefinition})'''
-    description: '''comparisons.Comparison.filter(${1:comparison}, ${2:filterDefinition})'''
+        prefix: "comparisons.Comparison.filter"
+        body: '''comparisons.Comparison.filter(${1:comparison}, ${2:filterDefinition})'''
+        description: '''comparisons.Comparison.filter(${1:comparison}, ${2:filterDefinition})'''
 
 
     "visdiff":
-    prefix: "visdiff"
-    body: '''visdiff(${1:filename1}, ${2:filename2}, ${3:type})'''
-    description: '''visdiff(${1:filename1}, ${2:filename2}, ${3:type})'''
+        prefix: "visdiff"
+        body: '''visdiff(${1:filename1}, ${2:filename2}, ${3:type})'''
+        description: '''visdiff(${1:filename1}, ${2:filename2}, ${3:type})'''
 

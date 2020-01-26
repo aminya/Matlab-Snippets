@@ -1,14 +1,14 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "mbuild":
-    prefix: "mbuild"
-    body: '''mbuild(${1:args})'''
-    description: '''mbuild(${1:args})'''
+        prefix: "mbuild"
+        body: '''mbuild(${1:args})'''
+        description: '''mbuild(${1:args})'''
 
 
     "mcc":
-    prefix: "mcc"
-    body: '''mcc(${1:args})'''
-    description: '''mcc(${1:args})'''
+        prefix: "mcc"
+        body: '''mcc(${1:args})'''
+        description: '''mcc(${1:args})'''
 

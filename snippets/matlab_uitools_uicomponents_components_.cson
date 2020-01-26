@@ -1,26 +1,26 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "uiprogressdlg":
-    prefix: "uiprogressdlg"
-    body: '''uiprogressdlg(${1:f}, 'Message', ${2:value}, 'Title', ${3:value}, 'Value', ${4:value}, 'Icon', ${5:value}, 'Indeterminate', ${6:value}, 'ShowPercentage', ${7:value}, 'Cancelable', ${8:value}, 'CancelText', ${9:value})'''
-    description: '''uiprogressdlg(${1:f}, 'Message', ${2:value}, 'Title', ${3:value}, 'Value', ${4:value}, 'Icon', ${5:value}, 'Indeterminate', ${6:value}, 'ShowPercentage', ${7:value}, 'Cancelable', ${8:value}, 'CancelText', ${9:value})'''
+        prefix: "uiprogressdlg"
+        body: '''uiprogressdlg(${1:f}, 'Message', ${2:value}, 'Title', ${3:value}, 'Value', ${4:value}, 'Icon', ${5:value}, 'Indeterminate', ${6:value}, 'ShowPercentage', ${7:value}, 'Cancelable', ${8:value}, 'CancelText', ${9:value})'''
+        description: '''uiprogressdlg(${1:f}, 'Message', ${2:value}, 'Title', ${3:value}, 'Value', ${4:value}, 'Icon', ${5:value}, 'Indeterminate', ${6:value}, 'ShowPercentage', ${7:value}, 'Cancelable', ${8:value}, 'CancelText', ${9:value})'''
 
 
     "uifigure":
-    prefix: "uifigure"
-    body: '''uifigure(${1:opts})'''
-    description: '''uifigure(${1:opts})'''
+        prefix: "uifigure"
+        body: '''uifigure(${1:opts})'''
+        description: '''uifigure(${1:opts})'''
 
 
     "uialert":
-    prefix: "uialert"
-    body: '''uialert(${1:figure}, ${2:message}, ${3:title}, 'CloseFcn', ${4:value}, 'Icon', ${5:value}, 'Modal', ${6:value})'''
-    description: '''uialert(${1:figure}, ${2:message}, ${3:title}, 'CloseFcn', ${4:value}, 'Icon', ${5:value}, 'Modal', ${6:value})'''
+        prefix: "uialert"
+        body: '''uialert(${1:figure}, ${2:message}, ${3:title}, 'CloseFcn', ${4:value}, 'Icon', ${5:value}, 'Modal', ${6:value})'''
+        description: '''uialert(${1:figure}, ${2:message}, ${3:title}, 'CloseFcn', ${4:value}, 'Icon', ${5:value}, 'Modal', ${6:value})'''
 
 
     "uiconfirm":
-    prefix: "uiconfirm"
-    body: '''uiconfirm(${1:f}, ${2:message}, ${3:title}, 'Icon', ${4:value}, 'CloseFcn', ${5:value}, 'Options', ${6:value}, 'DefaultOption', ${7:value}, 'CancelOption', ${8:value})'''
-    description: '''uiconfirm(${1:f}, ${2:message}, ${3:title}, 'Icon', ${4:value}, 'CloseFcn', ${5:value}, 'Options', ${6:value}, 'DefaultOption', ${7:value}, 'CancelOption', ${8:value})'''
+        prefix: "uiconfirm"
+        body: '''uiconfirm(${1:f}, ${2:message}, ${3:title}, 'Icon', ${4:value}, 'CloseFcn', ${5:value}, 'Options', ${6:value}, 'DefaultOption', ${7:value}, 'CancelOption', ${8:value})'''
+        description: '''uiconfirm(${1:f}, ${2:message}, ${3:title}, 'Icon', ${4:value}, 'CloseFcn', ${5:value}, 'Options', ${6:value}, 'DefaultOption', ${7:value}, 'CancelOption', ${8:value})'''
 

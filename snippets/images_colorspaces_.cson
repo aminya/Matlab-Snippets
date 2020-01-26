@@ -1,44 +1,44 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "rgb2lin":
-    prefix: "rgb2lin"
-    body: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
-    description: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        prefix: "rgb2lin"
+        body: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        description: '''${1:B} = rgb2lin(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
 
 
     "colorangle":
-    prefix: "colorangle"
-    body: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
-    description: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
+        prefix: "colorangle"
+        body: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
+        description: '''${1:angle} = colorangle(${1:RGB1}, ${2:RGB2})'''
 
 
     "lin2rgb":
-    prefix: "lin2rgb"
-    body: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
-    description: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        prefix: "lin2rgb"
+        body: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
+        description: '''${1:B} = lin2rgb(${1:A}, 'ColorSpace', ${2:value}, 'OutputType', ${3:value})'''
 
 
     "chromadapt":
-    prefix: "chromadapt"
-    body: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
-    description: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
+        prefix: "chromadapt"
+        body: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
+        description: '''${1:B} = chromadapt(${1:A}, ${2:illuminant}, 'ColorSpace', ${3:value}, 'Method', ${4:value})'''
 
 
     "illumpca":
-    prefix: "illumpca"
-    body: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
-    description: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
+        prefix: "illumpca"
+        body: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
+        description: '''${1:illuminant} = illumpca(${1:A}, ${2:optional_percentage}, 'Mask', ${3:value})'''
 
 
     "illumgray":
-    prefix: "illumgray"
-    body: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
-    description: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
+        prefix: "illumgray"
+        body: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
+        description: '''${1:illuminant} = illumgray(${1:A}, ${2:optional_percentiles}, 'Mask', ${3:value}, 'Norm', ${4:value})'''
 
 
     "illumwhite":
-    prefix: "illumwhite"
-    body: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
-    description: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
+        prefix: "illumwhite"
+        body: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
+        description: '''${1:illuminant} = illumwhite(${1:A}, ${2:optional_topPercentile}, 'Mask', ${3:value})'''
 

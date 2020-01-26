@@ -1,170 +1,170 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "fitcnb":
-    prefix: "fitcnb"
-    body: '''fitcnb(${1:Tbl}, ${2:Y}, 'DistributionNames', ${3:value}, 'CategoricalPredictors', ${4:value}, 'PredictorNames', ${5:value}, 'ResponseName', ${6:value}, 'ScoreTransform', ${7:value}, 'Weights', ${8:value}, 'Prior', ${9:value}, 'Cost', ${10:value})'''
-    description: '''fitcnb(${1:Tbl}, ${2:Y}, 'DistributionNames', ${3:value}, 'CategoricalPredictors', ${4:value}, 'PredictorNames', ${5:value}, 'ResponseName', ${6:value}, 'ScoreTransform', ${7:value}, 'Weights', ${8:value}, 'Prior', ${9:value}, 'Cost', ${10:value})'''
+        prefix: "fitcnb"
+        body: '''fitcnb(${1:Tbl}, ${2:Y}, 'DistributionNames', ${3:value}, 'CategoricalPredictors', ${4:value}, 'PredictorNames', ${5:value}, 'ResponseName', ${6:value}, 'ScoreTransform', ${7:value}, 'Weights', ${8:value}, 'Prior', ${9:value}, 'Cost', ${10:value})'''
+        description: '''fitcnb(${1:Tbl}, ${2:Y}, 'DistributionNames', ${3:value}, 'CategoricalPredictors', ${4:value}, 'PredictorNames', ${5:value}, 'ResponseName', ${6:value}, 'ScoreTransform', ${7:value}, 'Weights', ${8:value}, 'Prior', ${9:value}, 'Cost', ${10:value})'''
 
 
     "zscore":
-    prefix: "zscore"
-    body: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
-    description: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        prefix: "zscore"
+        body: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
 
 
     "skewness":
-    prefix: "skewness"
-    body: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
-    description: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        prefix: "skewness"
+        body: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
 
 
     "fitcecoc":
-    prefix: "fitcecoc"
-    body: '''fitcecoc(${1:X}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'Coding', ${5:value}, 'Learners', ${6:value}, 'Prior', ${7:value}, 'Verbose', ${8:value}, 'NumConcurrent', ${9:value}, 'Weights', ${10:value})'''
-    description: '''fitcecoc(${1:X}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'Coding', ${5:value}, 'Learners', ${6:value}, 'Prior', ${7:value}, 'Verbose', ${8:value}, 'NumConcurrent', ${9:value}, 'Weights', ${10:value})'''
+        prefix: "fitcecoc"
+        body: '''fitcecoc(${1:X}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'Coding', ${5:value}, 'Learners', ${6:value}, 'Prior', ${7:value}, 'Verbose', ${8:value}, 'NumConcurrent', ${9:value}, 'Weights', ${10:value})'''
+        description: '''fitcecoc(${1:X}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'Coding', ${5:value}, 'Learners', ${6:value}, 'Prior', ${7:value}, 'Verbose', ${8:value}, 'NumConcurrent', ${9:value}, 'Weights', ${10:value})'''
 
 
     "fitlm":
-    prefix: "fitlm"
-    body: '''fitlm(${1:tbl}, ${2:optional_modelspec}, 'CategoricalVars', ${3:value}, 'Exclude', ${4:value}, 'Intercept', ${5:value}, 'PredictorVars', ${6:value}, 'ResponseVar', ${7:value}, 'VarNames', ${8:value}, 'Weights', ${9:value})'''
-    description: '''fitlm(${1:tbl}, ${2:optional_modelspec}, 'CategoricalVars', ${3:value}, 'Exclude', ${4:value}, 'Intercept', ${5:value}, 'PredictorVars', ${6:value}, 'ResponseVar', ${7:value}, 'VarNames', ${8:value}, 'Weights', ${9:value})'''
+        prefix: "fitlm"
+        body: '''fitlm(${1:tbl}, ${2:optional_modelspec}, 'CategoricalVars', ${3:value}, 'Exclude', ${4:value}, 'Intercept', ${5:value}, 'PredictorVars', ${6:value}, 'ResponseVar', ${7:value}, 'VarNames', ${8:value}, 'Weights', ${9:value})'''
+        description: '''fitlm(${1:tbl}, ${2:optional_modelspec}, 'CategoricalVars', ${3:value}, 'Exclude', ${4:value}, 'Intercept', ${5:value}, 'PredictorVars', ${6:value}, 'ResponseVar', ${7:value}, 'VarNames', ${8:value}, 'Weights', ${9:value})'''
 
 
     "kmeans":
-    prefix: "kmeans"
-    body: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'MaxIter', ${4:value}, 'Options', ${5:value}, 'Replicates', ${6:value}, 'Start', ${7:value})'''
-    description: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'MaxIter', ${4:value}, 'Options', ${5:value}, 'Replicates', ${6:value}, 'Start', ${7:value})'''
+        prefix: "kmeans"
+        body: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'MaxIter', ${4:value}, 'Options', ${5:value}, 'Replicates', ${6:value}, 'Start', ${7:value})'''
+        description: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'MaxIter', ${4:value}, 'Options', ${5:value}, 'Replicates', ${6:value}, 'Start', ${7:value})'''
 
 
     "fitglm":
-    prefix: "fitglm"
-    body: '''fitglm(${1:tbl}, ${2:optional_modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'DispersionFlag', ${5:value}, 'Distribution', ${6:value}, 'Exclude', ${7:value}, 'Intercept', ${8:value}, 'Link', ${9:value}, 'Offset', ${10:value}, 'PredictorVars', ${11:value}, 'ResponseVar', ${12:value}, 'VarNames', ${13:value}, 'Weights', ${14:value})'''
-    description: '''fitglm(${1:tbl}, ${2:optional_modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'DispersionFlag', ${5:value}, 'Distribution', ${6:value}, 'Exclude', ${7:value}, 'Intercept', ${8:value}, 'Link', ${9:value}, 'Offset', ${10:value}, 'PredictorVars', ${11:value}, 'ResponseVar', ${12:value}, 'VarNames', ${13:value}, 'Weights', ${14:value})'''
+        prefix: "fitglm"
+        body: '''fitglm(${1:tbl}, ${2:optional_modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'DispersionFlag', ${5:value}, 'Distribution', ${6:value}, 'Exclude', ${7:value}, 'Intercept', ${8:value}, 'Link', ${9:value}, 'Offset', ${10:value}, 'PredictorVars', ${11:value}, 'ResponseVar', ${12:value}, 'VarNames', ${13:value}, 'Weights', ${14:value})'''
+        description: '''fitglm(${1:tbl}, ${2:optional_modelspec}, 'BinomialSize', ${3:value}, 'CategoricalVars', ${4:value}, 'DispersionFlag', ${5:value}, 'Distribution', ${6:value}, 'Exclude', ${7:value}, 'Intercept', ${8:value}, 'Link', ${9:value}, 'Offset', ${10:value}, 'PredictorVars', ${11:value}, 'ResponseVar', ${12:value}, 'VarNames', ${13:value}, 'Weights', ${14:value})'''
 
 
     "fitrlinear":
-    prefix: "fitrlinear"
-    body: '''fitrlinear(${1:X}, ${2:Y}, 'Epsilon', ${3:value}, 'ObservationsIn', ${4:value}, 'Lambda', ${5:value}, 'Learner', ${6:value}, 'Regularization', ${7:value}, 'Solver', ${8:value}, 'Verbose', ${9:value}, 'Beta', ${10:value}, 'Bias', ${11:value}, 'Weights', ${12:value}, 'HessianHistorySize', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'IterationLimit', ${16:value}, 'OptimizeHyperparameters', ${17:value}, 'HyperparameterOptimizationOptions', ${18:value})'''
-    description: '''fitrlinear(${1:X}, ${2:Y}, 'Epsilon', ${3:value}, 'ObservationsIn', ${4:value}, 'Lambda', ${5:value}, 'Learner', ${6:value}, 'Regularization', ${7:value}, 'Solver', ${8:value}, 'Verbose', ${9:value}, 'Beta', ${10:value}, 'Bias', ${11:value}, 'Weights', ${12:value}, 'HessianHistorySize', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'IterationLimit', ${16:value}, 'OptimizeHyperparameters', ${17:value}, 'HyperparameterOptimizationOptions', ${18:value})'''
+        prefix: "fitrlinear"
+        body: '''fitrlinear(${1:X}, ${2:Y}, 'Epsilon', ${3:value}, 'ObservationsIn', ${4:value}, 'Lambda', ${5:value}, 'Learner', ${6:value}, 'Regularization', ${7:value}, 'Solver', ${8:value}, 'Verbose', ${9:value}, 'Beta', ${10:value}, 'Bias', ${11:value}, 'Weights', ${12:value}, 'HessianHistorySize', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'IterationLimit', ${16:value}, 'OptimizeHyperparameters', ${17:value}, 'HyperparameterOptimizationOptions', ${18:value})'''
+        description: '''fitrlinear(${1:X}, ${2:Y}, 'Epsilon', ${3:value}, 'ObservationsIn', ${4:value}, 'Lambda', ${5:value}, 'Learner', ${6:value}, 'Regularization', ${7:value}, 'Solver', ${8:value}, 'Verbose', ${9:value}, 'Beta', ${10:value}, 'Bias', ${11:value}, 'Weights', ${12:value}, 'HessianHistorySize', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'IterationLimit', ${16:value}, 'OptimizeHyperparameters', ${17:value}, 'HyperparameterOptimizationOptions', ${18:value})'''
 
 
     "harmmean":
-    prefix: "harmmean"
-    body: '''harmmean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
-    description: '''harmmean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
+        prefix: "harmmean"
+        body: '''harmmean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
+        description: '''harmmean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
 
 
     "fitctree":
-    prefix: "fitctree"
-    body: '''fitctree(${1:Tbl}, ${2:Y}, 'AlgorithmForCategorical', ${3:value}, 'CategoricalPredictors', ${4:value}, 'ClassNames', ${5:value}, 'MaxNumCategories', ${6:value}, 'MaxNumSplits', ${7:value}, 'MergeLeaves', ${8:value}, 'MinLeafSize', ${9:value}, 'MinParentSize', ${10:value}, 'NumVariablesToSample', ${11:value}, 'PredictorNames', ${12:value}, 'ResponseName', ${13:value}, 'ScoreTransform', ${14:value}, 'SplitCriterion', ${15:value}, 'Weights', ${16:value}, 'MaxDepth', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value}, 'Prior', ${20:value}, 'Cost', ${21:value})'''
-    description: '''fitctree(${1:Tbl}, ${2:Y}, 'AlgorithmForCategorical', ${3:value}, 'CategoricalPredictors', ${4:value}, 'ClassNames', ${5:value}, 'MaxNumCategories', ${6:value}, 'MaxNumSplits', ${7:value}, 'MergeLeaves', ${8:value}, 'MinLeafSize', ${9:value}, 'MinParentSize', ${10:value}, 'NumVariablesToSample', ${11:value}, 'PredictorNames', ${12:value}, 'ResponseName', ${13:value}, 'ScoreTransform', ${14:value}, 'SplitCriterion', ${15:value}, 'Weights', ${16:value}, 'MaxDepth', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value}, 'Prior', ${20:value}, 'Cost', ${21:value})'''
+        prefix: "fitctree"
+        body: '''fitctree(${1:Tbl}, ${2:Y}, 'AlgorithmForCategorical', ${3:value}, 'CategoricalPredictors', ${4:value}, 'ClassNames', ${5:value}, 'MaxNumCategories', ${6:value}, 'MaxNumSplits', ${7:value}, 'MergeLeaves', ${8:value}, 'MinLeafSize', ${9:value}, 'MinParentSize', ${10:value}, 'NumVariablesToSample', ${11:value}, 'PredictorNames', ${12:value}, 'ResponseName', ${13:value}, 'ScoreTransform', ${14:value}, 'SplitCriterion', ${15:value}, 'Weights', ${16:value}, 'MaxDepth', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value}, 'Prior', ${20:value}, 'Cost', ${21:value})'''
+        description: '''fitctree(${1:Tbl}, ${2:Y}, 'AlgorithmForCategorical', ${3:value}, 'CategoricalPredictors', ${4:value}, 'ClassNames', ${5:value}, 'MaxNumCategories', ${6:value}, 'MaxNumSplits', ${7:value}, 'MergeLeaves', ${8:value}, 'MinLeafSize', ${9:value}, 'MinParentSize', ${10:value}, 'NumVariablesToSample', ${11:value}, 'PredictorNames', ${12:value}, 'ResponseName', ${13:value}, 'ScoreTransform', ${14:value}, 'SplitCriterion', ${15:value}, 'Weights', ${16:value}, 'MaxDepth', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value}, 'Prior', ${20:value}, 'Cost', ${21:value})'''
 
 
     "fitrkernel":
-    prefix: "fitrkernel"
-    body: '''fitrkernel(${1:X}, ${2:Y}, 'BoxConstraint', ${3:value}, 'Epsilon', ${4:value}, 'NumExpansionDimensions', ${5:value}, 'KernelScale', ${6:value}, 'Lambda', ${7:value}, 'Learner', ${8:value}, 'Verbose', ${9:value}, 'BlockSize', ${10:value}, 'RandomStream', ${11:value}, 'ResponseTransform', ${12:value}, 'Weights', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'HessianHistorySize', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
-    description: '''fitrkernel(${1:X}, ${2:Y}, 'BoxConstraint', ${3:value}, 'Epsilon', ${4:value}, 'NumExpansionDimensions', ${5:value}, 'KernelScale', ${6:value}, 'Lambda', ${7:value}, 'Learner', ${8:value}, 'Verbose', ${9:value}, 'BlockSize', ${10:value}, 'RandomStream', ${11:value}, 'ResponseTransform', ${12:value}, 'Weights', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'HessianHistorySize', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
+        prefix: "fitrkernel"
+        body: '''fitrkernel(${1:X}, ${2:Y}, 'BoxConstraint', ${3:value}, 'Epsilon', ${4:value}, 'NumExpansionDimensions', ${5:value}, 'KernelScale', ${6:value}, 'Lambda', ${7:value}, 'Learner', ${8:value}, 'Verbose', ${9:value}, 'BlockSize', ${10:value}, 'RandomStream', ${11:value}, 'ResponseTransform', ${12:value}, 'Weights', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'HessianHistorySize', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
+        description: '''fitrkernel(${1:X}, ${2:Y}, 'BoxConstraint', ${3:value}, 'Epsilon', ${4:value}, 'NumExpansionDimensions', ${5:value}, 'KernelScale', ${6:value}, 'Lambda', ${7:value}, 'Learner', ${8:value}, 'Verbose', ${9:value}, 'BlockSize', ${10:value}, 'RandomStream', ${11:value}, 'ResponseTransform', ${12:value}, 'Weights', ${13:value}, 'BetaTolerance', ${14:value}, 'GradientTolerance', ${15:value}, 'HessianHistorySize', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
 
 
     "lasso":
-    prefix: "lasso"
-    body: '''lasso(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'LambdaRatio', ${4:value}, 'NumLambda', ${5:value}, 'Standardize', ${6:value}, 'PredictorNames', ${7:value}, 'RelTol', ${8:value}, 'Weights', ${9:value}, 'Rho', ${10:value}, 'AbsTol', ${11:value}, 'DFmax', ${12:value}, 'MaxIter', ${13:value}, 'B0', ${14:value}, 'U0', ${15:value})'''
-    description: '''lasso(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'LambdaRatio', ${4:value}, 'NumLambda', ${5:value}, 'Standardize', ${6:value}, 'PredictorNames', ${7:value}, 'RelTol', ${8:value}, 'Weights', ${9:value}, 'Rho', ${10:value}, 'AbsTol', ${11:value}, 'DFmax', ${12:value}, 'MaxIter', ${13:value}, 'B0', ${14:value}, 'U0', ${15:value})'''
+        prefix: "lasso"
+        body: '''lasso(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'LambdaRatio', ${4:value}, 'NumLambda', ${5:value}, 'Standardize', ${6:value}, 'PredictorNames', ${7:value}, 'RelTol', ${8:value}, 'Weights', ${9:value}, 'Rho', ${10:value}, 'AbsTol', ${11:value}, 'DFmax', ${12:value}, 'MaxIter', ${13:value}, 'B0', ${14:value}, 'U0', ${15:value})'''
+        description: '''lasso(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'LambdaRatio', ${4:value}, 'NumLambda', ${5:value}, 'Standardize', ${6:value}, 'PredictorNames', ${7:value}, 'RelTol', ${8:value}, 'Weights', ${9:value}, 'Rho', ${10:value}, 'AbsTol', ${11:value}, 'DFmax', ${12:value}, 'MaxIter', ${13:value}, 'B0', ${14:value}, 'U0', ${15:value})'''
 
 
     "fitcdiscr":
-    prefix: "fitcdiscr"
-    body: '''fitcdiscr(${1:Tbl}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'DiscrimType', ${5:value}, 'PredictorNames', ${6:value}, 'Prior', ${7:value}, 'ResponseName', ${8:value}, 'ScoreTransform', ${9:value}, 'Weights', ${10:value}, 'OptimizeHyperparameters', ${11:value}, 'HyperparameterOptimizationOptions', ${12:value})'''
-    description: '''fitcdiscr(${1:Tbl}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'DiscrimType', ${5:value}, 'PredictorNames', ${6:value}, 'Prior', ${7:value}, 'ResponseName', ${8:value}, 'ScoreTransform', ${9:value}, 'Weights', ${10:value}, 'OptimizeHyperparameters', ${11:value}, 'HyperparameterOptimizationOptions', ${12:value})'''
+        prefix: "fitcdiscr"
+        body: '''fitcdiscr(${1:Tbl}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'DiscrimType', ${5:value}, 'PredictorNames', ${6:value}, 'Prior', ${7:value}, 'ResponseName', ${8:value}, 'ScoreTransform', ${9:value}, 'Weights', ${10:value}, 'OptimizeHyperparameters', ${11:value}, 'HyperparameterOptimizationOptions', ${12:value})'''
+        description: '''fitcdiscr(${1:Tbl}, ${2:Y}, 'ClassNames', ${3:value}, 'Cost', ${4:value}, 'DiscrimType', ${5:value}, 'PredictorNames', ${6:value}, 'Prior', ${7:value}, 'ResponseName', ${8:value}, 'ScoreTransform', ${9:value}, 'Weights', ${10:value}, 'OptimizeHyperparameters', ${11:value}, 'HyperparameterOptimizationOptions', ${12:value})'''
 
 
     "rangesearch":
-    prefix: "rangesearch"
-    body: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
-    description: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
+        prefix: "rangesearch"
+        body: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
+        description: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
 
 
     "TreeBagger":
-    prefix: "TreeBagger"
-    body: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:Y}, 'NumPredictorsToSample', ${4:value}, 'MinLeafSize', ${5:value}, 'ChunkSize', ${6:value}, 'AlgorithmForCategorical', ${7:value}, 'CategoricalPredictors', ${8:value}, 'MaxNumCategories', ${9:value}, 'MergeLeaves', ${10:value}, 'PredictorNames', ${11:value}, 'PredictorSelection', ${12:value}, 'Prune', ${13:value}, 'PruneCriterion', ${14:value}, 'Surrogate', ${15:value}, 'MaxNumSplits', ${16:value}, 'SplitCriterion', ${17:value})'''
-    description: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:Y}, 'NumPredictorsToSample', ${4:value}, 'MinLeafSize', ${5:value}, 'ChunkSize', ${6:value}, 'AlgorithmForCategorical', ${7:value}, 'CategoricalPredictors', ${8:value}, 'MaxNumCategories', ${9:value}, 'MergeLeaves', ${10:value}, 'PredictorNames', ${11:value}, 'PredictorSelection', ${12:value}, 'Prune', ${13:value}, 'PruneCriterion', ${14:value}, 'Surrogate', ${15:value}, 'MaxNumSplits', ${16:value}, 'SplitCriterion', ${17:value})'''
+        prefix: "TreeBagger"
+        body: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:Y}, 'NumPredictorsToSample', ${4:value}, 'MinLeafSize', ${5:value}, 'ChunkSize', ${6:value}, 'AlgorithmForCategorical', ${7:value}, 'CategoricalPredictors', ${8:value}, 'MaxNumCategories', ${9:value}, 'MergeLeaves', ${10:value}, 'PredictorNames', ${11:value}, 'PredictorSelection', ${12:value}, 'Prune', ${13:value}, 'PruneCriterion', ${14:value}, 'Surrogate', ${15:value}, 'MaxNumSplits', ${16:value}, 'SplitCriterion', ${17:value})'''
+        description: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:Y}, 'NumPredictorsToSample', ${4:value}, 'MinLeafSize', ${5:value}, 'ChunkSize', ${6:value}, 'AlgorithmForCategorical', ${7:value}, 'CategoricalPredictors', ${8:value}, 'MaxNumCategories', ${9:value}, 'MergeLeaves', ${10:value}, 'PredictorNames', ${11:value}, 'PredictorSelection', ${12:value}, 'Prune', ${13:value}, 'PruneCriterion', ${14:value}, 'Surrogate', ${15:value}, 'MaxNumSplits', ${16:value}, 'SplitCriterion', ${17:value})'''
 
 
     "prctile":
-    prefix: "prctile"
-    body: '''prctile(${1:X}, ${2:P}, ${3:optional_dim}, 'Method', ${4:value})'''
-    description: '''prctile(${1:X}, ${2:P}, ${3:optional_dim}, 'Method', ${4:value})'''
+        prefix: "prctile"
+        body: '''prctile(${1:X}, ${2:P}, ${3:optional_dim}, 'Method', ${4:value})'''
+        description: '''prctile(${1:X}, ${2:P}, ${3:optional_dim}, 'Method', ${4:value})'''
 
 
     "pdist2":
-    prefix: "pdist2"
-    body: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
-    description: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
+        prefix: "pdist2"
+        body: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
+        description: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
 
 
     "binScatterPlot":
-    prefix: "binScatterPlot"
-    body: '''binScatterPlot(${1:X}, ${2:Y}, ${3:optional_nbins}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Color', ${6:value}, 'Gamma', ${7:value}, 'XBinLimits', ${8:value}, 'YBinLimits', ${9:value})'''
-    description: '''binScatterPlot(${1:X}, ${2:Y}, ${3:optional_nbins}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Color', ${6:value}, 'Gamma', ${7:value}, 'XBinLimits', ${8:value}, 'YBinLimits', ${9:value})'''
+        prefix: "binScatterPlot"
+        body: '''binScatterPlot(${1:X}, ${2:Y}, ${3:optional_nbins}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Color', ${6:value}, 'Gamma', ${7:value}, 'XBinLimits', ${8:value}, 'YBinLimits', ${9:value})'''
+        description: '''binScatterPlot(${1:X}, ${2:Y}, ${3:optional_nbins}, 'BinMethod', ${4:value}, 'BinWidth', ${5:value}, 'Color', ${6:value}, 'Gamma', ${7:value}, 'XBinLimits', ${8:value}, 'YBinLimits', ${9:value})'''
 
 
     "fitckernel":
-    prefix: "fitckernel"
-    body: '''fitckernel(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'KernelScale', ${4:value}, 'Learner', ${5:value}, 'Verbose', ${6:value}, 'ExpansionDimension', ${7:value}, 'BlockSize', ${8:value}, 'RandomStream', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'Prior', ${12:value}, 'Weights', ${13:value}, 'HessianHistorySize', ${14:value}, 'BetaTolerance', ${15:value}, 'GradientTolerance', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
-    description: '''fitckernel(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'KernelScale', ${4:value}, 'Learner', ${5:value}, 'Verbose', ${6:value}, 'ExpansionDimension', ${7:value}, 'BlockSize', ${8:value}, 'RandomStream', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'Prior', ${12:value}, 'Weights', ${13:value}, 'HessianHistorySize', ${14:value}, 'BetaTolerance', ${15:value}, 'GradientTolerance', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
+        prefix: "fitckernel"
+        body: '''fitckernel(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'KernelScale', ${4:value}, 'Learner', ${5:value}, 'Verbose', ${6:value}, 'ExpansionDimension', ${7:value}, 'BlockSize', ${8:value}, 'RandomStream', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'Prior', ${12:value}, 'Weights', ${13:value}, 'HessianHistorySize', ${14:value}, 'BetaTolerance', ${15:value}, 'GradientTolerance', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
+        description: '''fitckernel(${1:X}, ${2:Y}, 'Lambda', ${3:value}, 'KernelScale', ${4:value}, 'Learner', ${5:value}, 'Verbose', ${6:value}, 'ExpansionDimension', ${7:value}, 'BlockSize', ${8:value}, 'RandomStream', ${9:value}, 'ClassNames', ${10:value}, 'Cost', ${11:value}, 'Prior', ${12:value}, 'Weights', ${13:value}, 'HessianHistorySize', ${14:value}, 'BetaTolerance', ${15:value}, 'GradientTolerance', ${16:value}, 'IterationLimit', ${17:value}, 'OptimizeHyperparameters', ${18:value}, 'HyperparameterOptimizationOptions', ${19:value})'''
 
 
     "fitclinear":
-    prefix: "fitclinear"
-    body: '''fitclinear(${1:X}, ${2:Y}, 'ObservationsIn', ${3:value}, 'Lambda', ${4:value}, 'Learner', ${5:value}, 'Regularization', ${6:value}, 'Solver', ${7:value}, 'Verbose', ${8:value}, 'Beta', ${9:value}, 'Bias', ${10:value}, 'ClassNames', ${11:value}, 'Cost', ${12:value}, 'Prior', ${13:value}, 'Weights', ${14:value}, 'HessianHistorySize', ${15:value}, 'BetaTolerance', ${16:value}, 'GradientTolerance', ${17:value}, 'IterationLimit', ${18:value}, 'OptimizeHyperparameters', ${19:value}, 'HyperparameterOptimizationOptions', ${20:value})'''
-    description: '''fitclinear(${1:X}, ${2:Y}, 'ObservationsIn', ${3:value}, 'Lambda', ${4:value}, 'Learner', ${5:value}, 'Regularization', ${6:value}, 'Solver', ${7:value}, 'Verbose', ${8:value}, 'Beta', ${9:value}, 'Bias', ${10:value}, 'ClassNames', ${11:value}, 'Cost', ${12:value}, 'Prior', ${13:value}, 'Weights', ${14:value}, 'HessianHistorySize', ${15:value}, 'BetaTolerance', ${16:value}, 'GradientTolerance', ${17:value}, 'IterationLimit', ${18:value}, 'OptimizeHyperparameters', ${19:value}, 'HyperparameterOptimizationOptions', ${20:value})'''
+        prefix: "fitclinear"
+        body: '''fitclinear(${1:X}, ${2:Y}, 'ObservationsIn', ${3:value}, 'Lambda', ${4:value}, 'Learner', ${5:value}, 'Regularization', ${6:value}, 'Solver', ${7:value}, 'Verbose', ${8:value}, 'Beta', ${9:value}, 'Bias', ${10:value}, 'ClassNames', ${11:value}, 'Cost', ${12:value}, 'Prior', ${13:value}, 'Weights', ${14:value}, 'HessianHistorySize', ${15:value}, 'BetaTolerance', ${16:value}, 'GradientTolerance', ${17:value}, 'IterationLimit', ${18:value}, 'OptimizeHyperparameters', ${19:value}, 'HyperparameterOptimizationOptions', ${20:value})'''
+        description: '''fitclinear(${1:X}, ${2:Y}, 'ObservationsIn', ${3:value}, 'Lambda', ${4:value}, 'Learner', ${5:value}, 'Regularization', ${6:value}, 'Solver', ${7:value}, 'Verbose', ${8:value}, 'Beta', ${9:value}, 'Bias', ${10:value}, 'ClassNames', ${11:value}, 'Cost', ${12:value}, 'Prior', ${13:value}, 'Weights', ${14:value}, 'HessianHistorySize', ${15:value}, 'BetaTolerance', ${16:value}, 'GradientTolerance', ${17:value}, 'IterationLimit', ${18:value}, 'OptimizeHyperparameters', ${19:value}, 'HyperparameterOptimizationOptions', ${20:value})'''
 
 
     "corr":
-    prefix: "corr"
-    body: '''corr(${1:X}, ${2:optional_Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
-    description: '''corr(${1:X}, ${2:optional_Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
+        prefix: "corr"
+        body: '''corr(${1:X}, ${2:optional_Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
+        description: '''corr(${1:X}, ${2:optional_Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
 
 
     "cvpartition":
-    prefix: "cvpartition"
-    body: '''cvpartition(${1:group}, ${2:HoldOut}, ${3:p})'''
-    description: '''cvpartition(${1:group}, ${2:HoldOut}, ${3:p})'''
+        prefix: "cvpartition"
+        body: '''cvpartition(${1:group}, ${2:HoldOut}, ${3:p})'''
+        description: '''cvpartition(${1:group}, ${2:HoldOut}, ${3:p})'''
 
 
     "datasample":
-    prefix: "datasample"
-    body: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Weights', ${5:value})'''
-    description: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Weights', ${5:value})'''
+        prefix: "datasample"
+        body: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Weights', ${5:value})'''
+        description: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Weights', ${5:value})'''
 
 
     "geomean":
-    prefix: "geomean"
-    body: '''geomean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
-    description: '''geomean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
+        prefix: "geomean"
+        body: '''geomean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
+        description: '''geomean(${1:tx}, ${2:optional_dim}, ${3:optional_nanflag})'''
 
 
     "grpstats":
-    prefix: "grpstats"
-    body: '''grpstats(${1:X}, ${2:group}, ${3:optional_whichstats})'''
-    description: '''grpstats(${1:X}, ${2:group}, ${3:optional_whichstats})'''
+        prefix: "grpstats"
+        body: '''grpstats(${1:X}, ${2:group}, ${3:optional_whichstats})'''
+        description: '''grpstats(${1:X}, ${2:group}, ${3:optional_whichstats})'''
 
 
     "kurtosis":
-    prefix: "kurtosis"
-    body: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
-    description: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        prefix: "kurtosis"
+        body: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
+        description: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
 
 
     "knnsearch":
-    prefix: "knnsearch"
-    body: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
-    description: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
+        prefix: "knnsearch"
+        body: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
+        description: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
 
 
     "ksdensity":
-    prefix: "ksdensity"
-    body: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:optional_xi}, 'Kernel', ${4:value}, 'Weights', ${5:value}, 'Bandwidth', ${6:value}, 'Function', ${7:value}, 'NumPoints', ${8:value}, 'PlotFcn', ${9:value})'''
-    description: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:optional_xi}, 'Kernel', ${4:value}, 'Weights', ${5:value}, 'Bandwidth', ${6:value}, 'Function', ${7:value}, 'NumPoints', ${8:value}, 'PlotFcn', ${9:value})'''
+        prefix: "ksdensity"
+        body: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:optional_xi}, 'Kernel', ${4:value}, 'Weights', ${5:value}, 'Bandwidth', ${6:value}, 'Function', ${7:value}, 'NumPoints', ${8:value}, 'PlotFcn', ${9:value})'''
+        description: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:optional_xi}, 'Kernel', ${4:value}, 'Weights', ${5:value}, 'Bandwidth', ${6:value}, 'Function', ${7:value}, 'NumPoints', ${8:value}, 'PlotFcn', ${9:value})'''
 

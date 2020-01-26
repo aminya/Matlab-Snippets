@@ -1,50 +1,50 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "matlabshared.blelib.Characteristic.write":
-    prefix: "matlabshared.blelib.Characteristic.write"
-    body: '''matlabshared.blelib.Characteristic.write(${1:obj}, ${2:data}, ${3:type}, ${4:precision})'''
-    description: '''matlabshared.blelib.Characteristic.write(${1:obj}, ${2:data}, ${3:type}, ${4:precision})'''
+        prefix: "matlabshared.blelib.Characteristic.write"
+        body: '''matlabshared.blelib.Characteristic.write(${1:obj}, ${2:data}, ${3:type}, ${4:precision})'''
+        description: '''matlabshared.blelib.Characteristic.write(${1:obj}, ${2:data}, ${3:type}, ${4:precision})'''
 
 
     "ble":
-    prefix: "ble"
-    body: '''${1:b} = ble(${1:input})'''
-    description: '''${1:b} = ble(${1:input})'''
+        prefix: "ble"
+        body: '''${1:b} = ble(${1:input})'''
+        description: '''${1:b} = ble(${1:input})'''
 
 
     "matlabshared.blelib.Descriptor.write":
-    prefix: "matlabshared.blelib.Descriptor.write"
-    body: '''matlabshared.blelib.Descriptor.write(${1:obj}, ${2:data}, ${3:precision})'''
-    description: '''matlabshared.blelib.Descriptor.write(${1:obj}, ${2:data}, ${3:precision})'''
+        prefix: "matlabshared.blelib.Descriptor.write"
+        body: '''matlabshared.blelib.Descriptor.write(${1:obj}, ${2:data}, ${3:precision})'''
+        description: '''matlabshared.blelib.Descriptor.write(${1:obj}, ${2:data}, ${3:precision})'''
 
 
     "ble.characteristic":
-    prefix: "ble.characteristic"
-    body: '''${1:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
-    description: '''${1:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
+        prefix: "ble.characteristic"
+        body: '''${1:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
+        description: '''${1:c} = ble.characteristic(${1:obj}, ${2:sid}, ${3:cid})'''
 
 
     "matlabshared.blelib.Characteristic.subscribe":
-    prefix: "matlabshared.blelib.Characteristic.subscribe"
-    body: '''matlabshared.blelib.Characteristic.subscribe(${1:obj}, ${2:type})'''
-    description: '''matlabshared.blelib.Characteristic.subscribe(${1:obj}, ${2:type})'''
+        prefix: "matlabshared.blelib.Characteristic.subscribe"
+        body: '''matlabshared.blelib.Characteristic.subscribe(${1:obj}, ${2:type})'''
+        description: '''matlabshared.blelib.Characteristic.subscribe(${1:obj}, ${2:type})'''
 
 
     "matlabshared.blelib.Characteristic.descriptor":
-    prefix: "matlabshared.blelib.Characteristic.descriptor"
-    body: '''${1:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
-    description: '''${1:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
+        prefix: "matlabshared.blelib.Characteristic.descriptor"
+        body: '''${1:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
+        description: '''${1:d} = matlabshared.blelib.Characteristic.descriptor(${1:obj}, ${2:did})'''
 
 
     "matlabshared.blelib.Characteristic.read":
-    prefix: "matlabshared.blelib.Characteristic.read"
-    body: '''[${1:value}, ${2:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
-    description: '''[${1:value}, ${2:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
+        prefix: "matlabshared.blelib.Characteristic.read"
+        body: '''[${1:value}, ${2:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
+        description: '''[${1:value}, ${2:timestamp}] = matlabshared.blelib.Characteristic.read(${1:obj}, ${2:mode})'''
 
 
     "blelist":
-    prefix: "blelist"
-    body: '''${1:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
-    description: '''${1:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
+        prefix: "blelist"
+        body: '''${1:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
+        description: '''${1:list} = blelist('Name', ${1:value}, 'Timeout', ${2:value}, 'Services', ${3:value})'''
 

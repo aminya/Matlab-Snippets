@@ -1,128 +1,128 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "uicheckbox":
-    prefix: "uicheckbox"
-    body: '''uicheckbox(${1:optional_Parent}, ${2:properties})'''
-    description: '''uicheckbox(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uicheckbox"
+        body: '''uicheckbox(${1:optional_Parent}, ${2:properties})'''
+        description: '''uicheckbox(${1:optional_Parent}, ${2:properties})'''
 
 
     "uilistbox":
-    prefix: "uilistbox"
-    body: '''uilistbox(${1:optional_Parent}, ${2:properties})'''
-    description: '''uilistbox(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uilistbox"
+        body: '''uilistbox(${1:optional_Parent}, ${2:properties})'''
+        description: '''uilistbox(${1:optional_Parent}, ${2:properties})'''
 
 
     "uiswitch":
-    prefix: "uiswitch"
-    body: '''uiswitch(${1:Style}, ${2:properties})'''
-    description: '''uiswitch(${1:Style}, ${2:properties})'''
+        prefix: "uiswitch"
+        body: '''uiswitch(${1:Style}, ${2:properties})'''
+        description: '''uiswitch(${1:Style}, ${2:properties})'''
 
 
     "uihtml":
-    prefix: "uihtml"
-    body: '''uihtml(${1:properties})'''
-    description: '''uihtml(${1:properties})'''
+        prefix: "uihtml"
+        body: '''uihtml(${1:properties})'''
+        description: '''uihtml(${1:properties})'''
 
 
     "uigridlayout":
-    prefix: "uigridlayout"
-    body: '''uigridlayout(${1:optional_Parent}, ${2:optional_sz}, ${3:properties})'''
-    description: '''uigridlayout(${1:optional_Parent}, ${2:optional_sz}, ${3:properties})'''
+        prefix: "uigridlayout"
+        body: '''uigridlayout(${1:optional_Parent}, ${2:optional_sz}, ${3:properties})'''
+        description: '''uigridlayout(${1:optional_Parent}, ${2:optional_sz}, ${3:properties})'''
 
 
     "uitreenode":
-    prefix: "uitreenode"
-    body: '''uitreenode(${1:Parent}, ${2:sibling}, ${3:optional_location}, ${4:properties})'''
-    description: '''uitreenode(${1:Parent}, ${2:sibling}, ${3:optional_location}, ${4:properties})'''
+        prefix: "uitreenode"
+        body: '''uitreenode(${1:Parent}, ${2:sibling}, ${3:optional_location}, ${4:properties})'''
+        description: '''uitreenode(${1:Parent}, ${2:sibling}, ${3:optional_location}, ${4:properties})'''
 
 
     "uispinner":
-    prefix: "uispinner"
-    body: '''uispinner(${1:optional_Parent}, ${2:properties})'''
-    description: '''uispinner(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uispinner"
+        body: '''uispinner(${1:optional_Parent}, ${2:properties})'''
+        description: '''uispinner(${1:optional_Parent}, ${2:properties})'''
 
 
     "uitree":
-    prefix: "uitree"
-    body: '''uitree(${1:optional_Parent}, ${2:properties})'''
-    description: '''uitree(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uitree"
+        body: '''uitree(${1:optional_Parent}, ${2:properties})'''
+        description: '''uitree(${1:optional_Parent}, ${2:properties})'''
 
 
     "uilamp":
-    prefix: "uilamp"
-    body: '''uilamp(${1:optional_Parent}, ${2:properties})'''
-    description: '''uilamp(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uilamp"
+        body: '''uilamp(${1:optional_Parent}, ${2:properties})'''
+        description: '''uilamp(${1:optional_Parent}, ${2:properties})'''
 
 
     "uilabel":
-    prefix: "uilabel"
-    body: '''uilabel(${1:optional_Parent}, ${2:properties})'''
-    description: '''uilabel(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uilabel"
+        body: '''uilabel(${1:optional_Parent}, ${2:properties})'''
+        description: '''uilabel(${1:optional_Parent}, ${2:properties})'''
 
 
     "uidatepicker":
-    prefix: "uidatepicker"
-    body: '''uidatepicker(${1:optional_Parent}, ${2:properties})'''
-    description: '''uidatepicker(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uidatepicker"
+        body: '''uidatepicker(${1:optional_Parent}, ${2:properties})'''
+        description: '''uidatepicker(${1:optional_Parent}, ${2:properties})'''
 
 
     "uibutton":
-    prefix: "uibutton"
-    body: '''uibutton(${1:Style}, ${2:properties})'''
-    description: '''uibutton(${1:Style}, ${2:properties})'''
+        prefix: "uibutton"
+        body: '''uibutton(${1:Style}, ${2:properties})'''
+        description: '''uibutton(${1:Style}, ${2:properties})'''
 
 
     "uigauge":
-    prefix: "uigauge"
-    body: '''uigauge(${1:Style}, ${2:properties})'''
-    description: '''uigauge(${1:Style}, ${2:properties})'''
+        prefix: "uigauge"
+        body: '''uigauge(${1:Style}, ${2:properties})'''
+        description: '''uigauge(${1:Style}, ${2:properties})'''
 
 
     "uieditfield":
-    prefix: "uieditfield"
-    body: '''uieditfield(${1:Style}, ${2:properties})'''
-    description: '''uieditfield(${1:Style}, ${2:properties})'''
+        prefix: "uieditfield"
+        body: '''uieditfield(${1:Style}, ${2:properties})'''
+        description: '''uieditfield(${1:Style}, ${2:properties})'''
 
 
     "uiknob":
-    prefix: "uiknob"
-    body: '''uiknob(${1:Style}, ${2:properties})'''
-    description: '''uiknob(${1:Style}, ${2:properties})'''
+        prefix: "uiknob"
+        body: '''uiknob(${1:Style}, ${2:properties})'''
+        description: '''uiknob(${1:Style}, ${2:properties})'''
 
 
     "uidropdown":
-    prefix: "uidropdown"
-    body: '''uidropdown(${1:optional_Parent}, ${2:properties})'''
-    description: '''uidropdown(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uidropdown"
+        body: '''uidropdown(${1:optional_Parent}, ${2:properties})'''
+        description: '''uidropdown(${1:optional_Parent}, ${2:properties})'''
 
 
     "uiimage":
-    prefix: "uiimage"
-    body: '''uiimage(${1:optional_Parent}, ${2:properties})'''
-    description: '''uiimage(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uiimage"
+        body: '''uiimage(${1:optional_Parent}, ${2:properties})'''
+        description: '''uiimage(${1:optional_Parent}, ${2:properties})'''
 
 
     "uiradiobutton":
-    prefix: "uiradiobutton"
-    body: '''uiradiobutton(${1:optional_Parent}, ${2:properties})'''
-    description: '''uiradiobutton(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uiradiobutton"
+        body: '''uiradiobutton(${1:optional_Parent}, ${2:properties})'''
+        description: '''uiradiobutton(${1:optional_Parent}, ${2:properties})'''
 
 
     "uislider":
-    prefix: "uislider"
-    body: '''uislider(${1:optional_Parent}, ${2:properties})'''
-    description: '''uislider(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uislider"
+        body: '''uislider(${1:optional_Parent}, ${2:properties})'''
+        description: '''uislider(${1:optional_Parent}, ${2:properties})'''
 
 
     "uitogglebutton":
-    prefix: "uitogglebutton"
-    body: '''uitogglebutton(${1:optional_Parent}, ${2:properties})'''
-    description: '''uitogglebutton(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uitogglebutton"
+        body: '''uitogglebutton(${1:optional_Parent}, ${2:properties})'''
+        description: '''uitogglebutton(${1:optional_Parent}, ${2:properties})'''
 
 
     "uitextarea":
-    prefix: "uitextarea"
-    body: '''uitextarea(${1:optional_Parent}, ${2:properties})'''
-    description: '''uitextarea(${1:optional_Parent}, ${2:properties})'''
+        prefix: "uitextarea"
+        body: '''uitextarea(${1:optional_Parent}, ${2:properties})'''
+        description: '''uitextarea(${1:optional_Parent}, ${2:properties})'''
 

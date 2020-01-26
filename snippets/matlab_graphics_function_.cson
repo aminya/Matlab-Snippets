@@ -1,44 +1,44 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "fcontour":
-    prefix: "fcontour"
-    body: '''${1:h} = fcontour(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
-    description: '''${1:h} = fcontour(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        prefix: "fcontour"
+        body: '''${1:h} = fcontour(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''${1:h} = fcontour(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
 
 
     "fimplicit":
-    prefix: "fimplicit"
-    body: '''${1:h} = fimplicit(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
-    description: '''${1:h} = fimplicit(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        prefix: "fimplicit"
+        body: '''${1:h} = fimplicit(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''${1:h} = fimplicit(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
 
 
     "fsurf":
-    prefix: "fsurf"
-    body: '''${1:h} = fsurf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
-    description: '''${1:h} = fsurf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        prefix: "fsurf"
+        body: '''${1:h} = fsurf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''${1:h} = fsurf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
 
 
     "fmesh":
-    prefix: "fmesh"
-    body: '''${1:h} = fmesh(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
-    description: '''${1:h} = fmesh(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        prefix: "fmesh"
+        body: '''${1:h} = fmesh(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''${1:h} = fmesh(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
 
 
     "fplot3":
-    prefix: "fplot3"
-    body: '''${1:h} = fplot3(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
-    description: '''${1:h} = fplot3(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        prefix: "fplot3"
+        body: '''${1:h} = fplot3(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
+        description: '''${1:h} = fplot3(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_range}, ${6:optional_LineSpec}, ${7:opts})'''
 
 
     "fimplicit3":
-    prefix: "fimplicit3"
-    body: '''${1:h} = fimplicit3(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
-    description: '''${1:h} = fimplicit3(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        prefix: "fimplicit3"
+        body: '''${1:h} = fimplicit3(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
+        description: '''${1:h} = fimplicit3(${1:optional_ax}, ${2:f}, ${3:optional_range}, ${4:optional_LineSpec}, ${5:opts})'''
 
 
     "fplot":
-    prefix: "fplot"
-    body: '''${1:h} = fplot(${1:optional_ax}, ${2:x}, ${3:y}, ${4:optional_range}, ${5:optional_LineSpec}, ${6:opts})'''
-    description: '''${1:h} = fplot(${1:optional_ax}, ${2:x}, ${3:y}, ${4:optional_range}, ${5:optional_LineSpec}, ${6:opts})'''
+        prefix: "fplot"
+        body: '''${1:h} = fplot(${1:optional_ax}, ${2:x}, ${3:y}, ${4:optional_range}, ${5:optional_LineSpec}, ${6:opts})'''
+        description: '''${1:h} = fplot(${1:optional_ax}, ${2:x}, ${3:y}, ${4:optional_range}, ${5:optional_LineSpec}, ${6:opts})'''
 

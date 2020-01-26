@@ -1,14 +1,14 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses":
-    prefix: "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses"
-    body: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(${1:c}, ${2:direction})'''
-    description: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(${1:c}, ${2:direction})'''
+        prefix: "mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses"
+        body: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(${1:c}, ${2:direction})'''
+        description: '''mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses(${1:c}, ${2:direction})'''
 
 
     "confusionchart":
-    prefix: "confusionchart"
-    body: '''${1:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
-    description: '''${1:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
+        prefix: "confusionchart"
+        body: '''${1:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
+        description: '''${1:c} = confusionchart(${1:optional_parent}, ${2:trueLabels}, ${3:predictedLabels}, 'RowSummary', ${4:value}, 'ColumnSummary', ${5:value}, 'Normalization', ${6:value}, ${7:opts})'''
 

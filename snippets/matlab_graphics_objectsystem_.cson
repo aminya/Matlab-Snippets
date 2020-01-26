@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "openfig":
-    prefix: "openfig"
-    body: '''openfig(${1:filename}, ${2:optional_copies}, ${3:optional_visibility})'''
-    description: '''openfig(${1:filename}, ${2:optional_copies}, ${3:optional_visibility})'''
+        prefix: "openfig"
+        body: '''openfig(${1:filename}, ${2:optional_copies}, ${3:optional_visibility})'''
+        description: '''openfig(${1:filename}, ${2:optional_copies}, ${3:optional_visibility})'''
 

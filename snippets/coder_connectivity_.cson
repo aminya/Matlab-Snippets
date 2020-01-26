@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "buildStandaloneCoderAssumptions":
-    prefix: "buildStandaloneCoderAssumptions"
-    body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
-    description: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
+        prefix: "buildStandaloneCoderAssumptions"
+        body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
+        description: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
 

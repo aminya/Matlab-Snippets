@@ -1,32 +1,32 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "rewindAnimation":
-    prefix: "rewindAnimation"
-    body: '''rewindAnimation(${1:fig})'''
-    description: '''rewindAnimation(${1:fig})'''
+        prefix: "rewindAnimation"
+        body: '''rewindAnimation(${1:fig})'''
+        description: '''rewindAnimation(${1:fig})'''
 
 
     "fanimator":
-    prefix: "fanimator"
-    body: '''${1:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})'''
-    description: '''${1:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})'''
+        prefix: "fanimator"
+        body: '''${1:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})'''
+        description: '''${1:A} = fanimator(${1:ax}, ${2:funcHandle}, ${3:optional_funcHandleArg}, 'AnimationRange', ${4:value}, 'FrameRate', ${5:value})'''
 
 
     "playAnimation":
-    prefix: "playAnimation"
-    body: '''playAnimation(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value}, 'SpeedFactor', ${5:value})'''
-    description: '''playAnimation(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value}, 'SpeedFactor', ${5:value})'''
+        prefix: "playAnimation"
+        body: '''playAnimation(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value}, 'SpeedFactor', ${5:value})'''
+        description: '''playAnimation(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value}, 'SpeedFactor', ${5:value})'''
 
 
     "writeAnimation":
-    prefix: "writeAnimation"
-    body: '''writeAnimation(${1:fig}, ${2:filename}, 'AnimationRange', ${3:value}, 'Backwards', ${4:value}, 'FrameRate', ${5:value})'''
-    description: '''writeAnimation(${1:fig}, ${2:filename}, 'AnimationRange', ${3:value}, 'Backwards', ${4:value}, 'FrameRate', ${5:value})'''
+        prefix: "writeAnimation"
+        body: '''writeAnimation(${1:fig}, ${2:filename}, 'AnimationRange', ${3:value}, 'Backwards', ${4:value}, 'FrameRate', ${5:value})'''
+        description: '''writeAnimation(${1:fig}, ${2:filename}, 'AnimationRange', ${3:value}, 'Backwards', ${4:value}, 'FrameRate', ${5:value})'''
 
 
     "animationToFrame":
-    prefix: "animationToFrame"
-    body: '''${1:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})'''
-    description: '''${1:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})'''
+        prefix: "animationToFrame"
+        body: '''${1:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})'''
+        description: '''${1:frames} = animationToFrame(${1:fig}, 'AnimationRange', ${2:value}, 'Backwards', ${3:value}, 'FrameRate', ${4:value})'''
 

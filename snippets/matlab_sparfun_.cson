@@ -1,14 +1,14 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "svds":
-    prefix: "svds"
-    body: '''svds(${1:A}, ${2:k}, ${3:sigma}, 'Tolerance', ${4:value}, 'MaxIterations', ${5:value}, 'SubspaceDimension', ${6:value}, 'LeftStartVector', ${7:value}, 'RightStartVector', ${8:value}, 'FailureTreatment', ${9:value}, 'Display', ${10:value})'''
-    description: '''svds(${1:A}, ${2:k}, ${3:sigma}, 'Tolerance', ${4:value}, 'MaxIterations', ${5:value}, 'SubspaceDimension', ${6:value}, 'LeftStartVector', ${7:value}, 'RightStartVector', ${8:value}, 'FailureTreatment', ${9:value}, 'Display', ${10:value})'''
+        prefix: "svds"
+        body: '''svds(${1:A}, ${2:k}, ${3:sigma}, 'Tolerance', ${4:value}, 'MaxIterations', ${5:value}, 'SubspaceDimension', ${6:value}, 'LeftStartVector', ${7:value}, 'RightStartVector', ${8:value}, 'FailureTreatment', ${9:value}, 'Display', ${10:value})'''
+        description: '''svds(${1:A}, ${2:k}, ${3:sigma}, 'Tolerance', ${4:value}, 'MaxIterations', ${5:value}, 'SubspaceDimension', ${6:value}, 'LeftStartVector', ${7:value}, 'RightStartVector', ${8:value}, 'FailureTreatment', ${9:value}, 'Display', ${10:value})'''
 
 
     "eigs":
-    prefix: "eigs"
-    body: '''eigs(${1:A}, ${2:optional_B}, ${3:k}, ${4:sigma}, 'IsFunctionSymmetric', ${5:value}, 'Tolerance', ${6:value}, 'MaxIterations', ${7:value}, 'SubspaceDimension', ${8:value}, 'StartVector', ${9:value}, 'FailureTreatment', ${10:value}, 'Display', ${11:value}, 'IsCholesky', ${12:value}, 'CholeskyPermutation', ${13:value}, 'IsSymmetricDefinite', ${14:value})'''
-    description: '''eigs(${1:A}, ${2:optional_B}, ${3:k}, ${4:sigma}, 'IsFunctionSymmetric', ${5:value}, 'Tolerance', ${6:value}, 'MaxIterations', ${7:value}, 'SubspaceDimension', ${8:value}, 'StartVector', ${9:value}, 'FailureTreatment', ${10:value}, 'Display', ${11:value}, 'IsCholesky', ${12:value}, 'CholeskyPermutation', ${13:value}, 'IsSymmetricDefinite', ${14:value})'''
+        prefix: "eigs"
+        body: '''eigs(${1:A}, ${2:optional_B}, ${3:k}, ${4:sigma}, 'IsFunctionSymmetric', ${5:value}, 'Tolerance', ${6:value}, 'MaxIterations', ${7:value}, 'SubspaceDimension', ${8:value}, 'StartVector', ${9:value}, 'FailureTreatment', ${10:value}, 'Display', ${11:value}, 'IsCholesky', ${12:value}, 'CholeskyPermutation', ${13:value}, 'IsSymmetricDefinite', ${14:value})'''
+        description: '''eigs(${1:A}, ${2:optional_B}, ${3:k}, ${4:sigma}, 'IsFunctionSymmetric', ${5:value}, 'Tolerance', ${6:value}, 'MaxIterations', ${7:value}, 'SubspaceDimension', ${8:value}, 'StartVector', ${9:value}, 'FailureTreatment', ${10:value}, 'Display', ${11:value}, 'IsCholesky', ${12:value}, 'CholeskyPermutation', ${13:value}, 'IsSymmetricDefinite', ${14:value})'''
 

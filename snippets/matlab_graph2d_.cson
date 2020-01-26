@@ -1,62 +1,62 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "semilogy":
-    prefix: "semilogy"
-    body: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-    description: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        prefix: "semilogy"
+        body: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''${1:h} = semilogy(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
 
 
     "loglog":
-    prefix: "loglog"
-    body: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-    description: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        prefix: "loglog"
+        body: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''${1:h} = loglog(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
 
 
     "axis":
-    prefix: "axis"
-    body: '''${1:limits} = axis(${1:optional_ax})'''
-    description: '''${1:limits} = axis(${1:optional_ax})'''
+        prefix: "axis"
+        body: '''${1:limits} = axis(${1:optional_ax})'''
+        description: '''${1:limits} = axis(${1:optional_ax})'''
 
 
     "box":
-    prefix: "box"
-    body: '''box(${1:optional_ax}, ${2:optional_action})'''
-    description: '''box(${1:optional_ax}, ${2:optional_action})'''
+        prefix: "box"
+        body: '''box(${1:optional_ax}, ${2:optional_action})'''
+        description: '''box(${1:optional_ax}, ${2:optional_action})'''
 
 
     "plot":
-    prefix: "plot"
-    body: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-    description: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        prefix: "plot"
+        body: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''${1:h} = plot(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
 
 
     "grid":
-    prefix: "grid"
-    body: '''grid(${1:optional_target}, ${2:optional_action})'''
-    description: '''grid(${1:optional_target}, ${2:optional_action})'''
+        prefix: "grid"
+        body: '''grid(${1:optional_target}, ${2:optional_action})'''
+        description: '''grid(${1:optional_target}, ${2:optional_action})'''
 
 
     "semilogx":
-    prefix: "semilogx"
-    body: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
-    description: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        prefix: "semilogx"
+        body: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
+        description: '''${1:h} = semilogx(${1:optional_ax}, ${2:Y}, ${3:optional_LineSpec}, ${4:opts})'''
 
 
     "title":
-    prefix: "title"
-    body: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
-    description: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
+        prefix: "title"
+        body: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
+        description: '''${1:h} = title(${1:target}, ${2:txt}, ${3:opts})'''
 
 
     "xlabel":
-    prefix: "xlabel"
-    body: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
-    description: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        prefix: "xlabel"
+        body: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        description: '''${1:h} = xlabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
 
 
     "ylabel":
-    prefix: "ylabel"
-    body: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
-    description: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        prefix: "ylabel"
+        body: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
+        description: '''${1:h} = ylabel(${1:optional_target}, ${2:txt}, ${3:opts})'''
 

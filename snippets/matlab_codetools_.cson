@@ -1,80 +1,80 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "dbstop":
-    prefix: "dbstop"
-    body: '''dbstop(${1:s})'''
-    description: '''dbstop(${1:s})'''
+        prefix: "dbstop"
+        body: '''dbstop(${1:s})'''
+        description: '''dbstop(${1:s})'''
 
 
     "publish":
-    prefix: "publish"
-    body: '''${1:my_doc} = publish(${1:file}, ${2:optional_format})'''
-    description: '''${1:my_doc} = publish(${1:file}, ${2:optional_format})'''
+        prefix: "publish"
+        body: '''${1:my_doc} = publish(${1:file}, ${2:optional_format})'''
+        description: '''${1:my_doc} = publish(${1:file}, ${2:optional_format})'''
 
 
     "dbclear":
-    prefix: "dbclear"
-    body: '''dbclear(${1:optional_'all'})'''
-    description: '''dbclear(${1:optional_'all'})'''
+        prefix: "dbclear"
+        body: '''dbclear(${1:optional_'all'})'''
+        description: '''dbclear(${1:optional_'all'})'''
 
 
     "dbquit":
-    prefix: "dbquit"
-    body: '''dbquit(${1:optional_'all'})'''
-    description: '''dbquit(${1:optional_'all'})'''
+        prefix: "dbquit"
+        body: '''dbquit(${1:optional_'all'})'''
+        description: '''dbquit(${1:optional_'all'})'''
 
 
     "edit":
-    prefix: "edit"
-    body: '''edit(${1:optional_file})'''
-    description: '''edit(${1:optional_file})'''
+        prefix: "edit"
+        body: '''edit(${1:optional_file})'''
+        description: '''edit(${1:optional_file})'''
 
 
     "checkcode":
-    prefix: "checkcode"
-    body: '''checkcode(${1:filename}, ${2:action})'''
-    description: '''checkcode(${1:filename}, ${2:action})'''
+        prefix: "checkcode"
+        body: '''checkcode(${1:filename}, ${2:action})'''
+        description: '''checkcode(${1:filename}, ${2:action})'''
 
 
     "dbtype":
-    prefix: "dbtype"
-    body: '''dbtype(${1:filespec}, ${2:optional_range})'''
-    description: '''dbtype(${1:filespec}, ${2:optional_range})'''
+        prefix: "dbtype"
+        body: '''dbtype(${1:filespec}, ${2:optional_range})'''
+        description: '''dbtype(${1:filespec}, ${2:optional_range})'''
 
 
     "uiimport":
-    prefix: "uiimport"
-    body: '''uiimport(${1:filename}, ${2:optional_varargin})'''
-    description: '''uiimport(${1:filename}, ${2:optional_varargin})'''
+        prefix: "uiimport"
+        body: '''uiimport(${1:filename}, ${2:optional_varargin})'''
+        description: '''uiimport(${1:filename}, ${2:optional_varargin})'''
 
 
     "validateFunctionSignaturesJSON":
-    prefix: "validateFunctionSignaturesJSON"
-    body: '''validateFunctionSignaturesJSON(${1:optional_filename})'''
-    description: '''validateFunctionSignaturesJSON(${1:optional_filename})'''
+        prefix: "validateFunctionSignaturesJSON"
+        body: '''validateFunctionSignaturesJSON(${1:optional_filename})'''
+        description: '''validateFunctionSignaturesJSON(${1:optional_filename})'''
 
 
     "dbstep":
-    prefix: "dbstep"
-    body: '''dbstep(${1:optional_inout})'''
-    description: '''dbstep(${1:optional_inout})'''
+        prefix: "dbstep"
+        body: '''dbstep(${1:optional_inout})'''
+        description: '''dbstep(${1:optional_inout})'''
 
 
     "profile":
-    prefix: "profile"
-    body: '''profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})'''
-    description: '''profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})'''
+        prefix: "profile"
+        body: '''profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})'''
+        description: '''profile(${1:action}, ${2:historyFlag}, '-historysize', ${3:value}, '-timer', ${4:value})'''
 
 
     "dbstatus":
-    prefix: "dbstatus"
-    body: '''${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
-    description: '''${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
+        prefix: "dbstatus"
+        body: '''${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
+        description: '''${1:s} = dbstatus(${1:optional_filespec}, ${2:'-completenames'})'''
 
 
     "dbstack":
-    prefix: "dbstack"
-    body: '''[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
-    description: '''[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
+        prefix: "dbstack"
+        body: '''[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
+        description: '''[${1:st}, ${2:i}] = dbstack(${1:optional_nframes}, ${2:'-completenames'})'''
 

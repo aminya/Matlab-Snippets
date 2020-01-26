@@ -1,1400 +1,1400 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "segmentGroundFromLidarData":
-    prefix: "segmentGroundFromLidarData"
-    body: '''segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})'''
-    description: '''segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})'''
+        prefix: "segmentGroundFromLidarData"
+        body: '''segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})'''
+        description: '''segmentGroundFromLidarData(${1:ptCloud}, 'ElevationAngleDelta', ${2:value}, 'InitialElevationAngle', ${3:value})'''
 
 
     "boxLabelDatastore.readall":
-    prefix: "boxLabelDatastore.readall"
-    body: '''${1:data} = boxLabelDatastore.readall(${1:blds})'''
-    description: '''${1:data} = boxLabelDatastore.readall(${1:blds})'''
+        prefix: "boxLabelDatastore.readall"
+        body: '''${1:data} = boxLabelDatastore.readall(${1:blds})'''
+        description: '''${1:data} = boxLabelDatastore.readall(${1:blds})'''
 
 
     "pixelLabelDatastore.readimage":
-    prefix: "pixelLabelDatastore.readimage"
-    body: '''pixelLabelDatastore.readimage(${1:pxds}, ${2:k})'''
-    description: '''pixelLabelDatastore.readimage(${1:pxds}, ${2:k})'''
+        prefix: "pixelLabelDatastore.readimage"
+        body: '''pixelLabelDatastore.readimage(${1:pxds}, ${2:k})'''
+        description: '''pixelLabelDatastore.readimage(${1:pxds}, ${2:k})'''
 
 
     "regionProposalLayer":
-    prefix: "regionProposalLayer"
-    body: '''regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})'''
-    description: '''regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})'''
+        prefix: "regionProposalLayer"
+        body: '''regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})'''
+        description: '''regionProposalLayer(${1:anchorBoxes}, 'Name', ${2:value})'''
 
 
     "pcregistericp":
-    prefix: "pcregistericp"
-    body: '''pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})'''
-    description: '''pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})'''
+        prefix: "pcregistericp"
+        body: '''pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})'''
+        description: '''pcregistericp(${1:moving}, ${2:fixed}, 'Metric', ${3:value}, 'Extrapolate', ${4:value}, 'InlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'InitialTransform', ${8:value}, 'Verbose', ${9:value})'''
 
 
     "semanticseg":
-    prefix: "semanticseg"
-    body: '''semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})'''
-    description: '''semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})'''
+        prefix: "semanticseg"
+        body: '''semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})'''
+        description: '''semanticseg(${1:I}, ${2:network}, ${3:optional_roi}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value}, 'Acceleration', ${6:value}, 'WriteLocation', ${7:value}, 'NamePrefix', ${8:value}, 'Verbose', ${9:value})'''
 
 
     "SURFPoints":
-    prefix: "SURFPoints"
-    body: '''SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})'''
-    description: '''SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})'''
+        prefix: "SURFPoints"
+        body: '''SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})'''
+        description: '''SURFPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value}, 'SignOfLaplacian', ${5:value})'''
 
 
     "cameraPoseToExtrinsics":
-    prefix: "cameraPoseToExtrinsics"
-    body: '''cameraPoseToExtrinsics(${1:orientation}, ${2:location})'''
-    description: '''cameraPoseToExtrinsics(${1:orientation}, ${2:location})'''
+        prefix: "cameraPoseToExtrinsics"
+        body: '''cameraPoseToExtrinsics(${1:orientation}, ${2:location})'''
+        description: '''cameraPoseToExtrinsics(${1:orientation}, ${2:location})'''
 
 
     "unet3dLayers":
-    prefix: "unet3dLayers"
-    body: '''unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
-    description: '''unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
+        prefix: "unet3dLayers"
+        body: '''unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
+        description: '''unet3dLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
 
 
     "pcfitplane":
-    prefix: "pcfitplane"
-    body: '''pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
-    description: '''pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
+        prefix: "pcfitplane"
+        body: '''pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
+        description: '''pcfitplane(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
 
 
     "labelDefinitionCreator.addSublabel":
-    prefix: "labelDefinitionCreator.addSublabel"
-    body: '''labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})'''
-    description: '''labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})'''
+        prefix: "labelDefinitionCreator.addSublabel"
+        body: '''labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})'''
+        description: '''labelDefinitionCreator.addSublabel(${1:ldc}, ${2:labelName}, ${3:sublabelName}, ${4:typeOfSublabel}, 'Description', ${5:value})'''
 
 
     "estimateCameraMatrix":
-    prefix: "estimateCameraMatrix"
-    body: '''estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})'''
-    description: '''estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})'''
+        prefix: "estimateCameraMatrix"
+        body: '''estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})'''
+        description: '''estimateCameraMatrix(${1:imagePoints}, ${2:worldPoints})'''
 
 
     "cornerPoints":
-    prefix: "cornerPoints"
-    body: '''cornerPoints(${1:location}, 'Metric', ${2:value})'''
-    description: '''cornerPoints(${1:location}, 'Metric', ${2:value})'''
+        prefix: "cornerPoints"
+        body: '''cornerPoints(${1:location}, 'Metric', ${2:value})'''
+        description: '''cornerPoints(${1:location}, 'Metric', ${2:value})'''
 
 
     "opticalFlowFarneback.estimateFlow":
-    prefix: "opticalFlowFarneback.estimateFlow"
-    body: '''opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})'''
-    description: '''opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        prefix: "opticalFlowFarneback.estimateFlow"
+        body: '''opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''opticalFlowFarneback.estimateFlow(${1:opticalFlow}, ${2:I})'''
 
 
     "stereoCameraCalibrator":
-    prefix: "stereoCameraCalibrator"
-    body: '''stereoCameraCalibrator(${1:sessionFile})'''
-    description: '''stereoCameraCalibrator(${1:sessionFile})'''
+        prefix: "stereoCameraCalibrator"
+        body: '''stereoCameraCalibrator(${1:sessionFile})'''
+        description: '''stereoCameraCalibrator(${1:sessionFile})'''
 
 
     "trainRCNNObjectDetector":
-    prefix: "trainRCNNObjectDetector"
-    body: '''trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})'''
-    description: '''trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})'''
+        prefix: "trainRCNNObjectDetector"
+        body: '''trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})'''
+        description: '''trainRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'PositiveOverlapRange', ${4:value}, 'NegativeOverlapRange', ${5:value}, 'NumStrongestRegions', ${6:value}, 'RegionProposalFcn', ${7:value})'''
 
 
     "vision.AlphaBlender.step":
-    prefix: "vision.AlphaBlender.step"
-    body: '''vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})'''
-    description: '''vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})'''
+        prefix: "vision.AlphaBlender.step"
+        body: '''vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})'''
+        description: '''vision.AlphaBlender.step(${1:obj}, ${2:I1}, ${3:I2}, ${4:optional_opacity}, ${5:optional_mask}, ${6:optional_location})'''
 
 
     "dicePixelClassificationLayer":
-    prefix: "dicePixelClassificationLayer"
-    body: '''dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})'''
-    description: '''dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})'''
+        prefix: "dicePixelClassificationLayer"
+        body: '''dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})'''
+        description: '''dicePixelClassificationLayer('Classes', ${1:value}, 'Name', ${2:value})'''
 
 
     "fastRCNNObjectDetector.detect":
-    prefix: "fastRCNNObjectDetector.detect"
-    body: '''fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
-    description: '''fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        prefix: "fastRCNNObjectDetector.detect"
+        body: '''fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        description: '''fastRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
 
 
     "indexImages":
-    prefix: "indexImages"
-    body: '''indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})'''
-    description: '''indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})'''
+        prefix: "indexImages"
+        body: '''indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})'''
+        description: '''indexImages(${1:imds}, ${2:optional_bag}, 'SaveFeatureLocations', ${3:value}, 'Verbose', ${4:value})'''
 
 
     "ransac":
-    prefix: "ransac"
-    body: '''ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})'''
-    description: '''ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})'''
+        prefix: "ransac"
+        body: '''ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})'''
+        description: '''ransac(${1:data}, ${2:fitFcn}, ${3:distFcn}, ${4:sampleSize}, ${5:maxDistance}, 'ValidateModelFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value}, 'MaxNumTrials', ${8:value}, 'Confidence', ${9:value})'''
 
 
     "pixelLabelDatastore.partition":
-    prefix: "pixelLabelDatastore.partition"
-    body: '''pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})'''
-    description: '''pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})'''
+        prefix: "pixelLabelDatastore.partition"
+        body: '''pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})'''
+        description: '''pixelLabelDatastore.partition(${1:pxds}, ${2:N}, ${3:index})'''
 
 
     "planeModel.plot":
-    prefix: "planeModel.plot"
-    body: '''planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})'''
-    description: '''planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})'''
+        prefix: "planeModel.plot"
+        body: '''planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})'''
+        description: '''planeModel.plot(${1:model}, 'Parent', ${2:value}, 'Color', ${3:value})'''
 
 
     "BRISKPoints.selectStrongest":
-    prefix: "BRISKPoints.selectStrongest"
-    body: '''BRISKPoints.selectStrongest(${1:points}, ${2:N})'''
-    description: '''BRISKPoints.selectStrongest(${1:points}, ${2:N})'''
+        prefix: "BRISKPoints.selectStrongest"
+        body: '''BRISKPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''BRISKPoints.selectStrongest(${1:points}, ${2:N})'''
 
 
     "detectMinEigenFeatures":
-    prefix: "detectMinEigenFeatures"
-    body: '''detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
-    description: '''detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
+        prefix: "detectMinEigenFeatures"
+        body: '''detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
+        description: '''detectMinEigenFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
 
 
     "ocr":
-    prefix: "ocr"
-    body: '''ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})'''
-    description: '''ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})'''
+        prefix: "ocr"
+        body: '''ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})'''
+        description: '''ocr(${1:I}, ${2:optional_roi}, 'TextLayout', ${3:value}, 'Language', ${4:value}, 'CharacterSet', ${5:value})'''
 
 
     "estimateEssentialMatrix":
-    prefix: "estimateEssentialMatrix"
-    body: '''estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
-    description: '''estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
+        prefix: "estimateEssentialMatrix"
+        body: '''estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
+        description: '''estimateEssentialMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:optional_cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
 
 
     "rectifyStereoImages":
-    prefix: "rectifyStereoImages"
-    body: '''rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})'''
-    description: '''rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})'''
+        prefix: "rectifyStereoImages"
+        body: '''rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})'''
+        description: '''rectifyStereoImages(${1:I1}, ${2:I2}, ${3:stereoParams}, ${4:optional_interp}, 'OutputView', ${5:value}, 'FillValues', ${6:value})'''
 
 
     "fisheyeParameters":
-    prefix: "fisheyeParameters"
-    body: '''fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})'''
-    description: '''fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})'''
+        prefix: "fisheyeParameters"
+        body: '''fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})'''
+        description: '''fisheyeParameters(${1:fisheyeParameters}, 'EstimateAlignment', ${2:value}, 'RotationVectors', ${3:value}, 'TranslationVectors', ${4:value}, 'WorldPoints', ${5:value}, 'WorldUnits', ${6:value}, 'ReprojectionErrors', ${7:value})'''
 
 
     "disparityBM":
-    prefix: "disparityBM"
-    body: '''disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})'''
-    description: '''disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})'''
+        prefix: "disparityBM"
+        body: '''disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})'''
+        description: '''disparityBM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'BlockSize', ${4:value}, 'ContrastThreshold', ${5:value}, 'UniquenessThreshold', ${6:value}, 'DistanceThreshold', ${7:value}, 'TextureThreshold', ${8:value})'''
 
 
     "opticalFlow.plot":
-    prefix: "opticalFlow.plot"
-    body: '''opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})'''
-    description: '''opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})'''
+        prefix: "opticalFlow.plot"
+        body: '''opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})'''
+        description: '''opticalFlow.plot(${1:flow}, 'DecimationFactor', ${2:value}, 'ScaleFactor', ${3:value}, 'Parent', ${4:value})'''
 
 
     "cameraCalibrator":
-    prefix: "cameraCalibrator"
-    body: '''cameraCalibrator(${1:sessionFile})'''
-    description: '''cameraCalibrator(${1:sessionFile})'''
+        prefix: "cameraCalibrator"
+        body: '''cameraCalibrator(${1:sessionFile})'''
+        description: '''cameraCalibrator(${1:sessionFile})'''
 
 
     "pcfitcylinder":
-    prefix: "pcfitcylinder"
-    body: '''pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
-    description: '''pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
+        prefix: "pcfitcylinder"
+        body: '''pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
+        description: '''pcfitcylinder(${1:ptCloudIn}, ${2:maxDistance}, ${3:optional_referenceVector}, ${4:maxAngularDistance}, 'SampleIndices', ${5:value}, 'MaxNumTrials', ${6:value}, 'Confidence', ${7:value})'''
 
 
     "unetLayers":
-    prefix: "unetLayers"
-    body: '''unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
-    description: '''unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
+        prefix: "unetLayers"
+        body: '''unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
+        description: '''unetLayers(${1:inputSize}, ${2:numClasses}, 'EncoderDepth', ${3:value}, 'NumFirstEncoderFilters', ${4:value}, 'FilterSize', ${5:value}, 'ConvolutionPadding', ${6:value})'''
 
 
     "bboxOverlapRatio":
-    prefix: "bboxOverlapRatio"
-    body: '''bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})'''
-    description: '''bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})'''
+        prefix: "bboxOverlapRatio"
+        body: '''bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})'''
+        description: '''bboxOverlapRatio(${1:bboxA}, ${2:bboxB}, ${3:optional_ratioType})'''
 
 
     "yolov2ObjectDetector.detect":
-    prefix: "yolov2ObjectDetector.detect"
-    body: '''yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})'''
-    description: '''yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})'''
+        prefix: "yolov2ObjectDetector.detect"
+        body: '''yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})'''
+        description: '''yolov2ObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'ExecutionEnvironment', ${9:value}, 'Acceleration', ${10:value})'''
 
 
     "detectCheckerboardPoints":
-    prefix: "detectCheckerboardPoints"
-    body: '''detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})'''
-    description: '''detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})'''
+        prefix: "detectCheckerboardPoints"
+        body: '''detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})'''
+        description: '''detectCheckerboardPoints(${1:I}, 'MinCornerMetric', ${2:value})'''
 
 
     "fasterRCNNLayers":
-    prefix: "fasterRCNNLayers"
-    body: '''fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})'''
-    description: '''fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})'''
+        prefix: "fasterRCNNLayers"
+        body: '''fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})'''
+        description: '''fasterRCNNLayers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ROIMaxPoolingLayer', ${6:value}, 'ROIOutputSize', ${7:value})'''
 
 
     "evaluateImageRetrieval":
-    prefix: "evaluateImageRetrieval"
-    body: '''evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})'''
-    description: '''evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})'''
+        prefix: "evaluateImageRetrieval"
+        body: '''evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})'''
+        description: '''evaluateImageRetrieval(${1:queryImage}, ${2:imageIndex}, ${3:expectedIDs}, 'NumResults', ${4:value}, 'ROI', ${5:value})'''
 
 
     "fitPolynomialRANSAC":
-    prefix: "fitPolynomialRANSAC"
-    body: '''fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})'''
-    description: '''fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})'''
+        prefix: "fitPolynomialRANSAC"
+        body: '''fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})'''
+        description: '''fitPolynomialRANSAC(${1:xyPoints}, ${2:N}, ${3:maxDistance}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'ValidatePolynomialFcn', ${6:value}, 'MaxSamplingAttempts', ${7:value})'''
 
 
     "showExtrinsics":
-    prefix: "showExtrinsics"
-    body: '''showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
-    description: '''showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
+        prefix: "showExtrinsics"
+        body: '''showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
+        description: '''showExtrinsics(${1:cameraParams}, ${2:optional_view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
 
 
     "cornerPoints.plot":
-    prefix: "cornerPoints.plot"
-    body: '''cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-    description: '''cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        prefix: "cornerPoints.plot"
+        body: '''cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''cornerPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
 
 
     "trainCascadeObjectDetector":
-    prefix: "trainCascadeObjectDetector"
-    body: '''trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})'''
-    description: '''trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})'''
+        prefix: "trainCascadeObjectDetector"
+        body: '''trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})'''
+        description: '''trainCascadeObjectDetector(${1:outputXMLFilename}, 'ObjectTrainingSize', ${2:value}, 'NegativeSamplesFactor', ${3:value}, 'NumCascadeStages', ${4:value}, 'FalseAlarmRate', ${5:value}, 'TruePositiveRate', ${6:value}, 'FeatureType', ${7:value})'''
 
 
     "triangulateMultiview":
-    prefix: "triangulateMultiview"
-    body: '''triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})'''
-    description: '''triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})'''
+        prefix: "triangulateMultiview"
+        body: '''triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})'''
+        description: '''triangulateMultiview(${1:pointTracks}, ${2:cameraPoses}, ${3:cameraParams})'''
 
 
     "undistortFisheyeImage":
-    prefix: "undistortFisheyeImage"
-    body: '''undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})'''
-    description: '''undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})'''
+        prefix: "undistortFisheyeImage"
+        body: '''undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})'''
+        description: '''undistortFisheyeImage(${1:I}, ${2:intrinsics}, ${3:optional_interp}, 'OutputView', ${4:value}, 'ScaleFactor', ${5:value}, 'FillValues', ${6:value})'''
 
 
     "fisheyeIntrinsics.worldToImage":
-    prefix: "fisheyeIntrinsics.worldToImage"
-    body: '''fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})'''
-    description: '''fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})'''
+        prefix: "fisheyeIntrinsics.worldToImage"
+        body: '''fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})'''
+        description: '''fisheyeIntrinsics.worldToImage(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints})'''
 
 
     "extrinsics":
-    prefix: "extrinsics"
-    body: '''extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})'''
-    description: '''extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})'''
+        prefix: "extrinsics"
+        body: '''extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})'''
+        description: '''extrinsics(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams})'''
 
 
     "viewSet.addView":
-    prefix: "viewSet.addView"
-    body: '''viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
-    description: '''viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
+        prefix: "viewSet.addView"
+        body: '''viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
+        description: '''viewSet.addView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
 
 
     "pcdownsample":
-    prefix: "pcdownsample"
-    body: '''pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})'''
-    description: '''pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})'''
+        prefix: "pcdownsample"
+        body: '''pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})'''
+        description: '''pcdownsample(${1:ptCloudIn}, ${2:random}, ${3:percentage})'''
 
 
     "cameraParameters.toStruct":
-    prefix: "cameraParameters.toStruct"
-    body: '''cameraParameters.toStruct(${1:cameraParams})'''
-    description: '''cameraParameters.toStruct(${1:cameraParams})'''
+        prefix: "cameraParameters.toStruct"
+        body: '''cameraParameters.toStruct(${1:cameraParams})'''
+        description: '''cameraParameters.toStruct(${1:cameraParams})'''
 
 
     "BRISKPoints.selectUniform":
-    prefix: "BRISKPoints.selectUniform"
-    body: '''BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-    description: '''BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        prefix: "BRISKPoints.selectUniform"
+        body: '''BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''BRISKPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
 
 
     "undistortPoints":
-    prefix: "undistortPoints"
-    body: '''undistortPoints(${1:points}, ${2:cameraParams})'''
-    description: '''undistortPoints(${1:points}, ${2:cameraParams})'''
+        prefix: "undistortPoints"
+        body: '''undistortPoints(${1:points}, ${2:cameraParams})'''
+        description: '''undistortPoints(${1:points}, ${2:cameraParams})'''
 
 
     "segnetLayers":
-    prefix: "segnetLayers"
-    body: '''segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})'''
-    description: '''segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})'''
+        prefix: "segnetLayers"
+        body: '''segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})'''
+        description: '''segnetLayers(${1:imageSize}, ${2:numClasses}, ${3:model}, 'NumConvolutionLayers', ${4:value}, 'NumOutputChannels', ${5:value}, 'FilterSize', ${6:value})'''
 
 
     "evaluateDetectionMissRate":
-    prefix: "evaluateDetectionMissRate"
-    body: '''evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})'''
-    description: '''evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})'''
+        prefix: "evaluateDetectionMissRate"
+        body: '''evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})'''
+        description: '''evaluateDetectionMissRate(${1:detectionResults}, ${2:groundTruthData}, ${3:threshold})'''
 
 
     "generateCheckerboardPoints":
-    prefix: "generateCheckerboardPoints"
-    body: '''generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})'''
-    description: '''generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})'''
+        prefix: "generateCheckerboardPoints"
+        body: '''generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})'''
+        description: '''generateCheckerboardPoints(${1:boardSize}, ${2:squareSize})'''
 
 
     "pcshow":
-    prefix: "pcshow"
-    body: '''pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})'''
-    description: '''pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})'''
+        prefix: "pcshow"
+        body: '''pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})'''
+        description: '''pcshow(${1:ptCloud}, 'MarkerSize', ${2:value}, 'VerticalAxis', ${3:value}, 'VerticalAxisDir', ${4:value}, 'Parent', ${5:value})'''
 
 
     "cylinderModel":
-    prefix: "cylinderModel"
-    body: '''cylinderModel(${1:Parameters})'''
-    description: '''cylinderModel(${1:Parameters})'''
+        prefix: "cylinderModel"
+        body: '''cylinderModel(${1:Parameters})'''
+        description: '''cylinderModel(${1:Parameters})'''
 
 
     "insertShape":
-    prefix: "insertShape"
-    body: '''insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})'''
-    description: '''insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})'''
+        prefix: "insertShape"
+        body: '''insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})'''
+        description: '''insertShape(${1:I}, ${2:shape}, ${3:position}, 'LineWidth', ${4:value}, 'Color', ${5:value}, 'Opacity', ${6:value}, 'SmoothEdges', ${7:value})'''
 
 
     "labelDefinitionCreator.addAttribute":
-    prefix: "labelDefinitionCreator.addAttribute"
-    body: '''labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})'''
-    description: '''labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})'''
+        prefix: "labelDefinitionCreator.addAttribute"
+        body: '''labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})'''
+        description: '''labelDefinitionCreator.addAttribute(${1:ldc}, ${2:labelName}, ${3:attributeName}, ${4:typeOfAttribute}, 'Description', ${5:value})'''
 
 
     "boxLabelDatastore.countEachLabel":
-    prefix: "boxLabelDatastore.countEachLabel"
-    body: '''${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
-    description: '''${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
+        prefix: "boxLabelDatastore.countEachLabel"
+        body: '''${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
+        description: '''${1:TBL} = boxLabelDatastore.countEachLabel(${1:blds})'''
 
 
     "planeModel":
-    prefix: "planeModel"
-    body: '''planeModel(${1:Parameters})'''
-    description: '''planeModel(${1:Parameters})'''
+        prefix: "planeModel"
+        body: '''planeModel(${1:Parameters})'''
+        description: '''planeModel(${1:Parameters})'''
 
 
     "integralKernel":
-    prefix: "integralKernel"
-    body: '''integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})'''
-    description: '''integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})'''
+        prefix: "integralKernel"
+        body: '''integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})'''
+        description: '''integralKernel(${1:bbox}, ${2:weights}, ${3:optional_orientation})'''
 
 
     "pcfitsphere":
-    prefix: "pcfitsphere"
-    body: '''pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})'''
-    description: '''pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})'''
+        prefix: "pcfitsphere"
+        body: '''pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})'''
+        description: '''pcfitsphere(${1:ptCloudIn}, ${2:maxDistance}, 'SampleIndices', ${3:value}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value})'''
 
 
     "pcregistercpd":
-    prefix: "pcregistercpd"
-    body: '''pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})'''
-    description: '''pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})'''
+        prefix: "pcregistercpd"
+        body: '''pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})'''
+        description: '''pcregistercpd(${1:moving}, ${2:fixed}, 'Transform', ${3:value}, 'OutlierRatio', ${4:value}, 'MaxIterations', ${5:value}, 'Tolerance', ${6:value}, 'InteractionSigma', ${7:value}, 'SmoothingWeight', ${8:value}, 'Verbose', ${9:value})'''
 
 
     "bboxresize":
-    prefix: "bboxresize"
-    body: '''bboxresize(${1:bboxA}, ${2:scale})'''
-    description: '''bboxresize(${1:bboxA}, ${2:scale})'''
+        prefix: "bboxresize"
+        body: '''bboxresize(${1:bboxA}, ${2:scale})'''
+        description: '''bboxresize(${1:bboxA}, ${2:scale})'''
 
 
     "insertObjectAnnotation":
-    prefix: "insertObjectAnnotation"
-    body: '''insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})'''
-    description: '''insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})'''
+        prefix: "insertObjectAnnotation"
+        body: '''insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})'''
+        description: '''insertObjectAnnotation(${1:I}, ${2:shape}, ${3:position}, ${4:label}, 'Font', ${5:value}, 'FontSize', ${6:value}, 'LineWidth', ${7:value}, 'Color', ${8:value}, 'TextColor', ${9:value}, 'TextBoxOpacity', ${10:value})'''
 
 
     "ORBPoints":
-    prefix: "ORBPoints"
-    body: '''ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
-    description: '''ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        prefix: "ORBPoints"
+        body: '''ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        description: '''ORBPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
 
 
     "segmentLidarData":
-    prefix: "segmentLidarData"
-    body: '''segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})'''
-    description: '''segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})'''
+        prefix: "segmentLidarData"
+        body: '''segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})'''
+        description: '''segmentLidarData(${1:ptCloud}, ${2:distThreshold}, ${3:angleThreshold})'''
 
 
     "detectBRISKFeatures":
-    prefix: "detectBRISKFeatures"
-    body: '''detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})'''
-    description: '''detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})'''
+        prefix: "detectBRISKFeatures"
+        body: '''detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})'''
+        description: '''detectBRISKFeatures(${1:I}, 'MinContrast', ${2:value}, 'MinQuality', ${3:value}, 'NumOctaves', ${4:value}, 'ROI', ${5:value})'''
 
 
     "pctransform":
-    prefix: "pctransform"
-    body: '''pctransform(${1:ptCloudIn}, ${2:tform})'''
-    description: '''pctransform(${1:ptCloudIn}, ${2:tform})'''
+        prefix: "pctransform"
+        body: '''pctransform(${1:ptCloudIn}, ${2:tform})'''
+        description: '''pctransform(${1:ptCloudIn}, ${2:tform})'''
 
 
     "insertText":
-    prefix: "insertText"
-    body: '''insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})'''
-    description: '''insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})'''
+        prefix: "insertText"
+        body: '''insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})'''
+        description: '''insertText(${1:I}, ${2:position}, ${3:text}, 'Font', ${4:value}, 'FontSize', ${5:value}, 'TextColor', ${6:value}, 'BoxColor', ${7:value}, 'BoxOpacity', ${8:value}, 'AnchorPoint', ${9:value})'''
 
 
     "detectSURFFeatures":
-    prefix: "detectSURFFeatures"
-    body: '''detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})'''
-    description: '''detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})'''
+        prefix: "detectSURFFeatures"
+        body: '''detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})'''
+        description: '''detectSURFFeatures(${1:I}, 'MetricThreshold', ${2:value}, 'NumOctaves', ${3:value}, 'NumScaleLevels', ${4:value}, 'ROI', ${5:value})'''
 
 
     "viewSet.addConnection":
-    prefix: "viewSet.addConnection"
-    body: '''viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
-    description: '''viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
+        prefix: "viewSet.addConnection"
+        body: '''viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
+        description: '''viewSet.addConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
 
 
     "roiInputLayer":
-    prefix: "roiInputLayer"
-    body: '''roiInputLayer('Name', ${1:value})'''
-    description: '''roiInputLayer('Name', ${1:value})'''
+        prefix: "roiInputLayer"
+        body: '''roiInputLayer('Name', ${1:value})'''
+        description: '''roiInputLayer('Name', ${1:value})'''
 
 
     "trainACFObjectDetector":
-    prefix: "trainACFObjectDetector"
-    body: '''trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})'''
-    description: '''trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})'''
+        prefix: "trainACFObjectDetector"
+        body: '''trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})'''
+        description: '''trainACFObjectDetector(${1:trainingData}, 'ObjectTrainingSize', ${2:value}, 'NumStages', ${3:value}, 'NegativeSamplesFactor', ${4:value}, 'MaxWeakLearners', ${5:value}, 'Verbose', ${6:value})'''
 
 
     "bboxPrecisionRecall":
-    prefix: "bboxPrecisionRecall"
-    body: '''bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})'''
-    description: '''bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})'''
+        prefix: "bboxPrecisionRecall"
+        body: '''bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})'''
+        description: '''bboxPrecisionRecall(${1:boundingBoxes}, ${2:groundTruthData}, ${3:optional_threshold})'''
 
 
     "configureKalmanFilter":
-    prefix: "configureKalmanFilter"
-    body: '''configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})'''
-    description: '''configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})'''
+        prefix: "configureKalmanFilter"
+        body: '''configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})'''
+        description: '''configureKalmanFilter(${1:MotionModel}, ${2:InitialLocation}, ${3:InitialEstimateError}, ${4:MotionNoise}, ${5:MeasurementNoise})'''
 
 
     "pixelLabelDatastore":
-    prefix: "pixelLabelDatastore"
-    body: '''pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})'''
-    description: '''pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})'''
+        prefix: "pixelLabelDatastore"
+        body: '''pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})'''
+        description: '''pixelLabelDatastore(${1:gTruth}, 'ReadSize', ${2:value}, 'AlternateFileSystemRoots', ${3:value})'''
 
 
     "vision.AlphaBlender":
-    prefix: "vision.AlphaBlender"
-    body: '''vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})'''
-    description: '''vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})'''
+        prefix: "vision.AlphaBlender"
+        body: '''vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})'''
+        description: '''vision.AlphaBlender('Operation', ${1:value}, 'OpacitySource', ${2:value}, 'Opacity', ${3:value}, 'MaskSource', ${4:value}, 'Mask', ${5:value}, 'LocationSource', ${6:value}, 'Location', ${7:value}, 'RoundingMethod', ${8:value}, 'OverflowAction', ${9:value}, 'OpacityDataType', ${10:value}, 'CustomOpacityDataType', ${11:value}, 'ProductDataType', ${12:value}, 'CustomProductDataType', ${13:value}, 'AccumulatorDataType', ${14:value}, 'CustomAccumulatorDataType', ${15:value}, 'OutputDataType', ${16:value}, 'CustomOutputDataType', ${17:value})'''
 
 
     "assignDetectionsToTracks":
-    prefix: "assignDetectionsToTracks"
-    body: '''assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})'''
-    description: '''assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})'''
+        prefix: "assignDetectionsToTracks"
+        body: '''assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})'''
+        description: '''assignDetectionsToTracks(${1:costMatrix}, ${2:costOfNonAssignment})'''
 
 
     "rotationVectorToMatrix":
-    prefix: "rotationVectorToMatrix"
-    body: '''rotationVectorToMatrix(${1:rotationVector})'''
-    description: '''rotationVectorToMatrix(${1:rotationVector})'''
+        prefix: "rotationVectorToMatrix"
+        body: '''rotationVectorToMatrix(${1:rotationVector})'''
+        description: '''rotationVectorToMatrix(${1:rotationVector})'''
 
 
     "pcmerge":
-    prefix: "pcmerge"
-    body: '''pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})'''
-    description: '''pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})'''
+        prefix: "pcmerge"
+        body: '''pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})'''
+        description: '''pcmerge(${1:ptCloudA}, ${2:ptCloudB}, ${3:gridStep})'''
 
 
     "selectStrongestBboxMulticlass":
-    prefix: "selectStrongestBboxMulticlass"
-    body: '''selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})'''
-    description: '''selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})'''
+        prefix: "selectStrongestBboxMulticlass"
+        body: '''selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})'''
+        description: '''selectStrongestBboxMulticlass(${1:bbox}, ${2:scores}, ${3:labels}, 'RatioType', ${4:value}, 'OverlapThreshold', ${5:value})'''
 
 
     "evaluateDetectionPrecision":
-    prefix: "evaluateDetectionPrecision"
-    body: '''evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})'''
-    description: '''evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})'''
+        prefix: "evaluateDetectionPrecision"
+        body: '''evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})'''
+        description: '''evaluateDetectionPrecision(${1:detectionResults}, ${2:groundTruthData}, ${3:optional_threshold})'''
 
 
     "labelDefinitionCreator.addLabel":
-    prefix: "labelDefinitionCreator.addLabel"
-    body: '''labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})'''
-    description: '''labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})'''
+        prefix: "labelDefinitionCreator.addLabel"
+        body: '''labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})'''
+        description: '''labelDefinitionCreator.addLabel(${1:ldc}, ${2:labelName}, ${3:typeOfLabel}, 'Description', ${4:value})'''
 
 
     "cornerPoints.selectUniform":
-    prefix: "cornerPoints.selectUniform"
-    body: '''cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-    description: '''cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        prefix: "cornerPoints.selectUniform"
+        body: '''cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''cornerPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
 
 
     "stereoAnaglyph":
-    prefix: "stereoAnaglyph"
-    body: '''stereoAnaglyph(${1:I1}, ${2:I2})'''
-    description: '''stereoAnaglyph(${1:I1}, ${2:I2})'''
+        prefix: "stereoAnaglyph"
+        body: '''stereoAnaglyph(${1:I1}, ${2:I2})'''
+        description: '''stereoAnaglyph(${1:I1}, ${2:I2})'''
 
 
     "fisheyeIntrinsics.pointsToWorld":
-    prefix: "fisheyeIntrinsics.pointsToWorld"
-    body: '''fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
-    description: '''fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
+        prefix: "fisheyeIntrinsics.pointsToWorld"
+        body: '''fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
+        description: '''fisheyeIntrinsics.pointsToWorld(${1:fisheyeIntrinsics}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
 
 
     "pcshowpair":
-    prefix: "pcshowpair"
-    body: '''pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})'''
-    description: '''pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})'''
+        prefix: "pcshowpair"
+        body: '''pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})'''
+        description: '''pcshowpair(${1:ptCloudA}, ${2:ptCloudB}, 'MarkerSize', ${3:value}, 'VerticalAxis', ${4:value}, 'VerticalAxisDir', ${5:value}, 'Parent', ${6:value})'''
 
 
     "rcnnBoxRegressionLayer":
-    prefix: "rcnnBoxRegressionLayer"
-    body: '''rcnnBoxRegressionLayer('Name', ${1:value})'''
-    description: '''rcnnBoxRegressionLayer('Name', ${1:value})'''
+        prefix: "rcnnBoxRegressionLayer"
+        body: '''rcnnBoxRegressionLayer('Name', ${1:value})'''
+        description: '''rcnnBoxRegressionLayer('Name', ${1:value})'''
 
 
     "detectMSERFeatures":
-    prefix: "detectMSERFeatures"
-    body: '''detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})'''
-    description: '''detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})'''
+        prefix: "detectMSERFeatures"
+        body: '''detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})'''
+        description: '''detectMSERFeatures(${1:I}, 'ThresholdDelta', ${2:value}, 'RegionAreaRange', ${3:value}, 'MaxAreaVariation', ${4:value}, 'ROI', ${5:value})'''
 
 
     "pcwrite":
-    prefix: "pcwrite"
-    body: '''pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})'''
-    description: '''pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})'''
+        prefix: "pcwrite"
+        body: '''pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})'''
+        description: '''pcwrite(${1:ptCloud}, ${2:filename}, 'Encoding', ${3:value})'''
 
 
     "sphereModel":
-    prefix: "sphereModel"
-    body: '''sphereModel(${1:Parameters})'''
-    description: '''sphereModel(${1:Parameters})'''
+        prefix: "sphereModel"
+        body: '''sphereModel(${1:Parameters})'''
+        description: '''sphereModel(${1:Parameters})'''
 
 
     "cornerPoints.selectStrongest":
-    prefix: "cornerPoints.selectStrongest"
-    body: '''cornerPoints.selectStrongest(${1:points}, ${2:N})'''
-    description: '''cornerPoints.selectStrongest(${1:points}, ${2:N})'''
+        prefix: "cornerPoints.selectStrongest"
+        body: '''cornerPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''cornerPoints.selectStrongest(${1:points}, ${2:N})'''
 
 
     "fasterRCNNObjectDetector.detect":
-    prefix: "fasterRCNNObjectDetector.detect"
-    body: '''fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
-    description: '''fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        prefix: "fasterRCNNObjectDetector.detect"
+        body: '''fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
+        description: '''fasterRCNNObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'Threshold', ${4:value}, 'NumStrongestRegions', ${5:value}, 'SelectStrongest', ${6:value}, 'MiniBatchSize', ${7:value}, 'MinSize', ${8:value}, 'MaxSize', ${9:value}, 'ExecutionEnvironment', ${10:value})'''
 
 
     "trainFasterRCNNObjectDetector":
-    prefix: "trainFasterRCNNObjectDetector"
-    body: '''trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})'''
-    description: '''trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})'''
+        prefix: "trainFasterRCNNObjectDetector"
+        body: '''trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})'''
+        description: '''trainFasterRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingMethod', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'SmallestImageDimension', ${8:value}, 'MinBoxSizes', ${9:value}, 'BoxPyramidScale', ${10:value}, 'NumBoxPyramidLevels', ${11:value}, 'FreezeBatchNormalization', ${12:value})'''
 
 
     "pcread":
-    prefix: "pcread"
-    body: '''pcread(${1:filename})'''
-    description: '''pcread(${1:filename})'''
+        prefix: "pcread"
+        body: '''pcread(${1:filename})'''
+        description: '''pcread(${1:filename})'''
 
 
     "rcnnObjectDetector.detect":
-    prefix: "rcnnObjectDetector.detect"
-    body: '''rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})'''
-    description: '''rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})'''
+        prefix: "rcnnObjectDetector.detect"
+        body: '''rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})'''
+        description: '''rcnnObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumStrongestRegions', ${4:value}, 'SelectStrongest', ${5:value}, 'MiniBatchSize', ${6:value}, 'ExecutionEnvironment', ${7:value})'''
 
 
     "groundTruth":
-    prefix: "groundTruth"
-    body: '''groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})'''
-    description: '''groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})'''
+        prefix: "groundTruth"
+        body: '''groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})'''
+        description: '''groundTruth(${1:dataSource}, ${2:labelDefs}, ${3:labelData})'''
 
 
     "BRISKPoints":
-    prefix: "BRISKPoints"
-    body: '''BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
-    description: '''BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        prefix: "BRISKPoints"
+        body: '''BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        description: '''BRISKPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
 
 
     "selectStrongestBbox":
-    prefix: "selectStrongestBbox"
-    body: '''selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})'''
-    description: '''selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})'''
+        prefix: "selectStrongestBbox"
+        body: '''selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})'''
+        description: '''selectStrongestBbox(${1:bbox}, ${2:score}, 'RatioType', ${3:value}, 'OverlapThreshold', ${4:value})'''
 
 
     "stereoParameters.toStruct":
-    prefix: "stereoParameters.toStruct"
-    body: '''stereoParameters.toStruct(${1:cameraParams})'''
-    description: '''stereoParameters.toStruct(${1:cameraParams})'''
+        prefix: "stereoParameters.toStruct"
+        body: '''stereoParameters.toStruct(${1:cameraParams})'''
+        description: '''stereoParameters.toStruct(${1:cameraParams})'''
 
 
     "pixelLabelImageDatastore":
-    prefix: "pixelLabelImageDatastore"
-    body: '''pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
-    description: '''pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
+        prefix: "pixelLabelImageDatastore"
+        body: '''pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
+        description: '''pixelLabelImageDatastore(${1:gTruth}, 'DataAugmentation', ${2:value}, 'ColorPreprocessing', ${3:value}, 'OutputSize', ${4:value}, 'OutputSizeMode', ${5:value}, 'DispatchInBackground', ${6:value})'''
 
 
     "cameraParameters.worldToImage":
-    prefix: "cameraParameters.worldToImage"
-    body: '''cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})'''
-    description: '''cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})'''
+        prefix: "cameraParameters.worldToImage"
+        body: '''cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})'''
+        description: '''cameraParameters.worldToImage(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:worldPoints}, 'ApplyDistortion', ${5:value})'''
 
 
     "pcnormals":
-    prefix: "pcnormals"
-    body: '''pcnormals(${1:ptCloud}, ${2:optional_k})'''
-    description: '''pcnormals(${1:ptCloud}, ${2:optional_k})'''
+        prefix: "pcnormals"
+        body: '''pcnormals(${1:ptCloud}, ${2:optional_k})'''
+        description: '''pcnormals(${1:ptCloud}, ${2:optional_k})'''
 
 
     "showReprojectionErrors":
-    prefix: "showReprojectionErrors"
-    body: '''showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
-    description: '''showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
+        prefix: "showReprojectionErrors"
+        body: '''showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
+        description: '''showReprojectionErrors(${1:cameraParams}, ${2:view}, 'HighlightIndex', ${3:value}, 'Parent', ${4:value})'''
 
 
     "KAZEPoints.selectUniform":
-    prefix: "KAZEPoints.selectUniform"
-    body: '''KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-    description: '''KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        prefix: "KAZEPoints.selectUniform"
+        body: '''KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''KAZEPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
 
 
     "pointTrack":
-    prefix: "pointTrack"
-    body: '''pointTrack(${1:viewIDs}, ${2:points})'''
-    description: '''pointTrack(${1:viewIDs}, ${2:points})'''
+        prefix: "pointTrack"
+        body: '''pointTrack(${1:viewIDs}, ${2:points})'''
+        description: '''pointTrack(${1:viewIDs}, ${2:points})'''
 
 
     "estimateStereoBaseline":
-    prefix: "estimateStereoBaseline"
-    body: '''estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})'''
-    description: '''estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})'''
+        prefix: "estimateStereoBaseline"
+        body: '''estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})'''
+        description: '''estimateStereoBaseline(${1:imagePoints}, ${2:worldPoints}, ${3:intrinsics1}, ${4:intrinsics2}, 'WorldUnits', ${5:value})'''
 
 
     "SURFPoints.selectStrongest":
-    prefix: "SURFPoints.selectStrongest"
-    body: '''SURFPoints.selectStrongest(${1:points}, ${2:N})'''
-    description: '''SURFPoints.selectStrongest(${1:points}, ${2:N})'''
+        prefix: "SURFPoints.selectStrongest"
+        body: '''SURFPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''SURFPoints.selectStrongest(${1:points}, ${2:N})'''
 
 
     "pixelLabelImageDatastore.readByIndex":
-    prefix: "pixelLabelImageDatastore.readByIndex"
-    body: '''pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})'''
-    description: '''pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})'''
+        prefix: "pixelLabelImageDatastore.readByIndex"
+        body: '''pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})'''
+        description: '''pixelLabelImageDatastore.readByIndex(${1:pximds}, ${2:ind})'''
 
 
     "ocrText.locateText":
-    prefix: "ocrText.locateText"
-    body: '''ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})'''
-    description: '''ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})'''
+        prefix: "ocrText.locateText"
+        body: '''ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})'''
+        description: '''ocrText.locateText(${1:ocrText}, ${2:pattern}, 'UseRegexp', ${3:value}, 'IgnoreCase', ${4:value})'''
 
 
     "estimateGeometricTransform":
-    prefix: "estimateGeometricTransform"
-    body: '''estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
-    description: '''estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
+        prefix: "estimateGeometricTransform"
+        body: '''estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
+        description: '''estimateGeometricTransform(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:transformType}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxDistance', ${6:value})'''
 
 
     "ORBPoints.plot":
-    prefix: "ORBPoints.plot"
-    body: '''ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-    description: '''ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        prefix: "ORBPoints.plot"
+        body: '''ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''ORBPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
 
 
     "bbox2points":
-    prefix: "bbox2points"
-    body: '''bbox2points(${1:rectangle})'''
-    description: '''bbox2points(${1:rectangle})'''
+        prefix: "bbox2points"
+        body: '''bbox2points(${1:rectangle})'''
+        description: '''bbox2points(${1:rectangle})'''
 
 
     "opticalFlowHS":
-    prefix: "opticalFlowHS"
-    body: '''opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})'''
-    description: '''opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})'''
+        prefix: "opticalFlowHS"
+        body: '''opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})'''
+        description: '''opticalFlowHS('Smoothness', ${1:value}, 'MaxIteration', ${2:value}, 'VelocityDifference', ${3:value})'''
 
 
     "stereoCalibrationErrors.displayErrors":
-    prefix: "stereoCalibrationErrors.displayErrors"
-    body: '''stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})'''
-    description: '''stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})'''
+        prefix: "stereoCalibrationErrors.displayErrors"
+        body: '''stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})'''
+        description: '''stereoCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:stereoParams})'''
 
 
     "yolov2TransformLayer":
-    prefix: "yolov2TransformLayer"
-    body: '''yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})'''
-    description: '''yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})'''
+        prefix: "yolov2TransformLayer"
+        body: '''yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})'''
+        description: '''yolov2TransformLayer(${1:numAnchors}, 'Name', ${2:value})'''
 
 
     "viewSet.hasConnection":
-    prefix: "viewSet.hasConnection"
-    body: '''viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
-    description: '''viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
+        prefix: "viewSet.hasConnection"
+        body: '''viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
+        description: '''viewSet.hasConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
 
 
     "pixelLabelDatastore.numpartitions":
-    prefix: "pixelLabelDatastore.numpartitions"
-    body: '''pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})'''
-    description: '''pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})'''
+        prefix: "pixelLabelDatastore.numpartitions"
+        body: '''pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})'''
+        description: '''pixelLabelDatastore.numpartitions(${1:pxds}, ${2:optional_pool})'''
 
 
     "objectDetectorTrainingData":
-    prefix: "objectDetectorTrainingData"
-    body: '''objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
-    description: '''objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
+        prefix: "objectDetectorTrainingData"
+        body: '''objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
+        description: '''objectDetectorTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
 
 
     "boxLabelDatastore.read":
-    prefix: "boxLabelDatastore.read"
-    body: '''[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})'''
-    description: '''[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})'''
+        prefix: "boxLabelDatastore.read"
+        body: '''[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})'''
+        description: '''[${1:data}, ${2:info}] = boxLabelDatastore.read(${1:blds})'''
 
 
     "opticalFlowLK.estimateFlow":
-    prefix: "opticalFlowLK.estimateFlow"
-    body: '''opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})'''
-    description: '''opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        prefix: "opticalFlowLK.estimateFlow"
+        body: '''opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''opticalFlowLK.estimateFlow(${1:opticalFlow}, ${2:I})'''
 
 
     "SURFPoints.plot":
-    prefix: "SURFPoints.plot"
-    body: '''SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-    description: '''SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        prefix: "SURFPoints.plot"
+        body: '''SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''SURFPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
 
 
     "pixelLabelImageDatastore.partitionByIndex":
-    prefix: "pixelLabelImageDatastore.partitionByIndex"
-    body: '''pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})'''
-    description: '''pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})'''
+        prefix: "pixelLabelImageDatastore.partitionByIndex"
+        body: '''pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})'''
+        description: '''pixelLabelImageDatastore.partitionByIndex(${1:pximds}, ${2:ind})'''
 
 
     "opticalFlowHS.estimateFlow":
-    prefix: "opticalFlowHS.estimateFlow"
-    body: '''opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})'''
-    description: '''opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        prefix: "opticalFlowHS.estimateFlow"
+        body: '''opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''opticalFlowHS.estimateFlow(${1:opticalFlow}, ${2:I})'''
 
 
     "undistortImage":
-    prefix: "undistortImage"
-    body: '''undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})'''
-    description: '''undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})'''
+        prefix: "undistortImage"
+        body: '''undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})'''
+        description: '''undistortImage(${1:I}, ${2:cameraParams}, ${3:optional_interp}, 'FillValues', ${4:value}, 'OutputView', ${5:value})'''
 
 
     "boxLabelDatastore":
-    prefix: "boxLabelDatastore"
-    body: '''${1:blds} = boxLabelDatastore(${1:TBL})'''
-    description: '''${1:blds} = boxLabelDatastore(${1:TBL})'''
+        prefix: "boxLabelDatastore"
+        body: '''${1:blds} = boxLabelDatastore(${1:TBL})'''
+        description: '''${1:blds} = boxLabelDatastore(${1:TBL})'''
 
 
     "rpnSoftmaxLayer":
-    prefix: "rpnSoftmaxLayer"
-    body: '''rpnSoftmaxLayer('Name', ${1:value})'''
-    description: '''rpnSoftmaxLayer('Name', ${1:value})'''
+        prefix: "rpnSoftmaxLayer"
+        body: '''rpnSoftmaxLayer('Name', ${1:value})'''
+        description: '''rpnSoftmaxLayer('Name', ${1:value})'''
 
 
     "viewSet.deleteConnection":
-    prefix: "viewSet.deleteConnection"
-    body: '''viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
-    description: '''viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
+        prefix: "viewSet.deleteConnection"
+        body: '''viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
+        description: '''viewSet.deleteConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2})'''
 
 
     "boxLabelDatastore.numpartitions":
-    prefix: "boxLabelDatastore.numpartitions"
-    body: '''${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
-    description: '''${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
+        prefix: "boxLabelDatastore.numpartitions"
+        body: '''${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
+        description: '''${1:N} = boxLabelDatastore.numpartitions(${1:blds}, ${2:optional_pool})'''
 
 
     "pcregisterndt":
-    prefix: "pcregisterndt"
-    body: '''pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})'''
-    description: '''pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})'''
+        prefix: "pcregisterndt"
+        body: '''pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})'''
+        description: '''pcregisterndt(${1:moving}, ${2:fixed}, ${3:gridStep}, 'InitialTransform', ${4:value}, 'OutlierRatio', ${5:value}, 'MaxIterations', ${6:value}, 'Tolerance', ${7:value}, 'Verbose', ${8:value})'''
 
 
     "deeplabv3plusLayers":
-    prefix: "deeplabv3plusLayers"
-    body: '''deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})'''
-    description: '''deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})'''
+        prefix: "deeplabv3plusLayers"
+        body: '''deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})'''
+        description: '''deeplabv3plusLayers(${1:imageSize}, ${2:numClasses}, ${3:network}, 'DownsamplingFactor', ${4:value})'''
 
 
     "estimateFundamentalMatrix":
-    prefix: "estimateFundamentalMatrix"
-    body: '''estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})'''
-    description: '''estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})'''
+        prefix: "estimateFundamentalMatrix"
+        body: '''estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})'''
+        description: '''estimateFundamentalMatrix(${1:matchedPoints1}, ${2:matchedPoints2}, 'Method', ${3:value}, 'OutputClass', ${4:value}, 'NumTrials', ${5:value}, 'DistanceType', ${6:value}, 'DistanceThreshold', ${7:value}, 'Confidence', ${8:value}, 'InlierPercentage', ${9:value}, 'ReportRuntimeError', ${10:value})'''
 
 
     "KAZEPoints.plot":
-    prefix: "KAZEPoints.plot"
-    body: '''KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-    description: '''KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        prefix: "KAZEPoints.plot"
+        body: '''KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''KAZEPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
 
 
     "invertedImageIndex.removeImages":
-    prefix: "invertedImageIndex.removeImages"
-    body: '''invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})'''
-    description: '''invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})'''
+        prefix: "invertedImageIndex.removeImages"
+        body: '''invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})'''
+        description: '''invertedImageIndex.removeImages(${1:imageIndex}, ${2:indices})'''
 
 
     "KAZEPoints.selectStrongest":
-    prefix: "KAZEPoints.selectStrongest"
-    body: '''KAZEPoints.selectStrongest(${1:points}, ${2:N})'''
-    description: '''KAZEPoints.selectStrongest(${1:points}, ${2:N})'''
+        prefix: "KAZEPoints.selectStrongest"
+        body: '''KAZEPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''KAZEPoints.selectStrongest(${1:points}, ${2:N})'''
 
 
     "bboxwarp":
-    prefix: "bboxwarp"
-    body: '''bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})'''
-    description: '''bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})'''
+        prefix: "bboxwarp"
+        body: '''bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})'''
+        description: '''bboxwarp(${1:bboxA}, ${2:tform}, ${3:ref}, 'OverlapThreshold', ${4:value})'''
 
 
     "estimateUncalibratedRectification":
-    prefix: "estimateUncalibratedRectification"
-    body: '''estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})'''
-    description: '''estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})'''
+        prefix: "estimateUncalibratedRectification"
+        body: '''estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})'''
+        description: '''estimateUncalibratedRectification(${1:F}, ${2:inlierPoints1}, ${3:inlierPoints2}, ${4:imagesize})'''
 
 
     "extrinsicsToCameraPose":
-    prefix: "extrinsicsToCameraPose"
-    body: '''extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})'''
-    description: '''extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})'''
+        prefix: "extrinsicsToCameraPose"
+        body: '''extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})'''
+        description: '''extrinsicsToCameraPose(${1:rotationMatrix}, ${2:translationVector})'''
 
 
     "cameraIntrinsics":
-    prefix: "cameraIntrinsics"
-    body: '''cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})'''
-    description: '''cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})'''
+        prefix: "cameraIntrinsics"
+        body: '''cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})'''
+        description: '''cameraIntrinsics(${1:focalLength}, ${2:principalPoint}, ${3:imageSize}, 'RadialDistortion', ${4:value}, 'TangentialDistortion', ${5:value}, 'Skew', ${6:value})'''
 
 
     "invertedImageIndex":
-    prefix: "invertedImageIndex"
-    body: '''invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})'''
-    description: '''invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})'''
+        prefix: "invertedImageIndex"
+        body: '''invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})'''
+        description: '''invertedImageIndex(${1:bag}, ${2:optional_SaveFeatureLocations})'''
 
 
     "showMatchedFeatures":
-    prefix: "showMatchedFeatures"
-    body: '''showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})'''
-    description: '''showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})'''
+        prefix: "showMatchedFeatures"
+        body: '''showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})'''
+        description: '''showMatchedFeatures(${1:I1}, ${2:I2}, ${3:matchedPoints1}, ${4:matchedPoints2}, ${5:optional_method}, 'PlotOptions', ${6:value}, 'Parent', ${7:value})'''
 
 
     "binaryFeatures":
-    prefix: "binaryFeatures"
-    body: '''binaryFeatures(${1:featureVectors})'''
-    description: '''binaryFeatures(${1:featureVectors})'''
+        prefix: "binaryFeatures"
+        body: '''binaryFeatures(${1:featureVectors})'''
+        description: '''binaryFeatures(${1:featureVectors})'''
 
 
     "detectFASTFeatures":
-    prefix: "detectFASTFeatures"
-    body: '''detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})'''
-    description: '''detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})'''
+        prefix: "detectFASTFeatures"
+        body: '''detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})'''
+        description: '''detectFASTFeatures(${1:I}, 'MinQuality', ${2:value}, 'MinContrast', ${3:value}, 'ROI', ${4:value})'''
 
 
     "opticalFlowLK":
-    prefix: "opticalFlowLK"
-    body: '''opticalFlowLK('NoiseThreshold', ${1:value})'''
-    description: '''opticalFlowLK('NoiseThreshold', ${1:value})'''
+        prefix: "opticalFlowLK"
+        body: '''opticalFlowLK('NoiseThreshold', ${1:value})'''
+        description: '''opticalFlowLK('NoiseThreshold', ${1:value})'''
 
 
     "detectHarrisFeatures":
-    prefix: "detectHarrisFeatures"
-    body: '''detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
-    description: '''detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
+        prefix: "detectHarrisFeatures"
+        body: '''detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
+        description: '''detectHarrisFeatures(${1:I}, 'MinQuality', ${2:value}, 'FilterSize', ${3:value}, 'ROI', ${4:value})'''
 
 
     "detectORBFeatures":
-    prefix: "detectORBFeatures"
-    body: '''detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})'''
-    description: '''detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})'''
+        prefix: "detectORBFeatures"
+        body: '''detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})'''
+        description: '''detectORBFeatures(${1:I}, 'ScaleFactor', ${2:value}, 'NumLevels', ${3:value}, 'ROI', ${4:value})'''
 
 
     "ORBPoints.selectUniform":
-    prefix: "ORBPoints.selectUniform"
-    body: '''ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-    description: '''ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        prefix: "ORBPoints.selectUniform"
+        body: '''ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''ORBPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
 
 
     "pcfromkinect":
-    prefix: "pcfromkinect"
-    body: '''pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})'''
-    description: '''pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})'''
+        prefix: "pcfromkinect"
+        body: '''pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})'''
+        description: '''pcfromkinect(${1:depthDevice}, ${2:depthImage}, ${3:colorImage}, ${4:alignment})'''
 
 
     "lineToBorderPoints":
-    prefix: "lineToBorderPoints"
-    body: '''lineToBorderPoints(${1:lines}, ${2:imagesize})'''
-    description: '''lineToBorderPoints(${1:lines}, ${2:imagesize})'''
+        prefix: "lineToBorderPoints"
+        body: '''lineToBorderPoints(${1:lines}, ${2:imagesize})'''
+        description: '''lineToBorderPoints(${1:lines}, ${2:imagesize})'''
 
 
     "pixelLabelTrainingData":
-    prefix: "pixelLabelTrainingData"
-    body: '''pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
-    description: '''pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
+        prefix: "pixelLabelTrainingData"
+        body: '''pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
+        description: '''pixelLabelTrainingData(${1:gTruth}, 'SamplingFactor', ${2:value}, 'WriteLocation', ${3:value}, 'ImageFormat', ${4:value}, 'NamePrefix', ${5:value}, 'Verbose', ${6:value})'''
 
 
     "estimateWorldCameraPose":
-    prefix: "estimateWorldCameraPose"
-    body: '''estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})'''
-    description: '''estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})'''
+        prefix: "estimateWorldCameraPose"
+        body: '''estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})'''
+        description: '''estimateWorldCameraPose(${1:imagePoints}, ${2:worldPoints}, ${3:cameraParams}, 'MaxNumTrials', ${4:value}, 'Confidence', ${5:value}, 'MaxReprojectionError', ${6:value})'''
 
 
     "cameraCalibrationErrors.displayErrors":
-    prefix: "cameraCalibrationErrors.displayErrors"
-    body: '''cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})'''
-    description: '''cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})'''
+        prefix: "cameraCalibrationErrors.displayErrors"
+        body: '''cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})'''
+        description: '''cameraCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:cameraParams})'''
 
 
     "relativeCameraPose":
-    prefix: "relativeCameraPose"
-    body: '''relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})'''
-    description: '''relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})'''
+        prefix: "relativeCameraPose"
+        body: '''relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})'''
+        description: '''relativeCameraPose(${1:M}, ${2:cameraParams}, ${3:inlierPoints1}, ${4:inlierPoints2})'''
 
 
     "boxLabelDatastore.partition":
-    prefix: "boxLabelDatastore.partition"
-    body: '''${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
-    description: '''${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
+        prefix: "boxLabelDatastore.partition"
+        body: '''${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
+        description: '''${1:subds} = boxLabelDatastore.partition(${1:blds}, ${2:N}, ${3:index})'''
 
 
     "opticalFlowLKDoG.estimateFlow":
-    prefix: "opticalFlowLKDoG.estimateFlow"
-    body: '''opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})'''
-    description: '''opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        prefix: "opticalFlowLKDoG.estimateFlow"
+        body: '''opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})'''
+        description: '''opticalFlowLKDoG.estimateFlow(${1:opticalFlow}, ${2:I})'''
 
 
     "pcsegdist":
-    prefix: "pcsegdist"
-    body: '''pcsegdist(${1:ptCloud}, ${2:minDistance})'''
-    description: '''pcsegdist(${1:ptCloud}, ${2:minDistance})'''
+        prefix: "pcsegdist"
+        body: '''pcsegdist(${1:ptCloud}, ${2:minDistance})'''
+        description: '''pcsegdist(${1:ptCloud}, ${2:minDistance})'''
 
 
     "SURFPoints.selectUniform":
-    prefix: "SURFPoints.selectUniform"
-    body: '''SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
-    description: '''SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        prefix: "SURFPoints.selectUniform"
+        body: '''SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
+        description: '''SURFPoints.selectUniform(${1:points}, ${2:N}, ${3:imageSize})'''
 
 
     "opticalFlowFarneback":
-    prefix: "opticalFlowFarneback"
-    body: '''opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})'''
-    description: '''opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})'''
+        prefix: "opticalFlowFarneback"
+        body: '''opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})'''
+        description: '''opticalFlowFarneback('NumPyramidLevels', ${1:value}, 'PyramidScale', ${2:value}, 'NumIterations', ${3:value}, 'NeighborhoodSize', ${4:value}, 'FilterSize', ${5:value})'''
 
 
     "cameraParameters.pointsToWorld":
-    prefix: "cameraParameters.pointsToWorld"
-    body: '''cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
-    description: '''cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
+        prefix: "cameraParameters.pointsToWorld"
+        body: '''cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
+        description: '''cameraParameters.pointsToWorld(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector}, ${4:imagePoints})'''
 
 
     "bagOfFeatures":
-    prefix: "bagOfFeatures"
-    body: '''bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})'''
-    description: '''bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})'''
+        prefix: "bagOfFeatures"
+        body: '''bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})'''
+        description: '''bagOfFeatures(${1:imds}, 'CustomExtractor', ${2:value}, 'VocabularySize', ${3:value}, 'StrongestFeatures', ${4:value}, 'Verbose', ${5:value}, 'PointSelection', ${6:value}, 'GridStep', ${7:value}, 'BlockWidth', ${8:value}, 'Upright', ${9:value})'''
 
 
     "fisheyeCalibrationErrors.displayErrors":
-    prefix: "fisheyeCalibrationErrors.displayErrors"
-    body: '''fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})'''
-    description: '''fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})'''
+        prefix: "fisheyeCalibrationErrors.displayErrors"
+        body: '''fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})'''
+        description: '''fisheyeCalibrationErrors.displayErrors(${1:estimationErrors}, ${2:fisheyeParams})'''
 
 
     "viewSet.updateView":
-    prefix: "viewSet.updateView"
-    body: '''viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
-    description: '''viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
+        prefix: "viewSet.updateView"
+        body: '''viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
+        description: '''viewSet.updateView(${1:vSet}, ${2:viewId}, 'Points', ${3:value}, 'Orientation', ${4:value}, 'Location', ${5:value})'''
 
 
     "trainImageCategoryClassifier":
-    prefix: "trainImageCategoryClassifier"
-    body: '''trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})'''
-    description: '''trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})'''
+        prefix: "trainImageCategoryClassifier"
+        body: '''trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})'''
+        description: '''trainImageCategoryClassifier(${1:imds}, ${2:bag}, 'Verbose', ${3:value}, 'LearnerOptions', ${4:value})'''
 
 
     "triangulate":
-    prefix: "triangulate"
-    body: '''triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})'''
-    description: '''triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})'''
+        prefix: "triangulate"
+        body: '''triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})'''
+        description: '''triangulate(${1:matchedPoints1}, ${2:matchedPoints2}, ${3:stereoParams})'''
 
 
     "plotCamera":
-    prefix: "plotCamera"
-    body: '''plotCamera(${1:optional_cameraTable})'''
-    description: '''plotCamera(${1:optional_cameraTable})'''
+        prefix: "plotCamera"
+        body: '''plotCamera(${1:optional_cameraTable})'''
+        description: '''plotCamera(${1:optional_cameraTable})'''
 
 
     "ORBPoints.selectStrongest":
-    prefix: "ORBPoints.selectStrongest"
-    body: '''ORBPoints.selectStrongest(${1:points}, ${2:N})'''
-    description: '''ORBPoints.selectStrongest(${1:points}, ${2:N})'''
+        prefix: "ORBPoints.selectStrongest"
+        body: '''ORBPoints.selectStrongest(${1:points}, ${2:N})'''
+        description: '''ORBPoints.selectStrongest(${1:points}, ${2:N})'''
 
 
     "evaluateSemanticSegmentation":
-    prefix: "evaluateSemanticSegmentation"
-    body: '''${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
-    description: '''${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
+        prefix: "evaluateSemanticSegmentation"
+        body: '''${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
+        description: '''${1:metrics} = evaluateSemanticSegmentation(${1:pxdsResults}, ${2:pxdsTruth}, 'Metrics', ${3:value}, 'Verbose', ${4:value})'''
 
 
     "opticalFlowLKDoG":
-    prefix: "opticalFlowLKDoG"
-    body: '''opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})'''
-    description: '''opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})'''
+        prefix: "opticalFlowLKDoG"
+        body: '''opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})'''
+        description: '''opticalFlowLKDoG('NumFrames', ${1:value}, 'ImageFilterSigma', ${2:value}, 'GradientFilterSigma', ${3:value}, 'NoiseThreshold', ${4:value})'''
 
 
     "viewSet.findTracks":
-    prefix: "viewSet.findTracks"
-    body: '''viewSet.findTracks(${1:vSet}, ${2:viewIds})'''
-    description: '''viewSet.findTracks(${1:vSet}, ${2:viewIds})'''
+        prefix: "viewSet.findTracks"
+        body: '''viewSet.findTracks(${1:vSet}, ${2:viewIds})'''
+        description: '''viewSet.findTracks(${1:vSet}, ${2:viewIds})'''
 
 
     "MSERRegions.plot":
-    prefix: "MSERRegions.plot"
-    body: '''MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})'''
-    description: '''MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})'''
+        prefix: "MSERRegions.plot"
+        body: '''MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})'''
+        description: '''MSERRegions.plot(${1:points}, ${2:optional_ax}, 'showEllipses', ${3:value}, 'ShowOrientation', ${4:value}, 'showPixelList', ${5:value})'''
 
 
     "pixelClassificationLayer":
-    prefix: "pixelClassificationLayer"
-    body: '''pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})'''
-    description: '''pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})'''
+        prefix: "pixelClassificationLayer"
+        body: '''pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})'''
+        description: '''pixelClassificationLayer('Classes', ${1:value}, 'ClassWeights', ${2:value}, 'Name', ${3:value})'''
 
 
     "roiMaxPooling2dLayer":
-    prefix: "roiMaxPooling2dLayer"
-    body: '''roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})'''
-    description: '''roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})'''
+        prefix: "roiMaxPooling2dLayer"
+        body: '''roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})'''
+        description: '''roiMaxPooling2dLayer(${1:outputSize}, 'Name', ${2:value})'''
 
 
     "pcdenoise":
-    prefix: "pcdenoise"
-    body: '''pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})'''
-    description: '''pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})'''
+        prefix: "pcdenoise"
+        body: '''pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})'''
+        description: '''pcdenoise(${1:ptCloudIn}, 'NumNeighbors', ${2:value}, 'Threshold', ${3:value})'''
 
 
     "extractFeatures":
-    prefix: "extractFeatures"
-    body: '''extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})'''
-    description: '''extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})'''
+        prefix: "extractFeatures"
+        body: '''extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})'''
+        description: '''extractFeatures(${1:I}, ${2:points}, 'Method', ${3:value}, 'BlockSize', ${4:value}, 'Upright', ${5:value}, 'FeatureSize', ${6:value})'''
 
 
     "groundTruthDataSource":
-    prefix: "groundTruthDataSource"
-    body: '''groundTruthDataSource(${1:videoFileName})'''
-    description: '''groundTruthDataSource(${1:videoFileName})'''
+        prefix: "groundTruthDataSource"
+        body: '''groundTruthDataSource(${1:videoFileName})'''
+        description: '''groundTruthDataSource(${1:videoFileName})'''
 
 
     "velodyneFileReader.hasFrame":
-    prefix: "velodyneFileReader.hasFrame"
-    body: '''velodyneFileReader.hasFrame(${1:veloReader})'''
-    description: '''velodyneFileReader.hasFrame(${1:veloReader})'''
+        prefix: "velodyneFileReader.hasFrame"
+        body: '''velodyneFileReader.hasFrame(${1:veloReader})'''
+        description: '''velodyneFileReader.hasFrame(${1:veloReader})'''
 
 
     "bundleAdjustment":
-    prefix: "bundleAdjustment"
-    body: '''bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})'''
-    description: '''bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})'''
+        prefix: "bundleAdjustment"
+        body: '''bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})'''
+        description: '''bundleAdjustment(${1:xyzPoints}, ${2:pointTracks}, ${3:cameraPoses}, ${4:cameraParams}, 'MaxIterations', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'PointsUndistorted', ${8:value}, 'FixedViewIDs', ${9:value}, 'Verbose', ${10:value})'''
 
 
     "rotationMatrixToVector":
-    prefix: "rotationMatrixToVector"
-    body: '''rotationMatrixToVector(${1:rotationMatrix})'''
-    description: '''rotationMatrixToVector(${1:rotationMatrix})'''
+        prefix: "rotationMatrixToVector"
+        body: '''rotationMatrixToVector(${1:rotationMatrix})'''
+        description: '''rotationMatrixToVector(${1:rotationMatrix})'''
 
 
     "estimateAnchorBoxes":
-    prefix: "estimateAnchorBoxes"
-    body: '''estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})'''
-    description: '''estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})'''
+        prefix: "estimateAnchorBoxes"
+        body: '''estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})'''
+        description: '''estimateAnchorBoxes(${1:trainingData}, ${2:numAnchors})'''
 
 
     "retrieveImages":
-    prefix: "retrieveImages"
-    body: '''retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})'''
-    description: '''retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})'''
+        prefix: "retrieveImages"
+        body: '''retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})'''
+        description: '''retrieveImages(${1:queryImage}, ${2:imageIndex}, 'NumResults', ${3:value}, 'ROI', ${4:value})'''
 
 
     "KAZEPoints":
-    prefix: "KAZEPoints"
-    body: '''KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
-    description: '''KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        prefix: "KAZEPoints"
+        body: '''KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
+        description: '''KAZEPoints(${1:location}, 'Scale', ${2:value}, 'Metric', ${3:value}, 'Orientation', ${4:value})'''
 
 
     "disparitySGM":
-    prefix: "disparitySGM"
-    body: '''disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})'''
-    description: '''disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})'''
+        prefix: "disparitySGM"
+        body: '''disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})'''
+        description: '''disparitySGM(${1:I1}, ${2:I2}, 'DisparityRange', ${3:value}, 'UniquenessThreshold', ${4:value})'''
 
 
     "invertedImageIndex.addImages":
-    prefix: "invertedImageIndex.addImages"
-    body: '''invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})'''
-    description: '''invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})'''
+        prefix: "invertedImageIndex.addImages"
+        body: '''invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})'''
+        description: '''invertedImageIndex.addImages(${1:imageIndex}, ${2:imds})'''
 
 
     "estimateCameraParameters":
-    prefix: "estimateCameraParameters"
-    body: '''estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})'''
-    description: '''estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})'''
+        prefix: "estimateCameraParameters"
+        body: '''estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})'''
+        description: '''estimateCameraParameters(${1:imagePoints}, ${2:worldPoints}, 'WorldUnits', ${3:value}, 'EstimateSkew', ${4:value}, 'NumRadialDistortionCoefficients', ${5:value}, 'EstimateTangentialDistortion', ${6:value}, 'InitialIntrinsicMatrix', ${7:value}, 'InitialRadialDistortion', ${8:value}, 'ImageSize', ${9:value})'''
 
 
     "trainYOLOv2ObjectDetector":
-    prefix: "trainYOLOv2ObjectDetector"
-    body: '''trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})'''
-    description: '''trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})'''
+        prefix: "trainYOLOv2ObjectDetector"
+        body: '''trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})'''
+        description: '''trainYOLOv2ObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'TrainingImageSize', ${4:value})'''
 
 
     "boxLabelDatastore.reset":
-    prefix: "boxLabelDatastore.reset"
-    body: '''boxLabelDatastore.reset(${1:blds})'''
-    description: '''boxLabelDatastore.reset(${1:blds})'''
+        prefix: "boxLabelDatastore.reset"
+        body: '''boxLabelDatastore.reset(${1:blds})'''
+        description: '''boxLabelDatastore.reset(${1:blds})'''
 
 
     "isfilterseparable":
-    prefix: "isfilterseparable"
-    body: '''isfilterseparable(${1:H})'''
-    description: '''isfilterseparable(${1:H})'''
+        prefix: "isfilterseparable"
+        body: '''isfilterseparable(${1:H})'''
+        description: '''isfilterseparable(${1:H})'''
 
 
     "rcnnObjectDetector.classifyRegions":
-    prefix: "rcnnObjectDetector.classifyRegions"
-    body: '''rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})'''
-    description: '''rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})'''
+        prefix: "rcnnObjectDetector.classifyRegions"
+        body: '''rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})'''
+        description: '''rcnnObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'MiniBatchSize', ${4:value}, 'ExecutionEnvironment', ${5:value})'''
 
 
     "rpnClassificationLayer":
-    prefix: "rpnClassificationLayer"
-    body: '''rpnClassificationLayer('Name', ${1:value})'''
-    description: '''rpnClassificationLayer('Name', ${1:value})'''
+        prefix: "rpnClassificationLayer"
+        body: '''rpnClassificationLayer('Name', ${1:value})'''
+        description: '''rpnClassificationLayer('Name', ${1:value})'''
 
 
     "yolov2Layers":
-    prefix: "yolov2Layers"
-    body: '''yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})'''
-    description: '''yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})'''
+        prefix: "yolov2Layers"
+        body: '''yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})'''
+        description: '''yolov2Layers(${1:imageSize}, ${2:numClasses}, ${3:anchorBoxes}, ${4:network}, ${5:featureLayer}, 'ReorgLayerSource', ${6:value})'''
 
 
     "videoLabeler":
-    prefix: "videoLabeler"
-    body: '''videoLabeler(${1:optional_videoFileName})'''
-    description: '''videoLabeler(${1:optional_videoFileName})'''
+        prefix: "videoLabeler"
+        body: '''videoLabeler(${1:optional_videoFileName})'''
+        description: '''videoLabeler(${1:optional_videoFileName})'''
 
 
     "fastRCNNObjectDetector.classifyRegions":
-    prefix: "fastRCNNObjectDetector.classifyRegions"
-    body: '''fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})'''
-    description: '''fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})'''
+        prefix: "fastRCNNObjectDetector.classifyRegions"
+        body: '''fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})'''
+        description: '''fastRCNNObjectDetector.classifyRegions(${1:detector}, ${2:I}, ${3:optional_rois}, 'ExecutionEnvironment', ${4:value})'''
 
 
     "velodyneFileReader.readFrame":
-    prefix: "velodyneFileReader.readFrame"
-    body: '''velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})'''
-    description: '''velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})'''
+        prefix: "velodyneFileReader.readFrame"
+        body: '''velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})'''
+        description: '''velodyneFileReader.readFrame(${1:veloReader}, ${2:optional_frameNumber})'''
 
 
     "viewSet.deleteView":
-    prefix: "viewSet.deleteView"
-    body: '''viewSet.deleteView(${1:vSet}, ${2:viewId})'''
-    description: '''viewSet.deleteView(${1:vSet}, ${2:viewId})'''
+        prefix: "viewSet.deleteView"
+        body: '''viewSet.deleteView(${1:vSet}, ${2:viewId})'''
+        description: '''viewSet.deleteView(${1:vSet}, ${2:viewId})'''
 
 
     "fcnLayers":
-    prefix: "fcnLayers"
-    body: '''fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})'''
-    description: '''fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})'''
+        prefix: "fcnLayers"
+        body: '''fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})'''
+        description: '''fcnLayers(${1:imageSize}, ${2:numClasses}, 'Type', ${3:value})'''
 
 
     "undistortFisheyePoints":
-    prefix: "undistortFisheyePoints"
-    body: '''undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})'''
-    description: '''undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})'''
+        prefix: "undistortFisheyePoints"
+        body: '''undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})'''
+        description: '''undistortFisheyePoints(${1:points}, ${2:intrinsics}, ${3:optional_scaleFactor})'''
 
 
     "trainFastRCNNObjectDetector":
-    prefix: "trainFastRCNNObjectDetector"
-    body: '''trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})'''
-    description: '''trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})'''
+        prefix: "trainFastRCNNObjectDetector"
+        body: '''trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})'''
+        description: '''trainFastRCNNObjectDetector(${1:trainingData}, ${2:network}, ${3:options}, 'RegionProposalFcn', ${4:value}, 'PositiveOverlapRange', ${5:value}, 'NegativeOverlapRange', ${6:value}, 'NumStrongestRegions', ${7:value}, 'NumRegionsToSample', ${8:value}, 'SmallestImageDimension', ${9:value}, 'FreezeBatchNormalization', ${10:value})'''
 
 
     "integralFilter":
-    prefix: "integralFilter"
-    body: '''integralFilter(${1:intI}, ${2:H})'''
-    description: '''integralFilter(${1:intI}, ${2:H})'''
+        prefix: "integralFilter"
+        body: '''integralFilter(${1:intI}, ${2:H})'''
+        description: '''integralFilter(${1:intI}, ${2:H})'''
 
 
     "estimateFisheyeParameters":
-    prefix: "estimateFisheyeParameters"
-    body: '''estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})'''
-    description: '''estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})'''
+        prefix: "estimateFisheyeParameters"
+        body: '''estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})'''
+        description: '''estimateFisheyeParameters(${1:imagePoints}, ${2:worldPoints}, ${3:imageSize}, 'EstimateAlignment', ${4:value}, 'WorldUnits', ${5:value})'''
 
 
     "bboxcrop":
-    prefix: "bboxcrop"
-    body: '''bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})'''
-    description: '''bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})'''
+        prefix: "bboxcrop"
+        body: '''bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})'''
+        description: '''bboxcrop(${1:bboxA}, ${2:win}, 'OverlapThreshold', ${3:value})'''
 
 
     "sphereModel.plot":
-    prefix: "sphereModel.plot"
-    body: '''sphereModel.plot(${1:model}, 'Parent', ${2:value})'''
-    description: '''sphereModel.plot(${1:model}, 'Parent', ${2:value})'''
+        prefix: "sphereModel.plot"
+        body: '''sphereModel.plot(${1:model}, 'Parent', ${2:value})'''
+        description: '''sphereModel.plot(${1:model}, 'Parent', ${2:value})'''
 
 
     "imageCategoryClassifier.evaluate":
-    prefix: "imageCategoryClassifier.evaluate"
-    body: '''imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})'''
-    description: '''imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})'''
+        prefix: "imageCategoryClassifier.evaluate"
+        body: '''imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})'''
+        description: '''imageCategoryClassifier.evaluate(${1:classifier}, ${2:imds})'''
 
 
     "peopleDetectorACF":
-    prefix: "peopleDetectorACF"
-    body: '''peopleDetectorACF(${1:optional_name})'''
-    description: '''peopleDetectorACF(${1:optional_name})'''
+        prefix: "peopleDetectorACF"
+        body: '''peopleDetectorACF(${1:optional_name})'''
+        description: '''peopleDetectorACF(${1:optional_name})'''
 
 
     "cameraParameters":
-    prefix: "cameraParameters"
-    body: '''cameraParameters(${1:paramStruct})'''
-    description: '''cameraParameters(${1:paramStruct})'''
+        prefix: "cameraParameters"
+        body: '''cameraParameters(${1:paramStruct})'''
+        description: '''cameraParameters(${1:paramStruct})'''
 
 
     "cameraMatrix":
-    prefix: "cameraMatrix"
-    body: '''cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})'''
-    description: '''cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})'''
+        prefix: "cameraMatrix"
+        body: '''cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})'''
+        description: '''cameraMatrix(${1:cameraParams}, ${2:rotationMatrix}, ${3:translationVector})'''
 
 
     "labelDefinitionCreator":
-    prefix: "labelDefinitionCreator"
-    body: '''labelDefinitionCreator(${1:optional_ldc})'''
-    description: '''labelDefinitionCreator(${1:optional_ldc})'''
+        prefix: "labelDefinitionCreator"
+        body: '''labelDefinitionCreator(${1:optional_ldc})'''
+        description: '''labelDefinitionCreator(${1:optional_ldc})'''
 
 
     "viewSet.hasView":
-    prefix: "viewSet.hasView"
-    body: '''viewSet.hasView(${1:vSet}, ${2:viewId})'''
-    description: '''viewSet.hasView(${1:vSet}, ${2:viewId})'''
+        prefix: "viewSet.hasView"
+        body: '''viewSet.hasView(${1:vSet}, ${2:viewId})'''
+        description: '''viewSet.hasView(${1:vSet}, ${2:viewId})'''
 
 
     "viewSet.updateConnection":
-    prefix: "viewSet.updateConnection"
-    body: '''viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
-    description: '''viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
+        prefix: "viewSet.updateConnection"
+        body: '''viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
+        description: '''viewSet.updateConnection(${1:vSet}, ${2:viewId1}, ${3:viewId2}, 'Matches', ${4:value}, 'Orientation', ${5:value}, 'Location', ${6:value})'''
 
 
     "epipolarLine":
-    prefix: "epipolarLine"
-    body: '''epipolarLine(${1:F}, ${2:points})'''
-    description: '''epipolarLine(${1:F}, ${2:points})'''
+        prefix: "epipolarLine"
+        body: '''epipolarLine(${1:F}, ${2:points})'''
+        description: '''epipolarLine(${1:F}, ${2:points})'''
 
 
     "viewSet.poses":
-    prefix: "viewSet.poses"
-    body: '''viewSet.poses(${1:vSet}, ${2:optional_viewIds})'''
-    description: '''viewSet.poses(${1:vSet}, ${2:optional_viewIds})'''
+        prefix: "viewSet.poses"
+        body: '''viewSet.poses(${1:vSet}, ${2:optional_viewIds})'''
+        description: '''viewSet.poses(${1:vSet}, ${2:optional_viewIds})'''
 
 
     "imageLabeler":
-    prefix: "imageLabeler"
-    body: '''imageLabeler(${1:optional_imageFolder})'''
-    description: '''imageLabeler(${1:optional_imageFolder})'''
+        prefix: "imageLabeler"
+        body: '''imageLabeler(${1:optional_imageFolder})'''
+        description: '''imageLabeler(${1:optional_imageFolder})'''
 
 
     "BRISKPoints.plot":
-    prefix: "BRISKPoints.plot"
-    body: '''BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
-    description: '''BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        prefix: "BRISKPoints.plot"
+        body: '''BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
+        description: '''BRISKPoints.plot(${1:points}, ${2:optional_ax}, 'ShowOrientation', ${3:value}, 'ShowScale', ${4:value})'''
 
 
     "ocrTrainer":
-    prefix: "ocrTrainer"
-    body: '''ocrTrainer(${1:optional_sessionFile})'''
-    description: '''ocrTrainer(${1:optional_sessionFile})'''
+        prefix: "ocrTrainer"
+        body: '''ocrTrainer(${1:optional_sessionFile})'''
+        description: '''ocrTrainer(${1:optional_sessionFile})'''
 
 
     "MSERRegions":
-    prefix: "MSERRegions"
-    body: '''MSERRegions(${1:pixellist})'''
-    description: '''MSERRegions(${1:pixellist})'''
+        prefix: "MSERRegions"
+        body: '''MSERRegions(${1:pixellist})'''
+        description: '''MSERRegions(${1:pixellist})'''
 
 
     "reconstructScene":
-    prefix: "reconstructScene"
-    body: '''reconstructScene(${1:disparityMap}, ${2:stereoParams})'''
-    description: '''reconstructScene(${1:disparityMap}, ${2:stereoParams})'''
+        prefix: "reconstructScene"
+        body: '''reconstructScene(${1:disparityMap}, ${2:stereoParams})'''
+        description: '''reconstructScene(${1:disparityMap}, ${2:stereoParams})'''
 
 
     "detectKAZEFeatures":
-    prefix: "detectKAZEFeatures"
-    body: '''detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})'''
-    description: '''detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})'''
+        prefix: "detectKAZEFeatures"
+        body: '''detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})'''
+        description: '''detectKAZEFeatures(${1:I}, 'Diffusion', ${2:value}, 'Threshold', ${3:value}, 'NumOctaves', ${4:value}, 'NumScaleLevels', ${5:value}, 'ROI', ${6:value})'''
 
 
     "extractHOGFeatures":
-    prefix: "extractHOGFeatures"
-    body: '''extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})'''
-    description: '''extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})'''
+        prefix: "extractHOGFeatures"
+        body: '''extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})'''
+        description: '''extractHOGFeatures(${1:I}, ${2:optional_points}, 'CellSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOverlap', ${5:value}, 'NumBins', ${6:value}, 'UseSignedOrientation', ${7:value})'''
 
 
     "extractLBPFeatures":
-    prefix: "extractLBPFeatures"
-    body: '''extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})'''
-    description: '''extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})'''
+        prefix: "extractLBPFeatures"
+        body: '''extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})'''
+        description: '''extractLBPFeatures(${1:I}, 'NumNeighbors', ${2:value}, 'Radius', ${3:value}, 'Upright', ${4:value}, 'Interpolation', ${5:value}, 'CellSize', ${6:value}, 'Normalization', ${7:value})'''
 
 
     "fisheyeIntrinsics":
-    prefix: "fisheyeIntrinsics"
-    body: '''fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})'''
-    description: '''fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})'''
+        prefix: "fisheyeIntrinsics"
+        body: '''fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})'''
+        description: '''fisheyeIntrinsics(${1:mappingCoeffecients}, ${2:imageSize}, ${3:distortionCenter}, ${4:optional_stretchMatrix})'''
 
 
     "isEpipoleInImage":
-    prefix: "isEpipoleInImage"
-    body: '''isEpipoleInImage(${1:F}, ${2:imagesize})'''
-    description: '''isEpipoleInImage(${1:F}, ${2:imagesize})'''
+        prefix: "isEpipoleInImage"
+        body: '''isEpipoleInImage(${1:F}, ${2:imagesize})'''
+        description: '''isEpipoleInImage(${1:F}, ${2:imagesize})'''
 
 
     "yolov2ReorgLayer":
-    prefix: "yolov2ReorgLayer"
-    body: '''yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})'''
-    description: '''yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})'''
+        prefix: "yolov2ReorgLayer"
+        body: '''yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})'''
+        description: '''yolov2ReorgLayer(${1:stride}, 'Name', ${2:value})'''
 
 
     "imageCategoryClassifier.predict":
-    prefix: "imageCategoryClassifier.predict"
-    body: '''imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})'''
-    description: '''imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})'''
+        prefix: "imageCategoryClassifier.predict"
+        body: '''imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})'''
+        description: '''imageCategoryClassifier.predict(${1:categoryClassifier}, ${2:imds})'''
 
 
     "matchFeatures":
-    prefix: "matchFeatures"
-    body: '''matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})'''
-    description: '''matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})'''
+        prefix: "matchFeatures"
+        body: '''matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})'''
+        description: '''matchFeatures(${1:features1}, ${2:features2}, 'Method', ${3:value}, 'MatchThreshold', ${4:value}, 'MaxRatio', ${5:value}, 'Metric', ${6:value}, 'Unique', ${7:value})'''
 
 
     "acfObjectDetector.detect":
-    prefix: "acfObjectDetector.detect"
-    body: '''acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})'''
-    description: '''acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})'''
+        prefix: "acfObjectDetector.detect"
+        body: '''acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})'''
+        description: '''acfObjectDetector.detect(${1:detector}, ${2:I}, ${3:optional_roi}, 'NumScaleLevels', ${4:value}, 'WindowStride', ${5:value}, 'SelectStrongest', ${6:value}, 'MinSize', ${7:value}, 'MaxSize', ${8:value}, 'Threshold', ${9:value})'''
 
 
     "yolov2OutputLayer":
-    prefix: "yolov2OutputLayer"
-    body: '''yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})'''
-    description: '''yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})'''
+        prefix: "yolov2OutputLayer"
+        body: '''yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})'''
+        description: '''yolov2OutputLayer(${1:anchorBoxes}, 'Name', ${2:value}, 'LossFactors', ${3:value})'''
 
 
     "insertMarker":
-    prefix: "insertMarker"
-    body: '''insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})'''
-    description: '''insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})'''
+        prefix: "insertMarker"
+        body: '''insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})'''
+        description: '''insertMarker(${1:I}, ${2:position}, ${3:optional_marker}, 'Size', ${4:value}, 'Color', ${5:value})'''
 
 
     "velodyneFileReader":
-    prefix: "velodyneFileReader"
-    body: '''velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})'''
-    description: '''velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})'''
+        prefix: "velodyneFileReader"
+        body: '''velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})'''
+        description: '''velodyneFileReader(${1:filename}, ${2:deviceModel}, 'CalibrationFile', ${3:value})'''
 
 
     "boxLabelDatastore.hasdata":
-    prefix: "boxLabelDatastore.hasdata"
-    body: '''${1:TF} = boxLabelDatastore.hasdata(${1:blds})'''
-    description: '''${1:TF} = boxLabelDatastore.hasdata(${1:blds})'''
+        prefix: "boxLabelDatastore.hasdata"
+        body: '''${1:TF} = boxLabelDatastore.hasdata(${1:blds})'''
+        description: '''${1:TF} = boxLabelDatastore.hasdata(${1:blds})'''
 
 
     "stereoParameters":
-    prefix: "stereoParameters"
-    body: '''stereoParameters(${1:paramStruct})'''
-    description: '''stereoParameters(${1:paramStruct})'''
+        prefix: "stereoParameters"
+        body: '''stereoParameters(${1:paramStruct})'''
+        description: '''stereoParameters(${1:paramStruct})'''
 
 
     "cylinderModel.plot":
-    prefix: "cylinderModel.plot"
-    body: '''cylinderModel.plot(${1:model}, 'Parent', ${2:value})'''
-    description: '''cylinderModel.plot(${1:model}, 'Parent', ${2:value})'''
+        prefix: "cylinderModel.plot"
+        body: '''cylinderModel.plot(${1:model}, 'Parent', ${2:value})'''
+        description: '''cylinderModel.plot(${1:model}, 'Parent', ${2:value})'''
 
 
     "opticalFlow":
-    prefix: "opticalFlow"
-    body: '''opticalFlow(${1:Vx}, ${2:Vy})'''
-    description: '''opticalFlow(${1:Vx}, ${2:Vy})'''
+        prefix: "opticalFlow"
+        body: '''opticalFlow(${1:Vx}, ${2:Vy})'''
+        description: '''opticalFlow(${1:Vx}, ${2:Vy})'''
 

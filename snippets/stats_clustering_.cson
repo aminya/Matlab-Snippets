@@ -1,8 +1,8 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "evalclusters":
-    prefix: "evalclusters"
-    body: '''evalclusters(${1:x}, ${2:clust}, ${3:criterion}, 'KList', ${4:value}, 'Distance', ${5:value}, 'ClusterPriors', ${6:value})'''
-    description: '''evalclusters(${1:x}, ${2:clust}, ${3:criterion}, 'KList', ${4:value}, 'Distance', ${5:value}, 'ClusterPriors', ${6:value})'''
+        prefix: "evalclusters"
+        body: '''evalclusters(${1:x}, ${2:clust}, ${3:criterion}, 'KList', ${4:value}, 'Distance', ${5:value}, 'ClusterPriors', ${6:value})'''
+        description: '''evalclusters(${1:x}, ${2:clust}, ${3:criterion}, 'KList', ${4:value}, 'Distance', ${5:value}, 'ClusterPriors', ${6:value})'''
 

@@ -1,14 +1,14 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "coder.hardware":
-    prefix: "coder.hardware"
-    body: '''coder.hardware(${1:name})'''
-    description: '''coder.hardware(${1:name})'''
+        prefix: "coder.hardware"
+        body: '''coder.hardware(${1:name})'''
+        description: '''coder.hardware(${1:name})'''
 
 
     "targetHardware":
-    prefix: "targetHardware"
-    body: '''${1:obj} = targetHardware(${1:hardwareName})'''
-    description: '''${1:obj} = targetHardware(${1:hardwareName})'''
+        prefix: "targetHardware"
+        body: '''${1:obj} = targetHardware(${1:hardwareName})'''
+        description: '''${1:obj} = targetHardware(${1:hardwareName})'''
 

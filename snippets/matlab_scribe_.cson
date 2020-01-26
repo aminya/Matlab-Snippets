@@ -1,20 +1,20 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "colorbar":
-    prefix: "colorbar"
-    body: '''${1:leg} = colorbar(${1:off})'''
-    description: '''${1:leg} = colorbar(${1:off})'''
+        prefix: "colorbar"
+        body: '''${1:leg} = colorbar(${1:off})'''
+        description: '''${1:leg} = colorbar(${1:off})'''
 
 
     "annotation":
-    prefix: "annotation"
-    body: '''${1:anno_obj_handle} = annotation(${1:optional_handle}, ${2:annotation}, ${3:optional_xywh}, ${4:opts})'''
-    description: '''${1:anno_obj_handle} = annotation(${1:optional_handle}, ${2:annotation}, ${3:optional_xywh}, ${4:opts})'''
+        prefix: "annotation"
+        body: '''${1:anno_obj_handle} = annotation(${1:optional_handle}, ${2:annotation}, ${3:optional_xywh}, ${4:opts})'''
+        description: '''${1:anno_obj_handle} = annotation(${1:optional_handle}, ${2:annotation}, ${3:optional_xywh}, ${4:opts})'''
 
 
     "legend":
-    prefix: "legend"
-    body: '''${1:leg} = legend(${1:optional_ax}, ${2:flag})'''
-    description: '''${1:leg} = legend(${1:optional_ax}, ${2:flag})'''
+        prefix: "legend"
+        body: '''${1:leg} = legend(${1:optional_ax}, ${2:flag})'''
+        description: '''${1:leg} = legend(${1:optional_ax}, ${2:flag})'''
 

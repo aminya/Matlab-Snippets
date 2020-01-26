@@ -1,122 +1,122 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "rxsite.sigstrength":
-    prefix: "rxsite.sigstrength"
-    body: '''rxsite.sigstrength(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'PropagationModel', ${5:value}, 'Map', ${6:value})'''
-    description: '''rxsite.sigstrength(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'PropagationModel', ${5:value}, 'Map', ${6:value})'''
+        prefix: "rxsite.sigstrength"
+        body: '''rxsite.sigstrength(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'PropagationModel', ${5:value}, 'Map', ${6:value})'''
+        description: '''rxsite.sigstrength(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'PropagationModel', ${5:value}, 'Map', ${6:value})'''
 
 
     "rfprop.AntennaSite.los":
-    prefix: "rfprop.AntennaSite.los"
-    body: '''rfprop.AntennaSite.los(${1:site1}, ${2:site2}, 'VisibleColor', ${3:value}, 'ObstructedColor', ${4:value}, 'Resolution', ${5:value}, 'Map', ${6:value})'''
-    description: '''rfprop.AntennaSite.los(${1:site1}, ${2:site2}, 'VisibleColor', ${3:value}, 'ObstructedColor', ${4:value}, 'Resolution', ${5:value}, 'Map', ${6:value})'''
+        prefix: "rfprop.AntennaSite.los"
+        body: '''rfprop.AntennaSite.los(${1:site1}, ${2:site2}, 'VisibleColor', ${3:value}, 'ObstructedColor', ${4:value}, 'Resolution', ${5:value}, 'Map', ${6:value})'''
+        description: '''rfprop.AntennaSite.los(${1:site1}, ${2:site2}, 'VisibleColor', ${3:value}, 'ObstructedColor', ${4:value}, 'Resolution', ${5:value}, 'Map', ${6:value})'''
 
 
     "txsite.coverage":
-    prefix: "txsite.coverage"
-    body: '''txsite.coverage(${1:tx}, ${2:optional_rx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'SignalStrengths', ${5:value}, 'PropagationModel', ${6:value}, 'MaxRange', ${7:value}, 'Resolution', ${8:value}, 'ReceiverGain', ${9:value}, 'ReceiverAntennaHeight', ${10:value}, 'Colors', ${11:value}, 'ColorLimits', ${12:value}, 'Colormap', ${13:value}, 'Transparency', ${14:value}, 'ShowLegend', ${15:value}, 'Map', ${16:value})'''
-    description: '''txsite.coverage(${1:tx}, ${2:optional_rx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'SignalStrengths', ${5:value}, 'PropagationModel', ${6:value}, 'MaxRange', ${7:value}, 'Resolution', ${8:value}, 'ReceiverGain', ${9:value}, 'ReceiverAntennaHeight', ${10:value}, 'Colors', ${11:value}, 'ColorLimits', ${12:value}, 'Colormap', ${13:value}, 'Transparency', ${14:value}, 'ShowLegend', ${15:value}, 'Map', ${16:value})'''
+        prefix: "txsite.coverage"
+        body: '''txsite.coverage(${1:tx}, ${2:optional_rx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'SignalStrengths', ${5:value}, 'PropagationModel', ${6:value}, 'MaxRange', ${7:value}, 'Resolution', ${8:value}, 'ReceiverGain', ${9:value}, 'ReceiverAntennaHeight', ${10:value}, 'Colors', ${11:value}, 'ColorLimits', ${12:value}, 'Colormap', ${13:value}, 'Transparency', ${14:value}, 'ShowLegend', ${15:value}, 'Map', ${16:value})'''
+        description: '''txsite.coverage(${1:tx}, ${2:optional_rx}, ${3:optional_PropagationModel}, 'Type', ${4:value}, 'SignalStrengths', ${5:value}, 'PropagationModel', ${6:value}, 'MaxRange', ${7:value}, 'Resolution', ${8:value}, 'ReceiverGain', ${9:value}, 'ReceiverAntennaHeight', ${10:value}, 'Colors', ${11:value}, 'ColorLimits', ${12:value}, 'Colormap', ${13:value}, 'Transparency', ${14:value}, 'ShowLegend', ${15:value}, 'Map', ${16:value})'''
 
 
     "txsite":
-    prefix: "txsite"
-    body: '''txsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'TransmitterFrequency', ${8:value}, 'TransmitterPower', ${9:value})'''
-    description: '''txsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'TransmitterFrequency', ${8:value}, 'TransmitterPower', ${9:value})'''
+        prefix: "txsite"
+        body: '''txsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'TransmitterFrequency', ${8:value}, 'TransmitterPower', ${9:value})'''
+        description: '''txsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'TransmitterFrequency', ${8:value}, 'TransmitterPower', ${9:value})'''
 
 
     "removeCustomTerrain":
-    prefix: "removeCustomTerrain"
-    body: '''removeCustomTerrain(${1:Terrain})'''
-    description: '''removeCustomTerrain(${1:Terrain})'''
+        prefix: "removeCustomTerrain"
+        body: '''removeCustomTerrain(${1:Terrain})'''
+        description: '''removeCustomTerrain(${1:Terrain})'''
 
 
     "txsite.sinr":
-    prefix: "txsite.sinr"
-    body: '''txsite.sinr(${1:tx}, ${2:optional_PropagationModel}, 'Values', ${3:value}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'MaxRange', ${6:value}, 'Resolution', ${7:value}, 'ReceiverGain', ${8:value}, 'ReceiverAntennaHeight', ${9:value}, 'ReceiverNoisePower', ${10:value}, 'ColorLimits', ${11:value}, 'Colormap', ${12:value}, 'Transparency', ${13:value}, 'ShowLegend', ${14:value}, 'Map', ${15:value})'''
-    description: '''txsite.sinr(${1:tx}, ${2:optional_PropagationModel}, 'Values', ${3:value}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'MaxRange', ${6:value}, 'Resolution', ${7:value}, 'ReceiverGain', ${8:value}, 'ReceiverAntennaHeight', ${9:value}, 'ReceiverNoisePower', ${10:value}, 'ColorLimits', ${11:value}, 'Colormap', ${12:value}, 'Transparency', ${13:value}, 'ShowLegend', ${14:value}, 'Map', ${15:value})'''
+        prefix: "txsite.sinr"
+        body: '''txsite.sinr(${1:tx}, ${2:optional_PropagationModel}, 'Values', ${3:value}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'MaxRange', ${6:value}, 'Resolution', ${7:value}, 'ReceiverGain', ${8:value}, 'ReceiverAntennaHeight', ${9:value}, 'ReceiverNoisePower', ${10:value}, 'ColorLimits', ${11:value}, 'Colormap', ${12:value}, 'Transparency', ${13:value}, 'ShowLegend', ${14:value}, 'Map', ${15:value})'''
+        description: '''txsite.sinr(${1:tx}, ${2:optional_PropagationModel}, 'Values', ${3:value}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'MaxRange', ${6:value}, 'Resolution', ${7:value}, 'ReceiverGain', ${8:value}, 'ReceiverAntennaHeight', ${9:value}, 'ReceiverNoisePower', ${10:value}, 'ColorLimits', ${11:value}, 'Colormap', ${12:value}, 'Transparency', ${13:value}, 'ShowLegend', ${14:value}, 'Map', ${15:value})'''
 
 
     "rfprop.AntennaSite.distance":
-    prefix: "rfprop.AntennaSite.distance"
-    body: '''rfprop.AntennaSite.distance(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
-    description: '''rfprop.AntennaSite.distance(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
+        prefix: "rfprop.AntennaSite.distance"
+        body: '''rfprop.AntennaSite.distance(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
+        description: '''rfprop.AntennaSite.distance(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
 
 
     "rxsite.link":
-    prefix: "rxsite.link"
-    body: '''rxsite.link(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SuccessColor', ${4:value}, 'FailColor', ${5:value}, 'PropagationModel', ${6:value}, 'Map', ${7:value})'''
-    description: '''rxsite.link(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SuccessColor', ${4:value}, 'FailColor', ${5:value}, 'PropagationModel', ${6:value}, 'Map', ${7:value})'''
+        prefix: "rxsite.link"
+        body: '''rxsite.link(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SuccessColor', ${4:value}, 'FailColor', ${5:value}, 'PropagationModel', ${6:value}, 'Map', ${7:value})'''
+        description: '''rxsite.link(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SuccessColor', ${4:value}, 'FailColor', ${5:value}, 'PropagationModel', ${6:value}, 'Map', ${7:value})'''
 
 
     "txsite.raytrace":
-    prefix: "txsite.raytrace"
-    body: '''txsite.raytrace(${1:tx}, ${2:rx}, 'Type', ${3:value}, 'NumReflections', ${4:value}, 'ColorLimits', ${5:value}, 'Colormap', ${6:value}, 'ShowLegend', ${7:value}, 'Map', ${8:value})'''
-    description: '''txsite.raytrace(${1:tx}, ${2:rx}, 'Type', ${3:value}, 'NumReflections', ${4:value}, 'ColorLimits', ${5:value}, 'Colormap', ${6:value}, 'ShowLegend', ${7:value}, 'Map', ${8:value})'''
+        prefix: "txsite.raytrace"
+        body: '''txsite.raytrace(${1:tx}, ${2:rx}, 'Type', ${3:value}, 'NumReflections', ${4:value}, 'ColorLimits', ${5:value}, 'Colormap', ${6:value}, 'ShowLegend', ${7:value}, 'Map', ${8:value})'''
+        description: '''txsite.raytrace(${1:tx}, ${2:rx}, 'Type', ${3:value}, 'NumReflections', ${4:value}, 'ColorLimits', ${5:value}, 'Colormap', ${6:value}, 'ShowLegend', ${7:value}, 'Map', ${8:value})'''
 
 
     "siteviewer":
-    prefix: "siteviewer"
-    body: '''siteviewer('Name', ${1:value}, 'Position', ${2:value}, 'Basemap', ${3:value}, 'Terrain', ${4:value}, 'Buildings', ${5:value})'''
-    description: '''siteviewer('Name', ${1:value}, 'Position', ${2:value}, 'Basemap', ${3:value}, 'Terrain', ${4:value}, 'Buildings', ${5:value})'''
+        prefix: "siteviewer"
+        body: '''siteviewer('Name', ${1:value}, 'Position', ${2:value}, 'Basemap', ${3:value}, 'Terrain', ${4:value}, 'Buildings', ${5:value})'''
+        description: '''siteviewer('Name', ${1:value}, 'Position', ${2:value}, 'Basemap', ${3:value}, 'Terrain', ${4:value}, 'Buildings', ${5:value})'''
 
 
     "rfprop.AntennaSite.pattern":
-    prefix: "rfprop.AntennaSite.pattern"
-    body: '''rfprop.AntennaSite.pattern(${1:rx}, ${2:Frequency}, 'Size', ${3:value}, 'Transparency', ${4:value}, 'Colormap', ${5:value}, 'Map', ${6:value})'''
-    description: '''rfprop.AntennaSite.pattern(${1:rx}, ${2:Frequency}, 'Size', ${3:value}, 'Transparency', ${4:value}, 'Colormap', ${5:value}, 'Map', ${6:value})'''
+        prefix: "rfprop.AntennaSite.pattern"
+        body: '''rfprop.AntennaSite.pattern(${1:rx}, ${2:Frequency}, 'Size', ${3:value}, 'Transparency', ${4:value}, 'Colormap', ${5:value}, 'Map', ${6:value})'''
+        description: '''rfprop.AntennaSite.pattern(${1:rx}, ${2:Frequency}, 'Size', ${3:value}, 'Transparency', ${4:value}, 'Colormap', ${5:value}, 'Map', ${6:value})'''
 
 
     "rfprop.AntennaSite.show":
-    prefix: "rfprop.AntennaSite.show"
-    body: '''rfprop.AntennaSite.show(${1:site}, 'Icon', ${2:value}, 'ClusterMarkers', ${3:value}, 'Map', ${4:value}, 'IconSize', ${5:value}, 'IconAlignment', ${6:value})'''
-    description: '''rfprop.AntennaSite.show(${1:site}, 'Icon', ${2:value}, 'ClusterMarkers', ${3:value}, 'Map', ${4:value}, 'IconSize', ${5:value}, 'IconAlignment', ${6:value})'''
+        prefix: "rfprop.AntennaSite.show"
+        body: '''rfprop.AntennaSite.show(${1:site}, 'Icon', ${2:value}, 'ClusterMarkers', ${3:value}, 'Map', ${4:value}, 'IconSize', ${5:value}, 'IconAlignment', ${6:value})'''
+        description: '''rfprop.AntennaSite.show(${1:site}, 'Icon', ${2:value}, 'ClusterMarkers', ${3:value}, 'Map', ${4:value}, 'IconSize', ${5:value}, 'IconAlignment', ${6:value})'''
 
 
     "rfprop.PropagationModel.pathloss":
-    prefix: "rfprop.PropagationModel.pathloss"
-    body: '''rfprop.PropagationModel.pathloss(${1:PropagationModel}, ${2:rx}, ${3:tx}, 'Map', ${4:value})'''
-    description: '''rfprop.PropagationModel.pathloss(${1:PropagationModel}, ${2:rx}, ${3:tx}, 'Map', ${4:value})'''
+        prefix: "rfprop.PropagationModel.pathloss"
+        body: '''rfprop.PropagationModel.pathloss(${1:PropagationModel}, ${2:rx}, ${3:tx}, 'Map', ${4:value})'''
+        description: '''rfprop.PropagationModel.pathloss(${1:PropagationModel}, ${2:rx}, ${3:tx}, 'Map', ${4:value})'''
 
 
     "rfprop.AntennaSite.hide":
-    prefix: "rfprop.AntennaSite.hide"
-    body: '''rfprop.AntennaSite.hide(${1:site}, 'Map', ${2:value})'''
-    description: '''rfprop.AntennaSite.hide(${1:site}, 'Map', ${2:value})'''
+        prefix: "rfprop.AntennaSite.hide"
+        body: '''rfprop.AntennaSite.hide(${1:site}, 'Map', ${2:value})'''
+        description: '''rfprop.AntennaSite.hide(${1:site}, 'Map', ${2:value})'''
 
 
     "rxsite.sinr":
-    prefix: "rxsite.sinr"
-    body: '''rxsite.sinr(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'ReceiverGain', ${6:value}, 'ReceiverAntennaHeight', ${7:value}, 'ReceiverNoisePower', ${8:value}, 'Map', ${9:value})'''
-    description: '''rxsite.sinr(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'ReceiverGain', ${6:value}, 'ReceiverAntennaHeight', ${7:value}, 'ReceiverNoisePower', ${8:value}, 'Map', ${9:value})'''
+        prefix: "rxsite.sinr"
+        body: '''rxsite.sinr(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'ReceiverGain', ${6:value}, 'ReceiverAntennaHeight', ${7:value}, 'ReceiverNoisePower', ${8:value}, 'Map', ${9:value})'''
+        description: '''rxsite.sinr(${1:rx}, ${2:tx}, ${3:optional_PropagationModel}, 'SignalSource', ${4:value}, 'PropagationModel', ${5:value}, 'ReceiverGain', ${6:value}, 'ReceiverAntennaHeight', ${7:value}, 'ReceiverNoisePower', ${8:value}, 'Map', ${9:value})'''
 
 
     "addCustomTerrain":
-    prefix: "addCustomTerrain"
-    body: '''addCustomTerrain(${1:Name}, ${2:File}, 'Attribution', ${3:value}, 'WriteLocation', ${4:value}, 'FillMissing', ${5:value})'''
-    description: '''addCustomTerrain(${1:Name}, ${2:File}, 'Attribution', ${3:value}, 'WriteLocation', ${4:value}, 'FillMissing', ${5:value})'''
+        prefix: "addCustomTerrain"
+        body: '''addCustomTerrain(${1:Name}, ${2:File}, 'Attribution', ${3:value}, 'WriteLocation', ${4:value}, 'FillMissing', ${5:value})'''
+        description: '''addCustomTerrain(${1:Name}, ${2:File}, 'Attribution', ${3:value}, 'WriteLocation', ${4:value}, 'FillMissing', ${5:value})'''
 
 
     "rfprop.AntennaSite.angle":
-    prefix: "rfprop.AntennaSite.angle"
-    body: '''rfprop.AntennaSite.angle(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
-    description: '''rfprop.AntennaSite.angle(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
+        prefix: "rfprop.AntennaSite.angle"
+        body: '''rfprop.AntennaSite.angle(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
+        description: '''rfprop.AntennaSite.angle(${1:site1}, ${2:site2}, ${3:optional_path}, 'Map', ${4:value})'''
 
 
     "propagationModel":
-    prefix: "propagationModel"
-    body: '''propagationModel(${1:PropagationModel}, 'GroundPermittivity', ${2:value}, 'GroundConductivity', ${3:value}, 'AtmosphericRefractivity', ${4:value}, 'AntennaPolarization', ${5:value}, 'Humidity', ${6:value})'''
-    description: '''propagationModel(${1:PropagationModel}, 'GroundPermittivity', ${2:value}, 'GroundConductivity', ${3:value}, 'AtmosphericRefractivity', ${4:value}, 'AntennaPolarization', ${5:value}, 'Humidity', ${6:value})'''
+        prefix: "propagationModel"
+        body: '''propagationModel(${1:PropagationModel}, 'GroundPermittivity', ${2:value}, 'GroundConductivity', ${3:value}, 'AtmosphericRefractivity', ${4:value}, 'AntennaPolarization', ${5:value}, 'Humidity', ${6:value})'''
+        description: '''propagationModel(${1:PropagationModel}, 'GroundPermittivity', ${2:value}, 'GroundConductivity', ${3:value}, 'AtmosphericRefractivity', ${4:value}, 'AntennaPolarization', ${5:value}, 'Humidity', ${6:value})'''
 
 
     "rxsite":
-    prefix: "rxsite"
-    body: '''rxsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'ReceiverSensitivity', ${8:value})'''
-    description: '''rxsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'ReceiverSensitivity', ${8:value})'''
+        prefix: "rxsite"
+        body: '''rxsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'ReceiverSensitivity', ${8:value})'''
+        description: '''rxsite('Name', ${1:value}, 'Latitude', ${2:value}, 'Longitude', ${3:value}, 'Antenna', ${4:value}, 'AntennaAngle', ${5:value}, 'AntennaHeight', ${6:value}, 'SystemLoss', ${7:value}, 'ReceiverSensitivity', ${8:value})'''
 
 
     "rfprop.AntennaSite.elevation":
-    prefix: "rfprop.AntennaSite.elevation"
-    body: '''rfprop.AntennaSite.elevation(${1:site}, 'Map', ${2:value})'''
-    description: '''rfprop.AntennaSite.elevation(${1:site}, 'Map', ${2:value})'''
+        prefix: "rfprop.AntennaSite.elevation"
+        body: '''rfprop.AntennaSite.elevation(${1:site}, 'Map', ${2:value})'''
+        description: '''rfprop.AntennaSite.elevation(${1:site}, 'Map', ${2:value})'''
 

@@ -1,20 +1,20 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "yyaxis":
-    prefix: "yyaxis"
-    body: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
-    description: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
+        prefix: "yyaxis"
+        body: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
+        description: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
 
 
     "axes":
-    prefix: "axes"
-    body: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
-    description: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
+        prefix: "axes"
+        body: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
+        description: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
 
 
     "hold":
-    prefix: "hold"
-    body: '''hold(${1:optional_ax}, ${2:optional_action})'''
-    description: '''hold(${1:optional_ax}, ${2:optional_action})'''
+        prefix: "hold"
+        body: '''hold(${1:optional_ax}, ${2:optional_action})'''
+        description: '''hold(${1:optional_ax}, ${2:optional_action})'''
 

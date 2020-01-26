@@ -1,20 +1,20 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "wvtool":
-    prefix: "wvtool"
-    body: '''${1:H} = wvtool(${1:WindowVector})'''
-    description: '''${1:H} = wvtool(${1:WindowVector})'''
+        prefix: "wvtool"
+        body: '''${1:H} = wvtool(${1:WindowVector})'''
+        description: '''${1:H} = wvtool(${1:WindowVector})'''
 
 
     "fvtool":
-    prefix: "fvtool"
-    body: '''${1:h} = fvtool(${1:d})'''
-    description: '''${1:h} = fvtool(${1:d})'''
+        prefix: "fvtool"
+        body: '''${1:h} = fvtool(${1:d})'''
+        description: '''${1:h} = fvtool(${1:d})'''
 
 
     "fmethod.abstractdesign.isfir":
-    prefix: "fmethod.abstractdesign.isfir"
-    body: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
-    description: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
+        prefix: "fmethod.abstractdesign.isfir"
+        body: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
+        description: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
 

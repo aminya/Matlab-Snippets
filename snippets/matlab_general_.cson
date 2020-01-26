@@ -1,248 +1,248 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "delete":
-    prefix: "delete"
-    body: '''delete(${1:filename})'''
-    description: '''delete(${1:filename})'''
+        prefix: "delete"
+        body: '''delete(${1:filename})'''
+        description: '''delete(${1:filename})'''
 
 
     "mkdir":
-    prefix: "mkdir"
-    body: '''[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
-    description: '''[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
+        prefix: "mkdir"
+        body: '''[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
+        description: '''[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
 
 
     "javaaddpath":
-    prefix: "javaaddpath"
-    body: '''javaaddpath(${1:dpath}, ${2:'-end'})'''
-    description: '''javaaddpath(${1:dpath}, ${2:'-end'})'''
+        prefix: "javaaddpath"
+        body: '''javaaddpath(${1:dpath}, ${2:'-end'})'''
+        description: '''javaaddpath(${1:dpath}, ${2:'-end'})'''
 
 
     "whos":
-    prefix: "whos"
-    body: '''whos(${1:var}, ${2:'global'})'''
-    description: '''whos(${1:var}, ${2:'global'})'''
+        prefix: "whos"
+        body: '''whos(${1:var}, ${2:'global'})'''
+        description: '''whos(${1:var}, ${2:'global'})'''
 
 
     "fileattrib":
-    prefix: "fileattrib"
-    body: '''[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
-    description: '''[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
+        prefix: "fileattrib"
+        body: '''[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
+        description: '''[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
 
 
     "recycle":
-    prefix: "recycle"
-    body: '''recycle(${1:optional_state})'''
-    description: '''recycle(${1:optional_state})'''
+        prefix: "recycle"
+        body: '''recycle(${1:optional_state})'''
+        description: '''recycle(${1:optional_state})'''
 
 
     "import":
-    prefix: "import"
-    body: '''import(${1:optional_PackageName})'''
-    description: '''import(${1:optional_PackageName})'''
+        prefix: "import"
+        body: '''import(${1:optional_PackageName})'''
+        description: '''import(${1:optional_PackageName})'''
 
 
     "dos":
-    prefix: "dos"
-    body: '''[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})'''
-    description: '''[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})'''
+        prefix: "dos"
+        body: '''[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})'''
+        description: '''[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})'''
 
 
     "beep":
-    prefix: "beep"
-    body: '''${1:state} = beep(${1:flag})'''
-    description: '''${1:state} = beep(${1:flag})'''
+        prefix: "beep"
+        body: '''${1:state} = beep(${1:flag})'''
+        description: '''${1:state} = beep(${1:flag})'''
 
 
     "mex":
-    prefix: "mex"
-    body: '''mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})'''
-    description: '''mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})'''
+        prefix: "mex"
+        body: '''mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})'''
+        description: '''mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})'''
 
 
     "setenv":
-    prefix: "setenv"
-    body: '''setenv(${1:name}, ${2:value})'''
-    description: '''setenv(${1:name}, ${2:value})'''
+        prefix: "setenv"
+        body: '''setenv(${1:name}, ${2:value})'''
+        description: '''setenv(${1:name}, ${2:value})'''
 
 
     "mex.getCompilerConfigurations":
-    prefix: "mex.getCompilerConfigurations"
-    body: '''${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
-    description: '''${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
+        prefix: "mex.getCompilerConfigurations"
+        body: '''${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
+        description: '''${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
 
 
     "echo":
-    prefix: "echo"
-    body: '''echo(${1:mode}, ${2:'all'})'''
-    description: '''echo(${1:mode}, ${2:'all'})'''
+        prefix: "echo"
+        body: '''echo(${1:mode}, ${2:'all'})'''
+        description: '''echo(${1:mode}, ${2:'all'})'''
 
 
     "cd":
-    prefix: "cd"
-    body: '''${1:oldFolder} = cd(${1:optional_newFolder})'''
-    description: '''${1:oldFolder} = cd(${1:optional_newFolder})'''
+        prefix: "cd"
+        body: '''${1:oldFolder} = cd(${1:optional_newFolder})'''
+        description: '''${1:oldFolder} = cd(${1:optional_newFolder})'''
 
 
     "system":
-    prefix: "system"
-    body: '''[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})'''
-    description: '''[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})'''
+        prefix: "system"
+        body: '''[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})'''
+        description: '''[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})'''
 
 
     "rehash":
-    prefix: "rehash"
-    body: '''rehash(${1:optional_what})'''
-    description: '''rehash(${1:optional_what})'''
+        prefix: "rehash"
+        body: '''rehash(${1:optional_what})'''
+        description: '''rehash(${1:optional_what})'''
 
 
     "format":
-    prefix: "format"
-    body: '''format(${1:optional_style})'''
-    description: '''format(${1:optional_style})'''
+        prefix: "format"
+        body: '''format(${1:optional_style})'''
+        description: '''format(${1:optional_style})'''
 
 
     "clearvars":
-    prefix: "clearvars"
-    body: '''clearvars(${1:optional_'-global'}, ${2:optional_variables})'''
-    description: '''clearvars(${1:optional_'-global'}, ${2:optional_variables})'''
+        prefix: "clearvars"
+        body: '''clearvars(${1:optional_'-global'}, ${2:optional_variables})'''
+        description: '''clearvars(${1:optional_'-global'}, ${2:optional_variables})'''
 
 
     "save":
-    prefix: "save"
-    body: '''save(${1:filename}, ${2:optional_variables})'''
-    description: '''save(${1:filename}, ${2:optional_variables})'''
+        prefix: "save"
+        body: '''save(${1:filename}, ${2:optional_variables})'''
+        description: '''save(${1:filename}, ${2:optional_variables})'''
 
 
     "inmem":
-    prefix: "inmem"
-    body: '''inmem(${1:optional_'-completenames'})'''
-    description: '''inmem(${1:optional_'-completenames'})'''
+        prefix: "inmem"
+        body: '''inmem(${1:optional_'-completenames'})'''
+        description: '''inmem(${1:optional_'-completenames'})'''
 
 
     "addpath":
-    prefix: "addpath"
-    body: '''${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
-    description: '''${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
+        prefix: "addpath"
+        body: '''${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
+        description: '''${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
 
 
     "open":
-    prefix: "open"
-    body: '''${1:output} = open(${1:name})'''
-    description: '''${1:output} = open(${1:name})'''
+        prefix: "open"
+        body: '''${1:output} = open(${1:name})'''
+        description: '''${1:output} = open(${1:name})'''
 
 
     "movefile":
-    prefix: "movefile"
-    body: '''[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
-    description: '''[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        prefix: "movefile"
+        body: '''[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        description: '''[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
 
 
     "isfolder":
-    prefix: "isfolder"
-    body: '''${1:TF} = isfolder(${1:path})'''
-    description: '''${1:TF} = isfolder(${1:path})'''
+        prefix: "isfolder"
+        body: '''${1:TF} = isfolder(${1:path})'''
+        description: '''${1:TF} = isfolder(${1:path})'''
 
 
     "unix":
-    prefix: "unix"
-    body: '''[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})'''
-    description: '''[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})'''
+        prefix: "unix"
+        body: '''[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})'''
+        description: '''[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})'''
 
 
     "rmdir":
-    prefix: "rmdir"
-    body: '''[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
-    description: '''[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
+        prefix: "rmdir"
+        body: '''[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
+        description: '''[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
 
 
     "pcode":
-    prefix: "pcode"
-    body: '''pcode(${1:filename}, ${2:'-inplace'})'''
-    description: '''pcode(${1:filename}, ${2:'-inplace'})'''
+        prefix: "pcode"
+        body: '''pcode(${1:filename}, ${2:'-inplace'})'''
+        description: '''pcode(${1:filename}, ${2:'-inplace'})'''
 
 
     "diary":
-    prefix: "diary"
-    body: '''diary(${1:mode})'''
-    description: '''diary(${1:mode})'''
+        prefix: "diary"
+        body: '''diary(${1:mode})'''
+        description: '''diary(${1:mode})'''
 
 
     "rmpath":
-    prefix: "rmpath"
-    body: '''rmpath(${1:folderName})'''
-    description: '''rmpath(${1:folderName})'''
+        prefix: "rmpath"
+        body: '''rmpath(${1:folderName})'''
+        description: '''rmpath(${1:folderName})'''
 
 
     "ls":
-    prefix: "ls"
-    body: '''${1:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
-    description: '''${1:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
+        prefix: "ls"
+        body: '''${1:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
+        description: '''${1:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
 
 
     "isfile":
-    prefix: "isfile"
-    body: '''${1:TF} = isfile(${1:path})'''
-    description: '''${1:TF} = isfile(${1:path})'''
+        prefix: "isfile"
+        body: '''${1:TF} = isfile(${1:path})'''
+        description: '''${1:TF} = isfile(${1:path})'''
 
 
     "dir":
-    prefix: "dir"
-    body: '''${1:listing} = dir(${1:optional_filename})'''
-    description: '''${1:listing} = dir(${1:optional_filename})'''
+        prefix: "dir"
+        body: '''${1:listing} = dir(${1:optional_filename})'''
+        description: '''${1:listing} = dir(${1:optional_filename})'''
 
 
     "which":
-    prefix: "which"
-    body: '''which(${1:fun1}, ${2:'in'}, ${3:fun2})'''
-    description: '''which(${1:fun1}, ${2:'in'}, ${3:fun2})'''
+        prefix: "which"
+        body: '''which(${1:fun1}, ${2:'in'}, ${3:fun2})'''
+        description: '''which(${1:fun1}, ${2:'in'}, ${3:fun2})'''
 
 
     "who":
-    prefix: "who"
-    body: '''who(${1:var}, ${2:'global'})'''
-    description: '''who(${1:var}, ${2:'global'})'''
+        prefix: "who"
+        body: '''who(${1:var}, ${2:'global'})'''
+        description: '''who(${1:var}, ${2:'global'})'''
 
 
     "copyfile":
-    prefix: "copyfile"
-    body: '''[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
-    description: '''[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        prefix: "copyfile"
+        body: '''[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
+        description: '''[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
 
 
     "getenv":
-    prefix: "getenv"
-    body: '''${1:value} = getenv(${1:name})'''
-    description: '''${1:value} = getenv(${1:name})'''
+        prefix: "getenv"
+        body: '''${1:value} = getenv(${1:name})'''
+        description: '''${1:value} = getenv(${1:name})'''
 
 
     "what":
-    prefix: "what"
-    body: '''what(${1:optional_folderName})'''
-    description: '''what(${1:optional_folderName})'''
+        prefix: "what"
+        body: '''what(${1:optional_folderName})'''
+        description: '''what(${1:optional_folderName})'''
 
 
     "clear":
-    prefix: "clear"
-    body: '''clear(${1:optional_ItemType})'''
-    description: '''clear(${1:optional_ItemType})'''
+        prefix: "clear"
+        body: '''clear(${1:optional_ItemType})'''
+        description: '''clear(${1:optional_ItemType})'''
 
 
     "javarmpath":
-    prefix: "javarmpath"
-    body: '''javarmpath(${1:dpath})'''
-    description: '''javarmpath(${1:dpath})'''
+        prefix: "javarmpath"
+        body: '''javarmpath(${1:dpath})'''
+        description: '''javarmpath(${1:dpath})'''
 
 
     "load":
-    prefix: "load"
-    body: '''${1:S} = load(${1:filename}, ${2:'-ascii'})'''
-    description: '''${1:S} = load(${1:filename}, ${2:'-ascii'})'''
+        prefix: "load"
+        body: '''${1:S} = load(${1:filename}, ${2:'-ascii'})'''
+        description: '''${1:S} = load(${1:filename}, ${2:'-ascii'})'''
 
 
     "type":
-    prefix: "type"
-    body: '''type(${1:filename})'''
-    description: '''type(${1:filename})'''
+        prefix: "type"
+        body: '''type(${1:filename})'''
+        description: '''type(${1:filename})'''
 

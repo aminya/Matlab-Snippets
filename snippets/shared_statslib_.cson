@@ -1,26 +1,26 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "mat2dataset":
-    prefix: "mat2dataset"
-    body: '''mat2dataset(${1:X}, 'VarNames', ${2:value}, 'ObsNames', ${3:value}, 'NumCols', ${4:value})'''
-    description: '''mat2dataset(${1:X}, 'VarNames', ${2:value}, 'ObsNames', ${3:value}, 'NumCols', ${4:value})'''
+        prefix: "mat2dataset"
+        body: '''mat2dataset(${1:X}, 'VarNames', ${2:value}, 'ObsNames', ${3:value}, 'NumCols', ${4:value})'''
+        description: '''mat2dataset(${1:X}, 'VarNames', ${2:value}, 'ObsNames', ${3:value}, 'NumCols', ${4:value})'''
 
 
     "cell2dataset":
-    prefix: "cell2dataset"
-    body: '''cell2dataset(${1:C}, 'ReadVarNames', ${2:value}, 'VarNames', ${3:value}, 'ReadObsNames', ${4:value}, 'ObsNames', ${5:value}, 'NumCols', ${6:value})'''
-    description: '''cell2dataset(${1:C}, 'ReadVarNames', ${2:value}, 'VarNames', ${3:value}, 'ReadObsNames', ${4:value}, 'ObsNames', ${5:value}, 'NumCols', ${6:value})'''
+        prefix: "cell2dataset"
+        body: '''cell2dataset(${1:C}, 'ReadVarNames', ${2:value}, 'VarNames', ${3:value}, 'ReadObsNames', ${4:value}, 'ObsNames', ${5:value}, 'NumCols', ${6:value})'''
+        description: '''cell2dataset(${1:C}, 'ReadVarNames', ${2:value}, 'VarNames', ${3:value}, 'ReadObsNames', ${4:value}, 'ObsNames', ${5:value}, 'NumCols', ${6:value})'''
 
 
     "struct2dataset":
-    prefix: "struct2dataset"
-    body: '''struct2dataset(${1:S}, 'ReadObsNames', ${2:value}, 'ObsNames', ${3:value}, 'AsScalar', ${4:value})'''
-    description: '''struct2dataset(${1:S}, 'ReadObsNames', ${2:value}, 'ObsNames', ${3:value}, 'AsScalar', ${4:value})'''
+        prefix: "struct2dataset"
+        body: '''struct2dataset(${1:S}, 'ReadObsNames', ${2:value}, 'ObsNames', ${3:value}, 'AsScalar', ${4:value})'''
+        description: '''struct2dataset(${1:S}, 'ReadObsNames', ${2:value}, 'ObsNames', ${3:value}, 'AsScalar', ${4:value})'''
 
 
     "makedist":
-    prefix: "makedist"
-    body: '''makedist(${1:distname}, 'a', ${2:value}, 'b', ${3:value})'''
-    description: '''makedist(${1:distname}, 'a', ${2:value}, 'b', ${3:value})'''
+        prefix: "makedist"
+        body: '''makedist(${1:distname}, 'a', ${2:value}, 'b', ${3:value})'''
+        description: '''makedist(${1:distname}, 'a', ${2:value}, 'b', ${3:value})'''
 

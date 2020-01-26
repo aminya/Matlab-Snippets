@@ -1,56 +1,56 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "matlab.net.http.Message.removeFields":
-    prefix: "matlab.net.http.Message.removeFields"
-    body: '''matlab.net.http.Message.removeFields(${1:obj}, ${2:name})'''
-    description: '''matlab.net.http.Message.removeFields(${1:obj}, ${2:name})'''
+        prefix: "matlab.net.http.Message.removeFields"
+        body: '''matlab.net.http.Message.removeFields(${1:obj}, ${2:name})'''
+        description: '''matlab.net.http.Message.removeFields(${1:obj}, ${2:name})'''
 
 
     "matlab.net.http.CookieInfo":
-    prefix: "matlab.net.http.CookieInfo"
-    body: '''matlab.net.http.CookieInfo(${1:name})'''
-    description: '''matlab.net.http.CookieInfo(${1:name})'''
+        prefix: "matlab.net.http.CookieInfo"
+        body: '''matlab.net.http.CookieInfo(${1:name})'''
+        description: '''matlab.net.http.CookieInfo(${1:name})'''
 
 
     "matlab.net.http.HeaderField.getFields":
-    prefix: "matlab.net.http.HeaderField.getFields"
-    body: '''matlab.net.http.HeaderField.getFields(${1:obj}, ${2:name})'''
-    description: '''matlab.net.http.HeaderField.getFields(${1:obj}, ${2:name})'''
+        prefix: "matlab.net.http.HeaderField.getFields"
+        body: '''matlab.net.http.HeaderField.getFields(${1:obj}, ${2:name})'''
+        description: '''matlab.net.http.HeaderField.getFields(${1:obj}, ${2:name})'''
 
 
     "matlab.net.http.Message.getFields":
-    prefix: "matlab.net.http.Message.getFields"
-    body: '''matlab.net.http.Message.getFields(${1:obj}, ${2:name})'''
-    description: '''matlab.net.http.Message.getFields(${1:obj}, ${2:name})'''
+        prefix: "matlab.net.http.Message.getFields"
+        body: '''matlab.net.http.Message.getFields(${1:obj}, ${2:name})'''
+        description: '''matlab.net.http.Message.getFields(${1:obj}, ${2:name})'''
 
 
     "matlab.net.http.Credentials":
-    prefix: "matlab.net.http.Credentials"
-    body: '''matlab.net.http.Credentials(${1:name})'''
-    description: '''matlab.net.http.Credentials(${1:name})'''
+        prefix: "matlab.net.http.Credentials"
+        body: '''matlab.net.http.Credentials(${1:name})'''
+        description: '''matlab.net.http.Credentials(${1:name})'''
 
 
     "matlab.net.http.HeaderField.removeFields":
-    prefix: "matlab.net.http.HeaderField.removeFields"
-    body: '''matlab.net.http.HeaderField.removeFields(${1:obj}, ${2:name})'''
-    description: '''matlab.net.http.HeaderField.removeFields(${1:obj}, ${2:name})'''
+        prefix: "matlab.net.http.HeaderField.removeFields"
+        body: '''matlab.net.http.HeaderField.removeFields(${1:obj}, ${2:name})'''
+        description: '''matlab.net.http.HeaderField.removeFields(${1:obj}, ${2:name})'''
 
 
     "matlab.net.http.RequestMessage.RequestMessage":
-    prefix: "matlab.net.http.RequestMessage.RequestMessage"
-    body: '''matlab.net.http.RequestMessage.RequestMessage(${1:method}, ${2:header})'''
-    description: '''matlab.net.http.RequestMessage.RequestMessage(${1:method}, ${2:header})'''
+        prefix: "matlab.net.http.RequestMessage.RequestMessage"
+        body: '''matlab.net.http.RequestMessage.RequestMessage(${1:method}, ${2:header})'''
+        description: '''matlab.net.http.RequestMessage.RequestMessage(${1:method}, ${2:header})'''
 
 
     "matlab.net.http.HTTPOptions.HTTPOptions":
-    prefix: "matlab.net.http.HTTPOptions.HTTPOptions"
-    body: '''matlab.net.http.HTTPOptions.HTTPOptions(${1:name})'''
-    description: '''matlab.net.http.HTTPOptions.HTTPOptions(${1:name})'''
+        prefix: "matlab.net.http.HTTPOptions.HTTPOptions"
+        body: '''matlab.net.http.HTTPOptions.HTTPOptions(${1:name})'''
+        description: '''matlab.net.http.HTTPOptions.HTTPOptions(${1:name})'''
 
 
     "matlab.net.http.RequestMessage.send":
-    prefix: "matlab.net.http.RequestMessage.send"
-    body: '''matlab.net.http.RequestMessage.send(${1:obj}, ${2:URI}, ${3:options}, ${4:consumer})'''
-    description: '''matlab.net.http.RequestMessage.send(${1:obj}, ${2:URI}, ${3:options}, ${4:consumer})'''
+        prefix: "matlab.net.http.RequestMessage.send"
+        body: '''matlab.net.http.RequestMessage.send(${1:obj}, ${2:URI}, ${3:options}, ${4:consumer})'''
+        description: '''matlab.net.http.RequestMessage.send(${1:obj}, ${2:URI}, ${3:options}, ${4:consumer})'''
 

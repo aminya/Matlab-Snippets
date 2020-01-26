@@ -1,50 +1,50 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "uiaerohorizon":
-    prefix: "uiaerohorizon"
-    body: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
-    description: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
+        prefix: "uiaerohorizon"
+        body: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
+        description: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
 
 
     "uiaeroairspeed":
-    prefix: "uiaeroairspeed"
-    body: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
-    description: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
+        prefix: "uiaeroairspeed"
+        body: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
+        description: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
 
 
     "uiaerorpm":
-    prefix: "uiaerorpm"
-    body: '''uiaerorpm(${1:Parent}, ${2:properties})'''
-    description: '''uiaerorpm(${1:Parent}, ${2:properties})'''
+        prefix: "uiaerorpm"
+        body: '''uiaerorpm(${1:Parent}, ${2:properties})'''
+        description: '''uiaerorpm(${1:Parent}, ${2:properties})'''
 
 
     "uiaeroclimb":
-    prefix: "uiaeroclimb"
-    body: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
-    description: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
+        prefix: "uiaeroclimb"
+        body: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
+        description: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
 
 
     "uiaeroturn":
-    prefix: "uiaeroturn"
-    body: '''uiaeroturn(${1:Parent}, ${2:properties})'''
-    description: '''uiaeroturn(${1:Parent}, ${2:properties})'''
+        prefix: "uiaeroturn"
+        body: '''uiaeroturn(${1:Parent}, ${2:properties})'''
+        description: '''uiaeroturn(${1:Parent}, ${2:properties})'''
 
 
     "uiaeroheading":
-    prefix: "uiaeroheading"
-    body: '''uiaeroheading(${1:Parent}, ${2:properties})'''
-    description: '''uiaeroheading(${1:Parent}, ${2:properties})'''
+        prefix: "uiaeroheading"
+        body: '''uiaeroheading(${1:Parent}, ${2:properties})'''
+        description: '''uiaeroheading(${1:Parent}, ${2:properties})'''
 
 
     "uiaeroegt":
-    prefix: "uiaeroegt"
-    body: '''uiaeroegt(${1:Parent}, ${2:properties})'''
-    description: '''uiaeroegt(${1:Parent}, ${2:properties})'''
+        prefix: "uiaeroegt"
+        body: '''uiaeroegt(${1:Parent}, ${2:properties})'''
+        description: '''uiaeroegt(${1:Parent}, ${2:properties})'''
 
 
     "uiaeroaltimeter":
-    prefix: "uiaeroaltimeter"
-    body: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
-    description: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
+        prefix: "uiaeroaltimeter"
+        body: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
+        description: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
 

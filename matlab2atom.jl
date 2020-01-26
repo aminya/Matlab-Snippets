@@ -41,7 +41,7 @@ end
 function matlab2atom(data)
     final = """
     # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-    ".source.matlab":
+    '.source.matlab, source.m':
     """
     for (fun, val) in data
         try
@@ -117,9 +117,9 @@ function matlab2atom(data)
         final *= """
 
             "$fun":
-            prefix: "$fun"
-            body: '''$body'''
-            description: '''$body'''
+                prefix: "$fun"
+                body: '''$body'''
+                description: '''$body'''
 
         """
         catch

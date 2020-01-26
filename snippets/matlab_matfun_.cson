@@ -1,140 +1,140 @@
 # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
-".source.matlab":
+'.source.matlab, source.m':
 
     "eig":
-    prefix: "eig"
-    body: '''${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})'''
-    description: '''${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})'''
+        prefix: "eig"
+        body: '''${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})'''
+        description: '''${1:lambda} = eig(${1:A}, ${2:balanceOption}, ${3:eigvalOption})'''
 
 
     "issymmetric":
-    prefix: "issymmetric"
-    body: '''${1:tf} = issymmetric(${1:A}, ${2:optional_skew})'''
-    description: '''${1:tf} = issymmetric(${1:A}, ${2:optional_skew})'''
+        prefix: "issymmetric"
+        body: '''${1:tf} = issymmetric(${1:A}, ${2:optional_skew})'''
+        description: '''${1:tf} = issymmetric(${1:A}, ${2:optional_skew})'''
 
 
     "qz":
-    prefix: "qz"
-    body: '''[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})'''
-    description: '''[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})'''
+        prefix: "qz"
+        body: '''[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})'''
+        description: '''[${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:V}, ${6:W}] = qz(${1:A}, ${2:B}, ${3:optional_complexity})'''
 
 
     "lsqminnorm":
-    prefix: "lsqminnorm"
-    body: '''lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})'''
-    description: '''lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})'''
+        prefix: "lsqminnorm"
+        body: '''lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})'''
+        description: '''lsqminnorm(${1:A}, ${2:b}, ${3:optional_tol}, ${4:optional_rankwarn})'''
 
 
     "chol":
-    prefix: "chol"
-    body: '''[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})'''
-    description: '''[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})'''
+        prefix: "chol"
+        body: '''[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})'''
+        description: '''[${1:R}, ${2:p}, ${3:S}] = chol(${1:A}, ${2:type}, ${3:shape})'''
 
 
     "ishermitian":
-    prefix: "ishermitian"
-    body: '''${1:tf} = ishermitian(${1:A}, ${2:optional_skew})'''
-    description: '''${1:tf} = ishermitian(${1:A}, ${2:optional_skew})'''
+        prefix: "ishermitian"
+        body: '''${1:tf} = ishermitian(${1:A}, ${2:optional_skew})'''
+        description: '''${1:tf} = ishermitian(${1:A}, ${2:optional_skew})'''
 
 
     "bandwidth":
-    prefix: "bandwidth"
-    body: '''[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})'''
-    description: '''[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})'''
+        prefix: "bandwidth"
+        body: '''[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})'''
+        description: '''[${1:lower}, ${2:upper}] = bandwidth(${1:A}, ${2:optional_type})'''
 
 
     "gsvd":
-    prefix: "gsvd"
-    body: '''${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})'''
-    description: '''${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})'''
+        prefix: "gsvd"
+        body: '''${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})'''
+        description: '''${1:s} = gsvd(${1:A}, ${2:B}, ${3:optional_shape})'''
 
 
     "lu":
-    prefix: "lu"
-    body: '''[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})'''
-    description: '''[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})'''
+        prefix: "lu"
+        body: '''[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})'''
+        description: '''[${1:L}, ${2:U}, ${3:P}, ${4:Q}, ${5:R}] = lu(${1:A}, ${2:optional_threshold}, ${3:optional_shape})'''
 
 
     "cond":
-    prefix: "cond"
-    body: '''${1:cond} = cond(${1:A}, ${2:optional_type})'''
-    description: '''${1:cond} = cond(${1:A}, ${2:optional_type})'''
+        prefix: "cond"
+        body: '''${1:cond} = cond(${1:A}, ${2:optional_type})'''
+        description: '''${1:cond} = cond(${1:A}, ${2:optional_type})'''
 
 
     "qr":
-    prefix: "qr"
-    body: '''[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})'''
-    description: '''[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})'''
+        prefix: "qr"
+        body: '''[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})'''
+        description: '''[${1:C}, ${2:R}, ${3:E}] = qr(${1:A}, ${2:b}, ${3:optional_shape})'''
 
 
     "schur":
-    prefix: "schur"
-    body: '''${1:T} = schur(${1:A}, ${2:optional_complexity})'''
-    description: '''${1:T} = schur(${1:A}, ${2:optional_complexity})'''
+        prefix: "schur"
+        body: '''${1:T} = schur(${1:A}, ${2:optional_complexity})'''
+        description: '''${1:T} = schur(${1:A}, ${2:optional_complexity})'''
 
 
     "qrdelete":
-    prefix: "qrdelete"
-    body: '''[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})'''
-    description: '''[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})'''
+        prefix: "qrdelete"
+        body: '''[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})'''
+        description: '''[${1:C}, ${2:R}, ${3:E}] = qrdelete(${1:Q}, ${2:R}, ${3:j}, ${4:optional_shape})'''
 
 
     "balance":
-    prefix: "balance"
-    body: '''[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})'''
-    description: '''[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})'''
+        prefix: "balance"
+        body: '''[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})'''
+        description: '''[${1:T}, ${2:B}] = balance(${1:A}, ${2:optional_permFlag})'''
 
 
     "svd":
-    prefix: "svd"
-    body: '''${1:s} = svd(${1:X}, ${2:optional_shape})'''
-    description: '''${1:s} = svd(${1:X}, ${2:optional_shape})'''
+        prefix: "svd"
+        body: '''${1:s} = svd(${1:X}, ${2:optional_shape})'''
+        description: '''${1:s} = svd(${1:X}, ${2:optional_shape})'''
 
 
     "ldl":
-    prefix: "ldl"
-    body: '''[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})'''
-    description: '''[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})'''
+        prefix: "ldl"
+        body: '''[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})'''
+        description: '''[${1:L}, ${2:D}, ${3:p}] = ldl(${1:A}, ${2:type}, ${3:shape})'''
 
 
     "cholupdate":
-    prefix: "cholupdate"
-    body: '''[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})'''
-    description: '''[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})'''
+        prefix: "cholupdate"
+        body: '''[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})'''
+        description: '''[${1:R1}, ${2:p}] = cholupdate(${1:R}, ${2:x}, ${3:optional_type})'''
 
 
     "norm":
-    prefix: "norm"
-    body: '''${1:norm} = norm(${1:A}, ${2:optional_type})'''
-    description: '''${1:norm} = norm(${1:A}, ${2:optional_type})'''
+        prefix: "norm"
+        body: '''${1:norm} = norm(${1:A}, ${2:optional_type})'''
+        description: '''${1:norm} = norm(${1:A}, ${2:optional_type})'''
 
 
     "ordqz":
-    prefix: "ordqz"
-    body: '''[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})'''
-    description: '''[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})'''
+        prefix: "ordqz"
+        body: '''[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})'''
+        description: '''[${1:AAS}, ${2:BBS}, ${3:QS}, ${4:ZS}] = ordqz(${1:AA}, ${2:BB}, ${3:Q}, ${4:Z}, ${5:select})'''
 
 
     "ordschur":
-    prefix: "ordschur"
-    body: '''[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})'''
-    description: '''[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})'''
+        prefix: "ordschur"
+        body: '''[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})'''
+        description: '''[${1:US}, ${2:TS}] = ordschur(${1:U}, ${2:T}, ${3:select})'''
 
 
     "qrinsert":
-    prefix: "qrinsert"
-    body: '''[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})'''
-    description: '''[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})'''
+        prefix: "qrinsert"
+        body: '''[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})'''
+        description: '''[${1:C}, ${2:R}, ${3:E}] = qrinsert(${1:Q}, ${2:R}, ${3:j}, ${4:x}, ${5:optional_shape})'''
 
 
     "lscov":
-    prefix: "lscov"
-    body: '''[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})'''
-    description: '''[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})'''
+        prefix: "lscov"
+        body: '''[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})'''
+        description: '''[${1:x}, ${2:stdx}, ${3:mse}, ${4:S}] = lscov(${1:A}, ${2:b}, ${3:V}, ${4:optional_alg})'''
 
 
     "decomposition":
-    prefix: "decomposition"
-    body: '''decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})'''
-    description: '''decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})'''
+        prefix: "decomposition"
+        body: '''decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})'''
+        description: '''decomposition(${1:A}, ${2:optional_type}, 'BandDensity', ${3:value}, 'LUPivotTolerance', ${4:value}, 'LDLPivotTolerance', ${5:value}, 'RankTolerance', ${6:value}, 'CheckCondition', ${7:value})'''
 
