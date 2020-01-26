@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "parquetread":
+    prefix: "parquetread"
+    body: '''${1:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
+    description: '''${1:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
+
+
+    "parquetwrite":
+    prefix: "parquetwrite"
+    body: '''parquetwrite(${1:filename}, ${2:T}, 'VariableCompression', ${3:value})'''
+    description: '''parquetwrite(${1:filename}, ${2:T}, 'VariableCompression', ${3:value})'''
+
+
+    "parquetinfo":
+    prefix: "parquetinfo"
+    body: '''${1:P} = parquetinfo(${1:filename})'''
+    description: '''${1:P} = parquetinfo(${1:filename})'''
+

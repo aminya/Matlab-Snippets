@@ -1,0 +1,1790 @@
+{
+
+"createpde":
+{
+    "inputs":
+    [
+        {"name":"N","kind":"required", "type":"double"}
+    ],
+   "outputs":
+   [
+       {"name":"pdem", "type":[["pde.PDEModel"],["pde.ThermalModel"]]}
+   ]
+},
+
+"createpde":
+{
+    "inputs":
+    [
+        {"name":"pdeID","kind":"required", "type":"choices={'thermal'}"},
+        {"name":"AnalysisAttribute1","kind":"ordered", "type":"choices={'steadystate','transient'}"}
+    ],
+   "outputs":
+   [
+       {"name":"pdem", "type":[["pde.PDEModel"],["pde.ThermalModel"]]}
+   ]
+},
+
+
+"createpde":
+{
+    "inputs":
+    [
+        {"name":"pdeID","kind":"required", "type":"choices={'structural'}"},
+        {"name":"AnalysisAttribute1","kind":"required", "type":"choices={'static-solid','static-planestress','static-planestrain','modal-solid','modal-planestress','modal-planestrain','transient-solid','transient-planestress','transient-planestrain','frequency-solid','frequency-planestress','frequency-planestrain'}"}
+    ],
+   "outputs":
+   [
+       {"name":"pdem", "type":"pde.StructuralModel"}
+   ]
+},
+
+
+"pde.PDEModel.specifyCoefficients":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"m", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"d", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"c", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"a", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"f", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+    ],
+
+   "outputs":
+   [
+       {"name":"coeff", "type":"pde.CoefficientAssignment"}
+   ]
+},
+
+"pde.PDEModel.specifyCoefficients":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"},
+        {"name":"m", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"d", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"c", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"a", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"f", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+    ],
+
+   "outputs":
+   [
+       {"name":"coeff", "type":"pde.CoefficientAssignment"}
+   ]
+},
+
+
+"pde.EquationModel.geometryFromEdges":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.EquationModel"},       
+        {"name":"decsg", "kind":"required", "type":[["double"], ["function_handle"]]}     
+    ],
+
+   "outputs":
+   [
+       {"name":"g", "type":"pde.AnalyticGeometry"}
+   ]
+},
+
+"pde.EquationModel.importGeometry":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.EquationModel"},       
+        {"name":"FILENAME", "kind":"required", "type":"char"}
+    ],
+
+   "outputs":
+   [
+        {"name": "g", "type": "pde.DiscreteGeometry"}      
+   ]
+},
+
+"pde.EquationModel.generateMesh":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.EquationModel"},       
+        {"name":"Hmax", "kind":"namevalue", "type":"double"},
+        {"name":"Hmin", "kind": "namevalue", "type": "double" },
+        {"name":"Hgrad", "kind": "namevalue", "type": "double" },
+        {"name":"GeometricOrder", "kind":"namevalue", "type":"choices={'linear','quadratic'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"msh", "type":"pde.FEMesh"}
+   ]
+},
+
+
+"pde.EquationModel.geometryFromMesh":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.EquationModel"},       
+        {"name":"Nodes", "kind":"required", "type":"double"},
+        {"name":"Elements", "kind": "required", "type": "double" },
+        {"name":"ElementIdToRegionId", "kind": "ordered", "type": "double" }
+    ],
+
+   "outputs":
+   [
+        {"name": "g", "type": "pde.DiscreteGeometry"},
+        {"name":"msh", "type":"pde.FEMesh"}
+   ]
+},
+
+
+"pde.CoefficientAssignmentRecords.findCoefficients":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.CoefficientAssignmentRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"coeff", "type":"pde.CoefficientAssignment"}
+   ]
+},
+
+"pde.CoefficientAssignmentRecords.findCoefficients":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.CoefficientAssignmentRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"coeff", "type":"pde.CoefficientAssignment"}
+   ]
+},
+
+
+
+"pde.PDEModel.applyBoundaryCondition":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'dirichlet'}"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"h", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"r", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"u", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"EquationIndex", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bc", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+"pde.PDEModel.applyBoundaryCondition":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'dirichlet'}"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"h", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"r", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"u", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"EquationIndex", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bc", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+"pde.PDEModel.applyBoundaryCondition":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'neumann'}"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"g", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"q", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bc", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+"pde.PDEModel.applyBoundaryCondition":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'neumann'}"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"g", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"q", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bc", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+
+"pde.PDEModel.applyBoundaryCondition":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'mixed'}"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"h", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"r", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"u", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"g", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"q", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"EquationIndex", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bc", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+"pde.PDEModel.applyBoundaryCondition":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'mixed'}"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"h", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"r", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"u", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"g", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"q", "kind":"namevalue", "type":[["double"],["function_handle"]]},
+        {"name":"EquationIndex", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bc", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+
+"pde.BoundaryConditionRecords.findBoundaryConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.BoundaryConditionRecords"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"coeff", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+
+"pde.BoundaryConditionRecords.findBoundaryConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.BoundaryConditionRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"coeff", "type":"pde.BoundaryCondition"}
+   ]
+},
+
+
+"pde.PDEModel.setInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"u0", "kind":"required", "type":[["double"],["function_handle"]]},
+        {"name":"du0", "kind":"ordered", "type":[["double"],["function_handle"]]},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.PDEModel.setInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"u0", "kind":"required", "type":[["double"],["function_handle"]]},
+        {"name":"du0", "kind":"ordered", "type":[["double"],["function_handle"]]},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.PDEModel.setInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"u0", "kind":"required", "type":[["double"],["function_handle"]]},
+        {"name":"du0", "kind":"ordered", "type":[["double"],["function_handle"]]},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.PDEModel.setInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.PDEModel"},
+        {"name":"u0", "kind":"required", "type":[["double"],["function_handle"]]},
+        {"name":"du0", "kind":"ordered", "type":[["double"],["function_handle"]]},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.InitialConditionsRecords.findInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.InitialConditionsRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.InitialConditionsRecords.findInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.InitialConditionsRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.InitialConditionsRecords.findInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.InitialConditionsRecords"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+"pde.InitialConditionsRecords.findInitialConditions":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.InitialConditionsRecords"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ic", "type":[["pde.GeometricInitialConditions"],["pde.NodalInitialConditions"]]}
+   ]
+},
+
+
+"pde.ThermalModel.thermalProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"ThermalConductivity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"MassDensity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"SpecificHeat", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.ThermalMaterialAssignment"}
+   ]
+},
+
+
+"pde.ThermalModel.thermalProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"},
+        {"name":"ThermalConductivity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"MassDensity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"SpecificHeat", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.ThermalMaterialAssignment"}
+   ]
+},
+
+
+"pde.MaterialAssignmentRecords.findThermalProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.MaterialAssignmentRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.ThermalMaterialAssignment"}
+   ]
+},
+
+"pde.MaterialAssignmentRecords.findThermalProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.MaterialAssignmentRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.ThermalMaterialAssignment"}
+   ]
+},
+
+
+"pde.ThermalModel.thermalBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"Temperature", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"HeatFlux", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"ConvectionCoefficient", "kind":"namevalue",  "type":[["double"], ["function_handle"]]},
+        {"name":"Emissivity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"AmbientTemperature", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+
+    ],
+
+   "outputs":
+   [
+       {"name":"bct", "type":"pde.ThermalBC"}
+   ]
+
+},
+
+"pde.ThermalModel.thermalBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"Temperature", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"HeatFlux", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"ConvectionCoefficient", "kind":"namevalue",  "type":[["double"], ["function_handle"]]},
+        {"name":"Emissivity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"AmbientTemperature", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+
+    ],
+
+   "outputs":
+   [
+       {"name":"bct", "type":"pde.ThermalBC"}
+   ]
+
+},
+
+
+"pde.ThermalBCRecords.findThermalBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalBCRecords"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bct", "type":"pde.ThermalBC"}
+   ]
+},
+
+
+"pde.ThermalBCRecords.findThermalBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalBCRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bct", "type":"pde.ThermalBC"}
+   ]
+},
+
+
+"pde.ThermalModel.internalHeatSource":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"Qval", "kind":"required", "type":[["double"], ["function_handle"]]},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ihs", "type":"pde.HeatSourceAssignment"}
+   ]
+
+},
+
+"pde.ThermalModel.internalHeatSource":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"Qval", "kind":"required", "type":[["double"], ["function_handle"]]},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ihs", "type":"pde.HeatSourceAssignment"}
+   ]
+
+},
+
+
+"pde.HeatSourceAssignmentRecords.findHeatSource":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.HeatSourceAssignmentRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ihs", "type":"pde.HeatSourceAssignment"}
+   ]
+
+},
+
+"pde.HeatSourceAssignmentRecords.findHeatSource":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.HeatSourceAssignmentRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ihs", "type":"pde.HeatSourceAssignment"}
+   ]
+
+},
+
+
+
+"pde.ThermalModel.thermalIC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"T0val", "kind":"required", "type":[["double"], ["pde.ThermalResults"],["function_handle"]]},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+"pde.ThermalModel.thermalIC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"T0val", "kind":"required", "type":[["double"], ["pde.ThermalResults"],["function_handle"]]},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+
+"pde.ThermalModel.thermalIC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"T0val", "kind":"required", "type":[["double"], ["pde.ThermalResults"],["function_handle"]]},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+
+"pde.ThermalModel.thermalIC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.ThermalModel"},
+        {"name":"T0val", "kind":"required", "type":[["double"], ["pde.ThermalResults"],["function_handle"]]},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+
+
+"pde.ThermalICRecords.findThermalIC":
+{
+    "inputs":
+    [
+        {"name":"icrecord", "kind":"required", "type":"pde.ThermalICRecords"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+"pde.ThermalICRecords.findThermalIC":
+{
+    "inputs":
+    [
+        {"name":"icrecord", "kind":"required", "type":"pde.ThermalICRecords"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+"pde.ThermalICRecords.findThermalIC":
+{
+    "inputs":
+    [
+        {"name":"icrecord", "kind":"required", "type":"pde.ThermalICRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+
+"pde.ThermalICRecords.findThermalIC":
+{
+    "inputs":
+    [
+        {"name":"icrecord", "kind":"required", "type":"pde.ThermalICRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"ict", "type":[["pde.GeometricThermalICs"],["pde.NodalThermalICs"]]}
+   ]
+
+},
+
+"pdegplot":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":[["pde.EquationModel"],["pde.GeometricModel"]]},
+		{"name":"CellLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+		{"name":"EdgeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+		{"name":"FaceLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"SubdomainLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+		{"name":"VertexLabels", "kind":"namevalue", "type":"choices={'on','off'}"}
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":[["matlab.graphics.chart.primitive.Line"],["matlab.graphics.primitive.Data"]]}
+   ]
+},
+
+
+"pdemesh":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":[["pde.EquationModel"],["pde.FEMesh"]]},
+		    {"name":"ElementLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+        {"name":"NodeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"EdgeColor", "kind":"namevalue", "type":[["char"], ["string"],["double"]]},
+        {"name":"FaceColor", "kind":"namevalue", "type":[["char"], ["string"],["double"]]}
+
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":[["matlab.graphics.primitive.Patch"],["matlab.graphics.chart.primitive.Line"]]}
+   ]
+},
+
+"pdemesh":
+{
+    "inputs":
+    [
+        {"name":"Nodes","kind":"required", "type":"double"},
+        {"name":"Elements","kind":"required", "type":"double"},
+		    {"name":"ElementLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+        {"name":"NodeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"EdgeColor", "kind":"namevalue", "type":[["char"], ["string"],["double"]]},
+        {"name":"FaceColor", "kind":"namevalue", "type":[["char"], ["string"],["double"]]}
+
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":[["matlab.graphics.primitive.Patch"],["matlab.graphics.chart.primitive.Line"]]}
+   ]
+},
+
+
+"pdeplot3D":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":"pde.EquationModel"},
+        {"name":"ColorMapData", "kind":"namevalue", "type":[["double"],["struct"]]},
+        {"name":"Mesh", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"NodeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"ElementLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+        {"name":"Deformation", "kind":"namevalue", "type":"struct"},
+        {"name":"DeformationScaleFactor", "kind":"namevalue", "type":"double"}
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":"matlab.graphics.primitive.world.Group"}
+   ]
+},
+
+
+"pdeplot3D":
+{
+    "inputs":
+    [
+        {"name":"Nodes","kind":"required", "type":"double"},
+        {"name":"Elements","kind":"required", "type":"double"},
+        {"name":"ColorMapData", "kind":"namevalue", "type":[["double"],["struct"]]},
+        {"name":"Mesh", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"NodeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"ElementLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+        {"name":"Deformation", "kind":"namevalue", "type":"struct"},
+        {"name":"DeformationScaleFactor", "kind":"namevalue", "type":"double"}
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":"matlab.graphics.primitive.world.Group"}
+   ]
+},
+
+
+
+"pdeplot":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":"pde.EquationModel"},
+        {"name":"XYData", "kind":"namevalue", "type":"double"},
+        {"name":"XYStyle", "kind":"namevalue",  "type":"choices={'interp','flat','off'}"},
+        {"name":"Contour", "kind":"namevalue",  "type":"choices={'off','on'}"},
+        {"name":"ZData", "kind":"namevalue", "type":"double"},
+		{"name":"ZStyle", "kind":"namevalue", "type":"choices={'continuous','discontinuous','off'}"},
+		{"name":"FlowData", "kind":"namevalue", "type":"double"},
+		{"name":"FlowStyle", "kind":"namevalue", "type":"choices={'arrow','off'}"},
+		{"name":"ColorMap", "kind":"namevalue", "type":[["char"], ["string"]]},
+		{"name":"XYGrid", "kind":"namevalue", "type":"choices={'off','on'}"},
+        {"name":"Mesh", "kind":"namevalue", "type":"choices={'on','off'}"},
+		{"name":"ColorBar", "kind":"namevalue", "type":"choices={'on','off'}"},
+		{"name":"Title", "kind":"namevalue", "type":[["char"], ["string"]]},
+		{"name":"Levels", "kind":"namevalue", "type":"double"},
+        {"name":"NodeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"ElementLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+        {"name":"Deformation", "kind":"namevalue", "type":"struct"},
+        {"name":"DeformationScaleFactor", "kind":"namevalue", "type":"double"}
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":"matlab.graphics.primitive.world.Group"}
+   ]
+},
+
+"pdeplot":
+{
+    "inputs":
+    [
+        {"name":"Nodes","kind":"required", "type":"double"},
+        {"name":"Elements","kind":"required", "type":"double"},
+        {"name":"XYData", "kind":"namevalue", "type":"double"},
+        {"name":"XYStyle", "kind":"namevalue",  "type":"choices={'interp','flat','off'}"},
+        {"name":"Contour", "kind":"namevalue",  "type":"choices={'off','on'}"},
+        {"name":"ZData", "kind":"namevalue", "type":"double"},
+		    {"name":"ZStyle", "kind":"namevalue", "type":"choices={'continuous','discontinuous','off'}"},
+		    {"name":"FlowData", "kind":"namevalue", "type":"double"},
+		    {"name":"FlowStyle", "kind":"namevalue", "type":"choices={'arrow','off'}"},
+		    {"name":"ColorMap", "kind":"namevalue", "type":[["char"], ["string"]]},
+		    {"name":"XYGrid", "kind":"namevalue", "type":"choices={'off','on'}"},
+        {"name":"Mesh", "kind":"namevalue", "type":"choices={'on','off'}"},
+		    {"name":"ColorBar", "kind":"namevalue", "type":"choices={'on','off'}"},
+		    {"name":"Title", "kind":"namevalue", "type":[["char"], ["string"]]},
+		    {"name":"Levels", "kind":"namevalue", "type":"double"},
+        {"name":"NodeLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"ElementLabels", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"FaceAlpha", "kind":"namevalue", "type":"double"},
+        {"name":"Deformation", "kind":"namevalue", "type":"struct"},
+        {"name":"DeformationScaleFactor", "kind":"namevalue", "type":"double"}
+    ],
+   "outputs":
+   [
+       {"name":"plotFig", "type":"matlab.graphics.primitive.world.Group"}
+   ]
+},
+
+
+"assembleFEMatrices":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":"pde.PDEModel"},
+        {"name":"bcmethod", "kind":"positional", "type":"choices={'none','nullspace','stiff-spring'}"}
+    ],
+   "outputs":
+   [
+       {"name":"femat", "type":"struct"}
+   ]
+},
+
+"createPDEResults":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":"pde.PDEModel"},
+        {"name":"sol", "kind":"positional", "type":"double"},
+        {"name":"resType", "kind":"ordered", "type":"choices={'stationary'}"}
+    ],
+   "outputs":
+   [
+       {"name":"resultsObj", "type":"pde.StationaryResults"}
+   ]
+},
+
+"createPDEResults":
+{
+    "inputs":
+    [
+        {"name":"pdem","kind":"required", "type":"pde.PDEModel"},
+        {"name":"solOREigVec", "kind":"positional", "type":"double"},
+        {"name":"timeOREigVal", "kind":"positional", "type":"double"},
+        {"name":"resType", "kind":"ordered", "type":"choices={'time-dependent','eigen'}"}
+    ],
+   "outputs":
+   [
+       {"name":"resultsObj", "type":[["pde.TimeDependentResults"],["pde.EigenResults"]]}
+   ]
+},
+
+
+"multicuboid":
+{
+    "inputs":
+    [
+        {"name":"widthVec", "kind":"required", "type":"double"},
+        {"name":"depthVec", "kind":"required", "type":"double"},
+        {"name":"heightVec", "kind":"required", "type":"double"},
+        {"name":"Zoffset", "kind":"namevalue", "type":"double"},
+        {"name":"Void", "kind":"namevalue", "type":[["double"], ["logical"]]}
+    ],
+   "outputs":
+   [
+       {"name":"resultsObj", "type":"pde.DiscreteGeometry"}
+   ]
+},
+
+"multicylinder":
+{
+    "inputs":
+    [
+        {"name":"radiiVec", "kind":"required", "type":"double"},
+        {"name":"heightVec", "kind":"required", "type":"double"},
+        {"name":"Zoffset", "kind":"namevalue", "type":"double"},
+        {"name":"Void", "kind":"namevalue", "type":[["double"], ["logical"]]}
+    ],
+   "outputs":
+   [
+       {"name":"resultsObj", "type":"pde.DiscreteGeometry"}
+   ]
+},
+
+"multisphere":
+{
+    "inputs":
+    [
+        {"name":"radiiVec", "kind":"required", "type":"double"},
+        {"name":"Void", "kind":"namevalue", "type":[["double"], ["logical"]]}
+    ],
+   "outputs":
+   [
+       {"name":"resultsObj", "type":"pde.DiscreteGeometry"}
+   ]
+},
+
+
+"pde.StructuralModel.structuralProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"},
+        {"name":"YoungsModulus", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"PoissonsRatio", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"MassDensity", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"CTE", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.StructuralMaterialAssignment"}
+   ]
+},
+
+
+"pde.StructuralModel.structuralProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"YoungsModulus", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"PoissonsRatio", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"CTE", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.StructuralMaterialAssignment"}
+   ]
+},
+
+"pde.StructuralMaterialAssignmentRecords.findStructuralProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralMaterialAssignmentRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.StructuralMaterialAssignment"}
+   ]
+},
+
+"pde.StructuralMaterialAssignmentRecords.findStructuralProperties":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralMaterialAssignmentRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.StructuralMaterialAssignment"}
+   ]
+},
+
+"pde.StructuralModel.structuralBodyLoad":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"GravitationalAcceleration", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Temperature", "kind":"namevalue", "type":[["double"], ["pde.SteadyStateThermalResults"], ["pde.TransientThermalResults"]]},
+        {"name":"TimeStep", "kind":"namevalue", "type":[["double"]]}
+    ],
+
+   "outputs":
+   [
+       {"name":"mtl", "type":"pde.BodyLoadAssignment"}
+   ]
+},
+
+
+"pde.BodyLoadAssignmentRecords.findBodyLoad":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.BodyLoadAssignmentRecords"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bl", "type":"pde.BodyLoadAssignment"}
+   ]
+},
+
+"pde.BodyLoadAssignmentRecords.findBodyLoad":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.BodyLoadAssignmentRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bl", "type":"pde.BodyLoadAssignment"}
+   ]
+},
+
+"pde.StructuralModel.structuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"},
+        {"name":"XDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"YDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"ZDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Displacement",  "kind":"namevalue",  "type":[["double"], ["function_handle"]]},
+        {"name":"Constraint", "kind":"namevalue", "type":"choices={'fixed','free'}"},
+        {"name":"StartTime", "kind":"namevalue", "type":"double"},
+        {"name":"EndTime", "kind":"namevalue", "type":"double"},
+        {"name":"RiseTime", "kind":"namevalue", "type":"double"},
+        {"name":"FallTime", "kind":"namevalue", "type":"double"},
+        {"name":"Frequency", "kind":"namevalue", "type":"double"},
+        {"name":"Phase", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+
+"pde.StructuralModel.structuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"XDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"YDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"ZDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Displacement",  "kind":"namevalue",  "type":[["double"], ["function_handle"]]},
+        {"name":"Constraint", "kind":"namevalue", "type":"choices={'fixed','free','roller','symmetric'}"},
+        {"name":"StartTime", "kind":"namevalue", "type":"double"},
+        {"name":"EndTime", "kind":"namevalue", "type":"double"},
+        {"name":"RiseTime", "kind":"namevalue", "type":"double"},
+        {"name":"FallTime", "kind":"namevalue", "type":"double"},
+        {"name":"Frequency", "kind":"namevalue", "type":"double"},
+        {"name":"Phase", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+"pde.StructuralModel.structuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"XDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"YDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"ZDisplacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Displacement",  "kind":"namevalue",  "type":[["double"], ["function_handle"]]},
+        {"name":"Constraint", "kind":"namevalue", "type":"choices={'fixed','free','roller','symmetric'}"},
+        {"name":"StartTime", "kind":"namevalue", "type":"double"},
+        {"name":"EndTime", "kind":"namevalue", "type":"double"},
+        {"name":"RiseTime", "kind":"namevalue", "type":"double"},
+        {"name":"FallTime", "kind":"namevalue", "type":"double"},
+        {"name":"Frequency", "kind":"namevalue", "type":"double"},
+        {"name":"Phase", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+
+
+"pde.StructuralModel.structuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"},
+        {"name":"Constraint", "kind":"namevalue", "type":"choices={'multipoint'}"},
+        {"name":"Radius", "kind":"namevalue", "type":"double"},
+        {"name":"Reference", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+
+"pde.StructuralModel.structuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"Constraint", "kind":"namevalue", "type":"choices={'multipoint'}"},
+        {"name":"Radius", "kind":"namevalue", "type":"double"},
+        {"name":"Reference", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+"pde.StructuralModel.structuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"Constraint", "kind":"namevalue", "type":"choices={'multipoint'}"},
+        {"name":"Radius", "kind":"namevalue", "type":"double"},
+        {"name":"Reference", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+
+
+"pde.StructuralModel.structuralBoundaryLoad":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"},
+        {"name":"Force", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"StartTime", "kind":"namevalue", "type":"double"},
+        {"name":"EndTime", "kind":"namevalue", "type":"double"},
+        {"name":"RiseTime", "kind":"namevalue", "type":"double"},
+        {"name":"FallTime", "kind":"namevalue", "type":"double"},
+        {"name":"Frequency", "kind":"namevalue", "type":"double"},
+        {"name":"Phase", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+
+"pde.StructuralModel.structuralBoundaryLoad":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"SurfaceTraction", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Pressure", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"TranslationalStiffness", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"StartTime", "kind":"namevalue", "type":"double"},
+        {"name":"EndTime", "kind":"namevalue", "type":"double"},
+        {"name":"RiseTime", "kind":"namevalue", "type":"double"},
+        {"name":"FallTime", "kind":"namevalue", "type":"double"},
+        {"name":"Frequency", "kind":"namevalue", "type":"double"},
+        {"name":"Phase", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+"pde.StructuralModel.structuralBoundaryLoad":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"SurfaceTraction", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Pressure", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"TranslationalStiffness", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"StartTime", "kind":"namevalue", "type":"double"},
+        {"name":"EndTime", "kind":"namevalue", "type":"double"},
+        {"name":"RiseTime", "kind":"namevalue", "type":"double"},
+        {"name":"FallTime", "kind":"namevalue", "type":"double"},
+        {"name":"Frequency", "kind":"namevalue", "type":"double"},
+        {"name":"Phase", "kind":"namevalue", "type":"double"},
+        {"name":"Vectorized", "kind":"namevalue", "type":"choices={'on','off'}"} 
+
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralBC"}
+   ]
+
+},
+
+
+"pde.StructuralModel.structuralDamping":
+{
+    "inputs":
+    [
+        {"name":"spdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"bctype", "kind":"required", "type":"choices={'proportional'}"},
+        {"name":"Alpha", "kind":"namevalue", "type":"double"},
+        {"name":"Beta", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"sdm", "type":"pde.StructuralDampingAssignment"}
+   ]
+},
+
+"pde.StructuralModel.structuralIC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"},
+        {"name":"Face", "kind":"namevalue", "type":"double"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"},
+        {"name":"Displacement", "kind":"namevalue", "type":[["double"], ["function_handle"]]},
+        {"name":"Velocity", "kind":"namevalue", "type":[["double"], ["function_handle"]]}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":[["pde.GeometricStructuralICs"],["pde.NodalStructuralICs"]]}
+   ]
+
+},
+
+"pde.StructuralModel.structuralSEInterface":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralSEIAssignment"}
+   ]
+
+},
+
+"pde.StructuralModel.structuralSEInterface":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralSEIAssignment"}
+   ]
+
+},
+
+"pde.StructuralModel.structuralSEInterface":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralSEIAssignment"}
+   ]
+
+},
+
+"pde.StructuralModel.solve":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"FrequencyRange", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralResults"}
+   ]
+
+},
+
+"pde.StructuralModel.reduce":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"FrequencyRange", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralResults"}
+   ]
+
+},
+
+
+"pde.StructuralModel.solve":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralModel"},
+        {"name":"TLIST", "kind":"required", "type":"double"},
+        {"name":"ModalResults", "kind":"namevalue", "type":"pde.ModalStructuralResults"}
+    ],
+
+   "outputs":
+   [
+       {"name":"bcs", "type":"pde.StructuralResults"}
+   ]
+
+},
+
+"pde.StaticStructuralResults.evaluateReaction":
+{
+    "inputs":
+    [
+        {"name":"sres", "kind":"required", "type":"pde.StaticStructuralResults"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"reaction", "type":"struct"}
+   ]
+},
+
+
+
+"pde.StaticStructuralResults.evaluateReaction":
+{
+    "inputs":
+    [
+        {"name":"sres", "kind":"required", "type":"pde.StaticStructuralResults"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"reaction", "type":"struct"}
+   ]
+},
+
+
+"pde.TransientStructuralResults.evaluateReaction":
+{
+    "inputs":
+    [
+        {"name":"sres", "kind":"required", "type":"pde.TransientStructuralResults"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"reaction", "type":"struct"}
+   ]
+},
+
+
+
+"pde.TransientStructuralResults.evaluateReaction":
+{
+    "inputs":
+    [
+        {"name":"sres", "kind":"required", "type":"pde.TransientStructuralResults"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"reaction", "type":"struct"}
+   ]
+},
+
+
+
+
+"pde.StructuralBCRecords.findStructuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralBCRecords"},
+        {"name":"Edge", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"sbc", "type":"pde.StructuralBC"}
+   ]
+},
+
+
+"pde.StructuralBCRecords.findStructuralBC":
+{
+    "inputs":
+    [
+        {"name":"pdem", "kind":"required", "type":"pde.StructuralBCRecords"},
+        {"name":"Face", "kind":"namevalue", "type":"double"}
+    ],
+
+   "outputs":
+   [
+       {"name":"sc", "type":"pde.StructuralBC"}
+   ]
+},
+
+
+"pde.FEMesh.findNodes":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'region'}"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}, 
+        {"name":"Face", "kind":"namevalue", "type":"double"}, 
+        {"name":"Edge", "kind":"namevalue", "type":"double"},  
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}      
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findNodes":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'box'}"},
+        {"name":"Xlimits", "kind": "required", "type": "double" },
+        {"name":"Ylimits", "kind": "required", "type": "double" },
+        {"name":"Zlimits", "kind": "ordered", "type": "double" }     
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findNodes":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'radius'}"},
+        {"name":"Center", "kind": "required", "type": "double" },
+        {"name":"Radius", "kind": "required", "type": "double" }
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findNodes":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'nearest'}"},
+        {"name":"Point", "kind": "required", "type": "double" }     
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findElements":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'region'}"},
+        {"name":"Cell", "kind":"namevalue", "type":"double"}, 
+        {"name":"Face", "kind":"namevalue", "type":"double"}, 
+        {"name":"Edge", "kind":"namevalue", "type":"double"},  
+        {"name":"Vertex", "kind":"namevalue", "type":"double"}      
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findElements":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'box'}"},
+        {"name":"Xlimits", "kind": "required", "type": "double" },
+        {"name":"Ylimits", "kind": "required", "type": "double" },
+        {"name":"Zlimits", "kind": "ordered", "type": "double" }     
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findElements":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'radius'}"},
+        {"name":"Center", "kind": "required", "type": "double" },
+        {"name":"Radius", "kind": "required", "type": "double" }
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.findElements":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"SearchMethod", "kind":"required", "type":"choices={'attached'}"},
+        {"name":"NodeID", "kind": "required", "type": "double" }     
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.meshQuality":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},       
+        {"name":"E", "kind":"positional", "type":"double"},   
+        {"name":"Metric", "kind":"ordered", "type":"choices={'aspect-ratio'}"}                   
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.meshQuality":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},             
+        {"name":"Metric", "kind":"ordered", "type":"choices={'aspect-ratio'}"}                   
+    ],
+
+   "outputs":
+   [
+        {"name": "n", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.area":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},             
+        {"name":"e", "kind":"ordered", "type":"double"}          
+    ],
+
+   "outputs":
+   [
+        {"name": "a", "type": "double"},
+        {"name": "ae", "type": "double"}
+   ]
+},
+
+"pde.FEMesh.volume":
+{
+    "inputs":
+    [
+        {"name":"msh", "kind":"required", "type":"pde.FEMesh"},             
+        {"name":"e", "kind":"ordered", "type":"double"}          
+    ],
+
+   "outputs":
+   [
+        {"name": "v", "type": "double"},
+        {"name": "ve", "type": "double"}
+   ]
+},
+
+"pde.DiscreteGeometry.addVertex":
+{
+    "inputs":
+    [
+        {"name":"g", "kind":"required", "type":"pde.DiscreteGeometry"},       
+        {"name":"CreationMethod", "kind":"positional", "type":"choices={'Coordinates'}"},
+        {"name":"Coordinates", "kind":"required", "type":"double"}
+    ],
+
+   "outputs":
+   [
+        {"name": "vtx", "type": "double"}      
+   ]
+}
+}

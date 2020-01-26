@@ -1,0 +1,66 @@
+ {
+ "animationToFrame":
+ {
+     "inputs":
+     [
+         {"name": "fig",            "kind": "optional",  "type": "matlab.ui.Figure"},
+         {"name": "AnimationRange", "kind": "namevalue", "type":["numeric", "vector", "numel=2"]},
+         {"name": "Backwards",      "kind": "namevalue", "type": "logical"},
+         {"name": "FrameRate",      "kind": "namevalue", "type":["numeric", ">=0"]}
+     ],
+     "outputs":
+     [
+         {"name": "frames", "type": "struct"}
+     ]
+ },
+ "fanimator":
+ {
+     "inputs":
+     [
+         {"name": "ax",             "kind": "optional",  "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+         {"name": "funcHandle",     "kind": "required",  "type": "function_handle"},
+         {"name": "funcHandleArg",  "kind": "ordered",   "repeating":true},
+         {"name": "AnimationRange", "kind": "namevalue", "type":["numeric", "vector", "numel=2"]},
+         {"name": "FrameRate",      "kind": "namevalue", "type": ["numeric", ">=0"]}
+     ],
+     "outputs":
+     [
+         {"name": "A",              "type": "matlab.graphics.function.Animator"}
+     ]
+ },
+ "playAnimation":
+ {
+     "inputs":
+     [
+         {"name": "fig",            "kind": "optional",  "type": "matlab.ui.Figure"},
+         {"name": "AnimationRange", "kind": "namevalue", "type":["numeric", "vector", "numel=2"]},
+         {"name": "Backwards",      "kind": "namevalue", "type": "logical"},
+         {"name": "FrameRate",      "kind": "namevalue", "type":["numeric", ">=0"]},
+         {"name": "SpeedFactor",    "kind": "namevalue", "type": "numeric"}
+     ],
+     "outputs":
+     []
+ },
+ "rewindAnimation":
+ {
+     "inputs":
+     [
+         {"name": "fig", "kind": "optional"}
+     ],
+     "outputs":
+     []
+ },
+ "writeAnimation":
+ {
+     "inputs":
+     [
+         {"name": "fig",            "kind": "optional",  "type": "matlab.ui.Figure"},
+         {"name": "filename",       "kind": "required",  "type":[["filepath=*.avi,*.gif"], ["char"]]},
+         {"name": "AnimationRange", "kind": "namevalue", "type":["numeric", "vector", "numel=2"]},
+         {"name": "Backwards",      "kind": "namevalue", "type": "logical"},
+         {"name": "FrameRate",      "kind": "namevalue", "type":["numeric", ">=0"]}
+     ],
+     "outputs":
+     []
+ }
+ }

@@ -1,0 +1,74 @@
+{
+
+"denoiseImage":
+{
+  "inputs":
+  [
+    {"name":"A", "kind":"required", "type":[["uint8"],["uint16"],["single"], ["double"]]},
+    {"name":"net", "kind":"required", "type":[["SeriesNetwork"],["DAGNetwork"]]}
+  ],
+  "outputs":
+  [
+    {"name":"I", "type":[["uint8"],["uint16"],["single"], ["double"]]}
+  ]
+},
+
+"denoisingImageDatastore":
+{
+  "inputs":
+  [
+    {"name":"imds", "kind":"required", "type":"matlab.io.datastore.ImageDatastore"},
+    {"name":"PatchesPerImage", "kind":"namevalue", "type":["numeric"]},
+    {"name":"PatchSize", "kind":"namevalue", "type":["numeric"]},
+    {"name":"GaussianNoiseLevel", "kind":"namevalue", "type":[["single"],["double"]]},
+    {"name":"BackgroundExecution", "kind":"namevalue", "type":["logical"]},
+    {"name":"ChannelFormat", "kind":"namevalue","type":"choices={'rgb','grayscale'}"}
+  ],
+  "outputs":
+  [
+    {"name":"source", "type":["denoisingImageDatastore"]}
+  ]
+},
+
+"denoisingNetwork":
+{
+  "inputs":
+  [
+    {"name":"ModelName", "kind":"required", "type":"choices={'dncnn'}"}
+  ],
+  "outputs":
+  [
+    {"name":"net", "type":[["SeriesNetwork"],["DAGNetwork"]]}
+  ]
+},
+
+"dnCNNLayers":
+{
+  "inputs":
+  [
+    {"name":"NetworkDepth", "kind":"namevalue", "type":["numeric"]}
+  ],
+  "outputs":
+  [
+    {"name":"layers", "type":["nnet.cnn.layer.Layer"]}
+  ]
+},
+
+"randomPatchExtractionDatastore":
+{
+  "inputs":
+  [
+    {"name":"imds1", "kind":"required", "type":[["matlab.io.datastore.ImageDatastore"],["matlab.io.datastore.PixelLabelDatastore"],["matlab.io.datastore.TransformedDatastore"]]},
+    {"name":"imds2", "kind":"required", "type":[["matlab.io.datastore.ImageDatastore"],["matlab.io.datastore.PixelLabelDatastore"],["matlab.io.datastore.TransformedDatastore"]]},
+    {"name":"patchSize", "kind":"required", "type":["numeric"]},
+    {"name":"PatchesPerImage", "kind":"namevalue", "type":["numeric","scalar"]},
+    {"name":"DispatchInBackground", "kind":"namevalue", "type":["logical","scalar"]},
+    {"name":"DataAugmentation", "kind":"namevalue","type":[["char"],["imageDataAugmenter"]]}
+  ],
+  "outputs":
+  [
+    {"name":"source", "type":["randomPatchExtractionDatastore"]}
+  ]
+}
+
+}

@@ -1,0 +1,1179 @@
+{  
+    "additionLayer":
+    {
+        "inputs":
+        [
+            {"name":"NumInputs", "kind":"required", "type":["integer", ">1"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "alexnet":
+    {
+        "inputs":[]
+    },
+
+
+    "augmentedImageDatastore":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"OutputSize", "kind":"required", "type":["integer", "vector", ">0"]},
+                        {"name":"imds", "kind":"required", "type":"matlab.io.datastore.ImageDatastore"}
+                    ],
+                    [
+                        {"name":"OutputSize", "kind":"required", "type":["numeric", "vector"]},
+                        {"name":"tbl", "kind":"required", "type":"table"},
+                        {"name":"responseName(s)", "kind":"positional", "type":[["choices=tbl.Properties.VariableNames"], ["char"], ["cellstr"]]}
+                    ],
+                    [
+                        {"name":"OutputSize", "kind":"required", "type":["numeric", "vector"]},
+                        {"name":"X", "kind":"required", "type":"numeric"},
+                        {"name":"Y", "kind":"positional", "type":[["categorical"],["numeric"]]}
+                    ]
+                ]
+            },
+
+            {"name":"DataAugmentation", "kind":"namevalue", "type":[["char"], ["imageDataAugmenter"]]},
+            {"name":"ColorPreprocessing", "kind":"namevalue", "type":[["choices={'gray2rgb','rgb2gray', 'none'}"], ["char"]]},
+            {"name":"OutputSizeMode", "kind":"namevalue", "type":[["choices={'resize','centercrop', 'randcrop'}"], ["char"]]},
+            {"name":"DispatchInBackground", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+
+    "augmentedImageSource":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"OutputSize", "kind":"required", "type":["integer", "vector", "numel=2", ">0"]},
+                        {"name":"imds", "kind":"required", "type":"matlab.io.datastore.ImageDatastore"}
+                    ],
+                    [
+                        {"name":"OutputSize", "kind":"required", "type":["numeric", "vector", "numel=2"]},
+                        {"name":"tbl", "kind":"required", "type":"table"},
+
+                        {"name":"responseName(s)", "kind":"positional", "type":[["choices=tbl.Properties.VariableNames"], ["char"], ["cellstr"]]}
+                    ],
+                    [
+                        {"name":"OutputSize", "kind":"required", "type":["numeric", "vector", "numel=2"]},
+                        {"name":"X", "kind":"required", "type":"numeric"},
+                        {"name":"Y", "kind":"required", "type":"numeric"}
+                    ]
+                ]
+            },
+
+            {"name":"DataAugmentation", "kind":"namevalue", "type":[["char"], ["imageDataAugmenter"]]},
+            {"name":"ColorPreprocessing", "kind":"namevalue", "type":[["choices={'gray2rgb','rgb2gray', 'none'}"], ["char"]]},
+            {"name":"OutputSizeMode", "kind":"namevalue", "type":[["choices={'resize','centercrop', 'randcrop'}"], ["char"]]},
+            {"name":"BackgroundExecution", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+
+    "averagePooling2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"poolSize", "kind":"required", "type":["integer", ">0"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer", ">=0"]]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "globalAveragePooling2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "averagePooling3dLayer":
+    {
+        "inputs":
+        [
+            {"name":"poolSize", "kind":"required", "type":["integer", ">0"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer", ">=0"]]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "globalAveragePooling3dLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "batchNormalizationLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Offset", "kind":"namevalue", "type":"numeric"},
+            {"name":"Scale", "kind":"namevalue", "type":"numeric"},
+            {"name":"TrainedMean", "kind":"namevalue", "type":"numeric"},
+            {"name":"TrainedVariance", "kind":"namevalue", "type":"numeric"},
+            {"name":"Epsilon", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"OffsetLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"ScaleLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"OffsetL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"ScaleL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"OffsetInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"ScaleInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones'}"]]}
+        ]
+    },
+
+    "bilstmLayer":
+    {
+        "inputs":
+        [
+            {"name":"numHiddenUnits","kind":"required", "type":["scalar", "integer", ">0"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"OutputMode", "kind":"namevalue", "type":"choices={'sequence','last'}"},
+            {"name":"StateActivationFunction", "kind":"namevalue", "type":"choices={'tanh','softsign'}"},
+            {"name":"GateActivationFunction", "kind":"namevalue", "type":"choices={'sigmoid','hard-sigmoid'}"},
+            {"name":"InputWeightsLearnRateFactor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"RecurrentWeightsLearnRateFactor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"InputWeightsL2Factor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"RecurrentWeightsL2Factor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"InputWeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'orthogonal', 'zeros'}"]]},
+            {"name":"RecurrentWeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'orthogonal', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'unit-forget-gate'}"]]},
+            {"name":"InputWeights", "kind":"namevalue", "type":"numeric"},
+            {"name":"RecurrentWeights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"},
+            {"name":"HiddenState", "kind":"namevalue", "type":"numeric"},
+            {"name":"CellState", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "checkLayer":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.layer.Layer"],["nnet.layer.RegressionLayer"],["nnet.layer.ClassificationLayer"]]},
+            {"name":"validInputSize", "kind":"required", "type":[["cell"],["integer","vector",">=0"]]},
+            {"name":"ObservationDimension", "kind":"namevalue", "type":["integer","scalar",">0"]}
+        ]
+    },
+
+    "classificationLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Classes", "kind":"namevalue", "type":[["categorical","vector"],["string","vector"],["cellstr","vector"]]}
+        ]
+    },
+
+    "clippedReluLayer":
+    {
+        "inputs":
+        [
+            {"name":"Ceiling", "kind":"required", "type":["numeric", "scalar", ">0"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "concatenationLayer":
+    {
+        "inputs":
+        [
+            {"name":"Dim", "kind":"required", "type":["integer","scalar"]},
+            {"name":"NumInputs", "kind":"required", "type":["integer","scalar",">1"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "convolution2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"filterSize","kind":"required", "type":["integer", ">0"]},
+            {"name":"numFilters","kind":"required", "type":["integer", "scalar", ">0"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"DilationFactor", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer",">=0"]]},
+            {"name":"NumChannels", "kind":"namevalue", "type":[["char"], ["scalar", "integer", ">0"], ["char"]]},
+            {"name":"WeightLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "convolution3dLayer":
+    {
+        "inputs":
+        [
+            {"name":"filterSize","kind":"required", "type":["integer", ">0"]},
+            {"name":"numFilters","kind":"required", "type":["integer", "scalar", ">0"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"DilationFactor", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer",">=0"]]},
+            {"name":"NumChannels", "kind":"namevalue", "type":[["char"], ["scalar", "integer", ">0"], ["char"]]},
+            {"name":"WeightLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "crop2dLayer":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    {"name":"Mode", "kind":"required", "type":"choices={'centercrop'}"},
+                    {"name":"Location", "kind":"required", "type":["numel=2","numeric","vector"]}
+                ]
+            },
+            {"name":"Name", "kind":"namevalue", "type":["char","vector"]}
+        ]
+    },
+
+    "crop3dLayer":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    {"name":"CropLocation", "kind":"positional", "type":"choices={'centercrop'}"},
+                    {"name":"CropLocation", "kind":"positional", "type":["numel=1","numeric","vector"]}
+                ]
+            },
+            {"name":"Name", "kind":"namevalue", "type":["char","vector"]}
+        ]
+    },
+
+    "groupedConvolution2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"filterSize","kind":"required", "type":["integer", ">0"]},
+            {"name":"numFiltersPerGroup","kind":"required", "type":["integer", "scalar", ">0"]},
+            {"name":"numGroups", "kind":"required", "type":[["choices={'channel-wise'}"], ["scalar", "integer", ">0"], ["char"]]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"DilationFactor", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer",">=0"]]},
+            {"name":"WeightLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "crossChannelNormalizationLayer":
+    {
+        "inputs":
+        [
+            {"name":"WindowChannelSize", "kind":"required",  "type":["integer", "scalar", ">0"] },
+            {"name":"Alpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"Beta", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"K", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "DAGNetwork.activations":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"DAGNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["table"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.Datastore"]]},
+            {"name":"layer", "kind":"required", "type":"char"},
+            {"name":"OutputAs", "kind":"namevalue", "type":"choices={'rows','columns','channels'}"},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":[["numeric", "integer", ">0", "scalar"]]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "DAGNetwork.classify":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"DAGNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["table"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":[["numeric", "integer", ">0", "scalar"]]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "DAGNetwork.classifyAndUpdateState":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"DAGNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "DAGNetwork.plot":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"DAGNetwork"}
+        ]
+    },
+
+    "DAGNetwork.predict":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"DAGNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["table"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":[["numeric", "integer", ">0", "scalar"]]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "DAGNetwork.predictAndUpdateState":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"DAGNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "deepDreamImage":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":[["SeriesNetwork"],["DAGNetwork"]]},
+            {"name":"layer", "kind":"required", "type":[["integer", "scalar", ">0"], ["char"]]},
+            {"name":"channels", "kind":"required", "type":["integer", ">=1","vector"]},
+            {"name":"InitialImage", "kind":"namevalue", "type":"numeric"},
+            {"name":"PyramidLevels", "kind":"namevalue",  "type":["integer", ">0"]},
+            {"name":"PyramidScale", "kind":"namevalue",  "type":["numeric", ">1", "scalar"]},
+            {"name":"NumIterations", "kind":"namevalue",  "type":["integer", ">0"]},
+            {"name":"OutputScaling", "kind":"namevalue", "type":"choices={'linear','none'}"},
+            {"name":"Verbose", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"}
+        ]
+    },
+
+    "depthConcatenationLayer":
+    {
+        "inputs":
+        [
+            {"name":"NumInputs", "kind":"required", "type":["integer","scalar",">1"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "dlnetwork":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"}
+        ]
+    },
+
+    "dlnetwork.forward":
+    {
+        "inputs":
+        [
+            {"name":"dlnet", "kind":"required", "type":"dlnetwork"},
+            {"name":"dlX", "kind":"required", "type":"dlarray"},
+            {"name":"Outputs", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]}
+        ]
+    },
+
+    "dlnetwork.predict":
+    {
+        "inputs":
+        [
+            {"name":"dlnet", "kind":"required", "type":"dlnetwork"},
+            {"name":"dlX", "kind":"required", "type":"dlarray"},
+            {"name":"Outputs", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]}
+        ]
+    },
+
+    "dropoutLayer":
+    {
+        "inputs":
+        [
+            {"name":"probability", "kind":"positional", "type":["scalar", "numeric", ">=0", "<=1"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "eluLayer":
+    {
+        "inputs":
+        [
+            {"name":"Alpha", "kind":"positional", "type":["numeric", "scalar"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "flattenLayer":
+     {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "fullyConnectedLayer":
+    {
+        "inputs":
+        [
+            {"name":"outputSize","kind":"required", "type":["integer","scalar",">0"]},
+            {"name":"WeightLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"WeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'orthogonal', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "imageDataAugmenter":
+    {
+        "inputs":
+        [
+            {"name":"FillValue", "kind":"namevalue", "type":"numeric"},
+            {"name":"RandXReflection", "kind":"namevalue",  "type":["logical", "scalar"]},
+            {"name":"RandYReflection", "kind":"namevalue",  "type":["logical", "scalar"]},
+            {"name":"RandRotation", "kind":"namevalue",  "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandXScale", "kind":"namevalue",  "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandScale", "kind":"namevalue",  "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandYScale", "kind":"namevalue",  "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandXShear", "kind":"namevalue",  "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandYShear", "kind":"namevalue",  "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandXTranslation", "kind":"namevalue", "type":["numeric", "vector", "numel=2"]},
+            {"name":"RandYTranslation", "kind":"namevalue", "type":["numeric", "vector", "numel=2"]}
+        ]
+    },
+
+    "image3dInputLayer":
+    {
+        "inputs":
+        [
+            {"name":"inputSize","kind":"required", "type":["integer", "vector"]},
+            {"name":"Normalization", "kind":"namevalue", "type":[["function_handle"], ["choices={'none','zerocenter','zscore','rescale-symmetric','rescale-zero-one'}"]]},
+            {"name":"NormalizationDimension", "kind":"namevalue", "type":"choices={'auto','channel','element','all'}"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Mean", "kind":"namevalue", "type":"numeric"},
+            {"name":"StandardDeviation", "kind":"namevalue", "type":"numeric"},
+            {"name":"Min", "kind":"namevalue", "type":"numeric"},
+            {"name":"Max", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "imageInputLayer":
+    {
+        "inputs":
+        [
+            {"name":"inputSize","kind":"required", "type":["integer", "vector"]},
+            {"name":"Normalization", "kind":"namevalue", "type":[["function_handle"], ["choices={'none','zerocenter','zscore','rescale-symmetric','rescale-zero-one'}"]]},
+            {"name":"NormalizationDimension", "kind":"namevalue", "type":"choices={'auto','channel','element','all'}"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Mean", "kind":"namevalue", "type":"numeric"},
+            {"name":"StandardDeviation", "kind":"namevalue", "type":"numeric"},
+            {"name":"Min", "kind":"namevalue", "type":"numeric"},
+            {"name":"Max", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "layerGraph":
+    {
+        "inputs":
+        [
+            {"name":"larray", "kind":"positional", "type":"nnet.cnn.layer.Layer"}
+        ]
+    },
+
+    "layerGraph":
+    {
+        "inputs":
+        [
+            {"name":"dagNet", "kind":"positional", "type":"DAGNetwork"}
+        ]
+    },
+
+    "layerGraph":
+    {
+        "inputs":
+        [
+            {"name":"dlnet", "kind":"positional", "type":"dlnetwork"}
+        ]
+    },
+
+    "leakyReluLayer":
+    {
+        "inputs":
+        [
+            {"name":"Scale", "kind":"positional", "type":["numeric", "scalar"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "lstmLayer":
+    {
+        "inputs":
+        [
+            {"name":"numHiddenUnits","kind":"required", "type":["scalar", "integer", ">0"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"OutputMode", "kind":"namevalue", "type":"choices={'sequence','last'}"},
+            {"name":"StateActivationFunction", "kind":"namevalue", "type":"choices={'tanh','softsign'}"},
+            {"name":"GateActivationFunction", "kind":"namevalue", "type":"choices={'sigmoid','hard-sigmoid'}"},
+            {"name":"InputWeightsLearnRateFactor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"RecurrentWeightsLearnRateFactor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"InputWeightsL2Factor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"RecurrentWeightsL2Factor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"InputWeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'orthogonal', 'zeros'}"]]},
+            {"name":"RecurrentWeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'orthogonal', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'unit-forget-gate'}"]]},
+            {"name":"InputWeights", "kind":"namevalue", "type":"numeric"},
+            {"name":"RecurrentWeights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"},
+            {"name":"HiddenState", "kind":"namevalue", "type":"numeric"},
+            {"name":"CellState", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "maxPooling2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"poolSize", "kind":"required", "type":["integer", ">0", "vector"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0", "vector"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer", ">=0", "vector"]]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"HasUnpoolingOutputs", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+    
+   "maxPooling3dLayer":
+    {
+        "inputs":
+        [
+            {"name":"poolSize", "kind":"required", "type":["integer", ">0", "vector"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0", "vector"]},
+            {"name":"Padding", "kind":"namevalue", "type":[["char"],["integer", ">=0", "vector"]]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"HasUnpoolingOutputs", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+    
+    "maxUnpooling2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "nnet.cnn.LayerGraph.addLayers":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"},
+            {"name":"larray", "kind":"required", "type":"nnet.cnn.layer.Layer"}
+        ]
+    },
+
+    "nnet.cnn.LayerGraph.connectLayers":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"},
+            {"name":"source", "kind":"required", "type":"char"},
+            {"name":"destination", "kind":"required", "type":"char"}
+        ]
+    },
+
+    "nnet.cnn.LayerGraph.disconnectLayers":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"},
+            {"name":"source", "kind":"required", "type":"char"},
+            {"name":"destination", "kind":"required", "type":"char"}
+        ]
+    },
+
+    "nnet.cnn.LayerGraph.replaceLayer":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"},
+            {"name":"layerName", "kind":"required", "type":"char"},
+            {"name":"larray", "kind":"required", "type":"nnet.cnn.layer.Layer"},
+            {"name":"ReconnectBy", "kind":"namevalue", "type":"choices={'name','order'}"}
+        ]
+    },
+
+    "nnet.cnn.LayerGraph.plot":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"}
+        ]
+    },
+
+    "nnet.cnn.LayerGraph.removeLayers":
+    {
+        "inputs":
+        [
+            {"name":"lgraph", "kind":"required", "type":"nnet.cnn.LayerGraph"},
+            {"name":"layerNames", "kind":"required", "type":[["char"], ["cellstr"]]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.FullyConnectedLayer"], ["nnet.cnn.layer.Convolution2DLayer"], ["nnet.cnn.layer.Convolution3DLayer"], ["nnet.cnn.layer.GroupedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution3DLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Weights','Bias'}"},
+            {"name":"learnRateFactor", "kind":"required", "type":["numeric", "scalar", ">=0"]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.setL2Factor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.FullyConnectedLayer"], ["nnet.cnn.layer.Convolution2DLayer"], ["nnet.cnn.layer.Convolution3DLayer"], ["nnet.cnn.layer.GroupedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution3DLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Weights','Bias'}"},
+            {"name":"learnRateFactor", "kind":"required", "type":["numeric", "scalar", ">=0"]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.FullyConnectedLayer"], ["nnet.cnn.layer.Convolution2DLayer"], ["nnet.cnn.layer.Convolution3DLayer"], ["nnet.cnn.layer.GroupedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution3DLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Weights','Bias'}"}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.getL2Factor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.FullyConnectedLayer"], ["nnet.cnn.layer.Convolution2DLayer"], ["nnet.cnn.layer.Convolution3DLayer"], ["nnet.cnn.layer.GroupedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution2DLayer"], ["nnet.cnn.layer.TransposedConvolution3DLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Weights','Bias'}"}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.LSTMLayer"], ["nnet.cnn.layer.BiLSTMLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'InputWeights','RecurrentWeights','Bias'}"},
+            {"name":"learnRateFactor", "kind":"required", "type":["numeric", "scalar", ">=0"]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.setL2Factor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.LSTMLayer"], ["nnet.cnn.layer.BiLSTMLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'InputWeights','RecurrentWeights','Bias'}"},
+            {"name":"learnRateFactor", "kind":"required", "type":["numeric", "scalar", ">=0"]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.LSTMLayer"], ["nnet.cnn.layer.BiLSTMLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'InputWeights','RecurrentWeights','Bias'}"}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.getL2Factor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":[["nnet.cnn.layer.LSTMLayer"], ["nnet.cnn.layer.BiLSTMLayer"]]},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'InputWeights','RecurrentWeights','Bias'}"}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.setLearnRateFactor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":"nnet.cnn.layer.BatchNormalizationLayer"},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Offset','Scale'}"},
+            {"name":"learnRateFactor", "kind":"required", "type":["numeric", "scalar", ">=0"]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.setL2Factor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":"nnet.cnn.layer.BatchNormalizationLayer"},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Offset','Scale'}"},
+            {"name":"learnRateFactor", "kind":"required", "type":["numeric", "scalar", ">=0"]}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.getLearnRateFactor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":"nnet.cnn.layer.BatchNormalizationLayer"},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Offset','Scale'}"}
+        ]
+    },
+
+    "nnet.internal.cnn.layer.Externalizable.getL2Factor":
+    {
+        "inputs":
+        [
+            {"name":"layer", "kind":"required", "type":"nnet.cnn.layer.BatchNormalizationLayer"},
+            {"name":"learnableParameterName", "kind":"required", "type":"choices={'Offset','Scale'}"}
+        ]
+    },
+
+    "regressionLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"ResponseNames", "kind":"namevalue", "type":[["string","vector"],["cellstr","vector"]]}
+        ]
+    },
+
+    "reluLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "sequenceFoldingLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "sequenceInputLayer":
+    {
+        "inputs":
+        [
+            {"name":"inputSize", "kind":"required", "type":["integer", "vector"]},
+            {"name":"Normalization", "kind":"namevalue", "type":[["function_handle"], ["choices={'none','zerocenter','zscore','rescale-symmetric','rescale-zero-one'}"]]},
+            {"name":"NormalizationDimension", "kind":"namevalue", "type":"choices={'auto','channel','element','all'}"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Mean", "kind":"namevalue", "type":"numeric"},
+            {"name":"StandardDeviation", "kind":"namevalue", "type":"numeric"},
+            {"name":"Min", "kind":"namevalue", "type":"numeric"},
+            {"name":"Max", "kind":"namevalue", "type":"numeric"}
+        ]
+
+    },
+
+    "sequenceUnfoldingLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "SeriesNetwork.activations":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"SeriesNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["table"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.Datastore"]]},
+            {"name":"layer", "kind":"required", "type":[["numeric"], ["char"]]},
+            {"name":"OutputAs", "kind":"namevalue", "type":"choices={'rows','columns','channels'}"},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":[["double", "integer"], ["single", "integer"]]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "SeriesNetwork.classify":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"SeriesNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["table"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":[["double", "integer"], ["single", "integer"]]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"}
+        ]
+    },
+
+    "SeriesNetwork.classifyAndUpdateState":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"SeriesNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"}
+        ]
+    },
+
+    "SeriesNetwork.predict":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"SeriesNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["table"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":[["double", "integer"], ["single", "integer"]]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"}
+        ]
+    },
+
+    "SeriesNetwork.predictAndUpdateState":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"SeriesNetwork"},
+            {"name":"X", "kind":"required", "type":[["double"], ["single"], ["cell"], ["matlab.io.Datastore"]]},
+            {"name":"MiniBatchSize", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','gpu','cpu'}"},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"},
+            {"name":"Acceleration", "kind":"namevalue", "type":"choices={'auto','mex','none'}"}
+        ]
+    },
+
+    "SeriesNetwork.resetState":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required", "type":"SeriesNetwork"}
+        ]
+    },
+
+    "softmaxLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "tanhLayer":
+    {
+        "inputs":
+        [
+            {"name":"Name", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "trainingOptions":
+    {
+        "inputs":
+        [
+            {"name":"solverName", "kind":"required", "type":"choices={'sgdm'}"},
+            {"name":"Momentum", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]},
+            {"name":"CheckpointPath", "kind":"namevalue", "type":"char"},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','cpu', 'gpu', 'multi-gpu', 'parallel'}"},
+            {"name":"InitialLearnRate", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"LearnRateSchedule", "kind":"namevalue", "type":"choices={'none','piecewise'}"},
+            {"name":"LearnRateDropFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]},
+            {"name":"LearnRateDropPeriod", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"L2Regularization", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"GradientThresholdMethod", "kind":"namevalue", "type":"choices={'global-l2norm','l2norm', 'absolute-value'}"},
+            {"name":"GradientThreshold", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"MaxEpochs", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"MiniBatchSize","kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"ResetInputNormalization", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"OutputFcn", "kind":"namevalue", "type":[["function_handle"], ["char"], ["cell"], ["cellstr"]]},
+            {"name":"Plots", "kind":"namevalue", "type":"choices={'none','training-progress'}"},
+            {"name":"Shuffle", "kind":"namevalue", "type":"choices={'once','never','every-epoch'}"},
+            {"name":"ValidationData", "kind":"namevalue", "type":[["table"], ["matlab.io.Datastore"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.datastore.MiniBatchable"], ["cell", "numel=2"]]},
+            {"name":"ValidationFrequency", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"ValidationPatience", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"Verbose", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"VerboseFrequency", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"WorkerLoad", "kind":"namevalue", "type":["numeric"]},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "trainingOptions":
+    {
+        "inputs":
+        [
+            {"name":"solverName", "kind":"required", "type":"choices={'adam'}"},
+            {"name":"GradientDecayFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"SquaredGradientDecayFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"Epsilon", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"CheckpointPath", "kind":"namevalue", "type":"char"},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','cpu', 'gpu', 'multi-gpu', 'parallel'}"},
+            {"name":"InitialLearnRate", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"LearnRateSchedule", "kind":"namevalue", "type":"choices={'none','piecewise'}"},
+            {"name":"LearnRateDropFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]},
+            {"name":"LearnRateDropPeriod", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"L2Regularization", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"GradientThresholdMethod", "kind":"namevalue", "type":"choices={'global-l2norm','l2norm', 'absolute-value'}"},
+            {"name":"GradientThreshold", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"MaxEpochs", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"MiniBatchSize","kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"ResetInputNormalization", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"OutputFcn", "kind":"namevalue", "type":[["function_handle"], ["char"], ["cell"], ["cellstr"]]},
+            {"name":"Plots", "kind":"namevalue", "type":"choices={'none','training-progress'}"},
+            {"name":"Shuffle", "kind":"namevalue", "type":"choices={'once','never','every-epoch'}"},
+            {"name":"ValidationData", "kind":"namevalue", "type":[["table"], ["matlab.io.Datastore"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.datastore.MiniBatchable"], ["cell", "numel=2"]]},
+            {"name":"ValidationFrequency", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"ValidationPatience", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"Verbose", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"VerboseFrequency", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"WorkerLoad", "kind":"namevalue", "type":["numeric"]},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "trainingOptions":
+    {
+        "inputs":
+        [
+            {"name":"solverName", "kind":"required", "type":"choices={'rmsprop'}"},
+            {"name":"SquaredGradientDecayFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"Epsilon", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"CheckpointPath", "kind":"namevalue", "type":"char"},
+            {"name":"ExecutionEnvironment", "kind":"namevalue", "type":"choices={'auto','cpu', 'gpu', 'multi-gpu', 'parallel'}"},
+            {"name":"InitialLearnRate", "kind":"namevalue", "type":["numeric", ">0", "scalar"]},
+            {"name":"LearnRateSchedule", "kind":"namevalue", "type":"choices={'none','piecewise'}"},
+            {"name":"LearnRateDropFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]},
+            {"name":"LearnRateDropPeriod", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"L2Regularization", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"GradientThresholdMethod", "kind":"namevalue", "type":"choices={'global-l2norm','l2norm', 'absolute-value'}"},
+            {"name":"GradientThreshold", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"MaxEpochs", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"MiniBatchSize","kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"ResetInputNormalization", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"OutputFcn", "kind":"namevalue", "type":[["function_handle"], ["char"], ["cell"], ["cellstr"]]},
+            {"name":"Plots", "kind":"namevalue", "type":"choices={'none','training-progress'}"},
+            {"name":"Shuffle", "kind":"namevalue", "type":"choices={'once','never','every-epoch'}"},
+            {"name":"ValidationData", "kind":"namevalue", "type":[["table"], ["matlab.io.Datastore"], ["matlab.io.datastore.ImageDatastore"], ["matlab.io.datastore.MiniBatchable"], ["cell", "numel=2"]]},
+            {"name":"ValidationFrequency", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"ValidationPatience", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"Verbose", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"VerboseFrequency", "kind":"namevalue", "type":["integer", "scalar", ">0"]},
+            {"name":"WorkerLoad", "kind":"namevalue", "type":["numeric"]},
+            {"name":"SequenceLength", "kind":"namevalue", "type":[["numeric", ">0", "scalar"], ["choices={'shortest','longest'}"]]},
+            {"name":"SequencePaddingValue", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"SequencePaddingDirection", "kind":"namevalue", "type":"choices={'left','right'}"}
+        ]
+    },
+
+    "trainNetwork":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"imds", "kind":"required", "type":[["matlab.io.datastore.ImageDatastore"]]}
+                    ],
+                    [
+                        {"name":"mbds", "kind":"required", "type":[["matlab.io.datastore.MiniBatchable"]]}
+                    ]
+                ]
+            },
+
+            {"name":"layers", "kind":"required", "type":[["nnet.cnn.layer.Layer"],["nnet.cnn.LayerGraph"]]},
+            {"name":"options", "kind":"required", "type":[["nnet.cnn.TrainingOptionsSGDM"],["nnet.cnn.TrainingOptionsADAM"],["nnet.cnn.TrainingOptionsRMSProp"]]}
+        ]
+    },
+
+    "trainNetwork":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":[["double"],["single"]]},
+            {"name":"Y", "kind":"required", "type":[["categorical"],["numeric"]]},
+            {"name":"layers", "kind":"required", "type":[["nnet.cnn.layer.Layer"],["nnet.cnn.LayerGraph"]]},
+            {"name":"options", "kind":"required", "type":[["nnet.cnn.TrainingOptionsSGDM"],["nnet.cnn.TrainingOptionsADAM"],["nnet.cnn.TrainingOptionsRMSProp"]]}
+        ]
+    },
+
+    "trainNetwork":
+    {
+        "inputs":
+        [
+            {"name":"C", "kind":"required", "type":[["double"],["single"],["cell"]]},
+            {"name":"Y", "kind":"required", "type":[["categorical"],["numeric"],["cell"]]},
+            {"name":"layers", "kind":"required", "type":[["nnet.cnn.layer.Layer"]]},
+            {"name":"options", "kind":"required", "type":[["nnet.cnn.TrainingOptionsSGDM"],["nnet.cnn.TrainingOptionsADAM"],["nnet.cnn.TrainingOptionsRMSProp"]]}
+        ]
+    },
+
+    "trainNetwork":
+    {
+        "inputs":
+        [
+            {"name":"tbl", "kind":"required", "type":"table"},
+            {"name":"layers", "kind":"required", "type":[["nnet.cnn.layer.Layer"],["nnet.cnn.LayerGraph"]]},
+            {"name":"options", "kind":"required", "type":[["nnet.cnn.TrainingOptionsSGDM"],["nnet.cnn.TrainingOptionsADAM"],["nnet.cnn.TrainingOptionsRMSProp"]]}
+        ]
+    },
+
+    "trainNetwork":
+    {
+        "inputs":
+        [
+            {"name":"tbl", "kind":"required", "type":"table"},
+            {"name":"responseName", "kind":"required", "type":"char"},
+            {"name":"layers", "kind":"required", "type":[["nnet.cnn.layer.Layer"],["nnet.cnn.LayerGraph"]]},
+            {"name":"options", "kind":"required", "type":[["nnet.cnn.TrainingOptionsSGDM"],["nnet.cnn.TrainingOptionsADAM"],["nnet.cnn.TrainingOptionsRMSProp"]]}
+        ]
+    },
+
+    "trainNetwork":
+    {
+        "inputs":
+        [
+            {"name":"tbl", "kind":"required", "type":"table"},
+            {"name":"responseNames", "kind":"required", "type":"cellstr"},
+            {"name":"layers", "kind":"required", "type":[["nnet.cnn.layer.Layer"],["nnet.cnn.LayerGraph"]]},
+            {"name":"options", "kind":"required", "type":[["nnet.cnn.TrainingOptionsSGDM"],["nnet.cnn.TrainingOptionsADAM"],["nnet.cnn.TrainingOptionsRMSProp"]]}
+        ]
+    },
+
+    "transposedConv2dLayer":
+    {
+        "inputs":
+        [
+            {"name":"filterSize","kind":"required", "type":["integer", ">0"]},
+            {"name":"numFilters","kind":"required", "type":["scalar", "integer", ">0"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0", "vector"]},
+            {"name":"Cropping", "kind":"namevalue", "type":["integer", "vector", ">=0"]},
+            {"name":"NumChannels", "kind":"namevalue", "type":[["char"], ["integer", "scalar", ">0"]]},
+            {"name":"WeightLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"WeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "transposedConv3dLayer":
+    {
+        "inputs":
+        [
+            {"name":"filterSize","kind":"required", "type":["integer", ">0"]},
+            {"name":"numFilters","kind":"required", "type":["scalar", "integer", ">0"]},
+            {"name":"Stride", "kind":"namevalue", "type":["integer", ">0", "vector"]},
+            {"name":"Cropping", "kind":"namevalue", "type":["integer", "vector", ">=0"]},
+            {"name":"NumChannels", "kind":"namevalue", "type":[["char"], ["integer", "scalar", ">0"]]},
+            {"name":"WeightLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasLearnRateFactor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"WeightL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"BiasL2Factor", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"WeightsInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'glorot', 'he', 'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"BiasInitializer", "kind":"namevalue", "type":[["function_handle"], ["choices={'narrow-normal', 'ones', 'zeros'}"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "vgg16":
+    {
+        "inputs":[]
+    },
+
+    "vgg19":
+    {
+        "inputs":[]
+    }
+}

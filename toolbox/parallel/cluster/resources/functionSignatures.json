@@ -1,0 +1,613 @@
+{
+  "gcp":
+  {
+    "inputs":
+    [
+      {"name":"'nocreate'", "kind":"ordered", "type":"choices={'nocreate'}"}
+    ],
+    "outputs":
+    [
+      {"name":"p", "type":"parallel.Pool"}
+    ]
+  },
+  "parallel.Cluster.batch":
+  {
+    "inputs":
+    [
+      {"name":"myCluster", "kind":"required", "type":"parallel.Cluster"},
+      {"mutuallyExclusiveGroup": 
+        [
+          {"name":"aScript", "kind":"required", "type":[["identifier=function,package,localfunction"], ["char"]]},
+          [
+            {"name":"fcn", "kind":"required", "type":"function_handle"},
+            {"name":"N", "kind":"required", "type":"numeric"},
+            {"name":"{x1, ..., xn}", "kind":"required", "type":"cell"}
+          ]
+        ]
+      },
+      {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+      {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+      {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"CurrentFolder", "kind":"namevalue", "type":[["folder"], ["char"]]},
+      {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+      {"name":"Pool", "kind":"namevalue", "type":"numeric", "default":"0"},
+      {"name":"Profile", "kind":"namevalue", "type": [["char"], ["choices=parallel.clusterProfiles()"]]},
+      {"name":"Workspace", "kind":"namevalue", "type": "struct"}
+    ],
+    "outputs":
+    [
+      {"name":"j", "type":"parallel.Job"}
+    ]
+  },
+  "parallel.Cluster.createCommunicatingJob":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup":
+        [
+          [
+            {"name":"cluster", "kind":"required", "type":"@(x) isa(x, 'parallel.cluster.MJSCloudCluster') || isa(x, 'parallel.cluster.MJS')"},
+            {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+            {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+	    {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"false"},
+            {"name":"AuthorizedUsers", "kind":"namevalue", "type":"cellstr"},
+            {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+            {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+            {"name":"FinishedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"JobData", "kind":"namevalue"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumWorkersRange", "kind":"namevalue", "type":[["numeric", "vector", "numel=2"], ["numeric", "scalar"]]},
+            {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+            {"name":"QueuedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"RestartWorker", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"RunningFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"Tag", "kind":"namevalue", "type":"char"},
+            {"name":"Timeout", "kind":"namevalue", "type":"numeric"},
+            {"name":"Type", "kind":"namevalue", "type":"choices={'pool','spmd'}"},
+            {"name":"UserData", "kind":"namevalue"}          
+          ],
+          [
+            {"name":"cluster", "kind":"required", "type":"@(x) isa(x, 'parallel.cluster.CJSCluster')"},
+            {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+            {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+            {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"false"},
+            {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+            {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+            {"name":"JobData", "kind":"namevalue"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumWorkersRange", "kind":"namevalue", "type":[["numeric", "vector", "numel=2"], ["numeric", "scalar"]]},
+            {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+            {"name":"Tag", "kind":"namevalue", "type":"char"},
+            {"name":"Type", "kind":"namevalue", "type":"choices={'pool','spmd'}"},
+            {"name":"UserData", "kind":"namevalue"}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    [
+      {"name":"job", "type":"parallel.Job"}
+    ]   
+  },
+  "parallel.Cluster.createJob":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup":
+        [
+          [
+            {"name":"cluster", "kind":"required", "type":"@(x) isa(x, 'parallel.cluster.MJSCloudCluster') || isa(x, 'parallel.cluster.MJS')"},
+            {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+            {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+            {"name":"AuthorizedUsers", "kind":"namevalue", "type":"cellstr"},
+            {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"false"},
+            {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+            {"name":"FinishedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"JobData", "kind":"namevalue"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumWorkersRange", "kind":"namevalue", "type":[["numeric", "vector", "numel=2"], ["numeric", "scalar"]]},
+            {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+            {"name":"QueuedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"RestartWorker", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"RunningFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"Tag", "kind":"namevalue", "type":"char"},
+            {"name":"Timeout", "kind":"namevalue", "type":"numeric"},
+            {"name":"UserData", "kind":"namevalue"}          
+          ],
+          [
+            {"name":"cluster", "kind":"required", "type":"@(x) isa(x, 'parallel.cluster.CJSCluster')"},
+            {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+            {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+            {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"false"},
+            {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+            {"name":"JobData", "kind":"namevalue"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+            {"name":"Tag", "kind":"namevalue", "type":"char"},
+            {"name":"UserData", "kind":"namevalue"}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    [
+      {"name":"job", "type":"parallel.Job"}
+    ]
+  },
+  "parallel.Cluster.findJob":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup":
+        [
+          [
+            {"name":"c", "kind":"required", "type":"@(x) isa(x, 'parallel.cluster.MJSCloudCluster') || isa(x, 'parallel.cluster.MJS')"},
+            {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+            {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+            {"name":"AuthorizedUsers", "kind":"namevalue", "type":"cellstr"},
+            {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"CreateDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+            {"name":"FinishDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"FinishedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"ID", "kind":"namevalue", "type":"numeric"},
+            {"name":"JobData", "kind":"namevalue"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumThreads", "kind":"namevalue", "type":"numeric"},
+            {"name":"NumWorkersRange", "kind":"namevalue", "type":[["numeric", "vector", "numel=2"], ["numeric", "scalar"]]},
+            {"name":"Parent", "kind":"namevalue", "type":"parallel.Cluster"},
+            {"name":"QueuedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"RestartWorker", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"RunningFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"StartDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"State", "kind":"namevalue", "type":"choices={'pending','queued','running','finished','failed'}"},
+            {"name":"SubmitDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"Tag", "kind":"namevalue", "type":"char"},
+            {"name":"Tasks", "kind":"namevalue", "type":["parallel.Task"]},
+            {"name":"Timeout", "kind":"namevalue", "type":"numeric"},
+            {"name":"Type", "kind":"namevalue", "type":"choices={'independent','pool','spmd'}"},
+            {"name":"UserData", "kind":"namevalue"},
+            {"name":"Username", "kind":"namevalue", "type":"char"}          
+          ],
+          [
+            {"name":"c", "kind":"required", "type":"@(x) isa(x, 'parallel.cluster.CJSCluster')"},
+            {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+            {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+            {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"CreateDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+            {"name":"FinishDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"ID", "kind":"namevalue", "type":"numeric"},
+            {"name":"JobData", "kind":"namevalue"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumThreads", "kind":"namevalue", "type":"numeric"},
+            {"name":"NumWorkersRange", "kind":"namevalue", "type":[["numeric", "vector", "numel=2"], ["numeric", "scalar"]]},
+            {"name":"Parent", "kind":"namevalue", "type":"parallel.Cluster"},
+            {"name":"StartDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"State", "kind":"namevalue", "type":"choices={'pending','queued','running','finished','failed'}"},
+            {"name":"SubmitDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"Tag", "kind":"namevalue", "type":"char"},
+            {"name":"Tasks", "kind":"namevalue", "type":["parallel.Task"]},
+            {"name":"Type", "kind":"namevalue", "type":"choices={'independent','pool','spmd'}"},
+            {"name":"UserData", "kind":"namevalue"},
+            {"name":"Username", "kind":"namevalue", "type":"char"}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    [
+      {"name":"jobs", "type":"parallel.Job"}
+    ]
+  },
+  "parallel.Cluster.parpool":
+  {
+    "inputs":
+    [
+      {"name":"cluster", "kind":"required", "type":"parallel.Cluster"},
+      {"name":"poolsize", "kind":"ordered", "type":["numeric", "scalar"]},
+      {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+      {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+      {"name":"IdleTimeout", "kind":"namevalue", "type":"numeric"},
+      {"name":"SpmdEnabled", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"}
+    ],
+    "outputs":
+    [
+      {"name":"poolobj", "type":"parallel.Pool"}
+    ]
+  },
+  "parallel.Cluster.saveAsProfile":
+  {
+    "inputs":
+    [
+      {"name":"cluster", "kind":"required", "type":"parallel.Cluster"},
+      {"name":"profileName", "kind":"required", "type":"char"},
+      {"name":"Description", "kind":"namevalue", "type":"char"}
+    ],
+    "outputs":
+    []
+  },
+  "parallel.Cluster.saveProfile":
+  {
+    "inputs":
+    [
+      {"name":"cluster", "kind":"required", "type":"parallel.Cluster"},
+      {"name":"Description", "kind":"namevalue", "type":"char"}
+    ],
+    "outputs":
+    []
+  },
+  "parallel.cluster.AdditionalProperties.remove":
+  {
+    "inputs":
+    [
+      {"name":"s", "kind":"required", "type":"parallel.cluster.AdditionalProperties"},
+      {"name":"property", "kind":"required", "type":"choices=fieldnames(s)"}
+    ],
+    "outputs":
+    []
+  },
+  "parallel.defaultClusterProfile":
+  {
+    "inputs":
+    [
+     {"name":"newprofile", "kind":"ordered", "type":[["char"], ["choices=parallel.clusterProfiles()"]]}
+    ],
+    "outputs":
+    [
+      {"name":"oldprofile", "type":"char"}
+    ]
+  },
+  "parallel.exportProfile":
+  {
+    "inputs":
+    [
+      {"name":"profileName", "kind":"required", "type":[["char"], ["choices=parallel.clusterProfiles()"], ["cellstr"]]},
+      {"name":"filename", "kind":"required", "type":[["file=*.mat,*.settings"], ["char"]]}
+    ],
+    "outputs":
+    []
+  },
+  "parallel.importProfile":
+  {
+    "inputs":
+    [
+      {"name":"filename", "kind":"required", "type":[["file=*.mat,*.settings"], ["char"]]}
+    ],
+    "outputs":
+    [
+      {"name":"prof", "type":"char"}
+    ]
+  },
+  "parallel.Job.createTask":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup":
+        [
+          [
+            {"name":"j", "kind":"required", "type":"@(x) isa(x, 'parallel.internal.cluster.MJSJobMixin')"},
+            {"name":"F", "kind":"required", "type":"function_handle"},
+            {"name":"N", "kind":"required", "type":["numeric", "scalar"]},
+            {"name":"{inputargs}", "kind":"required", "type":"cell"},
+            {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"FinishedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"MaximumRetries", "kind":"namevalue", "type":"numeric"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+            {"name":"RunningFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"Timeout", "kind":"namevalue", "type":"numeric"},
+            {"name":"UserData", "kind":"namevalue"}     
+          ],
+          [
+            {"name":"c", "kind":"required", "type":"@(x) isa(x, 'parallel.internal.cluster.CJSJobMixin')"},
+            {"name":"F", "kind":"required", "type":"function_handle"},
+            {"name":"N", "kind":"required", "type":["numeric", "scalar"]},
+            {"name":"{inputargs}", "kind":"required", "type":"cell"},
+            {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+            {"name":"UserData", "kind":"namevalue"}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    [
+      {"name":"t", "type":"parallel.Task"}
+    ]   
+  },
+  "parallel.Job.diary":
+  {
+    "inputs":
+    [
+      {"name":"job", "kind":"required", "type":"parallel.Job"},
+      {"name":"filename", "kind":"ordered", "type":[["file"], ["char"]]}
+    ],
+    "outputs":
+    []
+  },
+  "parallel.Job.findTask":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup":
+        [
+          [
+            {"name":"j", "kind":"required", "type":"@(x) isa(x, 'parallel.internal.cluster.MJSJobMixin')"},
+            {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"CreateDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"Diary", "kind":"namevalue", "type":"char"},
+            {"name":"Error", "kind":"namevalue", "type":"ParallelException"},
+            {"name":"ErrorIdentifier", "kind":"namevalue", "type":"char"},
+            {"name":"ErrorMessage", "kind":"namevalue", "type":"char"},
+            {"name":"FailureInfo", "kind":"namevalue"},
+            {"name":"FinishDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"FinishedFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"Function", "kind":"namevalue", "type":"function_handle"},
+            {"name":"ID", "kind":"namevalue", "type":"numeric"},
+            {"name":"InputArguments", "kind":"namevalue", "type":"cell"},
+            {"name":"MaximumRetries", "kind":"namevalue", "type":"numeric"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumFailures", "kind":"namevalue", "type":"numeric"},
+            {"name":"NumOutputArguments", "kind":"namevalue", "type":"numeric"},
+            {"name":"OutputArguments", "kind":"namevalue", "type":"cell"},
+            {"name":"Parent", "kind":"namevalue", "type":"parallel.Job"},
+            {"name":"RunningFcn", "kind":"namevalue", "type":"function_handle"},
+            {"name":"StartDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"State", "kind":"namevalue", "type":"choices={'pending','running','finished'}"},
+            {"name":"Timeout", "kind":"namevalue", "type":"numeric"},
+            {"name":"UserData", "kind":"namevalue"},
+            {"name":"Warnings", "kind":"namevalue", "type":"struct"},
+            {"name":"Worker", "kind":"namevalue"}
+          ],
+          [
+            {"name":"c", "kind":"required", "type":"@(x) isa(x, 'parallel.internal.cluster.CJSJobMixin')"},
+            {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"CreateDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"Diary", "kind":"namevalue", "type":"char"},
+            {"name":"Error", "kind":"namevalue", "type":"ParallelException"},
+            {"name":"ErrorIdentifier", "kind":"namevalue", "type":"char"},
+            {"name":"ErrorMessage", "kind":"namevalue", "type":"char"},
+            {"name":"FinishDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"Function", "kind":"namevalue", "type":"function_handle"},
+            {"name":"ID", "kind":"namevalue", "type":"numeric"},
+            {"name":"InputArguments", "kind":"namevalue", "type":"cell"},
+            {"name":"Name", "kind":"namevalue", "type":"char"},
+            {"name":"NumOutputArguments", "kind":"namevalue", "type":"numeric"},
+            {"name":"OutputArguments", "kind":"namevalue", "type":"cell"},
+            {"name":"Parent", "kind":"namevalue", "type":"parallel.Job"},
+            {"name":"StartDateTime", "kind":"namevalue", "type":"datetime"},
+            {"name":"State", "kind":"namevalue", "type":"choices={'pending','running','finished'}"},
+            {"name":"UserData", "kind":"namevalue"},
+            {"name":"Warnings", "kind":"namevalue", "type":"struct"},
+            {"name":"Worker", "kind":"namevalue"}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    [
+      {"name":"tasks", "type":"parallel.Task"}
+    ]   
+  },
+  "parallel.Job.load":
+  {
+    "inputs":
+    [
+      {"name":"job", "kind":"required", "type":"parallel.Job"},
+      {"mutuallyExclusiveGroup":
+        [
+          {"name":"X", "kind":"ordered", "type":"char", "repeating":true},
+          [
+            {"name":"-regexp", "kind":"positional", "type":"choices={'-regexp'}"},
+            {"name":"PAT1", "kind":"ordered", "type":"char", "repeating":true}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    [
+      {"name":"S", "type":"struct"}
+    ]
+  },
+  "parallel.Job.recreate":
+  {
+    "inputs":
+    [
+      {"name":"oldjob", "kind":"required", "type":"parallel.Job"},
+      {"name":"TaskID", "kind":"namevalue", "type":"numeric"},
+      {"name":"TaskState", "kind":"namevalue", "type":["choices={'pending','running','finished', 'failed'}"]}
+    ],
+    "outputs":
+    [
+      {"name":"newjob", "type":"parallel.Job"}
+    ]
+  },
+  "parallel.Job.wait":
+  {
+    "inputs":
+    [
+      {"name":"j", "kind":"required", "type":"parallel.Job"},
+      {"name":"state", "kind":"positional", "type":"choices={'queued','running','finished'}"},
+      {"name":"timeout", "kind":"ordered", "type":"numeric"}
+    ],
+    "outputs":
+    [
+      {"name":"ok", "type":["logical", "scalar"]}
+    ]
+  },
+  "parallel.Task.wait":
+  {
+    "inputs":
+    [
+      {"name":"t", "kind":"required", "type":"parallel.Task"},
+      {"name":"state", "kind":"positional", "type":"choices={'running','finished'}"},
+      {"name":"timeout", "kind":"ordered", "type":"numeric"}
+    ],
+    "outputs":
+    [
+      {"name":"ok", "type":["logical", "scalar"]}
+    ]
+  },
+  "parcluster":
+  {
+    "inputs":
+    [
+      {"name":"profile", "kind":"ordered", "type":[["char"], ["choices=parallel.clusterProfiles()"]]}
+    ],
+    "outputs":
+    [
+      {"name":"c", "type":"parallel.Cluster"}
+    ]
+  },
+  "parpool":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup": [
+        {"name":"profilename", "kind":"ordered", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+        {"name":"cluster", "kind":"ordered", "type":"parallel.Cluster"}
+      ]},
+      {"name":"poolsize", "kind":"ordered", "type":["numeric", "scalar"]},
+      {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+      {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+      {"name":"IdleTimeout", "kind":"namevalue", "type":"numeric"},
+      {"name":"SpmdEnabled", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"}
+    ],
+    "outputs":
+    [
+      {"name":"poolobj", "type":"parallel.Pool"}
+    ]
+  },
+  "parallel.Future.cancel":
+  {
+      "inputs":
+      [
+          {"name":"F","kind":"required", "type":"parallel.Future"}
+      ],
+      "outputs":
+      [
+      ]
+  },
+  "parallel.Future.wait":
+  {
+      "inputs":
+      [
+          {"name":"F","kind":"required","type":"parallel.Future"},
+          {"name":"state","kind":"positional","type":"choices={'running','finished'}"},
+          {"name":"timeout", "kind":"ordered","type":["numeric","scalar"]}
+      ],
+      "outputs":
+      [
+          {"name":"ok","type":["logical","scalar"]}
+      ]
+  },
+  "parallel.Future.fetchOutputs":
+  {
+      "inputs":
+      [
+          {"name":"F","kind":"required","type":"parallel.Future"},
+          {"name":"UniformOutput","kind":"namevalue","type":["logical","scalar"]}
+      ],
+      "outputs":
+      [
+          {"name":"B","repeating":true}
+      ]
+  },
+  "parallel.Future.afterAll":
+  {
+      "inputs":
+      [
+          {"name":"F","kind":"required","type":"parallel.Future"},
+          {"name":"fcn","kind":"required","type":"function_handle"},
+          {"name":"nout","kind":"required","type":["numeric","scalar"]},
+          {"name":"PassFuture","kind":"namevalue","type":["logical","scalar"]}
+      ],
+      "outputs":
+      [
+          {"name":"f2","type":["parallel.Future","scalar"]}
+      ]
+  },
+  "parallel.Future.afterEach":
+  {
+      "inputs":
+      [
+          {"name":"F","kind":"required","type":"parallel.Future"},
+          {"name":"fcn","kind":"required","type":"function_handle"},
+          {"name":"nout","kind":"required","type":["numeric","scalar"]},
+          {"name":"PassFuture","kind":"namevalue","type":["logical","scalar"]}
+      ],
+      "outputs":
+      [
+          {"name":"f2","type":["parallel.Future","scalar"]}
+      ]
+  },
+  "parallel.FevalFuture.fetchNext":
+  {
+      "inputs":
+      [
+          {"name":"F","kind":"required","type":"parallel.FevalFuture"},
+          {"name":"timeout", "kind":"ordered","type":["numeric","scalar"]}
+      ],
+      "outputs":
+      [
+          {"name":"idx","type":["numeric","scalar"]},
+          {"name":"B","repeating":true}
+      ]
+  },
+  "parfeval":
+  {
+      "inputs":
+      [
+          {"name":"P","kind":"ordered","type":"parallel.Pool"},
+          {"name":"fcn","kind":"required","type":"function_handle"},
+          {"name":"numout","kind":"required","type":["numeric","scalar"]},
+          {"name":"in","kind":"ordered","repeating":true}
+      ],
+      "outputs":
+      [
+          {"name":"F","type":"parallel.FevalFuture"}
+      ]
+  },
+  "parfevalOnAll":
+  {
+      "inputs":
+      [
+          {"name":"P","kind":"ordered","type":"parallel.Pool"},
+          {"name":"fcn","kind":"required","type":"function_handle"},
+          {"name":"numout","kind":"required","type":["numeric","scalar"]},
+          {"name":"in","kind":"ordered","repeating":true}
+      ],
+      "outputs":
+      [
+          {"name":"F","type":"parallel.FevalOnAllFuture"}
+      ]
+  },
+  "parforOptions":
+  {
+    "inputs":
+    [
+      {"name":"exec","kind":"required","type":[["parallel.Pool", "scalar"],["parallel.Cluster", "scalar"]]},
+      {"name":"RangePartitionMethod", "kind":"namevalue", "type":[["char", "choices={'auto','fixed'}"], ["function_handle"]]},
+      {"name":"SubrangeSize", "kind":"namevalue", "type":["numeric", "scalar", ">0", "integer"]},
+      {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"]},
+      {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+      {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"]},
+      {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+      {"name":"MaxNumWorkers", "kind":"namevalue", "type":["numeric", "scalar", ">0", "integer"]}
+    ],
+    "outputs":
+    [
+      {"name":"opts","type":"parallel.parfor.Options"}
+    ]
+  }
+}

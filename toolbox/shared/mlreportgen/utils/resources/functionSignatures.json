@@ -1,0 +1,85 @@
+{
+  "mlreportgen.utils.word.load": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": [["filepath=*.doc,*.docx,*.dotx,*.rtf"],
+      ["string"]]
+    }]
+  },
+  "mlreportgen.utils.word.open": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": [["filepath=*.doc,*.docx,*.dotx,*.rtf"],
+      ["string"]]
+    }]
+  },
+  "mlreportgen.utils.word.close": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": ["string", "choices=mlreportgen.utils.word.filenames"]
+    }]
+  },
+  "mlreportgen.utils.word.show": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": ["string", "choices=mlreportgen.utils.word.filenames"]
+    }]
+  },
+  "mlreportgen.utils.word.hide": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": ["string", "choices=mlreportgen.utils.word.filenames"]
+    }]
+  },
+  "mlreportgen.utils.powerpoint.load": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": [["filepath=*.ppt,*.pptx,*.pptm,*.potx"],
+      ["string"]]
+    }]
+  },
+  "mlreportgen.utils.powerpoint.open": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": [["filepath=*.ppt,*.pptx,*.pptm,*.potx"],
+      ["string"]]
+    }]
+  },
+  "mlreportgen.utils.powerpoint.close": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": ["string", "choices=mlreportgen.utils.powerpoint.filenames"]
+    }]
+  },
+  "mlreportgen.utils.powerpoint.show": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": ["string", "choices=mlreportgen.utils.powerpoint.filenames"]
+    }]
+  },
+  "mlreportgen.utils.powerpoint.hide": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": ["string", "choices=mlreportgen.utils.powerpoint.filenames"]
+    }]
+  },
+
+  "mlreportgen.utils.rptviewer.open": {
+    "inputs": [{
+      "name": "file",
+      "kind": "required",
+      "type": [["filepath=*.doc,*.docx,*.dotx,*.rtf,*.ppt,*.pptx,*.pptm,*.potx,*.htmx,*.htmtx,*.zip,*.pdftx,*.pdf,*.html,*.htm"],
+      ["string"]]
+    }]
+  }
+}

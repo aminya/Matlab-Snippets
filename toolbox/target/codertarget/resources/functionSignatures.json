@@ -1,0 +1,21 @@
+{
+    "coder.hardware":
+    {
+        "inputs":
+        [
+            {"name":"name", "kind":"optional", "type":["char", "choices=coder.internal.getHardwareNames"]}
+        ]
+     },
+     
+    "targetHardware":
+    {
+        "inputs":
+        [
+           {"name":"hardwareName", "kind":"required", "type":"choices=coder.internal.getHardwareNames"}          
+        ],
+        "outputs":
+        [
+           {"name":"obj",  "type":"targethardware"}          
+        ]
+     }
+}

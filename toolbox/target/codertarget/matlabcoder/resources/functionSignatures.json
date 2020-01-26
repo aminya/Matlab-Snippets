@@ -1,0 +1,13 @@
+{
+        "coder.matlabtarget.deploytohardware.deploy":
+    {
+        "inputs":
+        [
+           {"name":"obj", "kind":"required", "type":"targetHardware"},
+           {"name":"functionName", "kind":"required", "type":[["char"], ["filepath=*.m"]]},
+           {"name":"customConfigObject", "kind":"optional", "type":"coder.CodeConfig"}           
+        ]
+     }
+
+
+}

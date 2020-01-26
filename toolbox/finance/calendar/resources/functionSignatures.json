@@ -1,0 +1,154 @@
+{
+
+"busdate":
+{
+	"inputs":
+	[
+		{"name":"date", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"dirFlag", "kind":"positional", "type":[["char","choices={'follow','modifiedfollow','previous','modifiedprevious'}"],["numeric","choices={1,-1}"]]},
+        {"name":"Holidays", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Weekend", "kind":"positional", "type":["numeric", "numel=7"]}
+	],
+	"outputs":
+	[
+		{"name":"Busday", "type":[["char"],["numeric"],["datetime"]]}        
+	]	
+},
+
+"cfamounts":
+{
+	"inputs":
+	[
+        {"name":"couponRate", "kind":"required", "type":["numeric"]},
+		{"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"maturity", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Period", "kind":"positional", "type":["numeric","choices={0,1,2,3,4,6,12}"], "default":"2"},
+        {"name":"Basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"EndMonthRule", "kind":"positional", "type":["numeric","choices={0,1}"], "default":"1"},
+        {"name":"IssueDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"FirstCouponDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"LastCouponDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"StartDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]], "default":"settle"},
+        {"name":"Face", "kind":"positional", "type":["numeric"]}
+	],
+	"outputs":
+	[
+		{"name":"cflowAmounts", "type":"numeric"},
+        {"name":"cflowDates", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"tFactors", "type":"numeric"},
+        {"name":"cflowFlags", "type":"numeric"},
+        {"name":"cfPrincipal", "type":"numeric"}
+	]	
+},
+
+"cfamounts":
+{
+	"inputs":
+	[
+        {"name":"couponRate", "kind":"required", "type":["numeric"]},
+		{"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"maturity", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Period", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12}"], "default":"2"},
+        {"name":"Basis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"EndMonthRule", "kind":"namevalue", "type":["numeric","choices={0,1}"], "default":"1"},
+        {"name":"IssueDate", "kind":"namevalue", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"FirstCouponDate", "kind":"namevalue", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"LastCouponDate", "kind":"namevalue", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"StartDate", "kind":"namevalue", "type":[["char"],["numeric"],["datetime"]], "default":"settle"},
+        {"name":"Face", "kind":"namevalue", "type":["numeric"]},
+        {"name":"AdjustCashFlowsBasis", "kind":"namevalue", "type":[["numeric","choices={0,1}"],["logical"]]},
+        {"name":"BusinessDayConvention", "kind":"namevalue", "type":[["char","choices={'actual','follow','modifiedfollow','previous','modifiedprevious'}"]]},
+        {"name":"CompoundingFrequency", "kind":"namevalue", "type":["numeric"]},
+        {"name":"DiscountBasis", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]},
+        {"name":"Holidays", "kind":"namevalue", "type":["numeric"]},
+        {"name":"PrincipalType", "kind":"namevalue", "type":[["char","choices={'sinking','bullet'}"]], "default":"sinking"}
+	],
+	"outputs":
+	[
+		{"name":"cflowAmounts", "type":"numeric"},
+        {"name":"cflowDates", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"tFactors", "type":"numeric"},
+        {"name":"cflowFlags", "type":"numeric"},
+        {"name":"cfPrincipal", "type":"numeric"}
+	]	
+},
+
+"cfdates":
+{
+	"inputs":
+	[
+		{"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"maturity", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"period", "kind":"positional", "type":["numeric","choices={0,1,2,3,4,6,12}"], "default":"2"},
+        {"name":"basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"endMonthRule", "kind":"positional", "type":["numeric","choices={0,1}"], "default":"1"},
+        {"name":"issueDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"firstCouponDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"lastCouponDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"startDate", "kind":"positional", "type":[["char"],["numeric"],["datetime"]], "default":"settle"}
+	],
+	"outputs":
+	[
+		{"name":"cflowDates", "type":"numeric"}
+	]	
+},
+
+"datemnth":
+{
+	"inputs":
+	[
+		{"name":"startDate", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"numberMonths", "kind":"required", "type":[["numeric","integer"]]},
+        {"name":"dayFlag", "kind":"positional", "type":["numeric","choices={0,1,2}"], "default":"0"},
+        {"name":"basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"endMonthRule", "kind":"positional", "type":["numeric","choices={0,1}"], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"targetDate", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"daysadd":
+{
+	"inputs":
+	[
+		{"name":"startDate", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"numDays", "kind":"required", "type":[["numeric","integer"]]},        
+        {"name":"basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"newDate", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"weeknum":
+{
+	"inputs":
+	[
+		{"name":"date", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"beginday", "kind":"positional", "type":["numeric","choices={1,2,3,4,5,6,7}"]},
+        {"name":"european", "kind":"positional", "type":[["numeric","choices={0,1}"],["logical"]]}
+	],
+	"outputs":
+	[
+		{"name":"result", "type":"numeric"}
+	]	
+},
+
+"yearfrac":
+{
+	"inputs":
+	[
+		{"name":"startDate", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"endDate", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Basis", "kind":"ordered", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"YearFraction", "type":"numeric"}
+	]	
+}
+
+}

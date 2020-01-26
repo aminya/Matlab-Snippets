@@ -1,0 +1,362 @@
+{
+
+"closepreview":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ] 
+
+},
+
+"commands":
+{
+    "inputs":
+    [
+        {"name":"gigeCamera", "kind":"required", "type":"gigecam"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]    
+     
+
+},
+
+"flushdata":
+{   
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"mode", "kind":"ordered", "type":"choices={'all', 'triggers'}"}
+    ]    
+
+},
+
+"getdata":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"frames", "kind":"positional", "type":["numeric", "scalar"]},
+        {"name":"type", "kind":"positional", "type":"choices={'uint8', 'uint16', 'uint32', 'single','double','native'}"},
+        {"name":"format", "kind":"ordered", "type":"choices={'numeric', 'cell'}"}
+    ]
+
+},
+
+"getselectedsource":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"videosource"}
+    ]    
+     
+
+},
+
+"getsnapshot":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ] 
+
+},
+
+"imaqhelp":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"ordered", "type":"videoinput"},
+        {"name":"name", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getProperties(obj)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"char"}
+    ]   
+
+},
+
+"imaqhwinfo":
+{
+    "inputs":
+    [
+        {"name":"adaptorName", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getInstalledAdaptors"},
+        {"name":"field", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getFields(adaptorName)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]    
+    
+},
+
+"imaqhwinfo":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"ordered", "type":"videoinput"},
+        {"name":"field", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getVideoinputFields(obj)"}
+    ],
+
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]    
+},
+
+"imaqmex":
+{
+    "inputs":
+    [
+        {"name":"feature", "kind":"required", "type":"choices={'feature'}"},
+        {"name":"featureNames", "kind":"required","type":"choices=imaq.internal.TabCompletionHelper.getImaqmexNumericOptions"},
+        {"name":"value", "kind":"ordered", "type":["numeric", "scalar"]}
+        
+    ]
+
+},
+
+
+"imaqmex":
+{
+    "inputs":
+    [
+        {"name":"feature", "kind":"required", "type":"choices={'feature'}"},
+        {"name":"featureNames", "kind":"required","type":"choices=imaq.internal.TabCompletionHelper.getImaqmexBooleanOptions"},
+        {"name":"value", "kind":"ordered", "type":["logical", "scalar"]}
+        
+    ]
+
+},
+
+"imaqtool":
+{
+    "inputs":
+    [
+        {"name":"file", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getIATfilesinCurrentDir"}
+    ]
+},
+
+"peekdata":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"frames", "kind":"required", "type":["numeric", "scalar"]}
+    ]
+},
+
+"preview":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"himage", "kind":"ordered", "type":"matlab.graphics.primitive.Image"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"matlab.graphics.primitive.Image"}
+    ]    
+    
+
+},
+
+"propinfo":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"propName", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getProperties(obj)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]   
+},
+
+"propinfo":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videosource"},
+        {"name":"propName", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getProperties(obj)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]   
+},
+
+"islogging":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"logical"}
+    ]    
+     
+
+},
+
+"isrunning":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"logical"}
+    ]    
+    
+
+},
+
+"snapshot":
+{
+    "inputs":
+    [
+        {"name":"camera", "kind":"ordered", "type":[["gigecam"],["matroxcam"]]}
+    ] 
+
+},
+
+"stoppreview":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ]
+
+},
+
+"trigger":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"}
+    ] 
+
+},
+
+"triggerconfig":
+{
+    "inputs":
+    [   
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"type", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getValidTriggerTypes(obj)"},
+        {"name":"condition", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getValidTriggerConditions(obj,type)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]    
+    
+
+},
+
+"triggerinfo":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"type", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getValidTriggerTypes(obj)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"struct"}
+    ]    
+    
+},
+
+"videoinput":
+{
+    "inputs":
+    [
+        {"name":"adaptorName", "kind":"required", "type":"choices=imaq.internal.TabCompletionHelper.getInstalledAdaptors"},
+        {"name":"deviceID", "kind":"ordered", "type":"choices=imaq.internal.TabCompletionHelper.getDeviceIDs(adaptorName)"},
+        {"name":"format", "kind":"required", "type":"choices=imaq.internal.TabCompletionHelper.getFormats(adaptorName,deviceID)"},
+        {"name":"BayerSensorAlignment", "kind":"namevalue", "type":"choices={'grbg','gbrg','rggb', 'bggr'}"},
+        {"name":"Disklogger", "kind":"namevalue", "type":"VideoWriter"},
+        {"name":"FramesAcquiredFcnCount", "kind":"namevalue", "type":[">0"]},
+        {"name":"FrameGrabInterval", "kind":"namevalue", "type":[">0"]},
+        {"name":"FramesPerTrigger", "kind":"namevalue", "type":[">0"]},
+        {"name":"LoggingMode", "kind":"namevalue", "type":"choices={'memory','disk','disk&memory'}"},
+        {"name":"Name", "kind":"namevalue", "type":["char"]},
+        {"name":"ReturnedColorSpace", "kind":"namevalue", "type":"choices={'rgb','grayscale','YCbCr', 'bayer'}"},
+        {"name":"ROIPosition", "kind":"namevalue", "type":["double","numel=4",">=0"]},        
+        {"name":"SelectedSourceName", "kind":"namevalue", "type":["char"]},
+        {"name":"Tag", "kind":"namevalue", "type":["char"]},
+        {"name":"Timeout", "kind":"namevalue", "type":[">0"]},
+        {"name":"TimerPeriod", "kind":"namevalue", "type":[">0"]},
+        {"name":"TriggerFrameDelay", "kind":"namevalue", "type":[">0"]},
+        {"name":"TriggerRepeat", "kind":"namevalue", "type":[">0"]}
+    ],
+    
+    "outputs":
+    [
+        {"name":"obj", "type":"videoinput"}
+    ]
+},
+
+"videoinput":
+{
+    "inputs":
+    [
+        {"name":"adaptorName", "kind":"required", "type":"choices=imaq.internal.TabCompletionHelper.getInstalledAdaptors"},
+        {"name":"deviceID", "kind":"required","type":["numeric", "scalar"]},
+        {"name":"format", "kind":"required", "type":"choices=imaq.internal.TabCompletionHelper.getFormats(adaptorName,deviceID)"},
+        {"name":"BayerSensorAlignment", "kind":"namevalue", "type":"choices={'grbg','gbrg','rggb', 'bggr'}"},
+        {"name":"Disklogger", "kind":"namevalue", "type":"VideoWriter"},
+        {"name":"FramesAcquiredFcnCount", "kind":"namevalue", "type":[">0"]},
+        {"name":"FrameGrabInterval", "kind":"namevalue", "type":[">0"]},
+        {"name":"FramesPerTrigger", "kind":"namevalue", "type":[">0"]},
+        {"name":"LoggingMode", "kind":"namevalue", "type":"choices={'memory','disk','disk&memory'}"},
+        {"name":"Name", "kind":"namevalue", "type":["char"]},
+        {"name":"ReturnedColorSpace", "kind":"namevalue", "type":"choices={'rgb','grayscale','YCbCr', 'bayer'}"},
+        {"name":"ROIPosition", "kind":"namevalue", "type":["double","numel=4",">=0"]},        
+        {"name":"SelectedSourceName", "kind":"namevalue", "type":["char"]},
+        {"name":"Tag", "kind":"namevalue", "type":["char"]},
+        {"name":"Timeout", "kind":"namevalue", "type":[">0"]},
+        {"name":"TimerPeriod", "kind":"namevalue", "type":[">0"]},
+        {"name":"TriggerFrameDelay", "kind":"namevalue", "type":[">0"]},
+        {"name":"TriggerRepeat", "kind":"namevalue", "type":[">0"]}
+    ],
+    
+    "outputs":
+    [
+        {"name":"obj", "type":"videoinput"}
+    ]
+},
+
+"wait":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"videoinput"},
+        {"name":"waittime", "kind":"ordered", "type":["numeric", "scalar"]},
+        {"name":"state", "kind":"ordered", "type":"choices={'running', 'logging'}"}
+    ]
+}
+
+}

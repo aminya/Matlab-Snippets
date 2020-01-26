@@ -1,0 +1,185 @@
+{
+    "cell2dataset":
+    {
+        "inputs":
+        [
+            {"name":"C", "kind":"required", "type":"cell"},
+
+            {"name":"ReadVarNames", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"VarNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"ReadObsNames", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"ObsNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"NumCols", "kind":"namevalue", "type":["integer", ">=0"]}
+        ]
+    },
+
+    "struct2dataset":
+    {
+        "inputs":
+        [
+            {"name":"S", "kind":"required", "type":"struct"},
+
+            {"name":"ReadObsNames", "kind":"namevalue"},
+            {"name":"ObsNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"AsScalar", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+
+    "makedist":
+    {
+        "inputs":
+        [
+            {"mutuallyExclusiveGroup":   
+                [
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Beta', 'Weibull'}"},
+
+                        {"name":"a", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"b", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Binomial'}"},
+
+                        {"name":"N", "kind":"namevalue", "type":["integer", ">0"]},
+                        {"name":"p", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'BirnbaumSaunders'}"},
+
+                        {"name":"beta", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"gamma", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Burr'}"},
+
+                        {"name":"alpha", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"c", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"k", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Exponential'}"},
+
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'ExtremeValue'}"},
+
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"sigma", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Gamma'}"},
+
+                        {"name":"a", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"b", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'GeneralizedExtremeValue'}"},
+
+                        {"name":"k", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"sigma", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'GeneralizedPareto'}"},
+
+                        {"name":"k", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"sigma", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+                        {"name":"theta", "kind":"namevalue", "type":["numeric", "scalar"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'HalfNormal', 'Logistic', 'Loglogistic', 'Lognormal', 'Normal'}"},
+
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"sigma", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'InverseGaussian'}"},
+
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"lambda", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [                  
+                        {"name":"distname", "kind":"required", "type":"choices={'Multinomial'}"},
+
+                        {"name":"probabilities", "kind":"namevalue", "type":["numeric", ">=0", "<=1"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Nakagami'}"},
+
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"omega", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'NegativeBinomial'}"},
+
+                        {"name":"R", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"p", "kind":"namevalue", "type":["numeric", "scalar", ">0", "<=1"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'PiecewiseLinear'}"},
+
+                        {"name":"x", "kind":"namevalue", "type":"numeric"},
+                        {"name":"Fx", "kind":"namevalue", "type":["numeric", ">=0", "<=1"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Poisson'}"},
+
+                        {"name":"lambda", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Rayleigh'}"},
+
+                        {"name":"b", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Rician'}"},
+
+                        {"name":"s", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+                        {"name":"sigma", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Stable'}"},
+
+                        {"name":"alpha", "kind":"namevalue", "type":["numeric", "scalar", ">0", "<=2"]},
+                        {"name":"beta", "kind":"namevalue", "type":["numeric", "scalar", ">=-1", "<=1"]},
+                        {"name":"gam", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"delta", "kind":"namevalue", "type":["numeric", "scalar"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'tLocationScale'}"},
+
+                        {"name":"mu", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"sigma", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+                        {"name":"nu", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Triangular'}"},
+
+                        {"name":"a", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"b", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"c", "kind":"namevalue", "type":["numeric", "scalar"]}
+                    ],
+                    [
+                        {"name":"distname", "kind":"required", "type":"choices={'Uniform'}"},
+
+                        {"name":"lower", "kind":"namevalue", "type":["numeric", "scalar"]},
+                        {"name":"upper", "kind":"namevalue", "type":["numeric", "scalar"]}
+                    ]
+                ]
+            }
+        ]
+    },
+
+    "mat2dataset":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"numeric"},
+
+            {"name":"VarNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"ObsNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"NumCols", "kind":"namevalue", "type":["integer", ">=0"]}
+        ]
+    }
+ }

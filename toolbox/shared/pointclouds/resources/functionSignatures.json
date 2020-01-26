@@ -1,0 +1,110 @@
+{
+"pcplayer":
+{
+    "inputs":
+    [
+        {"name": "xlimits", "kind": "required", "type": ["numeric","vector","numel=2"]},
+        {"name": "ylimits", "kind": "required", "type": ["numeric","vector","numel=2"]},
+        {"name": "zlimits", "kind": "required", "type": ["numeric","vector","numel=2"]},
+        {"name": "MarkerSize", "kind": "namevalue", "type": ["numeric","scalar","positive"]},
+        {"name": "VerticalAxis", "kind": "namevalue", "type": "choices={'Z','X','Y'}"},
+        {"name": "VerticalAxisDir", "kind": "namevalue", "type": "choices={'Up','Down'}"}
+    ]
+},
+
+"pcplayer.view":
+{
+	"inputs":
+	[
+		{"name":"player", "kind":"required", "type":"pcplayer"},
+		{
+		     "mutuallyExclusiveGroup":
+		     [
+		        [
+					{"name":"ptCloud","kind":"required","type":"pointCloud"}
+		        ],
+		        [
+					{"name":"xyzPoints","kind":"required","type":[["size=:,3","numeric"],["size=:,:,3","numeric"]]},
+					{"name":"color","kind":"ordered","type":[["size=:,3","numeric"],["size=:,:,3","numeric"]]}
+		        ],
+		        [
+					{"name":"xyzPoints","kind":"required","type":[["size=:,3","numeric"],["size=:,:,3","numeric"]]},
+					{"name":"colorMap","kind":"ordered","type":[["vector","numeric"],["2d","numeric"]]}
+		        ]
+		     ]
+		 } 
+	]
+}, 
+
+"pointCloud":
+{
+    "inputs":
+    [
+        {"name":"xyzPoints", "kind":"required", "type":[["numeric","size=:,3"],["numeric","size=:,:,3"]]},
+        {"name":"Color", "kind":"namevalue", "type":[["numeric","size=:,3"],["numeric","size=:,:,3"]]}, 
+        {"name":"Normal", "kind":"namevalue", "type":[["numeric","size=:,3"],["numeric","size=:,:,3"]]}, 
+        {"name":"Intensity", "kind":"namevalue", "type":[["numeric","size=:,1"],["numeric","2d"]]}
+    ]
+},
+
+"pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius":
+{
+	"inputs":
+	[
+		{"name":"ptCloud", "kind":"required", "type":"pointCloud"},
+		{"name":"point", "kind":"required", "type":["vector","numel=3"]},
+		{"name":"radius", "kind":"required", "type":[["positive","integer","scalar","numeric"]]},
+		{"name":"Sort", "kind":"namevalue", "type":["logical","scalar"]},
+		{"name":"MaxLeafChecks", "kind":"namevalue", "type":[["positive","integer","scalar","numeric"]]}  
+	]
+},
+
+"pointclouds.internal.pc.pointCloudImpl.findPointsInROI":
+{
+	"inputs":
+	[
+		{"name":"ptCloud", "kind":"required", "type":"pointCloud"},
+		{"name":"roi", "kind":"required", "type":["numeric","size=3,2"]}
+	]
+},
+
+"pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints":
+{
+	"inputs":
+	[
+		{"name":"ptCloud", "kind":"required", "type":"pointCloud"}
+	]
+},
+
+"pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors":
+{
+    "inputs":
+    [
+        {"name":"ptCloud", "kind":"required", "type":"pointCloud"},
+        {"name":"point", "kind":"required", "type":["vector","numel=3"]},
+        {"name":"K", "kind":"required", "type":[["positive","integer","scalar","numeric"]]},
+        {"name":"Sort", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"MaxLeafChecks", "kind":"namevalue", "type":[["positive","integer","scalar","numeric"]]}  
+    ]
+},
+
+"pointclouds.internal.pc.pointCloudImpl.select":
+{
+	"inputs":
+	[
+		{"name":"ptCloud", "kind":"required", "type":"pointCloud"},
+		{
+		    "mutuallyExclusiveGroup":
+		    [
+		        [
+		        	{"name":"row", "kind":"required", "type":["numeric", "vector"]},
+		        	{"name":"column", "kind":"required", "type":["numeric", "vector"]}
+		        ],
+		        {"name":"indices", "kind":"required", "type":["numeric", "vector"]}
+		    ]
+		},    
+		{"name":"OutputSize", "kind":"namevalue", "type":"choices={'selected','full'}"} 
+	]
+}
+
+}

@@ -1,0 +1,18 @@
+{
+"openfig":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":"file=*.fig"},
+		{"name":"copies", "kind":"ordered", "type":"choices={'new','reuse'}", "default":"'new'"},
+		{"name":"visibility", "kind":"ordered", "type":"choices={'invisible','visible'}"}
+	]
+},
+"reset":
+{
+	"inputs":
+	[
+		{"name":"h", "type":"numeric"}
+	]
+}
+}

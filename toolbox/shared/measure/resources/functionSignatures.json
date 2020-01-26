@@ -1,0 +1,24 @@
+{
+    "dsp.PulseMetrics":
+    {
+        "inputs":
+        [
+            {"kind":"properties","type":["dsp.PulseMetrics"]}
+        ]
+    },
+    "dsp.StateLevels":
+    {
+        "inputs":
+        [
+            {"kind":"properties","type":["dsp.StateLevels"]}
+        ]
+    },
+    "dsp.TransitionMetrics":
+    {
+        "inputs":
+        [
+            {"kind":"properties","type":["dsp.TransitionMetrics"]}
+        ]
+    }
+}
+

@@ -1,0 +1,14 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "matlabshared.asyncio.buffer.DataPump":
+    prefix: "matlabshared.asyncio.buffer.DataPump"
+    body: '''${1:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})'''
+    description: '''${1:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})'''
+
+
+    "matlabshared.asyncio.buffer.Buffer":
+    prefix: "matlabshared.asyncio.buffer.Buffer"
+    body: '''${1:buffer} = matlabshared.asyncio.buffer.Buffer(${1:bufferSize})'''
+    description: '''${1:buffer} = matlabshared.asyncio.buffer.Buffer(${1:bufferSize})'''
+

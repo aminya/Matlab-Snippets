@@ -1,0 +1,91 @@
+{
+"blelist":
+{
+    "inputs":
+    [
+        {"name":"Name", "kind":"namevalue", "type":"char" },
+        {"name":"Timeout", "kind":"namevalue", "type":["numeric", "scalar"]},
+        {"name":"Services", "kind":"namevalue", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getAllServices"}
+    ],
+    "outputs":
+    [
+        {"name":"list", "type":"table"}
+    ]
+},
+"ble":
+{
+    "inputs":
+    [
+        {"name":"input", "kind":"required", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getFoundIdentifiers"}
+    ],
+    "outputs":
+    [
+        {"name":"b", "type":"ble"}
+    ]
+},
+"ble.characteristic":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"ble"},
+        {"name":"sid", "kind":"required", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getSupportedServices(obj)"},
+        {"name":"cid", "kind":"required", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getSupportedCharacteristics(obj,sid)"}
+    ],
+    "outputs":
+    [
+        {"name":"c", "type":"matlabshared.blelib.Characteristic"}
+    ]
+},
+"matlabshared.blelib.Characteristic.descriptor":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"matlabshared.blelib.Characteristic"},
+        {"name":"did", "kind":"required", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getSupportedDescriptors(obj)"}
+    ],
+    "outputs":
+    [
+        {"name":"d", "type":"matlabshared.blelib.Descriptor"}
+    ]
+},
+"matlabshared.blelib.Characteristic.read":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"matlabshared.blelib.Characteristic"},
+        {"name":"mode", "kind":"optional", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getReadModes(obj)"}
+    ],
+    "outputs":
+    [
+        {"name":"value", "type":["numeric", "vector"]},
+        {"name":"timestamp", "type":"datetime"}
+    ]
+},
+"matlabshared.blelib.Characteristic.write":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"matlabshared.blelib.Characteristic"},
+        {"name":"data", "kind":"required", "type":[["char"],["numeric", "vector"]]},
+        {"name":"type", "kind":"optional", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getWriteTypes(obj)"},
+        {"name":"precision", "kind":"optional", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getWritePrecisions"}
+    ]
+},
+"matlabshared.blelib.Characteristic.subscribe":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"matlabshared.blelib.Characteristic"},
+        {"name":"type", "kind":"optional", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getSupportedSubscriptionTypes(obj)"}
+    ]
+},
+"matlabshared.blelib.Descriptor.write":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"matlabshared.blelib.Descriptor"},
+        {"name":"data", "kind":"required", "type":[["char"],["numeric", "vector"]]},
+        {"name":"precision", "kind":"optional", "type":"choices=matlabshared.blelib.internal.TabCompletionHelper.getWritePrecisions"}
+    ]
+}
+}

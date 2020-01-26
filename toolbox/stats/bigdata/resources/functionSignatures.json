@@ -1,0 +1,613 @@
+{
+    "binScatterPlot":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"mutuallyExclusiveGroup":
+                [   
+                    [
+                        {"name":"nbins", "kind":"ordered", "type":["integer", ">0", "vector"]}
+                    ],
+                    [
+                        {"name":"Xedges", "kind":"positional", "type":[["numeric", "vector"], ["logical", "vector"]]},
+                        {"name":"Yedges", "kind":"ordered", "type":[["numeric", "vector"], ["logical", "vector"]]}
+                    ]
+                ]
+            },
+            {"name":"BinMethod", "kind":"namevalue", "type":"choices={'auto', 'scott', 'integers'}"},
+            {"name":"BinWidth", "kind":"namevalue", "type":["numeric", "vector"]},
+            {"name":"Color", "kind":"namevalue", "type":"choices={'b', 'y', 'm', 'c', 'r', 'g', 'k'}"},
+            {"name":"Gamma", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"XBinLimits", "kind":"namevalue", "type":["numeric", "vector"]},
+            {"name":"YBinLimits", "kind":"namevalue", "type":["numeric", "vector"]}
+        ]
+    },
+
+    "corr":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"ordered", "type":"tall"},
+
+            {"name":"type", "kind":"namevalue", "type":"choices={'Pearson'}"},
+            {"name":"rows", "kind":"namevalue", "type":"choices={'all', 'complete', 'pairwise'}"},
+            {"name":"tail", "kind":"namevalue", "type":"choices={'both', 'right', 'left'}"}
+        ]
+    },
+
+    "cvpartition":
+    {
+        "inputs":
+        [
+            {"name":"group", "kind":"required", "type":"tall"},
+            {"name":"HoldOut", "kind":"required", "type":"choices={'HoldOut'}"},
+            {"name":"p", "kind":"required", "type":["scalar", ">0", "<1"]}
+        ]
+    },
+
+    "datasample":
+    {
+        "inputs":
+        [
+            {"name":"s", "kind":"ordered", "type":[["struct"], ["RandStream"]]},
+
+            {"name":"data", "kind":"required", "type":"tall"},
+            {"name":"k", "kind":"required", "type":["integer", ">0"]},
+
+            {"name":"dim", "kind":"ordered", "type":"choices={1}"},
+
+            {"name":"Weights", "kind":"namevalue", "type":"tall"}
+        ]
+    },
+
+    "fitcdiscr":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"Tbl", "kind":"required", "type":"tall"}
+                    ],
+                    [
+                       {"name":"X", "kind":"required", "type":"tall"}
+                    ]
+                ]
+            },
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"ClassNames", "kind":"namevalue", "type":[["categorical"], ["char"], ["logical"], ["numeric"], ["cell"]]},
+            {"name":"Cost", "kind":"namevalue", "type":[["struct"], ["numeric"]]},
+            {"name":"DiscrimType", "kind":"namevalue", "type":"choices={'linear', 'diaglinear', 'quadratic', 'diagquadratic', 'pseudolinear', 'pseudoquadratic'}"},
+            {"name":"PredictorNames", "kind":"namevalue", "type":["choices=Tbl.Properties.VariableNames", "cellstr"]},
+            {"name":"Prior", "kind":"namevalue", "type":[["choices={'empirical', 'uniform'}"], ["numeric", "vector"], ["struct"]]},
+            {"name":"ResponseName", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["choices={'Y'}"], ["char"]]},
+            {"name":"ScoreTransform", "kind":"namevalue", "type":[["choices={'none', 'uniform', 'doublelogit', 'invlogit', 'ismax', 'logit', 'identity', 'sign', 'symmetric', 'symmetriclogit', 'symmetricismax' }"], ["function_handle"], ["char"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"OptimizeHyperparameters", "kind":"namevalue", "type":[["cellstr"], ["choices={'none', 'auto', 'all'}"], ["optimizableVariable", "vector"]]}, 
+            {"name":"HyperparameterOptimizationOptions", "kind":"namevalue", "type":"struct"}
+        ]
+    },
+
+    "fitcecoc":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"ClassNames", "kind":"namevalue", "type":[["categorical"], ["char"], ["cellstr"], ["logical", "vector"], ["double", "vector"], ["single", "vector"]]},
+            {"name":"Cost", "kind":"namevalue", "type":[["double"], ["single"], ["struct"]]},
+            {"name":"Coding", "kind":"namevalue", "type":[["choices={'allpairs', 'binarycomplete', 'denserandom', 'onevsall', 'onevsone', 'ordinal', 'sparserandom', 'ternarycomplete'}"], ["char"], ["double"], ["single"], ["int16"], ["int32"], ["int64"], ["int8"]]},
+            {"name":"Learners", "kind":"namevalue", "type":[["choices={'svm', 'discriminant', 'kernel', 'knn', 'linear', 'naivebayes', 'tree'}"], ["classreg.learning.FitTemplate"], ["cell"]]},
+            {"name":"Prior", "kind":"namevalue", "type":[["choices={'empirical', 'uniform'}"], ["numeric", "vector"], ["struct"]]},
+            {"name":"Verbose", "kind":"namevalue", "type":"choices={0, 1, 2}"},
+            {"name":"NumConcurrent", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Weights", "kind":"namevalue", "type":[["double", "vector", ">0"], ["single", "vector", ">0"], ["char"]]}
+        ]
+    },
+
+    "fitckernel":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+            
+            {"name":"Lambda", "kind":"namevalue", "type":[["choices={'auto'}"], ["numeric", "vector", ">=0"]]},
+            {"name":"KernelScale", "kind":"namevalue", "type":[["choices={'auto'}"], ["numeric", "scalar", ">0"]]},
+            {"name":"Learner", "kind":"namevalue", "type":"choices={'svm', 'logistic'}"},
+            {"name":"Verbose", "kind":"namevalue", "type":"choices={0, 1}"},
+            {"name":"ExpansionDimension", "kind":"namevalue", "type":[["choices={'auto'}"], ["integer", ">0"]]},
+            {"name":"BlockSize", "kind":"namevalue", "type":["numeric", "scalar", ">=1"]},
+            {"name":"RandomStream", "kind":"namevalue", "type":"RandStream"},
+            {"name":"ClassNames", "kind":"namevalue", "type":[["categorical"], ["char"], ["logical", "vector"], ["numeric", "vector"], ["cellstr"]]},
+            {"name":"Cost", "kind":"namevalue", "type":[["numeric"], ["struct"]]}, 
+            {"name":"Prior", "kind":"namevalue", "type":[["choices={'empirical', 'uniform'}"], ["struct"], ["numeric", "vector"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"HessianHistorySize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"BetaTolerance", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"GradientTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"IterationLimit", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"OptimizeHyperparameters", "kind":"namevalue", "type":[["cellstr"], ["choices={'none', 'auto', 'all'}"], ["optimizableVariable", "vector"]]}, 
+            {"name":"HyperparameterOptimizationOptions", "kind":"namevalue", "type":"struct"}
+        ]
+    }, 
+
+    "fitclinear":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"ObservationsIn", "kind":"namevalue", "type":"choices={'rows', 'columns'}"},
+            {"name":"Lambda", "kind":"namevalue", "type":[["choices={'auto'}"], ["numeric", "vector", ">=0"]]},
+            {"name":"Learner", "kind":"namevalue", "type":"choices={'svm', 'logistic'}"},
+            {"name":"Regularization", "kind":"namevalue", "type":"choices={'lasso', 'ridge'}"},
+            {"name":"Solver", "kind":"namevalue", "type":[["choices={'sgd', 'asgd', 'dual', 'bfgs', 'lbfgs', 'sparsa'}"], ["cellstr"]]},
+            {"name":"Verbose", "kind":"namevalue", "type":["integer", ">=0"]},
+            {"name":"Beta", "kind":"namevalue", "type":"numeric"},
+            {"name":"Bias", "kind":"namevalue", "type":["numeric", "vector"]},
+            {"name":"ClassNames", "kind":"namevalue", "type":[["categorical"], ["char"], ["logical", "vector"], ["numeric", "vector"], ["cellstr"]]},
+            {"name":"Cost", "kind":"namevalue", "type":[["numeric"], ["struct"]]}, 
+            {"name":"Prior", "kind":"namevalue", "type":[["choices={'empirical', 'uniform'}"], ["struct"], ["numeric", "vector"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"HessianHistorySize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"BetaTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"GradientTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"IterationLimit", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"OptimizeHyperparameters", "kind":"namevalue", "type":[["cellstr"], ["choices={'none', 'auto', 'all'}"], ["optimizableVariable", "vector"]]}, 
+            {"name":"HyperparameterOptimizationOptions", "kind":"namevalue", "type":"struct"}
+        ]
+    },
+
+   "fitcnb":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"Tbl", "kind":"required", "type":"tall"}
+                    ],
+                    [
+                       {"name":"X", "kind":"required", "type":"tall"}
+                    ]
+                ]
+            },
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"DistributionNames", "kind":"namevalue", "type":[["choices={'kernel', 'mn', 'mvmn', 'normal'}"], ["cellstr"], ["char"]]},
+            {"name":"CategoricalPredictors", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["choices={'all'}"], ["logical", "vector"], ["char"], ["numeric", "vector"], ["cellstr"]]},
+            {"name":"PredictorNames", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["cellstr"]]},
+            {"name":"ResponseName", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["choices={'Y'}"], ["char"]]},
+            {"name":"ScoreTransform", "kind":"namevalue", "type":[["choices={'none', 'uniform', 'doublelogit', 'invlogit', 'ismax', 'logit', 'identity', 'sign', 'symmetric', 'symmetriclogit', 'symmetricismax'}"], ["function_handle"], ["char"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"Prior", "kind":"namevalue", "type":[["choices={'empirical', 'uniform'}"], ["numeric", "vector"], ["struct"]]},
+            {"name":"Cost", "kind":"namevalue", "type":[["double"], ["single"], ["struct"]]}
+        ]
+    },
+
+  "fitctree":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"Tbl", "kind":"required", "type":["tall"]}
+                    ],
+                    [
+                       {"name":"X", "kind":"required", "type":"tall"}
+
+                    ]
+                ]
+            },
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"AlgorithmForCategorical", "kind":"namevalue", "type":"choices={'Exact', 'PCA', 'OVAbyClass'}"},
+            {"name":"CategoricalPredictors", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["choices={'all'}"], ["logical", "vector"], ["numeric", "vector"], ["cellstr"], ["char"]]},
+            {"name":"ClassNames", "kind":"namevalue", "type":[["categorical"], ["char"], ["cellstr"], ["logical", "vector"], ["numeric", "vector"]]},
+            {"name":"MaxNumCategories", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"MaxNumSplits", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"MergeLeaves", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+            {"name":"MinLeafSize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"MinParentSize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"NumVariablesToSample", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"PredictorNames", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"],["cellstr"]]},
+            {"name":"ResponseName", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["choices={'Y'}"], ["char"]]},
+            {"name":"ScoreTransform", "kind":"namevalue", "type":[["choices={'none', 'doublelogit', 'invlogit', 'ismax', 'logit', 'identity', 'sign', 'symmetric', 'symmetriclogit', 'symmetricismax'}"], ["function_handle"]]},
+            {"name":"SplitCriterion", "kind":"namevalue", "type":"choices={'gdi', 'twoing', 'deviance', 'OVAbyClass'}"},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"MaxDepth", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"OptimizeHyperparameters", "kind":"namevalue", "type":[["cellstr"], ["choices={'none', 'auto', 'all'}"], ["optimizableVariable", "vector"]]}, 
+            {"name":"HyperparameterOptimizationOptions", "kind":"namevalue", "type":"struct"},
+            {"name":"Prior", "kind":"namevalue", "type":[["choices={'empirical', 'uniform'}"], ["numeric", "vector"], ["struct"]]},
+            {"name":"Cost", "kind":"namevalue", "type":[["numeric"], ["struct"]]}
+        ]
+    },
+
+    "fitglm":
+    {
+        "inputs":
+        [
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"tbl", "kind":"required", "type":"tall"}
+                    ],
+                    [
+                       {"name":"X", "kind":"required", "type":"tall"},
+                       {"name":"y", "kind":"required", "type":"tall"}
+                    ]
+                ]
+            },
+            {"name":"modelspec", "kind":"ordered", "type":[["choices={'constant', 'linear', 'interactions', 'purequadratic', 'quadratic'}"], ["char"], ["double"], ["single"], ["numeric"]]},
+            
+            {"name":"BinomialSize", "kind":"namevalue", "type":[["tall"],["numeric", "scalar"]]},
+            {"name":"CategoricalVars", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["logical", "vector"], ["single", "vector", "integer"], ["double", "vector", "integer"], ["cellstr"]]},
+            {"name":"DispersionFlag", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"Distribution", "kind":"namevalue", "type":"choices={'normal', 'binomial', 'poisson', 'gamma', 'inverse gaussian'}"},
+            {"name":"Exclude", "kind":"namevalue", "type":"tall"},
+            {"name":"Intercept", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"Link", "kind":"namevalue", "type":[["choices={'identity', 'log', 'logit', 'probit', 'comploglog', 'reciprocal'}"], ["struct"], ["single", "scalar"], ["double", "scalar"]]},
+            {"name":"Offset", "kind":"namevalue", "type":"tall"},
+            {"name":"PredictorVars", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["logical", "vector"], ["single", "vector", "integer"], ["double", "vector", "integer"], ["cellstr"]]},
+            {"name":"ResponseVar", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["logical", "vector"], ["single", "vector", "integer"], ["double", "vector", "integer"], ["char"]]},
+            {"name":"VarNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"}
+        ]
+    },
+
+	"fitlm":
+	{
+		"inputs":
+		[
+			{"mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"tbl", "kind":"required", "type":"tall"}
+                    ],
+                    [
+                       {"name":"X", "kind":"required", "type":"tall"},
+                       {"name":"y", "kind":"required", "type":"tall"}
+                   ]
+                ]
+			},
+			{"name":"modelspec", "kind":"ordered", "type":[["char", "vector"], ["choices={'constant','linear','interactions','purequadratic','quadratic'}"], ["numeric"]]},
+			
+            {"name":"CategoricalVars", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["choices=tbl.Properties.VarNames"], ["logical", "vector"], ["single", "vector", "integer"], ["double", "vector", "integer"]]},
+			{"name":"Exclude", "kind":"namevalue", "type":"tall"},
+			{"name":"Intercept", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+			{"name":"PredictorVars", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["choices=tbl.Properties.VarNames"], ["logical", "vector"], ["single", "vector", "integer"], ["double", "vector", "integer"]]},
+			{"name":"ResponseVar", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["choices=tbl.Properties.VarNames"], ["char"], ["logical", "vector"], ["single", "vector", "integer"], ["double", "vector", "integer"]]},
+			{"name":"VarNames", "kind":"namevalue", "type":"cellstr"},
+			{"name":"Weights", "kind":"namevalue", "type":"tall"}
+		]
+	},
+
+   "fitrkernel":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"BoxConstraint", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"Epsilon", "kind":"namevalue", "type":[["choices={'auto'}"],["numeric", "scalar", ">=0"]]},
+            {"name":"NumExpansionDimensions", "kind":"namevalue", "type":[["choices={'auto'}"],["integer", ">0"]]},
+            {"name":"KernelScale", "kind":"namevalue", "type":[["choices={'auto'}"],["numeric", "scalar", ">0"]]},
+            {"name":"Lambda", "kind":"namevalue", "type":[["choices={'auto'}"],["numeric", "scalar", ">=0"]]},
+            {"name":"Learner", "kind":"namevalue", "type":"choices={'svm', 'leastsquares'}"},
+            {"name":"Verbose", "kind":"namevalue", "type":"choices={0, 1}"},
+            {"name":"BlockSize", "kind":"namevalue", "type":["numeric", "scalar", ">1"]},
+            {"name":"RandomStream", "kind":"namevalue", "type":"RandStream"},
+            {"name":"ResponseTransform", "kind":"namevalue", "type":[["choices={'none'}"], ["function_handle"]]},
+            {"name":"Weights", "kind":"namevalue", "type":["numeric", "vector", ">0"]},
+            {"name":"BetaTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"GradientTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"HessianHistorySize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"IterationLimit", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"OptimizeHyperparameters", "kind":"namevalue", "type":[["cellstr"], ["choices={'none', 'auto', 'all'}"], ["optimizableVariable", "vector"]]}, 
+            {"name":"HyperparameterOptimizationOptions", "kind":"namevalue", "type":"struct"}
+        ]
+    },
+
+    "fitrlinear":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+            
+            {"name":"Epsilon", "kind":"namevalue", "type":[["double", "scalar", ">=0"], ["single", "scalar", ">=0"]]},
+            {"name":"ObservationsIn", "kind":"namevalue", "type":"choices={'rows'}"},
+            {"name":"Lambda", "kind":"namevalue", "type":[["choices={'auto'}"], ["numeric", "scalar"]]},
+            {"name":"Learner", "kind":"namevalue", "type":"choices={'svm', 'leastsquares'}"},
+            {"name":"Regularization", "kind":"namevalue", "type":"choices={'ridge'}"},
+            {"name":"Solver", "kind":"namevalue", "type":"choices={'lbfgs'}"},
+            {"name":"Verbose", "kind":"namevalue", "type":[["choices={0, 1}"], ["numeric", "integer", ">=0"]]},
+            {"name":"Beta", "kind":"namevalue", "type":[["double"], ["single"]]},
+            {"name":"Bias", "kind":"namevalue", "type":[["double", "vector"], ["single", "vector"]]},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"HessianHistorySize", "kind":"namevalue", "type":[["double", "integer", ">0"], ["single", "integer", ">0"]]},
+            {"name":"BetaTolerance", "kind":"namevalue", "type":[["double", "scalar", ">=0"], ["single", "scalar", ">=0"]]},
+            {"name":"GradientTolerance", "kind":"namevalue", "type":[["double", "scalar", ">=0"], ["single", "scalar", ">=0"]]},
+            {"name":"IterationLimit", "kind":"namevalue", "type":[["double", "integer", ">0"], ["single", "integer", ">0"]]},
+            {"name":"OptimizeHyperparameters", "kind":"namevalue", "type":[["cellstr"], ["choices={'none', 'auto', 'all'}"], ["optimizableVariable", "vector"]]}, 
+            {"name":"HyperparameterOptimizationOptions", "kind":"namevalue", "type":"struct"}
+        ]
+    },
+
+    "geomean":
+    {
+        "inputs":
+        [
+            {"name":"tx", "kind":"required", "type":"tall"},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"nanflag", "kind":"ordered", "type":"choices={'includenan', 'omitnan'}"}
+        ]
+    },
+
+    "grpstats":
+	{
+		"inputs":
+		[ 
+            {"name":"tbl", "kind":"required", "type":"tall"},
+            {"name":"groupvar", "kind":"required", "type":[["numeric", "vector"], ["logical", "vector"], ["char"], ["cellstr"], ["categorical"]]},
+            {"name":"whichstats", "kind":"ordered", "type":"choices={'count', 'nnz', 'kurtosis', 'skewness', 'all-stats', 'mean', 'sem', 'numel', 'gname', 'std', 'var', 'min', 'max', 'range', 'meanci', 'predci'}"},
+
+            {"name":"Alpha", "kind":"namevalue", "type":["double", "scalar", ">=0", "<=1"]},
+            {"name":"DataVars", "kind":"namevalue", "type":[["choices=tbl.Properties.VariableNames"], ["choices=tbl.Properties.VarNames"], ["logical", "vector"], ["double", "vector", ">0"], ["cellstr"], ["char"]]}
+        ]
+    },
+
+    "grpstats":
+	{
+		"inputs":
+		[ 
+            {"name":"X", "kind":"required", "type":"tall"}
+        ]
+    },
+
+    "grpstats":
+	{
+		"inputs":
+		[ 
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"group", "kind":"required", "type":[["tall"],["cell"]]},
+            {"name":"whichstats", "kind":"ordered", "type":"choices={'count', 'nnz', 'kurtosis', 'skewness', 'all-stats', 'mean', 'sem', 'numel', 'gname', 'std', 'var', 'min', 'max', 'range', 'meanci', 'predci'}"}
+        ]
+    },
+
+    "harmmean":
+    {
+        "inputs":
+        [
+            {"name":"tx", "kind":"required", "type":"tall"},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"nanflag", "kind":"ordered", "type":"choices={'includenan', 'omitnan'}"}
+        ]
+    },
+
+    "kmeans":
+	{
+		"inputs":
+		[ 
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"k", "kind":"required", "type":["integer", ">0"]},
+
+            {"name":"Display", "kind":"namevalue", "type":[["choices={'off', 'final', 'iter'}"], ["char"]]},
+            {"name":"MaxIter", "kind":"namevalue", "type":[["double", "integer", ">0"], ["single", "integer", ">0"]]},
+            {"name":"Options", "kind":"namevalue", "type":"struct"},
+            {"name":"Replicates", "kind":"namevalue", "type":[["double", "integer", ">0"], ["single", "integer", ">0"]]},
+            {"name":"Start", "kind":"namevalue", "type":[["choices={'plus', 'sample'}"], ["numeric"]]}
+            
+        ]
+    },
+
+    "knnsearch":
+	{
+		"inputs":
+		[ 
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"numeric"},
+            
+            {"name":"K", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"IncludeTies", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"NSMethod", "kind":"namevalue", "type":[["choices={'kdtree', 'exhaustive'}"], ["char"]]},
+            {"name":"Distance", "kind":"namevalue", "type":[["choices={'euclidean', 'seuclidean', 'cityblock', 'chebychev', 'minkowski', 'mahalanobis', 'cosine', 'correlation', 'spearman', 'hamming', 'jaccard'}"], ["char"], ["function_handle"]]},
+            {"name":"P", "kind":"namevalue", "type":["scalar", ">0"]},
+            {"name":"Cov", "kind":"namevalue", "type":"numeric"},
+            {"name":"Scale", "kind":"namevalue", "type":["vector", ">=0"]},
+            {"name":"BucketSize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"SortIndices", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    }, 
+
+    "ksdensity":
+    {
+        "inputs":
+        [
+            {"name":"ax", "kind":"ordered"},
+
+            {"name":"x", "kind":"required", "type":"tall"},
+            {"name":"xi", "kind":"ordered", "type":"numeric"},
+
+            {"name":"Kernel", "kind":"namevalue", "type":[["choices={'normal', 'box', 'triangle', 'epanechnikov'}"], ["char"], ["function_handle"]]},
+            {"name":"Weights", "kind":"namevalue", "type":[["numeric"], ["tall"]]},
+            {"name":"Bandwidth", "kind":"namevalue", "type":"numeric"},
+            {"name":"Function", "kind":"namevalue", "type":[["choices={'pdf', 'cdf', 'icdf', 'survivor', 'cumhazard'}"], ["char"]]},    
+            {"name":"NumPoints", "kind":"namevalue", "type":["numeric", "scalar"]},
+            {"name":"PlotFcn", "kind":"namevalue", "type":[["choices={'surf', 'contour', 'plot3', 'surfc'}"], ["char"]]}
+        ]
+    },
+
+   "kurtosis":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"flag", "kind":"positional", "type":"choices={0, 1}"},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]}
+        ]
+    },
+
+   "lasso":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"Lambda", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"LambdaRatio", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"NumLambda", "kind":"namevalue", "type":["numeric", "integer", ">0"]},
+            {"name":"Standardize", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"PredictorNames", "kind":"namevalue", "type":"cellstr"},
+            {"name":"RelTol", "kind":"namevalue", "type":["numeric", "scalar", ">0", "<1"]},
+            {"name":"Weights", "kind":"namevalue", "type":"tall"},
+            {"name":"Rho", "kind":"namevalue", "type":["numeric", "scalar", ">0", "<=1"]},
+            {"name":"AbsTol", "kind":"namevalue", "type":"numeric"},
+            {"name":"DFmax", "kind":"namevalue", "type":"numeric"},
+            {"name":"MaxIter", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"B0", "kind":"namevalue", "type":"numeric"},
+            {"name":"U0", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "pdist2":{
+      "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"numeric"},
+
+            {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"Distance", "kind":"positional", "type":[["choices={'seuclidean', 'minkowski', 'mahalanobis', 'euclidean', 'squaredeuclidean', 'cityblock', 'chebychev', 'cosine', 'correlation', 'spearman', 'hamming', 'jaccard'}"], ["char"], ["function_handle"]]}
+                ],
+                [
+                    {"name":"seuclidean", "kind":"positional", "type":"choices={'seuclidean'}"},
+
+                    {"name":"Scale", "kind":"ordered", "type":["numeric", ">0"]}
+                ],
+                [
+                    {"name":"minkowski", "kind":"positional", "type":"choices={'minkowski'}"},
+
+                    {"name":"Exponent", "kind":"ordered", "type":["numeric", "scalar", ">0"]}
+                ],
+                [
+                    {"name":"mahalanobis", "kind":"positional", "type":"choices={'mahalanobis'}"},
+
+                    {"name":"Covariance", "kind":"ordered", "type":"numeric"}
+                ]
+            ]
+            },
+            {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"Smallest", "kind":"namevalue", "type":["numeric", "scalar", "integer", ">=1"]}
+                ],
+                [
+                    {"name":"Largest", "kind":"namevalue", "type":["numeric", "scalar", "integer", ">=1"]}
+                ]
+             ]
+            }
+        ]
+    },
+
+    "prctile":{
+      "inputs":
+      [
+        {"name":"X", "kind":"required","type":"tall"},
+        {"name":"P", "kind":"positional", "type":["numeric",">=0"]},
+        {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+        {"name":"Method", "kind":"namevalue", "type":["char", "choices={'exact','approximate'}"]}
+      ]
+    },
+
+    "rangesearch":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"Y", "kind":"required", "type":"numeric"},
+            {"name":"r", "kind":"required", "type":["numeric", "scalar", ">=0"]},
+
+            {"name":"BucketSize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"Cov", "kind":"namevalue", "type":["numeric", ">0"]},
+            {"name":"Distance", "kind":"namevalue", "type":[["choices={'euclidean', 'seuclidean', 'mahalanobis', 'cityblock', 'minkowski', 'chebychev', 'cosine', 'correlation', 'hamming', 'jaccard', 'spearman'}"], ["char"], ["function_handle"]]},
+            {"name":"NSMethod", "kind":"namevalue", "type":"choices={'kdtree', 'exhaustive'}"},   
+            {"name":"P", "kind":"namevalue", "type":["scalar", ">0"]},
+            {"name":"Scale", "kind":"namevalue", "type":["numeric", "vector", ">=0"]},
+            {"name":"SortIndices", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+
+    "skewness":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"flag", "kind":"positional", "type":"choices={0, 1}"},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]}
+         ]
+    },
+
+    "TreeBagger":
+    {
+        "inputs":
+        [
+            {"name":"NumTrees", "kind":"required", "type":"integer"},
+
+            {
+                "mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"Tbl", "kind":"required", "type":"tall"}
+                    ],
+                    [
+                       {"name":"X", "kind":"required", "type":"tall"}
+                    ]
+                ]
+            },
+
+            {"name":"Y", "kind":"required", "type":"tall"},
+
+            {"name":"NumPredictorsToSample", "kind":"namevalue", "type":"numeric"},
+            {"name":"MinLeafSize", "kind":"namevalue", "type":"numeric"},
+            {"name":"ChunkSize", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"AlgorithmForCategorical", "kind":"namevalue", "type":"choices={'Exact', 'PCA', 'OVAbyClass'}"},
+            {"name":"CategoricalPredictors", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"], ["choices={'all'}"], ["logical", "vector"], ["numeric", "vector"], ["cellstr"], ["char"]]},
+            {"name":"MaxNumCategories", "kind":"namevalue", "type":["numeric", "scalar", ">=0"]},
+            {"name":"MergeLeaves", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+            {"name":"PredictorNames", "kind":"namevalue", "type":[["choices=Tbl.Properties.VariableNames"],["cellstr"]]},
+            {"name":"PredictorSelection", "kind":"namevalue", "type":"choices={'allsplits', 'curvature', 'interaction-curvature'}"},
+            {"name":"Prune", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+            {"name":"PruneCriterion", "kind":"namevalue", "type":"choices={'error', 'impurity'}"},
+            {"name":"Surrogate", "kind":"namevalue", "type":[["choices={'on', 'off', 'all'}"], ["double", "integer", ">0"], ["single", "integer", ">0"]]},
+            {"name":"MaxNumSplits", "kind":"namevalue", "type":["integer", ">0"]},     
+            {"name":"SplitCriterion", "kind":"namevalue", "type":"choices={'gdi', 'twoing', 'deviance', 'OVAbyClass'}"}
+        ]
+    },
+
+    "zscore":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":"tall"},
+            {"name":"flag", "kind":"positional", "type":"choices={0, 1}"},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]}
+        ]
+    }
+}

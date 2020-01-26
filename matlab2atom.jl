@@ -40,7 +40,7 @@ end
 
 function matlab2atom(data)
     final = """
-    # MATLAB snippets generated using
+    # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
     ".source.matlab":
     """
     for (fun, val) in data

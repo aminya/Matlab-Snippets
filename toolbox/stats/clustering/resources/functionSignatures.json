@@ -1,0 +1,44 @@
+{
+    "evalclusters":
+    {
+        "inputs":
+        [
+            {"name":"x", "kind":"required", "type":"numeric"},
+            {"name":"clust", "kind":"required", "type":[["choices={'kmeans', 'linkage', 'gmdistribution'}"], ["function_handle"], []]},
+            {"name":"criterion", "kind":"required", "type":"choices={'CalinskiHarabasz', 'DaviesBouldin'}"},
+
+            {"name":"KList", "kind":"namevalue", "type":"numeric"}
+        ]
+    },
+
+    "evalclusters":
+    {
+        "inputs":
+        [
+            {"name":"x", "kind":"required", "type":"numeric"},
+            {"name":"clust", "kind":"required", "type":[["choices={'kmeans', 'linkage', 'gmdistribution'}"], ["function_handle"], []]},
+            {"name":"criterion", "kind":"required", "type":"choices={'gap'}"},
+
+            {"name":"KList", "kind":"namevalue", "type":"numeric"},
+            {"name":"Distance", "kind":"namevalue", "type":[["choices={'sqEuclidean', 'Euclidean', 'cityblock', 'cosine', 'correlation', 'Hamming',  'Jaccard'}"], ["function_handle"], ["numeric", "vector"]]}, 
+            {"name":"B", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"ReferenceDistribution", "kind":"namevalue", "type":"choices={'PCA', 'uniform'}"},
+            {"name":"SearchMethod", "kind":"namevalue", "type":"choices={'globalMaxSE', 'firstMaxSE'}"}
+
+        ]
+    },
+
+    "evalclusters":
+    {
+        "inputs":
+        [
+            {"name":"x", "kind":"required", "type":"numeric"},
+            {"name":"clust", "kind":"required", "type":[["choices={'kmeans', 'linkage', 'gmdistribution'}"], ["function_handle"], []]},
+            {"name":"criterion", "kind":"required", "type":"choices={'silhouette'}"},
+
+            {"name":"KList", "kind":"namevalue", "type":"numeric"},
+            {"name":"Distance", "kind":"namevalue", "type":[["choices={'sqEuclidean', 'Euclidean', 'cityblock', 'cosine', 'correlation', 'Hamming',  'Jaccard'}"], ["function_handle"], ["numeric", "vector"]]}, 
+            {"name":"ClusterPriors", "kind":"namevalue", "type":"choices={'empirical', 'equal'}"}
+        ]
+    }
+}

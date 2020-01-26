@@ -1,0 +1,270 @@
+{
+"get_param":
+{
+	"inputs":
+	[
+		{"name":"Object", "kind":"required"},
+		{"name":"Parameter", "kind":"required", "type":["char", "choices=fieldnames(get_param(Object,'ObjectParameters'))"]}
+	],
+    "supportDotMethodInvocation":true
+},
+"set_param":
+{
+	"inputs":
+	[
+		{"name":"Object", "kind":"required"},
+        {"repeating":true, "tuple":
+            [
+        		{"name":"ParameterName", "kind":"required", "type":["char", "choices=Simulink.internal.getSettableParams(Object)"]},
+        		{"name":"Value", "kind":"required"}
+            ]
+        }
+	],
+    "supportDotMethodInvocation":true
+},
+"open_system":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+		{"name":"varargin", "kind":"ordered", "repeating":true}
+	]
+},
+"load_system":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]}
+	]
+},
+"save_system":
+{
+	"inputs":
+	[
+	    {"name":"modelname", "kind":"required", "type":["identifier=model"]},
+	    {"name":"filename", "kind":"ordered", "type":[["file=*.mdl,*.slx"],["char"]]},
+            {"name":"ExportToVersion", "kind":"namevalue", "type":"choices=saveas_version.getFormallySupportedReleaseNames"},
+            {"name":"ErrorIfShadowed", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"BreakUserLinks", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"BreakToolboxLinks", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"OverwriteIfChangedOnDisk", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"SaveDirtyReferencedModels", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"SaveModelWorkspace", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"AllowPrompt", "kind":"namevalue", "type":["logical","scalar"]}
+        ]
+},
+"sim":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+		{"name":"varargin", "kind":"ordered", "repeating":true}
+	]
+},
+    
+"sim":
+{
+    "inputs":
+    [
+        {"name":"in", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"name":"CleanupFcn", "kind":"namevalue", "type":"function_handle"},
+        {"name":"SetupFcn", "kind":"namevalue", "type":"function_handle"},
+        {"name":"ShowProgress", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"UseFastRestart", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"ShowSimulationManager", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"StopOnError", "kind":"namevalue", "type":"choices={'on', 'off'}"}
+    ]
+},
+    
+"sldebug":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+		{"name":"varargin", "kind":"ordered", "repeating":true}
+	]
+},
+"Simulink.ModelReference.protect":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+        {"name":"Mode", "kind":"namevalue", "type":"choices={'Normal','Accelerator','CodeGeneration','ViewOnly'}"},
+        {"name":"CodeInterface", "kind":"namevalue", "type":"choices={'Model reference','Top model'}"},
+        {"name":"OutputFormat", "kind":"namevalue", "type":"choices={'CompiledBinaries','MinimalCode', 'AllReferencedHeaders'}"},
+        {"name":"Modifiable", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Harness", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Report", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Encrypt", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"WebView", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"ObfuscateCode", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Path", "kind":"namevalue", "type":"file"},
+        {"name":"CustomPostProcessingHook", "kind":"namevalue", "type":"function_handle"},
+        {"name":"Callbacks", "kind":"namevalue", "type":"cell"}
+    ]
+},
+
+"parsim":
+{
+    "inputs":
+    [
+        {"name":"in", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"name":"AttachedFiles", "kind":"namevalue", "type":"cellstr"},
+        {"name":"CleanupFcn", "kind":"namevalue", "type":"function_handle"},
+        {"name":"RunInBackground", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"SetupFcn", "kind":"namevalue", "type":"function_handle"},
+        {"name":"ShowProgress", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"UseFastRestart", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"TransferBaseWorkspaceVariables", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"ShowSimulationManager", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"ManageDependencies", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"StopOnError", "kind":"namevalue", "type":"choices={'on', 'off'}"}
+    ]
+},
+
+"Simulink.SubSystem.convertToModelReference":
+{
+    "inputs":
+    [
+        {"name":"subsys", "kind":"required", "type":[["char"], ["vector"]]},
+        {"name":"mdlRef", "kind":"required", "type":[["char"], ["vector"]]},
+        {"name":"AutoFix", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Force", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"CheckSimulationResults", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"AbsoluteTolerance", "kind":"namevalue", "type":["double", "scalar"]},
+        {"name":"RelativeTolerance", "kind":"namevalue", "type":["double", "scalar"]},
+        {"name":"DataFileName", "kind":"namevalue", "type":[["char"], ["file"]]},
+        {"name":"ReplaceSubsystem", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"CreateWrapperSubsystem", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"SimulationModes", "kind":"namevalue", "type":"choices={'Normal','Accelerator'}"},
+        {"name":"BuildTarget", "kind":"namevalue", "type":"choices={'Sim','Coder'}"}
+    ],
+    "outputs":
+    [
+        {"name":"success", "type":"numeric"},
+        {"name":"mdlRefBlkHs", "type":"numeric"}
+    ]
+},
+"slbuild":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["char", "choices=coder.internal.listmodels"], ["char"]]},
+        {"mutuallyExclusiveGroup": [
+            [
+                {"name":"Mode", "kind":"positional", "type":"choices={'ModelReferenceSimTarget','ModelReferenceCoderTarget','ModelReferenceCoderTargetOnly'}"},
+                {"name":"UpdateThisModelReferenceTarget", "kind":"namevalue", "type":"choices={'IfOutOfDateOrStructuralChange','IfOutOfDate','Force'}"}
+            ],
+            [
+                {"name":"'StandaloneCoderTarget'", "kind":"positional", "type":"choices={'StandaloneCoderTarget'}"},
+                {"name":"ForceTopModelBuild", "kind":"namevalue", "type":["logical","scalar"]},
+                {"name":"OpenBuildStatusAutomatically", "kind":"namevalue", "type":["logical","scalar"]}
+            ],
+            [
+                {"name":"'CleanTopModel'", "kind":"positional", "type":"choices={'CleanTopModel'}"}
+            ]
+        ]}
+    ]
+},
+"find_mdlrefs":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+        {"name":"AllLevels", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"IncludeProtectedModels", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Variants", "kind":"namevalue", "type":"choices={'ActivePlusCodeVariants','ActiveVariants','AllVariants'}"},
+        {"name":"IncludeCommented", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"KeepModelsLoaded", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"refModels", "type":"cell"},
+        {"name":"modelBlocks", "type":"cell"}
+    ]
+},
+"Simulink.BlockDiagram.copyContentsToSubsystem":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+        {"name":"subsys", "kind":"required", "type":["char"]}
+    ]
+},
+"Simulink.BlockDiagram.deleteContents":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]}
+    ]
+},
+"Simulink.SubSystem.copyContentsToBlockDiagram":
+{
+    "inputs":
+    [
+        {"name":"subsys", "kind":"required", "type":["char"]},
+        {"name":"filename", "kind":"required", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]}    
+    ]
+},
+"Simulink.SubSystem.deleteContents":
+{
+    "inputs":
+    [
+        {"name":"subsys", "kind":"required", "type":["char"]}
+    ]
+},
+"Simulink.FindOptions":
+{
+    "inputs":
+    [
+        {"name":"RegExp", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"CaseSensitive", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"FollowLinks", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"LookUnderMasks", "kind":"namevalue", "type":"choices={'All', 'None', 'Graphical', 'Functional'}"},
+        {"name":"IncludeCommented", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"SearchDepth", "kind":"namevalue", "type":"scalar"},
+        {"name":"Variants", "kind":"namevalue", "type":"choices={'ActivePlusCodeVariants','ActiveVariants','AllVariants'}"},
+        {"name":"LoadFullyIfNeeded", "kind":"namevalue", "type":["logical","scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"FindOptions", "type":"Simulink.internal.FindOptions"}
+    ]
+},
+"Simulink.allBlockDiagrams":
+{
+    "inputs":
+    [
+        {"name":"blockDiagramType", "kind":"ordered", "type":"choices={'model','library'}"}
+    ],
+    "outputs":
+    [
+        {"name":"blockDiagramHandles", "type": ["double", "vector"]}
+    ]
+},
+"Simulink.findBlocks":
+{
+    "inputs":
+    [
+        {"name":"modelname", "kind":"required", "type":["identifier=model"]},
+        {"name":"FindOptions", "kind":"positional", "type":"Simulink.FindOptions"}
+    ],
+    "outputs":
+    [
+        {"name":"blockHandles", "type": ["double", "vector"]}
+    ]
+},
+"Simulink.findBlocksOfType":
+{
+    "inputs":
+    [
+        {"name":"modelname", "kind":"required", "type":["identifier=model"]},
+        {"name":"BlockType", "kind":"required", "type":"char"},
+        {"name":"FindOptions", "kind":"positional", "type":"Simulink.FindOptions"}
+    ],
+    "outputs":
+    [
+        {"name":"blockHandles", "type": ["double", "vector"]}
+    ]
+}
+}

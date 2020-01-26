@@ -1,0 +1,44 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "signalLabelDefinition":
+    prefix: "signalLabelDefinition"
+    body: '''signalLabelDefinition(${1:name}, 'LabelType', ${2:value}, 'LabelDataType', ${3:value}, 'Categories', ${4:value}, 'ROILimitsDataType', ${5:value}, 'PointLocationsDataType', ${6:value}, 'ValidationFunction', ${7:value}, 'DefaultValue', ${8:value}, 'Description', ${9:value}, 'Tag', ${10:value}, 'Sublabels', ${11:value})'''
+    description: '''signalLabelDefinition(${1:name}, 'LabelType', ${2:value}, 'LabelDataType', ${3:value}, 'Categories', ${4:value}, 'ROILimitsDataType', ${5:value}, 'PointLocationsDataType', ${6:value}, 'ValidationFunction', ${7:value}, 'DefaultValue', ${8:value}, 'Description', ${9:value}, 'Tag', ${10:value}, 'Sublabels', ${11:value})'''
+
+
+    "xwvd":
+    prefix: "xwvd"
+    body: '''[${1:d}, ${2:f}, ${3:t}] = xwvd(${1:x}, ${2:y}, ${3:optional_ts}, ${4:'smoothedPseudo'}, ${5:'NumFrequencyPoints'}, ${6:nf}, ${7:'MinThreshold'}, ${8:optional_thresh})'''
+    description: '''[${1:d}, ${2:f}, ${3:t}] = xwvd(${1:x}, ${2:y}, ${3:optional_ts}, ${4:'smoothedPseudo'}, ${5:'NumFrequencyPoints'}, ${6:nf}, ${7:'MinThreshold'}, ${8:optional_thresh})'''
+
+
+    "hilbert":
+    prefix: "hilbert"
+    body: '''${1:x} = hilbert(${1:xr}, ${2:optional_n})'''
+    description: '''${1:x} = hilbert(${1:xr}, ${2:optional_n})'''
+
+
+    "hht":
+    prefix: "hht"
+    body: '''[${1:hs}, ${2:f}, ${3:t}, ${4:imfinsf}, ${5:imfinse}] = hht(${1:imf}, ${2:fs}, ${3:optional_freqlocation})'''
+    description: '''[${1:hs}, ${2:f}, ${3:t}, ${4:imfinsf}, ${5:imfinse}] = hht(${1:imf}, ${2:fs}, ${3:optional_freqlocation})'''
+
+
+    "wvd":
+    prefix: "wvd"
+    body: '''[${1:d}, ${2:f}, ${3:t}] = wvd(${1:x}, ${2:optional_ts}, ${3:'MinThreshold'}, ${4:optional_thresh})'''
+    description: '''[${1:d}, ${2:f}, ${3:t}] = wvd(${1:x}, ${2:optional_ts}, ${3:'MinThreshold'}, ${4:optional_thresh})'''
+
+
+    "labeledSignalSet":
+    prefix: "labeledSignalSet"
+    body: '''labeledSignalSet(${1:src}, ${2:optional_lbldefs}, 'Description', ${3:value}, 'SampleRate', ${4:value}, 'SampleTime', ${5:value}, 'TimeValues', ${6:value}, 'NumMembers', ${7:value}, 'Labels', ${8:value}, 'TimeInformation', ${9:value}, 'Source', ${10:value})'''
+    description: '''labeledSignalSet(${1:src}, ${2:optional_lbldefs}, 'Description', ${3:value}, 'SampleRate', ${4:value}, 'SampleTime', ${5:value}, 'TimeValues', ${6:value}, 'NumMembers', ${7:value}, 'Labels', ${8:value}, 'TimeInformation', ${9:value}, 'Source', ${10:value})'''
+
+
+    "emd":
+    prefix: "emd"
+    body: '''[${1:imf}, ${2:residual}, ${3:info}] = emd(${1:X}, 'SiftRelativeTolerance', ${2:value}, 'SiftMaxIterations', ${3:value}, 'MaxNumIMF', ${4:value}, 'MaxNumExtrema', ${5:value}, 'MaxEnergyRatio', ${6:value}, 'Interpolation', ${7:value}, 'Display', ${8:value})'''
+    description: '''[${1:imf}, ${2:residual}, ${3:info}] = emd(${1:X}, 'SiftRelativeTolerance', ${2:value}, 'SiftMaxIterations', ${3:value}, 'MaxNumIMF', ${4:value}, 'MaxNumExtrema', ${5:value}, 'MaxEnergyRatio', ${6:value}, 'Interpolation', ${7:value}, 'Display', ${8:value})'''
+

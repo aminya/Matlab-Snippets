@@ -1,0 +1,74 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "daq.Session.addAnalogInputChannel":
+    prefix: "daq.Session.addAnalogInputChannel"
+    body: '''daq.Session.addAnalogInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+    description: '''daq.Session.addAnalogInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+
+
+    "daq.createSession":
+    prefix: "daq.createSession"
+    body: '''daq.createSession(${1:vendorID})'''
+    description: '''daq.createSession(${1:vendorID})'''
+
+
+    "daq.Session.addAudioInputChannel":
+    prefix: "daq.Session.addAudioInputChannel"
+    body: '''daq.Session.addAudioInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_measurementType})'''
+    description: '''daq.Session.addAudioInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_measurementType})'''
+
+
+    "daq.Session.addCounterInputChannel":
+    prefix: "daq.Session.addCounterInputChannel"
+    body: '''daq.Session.addCounterInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+    description: '''daq.Session.addCounterInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+
+
+    "daq.Session.addTriggerConnection":
+    prefix: "daq.Session.addTriggerConnection"
+    body: '''daq.Session.addTriggerConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
+    description: '''daq.Session.addTriggerConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
+
+
+    "daq.Session.addDigitalChannel":
+    prefix: "daq.Session.addDigitalChannel"
+    body: '''daq.Session.addDigitalChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_directionalityParameter})'''
+    description: '''daq.Session.addDigitalChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_directionalityParameter})'''
+
+
+    "daq.Session.addCounterOutputChannel":
+    prefix: "daq.Session.addCounterOutputChannel"
+    body: '''daq.Session.addCounterOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+    description: '''daq.Session.addCounterOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+
+
+    "daq.Session.addAudioOutputChannel":
+    prefix: "daq.Session.addAudioOutputChannel"
+    body: '''daq.Session.addAudioOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+    description: '''daq.Session.addAudioOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+
+
+    "daq.Session.addClockConnection":
+    prefix: "daq.Session.addClockConnection"
+    body: '''daq.Session.addClockConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
+    description: '''daq.Session.addClockConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
+
+
+    "daq.Session.addFunctionGeneratorChannel":
+    prefix: "daq.Session.addFunctionGeneratorChannel"
+    body: '''daq.Session.addFunctionGeneratorChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:waveformType})'''
+    description: '''daq.Session.addFunctionGeneratorChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:waveformType})'''
+
+
+    "daq.Session.addAnalogOutputChannel":
+    prefix: "daq.Session.addAnalogOutputChannel"
+    body: '''daq.Session.addAnalogOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+    description: '''daq.Session.addAnalogOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
+
+
+    "daq.Session.addlistener":
+    prefix: "daq.Session.addlistener"
+    body: '''daq.Session.addlistener(${1:session}, ${2:event}, ${3:callbackFunction})'''
+    description: '''daq.Session.addlistener(${1:session}, ${2:event}, ${3:callbackFunction})'''
+

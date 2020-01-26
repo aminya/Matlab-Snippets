@@ -1,0 +1,15 @@
+{
+"sharedCodeUpdate":
+{
+    "inputs":
+    [
+        {"name":"sourceFolder", "kind":"required", "type":"folder"},
+        {"name":"destinationFolder", "kind":"required", "type":"folder"},
+        {"name":"ExistingCodeSubfolder", "kind":"namevalue", "type":"char"}
+    ],
+    "outputs":
+    [        
+    ]
+}
+}
+

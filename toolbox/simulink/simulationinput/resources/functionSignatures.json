@@ -1,0 +1,58 @@
+{
+"Simulink.SimulationInput":
+{
+    "inputs":
+    [
+        {"name": "model", "kind": "required", "type": "char"} 
+    ]
+},
+
+"Simulink.SimulationInput.setVariable":
+{
+    "inputs":
+    [
+        {"name":"obj", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"name":"name", "kind":"required", "type": "char"},
+        {"name":"value", "kind": "required"},
+        {"name":"Workspace", "kind": "namevalue", "type": "char"}
+    ]
+},
+
+"Simulink.SimulationInput.setModelParameter":
+{
+    "inputs":
+    [
+        {"name":"Object", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"repeating":true, "tuple":
+         [
+             {"name":"ParameterName", "kind":"required", "type":["char", "choices=Simulink.internal.getSettableParams(Object.ModelName)"]},
+             {"name":"Value", "kind":"required"}
+         ]
+        }
+    ]
+},
+
+"Simulink.SimulationInput.setBlockParameter":
+{
+    "inputs":
+    [
+        {"name":"Object", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"name":"BlockPath", "kind":"required", "type":["char", "choices=regexprep(find_system(Object.ModelName),'[\\n\\r]+' , ' ')"]},
+        {"repeating":true, "tuple":
+         [
+             {"name":"ParameterName", "kind":"required", "type":["char", "choices=Simulink.internal.getSettableParams(BlockPath)"]},
+             {"name":"Value", "kind":"required"}
+         ]
+        }
+    ]
+},
+
+"Simulink.SimulationInput.applyToModel":
+{
+    "inputs":
+    [
+        {"name":"Object", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"name":"EnableConfigSetRefUpdate", "kind":"namevalue", "type":"choices={'on', 'off'}"}
+    ]
+}
+}

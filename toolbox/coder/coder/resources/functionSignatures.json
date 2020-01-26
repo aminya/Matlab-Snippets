@@ -1,0 +1,17 @@
+{
+    "coder.OutputType":
+    {
+        "inputs":
+        [
+            {"name":"name", "kind":"required", "type":["identifier=function"]}
+        ]
+    },
+    "coder.config":
+    {
+        "inputs":
+        [
+            {"name":"build_type", "kind":"required", "type":"choices={'mex','lib','dll','exe','hdl','fixpt','single'}"},
+            {"name":"ecoder", "kind":"namevalue", "type":["logical","scalar"]}
+        ]
+    }
+}

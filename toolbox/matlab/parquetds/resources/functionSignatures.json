@@ -1,0 +1,73 @@
+{
+"_comment": "Copyright 2018 MathWorks, Inc.",
+
+"parquetDatastore":
+{
+    "inputs":
+    [
+        {"name":"location", "kind":"required", "type":[["file=*.parq,*.parquet"], ["matlabpathfile=*.parq,*.parquet"], ["string"], ["cell"], ["char"], ["matlab.io.datastore.DsFileSet"]]},
+        {"mutuallyExclusiveGroup": [
+            [
+                {"name":"IncludeSubfolders", "kind":"namevalue", "type":[["logical", "scalar"], ["numeric"]]},
+                {"name":"FileExtensions", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"AlternateFileSystemRoots", "kind":"namevalue", "type":[["cell"], ["string"]]},
+                {"name":"VariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"SelectedVariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"ReadSize", "kind":"namevalue", "type":[["numeric"],["scalar"], ["string", "choices={'rowgroup', 'file'}"]], "default" : "'rowgroup'"},
+                {"name":"OutputType", "kind": "namevalue", "type": ["string", "choices={'auto','table','timetable'}"], "default":"'table'"},
+                {"name":"PreserveVariableNames", "kind":"namevalue", "type":["logical", "scalar"], "default": "false"}
+            ],
+            [
+                {"name":"IncludeSubfolders", "kind":"namevalue", "type":[["logical", "scalar"], ["numeric"]]},
+                {"name":"FileExtensions", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"AlternateFileSystemRoots", "kind":"namevalue", "type":[["cell"], ["string"]]},
+                {"name":"VariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"SelectedVariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"ReadSize", "kind":"namevalue", "type":[["numeric"],["scalar"], ["string", "choices={'rowgroup', 'file'}"]], "default" : "'rowgroup'"},
+                {"name":"OutputType", "kind": "namevalue", "type": ["string", "choices={'auto','timetable'}"]},
+                {"name":"RowTimes", "kind":"namevalue",  "type": [["string"], ["char"]]},
+                {"name":"PreserveVariableNames", "kind":"namevalue", "type":["logical", "scalar"], "default": "false"}
+            ]
+        ]}
+    ],
+    "outputs":
+    [
+        { "name": "pds", "type": "matlab.io.datastore.ParquetDatastore"}
+    ]
+}
+,
+"matlab.io.datastore.ParquetDatastore":
+{
+    "inputs":
+    [
+        {"name":"location", "kind":"required", "type":[["file=*.parq,*.parquet"], ["matlabpathfile=*.parq,*.parquet"], ["string"], ["cell"], ["char"], ["matlab.io.datastore.DsFileSet"]]},
+        {"mutuallyExclusiveGroup": [
+            [
+                {"name":"IncludeSubfolders", "kind":"namevalue", "type":[["logical", "scalar"], ["numeric"]]},
+                {"name":"FileExtensions", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"AlternateFileSystemRoots", "kind":"namevalue", "type":[["cell"], ["string"]]},
+                {"name":"VariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"SelectedVariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"ReadSize", "kind":"namevalue", "type":[["numeric"],["scalar"], ["string", "choices={'rowgroup', 'file'}"]], "default" : "'rowgroup'"},
+                {"name":"OutputType", "kind": "namevalue", "type": ["string", "choices={'auto','table','timetable'}"], "default":"'auto'"},
+                {"name":"PreserveVariableNames", "kind":"namevalue", "type":["logical", "scalar"], "default": "false"}
+            ],
+            [
+                {"name":"IncludeSubfolders", "kind":"namevalue", "type":[["logical", "scalar"], ["numeric"]]},
+                {"name":"FileExtensions", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"AlternateFileSystemRoots", "kind":"namevalue", "type":[["cell"], ["string"]]},
+                {"name":"VariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"SelectedVariableNames", "kind":"namevalue", "type":[["cell"], ["char"], ["string"]]},
+                {"name":"ReadSize", "kind":"namevalue", "type":[["numeric"],["scalar"], ["string", "choices={'rowgroup', 'file'}"]], "default" : "'rowgroup'"},
+                {"name":"OutputType", "kind": "namevalue", "type": ["string", "choices={'auto','timetable'}"]},
+                {"name": "RowTimes", "kind":"namevalue",  "type": [["string"], ["char"]]},
+                {"name":"PreserveVariableNames", "kind":"namevalue", "type":["logical", "scalar"], "default": "false"}
+            ]
+        ]}
+    ],
+    "outputs":
+    [
+        { "name": "pds", "type": "matlab.io.datastore.ParquetDatastore"}
+    ]
+}
+}

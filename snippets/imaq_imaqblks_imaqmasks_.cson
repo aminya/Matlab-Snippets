@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "imaq.VideoDevice":
+    prefix: "imaq.VideoDevice"
+    body: '''${1:out} = imaq.VideoDevice(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'HardwareTriggering', ${5:value}, 'ReturnedColorSpace', ${6:value}, 'ReturnedDataType', ${7:value}, 'ROI', ${8:value}, 'TriggerConfiguration', ${9:value})'''
+    description: '''${1:out} = imaq.VideoDevice(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'HardwareTriggering', ${5:value}, 'ReturnedColorSpace', ${6:value}, 'ReturnedDataType', ${7:value}, 'ROI', ${8:value}, 'TriggerConfiguration', ${9:value})'''
+

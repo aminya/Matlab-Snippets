@@ -1,0 +1,159 @@
+{
+"fcontour":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.FunctionContour"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionContour"}
+	]
+},
+"fimplicit":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.ImplicitFunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ImplicitFunctionLine"}
+	]
+},
+"fimplicit3":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=6"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.ImplicitFunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ImplicitFunctionSurface"}
+	]
+},
+"fplot":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.FunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionLine"}
+	]
+},
+"fplot":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	]
+},
+"fplot3":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"z", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionLine"}
+	]
+},
+"fsurf":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.FunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionSurface"}
+	]
+},
+"fsurf":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"z", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	]
+},
+"fmesh":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"f", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.FunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.FunctionSurface"}
+	]
+},
+"fmesh":
+{
+		"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"y", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"z", "kind":"required", "type":[["function_handle"], ["sym"]]},
+		{"name":"range", "kind":"ordered", "type":[["numeric", "numel=2"], ["numeric", "numel=4"]]},
+		{"name":"LineSpec", "kind":"ordered", "type":["char", "@matlab.graphics.internal.isLineSpec"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.function.ParameterizedFunctionSurface"}
+	]
+}
+}

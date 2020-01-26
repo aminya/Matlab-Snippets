@@ -1,0 +1,14 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "addCustomBasemap":
+    prefix: "addCustomBasemap"
+    body: '''addCustomBasemap(${1:basemapName}, ${2:URL}, 'Attribution', ${3:value}, 'DisplayName', ${4:value}, 'MaxZoomLevel', ${5:value}, 'IsDeployable', ${6:value})'''
+    description: '''addCustomBasemap(${1:basemapName}, ${2:URL}, 'Attribution', ${3:value}, 'DisplayName', ${4:value}, 'MaxZoomLevel', ${5:value}, 'IsDeployable', ${6:value})'''
+
+
+    "removeCustomBasemap":
+    prefix: "removeCustomBasemap"
+    body: '''removeCustomBasemap(${1:basemapName})'''
+    description: '''removeCustomBasemap(${1:basemapName})'''
+

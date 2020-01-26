@@ -1,0 +1,52 @@
+{
+"confusionchart":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"ordered", "type":[["matlab.ui.Figure"], ["matlab.ui.container.Panel"], ["matlab.ui.container.Tab"]]},
+		{"name":"matrix", "kind":"required", "type":[["numeric", "square"]]},
+		{"name":"labels", "kind":"ordered", "type":[["numeric","vector"],["cellstr","vector"],["string","vector"], ["categorical","vector"], ["logical","vector"], ["char","matrix"]]},
+		{"name":"RowSummary", "kind":"namevalue", "type":[["choices={'off','absolute', 'row-normalized', 'total-normalized'}"], ["char"]]},
+		{"name":"ColumnSummary", "kind":"namevalue", "type":[["choices={'off','absolute', 'column-normalized', 'total-normalized'}"], ["char"]]},
+		{"name":"Normalization", "kind":"namevalue", "type":[["choices={'absolute','total-normalized', 'row-normalized', 'column-normalized'}"], ["char"]]},
+		{"name":"opts", "kind":"properties", "type":"mlearnlib.graphics.chart.ConfusionMatrixChart"}
+	],
+	"outputs":
+	[
+		{"name":"c", "type":"mlearnlib.graphics.chart.ConfusionMatrixChart"}
+	]
+},
+"confusionchart":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"ordered", "type":[["matlab.ui.Figure"], ["matlab.ui.container.Panel"], ["matlab.ui.container.Tab"]]},
+		{"name":"trueLabels", "kind":"required", "type":[["numeric","vector"],["cellstr","vector"],["string","vector"], ["categorical","vector"], ["logical","vector"], ["char","matrix"]]},
+		{"name":"predictedLabels", "kind":"required", "type":[["numeric","vector"],["cellstr","vector"],["string","vector"], ["categorical","vector"], ["logical","vector"], ["char","matrix"]]},
+		{"name":"RowSummary", "kind":"namevalue", "type":[["choices={'off','absolute', 'row-normalized', 'total-normalized'}"], ["char"]]},
+		{"name":"ColumnSummary", "kind":"namevalue", "type":[["choices={'off','absolute', 'column-normalized', 'total-normalized'}"], ["char"]]},
+		{"name":"Normalization", "kind":"namevalue", "type":[["choices={'absolute','total-normalized', 'row-normalized', 'column-normalized'}"], ["char"]]},
+		{"name":"opts", "kind":"properties", "type":"mlearnlib.graphics.chart.ConfusionMatrixChart"}
+	],
+	"outputs":
+	[
+		{"name":"c", "type":"mlearnlib.graphics.chart.ConfusionMatrixChart"}
+	]
+},
+"mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses":
+{
+	"inputs":
+	[
+		{"name":"c", "kind":"required", "type":"mlearnlib.graphics.chart.ConfusionMatrixChart"},
+		{"name":"direction", "kind":"required", "type":[["char"], ["string"], ["choices={'auto', 'ascending-diagonal', 'descending-diagonal'}"]]}
+	]
+},
+"mlearnlib.graphics.chart.ConfusionMatrixChart.sortClasses":
+{
+	"inputs":
+	[
+		{"name":"c", "kind":"required", "type":"mlearnlib.graphics.chart.ConfusionMatrixChart"},
+		{"name":"direction", "kind":"required", "type":["vector"]}
+	]
+}
+}

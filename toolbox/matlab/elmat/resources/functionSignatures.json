@@ -1,0 +1,497 @@
+{
+"cat":
+{
+    "inputs": [
+        {"name":"dim", "kind":"required", "type":["numeric", "scalar", "integer", ">=1"]},
+        {"mutuallyExclusiveGroup": [
+            [
+                {"name":"A","kind":"required","type":[["numeric"], ["char"], ["cellstr"]]},
+                {"name":"B","kind":"required","type":[["numeric"], ["char"], ["cellstr"]]}
+            ],
+            [
+                {"name":"A","kind":"ordered","type":[["numeric"], ["char"], ["cellstr"]],"repeating":true}
+            ]
+        ]}
+    ],
+    "outputs": [
+        {"name":"C", "type":[["numeric"], ["char"], ["cellstr"]]}
+    ]
+},
+"eps":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":["char", "choices={'double','single'}"], "default":"'double'"},
+                {"name":"X", "kind":"ordered", "type":[["double","single"]]}
+            ]
+        }
+    ]
+},
+"eye":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"n", "kind":"ordered", "type":["numeric", "vector", "integer", ">=0"]},
+                    {"name":"m", "kind":"positional", "type":["numeric", "vector", "integer", ">=0"]}
+                ],
+                {"name":"sz", "kind":"ordered", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single', 'logical','int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"N"}
+    ]
+},
+"false":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {"name":"'like'", "kind":"positional", "type":"choices={'like'}"},
+        {"name":"p", "kind":"required"}
+    ],
+    "outputs":
+    [
+        {"name":"F"}
+    ]
+},
+"find":
+{
+    "inputs":
+    [
+        {"name":"X", "kind":"required", "type":[["numeric"],["char"]]},
+        {"name":"n", "kind":"positional", "type":["integer","scalar",">0"]},
+        {"name":"direction", "kind":"ordered", "type":["char", "choices={'first', 'last'}"], "default":"'first'"}
+    ]
+},
+"flintmax":
+{
+    "inputs":
+    [
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double','single'}"], "default":"'double'"}
+    ]
+},
+"Inf":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"I"}
+    ]
+},
+"inf":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"I"}
+    ]
+},
+"intmax":
+{
+    "inputs":
+    [
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64'}"], "default":"'int32'"}
+    ]
+},
+"intmin":
+{
+    "inputs":
+    [
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64'}"], "default":"'int32'"}
+    ]
+},
+"isempty":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":[["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"TF", "type":"logical"}
+    ]
+},
+"length":
+{
+    "inputs":
+    [
+        {"name":"X", "kind":"required", "type":[["numeric"], ["cell"], ["char", "~string"], ["struct"], ["logical"]]}
+    ],
+    "outputs":
+	[
+        {"name":"L","type":["double", "scalar", "integer", ">=0"]}
+    ]
+},
+"linspace":
+{   
+    "inputs":
+	[
+        {"name":"x1","kind":"required","type":[["double","scalar"], ["single","scalar"]]},
+        {"name":"x2","kind":"required","type":[["double","scalar"], ["single","scalar"]]},
+        {"name":"n","kind":"ordered","type":["numeric","scalar"]}
+    ],
+    "outputs":
+	[
+        {"name":"y","type":["numeric", "vector"]}
+    ]
+},
+"ones":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single', 'logical','int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"X"}
+    ]
+},
+"NaN":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"N"}
+    ]
+},
+"nan":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"N"}
+    ]
+},
+"numel":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":[["numeric"]]}
+    ],
+    "outputs":
+	[
+        {"name":"n","type":["double", "scalar", "integer", ">=0"]}
+    ]
+},
+"realmax":
+{
+    "inputs":
+    [
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double','single'}"], "default":"'double'"}
+    ]
+},
+"realmin":
+{
+    "inputs":
+    [
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double','single'}"], "default":"'double'"}
+    ]
+},
+"repmat":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":[["numeric"], ["cell"], ["char", "~string"], ["struct"], ["logical"]]},
+        {"mutuallyExclusiveGroup":
+            [
+                {"name":"r", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"r", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        }
+    ]
+},
+"reshape":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":[["numeric"], ["cell"], ["char", "~string"], ["struct"], ["logical"]]},
+        {"mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        }
+    ]
+},
+"size":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":[["numeric"], ["char"]]},
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"]]},
+                {"name":"dim", "kind":"ordered", "type":["numeric","integer", "scalar", ">0"], "repeating":true}
+            ]
+        }
+    ]
+},
+"squeeze":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":[["numeric"]]}
+    ]
+},
+"true":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {"name":"'like'", "kind":"positional", "type":"choices={'like'}"},
+        {"name":"p", "kind":"required"}
+    ],
+    "outputs":
+    [
+        {"name":"T"}
+    ]
+},
+"zeros":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single', 'logical','int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ],
+    "outputs":
+    [
+        {"name":"X"}
+    ]
+},
+"freqspace":
+{
+    "inputs":
+    [
+        {"name":"N", "kind":"required", "type":"numeric"},
+        {"name":"opt", "kind":"ordered", "type":["char", "choices={'whole', 'meshgrid'}"]}
+    ]
+},
+"hadamard":
+{
+    "inputs":
+    [
+        {"name":"n", "kind":"required", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"hilb":
+{
+    "inputs":
+    [
+        {"name":"n", "kind":"required", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"invhilb":
+{
+    "inputs":
+    [
+        {"name":"n", "kind":"required", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"wilkinson":
+{
+    "inputs":
+    [
+        {"name":"n", "kind":"required", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"pascal":
+{
+    "inputs":
+    [
+        {"name":"n", "kind":"required", "type":"numeric"},
+        {"name":"opt", "kind":"ordered", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"rosser":
+{
+    "inputs":
+    [
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"gallery":
+{
+    "inputs":
+    [
+        {"name":"matname", "kind":"required", "type":["char", "choices={'binomial', 'cauchy', 'chebspec', 'chebvand', 'chow', 'circul', 'clement', 'compar', 'condex', 'cycol', 'dorr', 'dramadah', 'fiedler', 'forsythe', 'frank', 'gcdmat', 'gearmat', 'grcar', 'hanowa', 'house', 'invhess', 'invol', 'ipjfact', 'jordbloc', 'kahan', 'kms', 'krylov', 'lauchli', 'lehmer', 'leslie', 'lesp', 'lotkin', 'minij', 'moler', 'neumann', 'normaldata', 'orthog', 'parter', 'pei', 'poisson', 'prolate', 'qmult', 'randcolu', 'randcorr', 'randhess', 'randjorth', 'rando', 'randsvd', 'redheff', 'riemann', 'ris', 'sampling', 'smoke', 'toeppd', 'toeppen', 'tridiag', 'triw', 'uniformdata', 'wathen', 'wilk'}"]},
+        {"name":"arg1", "kind":"required", "type":"numeric"},
+        {"name":"arg2", "kind":"ordered", "type":"numeric"},
+        {"name":"arg3", "kind":"ordered", "type":"numeric"},
+        {"name":"arg4", "kind":"ordered", "type":"numeric"},
+        {"name":"arg5", "kind":"ordered", "type":"numeric"},
+        {"name":"arg6", "kind":"ordered", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single'}"]}
+    ]
+},
+"gallery":
+{
+    "inputs":
+    [
+        {"name":"matname", "kind":"required", "type":["char", "choices={'integerdata'}"]},
+        {"name":"ilim", "kind":"required", "type":"numeric"},
+        {"name":"sz", "kind":"required", "type":"numeric"},
+        {"name":"j", "kind":"required", "type":"numeric"},
+        {"name":"classname", "kind":"ordered", "type":["char", "choices={'double', 'single', 'uint8', 'int8', 'uint16', 'int16', 'uint32', 'int32', 'uint64', 'int64'}"]}
+    ]
+}
+}

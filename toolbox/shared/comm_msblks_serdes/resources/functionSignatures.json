@@ -1,0 +1,20 @@
+{
+    "comm.EyeDiagram":
+    {
+        "inputs":
+        [
+            {"kind":"varargin","type":["comm.EyeDiagram"]}
+        ]
+    },
+    "comm.PhaseNoise":
+    {
+        "inputs":
+        [
+            {"name":"Level","kind":"positional"},
+            {"name":"FrequencyOffset","kind":"positional"},
+            {"name":"SampleRate","kind":"positional"},
+            {"kind":"varargin","type":["comm.PhaseNoise"]}
+        ]
+    }
+}
+

@@ -1,0 +1,201 @@
+{
+"CustomStartPointSet":
+{
+    "inputs": 
+    [
+        {"name":"ptsmatrix", "kind":"required", "type":["numeric","2d"]}
+    ]
+},
+"CustomStartPointSet.list":
+{
+    "inputs": 
+    [
+        {"name":"cs", "kind":"required", "type":["CustomStartPointSet"]}
+    ]
+},
+"ga":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"nvars", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"]},
+        {"name":"Aineq", "kind":"positional", "type":"numeric"},
+        {"name":"bineq", "kind":"positional", "type":"numeric"},
+        {"name":"Aeq", "kind":"positional", "type":"numeric"},
+        {"name":"beq", "kind":"positional", "type":"numeric"},
+        {"name":"lb", "kind":"positional", "type":"numeric"},
+        {"name":"ub", "kind":"positional", "type":"numeric"},
+        {"name":"nonlcon", "kind":"positional", "type":"function_handle"},
+        {"mutuallyExclusiveGroup":                
+            [
+                {"name":"intcon", "kind":"positional", "type":["numeric", "vector", "integer", "finite", ">0"]},
+                {"name":"options", "kind":"positional", "type":[["optim.options.GaOptions","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]},
+                [
+                    {"name":"options", "kind":"positional", "type":[["optim.options.GaOptions","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+                ]
+            ]
+        }
+    ]
+},
+"gamultiobj":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"nvars", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"]},
+        {"name":"Aineq", "kind":"positional", "type":"numeric"},
+        {"name":"bineq", "kind":"positional", "type":"numeric"},
+        {"name":"Aeq", "kind":"positional", "type":"numeric"},
+        {"name":"beq", "kind":"positional", "type":"numeric"},
+        {"name":"lb", "kind":"positional", "type":"numeric"},
+        {"name":"ub", "kind":"positional", "type":"numeric"},
+        {"name":"nonlcon", "kind":"positional", "type":"function_handle"},
+        {"name":"options", "kind":"positional", "type":[["optim.options.GamutliobjOptions","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+},
+"GlobalSearch":
+{
+    "inputs": [
+        {"name":"oldSolver", "kind":"ordered", "type":["GlobalSearch","MultiStart"]},
+        {"name":"BasinRadiusFactor", "kind":"namevalue", "type":["numeric","scalar","real",">=0","<=1"]},
+        {"name":"Display", "kind":"namevalue", "type":["choices={'final', 'iter', 'off'}"]},
+        {"name":"DistanceThresholdFactor", "kind":"namevalue", "type":["numeric","scalar","nonnegative"]},
+        {"name":"FunctionTolerance", "kind":"namevalue", "type":["numeric","scalar","nonnegative"]},
+        {"name":"MaxTime", "kind":"namevalue", "type":["numeric","scalar",">0"]},
+        {"name":"MaxWaitCycle", "kind":"namevalue", "type":["numeric","integer",">0"]},
+        {"name":"NumStageOnePoints", "kind":"namevalue", "type":["numeric","integer",">0"]},
+        {"name":"OutputFcn", "kind":"namevalue", "type":[["function_handle"], ["scalartext"]]},
+        {"name":"PenaltyThresholdFactor", "kind":"namevalue", "type":["numeric","scalar",">0"]},
+        {"name":"PlotFcn","kind":"namevalue","type":[["choices= {'gsplotbestf','gsplotfunccount'}"],["function_handle"],["@(x) isempty(x)"]]},
+        {"name":"StartPointsToRun", "kind":"namevalue", "type":["choices={'all', 'bounds', 'bounds-ineqs'}"]},
+        {"name":"XTolerance", "kind":"namevalue", "type":["numeric","scalar","nonnegative"]}
+    ]
+},
+"GlobalSearch.run":
+{
+    "inputs": 
+    [
+        {"name":"problem", "kind":"required", "type":"struct"}
+    ]
+},
+"MultiStart":
+{
+    "inputs": [
+        {"name":"oldSolver", "kind":"ordered", "type":["MultiStart","GlobalSearch"]},
+        {"name":"Display", "kind":"namevalue", "type":["choices={'final', 'iter', 'off'}"]},
+        {"name":"FunctionTolerance", "kind":"namevalue", "type":["numeric","scalar","nonnegative"]},
+        {"name":"MaxTime", "kind":"namevalue", "type":["numeric","scalar",">0"]},
+        {"name":"OutputFcn", "kind":"namevalue", "type":[["function_handle"], ["scalartext"]]},
+        {"name":"PlotFcn","kind":"namevalue","type":[["choices= {'gsplotbestf','gsplotfunccount'}"],["function_handle"],["@(x) isempty(x)"]]},
+        {"name":"StartPointsToRun", "kind":"namevalue", "type":["choices={'all', 'bounds', 'bounds-ineqs'}"]},
+        {"name":"UseParallel", "kind":"namevalue", "type":["logical","scalar"]},
+        {"name":"XTolerance", "kind":"namevalue", "type":["numeric","scalar","nonnegative"]}
+    ]
+},
+"MultiStart.run":
+{
+    "inputs": 
+    [
+        {"name":"problem", "kind":"required", "type":"struct"},
+        {"mutuallyExclusiveGroup":                
+            [
+                {"name":"numstartpts", "kind":"ordered", "type":["numeric","scalar","integer",">0"]},
+                [
+                    {"name":"startpts", "kind":"ordered", "type":["AbstractStartPointSet"]}
+                ]
+            ]
+        }
+    ]
+},
+"paretosearch":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"nvars", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"]},
+        {"name":"Aineq", "kind":"positional", "type":"numeric"},
+        {"name":"bineq", "kind":"positional", "type":"numeric"},
+        {"name":"Aeq", "kind":"positional", "type":"numeric"},
+        {"name":"beq", "kind":"positional", "type":"numeric"},
+        {"name":"lb", "kind":"positional", "type":"numeric"},
+        {"name":"ub", "kind":"positional", "type":"numeric"},
+        {"name":"nonlcon", "kind":"positional", "type":"function_handle"},
+        {"name":"options", "kind":"positional", "type":[["optim.options.Paretosearch","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+},
+"particleswarm":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"nvars", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"]},
+        {"name":"lb", "kind":"positional", "type":"numeric"},
+        {"name":"ub", "kind":"positional", "type":"numeric"},
+        {"name":"options", "kind":"positional", "type":[["optim.options.Particleswarm","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+},
+"patternsearch":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"x0", "kind":"required", "type":"numeric"},
+        {"name":"Aineq", "kind":"positional", "type":"numeric"},
+        {"name":"bineq", "kind":"positional", "type":"numeric"},
+        {"name":"Aeq", "kind":"positional", "type":"numeric"},
+        {"name":"beq", "kind":"positional", "type":"numeric"},
+        {"name":"lb", "kind":"positional", "type":"numeric"},
+        {"name":"ub", "kind":"positional", "type":"numeric"},
+        {"name":"nonlcon", "kind":"positional", "type":"function_handle"},
+        {"name":"options", "kind":"positional", "type":[["optim.options.PatternsearchOptions","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+},
+"RandomStartPointSet":
+{
+    "inputs": 
+    [
+        {"name":"oldrs", "kind":"ordered", "type":["RandomStartPointSet"]},
+        {"name":"ArtificialBound", "kind":"namevalue", "type":["numeric","scalar",">0"]},
+        {"name":"NumStartPoints", "kind":"namevalue", "type":["numeric","scalar","integer",">0"]}
+    ]
+},
+"RandomStartPointSet.list":
+{
+    "inputs": 
+    [
+        {"name":"rs", "kind":"required", "type":["RandomStartPointSet"]},
+        {"name":"problem", "kind":"required", "type":["struct","scalar"]}
+    ]
+},
+"simulannealbnd":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"x0", "kind":"required", "type":"numeric"},
+        {"name":"lb", "kind":"positional", "type":"numeric"},
+        {"name":"ub", "kind":"positional", "type":"numeric"},
+        {"name":"options", "kind":"positional", "type":[["optim.options.Particleswarm","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+},
+"surrogateopt":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":"function_handle"},
+        {"name":"lb", "kind":"required", "type":["numeric","finite","real"]},
+        {"name":"ub", "kind":"required", "type":["numeric","finite","real"]},
+        {"name":"options", "kind":"positional", "type":[["optim.options.Surrogateopt","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+},
+"surrogateopt":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["file=*.mat"], ["char"]]},
+        {"name":"options", "kind":"positional", "type":[["optim.options.Surrogateopt","scalar"],["optim.options.SolverOptions","scalar"],["struct","scalar"]]}
+    ]
+}
+}
+
+

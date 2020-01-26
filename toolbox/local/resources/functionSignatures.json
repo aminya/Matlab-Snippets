@@ -1,0 +1,16 @@
+{
+	"userpath":
+	{
+	    "inputs":
+	    [
+			{"name":"flags", "kind":"flag", "type":"choices={'reset','clear'}"}
+	    ]
+	},
+    "userpath":
+	{
+	    "inputs":
+	    [
+			{"name":"path", "kind":"ordered", "type":["folder"]}
+	    ]
+	}
+}

@@ -1,0 +1,897 @@
+{
+"allMuPADNoteBooks":
+{
+    "inputs":
+    [
+    ],
+    "outputs":
+    [
+        {"name":"L", "type":"mupad"}
+    ]
+},
+"acosh":
+{
+    "inputs":
+    [
+        {"name":"X",  "kind":"required", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"Y", "type":"sym"}
+    ]
+},
+"assumptions":
+{
+    "inputs":
+    [
+        {"name":"var",  "kind":"required", "type":"sym" }
+    ],
+    "outputs":
+    [
+        {"name":"", "type":"sym"}
+    ]
+},
+"assumptions":
+{
+    "inputs":
+    [
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"bernstein":
+{
+    "inputs":
+    [
+        {"name":"g",  "kind":"required", "type":[["function_handle"], ["sym"],["symfun"]]},
+        {"name":"n",  "kind":"required", "type":["numeric", ">=0"]},
+        {"name":"t",  "kind":"required", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"b", "type":[["sym"], ["double"]]}
+    ]
+},
+"bernstein":
+{
+    "inputs":
+    [
+        {"name":"g",  "kind":"required", "type":[["sym"],["symfun"]]},
+        {"name":"var",  "kind":"required", "type":"sym"},
+        {"name":"n",  "kind":"required", "type":["numeric", ">=0"]},
+        {"name":"t",  "kind":"required", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"b", "type":"sym"}
+    ]
+},
+"bernsteinMatrix":
+{
+    "inputs":
+    [
+        {"name":"n",  "kind":"required", "type":["integer", ">=0"]},
+        {"name":"t",  "kind":"required", "type":[ ["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"B", "type":[["sym"], ["double"]]}
+    ]
+},
+"catalan":
+{
+    "inputs":
+    [
+    ],
+    "outputs":
+    [
+        {"name":"catalan", "type":"sym"}
+    ]
+},
+"cell2sym":
+{
+    "inputs":
+    [
+        {"name":"C",  "kind":"required", "type":"cell"},
+        {"name":"flag",  "kind":"ordered", "type":"choices={'d', 'e', 'f', 'r'}"}
+    ],
+    "outputs":
+    [
+        {"name":"S", "type":"sym"}
+    ]
+},
+"chol":
+{
+    "inputs":
+    [
+        {"name":"A", "kind":"required", "type":"sym" },
+        {"name":"flag",  "kind":"ordered", "repeating":true, "type":"choices={'lower','upper','vector','nocheck','real'}"}
+    ],
+    "outputs":
+    [
+        {"name":"R", "type":"sym"},
+        {"name":"p", "type":"sym"},
+        {"name":"s", "type":"sym"}
+    ]
+},
+"combine":
+{
+    "inputs":
+    [
+        {"name":"S",   "kind":"required", "type":"sym"},
+        {"name":"T",   "kind":"ordered", "type":"choices={'atan', 'exp', 'gamma', 'int', 'log', 'sincos', 'sinhcosh'}"},
+        {"name":"IgnoreAnalyticConstraints",  "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"sym"}
+    ]
+},
+"combine":
+{
+    "inputs":
+    [
+        {"name":"S",   "kind":"required", "type":"symfun"},
+        {"name":"T",   "kind":"ordered", "type":"choices={'atan', 'exp', 'gamma', 'int', 'log', 'sincos', 'sinhcosh'}"},
+        {"name":"IgnoreAnalyticConstraints",  "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"symfun"}
+    ]
+},
+"convertMuPADNotebook":
+{
+    "inputs":
+    [
+        {"name":"MuPADfile",        "kind":"required", "type":"file=*.mn" },
+        {"name":"MATLABLiveScript", "kind":"positional", "type":"file=*.mlx"}
+    ]
+},
+"decic":
+{
+    "inputs":
+    [
+        {"name":"eqs",       "kind":"required", "type":["sym", "vector"]},
+        {"name":"vars",      "kind":"required", "type":"sym"},
+        {"name":"constr",    "kind":"required", "type":"sym"},
+        {"name":"t0",        "kind":"required", "type":["numeric", "scalar"]},
+        {"name":"y0_est",    "kind":"required", "type":["numeric", "vector"]},
+        {"name":"fixedVars", "kind":"required", "type":["logical", "vector"]},
+        {"name":"yp0_est",   "kind":"required", "type":"sym"},
+        {"name":"options",   "kind":"ordered", "type":"struct"}
+    ],
+    "outputs":
+    [
+        {"name":"y",   "type":["double", "vector"]},
+        {"name":"yp0", "type":["double", "vector"]}
+    ]
+},
+"digits":
+{
+    "inputs":
+    [
+        {"name":"d",   "kind":"ordered", "type":["double", ">0"]}
+    ],
+    "outputs":
+    [
+        {"name":"d1", "type":"double"}
+    ]
+},
+"dsolve":
+{
+    "inputs":
+    [
+        {"name":"eqns",  "kind":"required", "repeating":true, "type":"sym"},
+        {"name":"conds", "kind":"ordered", "repeating":true, "type":"sym"},
+        {"name":"IgnoreAnalyticConstraints", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"MaxDegree", "kind":"namevalue", "type":"choices=num2cell(1:5)"}
+    ],
+    "outputs":
+    [
+        {"name":"S", "type":[["sym", "column"],["struct"]]}
+    ]
+},
+"eulergamma":
+{
+    "inputs":
+    [
+    ],
+    "outputs":
+    [
+        {"name":"eulergamma", "type":"sym"}
+    ]
+},
+"expand":
+{
+    "inputs":
+    [
+        {"name":"S",                         "kind":"required",  "type":"sym"},
+        {"name":"ArithmeticOnly",            "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"IgnoreAnalyticConstraints", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"sym"}
+    ]
+},
+"expand":
+{
+    "inputs":
+    [
+        {"name":"S",                         "kind":"required",  "type":"symfun"},
+        {"name":"ArithmeticOnly",            "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"IgnoreAnalyticConstraints", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"symfun"}
+    ]
+},
+"factor":
+{
+    "inputs":
+    [
+        {"name":"S",          "kind":"required",  "type":"sym"},
+        {"name":"Vars",       "kind":"ordered",  "type":"sym"},
+        {"name":"FactorMode", "kind":"namevalue", "type":"choices={'rational','full','complex','real'}"}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"sym"}
+    ]
+},
+"findSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices={'symfunOf', 'symfunDependingOn'}"]]},
+        {"name":"tparam", "kind":"optional", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"findSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices=string(evalin(symengine,'symobj::symTypeWithoutParam'))"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"harmonic":
+{
+    "inputs":
+    [
+        {"name":"x",  "kind":"required", "type":[["numeric"],["sym"], ["symfun"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["numeric"],["sym"]]}
+    ]
+},
+"hasSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices={'symfunOf', 'symfunDependingOn'}"]]},
+        {"name":"tparam", "kind":"optional", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"logical"}
+    ]
+},
+"hasSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices=string(evalin(symengine,'symobj::symTypeWithoutParam'))"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"logical"}
+    ]
+},
+"heaviside":
+{
+    "inputs":
+    [
+        {"name":"n",  "kind":"required", "type":[["numeric"],["sym"], ["symfun"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["numeric", "choices=num2cell([0,1/2,1])"],["sym"], ["symfun"]]}
+    ]
+},
+"ifourier":
+{
+    "inputs":
+    [
+        {"name":"F",  "kind":"required", "type":[["sym"], ["symfun"]]},
+        {"name":"x",  "kind":"ordered", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"ifourier":
+{
+    "inputs":
+    [
+        {"name":"F",  "kind":"required", "type":[["sym"], ["symfun"]]},
+        {"name":"w",  "kind":"positional", "type":"sym"},
+        {"name":"x",  "kind":"ordered", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"isAlways":
+{
+    "inputs":
+    [
+        {"name":"cond",    "kind":"required",  "type":[["sym"], ["symfun"]]},
+        {"name":"Unknown", "kind":"namevalue", "type":"choices={'falseWithWarning','false','true','error'}"}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":[["sym"], ["symfun"]]}
+    ]
+},
+"isSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices={'symfunOf', 'symfunDependingOn'}"]]},
+        {"name":"tparam", "kind":"optional", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"logical"}
+    ]
+},
+"isSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices=string(evalin(symengine,'symobj::symTypeWithoutParam'))"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"logical"}
+    ]
+},
+"jacobiAM":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiCN":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiCS":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiDC":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiDN":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiDS":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiNC":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiND":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiNS":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiSC":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiSD":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiSN":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"jacobiZeta":
+{
+    "inputs":
+    [
+        {"name":"u",      "kind":"required", "type":[["sym"], ["numeric"]]},
+        {"name":"m",      "kind":"required", "type":[["sym"], ["numeric"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":[["sym"],["numeric"]]}
+    ]
+},
+"mapSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices={'symfunOf', 'symfunDependingOn'}"]]},
+        {"name":"tparam", "kind":"optional", "type":"sym"},
+        {"name":"fun",    "kind":"required", "type":[["function_handle"], ["symfun"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"mapSymType":
+{
+    "inputs":
+    [
+        {"name":"ex",     "kind":"required", "type":"sym"},
+        {"name":"t",      "kind":"required", "type":[["char", "choices=string(evalin(symengine,'symobj::symTypeWithoutParam'))"]]},
+        {"name":"fun",    "kind":"required", "type":[["function_handle"], ["symfun"]]}
+    ],
+    "outputs":
+    [
+        {"name":"result", "type":"sym"}
+    ]
+},
+"mathml":
+{
+    "inputs":
+    [
+        {"name":"expr", "kind":"required", "type":"sym"},
+        {"name":"DisplayInline", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Tooltips", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"code",  "type":["char", "vector"]}
+    ]
+},
+"odeToVectorField":
+{
+    "inputs":
+    [
+        {"name":"eqn",  "kind":"required", "repeating":true, "type":[["sym"], ["symfun"], ["char", "vector"], ["string", "vector"] ]}
+    ],
+    "outputs":
+    [
+        {"name":"V", "type":["sym", "vector"]},
+        {"name":"Y", "type":["sym", "vector"]}
+    ]
+},
+"partfrac":
+{
+    "inputs":
+    [
+        {"name":"expr",       "kind":"required", "type":"sym"},
+        {"name":"expr",       "kind":"ordered", "type":"sym"},
+        {"name":"FactorMode", "kind":"namevalue", "type":"choices={'rational','full','complex','real'}"}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"sym"}
+    ]
+},
+"partfrac":
+{
+    "inputs":
+    [
+        {"name":"expr",       "kind":"required", "type":"symfun"},
+        {"name":"expr",       "kind":"ordered", "type":"sym"},
+        {"name":"FactorMode", "kind":"namevalue", "type":"choices={'rational','full','complex','real'}"}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"symfun"}
+    ]
+},
+"rewrite":
+{
+    "inputs":
+    [
+        {"name":"expr",   "kind":"required", "type":"sym"},
+        {"name":"target", "kind":"required", "type":"choices=horzcat({'sincos', 'sin', 'cos', 'tan', 'cot', 'sinhcosh', 'sinh', 'cosh', 'tanh', 'coth', 'asin', 'acos', 'atan', 'acot', 'asinh',  'acosh', 'atanh', 'acoth', 'exp', 'log', 'sqrt', 'heaviside', 'piecewise'}, cellstr(unitSystems))"}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"sym"}
+    ]
+},
+"rewrite":
+{
+    "inputs":
+    [
+        {"name":"expr",   "kind":"required", "type":"symfun"},
+        {"name":"target", "kind":"required", "type":"choices=horzcat({'sincos', 'sin', 'cos', 'tan', 'cot', 'sinhcosh', 'sinh', 'cosh', 'tanh', 'coth', 'asin', 'acos', 'atan', 'acot',  'asinh',  'acosh', 'atanh', 'acoth', 'exp', 'log', 'sqrt', 'heaviside', 'piecewise'}, cellstr(unitSystems))"}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":"symfun"}
+    ]
+},
+"simplify":
+{
+    "inputs":
+    [
+        {"name":"S",                         "kind":"required",  "type":[["sym"], ["symfun"]]},
+        {"name":"Criterion",                 "kind":"namevalue", "type":"choices={'default', 'preferReal'}"},
+        {"name":"IgnoreAnalyticConstraints", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Seconds",                   "kind":"namevalue", "type":[["numeric", ">0"],["choices={'Inf'}"]]},
+        {"name":"Steps",                     "kind":"namevalue", "type":["numeric", ">=1"]},
+        {"name":"All",                       "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":[["sym"], ["symfun"]]}
+    ]
+},
+"simplifyFraction":
+{
+    "inputs":
+    [
+        {"name":"expr",   "kind":"required", "type":[["sym"], ["symfun"]]},
+        {"name":"Expand", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":[["sym"], ["symfun"]]}
+    ]
+},
+"solve":
+{
+    "inputs":
+    [
+        {"name":"eqn",                       "kind":"required",  "type":"sym"},
+        {"name":"var",                       "kind":"required",  "type":"sym"},
+        {"name":"ReturnConditions",          "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"IgnoreAnalyticConstraints", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"IgnoreProperties",          "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"MaxDegree",                 "kind":"namevalue", "type":"choices=num2cell(1:4)"},
+        {"name":"PrincipalValue",            "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"Real",                      "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"y1",  "type":"sym"},
+        {"name":"y2",  "repeating":true, "type":"sym"}
+    ]
+},
+"symFunType":
+{
+    "inputs":
+    [
+        {"name":"ex", "kind":"required", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"t", "type":"string"}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"new", "kind":"required", "type":"cell"}
+    ],
+    "output":
+    [
+        {"name":"old", "type":"struct"}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"preference", "kind":"flag", "type":"choices={'default'}"}
+    ],
+    "output":
+    [
+        {"name":"old", "type":"struct"}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"AbbreviateOutput", "kind":"namevalue", "type":["logical","scalar"]}
+    ],
+    "output":
+    [
+        {"name":"old", "type":["logical","scalar"]}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"FourierParameters", "kind":"namevalue", "type":[["numeric"], ["sym"]]}
+    ],
+    "output":
+    [
+        {"name":"old", "type":"sym"}        
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"HeavisideAtOrigin", "kind":"namevalue", "type":[["numeric", "scalar"], ["sym"]]}
+    ],
+    "output":
+    [
+        {"name":"old", "type":"sym"}        
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"PolynomialDisplayStyle", "kind":"namevalue", "type":"choices={'ascend', 'descend', 'default'}"}
+    ],
+    "output":
+    [
+        {"name":"old", "type":"choices={'ascend', 'descend', 'default'}"}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"TypeSetOutput", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "output":
+    [
+        {"name":"old", "type":["logical","scalar"]}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"MatrixWithSquareBrackets", "kind":"namevalue", "type":["logical","scalar"]}
+    ],
+    "output":
+    [
+        {"name":"old", "type":["logical","scalar"]}
+    ]
+},
+"sympref":
+{
+    "inputs":
+    [
+        {"name":"FloatingPointOutput", "kind":"namevalue", "type":["logical","scalar"]}
+    ],
+    "output":
+    [
+        {"name":"old", "type":["logical","scalar"]}
+    ]
+},
+"symReadSSCParameters":
+{
+    "inputs":
+    [
+        {"name":"componentName",   "kind":"required", "type":"file=*.ssc"}
+    ],
+    "outputs":
+    [
+        {"name":"names",  "type":"cell"},
+        {"name":"values", "type":"cell"},
+        {"name":"units",  "type":"cell"}
+    ]
+},
+"symReadSSCVariables":
+{
+    "inputs":
+    [
+        {"name":"componentName",   "kind":"required", "type":"file=*.ssc"},
+        {"name":"ReturnFunctions", "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"names",  "type":"cell"},
+        {"name":"values", "type":"cell"},
+        {"name":"units",  "type":"cell"}
+    ]
+},
+"symType":
+{
+    "inputs":
+    [
+        {"name":"ex",  "kind":"required", "type":"sym"}
+    ],
+    "outputs":
+    [
+        {"name":"t", "type":"string"}
+    ]
+},
+"symWriteSSC":
+{
+    "inputs":
+    [
+        {"name":"newComponentName",      "kind":"required", "type":[["char"], ["file=*.ssc"]]},
+        {"name":"templateComponentName", "kind":"required", "type":"file=*.ssc"},
+        {"name":"eqns",                  "kind":"required", "type":[["sym"], ["symfun"]]},
+        {"name":"H1Header",              "kind":"namevalue", "type":"char"},
+        {"name":"HelpText",              "kind":"namevalue", "type":"char"}
+    ],
+    "outputs":
+    [
+        {"name":"names",  "type":"cell"},
+        {"name":"values", "type":"cell"},
+        {"name":"units",  "type":"cell"}
+    ]
+},
+"symunit":
+{
+    "inputs":
+    [
+        {"name":"unit", "kind":"ordered", "type":[["char", "choices=symbolicUnitsCollection.initialUnits()"]]}
+    ],
+    "outputs":
+    [
+        {"name":"unit", "type":["sym"]}
+    ]
+},
+"unitConvert":
+{
+    "inputs":
+    [
+        {"name":"expr",   "kind":"required", "type":[["sym"], ["symfun"]]},
+        {"name":"target", "kind":"required", "type":[["sym"], ["char", "choices=cellstr(unitSystems)"]]}
+    ],
+    "outputs":
+    [
+        {"name":"expr",  "type":[["sym"], ["symfun"]]}
+    ]
+},
+"unitConversionFactor":
+{
+    "inputs":
+    [
+        {"name":"unit1",   "kind":"required",  "type":["sym"]},
+        {"name":"unit2",   "kind":"required",  "type":["sym"]},
+        {"name":"Force",   "kind":"namevalue", "type":["logical", "scalar"]}
+    ],
+    "outputs":
+    [
+        {"name":"C",  "type":"sym"}
+    ]
+},
+"unitInfo":
+{
+    "inputs":
+    [
+        {"name":"unit", "kind":"ordered", "type":[["sym"], ["char", "choices=cellstr(unitInfo)"]]}
+    ],
+    "outputs":
+    [
+        {"name":"unitsOrDimensions", "type":[["sym"], ["string", "vector"]]}
+    ]
+}
+}

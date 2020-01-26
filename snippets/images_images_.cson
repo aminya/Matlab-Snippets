@@ -1,0 +1,434 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "brisqueModel":
+    prefix: "brisqueModel"
+    body: '''${1:Model} = brisqueModel(${1:Alpha}, ${2:Bias}, ${3:SupportVectors}, ${4:Scale})'''
+    description: '''${1:Model} = brisqueModel(${1:Alpha}, ${2:Bias}, ${3:SupportVectors}, ${4:Scale})'''
+
+
+    "imsegkmeans":
+    prefix: "imsegkmeans"
+    body: '''[${1:L}, ${2:C}] = imsegkmeans(${1:I}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+    description: '''[${1:L}, ${2:C}] = imsegkmeans(${1:I}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+
+
+    "dice":
+    prefix: "dice"
+    body: '''${1:SIMILARITY} = dice(${1:BW1}, ${2:BW2})'''
+    description: '''${1:SIMILARITY} = dice(${1:BW1}, ${2:BW2})'''
+
+
+    "lazysnapping":
+    prefix: "lazysnapping"
+    body: '''${1:BW} = lazysnapping(${1:A}, ${2:L}, ${3:FOREMASK}, ${4:BACKMASK}, 'Connectivity', ${5:value}, 'EdgeWeightScaleFactor', ${6:value})'''
+    description: '''${1:BW} = lazysnapping(${1:A}, ${2:L}, ${3:FOREMASK}, ${4:BACKMASK}, 'Connectivity', ${5:value}, 'EdgeWeightScaleFactor', ${6:value})'''
+
+
+    "plotChromaticity":
+    prefix: "plotChromaticity"
+    body: '''plotChromaticity(${1:colorTable}, 'displayROIIndex', ${2:value}, 'Parent', ${3:value})'''
+    description: '''plotChromaticity(${1:colorTable}, 'displayROIIndex', ${2:value}, 'Parent', ${3:value})'''
+
+
+    "imdiffusefilt":
+    prefix: "imdiffusefilt"
+    body: '''${1:B} = imdiffusefilt(${1:A}, 'GradientThreshold', ${2:value}, 'NumberOfIterations', ${3:value}, 'Connectivity', ${4:value}, 'ConductionMethod', ${5:value})'''
+    description: '''${1:B} = imdiffusefilt(${1:A}, 'GradientThreshold', ${2:value}, 'NumberOfIterations', ${3:value}, 'Connectivity', ${4:value}, 'ConductionMethod', ${5:value})'''
+
+
+    "grabcut":
+    prefix: "grabcut"
+    body: '''${1:BW} = grabcut(${1:A}, ${2:L}, ${3:ROI}, ${4:optional_FOREMASK}, ${5:optional_BACKMASK}, 'Connectivity', ${6:value}, 'MaximumIterations', ${7:value})'''
+    description: '''${1:BW} = grabcut(${1:A}, ${2:L}, ${3:ROI}, ${4:optional_FOREMASK}, ${5:optional_BACKMASK}, 'Connectivity', ${6:value}, 'MaximumIterations', ${7:value})'''
+
+
+    "gradientweight":
+    prefix: "gradientweight"
+    body: '''${1:W} = gradientweight(${1:I}, ${2:optional_sigma}, 'RolloffFactor', ${3:value}, 'WeightCutoff', ${4:value})'''
+    description: '''${1:W} = gradientweight(${1:I}, ${2:optional_sigma}, 'RolloffFactor', ${3:value}, 'WeightCutoff', ${4:value})'''
+
+
+    "imcrop":
+    prefix: "imcrop"
+    body: '''${1:BW} = imcrop(${1:I}, ${2:optional_RECT})'''
+    description: '''${1:BW} = imcrop(${1:I}, ${2:optional_RECT})'''
+
+
+    "imnlmfilt":
+    prefix: "imnlmfilt"
+    body: '''[${1:B}, ${2:DegreeOfSmoothing}] = imnlmfilt(${1:A}, 'ComparisonWindowSize', ${2:value}, 'DegreeOfSmoothing', ${3:value}, 'SearchWindowSize', ${4:value})'''
+    description: '''[${1:B}, ${2:DegreeOfSmoothing}] = imnlmfilt(${1:A}, 'ComparisonWindowSize', ${2:value}, 'DegreeOfSmoothing', ${3:value}, 'SearchWindowSize', ${4:value})'''
+
+
+    "blendexposure":
+    prefix: "blendexposure"
+    body: '''${1:E} = blendexposure(${1:I1}, ${2:I2}, 'Contrast', ${3:value}, 'Saturation', ${4:value}, 'WellExposedness', ${5:value}, 'ReduceStrongLight', ${6:value})'''
+    description: '''${1:E} = blendexposure(${1:I1}, ${2:I2}, 'Contrast', ${3:value}, 'Saturation', ${4:value}, 'WellExposedness', ${5:value}, 'ReduceStrongLight', ${6:value})'''
+
+
+    "bwselect3":
+    prefix: "bwselect3"
+    body: '''${1:J} = bwselect3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xi}, ${6:Yi}, ${7:Zi}, ${8:optional_N})'''
+    description: '''${1:J} = bwselect3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xi}, ${6:Yi}, ${7:Zi}, ${8:optional_N})'''
+
+
+    "esfrChart":
+    prefix: "esfrChart"
+    body: '''${1:CHART} = esfrChart(${1:A}, 'RegistrationPoints', ${2:value})'''
+    description: '''${1:CHART} = esfrChart(${1:A}, 'RegistrationPoints', ${2:value})'''
+
+
+    "imflatfield":
+    prefix: "imflatfield"
+    body: '''${1:B} = imflatfield(${1:A}, ${2:Sigma}, ${3:optional_Mask}, 'FilterSize', ${4:value})'''
+    description: '''${1:B} = imflatfield(${1:A}, ${2:Sigma}, ${3:optional_Mask}, 'FilterSize', ${4:value})'''
+
+
+    "randomAffine2d":
+    prefix: "randomAffine2d"
+    body: '''randomAffine2d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'Rotation', ${3:value}, 'Scale', ${4:value}, 'XShear', ${5:value}, 'YShear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value})'''
+    description: '''randomAffine2d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'Rotation', ${3:value}, 'Scale', ${4:value}, 'XShear', ${5:value}, 'YShear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value})'''
+
+
+    "imbinarize":
+    prefix: "imbinarize"
+    body: '''${1:BW} = imbinarize(${1:I}, ${2:Method}, 'Sensitivity', ${3:value}, 'ForegroundPolarity', ${4:value})'''
+    description: '''${1:BW} = imbinarize(${1:I}, ${2:Method}, 'Sensitivity', ${3:value}, 'ForegroundPolarity', ${4:value})'''
+
+
+    "measureColor":
+    prefix: "measureColor"
+    body: '''[${1:colorTable}, ${2:colorCorrectionMatrix}] = measureColor(${1:CHART})'''
+    description: '''[${1:colorTable}, ${2:colorCorrectionMatrix}] = measureColor(${1:CHART})'''
+
+
+    "bfscore":
+    prefix: "bfscore"
+    body: '''[${1:SCORE}, ${2:PRECISION}, ${3:RECALL}] = bfscore(${1:PREDICTION}, ${2:GROUNDTRUTH}, ${3:optional_THRESHOLD})'''
+    description: '''[${1:SCORE}, ${2:PRECISION}, ${3:RECALL}] = bfscore(${1:PREDICTION}, ${2:GROUNDTRUTH}, ${3:optional_THRESHOLD})'''
+
+
+    "imregmtb":
+    prefix: "imregmtb"
+    body: '''[${1:R1}, ${2:shifts}] = imregmtb(${1:M1}, ${2:M2})'''
+    description: '''[${1:R1}, ${2:shifts}] = imregmtb(${1:M1}, ${2:M2})'''
+
+
+    "fspecial3":
+    prefix: "fspecial3"
+    body: '''${1:H} = fspecial3(${1:TYPE}, ${2:optional_direction})'''
+    description: '''${1:H} = fspecial3(${1:TYPE}, ${2:optional_direction})'''
+
+
+    "jitterColorHSV":
+    prefix: "jitterColorHSV"
+    body: '''jitterColorHSV(${1:A}, 'Contrast', ${2:value}, 'Brightness', ${3:value}, 'Hue', ${4:value}, 'Saturation', ${5:value})'''
+    description: '''jitterColorHSV(${1:A}, 'Contrast', ${2:value}, 'Brightness', ${3:value}, 'Hue', ${4:value}, 'Saturation', ${5:value})'''
+
+
+    "inpaintExemplar":
+    prefix: "inpaintExemplar"
+    body: '''${1:J} = inpaintExemplar(${1:I}, ${2:mask}, 'FillOrder', ${3:value}, 'PatchSize', ${4:value})'''
+    description: '''${1:J} = inpaintExemplar(${1:I}, ${2:mask}, 'FillOrder', ${3:value}, 'PatchSize', ${4:value})'''
+
+
+    "bwferet":
+    prefix: "bwferet"
+    body: '''[${1:Out}, ${2:L}] = bwferet(${1:BW}, ${2:optional_Properties})'''
+    description: '''[${1:Out}, ${2:L}] = bwferet(${1:BW}, ${2:optional_Properties})'''
+
+
+    "regionprops3":
+    prefix: "regionprops3"
+    body: '''${1:stats} = regionprops3(${1:BW}, ${2:V}, ${3:optional_Properties})'''
+    description: '''${1:stats} = regionprops3(${1:BW}, ${2:V}, ${3:optional_Properties})'''
+
+
+    "bwdist":
+    prefix: "bwdist"
+    body: '''[${1:D}, ${2:IDX}] = bwdist(${1:BW}, ${2:optional_METHOD})'''
+    description: '''[${1:D}, ${2:IDX}] = bwdist(${1:BW}, ${2:optional_METHOD})'''
+
+
+    "randomAffine3d":
+    prefix: "randomAffine3d"
+    body: '''randomAffine3d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'ZReflection', ${3:value}, 'Rotation', ${4:value}, 'Scale', ${5:value}, 'Shear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value}, 'ZTranslation', ${9:value})'''
+    description: '''randomAffine3d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'ZReflection', ${3:value}, 'Rotation', ${4:value}, 'Scale', ${5:value}, 'Shear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value}, 'ZTranslation', ${9:value})'''
+
+
+    "regionprops":
+    prefix: "regionprops"
+    body: '''${1:Out} = regionprops(${1:optional_Option}, ${2:BW}, ${3:optional_Properties})'''
+    description: '''${1:Out} = regionprops(${1:optional_Option}, ${2:BW}, ${3:optional_Properties})'''
+
+
+    "measureNoise":
+    prefix: "measureNoise"
+    body: '''${1:noiseTable} = measureNoise(${1:CHART})'''
+    description: '''${1:noiseTable} = measureNoise(${1:CHART})'''
+
+
+    "measureIlluminant":
+    prefix: "measureIlluminant"
+    body: '''${1:illum} = measureIlluminant(${1:CHART})'''
+    description: '''${1:illum} = measureIlluminant(${1:CHART})'''
+
+
+    "imrotate3":
+    prefix: "imrotate3"
+    body: '''${1:B} = imrotate3(${1:V}, ${2:Angle}, ${3:W}, ${4:optional_Method}, ${5:optional_BBOX}, 'FillValues', ${6:value})'''
+    description: '''${1:B} = imrotate3(${1:V}, ${2:Angle}, ${3:W}, ${4:optional_Method}, ${5:optional_BBOX}, 'FillValues', ${6:value})'''
+
+
+    "localcontrast":
+    prefix: "localcontrast"
+    body: '''${1:B} = localcontrast(${1:A}, ${2:edgeThreshold}, ${3:optional_amount})'''
+    description: '''${1:B} = localcontrast(${1:A}, ${2:edgeThreshold}, ${3:optional_amount})'''
+
+
+    "niqe":
+    prefix: "niqe"
+    body: '''${1:Score} = niqe(${1:A}, ${2:optional_Model})'''
+    description: '''${1:Score} = niqe(${1:A}, ${2:optional_Model})'''
+
+
+    "superpixels3":
+    prefix: "superpixels3"
+    body: '''[${1:L}, ${2:NumLabels}] = superpixels3(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'Method', ${4:value}, 'NumIterations', ${5:value})'''
+    description: '''[${1:L}, ${2:NumLabels}] = superpixels3(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'Method', ${4:value}, 'NumIterations', ${5:value})'''
+
+
+    "imreducehaze":
+    prefix: "imreducehaze"
+    body: '''[${1:D}, ${2:T}, ${3:L}] = imreducehaze(${1:X}, ${2:optional_amount}, 'Method', ${3:value}, 'AtmosphericLight', ${4:value}, 'ContrastEnhancement', ${5:value}, 'BoostAmount', ${6:value})'''
+    description: '''[${1:D}, ${2:T}, ${3:L}] = imreducehaze(${1:X}, ${2:optional_amount}, 'Method', ${3:value}, 'AtmosphericLight', ${4:value}, 'ContrastEnhancement', ${5:value}, 'BoostAmount', ${6:value})'''
+
+
+    "measureSharpness":
+    prefix: "measureSharpness"
+    body: '''[${1:sharpnessTable}, ${2:aggregateSharpnessTable}] = measureSharpness(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value}, 'PercentResponse', ${4:value})'''
+    description: '''[${1:sharpnessTable}, ${2:aggregateSharpnessTable}] = measureSharpness(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value}, 'PercentResponse', ${4:value})'''
+
+
+    "labeloverlay":
+    prefix: "labeloverlay"
+    body: '''${1:B} = labeloverlay(${1:A}, ${2:L}, 'Colormap', ${3:value}, 'IncludedLabels', ${4:value}, 'Transparency', ${5:value})'''
+    description: '''${1:B} = labeloverlay(${1:A}, ${2:L}, 'Colormap', ${3:value}, 'IncludedLabels', ${4:value}, 'Transparency', ${5:value})'''
+
+
+    "bwmorph3":
+    prefix: "bwmorph3"
+    body: '''${1:J} = bwmorph3(${1:V}, ${2:Operation})'''
+    description: '''${1:J} = bwmorph3(${1:V}, ${2:Operation})'''
+
+
+    "imsplit":
+    prefix: "imsplit"
+    body: '''imsplit(${1:I})'''
+    description: '''imsplit(${1:I})'''
+
+
+    "measureChromaticAberration":
+    prefix: "measureChromaticAberration"
+    body: '''${1:aberrationTable} = measureChromaticAberration(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value})'''
+    description: '''${1:aberrationTable} = measureChromaticAberration(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value})'''
+
+
+    "displayColorPatch":
+    prefix: "displayColorPatch"
+    body: '''displayColorPatch(${1:colorTable}, 'displayROIIndex', ${2:value}, 'displayDeltaE', ${3:value}, 'Parent', ${4:value})'''
+    description: '''displayColorPatch(${1:colorTable}, 'displayROIIndex', ${2:value}, 'displayDeltaE', ${3:value}, 'Parent', ${4:value})'''
+
+
+    "graydiffweight":
+    prefix: "graydiffweight"
+    body: '''${1:W} = graydiffweight(${1:I}, ${2:refGrayVal}, ${3:optional_MASK}, ${4:optional_C}, 'RolloffFactor', ${5:value}, 'GrayDifferenceCutoff', ${6:value})'''
+    description: '''${1:W} = graydiffweight(${1:I}, ${2:refGrayVal}, ${3:optional_MASK}, ${4:optional_C}, 'RolloffFactor', ${5:value}, 'GrayDifferenceCutoff', ${6:value})'''
+
+
+    "imlocalbrighten":
+    prefix: "imlocalbrighten"
+    body: '''[${1:B}, ${2:D}] = imlocalbrighten(${1:A}, ${2:optional_amount}, 'AlphaBlend', ${3:value})'''
+    description: '''[${1:B}, ${2:D}] = imlocalbrighten(${1:A}, ${2:optional_amount}, 'AlphaBlend', ${3:value})'''
+
+
+    "imrotate":
+    prefix: "imrotate"
+    body: '''${1:B} = imrotate(${1:A}, ${2:Angle}, ${3:optional_Method}, ${4:optional_BBOX})'''
+    description: '''${1:B} = imrotate(${1:A}, ${2:Angle}, ${3:optional_Method}, ${4:optional_BBOX})'''
+
+
+    "inpaintCoherent":
+    prefix: "inpaintCoherent"
+    body: '''${1:J} = inpaintCoherent(${1:I}, ${2:mask}, 'SmoothingFactor', ${3:value}, 'Radius', ${4:value})'''
+    description: '''${1:J} = inpaintCoherent(${1:I}, ${2:mask}, 'SmoothingFactor', ${3:value}, 'Radius', ${4:value})'''
+
+
+    "locallapfilt":
+    prefix: "locallapfilt"
+    body: '''${1:B} = locallapfilt(${1:A}, ${2:sigma}, ${3:alpha}, ${4:optional_beta}, 'ColorMode', ${5:value}, 'NumIntensityLevels', ${6:value})'''
+    description: '''${1:B} = locallapfilt(${1:A}, ${2:sigma}, ${3:alpha}, ${4:optional_beta}, 'ColorMode', ${5:value}, 'NumIntensityLevels', ${6:value})'''
+
+
+    "tonemapfarbman":
+    prefix: "tonemapfarbman"
+    body: '''${1:LDR} = tonemapfarbman(${1:HDR}, 'RangeCompression', ${2:value}, 'Saturation', ${3:value}, 'Exposure', ${4:value}, 'NumberOfScales', ${5:value}, 'Weights', ${6:value})'''
+    description: '''${1:LDR} = tonemapfarbman(${1:HDR}, 'RangeCompression', ${2:value}, 'Saturation', ${3:value}, 'Exposure', ${4:value}, 'NumberOfScales', ${5:value}, 'Weights', ${6:value})'''
+
+
+    "imbilatfilt":
+    prefix: "imbilatfilt"
+    body: '''${1:B} = imbilatfilt(${1:A}, ${2:optional_DegreeOfSmoothing}, ${3:optional_SpatialSigma}, 'NeighborhoodSize', ${4:value}, 'Padding', ${5:value})'''
+    description: '''${1:B} = imbilatfilt(${1:A}, ${2:optional_DegreeOfSmoothing}, ${3:optional_SpatialSigma}, 'NeighborhoodSize', ${4:value}, 'Padding', ${5:value})'''
+
+
+    "fitniqe":
+    prefix: "fitniqe"
+    body: '''${1:Model} = fitniqe(${1:IMDS}, 'BlockSize', ${2:value}, 'SharpnessThreshold', ${3:value})'''
+    description: '''${1:Model} = fitniqe(${1:IMDS}, 'BlockSize', ${2:value}, 'SharpnessThreshold', ${3:value})'''
+
+
+    "imcrop3":
+    prefix: "imcrop3"
+    body: '''${1:VOUT} = imcrop3(${1:V}, ${2:Cuboid})'''
+    description: '''${1:VOUT} = imcrop3(${1:V}, ${2:Cuboid})'''
+
+
+    "imsegkmeans3":
+    prefix: "imsegkmeans3"
+    body: '''[${1:L}, ${2:C}] = imsegkmeans3(${1:V}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+    description: '''[${1:L}, ${2:C}] = imsegkmeans3(${1:V}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
+
+
+    "localtonemap":
+    prefix: "localtonemap"
+    body: '''${1:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
+    description: '''${1:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
+
+
+    "piqe":
+    prefix: "piqe"
+    body: '''[${1:Score}, ${2:ActivityMask}, ${3:NoticeableArtifactsMask}, ${4:NoiseMask}] = piqe(${1:A})'''
+    description: '''[${1:Score}, ${2:ActivityMask}, ${3:NoticeableArtifactsMask}, ${4:NoiseMask}] = piqe(${1:A})'''
+
+
+    "imdiffuseest":
+    prefix: "imdiffuseest"
+    body: '''[${1:gradientThreshold}, ${2:numberOfIterations}] = imdiffuseest(${1:A}, 'Connectivity', ${2:value}, 'ConductionMethod', ${3:value})'''
+    description: '''[${1:gradientThreshold}, ${2:numberOfIterations}] = imdiffuseest(${1:A}, 'Connectivity', ${2:value}, 'ConductionMethod', ${3:value})'''
+
+
+    "integralImage":
+    prefix: "integralImage"
+    body: '''integralImage(${1:I}, ${2:optional_orientation})'''
+    description: '''integralImage(${1:I}, ${2:optional_orientation})'''
+
+
+    "imsegfmm":
+    prefix: "imsegfmm"
+    body: '''${1:BW} = imsegfmm(${1:W}, ${2:MASK}, ${3:THRESH}, ${4:optional_C}, ${5:optional_R}, ${6:optional_P})'''
+    description: '''${1:BW} = imsegfmm(${1:W}, ${2:MASK}, ${3:THRESH}, ${4:optional_C}, ${5:optional_R}, ${6:optional_P})'''
+
+
+    "fitbrisque":
+    prefix: "fitbrisque"
+    body: '''${1:Model} = fitbrisque(${1:IMDS}, ${2:OpinionScore})'''
+    description: '''${1:Model} = fitbrisque(${1:IMDS}, ${2:OpinionScore})'''
+
+
+    "adaptthresh":
+    prefix: "adaptthresh"
+    body: '''${1:T} = adaptthresh(${1:I}, ${2:optional_Sensitivity}, 'NeighborhoodSize', ${3:value}, 'ForegroundPolarity', ${4:value}, 'Statistic', ${5:value})'''
+    description: '''${1:T} = adaptthresh(${1:I}, ${2:optional_Sensitivity}, 'NeighborhoodSize', ${3:value}, 'ForegroundPolarity', ${4:value}, 'Statistic', ${5:value})'''
+
+
+    "brisque":
+    prefix: "brisque"
+    body: '''${1:Score} = brisque(${1:A}, ${2:optional_Model})'''
+    description: '''${1:Score} = brisque(${1:A}, ${2:optional_Model})'''
+
+
+    "edge3":
+    prefix: "edge3"
+    body: '''${1:BW} = edge3(${1:V}, ${2:Method}, ${3:THRESH}, ${4:optional_edgeThinning})'''
+    description: '''${1:BW} = edge3(${1:V}, ${2:Method}, ${3:THRESH}, ${4:optional_edgeThinning})'''
+
+
+    "images.geotrans.Warper":
+    prefix: "images.geotrans.Warper"
+    body: '''${1:warper} = images.geotrans.Warper(${1:tform}, ${2:inputSize}, ${3:optional_outputRef}, 'Interpolation', ${4:value}, 'FillValue', ${5:value})'''
+    description: '''${1:warper} = images.geotrans.Warper(${1:tform}, ${2:inputSize}, ${3:optional_outputRef}, 'Interpolation', ${4:value}, 'FillValue', ${5:value})'''
+
+
+    "imadjustn":
+    prefix: "imadjustn"
+    body: '''${1:J} = imadjustn(${1:V}, ${2:optional_LowHighIn}, ${3:optional_LowHighOut}, ${4:optional_gamma})'''
+    description: '''${1:J} = imadjustn(${1:V}, ${2:optional_LowHighIn}, ${3:optional_LowHighOut}, ${4:optional_gamma})'''
+
+
+    "jaccard":
+    prefix: "jaccard"
+    body: '''${1:SIMILARITY} = jaccard(${1:BW1}, ${2:BW2})'''
+    description: '''${1:SIMILARITY} = jaccard(${1:BW1}, ${2:BW2})'''
+
+
+    "superpixels":
+    prefix: "superpixels"
+    body: '''[${1:L}, ${2:NumLabels}] = superpixels(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'IsInputLab', ${4:value}, 'Method', ${5:value}, 'NumIterations', ${6:value})'''
+    description: '''[${1:L}, ${2:NumLabels}] = superpixels(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'IsInputLab', ${4:value}, 'Method', ${5:value}, 'NumIterations', ${6:value})'''
+
+
+    "niqeModel":
+    prefix: "niqeModel"
+    body: '''${1:Model} = niqeModel(${1:Mean}, ${2:Covariance}, ${3:BlockSize}, ${4:SharpnessThreshold})'''
+    description: '''${1:Model} = niqeModel(${1:Mean}, ${2:Covariance}, ${3:BlockSize}, ${4:SharpnessThreshold})'''
+
+
+    "activecontour":
+    prefix: "activecontour"
+    body: '''${1:BW} = activecontour(${1:A}, ${2:MASK}, ${3:optional_n}, ${4:optional_method}, 'SmoothFactor', ${5:value}, 'ContractionBias', ${6:value})'''
+    description: '''${1:BW} = activecontour(${1:A}, ${2:MASK}, ${3:optional_n}, ${4:optional_method}, 'SmoothFactor', ${5:value}, 'ContractionBias', ${6:value})'''
+
+
+    "imfindcircles":
+    prefix: "imfindcircles"
+    body: '''[${1:Centers}, ${2:Radii}, ${3:Metric}] = imfindcircles(${1:A}, ${2:Radius range}, 'ObjectPolarity', ${3:value}, 'Method', ${4:value}, 'Sensitivity', ${5:value}, 'EdgeThreshold', ${6:value})'''
+    description: '''[${1:Centers}, ${2:Radii}, ${3:Metric}] = imfindcircles(${1:A}, ${2:Radius range}, 'ObjectPolarity', ${3:value}, 'Method', ${4:value}, 'Sensitivity', ${5:value}, 'EdgeThreshold', ${6:value})'''
+
+
+    "imhistmatch":
+    prefix: "imhistmatch"
+    body: '''[${1:B}, ${2:hgram}] = imhistmatch(${1:A}, ${2:REF}, ${3:optional_NBINS}, 'Method', ${4:value})'''
+    description: '''[${1:B}, ${2:hgram}] = imhistmatch(${1:A}, ${2:REF}, ${3:optional_NBINS}, 'Method', ${4:value})'''
+
+
+    "imresize3":
+    prefix: "imresize3"
+    body: '''${1:B} = imresize3(${1:V}, ${2:Scale}, 'Method', ${3:value}, 'AntiAliasing', ${4:value}, 'OutputSize', ${5:value})'''
+    description: '''${1:B} = imresize3(${1:V}, ${2:Scale}, 'Method', ${3:value}, 'AntiAliasing', ${4:value}, 'OutputSize', ${5:value})'''
+
+
+    "plotSFR":
+    prefix: "plotSFR"
+    body: '''plotSFR(${1:sharpnessMeasurementTable}, 'ROIIndex', ${2:value}, 'displayLegend', ${3:value}, 'displayTitle', ${4:value}, 'Parent', ${5:value})'''
+    description: '''plotSFR(${1:sharpnessMeasurementTable}, 'ROIIndex', ${2:value}, 'displayLegend', ${3:value}, 'displayTitle', ${4:value}, 'Parent', ${5:value})'''
+
+
+    "fibermetric":
+    prefix: "fibermetric"
+    body: '''${1:B} = fibermetric(${1:A}, ${2:optional_thickness}, 'ObjectPolarity', ${3:value}, 'StructureSensitivity', ${4:value})'''
+    description: '''${1:B} = fibermetric(${1:A}, ${2:optional_thickness}, 'ObjectPolarity', ${3:value}, 'StructureSensitivity', ${4:value})'''
+
+
+    "displayChart":
+    prefix: "displayChart"
+    body: '''displayChart(${1:CHART}, 'displayEdgeROIs', ${2:value}, 'displayGrayROIs', ${3:value}, 'displayColorROIs', ${4:value}, 'displayRegistrationPoints', ${5:value}, 'Parent', ${6:value})'''
+    description: '''displayChart(${1:CHART}, 'displayEdgeROIs', ${2:value}, 'displayGrayROIs', ${3:value}, 'displayColorROIs', ${4:value}, 'displayRegistrationPoints', ${5:value}, 'Parent', ${6:value})'''
+
+
+    "affineOutputView":
+    prefix: "affineOutputView"
+    body: '''affineOutputView(${1:sizeA}, ${2:tform}, 'BoundsStyle', ${3:value})'''
+    description: '''affineOutputView(${1:sizeA}, ${2:tform}, 'BoundsStyle', ${3:value})'''
+

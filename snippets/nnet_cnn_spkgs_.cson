@@ -1,0 +1,50 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "importCaffeLayers":
+    prefix: "importCaffeLayers"
+    body: '''importCaffeLayers(${1:protofile}, 'InputSize', ${2:value})'''
+    description: '''importCaffeLayers(${1:protofile}, 'InputSize', ${2:value})'''
+
+
+    "exportONNXNetwork":
+    prefix: "exportONNXNetwork"
+    body: '''exportONNXNetwork(${1:net}, ${2:filename}, 'NetworkName', ${3:value}, 'OpsetVersion', ${4:value})'''
+    description: '''exportONNXNetwork(${1:net}, ${2:filename}, 'NetworkName', ${3:value}, 'OpsetVersion', ${4:value})'''
+
+
+    "importONNXNetwork":
+    prefix: "importONNXNetwork"
+    body: '''importONNXNetwork(${1:modelfile}, 'OutputLayerType', ${2:value}, 'Classes', ${3:value})'''
+    description: '''importONNXNetwork(${1:modelfile}, 'OutputLayerType', ${2:value}, 'Classes', ${3:value})'''
+
+
+    "importKerasNetwork":
+    prefix: "importKerasNetwork"
+    body: '''importKerasNetwork(${1:modelfile}, 'WeightFile', ${2:value}, 'OutputLayerType', ${3:value}, 'ImageInputSize', ${4:value}, 'Classes', ${5:value})'''
+    description: '''importKerasNetwork(${1:modelfile}, 'WeightFile', ${2:value}, 'OutputLayerType', ${3:value}, 'ImageInputSize', ${4:value}, 'Classes', ${5:value})'''
+
+
+    "importONNXLayers":
+    prefix: "importONNXLayers"
+    body: '''importONNXLayers(${1:modelfile}, 'ImportWeights', ${2:value}, 'OutputLayerType', ${3:value})'''
+    description: '''importONNXLayers(${1:modelfile}, 'ImportWeights', ${2:value}, 'OutputLayerType', ${3:value})'''
+
+
+    "alexnet":
+    prefix: "alexnet"
+    body: '''alexnet()'''
+    description: '''alexnet()'''
+
+
+    "importKerasLayers":
+    prefix: "importKerasLayers"
+    body: '''importKerasLayers(${1:modelfile}, 'OutputLayerType', ${2:value}, 'ImageInputSize', ${3:value}, 'ImportWeights', ${4:value}, 'WeightFile', ${5:value})'''
+    description: '''importKerasLayers(${1:modelfile}, 'OutputLayerType', ${2:value}, 'ImageInputSize', ${3:value}, 'ImportWeights', ${4:value}, 'WeightFile', ${5:value})'''
+
+
+    "importCaffeNetwork":
+    prefix: "importCaffeNetwork"
+    body: '''importCaffeNetwork(${1:protofile}, ${2:datafile}, 'InputSize', ${3:value}, 'AverageImage', ${4:value}, 'Classes', ${5:value})'''
+    description: '''importCaffeNetwork(${1:protofile}, ${2:datafile}, 'InputSize', ${3:value}, 'AverageImage', ${4:value}, 'Classes', ${5:value})'''
+

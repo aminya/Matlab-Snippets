@@ -1,0 +1,134 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "matlab.project.Project.addFolderIncludingChildFiles":
+    prefix: "matlab.project.Project.addFolderIncludingChildFiles"
+    body: '''${1:projectFile} = matlab.project.Project.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
+    description: '''${1:projectFile} = matlab.project.Project.addFolderIncludingChildFiles(${1:proj}, ${2:folder})'''
+
+
+    "matlab.project.Project.removeFile":
+    prefix: "matlab.project.Project.removeFile"
+    body: '''matlab.project.Project.removeFile(${1:proj}, ${2:file})'''
+    description: '''matlab.project.Project.removeFile(${1:proj}, ${2:file})'''
+
+
+    "matlab.project.Project.addShutdownFile":
+    prefix: "matlab.project.Project.addShutdownFile"
+    body: '''${1:shortcut} = matlab.project.Project.addShutdownFile(${1:proj}, ${2:fileName})'''
+    description: '''${1:shortcut} = matlab.project.Project.addShutdownFile(${1:proj}, ${2:fileName})'''
+
+
+    "matlab.project.Project.addStartupFile":
+    prefix: "matlab.project.Project.addStartupFile"
+    body: '''${1:shortcut} = matlab.project.Project.addStartupFile(${1:proj}, ${2:fileName})'''
+    description: '''${1:shortcut} = matlab.project.Project.addStartupFile(${1:proj}, ${2:fileName})'''
+
+
+    "matlab.project.ProjectFile.removeLabel":
+    prefix: "matlab.project.ProjectFile.removeLabel"
+    body: '''matlab.project.ProjectFile.removeLabel(${1:file}, ${2:LabelDefinition})'''
+    description: '''matlab.project.ProjectFile.removeLabel(${1:file}, ${2:LabelDefinition})'''
+
+
+    "matlab.project.Project.removeStartupFile":
+    prefix: "matlab.project.Project.removeStartupFile"
+    body: '''matlab.project.Project.removeStartupFile(${1:proj}, ${2:file})'''
+    description: '''matlab.project.Project.removeStartupFile(${1:proj}, ${2:file})'''
+
+
+    "matlab.project.Project.removePath":
+    prefix: "matlab.project.Project.removePath"
+    body: '''matlab.project.Project.removePath(${1:proj}, ${2:folder})'''
+    description: '''matlab.project.Project.removePath(${1:proj}, ${2:folder})'''
+
+
+    "matlab.project.Project.addShortcut":
+    prefix: "matlab.project.Project.addShortcut"
+    body: '''${1:shortcut} = matlab.project.Project.addShortcut(${1:proj}, ${2:fileName})'''
+    description: '''${1:shortcut} = matlab.project.Project.addShortcut(${1:proj}, ${2:fileName})'''
+
+
+    "matlab.project.Project.addPath":
+    prefix: "matlab.project.Project.addPath"
+    body: '''${1:projectPath} = matlab.project.Project.addPath(${1:proj}, ${2:folder})'''
+    description: '''${1:projectPath} = matlab.project.Project.addPath(${1:proj}, ${2:folder})'''
+
+
+    "matlab.project.Project.addReference":
+    prefix: "matlab.project.Project.addReference"
+    body: '''${1:projectReference} = matlab.project.Project.addReference(${1:proj}, ${2:folder})'''
+    description: '''${1:projectReference} = matlab.project.Project.addReference(${1:proj}, ${2:folder})'''
+
+
+    "matlab.project.Project.removeReference":
+    prefix: "matlab.project.Project.removeReference"
+    body: '''matlab.project.Project.removeReference(${1:proj}, ${2:folder})'''
+    description: '''matlab.project.Project.removeReference(${1:proj}, ${2:folder})'''
+
+
+    "matlab.project.ProjectFile.findLabel":
+    prefix: "matlab.project.ProjectFile.findLabel"
+    body: '''${1:labelObject} = matlab.project.ProjectFile.findLabel(${1:file}, ${2:LabelDefinition})'''
+    description: '''${1:labelObject} = matlab.project.ProjectFile.findLabel(${1:file}, ${2:LabelDefinition})'''
+
+
+    "matlab.project.Category.findLabel":
+    prefix: "matlab.project.Category.findLabel"
+    body: '''${1:labelObject} = matlab.project.Category.findLabel(${1:category}, ${2:labelName})'''
+    description: '''${1:labelObject} = matlab.project.Category.findLabel(${1:category}, ${2:labelName})'''
+
+
+    "matlab.project.ProjectFile.addLabel":
+    prefix: "matlab.project.ProjectFile.addLabel"
+    body: '''${1:labelObject} = matlab.project.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
+    description: '''${1:labelObject} = matlab.project.ProjectFile.addLabel(${1:file}, ${2:categoryName}, ${3:label}, ${4:optional_labelData})'''
+
+
+    "matlab.project.Project.removeShortcut":
+    prefix: "matlab.project.Project.removeShortcut"
+    body: '''matlab.project.Project.removeShortcut(${1:proj}, ${2:file})'''
+    description: '''matlab.project.Project.removeShortcut(${1:proj}, ${2:file})'''
+
+
+    "matlab.project.Project.addFile":
+    prefix: "matlab.project.Project.addFile"
+    body: '''${1:projectFile} = matlab.project.Project.addFile(${1:proj}, ${2:file})'''
+    description: '''${1:projectFile} = matlab.project.Project.addFile(${1:proj}, ${2:file})'''
+
+
+    "matlab.project.Project.findFile":
+    prefix: "matlab.project.Project.findFile"
+    body: '''${1:file} = matlab.project.Project.findFile(${1:proj}, ${2:fileName})'''
+    description: '''${1:file} = matlab.project.Project.findFile(${1:proj}, ${2:fileName})'''
+
+
+    "matlab.project.Project.removeShutdownFile":
+    prefix: "matlab.project.Project.removeShutdownFile"
+    body: '''matlab.project.Project.removeShutdownFile(${1:proj}, ${2:file})'''
+    description: '''matlab.project.Project.removeShutdownFile(${1:proj}, ${2:file})'''
+
+
+    "matlab.project.Category.removeLabel":
+    prefix: "matlab.project.Category.removeLabel"
+    body: '''matlab.project.Category.removeLabel(${1:category}, ${2:labelName})'''
+    description: '''matlab.project.Category.removeLabel(${1:category}, ${2:labelName})'''
+
+
+    "matlab.project.Project.findCategory":
+    prefix: "matlab.project.Project.findCategory"
+    body: '''${1:category} = matlab.project.Project.findCategory(${1:proj}, ${2:categoryName})'''
+    description: '''${1:category} = matlab.project.Project.findCategory(${1:proj}, ${2:categoryName})'''
+
+
+    "matlab.project.Project.removeCategory":
+    prefix: "matlab.project.Project.removeCategory"
+    body: '''matlab.project.Project.removeCategory(${1:proj}, ${2:categoryName})'''
+    description: '''matlab.project.Project.removeCategory(${1:proj}, ${2:categoryName})'''
+
+
+    "matlab.project.Project.export":
+    prefix: "matlab.project.Project.export"
+    body: '''matlab.project.Project.export(${1:proj}, ${2:zipFileName}, ${3:definitionType})'''
+    description: '''matlab.project.Project.export(${1:proj}, ${2:zipFileName}, ${3:definitionType})'''
+

@@ -1,0 +1,37 @@
+{
+    "axes":
+    {
+        "inputs":
+        [
+            {"name":"h", "kind":"ordered", "type":"matlab.graphics.axis.AbstractAxes"}
+        ]
+    },
+    "axes":
+    {
+        "inputs":
+        [
+            {"name":"parent", "kind":"ordered", "type":"matlab.ui.container.CanvasContainer"},
+            {"name":"properties", "kind":"properties", "type":"matlab.graphics.axis.Axes"}
+        ],
+        "outputs":
+        [
+            {"name":"h", "type":"matlab.graphics.axis.Axes"}
+        ]
+    },
+    "hold":
+    {
+        "inputs":
+        [
+            {"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+            {"name":"action", "kind":"ordered", "type":["char", "choices={'on','off'}"]}
+        ]
+    },
+    "yyaxis":
+    {
+        "inputs":
+        [
+            {"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+            {"name":"side", "kind":"ordered", "type":["char", "choices={'left','right'}"]}
+        ]
+    }
+}

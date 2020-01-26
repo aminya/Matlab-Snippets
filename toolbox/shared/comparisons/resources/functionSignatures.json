@@ -1,0 +1,34 @@
+{
+"visdiff":
+{
+    "inputs":
+    [
+        {"name":"filename1", "kind":"required", "type":"file"},
+        {"name":"filename2", "kind":"required", "type":"file"},
+        {"name":"type", "kind":"positional", "type":"choices={'text', 'binary'}"}
+    ]
+},
+"comparisons.Comparison.filter":
+{
+    "inputs":
+    [
+        {"name":"comparison", "kind":"required", "type":"comparisons.Comparison"},
+        {"name":"filterDefinition", "kind":"required", "type":"choices={'default', 'unfiltered'}"}
+    ]
+},
+"comparisons.Comparison.publish":
+{
+    "inputs":
+    [
+        {"name":"comparison", "kind":"required", "type":"comparisons.Comparison"},
+        {"name":"Format", "kind":"namevalue", "type":"choices={'html', 'docx'}"},
+        {"name":"Name", "kind":"namevalue", "type":"char"},
+        {"name":"OutputFolder", "kind":"namevalue", "type":[["folder"], ["char"]]},
+        {"name":"options", "kind":"ordered", "type":"struct"}
+    ],
+    "outputs":
+    [
+        {"name":"file", "type":"char"}
+    ]
+}
+}

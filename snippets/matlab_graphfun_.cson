@@ -1,0 +1,344 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "digraph.predecessors":
+    prefix: "digraph.predecessors"
+    body: '''digraph.predecessors(${1:G}, ${2:nodeID})'''
+    description: '''digraph.predecessors(${1:G}, ${2:nodeID})'''
+
+
+    "digraph.conncomp":
+    prefix: "digraph.conncomp"
+    body: '''[${1:bins}, ${2:binSize}] = digraph.conncomp(${1:G}, 'OutputForm', ${2:value}, 'Type', ${3:value})'''
+    description: '''[${1:bins}, ${2:binSize}] = digraph.conncomp(${1:G}, 'OutputForm', ${2:value}, 'Type', ${3:value})'''
+
+
+    "digraph.isisomorphic":
+    prefix: "digraph.isisomorphic"
+    body: '''${1:isiso} = digraph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+    description: '''${1:isiso} = digraph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+
+
+    "digraph.toposort":
+    prefix: "digraph.toposort"
+    body: '''[${1:pred}, ${2:t}] = digraph.toposort(${1:G}, 'Order', ${2:value})'''
+    description: '''[${1:pred}, ${2:t}] = digraph.toposort(${1:G}, 'Order', ${2:value})'''
+
+
+    "digraph.flipedge":
+    prefix: "digraph.flipedge"
+    body: '''digraph.flipedge(${1:G}, ${2:s}, ${3:t})'''
+    description: '''digraph.flipedge(${1:G}, ${2:s}, ${3:t})'''
+
+
+    "graph.rmnode":
+    prefix: "graph.rmnode"
+    body: '''graph.rmnode(${1:G}, ${2:nodeIDs})'''
+    description: '''graph.rmnode(${1:G}, ${2:nodeIDs})'''
+
+
+    "digraph.findnode":
+    prefix: "digraph.findnode"
+    body: '''digraph.findnode(${1:G}, ${2:nodeID})'''
+    description: '''digraph.findnode(${1:G}, ${2:nodeID})'''
+
+
+    "graph.bfsearch":
+    prefix: "graph.bfsearch"
+    body: '''${1:t} = graph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+    description: '''${1:t} = graph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+
+
+    "graph.shortestpath":
+    prefix: "graph.shortestpath"
+    body: '''[${1:path}, ${2:d}] = graph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
+    description: '''[${1:path}, ${2:d}] = graph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
+
+
+    "graph.isisomorphic":
+    prefix: "graph.isisomorphic"
+    body: '''${1:isiso} = graph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+    description: '''${1:isiso} = graph.isisomorphic(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+
+
+    "graph.dfsearch":
+    prefix: "graph.dfsearch"
+    body: '''${1:t} = graph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+    description: '''${1:t} = graph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+
+
+    "digraph.isomorphism":
+    prefix: "digraph.isomorphism"
+    body: '''${1:p} = digraph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+    description: '''${1:p} = digraph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+
+
+    "graph.distances":
+    prefix: "graph.distances"
+    body: '''${1:d} = graph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
+    description: '''${1:d} = graph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
+
+
+    "digraph.inedges":
+    prefix: "digraph.inedges"
+    body: '''digraph.inedges(${1:G}, ${2:nodeID})'''
+    description: '''digraph.inedges(${1:G}, ${2:nodeID})'''
+
+
+    "graph.degree":
+    prefix: "graph.degree"
+    body: '''graph.degree(${1:G}, ${2:nodeIDs})'''
+    description: '''graph.degree(${1:G}, ${2:nodeIDs})'''
+
+
+    "graph.outedges":
+    prefix: "graph.outedges"
+    body: '''graph.outedges(${1:G}, ${2:nodeID})'''
+    description: '''graph.outedges(${1:G}, ${2:nodeID})'''
+
+
+    "graph":
+    prefix: "graph"
+    body: '''${1:g} = graph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
+    description: '''${1:g} = graph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
+
+
+    "digraph.rmnode":
+    prefix: "digraph.rmnode"
+    body: '''digraph.rmnode(${1:G}, ${2:nodeIDs})'''
+    description: '''digraph.rmnode(${1:G}, ${2:nodeIDs})'''
+
+
+    "digraph.centrality":
+    prefix: "digraph.centrality"
+    body: '''${1:c} = digraph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
+    description: '''${1:c} = digraph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
+
+
+    "graph.nearest":
+    prefix: "graph.nearest"
+    body: '''[${1:nodes}, ${2:d}] = graph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value})'''
+    description: '''[${1:nodes}, ${2:d}] = graph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value})'''
+
+
+    "graph.subgraph":
+    prefix: "graph.subgraph"
+    body: '''graph.subgraph(${1:G}, ${2:nodeIDs})'''
+    description: '''graph.subgraph(${1:G}, ${2:nodeIDs})'''
+
+
+    "digraph.bfsearch":
+    prefix: "digraph.bfsearch"
+    body: '''${1:t} = digraph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+    description: '''${1:t} = digraph.bfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+
+
+    "graph.edgecount":
+    prefix: "graph.edgecount"
+    body: '''graph.edgecount(${1:G}, ${2:s}, ${3:t})'''
+    description: '''graph.edgecount(${1:G}, ${2:s}, ${3:t})'''
+
+
+    "digraph.successors":
+    prefix: "digraph.successors"
+    body: '''digraph.successors(${1:G}, ${2:nodeID})'''
+    description: '''digraph.successors(${1:G}, ${2:nodeID})'''
+
+
+    "plot":
+    prefix: "plot"
+    body: '''${1:h} = plot(${1:optional_ax}, ${2:G}, 'Layout', ${3:value}, ${4:options})'''
+    description: '''${1:h} = plot(${1:optional_ax}, ${2:G}, 'Layout', ${3:value}, ${4:options})'''
+
+
+    "graph.adjacency":
+    prefix: "graph.adjacency"
+    body: '''${1:A} = graph.adjacency(${1:G}, ${2:optional_weight})'''
+    description: '''${1:A} = graph.adjacency(${1:G}, ${2:optional_weight})'''
+
+
+    "graph.isomorphism":
+    prefix: "graph.isomorphism"
+    body: '''${1:p} = graph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+    description: '''${1:p} = graph.isomorphism(${1:G}, ${2:G2}, 'NodeVariables', ${3:value}, 'EdgeVariables', ${4:value})'''
+
+
+    "digraph.shortestpathtree":
+    prefix: "digraph.shortestpathtree"
+    body: '''[${1:tree}, ${2:d}] = digraph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
+    description: '''[${1:tree}, ${2:d}] = digraph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
+
+
+    "graph.reordernodes":
+    prefix: "graph.reordernodes"
+    body: '''graph.reordernodes(${1:G}, ${2:order})'''
+    description: '''graph.reordernodes(${1:G}, ${2:order})'''
+
+
+    "digraph.nearest":
+    prefix: "digraph.nearest"
+    body: '''[${1:nodes}, ${2:d}] = digraph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value}, 'Direction', ${5:value})'''
+    description: '''[${1:nodes}, ${2:d}] = digraph.nearest(${1:G}, ${2:s}, ${3:d}, 'Method', ${4:value}, 'Direction', ${5:value})'''
+
+
+    "graph.simplify":
+    prefix: "graph.simplify"
+    body: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = graph.simplify(${1:G}, ${2:optional_selfLoops})'''
+    description: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = graph.simplify(${1:G}, ${2:optional_selfLoops})'''
+
+
+    "digraph.shortestpath":
+    prefix: "digraph.shortestpath"
+    body: '''[${1:path}, ${2:d}] = digraph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
+    description: '''[${1:path}, ${2:d}] = digraph.shortestpath(${1:G}, ${2:s}, ${3:t}, 'Method', ${4:value})'''
+
+
+    "digraph.subgraph":
+    prefix: "digraph.subgraph"
+    body: '''digraph.subgraph(${1:G}, ${2:nodeIDs})'''
+    description: '''digraph.subgraph(${1:G}, ${2:nodeIDs})'''
+
+
+    "graph.findnode":
+    prefix: "graph.findnode"
+    body: '''graph.findnode(${1:G}, ${2:nodeID})'''
+    description: '''graph.findnode(${1:G}, ${2:nodeID})'''
+
+
+    "graph.rmedge":
+    prefix: "graph.rmedge"
+    body: '''graph.rmedge(${1:G}, ${2:s}, ${3:t})'''
+    description: '''graph.rmedge(${1:G}, ${2:s}, ${3:t})'''
+
+
+    "graph.neighbors":
+    prefix: "graph.neighbors"
+    body: '''graph.neighbors(${1:G}, ${2:nodeID})'''
+    description: '''graph.neighbors(${1:G}, ${2:nodeID})'''
+
+
+    "graph.addedge":
+    prefix: "graph.addedge"
+    body: '''graph.addedge(${1:G}, ${2:s}, ${3:t}, ${4:w})'''
+    description: '''graph.addedge(${1:G}, ${2:s}, ${3:t}, ${4:w})'''
+
+
+    "graph.maxflow":
+    prefix: "graph.maxflow"
+    body: '''[${1:mf}, ${2:gf}, ${3:cs}, ${4:ct}] = graph.maxflow(${1:G}, ${2:source}, ${3:target})'''
+    description: '''[${1:mf}, ${2:gf}, ${3:cs}, ${4:ct}] = graph.maxflow(${1:G}, ${2:source}, ${3:target})'''
+
+
+    "graph.minspantree":
+    prefix: "graph.minspantree"
+    body: '''[${1:t}, ${2:pred}] = graph.minspantree(${1:G}, 'Method', ${2:value}, 'Type', ${3:value}, 'Root', ${4:value})'''
+    description: '''[${1:t}, ${2:pred}] = graph.minspantree(${1:G}, 'Method', ${2:value}, 'Type', ${3:value}, 'Root', ${4:value})'''
+
+
+    "digraph.reordernodes":
+    prefix: "digraph.reordernodes"
+    body: '''digraph.reordernodes(${1:G}, ${2:order})'''
+    description: '''digraph.reordernodes(${1:G}, ${2:order})'''
+
+
+    "digraph.findedge":
+    prefix: "digraph.findedge"
+    body: '''digraph.findedge(${1:G}, ${2:s}, ${3:t})'''
+    description: '''digraph.findedge(${1:G}, ${2:s}, ${3:t})'''
+
+
+    "digraph.addedge":
+    prefix: "digraph.addedge"
+    body: '''digraph.addedge(${1:G}, ${2:s}, ${3:t}, ${4:w})'''
+    description: '''digraph.addedge(${1:G}, ${2:s}, ${3:t}, ${4:w})'''
+
+
+    "graph.centrality":
+    prefix: "graph.centrality"
+    body: '''${1:c} = graph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
+    description: '''${1:c} = graph.centrality(${1:G}, ${2:type}, 'Importance', ${3:value}, 'FollowProbability', ${4:value}, 'Tolerance', ${5:value}, 'MaxIterations', ${6:value})'''
+
+
+    "digraph.distances":
+    prefix: "digraph.distances"
+    body: '''${1:d} = digraph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
+    description: '''${1:d} = digraph.distances(${1:G}, ${2:optional_s}, ${3:optional_t}, 'Method', ${4:value})'''
+
+
+    "graph.shortestpathtree":
+    prefix: "graph.shortestpathtree"
+    body: '''[${1:tree}, ${2:d}] = graph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
+    description: '''[${1:tree}, ${2:d}] = graph.shortestpathtree(${1:G}, ${2:s}, ${3:optional_t}, 'Method', ${4:value}, 'OutputForm', ${5:value})'''
+
+
+    "digraph.adjacency":
+    prefix: "digraph.adjacency"
+    body: '''${1:A} = digraph.adjacency(${1:G}, ${2:optional_weight})'''
+    description: '''${1:A} = digraph.adjacency(${1:G}, ${2:optional_weight})'''
+
+
+    "digraph.simplify":
+    prefix: "digraph.simplify"
+    body: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = digraph.simplify(${1:G}, ${2:optional_selfLoops})'''
+    description: '''[${1:gsimple}, ${2:edgeind}, ${3:edgecount}] = digraph.simplify(${1:G}, ${2:optional_selfLoops})'''
+
+
+    "digraph.dfsearch":
+    prefix: "digraph.dfsearch"
+    body: '''${1:t} = digraph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+    description: '''${1:t} = digraph.dfsearch(${1:G}, ${2:s}, ${3:optional_events}, 'Restart', ${4:value})'''
+
+
+    "graph.findedge":
+    prefix: "graph.findedge"
+    body: '''graph.findedge(${1:G}, ${2:s}, ${3:t})'''
+    description: '''graph.findedge(${1:G}, ${2:s}, ${3:t})'''
+
+
+    "graph.biconncomp":
+    prefix: "graph.biconncomp"
+    body: '''[${1:edgebins}, ${2:cutvert}] = graph.biconncomp(${1:G}, 'OutputForm', ${2:value})'''
+    description: '''[${1:edgebins}, ${2:cutvert}] = graph.biconncomp(${1:G}, 'OutputForm', ${2:value})'''
+
+
+    "graph.conncomp":
+    prefix: "graph.conncomp"
+    body: '''[${1:bins}, ${2:binSize}] = graph.conncomp(${1:G}, 'OutputForm', ${2:value})'''
+    description: '''[${1:bins}, ${2:binSize}] = graph.conncomp(${1:G}, 'OutputForm', ${2:value})'''
+
+
+    "digraph.outdegree":
+    prefix: "digraph.outdegree"
+    body: '''digraph.outdegree(${1:G}, ${2:nodeIDs})'''
+    description: '''digraph.outdegree(${1:G}, ${2:nodeIDs})'''
+
+
+    "digraph.outedges":
+    prefix: "digraph.outedges"
+    body: '''digraph.outedges(${1:G}, ${2:nodeID})'''
+    description: '''digraph.outedges(${1:G}, ${2:nodeID})'''
+
+
+    "digraph.edgecount":
+    prefix: "digraph.edgecount"
+    body: '''digraph.edgecount(${1:G}, ${2:s}, ${3:t})'''
+    description: '''digraph.edgecount(${1:G}, ${2:s}, ${3:t})'''
+
+
+    "digraph":
+    prefix: "digraph"
+    body: '''${1:g} = digraph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
+    description: '''${1:g} = digraph(${1:EdgeTable}, ${2:optional_NodeTable}, ${3:omit})'''
+
+
+    "digraph.indegree":
+    prefix: "digraph.indegree"
+    body: '''digraph.indegree(${1:G}, ${2:nodeIDs})'''
+    description: '''digraph.indegree(${1:G}, ${2:nodeIDs})'''
+
+
+    "digraph.rmedge":
+    prefix: "digraph.rmedge"
+    body: '''digraph.rmedge(${1:G}, ${2:s}, ${3:t})'''
+    description: '''digraph.rmedge(${1:G}, ${2:s}, ${3:t})'''
+

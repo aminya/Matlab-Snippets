@@ -1,0 +1,54 @@
+{
+  "batch":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup": 
+        [
+          {"name":"aScript", "kind":"required", "type":[["identifier=function,package,localfunction"], ["char"]]},
+          [
+            {"name":"myCluster", "kind":"required", "type":"parallel.Cluster"},
+            {"name":"aScript", "kind":"required", "type":[["identifier=function,package,localfunction"], ["char"]]}
+          ],
+          [
+            {"name":"fcn", "kind":"required", "type":"function_handle"},
+            {"name":"N", "kind":"required", "type":"numeric"},
+            {"name":"{x1, ..., xn}", "kind":"required", "type":"cell"}
+          ],
+          [
+            {"name":"myCluster", "kind":"required", "type":"parallel.Cluster"},
+            {"name":"fcn", "kind":"required", "type":"function_handle"},
+            {"name":"N", "kind":"required", "type":"numeric"},
+            {"name":"{x1, ..., xn}", "kind":"required", "type":"cell"}
+          ]
+        ]
+      },
+      {"name":"AdditionalPaths", "kind":"namevalue", "type":[["folder"], ["char"], ["cellstr"]]},
+      {"name":"AttachedFiles", "kind":"namevalue", "type":[["file=*.m,*.mat"], ["char"], ["cellstr"]]},
+      {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+      {"name":"CurrentFolder", "kind":"namevalue", "type":[["folder"], ["char"]]},
+      {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["choices=parallel.internal.apishared.EnvVars.getLocalEnvironment()"]]},
+      {"name":"Pool", "kind":"namevalue", "type":"numeric", "default":"0"},
+      {"name":"Profile", "kind":"namevalue", "type": [["char"], ["choices=parallel.clusterProfiles()"]]},
+      {"name":"Workspace", "kind":"namevalue", "type": "struct"}
+    ],
+    "outputs":
+    [
+      {"name":"j", "type":"parallel.Job"}
+    ]
+  },
+  "pctconfig":
+  {
+    "inputs":
+    [
+      {"name":"hostname", "kind":"namevalue", "type":"char"},
+      {"name":"portrange", "kind":"namevalue", "type":["numeric", "vector", "numel=2"]}
+    ],
+    "outputs":
+    [
+      {"name":"config", "type":"struct"}
+    ]
+  }
+}

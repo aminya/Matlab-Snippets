@@ -1,0 +1,18 @@
+{
+"matlab.unittest.internal.TestSuiteExtension.fromProject":
+{
+        "inputs":
+        [
+                {"name":"project", "kind":"required","type":[["folder"], ["matlab.project.Project"]]},
+                {"name":"IncludingReferencedProjects", "kind":"namevalue","type":["logical","scalar"]},
+                {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletionExtension.nameChoicesForProject(project)"]]},
+                {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletionExtension.parameterNameChoicesForProject(project)"]]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletionExtension.parameterPropertyChoicesForProject(project)"]]},
+                {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletionExtension.tagChoicesForProject(project)"]]},
+                {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletionExtension.procedureNameChoicesForProject(project)"]]},
+                {"name":"ExternalParameters", "kind":"namevalue"},
+                {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletionExtension.superclassChoicesForProject(project)"]]}
+        ]
+}
+}

@@ -1,0 +1,13 @@
+{
+"canDatabase":
+{
+    "inputs":
+    [
+        {"name":"File", "kind":"required", "type":["file=*.dbc"]}
+    ],
+    "outputs":
+    [
+        {"name":"obj", "type":"can.Database"}
+    ]
+}
+}

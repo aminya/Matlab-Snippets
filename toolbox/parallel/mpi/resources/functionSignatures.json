@@ -1,0 +1,23 @@
+{
+  "mpiSettings":
+  {
+    "inputs":
+    [
+      {"mutuallyExclusiveGroup": 
+        [
+          {"name":"MessageLoggingDestination", "kind":"namevalue", "type":"choices={'CommandWindow','stdout'}"},
+          {"name":"DeadlockDetection", "kind":"namevalue", "type":"choices={'on','off'}", "default":"off"},
+          {"name":"MessageLogging", "kind":"namevalue", "type":"choices={'on','off'}", "default":"off"},
+          [
+            {"name":"MessageLoggingDestination", "kind":"required", "type":"choices={'MessageLoggingDestination'}"},
+            {"name":"File", "kind":"required", "type":"choices={'File'}"},
+            {"name":"file", "kind":"required", "type":"file"}
+          ]
+        ]
+      }
+    ],
+    "outputs":
+    []
+  }
+}
+

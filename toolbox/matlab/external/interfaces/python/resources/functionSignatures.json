@@ -1,0 +1,18 @@
+{
+    "pyversion":
+    {
+	"inputs":
+	[
+	    {"name":"filename", "kind":"required", "type":"file"},
+	    {"name":"varargin", "kind":"ordered", "repeating":true}
+	]
+    },
+    "pyenv":
+    {
+    "inputs":
+    [
+        {"name":"Version", "kind":"namevalue", "type":["string scalar"]},
+        {"name":"ExecutionMode", "kind":"namevalue", "type":["string scalar", "choices={'InProcess', 'OutOfProcess'}"]}
+    ]
+    }
+}

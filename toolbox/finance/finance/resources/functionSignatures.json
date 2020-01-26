@@ -1,0 +1,982 @@
+{
+
+"blkimpv":
+{
+    "inputs":
+    [
+        {"name":"Price", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Strike", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Rate", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Time", "kind":"required", "type":[["numeric", ">=0"]]},        
+        {"name":"Value", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Limit", "kind":"namevalue", "type":[["numeric"]], "default":"10"},
+        {"name":"Tolerance", "kind":"namevalue", "type":[["numeric"]], "default":"1e-6"},
+        {"name":"Class", "kind":"namevalue", "type":[["char", "choices = {'call', 'put'}"]], "default":"call"},
+        {"name":"Method", "kind":"namevalue", "type":[["char", "choices = {'jackel2016', 'search'}"]], "default":"jackel2016"}        
+    ],
+    "outputs":
+    [
+        {"name":"Volatility", "type":[["numeric"]]}        
+    ]
+},
+
+"blsimpv":
+{
+    "inputs":
+    [
+        {"name":"Price", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Strike", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Rate", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Time", "kind":"required", "type":[["numeric", ">=0"]]},        
+        {"name":"Value", "kind":"required", "type":[["numeric", ">=0"]]},
+        {"name":"Limit", "kind":"namevalue", "type":[["numeric"]], "default":"10"},
+        {"name":"Yield", "kind":"namevalue", "type":[["numeric"]], "default":"0"},
+        {"name":"Tolerance", "kind":"namevalue", "type":[["numeric"]], "default":"1e-6"},
+        {"name":"Class", "kind":"namevalue", "type":[["char", "choices = {'call', 'put'}"]], "default":"call"},
+        {"name":"Method", "kind":"namevalue", "type":[["char", "choices = {'jackel2016', 'search'}"]], "default":"jackel2016"}        
+    ],
+    "outputs":
+    [
+        {"name":"Volatility", "type":[["numeric"]]}        
+    ]
+},
+
+"cdsspread":
+{
+    "inputs":
+    [
+        {"name":"ZeroData", "kind":"required", "type":[["numeric"]]},
+        {"name":"ProbData", "kind":"required", "type":[["numeric"], ["char"]]},
+        {"name":"Settle", "kind":"required", "type":[["numeric"], ["char"]]},
+        {"name":"Maturity", "kind":"required", "type":[["numeric"],["char"]]},        
+        {"name":"RecoveryRate", "kind":"namevalue", "type":[["numeric"]], "default": "0.4"},
+        {"name":"Period", "kind":"namevalue", "type":[["numeric", "choices={1,2,3,4,6,12}"]], "default":"4"},
+        {"name":"Basis", "kind":"namevalue", "type":[["numeric", "choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"2"},
+        {"name":"BusDayConvention", "kind":"namevalue", "type":[["char", "choices = {'actual', 'follow', 'modifiedfollow', 'previous', 'modifiedprevious'}"]], "default":"actual"},
+        {"name":"PayAccruedPremium", "kind":"namevalue", "type":[["logical", "scalar"]], "default":"true"},        
+        {"name":"TimeStep", "kind":"namevalue", "type":[["numeric", ">=0"]], "default":"10"},
+        {"name":"ZeroCompounding", "kind":"namevalue", "type":[["numeric","choices = {1, 2, 3, 4, 6, 12, -1}"]], "default":"2"},
+        {"name":"ZeroBasis", "kind":"namevalue", "type":[["numeric", "choices = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}"]], "default":"0"}
+    ],
+    "outputs":
+    [
+        {"name":"Spread", "type":[["numeric"]]},        
+        {"name":"PaymentDates", "type":[["numeric"]]},
+        {"name":"PaymentTimes", "type":[["numeric"]]}        
+    ]
+},
+
+"disc2zero":
+{
+	"inputs":
+	[
+		{"name":"discRates", "kind":"required", "type":[["numeric"]]},        
+        {"name":"curveDates", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Compounding", "kind":"positional", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"Basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"ZeroRates", "type":[["numeric"]]},
+        {"name":"CurveDates", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"disc2zero":
+{
+	"inputs":
+	[
+		{"name":"discRates", "kind":"required", "type":[["numeric"]]},        
+        {"name":"curveDates", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Compounding", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"Basis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"ZeroRates", "type":[["numeric"]]},
+        {"name":"CurveDates", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"fwd2zero":
+{
+	"inputs":
+	[
+		{"name":"forwardRates", "kind":"required", "type":[["numeric"]]},        
+        {"name":"curveDates", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"InputCompounding", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"InputBasis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"OutputCompounding", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"OutputBasis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"ZeroRates", "type":[["numeric"]]},
+        {"name":"CurveDates", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"zero2disc":
+{
+	"inputs":
+	[
+		{"name":"zeroRates", "kind":"required", "type":[["numeric"]]},        
+        {"name":"curveDates", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Compounding", "kind":"positional", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"Basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"DiscRates", "type":[["numeric"]]},
+        {"name":"CurveDates", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"zero2disc":
+{
+	"inputs":
+	[
+		{"name":"zeroRates", "kind":"required", "type":[["numeric"]]},        
+        {"name":"curveDates", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"Compounding", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"Basis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"DiscRates", "type":[["numeric"]]},
+        {"name":"CurveDates", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"zero2fwd":
+{
+	"inputs":
+	[
+		{"name":"zeroRates", "kind":"required", "type":[["numeric"]]},        
+        {"name":"curveDates", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"InputCompounding", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"InputBasis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"OutputCompounding", "kind":"namevalue", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"OutputBasis", "kind":"namevalue", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"}
+	],
+	"outputs":
+	[
+		{"name":"ForwardRates", "type":[["numeric"]]},
+        {"name":"CurveDates", "type":[["char"],["numeric"],["datetime"]]}
+	]	
+},
+
+"autobinning":
+{
+	"inputs":
+	[
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVar","kind":"namevalue", "type":[["char"],["cell"]]},
+        {"name":"Algorithm","kind":"namevalue","type":["char","choices={'Monotone','Split','Merge','EqualWidth','EqualFrequency'}"]},
+        {"name":"AlgorithmOptions", "kind":"namevalue", "type":"cell"},
+        {"name":"Display", "kind":"namevalue", "type":[["char","choices={'on','off'}"]]}
+	],
+    "outputs":
+    [
+        {"name":"sc","type":"creditscorecard"}
+    ]
+},
+
+"bininfo":
+{
+    "inputs":
+    [
+        {"name":"PredictorVar","kind":"required","type":"char"},
+        {"name":"Statistics","kind":"namevalue","type":[["char"],["cell"]]},
+        {"name":"Totals","kind":"namevalue","type":[["char","choices={'on','off'}"]]}
+    ]
+},
+
+"creditscorecard":
+{
+    "inputs":
+    [
+        {"name":"data","kind":"required","type":"table"},
+        {"name":"ResponseVar","kind":"namevalue","type":[["char"],["cell"]]},
+        {"name":"GoodLabel","kind":"namevalue","type":[["numeric"],["char"],["logical"],["categorical"]]},
+        {"name":"IDVar","kind":"namevalue","type":[["char"],["cell"]]},
+        {"name":"PredictorVars","kind":"namevalue","type":[["char"],["cell"]]},
+        {"name":"BinMissingData","kind":"namevalue","type":"logical"},
+        {"name":"WeightsVar","kind":"namevalue","type":"char"}
+    ]
+},
+
+"compact":
+{
+    "inputs":
+    [   
+        {"name":"sc","kind":"required","type":"creditscorecard"}
+    ],
+    "outputs":
+    [
+        {"name":"ccsc","type":"compactCreditScorecard"}
+    ]
+},
+
+"displaypoints":
+{
+    "inputs":
+    [
+        {"name":"sc", "kind":"required", "type":"creditscorecard"},
+        {"name":"ShowCategoricalMembers", "kind":"namevalue", "type":"logical"}
+    ],
+    "outputs":
+    [
+        {"name":"PointsInfo", "type":[["table"]]},
+        {"name":"MinScore", "type":[["numeric"]]},
+        {"name":"MaxScore", "type":[["numeric"]]}
+    ]
+},
+
+"fitmodel":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVars","kind":"namevalue","type":"cell"},
+        {"name":"VariableSelection","kind":"namevalue","type":[["char","choices={'stepwise','fullmodel'}"]]},
+        {"name":"StartingModel","kind":"namevalue","type":[["char","choices={'constant','linear'}"]]},
+        {"name":"Display","kind":"namevalue","type":[["char","choices={'on','off'}"]]}
+    ]
+},
+
+"fitConstrainedModel":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVars","kind":"namevalue","type":"cell"},
+        {"name":"LowerBound","kind":"namevalue","type":"Numeric"},
+        {"name":"UpperBound","kind":"namevalue","type":"Numeric"},
+        {"name":"AInequality","kind":"namevalue","type":"Numeric"},
+        {"name":"bInequality","kind":"namevalue","type":"Numeric"},
+        {"name":"AEquality","kind":"namevalue","type":"Numeric"},
+        {"name":"bEquality","kind":"namevalue","type":"Numeric"},
+        {"name":"Bootstrap","kind":"namevalue","type":"logical","default":"false"},
+        {"name":"BootstrapIter","kind":"namevalue","type":"numeric","default":"100"},
+        {"name":"Options","kind":"namevalue","type":"optim.options.Fmincon"}
+    ]
+},
+
+"formatpoints":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"BasePoints","kind":"namevalue","type":"logical"},
+        {"name":"Round","kind":"namevalue","type":[["char","choices={'none','allpoints','finalscore'}"]]},
+        {"name":"Missing","kind":"namevalue","type":[["char","choices={'noscore','zerowoe','zeropoints','minpoints','maxpoints'}"]]},
+        {"name":"ShiftAndSlope","kind":"namevalue","type":"numeric"},
+        {"name":"WorstAndBestScores","kind":"namevalue","type":"numeric"},
+        {"name":"PointsOddsAndPDO","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"modifybins":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVar","kind":"required","type":"char"},
+        {"name":"CutPoints","kind":"namevalue","type":"numeric"},
+        {"name":"CatGrouping","kind":"namevalue","type":"table"},
+        {"name":"BinLabels","kind":"namevalue","type":[["char"],["cell"]]},
+        {"name":"MinValue","kind":"namevalue","type":"numeric"},
+        {"name":"MaxValue","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"modifypredictor":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVar","kind":"required","type":[["char"],["cell"]]},
+        {"name":"PredictorType","kind":"namevalue","type":[["char","choices={'','numeric','categorical'}"]]},
+        {"name":"Ordinal","kind":"namevalue","type":"logical","default":"false"}
+    ]
+},
+
+
+"plotbins":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVar","kind":"required","type":[["char"],["cell"]]},
+        {"name":"BinText","kind":"namevalue","type":[["char","choices={'none','count','percentrows','percentcols','percenttotal'}"]]},
+        {"name":"WOE","kind":"namevalue","type":[["char","choices={'on','off'}"]]},
+        {"name":"Legend","kind":"namevalue","type":[["char","choices={'on','off'}"]]}
+    ]
+},
+
+"predictorinfo":
+{
+    "inputs":
+    [   
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"PredictorVar","kind":"required","type":"char"}
+    ],
+    "outputs":
+    [
+        {"name":"T","type":"table"},
+        {"name":"Stats","type":"table"}
+    ]
+},
+
+"probdefault":
+{
+    "inputs":
+    [   
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"data","kind":"namevalue","type":"table"}
+    ],
+    "outputs":
+    [   
+        {"name":"pd","type":"numeric"}
+    ]
+},  
+
+"score":
+{
+    "inputs":
+    [ 
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"data","kind":"namevalue","type":"table"}
+    ],
+    "outputs":
+    [
+        {"name":"Scores","type":"numeric"},
+        {"name":"Points","type":"table"}        
+    ]
+},
+
+
+"setmodel":
+{
+    "inputs":
+    [   
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"ModelPredictors","kind":"required","type":[["char"],["cell"]]},
+        {"name":"ModelCoefficients","kind":"required","type":"numeric"}
+    ]
+},
+
+"validatemodel":
+{
+    "inputs":
+    [
+        {"name":"sc","kind":"required","type":"creditscorecard"},
+        {"name":"data","kind":"namevalue","type":"table"},
+        {"name":"AnalysisLevel","kind":"namevalue","type":[["char","choices={'deciles','scores'}"]]},
+        {"name":"Plot","kind":"namevalue","type":[["char","choices={'none','cap','roc','ks','k-s'}"]]}
+    ]
+},
+
+"transprob":
+{
+	"inputs":
+	[
+        {"name":"data", "kind":"required", "type":[["table"],["cell"],["struct"]]},
+        {"name":"labels", "kind":"namevalue", "type":[["cell"]]},
+        {"name":"excludeLabels", "kind":"namevalue", "type":[["char"],["string"],["cell"]]},
+        {"name":"startDate", "kind":"namevalue", "type":[["string"],["numeric"]]},
+        {"name":"endDate", "kind":"namevalue", "type":[["string"],["numeric"]]},
+        {"name":"algorithm", "kind":"namevalue", "type":[["string","choices={'duration','cohort'}"]]},
+        {"name":"snapsPerYear", "kind":"namevalue", "type":[["numeric", "choices={1,2,3,4,6,12}"]], "default":"1"},
+        {"name":"transInterval","kind":"namevalue","type":"numeric"}
+	],
+	"outputs":
+	[
+        {"name":"transMat", "type":[["numeric"]]},
+        {"name":"sampleTotals", "type":[["struct"]]},
+        {"name":"idTotals", "type":[["struct"]]}
+	]	
+},
+
+"transprobbytotals":
+{
+	"inputs":
+	[
+        {"name":"totals", "kind":"required", "type":[["struct"]]},
+        {"name":"snapsPerYear", "kind":"namevalue", "type":[["numeric", "choices={1,2,3,4,6,12}"]], "default":"1"},
+        {"name":"transInterval","kind":"namevalue","type":"numeric"}
+	],
+	"outputs":
+	[
+        {"name":"transMat", "type":[["numeric"]]},
+        {"name":"sampleTotals", "type":[["struct"]]}
+	]	
+},
+
+"transprobgrouptotals":
+{
+	"inputs":
+	[
+        {"name":"totals", "kind":"required", "type":[["struct"]]},
+        {"name":"groupingEdges", "kind":"required", "type":[["numeric"]]}
+	],
+	"outputs":
+	[
+        {"name":"totalsGrouped", "type":[["struct"]]}
+	]	
+},
+
+"transprobprep":
+{
+	"inputs":
+	[
+        {"name":"data", "kind":"required", "type":[["table"],["cell"]]},
+        {"name":"labels", "kind":"namevalue", "type":[["cell"]]}
+	],
+	"outputs":
+	[
+        {"name":"prepData", "type":[["struct"]]}
+	]	
+},
+
+"transprobtothresholds":
+{
+	"inputs":
+	[
+        {"name":"trans", "kind":"required", "type":[["numeric"]]}
+	],
+	"outputs":
+	[
+        {"name":"thresh", "type":[["numeric"]]}
+	]	
+},
+
+"transprobfromthresholds":
+{
+	"inputs":
+	[
+        {"name":"thresh", "kind":"required", "type":[["numeric"]]}
+	],
+	"outputs":
+	[
+        {"name":"trans", "type":[["numeric"]]}
+	]	
+},
+
+"Portfolio":
+{
+    "inputs":
+    [
+        {"name":"AssetList","kind":"namevalue","type":"cell"},
+        {"name":"Name","kind":"namevalue","type":"string"},
+        {"name":"NumAssets","kind":"namevalue","type":"numeric"},
+        {"name":"InitPort","kind":"namevalue","type":"numeric"},
+        {"name":"AssetMean","kind":"namevalue","type":"numeric"},
+        {"name":"AssetCovar","kind":"namevalue","type":"numeric"},
+        {"name":"RiskFreeRate","kind":"namevalue","type":"numeric"},
+        {"name":"Budget","kind":"namevalue","type":"numeric"},
+        {"name":"LowerBudget","kind":"namevalue","type":"numeric"},
+        {"name":"UpperBudget","kind":"namevalue","type":"numeric"},
+        {"name":"BuyCost","kind":"namevalue","type":"numeric"},
+        {"name":"SellCost","kind":"namevalue","type":"numeric"},
+        {"name":"TrackingPort","kind":"namevalue","type":"numeric"},
+        {"name":"TrackingError","kind":"namevalue","type":"numeric"},
+        {"name":"Turnover","kind":"namevalue","type":"numeric"},
+        {"name":"BuyTurnover","kind":"namevalue","type":"numeric"},
+        {"name":"SellTurnover","kind":"namevalue","type":"numeric"},
+        {"name":"LowerBound","kind":"namevalue","type":"numeric"},
+        {"name":"UpperBound","kind":"namevalue","type":"numeric"},
+        {"name":"AEquality","kind":"namevalue","type":"numeric"},
+        {"name":"bEquality","kind":"namevalue","type":"numeric"},
+        {"name":"AInequality","kind":"namevalue","type":"numeric"},
+        {"name":"bInequality","kind":"namevalue","type":"numeric"},
+        {"name":"GroupA","kind":"namevalue","type":"logical"},
+        {"name":"GroupB","kind":"namevalue","type":"logical"},
+        {"name":"LowerRatio","kind":"namevalue","type":"numeric"},
+        {"name":"UpperRatio","kind":"namevalue","type":"numeric"},
+        {"name":"GroupMatrix","kind":"namevalue","type":"logical"},
+        {"name":"LowerGroup","kind":"namevalue","type":"numeric"},
+        {"name":"UpperGroup","kind":"namevalue","type":"numeric"},
+        {"name":"BoundType","kind":"namevalue","type":[["string","choices={'simple','conditional'}"]]},
+        {"name":"MinNumAssets","kind":"namevalue","type":"numeric"},
+        {"name":"MaxNumAssets","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"Portfolio.setBounds":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"Portfolio"},
+        {"name":"LowerBound","kind":"required","type":"numeric"},
+        {"name":"UpperBound","kind":"optional","type":"numeric"},
+        {"name":"BoundType","kind":"namevalue","type":[["string","choices={'simple','conditional'}"]]},
+        {"name":"NumAssets","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"Portfolio.setSolverMINLP":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"Portfolio"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'OuterApproximation','ExtendedCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"NumIterationsEarlyIntegerConvergence","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+        {"name":"IntMasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"Portfolio.setSolverMINLP":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"Portfolio"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'TrustRegionCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"NumIterationsEarlyIntegerConvergence","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+		{"name":"TrustRegionStartIteration","kind":"namevalue","type":"numeric"},
+        {"name":"DeltaLimit","kind":"namevalue","type":"numeric"},
+        {"name":"ShrinkRatio","kind":"namevalue","type":"numeric"},
+        {"name":"IntMasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"Portfolio.estimateMaxSharpeRatio":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"Portfolio"},
+        {"name":"Method","kind":"namevalue","type":[["string","choices={'direct','iterative'}"]]}
+    ]
+},
+
+"Portfolio.estimateFrontierByRisk":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"Portfolio"},
+        {"name":"TargetRisk","kind":"required","type":"numeric"},
+        {"name":"Method","kind":"namevalue","type":[["string","choices={'direct','iterative'}"]]}
+    ]
+},
+
+"Portfolio.estimateAssetMoments":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"Portfolio"},
+        {"name":"AssetReturns","kind":"required","type":"numeric"},
+        {"name":"DataFormat","kind":"namevalue","type":[["string","choices={'Returns','Prices'}"]]},
+        {"name":"MissingData","kind":"namevalue","type":[["logical", "scalar"]]},
+        {"name":"GetAssetList","kind":"namevalue","type":[["logical", "scalar"]]}
+    ]
+},
+
+"PortfolioCVaR":
+{
+    "inputs":
+    [
+        {"name":"AssetList","kind":"namevalue","type":"cell"},
+        {"name":"Name","kind":"namevalue","type":"string"},
+        {"name":"NumAssets","kind":"namevalue","type":"numeric"},
+        {"name":"InitPort","kind":"namevalue","type":"numeric"},
+        {"name":"ProbabilityLevel","kind":"namevalue","type":"numeric"},
+        {"name":"RiskFreeRate","kind":"namevalue","type":"numeric"},
+        {"name":"Budget","kind":"namevalue","type":"numeric"},
+        {"name":"LowerBudget","kind":"namevalue","type":"numeric"},
+        {"name":"UpperBudget","kind":"namevalue","type":"numeric"},
+        {"name":"BuyCost","kind":"namevalue","type":"numeric"},
+        {"name":"SellCost","kind":"namevalue","type":"numeric"},
+        {"name":"Turnover","kind":"namevalue","type":"numeric"},
+        {"name":"BuyTurnover","kind":"namevalue","type":"numeric"},
+        {"name":"SellTurnover","kind":"namevalue","type":"numeric"},
+        {"name":"LowerBound","kind":"namevalue","type":"numeric"},
+        {"name":"UpperBound","kind":"namevalue","type":"numeric"},
+        {"name":"AEquality","kind":"namevalue","type":"numeric"},
+        {"name":"bEquality","kind":"namevalue","type":"numeric"},
+        {"name":"AInequality","kind":"namevalue","type":"numeric"},
+        {"name":"bInequality","kind":"namevalue","type":"numeric"},
+        {"name":"GroupA","kind":"namevalue","type":"logical"},
+        {"name":"GroupB","kind":"namevalue","type":"logical"},
+        {"name":"LowerRatio","kind":"namevalue","type":"numeric"},
+        {"name":"UpperRatio","kind":"namevalue","type":"numeric"},
+        {"name":"GroupMatrix","kind":"namevalue","type":"logical"},
+        {"name":"LowerGroup","kind":"namevalue","type":"numeric"},
+        {"name":"UpperGroup","kind":"namevalue","type":"numeric"},
+        {"name":"ProbabilityLevel","kind":"namevalue","type":"numeric"},
+        {"name":"Scenarios","kind":"namevalue","type":"numeric"},
+        {"name":"BoundType","kind":"namevalue","type":[["string","choices={'simple','conditional'}"]]},
+        {"name":"MinNumAssets","kind":"namevalue","type":"numeric"},
+        {"name":"MaxNumAssets","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"PortfolioCVaR.setBounds":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"LowerBound","kind":"required","type":"numeric"},
+        {"name":"UpperBound","kind":"optional","type":"numeric"},
+        {"name":"BoundType","kind":"namevalue","type":[["string","choices={'simple','conditional'}"]]},
+        {"name":"NumAssets","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"PortfolioCVaR.setScenarios":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"AssetScenarios","kind":"required","type":"numeric"},
+        {"name":"DataFormat","kind":"namevalue","type":[["string","choices={'Returns','Prices'}"]]},
+        {"name":"GetAssetList","kind":"namevalue","type":[["logical", "scalar"]]}
+    ]
+},
+
+"PortfolioCVaR.simulateNormalScenariosByData":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"AssetReturns","kind":"required","type":"numeric"},
+        {"name":"NumScenarios","kind":"required","type":"numeric"},
+        {"name":"DataFormat","kind":"namevalue","type":[["string","choices={'Returns','Prices'}"]]},
+        {"name":"MissingData","kind":"namevalue","type":[["logical", "scalar"]]},
+        {"name":"GetAssetList","kind":"namevalue","type":[["logical", "scalar"]]}
+    ]
+},
+
+"PortfolioCVaR.setSolver":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'TrustRegionCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+		{"name":"TrustRegionStartIteration","kind":"namevalue","type":"numeric"},
+        {"name":"DeltaLimit","kind":"namevalue","type":"numeric"},
+        {"name":"ShrinkRatio","kind":"namevalue","type":"numeric"},
+        {"name":"MasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"PortfolioCVaR.setSolver":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'ExtendedCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+        {"name":"MasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"PortfolioCVaR.setSolver":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'fmincon'}"]]},
+        {"name":"Algorithm","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.Algorithm.Values"},
+        {"name":"CheckGradients","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"ConstraintTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"Display","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.Display.Values"},
+        {"name":"FiniteDifferenceStepSize","kind":"namevalue","type":["numeric"]},
+        {"name":"FiniteDifferenceType","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.FiniteDifferenceType.Values"},
+        {"name":"FunctionTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"HonorBounds","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"MaxFunctionEvaluations","kind":"namevalue","type":["integer"]},
+        {"name":"MaxIterations","kind":"namevalue","type":["integer"]},
+        {"name":"ObjectiveLimit","kind":"namevalue","type":["numeric"]},
+        {"name":"OptimalityTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"ScaleProblem","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.ScaleProblem.Values"},
+        {"name":"SpecifyConstraintGradient","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"SpecifyObjectiveGradient","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"StepTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"SubproblemAlgorithm","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.SubproblemAlgorithm.Values"},
+        {"name":"TypicalX","kind":"namevalue","type":["numeric"]},
+        {"name":"UseParallel","kind":"namevalue","type":["logical","scalar"]}
+    ]
+},
+
+"PortfolioCVaR.setSolverMINLP":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'OuterApproximation','ExtendedCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"NumIterationsEarlyIntegerConvergence","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+        {"name":"IntMasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"PortfolioCVaR.setSolverMINLP":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioCVaR"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'TrustRegionCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"NumIterationsEarlyIntegerConvergence","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+		{"name":"TrustRegionStartIteration","kind":"namevalue","type":"numeric"},
+        {"name":"DeltaLimit","kind":"namevalue","type":"numeric"},
+        {"name":"ShrinkRatio","kind":"namevalue","type":"numeric"},
+        {"name":"IntMasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+
+"PortfolioMAD":
+{
+    "inputs":
+    [
+        {"name":"AssetList","kind":"namevalue","type":"cell"},
+        {"name":"Name","kind":"namevalue","type":"string"},
+        {"name":"NumAssets","kind":"namevalue","type":"numeric"},
+        {"name":"InitPort","kind":"namevalue","type":"numeric"},
+        {"name":"RiskFreeRate","kind":"namevalue","type":"numeric"},
+        {"name":"Budget","kind":"namevalue","type":"numeric"},
+        {"name":"LowerBudget","kind":"namevalue","type":"numeric"},
+        {"name":"UpperBudget","kind":"namevalue","type":"numeric"},
+        {"name":"BuyCost","kind":"namevalue","type":"numeric"},
+        {"name":"SellCost","kind":"namevalue","type":"numeric"},
+        {"name":"Turnover","kind":"namevalue","type":"numeric"},
+        {"name":"BuyTurnover","kind":"namevalue","type":"numeric"},
+        {"name":"SellTurnover","kind":"namevalue","type":"numeric"},
+        {"name":"LowerBound","kind":"namevalue","type":"numeric"},
+        {"name":"UpperBound","kind":"namevalue","type":"numeric"},
+        {"name":"AEquality","kind":"namevalue","type":"numeric"},
+        {"name":"bEquality","kind":"namevalue","type":"numeric"},
+        {"name":"AInequality","kind":"namevalue","type":"numeric"},
+        {"name":"bInequality","kind":"namevalue","type":"numeric"},
+        {"name":"GroupA","kind":"namevalue","type":"logical"},
+        {"name":"GroupB","kind":"namevalue","type":"logical"},
+        {"name":"LowerRatio","kind":"namevalue","type":"numeric"},
+        {"name":"UpperRatio","kind":"namevalue","type":"numeric"},
+        {"name":"GroupMatrix","kind":"namevalue","type":"logical"},
+        {"name":"LowerGroup","kind":"namevalue","type":"numeric"},
+        {"name":"UpperGroup","kind":"namevalue","type":"numeric"},
+        {"name":"Scenarios","kind":"namevalue","type":"numeric"},
+        {"name":"BoundType","kind":"namevalue","type":[["string","choices={'simple','conditional'}"]]},
+        {"name":"MinNumAssets","kind":"namevalue","type":"numeric"},
+        {"name":"MaxNumAssets","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"PortfolioMAD.setBounds":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"LowerBound","kind":"required","type":"numeric"},
+        {"name":"UpperBound","kind":"optional","type":"numeric"},
+        {"name":"BoundType","kind":"namevalue","type":[["string","choices={'simple','conditional'}"]]},
+        {"name":"NumAssets","kind":"namevalue","type":"numeric"}
+    ]
+},
+
+"PortfolioMAD.estimateFrontierByRisk":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"TargetRisk","kind":"required","type":"numeric"},
+        {"name":"Method","kind":"namevalue","type":[["string","choices={'direct','iterative'}"]]}
+    ]
+},
+
+"PortfolioMAD.setScenarios":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"AssetScenarios","kind":"required","type":"numeric"},
+        {"name":"DataFormat","kind":"namevalue","type":[["string","choices={'Returns','Prices'}"]]},
+        {"name":"GetAssetList","kind":"namevalue","type":[["logical", "scalar"]]}
+    ]
+},
+
+"PortfolioMAD.simulateNormalScenariosByData":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"AssetReturns","kind":"required","type":"numeric"},
+        {"name":"NumScenarios","kind":"required","type":"numeric"},
+        {"name":"DataFormat","kind":"namevalue","type":[["string","choices={'Returns','Prices'}"]]},
+        {"name":"MissingData","kind":"namevalue","type":[["logical", "scalar"]]},
+        {"name":"GetAssetList","kind":"namevalue","type":[["logical", "scalar"]]}
+    ]
+},
+
+"PortfolioMAD.setSolver":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'TrustRegionCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+		{"name":"TrustRegionStartIteration","kind":"namevalue","type":"numeric"},
+        {"name":"DeltaLimit","kind":"namevalue","type":"numeric"},
+        {"name":"ShrinkRatio","kind":"namevalue","type":"numeric"},
+        {"name":"MasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"PortfolioMAD.setSolver":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'ExtendedCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+        {"name":"MasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"PortfolioMAD.setSolver":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'fmincon'}"]]},
+        {"name":"Algorithm","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.Algorithm.Values"},
+        {"name":"CheckGradients","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"ConstraintTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"Display","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.Display.Values"},
+        {"name":"FiniteDifferenceStepSize","kind":"namevalue","type":["numeric"]},
+        {"name":"FiniteDifferenceType","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.FiniteDifferenceType.Values"},
+        {"name":"FunctionTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"HonorBounds","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"MaxFunctionEvaluations","kind":"namevalue","type":["integer"]},
+        {"name":"MaxIterations","kind":"namevalue","type":["integer"]},
+        {"name":"ObjectiveLimit","kind":"namevalue","type":["numeric"]},
+        {"name":"OptimalityTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"ScaleProblem","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.ScaleProblem.Values"},
+        {"name":"SpecifyConstraintGradient","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"SpecifyObjectiveGradient","kind":"namevalue","type":["logical","scalar"]},
+        {"name":"StepTolerance","kind":"namevalue","type":["numeric",">=0"]},
+        {"name":"SubproblemAlgorithm","kind":"namevalue","type":"choices=optim.options.Fmincon.PropertyMetaInfo.SubproblemAlgorithm.Values"},
+        {"name":"TypicalX","kind":"namevalue","type":["numeric"]},
+        {"name":"UseParallel","kind":"namevalue","type":["logical","scalar"]}
+    ]
+},
+
+"PortfolioMAD.setSolverMINLP":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'OuterApproximation','ExtendedCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"NumIterationsEarlyIntegerConvergence","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+        {"name":"IntMasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+},
+
+"PortfolioMAD.setSolverMINLP":
+{
+    "inputs":
+    [
+        {"name":"obj","kind":"required","type":"PortfolioMAD"},
+        {"name":"solverType","kind":"required","type":[["string","choices={'TrustRegionCP'}"]]},
+        {"name":"MaxIterations","kind":"namevalue","type":"numeric"},
+        {"name":"AbsoluteGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"RelativeGapTolerance","kind":"namevalue","type":"numeric"},
+        {"name":"Display","kind":"namevalue","type":[["string","choices={'iter','final','off'}"]]},
+        {"name":"NonlinearScalingFactor","kind":"namevalue","type":"numeric"},
+		{"name":"ObjectiveScalingFactor","kind":"namevalue","type":"numeric"},
+        {"name":"NumIterationsEarlyIntegerConvergence","kind":"namevalue","type":"numeric"},
+        {"name":"ActiveCutTolerance","kind":"namevalue","type":"numeric"},
+		{"name":"CutGeneration","kind":"namevalue","type":[["string","choices={'basic','midway'}"]]},
+        {"name":"MaxIterationsInactiveCut","kind":"namevalue","type":"numeric"},
+		{"name":"TrustRegionStartIteration","kind":"namevalue","type":"numeric"},
+        {"name":"DeltaLimit","kind":"namevalue","type":"numeric"},
+        {"name":"ShrinkRatio","kind":"namevalue","type":"numeric"},
+        {"name":"IntMasterSolverOptions","kind":"namevalue","type":"optimoptions"}
+    ]
+}
+
+}

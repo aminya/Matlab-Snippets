@@ -1,0 +1,57 @@
+{
+"matlab.addons.install":
+    {
+        "inputs":
+            [
+                {"name":"fileName", "kind":"required", "type":[["filepath=*.mltbx"], ["char"]]},
+                {"name":"installOption", "kind":"ordered", "type":[["choices={'add', 'overwrite'}"]]},
+                {"name":"agreeToLicense", "kind":"positional", "type":["logical", "scalar"], "default":"false"}
+            ]
+    },
+
+"matlab.addons.install":
+    {
+        "inputs":
+            [
+                {"name":"fileName", "kind":"required", "type":[["filepath=*.mltbx"], ["char"]]},
+                {"name":"agreeToLicense", "kind":"positional", "type":["logical", "scalar"], "default":"false"},
+                {"name":"installOption", "kind":"ordered", "type":[["choices={'add', 'overwrite'}"]]}
+            ]
+    },
+	
+"matlab.addons.enableAddon":
+    {
+       "inputs":
+			[
+				{"name":"addOnName", "kind":"required", "type":"choices=matlab.internal.addons.getAddOnNames"},
+				{"name":"version", "kind":"ordered", "type":"choices=matlab.internal.addons.getAddOnVersion(addOnName)"}
+			]
+    },
+	
+"matlab.addons.disableAddon":
+    {
+       "inputs":
+			[
+				{"name":"addOnName", "kind":"required", "type":"choices=matlab.internal.addons.getAddOnNames"},
+				{"name":"version", "kind":"ordered", "type":"choices=matlab.internal.addons.getAddOnVersion(addOnName)"}
+			]
+    },
+	
+"matlab.addons.uninstall":
+    {
+       "inputs":
+			[
+				{"name":"addOnName", "kind":"required", "type":"choices=matlab.internal.addons.getAddOnNames"},
+				{"name":"version", "kind":"ordered", "type":"choices=matlab.internal.addons.getAddOnVersion(addOnName)"}
+			]
+    },
+	
+"matlab.addons.isAddonEnabled":
+    {
+       "inputs":
+			[
+				{"name":"addOnName", "kind":"required", "type":"choices=matlab.internal.addons.getAddOnNames"},
+				{"name":"version", "kind":"ordered", "type":"choices=matlab.internal.addons.getAddOnVersion(addOnName)"}
+			]
+    }
+}

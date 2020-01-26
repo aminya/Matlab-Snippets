@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "coder.matlabtarget.deploytohardware.deploy":
+    prefix: "coder.matlabtarget.deploytohardware.deploy"
+    body: '''coder.matlabtarget.deploytohardware.deploy(${1:obj}, ${2:functionName}, ${3:customConfigObject})'''
+    description: '''coder.matlabtarget.deploytohardware.deploy(${1:obj}, ${2:functionName}, ${3:customConfigObject})'''
+

@@ -1,0 +1,218 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "ned2aer":
+    prefix: "ned2aer"
+    body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ned2aer(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:angleUnit})'''
+    description: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ned2aer(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:angleUnit})'''
+
+
+    "n2ecc":
+    prefix: "n2ecc"
+    body: '''${1:ecc} = n2ecc(${1:n})'''
+    description: '''${1:ecc} = n2ecc(${1:n})'''
+
+
+    "map.geodesy.ConformalLatitudeConverter.inverse":
+    prefix: "map.geodesy.ConformalLatitudeConverter.inverse"
+    body: '''${1:phi} = map.geodesy.ConformalLatitudeConverter.inverse(${1:converter}, ${2:chi}, ${3:angleUnit})'''
+    description: '''${1:phi} = map.geodesy.ConformalLatitudeConverter.inverse(${1:converter}, ${2:chi}, ${3:angleUnit})'''
+
+
+    "map.geodesy.RectifyingLatitudeConverter.forward":
+    prefix: "map.geodesy.RectifyingLatitudeConverter.forward"
+    body: '''${1:mu} = map.geodesy.RectifyingLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+    description: '''${1:mu} = map.geodesy.RectifyingLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+
+
+    "map.geodesy.RectifyingLatitudeConverter":
+    prefix: "map.geodesy.RectifyingLatitudeConverter"
+    body: '''${1:converter} = map.geodesy.RectifyingLatitudeConverter(${1:spheroid})'''
+    description: '''${1:converter} = map.geodesy.RectifyingLatitudeConverter(${1:spheroid})'''
+
+
+    "lookAtSpheroid":
+    prefix: "lookAtSpheroid"
+    body: '''[${1:lat}, ${2:lon}, ${3:slantrange}] = lookAtSpheroid(${1:lat0}, ${2:lon0}, ${3:h0}, ${4:az}, ${5:tilt}, ${6:spheroid})'''
+    description: '''[${1:lat}, ${2:lon}, ${3:slantrange}] = lookAtSpheroid(${1:lat0}, ${2:lon0}, ${3:h0}, ${4:az}, ${5:tilt}, ${6:spheroid})'''
+
+
+    "rcurve":
+    prefix: "rcurve"
+    body: '''${1:r} = rcurve(${1:optional_radius}, ${2:ellipsoid}, ${3:lat}, ${4:optional_angleunits})'''
+    description: '''${1:r} = rcurve(${1:optional_radius}, ${2:ellipsoid}, ${3:lat}, ${4:optional_angleunits})'''
+
+
+    "map.geodesy.IsometricLatitudeConverter.forward":
+    prefix: "map.geodesy.IsometricLatitudeConverter.forward"
+    body: '''${1:psi} = map.geodesy.IsometricLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+    description: '''${1:psi} = map.geodesy.IsometricLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+
+
+    "egm96geoid":
+    prefix: "egm96geoid"
+    body: '''[${1:N}, ${2:refvec}] = egm96geoid(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+    description: '''[${1:N}, ${2:refvec}] = egm96geoid(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
+
+
+    "geodeticLatitudeFromGeocentric":
+    prefix: "geodeticLatitudeFromGeocentric"
+    body: '''${1:phi} = geodeticLatitudeFromGeocentric(${1:psi}, ${2:F}, ${3:angleUnit})'''
+    description: '''${1:phi} = geodeticLatitudeFromGeocentric(${1:psi}, ${2:F}, ${3:angleUnit})'''
+
+
+    "map.geodesy.ConformalLatitudeConverter.forward":
+    prefix: "map.geodesy.ConformalLatitudeConverter.forward"
+    body: '''${1:chi} = map.geodesy.ConformalLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+    description: '''${1:chi} = map.geodesy.ConformalLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+
+
+    "aer2enu":
+    prefix: "aer2enu"
+    body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = aer2enu(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
+    description: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = aer2enu(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
+
+
+    "majaxis":
+    prefix: "majaxis"
+    body: '''${1:a} = majaxis(${1:semiminor}, ${2:e})'''
+    description: '''${1:a} = majaxis(${1:semiminor}, ${2:e})'''
+
+
+    "parametricLatitude":
+    prefix: "parametricLatitude"
+    body: '''${1:beta} = parametricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
+    description: '''${1:beta} = parametricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
+
+
+    "antipode":
+    prefix: "antipode"
+    body: '''[${1:newlat}, ${2:newlon}] = antipode(${1:lat}, ${2:lon}, ${3:optional_angleunits})'''
+    description: '''[${1:newlat}, ${2:newlon}] = antipode(${1:lat}, ${2:lon}, ${3:optional_angleunits})'''
+
+
+    "map.geodesy.IsometricLatitudeConverter":
+    prefix: "map.geodesy.IsometricLatitudeConverter"
+    body: '''${1:converter} = map.geodesy.IsometricLatitudeConverter(${1:spheroid})'''
+    description: '''${1:converter} = map.geodesy.IsometricLatitudeConverter(${1:spheroid})'''
+
+
+    "map.geodesy.IsometricLatitudeConverter.inverse":
+    prefix: "map.geodesy.IsometricLatitudeConverter.inverse"
+    body: '''${1:phi} = map.geodesy.IsometricLatitudeConverter.inverse(${1:converter}, ${2:psi}, ${3:angleUnit})'''
+    description: '''${1:phi} = map.geodesy.IsometricLatitudeConverter.inverse(${1:converter}, ${2:psi}, ${3:angleUnit})'''
+
+
+    "map.geodesy.AuthalicLatitudeConverter.forward":
+    prefix: "map.geodesy.AuthalicLatitudeConverter.forward"
+    body: '''${1:beta} = map.geodesy.AuthalicLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+    description: '''${1:beta} = map.geodesy.AuthalicLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
+
+
+    "map.geodesy.RectifyingLatitudeConverter.inverse":
+    prefix: "map.geodesy.RectifyingLatitudeConverter.inverse"
+    body: '''${1:phi} = map.geodesy.RectifyingLatitudeConverter.inverse(${1:converter}, ${2:mu}, ${3:angleUnit})'''
+    description: '''${1:phi} = map.geodesy.RectifyingLatitudeConverter.inverse(${1:converter}, ${2:mu}, ${3:angleUnit})'''
+
+
+    "referenceEllipsoid":
+    prefix: "referenceEllipsoid"
+    body: '''${1:E} = referenceEllipsoid(${1:name}, ${2:optional_lengthUnit})'''
+    description: '''${1:E} = referenceEllipsoid(${1:name}, ${2:optional_lengthUnit})'''
+
+
+    "rsphere":
+    prefix: "rsphere"
+    body: '''${1:r} = rsphere(${1:typeOfRadius}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:ellipsoid}, ${7:optional_angleUnits})'''
+    description: '''${1:r} = rsphere(${1:typeOfRadius}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:ellipsoid}, ${7:optional_angleUnits})'''
+
+
+    "wgs84Ellipsoid":
+    prefix: "wgs84Ellipsoid"
+    body: '''${1:E} = wgs84Ellipsoid(${1:lengthUnit})'''
+    description: '''${1:E} = wgs84Ellipsoid(${1:lengthUnit})'''
+
+
+    "axes2ecc":
+    prefix: "axes2ecc"
+    body: '''${1:ecc} = axes2ecc(${1:semimajor}, ${2:semiminor})'''
+    description: '''${1:ecc} = axes2ecc(${1:semimajor}, ${2:semiminor})'''
+
+
+    "map.geodesy.AuthalicLatitudeConverter.inverse":
+    prefix: "map.geodesy.AuthalicLatitudeConverter.inverse"
+    body: '''${1:phi} = map.geodesy.AuthalicLatitudeConverter.inverse(${1:converter}, ${2:beta}, ${3:angleUnit})'''
+    description: '''${1:phi} = map.geodesy.AuthalicLatitudeConverter.inverse(${1:converter}, ${2:beta}, ${3:angleUnit})'''
+
+
+    "map.geodesy.AuthalicLatitudeConverter":
+    prefix: "map.geodesy.AuthalicLatitudeConverter"
+    body: '''${1:converter} = map.geodesy.AuthalicLatitudeConverter(${1:spheroid})'''
+    description: '''${1:converter} = map.geodesy.AuthalicLatitudeConverter(${1:spheroid})'''
+
+
+    "map.geodesy.ConformalLatitudeConverter":
+    prefix: "map.geodesy.ConformalLatitudeConverter"
+    body: '''${1:converter} = map.geodesy.ConformalLatitudeConverter(${1:spheroid})'''
+    description: '''${1:converter} = map.geodesy.ConformalLatitudeConverter(${1:spheroid})'''
+
+
+    "meridianfwd":
+    prefix: "meridianfwd"
+    body: '''${1:phi2} = meridianfwd(${1:phi1}, ${2:s}, ${3:optional_ellipsoid})'''
+    description: '''${1:phi2} = meridianfwd(${1:phi1}, ${2:s}, ${3:optional_ellipsoid})'''
+
+
+    "meridianarc":
+    prefix: "meridianarc"
+    body: '''${1:s} = meridianarc(${1:phi1}, ${2:phi2}, ${3:optional_ellipsoid})'''
+    description: '''${1:s} = meridianarc(${1:phi1}, ${2:phi2}, ${3:optional_ellipsoid})'''
+
+
+    "geodeticLatitudeFromParametric":
+    prefix: "geodeticLatitudeFromParametric"
+    body: '''${1:phi} = geodeticLatitudeFromParametric(${1:beta}, ${2:F}, ${3:angleUnit})'''
+    description: '''${1:phi} = geodeticLatitudeFromParametric(${1:beta}, ${2:F}, ${3:angleUnit})'''
+
+
+    "minaxis":
+    prefix: "minaxis"
+    body: '''${1:b} = minaxis(${1:semimajor}, ${2:e})'''
+    description: '''${1:b} = minaxis(${1:semimajor}, ${2:e})'''
+
+
+    "ecc2n":
+    prefix: "ecc2n"
+    body: '''${1:n} = ecc2n(${1:ecc})'''
+    description: '''${1:n} = ecc2n(${1:ecc})'''
+
+
+    "referenceSphere":
+    prefix: "referenceSphere"
+    body: '''${1:S} = referenceSphere(${1:name}, ${2:optional_lengthUnit})'''
+    description: '''${1:S} = referenceSphere(${1:name}, ${2:optional_lengthUnit})'''
+
+
+    "ecc2flat":
+    prefix: "ecc2flat"
+    body: '''${1:f} = ecc2flat(${1:ecc})'''
+    description: '''${1:f} = ecc2flat(${1:ecc})'''
+
+
+    "departure":
+    prefix: "departure"
+    body: '''${1:dist} = departure(${1:long1}, ${2:long2}, ${3:lat}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+    description: '''${1:dist} = departure(${1:long1}, ${2:long2}, ${3:lat}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+
+
+    "geocentricLatitude":
+    prefix: "geocentricLatitude"
+    body: '''${1:psi} = geocentricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
+    description: '''${1:psi} = geocentricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
+
+
+    "flat2ecc":
+    prefix: "flat2ecc"
+    body: '''${1:ecc} = flat2ecc(${1:f})'''
+    description: '''${1:ecc} = flat2ecc(${1:f})'''
+

@@ -1,0 +1,43 @@
+{
+"occlusionSensitivity":
+{
+	"inputs":
+	[
+        {"name":"net", "kind":"required", "type":[["SeriesNetwork"],["DAGNetwork"]]},
+        {"name":"X", "kind":"required", "type":[["numeric"]]},
+        {"name":"labels", "kind":"required", "type":[["categorical","vector"], ["string","vector"], ["cell","vector"], ["char","vector"]]},
+        {"name":"MaskSize", "kind":"namevalue", "type":[["numeric","vector"], ["choices={'auto'}"]]},
+        {"name":"Stride", "kind":"namevalue", "type":[["numeric","vector"],["choices={'auto'}"]]},
+        {"name":"MaskValue", "kind":"namevalue", "type":[["numeric"], ["choices={'auto'}"]]},
+        {"name":"OutputUpsampling", "kind":"namevalue", "type":[["choices={'bicubic','nearest','none'}"], ["char"]]},
+        {"name":"MaskClipping", "kind":"namevalue", "type":[["choices={'on','off'}"], ["char"]]},
+        {"name":"ExecutionEnvironment", "kind":"namevalue", "type":[["choices={'auto','gpu','cpu'}"], ["char"]]},
+        {"name":"MiniBatchSize", "kind":"namevalue", "type":[["numeric","scalar"]]}
+	],
+	"outputs":
+	[
+        {"name":"map", "type":"numeric"}
+	]
+},
+"occlusionSensitivity":
+{
+	"inputs":
+	[
+        {"name":"net", "kind":"required", "type":[["SeriesNetwork"],["DAGNetwork"]]},
+        {"name":"X", "kind":"required", "type":[["numeric"]]},
+        {"name":"layerName", "kind":"required", "type":[["char","vector"], ["string"]]},
+        {"name":"channel", "kind":"required", "type":[["numeric","vector"]]},
+        {"name":"MaskSize", "kind":"namevalue", "type":[["numeric","vector"], ["choices={'auto'}"]]},
+        {"name":"Stride", "kind":"namevalue", "type":[["numeric","vector"], ["choices={'auto'}"]]},
+        {"name":"MaskValue", "kind":"namevalue", "type":[["numeric"], ["choices={'auto'}"]]},
+        {"name":"OutputUpsampling", "kind":"namevalue", "type":[["choices={'bicubic','nearest','none'}"], ["char"]]},
+        {"name":"MaskClipping", "kind":"namevalue", "type":[["choices={'on','off'}"], ["char"]]},
+        {"name":"ExecutionEnvironment", "kind":"namevalue", "type":[["choices={'auto','gpu','cpu'}"], ["char"]]},
+        {"name":"MiniBatchSize", "kind":"namevalue", "type":[["numeric","scalar"]]}
+	],
+	"outputs":
+	[
+        {"name":"map", "type":"numeric"}
+	]
+}
+}

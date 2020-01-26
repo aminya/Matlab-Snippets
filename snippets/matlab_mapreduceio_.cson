@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "mapreducer":
+    prefix: "mapreducer"
+    body: '''${1:mr} = mapreducer(${1:optional_mr}, 'ObjectVisibility', ${2:value})'''
+    description: '''${1:mr} = mapreducer(${1:optional_mr}, 'ObjectVisibility', ${2:value})'''
+
+
+    "gcmr":
+    prefix: "gcmr"
+    body: '''${1:mr} = gcmr(${1:optional_'nocreate'})'''
+    description: '''${1:mr} = gcmr(${1:optional_'nocreate'})'''
+
+
+    "mapreduce":
+    prefix: "mapreduce"
+    body: '''${1:outds} = mapreduce(${1:ds}, ${2:mapfun}, ${3:reducefun}, ${4:optional_mr}, 'OutputType', ${5:value}, 'OutputFolder', ${6:value}, 'Display', ${7:value})'''
+    description: '''${1:outds} = mapreduce(${1:ds}, ${2:mapfun}, ${3:reducefun}, ${4:optional_mr}, 'OutputType', ${5:value}, 'OutputFolder', ${6:value}, 'Display', ${7:value})'''
+

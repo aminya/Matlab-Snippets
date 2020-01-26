@@ -1,0 +1,182 @@
+{
+"runtests":
+{
+        "inputs":
+        [                        
+            {"mutuallyExclusiveGroup":
+              [
+                [
+                    {"name":"tests", "kind":"ordered", "type":[["identifier=function,package"], ["file=*.m,*.p,*.mlx,*.mldatx"],["choices=matlab.unittest.internal.TabCompletion.nameChoicesFromPartialMatch(tests)"]]},
+                    {"name":"Name",  "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoices(tests)"]]},                      
+                    {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                    {"name":"IncludeSubfolders", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeSubpackages", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeReferencedProjects", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoices(tests)"]]},
+                    {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoices(tests)"]]},
+                    {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoices(tests)"]]},
+                    {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.procedureNameChoices(tests)"]]},
+                    {"name":"UseParallel", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"Debug", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"Strict", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"LoggingLevel", "kind":"namevalue","type":[["double"],["char"], ["choices=matlab.unittest.internal.TabCompletion.verbosityChoices"]]},
+                    {"name":"OutputDetail", "kind":"namevalue","type":[["double"],["char"], ["choices=matlab.unittest.internal.TabCompletion.verbosityChoices"]]},
+                    {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoices(tests)"]]},
+                    {"name":"ReportCoverageFor", "kind":"namevalue","type":[["char"],["file=*.m,*.mlx"]]} 
+                ],
+                [    
+                    {"name":"Name",  "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoices(pwd)"]]},                     
+                    {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                    {"name":"IncludeSubfolders", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeSubpackages", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeReferencedProjects", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoices(pwd)"]]},
+                    {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoices(pwd)"]]},
+                    {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoices(pwd)"]]},
+                    {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.procedureNameChoices(pwd)"]]},
+                    {"name":"UseParallel", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"Debug", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"Strict", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"LoggingLevel", "kind":"namevalue","type":[["double"],["char"], ["choices=matlab.unittest.internal.TabCompletion.verbosityChoices"]]},
+                    {"name":"OutputDetail", "kind":"namevalue","type":[["double"],["char"], ["choices=matlab.unittest.internal.TabCompletion.verbosityChoices"]]},
+                    {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoices(pwd)"]]},
+                    {"name":"ReportCoverageFor", "kind":"namevalue","type":[["char"],["file=*.m,*.mlx"]]}                    
+                ]
+               ]
+            }                        
+        ]
+},
+"testsuite":
+{
+        "inputs":
+        [
+            {"mutuallyExclusiveGroup":
+              [
+                [
+                    {"name":"tests", "kind":"ordered", "type":[["identifier=function,package"], ["file=*.m,*.p,*.mlx,*.mldatx"],
+                        ["choices=matlab.unittest.internal.TabCompletion.nameChoicesFromPartialMatch(tests)"]]},
+                    {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                    {"name":"IncludeSubfolders", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeSubpackages", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeReferencedProjects", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoices(tests)"]]},
+                    {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoices(tests)"]]},
+                    {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoices(tests)"]]},
+                    {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoices(tests)"]]},
+                    {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.procedureNameChoices(tests)"]]},
+                    {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoices(tests)"]]}
+                ],
+                [
+                    {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                    {"name":"IncludeSubfolders", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeSubpackages", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"IncludeReferencedProjects", "kind":"namevalue", "type":["logical","scalar"]},
+                    {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoices(pwd)"]]},
+                    {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoices(pwd)"]]},
+                    {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoices(pwd)"]]},
+                    {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoices(pwd)"]]},
+                    {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.procedureNameChoices(pwd)"]]},
+                    {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoices(pwd)"]]}
+                ]
+              ]
+            }
+        ]
+},
+"matlab.unittest.TestSuite.fromFile":
+{
+        "inputs":
+        [
+                {"name":"testFile", "kind":"required", "type":[["file=*.m,*.p,*.mlx,*.mldatx"]]},
+                {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoicesForFile(testFile)"]]},
+                {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoicesForFile(testFile)"]]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoicesForFile(testFile)"]]},
+                {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoicesForFile(testFile)"]]},
+                {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.procedureNameChoicesForFile(testFile)"]]},
+                {"name":"ExternalParameters", "kind":"namevalue"},
+                {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoicesForFile(testFile)"]]}
+        ]
+},
+"matlab.unittest.TestSuite.fromName":
+{
+        "inputs":
+        [
+                {"name":"name", "kind":"required", "type":[["char"],["choices=matlab.unittest.internal.TabCompletion.nameChoicesForName(name)"]]},
+                {"name":"ExternalParameters", "kind":"namevalue"}
+
+
+        ]
+},
+
+"matlab.unittest.TestSuite.fromClass":
+{
+        "inputs":
+        [
+                {"name":"testClass", "kind":"required","type":"matlab.unittest.meta.class"},
+                {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                {"name":"Name", "kind":"namevalue", "type":["char"]},
+                {"name":"ParameterName", "kind":"namevalue", "type":["char"]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":["char"]},
+                {"name":"Tag", "kind":"namevalue", "type":["char"]},
+                {"name":"ProcedureName", "kind":"namevalue", "type":["char"]},
+                {"name":"ExternalParameters", "kind":"namevalue"},
+                {"name":"Superclass", "kind":"namevalue", "type":["char"]}
+
+
+        ]
+},
+"matlab.unittest.TestSuite.fromMethod":
+{
+        "inputs":
+        [
+                {"name":"testClass", "kind":"required","type":"matlab.unittest.meta.class"},
+                {"name":"testMethod", "kind":"required","type":"char"},
+                {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                {"name":"Name", "kind":"namevalue", "type":["char"]},
+                {"name":"ParameterName", "kind":"namevalue", "type":["char"]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":["char"]},
+                {"name":"Tag", "kind":"namevalue", "type":["char"]},
+                {"name":"ProcedureName", "kind":"namevalue", "type":["char"]},
+                {"name":"ExternalParameters", "kind":"namevalue"},
+                {"name":"Superclass", "kind":"namevalue", "type":["char"]}
+
+        ]
+},
+"matlab.unittest.TestSuite.fromPackage":
+{
+        "inputs":
+        [
+                {"name":"package", "kind":"required","type":[["identifier=package"]]},
+                {"name":"IncludingSubpackages", "kind":"namevalue","type":["logical","scalar"]},
+                {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoicesForPackage(package)"]]},
+                {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoicesForPackage(package)"]]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoicesForPackage(package)"]]},
+                {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoicesForPackage(package)"]]},
+                {"name":"ProcedureName", "kind":"namevalue", "type":[["char"],["choices=matlab.unittest.internal.TabCompletion.procedureNameChoicesForPackages(package)"]]},
+                {"name":"ExternalParameters", "kind":"namevalue"},
+                {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoicesForPackage(package)"]]}
+
+        ]
+
+},
+"matlab.unittest.TestSuite.fromFolder":
+{
+        "inputs":
+        [
+
+                {"name":"folder", "kind":"required","type":[["folder"]]},
+                {"name":"IncludingSubfolders", "kind":"namevalue","type":["logical","scalar"]},
+                {"name":"BaseFolder", "kind":"namevalue","type":"char"},
+                {"name":"Name", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.nameChoicesForFolders(folder)"]]},
+                {"name":"ParameterName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterNameChoicesForFolders(folder)"]]},
+                {"name":"ParameterProperty", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.parameterPropertyChoicesForFolders(folder)"]]},
+                {"name":"Tag", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.tagChoicesForFolders(folder)"]]},
+                {"name":"ProcedureName", "kind":"namevalue", "type":[["char"], ["choices=matlab.unittest.internal.TabCompletion.procedureNameChoicesForFolders(folder)"]]},
+                {"name":"ExternalParameters", "kind":"namevalue"},
+                {"name":"Superclass", "kind":"namevalue", "type":[["char"], ["choices= matlab.unittest.internal.TabCompletion.superclassChoicesForFolders(folder)"]]}
+
+        ]
+}
+
+}

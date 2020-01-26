@@ -1,0 +1,146 @@
+{
+"close":
+{ 
+    "inputs": 
+    [ 
+        {"name":"h", "kind":"required", "type":"matlab.ui.Figure"}, 
+        {"name":"option", "kind":"ordered", "type":["char", "choices={'hidden','force'}"]}
+     ], 
+    "outputs": 
+    [ 
+        {"name":"status", "type":"double"} 
+    ] 
+},
+"close": 
+{ 
+    "inputs": 
+    [ 
+        {"name":"'all'", "kind":"required", "type":["char", "choices={'all'}"]}, 
+        {"name":"option", "kind":"ordered", "type":["char", "choices={'hidden','force'}"]} 
+    ], 
+    "outputs": 
+    [ 
+        {"name":"status", "type":"double"}
+    ] 
+},
+"close": 
+{ 
+    "inputs": 
+    [ 
+        {"name":"name", "kind":"ordered", "type":["char", "@(x) ~ismember(lower(x),{'hidden','force','all'})"]}, 
+        {"name":"option", "kind":"ordered", "type":["char", "choices={'hidden','force'}"]} 
+    ], 
+    "outputs": 
+    [ 
+        {"name":"status", "type":"double"} 
+    ] 
+},
+"close": 
+{ 
+    "inputs": 
+    [ 
+        {"name":"option", "kind":"ordered", "type":["char", "choices={'hidden','force'}"]} 
+    ], 
+    "outputs": 
+    [ 
+        {"name":"status", "type":"double"} 
+    ] 
+},
+"figure":
+    {
+        "inputs":
+        [
+            {"name":"f", "kind":"ordered", "type":"matlab.ui.Figure"},
+            {"name":"n", "kind":"ordered", "type":"numeric"},
+            {"name":"opts", "kind":"properties", "type":"matlab.ui.Figure"}
+        ]
+    },
+"gca":
+{
+	"outputs":
+	[
+		{"name":"ax", "type":"matlab.graphics.axis.AbstractAxes"}
+	]
+},
+"gcf":
+{
+	"outputs":
+	[
+		{"name":"ax", "type":"matlab.ui.Figure"}
+	]
+},
+
+"nexttile":
+{
+	"inputs":
+	[
+		{"name":"layout", "kind":"ordered", "type":"matlab.graphics.layout.Layout", "purpose":"Parent layout"},
+		{"name":"tilenumber", "kind":"ordered", "type":["numeric","numel=1",">=1"], "purpose":"Tile number to place axes into"},
+		{"name":"tilespan", "kind":"ordered", "type":["numeric","numel=2",">=1"], "purpose":"Span of axes to create (rows, columns)"}
+	],
+	"outputs":
+	[
+		{"name":"ax", "type":"matlab.ui.AbstractAxes"}
+	]
+	
+},
+
+"reset":
+{
+	"inputs":
+	[
+		{"name":"h", "type":"numeric"}
+	]
+},
+
+"tiledlayout":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"ordered", "type":[["matlab.ui.Figure"], ["matlab.ui.container.Panel"], ["matlab.ui.container.Tab"]], "purpose":"Parent container"},
+		{"mutuallyExclusiveGroup":
+			[
+				[
+					{"name":"m", "kind":"required", "type":["numeric",">=1"], "purpose":"Number of rows"},
+					{"name":"n", "kind":"required", "type":["numeric",">=1"], "purpose":"Number of columns"}
+				],
+				[
+					{"name":"Tile Arrangement", "kind":"required", "type":"choices={'flow'}", "purpose":"Flow tile arrangement"}
+				]
+			]
+		},
+		{"name":"Options", "kind":"properties", "type":"matlab.graphics.layout.TiledChartLayout"}
+	],
+	"outputs":
+	[
+		{"name":"Layout", "type":"matlab.graphics.layout.Layout"}
+	]
+},
+
+"uicontextmenu":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"ordered", "type":"matlab.ui.Figure"},
+		{"name":"opts", "kind":"properties", "type":"matlab.ui.container.ContextMenu"}
+	]
+},
+
+"uicontrol":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"ordered", "type":[["matlab.ui.Figure"], ["matlab.ui.container.Panel"], ["matlab.ui.container.ButtonGroup"], ["matlab.ui.container.Tab"]]},
+		{"name":"opts", "kind":"properties", "type":"matlab.ui.control.UIControl"}
+	]
+},
+
+"uimenu":
+{
+	"inputs":
+	[
+		{"name":"parent", "kind":"ordered", "type":[["matlab.ui.container.Menu"], ["matlab.ui.Figure"], ["matlab.ui.container.ContextMenu"]]},
+		{"name":"opts", "kind":"properties", "type":"matlab.ui.container.Menu"}
+	]
+}
+}

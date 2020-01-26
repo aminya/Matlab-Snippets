@@ -1,0 +1,22 @@
+{
+"addCustomBasemap":
+{
+	"inputs":
+	[
+		{"name":"basemapName", "kind":"required", "type":[["char"],["string"]]},
+		{"name":"URL", "kind":"required", "type":[["char"],["string"]]},
+		{"name":"Attribution", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"DisplayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"MaxZoomLevel", "kind":"namevalue", "type":["numeric",">=0", "<=25"]},
+		{"name":"IsDeployable", "kind":"namevalue", "type":["logical"]}
+	]
+},
+"removeCustomBasemap":
+{
+	"inputs":
+	[
+        {"name":"basemapName", "kind":"required", "type":"choices=map.internal.settings.customBasemapNames"}
+    ]
+
+}
+}

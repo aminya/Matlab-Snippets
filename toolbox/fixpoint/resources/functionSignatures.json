@@ -1,0 +1,110 @@
+{
+"fxpOptimizationOptions.addTolerance":
+{
+    "inputs":
+    [
+        {"name":"fxpOptimizationOptions",   "kind":"required",      "type":"fxpOptimizationOptions"},
+        {"name":"BlockPath",                "kind":"required",      "type":"char"},
+        {"name":"PortIndex",                "kind":"required",      "type":"numeric"},
+        {"name":"ToleranceType",            "kind":"required",      "type":"choices={'AbsTol' 'RelTol' 'TimeTol'}"},
+        {"name":"ToleranceValue",           "kind":"required",      "type":"numeric"}
+    ]
+}
+,
+"fxpOptimizationOptions":
+{
+    "inputs":
+    [
+        {"name":"MaxIterations",            "kind":"namevalue",     "type":"numeric"},
+        {"name":"MaxTime",                  "kind":"namevalue",     "type":"numeric"},
+        {"name":"Patience",                 "kind":"namevalue",     "type":"numeric"},
+        {"name":"UseParallel",              "kind":"namevalue",     "type":["logical", "scalar"]},
+        {"name":"AllowableWordLengths",     "kind":"namevalue",     "type":"numeric"},
+        {"name":"Verbosity",                "kind":"namevalue",     "type":"choices=arrayfun(@(x) char(x), enumeration('DataTypeOptimization.VerbosityLevel'),'UniformOutput',false)'"}
+    ]
+}
+,
+"FunctionApproximation.Options":
+{
+    "inputs":
+    [
+        {"name":"Interpolation",            "kind":"namevalue",     "type":"choices=arrayfun(@(x) char(x), enumeration('FunctionApproximation.InterpolationMethod'),'UniformOutput',false)'"},
+        {"name":"WordLengths",              "kind":"namevalue",     "type":"numeric"},        
+        {"name":"BreakpointSpecification",  "kind":"namevalue",     "type":"choices=arrayfun(@(x) char(x), enumeration('FunctionApproximation.BreakpointSpecification'),'UniformOutput',false)'"},
+        {"name":"AbsTol",                   "kind":"namevalue",     "type":"numeric"},
+        {"name":"RelTol",                   "kind":"namevalue",     "type":"numeric"},
+        {"name":"AllowUpdateDiagram",       "kind":"namevalue",     "type":["logical", "scalar"]},
+        {"name":"Display",                  "kind":"namevalue",     "type":["logical", "scalar"]},
+        {"name":"SaturateToOutputType",     "kind":"namevalue",     "type":["logical", "scalar"]},
+        {"name":"MaxTime",                  "kind":"namevalue",     "type":"numeric"},
+        {"name":"MaxMemoryUsage",           "kind":"namevalue",     "type":"numeric"},
+        {"name":"OnCurveTableValues",       "kind":"namevalue",     "type":["logical", "scalar"]},
+        {"name":"AUTOSARCompliant",         "kind":"namevalue",     "type":["logical", "scalar"]},
+        {"name":"MemoryUnits",              "kind":"namevalue",     "type":"choices=arrayfun(@(x) char(x), enumeration('FunctionApproximation.internal.MemoryUnit'),'UniformOutput',false)'"}
+    ]
+}
+,
+"FunctionApproximation.Problem":
+{
+    "inputs":
+    [
+        {"name":"FunctionToApproximate",            "kind":"required",      "type":[["choices=FunctionApproximation.internal.functionsignatures.getFunctionChoices()"],["char"],["function_handle"]]},
+        {"name":"InputTypes",                       "kind":"namevalue",     "type":[["numerictype"],["char"],["cell"]]},
+        {"name":"InputLowerBounds",                 "kind":"namevalue",     "type":[["numeric"],["cell"]]},
+        {"name":"InputUpperBounds",                 "kind":"namevalue",     "type":[["numeric"],["cell"]]},
+        {"name":"OutputType",                       "kind":"namevalue",     "type":[["numerictype"],["char"]]},
+        {"name":"Options",                          "kind":"namevalue",     "type":"FunctionApproximation.Options"}
+    ]
+}
+,
+"FunctionApproximation.internal.database.LUTDBUnit":
+{
+    "inputs":
+    [
+        {"name":"GridSize",                           "kind":"namevalue",     "type":"numeric"},        
+        {"name":"ConstraintAt",                       "kind":"namevalue",     "type":"numeric"},
+        {"name":"ConstraintValue",                    "kind":"namevalue",     "type":"numeric"},
+        {"name":"ConstraintValueMustBeLessThan",      "kind":"namevalue",     "type":"numeric"},
+        {"name":"ConstraintMet",                      "kind":"namevalue",     "type":"numeric"},
+        {"name":"ObjectiveValue",                     "kind":"namevalue",     "type":"numeric"},
+        {"name":"BreakpointSpecification",            "kind":"namevalue",     "type":"choices=arrayfun(@(x) char(x), enumeration('FunctionApproximation.BreakpointSpecification'),'UniformOutput',false)'"},
+        {"name":"Grid",                               "kind":"namevalue",     "type":"FunctionApproximation.internal.Grid"}      
+    ]
+}
+,
+"FunctionApproximation.internal.MemoryValue":
+{
+    "inputs":
+    [
+        {"name":"Value",                           "kind":"required",      "type":"numeric"},        
+        {"name":"Unit",                            "kind":"namevalue",     "type":"choices=FunctionApproximation.internal.functionsignatures.getMemoryUnitOptions()"}
+    ]
+}
+,
+"FunctionApproximation.internal.ApproximateLUTSolution.totalmemoryusage":
+{
+    "inputs":
+    [   
+        {"name":"Object",                          "kind":"required",      "type":"FunctionApproximation.internal.ApproximateLUTSolution"},
+        {"name":"Unit",                            "kind":"required",      "type":"choices=FunctionApproximation.internal.functionsignatures.getMemoryUnitOptions()"}
+    ]
+}
+,
+"FunctionApproximation.LUTSolution.totalmemoryusage":
+{
+    "inputs":
+    [   
+        {"name":"Object",                          "kind":"required",      "type":"FunctionApproximation.LUTSolution"},
+        {"name":"Unit",                            "kind":"required",      "type":"choices=FunctionApproximation.internal.functionsignatures.getMemoryUnitOptions()"}
+    ]
+}
+,
+"FunctionApproximation.LUTSolution.totalMemoryUsage":
+{
+    "inputs":
+    [   
+        {"name":"Object",                          "kind":"required",      "type":"FunctionApproximation.LUTSolution"},
+        {"name":"Unit",                            "kind":"required",      "type":"choices=FunctionApproximation.internal.functionsignatures.getMemoryUnitOptions()"}
+    ]
+}
+}

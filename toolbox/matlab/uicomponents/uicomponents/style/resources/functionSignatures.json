@@ -1,0 +1,9 @@
+{  
+    "uistyle":
+    {
+        "inputs":
+        [
+            {"name":"properties", "kind":"properties", "type":"matlab.ui.style.Style"}
+        ]
+    }
+}

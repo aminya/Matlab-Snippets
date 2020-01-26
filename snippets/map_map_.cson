@@ -1,0 +1,746 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "degrees2dm":
+    prefix: "degrees2dm"
+    body: '''${1:DM} = degrees2dm(${1:angleInDegrees})'''
+    description: '''${1:DM} = degrees2dm(${1:angleInDegrees})'''
+
+
+    "km2sm":
+    prefix: "km2sm"
+    body: '''${1:sm} = km2sm(${1:km})'''
+    description: '''${1:sm} = km2sm(${1:km})'''
+
+
+    "geopeaks":
+    prefix: "geopeaks"
+    body: '''${1:Z} = geopeaks(${1:lat}, ${2:lon}, ${3:optional_spheroid})'''
+    description: '''${1:Z} = geopeaks(${1:lat}, ${2:lon}, ${3:optional_spheroid})'''
+
+
+    "maprefcells":
+    prefix: "maprefcells"
+    body: '''${1:R} = maprefcells(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:cellExtentInWorldX}, ${4:cellExtentInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+    description: '''${1:R} = maprefcells(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:cellExtentInWorldX}, ${4:cellExtentInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+
+
+    "polyjoin":
+    prefix: "polyjoin"
+    body: '''[${1:lat}, ${2:lon}] = polyjoin(${1:latcells}, ${2:loncells})'''
+    description: '''[${1:lat}, ${2:lon}] = polyjoin(${1:latcells}, ${2:loncells})'''
+
+
+    "newpole":
+    prefix: "newpole"
+    body: '''${1:origin} = newpole(${1:polelat}, ${2:polelon}, ${3:optional_units})'''
+    description: '''${1:origin} = newpole(${1:polelat}, ${2:polelon}, ${3:optional_units})'''
+
+
+    "rad2sm":
+    prefix: "rad2sm"
+    body: '''${1:sm} = rad2sm(${1:rad}, ${2:optional_sphere})'''
+    description: '''${1:sm} = rad2sm(${1:rad}, ${2:optional_sphere})'''
+
+
+    "scxsc":
+    prefix: "scxsc"
+    body: '''[${1:newlat}, ${2:newlon}] = scxsc(${1:lat1}, ${2:lon1}, ${3:range1}, ${4:lat2}, ${5:lon2}, ${6:range2}, ${7:units})'''
+    description: '''[${1:newlat}, ${2:newlon}] = scxsc(${1:lat1}, ${2:lon1}, ${3:range1}, ${4:lat2}, ${5:lon2}, ${6:range2}, ${7:units})'''
+
+
+    "rad2km":
+    prefix: "rad2km"
+    body: '''${1:km} = rad2km(${1:rad}, ${2:optional_sphere})'''
+    description: '''${1:km} = rad2km(${1:rad}, ${2:optional_sphere})'''
+
+
+    "map.rasterref.GeographicRasterReference.intrinsicToGeographic":
+    prefix: "map.rasterref.GeographicRasterReference.intrinsicToGeographic"
+    body: '''[${1:lat}, ${2:lon}] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
+    description: '''[${1:lat}, ${2:lon}] = map.rasterref.GeographicRasterReference.intrinsicToGeographic(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
+
+
+    "ltln2val":
+    prefix: "ltln2val"
+    body: '''${1:val} = ltln2val(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:method})'''
+    description: '''${1:val} = ltln2val(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:method})'''
+
+
+    "km2deg":
+    prefix: "km2deg"
+    body: '''${1:deg} = km2deg(${1:km}, ${2:optional_sphere})'''
+    description: '''${1:deg} = km2deg(${1:km}, ${2:optional_sphere})'''
+
+
+    "dm2degrees":
+    prefix: "dm2degrees"
+    body: '''${1:angleInDegrees} = dm2degrees(${1:DM})'''
+    description: '''${1:angleInDegrees} = dm2degrees(${1:DM})'''
+
+
+    "refmatToGeoRasterReference":
+    prefix: "refmatToGeoRasterReference"
+    body: '''${1:R} = refmatToGeoRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
+    description: '''${1:R} = refmatToGeoRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
+
+
+    "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX":
+    prefix: "map.rasterref.GeographicRasterReference.longitudeToIntrinsicX"
+    body: '''${1:xIntrinsic} = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(${1:R}, ${2:lon})'''
+    description: '''${1:xIntrinsic} = map.rasterref.GeographicRasterReference.longitudeToIntrinsicX(${1:R}, ${2:lon})'''
+
+
+    "str2angle":
+    prefix: "str2angle"
+    body: '''${1:angles} = str2angle(${1:strings})'''
+    description: '''${1:angles} = str2angle(${1:strings})'''
+
+
+    "maprasterref":
+    prefix: "maprasterref"
+    body: '''${1:R} = maprasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'XLimWorld', ${8:value}, 'YLimWorld', ${9:value})'''
+    description: '''${1:R} = maprasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'XLimWorld', ${8:value}, 'YLimWorld', ${9:value})'''
+
+
+    "worldFileMatrixToRefmat":
+    prefix: "worldFileMatrixToRefmat"
+    body: '''${1:refmat} = worldFileMatrixToRefmat(${1:W})'''
+    description: '''${1:refmat} = worldFileMatrixToRefmat(${1:W})'''
+
+
+    "mapshape":
+    prefix: "mapshape"
+    body: '''${1:p} = mapshape(${1:optional_structArray})'''
+    description: '''${1:p} = mapshape(${1:optional_structArray})'''
+
+
+    "closePolygonParts":
+    prefix: "closePolygonParts"
+    body: '''[${1:xdata}, ${2:ydata}] = closePolygonParts(${1:xdata}, ${2:ydata})'''
+    description: '''[${1:xdata}, ${2:ydata}] = closePolygonParts(${1:xdata}, ${2:ydata})'''
+
+
+    "map.rasterref.GeographicRasterReference.geographicToDiscrete":
+    prefix: "map.rasterref.GeographicRasterReference.geographicToDiscrete"
+    body: '''[${1:I}, ${2:J}] = map.rasterref.GeographicRasterReference.geographicToDiscrete(${1:R}, ${2:lat}, ${3:lon})'''
+    description: '''[${1:I}, ${2:J}] = map.rasterref.GeographicRasterReference.geographicToDiscrete(${1:R}, ${2:lat}, ${3:lon})'''
+
+
+    "nm2deg":
+    prefix: "nm2deg"
+    body: '''${1:deg} = nm2deg(${1:nm}, ${2:optional_sphere})'''
+    description: '''${1:deg} = nm2deg(${1:nm}, ${2:optional_sphere})'''
+
+
+    "geoshape":
+    prefix: "geoshape"
+    body: '''${1:p} = geoshape(${1:optional_structArray})'''
+    description: '''${1:p} = geoshape(${1:optional_structArray})'''
+
+
+    "linecirc":
+    prefix: "linecirc"
+    body: '''[${1:xout}, ${2:yout}] = linecirc(${1:slope}, ${2:intercpt}, ${3:centerx}, ${4:centery}, ${5:radius})'''
+    description: '''[${1:xout}, ${2:yout}] = linecirc(${1:slope}, ${2:intercpt}, ${3:centerx}, ${4:centery}, ${5:radius})'''
+
+
+    "geoquadline":
+    prefix: "geoquadline"
+    body: '''[${1:latlim}, ${2:lonlim}] = geoquadline(${1:lat}, ${2:lon})'''
+    description: '''[${1:latlim}, ${2:lonlim}] = geoquadline(${1:lat}, ${2:lon})'''
+
+
+    "map.rasterref.MapRasterReference.sizesMatch":
+    prefix: "map.rasterref.MapRasterReference.sizesMatch"
+    body: '''${1:tf} = map.rasterref.MapRasterReference.sizesMatch(${1:R}, ${2:A})'''
+    description: '''${1:tf} = map.rasterref.MapRasterReference.sizesMatch(${1:R}, ${2:A})'''
+
+
+    "putpole":
+    prefix: "putpole"
+    body: '''${1:origin} = putpole(${1:pole}, ${2:optional_units})'''
+    description: '''${1:origin} = putpole(${1:pole}, ${2:optional_units})'''
+
+
+    "sm2rad":
+    prefix: "sm2rad"
+    body: '''${1:rad} = sm2rad(${1:sm}, ${2:optional_sphere})'''
+    description: '''${1:rad} = sm2rad(${1:sm}, ${2:optional_sphere})'''
+
+
+    "map.internal.DynamicVector.rmfield":
+    prefix: "map.internal.DynamicVector.rmfield"
+    body: '''${1:P} = map.internal.DynamicVector.rmfield(${1:P}, ${2:fields})'''
+    description: '''${1:P} = map.internal.DynamicVector.rmfield(${1:P}, ${2:fields})'''
+
+
+    "flatearthpoly":
+    prefix: "flatearthpoly"
+    body: '''[${1:latf}, ${2:lonf}] = flatearthpoly(${1:lat}, ${2:lon}, ${3:optional_longitudeOrigin})'''
+    description: '''[${1:latf}, ${2:lonf}] = flatearthpoly(${1:lat}, ${2:lon}, ${3:optional_longitudeOrigin})'''
+
+
+    "removeExtraNanSeparators":
+    prefix: "removeExtraNanSeparators"
+    body: '''[${1:xdata}, ${2:ydata}, ${3:zdata}] = removeExtraNanSeparators(${1:xdata}, ${2:ydata}, ${3:zdata})'''
+    description: '''[${1:xdata}, ${2:ydata}, ${3:zdata}] = removeExtraNanSeparators(${1:xdata}, ${2:ydata}, ${3:zdata})'''
+
+
+    "georefpostings":
+    prefix: "georefpostings"
+    body: '''${1:R} = georefpostings(${1:latlim}, ${2:lonlim}, ${3:sampleSpacingInLatitude}, ${4:sampleSpacingInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+    description: '''${1:R} = georefpostings(${1:latlim}, ${2:lonlim}, ${3:sampleSpacingInLatitude}, ${4:sampleSpacingInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+
+
+    "map.rasterref.MapRasterReference.intrinsicToWorld":
+    prefix: "map.rasterref.MapRasterReference.intrinsicToWorld"
+    body: '''[${1:xWorld}, ${2:yWorld}] = map.rasterref.MapRasterReference.intrinsicToWorld(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
+    description: '''[${1:xWorld}, ${2:yWorld}] = map.rasterref.MapRasterReference.intrinsicToWorld(${1:R}, ${2:xIntrinsic}, ${3:yIntrinsic})'''
+
+
+    "track2":
+    prefix: "track2"
+    body: '''[${1:lat}, ${2:lon}] = track2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+    description: '''[${1:lat}, ${2:lon}] = track2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+
+
+    "viewshed":
+    prefix: "viewshed"
+    body: '''[${1:vis}, ${2:R}] = viewshed(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:observerAltitude}, ${6:targetAltitude}, ${7:observerAltitudeOption}, ${8:targetAltitudeOption}, ${9:actualRadius}, ${10:effectiveRadius})'''
+    description: '''[${1:vis}, ${2:R}] = viewshed(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:observerAltitude}, ${6:targetAltitude}, ${7:observerAltitudeOption}, ${8:targetAltitudeOption}, ${9:actualRadius}, ${10:effectiveRadius})'''
+
+
+    "map.rasterref.GeographicRasterReference.intrinsicYToLatitude":
+    prefix: "map.rasterref.GeographicRasterReference.intrinsicYToLatitude"
+    body: '''${1:lat} = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(${1:R}, ${2:yIntrinsic})'''
+    description: '''${1:lat} = map.rasterref.GeographicRasterReference.intrinsicYToLatitude(${1:R}, ${2:yIntrinsic})'''
+
+
+    "georefcells":
+    prefix: "georefcells"
+    body: '''${1:R} = georefcells(${1:latlim}, ${2:lonlim}, ${3:cellExtentInLatitude}, ${4:cellExtentInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+    description: '''${1:R} = georefcells(${1:latlim}, ${2:lonlim}, ${3:cellExtentInLatitude}, ${4:cellExtentInLongitude}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+
+
+    "polyxpoly":
+    prefix: "polyxpoly"
+    body: '''[${1:xi}, ${2:yi}, ${3:ii}] = polyxpoly(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:optional_'unique'})'''
+    description: '''[${1:xi}, ${2:yi}, ${3:ii}] = polyxpoly(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:optional_'unique'})'''
+
+
+    "poly2ccw":
+    prefix: "poly2ccw"
+    body: '''[${1:x2}, ${2:y2}] = poly2ccw(${1:x1}, ${2:y1})'''
+    description: '''[${1:x2}, ${2:y2}] = poly2ccw(${1:x1}, ${2:y1})'''
+
+
+    "map.internal.DynamicVector.rmprop":
+    prefix: "map.internal.DynamicVector.rmprop"
+    body: '''${1:PF} = map.internal.DynamicVector.rmprop(${1:P}, ${2:propnames})'''
+    description: '''${1:PF} = map.internal.DynamicVector.rmprop(${1:P}, ${2:propnames})'''
+
+
+    "scircle2":
+    prefix: "scircle2"
+    body: '''[${1:lat}, ${2:lon}] = scircle2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+    description: '''[${1:lat}, ${2:lon}] = scircle2(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+
+
+    "map.rasterref.MapRasterReference.firstCornerY":
+    prefix: "map.rasterref.MapRasterReference.firstCornerY"
+    body: '''${1:y} = map.rasterref.MapRasterReference.firstCornerY(${1:R})'''
+    description: '''${1:y} = map.rasterref.MapRasterReference.firstCornerY(${1:R})'''
+
+
+    "distance":
+    prefix: "distance"
+    body: '''[${1:arclen}, ${2:az}] = distance(${1:optional_track}, ${2:pt1}, ${3:pt2}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+    description: '''[${1:arclen}, ${2:az}] = distance(${1:optional_track}, ${2:pt1}, ${3:pt2}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+
+
+    "refmatToWorldFileMatrix":
+    prefix: "refmatToWorldFileMatrix"
+    body: '''${1:W} = refmatToWorldFileMatrix(${1:refmat})'''
+    description: '''${1:W} = refmatToWorldFileMatrix(${1:refmat})'''
+
+
+    "intersectgeoquad":
+    prefix: "intersectgeoquad"
+    body: '''[${1:latlim}, ${2:lonlim}] = intersectgeoquad(${1:latlim1}, ${2:lonlim1}, ${3:latlim2}, ${4:lonlim2})'''
+    description: '''[${1:latlim}, ${2:lonlim}] = intersectgeoquad(${1:latlim1}, ${2:lonlim1}, ${3:latlim2}, ${4:lonlim2})'''
+
+
+    "mapoutline":
+    prefix: "mapoutline"
+    body: '''[${1:lat}, ${2:lon}] = mapoutline(${1:R}, ${2:sizea}, ${3:optional_'close'})'''
+    description: '''[${1:lat}, ${2:lon}] = mapoutline(${1:R}, ${2:sizea}, ${3:optional_'close'})'''
+
+
+    "reckon":
+    prefix: "reckon"
+    body: '''[${1:latout}, ${2:lonout}] = reckon(${1:optional_track}, ${2:lat}, ${3:lon}, ${4:arclen}, ${5:az}, ${6:optional_ellipsoid}, ${7:optional_units})'''
+    description: '''[${1:latout}, ${2:lonout}] = reckon(${1:optional_track}, ${2:lat}, ${3:lon}, ${4:arclen}, ${5:az}, ${6:optional_ellipsoid}, ${7:optional_units})'''
+
+
+    "map.rasterref.GeographicRasterReference.sizesMatch":
+    prefix: "map.rasterref.GeographicRasterReference.sizesMatch"
+    body: '''${1:tf} = map.rasterref.GeographicRasterReference.sizesMatch(${1:R}, ${2:A})'''
+    description: '''${1:tf} = map.rasterref.GeographicRasterReference.sizesMatch(${1:R}, ${2:A})'''
+
+
+    "vec2mtx":
+    prefix: "vec2mtx"
+    body: '''[${1:Z}, ${2:R}] = vec2mtx(${1:lat}, ${2:lon}, ${3:Z1}, ${4:R1}, ${5:optional_'filled'})'''
+    description: '''[${1:Z}, ${2:R}] = vec2mtx(${1:lat}, ${2:lon}, ${3:Z1}, ${4:R1}, ${5:optional_'filled'})'''
+
+
+    "km2rad":
+    prefix: "km2rad"
+    body: '''${1:rad} = km2rad(${1:km}, ${2:optional_sphere})'''
+    description: '''${1:rad} = km2rad(${1:km}, ${2:optional_sphere})'''
+
+
+    "isShapeMultipart":
+    prefix: "isShapeMultipart"
+    body: '''${1:tf} = isShapeMultipart(${1:xdata}, ${2:ydata})'''
+    description: '''${1:tf} = isShapeMultipart(${1:xdata}, ${2:ydata})'''
+
+
+    "dms2degrees":
+    prefix: "dms2degrees"
+    body: '''${1:angleInDegrees} = dms2degrees(${1:DMS})'''
+    description: '''${1:angleInDegrees} = dms2degrees(${1:DMS})'''
+
+
+    "sm2deg":
+    prefix: "sm2deg"
+    body: '''${1:deg} = sm2deg(${1:sm}, ${2:optional_sphere})'''
+    description: '''${1:deg} = sm2deg(${1:sm}, ${2:optional_sphere})'''
+
+
+    "limitm":
+    prefix: "limitm"
+    body: '''[${1:latlim}, ${2:lonlim}] = limitm(${1:Z}, ${2:R})'''
+    description: '''[${1:latlim}, ${2:lonlim}] = limitm(${1:Z}, ${2:R})'''
+
+
+    "extractfield":
+    prefix: "extractfield"
+    body: '''${1:a} = extractfield(${1:s}, ${2:name})'''
+    description: '''${1:a} = extractfield(${1:s}, ${2:name})'''
+
+
+    "interpm":
+    prefix: "interpm"
+    body: '''[${1:latout}, ${2:lonout}] = interpm(${1:lat}, ${2:lon}, ${3:maxdiff}, ${4:method}, ${5:optional_units})'''
+    description: '''[${1:latout}, ${2:lonout}] = interpm(${1:lat}, ${2:lon}, ${3:maxdiff}, ${4:method}, ${5:optional_units})'''
+
+
+    "areaquad":
+    prefix: "areaquad"
+    body: '''${1:area} = areaquad(${1:lat1}, ${2:lon1}, ${3:lat2}, ${4:lon2}, ${5:ellipsoid}, ${6:optional_units})'''
+    description: '''${1:area} = areaquad(${1:lat1}, ${2:lon1}, ${3:lat2}, ${4:lon2}, ${5:ellipsoid}, ${6:optional_units})'''
+
+
+    "org2pol":
+    prefix: "org2pol"
+    body: '''${1:pole} = org2pol(${1:origin}, ${2:optional_units})'''
+    description: '''${1:pole} = org2pol(${1:origin}, ${2:optional_units})'''
+
+
+    "polybool":
+    prefix: "polybool"
+    body: '''[${1:x}, ${2:y}] = polybool(${1:flag}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2})'''
+    description: '''[${1:x}, ${2:y}] = polybool(${1:flag}, ${2:x1}, ${3:y1}, ${4:x2}, ${5:y2})'''
+
+
+    "deg2nm":
+    prefix: "deg2nm"
+    body: '''${1:nm} = deg2nm(${1:deg}, ${2:optional_sphere})'''
+    description: '''${1:nm} = deg2nm(${1:deg}, ${2:optional_sphere})'''
+
+
+    "scircle1":
+    prefix: "scircle1"
+    body: '''[${1:lat}, ${2:lon}] = scircle1(${1:optional_track}, ${2:lat0}, ${3:lon0}, ${4:rad}, ${5:optional_az}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+    description: '''[${1:lat}, ${2:lon}] = scircle1(${1:optional_track}, ${2:lat0}, ${3:lon0}, ${4:rad}, ${5:optional_az}, ${6:optional_ellipsoid}, ${7:units}, ${8:npts})'''
+
+
+    "geocontourxy":
+    prefix: "geocontourxy"
+    body: '''[${1:contourLines}, ${2:contourPolygons}] = geocontourxy(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, 'LevelList', ${7:value}, 'XYRotation', ${8:value}, 'Spheroid', ${9:value})'''
+    description: '''[${1:contourLines}, ${2:contourPolygons}] = geocontourxy(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, 'LevelList', ${7:value}, 'XYRotation', ${8:value}, 'Spheroid', ${9:value})'''
+
+
+    "track1":
+    prefix: "track1"
+    body: '''[${1:lat}, ${2:lon}] = track1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:az}, ${5:optional_arclen}, ${6:optional_ellipsoid}, ${7:angleunits}, ${8:npts})'''
+    description: '''[${1:lat}, ${2:lon}] = track1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:az}, ${5:optional_arclen}, ${6:optional_ellipsoid}, ${7:angleunits}, ${8:npts})'''
+
+
+    "geointerp":
+    prefix: "geointerp"
+    body: '''${1:Vq} = geointerp(${1:V}, ${2:R}, ${3:latq}, ${4:lonq}, ${5:method})'''
+    description: '''${1:Vq} = geointerp(${1:V}, ${2:R}, ${3:latq}, ${4:lonq}, ${5:method})'''
+
+
+    "mappoint":
+    prefix: "mappoint"
+    body: '''${1:p} = mappoint(${1:optional_structArray})'''
+    description: '''${1:p} = mappoint(${1:optional_structArray})'''
+
+
+    "map.rasterref.MapRasterReference.worldToDiscrete":
+    prefix: "map.rasterref.MapRasterReference.worldToDiscrete"
+    body: '''[${1:I}, ${2:J}] = map.rasterref.MapRasterReference.worldToDiscrete(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+    description: '''[${1:I}, ${2:J}] = map.rasterref.MapRasterReference.worldToDiscrete(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+
+
+    "gcxgc":
+    prefix: "gcxgc"
+    body: '''[${1:newlat}, ${2:newlon}] = gcxgc(${1:gclat}, ${2:gclon}, ${3:gcaz}, ${4:sclat}, ${5:sclon}, ${6:scrange}, ${7:optional_units})'''
+    description: '''[${1:newlat}, ${2:newlon}] = gcxgc(${1:gclat}, ${2:gclon}, ${3:gcaz}, ${4:sclat}, ${5:sclon}, ${6:scrange}, ${7:optional_units})'''
+
+
+    "mapshow":
+    prefix: "mapshow"
+    body: '''${1:h} = mapshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
+    description: '''${1:h} = mapshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
+
+
+    "rhxrh":
+    prefix: "rhxrh"
+    body: '''[${1:newlat}, ${2:newlon}] = rhxrh(${1:lat1}, ${2:lon1}, ${3:az1}, ${4:lat2}, ${5:lon2}, ${6:az2}, ${7:optional_units})'''
+    description: '''[${1:newlat}, ${2:newlon}] = rhxrh(${1:lat1}, ${2:lon1}, ${3:az1}, ${4:lat2}, ${5:lon2}, ${6:az2}, ${7:optional_units})'''
+
+
+    "unwrapMultipart":
+    prefix: "unwrapMultipart"
+    body: '''${1:unwrapped} = unwrapMultipart(${1:p}, ${2:optional_angleUnit})'''
+    description: '''${1:unwrapped} = unwrapMultipart(${1:p}, ${2:optional_angleUnit})'''
+
+
+    "maptrims":
+    prefix: "maptrims"
+    body: '''[${1:Z_trimmed}, ${2:R_trimmed}] = maptrims(${1:Z}, ${2:R}, ${3:latlim}, ${4:lonlim}, ${5:optional_cellDensity})'''
+    description: '''[${1:Z_trimmed}, ${2:R_trimmed}] = maptrims(${1:Z}, ${2:R}, ${3:latlim}, ${4:lonlim}, ${5:optional_cellDensity})'''
+
+
+    "refmatToMapRasterReference":
+    prefix: "refmatToMapRasterReference"
+    body: '''${1:R} = refmatToMapRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
+    description: '''${1:R} = refmatToMapRasterReference(${1:refmat}, ${2:rasterSize}, ${3:optional_rasterInterpretation}, ${4:funcName}, ${5:varName}, ${6:argIndex})'''
+
+
+    "areamat":
+    prefix: "areamat"
+    body: '''[${1:A}, ${2:cellarea}] = areamat(${1:BW}, ${2:R}, ${3:optional_ellipsoid})'''
+    description: '''[${1:A}, ${2:cellarea}] = areamat(${1:BW}, ${2:R}, ${3:optional_ellipsoid})'''
+
+
+    "geoquadpt":
+    prefix: "geoquadpt"
+    body: '''[${1:latlim}, ${2:lonlim}] = geoquadpt(${1:lat}, ${2:lon})'''
+    description: '''[${1:latlim}, ${2:lonlim}] = geoquadpt(${1:lat}, ${2:lon})'''
+
+
+    "geopoint":
+    prefix: "geopoint"
+    body: '''${1:p} = geopoint(${1:optional_structArray})'''
+    description: '''${1:p} = geopoint(${1:optional_structArray})'''
+
+
+    "mapprofile":
+    prefix: "mapprofile"
+    body: '''[${1:zi}, ${2:ri}, ${3:lat}, ${4:lon}] = mapprofile(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:ellipsoid}, ${6:'trackmethod'}, ${7:'interpmethod'})'''
+    description: '''[${1:zi}, ${2:ri}, ${3:lat}, ${4:lon}] = mapprofile(${1:Z}, ${2:R}, ${3:lat}, ${4:lon}, ${5:ellipsoid}, ${6:'trackmethod'}, ${7:'interpmethod'})'''
+
+
+    "poly2fv":
+    prefix: "poly2fv"
+    body: '''[${1:F}, ${2:V}] = poly2fv(${1:x}, ${2:y})'''
+    description: '''[${1:F}, ${2:V}] = poly2fv(${1:x}, ${2:y})'''
+
+
+    "deg2km":
+    prefix: "deg2km"
+    body: '''${1:km} = deg2km(${1:deg}, ${2:optional_sphere})'''
+    description: '''${1:km} = deg2km(${1:deg}, ${2:optional_sphere})'''
+
+
+    "ingeoquad":
+    prefix: "ingeoquad"
+    body: '''${1:tf} = ingeoquad(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
+    description: '''${1:tf} = ingeoquad(${1:lat}, ${2:lon}, ${3:latlim}, ${4:lonlim})'''
+
+
+    "gc2sc":
+    prefix: "gc2sc"
+    body: '''[${1:lat}, ${2:lon}, ${3:radius}] = gc2sc(${1:lat0}, ${2:lon0}, ${3:az}, ${4:optional_angleunits})'''
+    description: '''[${1:lat}, ${2:lon}, ${3:radius}] = gc2sc(${1:lat0}, ${2:lon0}, ${3:az}, ${4:optional_angleunits})'''
+
+
+    "km2nm":
+    prefix: "km2nm"
+    body: '''${1:nm} = km2nm(${1:km})'''
+    description: '''${1:nm} = km2nm(${1:km})'''
+
+
+    "makesymbolspec":
+    prefix: "makesymbolspec"
+    body: '''${1:symbolspec} = makesymbolspec(${1:geometry}, ${2:rule})'''
+    description: '''${1:symbolspec} = makesymbolspec(${1:geometry}, ${2:rule})'''
+
+
+    "poly2cw":
+    prefix: "poly2cw"
+    body: '''[${1:x2}, ${2:y2}] = poly2cw(${1:x1}, ${2:y1})'''
+    description: '''[${1:x2}, ${2:y2}] = poly2cw(${1:x1}, ${2:y1})'''
+
+
+    "polysplit":
+    prefix: "polysplit"
+    body: '''[${1:latcells}, ${2:loncells}] = polysplit(${1:lat}, ${2:lon})'''
+    description: '''[${1:latcells}, ${2:loncells}] = polysplit(${1:lat}, ${2:lon})'''
+
+
+    "ispolycw":
+    prefix: "ispolycw"
+    body: '''${1:tf} = ispolycw(${1:x}, ${2:y})'''
+    description: '''${1:tf} = ispolycw(${1:x}, ${2:y})'''
+
+
+    "georasterref":
+    prefix: "georasterref"
+    body: '''${1:R} = georasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'LatitudeLimits', ${8:value}, 'LongitudeLimits', ${9:value})'''
+    description: '''${1:R} = georasterref(${1:W}, ${2:rasterSize}, ${3:rasterInterpretation}, 'RasterSize', ${4:value}, 'RasterInterpretation', ${5:value}, 'ColumnsStartFrom', ${6:value}, 'RowsStartFrom', ${7:value}, 'LatitudeLimits', ${8:value}, 'LongitudeLimits', ${9:value})'''
+
+
+    "intrplon":
+    prefix: "intrplon"
+    body: '''${1:newlon} = intrplon(${1:lat}, ${2:lon}, ${3:newlat}, ${4:method}, ${5:optional_units})'''
+    description: '''${1:newlon} = intrplon(${1:lat}, ${2:lon}, ${3:newlat}, ${4:method}, ${5:optional_units})'''
+
+
+    "geoshow":
+    prefix: "geoshow"
+    body: '''${1:h} = geoshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
+    description: '''${1:h} = geoshow(${1:optional_ax}, ${2:filename}, ${3:opts})'''
+
+
+    "mapresize":
+    prefix: "mapresize"
+    body: '''[${1:B}, ${2:RB}] = mapresize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
+    description: '''[${1:B}, ${2:RB}] = mapresize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
+
+
+    "outlinegeoquad":
+    prefix: "outlinegeoquad"
+    body: '''[${1:lat}, ${2:lon}] = outlinegeoquad(${1:latlim}, ${2:lonlim}, ${3:dlat}, ${4:dlon})'''
+    description: '''[${1:lat}, ${2:lon}] = outlinegeoquad(${1:latlim}, ${2:lonlim}, ${3:dlat}, ${4:dlon})'''
+
+
+    "refvecToGeoRasterReference":
+    prefix: "refvecToGeoRasterReference"
+    body: '''${1:R} = refvecToGeoRasterReference(${1:refvec}, ${2:rasterSize}, ${3:funcName}, ${4:varName}, ${5:argIndex})'''
+    description: '''${1:R} = refvecToGeoRasterReference(${1:refvec}, ${2:rasterSize}, ${3:funcName}, ${4:varName}, ${5:argIndex})'''
+
+
+    "reducem":
+    prefix: "reducem"
+    body: '''[${1:latout}, ${2:lonout}, ${3:cerr}, ${4:tol}] = reducem(${1:latin}, ${2:lonin}, ${3:tol})'''
+    description: '''[${1:latout}, ${2:lonout}, ${3:cerr}, ${4:tol}] = reducem(${1:latin}, ${2:lonin}, ${3:tol})'''
+
+
+    "resizem":
+    prefix: "resizem"
+    body: '''[${1:Z}, ${2:R}] = resizem(${1:Z1}, ${2:[numrows numcolumns]}, ${3:optional_R1}, ${4:method})'''
+    description: '''[${1:Z}, ${2:R}] = resizem(${1:Z1}, ${2:[numrows numcolumns]}, ${3:optional_R1}, ${4:method})'''
+
+
+    "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY":
+    prefix: "map.rasterref.GeographicRasterReference.latitudeToIntrinsicY"
+    body: '''${1:yIntrinsic} = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(${1:R}, ${2:lat})'''
+    description: '''${1:yIntrinsic} = map.rasterref.GeographicRasterReference.latitudeToIntrinsicY(${1:R}, ${2:lat})'''
+
+
+    "deg2sm":
+    prefix: "deg2sm"
+    body: '''${1:sm} = deg2sm(${1:deg}, ${2:optional_sphere})'''
+    description: '''${1:sm} = deg2sm(${1:deg}, ${2:optional_sphere})'''
+
+
+    "map.rasterref.MapRasterReference.firstCornerX":
+    prefix: "map.rasterref.MapRasterReference.firstCornerX"
+    body: '''${1:x} = map.rasterref.MapRasterReference.firstCornerX(${1:R})'''
+    description: '''${1:x} = map.rasterref.MapRasterReference.firstCornerX(${1:R})'''
+
+
+    "map.rasterref.MapRasterReference.worldToIntrinsic":
+    prefix: "map.rasterref.MapRasterReference.worldToIntrinsic"
+    body: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.MapRasterReference.worldToIntrinsic(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+    description: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.MapRasterReference.worldToIntrinsic(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+
+
+    "map.rasterref.MapRasterReference.contains":
+    prefix: "map.rasterref.MapRasterReference.contains"
+    body: '''${1:tf} = map.rasterref.MapRasterReference.contains(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+    description: '''${1:tf} = map.rasterref.MapRasterReference.contains(${1:R}, ${2:xWorld}, ${3:yWorld})'''
+
+
+    "bufferm":
+    prefix: "bufferm"
+    body: '''[${1:latb}, ${2:lonb}] = bufferm(${1:lat}, ${2:lon}, ${3:dist}, ${4:direction}, ${5:npts})'''
+    description: '''[${1:latb}, ${2:lonb}] = bufferm(${1:lat}, ${2:lon}, ${3:dist}, ${4:direction}, ${5:npts})'''
+
+
+    "makerefmat":
+    prefix: "makerefmat"
+    body: '''${1:R} = makerefmat(${1:x11}, ${2:y11}, ${3:dx}, ${4:dy})'''
+    description: '''${1:R} = makerefmat(${1:x11}, ${2:y11}, ${3:dx}, ${4:dy})'''
+
+
+    "bufgeoquad":
+    prefix: "bufgeoquad"
+    body: '''[${1:latlim}, ${2:lonlim}] = bufgeoquad(${1:latlim}, ${2:lonlim}, ${3:buflat}, ${4:buflon})'''
+    description: '''[${1:latlim}, ${2:lonlim}] = bufgeoquad(${1:latlim}, ${2:lonlim}, ${3:buflat}, ${4:buflon})'''
+
+
+    "angl2str":
+    prefix: "angl2str"
+    body: '''${1:str} = angl2str(${1:angle}, ${2:signcode}, ${3:units}, ${4:n})'''
+    description: '''${1:str} = angl2str(${1:angle}, ${2:signcode}, ${3:units}, ${4:n})'''
+
+
+    "degrees2dms":
+    prefix: "degrees2dms"
+    body: '''${1:DMS} = degrees2dms(${1:angleInDegrees})'''
+    description: '''${1:DMS} = degrees2dms(${1:angleInDegrees})'''
+
+
+    "mapinterp":
+    prefix: "mapinterp"
+    body: '''${1:Vq} = mapinterp(${1:V}, ${2:R}, ${3:xq}, ${4:yq}, ${5:method})'''
+    description: '''${1:Vq} = mapinterp(${1:V}, ${2:R}, ${3:xq}, ${4:yq}, ${5:method})'''
+
+
+    "maprefpostings":
+    prefix: "maprefpostings"
+    body: '''${1:R} = maprefpostings(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:sampleSpacingInWorldX}, ${4:sampleSpacingInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+    description: '''${1:R} = maprefpostings(${1:xWorldLimits}, ${2:yWorldLimits}, ${3:sampleSpacingInWorldX}, ${4:sampleSpacingInWorldY}, 'ColumnsStartFrom', ${5:value}, 'RowsStartFrom', ${6:value})'''
+
+
+    "georesize":
+    prefix: "georesize"
+    body: '''[${1:B}, ${2:RB}] = georesize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
+    description: '''[${1:B}, ${2:RB}] = georesize(${1:A}, ${2:RA}, ${3:scale}, ${4:method}, 'Antialiasing', ${5:value})'''
+
+
+    "sm2km":
+    prefix: "sm2km"
+    body: '''${1:km} = sm2km(${1:sm})'''
+    description: '''${1:km} = sm2km(${1:sm})'''
+
+
+    "intrplat":
+    prefix: "intrplat"
+    body: '''${1:newlat} = intrplat(${1:long}, ${2:lat}, ${3:newlong}, ${4:method}, ${5:optional_units})'''
+    description: '''${1:newlat} = intrplat(${1:long}, ${2:lat}, ${3:newlong}, ${4:method}, ${5:optional_units})'''
+
+
+    "map.rasterref.GeographicRasterReference.contains":
+    prefix: "map.rasterref.GeographicRasterReference.contains"
+    body: '''${1:tf} = map.rasterref.GeographicRasterReference.contains(${1:R}, ${2:lat}, ${3:lon})'''
+    description: '''${1:tf} = map.rasterref.GeographicRasterReference.contains(${1:R}, ${2:lat}, ${3:lon})'''
+
+
+    "areaint":
+    prefix: "areaint"
+    body: '''${1:area} = areaint(${1:lat}, ${2:lon}, ${3:optional_ellipsoid}, ${4:optional_units})'''
+    description: '''${1:area} = areaint(${1:lat}, ${2:lon}, ${3:optional_ellipsoid}, ${4:optional_units})'''
+
+
+    "map.rasterref.GeographicRasterReference.intrinsicXToLongitude":
+    prefix: "map.rasterref.GeographicRasterReference.intrinsicXToLongitude"
+    body: '''${1:lon} = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(${1:R}, ${2:xIntrinsic})'''
+    description: '''${1:lon} = map.rasterref.GeographicRasterReference.intrinsicXToLongitude(${1:R}, ${2:xIntrinsic})'''
+
+
+    "nm2km":
+    prefix: "nm2km"
+    body: '''${1:km} = nm2km(${1:nm})'''
+    description: '''${1:km} = nm2km(${1:nm})'''
+
+
+    "azimuth":
+    prefix: "azimuth"
+    body: '''${1:az} = azimuth(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:optional_units})'''
+    description: '''${1:az} = azimuth(${1:optional_track}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:optional_ellipsoid}, ${7:optional_units})'''
+
+
+    "nm2sm":
+    prefix: "nm2sm"
+    body: '''${1:sm} = nm2sm(${1:nm})'''
+    description: '''${1:sm} = nm2sm(${1:nm})'''
+
+
+    "nm2rad":
+    prefix: "nm2rad"
+    body: '''${1:rad} = nm2rad(${1:nm}, ${2:optional_sphere})'''
+    description: '''${1:rad} = nm2rad(${1:nm}, ${2:optional_sphere})'''
+
+
+    "polymerge":
+    prefix: "polymerge"
+    body: '''[${1:latMerged}, ${2:lonMerged}] = polymerge(${1:lat}, ${2:lon}, ${3:tol}, ${4:optional_outputFormat})'''
+    description: '''[${1:latMerged}, ${2:lonMerged}] = polymerge(${1:lat}, ${2:lon}, ${3:tol}, ${4:optional_outputFormat})'''
+
+
+    "map.rasterref.GeographicRasterReference.geographicToIntrinsic":
+    prefix: "map.rasterref.GeographicRasterReference.geographicToIntrinsic"
+    body: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(${1:R}, ${2:lat}, ${3:lon})'''
+    description: '''[${1:xIntrinsic}, ${2:yIntrinsic}] = map.rasterref.GeographicRasterReference.geographicToIntrinsic(${1:R}, ${2:lat}, ${3:lon})'''
+
+
+    "geoloc2grid":
+    prefix: "geoloc2grid"
+    body: '''[${1:Z}, ${2:refvec}] = geoloc2grid(${1:lat}, ${2:lon}, ${3:A}, ${4:cellsize})'''
+    description: '''[${1:Z}, ${2:refvec}] = geoloc2grid(${1:lat}, ${2:lon}, ${3:A}, ${4:cellsize})'''
+
+
+    "ellipse1":
+    prefix: "ellipse1"
+    body: '''[${1:lat}, ${2:lon}] = ellipse1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:ellipse}, ${5:optional_offset}, ${6:optional_az}, ${7:optional_ellipsoid}, ${8:angleUnit}, ${9:npts})'''
+    description: '''[${1:lat}, ${2:lon}] = ellipse1(${1:optional_trackstr}, ${2:lat0}, ${3:lon0}, ${4:ellipse}, ${5:optional_offset}, ${6:optional_az}, ${7:optional_ellipsoid}, ${8:angleUnit}, ${9:npts})'''
+
+
+    "gradientm":
+    prefix: "gradientm"
+    body: '''[${1:ASPECT}, ${2:SLOPE}, ${3:gradN}, ${4:gradE}] = gradientm(${1:lat}, ${2:lon}, ${3:Z}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+    description: '''[${1:ASPECT}, ${2:SLOPE}, ${3:gradN}, ${4:gradE}] = gradientm(${1:lat}, ${2:lon}, ${3:Z}, ${4:optional_ellipsoid}, ${5:optional_units})'''
+
+
+    "imbedm":
+    prefix: "imbedm"
+    body: '''[${1:Z}, ${2:indxPointOutsideGrid}] = imbedm(${1:lat}, ${2:lon}, ${3:value}, ${4:Z}, ${5:R}, ${6:optional_units})'''
+    description: '''[${1:Z}, ${2:indxPointOutsideGrid}] = imbedm(${1:lat}, ${2:lon}, ${3:value}, ${4:Z}, ${5:R}, ${6:optional_units})'''
+
+
+    "sm2nm":
+    prefix: "sm2nm"
+    body: '''${1:nm} = sm2nm(${1:sm})'''
+    description: '''${1:nm} = sm2nm(${1:sm})'''
+
+
+    "los2":
+    prefix: "los2"
+    body: '''[${1:vis}, ${2:visprofile}, ${3:dist}, ${4:H}, ${5:lattrk}, ${6:lontrk}] = los2(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:lat2}, ${6:lon2}, ${7:alt1}, ${8:alt2}, ${9:alt1opt}, ${10:alt2opt}, ${11:actualradius}, ${12:effectiveradius})'''
+    description: '''[${1:vis}, ${2:visprofile}, ${3:dist}, ${4:H}, ${5:lattrk}, ${6:lontrk}] = los2(${1:Z}, ${2:R}, ${3:lat1}, ${4:lon1}, ${5:lat2}, ${6:lon2}, ${7:alt1}, ${8:alt2}, ${9:alt1opt}, ${10:alt2opt}, ${11:actualradius}, ${12:effectiveradius})'''
+
+
+    "rad2nm":
+    prefix: "rad2nm"
+    body: '''${1:nm} = rad2nm(${1:rad}, ${2:optional_sphere})'''
+    description: '''${1:nm} = rad2nm(${1:rad}, ${2:optional_sphere})'''
+

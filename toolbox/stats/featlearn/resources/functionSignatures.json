@@ -1,0 +1,37 @@
+{
+    "rica":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":[["numeric"], ["table"]]},
+            {"name":"q", "kind":"required", "type":["integer", ">0"]},
+
+            {"name":"IterationLimit", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"VerbosityLevel", "kind":"namevalue", "type":["integer", ">=0"]},
+            {"name":"Lambda", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"Standardize", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"ContrastFcn", "kind":"namevalue", "type":"choices={'logcosh', 'exp', 'sqrt'}"},
+            {"name":"InitialTransformWeights", "kind":"namevalue", "type":"numeric"},
+            {"name":"NonGaussianityIndicator", "kind":"namevalue", "type":"numeric"},
+            {"name":"GradientTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"StepTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+        ]
+    },
+
+    "sparsefilt":
+    {
+        "inputs":
+        [
+            {"name":"X", "kind":"required", "type":[["numeric"], ["table"]]},
+            {"name":"q", "kind":"required", "type":["integer", ">0"]},
+
+            {"name":"IterationLimit", "kind":"namevalue", "type":["integer", ">0"]},
+            {"name":"VerbosityLevel", "kind":"namevalue", "type":["integer", ">=0"]},
+            {"name":"Lambda", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"Standardize", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"InitialTransformWeights", "kind":"namevalue", "type":"numeric"},
+            {"name":"GradientTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+            {"name":"StepTolerance", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+        ]
+    }
+}

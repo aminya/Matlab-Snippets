@@ -1,0 +1,140 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "MException.throwAsCaller":
+    prefix: "MException.throwAsCaller"
+    body: '''MException.throwAsCaller(${1:exception})'''
+    description: '''MException.throwAsCaller(${1:exception})'''
+
+
+    "MException.rethrow":
+    prefix: "MException.rethrow"
+    body: '''MException.rethrow(${1:exception})'''
+    description: '''MException.rethrow(${1:exception})'''
+
+
+    "MException.throw":
+    prefix: "MException.throw"
+    body: '''MException.throw(${1:exception})'''
+    description: '''MException.throw(${1:exception})'''
+
+
+    "validateattributes":
+    prefix: "validateattributes"
+    body: '''validateattributes(${1:A}, ${2:classes}, ${3:attributes})'''
+    description: '''validateattributes(${1:A}, ${2:classes}, ${3:attributes})'''
+
+
+    "MException.addCause":
+    prefix: "MException.addCause"
+    body: '''${1:baseException} = MException.addCause(${1:baseException}, ${2:causeException})'''
+    description: '''${1:baseException} = MException.addCause(${1:baseException}, ${2:causeException})'''
+
+
+    "disp":
+    prefix: "disp"
+    body: '''disp(${1:X})'''
+    description: '''disp(${1:X})'''
+
+
+    "assignin":
+    prefix: "assignin"
+    body: '''assignin(${1:workspace}, ${2:var})'''
+    description: '''assignin(${1:workspace}, ${2:var})'''
+
+
+    "display":
+    prefix: "display"
+    body: '''display(${1:X})'''
+    description: '''display(${1:X})'''
+
+
+    "warning":
+    prefix: "warning"
+    body: '''${1:warnStruct} = warning()'''
+    description: '''${1:warnStruct} = warning()'''
+
+
+    "MException.getReport":
+    prefix: "MException.getReport"
+    body: '''${1:msgText} = MException.getReport(${1:exception}, ${2:type}, ${3:'hyperlinks'}, ${4:hlink})'''
+    description: '''${1:msgText} = MException.getReport(${1:exception}, ${2:type}, ${3:'hyperlinks'}, ${4:hlink})'''
+
+
+    "mfilename":
+    prefix: "mfilename"
+    body: '''${1:M} = mfilename(${1:'arg'})'''
+    description: '''${1:M} = mfilename(${1:'arg'})'''
+
+
+    "matlab.lang.correction.ReplaceIdentifierCorrection":
+    prefix: "matlab.lang.correction.ReplaceIdentifierCorrection"
+    body: '''${1:RIC} = matlab.lang.correction.ReplaceIdentifierCorrection(${1:identifier}, ${2:replacement})'''
+    description: '''${1:RIC} = matlab.lang.correction.ReplaceIdentifierCorrection(${1:identifier}, ${2:replacement})'''
+
+
+    "MException":
+    prefix: "MException"
+    body: '''${1:ME} = MException(${1:message})'''
+    description: '''${1:ME} = MException(${1:message})'''
+
+
+    "error":
+    prefix: "error"
+    body: '''error(${1:msg}, ${2:optional_A})'''
+    description: '''error(${1:msg}, ${2:optional_A})'''
+
+
+    "matlab.lang.correction.Correction.error":
+    prefix: "matlab.lang.correction.Correction.error"
+    body: '''matlab.lang.correction.Correction.error(${1:correction}, ${2:msg}, ${3:optional_A})'''
+    description: '''matlab.lang.correction.Correction.error(${1:correction}, ${2:msg}, ${3:optional_A})'''
+
+
+    "evalin":
+    prefix: "evalin"
+    body: '''evalin(${1:workspace})'''
+    description: '''evalin(${1:workspace})'''
+
+
+    "matlab.lang.correction.AppendArgumentsCorrection":
+    prefix: "matlab.lang.correction.AppendArgumentsCorrection"
+    body: '''${1:AAC} = matlab.lang.correction.AppendArgumentsCorrection(${1:arguments})'''
+    description: '''${1:AAC} = matlab.lang.correction.AppendArgumentsCorrection(${1:arguments})'''
+
+
+    "MException.last":
+    prefix: "MException.last"
+    body: '''MException.last(${1:optional_reset})'''
+    description: '''MException.last(${1:optional_reset})'''
+
+
+    "message":
+    prefix: "message"
+    body: '''message(${1:msgid}, ${2:optional_params})'''
+    description: '''message(${1:msgid}, ${2:optional_params})'''
+
+
+    "run":
+    prefix: "run"
+    body: '''run(${1:scriptname})'''
+    description: '''run(${1:scriptname})'''
+
+
+    "exist":
+    prefix: "exist"
+    body: '''exist(${1:name}, ${2:optional_kind})'''
+    description: '''exist(${1:name}, ${2:optional_kind})'''
+
+
+    "matlab.lang.correction.ConvertToFunctionNotationCorrection":
+    prefix: "matlab.lang.correction.ConvertToFunctionNotationCorrection"
+    body: '''${1:CFNC} = matlab.lang.correction.ConvertToFunctionNotationCorrection(${1:method})'''
+    description: '''${1:CFNC} = matlab.lang.correction.ConvertToFunctionNotationCorrection(${1:method})'''
+
+
+    "MException.addCorrection":
+    prefix: "MException.addCorrection"
+    body: '''${1:baseException} = MException.addCorrection(${1:baseException}, ${2:correction})'''
+    description: '''${1:baseException} = MException.addCorrection(${1:baseException}, ${2:correction})'''
+

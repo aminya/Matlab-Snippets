@@ -1,0 +1,55 @@
+{
+    "_schemaVersion": "1.0.0",
+    
+    "chirp":
+        {
+            "inputs":
+            [
+                {"name":"t", "kind":"required", "type":"vector"},
+                {"name":"f0", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"t1", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"f1", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"method", "kind":"positional", "type":"choices={'linear', 'quadratic', 'logarithmic'}"},
+                {"name":"phi", "kind":"ordered", "type":[["positive", "scalar"],["double", "2d", "ncols=0", "nrows=0"]]}
+            ],  
+            "outputs":
+            [
+                {"name":"y", "type":"vector"}
+            ]   
+        },
+
+    "chirp":
+        {
+            "inputs":
+            [
+                {"name":"t", "kind":"required", "type":"vector"},
+                {"name":"f0", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"t1", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"f1", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"method", "kind":"positional", "type":"choices={'quadratic'}"},
+                {"name":"phi", "kind":"positional", "type":[["positive", "scalar"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"shape", "kind":"ordered", "type":"choices={'convex', 'concave'}"}
+            ],  
+            "outputs":
+            [
+                {"name":"y", "type":"vector"}
+            ]   
+        },
+
+    "ellipap":
+        {
+            "inputs":
+            [
+                {"name":"n", "kind":"required", "type":["integer", "scalar"]},
+                {"name":"Rp", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"Rs", "kind":"required", "type":["positive", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"z", "type":"column"},
+                {"name":"p", "type":"column"},
+                {"name":"k", "type":"scalar"}
+            ]
+        }
+
+}

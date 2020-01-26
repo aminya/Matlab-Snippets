@@ -1,0 +1,11 @@
+{
+"matlab.io.internal.TiffReader":
+{
+	"inputs":
+	[
+       {"name":"filename", "kind":"required", "type":[["file=*.tif,*.tiff"], ["matlabpathfile=*.tif,*.tiff"], ["char", "@(x) endsWith(x,{'.tif','tiff'})"]]},
+       {"name":"ImageIndex", "kind":"namevalue", "type":["numeric", ">=1"]},
+       {"name":"SubIFDOffset", "kind":"namevalue", "type":["numeric",">=1"]}                        
+    ]
+}
+}

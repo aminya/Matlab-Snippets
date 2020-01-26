@@ -1,0 +1,16 @@
+{
+  "iduis.embeddedapps.StateSpaceEstimatorApp": {
+    "appName": "Estimate State-Space Model",
+    "purpose": "Estimate state-space model using time or frequency domain data",
+    "keywords": "ssest,estimate,statespace,idss,pem,ident,sysid,n4sid",
+    "docLink": "strcat(docroot,'/ident/ident.map'),'EstimateStateSpaceModelTaskHelp'",
+    "embeddable": true
+  },
+  "iduis.embeddedapps.ProcessModelEstimatorApp": {
+    "appName": "Estimate Process Model",
+    "purpose": "Estimate process model using time or frequency domain data",
+    "keywords": "procest,idproc,estimate,process,ident,sysid",
+    "docLink": "strcat(docroot,'/ident/ident.map'),'EstimateProcessModelTaskHelp'",
+    "embeddable": true
+  }
+}

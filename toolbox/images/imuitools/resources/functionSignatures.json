@@ -1,0 +1,873 @@
+{
+"colorcloud":
+{
+    "inputs":
+    [
+        {"name":"RGB", "kind":"required", "type":[["uint8"], ["uint16"], ["double"]]},
+        {"name":"colorspace", "kind":"ordered", "type":"choices={'rgb','hsv','ycbcr','lab'}"},
+        {"name":"BackgroundColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+        {"name":"OrientationAxesColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+        {"name":"Parent", "kind":"namevalue", "type":[["matlab.ui.container.Panel"], ["matlab.ui.Figure"]]},
+        {"name":"WireFrameColor", "kind":"namevalue", "type":[["numeric"], ["char"]]}
+    ],
+    "outputs":
+    [
+        {"name":"hPanel", "type":"matlab.ui.container.Panel" }
+    ]
+},
+
+"dicomBrowser":
+{
+  "inputs":
+  [
+    {"name":"source", "kind":"ordered", "type":[["folder"], ["char"]]}
+  ]
+},
+
+"imageBrowser":
+{
+  "inputs":
+  [
+    {"name":"folder", "kind":"ordered", "type":[["folder"], ["matlab.io.datastore.ImageDatastore"]]}
+  ]
+},
+
+"montage":
+{
+  "inputs":
+  [
+    {"name":"I", "kind":"required", "type":[["logical"], ["uint8"], ["uint16"], ["int16"],["single"], ["double"], ["string"],["cell"],["matlab.io.datastore.ImageDatastore"]]},
+    {"name":"MAP", "kind":"ordered", "type":"numeric"},
+    {"name":"Size", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":"matlab.graphics.axis.Axes"},
+    {"name":"Indices", "kind":"namevalue", "type":"numeric"},
+    {"name":"ThumbnailSize", "kind":"namevalue", "type":"numeric"},
+    {"name":"BorderSize", "kind":"namevalue", "type":"numeric"},
+    {"name":"BackgroundColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"DisplayRange", "kind":"namevalue", "type":"numeric"}
+  ],
+  "outputs":
+  [
+    {"name":"h", "type":"matlab.graphics.primitive.Image"}
+  ]
+},
+
+"reducepoly":
+{
+    "inputs":
+    [
+        {"name":"pos", "kind":"required", "type":"numeric"},
+        {"name":"epsilon", "kind":"ordered", "type":"numeric"}
+
+    ],
+    "outputs":
+    [
+        {"name":"posreduced", "type":"numeric"}
+    ]
+},
+
+"drawpoint":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Point"}
+  ]
+},
+
+"drawline":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Line"}
+  ]
+},
+
+"drawpolygon":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Polygon"}
+  ]
+},
+
+"drawpolyline":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Polyline"}
+  ]
+},
+
+"drawrectangle":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"AspectRatio", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"FixedAspectRatio", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Rotatable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"RotationAngle", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Rectangle"}
+  ]
+},
+
+"drawellipse":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"AspectRatio", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Center", "kind":"namevalue", "type":"numeric"},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"FixedAspectRatio", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"RotationAngle", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"SemiAxes", "kind":"namevalue", "type":"numeric"},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Ellipse"}
+  ]
+},
+
+"drawcircle":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Center", "kind":"namevalue", "type":"numeric"},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Radius", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Circle"}
+  ]
+},
+
+"drawfreehand":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Closed", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Multiclick", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Smoothing", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"},
+    {"name":"Waypoints", "kind":"namevalue", "type":"numeric"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Freehand"}
+  ]
+},
+
+"drawassisted":
+{
+  "inputs":[
+    {"name":"hImage", "kind":"ordered", "type":"matlab.graphics.primitive.Image"},
+    {"name":"Closed", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"Image", "kind":"namevalue", "type":"matlab.graphics.primitive.Image"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":"matlab.graphics.axis.Axes"},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Smoothing", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"},
+    {"name":"Waypoints", "kind":"namevalue", "type":"numeric"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.AssistedFreehand"}
+  ]
+},
+
+"drawcuboid":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.graphics.chart.primitive.Scatter", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"EdgeAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceAlphaOnHover", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"FaceColorOnHover", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Rotatable", "kind":"namevalue", "type":"choices={'all','x','y','z','none'}"},
+    {"name":"RotationAngle", "kind":"namevalue", "type":"numeric"},
+    {"name":"ScrollWheelDuringDraw", "kind":"namevalue", "type":"choices={'allresize','xresize','yresize','zresize','none'}"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Rectangle"}
+  ]
+},
+
+"drawcrosshair":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Crosshair"}
+  ]
+},
+
+"images.roi.Point":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Point"}
+  ]
+},
+
+"images.roi.Line":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Line"}
+  ]
+},
+
+"images.roi.Polygon":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Polygon"}
+  ]
+},
+
+"images.roi.Polyline":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Polyline"}
+  ]
+},
+
+"images.roi.Rectangle":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"AspectRatio", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"FixedAspectRatio", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Rotatable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"RotationAngle", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Rectangle"}
+  ]
+},
+
+"images.roi.Ellipse":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"AspectRatio", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Center", "kind":"namevalue", "type":"numeric"},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"FixedAspectRatio", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"RotationAngle", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"SemiAxes", "kind":"namevalue", "type":"numeric"},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Ellipse"}
+  ]
+},
+
+"images.roi.Circle":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Center", "kind":"namevalue", "type":"numeric"},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Radius", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Circle"}
+  ]
+},
+
+"images.roi.Freehand":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Closed", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Multiclick", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Smoothing", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"},
+    {"name":"Waypoints", "kind":"namevalue", "type":"numeric"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Freehand"}
+  ]
+},
+
+"images.roi.AssistedFreehand":
+{
+  "inputs":[
+    {"name":"hImage", "kind":"ordered", "type":"matlab.graphics.primitive.Image"},
+    {"name":"Closed", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceSelectable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"Image", "kind":"namevalue", "type":"matlab.graphics.primitive.Image"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','reshape','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":"matlab.graphics.axis.Axes"},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Smoothing", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"},
+    {"name":"Waypoints", "kind":"namevalue", "type":"numeric"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.AssistedFreehand"}
+  ]
+},
+
+"images.roi.Cuboid":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"EdgeAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"FaceAlphaOnHover", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"FaceColorOnHover", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none','translate'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Rotatable", "kind":"namevalue", "type":"choices={'all','x','y','z','none'}"},
+    {"name":"RotationAngle", "kind":"namevalue", "type":"numeric"},
+    {"name":"ScrollWheelDuringDraw", "kind":"namevalue", "type":"choices={'allresize','xresize','yresize','zresize','none'}"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Rectangle"}
+  ]
+},
+
+"images.roi.Crosshair":
+{
+  "inputs":[
+    {"name":"AX", "kind":"ordered", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Color", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Deletable", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"DrawingArea", "kind":"namevalue", "type":"choices={'unlimited', 'auto'}"},
+    {"name":"HandleVisibility", "kind":"namevalue", "type":"choices={'off','on','callback'}"},
+    {"name":"InteractionsAllowed", "kind":"namevalue", "type":"choices={'all','none'}"},
+    {"name":"Label", "kind":"namevalue", "type":"char"},
+    {"name":"LabelVisible", "kind":"namevalue", "type":"choices={'on','hover','off'}"},
+    {"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.graphics.axis.Axes", "matlab.ui.control.UIAxes"]},
+    {"name":"Position", "kind":"namevalue", "type":"numeric"},
+    {"name":"Selected", "kind":"namevalue", "type":["logical", "scalar"]},
+    {"name":"SelectedColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"StripeColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Tag", "kind":"namevalue", "type":"char"},
+    {"name":"UIContextMenu", "kind":"namevalue", "type":"matlab.ui.container.ContextMenu"},
+    {"name":"UserData", "kind":"namevalue", "type":"numeric"},
+    {"name":"Visible", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"images.roi.Crosshair"}
+  ]
+},
+
+"labelvolshow":
+{
+  "inputs":[
+    {"name":"L", "kind":"required", "type":[["numeric"], ["categorical"]]},
+    {"name":"V", "kind":"ordered", "type":[["numeric"], ["logical"]]},
+    {"name":"CONFIG", "kind":"ordered", "type":"struct"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.ui.container.Panel", "matlab.ui.Figure"]},
+    {"name":"BackgroundColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"CameraPosition", "kind":"namevalue", "type":"numeric"},
+    {"name":"CameraUpVector", "kind":"namevalue", "type":"numeric"},
+    {"name":"CameraTarget", "kind":"namevalue", "type":"numeric"},
+    {"name":"ShowIntensityVolume", "kind":"namevalue", "type":"logical"},
+    {"name":"LabelColor", "kind":"namevalue", "type":"numeric"},
+    {"name":"LabelOpacity", "kind":"namevalue", "type":"numeric"},
+    {"name":"LabelVisibility", "kind":"namevalue", "type":"logical"},
+    {"name":"VolumeOpacity", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"VolumeThreshold", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"ScaleFactors", "kind":"namevalue", "type":"numeric"},
+    {"name":"InteractionsEnabled", "kind":"namevalue", "type":["logical", "scalar"]}
+  ],
+  "outputs":[
+    {"name":"h", "type":"labelvolshow"}
+  ]
+},
+
+"sliceViewer":
+{
+  "inputs":[
+    {"name":"S", "kind":"required", "type":["numeric", "logical", "real"]},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.ui.container.Panel", "matlab.ui.Figure"]},
+    {"name":"Colormap", "kind":"namevalue", "type":["numeric", "ncols=3", "real", ">=0", "<=1"]},
+    {"name":"SliceNumber", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+    {"name":"DisplayRange", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"ScaleFactors", "kind":"namevalue", "type":["numeric", "size=1,3", ">0"]},
+    {"name":"SliceDirection", "kind":"namevalue", "type":"choices={'X','Y','Z'}"},
+    {"name":"DisplayRangeInteraction", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"sliceViewer"}
+  ]
+},
+
+"orthosliceViewer":
+{
+  "inputs":[
+    {"name":"S", "kind":"required", "type":[["numeric"], ["logical"], ["real"]]},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.ui.container.Panel", "matlab.ui.Figure"]},
+    {"name":"Colormap", "kind":"namevalue", "type":["numeric", "ncols=3", "real", ">=0", "<=1"]},
+    {"name":"SliceNumbers", "kind":"namevalue", "type":["numeric", "size=1,3", "real", ">0"]},
+    {"name":"DisplayRange", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"ScaleFactors", "kind":"namevalue", "type":["numeric", "size=1,3", ">0"]},
+    {"name":"CrosshairLineWidth", "kind":"namevalue", "type":["numeric", "scalar", ">0"]},
+    {"name":"CrosshairColor", "kind":"namevalue", "type":[["numeric", "size=1,3", "real", ">=0", "<=1"], ["char"]]},
+    {"name":"CrosshairStripeColor", "kind":"namevalue", "type":[["numeric", "size=1,3", "real", ">=0", "<=1"], ["char"]]},
+    {"name":"CrosshairEnable", "kind":"namevalue", "type":"choices={'on','off','inactive'}"},
+    {"name":"DisplayRangeInteraction", "kind":"namevalue", "type":"choices={'on','off'}"}
+  ],
+  "outputs":[
+    {"name":"h", "type":"orthosliceViewer"}
+  ]
+},
+
+"volshow":
+{
+  "inputs":[
+    {"name":"V", "kind":"required", "type":[["numeric"], ["logical"]]},
+    {"name":"CONFIG", "kind":"ordered", "type":"struct"},
+    {"name":"Parent", "kind":"namevalue", "type":["matlab.ui.container.Panel", "matlab.ui.Figure"]},
+    {"name":"Colormap", "kind":"namevalue", "type":"numeric"},
+    {"name":"Alphamap", "kind":"namevalue", "type":"numeric"},
+    {"name":"BackgroundColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"CameraPosition", "kind":"namevalue", "type":"numeric"},
+    {"name":"CameraUpVector", "kind":"namevalue", "type":"numeric"},
+    {"name":"CameraTarget", "kind":"namevalue", "type":"numeric"},
+    {"name":"Renderer", "kind":"namevalue", "type":"choices={'VolumeRendering','MaximumIntensityProjection','Isosurface'}"},
+    {"name":"IsosurfaceColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"Isovalue", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"Lighting", "kind":"namevalue", "type":"logical"},
+    {"name":"ScaleFactors", "kind":"namevalue", "type":"numeric"},
+    {"name":"InteractionsEnabled", "kind":"namevalue", "type":["logical", "scalar"]}
+  ],
+  "outputs":[
+    {"name":"h", "type":"volshow"}
+  ]
+},
+
+"volumeViewer":
+{
+  "inputs":[
+    {"name":"V", "kind":"required", "type":[["numeric"], ["logical"]]},
+    {"name":"L", "kind":"ordered", "type":[["numeric"], ["categorical"]]},
+    {"name":"VolumeType", "kind":"namevalue", "type":"choices={'Volume','Labels'}"},
+    {"name":"ScaleFactors", "kind":"namevalue", "type":"numeric"}
+  ]
+},
+
+"bigimageshow":
+{
+  "inputs":[
+    {"name":"I", "kind":"optional", "type":"bigimage"},
+    {"name":"HAX", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+    {"name":"Parent", "kind":"namevalue", "type":"matlab.graphics.axis.Axes"},
+    {"name":"CData", "kind":"namevalue", "type":"bigimage"},
+    {"name":"CDataMapping", "kind":"namevalue", "type":"choices={'scaled','direct'}"},
+    {"name":"AlphaData", "kind":"namevalue", "type":"bigimage"},
+    {"name":"AlphaDataMapping", "kind":"namevalue", "type":"choices={'none','scaled','direct'}"},
+    {"name":"ResolutionLevel", "kind":"namevalue", "type":[["numeric"], ["choices={'fine', 'coarse'}"]]},
+    {"name":"ResolutionLevelMode", "kind":"namevalue", "type":"choices={'auto', 'manual'}"},
+    {"name":"GridVisible", "kind":"namevalue", "type":[["logical", "scalar"], ["choices={'on', 'off'}"]]},
+    {"name":"GridLevel", "kind":"namevalue", "type":[["numeric"], ["choices={'fine', 'coarse'}"]]},
+    {"name":"GridLevelMode", "kind":"namevalue", "type":"choices={'auto', 'manual'}"},
+    {"name":"GridColor", "kind":"namevalue", "type":[["numeric"], ["char"]]},
+    {"name":"GridAlpha", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"GridLineWidth", "kind":"namevalue", "type":["numeric", "scalar"]},
+    {"name":"GridLineStyle", "kind":"namevalue", "type":"choices={'none','-','--', ':', '-.','none'}"},
+    {"name":"Interpolation", "kind":"namevalue", "type":"choices={'linear','nearest'}"},
+    {"name":"Visible", "kind":"namevalue", "type":[["logical", "scalar"], ["choices={'on', 'off'}"]]}
+  ]
+},
+
+"bigimageshow.showmask":
+{
+  "inputs":[
+    {"name":"h", "kind":"required", "type":"bigimageshow"},
+    {"name":"mask", "kind":"required", "type":"bigimage"},
+    {"name":"BlockSize", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"InclusionThreshold", "kind":"namevalue", "type":[">=0","<=1","scalar","numeric"]},
+    {"name":"Alpha", "kind":"namevalue", "type":["numeric", "scalar"]}
+  ]
+},
+
+"bigimageshow.hidemask":
+{
+  "inputs":[
+    {"name":"h", "kind":"required", "type":"bigimageshow"}
+  ]
+}
+
+}

@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "sscnewfile":
+    prefix: "sscnewfile"
+    body: '''sscnewfile(${1:name}, ${2:template})'''
+    description: '''sscnewfile(${1:name}, ${2:template})'''
+

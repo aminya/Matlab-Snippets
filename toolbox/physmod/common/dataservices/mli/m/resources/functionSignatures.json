@@ -1,0 +1,75 @@
+{
+    "simscape.op.OperatingPoint.relativePath":
+    {
+        "outputs":
+        [
+	    {"name":"f", "type":"char"}
+	]
+    },
+    "simscape.op.OperatingPoint.hasPath":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path)"}        
+        ],
+        "outputs":
+        [
+	    {"name":"f", "type":"logical"}
+	]
+    },
+    "simscape.op.OperatingPoint.get":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path)"}
+        ],
+        "outputs": [
+            {"name":"child", "type":[["simscape.op.OperatingPoint"], ["simscape.op.Target"]]}
+        ]
+    },
+    "simscape.op.OperatingPoint.set":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path)"}
+        ],
+        "outputs": [
+            {"name":"op", "type":"simscape.op.OperatingPoint"}
+        ]
+    },
+    "simscape.op.OperatingPoint.remove":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path)"}
+        ],
+        "outputs": [
+            {"name":"op", "type":"simscape.op.OperatingPoint"}
+        ]
+    },
+    "simscape.op.OperatingPoint.move":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path1", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path1)"},
+            {"name":"path2", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path2)"}
+        ],
+        "outputs": [
+            {"name":"op", "type":"simscape.op.OperatingPoint"}
+        ]
+    },
+    "simscape.op.OperatingPoint._parenReference":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path)"}
+        ]
+    },
+    "simscape.op.OperatingPoint._parenAssign":
+    {
+        "inputs": [
+            {"name":"T", "kind":"required", "type":"simscape.op.OperatingPoint"},
+            {"name":"path", "kind":"required", "type":"hierarchy=simscape.op.internal.completions(T,path)"}
+        ]
+    }
+}

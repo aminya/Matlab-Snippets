@@ -1,0 +1,26 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "rectangle":
+    prefix: "rectangle"
+    body: '''${1:h} = rectangle(${1:optional_ax}, ${2:opts})'''
+    description: '''${1:h} = rectangle(${1:optional_ax}, ${2:opts})'''
+
+
+    "makehgtform":
+    prefix: "makehgtform"
+    body: '''makehgtform(${1:optional_transform})'''
+    description: '''makehgtform(${1:optional_transform})'''
+
+
+    "surface":
+    prefix: "surface"
+    body: '''${1:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+    description: '''${1:h} = surface(${1:optional_ax}, ${2:optional_x}, ${3:optional_y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+
+
+    "text":
+    prefix: "text"
+    body: '''${1:h} = text(${1:optional_ax}, ${2:opts})'''
+    description: '''${1:h} = text(${1:optional_ax}, ${2:opts})'''
+

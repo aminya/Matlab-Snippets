@@ -1,0 +1,23 @@
+{
+  "ctrlguis.embeddedapps.ModelRateConverterApp": {
+    "appName": "Convert Model Rate",
+    "purpose": "Convert a continuous or discrete model",
+    "keywords": "c2d,d2c,d2d,c2dOptions,d2cOptions,d2dOptions,continuous,discrete,discretize,sample,rate,convert,conversion,tustin,zoh,foh,prewarp",
+    "docLink": "strcat(docroot,'/control/control.map'),'ConvertModelRateTaskHelp'",
+    "embeddable": true
+  },
+  "ctrlguis.embeddedapps.ModelReducerApp": {
+    "appName": "Reduce Model Order",
+    "purpose": "Reduce complexity of a linear time-invariant (LTI) system",
+    "keywords": "Reducer,reduce,model,balred,freqsep,minreal",
+    "docLink": "strcat(docroot,'/control/control.map'),'ReduceModelOrderTaskHelp'",
+    "embeddable": true
+  },
+  "ctrlguis.embeddedapps.PIDTunerApp": {
+	"appName": "Tune PID Controller",
+	"purpose": "Create PID Controller",
+	"keywords": "tune,pid,pi",
+	"docLink": "strcat(docroot,'/control/control.map'),'TunePIDControllerTaskHelp'",
+	"embeddable": true
+  }  
+}

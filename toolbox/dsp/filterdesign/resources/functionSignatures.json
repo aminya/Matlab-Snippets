@@ -1,0 +1,41 @@
+{
+    "designMultistageDecimator":
+{
+  "inputs":
+  [
+    {"name":"M","kind":"required","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"Fs","kind":"positional","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"TW","kind":"positional","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"Astop","kind":"positional","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"NumStages","kind":"namevalue","type":[["char"],["scalar","single"], ["scalar","double"]]},
+    {"name":"MinTotalCoeffs","kind":"namevalue","type":["scalar","logical"]},
+    {"name":"CostMethod","kind":"namevalue","type":"choices={'estimate','design'}"},
+    {"name":"CostTolerance","kind":"namevalue","type":[["scalar","single"], ["scalar","double"]]}
+  ],
+  "outputs":
+  [
+    {"name":"C","type":["dsp.FilterCascade"]}
+  ]
+},
+
+    "designMultistageInterpolator":
+{
+  "inputs":
+  [
+    {"name":"L","kind":"required","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"Fs","kind":"positional","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"TW","kind":"positional","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"Astop","kind":"positional","type":[["scalar","single"], ["scalar","double"]]},
+    {"name":"NumStages","kind":"namevalue","type":[["char"],["scalar","single"], ["scalar","double"]]},
+    {"name":"MinTotalCoeffs","kind":"namevalue","type":["scalar","logical"]},
+    {"name":"CostMethod","kind":"namevalue","type":"choices={'estimate','design'}"},
+    {"name":"CostTolerance","kind":"namevalue","type":[["scalar","single"], ["scalar","double"]]}
+  ],
+  "outputs":
+  [
+    {"name":"C","type":["dsp.FilterCascade"]}
+  ]
+}
+
+}
+

@@ -1,0 +1,469 @@
+{
+"gpxread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"filename", "kind":"required", "type":[["file=*.gpx"], ["matlabpathfile=*.gpx"], ["char"]]},
+				{"name":"URL", "kind":"required", "type":["char","@(URL) startsWith(URL,'http','IgnoreCase',true)"]}
+			]
+		},
+		{"name":"FeatureType", "kind":"namevalue", "type":"choices={'auto','track','route','waypoint'}"},
+		{"name":"Index", "kind":"namevalue", "type":["numeric","vector"]}
+	],
+	"outputs":
+	[
+		{"name":"P", "type":"geopoint"}
+	]
+},
+"webmap":
+{
+	"inputs":
+	[
+		{"name":"baseLayer", "kind":"required", "type":[["choices=map.webmap.internal.basemapNames"],["WMSLayer"]]},
+		{"name":"WrapAround", "kind":"namevalue", "type":[["logical"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"wm", "type":"map.webmap.Canvas"}
+	]
+},
+"webmap":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"required", "type":"map.webmap.Canvas"}
+	]
+},
+"wmclose":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":[["choices={'all'}"],["map.webmap.Canvas"]]}
+	]
+},
+"wmprint":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"}
+	]
+},
+"wmmarker":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Autofit", "kind":"namevalue", "type":[["logical"],["double"]]},
+		{"name":"Description", "kind":"namevalue", "type":[["char"],["string"],["cellstr"],["struct"]]},
+		{"name":"OverlayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"FeatureName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"Icon", "kind":"namevalue", "type":[["file=*.png,*.jpeg,*.jpg,*.gif"],["char"],["string"],["cellstr"]]},
+		{"name":"IconScale", "kind":"namevalue", "type":"double"},
+		{"name":"Color", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"Alpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"map.webmap.MarkerOverlay"}
+	]
+},
+"wmmarker":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"P", "kind":"required", "type":"geopoint"},
+		{"name":"Autofit", "kind":"namevalue", "type":[["logical"],["double"]]},
+		{"name":"Description", "kind":"namevalue", "type":[["char"],["string"],["cellstr"],["struct"]]},
+		{"name":"OverlayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"FeatureName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"Icon", "kind":"namevalue", "type":[["file=*.png,*.jpeg,*.jpg,*.gif"],["char"],["string"],["cellstr"]]},
+		{"name":"IconScale", "kind":"namevalue", "type":"double"},
+		{"name":"Color", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"Alpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"map.webmap.MarkerOverlay"}
+	]
+},
+"wmline":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Autofit", "kind":"namevalue", "type":[["logical"],["double"]]},
+		{"name":"Description", "kind":"namevalue", "type":[["char"],["string"],["cellstr"],["struct"]]},
+		{"name":"OverlayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"FeatureName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+		{"name":"Color", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"Alpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"map.webmap.LineOverlay"}
+	]
+},
+"wmline":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"P", "kind":"required", "type":[["geopoint"],["geoshape"]]},
+		{"name":"Autofit", "kind":"namevalue", "type":[["logical"],["double"]]},
+		{"name":"Description", "kind":"namevalue", "type":[["char"],["string"],["cellstr"],["struct"]]},
+		{"name":"OverlayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"FeatureName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+		{"name":"Color", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"Alpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"map.webmap.LineOverlay"}
+	]
+},
+"wmpolygon":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Autofit", "kind":"namevalue", "type":[["logical"],["double"]]},
+		{"name":"Description", "kind":"namevalue", "type":[["char"],["string"],["cellstr"],["struct"]]},
+		{"name":"OverlayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"FeatureName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+		{"name":"FaceColor", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"FaceAlpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]},
+		{"name":"EdgeColor", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"EdgeAlpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"map.webmap.PolygonOverlay"}
+	]
+},
+"wmpolygon":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"P", "kind":"required", "type":"geoshape"},
+		{"name":"Autofit", "kind":"namevalue", "type":[["logical"],["double"]]},
+		{"name":"Description", "kind":"namevalue", "type":[["char"],["string"],["cellstr"],["struct"]]},
+		{"name":"OverlayName", "kind":"namevalue", "type":[["char"],["string"]]},
+		{"name":"FeatureName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"LineWidth", "kind":"namevalue", "type":"numeric"},
+		{"name":"FaceColor", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"FaceAlpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]},
+		{"name":"EdgeColor", "kind":"namevalue", "type":[["char", "choices={'yellow','magenta','cyan','green','blue','white','black'}"],["char", "@matlab.graphics.internal.isColorSpec"],["cellstr"],["numeric", "vector", "ncols=3", ">=0", "<=1"]]},
+		{"name":"EdgeAlpha", "kind":"namevalue", "type":["numeric",">=0", "<=1"]}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"map.webmap.PolygonOverlay"}
+	]
+},
+"wmremove":
+{
+	"inputs":
+	[
+		{"name":"h", "kind":"ordered", "type":[["map.webmap.MarkerOverlay"],["map.webmap.LineOverlay"],["map.webmap.PolygonOverlay"]]}
+	]
+},
+"wmcenter":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"centerLatitude", "kind":"positional", "type":[["single"],["double"]]},
+		{"name":"centerLongitude", "kind":"positional", "type":[["single"],["double"]]},
+		{"name":"zoomLevel", "kind":"ordered", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"numeric"},
+		{"name":"lon", "type":"numeric"}
+	]
+},
+"wmzoom":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"zoomLevel", "kind":"ordered", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"zoomLevelOut", "type":"numeric"}
+	]
+},
+"wmlimits":
+{
+	"inputs":
+	[
+		{"name":"wm", "kind":"ordered", "type":"map.webmap.Canvas"},
+		{"name":"latitudeLimits", "kind":"positional", "type":[["single"],["double"]]},
+		{"name":"longitudeLimits", "kind":"positional", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"latlim", "type":"numeric"},
+		{"name":"lonlim", "type":"numeric"}
+	]
+},
+"wmsfind":
+{
+	"inputs":
+	[
+		{"name":"querystr", "kind":"required", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"IgnoreCase", "kind":"namevalue", "type":"logical"},
+		{"name":"Latlim", "kind":"namevalue", "type":"numeric"},
+		{"name":"Lonlim", "kind":"namevalue", "type":"numeric"},
+		{"name":"MatchType", "kind":"namevalue", "type":"choices={'partial','exact'}"},
+		{"name":"SearchFields", "kind":"namevalue", "type":"choices={'layername','layertitle','layer','servertitle','serverurl','server','any'}"},
+		{"name":"Version", "kind":"namevalue", "type":"choices={'installed','online','custom'}"}
+	],
+	"outputs":
+	[
+		{"name":"layers", "type":"WMSLayer"}
+	]
+},
+"wmsinfo":
+{
+	"inputs":
+	[
+		{"name":"serverURL", "kind":"required", "type":["char","@(serverURL) startsWith(serverURL,'http','IgnoreCase',true)"]},
+		{"name":"TimeoutInSeconds", "kind":"namevalue", "type":["numeric","scalar"]}
+	],
+	"outputs":
+	[
+		{"name":"capabilities", "type":"WMSCapabilities"},
+		{"name":"infoRequestURL", "type":"char"}
+	]
+},
+"wmsread":
+{
+	"inputs":
+	[
+		{"mutuallyExclusiveGroup":
+			[
+				{"name":"layer", "kind":"required", "type":"WMSLayer"},
+				{"name":"mapRequestURL", "kind":"required", "type":["char","@(mapRequestURL) startsWith(mapRequestURL,'http','IgnoreCase',true)"]}
+			]
+		},
+		{"name":"latlim", "kind":"namevalue", "type":"double"},
+		{"name":"lonlim", "kind":"namevalue", "type":"double"},
+		{"name":"ImageHeight", "kind":"namevalue", "type":["double","scalar",">0"]},
+		{"name":"ImageWidth", "kind":"namevalue", "type":["double","scalar",">0"]},
+		{"name":"CellSize", "kind":"namevalue", "type":"double"},
+		{"name":"RelTolCellSize", "kind":"namevalue", "type":"numeric"},
+		{"name":"ImageFormat", "kind":"namevalue", "type":"choices={'image/jpeg','image/gif','image/png','image/tiff','image/geotiff','image/geotiff8','image/tiff8','image/png8','image/bil'}"},
+		{"name":"StyleName", "kind":"namevalue", "type":[["char"],["string"],["cellstr"]]},
+		{"name":"Transparent", "kind":"namevalue", "type":"logical"},
+		{"name":"BackgroundColor", "kind":"namevalue", "type":["numeric", "vector", "ncols=3"]},
+		{"name":"Elevation", "kind":"namevalue", "type":"char"},
+		{"name":"Time", "kind":"namevalue", "type":[["char"],["string"],["double"]]},
+		{"name":"SampleDimension", "kind":"namevalue", "type":[["string"],["cellstr"]]},
+		{"name":"TimeoutInSeconds", "kind":"namevalue", "type":["numeric","scalar"]}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":"numeric"},
+		{"name":"R", "type":"map.rasterref.GeographicCellsReference"},
+		{"name":"mapRequestURL", "type":"char"}
+	]
+},
+"wmsupdate":
+{
+	"inputs":
+	[
+		{"name":"layers", "kind":"required", "type":"WMSLayer"},
+		{"name":"TimeoutInSeconds", "kind":"namevalue", "type":["numeric","scalar"]},
+		{"name":"AllowMultipleServers", "kind":"namevalue", "type":"logical"}
+	],
+	"outputs":
+	[
+		{"name":"updatedLayers", "type":"WMSLayer"},
+		{"name":"index", "type":"logical"}
+	]
+},
+"WebMapServer":
+{
+	"inputs":
+	[
+		{"name":"serverURL", "kind":"required", "type":["char","@(serverURL) startsWith(serverURL,'http','IgnoreCase',true)"]}
+	],
+	"outputs":
+	[
+		{"name":"server", "type":"WebMapServer"}
+	]
+},
+"WebMapServer.getCapabilities":
+{
+	"inputs":
+	[
+		{"name":"server", "kind":"required", "type":"WebMapServer"}
+	],
+	"outputs":
+	[
+		{"name":"capabilities", "type":"WMSCapabilities"}
+	]
+},
+"WebMapServer.getMap":
+{
+	"inputs":
+	[
+		{"name":"server", "kind":"required", "type":"WebMapServer"},
+		{"name":"mapRequestURL", "kind":"required", "type":["char","@(mapRequestURL) startsWith(mapRequestURL,'http','IgnoreCase',true)"]}
+	],
+	"outputs":
+	[
+		{"name":"A", "type":"numeric"}
+	]
+},
+"WebMapServer.updateLayers":
+{
+	"inputs":
+	[
+		{"name":"server", "kind":"required", "type":"WebMapServer"},
+		{"name":"layer", "kind":"required", "type":"WMSLayer"}
+	],
+	"outputs":
+	[
+		{"name":"updatedLayer", "type":"WMSLayer"},
+		{"name":"index", "type":"logical"}
+	]
+},
+"WMSCapabilities":
+{
+	"inputs":
+	[
+		{"name":"serverURL", "kind":"required", "type":["char","@(serverURL) startsWith(serverURL,'http','IgnoreCase',true)"]},
+		{"name":"capabilitiesResponse", "kind":"required", "type":"char"}
+	],
+	"outputs":
+	[
+		{"name":"capabilities", "type":"WMSCapabilities"}
+	]
+},
+"WMSCapabilities.disp":
+{
+	"inputs":
+	[
+		{"name":"capabilities", "kind":"required", "type":"WMSCapabilities"}
+	]
+},
+"WMSLayer":
+{
+	"inputs":
+	[
+		{"name":"ServerTitle", "kind":"namevalue", "type":"char"},
+		{"name":"ServerURL", "kind":"namevalue", "type":"char"},
+		{"name":"LayerTitle", "kind":"namevalue", "type":"char"},
+		{"name":"LayerName", "kind":"namevalue", "type":"char"},
+		{"name":"Latlim", "kind":"namevalue", "type":"numeric"},
+		{"name":"Lonlim", "kind":"namevalue", "type":"numeric"},
+		{"name":"Abstract", "kind":"namevalue", "type":"char"},
+		{"name":"CoordRefSysCodes", "kind":"namevalue", "type":[["cell"],["string"]]},
+		{"name":"Details", "kind":"namevalue", "type":"struct"}
+	],
+	"outputs":
+	[
+		{"name":"layers", "type":"WMSLayer"}
+	]
+},
+"WMSLayer.disp":
+{
+	"inputs":
+	[
+		{"name":"layers", "kind":"required", "type":"WMSLayer"},
+		{"name":"Properties", "kind":"namevalue", "type":[["choices={'servertitle','servername','layertitle','layername','latlim','lonlim','abstract','coordrefsyscodes','details','all'}"],["string"],["cellstr"]]},
+		{"name":"Label", "kind":"namevalue", "type":"choices={'on','off'}"},
+		{"name":"Index", "kind":"namevalue", "type":"choices={'on','off'}"}
+	]
+},
+"WMSLayer.refine":
+{
+	"inputs":
+	[
+		{"name":"layers", "kind":"required", "type":"WMSLayer"},
+		{"name":"querystr", "kind":"required", "type":"char"},
+		{"name":"IgnoreCase", "kind":"namevalue", "type":"logical"},
+		{"name":"MatchType", "kind":"namevalue", "type":"choices={'partial','exact'}"},
+		{"name":"SearchFields", "kind":"namevalue", "type":"choices={'layername','layertitle','layer','servertitle','serverurl','server','any'}"}
+	],
+	"outputs":
+	[
+		{"name":"refined", "type":"WMSLayer"}
+	]
+},
+"WMSLayer.refineLimits":
+{
+	"inputs":
+	[
+		{"name":"layers", "kind":"required", "type":"WMSLayer"},
+		{"name":"Latlim", "kind":"namevalue", "type":"numeric"},
+		{"name":"Lonlim", "kind":"namevalue", "type":"numeric"}
+	],
+	"outputs":
+	[
+		{"name":"refined", "type":"WMSLayer"}
+	]
+},
+"WMSLayer.servers":
+{
+	"inputs":
+	[
+		{"name":"layers", "kind":"required", "type":"WMSLayer"}
+	],
+	"outputs":
+	[
+		{"name":"serverURLs", "type":"cellstr"}
+	]
+},
+"WMSLayer.serverTitles":
+{
+	"inputs":
+	[
+		{"name":"layers", "kind":"required", "type":"WMSLayer"}
+	],
+	"outputs":
+	[
+		{"name":"titles", "type":"cellstr"}
+	]
+},
+"WMSMapRequest":
+{
+	"inputs":
+	[
+		{"name":"layer", "kind":"required", "type":"WMSLayer"},
+		{"name":"server", "kind":"ordered", "type":["char","@(server) startsWith(server,'http','IgnoreCase',true)"]}
+	],
+	"outputs":
+	[
+		{"name":"mapRequest", "type":"WMSMapRequest"}
+	]
+},
+"WMSMapRequest.boundImageSize":
+{
+	"inputs":
+	[
+		{"name":"mapRequest", "kind":"required", "type":"WMSMapRequest"},
+		{"name":"imageLength", "kind":"required", "type":["numeric",">0"]}
+	],
+	"outputs":
+	[
+		{"name":"mapBound", "type":"WMSMapRequest"}
+	]
+}
+}

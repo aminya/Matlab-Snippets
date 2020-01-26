@@ -1,0 +1,82 @@
+{  
+    "alexnet":
+    {
+        "inputs":[]
+    },
+
+
+    "importCaffeLayers":
+    {
+        "inputs":
+        [
+            {"name":"protofile", "kind":"required", "type":"char"},
+            {"name":"InputSize", "kind":"namevalue", "type":["integer", "vector"]}
+        ]
+    },
+
+    "importCaffeNetwork":
+    {
+        "inputs":
+        [
+            {"name":"protofile", "kind":"required", "type":"char"},
+            {"name":"datafile", "kind":"required", "type":"char"},
+            {"name":"InputSize", "kind":"namevalue", "type":["integer", "vector"]},
+            {"name":"AverageImage", "kind":"namevalue", "type":"numeric"},
+            {"name":"Classes", "kind":"namevalue", "type":[["categorical","vector"],["string","vector"],["cellstr","vector"]]}
+        ]
+    },
+
+    "importKerasLayers":
+    {
+        "inputs":
+        [
+            {"name":"modelfile", "kind":"required", "type":"char"},
+            {"name":"OutputLayerType", "kind":"namevalue", "type":"choices={'classification','regression','pixelclassification'}"},
+            {"name":"ImageInputSize", "kind":"namevalue", "type":["integer", "vector"]},
+            {"name":"ImportWeights", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"WeightFile", "kind":"namevalue", "type":"char"}
+        ]
+    },
+
+    "importKerasNetwork":
+    {
+        "inputs":
+        [
+            {"name":"modelfile", "kind":"required", "type":"char"},
+            {"name":"WeightFile", "kind":"namevalue", "type":"char"},
+            {"name":"OutputLayerType", "kind":"namevalue", "type":"choices={'classification','regression','pixelclassification'}"},
+            {"name":"ImageInputSize", "kind":"namevalue", "type":["integer", "vector"]},
+            {"name":"Classes", "kind":"namevalue", "type":[["categorical","vector"],["string","vector"],["cellstr","vector"]]}
+        ]
+    },
+
+    "importONNXLayers":
+    {
+        "inputs":
+        [
+            {"name":"modelfile", "kind":"required", "type":"char"},
+            {"name":"ImportWeights", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"OutputLayerType", "kind":"namevalue", "type":"choices={'classification','regression','pixelclassification'}"}
+        ]
+    },
+
+    "importONNXNetwork":
+    {
+        "inputs":
+        [
+            {"name":"modelfile", "kind":"required", "type":"char"},
+            {"name":"OutputLayerType", "kind":"namevalue", "type":"choices={'classification','regression','pixelclassification'}"},
+            {"name":"Classes", "kind":"namevalue", "type":[["categorical","vector"],["string","vector"],["cellstr","vector"]]}
+        ]
+    },
+    "exportONNXNetwork":
+    {
+        "inputs":
+        [
+            {"name":"net", "kind":"required"},
+            {"name":"filename", "kind":"required", "type":"char"},
+            {"name":"NetworkName", "kind":"namevalue", "type":"char"},
+            {"name":"OpsetVersion", "kind":"namevalue", "type":"integer"}
+        ]
+    }
+}

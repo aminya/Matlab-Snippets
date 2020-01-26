@@ -1,0 +1,123 @@
+{
+"rand":
+{
+    "inputs":
+    [
+        {"name":"s", "kind":"ordered", "type":"RandStream"},
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ]
+},
+"randn":
+{
+    "inputs":
+    [
+        {"name":"s", "kind":"ordered", "type":"RandStream"},
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ]
+},
+"randi":
+{
+    "inputs":
+    [
+        {"name":"s", "kind":"ordered", "type":"RandStream"},
+        {"name":"imax", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"sz", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]},
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"]}
+            ]
+        },
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"classname", "kind":"ordered", "type":"choices={'double', 'single'}"},
+                [
+                    {"name":"'like'", "kind":"required", "type":"choices={'like'}"},
+                    {"name":"p", "kind":"required"}
+                ]
+            ]
+            
+        }
+    ]
+},
+"rng":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"seed", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"]},
+                    {"name":"generator", "kind":"ordered", "type":"choices={'twister', 'simdTwister', 'combRecursive', 'multFibonacci', 'v5uniform', 'v5normal', 'v4'}"}
+                ],
+                [
+                    {"name":"shuffle", "kind":"required", "type":"choices={'shuffle'}"},
+                    {"name":"generator", "kind":"ordered", "type":"choices={'twister', 'simdTwister', 'combRecursive', 'multFibonacci', 'v5uniform', 'v5normal', 'v4'}"}
+                ],
+                [
+                    {"name":"default", "kind":"ordered", "type":"choices={'default'}"}
+                ]
+            ]
+        }
+    ]
+},
+"RandStream":
+{
+    "inputs":
+    [
+        {"name":"gentype", "kind":"required", "type":["char","choices={'twister', 'simdTwister', 'combRecursive', 'multFibonacci', 'v5uniform', 'v5normal', 'v4', 'dsfmt19937', 'mcg16807', 'mlfg6331_64', 'mrg32k3a', 'mt19937ar', 'philox4x32_10', 'shr3cong', 'swb2712', 'threefry4x64_20'}"]},
+        {"name":"Seed", "kind":"namevalue", "type":[["numeric", "scalar", "integer"]]},
+        {"name":"NormalTransform", "kind":"namevalue", "type":["char","choices={'Ziggurat', 'Polar', 'Inversion'}"]}
+    ]
+},
+"RandStream.create":
+{
+    "inputs":
+    [
+        {"name":"gentype", "kind":"required", "type":["char","choices={'twister', 'simdTwister', 'combRecursive', 'multFibonacci', 'v5uniform', 'v5normal', 'v4', 'dsfmt19937', 'mcg16807', 'mlfg6331_64', 'mrg32k3a', 'mt19937ar', 'philox4x32_10', 'shr3cong', 'swb2712', 'threefry4x64_20'}"]},
+        {"name":"NumStreams", "kind":"namevalue", "type":[["numeric", "scalar", "integer"]]},
+        {"name":"Seed", "kind":"namevalue", "type":[["numeric", "scalar", "integer"]]},
+        {"name":"NormalTransform", "kind":"namevalue", "type":["char","choices={'Ziggurat', 'Polar', 'Inversion'}"]},
+        {"name":"CellOutput", "kind":"namevalue", "type":"logical"},
+        {"name":"StreamIndices", "kind":"namevalue", "type":"numeric"}
+    ]
+}
+}

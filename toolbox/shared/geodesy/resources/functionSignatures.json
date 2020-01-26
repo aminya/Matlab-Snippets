@@ -1,0 +1,411 @@
+{
+"geodetic2ecef":
+{
+	"inputs":
+	[
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h", "kind":"required", "type":"numeric"},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"x", "type":"double"},
+		{"name":"y", "type":"double"},
+		{"name":"z", "type":"double"}
+	]
+},
+"ecef2geodetic":
+{
+	"inputs":
+	[
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"x", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"y", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"z", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"},
+		{"name":"alt", "type":"double"}
+	]
+},
+"ecefOffset":
+{
+	"inputs":
+	[
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"lat1", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon1", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h1", "kind":"required", "type":"numeric"},
+		{"name":"lat2", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon2", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h2", "kind":"required", "type":"numeric"},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"deltaX", "type":"double"},
+		{"name":"deltaY", "type":"double"},
+		{"name":"deltaZ", "type":"double"}
+	]
+},
+"geodetic2aer":
+{
+	"inputs":
+	[
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"az", "type":"double"},
+		{"name":"elev", "type":"double"},
+		{"name":"slantRange", "type":"double"}
+	]
+},
+"aer2geodetic":
+{
+	"inputs":
+	[
+		{"name":"az", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"elev", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"slantRange", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"},
+		{"name":"h", "type":"double"}
+	]
+},
+"ecef2aer":
+{
+	"inputs":
+	[
+		{"name":"X", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Y", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Z", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"az", "type":"double"},
+		{"name":"elev", "type":"double"},
+		{"name":"slantRange", "type":"double"}
+	]
+},
+"aer2ecef":
+{
+	"inputs":
+	[
+		{"name":"az", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"elev", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"slantRange", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"X", "type":"double"},
+		{"name":"Y", "type":"double"},
+		{"name":"Z", "type":"double"}
+	]
+},
+"geodetic2enu":
+{
+	"inputs":
+	[
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"xEast", "type":"double"},
+		{"name":"yNorth", "type":"double"},
+		{"name":"zUp", "type":"double"}
+	]
+},
+"enu2geodetic":
+{
+	"inputs":
+	[
+		{"name":"xEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"yNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"zUp", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"},
+		{"name":"h", "type":"double"}
+	]
+},
+"enu2aer":
+{
+	"inputs":
+	[
+		{"name":"xEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"yNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"zUp", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"az", "type":"double"},
+		{"name":"elev", "type":"double"},
+		{"name":"slantRange", "type":"double"}
+	]
+},
+"ecef2enu":
+{
+	"inputs":
+	[
+		{"name":"X", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Y", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Z", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"xEast", "type":"double"},
+		{"name":"yNorth", "type":"double"},
+		{"name":"zUp", "type":"double"}
+	]
+},
+"enu2ecef":
+{
+	"inputs":
+	[
+		{"name":"xEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"yNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"zUp", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"X", "type":"double"},
+		{"name":"Y", "type":"double"},
+		{"name":"Z", "type":"double"}
+	]
+},
+"ecef2enuv":
+{
+	"inputs":
+	[
+		{"name":"U", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"V", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"W", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"uEast", "type":"double"},
+		{"name":"vNorth", "type":"double"},
+		{"name":"wUp", "type":"double"}
+	]
+},
+"enu2ecefv":
+{
+	"inputs":
+	[
+		{"name":"uEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"vNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"wUp", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"U", "type":"double"},
+		{"name":"V", "type":"double"},
+		{"name":"W", "type":"double"}
+	]
+},
+"geodetic2ned":
+{
+	"inputs":
+	[
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"xNorth", "type":"double"},
+		{"name":"yEast", "type":"double"},
+		{"name":"zDown", "type":"double"}
+	]
+},
+"ned2geodetic":
+{
+	"inputs":
+	[
+		{"name":"xNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"yEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"zDown", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"},
+		{"name":"h", "type":"double"}
+	]
+},
+"aer2ned":
+{
+	"inputs":
+	[
+		{"name":"az", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"elev", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"slantRange", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"xNorth", "type":"double"},
+		{"name":"yEast", "type":"double"},
+		{"name":"zDown", "type":"double"}
+	]
+},
+"ecef2ned":
+{
+	"inputs":
+	[
+		{"name":"X", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Y", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"Z", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"xNorth", "type":"double"},
+		{"name":"yEast", "type":"double"},
+		{"name":"zDown", "type":"double"}
+	]
+},
+"ned2ecef":
+{
+	"inputs":
+	[
+		{"name":"xNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"yEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"zDown", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"h0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"spheroid", "kind":"required", "type":[["oblateSpheroid"],["referenceEllipsoid"],["referenceSphere"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"X", "type":"double"},
+		{"name":"Y", "type":"double"},
+		{"name":"Z", "type":"double"}
+	]
+},
+"ecef2nedv":
+{
+	"inputs":
+	[
+		{"name":"U", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"V", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"W", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"uNorth", "type":"double"},
+		{"name":"vEast", "type":"double"},
+		{"name":"wDown", "type":"double"}
+	]
+},
+"ned2ecefv":
+{
+	"inputs":
+	[
+		{"name":"uNorth", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"vEast", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"wDown", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"U", "type":"double"},
+		{"name":"V", "type":"double"},
+		{"name":"W", "type":"double"}
+	]
+},
+"map.geodesy.isDegree":
+{
+	"inputs":
+	[
+		{"name":"angleUnit", "kind":"flag", "type":"choices={'degrees','radians'}"}
+	],
+	"outputs":
+	[
+		{"name":"tf", "type":"logical"}
+	]
+}
+}

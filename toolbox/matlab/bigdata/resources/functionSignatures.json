@@ -1,0 +1,185 @@
+{
+    "_comment": "Copyright 2018-2019 MathWorks, Inc."
+    ,
+    "matlab.tall.blockMovingWindow":
+    {
+        "_comment": "matlab.tall.blockMovingWindow(windowFcn, blockFcn, windowLength, tX, ...)"
+        ,
+        "inputs":
+        [
+            {"name":"windowFcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"blockFcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"window", "kind":"required", "type":[["numeric"], ["scalar"], ["positive"], ["integer"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"Stride", "kind":"namevalue", "type":[["numeric"], ["positive"]]},
+            {"name":"EndPoints", "kind":"namevalue", "type":["char", "string", "choices={'shrink', 'discard'}"], "default":"'shrink'"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.blockMovingWindow":
+    {
+        "_comment": "matlab.tall.blockMovingWindow([], blockFcn, windowLength, tX, ...)"
+        ,
+        "inputs":
+        [
+            {"name":"windowFcn", "kind":"required", "type":[["double"], ["numel=0"]]},
+            {"name":"blockFcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"window", "kind":"required", "type":[["numeric"], ["scalar"], ["positive"], ["integer"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"Stride", "kind":"namevalue", "type":[["numeric"], ["positive"]]},
+            {"name":"EndPoints", "kind":"namevalue", "type":["char", "string", "choices={'shrink', 'discard'}"], "default":"'shrink'"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.blockMovingWindow":
+    {
+        "_comment": "matlab.tall.blockMovingWindow(windowFcn, blockFcn, [NB NF], tX, ...)"
+        ,
+        "inputs":
+        [
+            {"name":"windowFcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"blockFcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"window", "kind":"required", "type":[["numeric"], ["vector"], ["integer"], ["numel=2"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"Stride", "kind":"namevalue", "type":[["numeric"], ["positive"]]},
+            {"name":"EndPoints", "kind":"namevalue", "type":["char", "string", "choices={'shrink', 'discard'}"], "default":"'shrink'"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.blockMovingWindow":
+    {
+        "_comment": "matlab.tall.blockMovingWindow([], blockFcn, [NB NF], tX, ...)"
+        ,
+        "inputs":
+        [
+            {"name":"windowFcn", "kind":"required", "type":[["double"], ["numel=0"]]},
+            {"name":"blockFcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"window", "kind":"required", "type":[["numeric"], ["vector"], ["integer"], ["numel=2"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"Stride", "kind":"namevalue", "type":[["numeric"], ["positive"]]},
+            {"name":"EndPoints", "kind":"namevalue", "type":["char", "string", "choices={'shrink', 'discard'}"], "default":"'shrink'"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.movingWindow":
+    {
+        "_comment": "matlab.tall.movingWindow(fcn, windowLength, tX, ...)"
+        ,
+        "inputs":
+        [
+            {"name":"fcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"window", "kind":"required", "type":[["numeric"], ["scalar"], ["positive"], ["integer"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"Stride", "kind":"namevalue", "type":[["numeric"], ["positive"]]},
+            {"name":"EndPoints", "kind":"namevalue", "type":["char", "string", "choices={'shrink', 'discard'}"], "default":"'shrink'"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.movingWindow":
+    {
+        "_comment": "matlab.tall.movingWindow(fcn, [NB NF], tX, ...)"
+        ,
+        "inputs":
+        [
+            {"name":"fcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"window", "kind":"required", "type":[["numeric"], ["vector"], ["integer"], ["numel=2"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"Stride", "kind":"namevalue", "type":[["numeric"], ["positive"]]},
+            {"name":"EndPoints", "kind":"namevalue", "type":["char", "string", "choices={'shrink', 'discard'}"], "default":"'shrink'"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.reduce":
+    {
+        "inputs":
+        [
+            {"name":"fcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"reducefcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "matlab.tall.transform":
+    {
+        "inputs":
+        [
+            {"name":"fcn", "kind":"required", "type":[["function_handle"], ["char"], ["string"]]},
+            {"name":"tX", "kind":"required", "repeating":"true"},
+            {"name":"OutputsLike", "kind":"namevalue", "type":"cell"}
+        ],
+        "outputs":
+        [
+            {"name":"tA", "repeating":"true"}
+        ]
+    }
+    ,
+    "write":
+    {
+        "inputs":
+        [
+            {"name":"location", "kind":"required", "type":[["folder"], ["char"], ["string"]]},
+            {"name":"tA", "kind":"required"},
+            {"mutuallyExclusiveGroup": [
+                [
+                    {"name":"FileType", "kind":"namevalue", "type":["char", "string", "choices={'auto', 'mat', 'seq'}"], "default":"'auto'"}
+                ],
+                [
+                    {"name":"FileType", "kind":"namevalue", "type":["choices={'parquet'}"]},
+                    {"name":"VariableCompression", "kind": "namevalue", "type": ["string", "cellstr", "choices={'brotli', 'gzip', 'snappy', 'uncompressed'}"]}
+                ],
+                [
+                    {"name":"FileType", "kind":"namevalue", "type":["choices={'text'}"]},
+                    {"name":"Delimiter", "kind":"namevalue", "type":["char", "string", "choices={' ', '\\t', ',', ';', '|', 'space', 'tab', 'comma', 'semi', 'bar'}"], "default":"','"},
+                    {"name":"WriteVariableNames", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+                    {"name":"QuoteStrings", "kind":"namevalue", "type":["logical", "scalar"], "default":"true"},
+                    {"name":"DateLocale", "kind":"namevalue", "type":["char", "string"], "default":"'en_US'"},
+                    {"name":"Encoding", "kind":"namevalue", "type":["char", "string"], "default":"'UTF-8'"}
+                ],
+                [
+                    {"name":"FileType", "kind":"namevalue", "type":["choices={'spreadsheet'}"]},
+                    {"name":"WriteVariableNames", "kind":"namevalue", "type":[["logical"], ["scalar"]], "default":"true"},
+                    {"name":"DateLocale", "kind":"namevalue", "type":[["char"], ["string"]], "default":"'en_US'"},
+                    {"name":"Sheet", "kind":"namevalue", "type":[["char"], ["string"], ["scalar"]]}
+                ],
+                [
+                    {"name":"WriteFcn", "kind":"namevalue", "type":[["function_handle"], ["char"], ["string"]]}
+                ]
+            ]}
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "dsp.LogicAnalyzer":
+    {
+        "inputs":
+        [
+            {"name":"NumInputPorts","kind":"positional"},
+            {"name":"SampleTime","kind":"positional"},
+            {"kind":"varargin","type":["dsp.LogicAnalyzer"]}
+        ]
+    }
+}
+

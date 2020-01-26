@@ -1,0 +1,197 @@
+{
+"maptrimp":
+{
+	"inputs":
+	[
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"latlim", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lonlim", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"latTrimmed", "type":"double"},
+		{"name":"lonTrimmed", "type":"double"}
+	]
+},
+"maptriml":
+{
+	"inputs":
+	[
+		{"name":"lat0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon0", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"latlim", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lonlim", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"}
+	]
+},
+"mfwdtran":
+{
+	"inputs":
+	[
+		{"name":"mstruct", "kind":"ordered", "type":"struct"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"alt", "kind":"ordered", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"x", "type":"double"},
+		{"name":"y", "type":"double"},
+		{"name":"z", "type":"double"}
+	]
+},
+"minvtran":
+{
+	"inputs":
+	[
+		{"name":"mstruct", "kind":"ordered", "type":"struct"},
+		{"name":"x", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"y", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"z", "kind":"ordered", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"},
+		{"name":"alt", "type":"double"}
+	]
+},
+"vfwdtran":
+{
+	"inputs":
+	[
+		{"name":"mstruct", "kind":"ordered", "type":"struct"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"az", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"th", "type":"double"},
+		{"name":"len", "type":"double"}
+	]
+},
+"vinvtran":
+{
+	"inputs":
+	[
+		{"name":"mstruct", "kind":"ordered", "type":"struct"},
+		{"name":"x", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"y", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"th", "kind":"ordered", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"az", "type":"double"},
+		{"name":"len", "type":"double"}
+	]
+},
+"projlist":
+{
+	"inputs":
+	[
+		{"name":"listmode", "kind":"ordered", "type":"choices={'mapprojection','geotiff','geotiff2mstruct','all'}"}
+	],
+	"outputs":
+	[
+		{"name":"S", "type":"struct"}
+	]
+},
+"projfwd":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"struct"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"lon", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"x", "type":"double"},
+		{"name":"y", "type":"double"}
+	]
+},
+"projinv":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"struct"},
+		{"name":"x", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"y", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"lat", "type":"double"},
+		{"name":"lon", "type":"double"}
+	]
+},
+"utmgeoid":
+{
+	"inputs":
+	[
+		{"name":"zone", "kind":"ordered", "type":[["string"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"ellipsoid", "type":"double"},
+		{"name":"ellipsoidstr", "type":"char"}
+	]
+},
+"utmzone":
+{
+	"inputs":
+	[
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"long", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"zone", "type":"char"}
+	]
+},
+"distortcalc":
+{
+	"inputs":
+	[
+		{"name":"mstruct", "kind":"ordered", "type":"struct"},
+		{"name":"lat", "kind":"required", "type":[["single"],["double"]]},
+		{"name":"long", "kind":"required", "type":[["single"],["double"]]}
+	],
+	"outputs":
+	[
+		{"name":"areascale", "type":"double"},
+		{"name":"angdef", "type":"double"},
+		{"name":"maxscale", "type":"double"},
+		{"name":"minscale", "type":"double"},
+		{"name":"merscale", "type":"double"},
+		{"name":"parscale", "type":"double"}
+	]
+},
+"geotiff2mstruct":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":["struct","@(proj) isfield(proj,'GeoTIFFCodes')"]}
+	],
+	"outputs":
+	[
+		{"name":"mstruct", "type":"struct"}
+	]
+},
+"maps":
+{
+	"inputs":
+	[
+		{"name":"str", "kind":"required", "type":[["choices={'namelist','idlist'}"], ["choices=cellstr(maps('idlist'))"]]}
+	],
+	"outputs":
+	[
+		{"name":"strmat", "type":"char"}
+	]
+}
+}

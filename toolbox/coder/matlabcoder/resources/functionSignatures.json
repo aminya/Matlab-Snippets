@@ -1,0 +1,100 @@
+{
+    "codegen":
+    {
+        "inputs":
+        [
+            {"name":"compile_only", "kind":"flag", "type":"choices={'-c'}"},
+            {"name":"config_flag", "kind":"flag", "type":"choices={'-config:mex','-config:lib','-config:dll','-config:exe','-config:hdl'}"},
+            {"name":"debug", "kind":"flag", "type":"choices={'-g'}"},
+            {"name":"report", "kind":"flag", "type":"choices={'-report'}"},
+            {"name":"launchreport", "kind":"flag", "type":"choices={'-launchreport'}"},
+            {"name":"-reportinfo", "kind":"namevalue", "type":"char"},
+            {"name":"rowmajor", "kind":"flag", "type":"choices={'-rowmajor'}"},
+            {"name":"preservearraydims", "kind":"flag", "type":"choices={'-preservearraydims'}"},
+            {"name":"file", "kind":"flag", "type":[["file=*.m,*.mlx,*.c,*.cpp,*.cu,*.h,*.hpp,*.cuh,*.o,*.obj,*.a,*.so,*.lib,*.dylib,*.prj"], ["identifier=function"]], "repeating":true},
+            {"name":"-d", "kind":"namevalue", "type":"folder"},
+            {"name":"-I", "kind":"namevalue", "type":"folder"},
+            {"name":"-globals", "kind":"namevalue"},
+            {"name":"-o", "kind":"namevalue", "type":[["char"], ["file"]]},
+            {"name":"-O", "kind":"namevalue", "type":"choices={'enable:inline','disable:inline','enable:blas','disable:blas','enable:openmp','disable:openmp'}"},
+            {"name":"-args", "kind":"namevalue", "type":[["identifier=variable"], ["char"]]},
+            {"name":"-config", "kind":"namevalue", "type":[["identifier=variable"], ["char"]]},
+            {"name":"verbose", "kind":"flag", "type":"choices={'-v'}"},
+            {"name":"singleC", "kind":"flag", "type":"choices={'-singleC'}"},
+            {"name":"-test", "kind":"namevalue", "type":"identifier=function"},
+            {"name":"jit","kind":"flag", "type":"choices={'-jit'}"},
+            {"name":"lang","kind":"flag", "type":"choices={'-lang:c','-lang:c++'}"},
+            {"name":"langstd","kind":"flag", "type":"choices={'-std:c89/c90','-std:c99','-std:c++03'}"},
+            {"name":"-toproject", "kind":"namevalue"}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"projectname", "kind":"required", "type":"file=*.prj"}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"-open", "kind":"namevalue", "type":"file=*.prj"}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"-build", "kind":"namevalue", "type":"file=*.prj"}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"-new", "kind":"namevalue", "type":[["file=*.prj"], ["char"]]}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"ecoderFlag", "kind":"required", "type":"choices={'-ecoder'}"},
+            {"name":"ecoderValue", "kind":"required", "type":[["logical"], ["choices={'false'}"]]},
+            {"name":"newFlag", "kind":"required", "type":"choices={'-new'}"},
+            {"name":"newvalue", "kind":"required", "type":[["file=*.prj"], ["char"]]}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"tocodeFlag", "kind":"required", "type":"choices={'-tocode'}"},
+            {"name":"tocodevalue", "kind":"required", "type":"file=*.prj"},
+            {"mutuallyExclusiveGroup":
+             [
+                 [],
+                 [
+                     {"name":"scriptFlag", "kind":"required", "type":"choices={'-script'}"},
+                     {"name":"scriptname", "kind":"required", "type":[["file=*.m"], ["char"]]}
+                 ]
+             ]
+            }
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"-gpu", "kind":"required", "type":"choices={'-gpu'}"}
+        ]
+    },
+    "coder":
+    {
+        "inputs":
+        [
+            {"name":"-toconfig", "kind":"namevalue", "type":"file=*.prj"}
+        ]
+    }
+}

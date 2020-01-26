@@ -1,0 +1,116 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "clibgen.ConstructorDefinition.validate":
+    prefix: "clibgen.ConstructorDefinition.validate"
+    body: '''clibgen.ConstructorDefinition.validate(${1:ConstructorDefinition})'''
+    description: '''clibgen.ConstructorDefinition.validate(${1:ConstructorDefinition})'''
+
+
+    "clibgen.LibraryDefinition.addProperty":
+    prefix: "clibgen.LibraryDefinition.addProperty"
+    body: '''${1:PropertyDefinition} = clibgen.LibraryDefinition.addProperty(${1:ClassDefinition}, ${2:CPPName}, ${3:MATLABType}, 'Description', ${4:value})'''
+    description: '''${1:PropertyDefinition} = clibgen.LibraryDefinition.addProperty(${1:ClassDefinition}, ${2:CPPName}, ${3:MATLABType}, 'Description', ${4:value})'''
+
+
+    "clibgen.buildInterface":
+    prefix: "clibgen.buildInterface"
+    body: '''clibgen.buildInterface(${1:HeaderFiles}, 'Verbose', ${2:value}, 'Libraries', ${3:value}, 'IncludePath', ${4:value}, 'OutputFolder', ${5:value}, 'PackageName', ${6:value}, 'TreatObjectPointerAsScalar', ${7:value}, 'TreatConstCharPointerAsCString', ${8:value}, 'DefinedMacros', ${9:value}, 'UndefinedMacros', ${10:value})'''
+    description: '''clibgen.buildInterface(${1:HeaderFiles}, 'Verbose', ${2:value}, 'Libraries', ${3:value}, 'IncludePath', ${4:value}, 'OutputFolder', ${5:value}, 'PackageName', ${6:value}, 'TreatObjectPointerAsScalar', ${7:value}, 'TreatConstCharPointerAsCString', ${8:value}, 'DefinedMacros', ${9:value}, 'UndefinedMacros', ${10:value})'''
+
+
+    "clibgen.LibraryDefinition.addMethod":
+    prefix: "clibgen.LibraryDefinition.addMethod"
+    body: '''${1:MethodDefinition} = clibgen.LibraryDefinition.addMethod(${1:ClassDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+    description: '''${1:MethodDefinition} = clibgen.LibraryDefinition.addMethod(${1:ClassDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+
+
+    "clibgen.generateLibraryDefinition":
+    prefix: "clibgen.generateLibraryDefinition"
+    body: '''clibgen.generateLibraryDefinition(${1:HeaderFiles}, 'Verbose', ${2:value}, 'Libraries', ${3:value}, 'IncludePath', ${4:value}, 'OutputFolder', ${5:value}, 'PackageName', ${6:value}, 'TreatObjectPointerAsScalar', ${7:value}, 'TreatConstCharPointerAsCString', ${8:value}, 'DefinedMacros', ${9:value}, 'UndefinedMacros', ${10:value})'''
+    description: '''clibgen.generateLibraryDefinition(${1:HeaderFiles}, 'Verbose', ${2:value}, 'Libraries', ${3:value}, 'IncludePath', ${4:value}, 'OutputFolder', ${5:value}, 'PackageName', ${6:value}, 'TreatObjectPointerAsScalar', ${7:value}, 'TreatConstCharPointerAsCString', ${8:value}, 'DefinedMacros', ${9:value}, 'UndefinedMacros', ${10:value})'''
+
+
+    "clibgen.ConstructorDefinition.defineArgument":
+    prefix: "clibgen.ConstructorDefinition.defineArgument"
+    body: '''clibgen.ConstructorDefinition.defineArgument(${1:ConstructorDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})'''
+    description: '''clibgen.ConstructorDefinition.defineArgument(${1:ConstructorDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})'''
+
+
+    "clibgen.LibraryDefinition.build":
+    prefix: "clibgen.LibraryDefinition.build"
+    body: '''clibgen.LibraryDefinition.build(${1:LibraryDefinition})'''
+    description: '''clibgen.LibraryDefinition.build(${1:LibraryDefinition})'''
+
+
+    "clibgen.LibraryDefinition.addFunction":
+    prefix: "clibgen.LibraryDefinition.addFunction"
+    body: '''${1:FunctionDefinition} = clibgen.LibraryDefinition.addFunction(${1:LibraryDefinition}, ${2:CPPSignature}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+    description: '''${1:FunctionDefinition} = clibgen.LibraryDefinition.addFunction(${1:LibraryDefinition}, ${2:CPPSignature}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+
+
+    "clibgen.LibraryDefinition":
+    prefix: "clibgen.LibraryDefinition"
+    body: '''${1:LibraryDefinition} = clibgen.LibraryDefinition(${1:DataFile})'''
+    description: '''${1:LibraryDefinition} = clibgen.LibraryDefinition(${1:DataFile})'''
+
+
+    "clibgen.LibraryDefinition.addConstructor":
+    prefix: "clibgen.LibraryDefinition.addConstructor"
+    body: '''${1:ConstructorDefinition} = clibgen.LibraryDefinition.addConstructor(${1:ClassDefinition}, ${2:CPPName}, 'Description', ${3:value})'''
+    description: '''${1:ConstructorDefinition} = clibgen.LibraryDefinition.addConstructor(${1:ClassDefinition}, ${2:CPPName}, 'Description', ${3:value})'''
+
+
+    "clibgen.MethodDefinition.defineArgument":
+    prefix: "clibgen.MethodDefinition.defineArgument"
+    body: '''clibgen.MethodDefinition.defineArgument(${1:MethodDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})'''
+    description: '''clibgen.MethodDefinition.defineArgument(${1:MethodDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})'''
+
+
+    "clibgen.MethodDefinition.validate":
+    prefix: "clibgen.MethodDefinition.validate"
+    body: '''clibgen.MethodDefinition.validate(${1:MethodDefinition})'''
+    description: '''clibgen.MethodDefinition.validate(${1:MethodDefinition})'''
+
+
+    "clibgen.FunctionDefinition.defineOutput":
+    prefix: "clibgen.FunctionDefinition.defineOutput"
+    body: '''clibgen.FunctionDefinition.defineOutput(${1:FunctionDefinition}, ${2:MATLABName}, ${3:MATLABType}, ${4:Shape})'''
+    description: '''clibgen.FunctionDefinition.defineOutput(${1:FunctionDefinition}, ${2:MATLABName}, ${3:MATLABType}, ${4:Shape})'''
+
+
+    "clibgen.LibraryDefinition.addEnumeration":
+    prefix: "clibgen.LibraryDefinition.addEnumeration"
+    body: '''${1:EnumDefinition} = clibgen.LibraryDefinition.addEnumeration(${1:LibraryDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Enumerants}, 'MATLABName', ${5:value}, 'Description', ${6:value})'''
+    description: '''${1:EnumDefinition} = clibgen.LibraryDefinition.addEnumeration(${1:LibraryDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Enumerants}, 'MATLABName', ${5:value}, 'Description', ${6:value})'''
+
+
+    "clibgen.FunctionDefinition.defineArgument":
+    prefix: "clibgen.FunctionDefinition.defineArgument"
+    body: '''clibgen.FunctionDefinition.defineArgument(${1:FunctionDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})'''
+    description: '''clibgen.FunctionDefinition.defineArgument(${1:FunctionDefinition}, ${2:CPPName}, ${3:MATLABType}, ${4:Direction}, ${5:Shape})'''
+
+
+    "clibgen.LibraryDefinition.validate":
+    prefix: "clibgen.LibraryDefinition.validate"
+    body: '''clibgen.LibraryDefinition.validate(${1:LibraryDefinition})'''
+    description: '''clibgen.LibraryDefinition.validate(${1:LibraryDefinition})'''
+
+
+    "clibgen.FunctionDefinition.validate":
+    prefix: "clibgen.FunctionDefinition.validate"
+    body: '''clibgen.FunctionDefinition.validate(${1:FunctionDefinition})'''
+    description: '''clibgen.FunctionDefinition.validate(${1:FunctionDefinition})'''
+
+
+    "clibgen.MethodDefinition.defineOutput":
+    prefix: "clibgen.MethodDefinition.defineOutput"
+    body: '''clibgen.MethodDefinition.defineOutput(${1:MethodDefinition}, ${2:MATLABName}, ${3:MATLABType}, ${4:Shape})'''
+    description: '''clibgen.MethodDefinition.defineOutput(${1:MethodDefinition}, ${2:MATLABName}, ${3:MATLABType}, ${4:Shape})'''
+
+
+    "clibgen.LibraryDefinition.addClass":
+    prefix: "clibgen.LibraryDefinition.addClass"
+    body: '''${1:ClassDefinition} = clibgen.LibraryDefinition.addClass(${1:LibraryDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+    description: '''${1:ClassDefinition} = clibgen.LibraryDefinition.addClass(${1:LibraryDefinition}, ${2:CPPName}, 'MATLABName', ${3:value}, 'Description', ${4:value})'''
+

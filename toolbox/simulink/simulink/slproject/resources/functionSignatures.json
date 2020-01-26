@@ -1,0 +1,314 @@
+{
+"simulinkproject":
+{
+	"inputs":
+	[
+		{"name":"projectPath", "kind":"positional", "type":[["file"],  ["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"proj", "kind":"required","type":"slproject.ProjectManager"}
+	]
+},
+
+"slproject.create":
+{
+	"inputs":
+	[
+		{"name":"projectPath", "kind":"positional", "type":[["file"],  ["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"proj", "kind":"required","type":"slproject.ProjectManager"}
+	]
+},
+
+"slproject.ProjectManager.addFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"file", "kind":"required", "type":["file",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectFile", "type":"slproject.ProjectFile"}
+	]
+},
+
+"slproject.ProjectManager.addFolderIncludingChildFiles":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectFile", "type":"slproject.ProjectFile"}
+	]
+},
+
+"slproject.ProjectManager.findFile":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"file", "type":"slproject.ProjectFile"}
+	]
+},
+
+"slproject.ProjectManager.removeFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+},
+
+"slproject.ProjectManager.export":
+{
+	"inputs":
+	[
+		{"name":"proj",             "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"zipFileName",      "kind":"required", "type":[["file=*.zip"],["char"]]},
+		{"name":"definitionType",   "kind":"positional"}
+	]
+},
+
+"slproject.loadProject":
+{
+	"inputs":
+	[
+		{"name":"projectPath", "kind":"required", "type":[["file"],  ["char"]], "repeating":true}
+	],
+	"outputs":
+	[
+		{"name":"proj", "type":"slproject.ProjectManager"}
+	]
+},
+
+
+
+"slproject.ProjectFile.addLabel":
+{
+	"inputs":
+	[
+		{"name":"file",         "kind":"required", "type":"slproject.ProjectFile"},
+		{"name":"categoryName", "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file)"]]},
+		{"name":"label",        "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file,categoryName)"]]},
+		{"name":"labelData",    "kind":"ordered", "type":[["char"], ["numeric"]]}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"slproject.Label"}
+	]
+},
+
+"slproject.ProjectFile.findLabel":
+{
+	"inputs":
+	[
+		{"name":"file",         "kind":"required", "type":"slproject.ProjectFile"},
+		{"name":"categoryName", "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file)"]]},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getLabelNamesInCatogoryInFile(file,categoryName)"]]}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"slproject.Label"}
+	]
+},
+
+"slproject.ProjectFile.findLabel":
+{
+	"inputs":
+	[
+		{"name":"file",             "kind":"required", "type":"slproject.ProjectFile"},
+		{"name":"LabelDefinition",  "kind":"required", "type":"slproject.LabelDefinition"}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"slproject.Label"}
+	]
+},
+
+"slproject.ProjectFile.findLabel":
+{
+	"inputs":
+	[
+		{"name":"category",     "kind":"required", "type":"slproject.Category"},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices={category.LabelDefinitions.Name}"]]}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"slproject.LabelDefinition"}
+	]
+},
+
+"slproject.ProjectFile.removeLabel":
+{
+	"inputs":
+	[
+		{"name":"file",         "kind":"required", "type":"slproject.ProjectFile"},
+		{"name":"categoryName", "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file)"]]},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getLabelNamesInCatogoryInFile(file,categoryName)"]]}
+	]
+},
+
+"slproject.ProjectFile.removeLabel":
+{
+	"inputs":
+	[
+		{"name":"file",             "kind":"required", "type":"slproject.ProjectFile"},
+		{"name":"LabelDefinition",  "kind":"required", "type":"slproject.LabelDefinition"}
+	]
+},
+
+"slproject.ProjectFile.removeLabel":
+{
+	"inputs":
+	[
+		{"name":"category",     "kind":"required", "type":"slproject.Category"},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices={category.LabelDefinitions.Name}"]]}
+	]
+},
+
+
+"slproject.ProjectManager.findCategory":
+{
+	"inputs":
+	[
+		{"name":"proj",         "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"categoryName", "kind":"required", "type":["choices={proj.Categories.Name}"]}
+	],
+    "outputs":
+    [
+		{"name":"category", "kind":"required", "type":"slproject.Category"}
+    ]
+},
+
+"slproject.ProjectManager.removeCategory":
+{
+	"inputs":
+	[
+		{"name":"proj",         "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"categoryName", "kind":"required", "type":[["char"],["choices={proj.Categories.Name}"]]}
+	]
+},
+
+"slproject.ProjectManager.addPath":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectPath", "type":"slproject.PathFolder"}
+	]
+},
+
+"slproject.ProjectManager.removePath":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	]
+},
+
+"slproject.ProjectManager.addReference":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectReference", "type":"slproject.ProjectReference"}
+	]
+},
+
+"slproject.ProjectManager.removeReference":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	]
+},
+
+"slproject.ProjectManager.addShortcut":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"shortcut", "type":"slproject.Shortcut"}
+	]
+},
+
+"slproject.ProjectManager.removeShortcut":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+},
+
+"slproject.ProjectManager.addStartupFile":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"shortcut", "type":"slproject.EntryPoint"}
+	]
+},
+
+"slproject.ProjectManager.removeStartupFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+},
+
+"slproject.ProjectManager.addShutdownFile":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"shortcut", "type":"slproject.EntryPoint"}
+	]
+},
+
+"slproject.ProjectManager.removeShutdownFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"slproject.ProjectManager"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+}
+
+}

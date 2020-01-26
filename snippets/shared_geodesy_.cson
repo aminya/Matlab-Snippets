@@ -1,0 +1,134 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "enu2ecef":
+    prefix: "enu2ecef"
+    body: '''[${1:X}, ${2:Y}, ${3:Z}] = enu2ecef(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:X}, ${2:Y}, ${3:Z}] = enu2ecef(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "ecef2enuv":
+    prefix: "ecef2enuv"
+    body: '''[${1:uEast}, ${2:vNorth}, ${3:wUp}] = ecef2enuv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+    description: '''[${1:uEast}, ${2:vNorth}, ${3:wUp}] = ecef2enuv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+
+
+    "ecefOffset":
+    prefix: "ecefOffset"
+    body: '''[${1:deltaX}, ${2:deltaY}, ${3:deltaZ}] = ecefOffset(${1:spheroid}, ${2:lat1}, ${3:lon1}, ${4:h1}, ${5:lat2}, ${6:lon2}, ${7:h2}, ${8:angleUnit})'''
+    description: '''[${1:deltaX}, ${2:deltaY}, ${3:deltaZ}] = ecefOffset(${1:spheroid}, ${2:lat1}, ${3:lon1}, ${4:h1}, ${5:lat2}, ${6:lon2}, ${7:h2}, ${8:angleUnit})'''
+
+
+    "aer2geodetic":
+    prefix: "aer2geodetic"
+    body: '''[${1:lat}, ${2:lon}, ${3:h}] = aer2geodetic(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:lat}, ${2:lon}, ${3:h}] = aer2geodetic(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "ned2ecef":
+    prefix: "ned2ecef"
+    body: '''[${1:X}, ${2:Y}, ${3:Z}] = ned2ecef(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:X}, ${2:Y}, ${3:Z}] = ned2ecef(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "geodetic2ned":
+    prefix: "geodetic2ned"
+    body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = geodetic2ned(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = geodetic2ned(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "enu2ecefv":
+    prefix: "enu2ecefv"
+    body: '''[${1:U}, ${2:V}, ${3:W}] = enu2ecefv(${1:uEast}, ${2:vNorth}, ${3:wUp}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+    description: '''[${1:U}, ${2:V}, ${3:W}] = enu2ecefv(${1:uEast}, ${2:vNorth}, ${3:wUp}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+
+
+    "ecef2enu":
+    prefix: "ecef2enu"
+    body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = ecef2enu(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = ecef2enu(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "aer2ned":
+    prefix: "aer2ned"
+    body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = aer2ned(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
+    description: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = aer2ned(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
+
+
+    "geodetic2enu":
+    prefix: "geodetic2enu"
+    body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = geodetic2enu(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = geodetic2enu(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "map.geodesy.isDegree":
+    prefix: "map.geodesy.isDegree"
+    body: '''${1:tf} = map.geodesy.isDegree(${1:angleUnit})'''
+    description: '''${1:tf} = map.geodesy.isDegree(${1:angleUnit})'''
+
+
+    "geodetic2aer":
+    prefix: "geodetic2aer"
+    body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = geodetic2aer(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:az}, ${2:elev}, ${3:slantRange}] = geodetic2aer(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "ecef2aer":
+    prefix: "ecef2aer"
+    body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ecef2aer(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ecef2aer(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "enu2geodetic":
+    prefix: "enu2geodetic"
+    body: '''[${1:lat}, ${2:lon}, ${3:h}] = enu2geodetic(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:lat}, ${2:lon}, ${3:h}] = enu2geodetic(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "ecef2geodetic":
+    prefix: "ecef2geodetic"
+    body: '''[${1:lat}, ${2:lon}, ${3:alt}] = ecef2geodetic(${1:spheroid}, ${2:x}, ${3:y}, ${4:z}, ${5:angleUnit})'''
+    description: '''[${1:lat}, ${2:lon}, ${3:alt}] = ecef2geodetic(${1:spheroid}, ${2:x}, ${3:y}, ${4:z}, ${5:angleUnit})'''
+
+
+    "ned2ecefv":
+    prefix: "ned2ecefv"
+    body: '''[${1:U}, ${2:V}, ${3:W}] = ned2ecefv(${1:uNorth}, ${2:vEast}, ${3:wDown}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+    description: '''[${1:U}, ${2:V}, ${3:W}] = ned2ecefv(${1:uNorth}, ${2:vEast}, ${3:wDown}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+
+
+    "ecef2nedv":
+    prefix: "ecef2nedv"
+    body: '''[${1:uNorth}, ${2:vEast}, ${3:wDown}] = ecef2nedv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+    description: '''[${1:uNorth}, ${2:vEast}, ${3:wDown}] = ecef2nedv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
+
+
+    "enu2aer":
+    prefix: "enu2aer"
+    body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = enu2aer(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:angleUnit})'''
+    description: '''[${1:az}, ${2:elev}, ${3:slantRange}] = enu2aer(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:angleUnit})'''
+
+
+    "ecef2ned":
+    prefix: "ecef2ned"
+    body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = ecef2ned(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = ecef2ned(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "aer2ecef":
+    prefix: "aer2ecef"
+    body: '''[${1:X}, ${2:Y}, ${3:Z}] = aer2ecef(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:X}, ${2:Y}, ${3:Z}] = aer2ecef(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+
+
+    "geodetic2ecef":
+    prefix: "geodetic2ecef"
+    body: '''[${1:x}, ${2:y}, ${3:z}] = geodetic2ecef(${1:spheroid}, ${2:lat}, ${3:lon}, ${4:h}, ${5:angleUnit})'''
+    description: '''[${1:x}, ${2:y}, ${3:z}] = geodetic2ecef(${1:spheroid}, ${2:lat}, ${3:lon}, ${4:h}, ${5:angleUnit})'''
+
+
+    "ned2geodetic":
+    prefix: "ned2geodetic"
+    body: '''[${1:lat}, ${2:lon}, ${3:h}] = ned2geodetic(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+    description: '''[${1:lat}, ${2:lon}, ${3:h}] = ned2geodetic(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
+

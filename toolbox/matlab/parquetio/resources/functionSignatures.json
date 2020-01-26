@@ -1,0 +1,69 @@
+{
+"_comment": "Copyright 2018-2019 MathWorks, Inc.",
+
+"parquetinfo": 
+{
+	"inputs": 
+    [
+        {"name": "filename", "kind": "required", "type": [["file=*.parquet,*.parq"], ["string"]]}
+    ],
+    "outputs": 
+    [
+        { "name": "P", "type": "matlab.io.parquet.ParquetInfo"}
+    ]
+},
+"parquetread": 
+{
+    "inputs": 
+    [
+        {"name": "filename", "kind": "required", "type": [["file=*.parquet,*.parq"], ["string"]]},
+        {"mutuallyExclusiveGroup": [
+            [
+                {"name": "SelectedVariableNames", "kind": "namevalue", "type": ["string", "cellstr"]},
+                {"name": "PreserveVariableNames", "kind": "namevalue", "type": ["logical", "scalar"], "default": "false"},
+                {"name": "OutputType", "kind": "namevalue", "type": ["string", "choices={'auto','table','timetable'}"], "default":"'auto'"}
+            ],
+            [
+                {"name": "SelectedVariableNames", "kind": "namevalue", "type": ["string", "cellstr"]},
+                {"name": "PreserveVariableNames", "kind": "namevalue", "type": ["logical", "scalar"], "default": "false"},
+                {"name": "OutputType", "kind": "namevalue", "type": ["string", "choices={'auto', 'timetable'}"]},
+                {"name": "RowTimes", "kind":"namevalue",  "type": [["string"], ["integer", ">=1", "scalar"], ["datetime", "vector"], ["duration", "vector"]]}
+            ],
+            [
+                {"name": "SelectedVariableNames", "kind": "namevalue", "type": ["string", "cellstr"]},
+                {"name": "PreserveVariableNames", "kind": "namevalue", "type": ["logical", "scalar"], "default": "false"},
+                {"name": "OutputType", "kind": "namevalue", "type": ["string", "choices={'auto', 'timetable'}"]},
+                {"name": "StartTime", "kind":"namevalue",  "type": [["duration", "scalar"], ["datetime", "scalar"]]},
+                {"name": "TimeStep", "kind":"namevalue",  "type": ["duration", "scalar"]}
+            ],
+            [
+                {"name": "SelectedVariableNames", "kind": "namevalue", "type": ["string", "cellstr"]},
+                {"name": "PreserveVariableNames", "kind": "namevalue", "type": ["logical", "scalar"], "default": "false"},
+                {"name": "OutputType", "kind": "namevalue", "type": ["choices={'auto', 'timetable'}"]},
+                {"name": "StartTime", "kind":"namevalue",  "type": ["datetime", "scalar"]},
+                {"name": "TimeStep", "kind":"namevalue",  "type": ["calendarDuration", "scalar"]}
+            ],
+            [
+                {"name": "SelectedVariableNames", "kind": "namevalue", "type": ["string", "cellstr"]},
+                {"name": "PreserveVariableNames", "kind": "namevalue", "type": ["logical", "scalar"], "default": "false"},
+                {"name": "OutputType", "kind": "namevalue", "type": ["choices={'auto', 'timetable'}"]},
+                {"name": "StartTime", "kind": "namevalue", "type": [["duration", "scalar"], ["datetime", "scalar"]]},
+                {"name": "SampleRate", "kind": "namevalue", "type": ["numeric", "scalar", ">0"]}
+            ]
+        ]}
+    ],
+    "outputs": 
+    [
+        {"name": "T", "type": ["table", "timetable"]}
+    ]
+},
+"parquetwrite": 
+{
+    "inputs":
+    [
+        {"name": "filename", "kind": "required", "type": [["file=*.parquet,*.parq"], ["string"]]},
+        {"name": "T", "kind": "required", "type": [["table"], ["timetable"]]},
+        {"name": "VariableCompression", "kind": "namevalue", "type":["string", "cellstr", "choices={'brotli', 'gzip', 'snappy', 'uncompressed'}"]}
+    ]
+}
+}

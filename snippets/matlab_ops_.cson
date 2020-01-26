@@ -1,0 +1,134 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "bitget":
+    prefix: "bitget"
+    body: '''bitget(${1:A}, ${2:bit}, ${3:assumedtype})'''
+    description: '''bitget(${1:A}, ${2:bit}, ${3:assumedtype})'''
+
+
+    "setxor":
+    prefix: "setxor"
+    body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+    description: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+
+
+    "ismember":
+    prefix: "ismember"
+    body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+    description: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+
+
+    "any":
+    prefix: "any"
+    body: '''any(${1:A}, ${2:optional_dim})'''
+    description: '''any(${1:A}, ${2:optional_dim})'''
+
+
+    "vertcat":
+    prefix: "vertcat"
+    body: '''${1:C} = vertcat(${1:A})'''
+    description: '''${1:C} = vertcat(${1:A})'''
+
+
+    "bitset":
+    prefix: "bitset"
+    body: '''bitset(${1:A}, ${2:bit}, ${3:optional_V}, ${4:assumedtype})'''
+    description: '''bitset(${1:A}, ${2:bit}, ${3:optional_V}, ${4:assumedtype})'''
+
+
+    "subsref":
+    prefix: "subsref"
+    body: '''${1:B} = subsref(${1:A}, ${2:S})'''
+    description: '''${1:B} = subsref(${1:A}, ${2:S})'''
+
+
+    "bitand":
+    prefix: "bitand"
+    body: '''bitand(${1:A}, ${2:B}, ${3:assumedtype})'''
+    description: '''bitand(${1:A}, ${2:B}, ${3:assumedtype})'''
+
+
+    "intersect":
+    prefix: "intersect"
+    body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+    description: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+
+
+    "idivide":
+    prefix: "idivide"
+    body: '''idivide(${1:A}, ${2:B}, ${3:opt})'''
+    description: '''idivide(${1:A}, ${2:B}, ${3:opt})'''
+
+
+    "bitor":
+    prefix: "bitor"
+    body: '''bitor(${1:A}, ${2:B}, ${3:assumedtype})'''
+    description: '''bitor(${1:A}, ${2:B}, ${3:assumedtype})'''
+
+
+    "setdiff":
+    prefix: "setdiff"
+    body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+    description: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+
+
+    "subsasgn":
+    prefix: "subsasgn"
+    body: '''${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
+    description: '''${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
+
+
+    "unique":
+    prefix: "unique"
+    body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
+    description: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
+
+
+    "bitcmp":
+    prefix: "bitcmp"
+    body: '''bitcmp(${1:A}, ${2:assumedtype})'''
+    description: '''bitcmp(${1:A}, ${2:assumedtype})'''
+
+
+    "ismembertol":
+    prefix: "ismembertol"
+    body: '''[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
+    description: '''[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
+
+
+    "union":
+    prefix: "union"
+    body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+    description: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
+
+
+    "bitxor":
+    prefix: "bitxor"
+    body: '''bitxor(${1:A}, ${2:B}, ${3:assumedtype})'''
+    description: '''bitxor(${1:A}, ${2:B}, ${3:assumedtype})'''
+
+
+    "all":
+    prefix: "all"
+    body: '''all(${1:A}, ${2:optional_dim})'''
+    description: '''all(${1:A}, ${2:optional_dim})'''
+
+
+    "bitshift":
+    prefix: "bitshift"
+    body: '''bitshift(${1:A}, ${2:k}, ${3:assumedtype})'''
+    description: '''bitshift(${1:A}, ${2:k}, ${3:assumedtype})'''
+
+
+    "uniquetol":
+    prefix: "uniquetol"
+    body: '''[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
+    description: '''[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
+
+
+    "horzcat":
+    prefix: "horzcat"
+    body: '''${1:C} = horzcat(${1:A})'''
+    description: '''${1:C} = horzcat(${1:A})'''
+

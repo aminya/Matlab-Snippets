@@ -1,0 +1,44 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "lighting":
+    prefix: "lighting"
+    body: '''lighting(${1:optional_ax}, ${2:style})'''
+    description: '''lighting(${1:optional_ax}, ${2:style})'''
+
+
+    "material":
+    prefix: "material"
+    body: '''material(${1:optional_ax}, ${2:properties})'''
+    description: '''material(${1:optional_ax}, ${2:properties})'''
+
+
+    "shading":
+    prefix: "shading"
+    body: '''shading(${1:optional_ax}, ${2:style})'''
+    description: '''shading(${1:optional_ax}, ${2:style})'''
+
+
+    "zlabel":
+    prefix: "zlabel"
+    body: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
+    description: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
+
+
+    "caxis":
+    prefix: "caxis"
+    body: '''${1:limits} = caxis(${1:optional_ax})'''
+    description: '''${1:limits} = caxis(${1:optional_ax})'''
+
+
+    "surf":
+    prefix: "surf"
+    body: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+    description: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
+
+
+    "colormap":
+    prefix: "colormap"
+    body: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
+    description: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
+

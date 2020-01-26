@@ -1,0 +1,32 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "matlab.addons.enableAddon":
+    prefix: "matlab.addons.enableAddon"
+    body: '''matlab.addons.enableAddon(${1:addOnName}, ${2:optional_version})'''
+    description: '''matlab.addons.enableAddon(${1:addOnName}, ${2:optional_version})'''
+
+
+    "matlab.addons.install":
+    prefix: "matlab.addons.install"
+    body: '''matlab.addons.install(${1:fileName}, ${2:agreeToLicense}, ${3:optional_installOption})'''
+    description: '''matlab.addons.install(${1:fileName}, ${2:agreeToLicense}, ${3:optional_installOption})'''
+
+
+    "matlab.addons.disableAddon":
+    prefix: "matlab.addons.disableAddon"
+    body: '''matlab.addons.disableAddon(${1:addOnName}, ${2:optional_version})'''
+    description: '''matlab.addons.disableAddon(${1:addOnName}, ${2:optional_version})'''
+
+
+    "matlab.addons.uninstall":
+    prefix: "matlab.addons.uninstall"
+    body: '''matlab.addons.uninstall(${1:addOnName}, ${2:optional_version})'''
+    description: '''matlab.addons.uninstall(${1:addOnName}, ${2:optional_version})'''
+
+
+    "matlab.addons.isAddonEnabled":
+    prefix: "matlab.addons.isAddonEnabled"
+    body: '''matlab.addons.isAddonEnabled(${1:addOnName}, ${2:optional_version})'''
+    description: '''matlab.addons.isAddonEnabled(${1:addOnName}, ${2:optional_version})'''
+

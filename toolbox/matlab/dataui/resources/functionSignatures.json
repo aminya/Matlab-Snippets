@@ -1,0 +1,58 @@
+{
+"matlab.internal.dataui.changePointsFinder":
+{
+    "appName": "Find Change Points",
+    "purpose": "Find abrupt changes in data",
+    "keywords": "ischange, findchangepts, change, changepoint, mean, variance, linear",
+    "docLink": "'matlab','changepointLET'",
+    "embeddable": true
+},
+"matlab.internal.dataui.dataSmoother":
+{
+    "appName": "Smooth Data",
+    "purpose": "Smooth noisy data",
+    "keywords": "smooth, smoothing, smoothdata, noise, noisy, moving, window, mov, movmean, movmedian, gaussian, lowess, loess, rlowess, rloess, sgolay, Savitzky, Golay",
+    "docLink": "'matlab','smoothLET'",
+    "embeddable": true
+},
+"matlab.internal.dataui.localExtremaFinder":
+{
+    "appName": "Find Local Extrema",
+    "purpose": "Find local maxima and minima",
+    "keywords": "islocalmin, islocalmax, local, localmax, localmin, findpeaks, peaks, min, max, extrema, valleys, plateaus",
+    "docLink": "'matlab','extremaLET'",
+    "embeddable": true
+},
+"matlab.internal.dataui.missingDataCleaner":
+{
+    "appName": "Clean Missing Data",
+    "purpose": "Find, fill, or remove missing data",
+    "keywords": "ismissing, fillmissing, rmmissing, fill, replace, remove, missing, NaN, NaT",
+    "docLink": "'matlab','missingLET'",
+    "embeddable": true
+},
+"matlab.internal.dataui.outlierDataCleaner":
+{
+    "appName": "Clean Outlier Data",
+    "purpose": "Find, fill, or remove outliers",
+    "keywords": "outlier, isoutlier, filloutliers, rmoutliers, fill, replace, remove",
+    "docLink": "'matlab','outlierLET'",
+    "embeddable": true
+},
+"matlab.internal.dataui.trendRemover":
+{
+    "appName": "Remove Trends",
+    "purpose": "Remove polynomial trend from data",
+    "keywords": "detrend,trend,remove,polynomial",
+    "docLink": "'matlab','detrendLET'",
+    "embeddable": true
+},
+"matlab.internal.dataui.tableJoiner":
+{
+    "appName": "Join Tables",
+    "purpose": "Combine two tables using key variables",
+    "keywords": "join,innerjoin,outerjoin,merge,combine",
+    "docLink": "'matlab','joinLET'",
+    "embeddable": true
+}
+}

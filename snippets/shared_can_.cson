@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "canDatabase":
+    prefix: "canDatabase"
+    body: '''${1:obj} = canDatabase(${1:File})'''
+    description: '''${1:obj} = canDatabase(${1:File})'''
+

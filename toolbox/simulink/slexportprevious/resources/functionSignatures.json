@@ -1,0 +1,14 @@
+{
+"Simulink.exportToVersion":
+{
+	"inputs":
+	[
+	    {"name":"model", "kind":"required", "type":["identifier=model"]},
+	    {"name":"target_filename", "kind":"required", "type":[["file=*.mdl,*.slx"],["char"]]},
+	    {"name":"release_name", "kind":"required", "type":"choices=saveas_version.getFormallySupportedReleaseNames"},
+            {"name":"BreakUserLinks", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"BreakToolboxLinks", "kind":"namevalue", "type":["logical","scalar"]},
+            {"name":"AllowPrompt", "kind":"namevalue", "type":["logical","scalar"]}
+	]
+}
+}

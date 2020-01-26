@@ -1,0 +1,104 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "delete":
+    prefix: "delete"
+    body: '''delete(${1:obj})'''
+    description: '''delete(${1:obj})'''
+
+
+    "fclose":
+    prefix: "fclose"
+    body: '''fclose(${1:obj})'''
+    description: '''fclose(${1:obj})'''
+
+
+    "disp":
+    prefix: "disp"
+    body: '''disp(${1:obj})'''
+    description: '''disp(${1:obj})'''
+
+
+    "binblockread":
+    prefix: "binblockread"
+    body: '''[${1:A}, ${2:count}, ${3:msg}] = binblockread(${1:obj}, ${2:optional_precision})'''
+    description: '''[${1:A}, ${2:count}, ${3:msg}] = binblockread(${1:obj}, ${2:optional_precision})'''
+
+
+    "flushoutput":
+    prefix: "flushoutput"
+    body: '''flushoutput(${1:obj})'''
+    description: '''flushoutput(${1:obj})'''
+
+
+    "readasync":
+    prefix: "readasync"
+    body: '''readasync(${1:obj}, ${2:optional_size})'''
+    description: '''readasync(${1:obj}, ${2:optional_size})'''
+
+
+    "flushinput":
+    prefix: "flushinput"
+    body: '''flushinput(${1:obj})'''
+    description: '''flushinput(${1:obj})'''
+
+
+    "binblockwrite":
+    prefix: "binblockwrite"
+    body: '''binblockwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_header}, ${5:optional_headerformat})'''
+    description: '''binblockwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_header}, ${5:optional_headerformat})'''
+
+
+    "fgets":
+    prefix: "fgets"
+    body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
+    description: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
+
+
+    "instrfindall":
+    prefix: "instrfindall"
+    body: '''${1:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
+    description: '''${1:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
+
+
+    "fgetl":
+    prefix: "fgetl"
+    body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
+    description: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
+
+
+    "instrcallback":
+    prefix: "instrcallback"
+    body: '''instrcallback(${1:obj}, ${2:event})'''
+    description: '''instrcallback(${1:obj}, ${2:event})'''
+
+
+    "scanstr":
+    prefix: "scanstr"
+    body: '''[${1:A}, ${2:count}, ${3:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})'''
+    description: '''[${1:A}, ${2:count}, ${3:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})'''
+
+
+    "fopen":
+    prefix: "fopen"
+    body: '''fopen(${1:obj})'''
+    description: '''fopen(${1:obj})'''
+
+
+    "record":
+    prefix: "record"
+    body: '''record(${1:obj}, ${2:optional_switch})'''
+    description: '''record(${1:obj}, ${2:optional_switch})'''
+
+
+    "fprintf":
+    prefix: "fprintf"
+    body: '''fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})'''
+    description: '''fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})'''
+
+
+    "stopasync":
+    prefix: "stopasync"
+    body: '''stopasync(${1:obj})'''
+    description: '''stopasync(${1:obj})'''
+

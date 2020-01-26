@@ -1,0 +1,26 @@
+{
+"batchsim":
+{
+    "inputs":
+    [
+        {"name":"clus", "kind": "ordered", "type": "parallel.Cluster"},
+        {"name":"in", "kind":"required", "type":"Simulink.SimulationInput"},
+        {"name":"AdditionalPaths", "kind":"namevalue", "type":[["cellstr"], ["char"]]},
+        {"name":"AttachedFiles", "kind":"namevalue", "type":"cellstr"},
+        {"name":"AutoAddClientPath", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"AutoAttachFiles", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"CaptureDiary", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"CleanupFcn", "kind":"namevalue", "type":"function_handle"},
+        {"name":"CurrentFolder", "kind":"namevalue", "type":"char"},
+        {"name":"EnvironmentVariables", "kind":"namevalue", "type":[["cellstr"], ["char"]]},
+        {"name":"Pool", "kind":"namevalue", "type":"numeric", "default":"0"},
+        {"name":"Profile", "kind":"namevalue", "type":[["char"], ["choices=parallel.clusterProfiles()"]]},
+        {"name":"SetupFcn", "kind":"namevalue", "type":"function_handle"},
+        {"name":"ShowProgress", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"StopOnError", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"UseFastRestart", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"TransferBaseWorkspaceVariables", "kind":"namevalue", "type":"choices={'on', 'off'}"},
+        {"name":"ManageDependencies", "kind":"namevalue", "type":"choices={'on', 'off'}"}
+    ]
+}
+}

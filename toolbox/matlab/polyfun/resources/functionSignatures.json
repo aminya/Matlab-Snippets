@@ -1,0 +1,528 @@
+{
+"alphaShape":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"y", "kind":"required", "type":"numeric"},
+                    {"name":"a", "kind":"ordered", "type":"numeric"},
+                    {"name":"HoleThreshold", "kind":"namevalue", "type":"numeric"},
+                    {"name":"RegionThreshold", "kind":"namevalue", "type":"numeric"}
+                ],
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"y", "kind":"required", "type":"numeric"},
+                    {"name":"z", "kind":"required", "type":"numeric"},
+                    {"name":"a", "kind":"ordered", "type":"numeric"},
+                    {"name":"HoleThreshold", "kind":"namevalue", "type":"numeric"},
+                    {"name":"RegionThreshold", "kind":"namevalue", "type":"numeric"}
+                ],
+                [
+                    {"name":"P", "kind":"required", "type":"numeric"},
+                    {"name":"a", "kind":"ordered", "type":"numeric"},
+                    {"name":"HoleThreshold", "kind":"namevalue", "type":"numeric"},
+                    {"name":"RegionThreshold", "kind":"namevalue", "type":"numeric"}
+                ]
+            ]
+        }
+    ]
+},
+"alphaShape.criticalAlpha":
+{
+    "inputs":
+    [
+
+        {"name":"shp", "kind":"required", "type":"alphaShape"},
+        {"name":"type", "kind":"flag", "type":["char", "choices={'all-points','one-region'}"]}
+    ]
+},
+"alphaShape.plot":
+{
+    "inputs":
+    [
+        {"name":"shp", "kind":"required", "type":"alphaShape"},
+        {"name":"options", "kind":"properties", "type":"matlab.graphics.primitive.Patch"}
+    ]
+},
+"interp1":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"xq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','v5cubic','spline'}"]},
+                    {"name":"extrapolation", "kind":"positional", "type":[["char", "choices={'extrap'}"],["numeric"]]}
+                ],
+                [
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"xq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','v5cubic','spline'}"]},
+                    {"name":"extrapolation", "kind":"positional", "type":[["char", "choices={'extrap'}"],["numeric"]]}
+                ]
+            ]
+        }
+    ]
+},
+"interp2":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"X", "kind":"required", "type":"numeric"},
+                    {"name":"Y", "kind":"required", "type":"numeric"},
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Xq", "kind":"required", "type":"numeric"},
+                    {"name":"Yq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Xq", "kind":"required", "type":"numeric"},
+                    {"name":"Yq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"k", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ]
+            ]
+        }
+    ]
+},
+"interp3":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"X", "kind":"required", "type":"numeric"},
+                    {"name":"Y", "kind":"required", "type":"numeric"},
+                    {"name":"Z", "kind":"required", "type":"numeric"},
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Xq", "kind":"required", "type":"numeric"},
+                    {"name":"Yq", "kind":"required", "type":"numeric"},
+                    {"name":"Zq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Xq", "kind":"required", "type":"numeric"},
+                    {"name":"Yq", "kind":"required", "type":"numeric"},
+                    {"name":"Zq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"k", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ]
+            ]
+        }
+    ]
+},
+"interpn":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"X", "kind":"required", "type":"numeric", "repeating":true},
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Xq", "kind":"required", "type":"numeric", "repeating":true},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','pchip','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Xq", "kind":"required", "type":"numeric", "repeating":true},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','pchip','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','pchip','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"k", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','pchip','cubic','spline'}"]},
+                    {"name":"extrapval", "kind":"positional", "type":"numeric"}
+                ]
+            ]
+        }
+    ]
+},
+"griddedInterpolant":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline','none'}"]}
+                ],
+                [
+                    {"name":"X", "kind":"required", "type":"numeric", "repeating":true},
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline','none'}"]}
+                ],
+                [
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline','none'}"]}
+                ],
+                [
+                    {"name":"xg", "kind":"required", "type":"cell"},
+                    {"name":"V", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','makima','nearest','next','previous','pchip','cubic','spline','none'}"]}
+                ]
+            ]
+        }
+    ]
+},
+"scatteredInterpolant":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"y", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','nearest','natural'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','nearest','none'}"]}
+                ],
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"y", "kind":"required", "type":"numeric"},
+                    {"name":"z", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','nearest','natural'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','nearest','none'}"]}
+                ],
+                [
+                    {"name":"P", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"Method", "kind":"positional", "type":["char", "choices={'linear','nearest','natural'}"]},
+                    {"name":"ExtrapolationMethod", "kind":"positional", "type":["char", "choices={'linear','nearest','none'}"]}
+                ]
+            ]
+        }
+    ]
+},
+"griddata":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"y", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"xq", "kind":"required", "type":"numeric"},
+                    {"name":"yq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','nearest','natural','cubic','v4'}"]}
+                ],
+                [
+                    {"name":"x", "kind":"required", "type":"numeric"},
+                    {"name":"y", "kind":"required", "type":"numeric"},
+                    {"name":"z", "kind":"required", "type":"numeric"},
+                    {"name":"v", "kind":"required", "type":"numeric"},
+                    {"name":"xq", "kind":"required", "type":"numeric"},
+                    {"name":"yq", "kind":"required", "type":"numeric"},
+                    {"name":"zq", "kind":"required", "type":"numeric"},
+                    {"name":"method", "kind":"positional", "type":["char", "choices={'linear','nearest','natural','cubic','v4'}"]}
+                ]
+            ]
+        }
+    ]
+},
+"griddatan":
+{
+    "inputs":
+    [
+        {"name":"x", "kind":"required", "type":"numeric"},
+        {"name":"v", "kind":"required", "type":"numeric"},
+        {"name":"xq", "kind":"required", "type":"numeric"},
+        {"name":"method", "kind":"positional", "type":["char", "choices={'linear','nearest'}"]},
+        {"name":"options", "kind":"positional", "type":"cellstr"}
+    ]
+},
+"stlread":
+{
+    "inputs":
+    [
+        {"name":"filename", "kind":"required", "type":[["file=*.stl,*.STL"], ["char"]]}
+    ]
+},
+"stlwrite":
+{
+    "inputs":
+    [
+        {"name":"tr", "kind":"required", "type":[["triangulation"], ["delaunayTriangulation"]]},
+        {"name":"filename", "kind":"required", "type":[["file=*.stl,*.STL"], ["char"]]},
+        {"name":"fileformat", "kind":"optional", "type":["char", "choices={'binary', 'text'}"]},
+        {"name":"Attribute", "kind":"namevalue", "type":["numeric", "vector"]},
+        {"name":"SolidIndex", "kind":"namevalue", "type":["numeric", "vector"]}
+    ]
+},
+"polyshape":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":[["numeric", "vector"]]},
+                    {"name":"y", "kind":"required", "type":[["numeric", "vector"]]}
+                ],
+                [
+                    {"name":"P", "kind":"required", "type":"numeric"}
+                ],
+                [
+                    {"name":"X", "kind":"required", "type":"cell"},
+                    {"name":"Y", "kind":"required", "type":"cell"}
+                ]
+            ]
+        },
+        {"name":"SolidBoundaryOrientation", "kind":"namevalue", "type":["char", "choices={'auto', 'cw', 'ccw'}"]},
+        {"name":"Simplify", "kind":"namevalue", "type":"logical"},
+        {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.addboundary":
+{
+    "inputs":
+    [
+        {"name":"polyin", "kind":"required", "type":"polyshape"},
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":[["numeric", "vector"]]},
+                    {"name":"y", "kind":"required", "type":[["numeric", "vector"]]}
+                ],
+                [
+                    {"name":"P", "kind":"required", "type":"numeric"}
+                ],
+                [
+                    {"name":"X", "kind":"required", "type":"cell"},
+                    {"name":"Y", "kind":"required", "type":"cell"}
+                ]
+            ]
+        },
+        {"name":"SolidBoundaryOrientation", "kind":"namevalue", "type":["char", "choices={'auto', 'cw', 'ccw'}"]},
+        {"name":"Simplify", "kind":"namevalue", "type":"logical"},
+        {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.rmboundary":
+{
+    "inputs":
+    [
+        {"name":"polyin", "kind":"required", "type":"polyshape"},
+        {"name":"I", "kind":"required", "type":[["numeric", "vector"]]},
+        {"name":"Simplify", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.plot":
+{
+    "inputs":
+    [
+        {"name":"pgon", "kind":"required", "type":"polyshape"},
+        {"name":"options", "kind":"properties", "type":"matlab.graphics.primitive.Polygon"}
+    ]
+},
+"polyshape.sortboundaries":
+{
+    "inputs":
+    [
+        {"name":"pgon", "kind":"required", "type":"polyshape"},
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"criterion", "kind":"positional", "type":["char", "choices={'area', 'perimeter', 'numsides'}"]},
+                    {"name":"direction", "kind":"optional", "type":["char", "choices={'ascend', 'descend'}"]}
+                ],
+                [
+                    {"name":"criterion", "kind":"required", "type":["char", "choices={'centroid'}"]},
+                    {"name":"direction", "kind":"optional", "type":["char", "choices={'ascend', 'descend'}"]},
+                    {"name":"ReferencePoint", "kind":"namevalue", "type":[["numeric", "vector"]]}
+                ]
+            ]
+        }
+    ]
+},
+"polyshape.sortregions":
+{
+    "inputs":
+    [
+        {"name":"pgon", "kind":"required", "type":"polyshape"},
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"criterion", "kind":"positional", "type":["char", "choices={'area', 'perimeter', 'numsides'}"]},
+                    {"name":"direction", "kind":"optional", "type":["char", "choices={'ascend', 'descend'}"]}
+                ],
+                [
+                    {"name":"criterion", "kind":"required", "type":["char", "choices={'centroid'}"]},
+                    {"name":"direction", "kind":"optional", "type":["char", "choices={'ascend', 'descend'}"]},
+                    {"name":"ReferencePoint", "kind":"namevalue", "type":[["numeric", "vector"]]}
+                ]
+            ]
+        }
+    ]
+},
+"polyshape.xor":
+{
+    "inputs":
+    [
+        {"name":"poly1", "kind":"required", "type":"polyshape"},
+        {"name":"poly2", "kind":"required", "type":"polyshape"},
+        {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.subtract":
+{
+    "inputs":
+    [
+        {"name":"poly1", "kind":"required", "type":"polyshape"},
+        {"name":"poly2", "kind":"required", "type":"polyshape"},
+        {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.union":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"polyvec", "kind":"required", "type":"polyshape"}
+                ],
+                [
+                    {"name":"poly1", "kind":"required", "type":"polyshape"},
+                    {"name":"poly2", "kind":"required", "type":"polyshape"}
+                ]
+            ]
+        },
+        {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.intersect":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"polyvec", "kind":"required", "type":"polyshape"},
+                    {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+                ],
+                [
+                    {"name":"poly1", "kind":"required", "type":"polyshape"},
+                    {"name":"poly2", "kind":"required", "type":"polyshape"},
+                    {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+                ],
+                [
+                    {"name":"poly1", "kind":"required", "type":"polyshape"},
+                    {"name":"lineseg", "kind":"required", "type":"numeric"}
+                ]
+            ]
+        }
+    ]
+},
+"polyshape.simplify":
+{
+    "inputs":
+    [
+        {"name":"polyin", "kind":"required", "type":"polyshape"},
+        {"name":"KeepCollinearPoints", "kind":"namevalue", "type":"logical"}
+    ]
+},
+"polyshape.polybuffer":
+{
+    "inputs":
+    [
+        {"name":"polyin", "kind":"required", "type":"polyshape"},
+        {"name":"d", "kind":"required", "type":[["numeric", "scalar"]]},
+        {"name":"JointType", "kind":"namevalue", "type":["char", "choices={'round', 'square', 'miter'}"]},
+        {"name":"MiterLimit", "kind":"namevalue", "type":[["numeric", "scalar"]]}
+    ]
+},
+"polybuffer":
+{
+    "inputs":
+    [
+        {"name":"P", "kind":"required", "type":"numeric"},
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"points", "kind":"required", "type":["char", "choices={'points'}"]},
+                    {"name":"d", "kind":"required", "type":[["numeric", "scalar"]]}
+                ],
+                [
+                    {"name":"lines", "kind":"required", "type":["char", "choices={'lines'}"]},
+                    {"name":"d", "kind":"required", "type":[["numeric", "scalar"]]},
+                    {"name":"JointType", "kind":"namevalue", "type":["char", "choices={'round', 'square', 'miter'}"]},
+                    {"name":"MiterLimit", "kind":"namevalue", "type":[["numeric", "scalar"]]}
+                ]
+            ]
+        }
+    ]
+},
+"convhull":
+{
+    "inputs":
+    [
+        {"mutuallyExclusiveGroup":
+            [
+                [
+                    {"name":"x", "kind":"required", "type":[["numeric", "vector"]]},
+                    {"name":"y", "kind":"required", "type":[["numeric", "vector"]]},
+                    {"name":"z", "kind":"optional", "type":[["numeric", "vector"]]}
+                ],
+                [
+                    {"name":"X", "kind":"required", "type":[["numeric"]]}
+                ]
+            ]
+        },
+        {"name":"Simplify", "kind":"namevalue", "type":"logical"}
+    ]
+}
+}

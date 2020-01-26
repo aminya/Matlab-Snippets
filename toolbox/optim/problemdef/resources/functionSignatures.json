@@ -1,0 +1,505 @@
+{
+"eqnproblem":
+{
+    "inputs":
+    [
+        {"name":"Description", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]},
+        {"name":"Equations", "kind":"namevalue", "type":[["struct", "scalar"], ["optim.problemdef.OptimizationEquality"]]}
+    ],
+    "outputs":
+    [
+        {"name":"prob"}
+    ]
+},
+"fcn2optimexpr":
+{
+    "inputs":
+    [
+        {"name":"fun", "kind":"required", "type":["function_handle"]},
+        {"name":"Xin", "kind":"ordered", "repeating":true},
+        {"name":"ReuseEvaluation", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"OutputSize", "kind":"namevalue", "type":["numeric", "row", "integer", ">=0"]}
+    ],
+    "outputs":
+    [
+        {"name":"constr"}
+    ]
+},
+"optimconstr":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"n", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"cstr", "kind":"required", "type":[["string"],["cellstr"]], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        }
+    ],
+    "outputs":
+    [       
+        {"name":"constr"}
+    ]
+},
+"optimeq":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"n", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"cstr", "kind":"required", "type":[["string"],["cellstr"]], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        }
+    ],
+    "outputs":
+    [       
+        {"name":"eqs"}
+    ]
+},
+"optimexpr":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"n", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"cstr", "kind":"required", "type":[["string"], ["cellstr"]], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        }
+    ],
+    "outputs":
+    [
+        {"name":"expr"}
+    ]
+},
+"optimineq":
+{
+    "inputs":
+    [
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"n", "kind":"required", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"cstr", "kind":"required", "type":[["string"],["cellstr"]], "repeating":true},
+                {"name":"sz", "kind":"required", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        }
+    ],
+    "outputs":
+    [       
+        {"name":"ineq"}
+    ]
+},
+"optimproblem":
+{
+    "inputs":
+    [
+        {"name":"Constraints", "kind":"namevalue", "type":[["struct", "scalar"], ["optim.problemdef.OptimizationConstraint"], ["optim.problemdef.OptimizationEquality"], ["optim.problemdef.OptimizationInequality"]]},
+        {"name":"Description", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]},
+        {"name":"Objective", "kind":"namevalue", "type":[["struct","scalar"], ["optim.problemdef.OptimizationExpression","scalar"]]},
+        {"name":"ObjectiveSense", "kind":"namevalue", "type":["choices={'max','maximize','min','minimize'}"]}
+    ],
+    "outputs":
+    [
+        {"name":"prob"}
+    ]
+},
+"optimvar":
+{
+    "inputs":
+    [
+        {"name":"Name", "kind":"required", "type":["char","string"]},
+        {
+            "mutuallyExclusiveGroup":
+            [
+                {"name":"n", "kind":"ordered", "type":["numeric", "scalar", "integer", ">=0"], "repeating":true},
+                {"name":"cstr", "kind":"ordered", "type":[["string"],["cellstr"]], "repeating":true},
+                {"name":"sz", "kind":"ordered", "type":["numeric", "vector", "integer", ">=0"]}
+            ]
+        },
+        {"name":"Type", "kind":"namevalue", "type":["choices={'continuous', 'integer'}"]},
+        {"name":"LowerBound", "kind":"namevalue", "type":["numeric", "double"]},
+        {"name":"UpperBound", "kind":"namevalue", "type":["numeric", "double"]}
+    ],
+    "outputs":
+    [
+        {"name":"x"}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenReference":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1", "<=size(c,1)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenReference":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1", "<=size(c,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenReference":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) numel(size(x))==2 && ~isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=c.IndexNames{1}"], ["integer", ">=1", "<=size(c,1)"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1", "<=size(c,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenReference":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) numel(size(x))==3"]},
+        {"name":"dim1", "kind":"required", "type":[["choices=c.IndexNames{1}"], ["integer", ">=1", "<=size(c,1)"], ["@islogical"]]},
+        {"name":"dim2", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1", "<=size(c,2)"], ["@islogical"]]},
+        {"name":"dim3", "kind":"required", "type":[["choices=c.IndexNames{3}"], ["integer", ">=1", "<=size(c,3)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenAssign":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1", "<=size(c,1)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenAssign":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1", "<=size(c,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenAssign":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) numel(size(x))==2 && ~isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=c.IndexNames{1}"], ["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint._parenAssign":
+{
+    "inputs": [
+        {"name":"c", "kind":"required", "type":["optim.problemdef.OptimizationConstraint","@(x) numel(size(x))==3"]},
+        {"name":"dim1", "kind":"required", "type":[["choices=c.IndexNames{1}"], ["integer", ">=1"], ["@islogical"]]},
+        {"name":"dim2", "kind":"required", "type":[["choices=c.IndexNames{2}"], ["integer", ">=1"], ["@islogical"]]},
+        {"name":"dim3", "kind":"required", "type":[["choices=c.IndexNames{3}"], ["integer", ">=1"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenReference":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1", "<=size(e,1)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenReference":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1", "<=size(e,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenReference":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) numel(size(x))==2 && ~isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=e.IndexNames{1}"], ["integer", ">=1", "<=size(e,1)"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1", "<=size(e,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenReference":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) numel(size(x))==3"]},
+        {"name":"dim1", "kind":"required", "type":[["choices=e.IndexNames{1}"], ["integer", ">=1", "<=size(e,1)"], ["@islogical"]]},
+        {"name":"dim2", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1", "<=size(e,2)"], ["@islogical"]]},
+        {"name":"dim3", "kind":"required", "type":[["choices=e.IndexNames{3}"], ["integer", ">=1", "<=size(e,3)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenAssign":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1", "<=size(e,1)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenAssign":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1", "<=size(e,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenAssign":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) numel(size(x))==2 && ~isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=e.IndexNames{1}"], ["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression._parenAssign":
+{
+    "inputs": [
+        {"name":"e", "kind":"required", "type":["optim.problemdef.OptimizationExpression","@(x) numel(size(x))==3"]},
+        {"name":"dim1", "kind":"required", "type":[["choices=e.IndexNames{1}"], ["integer", ">=1"], ["@islogical"]]},
+        {"name":"dim2", "kind":"required", "type":[["choices=e.IndexNames{2}"], ["integer", ">=1"], ["@islogical"]]},
+        {"name":"dim3", "kind":"required", "type":[["choices=e.IndexNames{3}"], ["integer", ">=1"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenReference":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,1)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenReference":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenReference":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) numel(size(x))==2 && ~isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=v.IndexNames{1}"], ["integer", ">=1", "<=size(v,1)"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenReference":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) numel(size(x))==3"]},
+        {"name":"dim1", "kind":"required", "type":[["choices=v.IndexNames{1}"], ["integer", ">=1", "<=size(v,1)"], ["@islogical"]]},
+        {"name":"dim2", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,2)"], ["@islogical"]]},
+        {"name":"dim3", "kind":"required", "type":[["choices=v.IndexNames{3}"], ["integer", ">=1", "<=size(v,3)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenAssign":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,1)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenAssign":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["integer", ">=1"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenAssign":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) numel(size(x))==2 && ~isrow(x)"]},
+        {"name":"rows", "kind":"required", "type":[["choices=v.IndexNames{1}"], ["integer", ">=1", "<=size(v,1)"], ["@islogical"]]},
+        {"name":"cols", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,2)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable._parenAssign":
+{
+    "inputs": [
+        {"name":"v", "kind":"required", "type":["optim.problemdef.OptimizationVariable","@(x) numel(size(x))==3"]},
+        {"name":"dim1", "kind":"required", "type":[["choices=v.IndexNames{1}"], ["integer", ">=1", "<=size(v,1)"], ["@islogical"]]},
+        {"name":"dim2", "kind":"required", "type":[["choices=v.IndexNames{2}"], ["integer", ">=1", "<=size(v,2)"], ["@islogical"]]},
+        {"name":"dim3", "kind":"required", "type":[["choices=v.IndexNames{3}"], ["integer", ">=1", "<=size(v,3)"], ["@islogical"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint.infeasibility":
+{
+    "inputs": [
+        {"name":"constr", "kind":"required", "type":["optim.problemdef.OptimizationConstraint"]},
+        {"name":"varval", "kind":"required", "type":["struct"]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint.showconstr":
+{
+    "inputs": [
+        {"name":"constr", "kind":"required", "type":["optim.problemdef.OptimizationConstraint"]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint.writeconstr":
+{
+    "inputs": [
+        {"name":"constr", "kind":"required", "type":["optim.problemdef.OptimizationConstraint"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint.show":
+{
+    "inputs": [
+        {"name":"constr", "kind":"required", "type":["optim.problemdef.OptimizationConstraint"]}
+    ]
+},
+"optim.problemdef.OptimizationConstraint.write":
+{
+    "inputs": [
+        {"name":"constr", "kind":"required", "type":["optim.problemdef.OptimizationConstraint"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.showbounds":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.showvar":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.show":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.writebounds":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.writevar":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.write":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression.showexpr":
+{
+    "inputs": [
+        {"name":"expr", "kind":"required", "type":["optim.problemdef.OptimizationExpression"]}        
+    ]
+},
+"optim.problemdef.OptimizationExpression.show":
+{
+    "inputs": [
+        {"name":"expr", "kind":"required", "type":["optim.problemdef.OptimizationExpression"]}        
+    ]
+},
+"optim.problemdef.OptimizationExpression.evaluate":
+{
+    "inputs": [
+        {"name":"expr", "kind":"required", "type":["optim.problemdef.OptimizationExpression"]}, 
+        {"name":"varval", "kind":"ordered", "type":["struct"]}
+    ]
+},
+"optim.problemdef.OptimizationExpression.writeexpr":
+{
+    "inputs": [
+        {"name":"expr", "kind":"required", "type":["optim.problemdef.OptimizationExpression"]},
+        {"name":"filename", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationExpression.write":
+{
+    "inputs": [
+        {"name":"expr", "kind":"required", "type":["optim.problemdef.OptimizationExpression"]},
+        {"name":"filename", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationProblem.prob2struct":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.OptimizationProblem"]},
+        {"name":"x0", "kind":"ordered", "type":["struct"]},
+        {"name":"FileLocation", "kind":"namevalue", "type":[["folder"], ["char"], ["string"]]},
+        {"name":"Options", "kind":"namevalue", "type":["optim.options.SolverOptions", "struct"]},
+        {"name":"ObjectiveFunctionName", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]},
+        {"name":"ConstraintFunctionName", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]}
+    ]
+},
+"optim.problemdef.OptimizationProblem.solve":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.OptimizationProblem"]},
+        {"name":"x0", "kind":"ordered", "type":["struct"]},
+        {"name":"Solver", "kind":"namevalue", "type":["choices=optim.problemdef.OptimizationProblem.ValidSolvers"]},
+        {"name":"Options", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]}
+    ]
+},
+"optim.problemdef.OptimizationProblem.showproblem":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.OptimizationProblem"]}
+    ]
+},
+"optim.problemdef.OptimizationProblem.writeproblem":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.OptimizationProblem"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.OptimizationProblem.show":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.OptimizationProblem"]}
+    ]
+},
+"optim.problemdef.OptimizationProblem.write":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.OptimizationProblem"]},
+        {"name":"filename", "kind":"ordered", "type":[["string"],["char","vector"]]}
+    ]
+},
+"optim.problemdef.EquationProblem.prob2struct":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.EquationProblem"]},
+        {"name":"x0", "kind":"ordered", "type":["struct"]},
+        {"name":"FileLocation", "kind":"namevalue", "type":[["folder"], ["char"], ["string"]]},
+        {"name":"Options", "kind":"namevalue", "type":["optim.options.SolverOptions", "struct"]},
+        {"name":"EquationFunctionName", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]}
+    ]
+},
+"optim.problemdef.EquationProblem.solve":
+{
+    "inputs": [
+        {"name":"prob", "kind":"required", "type":["optim.problemdef.EquationProblem"]},
+        {"name":"x0", "kind":"ordered", "type":["struct"]},
+        {"name":"Solver", "kind":"namevalue", "type":"choices=optim.problemdef.EquationProblem.ValidSolvers"},
+        {"name":"Options", "kind":"namevalue", "type":[["char", "row"], ["string", "scalar"]]}
+    ]
+},
+"optim.problemdef.OptimizationVariable.findindex":
+{
+    "inputs": [
+        {"name":"x", "kind":"required", "type":["optim.problemdef.OptimizationVariable"]},
+        {"name":"cstr", "kind":"required", "type":[["string"],["cellstr"],["numeric"]], "repeating":true}
+    ]
+}
+}

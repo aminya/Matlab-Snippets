@@ -1,0 +1,446 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "hdfhx":
+    prefix: "hdfhx"
+    body: '''hdfhx()'''
+    description: '''hdfhx()'''
+
+
+    "Tiff.writeDirectory":
+    prefix: "Tiff.writeDirectory"
+    body: '''Tiff.writeDirectory(${1:tiffobj})'''
+    description: '''Tiff.writeDirectory(${1:tiffobj})'''
+
+
+    "cdfread":
+    prefix: "cdfread"
+    body: '''[${1:data}, ${2:info}] = cdfread(${1:filename}, 'Records', ${2:value}, 'Variables', ${3:value}, 'Slices', ${4:value}, 'ConvertEpochToDatenum', ${5:value}, 'CombineRecords', ${6:value})'''
+    description: '''[${1:data}, ${2:info}] = cdfread(${1:filename}, 'Records', ${2:value}, 'Variables', ${3:value}, 'Slices', ${4:value}, 'ConvertEpochToDatenum', ${5:value}, 'CombineRecords', ${6:value})'''
+
+
+    "hdfdfr8":
+    prefix: "hdfdfr8"
+    body: '''hdfdfr8()'''
+    description: '''hdfdfr8()'''
+
+
+    "h5readatt":
+    prefix: "h5readatt"
+    body: '''${1:attval} = h5readatt(${1:filename}, ${2:location}, ${3:attr})'''
+    description: '''${1:attval} = h5readatt(${1:filename}, ${2:location}, ${3:attr})'''
+
+
+    "h5create":
+    prefix: "h5create"
+    body: '''h5create(${1:filename}, ${2:datasetname}, ${3:size}, 'Datatype', ${4:value}, 'Chunksize', ${5:value}, 'Deflate', ${6:value}, 'Fillvalue', ${7:value}, 'Fletcher32', ${8:value}, 'Shuffle', ${9:value}, 'TextEncoding', ${10:value})'''
+    description: '''h5create(${1:filename}, ${2:datasetname}, ${3:size}, 'Datatype', ${4:value}, 'Chunksize', ${5:value}, 'Deflate', ${6:value}, 'Fillvalue', ${7:value}, 'Fletcher32', ${8:value}, 'Shuffle', ${9:value}, 'TextEncoding', ${10:value})'''
+
+
+    "Tiff.write":
+    prefix: "Tiff.write"
+    body: '''Tiff.write(${1:tiffobj}, ${2:Y}, ${3:Cb}, ${4:Cr})'''
+    description: '''Tiff.write(${1:tiffobj}, ${2:Y}, ${3:Cb}, ${4:Cr})'''
+
+
+    "Tiff.setSubDirectory":
+    prefix: "Tiff.setSubDirectory"
+    body: '''Tiff.setSubDirectory(${1:tiffobj}, ${2:offset})'''
+    description: '''Tiff.setSubDirectory(${1:tiffobj}, ${2:offset})'''
+
+
+    "Tiff.readEncodedTile":
+    prefix: "Tiff.readEncodedTile"
+    body: '''Tiff.readEncodedTile(${1:tiffobj}, ${2:tileNumber})'''
+    description: '''Tiff.readEncodedTile(${1:tiffobj}, ${2:tileNumber})'''
+
+
+    "hdfsd":
+    prefix: "hdfsd"
+    body: '''hdfsd()'''
+    description: '''hdfsd()'''
+
+
+    "Tiff.read":
+    prefix: "Tiff.read"
+    body: '''Tiff.read(${1:tiffobj})'''
+    description: '''Tiff.read(${1:tiffobj})'''
+
+
+    "Tiff.readEncodedStrip":
+    prefix: "Tiff.readEncodedStrip"
+    body: '''Tiff.readEncodedStrip(${1:tiffobj}, ${2:stripNumber})'''
+    description: '''Tiff.readEncodedStrip(${1:tiffobj}, ${2:stripNumber})'''
+
+
+    "Tiff.readRGBATile":
+    prefix: "Tiff.readRGBATile"
+    body: '''Tiff.readRGBATile(${1:tiffobj}, ${2:row}, ${3:col})'''
+    description: '''Tiff.readRGBATile(${1:tiffobj}, ${2:row}, ${3:col})'''
+
+
+    "hdf5read":
+    prefix: "hdf5read"
+    body: '''hdf5read()'''
+    description: '''hdf5read()'''
+
+
+    "Tiff.readRGBAImage":
+    prefix: "Tiff.readRGBAImage"
+    body: '''Tiff.readRGBAImage(${1:tiffobj})'''
+    description: '''Tiff.readRGBAImage(${1:tiffobj})'''
+
+
+    "hdfsw":
+    prefix: "hdfsw"
+    body: '''hdfsw()'''
+    description: '''hdfsw()'''
+
+
+    "h5read":
+    prefix: "h5read"
+    body: '''${1:info} = h5read(${1:filename}, ${2:datasetname}, ${3:start}, ${4:count}, ${5:stride})'''
+    description: '''${1:info} = h5read(${1:filename}, ${2:datasetname}, ${3:start}, ${4:count}, ${5:stride})'''
+
+
+    "hdfv":
+    prefix: "hdfv"
+    body: '''hdfv()'''
+    description: '''hdfv()'''
+
+
+    "imwrite":
+    prefix: "imwrite"
+    body: '''imwrite(${1:A}, ${2:optional_map}, ${3:filename}, ${4:optional_fmt})'''
+    description: '''imwrite(${1:A}, ${2:optional_map}, ${3:filename}, ${4:optional_fmt})'''
+
+
+    "Tiff.getTagNames":
+    prefix: "Tiff.getTagNames"
+    body: '''Tiff.getTagNames(${1:tiffobj})'''
+    description: '''Tiff.getTagNames(${1:tiffobj})'''
+
+
+    "Tiff.readRGBAStrip":
+    prefix: "Tiff.readRGBAStrip"
+    body: '''Tiff.readRGBAStrip(${1:tiffobj}, ${2:row})'''
+    description: '''Tiff.readRGBAStrip(${1:tiffobj}, ${2:row})'''
+
+
+    "ncreadatt":
+    prefix: "ncreadatt"
+    body: '''ncreadatt(${1:source}, ${2:location}, ${3:attname})'''
+    description: '''ncreadatt(${1:source}, ${2:location}, ${3:attname})'''
+
+
+    "hdfinfo":
+    prefix: "hdfinfo"
+    body: '''${1:info} = hdfinfo(${1:filename}, ${2:optional_'HDF'})'''
+    description: '''${1:info} = hdfinfo(${1:filename}, ${2:optional_'HDF'})'''
+
+
+    "Tiff.getVersion":
+    prefix: "Tiff.getVersion"
+    body: '''Tiff.getVersion(${1:tiffobj})'''
+    description: '''Tiff.getVersion(${1:tiffobj})'''
+
+
+    "multibandread":
+    prefix: "multibandread"
+    body: '''multibandread(${1:filename}, ${2:size}, ${3:precision}, ${4:offset}, ${5:interleave}, ${6:byteorder}, ${7:optional_subset1}, ${8:optional_subset2}, ${9:optional_subset3})'''
+    description: '''multibandread(${1:filename}, ${2:size}, ${3:precision}, ${4:offset}, ${5:interleave}, ${6:byteorder}, ${7:optional_subset1}, ${8:optional_subset2}, ${9:optional_subset3})'''
+
+
+    "hdfgd":
+    prefix: "hdfgd"
+    body: '''hdfgd()'''
+    description: '''hdfgd()'''
+
+
+    "fitswrite":
+    prefix: "fitswrite"
+    body: '''fitswrite(${1:imagedata}, ${2:filename}, 'WriteMode', ${3:value}, 'Compression', ${4:value})'''
+    description: '''fitswrite(${1:imagedata}, ${2:filename}, 'WriteMode', ${3:value}, 'Compression', ${4:value})'''
+
+
+    "Tiff.numberOfStrips":
+    prefix: "Tiff.numberOfStrips"
+    body: '''Tiff.numberOfStrips(${1:tiffobj})'''
+    description: '''Tiff.numberOfStrips(${1:tiffobj})'''
+
+
+    "cdfwrite":
+    prefix: "cdfwrite"
+    body: '''cdfwrite(${1:filename}, ${2:variablelist}, 'PadValues', ${3:value}, 'GlobalAttributes', ${4:value}, 'VariableAttributes', ${5:value}, 'WriteMode', ${6:value}, 'Format', ${7:value})'''
+    description: '''cdfwrite(${1:filename}, ${2:variablelist}, 'PadValues', ${3:value}, 'GlobalAttributes', ${4:value}, 'VariableAttributes', ${5:value}, 'WriteMode', ${6:value}, 'Format', ${7:value})'''
+
+
+    "ncinfo":
+    prefix: "ncinfo"
+    body: '''ncinfo(${1:source}, ${2:optional_groupname})'''
+    description: '''ncinfo(${1:source}, ${2:optional_groupname})'''
+
+
+    "nccreate":
+    prefix: "nccreate"
+    body: '''nccreate(${1:filename}, ${2:varname}, 'Dimensions', ${3:value}, 'Datatype', ${4:value}, 'Format', ${5:value}, 'FillValue', ${6:value}, 'ChunkSize', ${7:value}, 'DeflateLevel', ${8:value}, 'Shuffle', ${9:value})'''
+    description: '''nccreate(${1:filename}, ${2:varname}, 'Dimensions', ${3:value}, 'Datatype', ${4:value}, 'Format', ${5:value}, 'FillValue', ${6:value}, 'ChunkSize', ${7:value}, 'DeflateLevel', ${8:value}, 'Shuffle', ${9:value})'''
+
+
+    "multibandwrite":
+    prefix: "multibandwrite"
+    body: '''multibandwrite(${1:data}, ${2:filename}, ${3:interleave}, 'precision', ${4:value}, 'offset', ${5:value}, 'machfmt', ${6:value}, 'fillvalue', ${7:value})'''
+    description: '''multibandwrite(${1:data}, ${2:filename}, ${3:interleave}, 'precision', ${4:value}, 'offset', ${5:value}, 'machfmt', ${6:value}, 'fillvalue', ${7:value})'''
+
+
+    "hdfhe":
+    prefix: "hdfhe"
+    body: '''hdfhe()'''
+    description: '''hdfhe()'''
+
+
+    "hdfvh":
+    prefix: "hdfvh"
+    body: '''hdfvh()'''
+    description: '''hdfvh()'''
+
+
+    "Tiff.lastDirectory":
+    prefix: "Tiff.lastDirectory"
+    body: '''Tiff.lastDirectory(${1:tiffobj})'''
+    description: '''Tiff.lastDirectory(${1:tiffobj})'''
+
+
+    "hdf5info":
+    prefix: "hdf5info"
+    body: '''hdf5info()'''
+    description: '''hdf5info()'''
+
+
+    "imread":
+    prefix: "imread"
+    body: '''imread(${1:filename}, ${2:optional_fmt})'''
+    description: '''imread(${1:filename}, ${2:optional_fmt})'''
+
+
+    "hdftool":
+    prefix: "hdftool"
+    body: '''${1:h} = hdftool(${1:filename})'''
+    description: '''${1:h} = hdftool(${1:filename})'''
+
+
+    "ncwriteatt":
+    prefix: "ncwriteatt"
+    body: '''ncwriteatt(${1:filename}, ${2:location}, ${3:attname}, ${4:attvalue})'''
+    description: '''ncwriteatt(${1:filename}, ${2:location}, ${3:attname}, ${4:attvalue})'''
+
+
+    "imfinfo":
+    prefix: "imfinfo"
+    body: '''imfinfo(${1:filename}, ${2:optional_fmt})'''
+    description: '''imfinfo(${1:filename}, ${2:optional_fmt})'''
+
+
+    "fitsread":
+    prefix: "fitsread"
+    body: '''${1:data} = fitsread(${1:filename}, ${2:optional_'raw'}, ${3:optional_extname}, ${4:optional_index}, 'Info', ${5:value}, 'PixelRegion', ${6:value}, 'TableColumns', ${7:value}, 'TableRows', ${8:value})'''
+    description: '''${1:data} = fitsread(${1:filename}, ${2:optional_'raw'}, ${3:optional_extname}, ${4:optional_index}, 'Info', ${5:value}, 'PixelRegion', ${6:value}, 'TableColumns', ${7:value}, 'TableRows', ${8:value})'''
+
+
+    "Tiff.setDirectory":
+    prefix: "Tiff.setDirectory"
+    body: '''Tiff.setDirectory(${1:tiffobj}, ${2:dirNum})'''
+    description: '''Tiff.setDirectory(${1:tiffobj}, ${2:dirNum})'''
+
+
+    "Tiff.isTiled":
+    prefix: "Tiff.isTiled"
+    body: '''Tiff.isTiled(${1:tiffobj})'''
+    description: '''Tiff.isTiled(${1:tiffobj})'''
+
+
+    "h5write":
+    prefix: "h5write"
+    body: '''h5write(${1:filename}, ${2:datasetname}, ${3:data}, ${4:start}, ${5:count}, ${6:stride})'''
+    description: '''h5write(${1:filename}, ${2:datasetname}, ${3:data}, ${4:start}, ${5:count}, ${6:stride})'''
+
+
+    "Tiff.nextDirectory":
+    prefix: "Tiff.nextDirectory"
+    body: '''Tiff.nextDirectory(${1:tiffobj})'''
+    description: '''Tiff.nextDirectory(${1:tiffobj})'''
+
+
+    "hdf5write":
+    prefix: "hdf5write"
+    body: '''hdf5write()'''
+    description: '''hdf5write()'''
+
+
+    "hdfhd":
+    prefix: "hdfhd"
+    body: '''hdfhd()'''
+    description: '''hdfhd()'''
+
+
+    "Tiff.currentDirectory":
+    prefix: "Tiff.currentDirectory"
+    body: '''Tiff.currentDirectory(${1:tiffobj}, ${2:rowcol})'''
+    description: '''Tiff.currentDirectory(${1:tiffobj}, ${2:rowcol})'''
+
+
+    "cdfinfo":
+    prefix: "cdfinfo"
+    body: '''${1:info} = cdfinfo(${1:filename})'''
+    description: '''${1:info} = cdfinfo(${1:filename})'''
+
+
+    "fitsinfo":
+    prefix: "fitsinfo"
+    body: '''${1:info} = fitsinfo(${1:filename})'''
+    description: '''${1:info} = fitsinfo(${1:filename})'''
+
+
+    "h5disp":
+    prefix: "h5disp"
+    body: '''h5disp(${1:filename}, ${2:location}, ${3:mode}, 'TextEncoding', ${4:value})'''
+    description: '''h5disp(${1:filename}, ${2:location}, ${3:mode}, 'TextEncoding', ${4:value})'''
+
+
+    "Tiff.computeStrip":
+    prefix: "Tiff.computeStrip"
+    body: '''Tiff.computeStrip(${1:tiffobj}, ${2:row}, ${3:optional_plane})'''
+    description: '''Tiff.computeStrip(${1:tiffobj}, ${2:row}, ${3:optional_plane})'''
+
+
+    "ncdisp":
+    prefix: "ncdisp"
+    body: '''ncdisp(${1:source}, ${2:location}, ${3:dispFormat})'''
+    description: '''ncdisp(${1:source}, ${2:location}, ${3:dispFormat})'''
+
+
+    "hdfan":
+    prefix: "hdfan"
+    body: '''hdfan()'''
+    description: '''hdfan()'''
+
+
+    "h5info":
+    prefix: "h5info"
+    body: '''${1:info} = h5info(${1:filename}, ${2:location}, 'TextEncoding', ${3:value})'''
+    description: '''${1:info} = h5info(${1:filename}, ${2:location}, 'TextEncoding', ${3:value})'''
+
+
+    "Tiff.getTag":
+    prefix: "Tiff.getTag"
+    body: '''Tiff.getTag(${1:tiffobj}, ${2:tagId})'''
+    description: '''Tiff.getTag(${1:tiffobj}, ${2:tagId})'''
+
+
+    "imformats":
+    prefix: "imformats"
+    body: '''imformats()'''
+    description: '''imformats()'''
+
+
+    "Tiff.writeEncodedStrip":
+    prefix: "Tiff.writeEncodedStrip"
+    body: '''Tiff.writeEncodedStrip(${1:tiffobj}, ${2:stripNumber}, ${3:Y}, ${4:Cb}, ${5:Cr})'''
+    description: '''Tiff.writeEncodedStrip(${1:tiffobj}, ${2:stripNumber}, ${3:Y}, ${4:Cb}, ${5:Cr})'''
+
+
+    "hdf5":
+    prefix: "hdf5"
+    body: '''hdf5()'''
+    description: '''hdf5()'''
+
+
+    "ncwrite":
+    prefix: "ncwrite"
+    body: '''ncwrite(${1:filename}, ${2:varname}, ${3:vardata})'''
+    description: '''ncwrite(${1:filename}, ${2:varname}, ${3:vardata})'''
+
+
+    "Tiff.computeTile":
+    prefix: "Tiff.computeTile"
+    body: '''Tiff.computeTile(${1:tiffobj}, ${2:rowcol}, ${3:optional_plane})'''
+    description: '''Tiff.computeTile(${1:tiffobj}, ${2:rowcol}, ${3:optional_plane})'''
+
+
+    "h5writeatt":
+    prefix: "h5writeatt"
+    body: '''h5writeatt(${1:filename}, ${2:location}, ${3:attname}, ${4:attvalue}, 'TextEncoding', ${5:value})'''
+    description: '''h5writeatt(${1:filename}, ${2:location}, ${3:attname}, ${4:attvalue}, 'TextEncoding', ${5:value})'''
+
+
+    "Tiff.rewriteDirectory":
+    prefix: "Tiff.rewriteDirectory"
+    body: '''Tiff.rewriteDirectory(${1:tiffobj})'''
+    description: '''Tiff.rewriteDirectory(${1:tiffobj})'''
+
+
+    "Tiff.setTag":
+    prefix: "Tiff.setTag"
+    body: '''Tiff.setTag(${1:tiffobj}, ${2:tagStruct})'''
+    description: '''Tiff.setTag(${1:tiffobj}, ${2:tagStruct})'''
+
+
+    "ncwriteschema":
+    prefix: "ncwriteschema"
+    body: '''ncwriteschema(${1:filename}, ${2:schema})'''
+    description: '''ncwriteschema(${1:filename}, ${2:schema})'''
+
+
+    "Tiff.writeEncodedTile":
+    prefix: "Tiff.writeEncodedTile"
+    body: '''Tiff.writeEncodedTile(${1:tiffobj}, ${2:tileNumber}, ${3:Y}, ${4:Cb}, ${5:Cr})'''
+    description: '''Tiff.writeEncodedTile(${1:tiffobj}, ${2:tileNumber}, ${3:Y}, ${4:Cb}, ${5:Cr})'''
+
+
+    "Tiff.numberOfTiles":
+    prefix: "Tiff.numberOfTiles"
+    body: '''Tiff.numberOfTiles(${1:tiffobj})'''
+    description: '''Tiff.numberOfTiles(${1:tiffobj})'''
+
+
+    "ncread":
+    prefix: "ncread"
+    body: '''ncread(${1:source}, ${2:varname})'''
+    description: '''ncread(${1:source}, ${2:varname})'''
+
+
+    "hdfdf24":
+    prefix: "hdfdf24"
+    body: '''hdfdf24()'''
+    description: '''hdfdf24()'''
+
+
+    "hdfpt":
+    prefix: "hdfpt"
+    body: '''hdfpt()'''
+    description: '''hdfpt()'''
+
+
+    "Tiff":
+    prefix: "Tiff"
+    body: '''Tiff(${1:filename}, ${2:optional_mode})'''
+    description: '''Tiff(${1:filename}, ${2:optional_mode})'''
+
+
+    "hdfvf":
+    prefix: "hdfvf"
+    body: '''hdfvf()'''
+    description: '''hdfvf()'''
+
+
+    "hdfvs":
+    prefix: "hdfvs"
+    body: '''hdfvs()'''
+    description: '''hdfvs()'''
+
+
+    "fitsdisp":
+    prefix: "fitsdisp"
+    body: '''fitsdisp(${1:filename}, 'Index', ${2:value}, 'Mode', ${3:value})'''
+    description: '''fitsdisp(${1:filename}, 'Index', ${2:value}, 'Mode', ${3:value})'''
+

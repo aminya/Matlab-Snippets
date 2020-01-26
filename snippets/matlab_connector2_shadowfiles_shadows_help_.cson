@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "help":
+    prefix: "help"
+    body: '''help(${1:optional_filename})'''
+    description: '''help(${1:optional_filename})'''
+

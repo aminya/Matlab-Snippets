@@ -1,0 +1,958 @@
+{
+    "clibgen.buildInterface": {
+        "inputs": [
+            {
+                "name": "HeaderFiles",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.hpp,*.h,*.hxx" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "Verbose",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "Libraries",
+                "kind": "namevalue",
+                "type": [
+                    [ "filepath=*.lib" ],
+                    [ "char" ]
+                ],
+                "platforms": "win64"
+            },
+            {
+                "name": "IncludePath",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "OutputFolder",
+                "kind": "namevalue",
+                "type": [
+                    [ "char" ],
+                    [ "folder" ]
+                ]
+            },
+            {
+                "name": "PackageName",
+                "kind": "namevalue",
+                "type": [ [ "char" ] ]
+            },
+            {
+                "name": "TreatObjectPointerAsScalar",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "TreatConstCharPointerAsCString",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "DefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "UndefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            }
+        ]
+    },
+    "clibgen.buildInterface": {
+        "inputs": [
+            {
+                "name": "HeaderFiles",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.hpp,*.h,*.hxx" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "Verbose",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "Libraries",
+                "kind": "namevalue",
+                "type": [
+                    [ "filepath=*.dylib" ],
+                    [ "char" ]
+                ],
+                "platforms": "maci64"
+            },
+            {
+                "name": "IncludePath",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "OutputFolder",
+                "kind": "namevalue",
+                "type": [
+                    [ "char" ],
+                    [ "folder" ]
+                ]
+            },
+            {
+                "name": "PackageName",
+                "kind": "namevalue",
+                "type": [ [ "char" ] ]
+            },
+            {
+                "name": "TreatObjectPointerAsScalar",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "TreatConstCharPointerAsCString",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "DefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "UndefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            }
+        ]
+    },
+    "clibgen.buildInterface": {
+        "inputs": [
+            {
+                "name": "HeaderFiles",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.hpp,*.h,*.hxx" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "Verbose",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "Libraries",
+                "kind": "namevalue",
+                "type": [
+                    [ "filepath=*.so" ],
+                    [ "char" ]
+                ],
+                "platforms": "glnxa64"
+            },
+            {
+                "name": "IncludePath",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "OutputFolder",
+                "kind": "namevalue",
+                "type": [
+                    [ "char" ],
+                    [ "folder" ]
+                ]
+            },
+            {
+                "name": "PackageName",
+                "kind": "namevalue",
+                "type": [ [ "char" ] ]
+            },
+            {
+                "name": "TreatObjectPointerAsScalar",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "TreatConstCharPointerAsCString",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "DefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "UndefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            }
+        ]
+    },
+    "clibgen.generateLibraryDefinition": {
+        "inputs": [
+            {
+                "name": "HeaderFiles",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.hpp,*.h,*.hxx" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "Verbose",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "Libraries",
+                "kind": "namevalue",
+                "type": [
+                    [ "filepath=*.lib" ],
+                    [ "char" ]
+                ],
+                "platforms": "win64"
+            },
+            {
+                "name": "IncludePath",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "OutputFolder",
+                "kind": "namevalue",
+                "type": [
+                    [ "char" ],
+                    [ "folder" ]
+                ]
+            },
+            {
+                "name": "PackageName",
+                "kind": "namevalue",
+                "type": [ [ "char" ] ]
+            },
+            {
+                "name": "TreatObjectPointerAsScalar",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "TreatConstCharPointerAsCString",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "DefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "UndefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            }
+        ]
+    },
+    "clibgen.generateLibraryDefinition": {
+        "inputs": [
+            {
+                "name": "HeaderFiles",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.hpp,*.h,*.hxx" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "Verbose",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "Libraries",
+                "kind": "namevalue",
+                "type": [
+                    [ "filepath=*.dylib" ],
+                    [ "char" ]
+                ],
+                "platforms": "maci64"
+            },
+            {
+                "name": "IncludePath",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "OutputFolder",
+                "kind": "namevalue",
+                "type": [
+                    [ "char" ],
+                    [ "folder" ]
+                ]
+            },
+            {
+                "name": "PackageName",
+                "kind": "namevalue",
+                "type": [ [ "char" ] ]
+            },
+            {
+                "name": "TreatObjectPointerAsScalar",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "TreatConstCharPointerAsCString",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "DefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "UndefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            }
+        ]
+    },
+    "clibgen.generateLibraryDefinition": {
+        "inputs": [
+            {
+                "name": "HeaderFiles",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.hpp,*.h,*.hxx" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "Verbose",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "Libraries",
+                "kind": "namevalue",
+                "type": [
+                    [ "filepath=*.so" ],
+                    [ "char" ]
+                ],
+                "platforms": "glnxa64"
+            },
+            {
+                "name": "IncludePath",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "OutputFolder",
+                "kind": "namevalue",
+                "type": [
+                    [ "char" ],
+                    [ "folder" ]
+                ]
+            },
+            {
+                "name": "PackageName",
+                "kind": "namevalue",
+                "type": [ [ "char" ] ]
+            },
+            {
+                "name": "TreatObjectPointerAsScalar",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "TreatConstCharPointerAsCString",
+                "kind": "namevalue",
+                "type": [ "logical", "scalar" ]
+            },
+            {
+                "name": "DefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            },
+            {
+                "name": "UndefinedMacros",
+                "kind": "namevalue",
+                "type": [ "char" ]
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition": {
+        "inputs": [
+            {
+                "name": "DataFile",
+                "kind": "required",
+                "type": [
+                    [ "filepath=*.xml" ],
+                    [ "char" ]
+                ]
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "LibraryDefinition",
+                "type": "clibgen.LibraryDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.validate": {
+        "inputs": [
+            {
+                "name": "LibraryDefinition",
+                "kind": "required",
+                "type": "clibgen.LibraryDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.build": {
+        "inputs": [
+            {
+                "name": "LibraryDefinition",
+                "kind": "required",
+                "type": "clibgen.LibraryDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.addEnumeration": {
+        "inputs": [
+            {
+                "name": "LibraryDefinition",
+                "kind": "required",
+                "type": "clibgen.LibraryDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Enumerants",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "namevalue",
+                "type": "char"
+            },
+            {
+                "name": "Description",
+                "kind": "namevalue",
+                "type": "char"
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "EnumDefinition",
+                "type": "clibgen.EnumDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.addFunction": {
+        "inputs": [
+            {
+                "name": "LibraryDefinition",
+                "kind": "required",
+                "type": "clibgen.LibraryDefinition"
+            },
+            {
+                "name": "CPPSignature",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "namevalue",
+                "type": "char"
+            },
+            {
+                "name": "Description",
+                "kind": "namevalue",
+                "type": "char"
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "FunctionDefinition",
+                "type": "clibgen.FunctionDefinition"
+            }
+        ]
+    },
+    "clibgen.FunctionDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "FunctionDefinition",
+                "kind": "required",
+                "type": "clibgen.FunctionDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            }
+        ]
+    },
+    "clibgen.FunctionDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "FunctionDefinition",
+                "kind": "required",
+                "type": "clibgen.FunctionDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Direction",
+                "kind": "required",
+                "type": [ "char", "choices={'input', 'output', 'inputoutput'}" ]
+            }
+        ]
+    },
+    "clibgen.FunctionDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "FunctionDefinition",
+                "kind": "required",
+                "type": "clibgen.FunctionDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Direction",
+                "kind": "required",
+                "type": [ "char", "choices={'input', 'output', 'inputoutput'}" ]
+            },
+            {
+                "name": "Shape",
+                "kind": "required",
+                "type": [
+                    [ "char", "choices={'nullTerminated', '[<dim1>,<dim2>,...]', '{dim1, dim2,...}' }" ],
+                    [ "numeric", "choices={1}" ]
+                ]
+            }
+        ]
+    },
+    "clibgen.FunctionDefinition.defineOutput": {
+        "inputs": [
+            {
+                "name": "FunctionDefinition",
+                "kind": "required",
+                "type": "clibgen.FunctionDefinition"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "required",
+                "type": "choices={'RetVal'}"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            }
+        ]
+    },
+    "clibgen.FunctionDefinition.defineOutput": {
+        "inputs": [
+            {
+                "name": "FunctionDefinition",
+                "kind": "required",
+                "type": "clibgen.FunctionDefinition"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "required",
+                "type": "choices={'RetVal'}"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Shape",
+                "kind": "required",
+                "type": [
+                    [ "char", "choices={'nullTerminated', '[<dim1>,<dim2>,...]', '{dim1, dim2,...}' }" ],
+                    [ "numeric", "choices={1}" ]
+                ]
+            }
+        ]
+    },
+    "clibgen.FunctionDefinition.validate": {
+        "inputs": [
+            {
+                "name": "FunctionDefinition",
+                "kind": "required",
+                "type": "clibgen.FunctionDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.addClass": {
+        "inputs": [
+            {
+                "name": "LibraryDefinition",
+                "kind": "required",
+                "type": "clibgen.LibraryDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "namevalue",
+                "type": "char"
+            },
+            {
+                "name": "Description",
+                "kind": "namevalue",
+                "type": "char"
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "ClassDefinition",
+                "type": "clibgen.ClassDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.addConstructor": {
+        "inputs": [
+            {
+                "name": "ClassDefinition",
+                "kind": "required",
+                "type": "clibgen.ClassDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Description",
+                "kind": "namevalue",
+                "type": "char"
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "ConstructorDefinition",
+                "type": "clibgen.ConstructorDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.addMethod": {
+        "inputs": [
+            {
+                "name": "ClassDefinition",
+                "kind": "required",
+                "type": "clibgen.ClassDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "namevalue",
+                "type": "char"
+            },
+            {
+                "name": "Description",
+                "kind": "namevalue",
+                "type": "char"
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "MethodDefinition",
+                "type": "clibgen.MethodDefinition"
+            }
+        ]
+    },
+    "clibgen.LibraryDefinition.addProperty": {
+        "inputs": [
+            {
+                "name": "ClassDefinition",
+                "kind": "required",
+                "type": "clibgen.ClassDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Description",
+                "kind": "namevalue",
+                "type": "char"
+            }
+        ],
+
+        "outputs": [
+            {
+                "name": "PropertyDefinition",
+                "type": "clibgen.PropertyDefinition"
+            }
+        ]
+    },
+    "clibgen.MethodDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "MethodDefinition",
+                "kind": "required",
+                "type": [ "clibgen.MethodDefinition" ]
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            }
+        ]
+    },
+    "clibgen.MethodDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "MethodDefinition",
+                "kind": "required",
+                "type": "clibgen.MethodDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Direction",
+                "kind": "required",
+                "type": [ "char", "choices={'input', 'output', 'inputoutput'}" ]
+            }
+        ]
+    },
+    "clibgen.MethodDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "MethodDefinition",
+                "kind": "required",
+                "type": "clibgen.MethodDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Direction",
+                "kind": "required",
+                "type": [ "char", "choices={'input', 'output', 'inputoutput'}" ]
+            },
+            {
+                "name": "Shape",
+                "kind": "required",
+                "type": [
+                    [ "char", "choices={'nullTerminated', '[<dim1>,<dim2>,...]', '{dim1, dim2,...}' }" ],
+                    [ "numeric", "choices={1}" ]
+                ]
+            }
+        ]
+    },
+    "clibgen.MethodDefinition.defineOutput": {
+        "inputs": [
+            {
+                "name": "MethodDefinition",
+                "kind": "required",
+                "type": "clibgen.MethodDefinition"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "required",
+                "type": "choices={'RetVal'}"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            }
+        ]
+    },
+    "clibgen.MethodDefinition.defineOutput": {
+        "inputs": [
+            {
+                "name": "MethodDefinition",
+                "kind": "required",
+                "type": "clibgen.MethodDefinition"
+            },
+            {
+                "name": "MATLABName",
+                "kind": "required",
+                "type": "choices={'RetVal'}"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Shape",
+                "kind": "required",
+                "type": [
+                    [ "char", "choices={'nullTerminated', '[<dim1>,<dim2>,...]', '{dim1, dim2,...}' }" ],
+                    [ "numeric", "choices={1}" ]
+                ]
+            }
+        ]
+    },
+    "clibgen.MethodDefinition.validate": {
+        "inputs": [
+            {
+                "name": "MethodDefinition",
+                "kind": "required",
+                "type": "clibgen.MethodDefinition"
+            }
+        ]
+    },
+    "clibgen.ConstructorDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "ConstructorDefinition",
+                "kind": "required",
+                "type": [ "clibgen.ConstructorDefinition" ]
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            }
+        ]
+    },
+    "clibgen.ConstructorDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "ConstructorDefinition",
+                "kind": "required",
+                "type": "clibgen.ConstructorDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Direction",
+                "kind": "required",
+                "type": [ "char", "choices={'input', 'output', 'inputoutput'}" ]
+            }
+        ]
+    },
+    "clibgen.ConstructorDefinition.defineArgument": {
+        "inputs": [
+            {
+                "name": "ConstructorDefinition",
+                "kind": "required",
+                "type": "clibgen.ConstructorDefinition"
+            },
+            {
+                "name": "CPPName",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "MATLABType",
+                "kind": "required",
+                "type": "char"
+            },
+            {
+                "name": "Direction",
+                "kind": "required",
+                "type": [ "char", "choices={'input', 'output', 'inputoutput'}" ]
+            },
+            {
+                "name": "Shape",
+                "kind": "required",
+                "type": [
+                    [ "char", "choices={'nullTerminated', '[<dim1>,<dim2>,...]', '{dim1, dim2,...}' }" ],
+                    [ "numeric", "choices={1}" ]
+                ]
+            }
+        ]
+    },
+    "clibgen.ConstructorDefinition.validate": {
+        "inputs": [
+            {
+                "name": "ConstructorDefinition",
+                "kind": "required",
+                "type": "clibgen.ConstructorDefinition"
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+"thingSpeakRead":
+{
+    "inputs":
+    [
+        {"name":"channel_Id"  , "kind":"required" , "type":"numeric"  },
+        {"name":"DateRange"   , "kind":"namevalue", "type":"datetime" },
+        {"name":"Fields"      , "kind":"namevalue", "type":"numeric"  },
+        {"name":"NumDays"     , "kind":"namevalue", "type":"numeric"  },
+        {"name":"NumMinutes"  , "kind":"namevalue", "type":"numeric"  },
+        {"name":"NumPoints"   , "kind":"namevalue", "type":"numeric"  },
+        {"name":"OutputFormat", "kind":"namevalue", "type":"choices = [{'matrix'}, {'table'}, {'timetable'}]"},
+        {"name":"ReadKey"     , "kind":"namevalue", "type":"char"     },
+        {"name":"Location"    , "kind":"namevalue", "type":"logical"  },
+        {"name":"Timeout"     , "kind":"namevalue", "type":"numeric"  },
+        {"name":"URL"         , "kind":"namevalue", "type":"char"     }        
+    ]
+},
+
+"thingSpeakWrite":
+{
+    "inputs":
+    [
+        {"name":"channel_Id"  , "kind":"required"   , "type":"numeric"   },
+        {"name":"Values"      , "kind":"ordered"   , "type":"numeric"   },        
+        {"name":"Fields"      , "kind":"namevalue"  , "type":"numeric"   },
+        {"name":"Location"    , "kind":"namevalue"  , "type":"numeric"   },
+        {"name":"Timestamp"   , "kind":"namevalue"  , "type":[["datetime"], ["table"]]},
+        {"name":"Timeout"     , "kind":"namevalue"  , "type":"numeric"  },
+        {"name":"URL"         , "kind":"namevalue"  , "type":"char"  },
+        {"name":"WriteKey"    , "kind":"namevalue"  , "type":"char"  }
+    ]
+},
+
+"thingSpeakWrite":
+{
+    "inputs":
+    [
+        {"name":"channel_Id"  , "kind":"required"   , "type":"numeric"   },        
+        {"name":"Values"      , "kind":"namevalue"  , "type":"numeric"   },
+        {"name":"Fields"      , "kind":"namevalue"  , "type":"numeric"   },
+        {"name":"Location"    , "kind":"namevalue"  , "type":"numeric"   },
+        {"name":"Timestamp"   , "kind":"namevalue"  , "type": [["datetime"], ["table"]]},
+        {"name":"Timeout"     , "kind":"namevalue"  , "type":"numeric"  },
+        {"name":"URL"         , "kind":"namevalue"  , "type":"char"  },
+        {"name":"WriteKey"    , "kind":"namevalue"  , "type":"char"  }
+    ]
+}
+}

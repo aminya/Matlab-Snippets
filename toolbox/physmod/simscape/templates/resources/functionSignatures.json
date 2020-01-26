@@ -1,0 +1,10 @@
+{
+"sscnewfile":
+{
+    "inputs":
+    [
+        {"name":"name", "kind":"required", "type":"char"},
+        {"name":"template", "kind":"positional", "type":[["identifier=package"], ["choices=[keys(simscape.internal.template.getTemplateKeywords), 'simscape.template']"]]}
+    ]
+}
+}

@@ -1,0 +1,20 @@
+{
+
+"date2time":
+{
+	"inputs":
+	[
+		{"name":"settle", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"maturity", "kind":"required", "type":[["char"],["numeric"],["datetime"]]},
+        {"name":"compounding", "kind":"positional", "type":["numeric","choices={0,1,2,3,4,6,12,365,-1}"], "default":"2"},
+        {"name":"basis", "kind":"positional", "type":[["numeric","choices={0,1,2,3,4,5,6,7,8,9,10,11,12,13}"]], "default":"0"},
+        {"name":"endMonthRule", "kind":"positional", "type":["numeric","choices={0,1}"], "default":"1"}        
+	],
+	"outputs":
+	[
+		{"name":"TFactors", "type":"numeric"},
+        {"name":"F", "type":"numeric"}
+	]	
+}
+
+}

@@ -1,0 +1,21 @@
+{
+"crossReleaseImport":
+{
+    "inputs":
+    [
+        {"name":"buildFolder", "kind":"required", "type":"folder"},
+        {"name":"configset", "kind":"required", "type":[ ["identifier=model"], ["Simulink.ConfigSet"], ["char"]]},
+        {"name":"SimulationMode", "kind":"namevalue", "type":[ ["char", "choices={'SIL', 'PIL', 'none'}"], ["cellstr"]]},
+        {"name":"DataDictionary", "kind":"namevalue", "type":"char"},
+        {"name":"ConfigParams", "kind":"namevalue", "type":"cell"},
+        {"name":"SFunctionName", "kind":"namevalue", "type":"char"},
+        {"name":"OriginalPaths", "kind":"namevalue", "type":"cell"},
+        {"name":"ReplacementPaths", "kind":"namevalue", "type":"cell"}
+    ],
+    "outputs":
+    [
+        {"name":"blockHandle", "type":"numeric"}
+    ]
+}
+}
+

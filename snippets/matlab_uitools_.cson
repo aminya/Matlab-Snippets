@@ -1,0 +1,206 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "uitab":
+    prefix: "uitab"
+    body: '''uitab(${1:optional_parent}, ${2:opts})'''
+    description: '''uitab(${1:optional_parent}, ${2:opts})'''
+
+
+    "clipboard":
+    prefix: "clipboard"
+    body: '''clipboard(${1:action}, ${2:optional_data})'''
+    description: '''clipboard(${1:action}, ${2:optional_data})'''
+
+
+    "uisetpref":
+    prefix: "uisetpref"
+    body: '''uisetpref(${1:clearall})'''
+    description: '''uisetpref(${1:clearall})'''
+
+
+    "msgbox":
+    prefix: "msgbox"
+    body: '''msgbox(${1:message}, ${2:title}, ${3:icon}, ${4:icondata}, ${5:iconcmap}, ${6:optional_createmode})'''
+    description: '''msgbox(${1:message}, ${2:title}, ${3:icon}, ${4:icondata}, ${5:iconcmap}, ${6:optional_createmode})'''
+
+
+    "dialog":
+    prefix: "dialog"
+    body: '''dialog(${1:opts})'''
+    description: '''dialog(${1:opts})'''
+
+
+    "movegui":
+    prefix: "movegui"
+    body: '''movegui(${1:optional_h}, ${2:optional_position})'''
+    description: '''movegui(${1:optional_h}, ${2:optional_position})'''
+
+
+    "uigetpref":
+    prefix: "uigetpref"
+    body: '''uigetpref(${1:group}, ${2:pref}, ${3:quest}, ${4:btns}, 'CheckboxState', ${5:value}, 'CheckboxString', ${6:value}, 'HelpString', ${7:value}, 'HelpFcn', ${8:value}, 'ExtraOptions', ${9:value}, 'DefaultButton', ${10:value})'''
+    description: '''uigetpref(${1:group}, ${2:pref}, ${3:quest}, ${4:btns}, 'CheckboxState', ${5:value}, 'CheckboxString', ${6:value}, 'HelpString', ${7:value}, 'HelpFcn', ${8:value}, 'ExtraOptions', ${9:value}, 'DefaultButton', ${10:value})'''
+
+
+    "uitabgroup":
+    prefix: "uitabgroup"
+    body: '''uitabgroup(${1:optional_parent}, ${2:opts})'''
+    description: '''uitabgroup(${1:optional_parent}, ${2:opts})'''
+
+
+    "errordlg":
+    prefix: "errordlg"
+    body: '''errordlg(${1:msg}, ${2:title}, ${3:optional_opts})'''
+    description: '''errordlg(${1:msg}, ${2:title}, ${3:optional_opts})'''
+
+
+    "uistack":
+    prefix: "uistack"
+    body: '''uistack(${1:h}, ${2:stackopt}, ${3:optional_step})'''
+    description: '''uistack(${1:h}, ${2:stackopt}, ${3:optional_step})'''
+
+
+    "uitoggletool":
+    prefix: "uitoggletool"
+    body: '''uitoggletool(${1:optional_parent}, ${2:opts})'''
+    description: '''uitoggletool(${1:optional_parent}, ${2:opts})'''
+
+
+    "uigetfile":
+    prefix: "uigetfile"
+    body: '''uigetfile(${1:optional_filter}, ${2:optional_title}, ${3:optional_defname}, 'MultiSelect', ${4:value})'''
+    description: '''uigetfile(${1:optional_filter}, ${2:optional_title}, ${3:optional_defname}, 'MultiSelect', ${4:value})'''
+
+
+    "waitbar":
+    prefix: "waitbar"
+    body: '''waitbar(${1:x}, ${2:msg}, 'CreateCancelBtn', ${3:value}, ${4:opts})'''
+    description: '''waitbar(${1:x}, ${2:msg}, 'CreateCancelBtn', ${3:value}, ${4:opts})'''
+
+
+    "uibuttongroup":
+    prefix: "uibuttongroup"
+    body: '''uibuttongroup(${1:optional_parent}, ${2:opts})'''
+    description: '''uibuttongroup(${1:optional_parent}, ${2:opts})'''
+
+
+    "uiputfile":
+    prefix: "uiputfile"
+    body: '''uiputfile(${1:filter}, ${2:title}, ${3:optional_defname})'''
+    description: '''uiputfile(${1:filter}, ${2:title}, ${3:optional_defname})'''
+
+
+    "uitable":
+    prefix: "uitable"
+    body: '''uitable(${1:optional_parent}, ${2:opts})'''
+    description: '''uitable(${1:optional_parent}, ${2:opts})'''
+
+
+    "align":
+    prefix: "align"
+    body: '''align(${1:HandleList_CurPosition}, ${2:HorizontalAlignment}, ${3:VerticalAlignment})'''
+    description: '''align(${1:HandleList_CurPosition}, ${2:HorizontalAlignment}, ${3:VerticalAlignment})'''
+
+
+    "setpixelposition":
+    prefix: "setpixelposition"
+    body: '''setpixelposition(${1:handle}, ${2:position}, ${3:optional_recursive})'''
+    description: '''setpixelposition(${1:handle}, ${2:position}, ${3:optional_recursive})'''
+
+
+    "uigetdir":
+    prefix: "uigetdir"
+    body: '''uigetdir(${1:path}, ${2:optional_title})'''
+    description: '''uigetdir(${1:path}, ${2:optional_title})'''
+
+
+    "uiresume":
+    prefix: "uiresume"
+    body: '''uiresume(${1:h})'''
+    description: '''uiresume(${1:h})'''
+
+
+    "btngroup":
+    prefix: "btngroup"
+    body: '''btngroup(${1:optional_fighandle}, 'GroupID', ${2:value}, 'ButtonID', ${3:value}, 'IconFunctions', ${4:value}, 'Cdata', ${5:value}, 'PressType', ${6:value}, 'Exclusive', ${7:value}, 'Callbacks', ${8:value}, 'ButtonDownFcn', ${9:value}, 'GroupSize', ${10:value}, 'InitialState', ${11:value}, 'Units', ${12:value}, 'Position', ${13:value}, 'BevelWidth', ${14:value}, 'ButtonColor', ${15:value}, 'ButtonDark', ${16:value}, 'BevelLight', ${17:value}, 'BevelDark', ${18:value}, 'Orientation', ${19:value})'''
+    description: '''btngroup(${1:optional_fighandle}, 'GroupID', ${2:value}, 'ButtonID', ${3:value}, 'IconFunctions', ${4:value}, 'Cdata', ${5:value}, 'PressType', ${6:value}, 'Exclusive', ${7:value}, 'Callbacks', ${8:value}, 'ButtonDownFcn', ${9:value}, 'GroupSize', ${10:value}, 'InitialState', ${11:value}, 'Units', ${12:value}, 'Position', ${13:value}, 'BevelWidth', ${14:value}, 'ButtonColor', ${15:value}, 'ButtonDark', ${16:value}, 'BevelLight', ${17:value}, 'BevelDark', ${18:value}, 'Orientation', ${19:value})'''
+
+
+    "uipushtool":
+    prefix: "uipushtool"
+    body: '''uipushtool(${1:optional_parent}, ${2:opts})'''
+    description: '''uipushtool(${1:optional_parent}, ${2:opts})'''
+
+
+    "uipanel":
+    prefix: "uipanel"
+    body: '''uipanel(${1:optional_parent}, ${2:opts})'''
+    description: '''uipanel(${1:optional_parent}, ${2:opts})'''
+
+
+    "uisetcolor":
+    prefix: "uisetcolor"
+    body: '''uisetcolor(${1:obj}, ${2:optional_title})'''
+    description: '''uisetcolor(${1:obj}, ${2:optional_title})'''
+
+
+    "warndlg":
+    prefix: "warndlg"
+    body: '''warndlg(${1:msg}, ${2:title}, ${3:optional_opts})'''
+    description: '''warndlg(${1:msg}, ${2:title}, ${3:optional_opts})'''
+
+
+    "btnicon":
+    prefix: "btnicon"
+    body: '''btnicon(${1:option})'''
+    description: '''btnicon(${1:option})'''
+
+
+    "getpixelposition":
+    prefix: "getpixelposition"
+    body: '''getpixelposition(${1:handle}, ${2:optional_recursive})'''
+    description: '''getpixelposition(${1:handle}, ${2:optional_recursive})'''
+
+
+    "uisetfont":
+    prefix: "uisetfont"
+    body: '''uisetfont(${1:optional_opts}, ${2:optional_title})'''
+    description: '''uisetfont(${1:optional_opts}, ${2:optional_title})'''
+
+
+    "uitoolbar":
+    prefix: "uitoolbar"
+    body: '''uitoolbar(${1:optional_parent}, ${2:opts})'''
+    description: '''uitoolbar(${1:optional_parent}, ${2:opts})'''
+
+
+    "listdlg":
+    prefix: "listdlg"
+    body: '''listdlg('ListString', ${1:value}, 'SelectionMode', ${2:value}, 'ListSize', ${3:value}, 'InitialValue', ${4:value}, 'Name', ${5:value}, 'PromptString', ${6:value}, 'OKString', ${7:value}, 'CancelString', ${8:value})'''
+    description: '''listdlg('ListString', ${1:value}, 'SelectionMode', ${2:value}, 'ListSize', ${3:value}, 'InitialValue', ${4:value}, 'Name', ${5:value}, 'PromptString', ${6:value}, 'OKString', ${7:value}, 'CancelString', ${8:value})'''
+
+
+    "uiwait":
+    prefix: "uiwait"
+    body: '''uiwait(${1:h}, ${2:optional_timeout})'''
+    description: '''uiwait(${1:h}, ${2:optional_timeout})'''
+
+
+    "uisave":
+    prefix: "uisave"
+    body: '''uisave(${1:vars}, ${2:optional_file})'''
+    description: '''uisave(${1:vars}, ${2:optional_file})'''
+
+
+    "uiopen":
+    prefix: "uiopen"
+    body: '''uiopen(${1:file}, ${2:optional_tf})'''
+    description: '''uiopen(${1:file}, ${2:optional_tf})'''
+
+
+    "inputdlg":
+    prefix: "inputdlg"
+    body: '''inputdlg(${1:prompt}, ${2:title}, ${3:dims}, ${4:definput}, ${5:optional_opts})'''
+    description: '''inputdlg(${1:prompt}, ${2:title}, ${3:dims}, ${4:definput}, ${5:optional_opts})'''
+

@@ -1,0 +1,39 @@
+{
+"matlabshared.asyncio.buffer.Buffer":
+{
+    "inputs":
+    [
+        {"name":"bufferSize", "kind":"optional", "type":["double", "scalar", "positive"]}
+    ],
+
+    "outputs":
+    [
+        {"name":"buffer", "kind":"optional", "type":"matlabshared.asyncio.buffer.Buffer"}
+    ]
+},
+
+"matlabshared.asyncio.buffer.DataPump":
+{
+    "inputs":
+    [
+        {"name":"buffer", "kind":"required","type": "matlabshared.asyncio.buffer.Buffer"},
+        {"name":"dataSink", "kind":"required","type": "matlabshared.asyncio.buffer.DataSink"},        
+        {"name":"outputCount", "kind":"required", "type":["double", "scalar", "positive", "finite", "nonnan"]},
+        {"name":"outputPeriod", "kind":"required", "type":["double", "scalar", "positive", "finite", "nonnan"]}        
+    ],
+
+    "outputs":
+    [
+        {"name":"dataPump", "kind":"optional", "type":"matlabshared.asyncio.buffer.DataPump"}
+    ]
+},
+
+"matlabshared.asyncio.buffer.DataSink":
+{
+    "outputs":
+    [
+        {"name":"dataSink", "kind":"optional", "type":"matlabshared.asyncio.buffer.DataSink"}
+    ]
+}
+
+}

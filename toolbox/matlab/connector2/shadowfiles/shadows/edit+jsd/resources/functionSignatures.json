@@ -1,0 +1,25 @@
+{
+    "edit": {
+        "inputs": [
+            {
+                "name": "file",
+                "kind": "ordered",
+                "type": [
+                    [
+                        "file"
+                    ],
+                    [
+                        "matlabpathfile=*.m,*.mlx,*.mlapp"
+                    ],
+                    [
+                        "identifier=package,classdef"
+                    ],
+                    [
+                        "char"
+                    ]
+                ],
+                "repeating": true
+            }
+        ]
+    }
+}

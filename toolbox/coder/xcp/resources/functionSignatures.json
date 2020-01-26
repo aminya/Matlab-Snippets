@@ -1,0 +1,13 @@
+{
+"coder.xcp.a2l.addCoderXCPInfo":
+{
+    "inputs":
+    [
+        {"name":"buildDir", "kind":"required", "type":[["folder"], ["char"]]},
+        {"name":"MergeMdlRefs", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"SetAddress", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"InputFile", "kind":"namevalue", "type":[["filepath=*.a2l"], ["char"]]},
+        {"name":"OutputFile", "kind":"namevalue", "type":[["filepath=*.a2l"], ["char"]]}
+    ]
+}
+}

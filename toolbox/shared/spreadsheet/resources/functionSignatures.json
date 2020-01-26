@@ -1,0 +1,13 @@
+{
+    "sheetnames":
+    {
+        "inputs":
+        [
+            {"name": "filename", "kind":"required", "type":[["file=*.xls,*.xlsm,*.xlsx,*.xltm,*.xltx"], ["char"]]}
+        ],
+        "outputs":
+        [
+            {"name":"sn"}
+        ]
+    }
+}

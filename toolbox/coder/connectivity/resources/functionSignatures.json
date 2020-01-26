@@ -1,0 +1,10 @@
+{
+"buildStandaloneCoderAssumptions":
+{
+    "inputs":
+    [
+        {"name":"buildFolder", "kind":"required", "type":"folder"}
+    ]
+}
+}
+

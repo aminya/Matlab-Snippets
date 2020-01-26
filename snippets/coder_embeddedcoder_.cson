@@ -1,0 +1,20 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "coder.dictionary.Entry.set":
+    prefix: "coder.dictionary.Entry.set"
+    body: '''coder.dictionary.Entry.set(${1:entryObj}, ${2:pName1}, ${3:pValue1})'''
+    description: '''coder.dictionary.Entry.set(${1:entryObj}, ${2:pName1}, ${3:pValue1})'''
+
+
+    "coder.Dictionary.getSection":
+    prefix: "coder.Dictionary.getSection"
+    body: '''${1:outputValue1} = coder.Dictionary.getSection(${1:dictionaryObj}, ${2:sectionName})'''
+    description: '''${1:outputValue1} = coder.Dictionary.getSection(${1:dictionaryObj}, ${2:sectionName})'''
+
+
+    "coder.dictionary.Entry.get":
+    prefix: "coder.dictionary.Entry.get"
+    body: '''${1:outputValue1} = coder.dictionary.Entry.get(${1:entryObj}, ${2:pName1})'''
+    description: '''${1:outputValue1} = coder.dictionary.Entry.get(${1:entryObj}, ${2:pName1})'''
+

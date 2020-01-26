@@ -1,0 +1,44 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "figure":
+    prefix: "figure"
+    body: '''figure(${1:optional_f}, ${2:optional_n}, ${3:opts})'''
+    description: '''figure(${1:optional_f}, ${2:optional_n}, ${3:opts})'''
+
+
+    "tiledlayout":
+    prefix: "tiledlayout"
+    body: '''${1:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
+    description: '''${1:Layout} = tiledlayout(${1:optional_parent}, ${2:m}, ${3:n}, ${4:Options})'''
+
+
+    "uicontrol":
+    prefix: "uicontrol"
+    body: '''uicontrol(${1:optional_parent}, ${2:opts})'''
+    description: '''uicontrol(${1:optional_parent}, ${2:opts})'''
+
+
+    "uicontextmenu":
+    prefix: "uicontextmenu"
+    body: '''uicontextmenu(${1:optional_parent}, ${2:opts})'''
+    description: '''uicontextmenu(${1:optional_parent}, ${2:opts})'''
+
+
+    "uimenu":
+    prefix: "uimenu"
+    body: '''uimenu(${1:optional_parent}, ${2:opts})'''
+    description: '''uimenu(${1:optional_parent}, ${2:opts})'''
+
+
+    "nexttile":
+    prefix: "nexttile"
+    body: '''${1:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
+    description: '''${1:ax} = nexttile(${1:optional_layout}, ${2:optional_tilenumber}, ${3:optional_tilespan})'''
+
+
+    "close":
+    prefix: "close"
+    body: '''${1:status} = close(${1:optional_option})'''
+    description: '''${1:status} = close(${1:optional_option})'''
+

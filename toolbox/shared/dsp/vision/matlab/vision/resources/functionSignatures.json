@@ -1,0 +1,10 @@
+{
+    "dsp.DCT":
+    {
+        "inputs":
+        [
+            {"kind":"properties","type":["dsp.DCT"]}
+        ]
+    }
+}
+

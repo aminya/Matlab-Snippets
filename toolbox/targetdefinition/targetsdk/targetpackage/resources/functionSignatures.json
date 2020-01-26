@@ -1,0 +1,54 @@
+{
+    "target.create":
+    {
+        "inputs":
+        [
+            {"name":"targetObjectClassString", "kind":"required", "type":"choices=target.ClassHelpers.getPublishedTargetClasses()"},
+            {"name":"Copy", "kind":"namevalue", "type":["char","char"]}
+        ],
+        "outputs":
+        [
+            {"name":"targetObjectInstance"}
+        ]
+    },
+    "target.get":
+    {
+        "inputs":
+        [
+            {"name":"targetObjectClassString", "kind":"required", "type":"choices=target.ClassHelpers.getPublishedTargetClasses()"},
+            {"name":"identifier", "kind":"required", "type":["choices=target.ClassHelpers.getClassIdentifiers(targetObjectClassString)"]}
+        ],
+        "outputs":
+        [
+            {"name":"targetObjectInstance"}
+        ]
+    },
+    "target.add":
+    {
+        "inputs":
+        [
+            {"name":"targetObjectInstances", "kind":"required", "type":[["target.Object"], ["cell"]]},
+            {"name":"UserInstall", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+    "target.export":
+    {
+        "inputs":
+        [
+            {"name":"targetObjectInstances", "kind":"required", "type":[["target.Object"], ["cell"]]},
+            {"name":"FileName", "kind":"namevalue", "type":[["filepath=*.m"], ["char"]]},
+            {"name":"Overwrite", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    },
+    "target.upgrade":
+    {
+        "inputs":
+        [
+            {"name":"upgrader", "kind":"required", "type":"choices=target.UpgradePlugin.getAvailableUpgraderParams()"},
+            {"name":"ExportToMATLABFunction", "kind":"namevalue", "type":["logical", "scalar"]},
+            {"name":"ExportFileName", "kind":"namevalue", "type":[["filepath=*.m"], ["char"]]},
+            {"name":"Overwrite", "kind":"namevalue", "type":["logical", "scalar"]}
+        ]
+    }
+}
+

@@ -1,0 +1,104 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "dicomCollection":
+    prefix: "dicomCollection"
+    body: '''${1:collection} = dicomCollection(${1:source}, 'IncludeSubfolders', ${2:value})'''
+    description: '''${1:collection} = dicomCollection(${1:source}, 'IncludeSubfolders', ${2:value})'''
+
+
+    "camresponse":
+    prefix: "camresponse"
+    body: '''${1:crf} = camresponse(${1:filenames}, 'ExposureTimes', ${2:value})'''
+    description: '''${1:crf} = camresponse(${1:filenames}, 'ExposureTimes', ${2:value})'''
+
+
+    "tonemap":
+    prefix: "tonemap"
+    body: '''${1:RGB} = tonemap(${1:HDR}, 'AdjustLightness', ${2:value}, 'AdjustSaturation', ${3:value}, 'NumberOfTiles', ${4:value})'''
+    description: '''${1:RGB} = tonemap(${1:HDR}, 'AdjustLightness', ${2:value}, 'AdjustSaturation', ${3:value}, 'NumberOfTiles', ${4:value})'''
+
+
+    "makehdr":
+    prefix: "makehdr"
+    body: '''${1:HDR} = makehdr(${1:files}, 'BaseFile', ${2:value}, 'MinimumLimit', ${3:value}, 'MaximumLimit', ${4:value})'''
+    description: '''${1:HDR} = makehdr(${1:files}, 'BaseFile', ${2:value}, 'MinimumLimit', ${3:value}, 'MaximumLimit', ${4:value})'''
+
+
+    "images.internal.dicom.DICOMFile":
+    prefix: "images.internal.dicom.DICOMFile"
+    body: '''${1:obj} = images.internal.dicom.DICOMFile(${1:filename})'''
+    description: '''${1:obj} = images.internal.dicom.DICOMFile(${1:filename})'''
+
+
+    "dicomreadVolume":
+    prefix: "dicomreadVolume"
+    body: '''[${1:V}, ${2:spatial}, ${3:dim}] = dicomreadVolume(${1:source}, ${2:RowName}, 'MakeIsotropic', ${3:value})'''
+    description: '''[${1:V}, ${2:spatial}, ${3:dim}] = dicomreadVolume(${1:source}, ${2:RowName}, 'MakeIsotropic', ${3:value})'''
+
+
+    "bigimage":
+    prefix: "bigimage"
+    body: '''${1:obj} = bigimage(${1:source}, 'ClassNames', ${2:value}, 'PixelLabelIDs', ${3:value}, 'BlockSize', ${4:value}, 'SpatialReferencing', ${5:value}, 'UnloadedValue', ${6:value})'''
+    description: '''${1:obj} = bigimage(${1:source}, 'ClassNames', ${2:value}, 'PixelLabelIDs', ${3:value}, 'BlockSize', ${4:value}, 'SpatialReferencing', ${5:value}, 'UnloadedValue', ${6:value})'''
+
+
+    "nitfread":
+    prefix: "nitfread"
+    body: '''${1:x} = nitfread(${1:filename}, ${2:optional_idx}, 'PixelRegion', ${3:value})'''
+    description: '''${1:x} = nitfread(${1:filename}, ${2:optional_idx}, 'PixelRegion', ${3:value})'''
+
+
+    "images.dicom.parseDICOMDIR":
+    prefix: "images.dicom.parseDICOMDIR"
+    body: '''${1:details} = images.dicom.parseDICOMDIR(${1:filename})'''
+    description: '''${1:details} = images.dicom.parseDICOMDIR(${1:filename})'''
+
+
+    "bigimageDatastore":
+    prefix: "bigimageDatastore"
+    body: '''${1:obj} = bigimageDatastore(${1:BIGIMAGES}, ${2:LEVELS}, 'ReadSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOffsets', ${5:value}, 'Masks', ${6:value}, 'InclusionThreshold', ${7:value}, 'IncompleteBlocks', ${8:value})'''
+    description: '''${1:obj} = bigimageDatastore(${1:BIGIMAGES}, ${2:LEVELS}, 'ReadSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOffsets', ${5:value}, 'Masks', ${6:value}, 'InclusionThreshold', ${7:value}, 'IncompleteBlocks', ${8:value})'''
+
+
+    "niftiwrite":
+    prefix: "niftiwrite"
+    body: '''${1:status} = niftiwrite(${1:V}, ${2:filename}, ${3:optional_info}, 'Combined', ${4:value}, 'Compressed', ${5:value}, 'Endian', ${6:value}, 'Version', ${7:value})'''
+    description: '''${1:status} = niftiwrite(${1:V}, ${2:filename}, ${3:optional_info}, 'Combined', ${4:value}, 'Compressed', ${5:value}, 'Endian', ${6:value}, 'Version', ${7:value})'''
+
+
+    "niftiread":
+    prefix: "niftiread"
+    body: '''${1:V} = niftiread(${1:hdrfilename}, ${2:imgfilename})'''
+    description: '''${1:V} = niftiread(${1:hdrfilename}, ${2:imgfilename})'''
+
+
+    "nitfinfo":
+    prefix: "nitfinfo"
+    body: '''${1:metadata} = nitfinfo(${1:filename})'''
+    description: '''${1:metadata} = nitfinfo(${1:filename})'''
+
+
+    "niftiinfo":
+    prefix: "niftiinfo"
+    body: '''${1:info} = niftiinfo(${1:filename})'''
+    description: '''${1:info} = niftiinfo(${1:filename})'''
+
+
+    "images.dicom.decodeUID":
+    prefix: "images.dicom.decodeUID"
+    body: '''${1:details} = images.dicom.decodeUID(${1:UID})'''
+    description: '''${1:details} = images.dicom.decodeUID(${1:UID})'''
+
+
+    "bigimage.write":
+    prefix: "bigimage.write"
+    body: '''bigimage.write(${1:IMG}, ${2:OUT})'''
+    description: '''bigimage.write(${1:IMG}, ${2:OUT})'''
+
+
+    "bigimage.apply":
+    prefix: "bigimage.apply"
+    body: '''bigimage.apply(${1:IMG}, ${2:LEVEL}, ${3:FCN}, ${4:optional_EXTRAIMAGES}, 'BlockSize', ${5:value}, 'UseParallel', ${6:value}, 'BorderSize', ${7:value}, 'DisplayWaitbar', ${8:value}, 'OutputFolder', ${9:value}, 'PadMethod', ${10:value}, 'Mask', ${11:value}, 'InclusionThreshold', ${12:value}, 'ExtraImageLevels', ${13:value})'''
+    description: '''bigimage.apply(${1:IMG}, ${2:LEVEL}, ${3:FCN}, ${4:optional_EXTRAIMAGES}, 'BlockSize', ${5:value}, 'UseParallel', ${6:value}, 'BorderSize', ${7:value}, 'DisplayWaitbar', ${8:value}, 'OutputFolder', ${9:value}, 'PadMethod', ${10:value}, 'Mask', ${11:value}, 'InclusionThreshold', ${12:value}, 'ExtraImageLevels', ${13:value})'''
+

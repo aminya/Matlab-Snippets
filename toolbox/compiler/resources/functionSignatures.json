@@ -1,0 +1,17 @@
+{
+"mbuild":
+{
+	"inputs":
+	[
+		{"name":"args", "kind":"required", "type":[["file"], ["char"]], "repeating":true}
+	]
+},
+"mcc":
+{
+	"inputs":
+	[
+		{"name":"args", "kind":"required", "type":[["file"], ["char"]], "repeating":true}
+	]
+}
+}
+

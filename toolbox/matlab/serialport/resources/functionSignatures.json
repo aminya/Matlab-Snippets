@@ -1,0 +1,325 @@
+{
+    "serialportlist": {
+        "inputs": [
+            {
+                "name": "ports",
+                "kind": "ordered",
+                "type": "choices={'all','available'}"
+            }
+        ]
+    },
+    "serialport": {
+        "inputs": [
+            {
+                "name": "Port",
+                "kind": "required",
+                "type": "choices = serialportlist()"
+            },
+            {
+                "name": "BaudRate",
+                "kind": "required",
+                "type": [ "numeric", ">=0" ]
+            },
+            {
+                "name": "ByteOrder",
+                "kind": "namevalue",
+                "type": "choices={'little-endian', 'big-endian'}"
+            },
+            {
+                "name": "DataBits",
+                "kind": "namevalue",
+                "type": "choices={5, 6, 7, 8}"
+            },
+            {
+                "name": "FlowControl",
+                "kind": "namevalue",
+                "type": "choices={'none','hardware','software'}"
+            },
+            {
+                "name": "Parity",
+                "kind": "namevalue",
+                "type": "choices={'none','odd','even'}"
+            },
+            {
+                "name": "StopBits",
+                "kind": "namevalue",
+                "type": "choices={1, 1.5, 2}"
+            },
+            {
+                "name": "Timeout",
+                "kind": "namevalue",
+                "type": "double"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "obj",
+                "type": "internal.Serialport"
+            }
+        ]
+    },
+    "internal.Serialport.delete": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            }
+        ]
+    },
+    "internal.Serialport.read": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "count",
+                "kind": "required",
+                "type": [ "integer", "scalar", ">0" ]
+            },
+            {
+                "name": "precision",
+                "kind": "required",
+                "type": "choices= internal.Serialport.AllSupportedPrecision"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "data",
+                "type": [
+                    [ "double" ],
+                    [ "char" ]
+                ]
+            }
+        ]
+    },
+    "internal.Serialport.readline": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "data",
+                "type": "string"
+            }
+        ]
+    },
+    "internal.Serialport.readbinblock": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "precision",
+                "kind": "ordered",
+                "type": "choices= internal.Serialport.AllSupportedPrecision"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "data",
+                "type": [
+                    [ "double" ],
+                    [ "char" ]
+                ]
+            }
+        ]
+    },
+    "internal.Serialport.write": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "data",
+                "kind": "required",
+                "type": [
+                    [ "double" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "precision",
+                "kind": "required",
+                "type": "choices= internal.Serialport.AllSupportedPrecision"
+            }
+        ]
+    },
+    "internal.Serialport.writeline": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "data",
+                "kind": "required",
+                "type": [ "char", "string" ]
+            }
+        ]
+    },
+    "internal.Serialport.writebinblock": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "data",
+                "kind": "required",
+                "type": [
+                    [ "double" ],
+                    [ "char" ]
+                ]
+            },
+            {
+                "name": "precision",
+                "kind": "required",
+                "type": "choices= internal.Serialport.AllSupportedPrecision"
+            }
+        ]
+    },
+    "internal.Serialport.writeread": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "command",
+                "kind": "required",
+                "type": "char"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "response",
+                "type": "char"
+            }
+        ]
+    },
+    "internal.Serialport.flush": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "buffer",
+                "kind": "ordered",
+                "type": "choices={'input','output'}"
+            }
+        ]
+    },
+    "internal.Serialport.setDTR": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "flag",
+                "kind": "required",
+                "type": [ "logical", "scalar" ]
+            }
+        ]
+    },
+    "internal.Serialport.setRTS": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "flag",
+                "kind": "required",
+                "type": [ "logical", "scalar" ]
+            }
+        ]
+    },
+    "internal.Serialport.getpinstatus": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "status",
+                "type": "struct"
+            }
+        ]
+    },
+    "internal.Serialport.configureCallback": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "mode",
+                "kind": "required",
+                "type": "choices={'off', 'byte', 'terminator'}"
+            },
+            {
+                "name": "count",
+                "kind": "positional",
+                "type": [
+                    [ "function_handle", "scalar" ],
+                    [ "integer", "scalar", ">0" ]
+                ]
+            },
+            {
+                "name": "callbackfcn",
+                "kind": "positional",
+                "type": [
+                    [ "function_handle", "scalar" ]
+                ]
+            }
+        ]
+    },
+    "internal.Serialport.configureTerminator": {
+        "inputs": [
+            {
+                "name": "obj",
+                "kind": "required",
+                "type": "internal.Serialport"
+            },
+            {
+                "name": "terminator",
+                "kind": "required",
+                "type": [
+                    [ "integer", "scalar", ">=0", "<=255" ],
+                    [ "choices={'LF', 'CR', 'CR/LF'}" ]
+                ]
+            },
+            {
+                "name": "writeTerminator",
+                "kind": "optional",
+                "type": [
+                    [ "integer", "scalar", ">=0", "<=255" ],
+                    [ "choices={'LF', 'CR', 'CR/LF'}" ]
+                ]
+            }
+        ]
+    }
+}

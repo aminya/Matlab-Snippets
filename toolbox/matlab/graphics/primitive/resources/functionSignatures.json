@@ -1,0 +1,65 @@
+{
+"makehgtform":
+{
+	"inputs":
+	[
+		{"name":"transform", "kind":"ordered", "type":[["char"], ["choices={'translate','scale','xrotate','yrotate','zrotate','axisrotate'}"]]}
+	]
+},
+"rectangle":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.primitive.Rectangle"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Rectangle"}
+	]
+},
+"surface":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.Axes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"ordered", "type":[["numeric"],["datetime"],["duration"],["categorical"]], "promotion":"primary"},
+		{"name":"y", "kind":"ordered", "type":[["numeric"],["datetime"],["duration"],["categorical"]], "promotion":"primary"},
+		{"name":"z", "kind":"required", "type":[["numeric"],["datetime"],["duration"],["categorical"]]},
+		{"name":"c", "kind":"ordered", "type":["double"]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.primitive.Surface"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Surface"}
+	]
+},
+"text":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"x", "kind":"required", "type":[["double"], ["datetime"], ["categorical"], ["duration"]]},
+		{"name":"y", "kind":"required", "type":[["double"], ["datetime"], ["categorical"], ["duration"]]},
+		{"name":"z", "kind":"ordered", "type":[["double"], ["datetime"], ["categorical"], ["duration"]]},
+		{"name":"txt", "kind":"required", "type":[["char"], ["cellstr"]]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.primitive.Text"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Text"}
+	]
+},
+"text":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"ordered", "type":[["matlab.graphics.axis.AbstractAxes"], ["matlab.ui.control.UIAxes"]]},
+		{"name":"opts", "kind":"properties", "type":"matlab.graphics.primitive.Text"}
+	],
+	"outputs":
+	[
+		{"name":"h", "type":"matlab.graphics.primitive.Text"}
+	]
+}
+}

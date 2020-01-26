@@ -1,0 +1,428 @@
+{
+    "dlarray.dlconv":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"weights", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"bias", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]},
+            {"name":"Stride", "kind":"namevalue", "type":[["integer", "scalar", ">=0"], ["integer", "vector", ">=0"]]},
+            {"name":"DilationFactor", "kind":"namevalue", "type":[["integer", "scalar", ">=0"], ["integer", "vector", ">=0"]]},
+            {"name":"Padding", "kind":"namevalue", "type":[["choices={'same'}"], ["integer", ">=0"]]}
+        ]
+    },
+    
+    "dlarray.dltranspconv":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"weights", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"bias", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]},
+            {"name":"Stride", "kind":"namevalue", "type":[["integer", "scalar", ">=0"], ["integer", "vector", ">=0"]]},
+            {"name":"DilationFactor", "kind":"namevalue", "type":[["integer", "scalar", ">=0"], ["integer", "vector", ">0"]]},
+            {"name":"Cropping", "kind":"namevalue", "type":[["integer", ">0"], ["choices={'same'}"]]}
+        ]
+    },
+
+    "dlarray.relu":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":["dlarray"]}
+        ]
+    },
+ 
+    "dlarray.leakyrelu":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":["dlarray"]},
+            {"name":"scaleFactor", "kind":"ordered", "type":[["dlarray"], ["numeric", "scalar"]]}
+        ]
+    },
+
+    "dlarray.sigmoid":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":["dlarray"]}
+        ]
+    },
+
+    "dlarray.fullyconnect":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"weights", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"bias", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]}
+        ]
+    },
+
+    "dlarray.crossentropy":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"targets", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]}
+        ]
+    },
+
+    "dlarray.mse":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"targets", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]}
+        ]
+    },
+    
+    "dlarray.avgpool":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":["dlarray"]},
+            {"name":"poolsize", "kind":"required", "type":[["integer", "scalar", ">0"], ["integer", "vector", ">0"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]},
+            {"name":"Padding", "kind":"namevalue", "type":[["integer", ">=0"], ["choices={'same'}"]]},
+            {"name":"Stride", "kind":"namevalue", "type":[["integer", "scalar", ">=0"], ["integer", "vector", ">=0"]]}
+        ]
+    },
+    
+    "dlarray.maxpool":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":["dlarray"]},
+            {"name":"poolsize", "kind":"required", "type":[["integer", "scalar", ">0"], ["integer", "vector", ">0"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]},
+            {"name":"Padding", "kind":"namevalue", "type":[["integer", ">=0"], ["choices={'same'}"]]},
+            {"name":"Stride", "kind":"namevalue", "type":[["integer", "scalar", ">=0"], ["integer", "vector", ">=0"]]}
+        ]
+    },
+    
+    "dlarray.batchnorm":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"offset", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"scaleFactor", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"mu", "kind":"ordered", "type":["numeric", "vector"]},
+            {"name":"sigma", "kind":"ordered", "type":["numeric", "vector"]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]},
+            {"name":"MeanDecay", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]},
+            {"name":"VarianceDecay", "kind":"namevalue", "type":["numeric", "scalar", ">=0", "<=1"]},
+            {"name":"Epsilon", "kind":"namevalue", "type":["numeric", "scalar", ">0"]}
+        ]
+    },
+
+    "dlarray.softmax":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]}
+        ]
+    },
+
+    "dlarray.lstm":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"H0", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"C0", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"weights", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"recurrentWeights", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"bias", "kind":"required", "type":[["dlarray"], ["numeric"], ["gpuArray"]]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]}
+        ]
+    },
+
+    "dlarray.sum":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":[["dlarray"]]},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"outtype", "kind":"flag", "type":["char", "choices={'default','double','native'}"], "default":"'default'"}
+        ]
+    },
+
+    "dlarray.prod":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":[["dlarray"]]},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"type", "kind":"flag", "type":["char", "choices={'default','double','native'}"], "default":"'default'"}
+        ]
+    },
+
+    "dlarray.mean":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":[["numeric"], ["dlarray"]]},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"outtype", "kind":"flag", "type":["char", "choices={'default','double','native'}"], "default":"'default'"}
+        ]
+    },
+
+    "dlarray.min":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":["dlarray"]},
+            {"name":"B", "kind":"positional", "type":["dlarray"]},
+            {"name":"nanflag", "kind":"flag", "type":["char", "choices={'includenan','omitnan'}"], "default":"'includenan'"}
+        ]
+    },
+    "dlarray.min":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":[["dlarray"]]},
+            {"name":"[]", "kind":"positional", "type":["numeric","nrows=0","ncols=0"]},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"nanflag", "kind":"flag", "type":["char", "choices={'includenan','omitnan'}"], "default":"'includenan'"},
+            {"name":"indexflag", "kind":"flag", "type":["char", "choices={'linear'}"]}
+        ]
+    },
+
+    "dlarray.max":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":["dlarray"]},
+            {"name":"B", "kind":"positional", "type":["dlarray"]},
+            {"name":"nanflag", "kind":"flag", "type":["char", "choices={'includenan','omitnan'}"], "default":"'includenan'"}
+        ]
+    },
+    "dlarray.max":
+    {
+        "inputs":
+        [
+            {"name":"A", "kind":"required", "type":[["dlarray"]]},
+            {"name":"[]", "kind":"positional", "type":["numeric","nrows=0","ncols=0"]},
+            {"name":"dim", "kind":"ordered", "type":[["numeric","integer", "scalar", ">0"], ["numeric", "integer", "vector", ">0"], ["char", "choices={'all'}"]]},
+            {"name":"nanflag", "kind":"flag", "type":["char", "choices={'includenan','omitnan'}"], "default":"'includenan'"},
+            {"name":"indexflag", "kind":"flag", "type":["char", "choices={'linear'}"]}
+        ]
+    },
+
+    "dlarray.finddim":
+    {
+        "inputs":
+        [
+            {"name":"x", "kind":"required", "type":[["dlarray"]]},
+            {"name":"nanflag", "kind":"required", "type":["char", "choices={'S', 'C', 'B', 'T', 'U'}"]}
+        ]
+    },
+
+    "dlarray.dlgradient":
+    {
+        "inputs":
+        [
+            {"name":"y", "kind":"required", "type":[["dlarray", "scalar"]]},
+            {"name":"x", "kind":"required", "type":["dlarray"], "repeating":true},
+            {"name":"RetainData", "kind":"namevalue", "type":[["logical", "scalar"]]}
+        ]
+    },
+
+    "dlarray.maxunpool":
+    {
+        "inputs":
+        [
+            {"name":"dlX", "kind":"required", "type":["dlarray"]},
+            {"name":"indx", "kind":"required", "type":["integer", "vector", ">0"]},
+            {"name":"outputSize", "kind":"required", "type":["integer", "vector", ">0"]},
+            {"name":"DataFormat", "kind":"namevalue", "type":[["char"], ["string"]]}
+        ]
+    },
+
+    "sgdmupdate":
+    {
+        "inputs":
+        [
+            {"mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"params", "kind":"required", "type":["numeric"]},
+                        {"name":"grad", "kind":"required", "type": ["numeric"]},
+                        {"name":"vel", "kind":"required", "type": ["numeric"]}
+                    ],
+                    
+                    [
+                        {"name":"params", "kind":"required", "type":["dlarray"]},
+                        {"name":"grad", "kind":"required", "type": ["dlarray"]},
+                        {"name":"vel", "kind":"required", "type": [["dlarray"], ["numeric", "numel=0"]] }
+                    ],
+            
+                    [
+                        {"name":"params", "kind":"required", "type":["cell"]},
+                        {"name":"grad", "kind":"required", "type": ["cell"]},
+                        {"name":"vel", "kind":"required", "type": [["cell"], ["numeric", "numel=0"]]}
+                    ],
+
+                    [
+                        {"name":"params", "kind":"required", "type":["struct"]},
+                        {"name":"grad", "kind":"required", "type": ["struct"]},
+                        {"name":"vel", "kind":"required", "type": [["struct"], ["numeric", "numel=0"]]}
+                    ],
+
+                    [
+                        {"name":"params", "kind":"required", "type":["table"]},
+                        {"name":"grad", "kind":"required", "type": ["table"]},
+                        {"name":"vel", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]}
+                    ],
+                    
+                    [
+                        {"name":"dlnet", "kind":"required", "type":["dlnetwork"]},
+                        {"name":"grad", "kind":"required", "type": ["table"]},
+                        {"name":"vel", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]}
+                    ]
+                ]
+            },
+            {"name":"learnRate", "kind":"positional", "type":["numeric", "scalar", ">=0"]},
+            {"name":"momentum", "kind":"positional", "type":["numeric", "scalar", ">=0", "<=1"]}
+        ]
+    },
+
+    "rmspropupdate":
+    {
+        "inputs":
+        [
+            {"mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"params", "kind":"required", "type":["numeric"]},
+                        {"name":"grad", "kind":"required", "type": ["numeric"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": ["numeric"]}
+                    ],
+                    
+                    [
+                        {"name":"params", "kind":"required", "type":["dlarray"]},
+                        {"name":"grad", "kind":"required", "type": ["dlarray"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["dlarray"], ["numeric", "numel=0"]]}
+                    ],
+            
+                    [
+                        {"name":"params", "kind":"required", "type":["cell"]},
+                        {"name":"grad", "kind":"required", "type": ["cell"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["cell"], ["numeric", "numel=0"]]}
+                    ],
+
+                    [
+                        {"name":"params", "kind":"required", "type":["struct"]},
+                        {"name":"grad", "kind":"required", "type": ["struct"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["struct"], ["numeric", "numel=0"]]}
+                    ],
+
+                    [
+                        {"name":"params", "kind":"required", "type":["table"]},
+                        {"name":"grad", "kind":"required", "type": ["table"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]}
+                    ],
+                    
+                    [
+                        {"name":"dlnet", "kind":"required", "type":["dlnetwork"]},
+                        {"name":"grad", "kind":"required", "type": ["table"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]}
+
+                    ]
+                ]
+            },
+            {"name":"learnRate", "kind":"positional", "type":["numeric", "scalar", ">=0"]},
+            {"name":"sqGradDecay", "kind":"positional", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"epsilon", "kind":"positional", "type":["numeric", "scalar", ">0"]}
+
+        ]
+    },
+    
+    "adamupdate":
+    {
+        "inputs":
+        [
+            {"mutuallyExclusiveGroup":
+                [
+                    [
+                        {"name":"params", "kind":"required", "type":["numeric"]},
+                        {"name":"grad", "kind":"required", "type": ["numeric"]},
+                        {"name":"averageGrad", "kind":"required", "type": ["numeric"]},
+                        {"name":"averageSqGrad", "kind":"required", "type": ["numeric"]}
+                    ],
+                    
+                    [
+                        {"name":"params", "kind":"required", "type":["dlarray"]},
+                        {"name":"grad", "kind":"required", "type": ["dlarray"]},
+                        {"name":"averageGrad", "kind":"required", "type": [["dlarray"], ["numeric", "numel=0"]]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["dlarray"], ["numeric", "numel=0"]]}
+                    ],
+            
+                    [
+                        {"name":"params", "kind":"required", "type":["cell"]},
+                        {"name":"grad", "kind":"required", "type": ["cell"]},
+                        {"name":"averageGrad", "kind":"required", "type": [["cell"], ["numeric", "numel=0"]]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["cell"], ["numeric", "numel=0"]]}
+                    ],
+
+                    [
+                        {"name":"params", "kind":"required", "type":["struct"]},
+                        {"name":"grad", "kind":"required", "type": ["struct"]},
+                        {"name":"averageGrad", "kind":"required", "type": [["struct"], ["numeric", "numel=0"]]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["struct"], ["numeric", "numel=0"]]}
+                    ],
+
+                    [
+                        {"name":"params", "kind":"required", "type":["table"]},
+                        {"name":"grad", "kind":"required", "type": ["table"]},
+                        {"name":"averageGrad", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]}
+                    ],
+                    
+                    [
+                        {"name":"dlnet", "kind":"required", "type":["dlnetwork"]},
+                        {"name":"grad", "kind":"required", "type": ["table"]},
+                        {"name":"averageGrad", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]},
+                        {"name":"averageSqGrad", "kind":"required", "type": [["table"], ["numeric", "numel=0"]]}
+                    ]
+                ]
+            },
+            {"name":"iteration", "kind":"required", "type":["numeric", "scalar", "integer", ">=1"]}, 
+            {"name":"learnRate", "kind":"positional", "type":["numeric", "scalar", ">=0"]},
+            {"name":"gradDecay", "kind":"positional", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"sqGradDecay", "kind":"positional", "type":["numeric", "scalar", ">=0", "<1"]},
+            {"name":"epsilon", "kind":"positional", "type":["numeric", "scalar", ">0"]}
+
+        ]
+    },
+
+    "dlupdate":
+    {
+        "inputs":
+        [
+            {"name":"fun", "kind":"required", "type":["function_handle"]},
+            {"name":"params", "kind":"required", "type": [["numeric"], ["dlarray"], ["cell"], ["struct"], ["table"]], "repeating":"true"}
+        ]
+    },
+ 
+     "dlupdate":
+    {
+        "inputs":
+        [
+            {"name":"fun", "kind":"required", "type":["function_handle"]},
+            {"name":"dlnet", "kind":"required", "type": ["dlnetwork"], "repeating":"true"}
+        ]
+    }
+
+
+}
+

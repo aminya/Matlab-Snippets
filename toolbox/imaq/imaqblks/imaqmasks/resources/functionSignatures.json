@@ -1,0 +1,39 @@
+{
+"imaq.VideoDevice":
+{
+    "inputs":
+    [
+        {"name":"adaptorName", "kind":"positional", "type":"choices=imaq.internal.TabCompletionHelper.getInstalledAdaptors"},
+        {"name":"deviceID", "kind":"positional", "type":["numeric", "scalar"]},
+        {"name":"format", "kind":"positional", "type":"choices=imaq.internal.TabCompletionHelper.getFormats(adaptorName,deviceID)"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"VideoDevice"}
+    ]    
+    
+},
+"imaq.VideoDevice":
+{
+    "inputs":
+    [
+        {"name":"adaptorName", "kind":"required", "type":"choices=imaq.internal.TabCompletionHelper.getInstalledAdaptors"},
+        {"name":"deviceID", "kind":"required", "type":["numeric", "scalar"]},
+        {"name":"format", "kind":"required", "type":"choices=imaq.internal.TabCompletionHelper.getFormats(adaptorName,deviceID)"},
+        {"name":"BayerSensorAlignment", "kind":"namevalue", "type":"choices={'grbg','gbrg','rggb', 'bggr'}"},
+        {"name":"HardwareTriggering", "kind":"namevalue", "type":"choices={'on','off'}"},
+        {"name":"ReturnedColorSpace", "kind":"namevalue", "type":"choices={'rgb','grayscale','YCbCr', 'bayer'}"},
+        {"name":"ReturnedDataType", "kind":"namevalue", "type":"choices={'native', 'uint8', 'uint16', 'uint32', 'int8', 'int16', 'int32', 'single', 'double'}"},
+        {"name":"ROI", "kind":"namevalue", "type":["double","numel=4",">0"]},
+        {"name":"TriggerConfiguration", "kind":"namevalue", "type":"char"}
+    ],
+    
+    "outputs":
+    [
+        {"name":"out", "type":"VideoDevice"}
+    ]    
+    
+}
+
+}

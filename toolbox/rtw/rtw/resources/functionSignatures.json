@@ -1,0 +1,13 @@
+{
+"rtwbuild":
+{
+	"inputs":
+	[
+	    {"name":"filename", "kind":"required", "type":"choices=coder.internal.listmodels"},
+            {"name":"ForceTopModelBuild", "kind":"namevalue", "type":["logical"]},
+            {"name":"generateCodeOnly", "kind":"namevalue", "type":["logical"]},
+            {"name":"Mode", "kind":"namevalue", "type":"choices={'ExportFunctionCalls'}"},
+            {"name":"ExportFunctionInitializeFunctionName", "kind":"namevalue", "type":[["char"], ["string"]]}
+	]
+}
+}

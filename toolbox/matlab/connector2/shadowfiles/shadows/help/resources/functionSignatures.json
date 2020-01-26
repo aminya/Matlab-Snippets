@@ -1,0 +1,16 @@
+{
+    "help":
+    {
+        "inputs":
+        [
+            {"name":"name", "kind":"ordered", "type":"identifier=variable,function,localfunction,package,classdef"}
+        ]
+    },
+    "help":
+    {
+        "inputs":
+        [
+            {"name":"filename", "kind":"ordered", "type":"file"}
+        ]
+    }
+}

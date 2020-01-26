@@ -1,0 +1,69 @@
+{
+    "_schemaVersion": "1.0.0",
+
+    "fmethod.abstractdesign.isfir":
+        {
+            "inputs":
+            [
+                {"name":"d", "kind":"required", "type":"digitalFilter"}
+            ],
+            "outputs":
+            [
+                {"name":"flag", "type":["logical", "scalar"]}
+            ]
+        },
+
+    "fvtool":
+        {
+            "inputs":
+            [
+                {"repeating":true, "tuple":
+					[
+						{"name":"b", "kind":"required", "type":"vector"},
+                        {"name":"a", "kind":"required", "type":"vector"}
+					]
+				}
+            ],
+            "outputs":
+            [
+                {"name":"h", "type":"matlab.ui.Figure"}
+            ]
+        },
+
+    "fvtool":
+        {
+            "inputs":
+            [
+                {"name":"sos", "kind":"required", "type":"numeric", "repeating":true}
+            ],
+            "outputs":
+            [
+                {"name":"h", "type":"matlab.ui.Figure"}
+            ]
+        },
+
+    "fvtool":
+        {
+            "inputs":
+            [
+                {"name":"d", "kind":"required", "type":"digitalFilter", "repeating":true}
+            ],
+            "outputs":
+            [
+                {"name":"h", "type":"matlab.ui.Figure"}
+            ]
+        },
+
+    "wvtool":
+        {
+            "inputs":
+            [
+               {"name":"WindowVector", "kind":"required", "type":[["real","row"], ["real", "column"]], "repeating":true}                    
+            ],
+            "outputs":
+            [
+                {"name":"H", "type":"matlab.ui.Figure"}
+            ]
+        }
+
+}

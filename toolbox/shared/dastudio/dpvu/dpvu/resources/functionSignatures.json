@@ -1,0 +1,12 @@
+{
+"depview":
+{
+    "inputs":
+    [
+        {"name":"models", "kind":"ordered", "type":[["identifier=model"], ["file=*.mdl,*.slx"]]},
+        {"name":"FileDependenciesIncludingLibraries", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"FileDependenciesExcludingLibraries", "kind":"namevalue", "type":["logical", "scalar"]},
+        {"name":"ModelReferenceInstance", "kind":"namevalue", "type":["logical", "scalar"]}
+    ]
+}
+}

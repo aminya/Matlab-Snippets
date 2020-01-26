@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "runperf":
+    prefix: "runperf"
+    body: '''runperf(${1:optional_tests}, 'BaseFolder', ${2:value}, 'IncludeSubfolders', ${3:value}, 'IncludeSubpackages', ${4:value}, 'Name', ${5:value}, 'ParameterName', ${6:value}, 'ParameterProperty', ${7:value}, 'Tag', ${8:value}, 'ProcedureName', ${9:value}, 'Superclass', ${10:value})'''
+    description: '''runperf(${1:optional_tests}, 'BaseFolder', ${2:value}, 'IncludeSubfolders', ${3:value}, 'IncludeSubpackages', ${4:value}, 'Name', ${5:value}, 'ParameterName', ${6:value}, 'ParameterProperty', ${7:value}, 'Tag', ${8:value}, 'ProcedureName', ${9:value}, 'Superclass', ${10:value})'''
+

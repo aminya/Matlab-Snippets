@@ -1,0 +1,323 @@
+{
+"siteviewer":
+ {
+     "inputs":
+     [
+         {"name":"Name","kind":"namevalue"},
+         {"name":"Position","kind":"namevalue"},
+         {"name":"Basemap","kind":"namevalue","type":"choices=rfprop.internal.SiteViewer.basemapchoices"},
+         {"name":"Terrain","kind":"namevalue","type":"choices=rfprop.internal.SiteViewer.terrainchoices"},
+         {"name":"Buildings","kind":"namevalue","type":[["choices={'chicago.osm','hongkong.osm','manhattan.osm'}"],["file=*.osm"]]}
+     ]
+ },
+"addCustomTerrain":
+ {
+     "inputs":
+     [
+         {"name":"Name","kind":"required"},
+         {"name":"File","kind":"required","type":[["file=*.dt2,*.dt1,*.dt0"],["string"],["cell"]]},
+         {"name":"Attribution","kind":"namevalue"},
+         {"name":"WriteLocation","kind":"namevalue"},
+         {"name":"FillMissing","kind":"namevalue","type":["logical","scalar"]}
+     ]
+ },
+"removeCustomTerrain":
+ {
+     "inputs":
+     [
+         {"name":"Terrain","kind":"required","type":"choices=rfprop.internal.SiteViewer.terrainchoices('custom')"}
+     ]
+ },
+"txsite":
+ {
+     "inputs":
+     [
+         {"name":"Name","kind":"namevalue"},
+         {"name":"Latitude","kind":"namevalue"},
+         {"name":"Longitude","kind":"namevalue"},
+         {"name":"Antenna","kind":"namevalue"},
+         {"name":"AntennaAngle","kind":"namevalue"},
+         {"name":"AntennaHeight","kind":"namevalue"},
+         {"name":"SystemLoss","kind":"namevalue"},            
+         {"name":"TransmitterFrequency","kind":"namevalue"},
+         {"name":"TransmitterPower","kind":"namevalue"}
+     ]
+ },
+"rxsite":
+ {
+     "inputs":
+     [
+         {"name":"Name","kind":"namevalue"},
+         {"name":"Latitude","kind":"namevalue"},
+         {"name":"Longitude","kind":"namevalue"},
+         {"name":"Antenna","kind":"namevalue"},
+         {"name":"AntennaAngle","kind":"namevalue"},
+         {"name":"AntennaHeight","kind":"namevalue"},  
+         {"name":"SystemLoss","kind":"namevalue"},        
+         {"name":"ReceiverSensitivity","kind":"namevalue"}
+     ]
+ },
+"rfprop.AntennaSite.show":
+ {
+     "inputs":
+     [
+         {"name":"site","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"Icon","kind":"namevalue","type":"file=*.png,*.svg"},
+         {"name":"ClusterMarkers","kind":"namevalue","type":["logical","scalar"]},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"},
+         {"name":"IconSize","kind":"namevalue"},
+         {"name":"IconAlignment", "kind":"namevalue", "type":"choices={'top', 'center', 'bottom'}"}
+     ]
+ },
+"rfprop.AntennaSite.hide":
+ {
+     "inputs":
+     [
+         {"name":"site","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"}
+     ]
+ },
+"rfprop.AntennaSite.distance":
+ {
+     "inputs":
+     [
+         {"name":"site1","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"site2","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"path","kind":"ordered","type":"choices={'euclidean','geodesic'}"},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ },
+"rfprop.AntennaSite.elevation":
+ {
+     "inputs":
+     [
+         {"name":"site","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices('custom')"],["choices={'gmted2010'}"],["siteviewer"]]}
+     ]
+ },
+"rfprop.AntennaSite.angle":
+ {
+     "inputs":
+     [
+         {"name":"site1","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"site2","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"path","kind":"ordered","type":"choices={'euclidean','geodesic'}"},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ },
+"rxsite.sigstrength":
+ {
+     "inputs":
+     [
+         {"name":"rx","kind":"required","type":"rxsite"},
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"PropagationModel","kind":"ordered","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"Type","kind":"namevalue","type":"choices={'efield','power'}"},
+         {"name":"PropagationModel","kind":"namevalue","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ },
+"rxsite.sinr":
+ {
+     "inputs":
+     [
+         {"name":"rx","kind":"required","type":"rxsite"},   
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"PropagationModel","kind":"ordered","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"SignalSource","kind":"namevalue"},
+         {"name":"PropagationModel","kind":"namevalue","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"ReceiverGain","kind":"namevalue"},
+         {"name":"ReceiverAntennaHeight","kind":"namevalue"},
+         {"name":"ReceiverNoisePower","kind":"namevalue"},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ },
+"rxsite.link":
+ {
+     "inputs":
+     [
+         {"name":"rx","kind":"required","type":"rxsite"},
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"PropagationModel","kind":"ordered","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"SuccessColor","kind":"namevalue","type":[["choices=rfprop.internal.ColorUtils.colors('long')"],["numeric"]]},
+         {"name":"FailColor","kind":"namevalue","type":[["choices=rfprop.internal.ColorUtils.colors('long')"],["numeric"]]},
+         {"name":"PropagationModel","kind":"namevalue","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ },
+"rfprop.AntennaSite.los":
+ {
+     "inputs":
+     [
+         {"name":"site1","kind":"required","type":"rfprop.AntennaSite"},
+         {"name":"site2","kind":"required","type":"rfprop.AntennaSite"},     
+         {"name":"VisibleColor","kind":"namevalue","type":[["choices=rfprop.internal.ColorUtils.colors('long')"],["numeric"]]},
+         {"name":"ObstructedColor","kind":"namevalue","type":[["choices=rfprop.internal.ColorUtils.colors('long')"],["numeric"]]},
+         {"name":"Resolution","kind":"namevalue"},
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ },
+"txsite.raytrace":
+ {
+     "inputs":
+     [
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"rx","kind":"required","type":"rxsite"},        
+         {"name":"Type","kind":"namevalue","type":"choices={'pathloss','power'}"},
+         {"name":"NumReflections","kind":"namevalue"},
+         {"name":"ColorLimits","kind":"namevalue"},
+         {"name":"Colormap","kind":"namevalue"},
+         {"name":"ShowLegend","kind":"namevalue","type":["logical","scalar"]},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"}
+     ]
+ },
+"txsite.coverage":
+ {
+     "inputs":
+     [
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"rx","kind":"ordered","type":"rxsite"},        
+         {"name":"PropagationModel","kind":"ordered","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"Type","kind":"namevalue","type":"choices={'efield','power'}"},
+         {"name":"SignalStrengths","kind":"namevalue"},
+         {"name":"PropagationModel","kind":"namevalue","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"MaxRange","kind":"namevalue"},
+         {"name":"Resolution","kind":"namevalue"},
+         {"name":"ReceiverGain","kind":"namevalue"},
+         {"name":"ReceiverAntennaHeight","kind":"namevalue"},
+         {"name":"Colors","kind":"namevalue","type":[["choices=rfprop.internal.ColorUtils.colors('long')"],["numeric"],["cellstr"],["string"]]},
+         {"name":"ColorLimits","kind":"namevalue"},
+         {"name":"Colormap","kind":"namevalue"},
+         {"name":"Transparency","kind":"namevalue"},
+         {"name":"ShowLegend","kind":"namevalue","type":["logical","scalar"]},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"}
+     ]
+ },
+"txsite.sinr":
+ {
+     "inputs":
+     [
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"PropagationModel","kind":"ordered","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"Values","kind":"namevalue"},
+         {"name":"SignalSource","kind":"namevalue"},
+         {"name":"PropagationModel","kind":"namevalue","type":[["choices=rfprop.PropagationModel.choices()"],["rfprop.PropagationModel"]]},
+         {"name":"MaxRange","kind":"namevalue"},
+         {"name":"Resolution","kind":"namevalue"},
+         {"name":"ReceiverGain","kind":"namevalue"},
+         {"name":"ReceiverAntennaHeight","kind":"namevalue"},
+         {"name":"ReceiverNoisePower","kind":"namevalue"},
+         {"name":"ColorLimits","kind":"namevalue"},
+         {"name":"Colormap","kind":"namevalue"},
+         {"name":"Transparency","kind":"namevalue"},
+         {"name":"ShowLegend","kind":"namevalue","type":["logical","scalar"]},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"}
+     ]
+ },
+"rfprop.AntennaSite.pattern":
+ {
+     "inputs":
+     [
+         {"name":"tx","kind":"required","type":"txsite"},
+         {"name":"Size","kind":"namevalue"},
+         {"name":"Transparency","kind":"namevalue"},
+         {"name":"Colormap","kind":"namevalue"},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"}
+     ]
+ },
+"rfprop.AntennaSite.pattern":
+ {
+     "inputs":
+     [
+         {"name":"rx","kind":"required","type":"rxsite"},
+         {"name":"Frequency","kind":"required","type":["numeric","scalar"]},
+         {"name":"Size","kind":"namevalue"},
+         {"name":"Transparency","kind":"namevalue"},
+         {"name":"Colormap","kind":"namevalue"},
+         {"name":"Map","kind":"namevalue","type":"siteviewer"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices=rfprop.PropagationModel.choices()"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices={'rain'}"},
+         {"name":"RainRate","kind":"namevalue"},
+         {"name":"Tilt","kind":"namevalue"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices={'gas'}"},
+         {"name":"Temperature","kind":"namevalue"},
+         {"name":"AirPressure","kind":"namevalue"},
+         {"name":"WaterDensity","kind":"namevalue"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices={'fog'}"},
+         {"name":"Temperature","kind":"namevalue"},
+         {"name":"WaterDensity","kind":"namevalue"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices={'close-in'}"},
+         {"name":"ReferenceDistance","kind":"namevalue"},
+         {"name":"PathLossExponent","kind":"namevalue"},
+         {"name":"Sigma","kind":"namevalue"},
+         {"name":"NumDataPoints","kind":"namevalue"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices={'longley-rice'}"},
+         {"name":"GroundPermittivity","kind":"namevalue"},
+         {"name":"GroundConductivity","kind":"namevalue"},
+         {"name":"AtmosphericRefractivity","kind":"namevalue"},
+         {"name":"ClimateZone","kind":"namevalue","type":[["choices=rfprop.LongleyRice.ClimateZoneChoices"]]},
+         {"name":"AntennaPolarization","kind":"namevalue","type":[["choices=rfprop.LongleyRice.AntennaPolarizationChoices"]]},
+         {"name":"SituationVariabilityTolerance","kind":"namevalue"},
+         {"name":"TimeVariabilityTolerance","kind":"namevalue"}
+     ]
+ },
+"propagationModel":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"choices={'tirem'}"},
+         {"name":"GroundPermittivity","kind":"namevalue"},
+         {"name":"GroundConductivity","kind":"namevalue"},
+         {"name":"AtmosphericRefractivity","kind":"namevalue"},
+         {"name":"AntennaPolarization","kind":"namevalue","type":[["choices=rfprop.LongleyRice.AntennaPolarizationChoices"]]},
+         {"name":"Humidity","kind":"namevalue"}
+     ]
+ },
+"rfprop.PropagationModel.pathloss":
+ {
+     "inputs":
+     [
+         {"name":"PropagationModel","kind":"required","type":"rfprop.PropagationModel"},         
+         {"name":"rx","kind":"required","type":"rxsite"},
+         {"name":"tx","kind":"required","type":"txsite"},         
+         {"name":"Map","kind":"namevalue","type":[["choices=rfprop.internal.SiteViewer.terrainchoices"],["siteviewer"]]}
+     ]
+ }
+}
+     

@@ -1,0 +1,224 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "optim.problemdef.OptimizationProblem.writeproblem":
+    prefix: "optim.problemdef.OptimizationProblem.writeproblem"
+    body: '''optim.problemdef.OptimizationProblem.writeproblem(${1:prob}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationProblem.writeproblem(${1:prob}, ${2:optional_filename})'''
+
+
+    "optim.problemdef.OptimizationVariable.writebounds":
+    prefix: "optim.problemdef.OptimizationVariable.writebounds"
+    body: '''optim.problemdef.OptimizationVariable.writebounds(${1:x}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationVariable.writebounds(${1:x}, ${2:optional_filename})'''
+
+
+    "optim.problemdef.OptimizationProblem.prob2struct":
+    prefix: "optim.problemdef.OptimizationProblem.prob2struct"
+    body: '''optim.problemdef.OptimizationProblem.prob2struct(${1:prob}, ${2:optional_x0}, 'FileLocation', ${3:value}, 'Options', ${4:value}, 'ObjectiveFunctionName', ${5:value}, 'ConstraintFunctionName', ${6:value})'''
+    description: '''optim.problemdef.OptimizationProblem.prob2struct(${1:prob}, ${2:optional_x0}, 'FileLocation', ${3:value}, 'Options', ${4:value}, 'ObjectiveFunctionName', ${5:value}, 'ConstraintFunctionName', ${6:value})'''
+
+
+    "optimeq":
+    prefix: "optimeq"
+    body: '''${1:eqs} = optimeq(${1:n})'''
+    description: '''${1:eqs} = optimeq(${1:n})'''
+
+
+    "optimineq":
+    prefix: "optimineq"
+    body: '''${1:ineq} = optimineq(${1:n})'''
+    description: '''${1:ineq} = optimineq(${1:n})'''
+
+
+    "optim.problemdef.OptimizationVariable.writevar":
+    prefix: "optim.problemdef.OptimizationVariable.writevar"
+    body: '''optim.problemdef.OptimizationVariable.writevar(${1:x}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationVariable.writevar(${1:x}, ${2:optional_filename})'''
+
+
+    "optim.problemdef.OptimizationConstraint._parenAssign":
+    prefix: "optim.problemdef.OptimizationConstraint._parenAssign"
+    body: '''optim.problemdef.OptimizationConstraint._parenAssign(${1:c}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+    description: '''optim.problemdef.OptimizationConstraint._parenAssign(${1:c}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+
+
+    "optim.problemdef.OptimizationProblem.showproblem":
+    prefix: "optim.problemdef.OptimizationProblem.showproblem"
+    body: '''optim.problemdef.OptimizationProblem.showproblem(${1:prob})'''
+    description: '''optim.problemdef.OptimizationProblem.showproblem(${1:prob})'''
+
+
+    "optim.problemdef.OptimizationVariable.showbounds":
+    prefix: "optim.problemdef.OptimizationVariable.showbounds"
+    body: '''optim.problemdef.OptimizationVariable.showbounds(${1:x})'''
+    description: '''optim.problemdef.OptimizationVariable.showbounds(${1:x})'''
+
+
+    "optim.problemdef.EquationProblem.prob2struct":
+    prefix: "optim.problemdef.EquationProblem.prob2struct"
+    body: '''optim.problemdef.EquationProblem.prob2struct(${1:prob}, ${2:optional_x0}, 'FileLocation', ${3:value}, 'Options', ${4:value}, 'EquationFunctionName', ${5:value})'''
+    description: '''optim.problemdef.EquationProblem.prob2struct(${1:prob}, ${2:optional_x0}, 'FileLocation', ${3:value}, 'Options', ${4:value}, 'EquationFunctionName', ${5:value})'''
+
+
+    "optimproblem":
+    prefix: "optimproblem"
+    body: '''${1:prob} = optimproblem('Constraints', ${1:value}, 'Description', ${2:value}, 'Objective', ${3:value}, 'ObjectiveSense', ${4:value})'''
+    description: '''${1:prob} = optimproblem('Constraints', ${1:value}, 'Description', ${2:value}, 'Objective', ${3:value}, 'ObjectiveSense', ${4:value})'''
+
+
+    "optimvar":
+    prefix: "optimvar"
+    body: '''${1:x} = optimvar(${1:Name}, ${2:optional_n}, 'Type', ${3:value}, 'LowerBound', ${4:value}, 'UpperBound', ${5:value})'''
+    description: '''${1:x} = optimvar(${1:Name}, ${2:optional_n}, 'Type', ${3:value}, 'LowerBound', ${4:value}, 'UpperBound', ${5:value})'''
+
+
+    "optim.problemdef.OptimizationConstraint.write":
+    prefix: "optim.problemdef.OptimizationConstraint.write"
+    body: '''optim.problemdef.OptimizationConstraint.write(${1:constr}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationConstraint.write(${1:constr}, ${2:optional_filename})'''
+
+
+    "optim.problemdef.OptimizationVariable.write":
+    prefix: "optim.problemdef.OptimizationVariable.write"
+    body: '''optim.problemdef.OptimizationVariable.write(${1:x}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationVariable.write(${1:x}, ${2:optional_filename})'''
+
+
+    "optim.problemdef.OptimizationConstraint.infeasibility":
+    prefix: "optim.problemdef.OptimizationConstraint.infeasibility"
+    body: '''optim.problemdef.OptimizationConstraint.infeasibility(${1:constr}, ${2:varval})'''
+    description: '''optim.problemdef.OptimizationConstraint.infeasibility(${1:constr}, ${2:varval})'''
+
+
+    "optim.problemdef.OptimizationConstraint.showconstr":
+    prefix: "optim.problemdef.OptimizationConstraint.showconstr"
+    body: '''optim.problemdef.OptimizationConstraint.showconstr(${1:constr})'''
+    description: '''optim.problemdef.OptimizationConstraint.showconstr(${1:constr})'''
+
+
+    "optim.problemdef.EquationProblem.solve":
+    prefix: "optim.problemdef.EquationProblem.solve"
+    body: '''optim.problemdef.EquationProblem.solve(${1:prob}, ${2:optional_x0}, 'Solver', ${3:value}, 'Options', ${4:value})'''
+    description: '''optim.problemdef.EquationProblem.solve(${1:prob}, ${2:optional_x0}, 'Solver', ${3:value}, 'Options', ${4:value})'''
+
+
+    "optim.problemdef.OptimizationExpression._parenReference":
+    prefix: "optim.problemdef.OptimizationExpression._parenReference"
+    body: '''optim.problemdef.OptimizationExpression._parenReference(${1:e}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+    description: '''optim.problemdef.OptimizationExpression._parenReference(${1:e}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+
+
+    "optim.problemdef.OptimizationExpression.showexpr":
+    prefix: "optim.problemdef.OptimizationExpression.showexpr"
+    body: '''optim.problemdef.OptimizationExpression.showexpr(${1:expr})'''
+    description: '''optim.problemdef.OptimizationExpression.showexpr(${1:expr})'''
+
+
+    "optim.problemdef.OptimizationExpression._parenAssign":
+    prefix: "optim.problemdef.OptimizationExpression._parenAssign"
+    body: '''optim.problemdef.OptimizationExpression._parenAssign(${1:e}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+    description: '''optim.problemdef.OptimizationExpression._parenAssign(${1:e}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+
+
+    "optim.problemdef.OptimizationExpression.show":
+    prefix: "optim.problemdef.OptimizationExpression.show"
+    body: '''optim.problemdef.OptimizationExpression.show(${1:expr})'''
+    description: '''optim.problemdef.OptimizationExpression.show(${1:expr})'''
+
+
+    "optim.problemdef.OptimizationProblem.write":
+    prefix: "optim.problemdef.OptimizationProblem.write"
+    body: '''optim.problemdef.OptimizationProblem.write(${1:prob}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationProblem.write(${1:prob}, ${2:optional_filename})'''
+
+
+    "optimconstr":
+    prefix: "optimconstr"
+    body: '''${1:constr} = optimconstr(${1:n})'''
+    description: '''${1:constr} = optimconstr(${1:n})'''
+
+
+    "optim.problemdef.OptimizationVariable._parenReference":
+    prefix: "optim.problemdef.OptimizationVariable._parenReference"
+    body: '''optim.problemdef.OptimizationVariable._parenReference(${1:v}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+    description: '''optim.problemdef.OptimizationVariable._parenReference(${1:v}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+
+
+    "optim.problemdef.OptimizationConstraint.show":
+    prefix: "optim.problemdef.OptimizationConstraint.show"
+    body: '''optim.problemdef.OptimizationConstraint.show(${1:constr})'''
+    description: '''optim.problemdef.OptimizationConstraint.show(${1:constr})'''
+
+
+    "fcn2optimexpr":
+    prefix: "fcn2optimexpr"
+    body: '''${1:constr} = fcn2optimexpr(${1:fun}, ${2:optional_Xin}, 'ReuseEvaluation', ${3:value}, 'OutputSize', ${4:value})'''
+    description: '''${1:constr} = fcn2optimexpr(${1:fun}, ${2:optional_Xin}, 'ReuseEvaluation', ${3:value}, 'OutputSize', ${4:value})'''
+
+
+    "optim.problemdef.OptimizationVariable._parenAssign":
+    prefix: "optim.problemdef.OptimizationVariable._parenAssign"
+    body: '''optim.problemdef.OptimizationVariable._parenAssign(${1:v}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+    description: '''optim.problemdef.OptimizationVariable._parenAssign(${1:v}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+
+
+    "optim.problemdef.OptimizationExpression.evaluate":
+    prefix: "optim.problemdef.OptimizationExpression.evaluate"
+    body: '''optim.problemdef.OptimizationExpression.evaluate(${1:expr}, ${2:optional_varval})'''
+    description: '''optim.problemdef.OptimizationExpression.evaluate(${1:expr}, ${2:optional_varval})'''
+
+
+    "optim.problemdef.OptimizationConstraint._parenReference":
+    prefix: "optim.problemdef.OptimizationConstraint._parenReference"
+    body: '''optim.problemdef.OptimizationConstraint._parenReference(${1:c}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+    description: '''optim.problemdef.OptimizationConstraint._parenReference(${1:c}, ${2:dim1}, ${3:dim2}, ${4:dim3})'''
+
+
+    "optim.problemdef.OptimizationVariable.show":
+    prefix: "optim.problemdef.OptimizationVariable.show"
+    body: '''optim.problemdef.OptimizationVariable.show(${1:x})'''
+    description: '''optim.problemdef.OptimizationVariable.show(${1:x})'''
+
+
+    "optimexpr":
+    prefix: "optimexpr"
+    body: '''${1:expr} = optimexpr(${1:n})'''
+    description: '''${1:expr} = optimexpr(${1:n})'''
+
+
+    "optim.problemdef.OptimizationVariable.showvar":
+    prefix: "optim.problemdef.OptimizationVariable.showvar"
+    body: '''optim.problemdef.OptimizationVariable.showvar(${1:x})'''
+    description: '''optim.problemdef.OptimizationVariable.showvar(${1:x})'''
+
+
+    "optim.problemdef.OptimizationProblem.show":
+    prefix: "optim.problemdef.OptimizationProblem.show"
+    body: '''optim.problemdef.OptimizationProblem.show(${1:prob})'''
+    description: '''optim.problemdef.OptimizationProblem.show(${1:prob})'''
+
+
+    "optim.problemdef.OptimizationVariable.findindex":
+    prefix: "optim.problemdef.OptimizationVariable.findindex"
+    body: '''optim.problemdef.OptimizationVariable.findindex(${1:x}, ${2:cstr})'''
+    description: '''optim.problemdef.OptimizationVariable.findindex(${1:x}, ${2:cstr})'''
+
+
+    "optim.problemdef.OptimizationProblem.solve":
+    prefix: "optim.problemdef.OptimizationProblem.solve"
+    body: '''optim.problemdef.OptimizationProblem.solve(${1:prob}, ${2:optional_x0}, 'Solver', ${3:value}, 'Options', ${4:value})'''
+    description: '''optim.problemdef.OptimizationProblem.solve(${1:prob}, ${2:optional_x0}, 'Solver', ${3:value}, 'Options', ${4:value})'''
+
+
+    "optim.problemdef.OptimizationConstraint.writeconstr":
+    prefix: "optim.problemdef.OptimizationConstraint.writeconstr"
+    body: '''optim.problemdef.OptimizationConstraint.writeconstr(${1:constr}, ${2:optional_filename})'''
+    description: '''optim.problemdef.OptimizationConstraint.writeconstr(${1:constr}, ${2:optional_filename})'''
+
+
+    "eqnproblem":
+    prefix: "eqnproblem"
+    body: '''${1:prob} = eqnproblem('Description', ${1:value}, 'Equations', ${2:value})'''
+    description: '''${1:prob} = eqnproblem('Description', ${1:value}, 'Equations', ${2:value})'''
+

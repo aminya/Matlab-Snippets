@@ -1,0 +1,32 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "target.get":
+    prefix: "target.get"
+    body: '''${1:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})'''
+    description: '''${1:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})'''
+
+
+    "target.add":
+    prefix: "target.add"
+    body: '''target.add(${1:targetObjectInstances}, 'UserInstall', ${2:value})'''
+    description: '''target.add(${1:targetObjectInstances}, 'UserInstall', ${2:value})'''
+
+
+    "target.export":
+    prefix: "target.export"
+    body: '''target.export(${1:targetObjectInstances}, 'FileName', ${2:value}, 'Overwrite', ${3:value})'''
+    description: '''target.export(${1:targetObjectInstances}, 'FileName', ${2:value}, 'Overwrite', ${3:value})'''
+
+
+    "target.create":
+    prefix: "target.create"
+    body: '''${1:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})'''
+    description: '''${1:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})'''
+
+
+    "target.upgrade":
+    prefix: "target.upgrade"
+    body: '''target.upgrade(${1:upgrader}, 'ExportToMATLABFunction', ${2:value}, 'ExportFileName', ${3:value}, 'Overwrite', ${4:value})'''
+    description: '''target.upgrade(${1:upgrader}, 'ExportToMATLABFunction', ${2:value}, 'ExportFileName', ${3:value}, 'Overwrite', ${4:value})'''
+

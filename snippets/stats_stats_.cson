@@ -1,0 +1,1166 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "fsulaplacian":
+    prefix: "fsulaplacian"
+    body: '''fsulaplacian(${1:X}, 'Similarity', ${2:value})'''
+    description: '''fsulaplacian(${1:X}, 'Similarity', ${2:value})'''
+
+
+    "nanstd":
+    prefix: "nanstd"
+    body: '''nanstd(${1:X}, ${2:normalization_flag}, ${3:optional_dim})'''
+    description: '''nanstd(${1:X}, ${2:normalization_flag}, ${3:optional_dim})'''
+
+
+    "mvregress":
+    prefix: "mvregress"
+    body: '''mvregress(${1:X}, ${2:Y}, 'algorithm', ${3:value}, 'beta0', ${4:value}, 'covar0', ${5:value}, 'covtype', ${6:value}, 'maxiter', ${7:value}, 'outputfcn', ${8:value}, 'tolbeta', ${9:value}, 'tolobj', ${10:value}, 'varformat', ${11:value}, 'vartype', ${12:value})'''
+    description: '''mvregress(${1:X}, ${2:Y}, 'algorithm', ${3:value}, 'beta0', ${4:value}, 'covar0', ${5:value}, 'covtype', ${6:value}, 'maxiter', ${7:value}, 'outputfcn', ${8:value}, 'tolbeta', ${9:value}, 'tolobj', ${10:value}, 'varformat', ${11:value}, 'vartype', ${12:value})'''
+
+
+    "anova2":
+    prefix: "anova2"
+    body: '''anova2(${1:y}, ${2:reps}, ${3:optional_displayopt})'''
+    description: '''anova2(${1:y}, ${2:reps}, ${3:optional_displayopt})'''
+
+
+    "tblread":
+    prefix: "tblread"
+    body: '''tblread(${1:filename}, ${2:optional_delimiter})'''
+    description: '''tblread(${1:filename}, ${2:optional_delimiter})'''
+
+
+    "perfcurve":
+    prefix: "perfcurve"
+    body: '''perfcurve(${1:labels}, ${2:scores}, ${3:posclass}, 'NegClass', ${4:value}, 'XCrit', ${5:value}, 'YCrit', ${6:value}, 'XVals', ${7:value}, 'TVals', ${8:value}, 'UseNearest', ${9:value}, 'ProcessNaN', ${10:value}, 'Prior', ${11:value}, 'Cost', ${12:value}, 'Alpha', ${13:value}, 'Weights', ${14:value}, 'NBoot', ${15:value}, 'BootType', ${16:value}, 'BootArg', ${17:value}, 'Options', ${18:value})'''
+    description: '''perfcurve(${1:labels}, ${2:scores}, ${3:posclass}, 'NegClass', ${4:value}, 'XCrit', ${5:value}, 'YCrit', ${6:value}, 'XVals', ${7:value}, 'TVals', ${8:value}, 'UseNearest', ${9:value}, 'ProcessNaN', ${10:value}, 'Prior', ${11:value}, 'Cost', ${12:value}, 'Alpha', ${13:value}, 'Weights', ${14:value}, 'NBoot', ${15:value}, 'BootType', ${16:value}, 'BootArg', ${17:value}, 'Options', ${18:value})'''
+
+
+    "cluster":
+    prefix: "cluster"
+    body: '''cluster(${1:Z}, 'cutoff', ${2:value}, 'depth', ${3:value}, 'criterion', ${4:value}, 'maxclust', ${5:value})'''
+    description: '''cluster(${1:Z}, 'cutoff', ${2:value}, 'depth', ${3:value}, 'criterion', ${4:value}, 'maxclust', ${5:value})'''
+
+
+    "paretotails":
+    prefix: "paretotails"
+    body: '''paretotails(${1:x}, ${2:pl}, ${3:pu}, ${4:optional_cdffun})'''
+    description: '''paretotails(${1:x}, ${2:pl}, ${3:pu}, ${4:optional_cdffun})'''
+
+
+    "tdfread":
+    prefix: "tdfread"
+    body: '''tdfread(${1:filename}, ${2:optional_delimiter})'''
+    description: '''tdfread(${1:filename}, ${2:optional_delimiter})'''
+
+
+    "anovan":
+    prefix: "anovan"
+    body: '''anovan(${1:y}, ${2:group}, 'alpha', ${3:value}, 'continuous', ${4:value}, 'display', ${5:value}, 'model', ${6:value}, 'nested', ${7:value}, 'random', ${8:value}, 'sstype', ${9:value}, 'varnames', ${10:value})'''
+    description: '''anovan(${1:y}, ${2:group}, 'alpha', ${3:value}, 'continuous', ${4:value}, 'display', ${5:value}, 'model', ${6:value}, 'nested', ${7:value}, 'random', ${8:value}, 'sstype', ${9:value}, 'varnames', ${10:value})'''
+
+
+    "nlmefitsa":
+    prefix: "nlmefitsa"
+    body: '''nlmefitsa(${1:X}, ${2:Y}, ${3:GROUP}, ${4:V}, ${5:MODELFUN}, ${6:BETA0}, 'FEParamsSelect', ${7:value}, 'FEConstDesign', ${8:value}, 'FEGroupDesign', ${9:value}, 'REParamsSelect', ${10:value}, 'REConstDesign', ${11:value}, 'CovPattern', ${12:value}, 'Cov0', ${13:value}, 'ComputeStdErrors', ${14:value}, 'ErrorModel', ${15:value}, 'ErrorParameters', ${16:value}, 'LogLikMethod', ${17:value}, 'NBurnIn', ${18:value}, 'NChains', ${19:value}, 'NIterations', ${20:value}, 'NMCMCIterations', ${21:value}, 'OptimFun', ${22:value}, 'Options', ${23:value}, 'ParamTransform', ${24:value}, 'Replicates', ${25:value}, 'Vectorization', ${26:value})'''
+    description: '''nlmefitsa(${1:X}, ${2:Y}, ${3:GROUP}, ${4:V}, ${5:MODELFUN}, ${6:BETA0}, 'FEParamsSelect', ${7:value}, 'FEConstDesign', ${8:value}, 'FEGroupDesign', ${9:value}, 'REParamsSelect', ${10:value}, 'REConstDesign', ${11:value}, 'CovPattern', ${12:value}, 'Cov0', ${13:value}, 'ComputeStdErrors', ${14:value}, 'ErrorModel', ${15:value}, 'ErrorParameters', ${16:value}, 'LogLikMethod', ${17:value}, 'NBurnIn', ${18:value}, 'NChains', ${19:value}, 'NIterations', ${20:value}, 'NMCMCIterations', ${21:value}, 'OptimFun', ${22:value}, 'Options', ${23:value}, 'ParamTransform', ${24:value}, 'Replicates', ${25:value}, 'Vectorization', ${26:value})'''
+
+
+    "plsregress":
+    prefix: "plsregress"
+    body: '''plsregress(${1:X}, ${2:Y}, ${3:ncomp}, 'cv', ${4:value}, 'mcreps', ${5:value}, 'options', ${6:value})'''
+    description: '''plsregress(${1:X}, ${2:Y}, ${3:ncomp}, 'cv', ${4:value}, 'mcreps', ${5:value}, 'options', ${6:value})'''
+
+
+    "glmfit":
+    prefix: "glmfit"
+    body: '''glmfit(${1:X}, ${2:y}, ${3:distr}, 'link', ${4:value}, 'estdisp', ${5:value}, 'offset', ${6:value}, 'weights', ${7:value}, 'constant', ${8:value})'''
+    description: '''glmfit(${1:X}, ${2:y}, ${3:distr}, 'link', ${4:value}, 'estdisp', ${5:value}, 'offset', ${6:value}, 'weights', ${7:value}, 'constant', ${8:value})'''
+
+
+    "squareform":
+    prefix: "squareform"
+    body: '''squareform(${1:Y}, ${2:optional_direction})'''
+    description: '''squareform(${1:Y}, ${2:optional_direction})'''
+
+
+    "lhsdesign":
+    prefix: "lhsdesign"
+    body: '''lhsdesign(${1:n}, ${2:p}, 'smooth', ${3:value}, 'criterion', ${4:value}, 'iterations', ${5:value})'''
+    description: '''lhsdesign(${1:n}, ${2:p}, 'smooth', ${3:value}, 'criterion', ${4:value}, 'iterations', ${5:value})'''
+
+
+    "nlpredci":
+    prefix: "nlpredci"
+    body: '''nlpredci(${1:modelfun}, ${2:X}, ${3:beta}, ${4:R}, 'Covariance', ${5:value}, 'Jacobian', ${6:value}, 'Alpha', ${7:value}, 'ErrorModelInfo', ${8:value}, 'MSE', ${9:value}, 'PredOpt', ${10:value}, 'SimOpt', ${11:value}, 'Weights', ${12:value})'''
+    description: '''nlpredci(${1:modelfun}, ${2:X}, ${3:beta}, ${4:R}, 'Covariance', ${5:value}, 'Jacobian', ${6:value}, 'Alpha', ${7:value}, 'ErrorModelInfo', ${8:value}, 'MSE', ${9:value}, 'PredOpt', ${10:value}, 'SimOpt', ${11:value}, 'Weights', ${12:value})'''
+
+
+    "statget":
+    prefix: "statget"
+    body: '''statget(${1:options}, ${2:param}, ${3:optional_default})'''
+    description: '''statget(${1:options}, ${2:param}, ${3:optional_default})'''
+
+
+    "gevcdf":
+    prefix: "gevcdf"
+    body: '''gevcdf(${1:x}, ${2:k}, ${3:sigma}, ${4:mu}, ${5:optional_upper})'''
+    description: '''gevcdf(${1:x}, ${2:k}, ${3:sigma}, ${4:mu}, ${5:optional_upper})'''
+
+
+    "chi2cdf":
+    prefix: "chi2cdf"
+    body: '''chi2cdf(${1:x}, ${2:v}, ${3:optional_upper})'''
+    description: '''chi2cdf(${1:x}, ${2:v}, ${3:optional_upper})'''
+
+
+    "cvpartition":
+    prefix: "cvpartition"
+    body: '''cvpartition(${1:n}, ${2:resubstitution})'''
+    description: '''cvpartition(${1:n}, ${2:resubstitution})'''
+
+
+    "linkage":
+    prefix: "linkage"
+    body: '''linkage(${1:X}, ${2:method}, ${3:optional_pdist_inputs})'''
+    description: '''linkage(${1:X}, ${2:method}, ${3:optional_pdist_inputs})'''
+
+
+    "mvksdensity":
+    prefix: "mvksdensity"
+    body: '''mvksdensity(${1:x}, ${2:pts}, 'bandwidth', ${3:value}, 'Function', ${4:value}, 'Kernel', ${5:value}, 'Support', ${6:value}, 'Weights', ${7:value})'''
+    description: '''mvksdensity(${1:x}, ${2:pts}, 'bandwidth', ${3:value}, 'Function', ${4:value}, 'Kernel', ${5:value}, 'Support', ${6:value}, 'Weights', ${7:value})'''
+
+
+    "logncdf":
+    prefix: "logncdf"
+    body: '''logncdf(${1:x}, ${2:mu}, ${3:sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+    description: '''logncdf(${1:x}, ${2:mu}, ${3:sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+
+
+    "interactionplot":
+    prefix: "interactionplot"
+    body: '''interactionplot(${1:Y}, ${2:GROUP}, 'varnames', ${3:value})'''
+    description: '''interactionplot(${1:Y}, ${2:GROUP}, 'varnames', ${3:value})'''
+
+
+    "mhsample":
+    prefix: "mhsample"
+    body: '''mhsample(${1:start}, ${2:nsamples}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'proppdf', ${5:value}, 'logproppdf', ${6:value}, 'proprnd', ${7:value}, 'symmetric', ${8:value}, 'burnin', ${9:value}, 'thin', ${10:value}, 'nchain', ${11:value})'''
+    description: '''mhsample(${1:start}, ${2:nsamples}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'proppdf', ${5:value}, 'logproppdf', ${6:value}, 'proprnd', ${7:value}, 'symmetric', ${8:value}, 'burnin', ${9:value}, 'thin', ${10:value}, 'nchain', ${11:value})'''
+
+
+    "gplotmatrix":
+    prefix: "gplotmatrix"
+    body: '''gplotmatrix(${1:x}, ${2:y}, ${3:group}, ${4:clr}, ${5:sym}, ${6:size}, ${7:doleg}, ${8:dispopt}, ${9:xnam}, ${10:optional_ynam})'''
+    description: '''gplotmatrix(${1:x}, ${2:y}, ${3:group}, ${4:clr}, ${5:sym}, ${6:size}, ${7:doleg}, ${8:dispopt}, ${9:xnam}, ${10:optional_ynam})'''
+
+
+    "lasso":
+    prefix: "lasso"
+    body: '''lasso(${1:X}, ${2:Y}, 'Alpha', ${3:value}, 'CV', ${4:value}, 'DFmax', ${5:value}, 'Lambda', ${6:value}, 'LambdaRatio', ${7:value}, 'MaxIter', ${8:value}, 'MCReps', ${9:value}, 'NumLambda', ${10:value}, 'Options', ${11:value}, 'PredictorNames', ${12:value}, 'RelTol', ${13:value}, 'Standardize', ${14:value}, 'Weights', ${15:value})'''
+    description: '''lasso(${1:X}, ${2:Y}, 'Alpha', ${3:value}, 'CV', ${4:value}, 'DFmax', ${5:value}, 'Lambda', ${6:value}, 'LambdaRatio', ${7:value}, 'MaxIter', ${8:value}, 'MCReps', ${9:value}, 'NumLambda', ${10:value}, 'Options', ${11:value}, 'PredictorNames', ${12:value}, 'RelTol', ${13:value}, 'Standardize', ${14:value}, 'Weights', ${15:value})'''
+
+
+    "nlintool":
+    prefix: "nlintool"
+    body: '''nlintool(${1:X}, ${2:Y}, ${3:modelfun}, ${4:beta0}, 'alpha', ${5:value}, 'xname', ${6:value}, 'yname', ${7:value}, 'plotdata', ${8:value})'''
+    description: '''nlintool(${1:X}, ${2:Y}, ${3:modelfun}, ${4:beta0}, 'alpha', ${5:value}, 'xname', ${6:value}, 'yname', ${7:value}, 'plotdata', ${8:value})'''
+
+
+    "normcdf":
+    prefix: "normcdf"
+    body: '''normcdf(${1:x}, ${2:optional_mu}, ${3:optional_sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+    description: '''normcdf(${1:x}, ${2:optional_mu}, ${3:optional_sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+
+
+    "nearcorr":
+    prefix: "nearcorr"
+    body: '''nearcorr(${1:A}, 'Tolerance', ${2:value}, 'MaxIterations', ${3:value}, 'Method', ${4:value}, 'Weights', ${5:value})'''
+    description: '''nearcorr(${1:A}, 'Tolerance', ${2:value}, 'MaxIterations', ${3:value}, 'Method', ${4:value}, 'Weights', ${5:value})'''
+
+
+    "statset":
+    prefix: "statset"
+    body: '''statset(${1:optional_oldopts}, 'Display', ${2:value}, 'MaxFunEvals', ${3:value}, 'MaxIter', ${4:value}, 'TolBnd', ${5:value}, 'TolFun', ${6:value}, 'TolTypeFun', ${7:value}, 'TolX', ${8:value}, 'TolTypeX', ${9:value}, 'GradObj', ${10:value}, 'Jacobian', ${11:value}, 'DerivStep', ${12:value}, 'FunValCheck', ${13:value}, 'Robust', ${14:value}, 'RobustWgtFun', ${15:value}, 'Tune', ${16:value}, 'UseParallel', ${17:value}, 'UseSubstreams', ${18:value}, 'Streams', ${19:value}, 'OutputFcn', ${20:value})'''
+    description: '''statset(${1:optional_oldopts}, 'Display', ${2:value}, 'MaxFunEvals', ${3:value}, 'MaxIter', ${4:value}, 'TolBnd', ${5:value}, 'TolFun', ${6:value}, 'TolTypeFun', ${7:value}, 'TolX', ${8:value}, 'TolTypeX', ${9:value}, 'GradObj', ${10:value}, 'Jacobian', ${11:value}, 'DerivStep', ${12:value}, 'FunValCheck', ${13:value}, 'Robust', ${14:value}, 'RobustWgtFun', ${15:value}, 'Tune', ${16:value}, 'UseParallel', ${17:value}, 'UseSubstreams', ${18:value}, 'Streams', ${19:value}, 'OutputFcn', ${20:value})'''
+
+
+    "hmmestimate":
+    prefix: "hmmestimate"
+    body: '''hmmestimate(${1:seq}, ${2:states}, 'Symbols', ${3:value}, 'Statenames', ${4:value}, 'Pseudoemissions', ${5:value}, 'Pseudotransitions', ${6:value})'''
+    description: '''hmmestimate(${1:seq}, ${2:states}, 'Symbols', ${3:value}, 'Statenames', ${4:value}, 'Pseudoemissions', ${5:value}, 'Pseudotransitions', ${6:value})'''
+
+
+    "tsne":
+    prefix: "tsne"
+    body: '''tsne(${1:X}, 'Algorithm', ${2:value}, 'Distance', ${3:value}, 'Exaggeration', ${4:value}, 'NumDimensions', ${5:value}, 'NumPCAComponents', ${6:value}, 'Perplexity', ${7:value}, 'Standardize', ${8:value}, 'InitialY', ${9:value}, 'LearnRate', ${10:value}, 'NumPrint', ${11:value}, 'Options', ${12:value}, 'Theta', ${13:value}, 'Verbose', ${14:value})'''
+    description: '''tsne(${1:X}, 'Algorithm', ${2:value}, 'Distance', ${3:value}, 'Exaggeration', ${4:value}, 'NumDimensions', ${5:value}, 'NumPCAComponents', ${6:value}, 'Perplexity', ${7:value}, 'Standardize', ${8:value}, 'InitialY', ${9:value}, 'LearnRate', ${10:value}, 'NumPrint', ${11:value}, 'Options', ${12:value}, 'Theta', ${13:value}, 'Verbose', ${14:value})'''
+
+
+    "unifcdf":
+    prefix: "unifcdf"
+    body: '''unifcdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_upper})'''
+    description: '''unifcdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_upper})'''
+
+
+    "dendrogram":
+    prefix: "dendrogram"
+    body: '''dendrogram(${1:tree}, ${2:optional_P}, 'Reorder', ${3:value}, 'CheckCrossing', ${4:value}, 'ColorThreshold', ${5:value}, 'Orientation', ${6:value}, 'Labels', ${7:value})'''
+    description: '''dendrogram(${1:tree}, ${2:optional_P}, 'Reorder', ${3:value}, 'CheckCrossing', ${4:value}, 'ColorThreshold', ${5:value}, 'Orientation', ${6:value}, 'Labels', ${7:value})'''
+
+
+    "kstest2":
+    prefix: "kstest2"
+    body: '''kstest2(${1:x1}, ${2:x2}, 'Alpha', ${3:value}, 'Tail', ${4:value})'''
+    description: '''kstest2(${1:x1}, ${2:x2}, 'Alpha', ${3:value}, 'Tail', ${4:value})'''
+
+
+    "confusionmat":
+    prefix: "confusionmat"
+    body: '''confusionmat(${1:group}, ${2:grouphat}, 'order', ${3:value})'''
+    description: '''confusionmat(${1:group}, ${2:grouphat}, 'order', ${3:value})'''
+
+
+    "expcdf":
+    prefix: "expcdf"
+    body: '''expcdf(${1:x}, ${2:optional_mu}, ${3:optional_pcov}, ${4:optional_alpha}, ${5:optional_upper})'''
+    description: '''expcdf(${1:x}, ${2:optional_mu}, ${3:optional_pcov}, ${4:optional_alpha}, ${5:optional_upper})'''
+
+
+    "binocdf":
+    prefix: "binocdf"
+    body: '''binocdf(${1:x}, ${2:N}, ${3:p}, ${4:optional_upper})'''
+    description: '''binocdf(${1:x}, ${2:N}, ${3:p}, ${4:optional_upper})'''
+
+
+    "regstats":
+    prefix: "regstats"
+    body: '''regstats(${1:y}, ${2:X}, ${3:model}, ${4:optional_whichstats})'''
+    description: '''regstats(${1:y}, ${2:X}, ${3:model}, ${4:optional_whichstats})'''
+
+
+    "rangesearch":
+    prefix: "rangesearch"
+    body: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
+    description: '''rangesearch(${1:X}, ${2:Y}, ${3:r}, 'BucketSize', ${4:value}, 'Cov', ${5:value}, 'Distance', ${6:value}, 'NSMethod', ${7:value}, 'P', ${8:value}, 'Scale', ${9:value}, 'SortIndices', ${10:value})'''
+
+
+    "candexch":
+    prefix: "candexch"
+    body: '''candexch(${1:C}, ${2:nrows}, 'display', ${3:value}, 'init', ${4:value}, 'maxiter', ${5:value}, 'options', ${6:value}, 'start', ${7:value}, 'tries', ${8:value})'''
+    description: '''candexch(${1:C}, ${2:nrows}, 'display', ${3:value}, 'init', ${4:value}, 'maxiter', ${5:value}, 'options', ${6:value}, 'start', ${7:value}, 'tries', ${8:value})'''
+
+
+    "princomp":
+    prefix: "princomp"
+    body: '''princomp(${1:X}, ${2:optional_econ})'''
+    description: '''princomp(${1:X}, ${2:optional_econ})'''
+
+
+    "geocdf":
+    prefix: "geocdf"
+    body: '''geocdf(${1:x}, ${2:p}, ${3:optional_upper})'''
+    description: '''geocdf(${1:x}, ${2:p}, ${3:optional_upper})'''
+
+
+    "tiedrank":
+    prefix: "tiedrank"
+    body: '''tiedrank(${1:X}, ${2:tieflag}, ${3:optional_bidirectional})'''
+    description: '''tiedrank(${1:X}, ${2:tieflag}, ${3:optional_bidirectional})'''
+
+
+    "qrandstream":
+    prefix: "qrandstream"
+    body: '''qrandstream(${1:p})'''
+    description: '''qrandstream(${1:p})'''
+
+
+    "ecdf":
+    prefix: "ecdf"
+    body: '''ecdf(${1:optional_ax}, ${2:y}, 'censoring', ${3:value}, 'frequency', ${4:value}, 'alpha', ${5:value}, 'function', ${6:value}, 'bounds', ${7:value})'''
+    description: '''ecdf(${1:optional_ax}, ${2:y}, 'censoring', ${3:value}, 'frequency', ${4:value}, 'alpha', ${5:value}, 'function', ${6:value}, 'bounds', ${7:value})'''
+
+
+    "kstest":
+    prefix: "kstest"
+    body: '''kstest(${1:x}, 'Alpha', ${2:value}, 'CDF', ${3:value}, 'Tail', ${4:value})'''
+    description: '''kstest(${1:x}, 'Alpha', ${2:value}, 'CDF', ${3:value}, 'Tail', ${4:value})'''
+
+
+    "gscatter":
+    prefix: "gscatter"
+    body: '''gscatter(${1:x}, ${2:y}, ${3:group}, ${4:clr}, ${5:sym}, ${6:size}, ${7:doleg}, ${8:xnam}, ${9:optional_yname})'''
+    description: '''gscatter(${1:x}, ${2:y}, ${3:group}, ${4:clr}, ${5:sym}, ${6:size}, ${7:doleg}, ${8:xnam}, ${9:optional_yname})'''
+
+
+    "hmmgenerate":
+    prefix: "hmmgenerate"
+    body: '''hmmgenerate(${1:len}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value}, 'Statenames', ${5:value})'''
+    description: '''hmmgenerate(${1:len}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value}, 'Statenames', ${5:value})'''
+
+
+    "andrewsplot":
+    prefix: "andrewsplot"
+    body: '''andrewsplot(${1:X}, 'Standardize', ${2:value}, 'Quantile', ${3:value}, 'Group', ${4:value}, ${5:properties})'''
+    description: '''andrewsplot(${1:X}, 'Standardize', ${2:value}, 'Quantile', ${3:value}, 'Group', ${4:value}, ${5:properties})'''
+
+
+    "daugment":
+    prefix: "daugment"
+    body: '''daugment(${1:dce}, ${2:mruns}, ${3:model}, 'display', ${4:value}, 'init', ${5:value}, 'maxiter', ${6:value}, 'tries', ${7:value}, 'bounds', ${8:value}, 'levels', ${9:value}, 'excludefun', ${10:value}, 'categorical', ${11:value}, 'options', ${12:value})'''
+    description: '''daugment(${1:dce}, ${2:mruns}, ${3:model}, 'display', ${4:value}, 'init', ${5:value}, 'maxiter', ${6:value}, 'tries', ${7:value}, 'bounds', ${8:value}, 'levels', ${9:value}, 'excludefun', ${10:value}, 'categorical', ${11:value}, 'options', ${12:value})'''
+
+
+    "histfit":
+    prefix: "histfit"
+    body: '''histfit(${1:data}, ${2:nbins}, ${3:optional_distname})'''
+    description: '''histfit(${1:data}, ${2:nbins}, ${3:optional_distname})'''
+
+
+    "nbincdf":
+    prefix: "nbincdf"
+    body: '''nbincdf(${1:x}, ${2:R}, ${3:p}, ${4:optional_upper})'''
+    description: '''nbincdf(${1:x}, ${2:R}, ${3:p}, ${4:optional_upper})'''
+
+
+    "friedman":
+    prefix: "friedman"
+    body: '''friedman(${1:x}, ${2:reps}, ${3:optional_displayopt})'''
+    description: '''friedman(${1:x}, ${2:reps}, ${3:optional_displayopt})'''
+
+
+    "nlmefit":
+    prefix: "nlmefit"
+    body: '''nlmefit(${1:X}, ${2:y}, ${3:group}, ${4:V}, ${5:fun}, ${6:beta0}, 'FEParamsSelect', ${7:value}, 'FEConstDesign', ${8:value}, 'FEGroupDesign', ${9:value}, 'FEObsDesign', ${10:value}, 'REParamsSelect', ${11:value}, 'REConstDesign', ${12:value}, 'REGroupDesign', ${13:value}, 'REObsDesign', ${14:value}, 'RefineBeta0', ${15:value}, 'ErrorModel', ${16:value}, 'ApproximationType', ${17:value}, 'Vectorization', ${18:value}, 'CovParameterization', ${19:value}, 'CovPattern', ${20:value}, 'ParamTransform', ${21:value}, 'Options', ${22:value}, 'OptimFun', ${23:value})'''
+    description: '''nlmefit(${1:X}, ${2:y}, ${3:group}, ${4:V}, ${5:fun}, ${6:beta0}, 'FEParamsSelect', ${7:value}, 'FEConstDesign', ${8:value}, 'FEGroupDesign', ${9:value}, 'FEObsDesign', ${10:value}, 'REParamsSelect', ${11:value}, 'REConstDesign', ${12:value}, 'REGroupDesign', ${13:value}, 'REObsDesign', ${14:value}, 'RefineBeta0', ${15:value}, 'ErrorModel', ${16:value}, 'ApproximationType', ${17:value}, 'Vectorization', ${18:value}, 'CovParameterization', ${19:value}, 'CovPattern', ${20:value}, 'ParamTransform', ${21:value}, 'Options', ${22:value}, 'OptimFun', ${23:value})'''
+
+
+    "nlinfit":
+    prefix: "nlinfit"
+    body: '''nlinfit(${1:X}, ${2:Y}, ${3:modelfun}, ${4:beta0}, ${5:optional_options}, 'ErrorModel', ${6:value}, 'ErrorParameters', ${7:value}, 'Weights', ${8:value})'''
+    description: '''nlinfit(${1:X}, ${2:Y}, ${3:modelfun}, ${4:beta0}, ${5:optional_options}, 'ErrorModel', ${6:value}, 'ErrorParameters', ${7:value}, 'Weights', ${8:value})'''
+
+
+    "lassoPlot":
+    prefix: "lassoPlot"
+    body: '''lassoPlot(${1:B}, ${2:FitInfo}, 'Parent', ${3:value}, 'PlotType', ${4:value}, 'PredictorNames', ${5:value}, 'XScale', ${6:value})'''
+    description: '''lassoPlot(${1:B}, ${2:FitInfo}, 'Parent', ${3:value}, 'PlotType', ${4:value}, 'PredictorNames', ${5:value}, 'XScale', ${6:value})'''
+
+
+    "ccdesign":
+    prefix: "ccdesign"
+    body: '''ccdesign(${1:n}, 'center', ${2:value}, 'fraction', ${3:value}, 'type', ${4:value}, 'blocksize', ${5:value})'''
+    description: '''ccdesign(${1:n}, 'center', ${2:value}, 'fraction', ${3:value}, 'type', ${4:value}, 'blocksize', ${5:value})'''
+
+
+    "copularnd":
+    prefix: "copularnd"
+    body: '''copularnd(${1:family}, ${2:alpha}, ${3:n})'''
+    description: '''copularnd(${1:family}, ${2:alpha}, ${3:n})'''
+
+
+    "sequentialfs":
+    prefix: "sequentialfs"
+    body: '''sequentialfs(${1:fun}, ${2:x}, ${3:optional_y}, 'cv', ${4:value}, 'mcreps', ${5:value}, 'direction', ${6:value}, 'keepin', ${7:value}, 'keepout', ${8:value}, 'nfeatures', ${9:value}, 'nullmodel', ${10:value}, 'options', ${11:value})'''
+    description: '''sequentialfs(${1:fun}, ${2:x}, ${3:optional_y}, 'cv', ${4:value}, 'mcreps', ${5:value}, 'direction', ${6:value}, 'keepin', ${7:value}, 'keepout', ${8:value}, 'nfeatures', ${9:value}, 'nullmodel', ${10:value}, 'options', ${11:value})'''
+
+
+    "unidcdf":
+    prefix: "unidcdf"
+    body: '''unidcdf(${1:x}, ${2:N}, ${3:optional_upper})'''
+    description: '''unidcdf(${1:x}, ${2:N}, ${3:optional_upper})'''
+
+
+    "rstool":
+    prefix: "rstool"
+    body: '''rstool(${1:X}, ${2:Y}, ${3:model}, ${4:alpha}, ${5:xname}, ${6:optional_yname})'''
+    description: '''rstool(${1:X}, ${2:Y}, ${3:model}, ${4:alpha}, ${5:xname}, ${6:optional_yname})'''
+
+
+    "multcompare":
+    prefix: "multcompare"
+    body: '''multcompare(${1:stats}, 'Alpha', ${2:value}, 'CType', ${3:value}, 'Display', ${4:value}, 'Dimension', ${5:value}, 'Estimate', ${6:value})'''
+    description: '''multcompare(${1:stats}, 'Alpha', ${2:value}, 'CType', ${3:value}, 'Display', ${4:value}, 'Dimension', ${5:value}, 'Estimate', ${6:value})'''
+
+
+    "normspec":
+    prefix: "normspec"
+    body: '''normspec(${1:specs}, ${2:mu}, ${3:sigma}, ${4:optional_region})'''
+    description: '''normspec(${1:specs}, ${2:mu}, ${3:sigma}, ${4:optional_region})'''
+
+
+    "copulastat":
+    prefix: "copulastat"
+    body: '''copulastat(${1:family}, ${2:alpha}, 'Type', ${3:value})'''
+    description: '''copulastat(${1:family}, ${2:alpha}, 'Type', ${3:value})'''
+
+
+    "cordexch":
+    prefix: "cordexch"
+    body: '''cordexch(${1:nfactors}, ${2:nruns}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'tries', ${11:value}, 'options', ${12:value})'''
+    description: '''cordexch(${1:nfactors}, ${2:nruns}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'tries', ${11:value}, 'options', ${12:value})'''
+
+
+    "skewness":
+    prefix: "skewness"
+    body: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
+    description: '''skewness(${1:X}, ${2:flag}, ${3:optional_dim})'''
+
+
+    "raylcdf":
+    prefix: "raylcdf"
+    body: '''raylcdf(${1:x}, ${2:b}, ${3:optional_upper})'''
+    description: '''raylcdf(${1:x}, ${2:b}, ${3:optional_upper})'''
+
+
+    "kmeans":
+    prefix: "kmeans"
+    body: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'Distance', ${4:value}, 'EmptyAction', ${5:value}, 'MaxIter', ${6:value}, 'OnlinePhase', ${7:value}, 'Options', ${8:value}, 'Replicates', ${9:value}, 'Start', ${10:value})'''
+    description: '''kmeans(${1:X}, ${2:k}, 'Display', ${3:value}, 'Distance', ${4:value}, 'EmptyAction', ${5:value}, 'MaxIter', ${6:value}, 'OnlinePhase', ${7:value}, 'Options', ${8:value}, 'Replicates', ${9:value}, 'Start', ${10:value})'''
+
+
+    "wblcdf":
+    prefix: "wblcdf"
+    body: '''wblcdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+    description: '''wblcdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+
+
+    "sobolset":
+    prefix: "sobolset"
+    body: '''sobolset(${1:d}, 'Skip', ${2:value}, 'Leap', ${3:value}, 'PointOrder', ${4:value}, 'ScrambleMethod', ${5:value})'''
+    description: '''sobolset(${1:d}, 'Skip', ${2:value}, 'Leap', ${3:value}, 'PointOrder', ${4:value}, 'ScrambleMethod', ${5:value})'''
+
+
+    "lhsnorm":
+    prefix: "lhsnorm"
+    body: '''lhsnorm(${1:mu}, ${2:sigma}, ${3:n}, ${4:flag})'''
+    description: '''lhsnorm(${1:mu}, ${2:sigma}, ${3:n}, ${4:flag})'''
+
+
+    "bootci":
+    prefix: "bootci"
+    body: '''bootci(${1:nboot}, ${2:bootfun}, 'alpha', ${3:value}, 'type', ${4:value}, 'nbootstd', ${5:value}, 'stderr', ${6:value}, 'Weights', ${7:value}, 'Options', ${8:value})'''
+    description: '''bootci(${1:nboot}, ${2:bootfun}, 'alpha', ${3:value}, 'type', ${4:value}, 'nbootstd', ${5:value}, 'stderr', ${6:value}, 'Weights', ${7:value}, 'Options', ${8:value})'''
+
+
+    "nctcdf":
+    prefix: "nctcdf"
+    body: '''nctcdf(${1:x}, ${2:nu}, ${3:delta}, ${4:optional_upper})'''
+    description: '''nctcdf(${1:x}, ${2:nu}, ${3:delta}, ${4:optional_upper})'''
+
+
+    "TreeBagger":
+    prefix: "TreeBagger"
+    body: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:ResponseVarName}, 'InBagFraction', ${4:value}, 'Cost', ${5:value}, 'SampleWithReplacement', ${6:value}, 'OOBPrediction', ${7:value}, 'OOBPredictorImportance', ${8:value}, 'Method', ${9:value}, 'NumPredictorsToSample', ${10:value}, 'NumPrint', ${11:value}, 'MinLeafSize', ${12:value}, 'Options', ${13:value}, 'Prior', ${14:value}, 'PredictorNames', ${15:value}, 'CategoricalPredictors', ${16:value}, 'AlgorithmForCategorical', ${17:value}, 'MaxNumCategories', ${18:value}, 'MaxNumSplits', ${19:value}, 'MergeLeaves', ${20:value}, 'PredictorSelection', ${21:value}, 'Prune', ${22:value}, 'PruneCriterion', ${23:value}, 'SplitCriterion', ${24:value}, 'Surrogate', ${25:value}, 'Weights', ${26:value}, 'QuadraticErrorTolerance', ${27:value})'''
+    description: '''TreeBagger(${1:NumTrees}, ${2:Tbl}, ${3:ResponseVarName}, 'InBagFraction', ${4:value}, 'Cost', ${5:value}, 'SampleWithReplacement', ${6:value}, 'OOBPrediction', ${7:value}, 'OOBPredictorImportance', ${8:value}, 'Method', ${9:value}, 'NumPredictorsToSample', ${10:value}, 'NumPrint', ${11:value}, 'MinLeafSize', ${12:value}, 'Options', ${13:value}, 'Prior', ${14:value}, 'PredictorNames', ${15:value}, 'CategoricalPredictors', ${16:value}, 'AlgorithmForCategorical', ${17:value}, 'MaxNumCategories', ${18:value}, 'MaxNumSplits', ${19:value}, 'MergeLeaves', ${20:value}, 'PredictorSelection', ${21:value}, 'Prune', ${22:value}, 'PruneCriterion', ${23:value}, 'SplitCriterion', ${24:value}, 'Surrogate', ${25:value}, 'Weights', ${26:value}, 'QuadraticErrorTolerance', ${27:value})'''
+
+
+    "fishertest":
+    prefix: "fishertest"
+    body: '''fishertest(${1:x}, 'Alpha', ${2:value}, 'Tail', ${3:value})'''
+    description: '''fishertest(${1:x}, 'Alpha', ${2:value}, 'Tail', ${3:value})'''
+
+
+    "fitgmdist":
+    prefix: "fitgmdist"
+    body: '''fitgmdist(${1:X}, ${2:k}, 'CovarianceType', ${3:value}, 'Options', ${4:value}, 'ProbabilityTolerance', ${5:value}, 'RegularizationValue', ${6:value}, 'Replicates', ${7:value}, 'SharedCovariance', ${8:value}, 'Start', ${9:value})'''
+    description: '''fitgmdist(${1:X}, ${2:k}, 'CovarianceType', ${3:value}, 'Options', ${4:value}, 'ProbabilityTolerance', ${5:value}, 'RegularizationValue', ${6:value}, 'Replicates', ${7:value}, 'SharedCovariance', ${8:value}, 'Start', ${9:value})'''
+
+
+    "datasample":
+    prefix: "datasample"
+    body: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Replace', ${5:value}, 'Weights', ${6:value})'''
+    description: '''datasample(${1:optional_s}, ${2:data}, ${3:k}, ${4:optional_dim}, 'Replace', ${5:value}, 'Weights', ${6:value})'''
+
+
+    "dbscan":
+    prefix: "dbscan"
+    body: '''dbscan(${1:X}, ${2:epsilon}, ${3:minpts}, 'Distance', ${4:value}, 'Cov', ${5:value}, 'P', ${6:value}, 'Scale', ${7:value})'''
+    description: '''dbscan(${1:X}, ${2:epsilon}, ${3:minpts}, 'Distance', ${4:value}, 'Cov', ${5:value}, 'P', ${6:value}, 'Scale', ${7:value})'''
+
+
+    "manovacluster":
+    prefix: "manovacluster"
+    body: '''manovacluster(${1:stats}, ${2:optional_method})'''
+    description: '''manovacluster(${1:stats}, ${2:optional_method})'''
+
+
+    "mnrfit":
+    prefix: "mnrfit"
+    body: '''mnrfit(${1:X}, ${2:Y}, 'Model', ${3:value}, 'Interactions', ${4:value}, 'Link', ${5:value}, 'EstDisp', ${6:value})'''
+    description: '''mnrfit(${1:X}, ${2:Y}, 'Model', ${3:value}, 'Interactions', ${4:value}, 'Link', ${5:value}, 'EstDisp', ${6:value})'''
+
+
+    "aoctool":
+    prefix: "aoctool"
+    body: '''aoctool(${1:x}, ${2:y}, ${3:group}, ${4:alpha}, ${5:xname}, ${6:yname}, ${7:gname}, ${8:displayopt}, ${9:optional_model})'''
+    description: '''aoctool(${1:x}, ${2:y}, ${3:group}, ${4:alpha}, ${5:xname}, ${6:yname}, ${7:gname}, ${8:displayopt}, ${9:optional_model})'''
+
+
+    "sampsizepwr":
+    prefix: "sampsizepwr"
+    body: '''sampsizepwr(${1:testtype}, ${2:p0}, ${3:p1}, ${4:pwr}, ${5:n}, 'Alpha', ${6:value}, 'Ratio', ${7:value}, 'Tail', ${8:value})'''
+    description: '''sampsizepwr(${1:testtype}, ${2:p0}, ${3:p1}, ${4:pwr}, ${5:n}, 'Alpha', ${6:value}, 'Ratio', ${7:value}, 'Tail', ${8:value})'''
+
+
+    "anova1":
+    prefix: "anova1"
+    body: '''anova1(${1:y}, ${2:group}, ${3:optional_displayopt})'''
+    description: '''anova1(${1:y}, ${2:group}, ${3:optional_displayopt})'''
+
+
+    "candgen":
+    prefix: "candgen"
+    body: '''candgen(${1:nfactors}, ${2:model}, 'bounds', ${3:value}, 'levels', ${4:value}, 'categorical', ${5:value})'''
+    description: '''candgen(${1:nfactors}, ${2:model}, 'bounds', ${3:value}, 'levels', ${4:value}, 'categorical', ${5:value})'''
+
+
+    "pdist":
+    prefix: "pdist"
+    body: '''pdist(${1:X}, ${2:Mahalanobis}, ${3:optional_Covariance})'''
+    description: '''pdist(${1:X}, ${2:Mahalanobis}, ${3:optional_Covariance})'''
+
+
+    "bootstrp":
+    prefix: "bootstrp"
+    body: '''bootstrp(${1:nboot}, ${2:bootfun}, ${3:d1}, 'Weights', ${4:value}, 'Options', ${5:value})'''
+    description: '''bootstrp(${1:nboot}, ${2:bootfun}, ${3:d1}, 'Weights', ${4:value}, 'Options', ${5:value})'''
+
+
+    "ttest":
+    prefix: "ttest"
+    body: '''ttest(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+    description: '''ttest(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+
+
+    "ncx2cdf":
+    prefix: "ncx2cdf"
+    body: '''ncx2cdf(${1:x}, ${2:v}, ${3:delta}, ${4:optional_upper})'''
+    description: '''ncx2cdf(${1:x}, ${2:v}, ${3:delta}, ${4:optional_upper})'''
+
+
+    "trimmean":
+    prefix: "trimmean"
+    body: '''trimmean(${1:X}, ${2:percent}, ${3:optional_dim}, ${4:optional_flag})'''
+    description: '''trimmean(${1:X}, ${2:percent}, ${3:optional_dim}, ${4:optional_flag})'''
+
+
+    "chi2gof":
+    prefix: "chi2gof"
+    body: '''chi2gof(${1:x}, 'NBins', ${2:value}, 'Ctrs', ${3:value}, 'Edges', ${4:value}, 'CDF', ${5:value}, 'Expected', ${6:value}, 'NParams', ${7:value}, 'EMin', ${8:value}, 'Frequency', ${9:value}, 'Alpha', ${10:value})'''
+    description: '''chi2gof(${1:x}, 'NBins', ${2:value}, 'Ctrs', ${3:value}, 'Edges', ${4:value}, 'CDF', ${5:value}, 'Expected', ${6:value}, 'NParams', ${7:value}, 'EMin', ${8:value}, 'Frequency', ${9:value}, 'Alpha', ${10:value})'''
+
+
+    "pca":
+    prefix: "pca"
+    body: '''pca(${1:X}, 'Algorithm', ${2:value}, 'Centered', ${3:value}, 'Economy', ${4:value}, 'NumComponents', ${5:value}, 'Rows', ${6:value}, 'Weights', ${7:value}, 'VariableWeights', ${8:value}, 'Coeff0', ${9:value}, 'Score0', ${10:value}, 'Options', ${11:value})'''
+    description: '''pca(${1:X}, 'Algorithm', ${2:value}, 'Centered', ${3:value}, 'Economy', ${4:value}, 'NumComponents', ${5:value}, 'Rows', ${6:value}, 'Weights', ${7:value}, 'VariableWeights', ${8:value}, 'Coeff0', ${9:value}, 'Score0', ${10:value}, 'Options', ${11:value})'''
+
+
+    "coxphfit":
+    prefix: "coxphfit"
+    body: '''coxphfit(${1:X}, ${2:T}, 'B0', ${3:value}, 'Baseline', ${4:value}, 'Censoring', ${5:value}, 'Frequency', ${6:value}, 'Strata', ${7:value}, 'Ties', ${8:value}, 'Options', ${9:value})'''
+    description: '''coxphfit(${1:X}, ${2:T}, 'B0', ${3:value}, 'Baseline', ${4:value}, 'Censoring', ${5:value}, 'Frequency', ${6:value}, 'Strata', ${7:value}, 'Ties', ${8:value}, 'Options', ${9:value})'''
+
+
+    "kmedoids":
+    prefix: "kmedoids"
+    body: '''kmedoids(${1:X}, ${2:k}, 'Algorithm', ${3:value}, 'OnlinePhase', ${4:value}, 'Distance', ${5:value}, 'Options', ${6:value}, 'Replicates', ${7:value}, 'NumSamples', ${8:value}, 'PercentNeighbors', ${9:value}, 'Start', ${10:value})'''
+    description: '''kmedoids(${1:X}, ${2:k}, 'Algorithm', ${3:value}, 'OnlinePhase', ${4:value}, 'Distance', ${5:value}, 'Options', ${6:value}, 'Replicates', ${7:value}, 'NumSamples', ${8:value}, 'PercentNeighbors', ${9:value}, 'Start', ${10:value})'''
+
+
+    "controlchart":
+    prefix: "controlchart"
+    body: '''controlchart(${1:X}, ${2:optional_group}, 'charttype', ${3:value}, 'display', ${4:value}, 'label', ${5:value}, 'lambda', ${6:value}, 'limits', ${7:value}, 'mean', ${8:value}, 'nsigma', ${9:value}, 'parent', ${10:value}, 'rules', ${11:value}, 'sigma', ${12:value}, 'specs', ${13:value}, 'unit', ${14:value}, 'width', ${15:value})'''
+    description: '''controlchart(${1:X}, ${2:optional_group}, 'charttype', ${3:value}, 'display', ${4:value}, 'label', ${5:value}, 'lambda', ${6:value}, 'limits', ${7:value}, 'mean', ${8:value}, 'nsigma', ${9:value}, 'parent', ${10:value}, 'rules', ${11:value}, 'sigma', ${12:value}, 'specs', ${13:value}, 'unit', ${14:value}, 'width', ${15:value})'''
+
+
+    "clusterdata":
+    prefix: "clusterdata"
+    body: '''clusterdata(${1:X}, ${2:optional_cutoff_argument}, 'criterion', ${3:value}, 'cutoff', ${4:value}, 'depth', ${5:value}, 'distance', ${6:value}, 'linkage', ${7:value}, 'maxclust', ${8:value}, 'savememory', ${9:value})'''
+    description: '''clusterdata(${1:X}, ${2:optional_cutoff_argument}, 'criterion', ${3:value}, 'cutoff', ${4:value}, 'depth', ${5:value}, 'distance', ${6:value}, 'linkage', ${7:value}, 'maxclust', ${8:value}, 'savememory', ${9:value})'''
+
+
+    "evcdf":
+    prefix: "evcdf"
+    body: '''evcdf(${1:x}, ${2:optional_mu}, ${3:optional_sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+    description: '''evcdf(${1:x}, ${2:optional_mu}, ${3:optional_sigma}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+
+
+    "ncfcdf":
+    prefix: "ncfcdf"
+    body: '''ncfcdf(${1:x}, ${2:nu1}, ${3:nu2}, ${4:delta}, ${5:optional_upper})'''
+    description: '''ncfcdf(${1:x}, ${2:nu1}, ${3:nu2}, ${4:delta}, ${5:optional_upper})'''
+
+
+    "signrank":
+    prefix: "signrank"
+    body: '''signrank(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+    description: '''signrank(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+
+
+    "nlparci":
+    prefix: "nlparci"
+    body: '''nlparci(${1:beta}, ${2:resid}, 'covariance', ${3:value}, 'jacobian', ${4:value}, 'alpha', ${5:value})'''
+    description: '''nlparci(${1:beta}, ${2:resid}, 'covariance', ${3:value}, 'jacobian', ${4:value}, 'alpha', ${5:value})'''
+
+
+    "factoran":
+    prefix: "factoran"
+    body: '''factoran(${1:X}, ${2:m}, 'xtype', ${3:value}, 'scores', ${4:value}, 'start', ${5:value}, 'rotate', ${6:value}, 'coeff', ${7:value}, 'normalize', ${8:value}, 'reltol', ${9:value}, 'maxit', ${10:value}, 'target', ${11:value}, 'type', ${12:value}, 'power', ${13:value}, 'userargs', ${14:value}, 'nobs', ${15:value}, 'delta', ${16:value}, 'optimopts', ${17:value})'''
+    description: '''factoran(${1:X}, ${2:m}, 'xtype', ${3:value}, 'scores', ${4:value}, 'start', ${5:value}, 'rotate', ${6:value}, 'coeff', ${7:value}, 'normalize', ${8:value}, 'reltol', ${9:value}, 'maxit', ${10:value}, 'target', ${11:value}, 'type', ${12:value}, 'power', ${13:value}, 'userargs', ${14:value}, 'nobs', ${15:value}, 'delta', ${16:value}, 'optimopts', ${17:value})'''
+
+
+    "gpcdf":
+    prefix: "gpcdf"
+    body: '''gpcdf(${1:x}, ${2:k}, ${3:sigma}, ${4:theta}, ${5:optional_upper})'''
+    description: '''gpcdf(${1:x}, ${2:k}, ${3:sigma}, ${4:theta}, ${5:optional_upper})'''
+
+
+    "hmmdecode":
+    prefix: "hmmdecode"
+    body: '''hmmdecode(${1:seq}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value})'''
+    description: '''hmmdecode(${1:seq}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value})'''
+
+
+    "copulaparam":
+    prefix: "copulaparam"
+    body: '''copulaparam(${1:family}, ${2:r}, 'Type', ${3:value})'''
+    description: '''copulaparam(${1:family}, ${2:r}, 'Type', ${3:value})'''
+
+
+    "ridge":
+    prefix: "ridge"
+    body: '''ridge(${1:y}, ${2:X}, ${3:k}, ${4:optional_scaled})'''
+    description: '''ridge(${1:y}, ${2:X}, ${3:k}, ${4:optional_scaled})'''
+
+
+    "hist3":
+    prefix: "hist3"
+    body: '''hist3(${1:X}, ${2:optional_nbins or ctrs}, 'Edges', ${3:value}, 'nbins', ${4:value}, 'ctrs', ${5:value}, 'EdgeColor', ${6:value}, 'LineStyle', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'FaceLighting', ${10:value})'''
+    description: '''hist3(${1:X}, ${2:optional_nbins or ctrs}, 'Edges', ${3:value}, 'nbins', ${4:value}, 'ctrs', ${5:value}, 'EdgeColor', ${6:value}, 'LineStyle', ${7:value}, 'FaceColor', ${8:value}, 'FaceAlpha', ${9:value}, 'FaceLighting', ${10:value})'''
+
+
+    "robustfit":
+    prefix: "robustfit"
+    body: '''robustfit(${1:X}, ${2:y}, ${3:wfun}, ${4:tune}, ${5:optional_const})'''
+    description: '''robustfit(${1:X}, ${2:y}, ${3:wfun}, ${4:tune}, ${5:optional_const})'''
+
+
+    "relieff":
+    prefix: "relieff"
+    body: '''relieff(${1:X}, ${2:Y}, ${3:K}, 'method', ${4:value}, 'prior', ${5:value}, 'updates', ${6:value}, 'categoricalx', ${7:value}, 'sigma', ${8:value})'''
+    description: '''relieff(${1:X}, ${2:Y}, ${3:K}, 'method', ${4:value}, 'prior', ${5:value}, 'updates', ${6:value}, 'categoricalx', ${7:value}, 'sigma', ${8:value})'''
+
+
+    "rowexch":
+    prefix: "rowexch"
+    body: '''rowexch(${1:nfactors}, ${2:nruns}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'options', ${11:value}, 'tries', ${12:value})'''
+    description: '''rowexch(${1:nfactors}, ${2:nruns}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'options', ${11:value}, 'tries', ${12:value})'''
+
+
+    "copulacdf":
+    prefix: "copulacdf"
+    body: '''copulacdf(${1:family}, ${2:u}, ${3:alpha})'''
+    description: '''copulacdf(${1:family}, ${2:u}, ${3:alpha})'''
+
+
+    "silhouette":
+    prefix: "silhouette"
+    body: '''silhouette(${1:x}, ${2:clust}, ${3:distfun}, ${4:optional_distfun_params})'''
+    description: '''silhouette(${1:x}, ${2:clust}, ${3:distfun}, ${4:optional_distfun_params})'''
+
+
+    "controlrules":
+    prefix: "controlrules"
+    body: '''controlrules(${1:rules}, ${2:x}, ${3:cl}, ${4:se})'''
+    description: '''controlrules(${1:rules}, ${2:x}, ${3:cl}, ${4:se})'''
+
+
+    "partialcorri":
+    prefix: "partialcorri"
+    body: '''partialcorri(${1:y}, ${2:x}, ${3:optional_z}, 'Type', ${4:value}, 'Rows', ${5:value}, 'Tail', ${6:value})'''
+    description: '''partialcorri(${1:y}, ${2:x}, ${3:optional_z}, 'Type', ${4:value}, 'Rows', ${5:value}, 'Tail', ${6:value})'''
+
+
+    "robustcov":
+    prefix: "robustcov"
+    body: '''robustcov(${1:x}, 'Method', ${2:value}, 'OutlierFraction', ${3:value}, 'NumTrials', ${4:value}, 'BiasCorrection', ${5:value}, 'NumOGKIterations', ${6:value}, 'UnivariateEstimator', ${7:value}, 'ReweightingMethod', ${8:value}, 'NumConcentrationSteps', ${9:value}, 'StartMethod', ${10:value})'''
+    description: '''robustcov(${1:x}, 'Method', ${2:value}, 'OutlierFraction', ${3:value}, 'NumTrials', ${4:value}, 'BiasCorrection', ${5:value}, 'NumOGKIterations', ${6:value}, 'UnivariateEstimator', ${7:value}, 'ReweightingMethod', ${8:value}, 'NumConcentrationSteps', ${9:value}, 'StartMethod', ${10:value})'''
+
+
+    "nlmefitoutputfcn":
+    prefix: "nlmefitoutputfcn"
+    body: '''nlmefitoutputfcn(${1:beta}, ${2:status}, ${3:state})'''
+    description: '''nlmefitoutputfcn(${1:beta}, ${2:status}, ${3:state})'''
+
+
+    "gamcdf":
+    prefix: "gamcdf"
+    body: '''gamcdf(${1:x}, ${2:a}, ${3:optional_b}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+    description: '''gamcdf(${1:x}, ${2:a}, ${3:optional_b}, ${4:optional_pcov}, ${5:optional_alpha}, ${6:optional_upper})'''
+
+
+    "biplot":
+    prefix: "biplot"
+    body: '''biplot(${1:coefs}, 'Scores', ${2:value}, 'VarLabels', ${3:value}, 'ObsLabels', ${4:value}, 'Positive', ${5:value}, ${6:properties})'''
+    description: '''biplot(${1:coefs}, 'Scores', ${2:value}, 'VarLabels', ${3:value}, 'ObsLabels', ${4:value}, 'Positive', ${5:value}, ${6:properties})'''
+
+
+    "polyconf":
+    prefix: "polyconf"
+    body: '''polyconf(${1:p}, ${2:X}, ${3:S}, 'alpha', ${4:value}, 'mu', ${5:value}, 'predopt', ${6:value}, 'simopt', ${7:value})'''
+    description: '''polyconf(${1:p}, ${2:X}, ${3:S}, 'alpha', ${4:value}, 'mu', ${5:value}, 'predopt', ${6:value}, 'simopt', ${7:value})'''
+
+
+    "cdf":
+    prefix: "cdf"
+    body: '''cdf(${1:name}, ${2:x}, ${3:optional_A}, ${4:optional_B}, ${5:optional_C}, ${6:optional_D}, ${7:optional_upper})'''
+    description: '''cdf(${1:name}, ${2:x}, ${3:optional_A}, ${4:optional_B}, ${5:optional_C}, ${6:optional_D}, ${7:optional_upper})'''
+
+
+    "hygecdf":
+    prefix: "hygecdf"
+    body: '''hygecdf(${1:x}, ${2:M}, ${3:K}, ${4:N}, ${5:optional_upper})'''
+    description: '''hygecdf(${1:x}, ${2:M}, ${3:K}, ${4:N}, ${5:optional_upper})'''
+
+
+    "maineffectsplot":
+    prefix: "maineffectsplot"
+    body: '''maineffectsplot(${1:Y}, ${2:GROUP}, 'varnames', ${3:value}, 'statistic', ${4:value}, 'parent', ${5:value})'''
+    description: '''maineffectsplot(${1:Y}, ${2:GROUP}, 'varnames', ${3:value}, 'statistic', ${4:value}, 'parent', ${5:value})'''
+
+
+    "parallelcoords":
+    prefix: "parallelcoords"
+    body: '''parallelcoords(${1:x}, 'Group', ${2:value}, 'Labels', ${3:value}, 'Quantile', ${4:value}, 'Standardize', ${5:value})'''
+    description: '''parallelcoords(${1:x}, 'Group', ${2:value}, 'Labels', ${3:value}, 'Quantile', ${4:value}, 'Standardize', ${5:value})'''
+
+
+    "classify":
+    prefix: "classify"
+    body: '''classify(${1:sample}, ${2:training}, ${3:group}, ${4:type}, ${5:optional_prior})'''
+    description: '''classify(${1:sample}, ${2:training}, ${3:group}, ${4:type}, ${5:optional_prior})'''
+
+
+    "multivarichart":
+    prefix: "multivarichart"
+    body: '''multivarichart(${1:y}, ${2:optional_GROUP}, 'varnames', ${3:value}, 'plotorder', ${4:value})'''
+    description: '''multivarichart(${1:y}, ${2:optional_GROUP}, 'varnames', ${3:value}, 'plotorder', ${4:value})'''
+
+
+    "haltonset":
+    prefix: "haltonset"
+    body: '''haltonset(${1:d}, 'Skip', ${2:value}, 'Leap', ${3:value}, 'ScrambleMethod', ${4:value})'''
+    description: '''haltonset(${1:d}, 'Skip', ${2:value}, 'Leap', ${3:value}, 'ScrambleMethod', ${4:value})'''
+
+
+    "adtest":
+    prefix: "adtest"
+    body: '''adtest(${1:x}, 'Distribution', ${2:value}, 'Alpha', ${3:value}, 'MCTol', ${4:value}, 'Asymptotic', ${5:value})'''
+    description: '''adtest(${1:x}, 'Distribution', ${2:value}, 'Alpha', ${3:value}, 'MCTol', ${4:value}, 'Asymptotic', ${5:value})'''
+
+
+    "mlecov":
+    prefix: "mlecov"
+    body: '''mlecov(${1:param}, ${2:data}, 'pdf', ${3:value}, 'cdf', ${4:value}, 'logpdf', ${5:value}, 'logsf', ${6:value}, 'nloglf', ${7:value}, 'censoring', ${8:value}, 'frequency', ${9:value}, 'options', ${10:value})'''
+    description: '''mlecov(${1:param}, ${2:data}, 'pdf', ${3:value}, 'cdf', ${4:value}, 'logpdf', ${5:value}, 'logsf', ${6:value}, 'nloglf', ${7:value}, 'censoring', ${8:value}, 'frequency', ${9:value}, 'options', ${10:value})'''
+
+
+    "gagerr":
+    prefix: "gagerr"
+    body: '''gagerr(${1:y}, ${2:{part,operator}}, 'spec', ${3:value}, 'printtable', ${4:value}, 'printgraph', ${5:value}, 'randomoperator', ${6:value}, 'model', ${7:value})'''
+    description: '''gagerr(${1:y}, ${2:{part,operator}}, 'spec', ${3:value}, 'printtable', ${4:value}, 'printgraph', ${5:value}, 'randomoperator', ${6:value}, 'model', ${7:value})'''
+
+
+    "lillietest":
+    prefix: "lillietest"
+    body: '''lillietest(${1:x}, 'Alpha', ${2:value}, 'Distr', ${3:value}, 'MCTol', ${4:value})'''
+    description: '''lillietest(${1:x}, 'Alpha', ${2:value}, 'Distr', ${3:value}, 'MCTol', ${4:value})'''
+
+
+    "vartestn":
+    prefix: "vartestn"
+    body: '''vartestn(${1:x}, ${2:optional_group}, 'Display', ${3:value}, 'TestType', ${4:value})'''
+    description: '''vartestn(${1:x}, ${2:optional_group}, 'Display', ${3:value}, 'TestType', ${4:value})'''
+
+
+    "copulafit":
+    prefix: "copulafit"
+    body: '''copulafit(${1:family}, ${2:u}, 'Alpha', ${3:value}, 'Method', ${4:value}, 'Options', ${5:value})'''
+    description: '''copulafit(${1:family}, ${2:u}, 'Alpha', ${3:value}, 'Method', ${4:value}, 'Options', ${5:value})'''
+
+
+    "rotatefactors":
+    prefix: "rotatefactors"
+    body: '''rotatefactors(${1:A}, 'Method', ${2:value}, 'normalize', ${3:value}, 'coeff', ${4:value}, 'reltol', ${5:value}, 'maxit', ${6:value}, 'power', ${7:value}, 'target', ${8:value}, 'type', ${9:value})'''
+    description: '''rotatefactors(${1:A}, 'Method', ${2:value}, 'normalize', ${3:value}, 'coeff', ${4:value}, 'reltol', ${5:value}, 'maxit', ${6:value}, 'power', ${7:value}, 'target', ${8:value}, 'type', ${9:value})'''
+
+
+    "hmmtrain":
+    prefix: "hmmtrain"
+    body: '''hmmtrain(${1:seq}, ${2:TRGUESS}, ${3:EMITGUESS}, 'Algorithms', ${4:value}, 'Symbols', ${5:value}, 'Tolerance', ${6:value}, 'Maxiterations', ${7:value}, 'Verbose', ${8:value}, 'Pseudoemissions', ${9:value}, 'Pseudotransitions', ${10:value})'''
+    description: '''hmmtrain(${1:seq}, ${2:TRGUESS}, ${3:EMITGUESS}, 'Algorithms', ${4:value}, 'Symbols', ${5:value}, 'Tolerance', ${6:value}, 'Maxiterations', ${7:value}, 'Verbose', ${8:value}, 'Pseudoemissions', ${9:value}, 'Pseudotransitions', ${10:value})'''
+
+
+    "mle":
+    prefix: "mle"
+    body: '''mle(${1:data}, 'distribution', ${2:value}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'nloglf', ${5:value}, 'start', ${6:value}, 'cdf', ${7:value}, 'logsf', ${8:value}, 'Censoring', ${9:value}, 'Frequency', ${10:value}, 'Alpha', ${11:value}, 'NTrials', ${12:value}, 'Options', ${13:value}, 'LowerBound', ${14:value}, 'UpperBound', ${15:value}, 'OptimFun', ${16:value})'''
+    description: '''mle(${1:data}, 'distribution', ${2:value}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'nloglf', ${5:value}, 'start', ${6:value}, 'cdf', ${7:value}, 'logsf', ${8:value}, 'Censoring', ${9:value}, 'Frequency', ${10:value}, 'Alpha', ${11:value}, 'NTrials', ${12:value}, 'Options', ${13:value}, 'LowerBound', ${14:value}, 'UpperBound', ${15:value}, 'OptimFun', ${16:value})'''
+
+
+    "ztest":
+    prefix: "ztest"
+    body: '''ztest(${1:x}, ${2:m}, ${3:sigma}, 'Alpha', ${4:value}, 'Dim', ${5:value}, 'Tail', ${6:value})'''
+    description: '''ztest(${1:x}, ${2:m}, ${3:sigma}, 'Alpha', ${4:value}, 'Dim', ${5:value}, 'Tail', ${6:value})'''
+
+
+    "bbdesign":
+    prefix: "bbdesign"
+    body: '''bbdesign(${1:n}, 'center', ${2:value}, 'blocksize', ${3:value})'''
+    description: '''bbdesign(${1:n}, 'center', ${2:value}, 'blocksize', ${3:value})'''
+
+
+    "dwtest":
+    prefix: "dwtest"
+    body: '''dwtest(${1:r}, ${2:x}, 'Method', ${3:value}, 'Tail', ${4:value})'''
+    description: '''dwtest(${1:r}, ${2:x}, 'Method', ${3:value}, 'Tail', ${4:value})'''
+
+
+    "boxplot":
+    prefix: "boxplot"
+    body: '''boxplot(${1:x}, 'BoxStyle', ${2:value}, 'Colors', ${3:value}, 'MedianStyle', ${4:value}, 'Notch', ${5:value}, 'OutlierSize', ${6:value}, 'PlotStyle', ${7:value}, 'Symbol', ${8:value}, 'Widths', ${9:value}, 'ColorGroup', ${10:value}, 'FactorDirection', ${11:value}, 'FullFactors', ${12:value}, 'FactorGap', ${13:value}, 'FactorSeparator', ${14:value}, 'GroupOrder', ${15:value}, 'DataLim', ${16:value}, 'ExtremeMode', ${17:value}, 'Jitter', ${18:value}, 'Whisker', ${19:value}, 'Labels', ${20:value}, 'LabelOrientation', ${21:value}, 'LabelVerbosity', ${22:value}, 'Orientation', ${23:value}, 'Positions', ${24:value})'''
+    description: '''boxplot(${1:x}, 'BoxStyle', ${2:value}, 'Colors', ${3:value}, 'MedianStyle', ${4:value}, 'Notch', ${5:value}, 'OutlierSize', ${6:value}, 'PlotStyle', ${7:value}, 'Symbol', ${8:value}, 'Widths', ${9:value}, 'ColorGroup', ${10:value}, 'FactorDirection', ${11:value}, 'FullFactors', ${12:value}, 'FactorGap', ${13:value}, 'FactorSeparator', ${14:value}, 'GroupOrder', ${15:value}, 'DataLim', ${16:value}, 'ExtremeMode', ${17:value}, 'Jitter', ${18:value}, 'Whisker', ${19:value}, 'Labels', ${20:value}, 'LabelOrientation', ${21:value}, 'LabelVerbosity', ${22:value}, 'Orientation', ${23:value}, 'Positions', ${24:value})'''
+
+
+    "signtest":
+    prefix: "signtest"
+    body: '''signtest(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+    description: '''signtest(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+
+
+    "piecewisedistribution.cdf":
+    prefix: "piecewisedistribution.cdf"
+    body: '''piecewisedistribution.cdf(${1:obj}, ${2:x}, ${3:optional_upper})'''
+    description: '''piecewisedistribution.cdf(${1:obj}, ${2:x}, ${3:optional_upper})'''
+
+
+    "svmtrain":
+    prefix: "svmtrain"
+    body: '''svmtrain(${1:Training}, ${2:Group}, 'autoscale', ${3:value}, 'boxconstraint', ${4:value}, 'kernelcachelimit', ${5:value}, 'kernel_function', ${6:value}, 'kktviolationlevel', ${7:value}, 'method', ${8:value}, 'mlp_params', ${9:value}, 'options', ${10:value}, 'polyorder', ${11:value}, 'rbf_sigma', ${12:value}, 'showplot', ${13:value}, 'tolkkt', ${14:value})'''
+    description: '''svmtrain(${1:Training}, ${2:Group}, 'autoscale', ${3:value}, 'boxconstraint', ${4:value}, 'kernelcachelimit', ${5:value}, 'kernel_function', ${6:value}, 'kktviolationlevel', ${7:value}, 'method', ${8:value}, 'mlp_params', ${9:value}, 'options', ${10:value}, 'polyorder', ${11:value}, 'rbf_sigma', ${12:value}, 'showplot', ${13:value}, 'tolkkt', ${14:value})'''
+
+
+    "zscore":
+    prefix: "zscore"
+    body: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
+    description: '''zscore(${1:X}, ${2:flag}, ${3:optional_dim})'''
+
+
+    "stepwisefit":
+    prefix: "stepwisefit"
+    body: '''stepwisefit(${1:X}, ${2:y}, 'inmodel', ${3:value}, 'penter', ${4:value}, 'premove', ${5:value}, 'display', ${6:value}, 'maxiter', ${7:value}, 'keep', ${8:value}, 'scale', ${9:value})'''
+    description: '''stepwisefit(${1:X}, ${2:y}, 'inmodel', ${3:value}, 'penter', ${4:value}, 'premove', ${5:value}, 'display', ${6:value}, 'maxiter', ${7:value}, 'keep', ${8:value}, 'scale', ${9:value})'''
+
+
+    "hmmviterbi":
+    prefix: "hmmviterbi"
+    body: '''hmmviterbi(${1:seq}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value}, 'Statenames', ${5:value})'''
+    description: '''hmmviterbi(${1:seq}, ${2:TRANS}, ${3:EMIS}, 'Symbols', ${4:value}, 'Statenames', ${5:value})'''
+
+
+    "partialcorr":
+    prefix: "partialcorr"
+    body: '''partialcorr(${1:x}, ${2:optional_y}, ${3:optional_z}, 'Type', ${4:value}, 'Rows', ${5:value}, 'Tail', ${6:value})'''
+    description: '''partialcorr(${1:x}, ${2:optional_y}, ${3:optional_z}, 'Type', ${4:value}, 'Rows', ${5:value}, 'Tail', ${6:value})'''
+
+
+    "ppca":
+    prefix: "ppca"
+    body: '''ppca(${1:Y}, ${2:K}, 'W0', ${3:value}, 'v0', ${4:value}, 'options', ${5:value})'''
+    description: '''ppca(${1:Y}, ${2:K}, 'W0', ${3:value}, 'v0', ${4:value}, 'options', ${5:value})'''
+
+
+    "vartest":
+    prefix: "vartest"
+    body: '''vartest(${1:x}, ${2:v}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+    description: '''vartest(${1:x}, ${2:v}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+
+
+    "ttest2":
+    prefix: "ttest2"
+    body: '''ttest2(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value}, 'Vartype', ${6:value})'''
+    description: '''ttest2(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value}, 'Vartype', ${6:value})'''
+
+
+    "optimalleaforder":
+    prefix: "optimalleaforder"
+    body: '''optimalleaforder(${1:tree}, ${2:D}, 'Criteria', ${3:value}, 'Transformation', ${4:value})'''
+    description: '''optimalleaforder(${1:tree}, ${2:D}, 'Criteria', ${3:value}, 'Transformation', ${4:value})'''
+
+
+    "betacdf":
+    prefix: "betacdf"
+    body: '''betacdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_upper})'''
+    description: '''betacdf(${1:x}, ${2:a}, ${3:b}, ${4:optional_upper})'''
+
+
+    "tblwrite":
+    prefix: "tblwrite"
+    body: '''tblwrite(${1:data}, ${2:varnames}, ${3:casenames}, ${4:filename}, ${5:optional_delimiter})'''
+    description: '''tblwrite(${1:data}, ${2:varnames}, ${3:casenames}, ${4:filename}, ${5:optional_delimiter})'''
+
+
+    "copulapdf":
+    prefix: "copulapdf"
+    body: '''copulapdf(${1:family}, ${2:u}, ${3:alpha})'''
+    description: '''copulapdf(${1:family}, ${2:u}, ${3:alpha})'''
+
+
+    "fitdist":
+    prefix: "fitdist"
+    body: '''fitdist(${1:x}, ${2:distname}, 'By', ${3:value}, 'Censoring', ${4:value}, 'Frequency', ${5:value}, 'Options', ${6:value}, 'NTrials', ${7:value}, 'Theta', ${8:value}, 'Kernel', ${9:value}, 'Support', ${10:value}, 'Width', ${11:value})'''
+    description: '''fitdist(${1:x}, ${2:distname}, 'By', ${3:value}, 'Censoring', ${4:value}, 'Frequency', ${5:value}, 'Options', ${6:value}, 'NTrials', ${7:value}, 'Theta', ${8:value}, 'Kernel', ${9:value}, 'Support', ${10:value}, 'Width', ${11:value})'''
+
+
+    "knnsearch":
+    prefix: "knnsearch"
+    body: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
+    description: '''knnsearch(${1:X}, ${2:Y}, 'K', ${3:value}, 'IncludeTies', ${4:value}, 'NSMethod', ${5:value}, 'Distance', ${6:value}, 'P', ${7:value}, 'Cov', ${8:value}, 'Scale', ${9:value}, 'BucketSize', ${10:value}, 'SortIndices', ${11:value})'''
+
+
+    "createns":
+    prefix: "createns"
+    body: '''createns(${1:X}, 'NSMethod', ${2:value}, 'Distance', ${3:value}, 'P', ${4:value}, 'Cov', ${5:value}, 'Scale', ${6:value}, 'BucketSize', ${7:value})'''
+    description: '''createns(${1:X}, 'NSMethod', ${2:value}, 'Distance', ${3:value}, 'P', ${4:value}, 'Cov', ${5:value}, 'Scale', ${6:value}, 'BucketSize', ${7:value})'''
+
+
+    "procrustes":
+    prefix: "procrustes"
+    body: '''procrustes(${1:X}, ${2:Y}, 'scaling', ${3:value}, 'reflection', ${4:value})'''
+    description: '''procrustes(${1:X}, ${2:Y}, 'scaling', ${3:value}, 'reflection', ${4:value})'''
+
+
+    "mvregresslike":
+    prefix: "mvregresslike"
+    body: '''mvregresslike(${1:X}, ${2:Y}, ${3:b}, ${4:Sigma}, ${5:alg}, ${6:type}, ${7:optional_format})'''
+    description: '''mvregresslike(${1:X}, ${2:Y}, ${3:b}, ${4:Sigma}, ${5:alg}, ${6:type}, ${7:optional_format})'''
+
+
+    "random":
+    prefix: "random"
+    body: '''random(${1:name}, ${2:A})'''
+    description: '''random(${1:name}, ${2:A})'''
+
+
+    "leverage":
+    prefix: "leverage"
+    body: '''leverage(${1:data}, ${2:model})'''
+    description: '''leverage(${1:data}, ${2:model})'''
+
+
+    "kurtosis":
+    prefix: "kurtosis"
+    body: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
+    description: '''kurtosis(${1:X}, ${2:flag}, ${3:optional_dim})'''
+
+
+    "vartest2":
+    prefix: "vartest2"
+    body: '''vartest2(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+    description: '''vartest2(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value})'''
+
+
+    "xptread":
+    prefix: "xptread"
+    body: '''xptread(${1:optional_filename}, 'ReadObsNames', ${2:value})'''
+    description: '''xptread(${1:optional_filename}, 'ReadObsNames', ${2:value})'''
+
+
+    "fcdf":
+    prefix: "fcdf"
+    body: '''fcdf(${1:x}, ${2:v1}, ${3:v2}, ${4:optional_upper})'''
+    description: '''fcdf(${1:x}, ${2:v1}, ${3:v2}, ${4:optional_upper})'''
+
+
+    "glmval":
+    prefix: "glmval"
+    body: '''glmval(${1:b}, ${2:X}, ${3:link}, ${4:optional_stats}, 'confidence', ${5:value}, 'size', ${6:value}, 'offset', ${7:value}, 'constant', ${8:value}, 'simultaneous', ${9:value})'''
+    description: '''glmval(${1:b}, ${2:X}, ${3:link}, ${4:optional_stats}, 'confidence', ${5:value}, 'size', ${6:value}, 'offset', ${7:value}, 'constant', ${8:value}, 'simultaneous', ${9:value})'''
+
+
+    "ansaribradley":
+    prefix: "ansaribradley"
+    body: '''ansaribradley(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value}, 'Method', ${6:value})'''
+    description: '''ansaribradley(${1:x}, ${2:y}, 'Alpha', ${3:value}, 'Dim', ${4:value}, 'Tail', ${5:value}, 'Method', ${6:value})'''
+
+
+    "mnrval":
+    prefix: "mnrval"
+    body: '''mnrval(${1:B}, ${2:X}, ${3:stats}, 'model', ${4:value}, 'interactions', ${5:value}, 'link', ${6:value}, 'type', ${7:value}, 'confidence', ${8:value})'''
+    description: '''mnrval(${1:B}, ${2:X}, ${3:stats}, 'model', ${4:value}, 'interactions', ${5:value}, 'link', ${6:value}, 'type', ${7:value}, 'confidence', ${8:value})'''
+
+
+    "mdscale":
+    prefix: "mdscale"
+    body: '''mdscale(${1:D}, ${2:p}, 'Criterion', ${3:value}, 'Weights', ${4:value}, 'Start', ${5:value}, 'Replicates', ${6:value}, 'Options', ${7:value})'''
+    description: '''mdscale(${1:D}, ${2:p}, 'Criterion', ${3:value}, 'Weights', ${4:value}, 'Start', ${5:value}, 'Replicates', ${6:value}, 'Options', ${7:value})'''
+
+
+    "slicesample":
+    prefix: "slicesample"
+    body: '''slicesample(${1:initial}, ${2:nsamples}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'burnin', ${5:value}, 'thin', ${6:value}, 'width', ${7:value})'''
+    description: '''slicesample(${1:initial}, ${2:nsamples}, 'pdf', ${3:value}, 'logpdf', ${4:value}, 'burnin', ${5:value}, 'thin', ${6:value}, 'width', ${7:value})'''
+
+
+    "nnmf":
+    prefix: "nnmf"
+    body: '''nnmf(${1:A}, ${2:k}, 'algorithm', ${3:value}, 'w0', ${4:value}, 'h0', ${5:value}, 'options', ${6:value}, 'replicates', ${7:value})'''
+    description: '''nnmf(${1:A}, ${2:k}, 'algorithm', ${3:value}, 'w0', ${4:value}, 'h0', ${5:value}, 'options', ${6:value}, 'replicates', ${7:value})'''
+
+
+    "kruskalwallis":
+    prefix: "kruskalwallis"
+    body: '''kruskalwallis(${1:x}, ${2:group}, ${3:optional_displayopt})'''
+    description: '''kruskalwallis(${1:x}, ${2:group}, ${3:optional_displayopt})'''
+
+
+    "mad":
+    prefix: "mad"
+    body: '''mad(${1:X}, ${2:flag}, ${3:optional_dim})'''
+    description: '''mad(${1:X}, ${2:flag}, ${3:optional_dim})'''
+
+
+    "poisscdf":
+    prefix: "poisscdf"
+    body: '''poisscdf(${1:x}, ${2:lambda}, ${3:optional_upper})'''
+    description: '''poisscdf(${1:x}, ${2:lambda}, ${3:optional_upper})'''
+
+
+    "crossval":
+    prefix: "crossval"
+    body: '''crossval(${1:criterion}, ${2:X}, ${3:y}, 'Predfun', ${4:value}, 'holdout', ${5:value}, 'kfold', ${6:value}, 'leaveout', ${7:value}, 'mcreps', ${8:value}, 'partition', ${9:value}, 'stratify', ${10:value}, 'options', ${11:value})'''
+    description: '''crossval(${1:criterion}, ${2:X}, ${3:y}, 'Predfun', ${4:value}, 'holdout', ${5:value}, 'kfold', ${6:value}, 'leaveout', ${7:value}, 'mcreps', ${8:value}, 'partition', ${9:value}, 'stratify', ${10:value}, 'options', ${11:value})'''
+
+
+    "randsample":
+    prefix: "randsample"
+    body: '''randsample(${1:n_or_population}, ${2:k}, ${3:optional_replacement}, ${4:optional_weight})'''
+    description: '''randsample(${1:n_or_population}, ${2:k}, ${3:optional_replacement}, ${4:optional_weight})'''
+
+
+    "dcovary":
+    prefix: "dcovary"
+    body: '''dcovary(${1:nfactors}, ${2:fixed}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'options', ${11:value})'''
+    description: '''dcovary(${1:nfactors}, ${2:fixed}, ${3:model}, 'bounds', ${4:value}, 'categorical', ${5:value}, 'display', ${6:value}, 'excludefun', ${7:value}, 'init', ${8:value}, 'levels', ${9:value}, 'maxiter', ${10:value}, 'options', ${11:value})'''
+
+
+    "tcdf":
+    prefix: "tcdf"
+    body: '''tcdf(${1:x}, ${2:nu}, ${3:optional_upper})'''
+    description: '''tcdf(${1:x}, ${2:nu}, ${3:optional_upper})'''
+
+
+    "probplot":
+    prefix: "probplot"
+    body: '''probplot(${1:ax}, ${2:fun}, ${3:params}, ${4:optional_noref})'''
+    description: '''probplot(${1:ax}, ${2:fun}, ${3:params}, ${4:optional_noref})'''
+
+
+    "spectralcluster":
+    prefix: "spectralcluster"
+    body: '''spectralcluster(${1:X}, ${2:k}, 'Distance', ${3:value}, 'Cov', ${4:value}, 'P', ${5:value}, 'Scale', ${6:value}, 'LaplacianNormalization', ${7:value}, 'SimilarityGraph', ${8:value}, 'NumNeighbors', ${9:value}, 'KNNGraphType', ${10:value}, 'Radius', ${11:value}, 'KernelScale', ${12:value}, 'ClusterMethod', ${13:value})'''
+    description: '''spectralcluster(${1:X}, ${2:k}, 'Distance', ${3:value}, 'Cov', ${4:value}, 'P', ${5:value}, 'Scale', ${6:value}, 'LaplacianNormalization', ${7:value}, 'SimilarityGraph', ${8:value}, 'NumNeighbors', ${9:value}, 'KNNGraphType', ${10:value}, 'Radius', ${11:value}, 'KernelScale', ${12:value}, 'ClusterMethod', ${13:value})'''
+
+
+    "hmcSampler":
+    prefix: "hmcSampler"
+    body: '''hmcSampler(${1:logpdf}, ${2:startpoint}, 'StepSize', ${3:value}, 'NumSteps', ${4:value}, 'MassVector', ${5:value}, 'JitterMethod', ${6:value}, 'StepSizeTuningMethod', ${7:value}, 'MassVectorTuningMethod', ${8:value}, 'CheckGradient', ${9:value}, 'VariableNames', ${10:value}, 'UseNumericalGradient', ${11:value})'''
+    description: '''hmcSampler(${1:logpdf}, ${2:startpoint}, 'StepSize', ${3:value}, 'NumSteps', ${4:value}, 'MassVector', ${5:value}, 'JitterMethod', ${6:value}, 'StepSizeTuningMethod', ${7:value}, 'MassVectorTuningMethod', ${8:value}, 'CheckGradient', ${9:value}, 'VariableNames', ${10:value}, 'UseNumericalGradient', ${11:value})'''
+
+
+    "gmdistribution.cdf":
+    prefix: "gmdistribution.cdf"
+    body: '''gmdistribution.cdf(${1:obj}, ${2:x})'''
+    description: '''gmdistribution.cdf(${1:obj}, ${2:x})'''
+
+
+    "nanvar":
+    prefix: "nanvar"
+    body: '''nanvar(${1:X}, ${2:w}, ${3:optional_dim})'''
+    description: '''nanvar(${1:X}, ${2:w}, ${3:optional_dim})'''
+
+
+    "runstest":
+    prefix: "runstest"
+    body: '''runstest(${1:x}, ${2:v}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+    description: '''runstest(${1:x}, ${2:v}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+
+
+    "ranksum":
+    prefix: "ranksum"
+    body: '''ranksum(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+    description: '''ranksum(${1:x}, ${2:y}, 'alpha', ${3:value}, 'method', ${4:value}, 'tail', ${5:value})'''
+
+
+    "fracfact":
+    prefix: "fracfact"
+    body: '''fracfact(${1:gen}, 'FactorNames', ${2:value}, 'MaxInt', ${3:value})'''
+    description: '''fracfact(${1:gen}, 'FactorNames', ${2:value}, 'MaxInt', ${3:value})'''
+
+
+    "pdist2":
+    prefix: "pdist2"
+    body: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
+    description: '''pdist2(${1:X}, ${2:Y}, ${3:Distance}, 'Smallest', ${4:value})'''
+
+
+    "x2fx":
+    prefix: "x2fx"
+    body: '''x2fx(${1:X}, ${2:model}, ${3:categ}, ${4:optional_catlevels})'''
+    description: '''x2fx(${1:X}, ${2:model}, ${3:categ}, ${4:optional_catlevels})'''
+
+
+    "invpred":
+    prefix: "invpred"
+    body: '''invpred(${1:X}, ${2:Y}, ${3:Y0}, 'alpha', ${4:value}, 'predopt', ${5:value})'''
+    description: '''invpred(${1:X}, ${2:Y}, ${3:Y0}, 'alpha', ${4:value}, 'predopt', ${5:value})'''
+
+
+    "scatterhist":
+    prefix: "scatterhist"
+    body: '''scatterhist(${1:x}, ${2:y}, 'NBins', ${3:value}, 'Location', ${4:value}, 'Direction', ${5:value}, 'Group', ${6:value}, 'PlotGroup', ${7:value}, 'Style', ${8:value}, 'Kernel', ${9:value}, 'Bandwidth', ${10:value}, 'Legend', ${11:value}, 'Parent', ${12:value}, 'LineStyle', ${13:value}, 'LineWidth', ${14:value}, 'Color', ${15:value}, 'Marker', ${16:value}, 'MarkerSize', ${17:value})'''
+    description: '''scatterhist(${1:x}, ${2:y}, 'NBins', ${3:value}, 'Location', ${4:value}, 'Direction', ${5:value}, 'Group', ${6:value}, 'PlotGroup', ${7:value}, 'Style', ${8:value}, 'Kernel', ${9:value}, 'Bandwidth', ${10:value}, 'Legend', ${11:value}, 'Parent', ${12:value}, 'LineStyle', ${13:value}, 'LineWidth', ${14:value}, 'Color', ${15:value}, 'Marker', ${16:value}, 'MarkerSize', ${17:value})'''
+
+
+    "corr":
+    prefix: "corr"
+    body: '''corr(${1:X}, ${2:Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
+    description: '''corr(${1:X}, ${2:Y}, 'type', ${3:value}, 'rows', ${4:value}, 'tail', ${5:value})'''
+
+
+    "grpstats":
+    prefix: "grpstats"
+    body: '''grpstats(${1:X}, ${2:group}, ${3:whichstats}, 'Alpha', ${4:value})'''
+    description: '''grpstats(${1:X}, ${2:group}, ${3:whichstats}, 'Alpha', ${4:value})'''
+
+
+    "glyphplot":
+    prefix: "glyphplot"
+    body: '''glyphplot(${1:X}, 'glyph', ${2:value}, 'features', ${3:value}, 'grid', ${4:value}, 'page', ${5:value}, 'centers', ${6:value}, 'radius', ${7:value}, 'obslabels', ${8:value}, 'varlabels', ${9:value}, 'standardize', ${10:value}, 'Color', ${11:value}, 'LineStyle', ${12:value}, 'LineWidth', ${13:value}, 'Marker', ${14:value}, 'MarkerSize', ${15:value})'''
+    description: '''glyphplot(${1:X}, 'glyph', ${2:value}, 'features', ${3:value}, 'grid', ${4:value}, 'page', ${5:value}, 'centers', ${6:value}, 'radius', ${7:value}, 'obslabels', ${8:value}, 'varlabels', ${9:value}, 'standardize', ${10:value}, 'Color', ${11:value}, 'LineStyle', ${12:value}, 'LineWidth', ${13:value}, 'Marker', ${14:value}, 'MarkerSize', ${15:value})'''
+
+
+    "ksdensity":
+    prefix: "ksdensity"
+    body: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:pts}, 'Bandwidth', ${4:value}, 'BoundaryCorrection', ${5:value}, 'Censoring', ${6:value}, 'Function', ${7:value}, 'Kernel', ${8:value}, 'NumPoints', ${9:value}, 'Support', ${10:value}, 'PlotFcn', ${11:value}, 'Weights', ${12:value})'''
+    description: '''ksdensity(${1:optional_ax}, ${2:x}, ${3:pts}, 'Bandwidth', ${4:value}, 'BoundaryCorrection', ${5:value}, 'Censoring', ${6:value}, 'Function', ${7:value}, 'Kernel', ${8:value}, 'NumPoints', ${9:value}, 'Support', ${10:value}, 'PlotFcn', ${11:value}, 'Weights', ${12:value})'''
+
+
+    "nancov":
+    prefix: "nancov"
+    body: '''nancov(${1:X}, ${2:optional_X2}, ${3:domle}, ${4:optional_dopairwise})'''
+    description: '''nancov(${1:X}, ${2:optional_X2}, ${3:domle}, ${4:optional_dopairwise})'''
+

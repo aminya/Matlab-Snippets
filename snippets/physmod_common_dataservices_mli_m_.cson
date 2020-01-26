@@ -1,0 +1,44 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "simscape.op.OperatingPoint.set":
+    prefix: "simscape.op.OperatingPoint.set"
+    body: '''${1:op} = simscape.op.OperatingPoint.set(${1:T}, ${2:path})'''
+    description: '''${1:op} = simscape.op.OperatingPoint.set(${1:T}, ${2:path})'''
+
+
+    "simscape.op.OperatingPoint.get":
+    prefix: "simscape.op.OperatingPoint.get"
+    body: '''${1:child} = simscape.op.OperatingPoint.get(${1:T}, ${2:path})'''
+    description: '''${1:child} = simscape.op.OperatingPoint.get(${1:T}, ${2:path})'''
+
+
+    "simscape.op.OperatingPoint.hasPath":
+    prefix: "simscape.op.OperatingPoint.hasPath"
+    body: '''${1:f} = simscape.op.OperatingPoint.hasPath(${1:T}, ${2:path})'''
+    description: '''${1:f} = simscape.op.OperatingPoint.hasPath(${1:T}, ${2:path})'''
+
+
+    "simscape.op.OperatingPoint.remove":
+    prefix: "simscape.op.OperatingPoint.remove"
+    body: '''${1:op} = simscape.op.OperatingPoint.remove(${1:T}, ${2:path})'''
+    description: '''${1:op} = simscape.op.OperatingPoint.remove(${1:T}, ${2:path})'''
+
+
+    "simscape.op.OperatingPoint._parenReference":
+    prefix: "simscape.op.OperatingPoint._parenReference"
+    body: '''simscape.op.OperatingPoint._parenReference(${1:T}, ${2:path})'''
+    description: '''simscape.op.OperatingPoint._parenReference(${1:T}, ${2:path})'''
+
+
+    "simscape.op.OperatingPoint._parenAssign":
+    prefix: "simscape.op.OperatingPoint._parenAssign"
+    body: '''simscape.op.OperatingPoint._parenAssign(${1:T}, ${2:path})'''
+    description: '''simscape.op.OperatingPoint._parenAssign(${1:T}, ${2:path})'''
+
+
+    "simscape.op.OperatingPoint.move":
+    prefix: "simscape.op.OperatingPoint.move"
+    body: '''${1:op} = simscape.op.OperatingPoint.move(${1:T}, ${2:path1}, ${3:path2})'''
+    description: '''${1:op} = simscape.op.OperatingPoint.move(${1:T}, ${2:path1}, ${3:path2})'''
+

@@ -1,0 +1,16 @@
+{
+    "doc":
+    {
+        "inputs":
+        [
+            {"name":"name", "kind":"ordered", "type":"identifier=variable,function,localfunction,package,classdef"}
+        ]
+    },
+    "doc":
+    {
+        "inputs":
+        [
+            {"name":"filename", "kind":"ordered", "type":"file"}
+        ]
+    }
+}

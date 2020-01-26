@@ -1,0 +1,8 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "rtwbuild":
+    prefix: "rtwbuild"
+    body: '''rtwbuild(${1:filename}, 'ForceTopModelBuild', ${2:value}, 'generateCodeOnly', ${3:value}, 'Mode', ${4:value}, 'ExportFunctionInitializeFunctionName', ${5:value})'''
+    description: '''rtwbuild(${1:filename}, 'ForceTopModelBuild', ${2:value}, 'generateCodeOnly', ${3:value}, 'Mode', ${4:value}, 'ExportFunctionInitializeFunctionName', ${5:value})'''
+

@@ -1,0 +1,52 @@
+{
+
+"imresize":
+{
+  "inputs":
+  [
+    {"mutuallyExclusiveGroup":
+            [
+              [
+                {"name":"A","kind":"required","type":[["uint8"],["uint16"],["uint32"],["int8"],["int16"],["int32"],["double"],["single"]]},
+                {"name":"Scale","kind":"required","type":[["numeric","scalar"],["numeric","size=1,2"]]},
+                {"name":"Method","kind":"namevalue","type":"choices={'nearest','bilinear','bicubic'}"},
+                {"name":"Colormap","kind":"namevalue","type":"choices={'original','optimized'}"},
+                {"name":"Dither","kind":"namevalue","type":"logical"},
+                {"name":"AntiAliasing","kind":"namevalue","type":"logical"},
+                {"name":"OutputSize","kind":"namevalue","type":["numeric","size=1,2"]}
+              ],
+              [
+                {"name":"V","kind":"required","type":["categorical"]},
+                {"name":"Scale","kind":"required","type":[["numeric","scalar"],["numeric","size=1,2"]]},
+                {"name":"Method","kind":"namevalue","type":"choices={'nearest'}"},
+                {"name":"OutputSize","kind":"namevalue","type":["numeric","size=1,2"]}
+              ]
+            ]
+      }
+    ],
+  "outputs":
+  [
+    {"name":"B","type":"numeric"}
+  ]
+},
+
+"imtile":
+{
+  "inputs":
+  [
+    {"name":"I", "kind":"required", "type":[["logical"], ["uint8"], ["uint16"], ["int16"],["single"], ["double"], ["string"],["cell"],["matlab.io.datastore.ImageDatastore"]]},
+    {"name":"MAP", "kind":"ordered", "type":"numeric"},
+    {"name":"GridSize", "kind":"namevalue", "type":"numeric"},
+    {"name":"Frames", "kind":"namevalue", "type":"numeric"},
+    {"name":"ThumbnailSize", "kind":"namevalue", "type":"numeric"},
+    {"name":"BorderSize", "kind":"namevalue", "type":"numeric"},
+    {"name":"BackgroundColor", "kind":"namevalue", "type":[["numeric"], ["char"]]}
+  ],
+  "outputs":
+  [
+    {"name":"out", "type":[["logical"], ["uint8"], ["uint16"], ["int16"],["single"], ["double"]]}
+  ]
+}
+
+}
+

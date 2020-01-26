@@ -1,0 +1,98 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "internal.Serialport.writeread":
+    prefix: "internal.Serialport.writeread"
+    body: '''${1:response} = internal.Serialport.writeread(${1:obj}, ${2:command})'''
+    description: '''${1:response} = internal.Serialport.writeread(${1:obj}, ${2:command})'''
+
+
+    "internal.Serialport.flush":
+    prefix: "internal.Serialport.flush"
+    body: '''internal.Serialport.flush(${1:obj}, ${2:optional_buffer})'''
+    description: '''internal.Serialport.flush(${1:obj}, ${2:optional_buffer})'''
+
+
+    "internal.Serialport.readline":
+    prefix: "internal.Serialport.readline"
+    body: '''${1:data} = internal.Serialport.readline(${1:obj})'''
+    description: '''${1:data} = internal.Serialport.readline(${1:obj})'''
+
+
+    "internal.Serialport.readbinblock":
+    prefix: "internal.Serialport.readbinblock"
+    body: '''${1:data} = internal.Serialport.readbinblock(${1:obj}, ${2:optional_precision})'''
+    description: '''${1:data} = internal.Serialport.readbinblock(${1:obj}, ${2:optional_precision})'''
+
+
+    "internal.Serialport.write":
+    prefix: "internal.Serialport.write"
+    body: '''internal.Serialport.write(${1:obj}, ${2:data}, ${3:precision})'''
+    description: '''internal.Serialport.write(${1:obj}, ${2:data}, ${3:precision})'''
+
+
+    "internal.Serialport.configureTerminator":
+    prefix: "internal.Serialport.configureTerminator"
+    body: '''internal.Serialport.configureTerminator(${1:obj}, ${2:terminator}, ${3:writeTerminator})'''
+    description: '''internal.Serialport.configureTerminator(${1:obj}, ${2:terminator}, ${3:writeTerminator})'''
+
+
+    "internal.Serialport.getpinstatus":
+    prefix: "internal.Serialport.getpinstatus"
+    body: '''${1:status} = internal.Serialport.getpinstatus(${1:obj})'''
+    description: '''${1:status} = internal.Serialport.getpinstatus(${1:obj})'''
+
+
+    "internal.Serialport.setRTS":
+    prefix: "internal.Serialport.setRTS"
+    body: '''internal.Serialport.setRTS(${1:obj}, ${2:flag})'''
+    description: '''internal.Serialport.setRTS(${1:obj}, ${2:flag})'''
+
+
+    "internal.Serialport.read":
+    prefix: "internal.Serialport.read"
+    body: '''${1:data} = internal.Serialport.read(${1:obj}, ${2:count}, ${3:precision})'''
+    description: '''${1:data} = internal.Serialport.read(${1:obj}, ${2:count}, ${3:precision})'''
+
+
+    "internal.Serialport.writebinblock":
+    prefix: "internal.Serialport.writebinblock"
+    body: '''internal.Serialport.writebinblock(${1:obj}, ${2:data}, ${3:precision})'''
+    description: '''internal.Serialport.writebinblock(${1:obj}, ${2:data}, ${3:precision})'''
+
+
+    "serialport":
+    prefix: "serialport"
+    body: '''${1:obj} = serialport(${1:Port}, ${2:BaudRate}, 'ByteOrder', ${3:value}, 'DataBits', ${4:value}, 'FlowControl', ${5:value}, 'Parity', ${6:value}, 'StopBits', ${7:value}, 'Timeout', ${8:value})'''
+    description: '''${1:obj} = serialport(${1:Port}, ${2:BaudRate}, 'ByteOrder', ${3:value}, 'DataBits', ${4:value}, 'FlowControl', ${5:value}, 'Parity', ${6:value}, 'StopBits', ${7:value}, 'Timeout', ${8:value})'''
+
+
+    "internal.Serialport.configureCallback":
+    prefix: "internal.Serialport.configureCallback"
+    body: '''internal.Serialport.configureCallback(${1:obj}, ${2:mode}, ${3:count}, ${4:callbackfcn})'''
+    description: '''internal.Serialport.configureCallback(${1:obj}, ${2:mode}, ${3:count}, ${4:callbackfcn})'''
+
+
+    "internal.Serialport.setDTR":
+    prefix: "internal.Serialport.setDTR"
+    body: '''internal.Serialport.setDTR(${1:obj}, ${2:flag})'''
+    description: '''internal.Serialport.setDTR(${1:obj}, ${2:flag})'''
+
+
+    "internal.Serialport.writeline":
+    prefix: "internal.Serialport.writeline"
+    body: '''internal.Serialport.writeline(${1:obj}, ${2:data})'''
+    description: '''internal.Serialport.writeline(${1:obj}, ${2:data})'''
+
+
+    "serialportlist":
+    prefix: "serialportlist"
+    body: '''serialportlist(${1:optional_ports})'''
+    description: '''serialportlist(${1:optional_ports})'''
+
+
+    "internal.Serialport.delete":
+    prefix: "internal.Serialport.delete"
+    body: '''internal.Serialport.delete(${1:obj})'''
+    description: '''internal.Serialport.delete(${1:obj})'''
+

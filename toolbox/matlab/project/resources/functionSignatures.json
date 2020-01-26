@@ -1,0 +1,278 @@
+{
+
+"matlab.project.Project.addFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"matlab.project.Project"},
+		{"name":"file", "kind":"required", "type":["file",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectFile", "type":"matlab.project.ProjectFile"}
+	]
+},
+
+"matlab.project.Project.addFolderIncludingChildFiles":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectFile", "type":"matlab.project.ProjectFile"}
+	]
+},
+
+"matlab.project.Project.findFile":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"file", "type":"matlab.project.ProjectFile"}
+	]
+},
+
+"matlab.project.Project.removeFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"matlab.project.Project"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+},
+
+"matlab.project.Project.export":
+{
+	"inputs":
+	[
+		{"name":"proj",             "kind":"required", "type":"matlab.project.Project"},
+		{"name":"zipFileName",      "kind":"required", "type":[["file=*.zip"],["char"]]},
+		{"name":"definitionType",   "kind":"positional"}
+	]
+},
+
+
+"matlab.project.ProjectFile.addLabel":
+{
+	"inputs":
+	[
+		{"name":"file",         "kind":"required", "type":"matlab.project.ProjectFile"},
+		{"name":"categoryName", "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file)"]]},
+		{"name":"label",        "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file,categoryName)"]]},
+		{"name":"labelData",    "kind":"ordered", "type":[["char"], ["numeric"]]}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"matlab.project.Label"}
+	]
+},
+
+"matlab.project.ProjectFile.findLabel":
+{
+	"inputs":
+	[
+		{"name":"file",         "kind":"required", "type":"matlab.project.ProjectFile"},
+		{"name":"categoryName", "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file)"]]},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getLabelNamesInCatogoryInFile(file,categoryName)"]]}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"matlab.project.Label"}
+	]
+},
+
+"matlab.project.ProjectFile.findLabel":
+{
+	"inputs":
+	[
+		{"name":"file",             "kind":"required", "type":"matlab.project.ProjectFile"},
+		{"name":"LabelDefinition",  "kind":"required", "type":"matlab.project.LabelDefinition"}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"matlab.project.Label"}
+	]
+},
+
+"matlab.project.Category.findLabel":
+{
+	"inputs":
+	[
+		{"name":"category",     "kind":"required", "type":"matlab.project.Category"},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices=arrayfun(@(x)char(x.Name), category.LabelDefinitions, 'UniformOutput', false)"]]}
+	],
+	"outputs":
+	[
+		{"name":"labelObject", "type":"matlab.project.LabelDefinition"}
+	]
+},
+
+"matlab.project.ProjectFile.removeLabel":
+{
+	"inputs":
+	[
+		{"name":"file",         "kind":"required", "type":"matlab.project.ProjectFile"},
+		{"name":"categoryName", "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getCategoriesAndLabelNamesInProjectFromFile(file)"]]},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices=matlab.internal.project.util.getLabelNamesInCatogoryInFile(file,categoryName)"]]}
+	]
+},
+
+"matlab.project.ProjectFile.removeLabel":
+{
+	"inputs":
+	[
+		{"name":"file",             "kind":"required", "type":"matlab.project.ProjectFile"},
+		{"name":"LabelDefinition",  "kind":"required", "type":"matlab.project.LabelDefinition"}
+	]
+},
+
+"matlab.project.Category.removeLabel":
+{
+	"inputs":
+	[
+		{"name":"category",     "kind":"required", "type":"matlab.project.Category"},
+		{"name":"labelName",    "kind":"required", "type":[["char"], ["choices=arrayfun(@(x) char(x.Name), category.LabelDefinitions, 'UniformOutput', false)"]]}
+	]
+},
+
+
+"matlab.project.Project.findCategory":
+{
+	"inputs":
+	[
+		{"name":"proj",         "kind":"required", "type":"matlab.project.Project"},
+        {"name":"categoryName", "kind":"required", "type":[["char"],["choices=arrayfun(@(x) char(x.Name), proj.Categories, 'UniformOutput', false)"]]}		
+	],
+    "outputs":
+    [
+		{"name":"category", "kind":"required", "type":"matlab.project.Category"}
+    ]
+},
+
+"matlab.project.Project.removeCategory":
+{
+	"inputs":
+	[
+		{"name":"proj",         "kind":"required", "type":"matlab.project.Project"},
+		{"name":"categoryName", "kind":"required", "type":[["char"],["choices=arrayfun(@(x) char(x.Name), proj.Categories, 'UniformOutput', false)"]]}
+	]
+},
+
+"matlab.project.Project.addPath":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectPath", "type":"matlab.project.PathFolder"}
+	]
+},
+
+"matlab.project.Project.removePath":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	]
+},
+
+"matlab.project.Project.addReference":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"projectReference", "type":"matlab.project.ProjectReference"}
+	]
+},
+
+"matlab.project.Project.removeReference":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"folder",   "kind":"required", "type":["folder",["char"]]}
+	]
+},
+
+"matlab.project.Project.addShortcut":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"shortcut", "type":"matlab.project.Shortcut"}
+	]
+},
+
+"matlab.project.Project.removeShortcut":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"matlab.project.Project"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+},
+
+"matlab.project.Project.addStartupFile":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"shortcut", "type":"matlab.project.EntryPoint"}
+	]
+},
+
+"matlab.project.Project.removeStartupFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"matlab.project.Project"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+},
+
+"matlab.project.Project.addShutdownFile":
+{
+	"inputs":
+	[
+		{"name":"proj",     "kind":"required", "type":"matlab.project.Project"},
+		{"name":"fileName", "kind":"required", "type":[["file"],["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"shortcut", "type":"matlab.project.EntryPoint"}
+	]
+},
+
+"matlab.project.Project.removeShutdownFile":
+{
+	"inputs":
+	[
+		{"name":"proj", "kind":"required", "type":"matlab.project.Project"},
+		{"name":"file", "kind":"required", "type":[["file"],["char"]]}
+	]
+}
+
+}

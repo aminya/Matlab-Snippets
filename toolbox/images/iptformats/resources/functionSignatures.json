@@ -1,0 +1,281 @@
+{
+"bigimage":
+{
+  "inputs":
+  [
+	{"mutuallyExclusiveGroup":
+        [
+          [
+			{"name":"source", "kind":"required", "type":[["file=*.tif,*.tiff"], ["matlabpathfile=*.tif,*.tiff"], ["numeric"], [["folder"]]]},
+			{"name":"ClassNames", "kind":"namevalue", "type":[["char"], ["cell"], ["string"]]},
+			{"name":"PixelLabelIDs", "kind":"namevalue", "type":"numeric"},
+			{"name":"BlockSize", "kind":"namevalue", "type":["numeric", "size=:,2"]},
+			{"name":"SpatialReferencing", "kind":"namevalue", "type":"imref2d"},
+			{"name":"UnloadedValue", "kind":"namevalue", "type":[["numeric", "scalar"], ["numeric","size=1,1,:"]]}
+          ],
+		  [
+            {"name":"source", "kind":"required", "type":[["imref2d"], ["numeric", "size=:,2"]]},
+            {"name":"Numchannels","kind":"required","type":["numeric", "scalar", "integer", "positive"]},
+            {"name":"Datatype","kind":"required","type":"choices={'uint8', 'int8', 'uint16', 'int16', 'uint32', 'int32', 'double', 'single', 'logical', 'categorical'}"},
+			{"name":"ClassNames", "kind":"namevalue", "type":[["char"], ["cell"], ["string"]]},
+			{"name":"PixelLabelIDs", "kind":"namevalue", "type":"numeric"},
+			{"name":"BlockSize", "kind":"namevalue", "type":["numeric", "size=:,2"]},
+			{"name":"SpatialReferencing", "kind":"namevalue", "type":"imref2d"},
+			{"name":"UnloadedValue", "kind":"namevalue", "type":[["numeric", "scalar"], ["numeric","size=1,1,:"]]}
+		  ]
+		]
+    }
+  ],
+  "outputs":
+  [
+    {"name":"obj", "type":"bigimage"}
+  ]
+},
+
+"bigimage.apply":
+{
+  "inputs":
+  [
+    {"name":"IMG", "kind":"required","type":"bigimage"},
+    {"name":"LEVEL", "kind":"required","type":["numeric", "scalar"]},
+    {"name":"FCN", "kind":"required","type":"function_handle"},
+	{"name":"EXTRAIMAGES", "kind":"ordered","type":"bigimage"},
+    {"name":"BlockSize", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"UseParallel", "kind":"namevalue", "type":"logical"},
+    {"name":"BorderSize", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"DisplayWaitbar", "kind":"namevalue", "type":"logical"},
+    {"name":"OutputFolder", "kind":"namevalue", "type":"folder"},
+    {"name":"PadMethod", "kind":"namevalue", "type":[["choices={'replicate','symmetric'}"], ["scalar"]]},
+    {"name":"Mask", "kind":"namevalue", "type":"bigimage"},
+    {"name":"InclusionThreshold", "kind":"namevalue", "type":[">=0","<=1","scalar","numeric"]},
+    {"name":"ExtraImageLevels", "kind":"namevalue", "type":"numeric"}
+  ]
+},
+
+"bigimage.write":
+{
+  "inputs":[
+    {"name":"IMG", "kind":"required", "type":"bigimage"},
+    {"name":"OUT", "kind":"required", "type":[["file=*.tif,*.tiff"], ["folder"]]}
+  ]
+},
+
+"bigimageDatastore":
+{
+  "inputs":[
+    {"name":"BIGIMAGES", "kind":"required", "type":"bigimage"},
+    {"name":"LEVELS", "kind":"required","type":"numeric"},
+    {"name":"ReadSize", "kind":"namevalue","type":"numeric"},
+    {"name":"BlockSize", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"BlockOffsets", "kind":"namevalue", "type":["numeric", "size=1,2"]},
+    {"name":"Masks", "kind":"namevalue", "type":"bigimage"},
+    {"name":"InclusionThreshold", "kind":"namevalue", "type":[">=0","<=1","scalar","numeric"]},
+    {"name":"IncompleteBlocks", "kind":"namevalue", "type":"choices={'exclude','same','pad'}"}
+  ],
+  "outputs":[
+    {"name":"obj", "type":"bigimageDatastore"}
+  ]
+},
+
+"camresponse":
+{
+  "inputs":
+  [
+    {"name":"filenames", "kind":"required", "type":[["matlab.io.datastore.ImageDatastore"],["cell"],["string"]]},
+    {"name":"ExposureTimes","kind":"namevalue","type":[["double"],["single"]]}
+  ],
+  "outputs":
+  [
+	{"name":"crf", "type":"double"}
+  ]
+},
+
+"dicomCollection":
+{
+  "inputs":
+  [
+    {"name":"source", "kind":"required", "type":[["folder"],["file=DICOMDIR"]]},
+    {"name":"IncludeSubfolders", "kind":"namevalue", "type":["logical","scalar"]}
+  ],
+  "outputs":
+  [
+    {"name":"collection", "type":"table"}
+  ]
+},
+
+"dicomreadVolume":
+{
+  "inputs":
+  [
+    {"name":"source", "kind":"required", "type":[["filenames"], ["char"], ["table"]]},
+    {"name":"RowName", "kind":"positional", "type":"char"},
+    {"name":"MakeIsotropic","kind":"namevalue","type":["logical"]}
+  ],
+  "outputs":
+  [
+    {"name":"V", "type":"numeric"},
+    {"name":"spatial", "type":"struct"},
+    {"name":"dim", "type":["numeric","scalar"]}
+  ]
+},
+
+"images.dicom.decodeUID":
+{
+  "inputs":
+  [
+    {"name":"UID", "kind":"required", "type":"char"}
+  ],
+  "outputs":
+  [
+    {"name":"details", "type":"struct"}
+  ]
+},
+
+"images.dicom.parseDICOMDIR":
+{
+  "inputs":
+  [
+    {"name":"filename", "kind":"required", "type":[["file"], ["char"]]}
+  ],
+  "outputs":
+  [
+    {"name":"details", "type":"struct"}
+  ]
+},
+
+"images.internal.dicom.DICOMFile":
+{
+  "inputs":
+  [
+    {"name":"filename", "kind":"required", "type":[["file"], ["char"]]}
+  ],
+  "outputs":
+  [
+    {"name":"obj", "type":"images.internal.dicom.DICOMFile"}
+  ]
+},
+
+"makehdr":
+{
+  "inputs":
+  [
+    {"name":"files", "kind":"required", "type":[["cell"],["string"],["matlab.io.datastore.ImageDatastore"]]},
+	{"mutuallyExclusiveGroup":
+        [
+            [
+                {"name":"BaseFile", "kind":"namevalue", "type":"char"},
+                {"name":"MinimumLimit", "kind":"namevalue", "type":"numeric"},
+                {"name":"MaximumLimit", "kind":"namevalue", "type":"numeric"}
+            ],
+            [
+                {"name":"ExposureValues", "kind":"namevalue", "type":"numeric"},
+                {"name":"MinimumLimit", "kind":"namevalue", "type":"numeric"},
+                {"name":"MaximumLimit", "kind":"namevalue", "type":"numeric"}
+            ],
+            [
+                {"name":"RelativeExposure", "kind":"namevalue", "type":"numeric"},
+                {"name":"MinimumLimit", "kind":"namevalue", "type":"numeric"},
+                {"name":"MaximumLimit", "kind":"namevalue", "type":"numeric"}
+            ],
+            [
+                {"name":"ExposureValues", "kind":"namevalue", "type":"numeric"},
+                {"name":"CameraResponse", "kind":"namevalue", "type":[["single"],["double"]]}
+            ],
+            [
+                {"name":"RelativeExposure", "kind":"namevalue", "type":"numeric"},
+                {"name":"CameraResponse", "kind":"namevalue", "type":[["single"],["double"]]}
+            ]
+        ]
+    }
+  ],
+  "outputs":
+  [
+    {"name":"HDR", "type":"single"}
+  ]
+},
+
+"niftiinfo":
+{
+  "inputs":
+  [
+    {"name":"filename","kind":"required","type":[["file=*.nii,*.nii.gz,*.hdr,*.hdr.gz"], ["char"]]}
+  ],
+  "outputs":
+  [
+    {"name":"info","type":"struct"}
+  ]
+},
+
+"niftiread":
+{
+  "inputs":
+  [
+    {"name":"hdrfilename","kind":"required","type":[["file=*.nii,*.nii.gz,*.hdr,*.hdr.gz"], ["char"]]},
+    {"name":"imgfilename","kind":"required","type":[["file=*.img,*.img.gz"], ["char"]]}
+  ],
+  "outputs":
+  [
+    {"name":"V","type":"numeric"}
+  ]
+},
+
+"niftiwrite":
+{
+  "inputs":
+  [
+    {"name":"V","kind":"required","type":"numeric"},
+    {"name":"filename","kind":"required","type":"char"},
+    {"name":"info","kind":"ordered","type":"struct"},
+    {"name":"Combined","kind":"namevalue","type":["logical","scalar"]},
+    {"name":"Compressed","kind":"namevalue","type":["logical","scalar"]},
+    {"name":"Endian","kind":"namevalue","type":"choices={'little','big'}"},
+    {"name":"Version","kind":"namevalue","type":"choices={'NIfTI1','NIfTI2'}"}
+  ],
+  "outputs":
+  [
+    {"name":"status","type":"numeric"}
+  ]
+},
+
+"tonemap":
+{
+  "inputs":
+  [
+    {"name":"HDR", "kind":"required", "type":[["double"],["single"]]},
+    {"name":"AdjustLightness", "kind":"namevalue", "type":"double"},
+    {"name":"AdjustSaturation", "kind":"namevalue", "type":"double"},
+    {"name":"NumberOfTiles", "kind":"namevalue", "type":"double"}
+  ],
+  "outputs":
+  [
+    {"name":"RGB","type":"uint8"}
+  ]
+},
+
+
+"nitfinfo":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["file=*.ntf,*.NTF,*.nsf"], ["char"]]}
+	],
+	"outputs":
+	[
+		{"name":"metadata", "type":"struct"}
+	]
+},
+"nitfread":
+{
+	"inputs":
+	[
+		{"name":"filename", "kind":"required", "type":[["file=*.ntf,*.NTF,*.nsf"], ["char"]]},
+    {"name":"idx", "kind":"ordered","type":"numeric"},
+    {"name":"PixelRegion", "kind":"namevalue","type":"cell"}
+	],
+	"outputs":
+	[
+		{"name":"x", "type":"numeric"}
+	]
+}
+
+}

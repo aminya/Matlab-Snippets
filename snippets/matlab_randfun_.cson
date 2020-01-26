@@ -1,0 +1,38 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "randn":
+    prefix: "randn"
+    body: '''randn(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
+    description: '''randn(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
+
+
+    "rng":
+    prefix: "rng"
+    body: '''rng(${1:seed}, ${2:optional_generator})'''
+    description: '''rng(${1:seed}, ${2:optional_generator})'''
+
+
+    "RandStream.create":
+    prefix: "RandStream.create"
+    body: '''RandStream.create(${1:gentype}, 'NumStreams', ${2:value}, 'Seed', ${3:value}, 'NormalTransform', ${4:value}, 'CellOutput', ${5:value}, 'StreamIndices', ${6:value})'''
+    description: '''RandStream.create(${1:gentype}, 'NumStreams', ${2:value}, 'Seed', ${3:value}, 'NormalTransform', ${4:value}, 'CellOutput', ${5:value}, 'StreamIndices', ${6:value})'''
+
+
+    "rand":
+    prefix: "rand"
+    body: '''rand(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
+    description: '''rand(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
+
+
+    "randi":
+    prefix: "randi"
+    body: '''randi(${1:optional_s}, ${2:imax}, ${3:sz}, ${4:optional_classname})'''
+    description: '''randi(${1:optional_s}, ${2:imax}, ${3:sz}, ${4:optional_classname})'''
+
+
+    "RandStream":
+    prefix: "RandStream"
+    body: '''RandStream(${1:gentype}, 'Seed', ${2:value}, 'NormalTransform', ${3:value})'''
+    description: '''RandStream(${1:gentype}, 'Seed', ${2:value}, 'NormalTransform', ${3:value})'''
+

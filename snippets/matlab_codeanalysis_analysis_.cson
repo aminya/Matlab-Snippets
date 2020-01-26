@@ -1,0 +1,14 @@
+# MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
+".source.matlab":
+
+    "codeCompatibilityReport":
+    prefix: "codeCompatibilityReport"
+    body: '''codeCompatibilityReport(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
+    description: '''codeCompatibilityReport(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
+
+
+    "analyzeCodeCompatibility":
+    prefix: "analyzeCodeCompatibility"
+    body: '''analyzeCodeCompatibility(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
+    description: '''analyzeCodeCompatibility(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
+

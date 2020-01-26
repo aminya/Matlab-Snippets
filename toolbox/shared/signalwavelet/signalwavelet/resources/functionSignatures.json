@@ -1,0 +1,304 @@
+{
+    "_schemaVersion": "1.0.0",
+    
+    "emd":
+        {
+            "inputs":
+            [
+                {"name":"X", "kind":"required", "type":[["vector"], ["timetable", "ncols=1"]]},
+                {"name":"SiftRelativeTolerance", "kind":"namevalue", "type":["positive", "scalar"]},
+                {"name":"SiftMaxIterations", "kind":"namevalue", "type":["positive", "scalar", "integer"]},
+                {"name":"MaxNumIMF", "kind":"namevalue", "type":["positive", "scalar", "integer"]},
+                {"name":"MaxNumExtrema", "kind":"namevalue", "type":["positive", "scalar", "integer"]},
+                {"name":"MaxEnergyRatio", "kind":"namevalue", "type":"scalar"},
+                {"name":"Interpolation", "kind":"namevalue", "type":"choices={'spline', 'pchip', 'string'}"},
+                {"name":"Display", "kind":"namevalue", "type":"scalar"}
+            ],
+            "outputs":
+            [
+                {"name":"imf", "type":[["numeric"], ["timetable"]]},   
+                {"name":"residual", "type":[["column"], ["timetable", "ncols=1"]]},
+                {"name":"info", "type":"struct"}
+            ]
+        },
+
+    "hilbert":
+        {
+            "inputs":
+            [
+                {"name":"xr", "kind":"required", "type":[["vector"],["numeric"]]},
+                {"name":"n", "kind":"ordered", "type":["positive", "integer", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"x", "type":[["vector"],["numeric"]]}
+            ]
+        },
+
+    "hht":
+        {
+            "inputs":
+            [   
+                {"name":"imf", "kind":"required", "type":[["numeric"], ["timetable"]]},
+                {"name":"fs", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"FrequencyLimits", "kind":"namevalue", "type":["positive", "integer", "row", "numel=2"]},
+                {"name":"FrequencyResolution", "kind":"namevalue", "type":["positive", "scalar"]},
+                {"name":"MinThreshold", "kind":"namevalue", "type":"scalar"}
+            ],
+            "outputs":
+            [
+                {"name":"hs", "type":["sparse", "numeric"]},
+                {"name":"f", "type":[["numeric"], ["timetable"]]},
+                {"name":"t", "type":[["numeric"], ["timetable"]]},
+                {"name":"imfinsf", "type":[["numeric"], ["timetable"]]},
+                {"name":"imfinse", "type":[["numeric"], ["timetable"]]}
+            ]
+        },
+
+    "hht":
+        {
+            "inputs":
+            [   
+                {"name":"imf", "kind":"required", "type":[["numeric"], ["timetable"]]},
+                {"name":"fs", "kind":"required", "type":["positive", "scalar"]},
+                {"name":"freqlocation", "kind":"ordered", "type":"choices={'yaxis', 'xaxis'}"}
+            ],
+            "outputs":
+            [
+                {"name":"hs", "type":["sparse", "numeric"]},
+                {"name":"f", "type":[["numeric"], ["timetable"]]},
+                {"name":"t", "type":[["numeric"], ["timetable"]]},
+                {"name":"imfinsf", "type":[["numeric"], ["timetable"]]},
+                {"name":"imfinse", "type":[["numeric"], ["timetable"]]}
+            ]
+        },
+
+    "labeledSignalSet":
+        {
+            "inputs":
+            [
+                {"name":"src", "kind":"required", "type":[["numeric"],["cell"],["timetable"],["audioDatastore"]]},
+				{"name":"lbldefs", "kind":"ordered", "type":["vector","signalLabelDefinition"]},
+				{"name":"Description", "kind":"namevalue", "type":[["char", "vector"], ["string", "scalar"]]},
+				{"name":"SampleRate", "kind":"namevalue", "type":[["positive","scalar"],["vector"]]},
+				{"name":"SampleTime", "kind":"namevalue", "type":[["positive","scalar"],["vector"],["duration"]]},
+				{"name":"TimeValues", "kind":"namevalue", "type":[["vector"],["duration"],["numeric"],["cell"]]},
+				{"name":"NumMembers", "kind":"namevalue", "type":["positive","integer"]},
+				{"name":"Labels", "kind":"namevalue", "type":"table"},
+				{"name":"TimeInformation", "kind":"namevalue", "type":"choices={'none','SampleRate','SampleTime','TimeValues','Inherent'}"},
+				{"name":"Source", "kind":"namevalue", "type":[["numeric"],["cell"],["timetable"]]}
+            ]
+        },
+
+    "signalLabelDefinition":
+        {
+            "inputs":
+            [
+                {"name":"name", "kind":"required", "type":[["char", "vector"], ["string", "scalar"]]},
+				{"name":"LabelType", "kind":"namevalue", "type":"choices={'attribute','roi','point'}"},
+				{"name":"LabelDataType", "kind":"namevalue", "type":"choices={'logical','categorical','numeric','string','table','timetable'}"},
+				{"name":"Categories", "kind":"namevalue", "type":[["string"],["cell","char","vector"]]},
+				{"name":"ROILimitsDataType", "kind":"namevalue", "type":"choices={'double','duration'}"},
+				{"name":"PointLocationsDataType", "kind":"namevalue", "type":"choices={'double','duration'}"},
+				{"name":"ValidationFunction", "kind":"namevalue"},
+				{"name":"DefaultValue", "kind":"namevalue", "type":[["double", "2d", "ncols=0", "nrows=0"]]},
+				{"name":"Description", "kind":"namevalue", "type":[["char", "vector"], ["string", "scalar"]]},
+				{"name":"Tag", "kind":"namevalue", "type":[["char", "vector"], ["string", "scalar"]]},
+				{"name":"Sublabels", "kind":"namevalue", "type":"signalLabelDefinition"}
+            ]
+        },
+
+    "wvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"fs", "kind":"ordered", "type":["positive", "numeric", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"twin", "kind":"ordered", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"fwin", "kind":"ordered", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "wvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"ts", "kind":"ordered", "type":["duration", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"twin", "kind":"ordered", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"fwin", "kind":"ordered", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "wvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"fs", "kind":"ordered", "type":["positive", "numeric", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"NumFrequencyPoints", "kind":"namevalue", "type":"integer"},
+                {"name":"NumTimePoints", "kind":"namevalue", "type":"integer"}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "wvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"ts", "kind":"ordered", "type":["duration", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"NumFrequencyPoints", "kind":"namevalue", "type":"integer"},
+                {"name":"NumTimePoints", "kind":"namevalue", "type":"integer"}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "wvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"fs", "kind":"ordered", "type":["positive", "numeric", "scalar"]},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "wvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"ts", "kind":"ordered", "type":["duration", "scalar"]},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "xwvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"y", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"fs", "kind":"ordered", "type":["positive", "numeric", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"twin", "kind":"positional", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"fwin", "kind":"ordered", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "xwvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"y", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"ts", "kind":"ordered", "type":["duration", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"twin", "kind":"positional", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"fwin", "kind":"ordered", "type":[["vector"],["double", "2d", "ncols=0", "nrows=0"]]},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "xwvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"y", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"fs", "kind":"ordered", "type":["positive", "numeric", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"'NumFrequencyPoints'", "kind":"positional", "type":"choices={'NumFrequencyPoints'}"},
+                {"name":"nf", "kind":"required", "type":"integer"},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        },
+
+    "xwvd":
+        {
+            "inputs":
+            [
+                {"name":"x", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"y", "kind":"required", "type":[["vector"], ["timetable"]]},
+                {"name":"ts", "kind":"ordered", "type":["duration", "scalar"]},
+                {"name":"'smoothedPseudo'", "kind":"positional", "type":"choices={'smoothedPseudo'}"},
+                {"name":"'NumFrequencyPoints'", "kind":"positional", "type":"choices={'NumFrequencyPoints'}"},
+                {"name":"nf", "kind":"required", "type":"integer"},
+                {"name":"'MinThreshold'", "kind":"positional", "type":"choices={'MinThreshold'}"},
+                {"name":"thresh", "kind":"ordered", "type":["real", "scalar"]}
+            ],
+            "outputs":
+            [
+                {"name":"d", "type":"numeric"},
+                {"name":"f", "type":"vector"},
+                {"name":"t", "type":"vector"}
+            ]
+        }
+}

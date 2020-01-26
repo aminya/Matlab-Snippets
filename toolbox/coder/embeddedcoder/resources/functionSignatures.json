@@ -1,0 +1,36 @@
+{
+"coder.dictionary.Entry.set":
+{
+    "inputs":
+    [
+        {"name":"entryObj", "kind":"required", "type":"coder.dictionary.Entry"},
+        {"name":"pName1", "kind":"required", "type":"choices=coder.dictionary.internal.getAllowedProps(entryObj)"},
+        {"name":"pValue1", "kind":"required", "type":"choices=coder.dictionary.internal.getAllowedPropVals(entryObj, pName1)"}
+    ]
+},
+"coder.dictionary.Entry.get":
+{
+    "inputs":
+    [
+        {"name":"entryObj", "kind":"required", "type":"coder.dictionary.Entry"},
+        {"name":"pName1", "kind":"required", "type":"choices=coder.dictionary.internal.getAllowedProps(entryObj)"}
+    ],
+    "outputs":
+    [
+        {"name":"outputValue1", "kind":"required", "type":[ ["coder.dictionary.Entry"], ["char"]]}
+    ]
+},
+"coder.Dictionary.getSection":
+{
+    "inputs":
+    [
+        {"name":"dictionaryObj", "kind":"required", "type":["coder.Dictionary"]},
+        {"name":"sectionName", "kind":"required", "type":["choices={'StorageClasses', 'MemorySections', 'FunctionCustomizationTemplates'}"]}
+    ],
+    "outputs":
+    [
+        {"name":"outputValue1", "kind":"required", "type":[ "coder.dictionary.Section" ]}
+    ]
+}
+}
+
