@@ -118,8 +118,8 @@ function matlab2atom(data)
 
             "$fun":
             prefix: "$fun"
-            body: '$body'
-            description: '$body'
+            body: '''$body'''
+            description: '''$body'''
 
         """
         catch
