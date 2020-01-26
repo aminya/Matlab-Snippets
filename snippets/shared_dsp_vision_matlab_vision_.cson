@@ -4,6 +4,8 @@
     "dsp.DCT [shared]":
         prefix: "dsp.DCT"
         body: '''dsp.DCT(${1:arg})'''
-        description: '''dsp.DCT(arg)    [shared]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.DCT.html'
+        description: '''[shared] (To be removed) Discrete cosine transform (DCT)
+        dsp.DCT(arg)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.dct-system-object.html'
 

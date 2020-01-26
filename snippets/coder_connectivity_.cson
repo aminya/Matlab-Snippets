@@ -4,6 +4,8 @@
     "buildStandaloneCoderAssumptions [coder]":
         prefix: "buildStandaloneCoderAssumptions"
         body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
-        description: '''buildStandaloneCoderAssumptions(buildFolder)    [coder]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/coder/buildStandaloneCoderAssumptions.html'
+        description: '''[coder] Create application to check code generator assumptions
+        buildStandaloneCoderAssumptions(buildFolder)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/buildstandalonecoderassumptions.html'
 

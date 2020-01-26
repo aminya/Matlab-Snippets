@@ -4,6 +4,8 @@
     "deploytool [compiler]":
         prefix: "deploytool"
         body: '''deploytool(${1:filename}, ${2:optional_varargin})'''
-        description: '''deploytool(filename, optional_varargin)    [compiler]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/deploytool.html'
+        description: '''[compiler] Compile and package functions for external deployment
+        deploytool(filename, optional_varargin)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/hadoop/deploytool.html'
 

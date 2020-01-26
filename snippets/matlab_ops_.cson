@@ -4,153 +4,197 @@
     "bitget [matlab]":
         prefix: "bitget"
         body: '''bitget(${1:A}, ${2:bit}, ${3:assumedtype})'''
-        description: '''bitget(A, bit, assumedtype)    [matlab]'''
+        description: '''[matlab] Get bit at specified position
+        bitget(A, bit, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitget.html'
 
 
     "setxor [matlab]":
         prefix: "setxor"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia, ib] = setxor(A, B, optional_'rows')    [matlab]'''
+        description: '''[matlab] Set exclusive OR of two arrays
+        [C, ia, ib] = setxor(A, B, optional_'rows')
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setxor.html'
 
 
     "ismember [matlab]":
         prefix: "ismember"
         body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[Lia, Locb] = ismember(A, B, optional_'rows')    [matlab]'''
+        description: '''[matlab] Array elements that are members of set array
+        [Lia, Locb] = ismember(A, B, optional_'rows')
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismember.html'
 
 
     "any [matlab]":
         prefix: "any"
         body: '''any(${1:A}, ${2:optional_dim})'''
-        description: '''any(A, optional_dim)    [matlab]'''
+        description: '''[matlab] Determine if any array elements are nonzero
+        any(A, optional_dim)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/any.html'
 
 
     "vertcat [matlab]":
         prefix: "vertcat"
         body: '''${1:C} = vertcat(${1:A})'''
-        description: '''C = vertcat(A)    [matlab]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/vertcat.html'
+        description: '''[matlab] Concatenate arrays vertically
+        C = vertcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/vertcat.html'
 
 
     "bitset [matlab]":
         prefix: "bitset"
         body: '''bitset(${1:A}, ${2:bit}, ${3:optional_V}, ${4:assumedtype})'''
-        description: '''bitset(A, bit, optional_V, assumedtype)    [matlab]'''
+        description: '''[matlab] Set bit at specific location
+        bitset(A, bit, optional_V, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitset.html'
 
 
     "subsref [matlab]":
         prefix: "subsref"
         body: '''${1:B} = subsref(${1:A}, ${2:S})'''
-        description: '''B = subsref(A, S)    [matlab]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/subsref.html'
+        description: '''[matlab] Subscripted reference 
+        B = subsref(A, S)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/subsref.html'
 
 
     "bitand [matlab]":
         prefix: "bitand"
         body: '''bitand(${1:A}, ${2:B}, ${3:assumedtype})'''
-        description: '''bitand(A, B, assumedtype)    [matlab]'''
+        description: '''[matlab] Bit-wise AND
+        bitand(A, B, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitand.html'
 
 
     "intersect [matlab]":
         prefix: "intersect"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia, ib] = intersect(A, B, optional_'rows')    [matlab]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intersect.html'
+        description: '''[matlab] Intersection of polyshape objects
+        [C, ia, ib] = intersect(A, B, optional_'rows')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.intersect.html'
 
 
     "idivide [matlab]":
         prefix: "idivide"
         body: '''idivide(${1:A}, ${2:B}, ${3:opt})'''
-        description: '''idivide(A, B, opt)    [matlab]'''
+        description: '''[matlab] Integer division with rounding option
+        idivide(A, B, opt)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/idivide.html'
 
 
     "bitor [matlab]":
         prefix: "bitor"
         body: '''bitor(${1:A}, ${2:B}, ${3:assumedtype})'''
-        description: '''bitor(A, B, assumedtype)    [matlab]'''
+        description: '''[matlab] Bit-wise OR
+        bitor(A, B, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitor.html'
 
 
     "setdiff [matlab]":
         prefix: "setdiff"
         body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia] = setdiff(A, B, optional_'rows')    [matlab]'''
+        description: '''[matlab] Set difference of two arrays
+        [C, ia] = setdiff(A, B, optional_'rows')
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setdiff.html'
 
 
     "subsasgn [matlab]":
         prefix: "subsasgn"
         body: '''${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
-        description: '''A = subsasgn(A, S, B)    [matlab]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/subsasgn.html'
+        description: '''[matlab] Content assignment 
+        A = subsasgn(A, S, B)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/subsasgn.html'
 
 
     "unique [matlab]":
         prefix: "unique"
         body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
-        description: '''[C, ia, ic] = unique(A, optional_'rows', optional_occurrence)    [matlab]'''
+        description: '''[matlab] Unique values in array
+        [C, ia, ic] = unique(A, optional_'rows', optional_occurrence)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unique.html'
 
 
     "bitcmp [matlab]":
         prefix: "bitcmp"
         body: '''bitcmp(${1:A}, ${2:assumedtype})'''
-        description: '''bitcmp(A, assumedtype)    [matlab]'''
+        description: '''[matlab] Bit-wise complement
+        bitcmp(A, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitcmp.html'
 
 
     "ismembertol [matlab]":
         prefix: "ismembertol"
         body: '''[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
-        description: '''[LIA, L] = ismembertol(A, B, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)    [matlab]'''
+        description: '''[matlab] Members of set within tolerance
+        [LIA, L] = ismembertol(A, B, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismembertol.html'
 
 
     "union [matlab]":
         prefix: "union"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
-        description: '''[C, ia, ib] = union(A, B, optional_'rows')    [matlab]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/union.html'
+        description: '''[matlab] Union of polyshape objects
+        [C, ia, ib] = union(A, B, optional_'rows')
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/polyshape.union.html'
 
 
     "bitxor [matlab]":
         prefix: "bitxor"
         body: '''bitxor(${1:A}, ${2:B}, ${3:assumedtype})'''
-        description: '''bitxor(A, B, assumedtype)    [matlab]'''
+        description: '''[matlab] Bit-wise XOR
+        bitxor(A, B, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitxor.html'
 
 
     "all [matlab]":
         prefix: "all"
         body: '''all(${1:A}, ${2:optional_dim})'''
-        description: '''all(A, optional_dim)    [matlab]'''
+        description: '''[matlab] Determine if all array elements are nonzero or true
+        all(A, optional_dim)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/all.html'
 
 
     "bitshift [matlab]":
         prefix: "bitshift"
         body: '''bitshift(${1:A}, ${2:k}, ${3:assumedtype})'''
-        description: '''bitshift(A, k, assumedtype)    [matlab]'''
+        description: '''[matlab] Shift bits specified number of places
+        bitshift(A, k, assumedtype)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitshift.html'
 
 
     "uniquetol [matlab]":
         prefix: "uniquetol"
         body: '''[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
-        description: '''[C, IA, IC] = uniquetol(A, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)    [matlab]'''
+        description: '''[matlab] Unique values within tolerance
+        [C, IA, IC] = uniquetol(A, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uniquetol.html'
 
 
     "horzcat [matlab]":
         prefix: "horzcat"
         body: '''${1:C} = horzcat(${1:A})'''
-        description: '''C = horzcat(A)    [matlab]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/horzcat.html'
+        description: '''[matlab] Concatenate arrays horizontally
+        C = horzcat(A)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/../matlab/ref/horzcat.html'
 

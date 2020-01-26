@@ -4,6 +4,8 @@
     "help [matlab]":
         prefix: "help"
         body: '''help(${1:optional_filename})'''
-        description: '''help(optional_filename)    [matlab]'''
+        description: '''[matlab] Help for design method with filter specification
+        help(optional_filename)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/help.html'
 

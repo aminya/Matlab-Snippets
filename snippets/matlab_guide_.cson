@@ -4,6 +4,8 @@
     "guide [matlab]":
         prefix: "guide"
         body: '''guide(${1:HandleList})'''
-        description: '''guide(HandleList)    [matlab]'''
+        description: '''[matlab] (To be removed) Create or edit UI file in GUIDE
+        guide(HandleList)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/guide.html'
 

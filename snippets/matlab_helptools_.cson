@@ -4,20 +4,26 @@
     "docroot [matlab]":
         prefix: "docroot"
         body: '''docroot(${1:newRoot})'''
-        description: '''docroot(newRoot)    [matlab]'''
+        description: '''[matlab] 
+        docroot(newRoot)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/docroot.html'
 
 
     "doc [matlab]":
         prefix: "doc"
         body: '''doc(${1:optional_filename})'''
-        description: '''doc(optional_filename)    [matlab]'''
+        description: '''[matlab] Reference page in Help browser
+        doc(optional_filename)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/doc.html'
 
 
     "help [matlab]":
         prefix: "help"
         body: '''help(${1:optional_filename})'''
-        description: '''help(optional_filename)    [matlab]'''
+        description: '''[matlab] Help for design method with filter specification
+        help(optional_filename)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/help.html'
 

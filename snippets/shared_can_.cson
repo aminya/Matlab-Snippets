@@ -4,6 +4,8 @@
     "canDatabase [shared]":
         prefix: "canDatabase"
         body: '''${1:obj} = canDatabase(${1:File})'''
-        description: '''obj = canDatabase(File)    [shared]'''
+        description: '''[shared] 
+        obj = canDatabase(File)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/canDatabase.html'
 

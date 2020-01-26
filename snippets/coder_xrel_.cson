@@ -4,6 +4,9 @@
     "sharedCodeUpdate [coder]":
         prefix: "sharedCodeUpdate"
         body: '''sharedCodeUpdate(${1:sourceFolder}, ${2:destinationFolder}, 'ExistingCodeSubfolder', ${3:value})'''
-        description: '''sharedCodeUpdate(sourceFolder, destinationFolder, 'ExistingCodeSubfolder', value)    [coder]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/coder/sharedCodeUpdate.html'
+        description: '''[coder] Add new shared code source files to existing shared code
+folder
+        sharedCodeUpdate(sourceFolder, destinationFolder, 'ExistingCodeSubfolder', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/sharedcodeupdate.html'
 

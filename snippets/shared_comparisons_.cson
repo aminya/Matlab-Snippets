@@ -4,20 +4,26 @@
     "comparisons.Comparison.publish [shared]":
         prefix: "comparisons.Comparison.publish"
         body: '''${1:file} = comparisons.Comparison.publish(${1:comparison}, 'Format', ${2:value}, 'Name', ${3:value}, 'OutputFolder', ${4:value}, ${5:optional_options})'''
-        description: '''file = comparisons.Comparison.publish(comparison, 'Format', value, 'Name', value, 'OutputFolder', value, optional_options)    [shared]'''
+        description: '''[shared] 
+        file = comparisons.Comparison.publish(comparison, 'Format', value, 'Name', value, 'OutputFolder', value, optional_options)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/comparisons.Comparison.publish.html'
 
 
     "comparisons.Comparison.filter [shared]":
         prefix: "comparisons.Comparison.filter"
         body: '''comparisons.Comparison.filter(${1:comparison}, ${2:filterDefinition})'''
-        description: '''comparisons.Comparison.filter(comparison, filterDefinition)    [shared]'''
+        description: '''[shared] 
+        comparisons.Comparison.filter(comparison, filterDefinition)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/comparisons.Comparison.filter.html'
 
 
     "visdiff [shared]":
         prefix: "visdiff"
         body: '''visdiff(${1:filename1}, ${2:filename2}, ${3:type})'''
-        description: '''visdiff(filename1, filename2, type)    [shared]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/visdiff.html'
+        description: '''[shared] Compare two files or folders
+        visdiff(filename1, filename2, type)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/visdiff.html'
 

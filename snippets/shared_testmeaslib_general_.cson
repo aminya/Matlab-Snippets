@@ -4,13 +4,17 @@
     "matlabshared.asyncio.buffer.DataPump [shared]":
         prefix: "matlabshared.asyncio.buffer.DataPump"
         body: '''${1:dataPump} = matlabshared.asyncio.buffer.DataPump(${1:buffer}, ${2:dataSink}, ${3:outputCount}, ${4:outputPeriod})'''
-        description: '''dataPump = matlabshared.asyncio.buffer.DataPump(buffer, dataSink, outputCount, outputPeriod)    [shared]'''
+        description: '''[shared] 
+        dataPump = matlabshared.asyncio.buffer.DataPump(buffer, dataSink, outputCount, outputPeriod)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.asyncio.buffer.DataPump.html'
 
 
     "matlabshared.asyncio.buffer.Buffer [shared]":
         prefix: "matlabshared.asyncio.buffer.Buffer"
         body: '''${1:buffer} = matlabshared.asyncio.buffer.Buffer(${1:bufferSize})'''
-        description: '''buffer = matlabshared.asyncio.buffer.Buffer(bufferSize)    [shared]'''
+        description: '''[shared] 
+        buffer = matlabshared.asyncio.buffer.Buffer(bufferSize)
+        '''
         descriptionMoreURL: 'https://www.mathworks.com/help/shared/matlabshared.asyncio.buffer.Buffer.html'
 

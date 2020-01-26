@@ -4,6 +4,8 @@
     "sscnewfile [physmod]":
         prefix: "sscnewfile"
         body: '''sscnewfile(${1:name}, ${2:template})'''
-        description: '''sscnewfile(name, template)    [physmod]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/sscnewfile.html'
+        description: '''[physmod] Create new Simscape file populated by required and commonly used keywords
+        sscnewfile(name, template)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/physmod/ref/sscnewfile.html'
 

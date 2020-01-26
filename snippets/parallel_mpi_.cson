@@ -4,6 +4,8 @@
     "mpiSettings [parallel]":
         prefix: "mpiSettings"
         body: '''mpiSettings('MessageLoggingDestination', ${1:value})'''
-        description: '''mpiSettings('MessageLoggingDestination', value)    [parallel]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/parallel/mpiSettings.html'
+        description: '''[parallel] Configure options for MPI communication
+        mpiSettings('MessageLoggingDestination', value)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/parallel/mpisettings.html'
 

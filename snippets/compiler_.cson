@@ -4,13 +4,17 @@
     "mbuild [compiler]":
         prefix: "mbuild"
         body: '''mbuild(${1:args})'''
-        description: '''mbuild(args)    [compiler]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/mbuild.html'
+        description: '''[compiler] Compile and link source files against MATLAB generated shared libraries
+        mbuild(args)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/ml_code/mbuild.html'
 
 
     "mcc [compiler]":
         prefix: "mcc"
         body: '''mcc(${1:args})'''
-        description: '''mcc(args)    [compiler]'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/mcc.html'
+        description: '''[compiler] Compile MATLAB functions for deployment
+        mcc(args)
+        '''
+        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/hadoop/mcc.html'
 
