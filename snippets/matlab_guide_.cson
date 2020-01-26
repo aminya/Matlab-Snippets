@@ -5,4 +5,5 @@
         prefix: "guide"
         body: '''guide(${1:HandleList})'''
         description: '''guide(HandleList)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/guide.html'
 

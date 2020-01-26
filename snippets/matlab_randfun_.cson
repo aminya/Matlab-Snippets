@@ -5,34 +5,40 @@
         prefix: "randn"
         body: '''randn(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
         description: '''randn(optional_s, sz, optional_classname)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/randn.html'
 
 
     "rng":
         prefix: "rng"
         body: '''rng(${1:seed}, ${2:optional_generator})'''
         description: '''rng(seed, optional_generator)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rng.html'
 
 
     "RandStream.create":
         prefix: "RandStream.create"
         body: '''RandStream.create(${1:gentype}, 'NumStreams', ${2:value}, 'Seed', ${3:value}, 'NormalTransform', ${4:value}, 'CellOutput', ${5:value}, 'StreamIndices', ${6:value})'''
         description: '''RandStream.create(gentype, 'NumStreams', value, 'Seed', value, 'NormalTransform', value, 'CellOutput', value, 'StreamIndices', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/RandStream.create.html'
 
 
     "rand":
         prefix: "rand"
         body: '''rand(${1:optional_s}, ${2:sz}, ${3:optional_classname})'''
         description: '''rand(optional_s, sz, optional_classname)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rand.html'
 
 
     "randi":
         prefix: "randi"
         body: '''randi(${1:optional_s}, ${2:imax}, ${3:sz}, ${4:optional_classname})'''
         description: '''randi(optional_s, imax, sz, optional_classname)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/randi.html'
 
 
     "RandStream":
         prefix: "RandStream"
         body: '''RandStream(${1:gentype}, 'Seed', ${2:value}, 'NormalTransform', ${3:value})'''
         description: '''RandStream(gentype, 'Seed', value, 'NormalTransform', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/RandStream.html'
 

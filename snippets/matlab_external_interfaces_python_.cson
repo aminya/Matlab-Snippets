@@ -5,10 +5,12 @@
         prefix: "pyenv"
         body: '''pyenv('Version', ${1:value}, 'ExecutionMode', ${2:value})'''
         description: '''pyenv('Version', value, 'ExecutionMode', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pyenv.html'
 
 
     "pyversion":
         prefix: "pyversion"
         body: '''pyversion(${1:filename}, ${2:optional_varargin})'''
         description: '''pyversion(filename, optional_varargin)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pyversion.html'
 

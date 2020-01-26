@@ -5,4 +5,5 @@
         prefix: "deploytool"
         body: '''deploytool(${1:filename}, ${2:optional_varargin})'''
         description: '''deploytool(filename, optional_varargin)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/compiler/ref/deploytool.html'
 

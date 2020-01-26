@@ -5,4 +5,5 @@
         prefix: "userpath"
         body: '''userpath(${1:optional_path})'''
         description: '''userpath(optional_path)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/local/ref/userpath.html'
 

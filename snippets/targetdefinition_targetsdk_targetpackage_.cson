@@ -5,28 +5,33 @@
         prefix: "target.get"
         body: '''${1:targetObjectInstance} = target.get(${1:targetObjectClassString}, ${2:identifier})'''
         description: '''targetObjectInstance = target.get(targetObjectClassString, identifier)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.get.html'
 
 
     "target.add":
         prefix: "target.add"
         body: '''target.add(${1:targetObjectInstances}, 'UserInstall', ${2:value})'''
         description: '''target.add(targetObjectInstances, 'UserInstall', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.add.html'
 
 
     "target.export":
         prefix: "target.export"
         body: '''target.export(${1:targetObjectInstances}, 'FileName', ${2:value}, 'Overwrite', ${3:value})'''
         description: '''target.export(targetObjectInstances, 'FileName', value, 'Overwrite', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.export.html'
 
 
     "target.create":
         prefix: "target.create"
         body: '''${1:targetObjectInstance} = target.create(${1:targetObjectClassString}, 'Copy', ${2:value})'''
         description: '''targetObjectInstance = target.create(targetObjectClassString, 'Copy', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.create.html'
 
 
     "target.upgrade":
         prefix: "target.upgrade"
         body: '''target.upgrade(${1:upgrader}, 'ExportToMATLABFunction', ${2:value}, 'ExportFileName', ${3:value}, 'Overwrite', ${4:value})'''
         description: '''target.upgrade(upgrader, 'ExportToMATLABFunction', value, 'ExportFileName', value, 'Overwrite', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/targetdefinition/ref/target.upgrade.html'
 

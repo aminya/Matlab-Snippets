@@ -5,46 +5,54 @@
         prefix: "pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius"
         body: '''pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(${1:ptCloud}, ${2:point}, ${3:radius}, 'Sort', ${4:value}, 'MaxLeafChecks', ${5:value})'''
         description: '''pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius(ptCloud, point, radius, 'Sort', value, 'MaxLeafChecks', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointclouds.internal.pc.pointCloudImpl.findNeighborsInRadius.html'
 
 
     "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors":
         prefix: "pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors"
         body: '''pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(${1:ptCloud}, ${2:point}, ${3:K}, 'Sort', ${4:value}, 'MaxLeafChecks', ${5:value})'''
         description: '''pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors(ptCloud, point, K, 'Sort', value, 'MaxLeafChecks', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointclouds.internal.pc.pointCloudImpl.findNearestNeighbors.html'
 
 
     "pointCloud":
         prefix: "pointCloud"
         body: '''pointCloud(${1:xyzPoints}, 'Color', ${2:value}, 'Normal', ${3:value}, 'Intensity', ${4:value})'''
         description: '''pointCloud(xyzPoints, 'Color', value, 'Normal', value, 'Intensity', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointCloud.html'
 
 
     "pcplayer.view":
         prefix: "pcplayer.view"
         body: '''pcplayer.view(${1:player}, ${2:ptCloud})'''
         description: '''pcplayer.view(player, ptCloud)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pcplayer.view.html'
 
 
     "pcplayer":
         prefix: "pcplayer"
         body: '''pcplayer(${1:xlimits}, ${2:ylimits}, ${3:zlimits}, 'MarkerSize', ${4:value}, 'VerticalAxis', ${5:value}, 'VerticalAxisDir', ${6:value})'''
         description: '''pcplayer(xlimits, ylimits, zlimits, 'MarkerSize', value, 'VerticalAxis', value, 'VerticalAxisDir', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pcplayer.html'
 
 
     "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints":
         prefix: "pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints"
         body: '''pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(${1:ptCloud})'''
         description: '''pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints(ptCloud)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointclouds.internal.pc.pointCloudImpl.removeInvalidPoints.html'
 
 
     "pointclouds.internal.pc.pointCloudImpl.select":
         prefix: "pointclouds.internal.pc.pointCloudImpl.select"
         body: '''pointclouds.internal.pc.pointCloudImpl.select(${1:ptCloud}, ${2:row}, ${3:column}, 'OutputSize', ${4:value})'''
         description: '''pointclouds.internal.pc.pointCloudImpl.select(ptCloud, row, column, 'OutputSize', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointclouds.internal.pc.pointCloudImpl.select.html'
 
 
     "pointclouds.internal.pc.pointCloudImpl.findPointsInROI":
         prefix: "pointclouds.internal.pc.pointCloudImpl.findPointsInROI"
         body: '''pointclouds.internal.pc.pointCloudImpl.findPointsInROI(${1:ptCloud}, ${2:roi})'''
         description: '''pointclouds.internal.pc.pointCloudImpl.findPointsInROI(ptCloud, roi)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/pointclouds.internal.pc.pointCloudImpl.findPointsInROI.html'
 

@@ -5,10 +5,12 @@
         prefix: "codeCompatibilityReport"
         body: '''codeCompatibilityReport(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
         description: '''codeCompatibilityReport(optional_names, 'IncludeSubfolders', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/codeCompatibilityReport.html'
 
 
     "analyzeCodeCompatibility":
         prefix: "analyzeCodeCompatibility"
         body: '''analyzeCodeCompatibility(${1:optional_names}, 'IncludeSubfolders', ${2:value})'''
         description: '''analyzeCodeCompatibility(optional_names, 'IncludeSubfolders', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/analyzeCodeCompatibility.html'
 

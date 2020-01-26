@@ -5,436 +5,509 @@
         prefix: "brisqueModel"
         body: '''${1:Model} = brisqueModel(${1:Alpha}, ${2:Bias}, ${3:SupportVectors}, ${4:Scale})'''
         description: '''Model = brisqueModel(Alpha, Bias, SupportVectors, Scale)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/brisqueModel.html'
 
 
     "imsegkmeans":
         prefix: "imsegkmeans"
         body: '''[${1:L}, ${2:C}] = imsegkmeans(${1:I}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
         description: '''[L, C] = imsegkmeans(I, k, 'NormalizeInput', value, 'NumAttempts', value, 'MaxIterations', value, 'Threshold', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsegkmeans.html'
 
 
     "dice":
         prefix: "dice"
         body: '''${1:SIMILARITY} = dice(${1:BW1}, ${2:BW2})'''
         description: '''SIMILARITY = dice(BW1, BW2)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/dice.html'
 
 
     "lazysnapping":
         prefix: "lazysnapping"
         body: '''${1:BW} = lazysnapping(${1:A}, ${2:L}, ${3:FOREMASK}, ${4:BACKMASK}, 'Connectivity', ${5:value}, 'EdgeWeightScaleFactor', ${6:value})'''
         description: '''BW = lazysnapping(A, L, FOREMASK, BACKMASK, 'Connectivity', value, 'EdgeWeightScaleFactor', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/lazysnapping.html'
 
 
     "plotChromaticity":
         prefix: "plotChromaticity"
         body: '''plotChromaticity(${1:colorTable}, 'displayROIIndex', ${2:value}, 'Parent', ${3:value})'''
         description: '''plotChromaticity(colorTable, 'displayROIIndex', value, 'Parent', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/plotChromaticity.html'
 
 
     "imdiffusefilt":
         prefix: "imdiffusefilt"
         body: '''${1:B} = imdiffusefilt(${1:A}, 'GradientThreshold', ${2:value}, 'NumberOfIterations', ${3:value}, 'Connectivity', ${4:value}, 'ConductionMethod', ${5:value})'''
         description: '''B = imdiffusefilt(A, 'GradientThreshold', value, 'NumberOfIterations', value, 'Connectivity', value, 'ConductionMethod', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imdiffusefilt.html'
 
 
     "grabcut":
         prefix: "grabcut"
         body: '''${1:BW} = grabcut(${1:A}, ${2:L}, ${3:ROI}, ${4:optional_FOREMASK}, ${5:optional_BACKMASK}, 'Connectivity', ${6:value}, 'MaximumIterations', ${7:value})'''
         description: '''BW = grabcut(A, L, ROI, optional_FOREMASK, optional_BACKMASK, 'Connectivity', value, 'MaximumIterations', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/grabcut.html'
 
 
     "gradientweight":
         prefix: "gradientweight"
         body: '''${1:W} = gradientweight(${1:I}, ${2:optional_sigma}, 'RolloffFactor', ${3:value}, 'WeightCutoff', ${4:value})'''
         description: '''W = gradientweight(I, optional_sigma, 'RolloffFactor', value, 'WeightCutoff', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/gradientweight.html'
 
 
     "imcrop":
         prefix: "imcrop"
         body: '''${1:BW} = imcrop(${1:I}, ${2:optional_RECT})'''
         description: '''BW = imcrop(I, optional_RECT)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imcrop.html'
 
 
     "imnlmfilt":
         prefix: "imnlmfilt"
         body: '''[${1:B}, ${2:DegreeOfSmoothing}] = imnlmfilt(${1:A}, 'ComparisonWindowSize', ${2:value}, 'DegreeOfSmoothing', ${3:value}, 'SearchWindowSize', ${4:value})'''
         description: '''[B, DegreeOfSmoothing] = imnlmfilt(A, 'ComparisonWindowSize', value, 'DegreeOfSmoothing', value, 'SearchWindowSize', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imnlmfilt.html'
 
 
     "blendexposure":
         prefix: "blendexposure"
         body: '''${1:E} = blendexposure(${1:I1}, ${2:I2}, 'Contrast', ${3:value}, 'Saturation', ${4:value}, 'WellExposedness', ${5:value}, 'ReduceStrongLight', ${6:value})'''
         description: '''E = blendexposure(I1, I2, 'Contrast', value, 'Saturation', value, 'WellExposedness', value, 'ReduceStrongLight', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/blendexposure.html'
 
 
     "bwselect3":
         prefix: "bwselect3"
         body: '''${1:J} = bwselect3(${1:X}, ${2:Y}, ${3:Z}, ${4:V}, ${5:Xi}, ${6:Yi}, ${7:Zi}, ${8:optional_N})'''
         description: '''J = bwselect3(X, Y, Z, V, Xi, Yi, Zi, optional_N)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwselect3.html'
 
 
     "esfrChart":
         prefix: "esfrChart"
         body: '''${1:CHART} = esfrChart(${1:A}, 'RegistrationPoints', ${2:value})'''
         description: '''CHART = esfrChart(A, 'RegistrationPoints', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/esfrChart.html'
 
 
     "imflatfield":
         prefix: "imflatfield"
         body: '''${1:B} = imflatfield(${1:A}, ${2:Sigma}, ${3:optional_Mask}, 'FilterSize', ${4:value})'''
         description: '''B = imflatfield(A, Sigma, optional_Mask, 'FilterSize', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imflatfield.html'
 
 
     "randomAffine2d":
         prefix: "randomAffine2d"
         body: '''randomAffine2d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'Rotation', ${3:value}, 'Scale', ${4:value}, 'XShear', ${5:value}, 'YShear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value})'''
         description: '''randomAffine2d('XReflection', value, 'YReflection', value, 'Rotation', value, 'Scale', value, 'XShear', value, 'YShear', value, 'XTranslation', value, 'YTranslation', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/randomAffine2d.html'
 
 
     "imbinarize":
         prefix: "imbinarize"
         body: '''${1:BW} = imbinarize(${1:I}, ${2:Method}, 'Sensitivity', ${3:value}, 'ForegroundPolarity', ${4:value})'''
         description: '''BW = imbinarize(I, Method, 'Sensitivity', value, 'ForegroundPolarity', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imbinarize.html'
 
 
     "measureColor":
         prefix: "measureColor"
         body: '''[${1:colorTable}, ${2:colorCorrectionMatrix}] = measureColor(${1:CHART})'''
         description: '''[colorTable, colorCorrectionMatrix] = measureColor(CHART)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/measureColor.html'
 
 
     "bfscore":
         prefix: "bfscore"
         body: '''[${1:SCORE}, ${2:PRECISION}, ${3:RECALL}] = bfscore(${1:PREDICTION}, ${2:GROUNDTRUTH}, ${3:optional_THRESHOLD})'''
         description: '''[SCORE, PRECISION, RECALL] = bfscore(PREDICTION, GROUNDTRUTH, optional_THRESHOLD)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bfscore.html'
 
 
     "imregmtb":
         prefix: "imregmtb"
         body: '''[${1:R1}, ${2:shifts}] = imregmtb(${1:M1}, ${2:M2})'''
         description: '''[R1, shifts] = imregmtb(M1, M2)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imregmtb.html'
 
 
     "fspecial3":
         prefix: "fspecial3"
         body: '''${1:H} = fspecial3(${1:TYPE}, ${2:optional_direction})'''
         description: '''H = fspecial3(TYPE, optional_direction)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fspecial3.html'
 
 
     "jitterColorHSV":
         prefix: "jitterColorHSV"
         body: '''jitterColorHSV(${1:A}, 'Contrast', ${2:value}, 'Brightness', ${3:value}, 'Hue', ${4:value}, 'Saturation', ${5:value})'''
         description: '''jitterColorHSV(A, 'Contrast', value, 'Brightness', value, 'Hue', value, 'Saturation', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/jitterColorHSV.html'
 
 
     "inpaintExemplar":
         prefix: "inpaintExemplar"
         body: '''${1:J} = inpaintExemplar(${1:I}, ${2:mask}, 'FillOrder', ${3:value}, 'PatchSize', ${4:value})'''
         description: '''J = inpaintExemplar(I, mask, 'FillOrder', value, 'PatchSize', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/inpaintExemplar.html'
 
 
     "bwferet":
         prefix: "bwferet"
         body: '''[${1:Out}, ${2:L}] = bwferet(${1:BW}, ${2:optional_Properties})'''
         description: '''[Out, L] = bwferet(BW, optional_Properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwferet.html'
 
 
     "regionprops3":
         prefix: "regionprops3"
         body: '''${1:stats} = regionprops3(${1:BW}, ${2:V}, ${3:optional_Properties})'''
         description: '''stats = regionprops3(BW, V, optional_Properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/regionprops3.html'
 
 
     "bwdist":
         prefix: "bwdist"
         body: '''[${1:D}, ${2:IDX}] = bwdist(${1:BW}, ${2:optional_METHOD})'''
         description: '''[D, IDX] = bwdist(BW, optional_METHOD)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwdist.html'
 
 
     "randomAffine3d":
         prefix: "randomAffine3d"
         body: '''randomAffine3d('XReflection', ${1:value}, 'YReflection', ${2:value}, 'ZReflection', ${3:value}, 'Rotation', ${4:value}, 'Scale', ${5:value}, 'Shear', ${6:value}, 'XTranslation', ${7:value}, 'YTranslation', ${8:value}, 'ZTranslation', ${9:value})'''
         description: '''randomAffine3d('XReflection', value, 'YReflection', value, 'ZReflection', value, 'Rotation', value, 'Scale', value, 'Shear', value, 'XTranslation', value, 'YTranslation', value, 'ZTranslation', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/randomAffine3d.html'
 
 
     "regionprops":
         prefix: "regionprops"
         body: '''${1:Out} = regionprops(${1:optional_Option}, ${2:BW}, ${3:optional_Properties})'''
         description: '''Out = regionprops(optional_Option, BW, optional_Properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/regionprops.html'
 
 
     "measureNoise":
         prefix: "measureNoise"
         body: '''${1:noiseTable} = measureNoise(${1:CHART})'''
         description: '''noiseTable = measureNoise(CHART)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/measureNoise.html'
 
 
     "measureIlluminant":
         prefix: "measureIlluminant"
         body: '''${1:illum} = measureIlluminant(${1:CHART})'''
         description: '''illum = measureIlluminant(CHART)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/measureIlluminant.html'
 
 
     "imrotate3":
         prefix: "imrotate3"
         body: '''${1:B} = imrotate3(${1:V}, ${2:Angle}, ${3:W}, ${4:optional_Method}, ${5:optional_BBOX}, 'FillValues', ${6:value})'''
         description: '''B = imrotate3(V, Angle, W, optional_Method, optional_BBOX, 'FillValues', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imrotate3.html'
 
 
     "localcontrast":
         prefix: "localcontrast"
         body: '''${1:B} = localcontrast(${1:A}, ${2:edgeThreshold}, ${3:optional_amount})'''
         description: '''B = localcontrast(A, edgeThreshold, optional_amount)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/localcontrast.html'
 
 
     "niqe":
         prefix: "niqe"
         body: '''${1:Score} = niqe(${1:A}, ${2:optional_Model})'''
         description: '''Score = niqe(A, optional_Model)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niqe.html'
 
 
     "superpixels3":
         prefix: "superpixels3"
         body: '''[${1:L}, ${2:NumLabels}] = superpixels3(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'Method', ${4:value}, 'NumIterations', ${5:value})'''
         description: '''[L, NumLabels] = superpixels3(A, N, 'Compactness', value, 'Method', value, 'NumIterations', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/superpixels3.html'
 
 
     "imreducehaze":
         prefix: "imreducehaze"
         body: '''[${1:D}, ${2:T}, ${3:L}] = imreducehaze(${1:X}, ${2:optional_amount}, 'Method', ${3:value}, 'AtmosphericLight', ${4:value}, 'ContrastEnhancement', ${5:value}, 'BoostAmount', ${6:value})'''
         description: '''[D, T, L] = imreducehaze(X, optional_amount, 'Method', value, 'AtmosphericLight', value, 'ContrastEnhancement', value, 'BoostAmount', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imreducehaze.html'
 
 
     "measureSharpness":
         prefix: "measureSharpness"
         body: '''[${1:sharpnessTable}, ${2:aggregateSharpnessTable}] = measureSharpness(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value}, 'PercentResponse', ${4:value})'''
         description: '''[sharpnessTable, aggregateSharpnessTable] = measureSharpness(CHART, 'ROIIndex', value, 'ROIOrientation', value, 'PercentResponse', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/measureSharpness.html'
 
 
     "labeloverlay":
         prefix: "labeloverlay"
         body: '''${1:B} = labeloverlay(${1:A}, ${2:L}, 'Colormap', ${3:value}, 'IncludedLabels', ${4:value}, 'Transparency', ${5:value})'''
         description: '''B = labeloverlay(A, L, 'Colormap', value, 'IncludedLabels', value, 'Transparency', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/labeloverlay.html'
 
 
     "bwmorph3":
         prefix: "bwmorph3"
         body: '''${1:J} = bwmorph3(${1:V}, ${2:Operation})'''
         description: '''J = bwmorph3(V, Operation)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bwmorph3.html'
 
 
     "imsplit":
         prefix: "imsplit"
         body: '''imsplit(${1:I})'''
         description: '''imsplit(I)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsplit.html'
 
 
     "measureChromaticAberration":
         prefix: "measureChromaticAberration"
         body: '''${1:aberrationTable} = measureChromaticAberration(${1:CHART}, 'ROIIndex', ${2:value}, 'ROIOrientation', ${3:value})'''
         description: '''aberrationTable = measureChromaticAberration(CHART, 'ROIIndex', value, 'ROIOrientation', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/measureChromaticAberration.html'
 
 
     "displayColorPatch":
         prefix: "displayColorPatch"
         body: '''displayColorPatch(${1:colorTable}, 'displayROIIndex', ${2:value}, 'displayDeltaE', ${3:value}, 'Parent', ${4:value})'''
         description: '''displayColorPatch(colorTable, 'displayROIIndex', value, 'displayDeltaE', value, 'Parent', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/displayColorPatch.html'
 
 
     "graydiffweight":
         prefix: "graydiffweight"
         body: '''${1:W} = graydiffweight(${1:I}, ${2:refGrayVal}, ${3:optional_MASK}, ${4:optional_C}, 'RolloffFactor', ${5:value}, 'GrayDifferenceCutoff', ${6:value})'''
         description: '''W = graydiffweight(I, refGrayVal, optional_MASK, optional_C, 'RolloffFactor', value, 'GrayDifferenceCutoff', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/graydiffweight.html'
 
 
     "imlocalbrighten":
         prefix: "imlocalbrighten"
         body: '''[${1:B}, ${2:D}] = imlocalbrighten(${1:A}, ${2:optional_amount}, 'AlphaBlend', ${3:value})'''
         description: '''[B, D] = imlocalbrighten(A, optional_amount, 'AlphaBlend', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imlocalbrighten.html'
 
 
     "imrotate":
         prefix: "imrotate"
         body: '''${1:B} = imrotate(${1:A}, ${2:Angle}, ${3:optional_Method}, ${4:optional_BBOX})'''
         description: '''B = imrotate(A, Angle, optional_Method, optional_BBOX)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imrotate.html'
 
 
     "inpaintCoherent":
         prefix: "inpaintCoherent"
         body: '''${1:J} = inpaintCoherent(${1:I}, ${2:mask}, 'SmoothingFactor', ${3:value}, 'Radius', ${4:value})'''
         description: '''J = inpaintCoherent(I, mask, 'SmoothingFactor', value, 'Radius', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/inpaintCoherent.html'
 
 
     "locallapfilt":
         prefix: "locallapfilt"
         body: '''${1:B} = locallapfilt(${1:A}, ${2:sigma}, ${3:alpha}, ${4:optional_beta}, 'ColorMode', ${5:value}, 'NumIntensityLevels', ${6:value})'''
         description: '''B = locallapfilt(A, sigma, alpha, optional_beta, 'ColorMode', value, 'NumIntensityLevels', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/locallapfilt.html'
 
 
     "tonemapfarbman":
         prefix: "tonemapfarbman"
         body: '''${1:LDR} = tonemapfarbman(${1:HDR}, 'RangeCompression', ${2:value}, 'Saturation', ${3:value}, 'Exposure', ${4:value}, 'NumberOfScales', ${5:value}, 'Weights', ${6:value})'''
         description: '''LDR = tonemapfarbman(HDR, 'RangeCompression', value, 'Saturation', value, 'Exposure', value, 'NumberOfScales', value, 'Weights', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/tonemapfarbman.html'
 
 
     "imbilatfilt":
         prefix: "imbilatfilt"
         body: '''${1:B} = imbilatfilt(${1:A}, ${2:optional_DegreeOfSmoothing}, ${3:optional_SpatialSigma}, 'NeighborhoodSize', ${4:value}, 'Padding', ${5:value})'''
         description: '''B = imbilatfilt(A, optional_DegreeOfSmoothing, optional_SpatialSigma, 'NeighborhoodSize', value, 'Padding', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imbilatfilt.html'
 
 
     "fitniqe":
         prefix: "fitniqe"
         body: '''${1:Model} = fitniqe(${1:IMDS}, 'BlockSize', ${2:value}, 'SharpnessThreshold', ${3:value})'''
         description: '''Model = fitniqe(IMDS, 'BlockSize', value, 'SharpnessThreshold', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fitniqe.html'
 
 
     "imcrop3":
         prefix: "imcrop3"
         body: '''${1:VOUT} = imcrop3(${1:V}, ${2:Cuboid})'''
         description: '''VOUT = imcrop3(V, Cuboid)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imcrop3.html'
 
 
     "imsegkmeans3":
         prefix: "imsegkmeans3"
         body: '''[${1:L}, ${2:C}] = imsegkmeans3(${1:V}, ${2:k}, 'NormalizeInput', ${3:value}, 'NumAttempts', ${4:value}, 'MaxIterations', ${5:value}, 'Threshold', ${6:value})'''
         description: '''[L, C] = imsegkmeans3(V, k, 'NormalizeInput', value, 'NumAttempts', value, 'MaxIterations', value, 'Threshold', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsegkmeans3.html'
 
 
     "localtonemap":
         prefix: "localtonemap"
         body: '''${1:RGB} = localtonemap(${1:HDR}, 'RangeCompression', ${2:value}, 'EnhanceContrast', ${3:value})'''
         description: '''RGB = localtonemap(HDR, 'RangeCompression', value, 'EnhanceContrast', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/localtonemap.html'
 
 
     "burstinterpolant":
         prefix: "burstinterpolant"
         body: '''${1:E} = burstinterpolant(${1:imds}, ${2:tforms}, ${3:arg})'''
         description: '''E = burstinterpolant(imds, tforms, arg)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/burstinterpolant.html'
 
 
     "piqe":
         prefix: "piqe"
         body: '''[${1:Score}, ${2:ActivityMask}, ${3:NoticeableArtifactsMask}, ${4:NoiseMask}] = piqe(${1:A})'''
         description: '''[Score, ActivityMask, NoticeableArtifactsMask, NoiseMask] = piqe(A)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/piqe.html'
 
 
     "imdiffuseest":
         prefix: "imdiffuseest"
         body: '''[${1:gradientThreshold}, ${2:numberOfIterations}] = imdiffuseest(${1:A}, 'Connectivity', ${2:value}, 'ConductionMethod', ${3:value})'''
         description: '''[gradientThreshold, numberOfIterations] = imdiffuseest(A, 'Connectivity', value, 'ConductionMethod', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imdiffuseest.html'
 
 
     "integralImage":
         prefix: "integralImage"
         body: '''integralImage(${1:I}, ${2:optional_orientation})'''
         description: '''integralImage(I, optional_orientation)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/integralImage.html'
 
 
     "imsegfmm":
         prefix: "imsegfmm"
         body: '''${1:BW} = imsegfmm(${1:W}, ${2:MASK}, ${3:THRESH}, ${4:optional_C}, ${5:optional_R}, ${6:optional_P})'''
         description: '''BW = imsegfmm(W, MASK, THRESH, optional_C, optional_R, optional_P)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imsegfmm.html'
 
 
     "fitbrisque":
         prefix: "fitbrisque"
         body: '''${1:Model} = fitbrisque(${1:IMDS}, ${2:OpinionScore})'''
         description: '''Model = fitbrisque(IMDS, OpinionScore)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fitbrisque.html'
 
 
     "adaptthresh":
         prefix: "adaptthresh"
         body: '''${1:T} = adaptthresh(${1:I}, ${2:optional_Sensitivity}, 'NeighborhoodSize', ${3:value}, 'ForegroundPolarity', ${4:value}, 'Statistic', ${5:value})'''
         description: '''T = adaptthresh(I, optional_Sensitivity, 'NeighborhoodSize', value, 'ForegroundPolarity', value, 'Statistic', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/adaptthresh.html'
 
 
     "brisque":
         prefix: "brisque"
         body: '''${1:Score} = brisque(${1:A}, ${2:optional_Model})'''
         description: '''Score = brisque(A, optional_Model)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/brisque.html'
 
 
     "edge3":
         prefix: "edge3"
         body: '''${1:BW} = edge3(${1:V}, ${2:Method}, ${3:THRESH}, ${4:optional_edgeThinning})'''
         description: '''BW = edge3(V, Method, THRESH, optional_edgeThinning)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/edge3.html'
 
 
     "images.geotrans.Warper":
         prefix: "images.geotrans.Warper"
         body: '''${1:warper} = images.geotrans.Warper(${1:tform}, ${2:inputSize}, ${3:optional_outputRef}, 'Interpolation', ${4:value}, 'FillValue', ${5:value})'''
         description: '''warper = images.geotrans.Warper(tform, inputSize, optional_outputRef, 'Interpolation', value, 'FillValue', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/images.geotrans.Warper.html'
 
 
     "imadjustn":
         prefix: "imadjustn"
         body: '''${1:J} = imadjustn(${1:V}, ${2:optional_LowHighIn}, ${3:optional_LowHighOut}, ${4:optional_gamma})'''
         description: '''J = imadjustn(V, optional_LowHighIn, optional_LowHighOut, optional_gamma)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imadjustn.html'
 
 
     "jaccard":
         prefix: "jaccard"
         body: '''${1:SIMILARITY} = jaccard(${1:BW1}, ${2:BW2})'''
         description: '''SIMILARITY = jaccard(BW1, BW2)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/jaccard.html'
 
 
     "superpixels":
         prefix: "superpixels"
         body: '''[${1:L}, ${2:NumLabels}] = superpixels(${1:A}, ${2:N}, 'Compactness', ${3:value}, 'IsInputLab', ${4:value}, 'Method', ${5:value}, 'NumIterations', ${6:value})'''
         description: '''[L, NumLabels] = superpixels(A, N, 'Compactness', value, 'IsInputLab', value, 'Method', value, 'NumIterations', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/superpixels.html'
 
 
     "niqeModel":
         prefix: "niqeModel"
         body: '''${1:Model} = niqeModel(${1:Mean}, ${2:Covariance}, ${3:BlockSize}, ${4:SharpnessThreshold})'''
         description: '''Model = niqeModel(Mean, Covariance, BlockSize, SharpnessThreshold)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niqeModel.html'
 
 
     "activecontour":
         prefix: "activecontour"
         body: '''${1:BW} = activecontour(${1:A}, ${2:MASK}, ${3:optional_n}, ${4:optional_method}, 'SmoothFactor', ${5:value}, 'ContractionBias', ${6:value})'''
         description: '''BW = activecontour(A, MASK, optional_n, optional_method, 'SmoothFactor', value, 'ContractionBias', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/activecontour.html'
 
 
     "imfindcircles":
         prefix: "imfindcircles"
         body: '''[${1:Centers}, ${2:Radii}, ${3:Metric}] = imfindcircles(${1:A}, ${2:Radius range}, 'ObjectPolarity', ${3:value}, 'Method', ${4:value}, 'Sensitivity', ${5:value}, 'EdgeThreshold', ${6:value})'''
         description: '''[Centers, Radii, Metric] = imfindcircles(A, Radius range, 'ObjectPolarity', value, 'Method', value, 'Sensitivity', value, 'EdgeThreshold', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imfindcircles.html'
 
 
     "imhistmatch":
         prefix: "imhistmatch"
         body: '''[${1:B}, ${2:hgram}] = imhistmatch(${1:A}, ${2:REF}, ${3:optional_NBINS}, 'Method', ${4:value})'''
         description: '''[B, hgram] = imhistmatch(A, REF, optional_NBINS, 'Method', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imhistmatch.html'
 
 
     "imresize3":
         prefix: "imresize3"
         body: '''${1:B} = imresize3(${1:V}, ${2:Scale}, 'Method', ${3:value}, 'AntiAliasing', ${4:value}, 'OutputSize', ${5:value})'''
         description: '''B = imresize3(V, Scale, 'Method', value, 'AntiAliasing', value, 'OutputSize', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/imresize3.html'
 
 
     "plotSFR":
         prefix: "plotSFR"
         body: '''plotSFR(${1:sharpnessMeasurementTable}, 'ROIIndex', ${2:value}, 'displayLegend', ${3:value}, 'displayTitle', ${4:value}, 'Parent', ${5:value})'''
         description: '''plotSFR(sharpnessMeasurementTable, 'ROIIndex', value, 'displayLegend', value, 'displayTitle', value, 'Parent', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/plotSFR.html'
 
 
     "fibermetric":
         prefix: "fibermetric"
         body: '''${1:B} = fibermetric(${1:A}, ${2:optional_thickness}, 'ObjectPolarity', ${3:value}, 'StructureSensitivity', ${4:value})'''
         description: '''B = fibermetric(A, optional_thickness, 'ObjectPolarity', value, 'StructureSensitivity', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/fibermetric.html'
 
 
     "displayChart":
         prefix: "displayChart"
         body: '''displayChart(${1:CHART}, 'displayEdgeROIs', ${2:value}, 'displayGrayROIs', ${3:value}, 'displayColorROIs', ${4:value}, 'displayRegistrationPoints', ${5:value}, 'Parent', ${6:value})'''
         description: '''displayChart(CHART, 'displayEdgeROIs', value, 'displayGrayROIs', value, 'displayColorROIs', value, 'displayRegistrationPoints', value, 'Parent', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/displayChart.html'
 
 
     "affineOutputView":
         prefix: "affineOutputView"
         body: '''affineOutputView(${1:sizeA}, ${2:tform}, 'BoundsStyle', ${3:value})'''
         description: '''affineOutputView(sizeA, tform, 'BoundsStyle', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/affineOutputView.html'
 

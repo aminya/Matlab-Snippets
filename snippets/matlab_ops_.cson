@@ -5,130 +5,152 @@
         prefix: "bitget"
         body: '''bitget(${1:A}, ${2:bit}, ${3:assumedtype})'''
         description: '''bitget(A, bit, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitget.html'
 
 
     "setxor":
         prefix: "setxor"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = setxor(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[C, ia, ib] = setxor(A, B, optional_'rows')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setxor.html'
 
 
     "ismember":
         prefix: "ismember"
         body: '''[${1:Lia}, ${2:Locb}] = ismember(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[Lia, Locb] = ismember(A, B, optional_'rows')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismember.html'
 
 
     "any":
         prefix: "any"
         body: '''any(${1:A}, ${2:optional_dim})'''
         description: '''any(A, optional_dim)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/any.html'
 
 
     "vertcat":
         prefix: "vertcat"
         body: '''${1:C} = vertcat(${1:A})'''
         description: '''C = vertcat(A)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/vertcat.html'
 
 
     "bitset":
         prefix: "bitset"
         body: '''bitset(${1:A}, ${2:bit}, ${3:optional_V}, ${4:assumedtype})'''
         description: '''bitset(A, bit, optional_V, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitset.html'
 
 
     "subsref":
         prefix: "subsref"
         body: '''${1:B} = subsref(${1:A}, ${2:S})'''
         description: '''B = subsref(A, S)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/subsref.html'
 
 
     "bitand":
         prefix: "bitand"
         body: '''bitand(${1:A}, ${2:B}, ${3:assumedtype})'''
         description: '''bitand(A, B, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitand.html'
 
 
     "intersect":
         prefix: "intersect"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = intersect(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[C, ia, ib] = intersect(A, B, optional_'rows')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/intersect.html'
 
 
     "idivide":
         prefix: "idivide"
         body: '''idivide(${1:A}, ${2:B}, ${3:opt})'''
         description: '''idivide(A, B, opt)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/idivide.html'
 
 
     "bitor":
         prefix: "bitor"
         body: '''bitor(${1:A}, ${2:B}, ${3:assumedtype})'''
         description: '''bitor(A, B, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitor.html'
 
 
     "setdiff":
         prefix: "setdiff"
         body: '''[${1:C}, ${2:ia}] = setdiff(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[C, ia] = setdiff(A, B, optional_'rows')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setdiff.html'
 
 
     "subsasgn":
         prefix: "subsasgn"
         body: '''${1:A} = subsasgn(${1:A}, ${2:S}, ${3:B})'''
         description: '''A = subsasgn(A, S, B)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/subsasgn.html'
 
 
     "unique":
         prefix: "unique"
         body: '''[${1:C}, ${2:ia}, ${3:ic}] = unique(${1:A}, ${2:optional_'rows'}, ${3:optional_occurrence})'''
         description: '''[C, ia, ic] = unique(A, optional_'rows', optional_occurrence)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unique.html'
 
 
     "bitcmp":
         prefix: "bitcmp"
         body: '''bitcmp(${1:A}, ${2:assumedtype})'''
         description: '''bitcmp(A, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitcmp.html'
 
 
     "ismembertol":
         prefix: "ismembertol"
         body: '''[${1:LIA}, ${2:L}] = ismembertol(${1:A}, ${2:B}, ${3:optional_tol}, 'OutputAllIndices', ${4:value}, 'ByRows', ${5:value}, 'DataScale', ${6:value})'''
         description: '''[LIA, L] = ismembertol(A, B, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ismembertol.html'
 
 
     "union":
         prefix: "union"
         body: '''[${1:C}, ${2:ia}, ${3:ib}] = union(${1:A}, ${2:B}, ${3:optional_'rows'})'''
         description: '''[C, ia, ib] = union(A, B, optional_'rows')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/union.html'
 
 
     "bitxor":
         prefix: "bitxor"
         body: '''bitxor(${1:A}, ${2:B}, ${3:assumedtype})'''
         description: '''bitxor(A, B, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitxor.html'
 
 
     "all":
         prefix: "all"
         body: '''all(${1:A}, ${2:optional_dim})'''
         description: '''all(A, optional_dim)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/all.html'
 
 
     "bitshift":
         prefix: "bitshift"
         body: '''bitshift(${1:A}, ${2:k}, ${3:assumedtype})'''
         description: '''bitshift(A, k, assumedtype)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/bitshift.html'
 
 
     "uniquetol":
         prefix: "uniquetol"
         body: '''[${1:C}, ${2:IA}, ${3:IC}] = uniquetol(${1:A}, ${2:optional_tol}, 'OutputAllIndices', ${3:value}, 'ByRows', ${4:value}, 'DataScale', ${5:value})'''
         description: '''[C, IA, IC] = uniquetol(A, optional_tol, 'OutputAllIndices', value, 'ByRows', value, 'DataScale', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uniquetol.html'
 
 
     "horzcat":
         prefix: "horzcat"
         body: '''${1:C} = horzcat(${1:A})'''
         description: '''C = horzcat(A)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/horzcat.html'
 

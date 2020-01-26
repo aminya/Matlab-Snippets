@@ -5,16 +5,19 @@
         prefix: "yyaxis"
         body: '''yyaxis(${1:optional_ax}, ${2:optional_side})'''
         description: '''yyaxis(optional_ax, optional_side)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/yyaxis.html'
 
 
     "axes":
         prefix: "axes"
         body: '''${1:h} = axes(${1:optional_parent}, ${2:properties})'''
         description: '''h = axes(optional_parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/axes.html'
 
 
     "hold":
         prefix: "hold"
         body: '''hold(${1:optional_ax}, ${2:optional_action})'''
         description: '''hold(optional_ax, optional_action)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hold.html'
 

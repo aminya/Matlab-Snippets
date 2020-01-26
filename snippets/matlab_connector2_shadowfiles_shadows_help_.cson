@@ -5,4 +5,5 @@
         prefix: "help"
         body: '''help(${1:optional_filename})'''
         description: '''help(optional_filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/help.html'
 

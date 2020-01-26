@@ -38,7 +38,7 @@ function insert_serial!(A::Vector, index::Integer, item::Vector)
     end
 end
 
-function matlab2atom(data)
+function matlab2atom(data, group)
     final = """
     # MATLAB snippets generated using https://github.com/aminya/Matlab-Snippets
     '.source.matlab, source.m':
@@ -147,6 +147,7 @@ function matlab2atom(data)
                 prefix: "$fun"
                 body: '''$body'''
                 description: '''$description'''
+                descriptionMoreURL: 'https://www.mathworks.com/help/$group/ref/$fun.html'
 
         """
         catch
@@ -322,8 +323,9 @@ function run_matlab2atom()
 
     println("conversion started")
     for file in files
+        group = match(r"toolbox\/([a-z]+)\/", file).captures[1]
         data = JSON.parsefile(file; dicttype=Dict, inttype=Int64, use_mmap=true)
-        text = matlab2atom(data)
+        text = matlab2atom(data, group)
 
         # rename file
         file = foldl(replace,

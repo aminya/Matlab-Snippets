@@ -5,130 +5,152 @@
         prefix: "enu2ecef"
         body: '''[${1:X}, ${2:Y}, ${3:Z}] = enu2ecef(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[X, Y, Z] = enu2ecef(xEast, yNorth, zUp, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/enu2ecef.html'
 
 
     "ecef2enuv":
         prefix: "ecef2enuv"
         body: '''[${1:uEast}, ${2:vNorth}, ${3:wUp}] = ecef2enuv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[uEast, vNorth, wUp] = ecef2enuv(U, V, W, lat0, lon0, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecef2enuv.html'
 
 
     "ecefOffset":
         prefix: "ecefOffset"
         body: '''[${1:deltaX}, ${2:deltaY}, ${3:deltaZ}] = ecefOffset(${1:spheroid}, ${2:lat1}, ${3:lon1}, ${4:h1}, ${5:lat2}, ${6:lon2}, ${7:h2}, ${8:angleUnit})'''
         description: '''[deltaX, deltaY, deltaZ] = ecefOffset(spheroid, lat1, lon1, h1, lat2, lon2, h2, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecefOffset.html'
 
 
     "aer2geodetic":
         prefix: "aer2geodetic"
         body: '''[${1:lat}, ${2:lon}, ${3:h}] = aer2geodetic(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[lat, lon, h] = aer2geodetic(az, elev, slantRange, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/aer2geodetic.html'
 
 
     "ned2ecef":
         prefix: "ned2ecef"
         body: '''[${1:X}, ${2:Y}, ${3:Z}] = ned2ecef(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[X, Y, Z] = ned2ecef(xNorth, yEast, zDown, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ned2ecef.html'
 
 
     "geodetic2ned":
         prefix: "geodetic2ned"
         body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = geodetic2ned(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[xNorth, yEast, zDown] = geodetic2ned(lat, lon, h, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/geodetic2ned.html'
 
 
     "enu2ecefv":
         prefix: "enu2ecefv"
         body: '''[${1:U}, ${2:V}, ${3:W}] = enu2ecefv(${1:uEast}, ${2:vNorth}, ${3:wUp}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[U, V, W] = enu2ecefv(uEast, vNorth, wUp, lat0, lon0, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/enu2ecefv.html'
 
 
     "ecef2enu":
         prefix: "ecef2enu"
         body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = ecef2enu(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[xEast, yNorth, zUp] = ecef2enu(X, Y, Z, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecef2enu.html'
 
 
     "aer2ned":
         prefix: "aer2ned"
         body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = aer2ned(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
         description: '''[xNorth, yEast, zDown] = aer2ned(az, elev, slantRange, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/aer2ned.html'
 
 
     "geodetic2enu":
         prefix: "geodetic2enu"
         body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = geodetic2enu(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[xEast, yNorth, zUp] = geodetic2enu(lat, lon, h, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/geodetic2enu.html'
 
 
     "map.geodesy.isDegree":
         prefix: "map.geodesy.isDegree"
         body: '''${1:tf} = map.geodesy.isDegree(${1:angleUnit})'''
         description: '''tf = map.geodesy.isDegree(angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/map.geodesy.isDegree.html'
 
 
     "geodetic2aer":
         prefix: "geodetic2aer"
         body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = geodetic2aer(${1:lat}, ${2:lon}, ${3:h}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[az, elev, slantRange] = geodetic2aer(lat, lon, h, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/geodetic2aer.html'
 
 
     "ecef2aer":
         prefix: "ecef2aer"
         body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ecef2aer(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[az, elev, slantRange] = ecef2aer(X, Y, Z, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecef2aer.html'
 
 
     "enu2geodetic":
         prefix: "enu2geodetic"
         body: '''[${1:lat}, ${2:lon}, ${3:h}] = enu2geodetic(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[lat, lon, h] = enu2geodetic(xEast, yNorth, zUp, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/enu2geodetic.html'
 
 
     "ecef2geodetic":
         prefix: "ecef2geodetic"
         body: '''[${1:lat}, ${2:lon}, ${3:alt}] = ecef2geodetic(${1:spheroid}, ${2:x}, ${3:y}, ${4:z}, ${5:angleUnit})'''
         description: '''[lat, lon, alt] = ecef2geodetic(spheroid, x, y, z, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecef2geodetic.html'
 
 
     "ned2ecefv":
         prefix: "ned2ecefv"
         body: '''[${1:U}, ${2:V}, ${3:W}] = ned2ecefv(${1:uNorth}, ${2:vEast}, ${3:wDown}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[U, V, W] = ned2ecefv(uNorth, vEast, wDown, lat0, lon0, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ned2ecefv.html'
 
 
     "ecef2nedv":
         prefix: "ecef2nedv"
         body: '''[${1:uNorth}, ${2:vEast}, ${3:wDown}] = ecef2nedv(${1:U}, ${2:V}, ${3:W}, ${4:lat0}, ${5:lon0}, ${6:angleUnit})'''
         description: '''[uNorth, vEast, wDown] = ecef2nedv(U, V, W, lat0, lon0, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecef2nedv.html'
 
 
     "enu2aer":
         prefix: "enu2aer"
         body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = enu2aer(${1:xEast}, ${2:yNorth}, ${3:zUp}, ${4:angleUnit})'''
         description: '''[az, elev, slantRange] = enu2aer(xEast, yNorth, zUp, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/enu2aer.html'
 
 
     "ecef2ned":
         prefix: "ecef2ned"
         body: '''[${1:xNorth}, ${2:yEast}, ${3:zDown}] = ecef2ned(${1:X}, ${2:Y}, ${3:Z}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[xNorth, yEast, zDown] = ecef2ned(X, Y, Z, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ecef2ned.html'
 
 
     "aer2ecef":
         prefix: "aer2ecef"
         body: '''[${1:X}, ${2:Y}, ${3:Z}] = aer2ecef(${1:az}, ${2:elev}, ${3:slantRange}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[X, Y, Z] = aer2ecef(az, elev, slantRange, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/aer2ecef.html'
 
 
     "geodetic2ecef":
         prefix: "geodetic2ecef"
         body: '''[${1:x}, ${2:y}, ${3:z}] = geodetic2ecef(${1:spheroid}, ${2:lat}, ${3:lon}, ${4:h}, ${5:angleUnit})'''
         description: '''[x, y, z] = geodetic2ecef(spheroid, lat, lon, h, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/geodetic2ecef.html'
 
 
     "ned2geodetic":
         prefix: "ned2geodetic"
         body: '''[${1:lat}, ${2:lon}, ${3:h}] = ned2geodetic(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:lat0}, ${5:lon0}, ${6:h0}, ${7:spheroid}, ${8:angleUnit})'''
         description: '''[lat, lon, h] = ned2geodetic(xNorth, yEast, zDown, lat0, lon0, h0, spheroid, angleUnit)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/ned2geodetic.html'
 

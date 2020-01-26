@@ -5,124 +5,145 @@
         prefix: "uicheckbox"
         body: '''uicheckbox(${1:optional_Parent}, ${2:properties})'''
         description: '''uicheckbox(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uicheckbox.html'
 
 
     "uilistbox":
         prefix: "uilistbox"
         body: '''uilistbox(${1:optional_Parent}, ${2:properties})'''
         description: '''uilistbox(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uilistbox.html'
 
 
     "uiswitch":
         prefix: "uiswitch"
         body: '''uiswitch(${1:Style}, ${2:properties})'''
         description: '''uiswitch(Style, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiswitch.html'
 
 
     "uihtml":
         prefix: "uihtml"
         body: '''uihtml(${1:properties})'''
         description: '''uihtml(properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uihtml.html'
 
 
     "uigridlayout":
         prefix: "uigridlayout"
         body: '''uigridlayout(${1:optional_Parent}, ${2:optional_sz}, ${3:properties})'''
         description: '''uigridlayout(optional_Parent, optional_sz, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigridlayout.html'
 
 
     "uitreenode":
         prefix: "uitreenode"
         body: '''uitreenode(${1:Parent}, ${2:sibling}, ${3:optional_location}, ${4:properties})'''
         description: '''uitreenode(Parent, sibling, optional_location, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitreenode.html'
 
 
     "uispinner":
         prefix: "uispinner"
         body: '''uispinner(${1:optional_Parent}, ${2:properties})'''
         description: '''uispinner(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uispinner.html'
 
 
     "uitree":
         prefix: "uitree"
         body: '''uitree(${1:optional_Parent}, ${2:properties})'''
         description: '''uitree(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitree.html'
 
 
     "uilamp":
         prefix: "uilamp"
         body: '''uilamp(${1:optional_Parent}, ${2:properties})'''
         description: '''uilamp(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uilamp.html'
 
 
     "uilabel":
         prefix: "uilabel"
         body: '''uilabel(${1:optional_Parent}, ${2:properties})'''
         description: '''uilabel(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uilabel.html'
 
 
     "uidatepicker":
         prefix: "uidatepicker"
         body: '''uidatepicker(${1:optional_Parent}, ${2:properties})'''
         description: '''uidatepicker(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uidatepicker.html'
 
 
     "uibutton":
         prefix: "uibutton"
         body: '''uibutton(${1:Style}, ${2:properties})'''
         description: '''uibutton(Style, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uibutton.html'
 
 
     "uigauge":
         prefix: "uigauge"
         body: '''uigauge(${1:Style}, ${2:properties})'''
         description: '''uigauge(Style, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uigauge.html'
 
 
     "uieditfield":
         prefix: "uieditfield"
         body: '''uieditfield(${1:Style}, ${2:properties})'''
         description: '''uieditfield(Style, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uieditfield.html'
 
 
     "uiknob":
         prefix: "uiknob"
         body: '''uiknob(${1:Style}, ${2:properties})'''
         description: '''uiknob(Style, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiknob.html'
 
 
     "uidropdown":
         prefix: "uidropdown"
         body: '''uidropdown(${1:optional_Parent}, ${2:properties})'''
         description: '''uidropdown(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uidropdown.html'
 
 
     "uiimage":
         prefix: "uiimage"
         body: '''uiimage(${1:optional_Parent}, ${2:properties})'''
         description: '''uiimage(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiimage.html'
 
 
     "uiradiobutton":
         prefix: "uiradiobutton"
         body: '''uiradiobutton(${1:optional_Parent}, ${2:properties})'''
         description: '''uiradiobutton(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uiradiobutton.html'
 
 
     "uislider":
         prefix: "uislider"
         body: '''uislider(${1:optional_Parent}, ${2:properties})'''
         description: '''uislider(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uislider.html'
 
 
     "uitogglebutton":
         prefix: "uitogglebutton"
         body: '''uitogglebutton(${1:optional_Parent}, ${2:properties})'''
         description: '''uitogglebutton(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitogglebutton.html'
 
 
     "uitextarea":
         prefix: "uitextarea"
         body: '''uitextarea(${1:optional_Parent}, ${2:properties})'''
         description: '''uitextarea(optional_Parent, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/uitextarea.html'
 

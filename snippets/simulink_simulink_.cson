@@ -5,112 +5,131 @@
         prefix: "save_system"
         body: '''save_system(${1:modelname}, ${2:optional_filename}, 'ExportToVersion', ${3:value}, 'ErrorIfShadowed', ${4:value}, 'BreakUserLinks', ${5:value}, 'BreakToolboxLinks', ${6:value}, 'OverwriteIfChangedOnDisk', ${7:value}, 'SaveDirtyReferencedModels', ${8:value}, 'SaveModelWorkspace', ${9:value}, 'AllowPrompt', ${10:value})'''
         description: '''save_system(modelname, optional_filename, 'ExportToVersion', value, 'ErrorIfShadowed', value, 'BreakUserLinks', value, 'BreakToolboxLinks', value, 'OverwriteIfChangedOnDisk', value, 'SaveDirtyReferencedModels', value, 'SaveModelWorkspace', value, 'AllowPrompt', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/save_system.html'
 
 
     "parsim":
         prefix: "parsim"
         body: '''parsim(${1:in}, 'AttachedFiles', ${2:value}, 'CleanupFcn', ${3:value}, 'RunInBackground', ${4:value}, 'SetupFcn', ${5:value}, 'ShowProgress', ${6:value}, 'UseFastRestart', ${7:value}, 'TransferBaseWorkspaceVariables', ${8:value}, 'ShowSimulationManager', ${9:value}, 'ManageDependencies', ${10:value}, 'StopOnError', ${11:value})'''
         description: '''parsim(in, 'AttachedFiles', value, 'CleanupFcn', value, 'RunInBackground', value, 'SetupFcn', value, 'ShowProgress', value, 'UseFastRestart', value, 'TransferBaseWorkspaceVariables', value, 'ShowSimulationManager', value, 'ManageDependencies', value, 'StopOnError', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/parsim.html'
 
 
     "sldebug":
         prefix: "sldebug"
         body: '''sldebug(${1:filename}, ${2:optional_varargin})'''
         description: '''sldebug(filename, optional_varargin)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/sldebug.html'
 
 
     "find_mdlrefs":
         prefix: "find_mdlrefs"
         body: '''[${1:refModels}, ${2:modelBlocks}] = find_mdlrefs(${1:filename}, 'AllLevels', ${2:value}, 'IncludeProtectedModels', ${3:value}, 'Variants', ${4:value}, 'IncludeCommented', ${5:value}, 'KeepModelsLoaded', ${6:value})'''
         description: '''[refModels, modelBlocks] = find_mdlrefs(filename, 'AllLevels', value, 'IncludeProtectedModels', value, 'Variants', value, 'IncludeCommented', value, 'KeepModelsLoaded', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/find_mdlrefs.html'
 
 
     "Simulink.SubSystem.copyContentsToBlockDiagram":
         prefix: "Simulink.SubSystem.copyContentsToBlockDiagram"
         body: '''Simulink.SubSystem.copyContentsToBlockDiagram(${1:subsys}, ${2:filename})'''
         description: '''Simulink.SubSystem.copyContentsToBlockDiagram(subsys, filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.SubSystem.copyContentsToBlockDiagram.html'
 
 
     "slbuild":
         prefix: "slbuild"
         body: '''slbuild(${1:filename}, ${2:Mode}, 'UpdateThisModelReferenceTarget', ${3:value})'''
         description: '''slbuild(filename, Mode, 'UpdateThisModelReferenceTarget', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/slbuild.html'
 
 
     "open_system":
         prefix: "open_system"
         body: '''open_system(${1:filename}, ${2:optional_varargin})'''
         description: '''open_system(filename, optional_varargin)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/open_system.html'
 
 
     "Simulink.SubSystem.deleteContents":
         prefix: "Simulink.SubSystem.deleteContents"
         body: '''Simulink.SubSystem.deleteContents(${1:subsys})'''
         description: '''Simulink.SubSystem.deleteContents(subsys)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.SubSystem.deleteContents.html'
 
 
     "Simulink.findBlocksOfType":
         prefix: "Simulink.findBlocksOfType"
         body: '''${1:blockHandles} = Simulink.findBlocksOfType(${1:modelname}, ${2:BlockType}, ${3:FindOptions})'''
         description: '''blockHandles = Simulink.findBlocksOfType(modelname, BlockType, FindOptions)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.findBlocksOfType.html'
 
 
     "Simulink.FindOptions":
         prefix: "Simulink.FindOptions"
         body: '''${1:FindOptions} = Simulink.FindOptions('RegExp', ${1:value}, 'CaseSensitive', ${2:value}, 'FollowLinks', ${3:value}, 'LookUnderMasks', ${4:value}, 'IncludeCommented', ${5:value}, 'SearchDepth', ${6:value}, 'Variants', ${7:value}, 'LoadFullyIfNeeded', ${8:value})'''
         description: '''FindOptions = Simulink.FindOptions('RegExp', value, 'CaseSensitive', value, 'FollowLinks', value, 'LookUnderMasks', value, 'IncludeCommented', value, 'SearchDepth', value, 'Variants', value, 'LoadFullyIfNeeded', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.FindOptions.html'
 
 
     "load_system":
         prefix: "load_system"
         body: '''load_system(${1:filename})'''
         description: '''load_system(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/load_system.html'
 
 
     "Simulink.allBlockDiagrams":
         prefix: "Simulink.allBlockDiagrams"
         body: '''${1:blockDiagramHandles} = Simulink.allBlockDiagrams(${1:optional_blockDiagramType})'''
         description: '''blockDiagramHandles = Simulink.allBlockDiagrams(optional_blockDiagramType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.allBlockDiagrams.html'
 
 
     "Simulink.BlockDiagram.copyContentsToSubsystem":
         prefix: "Simulink.BlockDiagram.copyContentsToSubsystem"
         body: '''Simulink.BlockDiagram.copyContentsToSubsystem(${1:filename}, ${2:subsys})'''
         description: '''Simulink.BlockDiagram.copyContentsToSubsystem(filename, subsys)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.BlockDiagram.copyContentsToSubsystem.html'
 
 
     "sim":
         prefix: "sim"
         body: '''sim(${1:in}, 'CleanupFcn', ${2:value}, 'SetupFcn', ${3:value}, 'ShowProgress', ${4:value}, 'UseFastRestart', ${5:value}, 'ShowSimulationManager', ${6:value}, 'StopOnError', ${7:value})'''
         description: '''sim(in, 'CleanupFcn', value, 'SetupFcn', value, 'ShowProgress', value, 'UseFastRestart', value, 'ShowSimulationManager', value, 'StopOnError', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/sim.html'
 
 
     "Simulink.findBlocks":
         prefix: "Simulink.findBlocks"
         body: '''${1:blockHandles} = Simulink.findBlocks(${1:modelname}, ${2:FindOptions})'''
         description: '''blockHandles = Simulink.findBlocks(modelname, FindOptions)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.findBlocks.html'
 
 
     "Simulink.BlockDiagram.deleteContents":
         prefix: "Simulink.BlockDiagram.deleteContents"
         body: '''Simulink.BlockDiagram.deleteContents(${1:filename})'''
         description: '''Simulink.BlockDiagram.deleteContents(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.BlockDiagram.deleteContents.html'
 
 
     "Simulink.ModelReference.protect":
         prefix: "Simulink.ModelReference.protect"
         body: '''Simulink.ModelReference.protect(${1:filename}, 'Mode', ${2:value}, 'CodeInterface', ${3:value}, 'OutputFormat', ${4:value}, 'Modifiable', ${5:value}, 'Harness', ${6:value}, 'Report', ${7:value}, 'Encrypt', ${8:value}, 'WebView', ${9:value}, 'ObfuscateCode', ${10:value}, 'Path', ${11:value}, 'CustomPostProcessingHook', ${12:value}, 'Callbacks', ${13:value})'''
         description: '''Simulink.ModelReference.protect(filename, 'Mode', value, 'CodeInterface', value, 'OutputFormat', value, 'Modifiable', value, 'Harness', value, 'Report', value, 'Encrypt', value, 'WebView', value, 'ObfuscateCode', value, 'Path', value, 'CustomPostProcessingHook', value, 'Callbacks', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.ModelReference.protect.html'
 
 
     "Simulink.SubSystem.convertToModelReference":
         prefix: "Simulink.SubSystem.convertToModelReference"
         body: '''[${1:success}, ${2:mdlRefBlkHs}] = Simulink.SubSystem.convertToModelReference(${1:subsys}, ${2:mdlRef}, 'AutoFix', ${3:value}, 'Force', ${4:value}, 'CheckSimulationResults', ${5:value}, 'AbsoluteTolerance', ${6:value}, 'RelativeTolerance', ${7:value}, 'DataFileName', ${8:value}, 'ReplaceSubsystem', ${9:value}, 'CreateWrapperSubsystem', ${10:value}, 'SimulationModes', ${11:value}, 'BuildTarget', ${12:value})'''
         description: '''[success, mdlRefBlkHs] = Simulink.SubSystem.convertToModelReference(subsys, mdlRef, 'AutoFix', value, 'Force', value, 'CheckSimulationResults', value, 'AbsoluteTolerance', value, 'RelativeTolerance', value, 'DataFileName', value, 'ReplaceSubsystem', value, 'CreateWrapperSubsystem', value, 'SimulationModes', value, 'BuildTarget', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/Simulink.SubSystem.convertToModelReference.html'
 
 
     "get_param":
         prefix: "get_param"
         body: '''get_param(${1:Object}, ${2:Parameter})'''
         description: '''get_param(Object, Parameter)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/simulink/ref/get_param.html'
 

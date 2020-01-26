@@ -5,40 +5,47 @@
         prefix: "lighting"
         body: '''lighting(${1:optional_ax}, ${2:style})'''
         description: '''lighting(optional_ax, style)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/lighting.html'
 
 
     "material":
         prefix: "material"
         body: '''material(${1:optional_ax}, ${2:properties})'''
         description: '''material(optional_ax, properties)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/material.html'
 
 
     "shading":
         prefix: "shading"
         body: '''shading(${1:optional_ax}, ${2:style})'''
         description: '''shading(optional_ax, style)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/shading.html'
 
 
     "zlabel":
         prefix: "zlabel"
         body: '''${1:h} = zlabel(${1:optional_ax}, ${2:str}, ${3:opts})'''
         description: '''h = zlabel(optional_ax, str, opts)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/zlabel.html'
 
 
     "caxis":
         prefix: "caxis"
         body: '''${1:limits} = caxis(${1:optional_ax})'''
         description: '''limits = caxis(optional_ax)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/caxis.html'
 
 
     "surf":
         prefix: "surf"
         body: '''${1:h} = surf(${1:optional_ax}, ${2:x}, ${3:y}, ${4:z}, ${5:optional_c}, ${6:opts})'''
         description: '''h = surf(optional_ax, x, y, z, optional_c, opts)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/surf.html'
 
 
     "colormap":
         prefix: "colormap"
         body: '''${1:cmap} = colormap(${1:optional_ax}, ${2:map})'''
         description: '''cmap = colormap(optional_ax, map)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/colormap.html'
 

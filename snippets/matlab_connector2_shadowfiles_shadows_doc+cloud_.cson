@@ -5,4 +5,5 @@
         prefix: "doc"
         body: '''doc(${1:optional_filename})'''
         description: '''doc(optional_filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/doc.html'
 

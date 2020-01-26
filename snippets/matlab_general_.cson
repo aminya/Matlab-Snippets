@@ -5,244 +5,285 @@
         prefix: "delete"
         body: '''delete(${1:filename})'''
         description: '''delete(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/delete.html'
 
 
     "mkdir":
         prefix: "mkdir"
         body: '''[${1:status}, ${2:message}, ${3:messageId}] = mkdir(${1:parentFolder}, ${2:folderName})'''
         description: '''[status, message, messageId] = mkdir(parentFolder, folderName)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mkdir.html'
 
 
     "javaaddpath":
         prefix: "javaaddpath"
         body: '''javaaddpath(${1:dpath}, ${2:'-end'})'''
         description: '''javaaddpath(dpath, '-end')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/javaaddpath.html'
 
 
     "whos":
         prefix: "whos"
         body: '''whos(${1:var}, ${2:'global'})'''
         description: '''whos(var, 'global')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/whos.html'
 
 
     "fileattrib":
         prefix: "fileattrib"
         body: '''[${1:status}, ${2:message}, ${3:messageId}] = fileattrib(${1:name}, ${2:attribs}, ${3:users})'''
         description: '''[status, message, messageId] = fileattrib(name, attribs, users)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fileattrib.html'
 
 
     "recycle":
         prefix: "recycle"
         body: '''recycle(${1:optional_state})'''
         description: '''recycle(optional_state)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/recycle.html'
 
 
     "import":
         prefix: "import"
         body: '''import(${1:optional_PackageName})'''
         description: '''import(optional_PackageName)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/import.html'
 
 
     "dos":
         prefix: "dos"
         body: '''[${1:status}, ${2:data}] = dos(${1:command}, ${2:'-echo'})'''
         description: '''[status, data] = dos(command, '-echo')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dos.html'
 
 
     "beep":
         prefix: "beep"
         body: '''${1:state} = beep(${1:flag})'''
         description: '''state = beep(flag)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/beep.html'
 
 
     "mex":
         prefix: "mex"
         body: '''mex(${1:filenames}, ${2:compileOnly}, '-client', ${3:value}, ${4:arrayDims}, ${5:define}, '-f', ${6:value}, ${7:debugInfo}, ${8:include}, ${9:libraryPaths}, ${10:libraries}, ${11:dryrun}, ${12:optim}, '-outdir', ${13:value}, '-output', ${14:value}, '-setup', ${15:value}, ${16:silent}, ${17:verbose}, ${18:otherArgs})'''
         description: '''mex(filenames, compileOnly, '-client', value, arrayDims, define, '-f', value, debugInfo, include, libraryPaths, libraries, dryrun, optim, '-outdir', value, '-output', value, '-setup', value, silent, verbose, otherArgs)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mex.html'
 
 
     "setenv":
         prefix: "setenv"
         body: '''setenv(${1:name}, ${2:value})'''
         description: '''setenv(name, value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/setenv.html'
 
 
     "mex.getCompilerConfigurations":
         prefix: "mex.getCompilerConfigurations"
         body: '''${1:cc} = mex.getCompilerConfigurations(${1:lang}, ${2:list})'''
         description: '''cc = mex.getCompilerConfigurations(lang, list)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mex.getCompilerConfigurations.html'
 
 
     "echo":
         prefix: "echo"
         body: '''echo(${1:mode}, ${2:'all'})'''
         description: '''echo(mode, 'all')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/echo.html'
 
 
     "cd":
         prefix: "cd"
         body: '''${1:oldFolder} = cd(${1:optional_newFolder})'''
         description: '''oldFolder = cd(optional_newFolder)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cd.html'
 
 
     "system":
         prefix: "system"
         body: '''[${1:status}, ${2:data}] = system(${1:command}, ${2:'-echo'})'''
         description: '''[status, data] = system(command, '-echo')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/system.html'
 
 
     "rehash":
         prefix: "rehash"
         body: '''rehash(${1:optional_what})'''
         description: '''rehash(optional_what)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rehash.html'
 
 
     "format":
         prefix: "format"
         body: '''format(${1:optional_style})'''
         description: '''format(optional_style)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/format.html'
 
 
     "clearvars":
         prefix: "clearvars"
         body: '''clearvars(${1:optional_'-global'}, ${2:optional_variables})'''
         description: '''clearvars(optional_'-global', optional_variables)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/clearvars.html'
 
 
     "save":
         prefix: "save"
         body: '''save(${1:filename}, ${2:optional_variables})'''
         description: '''save(filename, optional_variables)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/save.html'
 
 
     "inmem":
         prefix: "inmem"
         body: '''inmem(${1:optional_'-completenames'})'''
         description: '''inmem(optional_'-completenames')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/inmem.html'
 
 
     "addpath":
         prefix: "addpath"
         body: '''${1:oldpath} = addpath(${1:folderName}, ${2:optional_position}, ${3:optional_'-frozen'})'''
         description: '''oldpath = addpath(folderName, optional_position, optional_'-frozen')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/addpath.html'
 
 
     "open":
         prefix: "open"
         body: '''${1:output} = open(${1:name})'''
         description: '''output = open(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/open.html'
 
 
     "movefile":
         prefix: "movefile"
         body: '''[${1:status}, ${2:message}, ${3:messageId}] = movefile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
         description: '''[status, message, messageId] = movefile(source, destination, optional_'f')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/movefile.html'
 
 
     "isfolder":
         prefix: "isfolder"
         body: '''${1:TF} = isfolder(${1:path})'''
         description: '''TF = isfolder(path)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isfolder.html'
 
 
     "unix":
         prefix: "unix"
         body: '''[${1:status}, ${2:data}] = unix(${1:command}, ${2:'-echo'})'''
         description: '''[status, data] = unix(command, '-echo')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/unix.html'
 
 
     "rmdir":
         prefix: "rmdir"
         body: '''[${1:status}, ${2:message}, ${3:messageId}] = rmdir(${1:folderName}, ${2:optional_'s'})'''
         description: '''[status, message, messageId] = rmdir(folderName, optional_'s')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rmdir.html'
 
 
     "pcode":
         prefix: "pcode"
         body: '''pcode(${1:filename}, ${2:'-inplace'})'''
         description: '''pcode(filename, '-inplace')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/pcode.html'
 
 
     "diary":
         prefix: "diary"
         body: '''diary(${1:mode})'''
         description: '''diary(mode)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/diary.html'
 
 
     "rmpath":
         prefix: "rmpath"
         body: '''rmpath(${1:folderName})'''
         description: '''rmpath(folderName)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rmpath.html'
 
 
     "ls":
         prefix: "ls"
         body: '''${1:list} = ls(${1:optional_flags}, ${2:optional_filename})'''
         description: '''list = ls(optional_flags, optional_filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ls.html'
 
 
     "isfile":
         prefix: "isfile"
         body: '''${1:TF} = isfile(${1:path})'''
         description: '''TF = isfile(path)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isfile.html'
 
 
     "dir":
         prefix: "dir"
         body: '''${1:listing} = dir(${1:optional_filename})'''
         description: '''listing = dir(optional_filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/dir.html'
 
 
     "which":
         prefix: "which"
         body: '''which(${1:fun1}, ${2:'in'}, ${3:fun2})'''
         description: '''which(fun1, 'in', fun2)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/which.html'
 
 
     "who":
         prefix: "who"
         body: '''who(${1:var}, ${2:'global'})'''
         description: '''who(var, 'global')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/who.html'
 
 
     "copyfile":
         prefix: "copyfile"
         body: '''[${1:status}, ${2:message}, ${3:messageId}] = copyfile(${1:source}, ${2:destination}, ${3:optional_'f'})'''
         description: '''[status, message, messageId] = copyfile(source, destination, optional_'f')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/copyfile.html'
 
 
     "getenv":
         prefix: "getenv"
         body: '''${1:value} = getenv(${1:name})'''
         description: '''value = getenv(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/getenv.html'
 
 
     "what":
         prefix: "what"
         body: '''what(${1:optional_folderName})'''
         description: '''what(optional_folderName)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/what.html'
 
 
     "clear":
         prefix: "clear"
         body: '''clear(${1:optional_ItemType})'''
         description: '''clear(optional_ItemType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/clear.html'
 
 
     "javarmpath":
         prefix: "javarmpath"
         body: '''javarmpath(${1:dpath})'''
         description: '''javarmpath(dpath)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/javarmpath.html'
 
 
     "load":
         prefix: "load"
         body: '''${1:S} = load(${1:filename}, ${2:'-ascii'})'''
         description: '''S = load(filename, '-ascii')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/load.html'
 
 
     "type":
         prefix: "type"
         body: '''type(${1:filename})'''
         description: '''type(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/type.html'
 

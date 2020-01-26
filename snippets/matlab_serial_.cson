@@ -5,112 +5,131 @@
         prefix: "delete"
         body: '''delete(${1:obj})'''
         description: '''delete(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/delete.html'
 
 
     "serialbreak":
         prefix: "serialbreak"
         body: '''serialbreak(${1:obj}, ${2:optional_time})'''
         description: '''serialbreak(obj, optional_time)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/serialbreak.html'
 
 
     "fclose":
         prefix: "fclose"
         body: '''fclose(${1:obj})'''
         description: '''fclose(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fclose.html'
 
 
     "disp":
         prefix: "disp"
         body: '''disp(${1:obj})'''
         description: '''disp(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/disp.html'
 
 
     "length":
         prefix: "length"
         body: '''${1:out} = length(${1:obj})'''
         description: '''out = length(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/length.html'
 
 
     "readasync":
         prefix: "readasync"
         body: '''readasync(${1:obj}, ${2:optional_size})'''
         description: '''readasync(obj, optional_size)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/readasync.html'
 
 
     "fgets":
         prefix: "fgets"
         body: '''[${1:tline}, ${2:count}, ${3:msg}] = fgets(${1:obj})'''
         description: '''[tline, count, msg] = fgets(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fgets.html'
 
 
     "fscanf":
         prefix: "fscanf"
         body: '''[${1:A}, ${2:count}, ${3:msg}] = fscanf(${1:obj}, ${2:optional_format}, ${3:optional_size})'''
         description: '''[A, count, msg] = fscanf(obj, optional_format, optional_size)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fscanf.html'
 
 
     "fgetl":
         prefix: "fgetl"
         body: '''[${1:tline}, ${2:count}, ${3:msg}] = fgetl(${1:obj})'''
         description: '''[tline, count, msg] = fgetl(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fgetl.html'
 
 
     "size":
         prefix: "size"
         body: '''${1:d} = size(${1:obj}, ${2:optional_dim})'''
         description: '''d = size(obj, optional_dim)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/size.html'
 
 
     "fopen":
         prefix: "fopen"
         body: '''fopen(${1:obj})'''
         description: '''fopen(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fopen.html'
 
 
     "fwrite":
         prefix: "fwrite"
         body: '''fwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_mode})'''
         description: '''fwrite(obj, A, optional_precision, optional_mode)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fwrite.html'
 
 
     "record":
         prefix: "record"
         body: '''record(${1:obj}, ${2:optional_switch})'''
         description: '''record(obj, optional_switch)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/record.html'
 
 
     "fprintf":
         prefix: "fprintf"
         body: '''fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})'''
         description: '''fprintf(obj, optional_format, cmd, optional_mode)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fprintf.html'
 
 
     "seriallist":
         prefix: "seriallist"
         body: '''seriallist(${1:optional_ports})'''
         description: '''seriallist(optional_ports)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/seriallist.html'
 
 
     "fread":
         prefix: "fread"
         body: '''[${1:A}, ${2:count}, ${3:msg}] = fread(${1:obj}, ${2:size}, ${3:optional_precision})'''
         description: '''[A, count, msg] = fread(obj, size, optional_precision)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fread.html'
 
 
     "stopasync":
         prefix: "stopasync"
         body: '''stopasync(${1:obj})'''
         description: '''stopasync(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/stopasync.html'
 
 
     "isvalid":
         prefix: "isvalid"
         body: '''${1:out} = isvalid(${1:obj})'''
         description: '''out = isvalid(obj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/isvalid.html'
 
 
     "serial":
         prefix: "serial"
         body: '''${1:obj} = serial(${1:port}, 'BaudRate', ${2:value}, 'ByteOrder', ${3:value}, 'BytesAvailableFcn', ${4:value}, 'BytesAvailableFcnCount', ${5:value}, 'BytesAvailableFcnMode', ${6:value}, 'DataBits', ${7:value}, 'DataTerminalReady', ${8:value}, 'ErrorFcn', ${9:value}, 'FlowControl', ${10:value}, 'InputBufferSize', ${11:value}, 'Name', ${12:value}, 'ObjectVisibility', ${13:value}, 'OutputBufferSize', ${14:value}, 'OutputEmptyFcn', ${15:value}, 'Parity', ${16:value}, 'PinStatusFcn', ${17:value}, 'Port', ${18:value}, 'ReadAsyncMode', ${19:value}, 'RecordDetail', ${20:value}, 'RecordMode', ${21:value}, 'RecordName', ${22:value}, 'RequestToSend', ${23:value}, 'StopBits', ${24:value}, 'Tag', ${25:value}, 'Terminator', ${26:value}, 'Timeout', ${27:value}, 'TimerFcn', ${28:value}, 'TimerPeriod', ${29:value}, 'UserData', ${30:value})'''
         description: '''obj = serial(port, 'BaudRate', value, 'ByteOrder', value, 'BytesAvailableFcn', value, 'BytesAvailableFcnCount', value, 'BytesAvailableFcnMode', value, 'DataBits', value, 'DataTerminalReady', value, 'ErrorFcn', value, 'FlowControl', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'OutputEmptyFcn', value, 'Parity', value, 'PinStatusFcn', value, 'Port', value, 'ReadAsyncMode', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RequestToSend', value, 'StopBits', value, 'Tag', value, 'Terminator', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'UserData', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/serial.html'
 

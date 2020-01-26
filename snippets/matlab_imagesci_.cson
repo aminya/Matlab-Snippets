@@ -5,442 +5,516 @@
         prefix: "hdfhx"
         body: '''hdfhx()'''
         description: '''hdfhx()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfhx.html'
 
 
     "Tiff.writeDirectory":
         prefix: "Tiff.writeDirectory"
         body: '''Tiff.writeDirectory(${1:tiffobj})'''
         description: '''Tiff.writeDirectory(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.writeDirectory.html'
 
 
     "cdfread":
         prefix: "cdfread"
         body: '''[${1:data}, ${2:info}] = cdfread(${1:filename}, 'Records', ${2:value}, 'Variables', ${3:value}, 'Slices', ${4:value}, 'ConvertEpochToDatenum', ${5:value}, 'CombineRecords', ${6:value})'''
         description: '''[data, info] = cdfread(filename, 'Records', value, 'Variables', value, 'Slices', value, 'ConvertEpochToDatenum', value, 'CombineRecords', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cdfread.html'
 
 
     "hdfdfr8":
         prefix: "hdfdfr8"
         body: '''hdfdfr8()'''
         description: '''hdfdfr8()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfdfr8.html'
 
 
     "h5readatt":
         prefix: "h5readatt"
         body: '''${1:attval} = h5readatt(${1:filename}, ${2:location}, ${3:attr})'''
         description: '''attval = h5readatt(filename, location, attr)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5readatt.html'
 
 
     "h5create":
         prefix: "h5create"
         body: '''h5create(${1:filename}, ${2:datasetname}, ${3:size}, 'Datatype', ${4:value}, 'Chunksize', ${5:value}, 'Deflate', ${6:value}, 'Fillvalue', ${7:value}, 'Fletcher32', ${8:value}, 'Shuffle', ${9:value}, 'TextEncoding', ${10:value})'''
         description: '''h5create(filename, datasetname, size, 'Datatype', value, 'Chunksize', value, 'Deflate', value, 'Fillvalue', value, 'Fletcher32', value, 'Shuffle', value, 'TextEncoding', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5create.html'
 
 
     "Tiff.write":
         prefix: "Tiff.write"
         body: '''Tiff.write(${1:tiffobj}, ${2:Y}, ${3:Cb}, ${4:Cr})'''
         description: '''Tiff.write(tiffobj, Y, Cb, Cr)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.write.html'
 
 
     "Tiff.setSubDirectory":
         prefix: "Tiff.setSubDirectory"
         body: '''Tiff.setSubDirectory(${1:tiffobj}, ${2:offset})'''
         description: '''Tiff.setSubDirectory(tiffobj, offset)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.setSubDirectory.html'
 
 
     "Tiff.readEncodedTile":
         prefix: "Tiff.readEncodedTile"
         body: '''Tiff.readEncodedTile(${1:tiffobj}, ${2:tileNumber})'''
         description: '''Tiff.readEncodedTile(tiffobj, tileNumber)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.readEncodedTile.html'
 
 
     "hdfsd":
         prefix: "hdfsd"
         body: '''hdfsd()'''
         description: '''hdfsd()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfsd.html'
 
 
     "Tiff.read":
         prefix: "Tiff.read"
         body: '''Tiff.read(${1:tiffobj})'''
         description: '''Tiff.read(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.read.html'
 
 
     "Tiff.readEncodedStrip":
         prefix: "Tiff.readEncodedStrip"
         body: '''Tiff.readEncodedStrip(${1:tiffobj}, ${2:stripNumber})'''
         description: '''Tiff.readEncodedStrip(tiffobj, stripNumber)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.readEncodedStrip.html'
 
 
     "Tiff.readRGBATile":
         prefix: "Tiff.readRGBATile"
         body: '''Tiff.readRGBATile(${1:tiffobj}, ${2:row}, ${3:col})'''
         description: '''Tiff.readRGBATile(tiffobj, row, col)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.readRGBATile.html'
 
 
     "hdf5read":
         prefix: "hdf5read"
         body: '''hdf5read()'''
         description: '''hdf5read()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdf5read.html'
 
 
     "Tiff.readRGBAImage":
         prefix: "Tiff.readRGBAImage"
         body: '''Tiff.readRGBAImage(${1:tiffobj})'''
         description: '''Tiff.readRGBAImage(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.readRGBAImage.html'
 
 
     "hdfsw":
         prefix: "hdfsw"
         body: '''hdfsw()'''
         description: '''hdfsw()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfsw.html'
 
 
     "h5read":
         prefix: "h5read"
         body: '''${1:info} = h5read(${1:filename}, ${2:datasetname}, ${3:start}, ${4:count}, ${5:stride})'''
         description: '''info = h5read(filename, datasetname, start, count, stride)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5read.html'
 
 
     "hdfv":
         prefix: "hdfv"
         body: '''hdfv()'''
         description: '''hdfv()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfv.html'
 
 
     "imwrite":
         prefix: "imwrite"
         body: '''imwrite(${1:A}, ${2:optional_map}, ${3:filename}, ${4:optional_fmt})'''
         description: '''imwrite(A, optional_map, filename, optional_fmt)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imwrite.html'
 
 
     "Tiff.getTagNames":
         prefix: "Tiff.getTagNames"
         body: '''Tiff.getTagNames(${1:tiffobj})'''
         description: '''Tiff.getTagNames(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.getTagNames.html'
 
 
     "Tiff.readRGBAStrip":
         prefix: "Tiff.readRGBAStrip"
         body: '''Tiff.readRGBAStrip(${1:tiffobj}, ${2:row})'''
         description: '''Tiff.readRGBAStrip(tiffobj, row)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.readRGBAStrip.html'
 
 
     "ncreadatt":
         prefix: "ncreadatt"
         body: '''ncreadatt(${1:source}, ${2:location}, ${3:attname})'''
         description: '''ncreadatt(source, location, attname)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncreadatt.html'
 
 
     "hdfinfo":
         prefix: "hdfinfo"
         body: '''${1:info} = hdfinfo(${1:filename}, ${2:optional_'HDF'})'''
         description: '''info = hdfinfo(filename, optional_'HDF')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfinfo.html'
 
 
     "Tiff.getVersion":
         prefix: "Tiff.getVersion"
         body: '''Tiff.getVersion(${1:tiffobj})'''
         description: '''Tiff.getVersion(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.getVersion.html'
 
 
     "multibandread":
         prefix: "multibandread"
         body: '''multibandread(${1:filename}, ${2:size}, ${3:precision}, ${4:offset}, ${5:interleave}, ${6:byteorder}, ${7:optional_subset1}, ${8:optional_subset2}, ${9:optional_subset3})'''
         description: '''multibandread(filename, size, precision, offset, interleave, byteorder, optional_subset1, optional_subset2, optional_subset3)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/multibandread.html'
 
 
     "hdfgd":
         prefix: "hdfgd"
         body: '''hdfgd()'''
         description: '''hdfgd()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfgd.html'
 
 
     "fitswrite":
         prefix: "fitswrite"
         body: '''fitswrite(${1:imagedata}, ${2:filename}, 'WriteMode', ${3:value}, 'Compression', ${4:value})'''
         description: '''fitswrite(imagedata, filename, 'WriteMode', value, 'Compression', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fitswrite.html'
 
 
     "Tiff.numberOfStrips":
         prefix: "Tiff.numberOfStrips"
         body: '''Tiff.numberOfStrips(${1:tiffobj})'''
         description: '''Tiff.numberOfStrips(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.numberOfStrips.html'
 
 
     "cdfwrite":
         prefix: "cdfwrite"
         body: '''cdfwrite(${1:filename}, ${2:variablelist}, 'PadValues', ${3:value}, 'GlobalAttributes', ${4:value}, 'VariableAttributes', ${5:value}, 'WriteMode', ${6:value}, 'Format', ${7:value})'''
         description: '''cdfwrite(filename, variablelist, 'PadValues', value, 'GlobalAttributes', value, 'VariableAttributes', value, 'WriteMode', value, 'Format', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cdfwrite.html'
 
 
     "ncinfo":
         prefix: "ncinfo"
         body: '''ncinfo(${1:source}, ${2:optional_groupname})'''
         description: '''ncinfo(source, optional_groupname)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncinfo.html'
 
 
     "nccreate":
         prefix: "nccreate"
         body: '''nccreate(${1:filename}, ${2:varname}, 'Dimensions', ${3:value}, 'Datatype', ${4:value}, 'Format', ${5:value}, 'FillValue', ${6:value}, 'ChunkSize', ${7:value}, 'DeflateLevel', ${8:value}, 'Shuffle', ${9:value})'''
         description: '''nccreate(filename, varname, 'Dimensions', value, 'Datatype', value, 'Format', value, 'FillValue', value, 'ChunkSize', value, 'DeflateLevel', value, 'Shuffle', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/nccreate.html'
 
 
     "multibandwrite":
         prefix: "multibandwrite"
         body: '''multibandwrite(${1:data}, ${2:filename}, ${3:interleave}, 'precision', ${4:value}, 'offset', ${5:value}, 'machfmt', ${6:value}, 'fillvalue', ${7:value})'''
         description: '''multibandwrite(data, filename, interleave, 'precision', value, 'offset', value, 'machfmt', value, 'fillvalue', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/multibandwrite.html'
 
 
     "hdfhe":
         prefix: "hdfhe"
         body: '''hdfhe()'''
         description: '''hdfhe()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfhe.html'
 
 
     "hdfvh":
         prefix: "hdfvh"
         body: '''hdfvh()'''
         description: '''hdfvh()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfvh.html'
 
 
     "Tiff.lastDirectory":
         prefix: "Tiff.lastDirectory"
         body: '''Tiff.lastDirectory(${1:tiffobj})'''
         description: '''Tiff.lastDirectory(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.lastDirectory.html'
 
 
     "hdf5info":
         prefix: "hdf5info"
         body: '''hdf5info()'''
         description: '''hdf5info()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdf5info.html'
 
 
     "imread":
         prefix: "imread"
         body: '''imread(${1:filename}, ${2:optional_fmt})'''
         description: '''imread(filename, optional_fmt)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imread.html'
 
 
     "hdftool":
         prefix: "hdftool"
         body: '''${1:h} = hdftool(${1:filename})'''
         description: '''h = hdftool(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdftool.html'
 
 
     "ncwriteatt":
         prefix: "ncwriteatt"
         body: '''ncwriteatt(${1:filename}, ${2:location}, ${3:attname}, ${4:attvalue})'''
         description: '''ncwriteatt(filename, location, attname, attvalue)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncwriteatt.html'
 
 
     "imfinfo":
         prefix: "imfinfo"
         body: '''imfinfo(${1:filename}, ${2:optional_fmt})'''
         description: '''imfinfo(filename, optional_fmt)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imfinfo.html'
 
 
     "fitsread":
         prefix: "fitsread"
         body: '''${1:data} = fitsread(${1:filename}, ${2:optional_'raw'}, ${3:optional_extname}, ${4:optional_index}, 'Info', ${5:value}, 'PixelRegion', ${6:value}, 'TableColumns', ${7:value}, 'TableRows', ${8:value})'''
         description: '''data = fitsread(filename, optional_'raw', optional_extname, optional_index, 'Info', value, 'PixelRegion', value, 'TableColumns', value, 'TableRows', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fitsread.html'
 
 
     "Tiff.setDirectory":
         prefix: "Tiff.setDirectory"
         body: '''Tiff.setDirectory(${1:tiffobj}, ${2:dirNum})'''
         description: '''Tiff.setDirectory(tiffobj, dirNum)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.setDirectory.html'
 
 
     "Tiff.isTiled":
         prefix: "Tiff.isTiled"
         body: '''Tiff.isTiled(${1:tiffobj})'''
         description: '''Tiff.isTiled(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.isTiled.html'
 
 
     "h5write":
         prefix: "h5write"
         body: '''h5write(${1:filename}, ${2:datasetname}, ${3:data}, ${4:start}, ${5:count}, ${6:stride})'''
         description: '''h5write(filename, datasetname, data, start, count, stride)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5write.html'
 
 
     "Tiff.nextDirectory":
         prefix: "Tiff.nextDirectory"
         body: '''Tiff.nextDirectory(${1:tiffobj})'''
         description: '''Tiff.nextDirectory(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.nextDirectory.html'
 
 
     "hdf5write":
         prefix: "hdf5write"
         body: '''hdf5write()'''
         description: '''hdf5write()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdf5write.html'
 
 
     "hdfhd":
         prefix: "hdfhd"
         body: '''hdfhd()'''
         description: '''hdfhd()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfhd.html'
 
 
     "Tiff.currentDirectory":
         prefix: "Tiff.currentDirectory"
         body: '''Tiff.currentDirectory(${1:tiffobj}, ${2:rowcol})'''
         description: '''Tiff.currentDirectory(tiffobj, rowcol)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.currentDirectory.html'
 
 
     "cdfinfo":
         prefix: "cdfinfo"
         body: '''${1:info} = cdfinfo(${1:filename})'''
         description: '''info = cdfinfo(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/cdfinfo.html'
 
 
     "fitsinfo":
         prefix: "fitsinfo"
         body: '''${1:info} = fitsinfo(${1:filename})'''
         description: '''info = fitsinfo(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fitsinfo.html'
 
 
     "h5disp":
         prefix: "h5disp"
         body: '''h5disp(${1:filename}, ${2:location}, ${3:mode}, 'TextEncoding', ${4:value})'''
         description: '''h5disp(filename, location, mode, 'TextEncoding', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5disp.html'
 
 
     "Tiff.computeStrip":
         prefix: "Tiff.computeStrip"
         body: '''Tiff.computeStrip(${1:tiffobj}, ${2:row}, ${3:optional_plane})'''
         description: '''Tiff.computeStrip(tiffobj, row, optional_plane)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.computeStrip.html'
 
 
     "ncdisp":
         prefix: "ncdisp"
         body: '''ncdisp(${1:source}, ${2:location}, ${3:dispFormat})'''
         description: '''ncdisp(source, location, dispFormat)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncdisp.html'
 
 
     "hdfan":
         prefix: "hdfan"
         body: '''hdfan()'''
         description: '''hdfan()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfan.html'
 
 
     "h5info":
         prefix: "h5info"
         body: '''${1:info} = h5info(${1:filename}, ${2:location}, 'TextEncoding', ${3:value})'''
         description: '''info = h5info(filename, location, 'TextEncoding', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5info.html'
 
 
     "Tiff.getTag":
         prefix: "Tiff.getTag"
         body: '''Tiff.getTag(${1:tiffobj}, ${2:tagId})'''
         description: '''Tiff.getTag(tiffobj, tagId)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.getTag.html'
 
 
     "imformats":
         prefix: "imformats"
         body: '''imformats()'''
         description: '''imformats()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imformats.html'
 
 
     "Tiff.writeEncodedStrip":
         prefix: "Tiff.writeEncodedStrip"
         body: '''Tiff.writeEncodedStrip(${1:tiffobj}, ${2:stripNumber}, ${3:Y}, ${4:Cb}, ${5:Cr})'''
         description: '''Tiff.writeEncodedStrip(tiffobj, stripNumber, Y, Cb, Cr)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.writeEncodedStrip.html'
 
 
     "hdf5":
         prefix: "hdf5"
         body: '''hdf5()'''
         description: '''hdf5()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdf5.html'
 
 
     "ncwrite":
         prefix: "ncwrite"
         body: '''ncwrite(${1:filename}, ${2:varname}, ${3:vardata})'''
         description: '''ncwrite(filename, varname, vardata)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncwrite.html'
 
 
     "Tiff.computeTile":
         prefix: "Tiff.computeTile"
         body: '''Tiff.computeTile(${1:tiffobj}, ${2:rowcol}, ${3:optional_plane})'''
         description: '''Tiff.computeTile(tiffobj, rowcol, optional_plane)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.computeTile.html'
 
 
     "h5writeatt":
         prefix: "h5writeatt"
         body: '''h5writeatt(${1:filename}, ${2:location}, ${3:attname}, ${4:attvalue}, 'TextEncoding', ${5:value})'''
         description: '''h5writeatt(filename, location, attname, attvalue, 'TextEncoding', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/h5writeatt.html'
 
 
     "Tiff.rewriteDirectory":
         prefix: "Tiff.rewriteDirectory"
         body: '''Tiff.rewriteDirectory(${1:tiffobj})'''
         description: '''Tiff.rewriteDirectory(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.rewriteDirectory.html'
 
 
     "Tiff.setTag":
         prefix: "Tiff.setTag"
         body: '''Tiff.setTag(${1:tiffobj}, ${2:tagStruct})'''
         description: '''Tiff.setTag(tiffobj, tagStruct)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.setTag.html'
 
 
     "ncwriteschema":
         prefix: "ncwriteschema"
         body: '''ncwriteschema(${1:filename}, ${2:schema})'''
         description: '''ncwriteschema(filename, schema)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncwriteschema.html'
 
 
     "Tiff.writeEncodedTile":
         prefix: "Tiff.writeEncodedTile"
         body: '''Tiff.writeEncodedTile(${1:tiffobj}, ${2:tileNumber}, ${3:Y}, ${4:Cb}, ${5:Cr})'''
         description: '''Tiff.writeEncodedTile(tiffobj, tileNumber, Y, Cb, Cr)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.writeEncodedTile.html'
 
 
     "Tiff.numberOfTiles":
         prefix: "Tiff.numberOfTiles"
         body: '''Tiff.numberOfTiles(${1:tiffobj})'''
         description: '''Tiff.numberOfTiles(tiffobj)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.numberOfTiles.html'
 
 
     "ncread":
         prefix: "ncread"
         body: '''ncread(${1:source}, ${2:varname})'''
         description: '''ncread(source, varname)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ncread.html'
 
 
     "hdfdf24":
         prefix: "hdfdf24"
         body: '''hdfdf24()'''
         description: '''hdfdf24()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfdf24.html'
 
 
     "hdfpt":
         prefix: "hdfpt"
         body: '''hdfpt()'''
         description: '''hdfpt()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfpt.html'
 
 
     "Tiff":
         prefix: "Tiff"
         body: '''Tiff(${1:filename}, ${2:optional_mode})'''
         description: '''Tiff(filename, optional_mode)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/Tiff.html'
 
 
     "hdfvf":
         prefix: "hdfvf"
         body: '''hdfvf()'''
         description: '''hdfvf()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfvf.html'
 
 
     "hdfvs":
         prefix: "hdfvs"
         body: '''hdfvs()'''
         description: '''hdfvs()'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/hdfvs.html'
 
 
     "fitsdisp":
         prefix: "fitsdisp"
         body: '''fitsdisp(${1:filename}, 'Index', ${2:value}, 'Mode', ${3:value})'''
         description: '''fitsdisp(filename, 'Index', value, 'Mode', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fitsdisp.html'
 

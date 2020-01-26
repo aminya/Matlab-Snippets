@@ -5,16 +5,19 @@
         prefix: "parquetread"
         body: '''${1:T} = parquetread(${1:filename}, 'SelectedVariableNames', ${2:value}, 'PreserveVariableNames', ${3:value}, 'OutputType', ${4:value})'''
         description: '''T = parquetread(filename, 'SelectedVariableNames', value, 'PreserveVariableNames', value, 'OutputType', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetread.html'
 
 
     "parquetwrite":
         prefix: "parquetwrite"
         body: '''parquetwrite(${1:filename}, ${2:T}, 'VariableCompression', ${3:value})'''
         description: '''parquetwrite(filename, T, 'VariableCompression', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetwrite.html'
 
 
     "parquetinfo":
         prefix: "parquetinfo"
         body: '''${1:P} = parquetinfo(${1:filename})'''
         description: '''P = parquetinfo(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/parquetinfo.html'
 

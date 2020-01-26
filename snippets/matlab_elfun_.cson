@@ -5,64 +5,75 @@
         prefix: "rem"
         body: '''${1:r} = rem(${1:a}, ${2:b})'''
         description: '''r = rem(a, b)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/rem.html'
 
 
     "ceil":
         prefix: "ceil"
         body: '''${1:Y} = ceil(${1:X})'''
         description: '''Y = ceil(X)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/ceil.html'
 
 
     "fix":
         prefix: "fix"
         body: '''${1:Y} = fix(${1:X})'''
         description: '''Y = fix(X)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/fix.html'
 
 
     "real":
         prefix: "real"
         body: '''${1:X} = real(${1:Z})'''
         description: '''X = real(Z)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/real.html'
 
 
     "mod":
         prefix: "mod"
         body: '''${1:b} = mod(${1:a}, ${2:m})'''
         description: '''b = mod(a, m)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mod.html'
 
 
     "round":
         prefix: "round"
         body: '''${1:Y} = round(${1:X}, ${2:N}, ${3:type})'''
         description: '''Y = round(X, N, type)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/round.html'
 
 
     "conj":
         prefix: "conj"
         body: '''${1:ZC} = conj(${1:Z})'''
         description: '''ZC = conj(Z)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/conj.html'
 
 
     "abs":
         prefix: "abs"
         body: '''${1:Y} = abs(${1:X})'''
         description: '''Y = abs(X)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/abs.html'
 
 
     "floor":
         prefix: "floor"
         body: '''${1:Y} = floor(${1:X})'''
         description: '''Y = floor(X)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/floor.html'
 
 
     "sign":
         prefix: "sign"
         body: '''${1:y} = sign(${1:x})'''
         description: '''y = sign(x)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/sign.html'
 
 
     "imag":
         prefix: "imag"
         body: '''${1:Y} = imag(${1:Z})'''
         description: '''Y = imag(Z)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/imag.html'
 

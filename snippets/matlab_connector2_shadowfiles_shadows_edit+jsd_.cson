@@ -5,4 +5,5 @@
         prefix: "edit"
         body: '''edit(${1:optional_file})'''
         description: '''edit(optional_file)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/edit.html'
 

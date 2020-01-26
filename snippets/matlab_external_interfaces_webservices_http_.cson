@@ -5,52 +5,61 @@
         prefix: "matlab.net.http.Message.removeFields"
         body: '''matlab.net.http.Message.removeFields(${1:obj}, ${2:name})'''
         description: '''matlab.net.http.Message.removeFields(obj, name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.Message.removeFields.html'
 
 
     "matlab.net.http.CookieInfo":
         prefix: "matlab.net.http.CookieInfo"
         body: '''matlab.net.http.CookieInfo(${1:name})'''
         description: '''matlab.net.http.CookieInfo(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.CookieInfo.html'
 
 
     "matlab.net.http.HeaderField.getFields":
         prefix: "matlab.net.http.HeaderField.getFields"
         body: '''matlab.net.http.HeaderField.getFields(${1:obj}, ${2:name})'''
         description: '''matlab.net.http.HeaderField.getFields(obj, name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.HeaderField.getFields.html'
 
 
     "matlab.net.http.Message.getFields":
         prefix: "matlab.net.http.Message.getFields"
         body: '''matlab.net.http.Message.getFields(${1:obj}, ${2:name})'''
         description: '''matlab.net.http.Message.getFields(obj, name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.Message.getFields.html'
 
 
     "matlab.net.http.Credentials":
         prefix: "matlab.net.http.Credentials"
         body: '''matlab.net.http.Credentials(${1:name})'''
         description: '''matlab.net.http.Credentials(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.Credentials.html'
 
 
     "matlab.net.http.HeaderField.removeFields":
         prefix: "matlab.net.http.HeaderField.removeFields"
         body: '''matlab.net.http.HeaderField.removeFields(${1:obj}, ${2:name})'''
         description: '''matlab.net.http.HeaderField.removeFields(obj, name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.HeaderField.removeFields.html'
 
 
     "matlab.net.http.RequestMessage.RequestMessage":
         prefix: "matlab.net.http.RequestMessage.RequestMessage"
         body: '''matlab.net.http.RequestMessage.RequestMessage(${1:method}, ${2:header})'''
         description: '''matlab.net.http.RequestMessage.RequestMessage(method, header)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.RequestMessage.RequestMessage.html'
 
 
     "matlab.net.http.HTTPOptions.HTTPOptions":
         prefix: "matlab.net.http.HTTPOptions.HTTPOptions"
         body: '''matlab.net.http.HTTPOptions.HTTPOptions(${1:name})'''
         description: '''matlab.net.http.HTTPOptions.HTTPOptions(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.HTTPOptions.HTTPOptions.html'
 
 
     "matlab.net.http.RequestMessage.send":
         prefix: "matlab.net.http.RequestMessage.send"
         body: '''matlab.net.http.RequestMessage.send(${1:obj}, ${2:URI}, ${3:options}, ${4:consumer})'''
         description: '''matlab.net.http.RequestMessage.send(obj, URI, options, consumer)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/matlab.net.http.RequestMessage.send.html'
 

@@ -5,10 +5,12 @@
         prefix: "coder.config"
         body: '''coder.config(${1:build_type}, 'ecoder', ${2:value})'''
         description: '''coder.config(build_type, 'ecoder', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/coder.config.html'
 
 
     "coder.OutputType":
         prefix: "coder.OutputType"
         body: '''coder.OutputType(${1:name})'''
         description: '''coder.OutputType(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/coder.OutputType.html'
 

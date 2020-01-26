@@ -5,4 +5,5 @@
         prefix: "appdesigner"
         body: '''appdesigner(${1:filename})'''
         description: '''appdesigner(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/appdesigner.html'
 

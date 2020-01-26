@@ -5,100 +5,117 @@
         prefix: "dicomCollection"
         body: '''${1:collection} = dicomCollection(${1:source}, 'IncludeSubfolders', ${2:value})'''
         description: '''collection = dicomCollection(source, 'IncludeSubfolders', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/dicomCollection.html'
 
 
     "camresponse":
         prefix: "camresponse"
         body: '''${1:crf} = camresponse(${1:filenames}, 'ExposureTimes', ${2:value})'''
         description: '''crf = camresponse(filenames, 'ExposureTimes', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/camresponse.html'
 
 
     "tonemap":
         prefix: "tonemap"
         body: '''${1:RGB} = tonemap(${1:HDR}, 'AdjustLightness', ${2:value}, 'AdjustSaturation', ${3:value}, 'NumberOfTiles', ${4:value})'''
         description: '''RGB = tonemap(HDR, 'AdjustLightness', value, 'AdjustSaturation', value, 'NumberOfTiles', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/tonemap.html'
 
 
     "makehdr":
         prefix: "makehdr"
         body: '''${1:HDR} = makehdr(${1:files}, 'BaseFile', ${2:value}, 'MinimumLimit', ${3:value}, 'MaximumLimit', ${4:value})'''
         description: '''HDR = makehdr(files, 'BaseFile', value, 'MinimumLimit', value, 'MaximumLimit', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/makehdr.html'
 
 
     "images.internal.dicom.DICOMFile":
         prefix: "images.internal.dicom.DICOMFile"
         body: '''${1:obj} = images.internal.dicom.DICOMFile(${1:filename})'''
         description: '''obj = images.internal.dicom.DICOMFile(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/images.internal.dicom.DICOMFile.html'
 
 
     "dicomreadVolume":
         prefix: "dicomreadVolume"
         body: '''[${1:V}, ${2:spatial}, ${3:dim}] = dicomreadVolume(${1:source}, ${2:RowName}, 'MakeIsotropic', ${3:value})'''
         description: '''[V, spatial, dim] = dicomreadVolume(source, RowName, 'MakeIsotropic', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/dicomreadVolume.html'
 
 
     "bigimage":
         prefix: "bigimage"
         body: '''${1:obj} = bigimage(${1:source}, 'ClassNames', ${2:value}, 'PixelLabelIDs', ${3:value}, 'BlockSize', ${4:value}, 'SpatialReferencing', ${5:value}, 'UnloadedValue', ${6:value})'''
         description: '''obj = bigimage(source, 'ClassNames', value, 'PixelLabelIDs', value, 'BlockSize', value, 'SpatialReferencing', value, 'UnloadedValue', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bigimage.html'
 
 
     "nitfread":
         prefix: "nitfread"
         body: '''${1:x} = nitfread(${1:filename}, ${2:optional_idx}, 'PixelRegion', ${3:value})'''
         description: '''x = nitfread(filename, optional_idx, 'PixelRegion', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/nitfread.html'
 
 
     "images.dicom.parseDICOMDIR":
         prefix: "images.dicom.parseDICOMDIR"
         body: '''${1:details} = images.dicom.parseDICOMDIR(${1:filename})'''
         description: '''details = images.dicom.parseDICOMDIR(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/images.dicom.parseDICOMDIR.html'
 
 
     "bigimageDatastore":
         prefix: "bigimageDatastore"
         body: '''${1:obj} = bigimageDatastore(${1:BIGIMAGES}, ${2:LEVELS}, 'ReadSize', ${3:value}, 'BlockSize', ${4:value}, 'BlockOffsets', ${5:value}, 'Masks', ${6:value}, 'InclusionThreshold', ${7:value}, 'IncompleteBlocks', ${8:value})'''
         description: '''obj = bigimageDatastore(BIGIMAGES, LEVELS, 'ReadSize', value, 'BlockSize', value, 'BlockOffsets', value, 'Masks', value, 'InclusionThreshold', value, 'IncompleteBlocks', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bigimageDatastore.html'
 
 
     "niftiwrite":
         prefix: "niftiwrite"
         body: '''${1:status} = niftiwrite(${1:V}, ${2:filename}, ${3:optional_info}, 'Combined', ${4:value}, 'Compressed', ${5:value}, 'Endian', ${6:value}, 'Version', ${7:value})'''
         description: '''status = niftiwrite(V, filename, optional_info, 'Combined', value, 'Compressed', value, 'Endian', value, 'Version', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niftiwrite.html'
 
 
     "niftiread":
         prefix: "niftiread"
         body: '''${1:V} = niftiread(${1:hdrfilename}, ${2:imgfilename})'''
         description: '''V = niftiread(hdrfilename, imgfilename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niftiread.html'
 
 
     "nitfinfo":
         prefix: "nitfinfo"
         body: '''${1:metadata} = nitfinfo(${1:filename})'''
         description: '''metadata = nitfinfo(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/nitfinfo.html'
 
 
     "niftiinfo":
         prefix: "niftiinfo"
         body: '''${1:info} = niftiinfo(${1:filename})'''
         description: '''info = niftiinfo(filename)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/niftiinfo.html'
 
 
     "images.dicom.decodeUID":
         prefix: "images.dicom.decodeUID"
         body: '''${1:details} = images.dicom.decodeUID(${1:UID})'''
         description: '''details = images.dicom.decodeUID(UID)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/images.dicom.decodeUID.html'
 
 
     "bigimage.write":
         prefix: "bigimage.write"
         body: '''bigimage.write(${1:IMG}, ${2:OUT})'''
         description: '''bigimage.write(IMG, OUT)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bigimage.write.html'
 
 
     "bigimage.apply":
         prefix: "bigimage.apply"
         body: '''bigimage.apply(${1:IMG}, ${2:LEVEL}, ${3:FCN}, ${4:optional_EXTRAIMAGES}, 'BlockSize', ${5:value}, 'UseParallel', ${6:value}, 'BorderSize', ${7:value}, 'DisplayWaitbar', ${8:value}, 'OutputFolder', ${9:value}, 'PadMethod', ${10:value}, 'Mask', ${11:value}, 'InclusionThreshold', ${12:value}, 'ExtraImageLevels', ${13:value})'''
         description: '''bigimage.apply(IMG, LEVEL, FCN, optional_EXTRAIMAGES, 'BlockSize', value, 'UseParallel', value, 'BorderSize', value, 'DisplayWaitbar', value, 'OutputFolder', value, 'PadMethod', value, 'Mask', value, 'InclusionThreshold', value, 'ExtraImageLevels', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/images/ref/bigimage.apply.html'
 

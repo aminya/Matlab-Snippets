@@ -5,70 +5,82 @@
         prefix: "daq.Session.addAnalogInputChannel"
         body: '''daq.Session.addAnalogInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
         description: '''daq.Session.addAnalogInputChannel(session, deviceID, channelID, measurementType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addAnalogInputChannel.html'
 
 
     "daq.createSession":
         prefix: "daq.createSession"
         body: '''daq.createSession(${1:vendorID})'''
         description: '''daq.createSession(vendorID)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.createSession.html'
 
 
     "daq.Session.addAudioInputChannel":
         prefix: "daq.Session.addAudioInputChannel"
         body: '''daq.Session.addAudioInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_measurementType})'''
         description: '''daq.Session.addAudioInputChannel(session, deviceID, channelID, optional_measurementType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addAudioInputChannel.html'
 
 
     "daq.Session.addCounterInputChannel":
         prefix: "daq.Session.addCounterInputChannel"
         body: '''daq.Session.addCounterInputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
         description: '''daq.Session.addCounterInputChannel(session, deviceID, channelID, measurementType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addCounterInputChannel.html'
 
 
     "daq.Session.addTriggerConnection":
         prefix: "daq.Session.addTriggerConnection"
         body: '''daq.Session.addTriggerConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
         description: '''daq.Session.addTriggerConnection(session, source, destination, connectionType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addTriggerConnection.html'
 
 
     "daq.Session.addDigitalChannel":
         prefix: "daq.Session.addDigitalChannel"
         body: '''daq.Session.addDigitalChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:optional_directionalityParameter})'''
         description: '''daq.Session.addDigitalChannel(session, deviceID, channelID, optional_directionalityParameter)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addDigitalChannel.html'
 
 
     "daq.Session.addCounterOutputChannel":
         prefix: "daq.Session.addCounterOutputChannel"
         body: '''daq.Session.addCounterOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
         description: '''daq.Session.addCounterOutputChannel(session, deviceID, channelID, measurementType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addCounterOutputChannel.html'
 
 
     "daq.Session.addAudioOutputChannel":
         prefix: "daq.Session.addAudioOutputChannel"
         body: '''daq.Session.addAudioOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
         description: '''daq.Session.addAudioOutputChannel(session, deviceID, channelID, measurementType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addAudioOutputChannel.html'
 
 
     "daq.Session.addClockConnection":
         prefix: "daq.Session.addClockConnection"
         body: '''daq.Session.addClockConnection(${1:session}, ${2:source}, ${3:destination}, ${4:connectionType})'''
         description: '''daq.Session.addClockConnection(session, source, destination, connectionType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addClockConnection.html'
 
 
     "daq.Session.addFunctionGeneratorChannel":
         prefix: "daq.Session.addFunctionGeneratorChannel"
         body: '''daq.Session.addFunctionGeneratorChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:waveformType})'''
         description: '''daq.Session.addFunctionGeneratorChannel(session, deviceID, channelID, waveformType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addFunctionGeneratorChannel.html'
 
 
     "daq.Session.addAnalogOutputChannel":
         prefix: "daq.Session.addAnalogOutputChannel"
         body: '''daq.Session.addAnalogOutputChannel(${1:session}, ${2:deviceID}, ${3:channelID}, ${4:measurementType})'''
         description: '''daq.Session.addAnalogOutputChannel(session, deviceID, channelID, measurementType)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addAnalogOutputChannel.html'
 
 
     "daq.Session.addlistener":
         prefix: "daq.Session.addlistener"
         body: '''daq.Session.addlistener(${1:session}, ${2:event}, ${3:callbackFunction})'''
         description: '''daq.Session.addlistener(session, event, callbackFunction)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/daq/ref/daq.Session.addlistener.html'
 

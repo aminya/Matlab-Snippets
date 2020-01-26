@@ -5,10 +5,12 @@
         prefix: "addCustomBasemap"
         body: '''addCustomBasemap(${1:basemapName}, ${2:URL}, 'Attribution', ${3:value}, 'DisplayName', ${4:value}, 'MaxZoomLevel', ${5:value}, 'IsDeployable', ${6:value})'''
         description: '''addCustomBasemap(basemapName, URL, 'Attribution', value, 'DisplayName', value, 'MaxZoomLevel', value, 'IsDeployable', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/addCustomBasemap.html'
 
 
     "removeCustomBasemap":
         prefix: "removeCustomBasemap"
         body: '''removeCustomBasemap(${1:basemapName})'''
         description: '''removeCustomBasemap(basemapName)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/removeCustomBasemap.html'
 

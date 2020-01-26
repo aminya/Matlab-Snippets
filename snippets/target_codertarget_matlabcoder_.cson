@@ -5,4 +5,5 @@
         prefix: "coder.matlabtarget.deploytohardware.deploy"
         body: '''coder.matlabtarget.deploytohardware.deploy(${1:obj}, ${2:functionName}, ${3:customConfigObject})'''
         description: '''coder.matlabtarget.deploytohardware.deploy(obj, functionName, customConfigObject)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/target/ref/coder.matlabtarget.deploytohardware.deploy.html'
 

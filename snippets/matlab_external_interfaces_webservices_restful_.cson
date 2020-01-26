@@ -5,4 +5,5 @@
         prefix: "weboptions"
         body: '''weboptions(${1:name})'''
         description: '''weboptions(name)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/weboptions.html'
 

@@ -5,16 +5,19 @@
         prefix: "mapreducer"
         body: '''${1:mr} = mapreducer(${1:optional_mr}, 'ObjectVisibility', ${2:value})'''
         description: '''mr = mapreducer(optional_mr, 'ObjectVisibility', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mapreducer.html'
 
 
     "gcmr":
         prefix: "gcmr"
         body: '''${1:mr} = gcmr(${1:optional_'nocreate'})'''
         description: '''mr = gcmr(optional_'nocreate')'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/gcmr.html'
 
 
     "mapreduce":
         prefix: "mapreduce"
         body: '''${1:outds} = mapreduce(${1:ds}, ${2:mapfun}, ${3:reducefun}, ${4:optional_mr}, 'OutputType', ${5:value}, 'OutputFolder', ${6:value}, 'Display', ${7:value})'''
         description: '''outds = mapreduce(ds, mapfun, reducefun, optional_mr, 'OutputType', value, 'OutputFolder', value, 'Display', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/matlab/ref/mapreduce.html'
 

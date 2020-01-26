@@ -5,4 +5,5 @@
         prefix: "imaq.VideoDevice"
         body: '''${1:out} = imaq.VideoDevice(${1:adaptorName}, ${2:deviceID}, ${3:format}, 'BayerSensorAlignment', ${4:value}, 'HardwareTriggering', ${5:value}, 'ReturnedColorSpace', ${6:value}, 'ReturnedDataType', ${7:value}, 'ROI', ${8:value}, 'TriggerConfiguration', ${9:value})'''
         description: '''out = imaq.VideoDevice(adaptorName, deviceID, format, 'BayerSensorAlignment', value, 'HardwareTriggering', value, 'ReturnedColorSpace', value, 'ReturnedDataType', value, 'ROI', value, 'TriggerConfiguration', value)'''
+        descriptionMoreURL: 'https://www.mathworks.com/help/imaq/ref/imaq.VideoDevice.html'
 
