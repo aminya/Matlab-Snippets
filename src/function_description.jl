@@ -1,91 +1,108 @@
-using AcuteML
+using AcuteML, StructArrays, EzXML
 
 # Types definition
 
 # helps
 @aml mutable struct Fun "tocitem"
-    name::UN{String} = nothing, "~"
-    purpose::UN{String} = nothing, "~"
-    docurl::UN{String} = nothing, a"target"
+    name::String, "~"
+    purpose::String, "~"
+    docurl::String, a"target"
 end
 
-@aml mutable struct Group "tocitem"
-    funs::Vector{Fun}, "tocitem"
-    # groupname::String, t""
-    docurlroot::String, a"target"
-end
-
-@aml mutable struct Help "tocitem"
-    groups::Vector{Group}, "tocitem"
-    # helpname::String, t""
-    filename::String, a"target"
-end
-
-@aml mutable struct toc "~"
-    help::Help, "tocitem"
-    version::String, a"~"
-end
-
-@aml mutable struct Doc "xml"
-    toc::toc, "~"
+function recursive_search!(in)
+    for elm in eachelement(in)
+        if haselement(elm)
+            elm_name = firstelement(elm).name
+            if elm_name == "name"
+                push!(allnodes, elm)
+            else
+                recursive_search!(elm)
+            end
+        end
+    end
 end
 
 function description_parse()
-    xmlfiles = ["input/help/wavelet/helpfuncbycat.xml",
-    "input/help/vision/helpfuncbycat.xml",
-    "input/help/symbolic/helpfuncbycat.xml",
-    "input/help/stats/helpfuncbycat.xml",
-    "input/help/stateflow/helpfuncbycat.xml",
-    "input/help/slcontrol/helpfuncbycat.xml",
-    "input/help/sl3d/helpfuncbycat.xml",
-    "input/help/simulink/helpfuncbycat.xml",
-    "input/help/signal/helpfuncbycat.xml",
-    "input/help/rtw/helpfuncbycat.xml",
-    "input/help/robust/helpfuncbycat.xml",
-    "input/help/relnotes/helpfuncbycat.xml",
-    "input/help/physmod/sps/helpfuncbycat.xml",
-    "input/help/physmod/sm/helpfuncbycat.xml",
-    "input/help/physmod/simscape/helpfuncbycat.xml",
-    "input/help/pde/helpfuncbycat.xml",
-    "input/help/parallel-computing/helpfuncbycat.xml",
-    "input/help/optim/helpfuncbycat.xml",
-    "input/help/mpc/helpfuncbycat.xml",
-    "input/help/matlab/helpfuncbycat.xml",
-    "input/help/map/helpfuncbycat.xml",
-    "input/help/instrument/helpfuncbycat.xml",
-    "input/help/imaq/helpfuncbycat.xml",
-    "input/help/images/helpfuncbycat.xml",
-    "input/help/ident/helpfuncbycat.xml",
-    "input/help/gads/helpfuncbycat.xml",
-    "input/help/fuzzy/helpfuncbycat.xml",
-    "input/help/finance/helpfuncbycat.xml",
-    "input/help/econ/helpfuncbycat.xml",
-    "input/help/ecoder/helpfuncbycat.xml",
-    "input/help/dsp/helpfuncbycat.xml",
-    "input/help/deeplearning/helpfuncbycat.xml",
-    "input/help/daq/helpfuncbycat.xml",
-    "input/help/curvefit/helpfuncbycat.xml",
-    "input/help/control/helpfuncbycat.xml",
-    "input/help/compiler_sdk/helpfuncbycat.xml",
-    "input/help/compiler/helpfuncbycat.xml",
-    "input/help/comm/helpfuncbycat.xml",
-    "input/help/coder/helpfuncbycat.xml",
-    "input/help/bioinfo/helpfuncbycat.xml",
-    "input/help/aerotbx/helpfuncbycat.xml",
-    "input/help/aeroblks/helpfuncbycat.xml",
-    ]
+
+    include("fileslist/xmlfileslist.jl")
+    xmlfiles = xmlfiles[20:21]
 
     numfile = length(xmlfiles)
-    docs = Vector{Doc}(undef, numfile)
+    docs = Vector{Any}(undef, numfile)
     groups = Vector{String}(undef, numfile)
+    types = Vector{Integer}(undef, numfile)
 
     for (i, file) in enumerate(xmlfiles)
         groups[i] = match(r"input\/help\/(.+)\/", file).captures[1]
         xml = readxml(file)
-        docs[i] = Doc(xml)
+        try
+            # @infiltrate
+            docs[i] = Doc2(xml)
+            types[i] = 2
+        catch
+            docs[i] = Doc(xml)
+            types[i] = 1
+        end
+
     end
     dict = Dict(g => d for (d, g) in zip(docs, groups))
+
+    funs_docs = Vector{Fun}(undef, numfile)
+    for (d, t) in zip(docs, types)
+        if t == 1
+            funs_docs[i] = reduce(vcat,
+                                StructArray(
+                                        reduce(vcat,
+                                            StructArray(
+                                                StructArray(
+                                                    d.toc
+                                                ).help
+                                            ).groups
+                                        )
+                                ).funs,
+                            )
+        else t == 2
+            funs_docs[i] = StructArray(
+                                reduce(vcat,
+                                    StructArray(
+                                            reduce(vcat,
+                                                StructArray(
+                                                    StructArray(
+                                                        d.toc
+                                                    ).help
+                                                ).groups
+                                            )
+                                    ).subgroup
+                                )
+                            ).funs
+        end
+    end
+
+    return dict, docs, funs_docs
+end
+
+# description_dict, docs, funs_docs = description_parse()
+
+function description_parse2()
+    global allnodes
+    allnodes = Node[]
+    include("fileslist/xmlfileslist.jl")
+
+    numfile = length(xmlfiles)
+    groups = Vector{String}(undef, numfile)
+    funs = Vector{Vector{Fun}}(undef, numfile)
+
+    for (i, file) in enumerate(xmlfiles)
+        groups[i] = match(r"input\/help\/(.+)\/", file).captures[1]
+        xml = readxml(file)
+        recursive_search!(root(xml))
+        funs[i] = Fun.(allnodes)
+    end
+    allfuns = reduce(vcat, funs)
+
+    dict = Dict(f.name => f for f in allfuns)
+
     return dict
 end
 
-description_dict = description_parse()
+funsdict = description_parse2()
