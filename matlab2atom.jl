@@ -70,9 +70,13 @@ function matlab2atom(data)
                         end
                     end
 
-
-                    name = arg["name"]
                     kind = arg["kind"]
+                    if kind == "varargin"
+                        name = "varargin"
+                    else
+                        name = arg["name"]
+                    end
+
                     if kind == "namevalue"
                         in[iIn]="\'$name\', \${$iIn:value}"
                     elseif kind == "ordered"
