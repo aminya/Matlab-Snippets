@@ -1,7 +1,13 @@
 # Matlab-Snippets
 Generate Matlab snippets for Atom
 
-Uses Matlab's original JSON files to generate the snippets.
+Uses Matlab's original JSON and XML files to generate the snippets.
+
+Snippets contain:
+  - function description
+  - function prototype
+  - link to help
+  - function toolbox name
 
 # How to use
 Snippets are available in snippets folder
@@ -9,6 +15,7 @@ Snippets are available in snippets folder
 # How to generate
 You need to install Julia language, then:
 ```julia
-using Pkg; Pkg.add("JSON")
+# cd to this project then:
+using Pkg; Pkg.activate("."); Pkg.instantiate();
 include("matlab2atom.jl")
 ```
