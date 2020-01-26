@@ -5,103 +5,103 @@
         prefix: "MultiStart.run"
         body: '''MultiStart.run(${1:problem}, ${2:optional_numstartpts})'''
         description: '''MultiStart.run(problem, optional_numstartpts)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/MultiStart.run.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/MultiStart.run.html'
 
 
     "gamultiobj":
         prefix: "gamultiobj"
         body: '''gamultiobj(${1:fun}, ${2:nvars}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:options})'''
         description: '''gamultiobj(fun, nvars, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, options)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/gamultiobj.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/gamultiobj.html'
 
 
     "surrogateopt":
         prefix: "surrogateopt"
         body: '''surrogateopt(${1:filename}, ${2:options})'''
         description: '''surrogateopt(filename, options)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/surrogateopt.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/surrogateopt.html'
 
 
     "particleswarm":
         prefix: "particleswarm"
         body: '''particleswarm(${1:fun}, ${2:nvars}, ${3:lb}, ${4:ub}, ${5:options})'''
         description: '''particleswarm(fun, nvars, lb, ub, options)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/particleswarm.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/particleswarm.html'
 
 
     "CustomStartPointSet":
         prefix: "CustomStartPointSet"
         body: '''CustomStartPointSet(${1:ptsmatrix})'''
         description: '''CustomStartPointSet(ptsmatrix)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/CustomStartPointSet.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/CustomStartPointSet.html'
 
 
     "patternsearch":
         prefix: "patternsearch"
         body: '''patternsearch(${1:fun}, ${2:x0}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:options})'''
         description: '''patternsearch(fun, x0, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, options)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/patternsearch.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/patternsearch.html'
 
 
     "simulannealbnd":
         prefix: "simulannealbnd"
         body: '''simulannealbnd(${1:fun}, ${2:x0}, ${3:lb}, ${4:ub}, ${5:options})'''
         description: '''simulannealbnd(fun, x0, lb, ub, options)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/simulannealbnd.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/simulannealbnd.html'
 
 
     "GlobalSearch":
         prefix: "GlobalSearch"
         body: '''GlobalSearch(${1:optional_oldSolver}, 'BasinRadiusFactor', ${2:value}, 'Display', ${3:value}, 'DistanceThresholdFactor', ${4:value}, 'FunctionTolerance', ${5:value}, 'MaxTime', ${6:value}, 'MaxWaitCycle', ${7:value}, 'NumStageOnePoints', ${8:value}, 'OutputFcn', ${9:value}, 'PenaltyThresholdFactor', ${10:value}, 'PlotFcn', ${11:value}, 'StartPointsToRun', ${12:value}, 'XTolerance', ${13:value})'''
         description: '''GlobalSearch(optional_oldSolver, 'BasinRadiusFactor', value, 'Display', value, 'DistanceThresholdFactor', value, 'FunctionTolerance', value, 'MaxTime', value, 'MaxWaitCycle', value, 'NumStageOnePoints', value, 'OutputFcn', value, 'PenaltyThresholdFactor', value, 'PlotFcn', value, 'StartPointsToRun', value, 'XTolerance', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/GlobalSearch.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/GlobalSearch.html'
 
 
     "paretosearch":
         prefix: "paretosearch"
         body: '''paretosearch(${1:fun}, ${2:nvars}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:options})'''
         description: '''paretosearch(fun, nvars, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, options)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/paretosearch.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/paretosearch.html'
 
 
     "RandomStartPointSet.list":
         prefix: "RandomStartPointSet.list"
         body: '''RandomStartPointSet.list(${1:rs}, ${2:problem})'''
         description: '''RandomStartPointSet.list(rs, problem)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/RandomStartPointSet.list.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/RandomStartPointSet.list.html'
 
 
     "ga":
         prefix: "ga"
         body: '''ga(${1:fun}, ${2:nvars}, ${3:Aineq}, ${4:bineq}, ${5:Aeq}, ${6:beq}, ${7:lb}, ${8:ub}, ${9:nonlcon}, ${10:intcon})'''
         description: '''ga(fun, nvars, Aineq, bineq, Aeq, beq, lb, ub, nonlcon, intcon)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/ga.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ga.html'
 
 
     "MultiStart":
         prefix: "MultiStart"
         body: '''MultiStart(${1:optional_oldSolver}, 'Display', ${2:value}, 'FunctionTolerance', ${3:value}, 'MaxTime', ${4:value}, 'OutputFcn', ${5:value}, 'PlotFcn', ${6:value}, 'StartPointsToRun', ${7:value}, 'UseParallel', ${8:value}, 'XTolerance', ${9:value})'''
         description: '''MultiStart(optional_oldSolver, 'Display', value, 'FunctionTolerance', value, 'MaxTime', value, 'OutputFcn', value, 'PlotFcn', value, 'StartPointsToRun', value, 'UseParallel', value, 'XTolerance', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/MultiStart.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/MultiStart.html'
 
 
     "CustomStartPointSet.list":
         prefix: "CustomStartPointSet.list"
         body: '''CustomStartPointSet.list(${1:cs})'''
         description: '''CustomStartPointSet.list(cs)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/CustomStartPointSet.list.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/CustomStartPointSet.list.html'
 
 
     "RandomStartPointSet":
         prefix: "RandomStartPointSet"
         body: '''RandomStartPointSet(${1:optional_oldrs}, 'ArtificialBound', ${2:value}, 'NumStartPoints', ${3:value})'''
         description: '''RandomStartPointSet(optional_oldrs, 'ArtificialBound', value, 'NumStartPoints', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/RandomStartPointSet.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/RandomStartPointSet.html'
 
 
     "GlobalSearch.run":
         prefix: "GlobalSearch.run"
         body: '''GlobalSearch.run(${1:problem})'''
         description: '''GlobalSearch.run(problem)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/ref/GlobalSearch.run.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/globaloptim/GlobalSearch.run.html'
 

@@ -5,19 +5,19 @@
         prefix: "wvtool"
         body: '''${1:H} = wvtool(${1:WindowVector})'''
         description: '''H = wvtool(WindowVector)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/signal/ref/wvtool.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/signal/wvtool.html'
 
 
     "fvtool":
         prefix: "fvtool"
         body: '''${1:h} = fvtool(${1:d})'''
         description: '''h = fvtool(d)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/signal/ref/fvtool.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/signal/fvtool.html'
 
 
     "fmethod.abstractdesign.isfir":
         prefix: "fmethod.abstractdesign.isfir"
         body: '''${1:flag} = fmethod.abstractdesign.isfir(${1:d})'''
         description: '''flag = fmethod.abstractdesign.isfir(d)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/signal/ref/fmethod.abstractdesign.isfir.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/signal/fmethod.abstractdesign.isfir.html'
 

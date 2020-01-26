@@ -5,5 +5,5 @@
         prefix: "sheetnames"
         body: '''${1:sn} = sheetnames(${1:filename})'''
         description: '''sn = sheetnames(filename)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/sheetnames.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/sheetnames.html'
 

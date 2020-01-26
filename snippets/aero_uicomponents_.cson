@@ -5,54 +5,54 @@
         prefix: "uiaerohorizon"
         body: '''uiaerohorizon(${1:Parent}, ${2:properties})'''
         description: '''uiaerohorizon(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaerohorizon.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaerohorizon.html'
 
 
     "uiaeroairspeed":
         prefix: "uiaeroairspeed"
         body: '''uiaeroairspeed(${1:Parent}, ${2:properties})'''
         description: '''uiaeroairspeed(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaeroairspeed.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroairspeed.html'
 
 
     "uiaerorpm":
         prefix: "uiaerorpm"
         body: '''uiaerorpm(${1:Parent}, ${2:properties})'''
         description: '''uiaerorpm(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaerorpm.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaerorpm.html'
 
 
     "uiaeroclimb":
         prefix: "uiaeroclimb"
         body: '''uiaeroclimb(${1:Parent}, ${2:properties})'''
         description: '''uiaeroclimb(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaeroclimb.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroclimb.html'
 
 
     "uiaeroturn":
         prefix: "uiaeroturn"
         body: '''uiaeroturn(${1:Parent}, ${2:properties})'''
         description: '''uiaeroturn(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaeroturn.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroturn.html'
 
 
     "uiaeroheading":
         prefix: "uiaeroheading"
         body: '''uiaeroheading(${1:Parent}, ${2:properties})'''
         description: '''uiaeroheading(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaeroheading.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroheading.html'
 
 
     "uiaeroegt":
         prefix: "uiaeroegt"
         body: '''uiaeroegt(${1:Parent}, ${2:properties})'''
         description: '''uiaeroegt(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaeroegt.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroegt.html'
 
 
     "uiaeroaltimeter":
         prefix: "uiaeroaltimeter"
         body: '''uiaeroaltimeter(${1:Parent}, ${2:properties})'''
         description: '''uiaeroaltimeter(Parent, properties)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/aero/ref/uiaeroaltimeter.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/aero/uiaeroaltimeter.html'
 

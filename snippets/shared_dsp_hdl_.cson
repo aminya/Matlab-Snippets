@@ -5,5 +5,5 @@
         prefix: "dsp.LogicAnalyzer"
         body: '''dsp.LogicAnalyzer(${1:NumInputPorts}, ${2:SampleTime}, ${3:varargin})'''
         description: '''dsp.LogicAnalyzer(NumInputPorts, SampleTime, varargin)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.LogicAnalyzer.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.LogicAnalyzer.html'
 

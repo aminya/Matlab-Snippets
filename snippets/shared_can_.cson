@@ -5,5 +5,5 @@
         prefix: "canDatabase"
         body: '''${1:obj} = canDatabase(${1:File})'''
         description: '''obj = canDatabase(File)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/canDatabase.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/canDatabase.html'
 

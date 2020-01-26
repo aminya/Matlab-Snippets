@@ -5,5 +5,5 @@
         prefix: "mpiSettings"
         body: '''mpiSettings('MessageLoggingDestination', ${1:value})'''
         description: '''mpiSettings('MessageLoggingDestination', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/parallel/ref/mpiSettings.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/parallel/mpiSettings.html'
 

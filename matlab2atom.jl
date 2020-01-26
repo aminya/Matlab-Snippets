@@ -140,6 +140,11 @@ function matlab2atom(data, group)
             description = "$strInDesc"
         end
 
+        if group == "matlab"
+            descriptionMoreURL = "https://www.mathworks.com/help/$group/ref/$fun.html"
+        else
+            descriptionMoreURL = "https://www.mathworks.com/help/$group/$fun.html"
+        end
 
         final *= """
 
@@ -147,7 +152,7 @@ function matlab2atom(data, group)
                 prefix: "$fun"
                 body: '''$body'''
                 description: '''$description'''
-                descriptionMoreURL: 'https://www.mathworks.com/help/$group/ref/$fun.html'
+                descriptionMoreURL: '$descriptionMoreURL'
 
         """
         catch

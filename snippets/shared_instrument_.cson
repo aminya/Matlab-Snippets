@@ -5,117 +5,117 @@
         prefix: "delete"
         body: '''delete(${1:obj})'''
         description: '''delete(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/delete.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/delete.html'
 
 
     "fclose":
         prefix: "fclose"
         body: '''fclose(${1:obj})'''
         description: '''fclose(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/fclose.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fclose.html'
 
 
     "disp":
         prefix: "disp"
         body: '''disp(${1:obj})'''
         description: '''disp(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/disp.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/disp.html'
 
 
     "binblockread":
         prefix: "binblockread"
         body: '''[${1:A}, ${2:count}, ${3:msg}] = binblockread(${1:obj}, ${2:optional_precision})'''
         description: '''[A, count, msg] = binblockread(obj, optional_precision)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/binblockread.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/binblockread.html'
 
 
     "flushoutput":
         prefix: "flushoutput"
         body: '''flushoutput(${1:obj})'''
         description: '''flushoutput(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/flushoutput.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/flushoutput.html'
 
 
     "readasync":
         prefix: "readasync"
         body: '''readasync(${1:obj}, ${2:optional_size})'''
         description: '''readasync(obj, optional_size)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/readasync.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/readasync.html'
 
 
     "flushinput":
         prefix: "flushinput"
         body: '''flushinput(${1:obj})'''
         description: '''flushinput(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/flushinput.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/flushinput.html'
 
 
     "binblockwrite":
         prefix: "binblockwrite"
         body: '''binblockwrite(${1:obj}, ${2:A}, ${3:optional_precision}, ${4:optional_header}, ${5:optional_headerformat})'''
         description: '''binblockwrite(obj, A, optional_precision, optional_header, optional_headerformat)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/binblockwrite.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/binblockwrite.html'
 
 
     "fgets":
         prefix: "fgets"
         body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgets(${1:obj})'''
         description: '''[tline, count, msg, datagramaddress, datagramport] = fgets(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/fgets.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fgets.html'
 
 
     "instrfindall":
         prefix: "instrfindall"
         body: '''${1:out} = instrfindall(${1:optional_obj}, 'BitRate', ${2:value}, 'BoardIndex', ${3:value}, 'BoardSerial', ${4:value}, 'ByteOrder', ${5:value}, 'InputBufferSize', ${6:value}, 'Name', ${7:value}, 'ObjectVisibility', ${8:value}, 'OutputBufferSize', ${9:value}, 'PullupResistors', ${10:value}, 'RecordDetail', ${11:value}, 'RecordMode', ${12:value}, 'RecordName', ${13:value}, 'RecordStatus', ${14:value}, 'RemoteAddress', ${15:value}, 'Status', ${16:value}, 'Tag', ${17:value}, 'TargetPower', ${18:value}, 'Timeout', ${19:value}, 'TimerFcn', ${20:value}, 'TimerPeriod', ${21:value}, 'TransferStatus', ${22:value}, 'Type', ${23:value}, 'UserData', ${24:value}, 'ValuesReceived', ${25:value}, 'ValuesSent', ${26:value}, 'Vendor', ${27:value})'''
         description: '''out = instrfindall(optional_obj, 'BitRate', value, 'BoardIndex', value, 'BoardSerial', value, 'ByteOrder', value, 'InputBufferSize', value, 'Name', value, 'ObjectVisibility', value, 'OutputBufferSize', value, 'PullupResistors', value, 'RecordDetail', value, 'RecordMode', value, 'RecordName', value, 'RecordStatus', value, 'RemoteAddress', value, 'Status', value, 'Tag', value, 'TargetPower', value, 'Timeout', value, 'TimerFcn', value, 'TimerPeriod', value, 'TransferStatus', value, 'Type', value, 'UserData', value, 'ValuesReceived', value, 'ValuesSent', value, 'Vendor', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/instrfindall.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/instrfindall.html'
 
 
     "fgetl":
         prefix: "fgetl"
         body: '''[${1:tline}, ${2:count}, ${3:msg}, ${4:datagramaddress}, ${5:datagramport}] = fgetl(${1:obj})'''
         description: '''[tline, count, msg, datagramaddress, datagramport] = fgetl(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/fgetl.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fgetl.html'
 
 
     "instrcallback":
         prefix: "instrcallback"
         body: '''instrcallback(${1:obj}, ${2:event})'''
         description: '''instrcallback(obj, event)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/instrcallback.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/instrcallback.html'
 
 
     "scanstr":
         prefix: "scanstr"
         body: '''[${1:A}, ${2:count}, ${3:msg}] = scanstr(${1:obj}, ${2:optional_delimiter}, ${3:optional_format})'''
         description: '''[A, count, msg] = scanstr(obj, optional_delimiter, optional_format)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/scanstr.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/scanstr.html'
 
 
     "fopen":
         prefix: "fopen"
         body: '''fopen(${1:obj})'''
         description: '''fopen(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/fopen.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fopen.html'
 
 
     "record":
         prefix: "record"
         body: '''record(${1:obj}, ${2:optional_switch})'''
         description: '''record(obj, optional_switch)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/record.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/record.html'
 
 
     "fprintf":
         prefix: "fprintf"
         body: '''fprintf(${1:obj}, ${2:optional_format}, ${3:cmd}, ${4:optional_mode})'''
         description: '''fprintf(obj, optional_format, cmd, optional_mode)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/fprintf.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/fprintf.html'
 
 
     "stopasync":
         prefix: "stopasync"
         body: '''stopasync(${1:obj})'''
         description: '''stopasync(obj)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/stopasync.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/stopasync.html'
 

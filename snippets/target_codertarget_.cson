@@ -5,12 +5,12 @@
         prefix: "coder.hardware"
         body: '''coder.hardware(${1:name})'''
         description: '''coder.hardware(name)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/target/ref/coder.hardware.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/target/coder.hardware.html'
 
 
     "targetHardware":
         prefix: "targetHardware"
         body: '''${1:obj} = targetHardware(${1:hardwareName})'''
         description: '''obj = targetHardware(hardwareName)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/target/ref/targetHardware.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/target/targetHardware.html'
 

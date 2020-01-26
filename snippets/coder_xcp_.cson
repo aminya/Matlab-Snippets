@@ -5,5 +5,5 @@
         prefix: "coder.xcp.a2l.addCoderXCPInfo"
         body: '''coder.xcp.a2l.addCoderXCPInfo(${1:buildDir}, 'MergeMdlRefs', ${2:value}, 'SetAddress', ${3:value}, 'InputFile', ${4:value}, 'OutputFile', ${5:value})'''
         description: '''coder.xcp.a2l.addCoderXCPInfo(buildDir, 'MergeMdlRefs', value, 'SetAddress', value, 'InputFile', value, 'OutputFile', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/coder.xcp.a2l.addCoderXCPInfo.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/coder.xcp.a2l.addCoderXCPInfo.html'
 

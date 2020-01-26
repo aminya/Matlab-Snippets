@@ -5,5 +5,5 @@
         prefix: "rtwbuild"
         body: '''rtwbuild(${1:filename}, 'ForceTopModelBuild', ${2:value}, 'generateCodeOnly', ${3:value}, 'Mode', ${4:value}, 'ExportFunctionInitializeFunctionName', ${5:value})'''
         description: '''rtwbuild(filename, 'ForceTopModelBuild', value, 'generateCodeOnly', value, 'Mode', value, 'ExportFunctionInitializeFunctionName', value)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/rtw/ref/rtwbuild.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/rtw/rtwbuild.html'
 

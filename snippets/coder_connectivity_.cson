@@ -5,5 +5,5 @@
         prefix: "buildStandaloneCoderAssumptions"
         body: '''buildStandaloneCoderAssumptions(${1:buildFolder})'''
         description: '''buildStandaloneCoderAssumptions(buildFolder)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/coder/ref/buildStandaloneCoderAssumptions.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/coder/buildStandaloneCoderAssumptions.html'
 

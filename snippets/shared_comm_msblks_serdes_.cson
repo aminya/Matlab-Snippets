@@ -5,12 +5,12 @@
         prefix: "comm.PhaseNoise"
         body: '''comm.PhaseNoise(${1:Level}, ${2:FrequencyOffset}, ${3:SampleRate}, ${4:varargin})'''
         description: '''comm.PhaseNoise(Level, FrequencyOffset, SampleRate, varargin)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/comm.PhaseNoise.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/comm.PhaseNoise.html'
 
 
     "comm.EyeDiagram":
         prefix: "comm.EyeDiagram"
         body: '''comm.EyeDiagram(${1:varargin})'''
         description: '''comm.EyeDiagram(varargin)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/comm.EyeDiagram.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/comm.EyeDiagram.html'
 

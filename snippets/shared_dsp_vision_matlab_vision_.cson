@@ -5,5 +5,5 @@
         prefix: "dsp.DCT"
         body: '''dsp.DCT(${1:arg})'''
         description: '''dsp.DCT(arg)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.DCT.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.DCT.html'
 

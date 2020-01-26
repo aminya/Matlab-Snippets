@@ -5,19 +5,19 @@
         prefix: "dsp.StateLevels"
         body: '''dsp.StateLevels(${1:arg})'''
         description: '''dsp.StateLevels(arg)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.StateLevels.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.StateLevels.html'
 
 
     "dsp.TransitionMetrics":
         prefix: "dsp.TransitionMetrics"
         body: '''dsp.TransitionMetrics(${1:arg})'''
         description: '''dsp.TransitionMetrics(arg)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.TransitionMetrics.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.TransitionMetrics.html'
 
 
     "dsp.PulseMetrics":
         prefix: "dsp.PulseMetrics"
         body: '''dsp.PulseMetrics(${1:arg})'''
         description: '''dsp.PulseMetrics(arg)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/shared/ref/dsp.PulseMetrics.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/shared/dsp.PulseMetrics.html'
 

@@ -5,250 +5,250 @@
         prefix: "ned2aer"
         body: '''[${1:az}, ${2:elev}, ${3:slantRange}] = ned2aer(${1:xNorth}, ${2:yEast}, ${3:zDown}, ${4:angleUnit})'''
         description: '''[az, elev, slantRange] = ned2aer(xNorth, yEast, zDown, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/ned2aer.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ned2aer.html'
 
 
     "n2ecc":
         prefix: "n2ecc"
         body: '''${1:ecc} = n2ecc(${1:n})'''
         description: '''ecc = n2ecc(n)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/n2ecc.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/n2ecc.html'
 
 
     "map.geodesy.ConformalLatitudeConverter.inverse":
         prefix: "map.geodesy.ConformalLatitudeConverter.inverse"
         body: '''${1:phi} = map.geodesy.ConformalLatitudeConverter.inverse(${1:converter}, ${2:chi}, ${3:angleUnit})'''
         description: '''phi = map.geodesy.ConformalLatitudeConverter.inverse(converter, chi, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.ConformalLatitudeConverter.inverse.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.ConformalLatitudeConverter.inverse.html'
 
 
     "map.geodesy.RectifyingLatitudeConverter.forward":
         prefix: "map.geodesy.RectifyingLatitudeConverter.forward"
         body: '''${1:mu} = map.geodesy.RectifyingLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''mu = map.geodesy.RectifyingLatitudeConverter.forward(converter, phi, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.RectifyingLatitudeConverter.forward.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.RectifyingLatitudeConverter.forward.html'
 
 
     "map.geodesy.RectifyingLatitudeConverter":
         prefix: "map.geodesy.RectifyingLatitudeConverter"
         body: '''${1:converter} = map.geodesy.RectifyingLatitudeConverter(${1:spheroid})'''
         description: '''converter = map.geodesy.RectifyingLatitudeConverter(spheroid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.RectifyingLatitudeConverter.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.RectifyingLatitudeConverter.html'
 
 
     "lookAtSpheroid":
         prefix: "lookAtSpheroid"
         body: '''[${1:lat}, ${2:lon}, ${3:slantrange}] = lookAtSpheroid(${1:lat0}, ${2:lon0}, ${3:h0}, ${4:az}, ${5:tilt}, ${6:spheroid})'''
         description: '''[lat, lon, slantrange] = lookAtSpheroid(lat0, lon0, h0, az, tilt, spheroid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/lookAtSpheroid.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/lookAtSpheroid.html'
 
 
     "rcurve":
         prefix: "rcurve"
         body: '''${1:r} = rcurve(${1:optional_radius}, ${2:ellipsoid}, ${3:lat}, ${4:optional_angleunits})'''
         description: '''r = rcurve(optional_radius, ellipsoid, lat, optional_angleunits)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/rcurve.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/rcurve.html'
 
 
     "map.geodesy.IsometricLatitudeConverter.forward":
         prefix: "map.geodesy.IsometricLatitudeConverter.forward"
         body: '''${1:psi} = map.geodesy.IsometricLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''psi = map.geodesy.IsometricLatitudeConverter.forward(converter, phi, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.IsometricLatitudeConverter.forward.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.IsometricLatitudeConverter.forward.html'
 
 
     "egm96geoid":
         prefix: "egm96geoid"
         body: '''[${1:N}, ${2:refvec}] = egm96geoid(${1:samplefactor}, ${2:latlim}, ${3:lonlim})'''
         description: '''[N, refvec] = egm96geoid(samplefactor, latlim, lonlim)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/egm96geoid.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/egm96geoid.html'
 
 
     "geodeticLatitudeFromGeocentric":
         prefix: "geodeticLatitudeFromGeocentric"
         body: '''${1:phi} = geodeticLatitudeFromGeocentric(${1:psi}, ${2:F}, ${3:angleUnit})'''
         description: '''phi = geodeticLatitudeFromGeocentric(psi, F, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/geodeticLatitudeFromGeocentric.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/geodeticLatitudeFromGeocentric.html'
 
 
     "map.geodesy.ConformalLatitudeConverter.forward":
         prefix: "map.geodesy.ConformalLatitudeConverter.forward"
         body: '''${1:chi} = map.geodesy.ConformalLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''chi = map.geodesy.ConformalLatitudeConverter.forward(converter, phi, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.ConformalLatitudeConverter.forward.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.ConformalLatitudeConverter.forward.html'
 
 
     "aer2enu":
         prefix: "aer2enu"
         body: '''[${1:xEast}, ${2:yNorth}, ${3:zUp}] = aer2enu(${1:az}, ${2:elev}, ${3:slantRange}, ${4:angleUnit})'''
         description: '''[xEast, yNorth, zUp] = aer2enu(az, elev, slantRange, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/aer2enu.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/aer2enu.html'
 
 
     "majaxis":
         prefix: "majaxis"
         body: '''${1:a} = majaxis(${1:semiminor}, ${2:e})'''
         description: '''a = majaxis(semiminor, e)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/majaxis.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/majaxis.html'
 
 
     "parametricLatitude":
         prefix: "parametricLatitude"
         body: '''${1:beta} = parametricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
         description: '''beta = parametricLatitude(phi, F, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/parametricLatitude.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/parametricLatitude.html'
 
 
     "antipode":
         prefix: "antipode"
         body: '''[${1:newlat}, ${2:newlon}] = antipode(${1:lat}, ${2:lon}, ${3:optional_angleunits})'''
         description: '''[newlat, newlon] = antipode(lat, lon, optional_angleunits)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/antipode.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/antipode.html'
 
 
     "map.geodesy.IsometricLatitudeConverter":
         prefix: "map.geodesy.IsometricLatitudeConverter"
         body: '''${1:converter} = map.geodesy.IsometricLatitudeConverter(${1:spheroid})'''
         description: '''converter = map.geodesy.IsometricLatitudeConverter(spheroid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.IsometricLatitudeConverter.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.IsometricLatitudeConverter.html'
 
 
     "map.geodesy.IsometricLatitudeConverter.inverse":
         prefix: "map.geodesy.IsometricLatitudeConverter.inverse"
         body: '''${1:phi} = map.geodesy.IsometricLatitudeConverter.inverse(${1:converter}, ${2:psi}, ${3:angleUnit})'''
         description: '''phi = map.geodesy.IsometricLatitudeConverter.inverse(converter, psi, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.IsometricLatitudeConverter.inverse.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.IsometricLatitudeConverter.inverse.html'
 
 
     "map.geodesy.AuthalicLatitudeConverter.forward":
         prefix: "map.geodesy.AuthalicLatitudeConverter.forward"
         body: '''${1:beta} = map.geodesy.AuthalicLatitudeConverter.forward(${1:converter}, ${2:phi}, ${3:angleUnit})'''
         description: '''beta = map.geodesy.AuthalicLatitudeConverter.forward(converter, phi, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.AuthalicLatitudeConverter.forward.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.AuthalicLatitudeConverter.forward.html'
 
 
     "map.geodesy.RectifyingLatitudeConverter.inverse":
         prefix: "map.geodesy.RectifyingLatitudeConverter.inverse"
         body: '''${1:phi} = map.geodesy.RectifyingLatitudeConverter.inverse(${1:converter}, ${2:mu}, ${3:angleUnit})'''
         description: '''phi = map.geodesy.RectifyingLatitudeConverter.inverse(converter, mu, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.RectifyingLatitudeConverter.inverse.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.RectifyingLatitudeConverter.inverse.html'
 
 
     "referenceEllipsoid":
         prefix: "referenceEllipsoid"
         body: '''${1:E} = referenceEllipsoid(${1:name}, ${2:optional_lengthUnit})'''
         description: '''E = referenceEllipsoid(name, optional_lengthUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/referenceEllipsoid.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/referenceEllipsoid.html'
 
 
     "rsphere":
         prefix: "rsphere"
         body: '''${1:r} = rsphere(${1:typeOfRadius}, ${2:lat1}, ${3:lon1}, ${4:lat2}, ${5:lon2}, ${6:ellipsoid}, ${7:optional_angleUnits})'''
         description: '''r = rsphere(typeOfRadius, lat1, lon1, lat2, lon2, ellipsoid, optional_angleUnits)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/rsphere.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/rsphere.html'
 
 
     "wgs84Ellipsoid":
         prefix: "wgs84Ellipsoid"
         body: '''${1:E} = wgs84Ellipsoid(${1:lengthUnit})'''
         description: '''E = wgs84Ellipsoid(lengthUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/wgs84Ellipsoid.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/wgs84Ellipsoid.html'
 
 
     "axes2ecc":
         prefix: "axes2ecc"
         body: '''${1:ecc} = axes2ecc(${1:semimajor}, ${2:semiminor})'''
         description: '''ecc = axes2ecc(semimajor, semiminor)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/axes2ecc.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/axes2ecc.html'
 
 
     "map.geodesy.AuthalicLatitudeConverter.inverse":
         prefix: "map.geodesy.AuthalicLatitudeConverter.inverse"
         body: '''${1:phi} = map.geodesy.AuthalicLatitudeConverter.inverse(${1:converter}, ${2:beta}, ${3:angleUnit})'''
         description: '''phi = map.geodesy.AuthalicLatitudeConverter.inverse(converter, beta, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.AuthalicLatitudeConverter.inverse.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.AuthalicLatitudeConverter.inverse.html'
 
 
     "map.geodesy.AuthalicLatitudeConverter":
         prefix: "map.geodesy.AuthalicLatitudeConverter"
         body: '''${1:converter} = map.geodesy.AuthalicLatitudeConverter(${1:spheroid})'''
         description: '''converter = map.geodesy.AuthalicLatitudeConverter(spheroid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.AuthalicLatitudeConverter.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.AuthalicLatitudeConverter.html'
 
 
     "map.geodesy.ConformalLatitudeConverter":
         prefix: "map.geodesy.ConformalLatitudeConverter"
         body: '''${1:converter} = map.geodesy.ConformalLatitudeConverter(${1:spheroid})'''
         description: '''converter = map.geodesy.ConformalLatitudeConverter(spheroid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/map.geodesy.ConformalLatitudeConverter.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/map.geodesy.ConformalLatitudeConverter.html'
 
 
     "meridianfwd":
         prefix: "meridianfwd"
         body: '''${1:phi2} = meridianfwd(${1:phi1}, ${2:s}, ${3:optional_ellipsoid})'''
         description: '''phi2 = meridianfwd(phi1, s, optional_ellipsoid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/meridianfwd.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/meridianfwd.html'
 
 
     "meridianarc":
         prefix: "meridianarc"
         body: '''${1:s} = meridianarc(${1:phi1}, ${2:phi2}, ${3:optional_ellipsoid})'''
         description: '''s = meridianarc(phi1, phi2, optional_ellipsoid)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/meridianarc.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/meridianarc.html'
 
 
     "geodeticLatitudeFromParametric":
         prefix: "geodeticLatitudeFromParametric"
         body: '''${1:phi} = geodeticLatitudeFromParametric(${1:beta}, ${2:F}, ${3:angleUnit})'''
         description: '''phi = geodeticLatitudeFromParametric(beta, F, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/geodeticLatitudeFromParametric.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/geodeticLatitudeFromParametric.html'
 
 
     "minaxis":
         prefix: "minaxis"
         body: '''${1:b} = minaxis(${1:semimajor}, ${2:e})'''
         description: '''b = minaxis(semimajor, e)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/minaxis.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/minaxis.html'
 
 
     "ecc2n":
         prefix: "ecc2n"
         body: '''${1:n} = ecc2n(${1:ecc})'''
         description: '''n = ecc2n(ecc)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/ecc2n.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ecc2n.html'
 
 
     "referenceSphere":
         prefix: "referenceSphere"
         body: '''${1:S} = referenceSphere(${1:name}, ${2:optional_lengthUnit})'''
         description: '''S = referenceSphere(name, optional_lengthUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/referenceSphere.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/referenceSphere.html'
 
 
     "ecc2flat":
         prefix: "ecc2flat"
         body: '''${1:f} = ecc2flat(${1:ecc})'''
         description: '''f = ecc2flat(ecc)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/ecc2flat.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/ecc2flat.html'
 
 
     "departure":
         prefix: "departure"
         body: '''${1:dist} = departure(${1:long1}, ${2:long2}, ${3:lat}, ${4:optional_ellipsoid}, ${5:optional_units})'''
         description: '''dist = departure(long1, long2, lat, optional_ellipsoid, optional_units)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/departure.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/departure.html'
 
 
     "geocentricLatitude":
         prefix: "geocentricLatitude"
         body: '''${1:psi} = geocentricLatitude(${1:phi}, ${2:F}, ${3:angleUnit})'''
         description: '''psi = geocentricLatitude(phi, F, angleUnit)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/geocentricLatitude.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/geocentricLatitude.html'
 
 
     "flat2ecc":
         prefix: "flat2ecc"
         body: '''${1:ecc} = flat2ecc(${1:f})'''
         description: '''ecc = flat2ecc(f)'''
-        descriptionMoreURL: 'https://www.mathworks.com/help/map/ref/flat2ecc.html'
+        descriptionMoreURL: 'https://www.mathworks.com/help/map/flat2ecc.html'
 
