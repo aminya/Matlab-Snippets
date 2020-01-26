@@ -142,13 +142,15 @@ function matlab2atom(data, group)
             body = "$strIn"
             prototype = "$strInProto"
         end
-
-        local purpose, descriptionMoreURL
-
-        try
+        m = match(r".\.(.)$", fun)
+        if haskey(funsdict, fun)
             purpose = funsdict[fun].purpose
             descriptionMoreURL = "https://www.mathworks.com/help/$group/"*funsdict[fun].docurl
-        catch
+        elseif !isnothing(m) && haskey(funsdict, m.captures[1])
+            funshort = m.captures[1]
+            purpose = funsdict[funshort].purpose
+            descriptionMoreURL = "https://www.mathworks.com/help/$group/"*funsdict[funshort].docurl
+        else
             purpose = ""
             if group == "matlab"
                 descriptionMoreURL = "https://www.mathworks.com/help/$group/ref/$fun.html"
@@ -156,7 +158,6 @@ function matlab2atom(data, group)
                 descriptionMoreURL = "https://www.mathworks.com/help/$group/$fun.html"
             end
         end
-
 
         final *= """
 
@@ -170,7 +171,7 @@ function matlab2atom(data, group)
 
         """
         catch e
-            println("arguments not supported yet")
+            println(e)
         end
     end
 
