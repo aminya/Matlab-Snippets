@@ -113,8 +113,14 @@ function matlab2atom(data, group)
             out = Vector{String}(undef, numOut)
             outProto = Vector{String}(undef, numOut)
 
+            if @isdefined(in)
+                inLength =length(in)
+            else
+                inLength = 0
+            end
             for (iOut, arg) in enumerate(argsOut)
-                out[iOut]="\${$iOut:$(arg["name"])}"
+                iOutSnip = iOut+inLength
+                out[iOut]="\${$iOutSnip:$(arg["name"])}"
 
                 outProto[iOut]="$(arg["name"])"
             end
